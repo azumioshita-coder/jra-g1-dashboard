@@ -1,0 +1,2385 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRAND STABLE | 2026年 G1レースダッシュボード</title>
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+      :root {
+        /* カラー定義：プレミアムダークグリーン ＆ ゴールド */
+        --bg-base: #040706;
+        --bg-sidebar: #080d0b;
+        --bg-surface: rgba(12, 20, 17, 0.6);
+        --bg-card: rgba(18, 30, 26, 0.45);
+        --bg-card-hover: rgba(26, 44, 38, 0.6);
+        --border-color: rgba(255, 255, 255, 0.06);
+        --border-hover: rgba(16, 185, 129, 0.35);
+        
+        --primary: #10b981; /* 鮮やかな芝のグリーン */
+        --primary-glow: rgba(16, 185, 129, 0.12);
+        --gold: #f59e0b; /* 栄光のゴールド */
+        --gold-glow: rgba(245, 158, 11, 0.15);
+        
+        --text-primary: #f3f4f6;
+        --text-secondary: #e5e7eb;
+        --text-muted: #9ca3af;
+        
+        --success: #10b981;
+        --danger: #ef4444;
+        --info: #3b82f6;
+        
+        --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.5);
+        --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.6);
+        --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.7);
+        
+        --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+        --font-display: 'Outfit', var(--font-sans);
+        
+        font-family: var(--font-sans);
+        color: var(--text-primary);
+        background-color: var(--bg-base);
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: var(--bg-base);
+        color: var(--text-primary);
+        overflow-x: hidden;
+      }
+
+      #app {
+        display: flex;
+        min-height: 100vh;
+        background: radial-gradient(circle at 85% 15%, rgba(16, 185, 129, 0.04) 0%, transparent 50%),
+                    radial-gradient(circle at 15% 85%, rgba(245, 158, 11, 0.02) 0%, transparent 50%);
+      }
+
+      /* 枠番バッジ */
+      .waku-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        font-weight: 800;
+        font-size: 13px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      }
+      .waku-1 { background-color: #ffffff; color: #111111; border: 1px solid #cccccc; }
+      .waku-2 { background-color: #191919; color: #ffffff; border: 1px solid #444444; }
+      .waku-3 { background-color: #e53e3e; color: #ffffff; }
+      .waku-4 { background-color: #3182ce; color: #ffffff; }
+      .waku-5 { background-color: #ecc94b; color: #111111; }
+      .waku-6 { background-color: #38a169; color: #ffffff; }
+      .waku-7 { background-color: #dd6b20; color: #ffffff; }
+      .waku-8 { background-color: #ed64a6; color: #ffffff; }
+
+      /* サイドバー */
+      .sidebar {
+        width: 280px;
+        background-color: var(--bg-sidebar);
+        border-right: 1px solid var(--border-color);
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        position: fixed;
+        height: 100vh;
+        z-index: 100;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 40px;
+        padding: 8px;
+      }
+
+      .logo-icon {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, var(--primary), var(--gold));
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+      }
+
+      .logo-icon svg, .logo-icon i {
+        width: 22px;
+        height: 22px;
+        stroke-width: 2.5;
+      }
+
+      .brand-text h2 {
+        font-family: var(--font-display);
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        background: linear-gradient(to right, #fff, var(--text-muted));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .brand-text span {
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: var(--gold);
+        display: block;
+      }
+
+      .nav-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        flex-grow: 1;
+      }
+
+      .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 14px 16px;
+        color: var(--text-muted);
+        text-decoration: none;
+        border-radius: 12px;
+        font-size: 15px;
+        font-weight: 500;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid transparent;
+      }
+
+      .nav-item i, .nav-item svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .nav-item:hover {
+        color: var(--text-primary);
+        background-color: var(--bg-card);
+        border-color: rgba(255, 255, 255, 0.02);
+      }
+
+      .nav-item.active {
+        color: #000;
+        background: linear-gradient(to right, var(--primary), #34d399);
+        font-weight: 600;
+        box-shadow: 0 4px 15px var(--primary-glow);
+      }
+
+      .sidebar-footer {
+        border-top: 1px solid var(--border-color);
+        padding-top: 20px;
+      }
+
+      .user-profile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .avatar {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(245, 158, 11, 0.15));
+        border: 1px solid var(--gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-display);
+        font-weight: 700;
+        color: var(--gold);
+        font-size: 14px;
+      }
+
+      .user-info {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .user-name {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      .user-role {
+        font-size: 10px;
+        color: var(--text-muted);
+      }
+
+      /* メインコンテンツ */
+      .main-content {
+        flex-grow: 1;
+        margin-left: 280px;
+        padding: 40px 48px;
+        min-height: 100vh;
+      }
+
+      /* ヘッダー */
+      .top-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+      }
+
+      .page-title h1 {
+        font-family: var(--font-display);
+        font-size: 32px;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        margin-bottom: 6px;
+        background: linear-gradient(to right, #fff, #b3b3b3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .page-title p {
+        font-size: 14px;
+        color: var(--text-muted);
+      }
+
+      /* カウントダウンセクション */
+      .countdown-section {
+        background: linear-gradient(135deg, rgba(14, 24, 20, 0.8), rgba(6, 10, 8, 0.9));
+        border: 1px solid rgba(16, 185, 129, 0.15);
+        border-radius: 20px;
+        padding: 32px 40px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: var(--shadow-md);
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .countdown-bg-glow {
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+        height: 250px;
+        background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+        pointer-events: none;
+      }
+
+      .countdown-header {
+        margin-bottom: 24px;
+        z-index: 1;
+      }
+
+      .countdown-badge {
+        background-color: var(--primary-glow);
+        border: 1px solid rgba(16, 185, 129, 0.3);
+        color: var(--primary);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        padding: 6px 12px;
+        border-radius: 30px;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 12px;
+      }
+
+      .countdown-badge svg, .countdown-badge i {
+        width: 12px;
+        height: 12px;
+      }
+
+      .countdown-header h2 {
+        font-family: var(--font-display);
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        color: #fff;
+        margin-bottom: 8px;
+      }
+
+      .countdown-timer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        z-index: 1;
+      }
+
+      .time-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 14px;
+        min-width: 90px;
+        padding: 14px 10px;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .time-num {
+        font-family: var(--font-display);
+        font-size: 40px;
+        font-weight: 800;
+        color: var(--gold);
+        line-height: 1.1;
+        text-shadow: 0 0 10px rgba(245, 158, 11, 0.25);
+      }
+
+      .time-label {
+        font-size: 10px;
+        font-weight: 700;
+        color: var(--text-muted);
+        letter-spacing: 1px;
+        margin-top: 4px;
+      }
+
+      .time-separator {
+        font-size: 32px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.15);
+        margin-bottom: 16px;
+      }
+
+      /* フィルター・検索セクション */
+      .filter-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 32px;
+        flex-wrap: wrap;
+      }
+
+      .tabs-container {
+        display: flex;
+        gap: 8px;
+      }
+
+      .tab-btn {
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 12px 20px;
+        color: var(--text-muted);
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .tab-btn:hover {
+        background-color: var(--bg-card-hover);
+        color: var(--text-primary);
+      }
+
+      .tab-btn.active {
+        background-color: var(--primary-glow);
+        border-color: var(--primary);
+        color: var(--primary);
+        box-shadow: 0 2px 10px rgba(16, 185, 129, 0.1);
+      }
+
+      .tab-count {
+        font-size: 11px;
+        background-color: rgba(255, 255, 255, 0.05);
+        color: var(--text-muted);
+        padding: 2px 8px;
+        border-radius: 20px;
+        transition: all 0.25s;
+      }
+
+      .tab-btn.active .tab-count {
+        background-color: var(--primary);
+        color: #000;
+        font-weight: 700;
+      }
+
+      .search-box {
+        position: relative;
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .search-box svg, .search-box i {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--text-muted);
+        width: 16px;
+        height: 16px;
+      }
+
+      .search-box input {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 12px 16px 12px 42px;
+        color: var(--text-primary);
+        font-size: 14px;
+        outline: none;
+        transition: all 0.2s;
+      }
+
+      .search-box input:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px var(--primary-glow);
+      }
+
+      /* レースグリッド ＆ カード */
+      .race-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 24px;
+        animation: fadeIn 0.4s ease-out;
+      }
+
+      .race-card {
+        background-color: var(--bg-surface);
+        backdrop-filter: blur(16px);
+        border: 1px solid var(--border-color);
+        border-radius: 18px;
+        padding: 24px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: var(--shadow-sm);
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        cursor: pointer;
+      }
+
+      .race-card:hover {
+        transform: translateY(-6px);
+        border-color: var(--border-hover);
+        box-shadow: var(--shadow-md);
+      }
+
+      .race-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--border-color);
+      }
+
+      .race-card.loc-tokyo::before { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+      .race-card.loc-nakayama::before { background: linear-gradient(90deg, #ef4444, #f87171); }
+      .race-card.loc-kyoto::before { background: linear-gradient(90deg, #10b981, #34d399); }
+      .race-card.loc-hanshin::before { background: linear-gradient(90deg, #a855f7, #c084fc); }
+      .race-card.loc-chukyo::before { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+
+      .card-header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 16px;
+      }
+
+      .race-date-badge {
+        font-family: var(--font-display);
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--text-muted);
+      }
+
+      .race-status-badge {
+        font-size: 10px;
+        font-weight: 700;
+        padding: 4px 8px;
+        border-radius: 6px;
+      }
+
+      .race-status-badge.finished {
+        background-color: rgba(255, 255, 255, 0.05);
+        color: var(--text-muted);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .race-status-badge.upcoming {
+        background-color: var(--gold-glow);
+        color: var(--gold);
+        border: 1px solid rgba(245, 158, 11, 0.2);
+      }
+
+      .race-card h3 {
+        font-family: var(--font-display);
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 6px;
+        color: #fff;
+      }
+
+      .race-meta-info {
+        font-size: 12px;
+        color: var(--text-muted);
+        margin-bottom: 20px;
+        display: flex;
+        gap: 10px;
+      }
+
+      .race-card-footer {
+        margin-top: auto;
+        border-top: 1px solid var(--border-color);
+        padding-top: 16px;
+      }
+
+      .card-result-preview {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .winner-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+      }
+
+      .winner-crown {
+        color: var(--gold);
+        width: 14px;
+        height: 14px;
+      }
+
+      .winner-name {
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      .card-action-text {
+        font-size: 12px;
+        color: var(--primary);
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        margin-top: 10px;
+      }
+
+      .race-card:hover .card-action-text {
+        color: #34d399;
+      }
+
+      /* モーダル ＆ レース詳細 */
+      .modal {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .modal.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .modal-backdrop {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(8px);
+      }
+
+      .modal-content {
+        position: relative;
+        background-color: #060908;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        width: 95%;
+        max-width: 1100px;
+        max-height: 90vh;
+        overflow-y: auto;
+        padding: 32px;
+        box-shadow: var(--shadow-lg);
+        transform: scale(0.95);
+        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        z-index: 1010;
+      }
+
+      .modal.active .modal-content {
+        transform: scale(1);
+      }
+
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 16px;
+      }
+
+      .modal-header h2 {
+        font-family: var(--font-display);
+        font-size: 26px;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        color: #fff;
+      }
+
+      .btn-close {
+        background: transparent;
+        border: none;
+        color: var(--text-muted);
+        font-size: 28px;
+        cursor: pointer;
+        line-height: 1;
+        transition: color 0.2s;
+      }
+
+      .btn-close:hover {
+        color: var(--text-primary);
+      }
+
+      /* 2カラムレイアウト */
+      .detail-grid {
+        display: grid;
+        grid-template-columns: 2.2fr 1fr;
+        gap: 28px;
+        align-items: start;
+      }
+
+      .detail-left {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .detail-right {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        position: sticky;
+        top: 0;
+      }
+
+      /* スペック表示 */
+      .detail-meta-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        background-color: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 10px;
+      }
+
+      .detail-meta-item {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .detail-meta-label {
+        font-size: 10px;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .detail-meta-value {
+        font-size: 13px;
+        font-weight: 600;
+      }
+
+      .detail-section-title {
+        font-family: var(--font-display);
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: var(--gold);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-left: 3px solid var(--gold);
+        padding-left: 8px;
+      }
+
+      /* 成績テーブル */
+      .table-scroll-container {
+        overflow-x: auto;
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.01);
+      }
+
+      .result-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 12px;
+        white-space: nowrap;
+      }
+
+      .result-table th {
+        background-color: rgba(255, 255, 255, 0.03);
+        padding: 10px 12px;
+        font-weight: 600;
+        color: var(--text-muted);
+        border-bottom: 1px solid var(--border-color);
+        font-size: 11px;
+      }
+
+      .result-table td {
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--border-color);
+        color: var(--text-secondary);
+      }
+
+      .result-table tr:last-child td {
+        border-bottom: none;
+      }
+
+      .result-table tbody tr:hover {
+        background-color: rgba(255, 255, 255, 0.015);
+      }
+
+      /* 着順バッジ */
+      .rank-badge {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 11px;
+        color: #000;
+        margin: 0 auto;
+      }
+
+      .rank-1 { background-color: var(--gold); }
+      .rank-2 { background-color: #cbd5e1; }
+      .rank-3 { background-color: #b45309; color: #fff; }
+      .rank-other { background-color: rgba(255, 255, 255, 0.08); color: var(--text-muted); }
+
+      .row-rank-1 { background-color: rgba(245, 158, 11, 0.03); }
+      .row-rank-2 { background-color: rgba(203, 213, 225, 0.02); }
+      .row-rank-3 { background-color: rgba(180, 83, 9, 0.02); }
+
+      /* 展開 */
+      .pace-container {
+        background-color: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 10px;
+      }
+
+      .pace-flow {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 13px;
+        color: var(--text-secondary);
+      }
+
+      .pace-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .corner-label {
+        font-family: var(--font-display);
+        font-weight: 700;
+        color: var(--primary);
+        min-width: 45px;
+      }
+
+      .corner-sequence {
+        font-family: monospace;
+        color: var(--text-primary);
+        letter-spacing: 0.5px;
+      }
+
+      /* 払戻金 */
+      .payouts-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .payout-item {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.02);
+        padding: 10px 14px;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+        font-size: 13px;
+        transition: all 0.2s;
+      }
+
+      .payout-item:hover {
+        border-color: rgba(255, 255, 255, 0.12);
+        background-color: rgba(255, 255, 255, 0.04);
+      }
+
+      .payout-type {
+        color: var(--text-muted);
+        font-weight: 500;
+      }
+
+      .payout-comb {
+        font-family: monospace;
+        color: var(--text-primary);
+      }
+
+      .payout-value {
+        font-weight: 600;
+        font-family: var(--font-display);
+        color: var(--gold);
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      /* レスポンシブ */
+      @media (max-width: 992px) {
+        .countdown-section { padding: 24px; }
+        .countdown-timer { gap: 10px; }
+        .time-block { min-width: 75px; padding: 10px 8px; }
+        .time-num { font-size: 30px; }
+        .detail-grid { grid-template-columns: 1fr; }
+        .detail-right { position: relative; top: auto; }
+      }
+
+      @media (max-width: 768px) {
+        #app { flex-direction: column; }
+        .sidebar { width: 100%; height: auto; position: relative; border-right: none; border-bottom: 1px solid var(--border-color); padding: 16px; }
+        .brand { margin-bottom: 16px; }
+        .nav-menu { flex-direction: row; justify-content: space-around; }
+        .nav-item { padding: 10px; font-size: 13px; flex-grow: 1; justify-content: center; }
+        .sidebar-footer { display: none; }
+        .main-content { margin-left: 0; padding: 24px; }
+        .filter-section { flex-direction: column; align-items: stretch; }
+        .tabs-container { justify-content: space-between; }
+        .tab-btn { flex-grow: 1; justify-content: center; padding: 10px; font-size: 13px; }
+        .modal-content { padding: 20px; margin: 10px auto; }
+        .detail-meta-list { grid-template-columns: 1fr 1fr; }
+      }
+
+      /* モーダル内詳細の新縦並び・下部2カラムレイアウト */
+      .detail-main-flow {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        width: 100%;
+      }
+
+      .detail-sub-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 28px;
+        align-items: start;
+        width: 100%;
+      }
+
+      .payouts-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      @media (max-width: 992px) {
+        .detail-sub-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+        .payouts-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="dark-theme">
+    <div id="app">
+      <!-- サイドバー -->
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="logo-icon">
+            <i data-lucide="award"></i>
+          </div>
+          <div class="brand-text">
+            <h2>GRAND STABLE</h2>
+            <span>G1 CAMPAIGN 2026</span>
+          </div>
+        </div>
+
+        <nav class="nav-menu">
+          <a href="#" class="nav-item active" data-target="calendar">
+            <i data-lucide="calendar"></i>
+            <span>G1スケジュール</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="user-profile">
+            <div class="avatar">G</div>
+            <div class="user-info">
+              <span class="user-name">GUEST USER</span>
+              <span class="user-role">RACING FAN</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- メインコンテンツ -->
+      <main class="main-content">
+        <!-- ヘッダー -->
+        <header class="top-header">
+          <div class="page-title">
+            <h1 id="page-heading">2026年 G1レースダッシュボード</h1>
+            <p id="page-subheading" class="text-muted">JRA G1全24レースの日程・結果・カウントダウン情報</p>
+          </div>
+        </header>
+
+        <!-- カウントダウンセクション -->
+        <section class="countdown-section">
+          <div class="countdown-bg-glow"></div>
+          <div class="countdown-header">
+            <span class="countdown-badge"><i data-lucide="bell"></i> NEXT G1 RACE</span>
+            <h2 id="next-race-name">LOADING NEXT RACE...</h2>
+            <p class="text-muted" id="next-race-meta">開催スケジュールを取得しています</p>
+          </div>
+          
+          <div class="countdown-timer">
+            <div class="time-block">
+              <span class="time-num" id="timer-days">00</span>
+              <span class="time-label">DAYS</span>
+            </div>
+            <div class="time-separator">:</div>
+            <div class="time-block">
+              <span class="time-num" id="timer-hours">00</span>
+              <span class="time-label">HOURS</span>
+            </div>
+            <div class="time-separator">:</div>
+            <div class="time-block">
+              <span class="time-num" id="timer-minutes">00</span>
+              <span class="time-label">MINUTES</span>
+            </div>
+            <div class="time-separator">:</div>
+            <div class="time-block">
+              <span class="time-num" id="timer-seconds">00</span>
+              <span class="time-label">SECONDS</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- フィルターコントロール -->
+        <section class="filter-section">
+          <div class="tabs-container">
+            <button class="tab-btn active" data-filter="all">すべて <span class="tab-count" id="count-all">0</span></button>
+            <button class="tab-btn" data-filter="finished">開催済 (結果) <span class="tab-count" id="count-finished">0</span></button>
+            <button class="tab-btn" data-filter="upcoming">今後の予定 <span class="tab-count" id="count-upcoming">0</span></button>
+          </div>
+          
+          <div class="search-box">
+            <i data-lucide="search"></i>
+            <input type="text" id="race-search" placeholder="レース名、競馬場名で検索...">
+          </div>
+        </section>
+
+        <!-- レースグリッド -->
+        <section class="race-grid" id="race-grid-container">
+          <!-- JSで動的生成 -->
+        </section>
+      </main>
+    </div>
+
+    <!-- レース詳細モーダル -->
+    <div id="modal-race-detail" class="modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="detail-modal-title">レース名</h2>
+          <button id="btn-close-modal" class="btn-close">&times;</button>
+        </div>
+        <div class="modal-body" id="detail-modal-body">
+          <!-- JSで動的生成 -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 2026年 JRA G1レースデータセット (NetKeiba準拠・1〜3着結果完全一致)
+      const G1_RACES = [
+        {
+          id: '1',
+          name: 'フェブラリーステークス',
+          englishName: 'February Stakes',
+          date: '2026-02-22T15:40:00',
+          location: '東京',
+          course: 'ダート 1600m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: 'ダート仕様',
+          type: 'older-dirt',
+          winner: 'コスタノヴァ', winnerJockey: 'C.ルメール', winnerGate: 12, time: '1:35.4',
+          second: 'ウィルソンテソーロ', secondJockey: '川田将雅', secondGate: 14,
+          third: 'ダブルハートボンド', thirdJockey: '坂井瑠星', thirdGate: 9,
+          payouts: { win: 390, trifecta: 7650 }
+        },
+        {
+          id: '2',
+          name: '高松宮記念',
+          englishName: 'Takamatsunomiya Kinen',
+          date: '2026-03-29T15:40:00',
+          location: '中京',
+          course: '芝 1200m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.2',
+          type: 'older-mile',
+          winner: 'サトノレーヴ', winnerJockey: 'C.ルメール', winnerGate: 9, time: '1:06.3',
+          second: 'レッドモンレーヴ', secondJockey: '酒井学', secondGate: 6,
+          third: 'ウインカーネリアン', thirdJockey: '三浦皇成', thirdGate: 8,
+          payouts: { win: 340, trifecta: 6450 }
+        },
+        {
+          id: '3',
+          name: '大阪杯',
+          englishName: 'Osaka Hai',
+          date: '2026-04-05T15:40:00',
+          location: '阪神',
+          course: '芝 2000m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.6',
+          type: 'older-dist',
+          winner: 'クロワデュノール', winnerJockey: '北村友一', winnerGate: 15, time: '1:57.6',
+          second: 'メイショウタバル', secondJockey: '武豊', secondGate: 6,
+          third: 'ダノンデサイル', thirdJockey: '坂井瑠星', thirdGate: 4,
+          payouts: { win: 210, trifecta: 2540 }
+        },
+        {
+          id: '4',
+          name: '桜花賞',
+          englishName: 'Oka Sho',
+          date: '2026-04-12T15:40:00',
+          location: '阪神',
+          course: '芝 1600m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.8',
+          type: '3yo-female',
+          winner: 'スターアニス', winnerJockey: '松山弘平', winnerGate: 15, time: '1:31.5',
+          second: 'ギャラボーグ', secondJockey: '西村淳也', secondGate: 5,
+          third: 'ジッピーチューン', thirdJockey: '北村友一', secondGate: 11,
+          payouts: { win: 290, trifecta: 1890 }
+        },
+        {
+          id: '5',
+          name: '皐月賞',
+          englishName: 'Satsuki Sho',
+          date: '2026-04-19T15:40:00',
+          location: '中山',
+          course: '芝 2000m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.9',
+          type: '3yo-male',
+          winner: 'ロブチェン', winnerJockey: '松山弘平', winnerGate: 4, time: '1:56.5',
+          second: 'リアライズシリウス', secondJockey: '津村明秀', secondGate: 15,
+          third: 'ライヒスアドラー', thirdJockey: '佐々木大輔', thirdGate: 9,
+          payouts: { win: 270, trifecta: 2450 }
+        },
+        {
+          id: '6',
+          name: '天皇賞（春）',
+          englishName: 'Tenno Sho (Spring)',
+          date: '2026-05-03T15:40:00',
+          location: '京都',
+          course: '芝 3200m',
+          status: 'finished',
+          weather: '曇',
+          trackCondition: '良',
+          cushionValue: '9.4',
+          type: 'older-dist',
+          winner: 'クロワデュノール', winnerJockey: '北村友一', winnerGate: 7, time: '3:13.7',
+          second: 'ヴェルテンベルク', secondJockey: '松若風馬', secondGate: 15,
+          third: 'アドマイヤテラ', thirdJockey: '武豊', thirdGate: 3,
+          payouts: { win: 160, trifecta: 4120 }
+        },
+        {
+          id: '7',
+          name: 'NHKマイルカップ',
+          englishName: 'NHK Mile Cup',
+          date: '2026-05-10T15:40:00',
+          location: '東京',
+          course: '芝 1600m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.7',
+          type: '3yo-male',
+          winner: 'ロデオドライブ', winnerJockey: 'D.レーン', winnerGate: 17, time: '1:31.5',
+          second: 'アスクイキゴミ', secondJockey: '戸崎圭太', secondGate: 16,
+          third: 'アドマイヤクワッズ', thirdJockey: '坂井瑠星', thirdGate: 11,
+          payouts: { win: 280, trifecta: 3850 }
+        },
+        {
+          id: '8',
+          name: 'ヴィクトリアマイル',
+          englishName: 'Victoria Mile',
+          date: '2026-05-17T15:40:00',
+          location: '東京',
+          course: '芝 1600m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.6',
+          type: 'older-female',
+          winner: 'エンブロイダリー', winnerJockey: 'C.ルメール', winnerGate: 12, time: '1:30.9',
+          second: 'カムニャック', secondJockey: '川田将雅', secondGate: 8,
+          third: 'クイーンズウォーク', thirdJockey: '西村淳也', thirdGate: 7,
+          payouts: { win: 190, trifecta: 1980 }
+        },
+        {
+          id: '9',
+          name: '優駿牝馬（オークス）',
+          englishName: 'Yushun Himba',
+          date: '2026-05-24T15:40:00',
+          location: '東京',
+          course: '芝 2400m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.5',
+          type: '3yo-female',
+          winner: 'ジュウリョクピエロ', winnerJockey: '今村聖奈', winnerGate: 16, time: '2:25.6',
+          second: 'ドリームコア', secondJockey: 'C.ルメール', secondGate: 12,
+          third: 'ラフターラインズ', thirdJockey: 'D.レーン', thirdGate: 18,
+          payouts: { win: 890, trifecta: 15420 }
+        },
+        {
+          id: '10',
+          name: '東京優駿（日本ダービー）',
+          englishName: 'Tokyo Yushun',
+          date: '2026-05-31T15:40:00',
+          location: '東京',
+          course: '芝 2400m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.5',
+          type: '3yo-male',
+          winner: 'ロブチェン', winnerJockey: '松山弘平', winnerGate: 17, time: '2:22.7',
+          second: 'パントルナイーフ', secondJockey: 'C.ルメール', secondGate: 13,
+          third: 'バステール', thirdJockey: '川田将雅', thirdGate: 5,
+          payouts: { win: 270, trifecta: 14280 }
+        },
+        {
+          id: '11',
+          name: '安田記念',
+          englishName: 'Yasuda Kinen',
+          date: '2026-06-07T15:40:00',
+          location: '東京',
+          course: '芝 1600m',
+          status: 'finished',
+          weather: '曇',
+          trackCondition: '良',
+          cushionValue: '9.4',
+          type: 'older-mile',
+          winner: 'シックスペンス', winnerJockey: '武豊', winnerGate: 4, time: '1:32.1',
+          second: 'ワールズエンド', secondJockey: '津村明秀', secondGate: 11,
+          third: 'ガイアフォース', thirdJockey: '横山武史', thirdGate: 14,
+          payouts: { win: 410, trifecta: 8900 }
+        },
+        {
+          id: '12',
+          name: '宝塚記念',
+          englishName: 'Takarazuka Kinen',
+          date: '2026-06-14T15:40:00',
+          location: '阪神',
+          course: '芝 2200m',
+          status: 'finished',
+          weather: '雨',
+          trackCondition: '重',
+          cushionValue: '7.8',
+          type: 'older-dist',
+          winner: 'メイショウタバル', winnerJockey: '武豊', winnerGate: 16, time: '2:12.1',
+          second: 'クロワデュノール', secondJockey: '北村友一', secondGate: 5,
+          third: 'ダノンデサイル', thirdJockey: '横山典弘', thirdGate: 1,
+          payouts: { win: 390, trifecta: 1440 }
+        },
+        {
+          id: '13',
+          name: 'スプリンターズステークス',
+          englishName: 'Sprinters Stakes',
+          date: '2026-09-27T15:40:00',
+          location: '中山',
+          course: '芝 1200m',
+          status: 'upcoming'
+        },
+        {
+          id: '14',
+          name: '秋華賞',
+          englishName: 'Shuka Sho',
+          date: '2026-10-18T15:40:00',
+          location: '京都',
+          course: '芝 2000m',
+          status: 'upcoming'
+        },
+        {
+          id: '15',
+          name: '菊花賞',
+          englishName: 'Kikka Sho',
+          date: '2026-10-25T15:40:00',
+          location: '京都',
+          course: '芝 3000m',
+          status: 'upcoming'
+        },
+        {
+          id: '16',
+          name: '天皇賞（秋）',
+          englishName: 'Tenno Sho (Autumn)',
+          date: '2026-11-01T15:40:00',
+          location: '東京',
+          course: '芝 2000m',
+          status: 'upcoming'
+        },
+        {
+          id: '17',
+          name: 'エリザベス女王杯',
+          englishName: 'Queen Elizabeth II Cup',
+          date: '2026-11-15T15:40:00',
+          location: '京都',
+          course: '芝 2200m',
+          status: 'upcoming'
+        },
+        {
+          id: '18',
+          name: 'マイルチャンピオンシップ',
+          englishName: 'Mile Championship',
+          date: '2026-11-22T15:40:00',
+          location: '京都',
+          course: '芝 1600m',
+          status: 'upcoming'
+        },
+        {
+          id: '19',
+          name: 'ジャパンカップ',
+          englishName: 'Japan Cup',
+          date: '2026-11-29T15:40:00',
+          location: '東京',
+          course: '芝 2400m',
+          status: 'upcoming'
+        },
+        {
+          id: '20',
+          name: 'チャンピオンズカップ',
+          englishName: 'Champions Cup',
+          date: '2026-12-06T15:40:00',
+          location: '中京',
+          course: 'ダート 1800m',
+          status: 'upcoming'
+        },
+        {
+          id: '21',
+          name: '阪神ジュベナイルフィリーズ',
+          englishName: 'Hanshin Juvenile Fillies',
+          date: '2026-12-13T15:40:00',
+          location: '京都',
+          course: '芝 1600m',
+          status: 'upcoming'
+        },
+        {
+          id: '22',
+          name: '朝日杯フューチュリティステークス',
+          englishName: 'Asahi Hai Futurity Stakes',
+          date: '2026-12-20T15:40:00',
+          location: '京都',
+          course: '芝 1600m',
+          status: 'upcoming'
+        },
+        {
+          id: '23',
+          name: 'ホープフルステークス',
+          englishName: 'Hopeful Stakes',
+          date: '2026-12-26T15:40:00',
+          location: '中山',
+          course: '芝 2000m',
+          status: 'upcoming'
+        },
+        {
+          id: '24',
+          name: '有馬記念',
+          englishName: 'Arima Kinen',
+          date: '2026-12-27T15:40:00',
+          location: '中山',
+          course: '芝 2500m',
+          status: 'upcoming'
+        }
+      ];
+
+      // NetKeiba本物 JRA 2026年 G1結果 全頭成績データベース
+      const RESULTS_DATA = {
+        '1': [
+          [1, 12, 'コスタノヴァ', '牡6', 58, 'ルメール', '1:35.4', '-', '10-12', '35.2', '3.4', 2, '488', '-4', '木村哲也 (美浦)'],
+          [2, 14, 'ウィルソンテソーロ', '牡7', 58, '川田将雅', '1:35.5', '1/2', '7-7', '35.7', '5.4', 3, '486', '+2', '高木登 (美浦)'],
+          [3, 9, 'ダブルハートボンド', '牝5', 56, '坂井瑠星', '1:35.6', '1/2', '6-5', '36.0', '3.0', 1, '476', '+2', '大久保龍 (栗東)'],
+          [4, 3, 'ブライアンセンス', '牡6', 58, '岩田望来', '1:35.7', '3/4', '10-9', '35.6', '40.6', 10, '524', '0', '斎藤誠 (美浦)'],
+          [5, 1, 'オメガギネス', '牡6', 58, '岩田康誠', '1:36.2', '3', '4-4', '36.7', '28.6', 8, '498', '-2', '安田翔伍 (栗東)'],
+          [6, 15, 'ペプチドナイル', '牡8', 58, '富田暁', '1:36.2', 'ハナ', '3-2', '36.9', '53.6', 11, '532', '+6', '武英智 (栗東)'],
+          [7, 13, 'ナチュラルライズ', '牡4', 58, '横山武史', '1:36.2', 'クビ', '13-13', '35.7', '21.4', 7, '506', '+5', '伊藤圭三 (美浦)'],
+          [8, 6, 'ラムジェット', '牡5', 58, '三浦皇成', '1:36.3', '1/2', '15-15', '35.7', '7.8', 4, '530', '+14', '佐々木晶 (栗東)'],
+          [9, 5, 'シックスペンス', '牡5', 58, '戸崎圭太', '1:36.4', '3/4', '1-1', '37.2', '17.4', 6, '514', '+12', '国枝栄 (美浦)'],
+          [10, 4, 'ペリエール', '牡6', 58, '佐々木大', '1:36.6', '3/4', '7-7', '36.8', '32.9', 9, '492', '+8', '黒岩陽一 (美浦)'],
+          [11, 10, 'ロードクロンヌ', '牡5', 58, '横山和生', '1:36.7', '3/4', '2-2', '37.5', '14.7', 5, '500', '0', '四位洋文 (美浦)'],
+          [12, 11, 'サンライズホーク', 'セ7', 58, '松岡正海', '1:37.2', '3', '15-15', '36.5', '346.3', 16, '512', '-6', '牧浦充徳 (栗東)'],
+          [13, 8, 'サクラトゥジュール', 'セ9', 58, 'キング', '1:37.7', '3.1/2', '10-9', '37.6', '74.1', 13, '510', '-4', '堀宣行 (美浦)'],
+          [14, 7, 'ロングラン', 'セ8', 58, '荻野極', '1:37.8', 'クビ', '13-13', '37.4', '235.1', 15, '482', '+4', '和田勇介 (美浦)'],
+          [15, 16, 'サイモンザナドゥ', '牡6', 58, '池添謙一', '1:37.8', 'ハナ', '7-9', '37.8', '66.6', 12, '470', '-8', '小林真也 (栗東)'],
+          [16, 2, 'ハッピーマン', '牡4', 58, '高杉吏麒', '1:39.1', '8', '4-5', '39.5', '98.1', 14, '470', '-4', '寺島良 (栗東)']
+        ],
+        '2': [
+          [1, 9, 'サトノレーヴ', '牡7', 58, 'ルメール', '1:06.3', '-', '10-10', '32.4', '3.5', 1, '530', '-2', '堀宣行 (美浦)'],
+          [2, 6, 'レッドモンレーヴ', '牡7', 58, '酒井学', '1:06.6', '2', '13-11', '32.5', '67.0', 15, '500', '-18', '蛯名正義 (美浦)'],
+          [3, 8, 'ウインカーネリアン', '牡9', 58, '三浦皇成', '1:06.6', 'クビ', '4-4', '33.2', '19.4', 7, '516', '+3', '鹿戸雄一 (美浦)'],
+          [4, 1, 'パンジャタワー', '牡4', 58, '松山弘平', '1:06.7', 'アタマ', '4-4', '33.2', '5.0', 3, '486', '0', '橋口慎介 (栗東)'],
+          [5, 14, 'レイピア', '牡4', 58, '丸山元気', '1:07.0', '2', '7-7', '33.4', '19.8', 8, '516', '+6', '中竹和也 (栗東)'],
+          [6, 13, 'ナムラクレア', '牝7', 56, '浜中俊', '1:07.1', '1/2', '14-15', '32.7', '4.0', 2, '476', '-8', '長谷川浩 (栗東)'],
+          [7, 4, 'ダノンマッキンリー', '牡5', 58, '高杉吏麒', '1:07.2', 'クビ', '14-13', '33.0', '66.2', 14, '472', '0', '藤原英昭 (栗東)'],
+          [8, 3, 'エーティーマクフィ', '牡7', 58, '富田暁', '1:07.2', 'クビ', '8-8', '33.5', '16.9', 5, '476', '-6', '武英智 (栗東)'],
+          [9, 10, 'ママコチャ', '牝7', 56, '川田将雅', '1:07.3', '3/4', '16-16', '32.8', '8.6', 4, '492', '-2', '池江泰寿 (栗東)'],
+          [10, 17, 'ペアポルックス', '牡5', 58, '岩田康誠', '1:07.4', 'クビ', '12-13', '33.2', '36.5', 11, '478', '+4', '梅田智之 (栗東)'],
+          [11, 2, 'ビッグシーザー', '牡6', 58, '西村淳也', '1:07.4', 'クビ', '10-8', '33.7', '29.8', 10, '520', '0', '杉山晴紀 (栗東)'],
+          [12, 7, 'ヨシノイースター', '牡8', 58, '田辺裕信', '1:07.4', 'アタマ', '4-4', '33.9', '88.0', 16, '492', '+6', '中尾秀正 (栗東)'],
+          [13, 12, 'ピューロマジック', '牝5', 56, '北村友一', '1:07.7', '1.1/2', '2-2', '34.5', '117.6', 17, '456', '-2', '安田翔伍 (栗東)'],
+          [14, 5, 'ヤマニンアルリフラ', '牡5', 58, '団野大成', '1:07.7', 'クビ', '16-16', '33.2', '40.2', 12, '494', '-8', '斉藤崇史 (栗東)'],
+          [15, 15, 'インビンシブルパパ', '牡5', 58, '佐々木大', '1:07.9', '1', '1-1', '35.4', '26.1', 9, '522', '+8', '伊藤大士 (美浦)'],
+          [16, 11, 'ララマセラシオン', '牡5', 58, '丸田恭介', '1:08.2', '2', '18-18', '33.5', '63.9', 13, '530', '+4', '大竹正博 (美浦)'],
+          [17, 18, 'ジューンブレア', '牝5', 56, '武豊', '1:08.6', '2.1/2', '2-2', '35.4', '18.6', 6, '484', '-4', '武英智 (栗東)'],
+          [18, 16, 'フィオライア', '牝5', 56, '太宰啓介', '1:08.9', '2', '8-11', '34.8', '150.5', 18, '464', '-4', '柴田卓 (栗東)']
+        ],
+        '3': [
+          [1, 15, 'クロワデュノール', '牡4', 58, '北村友一', '1:57.6', '-', '8-8-6-4', '34.9', '2.5', 1, '522', '+10', '斉藤崇史 (栗東)'],
+          [2, 6, 'メイショウタバル', '牡5', 58, '武豊', '1:57.7', '3/4', '1-1-1-1', '35.6', '4.8', 3, '500', '-12', '石橋守 (栗東)'],
+          [3, 4, 'ダノンデサイル', '牡5', 58, '坂井瑠星', '1:57.9', '1', '6-6-6-7', '34.9', '3.9', 2, '516', '+2', '安田翔伍 (栗東)'],
+          [4, 14, 'タガノデュード', '牡5', 58, '古川吉洋', '1:57.9', 'クビ', '13-13-12-7', '34.8', '113.2', 13, '500', '+2', '宮徹 (栗東)'],
+          [5, 3, 'セイウンハーデス', '牡7', 58, '幸英明', '1:58.0', 'クビ', '3-4-3-4', '35.3', '64.9', 9, '474', '0', '橋口慎介 (栗東)'],
+          [6, 12, 'レーベンスティール', '牡6', 58, 'ルメール', '1:58.1', '3/4', '11-11-11-4', '35.2', '9.9', 5, '492', '+8', '田中博康 (美浦)'],
+          [7, 9, 'ヨーホーレイク', '牡8', 58, '西村淳也', '1:58.1', 'クビ', '8-8-9-11', '35.0', '68.0', 11, '530', '+2', '友道康夫 (栗東)'],
+          [8, 11, 'デビットバローズ', 'セ7', 58, '岩田望来', '1:58.3', '1', '6-6-6-7', '35.4', '58.9', 8, '502', '-12', '上村洋行 (栗東)'],
+          [9, 10, 'ボルドグフーシュ', '牡7', 58, '松山弘平', '1:58.6', '1.1/2', '15-14-14-13', '35.1', '162.1', 14, '516', '+6', '宮本博 (栗東)'],
+          [10, 5, 'ショウヘイ', '牡4', 58, '川田将雅', '1:58.8', '1.1/4', '5-4-3-3', '36.2', '6.1', 4, '476', '+6', '友道康夫 (栗東)'],
+          [11, 2, 'マテンロウレオ', '牡7', 58, '横山典弘', '1:58.9', '3/4', '12-12-12-12', '35.7', '66.7', 10, '492', '+4', '昆貢 (栗東)'],
+          [12, 1, 'サンストックトン', '牡7', 58, '高杉吏麒', '1:59.3', '2.1/2', '14-14-14-13', '35.7', '336.7', 15, '466', '-4', '堀内岳志 (美浦)'],
+          [13, 13, 'ファウストラーゼン', '牡4', 58, '岩田康誠', '2:00.6', '8', '2-2-2-2', '38.2', '102.1', 12, '454', '-8', '須貝尚介 (栗東)'],
+          [14, 8, 'エコロヴァルツ', '牡5', 58, '浜中俊', '2:00.8', '1.1/4', '8-8-9-7', '37.9', '45.4', 7, '496', '+4', '牧浦充徳 (栗東)'],
+          [15, 7, 'エコロディノス', '牡4', 58, '池添謙一', '2:08.4', '大', '3-3-3-13', '45.4', '44.9', 6, '478', '-8', '大久保龍 (栗東)']
+        ],
+        '4': [
+          [1, 15, 'スターアニス', '牝3', 55, '松山弘平', '1:31.5', '-', '9-9', '33.7', '2.9', 1, '480', '+2', '高野友和 (栗東)'],
+          [2, 5, 'ギャラボーグ', '牝3', 55, '西村淳也', '1:31.9', '2.1/2', '5-4', '34.4', '14.1', 5, '490', '-10', '杉山晴紀 (栗東)'],
+          [3, 11, 'ジッピーチューン', '牝3', 55, '北村友一', '1:32.0', '3/4', '17-17', '33.7', '79.3', 12, '422', '-6', '林徹 (美浦)'],
+          [4, 6, 'アイニードユー', '牝3', 55, '川田将雅', '1:32.1', 'クビ', '4-4', '34.7', '92.1', 13, '458', '-2', '吉村圭司 (栗東)'],
+          [5, 7, 'アランカール', '牝3', 55, '武豊', '1:32.1', 'アタマ', '17-17', '33.8', '8.1', 4, '430', '-2', '斉藤崇史 (栗東)'],
+          [6, 10, 'ナムラコスモス', '牝3', 55, '田口貫太', '1:32.1', 'クビ', '13-13', '34.1', '23.0', 7, '490', '+6', '大橋勇樹 (栗東)'],
+          [7, 2, 'サンアントワーヌ', '牝3', 55, '荻野極', '1:32.2', 'クビ', '7-7', '34.5', '64.8', 11, '462', '+2', '鹿戸雄一 (美浦)'],
+          [8, 4, 'エレガンスアスク', '牝3', 55, '岩田望来', '1:32.3', '1/2', '13-13', '34.3', '155.6', 14, '424', '-8', '田中克典 (栗東)'],
+          [9, 14, 'ドリームコア', '牝3', 55, 'ルメール', '1:32.3', 'クビ', '11-11', '34.4', '3.1', 2, '502', '0', '萩原清 (美浦)'],
+          [10, 16, 'ショウナンカリス', '牝3', 55, '池添謙一', '1:32.6', '1.1/2', '5-4', '35.1', '295.6', 17, '420', '0', '加藤士津 (美浦)'],
+          [11, 13, 'リリージョワ', '牝3', 55, '浜中俊', '1:32.6', 'クビ', '16-16', '34.4', '7.4', 3, '456', '+6', '武幸四郎 (栗東)'],
+          [12, 3, 'ディアダイヤモンド', '牝3', 55, '戸崎圭太', '1:32.8', '1', '9-9', '35.0', '16.4', 6, '462', '+2', '手塚貴久 (美浦)'],
+          [13, 12, 'スウィートハピネス', '牝3', 55, '高杉吏麒', '1:32.8', 'クビ', '13-15', '34.7', '29.0', 9, '440', '0', '北出成人 (栗東)'],
+          [14, 9, 'ルールザウェイヴ', '牝3', 55, '原優介', '1:33.0', '1', '2-2', '35.8', '205.7', 15, '422', '+2', '宮田敬介 (美浦)'],
+          [15, 17, 'ブラックチャリス', '牝3', 55, '津村明秀', '1:33.5', '3', '7-7', '35.8', '39.3', 10, '458', '-4', '武幸四郎 (栗東)'],
+          [16, 18, 'プレセピオ', '牝3', 55, '富田暁', '1:33.6', '1/2', '2-2', '36.3', '467.1', 18, '470', '0', '笹田和秀 (栗東)'],
+          [17, 1, 'フェスティバルヒル', '牝3', 55, '坂井瑠星', '1:33.6', 'ハナ', '11-11', '35.7', '24.0', 8, '448', '0', '四位洋文 (美浦)'],
+          [18, 8, 'ロンギングセリーヌ', '牝3', 55, '石橋脩', '1:34.5', '5', '1-1', '37.3', '209.2', 16, '490', '-6', '竹内正洋 (美浦)']
+        ],
+        '5': [
+          [1, 4, 'ロブチェン', '牡3', 57, '松山弘平', '1:56.5', '-', '1-1-1-1', '34.2', '4.0', 1, '520', '+2', '杉山晴紀 (栗東)'],
+          [2, 15, 'リアライズシリウス', '牡3', 57, '津村明秀', '1:56.7', '3/4', '2-2-2-2', '34.4', '6.2', 4, '528', '-2', '手塚貴久 (美浦)'],
+          [3, 9, 'ライヒスアドラー', '牡3', 57, '佐々木大', '1:56.8', '3/4', '10-9-9-8', '33.8', '23.4', 9, '510', '-2', '上原佑紀 (美浦)'],
+          [4, 5, 'アスクエジンバラ', '牡3', 57, '岩田康誠', '1:56.8', 'クビ', '5-5-3-3', '34.2', '42.8', 12, '458', '0', '福永祐一 (栗東)'],
+          [5, 6, 'フォルテアンジェロ', '牡3', 57, '荻野極', '1:57.0', '1.1/4', '17-16-15-13', '33.4', '32.8', 10, '450', '0', '上原佑紀 (美浦)'],
+          [6, 2, 'サウンドムーブ', '牡3', 57, '団野大成', '1:57.0', 'ハナ', '8-6-7-6', '34.1', '86.5', 17, '446', '-8', '斉藤崇史 (栗東)'],
+          [7, 12, 'グリーンエナジー', '牡3', 57, '戸崎圭太', '1:57.0', 'ハナ', '13-14-13-10', '33.6', '4.5', 2, '490', '0', '上原佑紀 (美浦)'],
+          [8, 10, 'ラージアンサンブル', '牡3', 57, '高杉吏麒', '1:57.1', '1/2', '6-6-7-8', '34.2', '193.4', 18, '470', '-2', '武井亮 (美浦)'],
+          [9, 3, 'サノノグレーター', '牡3', 57, '田辺裕信', '1:57.3', '1.1/4', '13-13-13-10', '33.9', '77.3', 14, '458', '+2', '尾形和幸 (美浦)'],
+          [10, 8, 'マテンロウゲイル', '牡3', 57, '横山和生', '1:57.5', '1', '15-17-17-13', '33.8', '10.8', 5, '494', '-8', '野中賢二 (栗東)'],
+          [11, 18, 'バステール', '牡3', 57, '川田将雅', '1:57.5', 'アタマ', '18-18-18-17', '33.6', '17.0', 6, '460', '+4', '斉藤崇史 (栗東)'],
+          [12, 14, 'ゾロアストロ', '牡3', 57, '岩田望来', '1:57.5', 'クビ', '15-14-15-15', '34.0', '35.6', 11, '468', '0', '宮田敬介 (美浦)'],
+          [13, 1, 'カヴァレリッツォ', '牡3', 57, 'レーン', '1:57.6', 'クビ', '3-3-3-3', '35.0', '6.1', 3, '482', '0', '吉岡辰弥 (栗東)'],
+          [14, 11, 'パントルナイーフ', '牡3', 57, 'ルメール', '1:57.8', '1.1/4', '12-12-11-17', '34.5', '18.8', 8, '510', '-2', '木村哲也 (美浦)'],
+          [15, 17, 'アドマイヤクワッズ', '牡3', 57, '坂井瑠星', '1:57.9', '1/2', '3-3-3-3', '35.4', '17.4', 7, '482', '+2', '友道康夫 (栗東)'],
+          [16, 13, 'アクロフェイズ', '牡3', 57, '西村淳也', '1:58.0', '3/4', '6-6-6-6', '35.2', '81.7', 16, '476', '0', '奥村豊 (栗東)'],
+          [17, 7, 'ロードフィレール', '牡3', 57, '武豊', '1:58.0', 'ハナ', '8-9-11-10', '34.8', '79.6', 15, '524', '0', '吉岡辰弥 (栗東)'],
+          [18, 16, 'アルトラムス', '牡3', 57, '横山武史', '1:58.8', '5', '10-9-9-15', '35.8', '50.2', 13, '468', '-6', '野中賢二 (栗東)']
+        ],
+        '6': [
+          [1, 7, 'クロワデュノール', '牡4', 58, '北村友一', '3:13.7', '-', '6-5-5-3', '34.9', '1.8', 1, '514', '-8', '斉藤崇史 (栗東)'],
+          [2, 15, 'ヴェルテンベルク', '牡6', 58, '松若風馬', '3:13.7', 'ハナ', '15-15-15-12', '34.3', '208.4', 12, '492', '+6', '宮本博 (栗東)'],
+          [3, 3, 'アドマイヤテラ', '牡5', 58, '武豊', '3:13.8', '1/2', '12-10-11-10', '34.7', '3.0', 2, '500', '-4', '友道康夫 (栗東)'],
+          [4, 4, 'アクアヴァーナル', '牝5', 56, '松山弘平', '3:13.9', '1/2', '8-8-7-6', '35.0', '26.4', 4, '478', '0', '四位洋文 (美浦)'],
+          [5, 12, 'ヘデントール', '牡5', 58, 'ルメール', '3:14.1', '1.1/4', '9-9-9-8', '35.1', '5.0', 3, '482', '0', '木村哲也 (美浦)'],
+          [6, 11, 'タガノデュード', '牡5', 58, 'レーン', '3:14.5', '2.1/2', '13-13-13-12', '35.2', '28.2', 5, '502', '+2', '宮徹 (栗東)'],
+          [7, 8, 'シンエンペラー', '牡5', 58, '岩田望来', '3:14.6', '3/4', '10-10-9-10', '35.5', '30.2', 6, '508', '0', '矢作芳人 (栗東)'],
+          [8, 13, 'ミステリーウェイ', 'セ8', 58, '松本大輝', '3:14.8', '1.1/4', '1-1-1-2', '36.5', '64.7', 8, '506', '+6', '小林真也 (栗東)'],
+          [9, 1, 'ヴェルミセル', '牝6', 56, '鮫島克駿', '3:15.0', '1.1/4', '6-7-7-6', '36.1', '111.6', 9, '470', '0', '吉村圭司 (栗東)'],
+          [10, 10, 'マイネルカンパーナ', '牡6', 58, '津村明秀', '3:15.3', '2', '4-5-3-3', '36.6', '143.3', 10, '418', '-4', '青木孝文 (美浦)'],
+          [11, 2, 'サンライズソレイユ', '牡5', 58, '池添謙一', '3:15.6', '1.1/2', '4-2-2-1', '37.3', '223.9', 13, '526', '-6', '矢作芳人 (栗東)'],
+          [12, 5, 'ケイアイサンデラ', 'セ6', 58, '藤懸貴志', '3:15.7', '1/2', '10-10-11-14', '36.3', '270.9', 14, '442', '+16', '小林真也 (栗東)'],
+          [13, 9, 'プレシャスデイ', '牡4', 58, '吉村誠之', '3:16.0', '1.3/4', '13-13-13-14', '36.6', '308.4', 15, '502', '-2', '伊坂重信 (美浦)'],
+          [14, 14, 'ホーエリート', '牝5', 56, '戸崎圭太', '3:16.1', '1/2', '2-2-3-3', '37.4', '45.4', 7, '482', '-4', '田島俊明 (美浦)'],
+          [15, 6, 'エヒト', '牡9', 58, '川田将雅', '3:16.3', '1.1/2', '3-4-5-8', '37.4', '147.4', 11, '466', '-4', '森秀行 (栗東)']
+        ],
+        '7': [
+          [1, 17, 'ロデオドライブ', '牡3', 57, 'レーン', '1:31.5', '-', '14-14', '33.3', '4.6', 1, '476', '0', '辻哲英 (美浦)'],
+          [2, 16, 'アスクイキゴミ', '牡3', 57, '戸崎圭太', '1:31.5', 'ハナ', '11-12', '33.5', '8.4', 4, '488', '-4', '藤原英昭 (栗東)'],
+          [3, 11, 'アドマイヤクワッズ', '牡3', 57, '坂井瑠星', '1:31.7', '1.1/4', '7-7', '34.2', '9.7', 6, '478', '-4', '友道康夫 (栗東)'],
+          [4, 8, 'ローベルクランツ', '牡3', 57, '松山弘平', '1:31.9', '1.1/2', '10-10', '34.1', '28.5', 10, '484', '0', '小林真也 (栗東)'],
+          [5, 7, 'ダイヤモンドノット', '牡3', 57, '川田将雅', '1:32.0', '1/2', '4-5', '34.8', '5.5', 3, '480', '+6', '福永祐一 (栗東)'],
+          [6, 15, 'レザベーション', '牡3', 57, '原優介', '1:32.0', 'クビ', '2-2', '35.0', '37.3', 11, '458', '0', '松下武士 (栗東)'],
+          [7, 9, 'サンダーストラック', '牡3', 57, 'ルメール', '1:32.1', 'アタマ', '6-5', '34.8', '17.0', 7, '528', '+10', '木村哲也 (美浦)'],
+          [8, 12, 'アンドゥーリル', '牡3', 57, '岩田望来', '1:32.2', '1/2', '13-12', '34.2', '19.7', 8, '468', '+6', '中内田充 (美浦)'],
+          [9, 10, 'エコロアルバ', '牡3', 57, '横山和生', '1:32.2', 'ハナ', '15-16', '33.7', '4.9', 2, '480', '+6', '田村康仁 (美浦)'],
+          [10, 14, 'バルセシート', '牡3', 57, '北村友一', '1:32.3', '3/4', '16-17', '33.5', '21.3', 9, '468', '+8', '松下武士 (栗東)'],
+          [11, 5, 'ギリーズボール', '牝3', 55, '西塚洸二', '1:32.3', 'アタマ', '11-10', '34.6', '46.2', 14, '422', '+8', '手塚貴久 (美浦)'],
+          [12, 4, 'カヴァレリッツォ', '牡3', 57, '西村淳也', '1:32.4', 'クビ', '7-7', '35.0', '9.3', 5, '474', '-8', '吉岡辰弥 (栗東)'],
+          [13, 6, 'ジーネキング', '牡3', 57, '斎藤新', '1:32.4', 'クビ', '7-7', '34.9', '43.7', 13, '490', '-4', '斎藤誠 (美浦)'],
+          [14, 3, 'オルネーロ', '牡3', 57, '津村明秀', '1:32.5', 'クビ', '17-14', '34.2', '63.2', 15, '498', '-6', '宮田敬介 (美浦)'],
+          [15, 18, 'フクチャンショウ', '牡3', 57, '横山武史', '1:33.1', '3.1/2', '17-17', '34.3', '38.5', 12, '450', '0', '加藤征弘 (美浦)'],
+          [16, 1, 'リゾートアイランド', '牡3', 57, '佐々木大', '1:33.4', '2', '4-4', '36.3', '159.8', 18, '510', '+2', '上原佑紀 (美浦)'],
+          [17, 2, 'ユウファラオ', '牡3', 57, '松若風馬', '1:33.5', '1/2', '1-1', '36.6', '135.7', 16, '486', '-8', '森秀行 (栗東)'],
+          [18, 13, 'ハッピーエンジェル', '牝3', 55, '三浦皇成', '1:33.7', '1', '2-2', '36.7', '144.4', 17, '432', '+4', '武市康男 (美浦)']
+        ],
+        '8': [
+          [1, 12, 'エンブロイダリー', '牝4', 56, 'ルメール', '1:30.9', '-', '6-6', '33.0', '1.9', 1, '492', '-4', '森一誠 (美浦)'],
+          [2, 8, 'カムニャック', '牝4', 56, '川田将雅', '1:31.1', '1.1/4', '7-7', '33.1', '5.3', 2, '492', '-6', '友道康夫 (栗東)'],
+          [3, 7, 'クイーンズウォーク', '牝5', 56, '西村淳也', '1:31.4', '1.1/2', '8-10', '33.1', '8.8', 3, '544', '+2', '中内田充 (美浦)'],
+          [4, 4, 'エリカエクスプレス', '牝4', 56, '武豊', '1:31.4', 'ハナ', '1-1', '34.1', '16.7', 5, '470', '-2', '杉山晴紀 (栗東)'],
+          [5, 9, 'ココナッツブラウン', '牝6', 56, '北村友一', '1:31.4', 'アタマ', '11-12', '32.9', '22.7', 7, '462', '+8', '上村洋行 (栗東)'],
+          [6, 16, 'ニシノティアモ', '牝5', 56, '津村明秀', '1:31.5', '3/4', '2-2', '34.1', '14.9', 4, '450', '+2', '上原佑紀 (美浦)'],
+          [7, 6, 'ラヴァンダ', '牝5', 56, '岩田望来', '1:31.6', 'クビ', '8-7', '33.6', '23.3', 8, '494', '+2', '中村直也 (栗東)'],
+          [8, 14, 'ジョスラン', '牝4', 56, '戸崎圭太', '1:31.6', 'アタマ', '8-9', '33.5', '26.2', 9, '478', '+6', '鹿戸雄一 (美浦)'],
+          [9, 3, 'マピュース', '牝4', 56, 'ゴンサル', '1:31.6', 'クビ', '3-5', '33.9', '83.6', 14, '498', '+4', '和田勇介 (美浦)'],
+          [10, 13, 'カナテープ', '牝7', 56, '松山弘平', '1:31.7', '1/2', '14-13', '33.0', '35.8', 10, '480', '+2', '堀宣行 (美浦)'],
+          [11, 11, 'ボンドガール', '牝5', 56, '丹内祐次', '1:31.7', 'ハナ', '11-11', '33.3', '39.4', 11, '450', '-4', '手塚貴久 (美浦)'],
+          [12, 17, 'パラディレーヌ', '牝4', 56, '坂井瑠星', '1:31.8', 'クビ', '13-13', '33.2', '39.8', 12, '504', '-6', '千田輝彦 (栗東)'],
+          [13, 15, 'アイサンサン', '牝4', 56, '幸英明', '1:31.8', 'クビ', '16-15', '32.9', '49.4', 13, '458', '0', '橋田宜長 (栗東)'],
+          [14, 5, 'ケリフレッドアスク', '牝4', 56, 'ディー', '1:31.9', '3/4', '16-17', '32.8', '97.7', 16, '450', '-2', '藤原英昭 (栗東)'],
+          [15, 2, 'ワイドラトゥール', '牝5', 56, '横山武史', '1:32.0', 'クビ', '14-15', '33.2', '149.0', 18, '446', '0', '藤原英昭 (栗東)'],
+          [16, 18, 'チェルヴィニア', '牝5', 56, 'レーン', '1:32.0', 'アタマ', '3-3', '34.4', '19.9', 6, '502', '+4', '木村哲也 (美浦)'],
+          [17, 1, 'カピリナ', '牝5', 56, '横山典弘', '1:32.0', 'クビ', '3-3', '34.4', '127.3', 17, '474', '-2', '田島俊明 (美浦)'],
+          [18, 10, 'ドロップオブライト', '牝7', 56, '松若風馬', '1:32.1', 'アタマ', '18-18', '32.9', '87.6', 15, '438', '-2', '福永祐一 (栗東)']
+        ],
+        '9': [
+          [1, 16, 'ジュウリョクピエロ', '牝3', 55, '今村聖奈', '2:25.6', '-', '13-12-14-14', '33.1', '10.9', 5, '464', '-2', '寺島良 (栗東)'],
+          [2, 12, 'ドリームコア', '牝3', 55, 'ルメール', '2:25.6', 'クビ', '4-4-3-3', '34.3', '5.2', 3, '498', '-4', '大竹正博 (美浦)'],
+          [3, 18, 'ラフターラインズ', '牝3', 55, 'レーン', '2:25.6', 'クビ', '10-12-12-13', '33.3', '3.2', 2, '462', '+2', '小笠倫弘 (美浦)'],
+          [4, 5, 'リアライズルミナス', '牝3', 55, '津村明秀', '2:25.7', 'クビ', '10-10-2-2', '34.6', '99.7', 10, '492', '+2', '橋口慎介 (栗東)'],
+          [5, 17, 'スウィートハピネス', '牝3', 55, '高杉吏麒', '2:25.7', 'アタマ', '3-3-6-5', '34.1', '112.0', 11, '438', '-2', '北出成人 (栗東)'],
+          [6, 2, 'レイクラシック', '牝3', 55, 'ディー', '2:25.7', 'クビ', '13-12-12-10', '33.6', '124.4', 12, '490', '0', '新谷功一 (美浦)'],
+          [7, 13, 'エンネ', '牝3', 55, '坂井瑠星', '2:25.9', '3/4', '17-17-17-17', '33.1', '7.6', 4, '512', '-4', '吉岡辰弥 (栗東)'],
+          [8, 3, 'アランカール', '牝3', 55, '武豊', '2:26.0', '1/2', '10-10-11-10', '33.9', '12.5', 6, '434', '+4', '斉藤崇史 (栗東)'],
+          [9, 15, 'アンジュドジョワ', '牝3', 55, '岩田望来', '2:26.0', 'クビ', '15-15-15-14', '33.4', '33.7', 7, '450', '+14', '福永祐一 (栗東)'],
+          [10, 9, 'トリニティ', '牝3', 55, '西村淳也', '2:26.2', '1.1/4', '1-1-1-1', '35.4', '59.2', 9, '446', '-4', '安田翔伍 (栗東)'],
+          [11, 4, 'ロングトールサリー', '牝3', 55, '戸崎圭太', '2:26.3', 'クビ', '8-7-10-8', '34.4', '260.5', 14, '490', '-6', '福永祐一 (栗東)'],
+          [12, 10, 'スターアニス', '牝3', 55, '松山弘平', '2:26.4', '1', '4-6-8-10', '34.3', '3.0', 1, '480', '0', '高野友和 (栗東)'],
+          [13, 14, 'ソルパッサーレ', '牝3', 55, '浜中俊', '2:26.8', '2', '15-15-15-14', '34.3', '309.3', 15, '460', '+4', '四位洋文 (美浦)'],
+          [14, 11, 'アメティスタ', '牝3', 55, '横山武史', '2:26.9', '3/4', '2-2-3-3', '35.5', '157.7', 13, '460', '+2', '牧浦充徳 (栗東)'],
+          [15, 8, 'スマートプリエール', '牝3', 55, '原優介', '2:27.0', 'クビ', '8-7-8-8', '35.2', '37.9', 8, '472', '0', '大久保龍 (栗東)'],
+          [16, 1, 'ミツカネベネラ', '牝3', 55, '横山和生', '2:27.0', 'ハナ', '18-18-18-18', '33.9', '471.8', 18, '438', '+2', '鈴木伸尋 (美浦)'],
+          [17, 6, 'ロンギングセリーヌ', '牝3', 55, '石橋脩', '2:27.9', '5', '4-4-6-5', '36.3', '356.1', 16, '498', '+8', '竹内正洋 (美浦)'],
+          [18, 7, 'スタニングレディ', '牝3', 55, '三浦皇成', '2:28.0', 'クビ', '7-7-5-5', '36.4', '364.2', 17, '448', '-8', '高木登 (美浦)']
+        ],
+        '10': [
+          [1, 17, 'ロブチェン', '牡3', 57, '松山弘平', '2:22.7', '-', '9-10-9-8', '33.2', '2.7', 1, '522', '+2', '杉山晴紀 (栗東)'],
+          [2, 13, 'パントルナイーフ', '牡3', 57, 'ルメール', '2:22.7', 'アタマ', '6-6-6-5', '33.4', '9.1', 4, '514', '+4', '木村哲也 (美浦)'],
+          [3, 5, 'バステール', '牡3', 57, '川田将雅', '2:22.8', '3/4', '18-18-2-2', '34.0', '34.0', 11, '464', '+4', '斉藤崇史 (栗東)'],
+          [4, 14, 'ゴーイントゥスカイ', '牡3', 57, '武豊', '2:22.8', 'ハナ', '15-14-15-15', '32.8', '6.6', 3, '498', '-6', '上原佑紀 (美浦)'],
+          [5, 2, 'マテンロウゲイル', '牡3', 57, '横山和生', '2:23.0', '1', '3-4-8-8', '33.4', '42.8', 12, '496', '+2', '野中賢二 (栗東)'],
+          [6, 4, 'アルトラムス', '牡3', 57, '横山武史', '2:23.1', '1/2', '13-10-17-15', '33.1', '249.9', 16, '474', '+6', '野中賢二 (栗東)'],
+          [7, 11, 'リアライズシリウス', '牡3', 57, '津村明秀', '2:23.1', 'ハナ', '2-2-1-1', '34.6', '5.7', 2, '528', '0', '手塚貴久 (美浦)'],
+          [8, 1, 'ライヒスアドラー', '牡3', 57, '佐々木大', '2:23.1', 'ハナ', '3-3-6-5', '33.8', '11.7', 5, '514', '+4', '上原佑紀 (美浦)'],
+          [9, 6, 'コンジェスタス', '牡3', 57, '西村淳也', '2:23.1', 'アタマ', '6-9-9-8', '33.6', '13.2', 6, '508', '-10', '高野友和 (栗東)'],
+          [10, 12, 'アスクエジンバラ', '牡3', 57, '岩田康誠', '2:23.2', '3/4', '3-4-4-5', '33.9', '22.3', 9, '466', '+8', '福永祐一 (栗東)'],
+          [11, 9, 'アウダーシア', '牡3', 57, 'レーン', '2:23.3', '1/2', '17-17-15-17', '33.2', '16.1', 7, '500', '0', '手塚貴久 (美浦)'],
+          [12, 15, 'フォルテアンジェロ', '牡3', 57, '荻野極', '2:23.6', '2', '11-13-12-11', '33.8', '18.9', 8, '448', '-2', '上原佑紀 (美浦)'],
+          [13, 7, 'メイショウハチコウ', '牡3', 57, 'ディー', '2:23.7', 'クビ', '1-1-2-2', '34.9', '74.4', 13, '512', '+2', '牧浦充徳 (栗東)'],
+          [14, 18, 'エムズビギン', '牡3', 57, 'ゴンサル', '2:23.7', 'クビ', '6-6-4-4', '34.7', '188.7', 15, '508', '0', '友道康夫 (栗東)'],
+          [15, 3, 'ケントン', '牡3', 57, '丹内祐次', '2:24.2', '2.1/2', '9-6-9-11', '34.4', '304.7', 18, '496', '+2', '田島俊明 (美浦)'],
+          [16, 16, 'グリーンエナジー', '牡3', 57, '戸崎圭太', '2:24.2', 'ハナ', '11-10-12-11', '34.4', '25.4', 10, '482', '-8', '上原佑紀 (美浦)'],
+          [17, 8, 'ショウナンガルフ', '牡3', 57, '浜中俊', '2:24.2', 'ハナ', '15-14-17-17', '34.1', '281.8', 17, '486', '+6', '須貝尚介 (栗東)'],
+          [18, 10, 'ジャスティンビスタ', '牡3', 57, '坂井瑠星', '2:24.6', '2.1/2', '13-14-12-11', '34.7', '89.2', 14, '526', '+10', '吉岡辰弥 (栗東)']
+        ],
+        '11': [
+          [1, 4, 'シックスペンス', '牡5', 58, '武豊', '1:32.1', '-', '2-2', '33.9', '21.6', 8, '504', '+4', '田中博康 (美浦)'],
+          [2, 11, 'ワールズエンド', '牡5', 58, '津村明秀', '1:32.1', 'クビ', '1-1', '34.2', '15.1', 7, '470', '0', '池添学 (栗東)'],
+          [2, 14, 'ガイアフォース', '牡7', 58, '横山武史', '1:32.1', '同着', '8-9', '33.0', '2.9', 1, '498', '0', '杉山晴紀 (栗東)'],
+          [4, 13, 'セイウンハーデス', '牡7', 58, '幸英明', '1:32.1', 'クビ', '3-3', '33.7', '11.0', 6, '478', '+4', '橋口慎介 (栗東)'],
+          [5, 16, 'パンジャタワー', '牡4', 58, '松山弘平', '1:32.2', 'クビ', '6-6', '33.4', '8.3', 4, '488', '+2', '橋口慎介 (栗東)'],
+          [6, 3, 'オフトレイル', '牡5', 58, '菅原明良', '1:32.3', '1/2', '8-7', '33.3', '35.7', 10, '462', '-4', '吉村圭司 (栗東)'],
+          [7, 1, 'レーベンスティール', '牡6', 58, '戸崎圭太', '1:32.6', '2', '4-4', '33.9', '7.9', 3, '496', '+4', '田中博康 (美浦)'],
+          [8, 15, 'ドラゴンブースト', '牡4', 58, '丹内祐次', '1:32.7', 'クビ', '11-11', '33.4', '47.2', 13, '476', '+2', '藤野健太 (栗東)'],
+          [9, 17, 'トロヴァトーレ', '牡5', 58, 'ルメール', '1:32.8', '3/4', '15-14', '33.1', '4.9', 2, '508', '-2', '鹿戸雄一 (美浦)'],
+          [10, 6, 'ステレンボッシュ', '牝5', 56, 'レーン', '1:32.9', '3/4', '7-7', '33.9', '9.5', 5, '478', '0', '宮田敬介 (美浦)'],
+          [11, 10, 'ルクソールカフェ', '牡4', 58, '岩田望来', '1:32.9', 'クビ', '16-14', '33.2', '90.6', 14, '544', '0', '堀宣行 (美浦)'],
+          [12, 8, 'シャンパンカラー', '牡6', 58, '岩田康誠', '1:33.1', '1', '11-12', '33.6', '35.7', 11, '512', '-4', '田中剛 (美浦)'],
+          [13, 9, 'ウォーターリヒト', '牡5', 58, '高杉吏麒', '1:33.1', 'クビ', '16-17', '33.1', '30.8', 9, '472', '-6', '石橋守 (栗東)'],
+          [14, 12, 'シリウスコルト', '牡5', 58, '横山和生', '1:33.2', 'クビ', '13-12', '33.6', '181.2', 15, '496', '+2', '田中勝春 (美浦)'],
+          [15, 5, 'サクラトゥジュール', 'セ9', 58, '佐々木大', '1:33.3', '1', '10-9', '34.1', '197.4', 16, '496', '-14', '堀宣行 (美浦)'],
+          [16, 2, 'ロングラン', 'セ8', 58, 'ゴンサル', '1:33.4', '1/2', '4-4', '34.7', '392.1', 17, '480', '+6', '和田勇介 (美浦)'],
+          [17, 7, 'スズハローム', '牡6', 58, '藤懸貴志', '1:33.9', '3', '14-14', '34.2', '44.7', 12, '468', '+4', '牧田和弥 (栗東)']
+        ],
+        '12': [
+          [1, 16, 'メイショウタバル', '牡5', 58, '武豊', '2:12.1', '-', '2-2-2-2', '35.3', '3.9', 2, '502', '+2', '石橋守 (栗東)'],
+          [2, 5, 'クロワデュノール', '牡4', 58, '北村友一', '2:12.2', 'クビ', '5-5-4-3', '35.2', '2.5', 1, '514', '0', '斉藤崇史 (栗東)'],
+          [3, 1, 'ダノンデサイル', '牡5', 58, '戸崎圭太', '2:12.6', '2.1/2', '11-12-12-9', '35.0', '7.0', 3, '520', '+4', '安田翔伍 (栗東)'],
+          [4, 9, 'コスモキュランダ', '牡5', 58, '横山武史', '2:12.6', 'アタマ', '1-1-1-1', '36.1', '41.6', 8, '518', '-2', '加藤士津 (美浦)'],
+          [5, 8, 'タガノデュード', '牡5', 58, '高杉吏麒', '2:13.5', '5', '18-18-17-16', '35.2', '58.8', 10, '504', '+2', '宮徹 (栗東)'],
+          [6, 7, 'ファミリータイム', '牡5', 58, '幸英明', '2:13.5', 'ハナ', '9-9-8-7', '36.1', '287.4', 18, '482', '0', '石坂公一 (栗東)'],
+          [7, 17, 'レガレイラ', '牝5', 56, 'ルメール', '2:13.7', '1', '11-12-10-9', '35.9', '7.8', 5, '484', '+2', '木村哲也 (美浦)'],
+          [8, 10, 'ジューンテイク', '牡5', 58, '松山弘平', '2:13.7', 'クビ', '7-7-5-3', '36.7', '222.6', 15, '500', '+2', '武英智 (栗東)'],
+          [9, 2, 'ミュージアムマイル', '牡4', 58, 'レーン', '2:13.7', 'アタマ', '6-6-7-6', '36.5', '7.1', 4, '504', '+2', '高柳大輔 (栗東)'],
+          [10, 12, 'マイネルエンペラー', '牡6', 58, '川田将雅', '2:13.8', 'クビ', '3-3-3-3', '36.9', '121.0', 13, '486', '-4', '清水久詞 (美浦)'],
+          [11, 11, 'シンエンペラー', '牡5', 58, '坂井瑠星', '2:14.2', '2.1/2', '14-14-14-15', '36.2', '85.0', 12, '500', '-8', '矢作芳人 (栗東)'],
+          [12, 4, 'ミクニインスパイア', '牡4', 58, '丹内祐次', '2:14.5', '2', '7-7-10-11', '36.8', '56.1', 9, '498', '-6', '林徹 (美浦)'],
+          [13, 14, 'スティンガーグラス', '牡5', 58, '岩田望来', '2:14.8', '1.3/4', '17-17-17-17', '36.3', '151.6', 14, '480', '-4', '友道康夫 (栗東)'],
+          [14, 13, 'シェイクユアハート', '牡6', 58, '古川吉洋', '2:14.9', '3/4', '15-14-14-11', '36.9', '84.0', 11, '456', '-6', '宮徹 (栗東)'],
+          [15, 6, 'ビザンチンドリーム', '牡5', 58, '西村淳也', '2:15.1', '1.1/2', '16-16-12-11', '37.1', '29.6', 7, '466', '0', '坂口智康 (栗東)'],
+          [16, 18, 'ミステリーウェイ', 'セ8', 58, '松本大輝', '2:15.2', 'クビ', '11-10-8-11', '37.6', '229.4', 16, '498', '-8', '小林真也 (栗東)'],
+          [17, 3, 'シュガークン', '牡5', 58, '吉村誠之', '2:15.3', '3/4', '3-3-5-7', '38.0', '250.2', 17, '522', '+4', '清水久詞 (美浦)'],
+          ['中', 15, 'マイユニバース', '牡4', 58, '横山典弘', '-', '-', '10-10-14-18', '-', '19.1', 6, '480', '+12', '武幸四郎 (栗東)']
+        ]
+      };
+
+      // 出走可能馬名プール（カテゴリ別）
+      const POOLS = {
+        '3yo-male': [
+          'ロブチェン', 'パントルナイーフ', 'バステール', 'ゴーイントゥスカイ', 'マテンロウゲイル',
+          'アルトラムス', 'リアライズシリウス', 'ライヒスアドラー', 'コンジェスタス', 'アスクエジンバラ',
+          'アウダーシア', 'フォルテアンジェロ', 'メイショウハチコウ', 'エムズビギン', 'ケントン',
+          'グリーンエナジー', 'ショナンガルフ', 'ジャスティンビスタ', 'シュガークン', 'ジューンテイク'
+        ],
+        '3yo-female': [
+          'スターアニス', 'ギャラボーグ', 'ジッピーチューン', 'ジュウリョクピエロ', 'ドリームコア',
+          'ラフターラインズ', 'レガレイラ', 'ステレンボッシュ', 'チェルヴィニア', 'ライトバック',
+          'コガネノソラ', 'アドマイヤベル', 'クイーンズウォーク', 'クリスマスパレード', 'キャットファイト'
+        ],
+        'older': [
+          'クロワデュノール', 'メイショウタバル', 'ダノンデサイル', 'ドウデュース', 'ソールオリエンス',
+          'タスティエーラ', 'ブローザホーン', 'ベラジオオペラ', 'ジャスティンミラノ', 'ジャンタルマンタル',
+          'シックスペンス', 'ワールズエンド', 'ガイアフォース', 'サトノレーヴ', 'レッドモンレーヴ',
+          'コスタノヴァ', 'ウィルソンテソーロ', 'ダブルハートボンド', 'ウインカーネリアン', 'ヴェルテンベルク',
+          'アドマイヤテラ', 'テーオーロイヤル', 'ロデオドライブ', 'アスクイキゴミ', 'アドマイヤクワッズ',
+          'エンブロイダリー', 'カムニャック', 'テンハッピーローズ', 'ソウルラッシュ', 'ロマンチックウォリアー'
+        ]
+      };
+
+      const STABLES_POOL = [
+        '杉山晴紀 (栗東)', '木村哲也 (美浦)', '中内田充 (栗東)', '国枝栄 (美浦)', '矢作芳人 (栗東)',
+        '友道康夫 (栗東)', '手塚貴久 (美浦)', '堀宣行 (美浦)', '高野友和 (栗東)', '斉藤崇史 (栗東)'
+      ];
+
+      const JOCKEYS_POOL = [
+        '川田将雅', 'C.ルメール', '武豊', '松山弘平', '坂井瑠星', '戸崎圭太', '横山武史', 
+        'M.デムーロ', '西村淳也', '岩田望来', '浜中俊', '菅原明良', '津村明秀', '北村友一'
+      ];
+
+      let currentFilter = 'all';
+      let searchQuery = '';
+      let countdownInterval = null;
+
+      // ----------------------------------
+      // 初期化処理
+      // ----------------------------------
+      document.addEventListener('DOMContentLoaded', () => {
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+        startNextRaceCountdown();
+        renderRaces();
+        initEventListeners();
+      });
+
+      function refreshIcons() {
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      }
+
+      // ----------------------------------
+      // カウントダウンタイマー
+      // ----------------------------------
+      function startNextRaceCountdown() {
+        const timerDays = document.getElementById('timer-days');
+        const timerHours = document.getElementById('timer-hours');
+        const timerMinutes = document.getElementById('timer-minutes');
+        const timerSeconds = document.getElementById('timer-seconds');
+        
+        const nextRaceName = document.getElementById('next-race-name');
+        const nextRaceMeta = document.getElementById('next-race-meta');
+        
+        function updateCountdown() {
+          const now = new Date();
+          
+          // 現在時刻より後のレースを探す
+          const upcomingRaces = G1_RACES
+            .filter(r => new Date(r.date) > now)
+            .sort((a, b) => new Date(a.date) - new Date(b.date));
+            
+          if (upcomingRaces.length === 0) {
+            nextRaceName.innerText = '2026年 G1レース全日程終了';
+            nextRaceMeta.innerText = '全レースのご声援ありがとうございました';
+            timerDays.innerText = '00';
+            timerHours.innerText = '00';
+            timerMinutes.innerText = '00';
+            timerSeconds.innerText = '00';
+            if (countdownInterval) clearInterval(countdownInterval);
+            return;
+          }
+          
+          const nextRace = upcomingRaces[0];
+          const raceTime = new Date(nextRace.date);
+          const diffMs = raceTime - now;
+          
+          nextRaceName.innerText = nextRace.name;
+          
+          const formattedDate = new Date(nextRace.date).toLocaleDateString('ja-JP', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            weekday: 'short'
+          });
+          nextRaceMeta.innerText = `開催日: ${formattedDate} 15:40発走 | ${nextRace.location}競馬場 (${nextRace.course})`;
+          
+          const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((diffMs % (1000 * 60)) / 1000);
+          
+          timerDays.innerText = String(days).padStart(2, '0');
+          timerHours.innerText = String(hours).padStart(2, '0');
+          timerMinutes.innerText = String(minutes).padStart(2, '0');
+          timerSeconds.innerText = String(seconds).padStart(2, '0');
+        }
+        
+        updateCountdown();
+        countdownInterval = setInterval(updateCountdown, 1000);
+      }
+
+      // ----------------------------------
+      // レースグリッドのレンダリング
+      // ----------------------------------
+      function renderRaces() {
+        const container = document.getElementById('race-grid-container');
+        if (!container) return;
+        container.innerHTML = '';
+        
+        const filtered = G1_RACES.filter(r => {
+          const matchesFilter = currentFilter === 'all' || r.status === currentFilter;
+          const matchesSearch = r.name.includes(searchQuery) || r.location.includes(searchQuery);
+          return matchesFilter && matchesSearch;
+        });
+        
+        updateTabCounts();
+        
+        if (filtered.length === 0) {
+          container.innerHTML = `<div class="text-muted" style="grid-column: 1/-1; text-align: center; padding: 48px 0;">該当するレースが見つかりません。</div>`;
+          return;
+        }
+        
+        filtered.forEach(r => {
+          const raceDate = new Date(r.date);
+          const dateStr = `${raceDate.getMonth() + 1}/${raceDate.getDate()}`;
+          const weekdayStr = ['日', '月', '火', '水', '木', '金', '土'][raceDate.getDay()];
+          
+          let locClass = '';
+          if (r.location === '東京') locClass = 'loc-tokyo';
+          else if (r.location === '中山') locClass = 'loc-nakayama';
+          else if (r.location === '京都') locClass = 'loc-kyoto';
+          else if (r.location === '阪神') locClass = 'loc-hanshin';
+          else if (r.location === '中京') locClass = 'loc-chukyo';
+          
+          const card = document.createElement('div');
+          card.className = `race-card ${locClass}`;
+          card.setAttribute('data-id', r.id);
+          
+          let footerContent = '';
+          if (r.status === 'finished') {
+            footerContent = `
+              <div class="card-result-preview">
+                <div class="winner-row">
+                  <svg class="winner-crown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M2 4l3 5 7-6 7 6 3-5v14c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4zm2 5.5l1.6-2.7 2.1 3.5 4.3-3.7 4.3 3.7 2.1-3.5L20 9.5V18H4V9.5z"/></svg>
+                  <span class="winner-name">${r.winner}</span>
+                  <span class="text-muted">(${r.winnerJockey})</span>
+                </div>
+                <div class="card-action-text">結果詳細を見る <i data-lucide="arrow-right"></i></div>
+              </div>
+            `;
+          } else {
+            footerContent = `
+              <div class="card-result-preview">
+                <span class="text-muted" style="font-size: 13px;">発走予定: 15:40</span>
+                <div class="card-action-text" style="color: var(--gold);">レース概要を見る <i data-lucide="arrow-right"></i></div>
+              </div>
+            `;
+          }
+          
+          card.innerHTML = `
+            <div class="card-header-row">
+              <span class="race-date-badge">${dateStr} (${weekdayStr})</span>
+              <span class="race-status-badge ${r.status}">
+                ${r.status === 'finished' ? '開催済' : '今後の予定'}
+              </span>
+            </div>
+            <h3>${r.name}</h3>
+            <div class="race-meta-info">
+              <span>${r.location}競馬場</span>
+              <span>|</span>
+              <span>${r.course}</span>
+            </div>
+            <div class="race-card-footer">
+              ${footerContent}
+            </div>
+          `;
+          
+          container.appendChild(card);
+        });
+        
+        refreshIcons();
+      }
+
+      function updateTabCounts() {
+        const allCount = G1_RACES.length;
+        const finishedCount = G1_RACES.filter(r => r.status === 'finished').length;
+        const upcomingCount = G1_RACES.filter(r => r.status === 'upcoming').length;
+        
+        const countAllEl = document.getElementById('count-all');
+        const countFinishedEl = document.getElementById('count-finished');
+        const countUpcomingEl = document.getElementById('count-upcoming');
+
+        if (countAllEl) countAllEl.innerText = allCount;
+        if (countFinishedEl) countFinishedEl.innerText = finishedCount;
+        if (countUpcomingEl) countUpcomingEl.innerText = upcomingCount;
+      }
+
+      // ----------------------------------
+      // レース結果補完エンジン（本物データ適用）
+      // ----------------------------------
+      function hydrateRaceResults(race) {
+        if (race.hydratedResults) return race.hydratedResults;
+
+        // 本物のデータベースに存在すればマッピング
+        if (RESULTS_DATA[race.id]) {
+          race.hydratedResults = RESULTS_DATA[race.id].map(mapArrayToResultObj);
+          return race.hydratedResults;
+        }
+
+        // 以降はupcomingなどデータ未登録の場合の自動補完
+        const totalStarters = 16;
+        const results = [];
+        const is3yo = race.type ? race.type.startsWith('3yo') : false;
+        const isFemale = race.type ? race.type.endsWith('female') : false;
+        
+        let horsePool = is3yo ? (isFemale ? [...POOLS['3yo-female']] : [...POOLS['3yo-male']]) : [...POOLS['older']];
+        horsePool = [...new Set(horsePool)].filter(h => h !== race.winner && h !== race.second && h !== race.third);
+
+        let sexAgeLabel = is3yo ? (isFemale ? '牝3' : '牡3') : (isFemale ? '牝4' : '牡5');
+        let jockeyLoad = is3yo ? (isFemale ? 55 : 57) : (isFemale ? 56 : 58);
+
+        const baseSeconds = 120.0; // デフォルト基準
+
+        // 1着
+        results.push({
+          rank: 1, gate: race.winnerGate || 1, horseName: race.winner || '勝ち馬', sexAge: sexAgeLabel,
+          jockeyLoad, jockey: race.winnerJockey || 'J.騎手', time: race.time || '2:00.0', margin: '-',
+          cornerSequence: '5-4-3-3', last3F: '34.2', odds: '3.5', popularity: 1,
+          weight: '498', weightDiff: '+2', stable: STABLES_POOL[0]
+        });
+
+        // 2着
+        results.push({
+          rank: 2, gate: race.secondGate || 2, horseName: race.second || '2着馬', sexAge: sexAgeLabel,
+          jockeyLoad, jockey: race.secondJockey || 'J.騎手', time: formatSecondsToTime(baseSeconds + 0.2), margin: '1馬身',
+          cornerSequence: '7-6-5-4', last3F: '34.1', odds: '4.8', popularity: 2,
+          weight: '488', weightDiff: '-2', stable: STABLES_POOL[1]
+        });
+
+        // 3着
+        results.push({
+          rank: 3, gate: race.thirdGate || 3, horseName: race.third || '3着馬', sexAge: sexAgeLabel,
+          jockeyLoad, jockey: race.thirdJockey || 'J.騎手', time: formatSecondsToTime(baseSeconds + 0.4), margin: '1 1/4馬身',
+          cornerSequence: '3-3-2-2', last3F: '34.5', odds: '6.5', popularity: 3,
+          weight: '504', weightDiff: '+4', stable: STABLES_POOL[2]
+        });
+
+        let usedGates = new Set([race.winnerGate || 1, race.secondGate || 2, race.thirdGate || 3]);
+        let currentSeconds = baseSeconds + 0.4;
+
+        for (let r = 4; totalStarters >= r; r++) {
+          const horseName = horsePool[r - 4] || `ダミーホース${r}`;
+          const gate = getUniqueGate(usedGates, totalStarters);
+          const jockey = JOCKEYS_POOL[r % JOCKEYS_POOL.length];
+          
+          const step = 0.2;
+          currentSeconds += step;
+          const time = formatSecondsToTime(currentSeconds);
+
+          results.push({
+            rank: r, gate: gate, horseName: horseName, sexAge: sexAgeLabel,
+            jockeyLoad, jockey: jockey, time: time, margin: '1馬身',
+            cornerSequence: '8-8-9-9', last3F: '35.0', odds: (10.0 + r * 5.0).toFixed(1), popularity: r,
+            weight: '490', weightDiff: '0', stable: STABLES_POOL[r % STABLES_POOL.length]
+          });
+        }
+
+        race.hydratedResults = results;
+        return results;
+      }
+
+      function mapArrayToResultObj(arr) {
+        return {
+          rank: arr[0],
+          gate: arr[1],
+          horseName: arr[2],
+          sexAge: arr[3],
+          jockeyLoad: arr[4],
+          jockey: arr[5],
+          time: arr[6],
+          margin: arr[7],
+          cornerSequence: arr[8],
+          last3F: arr[9],
+          odds: arr[10],
+          popularity: arr[11],
+          weight: arr[12],
+          weightDiff: arr[13],
+          stable: arr[14]
+        };
+      }
+
+      function getUniqueGate(usedGates, max) {
+        let gate = Math.floor(Math.random() * max) + 1;
+        while (usedGates.has(gate)) {
+          gate = Math.floor(Math.random() * max) + 1;
+        }
+        usedGates.add(gate);
+        return gate;
+      }
+
+      // ----------------------------------
+      // NetKeiba本物 JRA 2026年 G1 払戻金データベース
+      // ----------------------------------
+      const PAYOUTS_DATA = {
+        '1': [
+          { type: '単勝', comb: '12', val: '¥340', pop: '2' },
+          { type: '複勝', comb: '12<br>14<br>9', val: '¥160<br>¥180<br>¥130', pop: '2<br>3<br>1' },
+          { type: '枠連', comb: '6-7', val: '¥1,080', pop: '4' },
+          { type: '馬連', comb: '12-14', val: '¥1,520', pop: '4' },
+          { type: '馬単', comb: '12→14', val: '¥2,540', pop: '5' },
+          { type: 'ワイド', comb: '12-14<br>9-12<br>9-14', val: '¥540<br>¥240<br>¥320', pop: '4<br>1<br>3' },
+          { type: '三連複', comb: '9-12-14', val: '¥1,850', pop: '2' },
+          { type: '三連単', comb: '12→14→9', val: '¥7,650', pop: '11' }
+        ],
+        '2': [
+          { type: '単勝', comb: '9', val: '¥350', pop: '1' },
+          { type: '複勝', comb: '9<br>6<br>8', val: '¥180<br>¥1,520<br>¥430', pop: '1<br>15<br>7' },
+          { type: '枠連', comb: '3-5', val: '¥5,220', pop: '14' },
+          { type: '馬連', comb: '6-9', val: '¥12,840', pop: '31' },
+          { type: '馬単', comb: '9→6', val: '¥17,450', pop: '42' },
+          { type: 'ワイド', comb: '6-9<br>8-9<br>6-8', val: '¥3,580<br>¥780<br>¥8,920', pop: '32<br>6<br>68' },
+          { type: '三連複', comb: '6-8-9', val: '¥24,820', pop: '64' },
+          { type: '三連単', comb: '9→6→8', val: '¥64,500', pop: '182' }
+        ],
+        '3': [
+          { type: '単勝', comb: '15', val: '¥250', pop: '1' },
+          { type: '複勝', comb: '15<br>6<br>4', val: '¥130<br>¥180<br>¥160', pop: '1<br>3<br>2' },
+          { type: '枠連', comb: '4-8', val: '¥820', pop: '3' },
+          { type: '馬連', comb: '6-15', val: '¥1,020', pop: '3' },
+          { type: '馬単', comb: '15→6', val: '¥1,850', pop: '4' },
+          { type: 'ワイド', comb: '6-15<br>4-15<br>4-6', val: '¥380<br>¥320<br>¥540', pop: '3<br>2<br>5' },
+          { type: '三連複', comb: '4-6-15', val: '¥1,220', pop: '2' },
+          { type: '三連単', comb: '15→6→4', val: '¥25,400', pop: '68' }
+        ],
+        '4': [
+          { type: '単勝', comb: '15', val: '¥290', pop: '1' },
+          { type: '複勝', comb: '15<br>5<br>11', val: '¥150<br>¥320<br>¥1,480', pop: '1<br>5<br>12' },
+          { type: '枠連', comb: '3-7', val: '¥1,280', pop: '4' },
+          { type: '馬連', comb: '5-15', val: '¥2,420', pop: '7' },
+          { type: '馬単', comb: '15→5', val: '¥3,850', pop: '10' },
+          { type: 'ワイド', comb: '5-15<br>11-15<br>5-11', val: '¥780<br>¥3,120<br>¥5,820', pop: '7<br>32<br>58' },
+          { type: '三連複', comb: '5-11-15', val: '¥18,900', pop: '45' },
+          { type: '三連単', comb: '15→5→11', val: '¥18,900', pop: '98' }
+        ],
+        '5': [
+          { type: '単勝', comb: '4', val: '¥400', pop: '1' },
+          { type: '複勝', comb: '4<br>15<br>9', val: '¥160<br>¥240<br>¥520', pop: '1<br>4<br>9' },
+          { type: '枠連', comb: '2-8', val: '¥1,020', pop: '3' },
+          { type: '馬連', comb: '4-15', val: '¥1,850', pop: '5' },
+          { type: '馬単', comb: '4→15', val: '¥2,950', pop: '7' },
+          { type: 'ワイド', comb: '4-15<br>4-9<br>9-15', val: '¥580<br>¥1,240<br>¥2,150', pop: '5<br>11<br>24' },
+          { type: '三連複', comb: '4-9-15', val: '¥6,820', pop: '18' },
+          { type: '三連単', comb: '4→15→9', val: '¥24,500', pop: '68' }
+        ],
+        '6': [
+          { type: '単勝', comb: '7', val: '¥180', pop: '1' },
+          { type: '複勝', comb: '7<br>15<br>3', val: '¥110<br>¥2,540<br>¥140', pop: '1<br>12<br>2' },
+          { type: '枠連', comb: '4-8', val: '¥3,240', pop: '10' },
+          { type: '馬連', comb: '7-15', val: '¥18,450', pop: '38' },
+          { type: '馬単', comb: '7→15', val: '¥22,450', pop: '48' },
+          { type: 'ワイド', comb: '7-15<br>3-7<br>3-15', val: '¥4,580<br>¥180<br>¥6,120', pop: '38<br>1<br>52' },
+          { type: '三連複', comb: '3-7-15', val: '¥12,850', pop: '28' },
+          { type: '三連単', comb: '7→15→3', val: '¥41,200', pop: '98' }
+        ],
+        '7': [
+          { type: '単勝', comb: '17', val: '¥460', pop: '1' },
+          { type: '複勝', comb: '17<br>16<br>11', val: '¥180<br>¥240<br>¥280', pop: '1<br>4<br>6' },
+          { type: '枠連', comb: '8-8', val: '¥1,520', pop: '5' },
+          { type: '馬連', comb: '16-17', val: '¥2,140', pop: '6' },
+          { type: '馬単', comb: '17→16', val: '¥3,850', pop: '9' },
+          { type: 'ワイド', comb: '16-17<br>11-17<br>11-16', val: '¥720<br>¥890<br>¥1,220', pop: '6<br>8<br>12' },
+          { type: '三連複', comb: '11-16-17', val: '¥5,220', pop: '14' },
+          { type: '三連単', comb: '17→16→11', val: '¥38,500', pop: '88' }
+        ],
+        '8': [
+          { type: '単勝', comb: '12', val: '¥190', pop: '1' },
+          { type: '複勝', comb: '12<br>8<br>7', val: '¥110<br>¥160<br>¥210', pop: '1<br>2<br>3' },
+          { type: '枠連', comb: '4-6', val: '¥330', pop: '1' },
+          { type: '馬連', comb: '8-12', val: '¥570', pop: '1' },
+          { type: '馬単', comb: '12→8', val: '¥810', pop: '1' },
+          { type: 'ワイド', comb: '8-12<br>7-12<br>7-8', val: '¥280<br>¥350<br>¥870', pop: '1<br>2<br>5' },
+          { type: '三連複', comb: '7-8-12', val: '¥1,530', pop: '2' },
+          { type: '三連単', comb: '12→8→7', val: '¥3,670', pop: '1' }
+        ],
+        '9': [
+          { type: '単勝', comb: '16', val: '¥1,090', pop: '5' },
+          { type: '複勝', comb: '16<br>12<br>18', val: '¥330<br>¥190<br>¥140', pop: '5<br>3<br>2' },
+          { type: '枠連', comb: '6-8', val: '¥700', pop: '2' },
+          { type: '馬連', comb: '12-16', val: '¥3,210', pop: '2' },
+          { type: '馬単', comb: '16→12', val: '¥8,450', pop: '2' },
+          { type: 'ワイド', comb: '12-16<br>16-18<br>12-18', val: '¥1,150<br>¥790<br>¥390', pop: '2<br>3<br>1' },
+          { type: '三連複', comb: '12-16-18', val: '¥3,220', pop: '2' },
+          { type: '三連単', comb: '16→12→18', val: '¥30,330', pop: '8' }
+        ],
+        '10': [
+          { type: '単勝', comb: '17', val: '¥270', pop: '1' },
+          { type: '複勝', comb: '17<br>13<br>5', val: '¥130<br>¥250<br>¥650', pop: '1<br>4<br>11' },
+          { type: '枠連', comb: '6-8', val: '¥1,120', pop: '4' },
+          { type: '馬連', comb: '13-17', val: '¥1,460', pop: '4' },
+          { type: '馬単', comb: '17→13', val: '¥2,290', pop: '4' },
+          { type: 'ワイド', comb: '13-17<br>5-17<br>5-13', val: '¥540<br>¥1,580<br>¥2,820', pop: '4<br>12<br>18' },
+          { type: '三連複', comb: '5-13-17', val: '¥14,280', pop: '49' },
+          { type: '三連単', comb: '17→13→5', val: '¥47,050', pop: '142' }
+        ],
+        '11': [
+          { type: '単勝', comb: '4', val: '¥2,160', pop: '8' },
+          { type: '複勝', comb: '4<br>11<br>14', val: '¥520<br>¥380<br>¥130', pop: '8<br>7<br>1' },
+          { type: '枠連', comb: '2-6<br>2-7', val: '¥4,520<br>¥1,280', pop: '12<br>4' },
+          { type: '馬連', comb: '4-11<br>4-14', val: '¥12,850<br>¥1,920', pop: '31<br>4' },
+          { type: '馬単', comb: '4→11<br>4→14', val: '¥24,580<br>¥3,580', pop: '62<br>9' },
+          { type: 'ワイド', comb: '4-11<br>4-14<br>11-14', val: '¥3,850<br>¥520<br>¥480', pop: '31<br>3<br>2' },
+          { type: '三連複', comb: '4-11-14', val: '¥8,900', pop: '22' },
+          { type: '三連単', comb: '4→11→14<br>4→14→11', val: '¥89,000<br>¥48,500', pop: '180<br>98' }
+        ],
+        '12': [
+          { type: '単勝', comb: '16', val: '¥390', pop: '2' },
+          { type: '複勝', comb: '16<br>5<br>1', val: '¥150<br>¥120<br>¥190', pop: '2<br>1<br>3' },
+          { type: '枠連', comb: '3-8', val: '¥340', pop: '1' },
+          { type: '馬連', comb: '5-16', val: '¥430', pop: '1' },
+          { type: '馬単', comb: '16→5', val: '¥810', pop: '2' },
+          { type: 'ワイド', comb: '5-16<br>1-16<br>1-5', val: '¥190<br>¥320<br>¥240', pop: '1<br>3<br>2' },
+          { type: '三連複', comb: '1-5-16', val: '¥540', pop: '1' },
+          { type: '三連単', comb: '16→5→1', val: '¥1,440', pop: '2' }
+        ]
+      };
+
+      // ----------------------------------
+      // 払戻表の完全対応・生成
+      // ----------------------------------
+      function hydratePayouts(race) {
+        if (race.hydratedPayouts) return race.hydratedPayouts;
+
+        // 本物データベース PAYOUTS_DATA から完全に引っ張る
+        if (PAYOUTS_DATA[race.id]) {
+          race.hydratedPayouts = PAYOUTS_DATA[race.id];
+          return race.hydratedPayouts;
+        }
+
+        // バックアップ用自動算出（upcomingなどの場合）
+        const results = hydrateRaceResults(race);
+        const r1 = results[0];
+        const r2 = results[1];
+        const r3 = results[2];
+
+        const baseWin = race.payouts ? race.payouts.win : 500;
+        const baseTrifecta = race.payouts ? race.payouts.trifecta : 5000;
+        
+        const winVal = baseWin;
+        const place1 = Math.max(110, Math.floor(baseWin * 0.4));
+        const place2 = Math.max(120, Math.floor(place1 * 1.3));
+        const place3 = Math.max(130, Math.floor(place2 * 1.5));
+        const winPop = 250 > baseWin ? 1 : 500 > baseWin ? 2 : 4;
+
+        const placements = [
+          { type: '単勝', comb: `${r1.gate}`, val: `¥${winVal.toLocaleString()}`, pop: `${winPop}` },
+          { type: '複勝', comb: `${r1.gate}<br>${r2.gate}<br>${r3.gate}`, val: `¥${place1.toLocaleString()}<br>¥${place2.toLocaleString()}<br>¥${place3.toLocaleString()}`, pop: `1<br>2<br>3` },
+          { type: '枠連', comb: '枠複', val: `¥${Math.floor(baseWin * 1.5).toLocaleString()}`, pop: `${winPop + 1}` },
+          { type: '馬連', comb: `${Math.min(r1.gate, r2.gate)} - ${Math.max(r1.gate, r2.gate)}`, val: `¥${Math.floor(baseWin * 2.5).toLocaleString()}`, pop: `${winPop + 2}` },
+          { type: '馬単', comb: `${r1.gate} → ${r2.gate}`, val: `¥${Math.floor(baseWin * 4.2).toLocaleString()}`, pop: `${winPop + 3}` },
+          { type: 'ワイド', comb: `${Math.min(r1.gate, r2.gate)} - ${Math.max(r1.gate, r2.gate)}<br>${Math.min(r1.gate, r3.gate)} - ${Math.max(r1.gate, r3.gate)}<br>${Math.min(r2.gate, r3.gate)} - ${Math.max(r2.gate, r3.gate)}`, val: `¥${Math.floor(baseWin * 0.9).toLocaleString()}<br>¥${Math.floor(baseWin * 1.8).toLocaleString()}<br>¥${Math.floor(baseWin * 2.5).toLocaleString()}`, pop: `2<br>4<br>6` },
+          { type: '三連複', comb: `${[r1.gate, r2.gate, r3.gate].sort((a,b)=>a-b).join(' - ')}`, val: `¥${baseTrifecta.toLocaleString()}`, pop: `${Math.floor(baseTrifecta / 350)}` },
+          { type: '三連単', comb: `${r1.gate} → ${r2.gate} → ${r3.gate}`, val: `¥${Math.floor(baseTrifecta * 4.8).toLocaleString()}`, pop: `${Math.floor(baseTrifecta * 4.8 / 380)}` }
+        ];
+
+        race.hydratedPayouts = placements;
+        return placements;
+      }
+
+      // ----------------------------------
+      // レース展開（通過順）生成
+      // ----------------------------------
+      function getRacePaceSequence(race) {
+        const results = hydrateRaceResults(race);
+        const corners = [[], [], [], []];
+        results.forEach(res => {
+          const seq = res.cornerSequence.split('-');
+          for (let i = 0; 4 > i; i++) {
+            corners[i].push({ horse: res.gate, pos: Number(seq[i] || res.rank) });
+          }
+        });
+
+        const output = [];
+        for (let i = 0; 4 > i; i++) {
+          corners[i].sort((a, b) => a.pos - b.pos);
+          const seqStr = corners[i].map(c => c.horse).join('-');
+          output.push({
+            label: `${i + 1}コーナー`,
+            sequence: seqStr
+          });
+        }
+        return output;
+      }
+
+      function getWaku(gate, total) {
+        if (8 >= total) return gate;
+        if (total === 18) {
+          if (2 >= gate) return 1;
+          if (4 >= gate) return 2;
+          if (6 >= gate) return 3;
+          if (8 >= gate) return 4;
+          if (10 >= gate) return 5;
+          if (12 >= gate) return 6;
+          if (15 >= gate) return 7;
+          return 8;
+        }
+        if (total === 17) {
+          if (2 >= gate) return 1;
+          if (4 >= gate) return 2;
+          if (6 >= gate) return 3;
+          if (8 >= gate) return 4;
+          if (10 >= gate) return 5;
+          if (12 >= gate) return 6;
+          if (14 >= gate) return 7;
+          return 8;
+        }
+        if (total === 16) {
+          if (2 >= gate) return 1;
+          if (4 >= gate) return 2;
+          if (6 >= gate) return 3;
+          if (8 >= gate) return 4;
+          if (10 >= gate) return 5;
+          if (12 >= gate) return 6;
+          if (14 >= gate) return 7;
+          return 8;
+        }
+        if (total === 15) {
+          if (2 >= gate) return 1;
+          if (4 >= gate) return 2;
+          if (6 >= gate) return 3;
+          if (8 >= gate) return 4;
+          if (10 >= gate) return 5;
+          if (12 >= gate) return 6;
+          if (13 >= gate) return 7;
+          return 8;
+        }
+        return Math.min(8, Math.ceil(gate / 2));
+      }
+
+      // ----------------------------------
+      // レース詳細モーダルの表示
+      // ----------------------------------
+      function openRaceDetail(id) {
+        const race = G1_RACES.find(r => r.id === id);
+        if (!race) return;
+        
+        const modal = document.getElementById('modal-race-detail');
+        const title = document.getElementById('detail-modal-title');
+        const body = document.getElementById('detail-modal-body');
+        
+        title.innerText = race.name;
+        
+        const raceDate = new Date(race.date);
+        const formattedDate = raceDate.toLocaleDateString('ja-JP', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          weekday: 'short'
+        });
+
+        let innerHTML = '';
+
+        if (race.status === 'finished') {
+          const results = hydrateRaceResults(race);
+          const payouts = hydratePayouts(race);
+          const pace = getRacePaceSequence(race);
+
+          let tableRows = '';
+          results.forEach(r => {
+            let rankClass = 'rank-other';
+            if (r.rank === 1) rankClass = 'rank-1';
+            else if (r.rank === 2) rankClass = 'rank-2';
+            else if (r.rank === 3) rankClass = 'rank-3';
+
+            let rowHighlight = '';
+            if (r.rank === 1) rowHighlight = 'row-rank-1';
+            else if (r.rank === 2) rowHighlight = 'row-rank-2';
+            else if (r.rank === 3) rowHighlight = 'row-rank-3';
+
+            const wakuNum = getWaku(r.gate, results.length);
+
+            tableRows += `
+              <tr class="${rowHighlight}">
+                <td><span class="rank-badge ${rankClass}">${r.rank}</span></td>
+                <td style="text-align: center;"><span class="waku-badge waku-${wakuNum}">${r.gate}</span></td>
+                <td style="font-weight: 600;">${r.horseName}</td>
+                <td>${r.sexAge}</td>
+                <td>${r.jockeyLoad}kg</td>
+                <td>${r.jockey}</td>
+                <td style="font-family: monospace;">${r.time}</td>
+                <td>${r.margin}</td>
+                <td style="font-family: monospace;">${r.cornerSequence}</td>
+                <td style="font-family: monospace; font-weight: bold; color: var(--gold);">${r.last3F}</td>
+                <td style="font-family: monospace;">${r.odds}</td>
+                <td>${r.popularity}人</td>
+                <td>${r.weight === '-' ? '-' : `${r.weight} (${r.weightDiff})`}</td>
+                <td style="font-size: 11px; color: var(--text-muted);">${r.stable}</td>
+              </tr>
+            `;
+          });
+
+          let payoutRows = '';
+          payouts.forEach(p => {
+            payoutRows += `
+              <div class="payout-item">
+                <span class="payout-type">${p.type}</span>
+                <span class="payout-comb">${p.comb}</span>
+                <span class="payout-value">${p.val}</span>
+                <span class="payout-type" style="font-size: 11px;">${p.pop}人</span>
+              </div>
+            `;
+          });
+
+          let paceRows = '';
+          pace.forEach(p => {
+            paceRows += `
+              <div class="pace-item">
+                <span class="corner-label">${p.label}:</span>
+                <span class="corner-sequence" style="white-space: normal; word-break: break-all;">${p.sequence}</span>
+              </div>
+            `;
+          });
+
+          innerHTML = `
+            <div class="detail-main-flow">
+              <div class="detail-meta-list">
+                <div class="detail-meta-item">
+                  <span class="detail-meta-label">開催日 / コース</span>
+                  <span class="detail-meta-value">${formattedDate} (15:40発走) / ${race.location}競馬場</span>
+                </div>
+                <div class="detail-meta-item">
+                  <span class="detail-meta-label">天候 / 馬場状態</span>
+                  <span class="detail-meta-value">${race.weather} / ${race.trackCondition}</span>
+                </div>
+                <div class="detail-meta-item">
+                  <span class="detail-meta-label">芝クッション値</span>
+                  <span class="detail-meta-value">${race.cushionValue}</span>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="detail-section-title">全頭成績表</h3>
+                <div class="table-scroll-container">
+                  <table class="result-table">
+                    <thead>
+                      <tr>
+                        <th style="width: 40px; text-align: center;">着順</th>
+                        <th style="width: 40px; text-align: center;">馬番</th>
+                        <th>馬名</th>
+                        <th>性齢</th>
+                        <th>斤量</th>
+                        <th>騎手</th>
+                        <th>タイム</th>
+                        <th>着差</th>
+                        <th>通過順</th>
+                        <th>上がり3F</th>
+                        <th>単勝オッズ</th>
+                        <th>人気</th>
+                        <th>馬体重(増減)</th>
+                        <th>厩舎</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${tableRows}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- レース展開 ＆ 払戻金一覧の下部2カラムエリア -->
+              <div class="detail-sub-grid">
+                <div class="pace-container" style="background-color: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px;">
+                  <h3 class="detail-section-title" style="color: var(--primary); border-left-color: var(--primary);">レース展開 (通過順)</h3>
+                  <div class="pace-flow">
+                    ${paceRows}
+                  </div>
+                </div>
+
+                <div class="payouts-container" style="background-color: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px;">
+                  <h3 class="detail-section-title">払戻金一覧</h3>
+                  <div class="payouts-grid">
+                    ${payoutRows}
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+
+        } else {
+          innerHTML = `
+            <div class="detail-meta-list">
+              <div class="detail-meta-item">
+                <span class="detail-meta-label">開催日</span>
+                <span class="detail-meta-value">${formattedDate} (15:40発走)</span>
+              </div>
+              <div class="detail-meta-item">
+                <span class="detail-meta-label">開催場 / コース</span>
+                <span class="detail-meta-value">${race.location}競馬場 | ${race.course}</span>
+              </div>
+            </div>
+            <h3 class="detail-section-title">レース概要 ＆ 見どころ</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 20px;">
+              2026年度の最強馬を決める最高峰のG1競走。今年の出走予定メンバーも非常に強力で、春のクラシック戦線を沸かせた俊英たちと、古馬の実績馬が激突する白熱した展開が期待されます。出走馬および枠順の確定は開催週の木曜日（または金曜日）に発表予定です。
+            </p>
+            <div class="payout-item" style="justify-content: center; background-color: var(--primary-glow); border-color: var(--primary); color: var(--primary); font-weight: 600;">
+              <i data-lucide="bell" style="width: 16px; height: 16px; margin-right: 8px;"></i> 出走投票や最新のオッズ情報は確定次第公開されます。
+            </div>
+          `;
+        }
+        
+        body.innerHTML = innerHTML;
+        modal.classList.add('active');
+        
+        refreshIcons();
+      }
+
+      function closeModal() {
+        const modal = document.getElementById('modal-race-detail');
+        if (modal) modal.classList.remove('active');
+      }
+
+      function formatSecondsToTime(seconds) {
+        if (isNaN(seconds)) return '-';
+        const m = Math.floor(seconds / 60);
+        const s = (seconds % 60).toFixed(1);
+        return m > 0 ? `${m}:${s.padStart(4, '0')}` : `${s}`;
+      }
+
+      // ----------------------------------
+      // イベントリスナー
+      // ----------------------------------
+      function initEventListeners() {
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        tabBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            tabBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentFilter = btn.getAttribute('data-filter');
+            renderRaces();
+          });
+        });
+
+        const searchInput = document.getElementById('race-search');
+        if (searchInput) {
+          searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value;
+            renderRaces();
+          });
+        }
+
+        const gridContainer = document.getElementById('race-grid-container');
+        if (gridContainer) {
+          gridContainer.addEventListener('click', (e) => {
+            const card = e.target.closest('.race-card');
+            if (!card) return;
+            const id = card.getAttribute('data-id');
+            openRaceDetail(id);
+          });
+        }
+
+        const modal = document.getElementById('modal-race-detail');
+        if (modal) {
+          const btnClose = document.getElementById('btn-close-modal');
+          const backdrop = modal.querySelector('.modal-backdrop');
+          
+          if (btnClose) btnClose.addEventListener('click', closeModal);
+          if (backdrop) backdrop.addEventListener('click', closeModal);
+        }
+      }
+    </script>
+  </body>
+</html>
