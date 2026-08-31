@@ -234,6 +234,153 @@ const RESULTS_DATA = {
         ]
       };
 
+      const HISTORICAL_DATA = {
+        '1': [
+          [2025, 'コスタノヴァ', 'R.キング', '1:35.5', 2, '木村哲也 (美浦)'],
+          [2024, 'ペプチドナイル', '藤岡佑介', '1:35.7', 11, '武英智 (栗東)'],
+          [2023, 'レモンポップ', '坂井瑠星', '1:35.6', 1, '田中博康 (美浦)'],
+          [2022, 'カフェファラオ', '福永祐一', '1:33.8', 2, '堀宣行 (美浦)'],
+          [2021, 'カフェファラオ', 'C.ルメール', '1:34.4', 1, '堀宣行 (美浦)'],
+          [2020, 'モズアスコット', 'C.ルメール', '1:35.2', 1, '矢作芳人 (栗東)'],
+          [2019, 'インティ', '武豊', '1:35.6', 1, '野中賢二 (栗東)'],
+          [2018, 'ノンコノユメ', '内田博幸', '1:36.0', 4, '加藤征弘 (美浦)'],
+          [2017, 'ゴールドドリーム', 'M.デムーロ', '1:35.1', 2, '平田修 (栗東)'],
+          [2016, 'モーニン', 'M.デムーロ', '1:34.0', 2, '石坂正 (栗東)']
+        ],
+        '2': [
+          [2025, 'サトノレーヴ', 'J.モレイラ', '1:07.9', 2, '堀宣行 (美浦)'],
+          [2024, 'マッドクール', '坂井瑠星', '1:08.9', 6, '池添学 (栗東)'],
+          [2023, 'ファストフォース', '団野大成', '1:11.5', 12, '西村真幸 (栗東)'],
+          [2022, 'ナランフレグ', '丸田恭介', '1:08.3', 8, '宗像義忠 (美浦)'],
+          [2021, 'ダノンスマッシュ', '川田将雅', '1:09.2', 2, '安田隆行 (栗東)'],
+          [2020, 'モズスーパーフレア', '松若風馬', '1:08.7', 9, '音無秀孝 (栗東)'],
+          [2019, 'ミスターメロディ', '福永祐一', '1:07.3', 3, '藤原英昭 (栗東)'],
+          [2018, 'ファインニードル', '川田将雅', '1:08.5', 2, '高橋義忠 (栗東)'],
+          [2017, 'セイウンコウセイ', '幸英明', '1:08.7', 5, '上原博之 (美浦)'],
+          [2016, 'ビッグアーサー', '福永祐一', '1:06.7', 1, '藤岡健一 (栗東)']
+        ],
+        '3': [
+          [2025, 'ベラジオオペラ', '横山和生', '1:56.2', 2, '上村洋行 (栗東)'],
+          [2024, 'ベラジオオペラ', '横山和生', '1:58.2', 2, '上村洋行 (栗東)'],
+          [2023, 'ジャックドール', '武豊', '1:57.4', 2, '藤岡健一 (栗東)'],
+          [2022, 'ポタジェ', '吉田隼人', '1:58.4', 8, '友道康夫 (栗東)'],
+          [2021, 'レイパパレ', '川田将雅', '2:01.6', 4, '高野友和 (栗東)'],
+          [2020, 'ラッキーライラック', 'M.デムーロ', '1:58.4', 2, '松永幹夫 (栗東)'],
+          [2019, 'アルアイン', '北村友一', '2:01.0', 9, '池江泰寿 (栗東)'],
+          [2018, 'スワーヴリチャード', 'M.デムーロ', '1:58.2', 1, '庄野靖志 (栗東)'],
+          [2017, 'キタサンブラック', '武豊', '1:58.9', 1, '清水久詞 (栗東)'],
+          [2016, 'アンビシャス', '横山典弘', '1:59.3', 2, '音無秀孝 (栗東)']
+        ],
+        '4': [
+          [2025, 'エンブロイダリー', 'J.モレイラ', '1:33.1', 3, '森一誠 (美浦)'],
+          [2024, 'ステレンボッシュ', 'J.モレイラ', '1:32.2', 2, '国枝栄 (美浦)'],
+          [2023, 'リバティアイランド', '川田将雅', '1:32.1', 1, '中内田充 (栗東)'],
+          [2022, 'スターズオンアース', '川田将雅', '1:32.9', 7, '高柳瑞樹 (美浦)'],
+          [2021, 'ソダシ', '吉田隼人', '1:31.1', 2, '須貝尚介 (栗東)'],
+          [2020, 'デアリングタクト', '松山弘平', '1:36.1', 2, '杉山晴紀 (栗東)'],
+          [2019, 'グランアレグリア', 'C.ルメール', '1:32.7', 2, '藤沢和雄 (美浦)'],
+          [2018, 'アーモンドアイ', 'C.ルメール', '1:33.1', 2, '国枝栄 (美浦)'],
+          [2017, 'レーヌミノル', '池添謙一', '1:34.5', 8, '本田優 (栗東)'],
+          [2016, 'ジュエラー', 'M.デムーロ', '1:33.4', 3, '藤岡健一 (栗東)']
+        ],
+        '5': [
+          [2025, 'ミュージアムマイル', 'J.モレイラ', '1:57.0', 3, '高柳大輔 (栗東)'],
+          [2024, 'ジャスティンミラノ', '戸崎圭太', '1:57.1', 2, '友道康夫 (栗東)'],
+          [2023, 'ソールオリエンス', '横山武史', '2:00.6', 2, '手塚貴久 (美浦)'],
+          [2022, 'ジオグリフ', '福永祐一', '1:59.7', 5, '木村哲也 (美浦)'],
+          [2021, 'エフフォーリア', '横山武史', '2:00.6', 2, '鹿戸雄一 (美浦)'],
+          [2020, 'コントレイル', '福永祐一', '2:00.7', 1, '矢作芳人 (栗東)'],
+          [2019, 'サートゥルナーリア', 'C.ルメール', '1:58.1', 1, '角居勝彦 (栗東)'],
+          [2018, 'エポカドーロ', '戸崎圭太', '2:00.8', 7, '藤原英昭 (栗東)'],
+          [2017, 'アルアイン', '松山弘平', '1:57.8', 9, '池江泰寿 (栗東)'],
+          [2016, 'ディーマジェスティ', '初美雅', '1:57.9', 8, '二ノ宮敬宇 (美浦)']
+        ],
+        '6': [
+          [2025, 'ヘデントール', 'D.レーン', '3:14.0', 1, '木村哲也 (美浦)'],
+          [2024, 'テーオーロイヤル', '菱田裕二', '3:14.2', 1, '岡田稲男 (栗東)'],
+          [2023, 'ジャスティンパレス', 'C.ルメール', '3:16.1', 2, '杉山晴紀 (栗東)'],
+          [2022, 'タイトルホルダー', '横山和生', '3:16.2', 2, '栗田徹 (美浦)'],
+          [2021, 'ワールドプレミア', '福永祐一', '3:14.7', 3, '友道康夫 (栗東)'],
+          [2020, 'フィエールマン', 'C.ルメール', '3:16.5', 1, '手塚貴久 (美浦)'],
+          [2019, 'フィエールマン', 'C.ルメール', '3:15.0', 1, '手塚貴久 (美浦)'],
+          [2018, 'レインボーライン', '岩田康誠', '3:16.2', 2, '浅見秀一 (栗東)'],
+          [2017, 'キタサンブラック', '武豊', '3:12.5', 1, '清水久詞 (栗東)'],
+          [2016, 'キタサンブラック', '武豊', '3:15.3', 2, '清水久詞 (栗東)']
+        ],
+        '7': [
+          [2025, 'パンジャタワー', '松山弘平', '1:31.7', 9, '橋口慎介 (栗東)'],
+          [2024, 'ジャンタルマンタル', '川田将雅', '1:32.4', 2, '高野友和 (栗東)'],
+          [2023, 'シャンパンカラー', '内田博幸', '1:33.8', 9, '田中剛 (美浦)'],
+          [2022, 'ダノンスコーピオン', '川田将雅', '1:32.3', 4, '安田隆行 (栗東)'],
+          [2021, 'シュネルマイスター', 'C.ルメール', '1:31.6', 2, '手塚貴久 (美浦)'],
+          [2020, 'ラウダシオン', 'M.デムーロ', '1:32.5', 9, '斉藤崇史 (栗東)'],
+          [2019, 'アドマイヤマーズ', 'M.デムーロ', '1:32.4', 2, '友道康夫 (栗東)'],
+          [2018, 'ケイアイノーテック', '藤岡佑介', '1:32.8', 6, '平田修 (栗東)'],
+          [2017, 'アエロリット', '横山典弘', '1:32.3', 2, '菊沢隆徳 (美浦)'],
+          [2016, 'メジャーエンブレム', 'C.ルメール', '1:32.8', 1, '田村康仁 (美浦)']
+        ],
+        '8': [
+          [2025, 'アスコリピチェーノ', 'C.ルメール', '1:32.1', 1, '黒岩陽一 (美浦)'],
+          [2024, 'テンハッピーローズ', '津村明秀', '1:31.8', 14, '高柳大輔 (栗東)'],
+          [2023, 'ソングライン', '戸崎圭太', '1:32.2', 4, '林徹 (美浦)'],
+          [2022, 'ソダシ', '吉田隼人', '1:32.2', 4, '須貝尚介 (栗東)'],
+          [2021, 'グランアレグリア', 'C.ルメール', '1:31.0', 1, '藤沢和雄 (美浦)'],
+          [2020, 'アーモンドアイ', 'C.ルメール', '1:30.6', 1, '国枝栄 (美浦)'],
+          [2019, 'ノームコア', 'D.レーン', '1:30.5', 5, '萩原清 (美浦)'],
+          [2018, 'ジュールポレール', '幸英明', '1:32.3', 8, '西園正都 (栗東)'],
+          [2017, 'アドマイヤリード', 'C.ルメール', '1:33.9', 6, '須貝尚介 (栗東)'],
+          [2016, 'ストレイトガール', '戸崎圭太', '1:31.5', 7, '藤原英昭 (栗東)']
+        ],
+        '9': [
+          [2025, 'カムニャック', 'A.シュタルケ', '2:25.7', 4, '友道康夫 (栗東)'],
+          [2024, 'チェルヴィニア', 'C.ルメール', '2:24.0', 2, '木村哲也 (美浦)'],
+          [2023, 'リバティアイランド', '川田将雅', '2:23.1', 1, '中内田充 (栗東)'],
+          [2022, 'スターズオンアース', 'C.ルメール', '2:23.9', 3, '高柳瑞樹 (美浦)'],
+          [2021, 'ユーバーレーベン', 'M.デムーロ', '2:24.5', 3, '手塚貴久 (美浦)'],
+          [2020, 'デアリングタクト', '松山弘平', '2:24.4', 1, '杉山晴紀 (栗東)'],
+          [2019, 'ラヴズオンリーユー', 'M.デムーロ', '2:22.8', 1, '矢作芳人 (栗東)'],
+          [2018, 'アーモンドアイ', 'C.ルメール', '2:23.8', 1, '国枝栄 (美浦)'],
+          [2017, 'ソウルスターリング', 'C.ルメール', '2:24.1', 1, '藤沢和雄 (美浦)'],
+          [2016, 'シンハライト', '池添謙一', '2:25.0', 1, '石坂正 (栗東)']
+        ],
+        '10': [
+          [2025, 'クロワデュノール', '北村友一', '2:23.7', 1, '斉藤崇史 (栗東)'],
+          [2024, 'ダノンデサイル', '横山典弘', '2:24.3', 9, '安田翔伍 (栗東)'],
+          [2023, 'タスティエーラ', 'D.レーン', '2:25.2', 4, '堀宣行 (美浦)'],
+          [2022, 'ドウデュース', '武豊', '2:21.9', 3, '友道康夫 (栗東)'],
+          [2021, 'シャフリヤール', '福永祐一', '2:22.5', 4, '藤原英昭 (栗東)'],
+          [2020, 'コントレイル', '福永祐一', '2:24.1', 1, '矢作芳人 (栗東)'],
+          [2019, 'ロジャーバローズ', '浜中俊', '2:22.6', 12, '角居勝彦 (栗東)'],
+          [2018, 'ワグネリアン', '福永祐一', '2:23.6', 5, '友道康夫 (栗東)'],
+          [2017, 'レイデオロ', 'C.ルメール', '2:26.9', 2, '藤沢和雄 (美浦)'],
+          [2016, 'マカヒキ', '川田将雅', '2:24.0', 3, '友道康夫 (栗東)']
+        ],
+        '11': [
+          [2025, 'ジャンタルマンタル', '川田将雅', '1:32.7', 2, '高野友和 (栗東)'],
+          [2024, 'ロマンチックウォリアー', 'J.マクドナルド', '1:32.3', 1, 'C.シャム (香港)'],
+          [2023, 'ソングライン', '戸崎圭太', '1:31.4', 4, '林徹 (美浦)'],
+          [2022, 'ソングライン', '池添謙一', '1:32.3', 4, '林徹 (美浦)'],
+          [2021, 'ダノンキングリー', '川田将雅', '1:31.7', 8, '萩原清 (美浦)'],
+          [2020, 'グランアレグリア', '池添謙一', '1:31.6', 3, '藤沢和雄 (美浦)'],
+          [2019, 'インディチャンプ', '福永祐一', '1:30.9', 4, '音無秀孝 (栗東)'],
+          [2018, 'モズアスコット', 'C.ルメール', '1:31.3', 9, '矢作芳人 (栗東)'],
+          [2017, 'サトノアラジン', '川田将雅', '1:31.5', 7, '池江泰寿 (栗東)'],
+          [2016, 'ロゴタイプ', '田辺裕信', '1:33.0', 8, '田中剛 (美浦)']
+        ],
+        '12': [
+          [2025, 'メイショウタバル', '武豊', '2:11.1', 7, '石橋守 (栗東)'],
+          [2024, 'ブローザホーン', '菅原明良', '2:12.0', 3, '吉岡辰弥 (栗東)'],
+          [2023, 'イクイノックス', 'C.ルメール', '2:11.2', 1, '木村哲也 (美浦)'],
+          [2022, 'タイトルホルダー', '横山和生', '2:09.7', 2, '栗田徹 (美浦)'],
+          [2021, 'クロノジェネシス', 'C.ルメール', '2:10.9', 1, '斉藤崇史 (栗東)'],
+          [2020, 'クロノジェネシス', '北村友一', '2:13.5', 2, '斉藤崇史 (栗東)'],
+          [2019, 'リスグラシュー', 'D.レーン', '2:10.8', 3, '矢作芳人 (栗東)'],
+          [2018, 'ミッキーロケット', '和田竜二', '2:11.6', 7, '音無秀孝 (栗東)'],
+          [2017, 'サトノクラウン', 'M.デムーロ', '2:11.4', 3, '堀宣行 (美浦)'],
+          [2016, 'マリアライト', '蛯名正義', '2:12.8', 8, '久保田貴士 (美浦)']
+        ]
+      };
+
 const PAYOUTS_DATA = {
         '1': [
           { type: '単勝', comb: '12', val: '¥340', pop: '2' },
@@ -928,68 +1075,111 @@ function openRaceDetail(id) {
       `;
     });
 
+    let historyTableRows = '';
+    const historyData = HISTORICAL_DATA[id] || [];
+    historyData.forEach(h => {
+      historyTableRows += `
+        <tr>
+          <td style="text-align: center; font-weight: bold; color: var(--gold);">${h[0]}年</td>
+          <td style="font-weight: 600;">${h[1]}</td>
+          <td>${h[2]}</td>
+          <td style="font-family: monospace;">${h[3]}</td>
+          <td>${h[4]}人</td>
+          <td style="font-size: 12px; color: var(--text-muted);">${h[5]}</td>
+        </tr>
+      `;
+    });
+
     innerHTML = `
-      <div class="detail-grid">
-        <div class="detail-left">
-          <div class="detail-meta-list">
-            <div class="detail-meta-item">
-              <span class="detail-meta-label">開催日 / コース</span>
-              <span class="detail-meta-value">${formattedDate} (15:40発走) / ${race.location}競馬場</span>
+      <div class="modal-tabs" style="display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+        <button class="modal-tab-btn active" data-tab="current" style="background: none; border: none; color: var(--gold); border-bottom: 2px solid var(--gold); padding: 8px 16px; font-weight: bold; cursor: pointer; transition: all 0.2s;">本年結果 (2026年)</button>
+        <button class="modal-tab-btn" data-tab="history" style="background: none; border: none; color: var(--text-muted); padding: 8px 16px; font-weight: bold; cursor: pointer; transition: all 0.2s;">過去10年の結果</button>
+      </div>
+
+      <div id="modal-tab-content-current" class="modal-tab-content">
+        <div class="detail-grid">
+          <div class="detail-left">
+            <div class="detail-meta-list">
+              <div class="detail-meta-item">
+                <span class="detail-meta-label">開催日 / コース</span>
+                <span class="detail-meta-value">${formattedDate} (15:40発走) / ${race.location}競馬場</span>
+              </div>
+              <div class="detail-meta-item">
+                <span class="detail-meta-label">天候 / 馬場状態</span>
+                <span class="detail-meta-value">${race.weather} / ${race.trackCondition}</span>
+              </div>
+              <div class="detail-meta-item">
+                <span class="detail-meta-label">芝クッション値</span>
+                <span class="detail-meta-value">${race.cushionValue}</span>
+              </div>
             </div>
-            <div class="detail-meta-item">
-              <span class="detail-meta-label">天候 / 馬場状態</span>
-              <span class="detail-meta-value">${race.weather} / ${race.trackCondition}</span>
-            </div>
-            <div class="detail-meta-item">
-              <span class="detail-meta-label">芝クッション値</span>
-              <span class="detail-meta-value">${race.cushionValue}</span>
+
+            <div>
+              <h3 class="detail-section-title">全頭成績表</h3>
+              <div class="table-scroll-container">
+                <table class="result-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 40px; text-align: center;">着順</th>
+                      <th style="width: 40px; text-align: center;">馬番</th>
+                      <th>馬名</th>
+                      <th>性齢</th>
+                      <th>斤量</th>
+                      <th>騎手</th>
+                      <th>タイム</th>
+                      <th>着差</th>
+                      <th>通過順</th>
+                      <th>上がり3F</th>
+                      <th>単勝オッズ</th>
+                      <th>人気</th>
+                      <th>馬体重(増減)</th>
+                      <th>厩舎</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${tableRows}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
 
-          <div>
-            <h3 class="detail-section-title">全頭成績表</h3>
-            <div class="table-scroll-container">
-              <table class="result-table">
-                <thead>
-                  <tr>
-                    <th style="width: 40px; text-align: center;">着順</th>
-                    <th style="width: 40px; text-align: center;">馬番</th>
-                    <th>馬名</th>
-                    <th>性齢</th>
-                    <th>斤量</th>
-                    <th>騎手</th>
-                    <th>タイム</th>
-                    <th>着差</th>
-                    <th>通過順</th>
-                    <th>上がり3F</th>
-                    <th>単勝オッズ</th>
-                    <th>人気</th>
-                    <th>馬体重(増減)</th>
-                    <th>厩舎</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  ${tableRows}
-                </tbody>
-              </table>
+          <div class="detail-right">
+            <div class="pace-container">
+              <h3 class="detail-section-title" style="color: var(--primary); border-left-color: var(--primary);">レース展開 (通過順)</h3>
+              <div class="pace-flow">
+                ${paceRows}
+              </div>
+            </div>
+
+            <div>
+              <h3 class="detail-section-title">払戻金一覧</h3>
+              <div class="payouts-grid">
+                ${payoutRows}
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="detail-right">
-          <div class="pace-container">
-            <h3 class="detail-section-title" style="color: var(--primary); border-left-color: var(--primary);">レース展開 (通過順)</h3>
-            <div class="pace-flow">
-              ${paceRows}
-            </div>
-          </div>
-
-          <div>
-            <h3 class="detail-section-title">払戻金一覧</h3>
-            <div class="payouts-grid">
-              ${payoutRows}
-            </div>
-          </div>
+      <div id="modal-tab-content-history" class="modal-tab-content" style="display: none;">
+        <h3 class="detail-section-title">過去10年の歴代優勝馬</h3>
+        <div class="table-scroll-container">
+          <table class="result-table" style="width: 100%;">
+            <thead>
+              <tr>
+                <th style="width: 80px; text-align: center;">開催年</th>
+                <th>優勝馬</th>
+                <th>騎手</th>
+                <th>タイム</th>
+                <th>人気</th>
+                <th>調教師</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${historyTableRows}
+            </tbody>
+          </table>
         </div>
       </div>
     `;
@@ -1018,6 +1208,34 @@ function openRaceDetail(id) {
   
   body.innerHTML = innerHTML;
   modal.classList.add('active');
+  
+  // Bind modal tabs event listeners
+  const modalTabs = modal.querySelectorAll('.modal-tab-btn');
+  modalTabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      modalTabs.forEach(b => {
+        b.classList.remove('active');
+        b.style.color = 'var(--text-muted)';
+        b.style.borderBottom = 'none';
+      });
+      btn.classList.add('active');
+      btn.style.color = 'var(--gold)';
+      btn.style.borderBottom = '2px solid var(--gold)';
+
+      const tab = btn.getAttribute('data-tab');
+      if (tab === 'current') {
+        const c_tab = document.getElementById('modal-tab-content-current');
+        const h_tab = document.getElementById('modal-tab-content-history');
+        if (c_tab) c_tab.style.display = 'block';
+        if (h_tab) h_tab.style.display = 'none';
+      } else {
+        const c_tab = document.getElementById('modal-tab-content-current');
+        const h_tab = document.getElementById('modal-tab-content-history');
+        if (c_tab) c_tab.style.display = 'none';
+        if (h_tab) h_tab.style.display = 'block';
+      }
+    });
+  });
   
   createIcons({
     icons: lucideIcons,
