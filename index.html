@@ -1939,28 +1939,6 @@
           container.appendChild(card);
         });
         
-          // アコーディオン展開イベントリスナー
-  const yearRows = modal.querySelectorAll('.history-year-row');
-  yearRows.forEach(row => {
-    row.addEventListener('click', () => {
-      const y = row.getAttribute('data-year');
-      const rId = row.getAttribute('data-race-id');
-      const detailRow = document.getElementById(`history-detail-${rId}-${y}`);
-      const toggleIcon = row.querySelector('.toggle-icon');
-      if (detailRow) {
-        if (detailRow.style.display === 'none') {
-          detailRow.style.display = 'table-row';
-          if (toggleIcon) toggleIcon.innerText = '▲ 閉じる';
-          row.style.background = 'rgba(212, 175, 55, 0.12)';
-        } else {
-          detailRow.style.display = 'none';
-          if (toggleIcon) toggleIcon.innerText = '▼ 全馬着順';
-          row.style.background = '';
-        }
-      }
-    });
-  });
-
         refreshIcons();
       }
 
