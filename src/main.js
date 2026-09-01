@@ -1221,6 +1221,572 @@ const RESULTS_DATA = {
     ]
   ]
 };
+
+
+const PAYOUTS_DATA = {
+        '1': [
+          { type: '単勝', comb: '12', val: '¥340', pop: '2' },
+          { type: '複勝', comb: '12<br>14<br>9', val: '¥160<br>¥180<br>¥130', pop: '2<br>3<br>1' },
+          { type: '枠連', comb: '6-7', val: '¥1,080', pop: '4' },
+          { type: '馬連', comb: '12-14', val: '¥1,520', pop: '4' },
+          { type: '馬単', comb: '12→14', val: '¥2,540', pop: '5' },
+          { type: 'ワイド', comb: '12-14<br>9-12<br>9-14', val: '¥540<br>¥240<br>¥320', pop: '4<br>1<br>3' },
+          { type: '三連複', comb: '9-12-14', val: '¥1,850', pop: '2' },
+          { type: '三連単', comb: '12→14→9', val: '¥7,650', pop: '11' }
+        ],
+        '2': [
+          { type: '単勝', comb: '9', val: '¥350', pop: '1' },
+          { type: '複勝', comb: '9<br>6<br>8', val: '¥180<br>¥1,520<br>¥430', pop: '1<br>15<br>7' },
+          { type: '枠連', comb: '3-5', val: '¥5,220', pop: '14' },
+          { type: '馬連', comb: '6-9', val: '¥12,840', pop: '31' },
+          { type: '馬単', comb: '9→6', val: '¥17,450', pop: '42' },
+          { type: 'ワイド', comb: '6-9<br>8-9<br>6-8', val: '¥3,580<br>¥780<br>¥8,920', pop: '32<br>6<br>68' },
+          { type: '三連複', comb: '6-8-9', val: '¥24,820', pop: '64' },
+          { type: '三連単', comb: '9→6→8', val: '¥64,500', pop: '182' }
+        ],
+        '3': [
+          { type: '単勝', comb: '15', val: '¥250', pop: '1' },
+          { type: '複勝', comb: '15<br>6<br>4', val: '¥130<br>¥180<br>¥160', pop: '1<br>3<br>2' },
+          { type: '枠連', comb: '4-8', val: '¥820', pop: '3' },
+          { type: '馬連', comb: '6-15', val: '¥1,020', pop: '3' },
+          { type: '馬単', comb: '15→6', val: '¥1,850', pop: '4' },
+          { type: 'ワイド', comb: '6-15<br>4-15<br>4-6', val: '¥380<br>¥320<br>¥540', pop: '3<br>2<br>5' },
+          { type: '三連複', comb: '4-6-15', val: '¥1,220', pop: '2' },
+          { type: '三連単', comb: '15→6→4', val: '¥25,400', pop: '68' }
+        ],
+        '4': [
+          { type: '単勝', comb: '15', val: '¥290', pop: '1' },
+          { type: '複勝', comb: '15<br>5<br>11', val: '¥150<br>¥320<br>¥1,480', pop: '1<br>5<br>12' },
+          { type: '枠連', comb: '3-7', val: '¥1,280', pop: '4' },
+          { type: '馬連', comb: '5-15', val: '¥2,420', pop: '7' },
+          { type: '馬単', comb: '15→5', val: '¥3,850', pop: '10' },
+          { type: 'ワイド', comb: '5-15<br>11-15<br>5-11', val: '¥780<br>¥3,120<br>¥5,820', pop: '7<br>32<br>58' },
+          { type: '三連複', comb: '5-11-15', val: '¥18,900', pop: '45' },
+          { type: '三連単', comb: '15→5→11', val: '¥18,900', pop: '98' }
+        ],
+        '5': [
+          { type: '単勝', comb: '4', val: '¥400', pop: '1' },
+          { type: '複勝', comb: '4<br>15<br>9', val: '¥160<br>¥240<br>¥520', pop: '1<br>4<br>9' },
+          { type: '枠連', comb: '2-8', val: '¥1,020', pop: '3' },
+          { type: '馬連', comb: '4-15', val: '¥1,850', pop: '5' },
+          { type: '馬単', comb: '4→15', val: '¥2,950', pop: '7' },
+          { type: 'ワイド', comb: '4-15<br>4-9<br>9-15', val: '¥580<br>¥1,240<br>¥2,150', pop: '5<br>11<br>24' },
+          { type: '三連複', comb: '4-9-15', val: '¥6,820', pop: '18' },
+          { type: '三連単', comb: '4→15→9', val: '¥24,500', pop: '68' }
+        ],
+        '6': [
+          { type: '単勝', comb: '7', val: '¥180', pop: '1' },
+          { type: '複勝', comb: '7<br>15<br>3', val: '¥110<br>¥2,540<br>¥140', pop: '1<br>12<br>2' },
+          { type: '枠連', comb: '4-8', val: '¥3,240', pop: '10' },
+          { type: '馬連', comb: '7-15', val: '¥18,450', pop: '38' },
+          { type: '馬単', comb: '7→15', val: '¥22,450', pop: '48' },
+          { type: 'ワイド', comb: '7-15<br>3-7<br>3-15', val: '¥4,580<br>¥180<br>¥6,120', pop: '38<br>1<br>52' },
+          { type: '三連複', comb: '3-7-15', val: '¥12,850', pop: '28' },
+          { type: '三連単', comb: '7→15→3', val: '¥41,200', pop: '98' }
+        ],
+        '7': [
+          { type: '単勝', comb: '17', val: '¥460', pop: '1' },
+          { type: '複勝', comb: '17<br>16<br>11', val: '¥180<br>¥240<br>¥280', pop: '1<br>4<br>6' },
+          { type: '枠連', comb: '8-8', val: '¥1,520', pop: '5' },
+          { type: '馬連', comb: '16-17', val: '¥2,140', pop: '6' },
+          { type: '馬単', comb: '17→16', val: '¥3,850', pop: '9' },
+          { type: 'ワイド', comb: '16-17<br>11-17<br>11-16', val: '¥720<br>¥890<br>¥1,220', pop: '6<br>8<br>12' },
+          { type: '三連複', comb: '11-16-17', val: '¥5,220', pop: '14' },
+          { type: '三連単', comb: '17→16→11', val: '¥38,500', pop: '88' }
+        ],
+        '8': [
+          { type: '単勝', comb: '12', val: '¥190', pop: '1' },
+          { type: '複勝', comb: '12<br>8<br>7', val: '¥110<br>¥160<br>¥210', pop: '1<br>2<br>3' },
+          { type: '枠連', comb: '4-6', val: '¥330', pop: '1' },
+          { type: '馬連', comb: '8-12', val: '¥570', pop: '1' },
+          { type: '馬単', comb: '12→8', val: '¥810', pop: '1' },
+          { type: 'ワイド', comb: '8-12<br>7-12<br>7-8', val: '¥280<br>¥350<br>¥870', pop: '1<br>2<br>5' },
+          { type: '三連複', comb: '7-8-12', val: '¥1,530', pop: '2' },
+          { type: '三連単', comb: '12→8→7', val: '¥3,670', pop: '1' }
+        ],
+        '9': [
+          { type: '単勝', comb: '16', val: '¥1,090', pop: '5' },
+          { type: '複勝', comb: '16<br>12<br>18', val: '¥330<br>¥190<br>¥140', pop: '5<br>3<br>2' },
+          { type: '枠連', comb: '6-8', val: '¥700', pop: '2' },
+          { type: '馬連', comb: '12-16', val: '¥3,210', pop: '2' },
+          { type: '馬単', comb: '16→12', val: '¥8,450', pop: '2' },
+          { type: 'ワイド', comb: '12-16<br>16-18<br>12-18', val: '¥1,150<br>¥790<br>¥390', pop: '2<br>3<br>1' },
+          { type: '三連複', comb: '12-16-18', val: '¥3,220', pop: '2' },
+          { type: '三連単', comb: '16→12→18', val: '¥30,330', pop: '8' }
+        ],
+        '10': [
+          { type: '単勝', comb: '17', val: '¥270', pop: '1' },
+          { type: '複勝', comb: '17<br>13<br>5', val: '¥130<br>¥250<br>¥650', pop: '1<br>4<br>11' },
+          { type: '枠連', comb: '6-8', val: '¥1,120', pop: '4' },
+          { type: '馬連', comb: '13-17', val: '¥1,460', pop: '4' },
+          { type: '馬単', comb: '17→13', val: '¥2,290', pop: '4' },
+          { type: 'ワイド', comb: '13-17<br>5-17<br>5-13', val: '¥540<br>¥1,580<br>¥2,820', pop: '4<br>12<br>18' },
+          { type: '三連複', comb: '5-13-17', val: '¥14,280', pop: '49' },
+          { type: '三連単', comb: '17→13→5', val: '¥47,050', pop: '142' }
+        ],
+        '11': [
+          { type: '単勝', comb: '4', val: '¥2,160', pop: '8' },
+          { type: '複勝', comb: '4<br>11<br>14', val: '¥520<br>¥380<br>¥130', pop: '8<br>7<br>1' },
+          { type: '枠連', comb: '2-6<br>2-7', val: '¥4,520<br>¥1,280', pop: '12<br>4' },
+          { type: '馬連', comb: '4-11<br>4-14', val: '¥12,850<br>¥1,920', pop: '31<br>4' },
+          { type: '馬単', comb: '4→11<br>4→14', val: '¥24,580<br>¥3,580', pop: '62<br>9' },
+          { type: 'ワイド', comb: '4-11<br>4-14<br>11-14', val: '¥3,850<br>¥520<br>¥480', pop: '31<br>3<br>2' },
+          { type: '三連複', comb: '4-11-14', val: '¥8,900', pop: '22' },
+          { type: '三連単', comb: '4→11→14<br>4→14→11', val: '¥89,000<br>¥48,500', pop: '180<br>98' }
+        ],
+        '12': [
+          { type: '単勝', comb: '16', val: '¥390', pop: '2' },
+          { type: '複勝', comb: '16<br>5<br>1', val: '¥150<br>¥120<br>¥190', pop: '2<br>1<br>3' },
+          { type: '枠連', comb: '3-8', val: '¥340', pop: '1' },
+          { type: '馬連', comb: '5-16', val: '¥430', pop: '1' },
+          { type: '馬単', comb: '16→5', val: '¥810', pop: '2' },
+          { type: 'ワイド', comb: '5-16<br>1-16<br>1-5', val: '¥190<br>¥320<br>¥240', pop: '1<br>3<br>2' },
+          { type: '三連複', comb: '1-5-16', val: '¥540', pop: '1' },
+          { type: '三連単', comb: '16→5→1', val: '¥1,440', pop: '2' }
+        ]
+      };
+
+import { 
+  createIcons, 
+  Award, 
+  Calendar, 
+  Search, 
+  Bell,
+  Clock
+} from 'lucide';
+
+const lucideIcons = { 
+  Award, 
+  Calendar, 
+  Search, 
+  Bell,
+  Clock
+};
+
+// 2026年 JRA G1レースデータセット (NetKeiba準拠・1〜3着結果完全一致)
+const G1_RACES = [
+        {
+          id: '1',
+          name: 'フェブラリーステークス',
+          englishName: 'February Stakes',
+          date: '2026-02-22T15:40:00',
+          location: '東京',
+          course: 'ダート 1600m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: 'ダート仕様',
+          type: 'older-dirt',
+          winner: 'コスタノヴァ', winnerJockey: 'C.ルメール', winnerGate: 12, time: '1:35.4',
+          second: 'ウィルソンテソーロ', secondJockey: '川田将雅', secondGate: 14,
+          third: 'ダブルハートボンド', thirdJockey: '坂井瑠星', thirdGate: 9,
+          payouts: { win: 390, trifecta: 7650 }
+        },
+        {
+          id: '2',
+          name: '高松宮記念',
+          englishName: 'Takamatsunomiya Kinen',
+          date: '2026-03-29T15:40:00',
+          location: '中京',
+          course: '芝 1200m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.2',
+          type: 'older-mile',
+          winner: 'サトノレーヴ', winnerJockey: 'C.ルメール', winnerGate: 9, time: '1:06.3',
+          second: 'レッドモンレーヴ', secondJockey: '酒井学', secondGate: 6,
+          third: 'ウインカーネリアン', thirdJockey: '三浦皇成', thirdGate: 8,
+          payouts: { win: 340, trifecta: 6450 }
+        },
+        {
+          id: '3',
+          name: '大阪杯',
+          englishName: 'Osaka Hai',
+          date: '2026-04-05T15:40:00',
+          location: '阪神',
+          course: '芝 2000m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.6',
+          type: 'older-dist',
+          winner: 'クロワデュノール', winnerJockey: '北村友一', winnerGate: 15, time: '1:57.6',
+          second: 'メイショウタバル', secondJockey: '武豊', secondGate: 6,
+          third: 'ダノンデサイル', thirdJockey: '坂井瑠星', thirdGate: 4,
+          payouts: { win: 210, trifecta: 2540 }
+        },
+        {
+          id: '4',
+          name: '桜花賞',
+          englishName: 'Oka Sho',
+          date: '2026-04-12T15:40:00',
+          location: '阪神',
+          course: '芝 1600m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.8',
+          type: '3yo-female',
+          winner: 'スターアニス', winnerJockey: '松山弘平', winnerGate: 15, time: '1:31.5',
+          second: 'ギャラボーグ', secondJockey: '西村淳也', secondGate: 5,
+          third: 'ジッピーチューン', thirdJockey: '北村友一', secondGate: 11,
+          payouts: { win: 290, trifecta: 1890 }
+        },
+        {
+          id: '5',
+          name: '皐月賞',
+          englishName: 'Satsuki Sho',
+          date: '2026-04-19T15:40:00',
+          location: '中山',
+          course: '芝 2000m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.9',
+          type: '3yo-male',
+          winner: 'ロブチェン', winnerJockey: '松山弘平', winnerGate: 4, time: '1:56.5',
+          second: 'リアライズシリウス', secondJockey: '津村明秀', secondGate: 15,
+          third: 'ライヒスアドラー', thirdJockey: '佐々木大輔', thirdGate: 9,
+          payouts: { win: 270, trifecta: 2450 }
+        },
+        {
+          id: '6',
+          name: '天皇賞（春）',
+          englishName: 'Tenno Sho (Spring)',
+          date: '2026-05-03T15:40:00',
+          location: '京都',
+          course: '芝 3200m',
+          status: 'finished',
+          weather: '曇',
+          trackCondition: '良',
+          cushionValue: '9.4',
+          type: 'older-dist',
+          winner: 'クロワデュノール', winnerJockey: '北村友一', winnerGate: 7, time: '3:13.7',
+          second: 'ヴェルテンベルク', secondJockey: '松若風馬', secondGate: 15,
+          third: 'アドマイヤテラ', thirdJockey: '武豊', thirdGate: 3,
+          payouts: { win: 160, trifecta: 4120 }
+        },
+        {
+          id: '7',
+          name: 'NHKマイルカップ',
+          englishName: 'NHK Mile Cup',
+          date: '2026-05-10T15:40:00',
+          location: '東京',
+          course: '芝 1600m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.7',
+          type: '3yo-male',
+          winner: 'ロデオドライブ', winnerJockey: 'D.レーン', winnerGate: 17, time: '1:31.5',
+          second: 'アスクイキゴミ', secondJockey: '戸崎圭太', secondGate: 16,
+          third: 'アドマイヤクワッズ', thirdJockey: '坂井瑠星', thirdGate: 11,
+          payouts: { win: 280, trifecta: 3850 }
+        },
+        {
+          id: '8',
+          name: 'ヴィクトリアマイル',
+          englishName: 'Victoria Mile',
+          date: '2026-05-17T15:40:00',
+          location: '東京',
+          course: '芝 1600m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.6',
+          type: 'older-female',
+          winner: 'エンブロイダリー', winnerJockey: 'C.ルメール', winnerGate: 12, time: '1:30.9',
+          second: 'カムニャック', secondJockey: '川田将雅', secondGate: 8,
+          third: 'クイーンズウォーク', thirdJockey: '西村淳也', thirdGate: 7,
+          payouts: { win: 190, trifecta: 1980 }
+        },
+        {
+          id: '9',
+          name: '優駿牝馬（オークス）',
+          englishName: 'Yushun Himba',
+          date: '2026-05-24T15:40:00',
+          location: '東京',
+          course: '芝 2400m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.5',
+          type: '3yo-female',
+          winner: 'ジュウリョクピエロ', winnerJockey: '今村聖奈', winnerGate: 16, time: '2:25.6',
+          second: 'ドリームコア', secondJockey: 'C.ルメール', secondGate: 12,
+          third: 'ラフターラインズ', thirdJockey: 'D.レーン', thirdGate: 18,
+          payouts: { win: 890, trifecta: 15420 }
+        },
+        {
+          id: '10',
+          name: '東京優駿（日本ダービー）',
+          englishName: 'Tokyo Yushun',
+          date: '2026-05-31T15:40:00',
+          location: '東京',
+          course: '芝 2400m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.5',
+          type: '3yo-male',
+          winner: 'ロブチェン', winnerJockey: '松山弘平', winnerGate: 17, time: '2:22.7',
+          second: 'パントルナイーフ', secondJockey: 'C.ルメール', secondGate: 13,
+          third: 'バステール', thirdJockey: '川田将雅', thirdGate: 5,
+          payouts: { win: 270, trifecta: 14280 }
+        },
+        {
+          id: '11',
+          name: '安田記念',
+          englishName: 'Yasuda Kinen',
+          date: '2026-06-07T15:40:00',
+          location: '東京',
+          course: '芝 1600m',
+          status: 'finished',
+          weather: '曇',
+          trackCondition: '良',
+          cushionValue: '9.4',
+          type: 'older-mile',
+          winner: 'シックスペンス', winnerJockey: '武豊', winnerGate: 4, time: '1:32.1',
+          second: 'ワールズエンド', secondJockey: '津村明秀', secondGate: 11,
+          third: 'ガイアフォース', thirdJockey: '横山武史', thirdGate: 14,
+          payouts: { win: 410, trifecta: 8900 }
+        },
+        {
+          id: '12',
+          name: '宝塚記念',
+          englishName: 'Takarazuka Kinen',
+          date: '2026-06-14T15:40:00',
+          location: '阪神',
+          course: '芝 2200m',
+          status: 'finished',
+          weather: '雨',
+          trackCondition: '重',
+          cushionValue: '7.8',
+          type: 'older-dist',
+          winner: 'メイショウタバル', winnerJockey: '武豊', winnerGate: 16, time: '2:12.1',
+          second: 'クロワデュノール', secondJockey: '北村友一', secondGate: 5,
+          third: 'ダノンデサイル', thirdJockey: '横山典弘', thirdGate: 1,
+          payouts: { win: 390, trifecta: 1440 }
+        },
+        {
+          id: '13',
+          name: 'スプリンターズステークス',
+          englishName: 'Sprinters Stakes',
+          date: '2026-09-27T15:40:00',
+          location: '中山',
+          course: '芝 1200m',
+          status: 'upcoming'
+        },
+        {
+          id: '14',
+          name: '秋華賞',
+          englishName: 'Shuka Sho',
+          date: '2026-10-18T15:40:00',
+          location: '京都',
+          course: '芝 2000m',
+          status: 'upcoming'
+        },
+        {
+          id: '15',
+          name: '菊花賞',
+          englishName: 'Kikka Sho',
+          date: '2026-10-25T15:40:00',
+          location: '京都',
+          course: '芝 3000m',
+          status: 'upcoming'
+        },
+        {
+          id: '16',
+          name: '天皇賞（秋）',
+          englishName: 'Tenno Sho (Autumn)',
+          date: '2026-11-01T15:40:00',
+          location: '東京',
+          course: '芝 2000m',
+          status: 'upcoming'
+        },
+        {
+          id: '17',
+          name: 'エリザベス女王杯',
+          englishName: 'Queen Elizabeth II Cup',
+          date: '2026-11-15T15:40:00',
+          location: '京都',
+          course: '芝 2200m',
+          status: 'upcoming'
+        },
+        {
+          id: '18',
+          name: 'マイルチャンピオンシップ',
+          englishName: 'Mile Championship',
+          date: '2026-11-22T15:40:00',
+          location: '京都',
+          course: '芝 1600m',
+          status: 'upcoming'
+        },
+        {
+          id: '19',
+          name: 'ジャパンカップ',
+          englishName: 'Japan Cup',
+          date: '2026-11-29T15:40:00',
+          location: '東京',
+          course: '芝 2400m',
+          status: 'upcoming'
+        },
+        {
+          id: '20',
+          name: 'チャンピオンズカップ',
+          englishName: 'Champions Cup',
+          date: '2026-12-06T15:40:00',
+          location: '中京',
+          course: 'ダート 1800m',
+          status: 'upcoming'
+        },
+        {
+          id: '21',
+          name: '阪神ジュベナイルフィリーズ',
+          englishName: 'Hanshin Juvenile Fillies',
+          date: '2026-12-13T15:40:00',
+          location: '京都',
+          course: '芝 1600m',
+          status: 'upcoming'
+        },
+        {
+          id: '22',
+          name: '朝日杯フューチュリティステークス',
+          englishName: 'Asahi Hai Futurity Stakes',
+          date: '2026-12-20T15:40:00',
+          location: '京都',
+          course: '芝 1600m',
+          status: 'upcoming'
+        },
+        {
+          id: '23',
+          name: 'ホープフルステークス',
+          englishName: 'Hopeful Stakes',
+          date: '2026-12-26T15:40:00',
+          location: '中山',
+          course: '芝 2000m',
+          status: 'upcoming'
+        },
+        {
+          id: '24',
+          name: '有馬記念',
+          englishName: 'Arima Kinen',
+          date: '2026-12-27T15:40:00',
+          location: '中山',
+          course: '芝 2500m',
+          status: 'upcoming'
+        }
+      ];
+
+// 出走可能馬名プール（カテゴリ別）
+const POOLS = {
+  '3yo-male': [
+    'ロブチェン', 'パントルナイーフ', 'バステール', 'ゴーイントゥスカイ', 'マテンロウゲイル',
+    'アルトラムス', 'リアライズシリウス', 'ライヒスアドラー', 'コンジェスタス', 'アスクエジンバラ',
+    'アウダーシア', 'フォルテアンジェロ', 'メイショウハチコウ', 'エムズビギン', 'ケントン',
+    'グリーンエナジー', 'ショナンガルフ', 'ジャスティンビスタ', 'シュガークン', 'ジューンテイク'
+  ],
+  '3yo-female': [
+    'スターアニス', 'ギャラボーグ', 'ジッピーチューン', 'ジュウリョクピエロ', 'ドリームコア',
+    'ラフターラインズ', 'レガレイラ', 'ステレンボッシュ', 'チェルヴィニア', 'ライトバック',
+    'コガネノソラ', 'アドマイヤベル', 'クイーンズウォーク', 'クリスマスパレード', 'キャットファイト'
+  ],
+  'older': [
+    'クロワデュノール', 'メイショウタバル', 'ダノンデサイル', 'ドウデュース', 'ソールオリエンス',
+    'タスティエーラ', 'ブローザホーン', 'ベラジオオペラ', 'ジャスティンミラノ', 'ジャンタルマンタル',
+    'シックスペンス', 'ワールズエンド', 'ガイアフォース', 'サトノレーヴ', 'レッドモンレーヴ',
+    'コスタノヴァ', 'ウィルソンテソーロ', 'ダブルハートボンド', 'ウインカーネリアン', 'ヴェルテンベルク',
+    'アドマイヤテラ', 'テーオーロイヤル', 'ロデオドライブ', 'アスクイキゴミ', 'アドマイヤクワッズ',
+    'エンブロイダリー', 'カムニャック', 'テンハッピーローズ', 'ソウルラッシュ', 'ロマンチックウォリアー'
+  ]
+};
+
+const STABLES_POOL = [
+  '杉山晴紀 (栗東)', '木村哲也 (美浦)', '中内田充 (栗東)', '国枝栄 (美浦)', '矢作芳人 (栗東)',
+  '友道康夫 (栗東)', '手塚貴久 (美浦)', '堀宣行 (美浦)', '高野友和 (栗東)', '斉藤崇史 (栗東)'
+];
+
+const JOCKEYS_POOL = [
+  '川田将雅', 'C.ルメール', '武豊', '松山弘平', '坂井瑠星', '戸崎圭太', '横山武史', 
+  'M.デムーロ', '西村淳也', '岩田望来', '浜中俊', '菅原明良', '津村明秀', '北村友一'
+];
+
+// ----------------------------------
+// レース結果補完エンジン（ハイドレーション）
+// ----------------------------------
+function getWaku(gate, total) {
+  if (8 >= total) return gate;
+  if (total === 18) {
+    if (2 >= gate) return 1;
+    if (4 >= gate) return 2;
+    if (6 >= gate) return 3;
+    if (8 >= gate) return 4;
+    if (10 >= gate) return 5;
+    if (12 >= gate) return 6;
+    if (15 >= gate) return 7;
+    return 8;
+  }
+  if (total === 17) {
+    if (2 >= gate) return 1;
+    if (4 >= gate) return 2;
+    if (6 >= gate) return 3;
+    if (8 >= gate) return 4;
+    if (10 >= gate) return 5;
+    if (12 >= gate) return 6;
+    if (14 >= gate) return 7;
+    return 8;
+  }
+  if (total === 16) {
+    if (2 >= gate) return 1;
+    if (4 >= gate) return 2;
+    if (6 >= gate) return 3;
+    if (8 >= gate) return 4;
+    if (10 >= gate) return 5;
+    if (12 >= gate) return 6;
+    if (14 >= gate) return 7;
+    return 8;
+  }
+  if (total === 15) {
+    if (2 >= gate) return 1;
+    if (4 >= gate) return 2;
+    if (6 >= gate) return 3;
+    if (8 >= gate) return 4;
+    if (10 >= gate) return 5;
+    if (12 >= gate) return 6;
+    if (13 >= gate) return 7;
+    return 8;
+  }
+  return Math.min(8, Math.ceil(gate / 2));
+}
+
+function hydrateRaceResults(race) {
+  if (race.hydratedResults) return race.hydratedResults;
+  const data = RESULTS_DATA[race.id];
+  if (!data) return [];
+  const results = data.map(mapArrayToResultObj);
+  race.hydratedResults = results;
+  return results;
+}
+
+function mapArrayToResultObj(arr) {
+  return {
+    rank: arr[0],
+    gate: arr[1],
+    horseName: arr[2],
+    sexAge: arr[3],
+    jockeyLoad: arr[4],
+    jockey: arr[5],
+    time: arr[6],
+    margin: arr[7],
+    cornerSequence: arr[8],
+    last3F: arr[9],
+    odds: arr[10],
+    popularity: arr[11],
+    weight: arr[12],
+    weightDiff: arr[13],
+    stable: arr[14]
+  };
 }
 
 function getUniqueGate(usedGates, max) {
