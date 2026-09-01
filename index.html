@@ -2381,67 +2381,110 @@
             `;
           });
 
+          let historyTableRows = '';
+          const historyData = HISTORICAL_DATA[id] || [];
+          historyData.forEach(h => {
+            historyTableRows += `
+              <tr>
+                <td style="text-align: center; font-weight: bold; color: var(--gold);">${h[0]}年</td>
+                <td style="font-weight: 600;">${h[1]}</td>
+                <td>${h[2]}</td>
+                <td style="font-family: monospace;">${h[3]}</td>
+                <td>${h[4]}人</td>
+                <td style="font-size: 12px; color: var(--text-muted);">${h[5]}</td>
+              </tr>
+            `;
+          });
+
           innerHTML = `
-            <div class="detail-main-flow">
-              <div class="detail-meta-list">
-                <div class="detail-meta-item">
-                  <span class="detail-meta-label">開催日 / コース</span>
-                  <span class="detail-meta-value">${formattedDate} (15:40発走) / ${race.location}競馬場</span>
-                </div>
-                <div class="detail-meta-item">
-                  <span class="detail-meta-label">天候 / 馬場状態</span>
-                  <span class="detail-meta-value">${race.weather} / ${race.trackCondition}</span>
-                </div>
-                <div class="detail-meta-item">
-                  <span class="detail-meta-label">芝クッション値</span>
-                  <span class="detail-meta-value">${race.cushionValue}</span>
-                </div>
-              </div>
+            <div class="modal-tabs" style="display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+              <button class="modal-tab-btn active" data-tab="current" style="background: none; border: none; color: var(--gold); border-bottom: 2px solid var(--gold); padding: 8px 16px; font-weight: bold; cursor: pointer; transition: all 0.2s;">本年結果 (2026年)</button>
+              <button class="modal-tab-btn" data-tab="history" style="background: none; border: none; color: var(--text-muted); padding: 8px 16px; font-weight: bold; cursor: pointer; transition: all 0.2s;">過去10年の結果</button>
+            </div>
 
-              <div>
-                <h3 class="detail-section-title">全頭成績表</h3>
-                <div class="table-scroll-container">
-                  <table class="result-table">
-                    <thead>
-                      <tr>
-                        <th style="width: 40px; text-align: center;">着順</th>
-                        <th style="width: 40px; text-align: center;">馬番</th>
-                        <th>馬名</th>
-                        <th>性齢</th>
-                        <th>斤量</th>
-                        <th>騎手</th>
-                        <th>タイム</th>
-                        <th>着差</th>
-                        <th>通過順</th>
-                        <th>上がり3F</th>
-                        <th>単勝オッズ</th>
-                        <th>人気</th>
-                        <th>馬体重(増減)</th>
-                        <th>厩舎</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      ${tableRows}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-
-              <!-- レース展開 ＆ 払戻金一覧の下部2カラムエリア -->
-              <div class="detail-sub-grid">
-                <div class="pace-container" style="background-color: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px;">
-                  <h3 class="detail-section-title" style="color: var(--primary); border-left-color: var(--primary);">レース展開 (通過順)</h3>
-                  <div class="pace-flow">
-                    ${paceRows}
+            <div id="modal-tab-content-current" class="modal-tab-content">
+              <div class="detail-main-flow">
+                <div class="detail-meta-list">
+                  <div class="detail-meta-item">
+                    <span class="detail-meta-label">開催日 / コース</span>
+                    <span class="detail-meta-value">${formattedDate} (15:40発走) / ${race.location}競馬場</span>
+                  </div>
+                  <div class="detail-meta-item">
+                    <span class="detail-meta-label">天候 / 馬場状態</span>
+                    <span class="detail-meta-value">${race.weather} / ${race.trackCondition}</span>
+                  </div>
+                  <div class="detail-meta-item">
+                    <span class="detail-meta-label">芝クッション値</span>
+                    <span class="detail-meta-value">${race.cushionValue}</span>
                   </div>
                 </div>
 
-                <div class="payouts-container" style="background-color: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px;">
-                  <h3 class="detail-section-title">払戻金一覧</h3>
-                  <div class="payouts-grid">
-                    ${payoutRows}
+                <div>
+                  <h3 class="detail-section-title">全頭成績表</h3>
+                  <div class="table-scroll-container">
+                    <table class="result-table">
+                      <thead>
+                        <tr>
+                          <th style="width: 40px; text-align: center;">着順</th>
+                          <th style="width: 40px; text-align: center;">馬番</th>
+                          <th>馬名</th>
+                          <th>性齢</th>
+                          <th>斤量</th>
+                          <th>騎手</th>
+                          <th>タイム</th>
+                          <th>着差</th>
+                          <th>通過順</th>
+                          <th>上がり3F</th>
+                          <th>単勝オッズ</th>
+                          <th>人気</th>
+                          <th>馬体重(増減)</th>
+                          <th>厩舎</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        ${tableRows}
+                      </tbody>
+                    </table>
                   </div>
                 </div>
+
+                <!-- レース展開 ＆ 払戻金一覧の下部2カラムエリア -->
+                <div class="detail-sub-grid">
+                  <div class="pace-container" style="background-color: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px;">
+                    <h3 class="detail-section-title" style="color: var(--primary); border-left-color: var(--primary);">レース展開 (通過順)</h3>
+                    <div class="pace-flow">
+                      ${paceRows}
+                    </div>
+                  </div>
+
+                  <div class="payouts-container" style="background-color: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px;">
+                    <h3 class="detail-section-title">払戻金一覧</h3>
+                    <div class="payouts-grid">
+                      ${payoutRows}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="modal-tab-content-history" class="modal-tab-content" style="display: none;">
+              <h3 class="detail-section-title">過去10年の歴代優勝馬</h3>
+              <div class="table-scroll-container">
+                <table class="result-table" style="width: 100%;">
+                  <thead>
+                    <tr>
+                      <th style="width: 80px; text-align: center;">開催年</th>
+                      <th>優勝馬</th>
+                      <th>騎手</th>
+                      <th>タイム</th>
+                      <th>人気</th>
+                      <th>調教師</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${historyTableRows}
+                  </tbody>
+                </table>
               </div>
             </div>
           `;
@@ -2471,6 +2514,34 @@
         body.innerHTML = innerHTML;
         modal.classList.add('active');
         
+        // タブ切り替えのイベントリスナー設定
+        const modalTabs = modal.querySelectorAll('.modal-tab-btn');
+        modalTabs.forEach(btn => {
+          btn.addEventListener('click', () => {
+            modalTabs.forEach(b => {
+              b.classList.remove('active');
+              b.style.color = 'var(--text-muted)';
+              b.style.borderBottom = 'none';
+            });
+            btn.classList.add('active');
+            btn.style.color = 'var(--gold)';
+            btn.style.borderBottom = '2px solid var(--gold)';
+
+            const tab = btn.getAttribute('data-tab');
+            if (tab === 'current') {
+              const c_tab = document.getElementById('modal-tab-content-current');
+              const h_tab = document.getElementById('modal-tab-content-history');
+              if (c_tab) c_tab.style.display = 'block';
+              if (h_tab) h_tab.style.display = 'none';
+            } else {
+              const c_tab = document.getElementById('modal-tab-content-current');
+              const h_tab = document.getElementById('modal-tab-content-history');
+              if (c_tab) c_tab.style.display = 'none';
+              if (h_tab) h_tab.style.display = 'block';
+            }
+          });
+        });
+
         refreshIcons();
       }
 
