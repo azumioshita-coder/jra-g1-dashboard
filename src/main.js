@@ -1,3 +1,4 @@
+import { HISTORICAL_FULL_RESULTS } from './historical_results.js';
 import './style.css';
 
 const RESULTS_DATA = {
@@ -1075,17 +1076,80 @@ function openRaceDetail(id) {
       `;
     });
 
-    let historyTableRows = '';
+        let historyTableRows = '';
     const historyData = HISTORICAL_DATA[id] || [];
+    const fullHistoryMap = (typeof HISTORICAL_FULL_RESULTS !== 'undefined' ? HISTORICAL_FULL_RESULTS[id] : null) || {};
+
     historyData.forEach(h => {
+      const year = h[0];
+      const fullList = fullHistoryMap[year] || [];
+      
+      let fullRowsHtml = '';
+      if (fullList.length > 0) {
+        fullList.forEach(m => {
+          let rankBadge = m.rank;
+          let rankClass = 'rank-other';
+          if (m.rank === 1) rankClass = 'rank-1';
+          else if (m.rank === 2) rankClass = 'rank-2';
+          else if (m.rank === 3) rankClass = 'rank-3';
+
+          fullRowsHtml += `
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="text-align: center;"><span class="rank-badge ${rankClass}" style="width: 20px; height: 20px; font-size: 11px;">${m.rank}</span></td>
+              <td style="text-align: center; font-weight: bold;">${m.gate}</td>
+              <td style="font-weight: 600;">${m.horseName}</td>
+              <td style="color: var(--text-secondary);">${m.sexAge || '-'}</td>
+              <td style="color: var(--text-secondary);">${m.load ? `${m.load}kg` : '-'}</td>
+              <td>${m.jockey}</td>
+              <td style="font-family: monospace;">${m.time}</td>
+              <td>${m.margin}</td>
+              <td>${m.pop}人</td>
+              <td style="font-size: 11px; color: var(--text-muted);">${m.stable || '-'}</td>
+            </tr>
+          `;
+        });
+      }
+
       historyTableRows += `
-        <tr>
-          <td style="text-align: center; font-weight: bold; color: var(--gold);">${h[0]}年</td>
+        <tr class="history-year-row" data-year="${year}" data-race-id="${id}" style="cursor: pointer; transition: background 0.2s;" title="クリックして全馬着順を展開">
+          <td style="text-align: center; font-weight: bold; color: var(--gold);">
+            ${year}年
+            <div style="font-size: 10px; color: var(--primary); font-weight: normal; margin-top: 2px;"><span class="toggle-icon">▼ 全馬着順</span></div>
+          </td>
           <td style="font-weight: 600;">${h[1]}</td>
           <td>${h[2]}</td>
           <td style="font-family: monospace;">${h[3]}</td>
           <td>${h[4]}人</td>
           <td style="font-size: 12px; color: var(--text-muted);">${h[5]}</td>
+        </tr>
+        <tr id="history-detail-${id}-${year}" class="history-detail-row" style="display: none; background: rgba(0,0,0,0.25);">
+          <td colspan="6" style="padding: 10px 14px;">
+            <div style="border-left: 3px solid var(--gold); padding-left: 12px; margin-bottom: 8px;">
+              <span style="font-weight: bold; color: var(--gold); font-size: 13px;">🏆 ${year}年 全出走馬 着順成績一覧</span>
+              <span style="font-size: 11px; color: var(--text-muted); margin-left: 8px;">(全${fullList.length}頭)</span>
+            </div>
+            <div class="table-scroll-container" style="max-height: 320px; overflow-y: auto;">
+              <table class="result-table" style="width: 100%; font-size: 12px;">
+                <thead>
+                  <tr style="background: rgba(255, 255, 255, 0.05);">
+                    <th style="width: 35px; text-align: center;">着順</th>
+                    <th style="width: 35px; text-align: center;">馬番</th>
+                    <th>馬名</th>
+                    <th>性齢</th>
+                    <th>斤量</th>
+                    <th>騎手</th>
+                    <th>タイム</th>
+                    <th>着差</th>
+                    <th>人気</th>
+                    <th>厩舎</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${fullRowsHtml}
+                </tbody>
+              </table>
+            </div>
+          </td>
         </tr>
       `;
     });
@@ -1237,6 +1301,28 @@ function openRaceDetail(id) {
     });
   });
   
+    // アコーディオン展開イベントリスナー
+  const yearRows = modal.querySelectorAll('.history-year-row');
+  yearRows.forEach(row => {
+    row.addEventListener('click', () => {
+      const y = row.getAttribute('data-year');
+      const rId = row.getAttribute('data-race-id');
+      const detailRow = document.getElementById(`history-detail-${rId}-${y}`);
+      const toggleIcon = row.querySelector('.toggle-icon');
+      if (detailRow) {
+        if (detailRow.style.display === 'none') {
+          detailRow.style.display = 'table-row';
+          if (toggleIcon) toggleIcon.innerText = '▲ 閉じる';
+          row.style.background = 'rgba(212, 175, 55, 0.12)';
+        } else {
+          detailRow.style.display = 'none';
+          if (toggleIcon) toggleIcon.innerText = '▼ 全馬着順';
+          row.style.background = '';
+        }
+      }
+    });
+  });
+
   createIcons({
     icons: lucideIcons,
     attrs: { class: 'lucide-icon' }
