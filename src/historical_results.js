@@ -12,7 +12,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "キング",
-        "time": "**",
+        "time": "1:35.5",
         "margin": "-",
         "pop": 2,
         "stable": "木村哲也 (美浦)"
@@ -24,7 +24,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "**",
+        "time": "1:35.7",
         "margin": "3/4",
         "pop": 5,
         "stable": "音無秀孝 (栗東)"
@@ -36,7 +36,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:35.9",
         "margin": "1.1/4",
         "pop": 1,
         "stable": "田中博康 (美浦)"
@@ -48,7 +48,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "藤岡佑介",
-        "time": "**",
+        "time": "1:35.9",
         "margin": "クビ",
         "pop": 4,
         "stable": "武英智 (栗東)"
@@ -60,7 +60,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:36.0",
         "margin": "1/2",
         "pop": 3,
         "stable": "杉山晴紀 (栗東)"
@@ -72,7 +72,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "1:36.3",
         "margin": "1.1/2",
         "pop": 11,
         "stable": "岡田稲男 (栗東)"
@@ -84,7 +84,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "長岡禎仁",
-        "time": "**",
+        "time": "1:36.5",
         "margin": "1.1/4",
         "pop": 6,
         "stable": "杉山晴紀 (栗東)"
@@ -96,7 +96,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "石橋脩",
-        "time": "**",
+        "time": "1:36.6",
         "margin": "1/2",
         "pop": 10,
         "stable": "西園正都 (栗東)"
@@ -108,7 +108,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "1:36.6",
         "margin": "アタマ",
         "pop": 9,
         "stable": "橋口慎介 (栗東)"
@@ -120,7 +120,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "鮫島克駿",
-        "time": "**",
+        "time": "1:36.8",
         "margin": "1.1/4",
         "pop": 8,
         "stable": "音無秀孝 (栗東)"
@@ -132,7 +132,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:37.1",
         "margin": "2",
         "pop": 7,
         "stable": "池添学 (栗東)"
@@ -144,7 +144,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ9",
         "load": 58.0,
         "jockey": "原優介",
-        "time": "**",
+        "time": "1:37.1",
         "margin": "同着",
         "pop": 16,
         "stable": "工藤真司 (地方)"
@@ -156,7 +156,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "1:37.4",
         "margin": "1.3/4",
         "pop": 12,
         "stable": "上村洋行 (栗東)"
@@ -168,7 +168,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "松若風馬",
-        "time": "**",
+        "time": "1:37.9",
         "margin": "3.1/2",
         "pop": 13,
         "stable": "音無秀孝 (栗東)"
@@ -180,7 +180,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "田辺裕信",
-        "time": "**",
+        "time": "1:38.3",
         "margin": "2.1/2",
         "pop": 15,
         "stable": "牧光二 (美浦)"
@@ -192,7 +192,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "吉田豊",
-        "time": "**",
+        "time": "1:38.4",
         "margin": "1/2",
         "pop": 14,
         "stable": "松永幹夫 (栗東)"
@@ -206,7 +206,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "藤岡佑介",
-        "time": "**",
+        "time": "1:35.7",
         "margin": "-",
         "pop": 11,
         "stable": "武英智 (栗東)"
@@ -218,7 +218,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "長岡禎仁",
-        "time": "**",
+        "time": "1:35.9",
         "margin": "1.1/4",
         "pop": 5,
         "stable": "杉山晴紀 (栗東)"
@@ -230,7 +230,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:35.9",
         "margin": "クビ",
         "pop": 13,
         "stable": "武幸四郎 (栗東)"
@@ -242,7 +242,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "石橋脩",
-        "time": "**",
+        "time": "1:35.9",
         "margin": "ハナ",
         "pop": 7,
         "stable": "西園正都 (栗東)"
@@ -254,7 +254,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "1:36.0",
         "margin": "1/2",
         "pop": 4,
         "stable": "寺島良 (栗東)"
@@ -266,7 +266,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "1:36.5",
         "margin": "3",
         "pop": 6,
         "stable": "安田隆行 (栗東)"
@@ -278,7 +278,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "矢野貴之",
-        "time": "**",
+        "time": "1:36.5",
         "margin": "ハナ",
         "pop": 9,
         "stable": "渡辺和雄 (地方)"
@@ -290,7 +290,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:36.6",
         "margin": "アタマ",
         "pop": 2,
         "stable": "小手川準 (美浦)"
@@ -302,7 +302,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "1:36.6",
         "margin": "アタマ",
         "pop": 10,
         "stable": "斉藤崇史 (栗東)"
@@ -314,7 +314,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "キング",
-        "time": "**",
+        "time": "1:36.7",
         "margin": "3/4",
         "pop": 12,
         "stable": "佐々木晶 (栗東)"
@@ -326,7 +326,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "西村淳也",
-        "time": "**",
+        "time": "1:36.7",
         "margin": "クビ",
         "pop": 8,
         "stable": "新子雅司 (地方)"
@@ -338,7 +338,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "ムルザバ",
-        "time": "**",
+        "time": "1:36.8",
         "margin": "クビ",
         "pop": 3,
         "stable": "池添学 (栗東)"
@@ -350,7 +350,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "御神本訓",
-        "time": "**",
+        "time": "1:37.7",
         "margin": "5",
         "pop": 15,
         "stable": "藤原智行 (地方)"
@@ -362,7 +362,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:38.0",
         "margin": "1.3/4",
         "pop": 1,
         "stable": "大和田成 (美浦)"
@@ -374,7 +374,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "菅原明良",
-        "time": "**",
+        "time": "1:38.3",
         "margin": "2",
         "pop": 16,
         "stable": "辻野泰之 (栗東)"
@@ -386,7 +386,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "内田博幸",
-        "time": "**",
+        "time": "1:38.4",
         "margin": "1/2",
         "pop": 14,
         "stable": "田中剛 (美浦)"
@@ -400,7 +400,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "1:35.6",
         "margin": "-",
         "pop": 1,
         "stable": "田中博康 (美浦)"
@@ -412,7 +412,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:35.8",
         "margin": "1.1/2",
         "pop": 3,
         "stable": "安田隆行 (栗東)"
@@ -424,7 +424,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "1:36.2",
         "margin": "2.1/2",
         "pop": 4,
         "stable": "岡田稲男 (栗東)"
@@ -436,7 +436,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:36.3",
         "margin": "1",
         "pop": 2,
         "stable": "牧浦充徳 (栗東)"
@@ -448,7 +448,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 58.0,
         "jockey": "内田博幸",
-        "time": "**",
+        "time": "1:36.4",
         "margin": "アタマ",
         "pop": 14,
         "stable": "加藤征弘 (美浦)"
@@ -460,7 +460,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "御神本訓",
-        "time": "**",
+        "time": "1:36.6",
         "margin": "1.1/2",
         "pop": 6,
         "stable": "藤原智行 (地方)"
@@ -472,7 +472,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:36.6",
         "margin": "クビ",
         "pop": 13,
         "stable": "西園正都 (栗東)"
@@ -484,7 +484,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "菅原明良",
-        "time": "**",
+        "time": "1:36.9",
         "margin": "1.1/2",
         "pop": 9,
         "stable": "高柳大輔 (栗東)"
@@ -496,7 +496,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "モレイラ",
-        "time": "**",
+        "time": "1:37.2",
         "margin": "1.3/4",
         "pop": 5,
         "stable": "アトフィ (海外)"
@@ -508,7 +508,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "バシュロ",
-        "time": "**",
+        "time": "1:37.3",
         "margin": "1/2",
         "pop": 12,
         "stable": "小西一男 (美浦)"
@@ -520,7 +520,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "1:37.3",
         "margin": "クビ",
         "pop": 11,
         "stable": "武幸四郎 (栗東)"
@@ -532,7 +532,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "**",
+        "time": "1:37.4",
         "margin": "クビ",
         "pop": 10,
         "stable": "西村真幸 (栗東)"
@@ -544,7 +544,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:37.5",
         "margin": "3/4",
         "pop": 15,
         "stable": "新谷功一 (栗東)"
@@ -556,7 +556,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:38.1",
         "margin": "3.1/2",
         "pop": 8,
         "stable": "蛯名正義 (美浦)"
@@ -568,7 +568,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:38.8",
         "margin": "4",
         "pop": 7,
         "stable": "須貝尚介 (栗東)"
@@ -580,7 +580,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "田中勝春",
-        "time": "**",
+        "time": "1:39.2",
         "margin": "2",
         "pop": 16,
         "stable": "森秀行 (栗東)"
@@ -594,7 +594,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:33.8",
         "margin": "-",
         "pop": 2,
         "stable": "堀宣行 (美浦)"
@@ -606,7 +606,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:34.2",
         "margin": "2.1/2",
         "pop": 5,
         "stable": "飯田雄三 (栗東)"
@@ -618,7 +618,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "1:34.3",
         "margin": "1/2",
         "pop": 4,
         "stable": "須貝尚介 (栗東)"
@@ -630,7 +630,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:34.3",
         "margin": "クビ",
         "pop": 6,
         "stable": "高柳大輔 (栗東)"
@@ -642,7 +642,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "1:34.5",
         "margin": "1.1/4",
         "pop": 15,
         "stable": "橋口慎介 (栗東)"
@@ -654,7 +654,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:34.6",
         "margin": "1/2",
         "pop": 1,
         "stable": "安田隆行 (栗東)"
@@ -666,7 +666,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:34.7",
         "margin": "3/4",
         "pop": 3,
         "stable": "栗田徹 (美浦)"
@@ -678,7 +678,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "1:34.8",
         "margin": "1/2",
         "pop": 12,
         "stable": "音無秀孝 (栗東)"
@@ -690,7 +690,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡9",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:35.0",
         "margin": "1",
         "pop": 8,
         "stable": "笹田和秀 (栗東)"
@@ -702,7 +702,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "御神本訓",
-        "time": "",
+        "time": "1:35.1",
         "margin": "1/2",
         "pop": 11,
         "stable": "矢野義幸 (地方)"
@@ -714,7 +714,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:35.2",
         "margin": "1/2",
         "pop": 7,
         "stable": "野中賢二 (栗東)"
@@ -726,7 +726,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "1:35.3",
         "margin": "3/4",
         "pop": 14,
         "stable": "羽月友彦 (栗東)"
@@ -738,7 +738,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "松田大作",
-        "time": "",
+        "time": "1:35.5",
         "margin": "1.1/4",
         "pop": 9,
         "stable": "須貝尚介 (栗東)"
@@ -750,7 +750,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:35.6",
         "margin": "クビ",
         "pop": 10,
         "stable": "石坂公一 (栗東)"
@@ -762,7 +762,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ8",
         "load": 57.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:35.7",
         "margin": "1/2",
         "pop": 13,
         "stable": "菊沢隆徳 (美浦)"
@@ -774,7 +774,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡9",
         "load": 57.0,
         "jockey": "菅原明良",
-        "time": "",
+        "time": "1:36.1",
         "margin": "2.1/2",
         "pop": 16,
         "stable": "清水英克 (美浦)"
@@ -788,7 +788,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:34.4",
         "margin": "-",
         "pop": 1,
         "stable": "堀宣行 (美浦)"
@@ -800,7 +800,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "鮫島克駿",
-        "time": "",
+        "time": "1:34.5",
         "margin": "3/4",
         "pop": 9,
         "stable": "笹田和秀 (栗東)"
@@ -812,7 +812,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:34.8",
         "margin": "1.3/4",
         "pop": 8,
         "stable": "安田翔伍 (栗東)"
@@ -824,7 +824,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:34.9",
         "margin": "1/2",
         "pop": 3,
         "stable": "安田隆行 (栗東)"
@@ -836,7 +836,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:35.1",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "池添学 (栗東)"
@@ -848,7 +848,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:35.1",
         "margin": "クビ",
         "pop": 7,
         "stable": "野中賢二 (栗東)"
@@ -860,7 +860,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "御神本訓",
-        "time": "",
+        "time": "1:35.3",
         "margin": "1.1/4",
         "pop": 13,
         "stable": "矢野義幸 (地方)"
@@ -872,7 +872,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "北村宏司",
-        "time": "",
+        "time": "1:35.4",
         "margin": "クビ",
         "pop": 5,
         "stable": "高柳大輔 (栗東)"
@@ -884,7 +884,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:35.6",
         "margin": "1.1/4",
         "pop": 2,
         "stable": "栗田徹 (美浦)"
@@ -896,7 +896,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝7",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "1:35.6",
         "margin": "クビ",
         "pop": 14,
         "stable": "長谷川浩 (栗東)"
@@ -908,7 +908,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "1:35.7",
         "margin": "3/4",
         "pop": 4,
         "stable": "音無秀孝 (栗東)"
@@ -920,7 +920,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "秋山真一",
-        "time": "",
+        "time": "1:36.0",
         "margin": "2",
         "pop": 16,
         "stable": "石橋守 (栗東)"
@@ -932,7 +932,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "丸山元気",
-        "time": "",
+        "time": "1:36.5",
         "margin": "3",
         "pop": 6,
         "stable": "西村真幸 (栗東)"
@@ -944,7 +944,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:36.7",
         "margin": "1",
         "pop": 11,
         "stable": "角居勝彦 (栗東)"
@@ -956,7 +956,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "1:37.1",
         "margin": "2.1/2",
         "pop": 15,
         "stable": "北出成人 (栗東)"
@@ -968,7 +968,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ5",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:37.7",
         "margin": "4",
         "pop": 12,
         "stable": "寺島良 (栗東)"
@@ -982,7 +982,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:35.2",
         "margin": "-",
         "pop": 1,
         "stable": "矢作芳人 (栗東)"
@@ -994,7 +994,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "長岡禎仁",
-        "time": "",
+        "time": "1:35.6",
         "margin": "2.1/2",
         "pop": 16,
         "stable": "杉山晴紀 (栗東)"
@@ -1006,7 +1006,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:35.8",
         "margin": "1.1/4",
         "pop": 3,
         "stable": "音無秀孝 (栗東)"
@@ -1018,7 +1018,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:35.8",
         "margin": "ハナ",
         "pop": 7,
         "stable": "安田翔伍 (栗東)"
@@ -1030,7 +1030,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "フォーリ",
-        "time": "",
+        "time": "1:36.1",
         "margin": "1.3/4",
         "pop": 10,
         "stable": "松田国英 (栗東)"
@@ -1042,7 +1042,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡9",
         "load": 57.0,
         "jockey": "秋山真一",
-        "time": "",
+        "time": "1:36.5",
         "margin": "2.1/2",
         "pop": 14,
         "stable": "寺島良 (栗東)"
@@ -1054,7 +1054,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "繁田健一",
-        "time": "",
+        "time": "1:36.5",
         "margin": "同着",
         "pop": 11,
         "stable": "福永敏 (地方)"
@@ -1066,7 +1066,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ8",
         "load": 57.0,
         "jockey": "真島大輔",
-        "time": "",
+        "time": "1:36.6",
         "margin": "1/2",
         "pop": 9,
         "stable": "荒山勝徳 (地方)"
@@ -1078,7 +1078,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:37.0",
         "margin": "2.1/2",
         "pop": 4,
         "stable": "栗田徹 (美浦)"
@@ -1090,7 +1090,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:37.0",
         "margin": "アタマ",
         "pop": 5,
         "stable": "大根田裕 (栗東)"
@@ -1102,7 +1102,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "御神本訓",
-        "time": "",
+        "time": "1:37.1",
         "margin": "1/2",
         "pop": 15,
         "stable": "矢野義幸 (地方)"
@@ -1114,7 +1114,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:37.3",
         "margin": "1.1/4",
         "pop": 6,
         "stable": "角居勝彦 (栗東)"
@@ -1126,7 +1126,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:38.3",
         "margin": "6",
         "pop": 13,
         "stable": "加用正 (栗東)"
@@ -1138,7 +1138,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:38.3",
         "margin": "クビ",
         "pop": 2,
         "stable": "野中賢二 (栗東)"
@@ -1150,7 +1150,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:38.6",
         "margin": "1.3/4",
         "pop": 8,
         "stable": "戸田博文 (美浦)"
@@ -1162,7 +1162,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:38.9",
         "margin": "1.3/4",
         "pop": 12,
         "stable": "安田隆行 (栗東)"
@@ -1176,7 +1176,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:35.6",
         "margin": "-",
         "pop": 1,
         "stable": "野中賢二 (栗東)"
@@ -1188,7 +1188,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:35.6",
         "margin": "クビ",
         "pop": 2,
         "stable": "平田修 (栗東)"
@@ -1200,7 +1200,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:36.3",
         "margin": "4",
         "pop": 8,
         "stable": "松田国英 (栗東)"
@@ -1212,7 +1212,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:36.5",
         "margin": "1.1/4",
         "pop": 9,
         "stable": "石坂正 (栗東)"
@@ -1224,7 +1224,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ4",
         "load": 57.0,
         "jockey": "藤田菜七",
-        "time": "",
+        "time": "1:36.6",
         "margin": "1/2",
         "pop": 4,
         "stable": "村山明 (栗東)"
@@ -1236,7 +1236,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:36.7",
         "margin": "クビ",
         "pop": 5,
         "stable": "河内洋 (栗東)"
@@ -1248,7 +1248,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:36.9",
         "margin": "1.1/4",
         "pop": 6,
         "stable": "音無秀孝 (栗東)"
@@ -1260,7 +1260,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:37.1",
         "margin": "1",
         "pop": 11,
         "stable": "北出成人 (栗東)"
@@ -1272,7 +1272,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "1:37.2",
         "margin": "1/2",
         "pop": 14,
         "stable": "沖芳夫 (栗東)"
@@ -1284,7 +1284,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:37.3",
         "margin": "3/4",
         "pop": 3,
         "stable": "安田翔伍 (栗東)"
@@ -1296,7 +1296,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "1:37.4",
         "margin": "3/4",
         "pop": 10,
         "stable": "野中賢二 (栗東)"
@@ -1308,7 +1308,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "ミナリク",
-        "time": "",
+        "time": "1:37.8",
         "margin": "2",
         "pop": 12,
         "stable": "森秀行 (栗東)"
@@ -1320,7 +1320,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:37.9",
         "margin": "1/2",
         "pop": 7,
         "stable": "加藤征弘 (美浦)"
@@ -1332,7 +1332,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "北村宏司",
-        "time": "",
+        "time": "1:37.9",
         "margin": "クビ",
         "pop": 13,
         "stable": "安達昭夫 (栗東)"
@@ -1346,7 +1346,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:36.0",
         "margin": "-",
         "pop": 4,
         "stable": "加藤征弘 (美浦)"
@@ -1358,7 +1358,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "ムーア",
-        "time": "",
+        "time": "1:36.0",
         "margin": "クビ",
         "pop": 1,
         "stable": "平田修 (栗東)"
@@ -1370,7 +1370,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:36.1",
         "margin": "クビ",
         "pop": 6,
         "stable": "羽月友彦 (栗東)"
@@ -1382,7 +1382,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:36.6",
         "margin": "3",
         "pop": 3,
         "stable": "音無秀孝 (栗東)"
@@ -1394,7 +1394,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:36.7",
         "margin": "1/2",
         "pop": 10,
         "stable": "梅田智之 (栗東)"
@@ -1406,7 +1406,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:36.7",
         "margin": "ハナ",
         "pop": 12,
         "stable": "寺島良 (栗東)"
@@ -1418,7 +1418,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:37.1",
         "margin": "2.1/2",
         "pop": 15,
         "stable": "南井克巳 (栗東)"
@@ -1430,7 +1430,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ8",
         "load": 57.0,
         "jockey": "ミナリク",
-        "time": "",
+        "time": "1:37.5",
         "margin": "2.1/2",
         "pop": 11,
         "stable": "高木登 (美浦)"
@@ -1442,7 +1442,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:37.6",
         "margin": "クビ",
         "pop": 7,
         "stable": "松永幹夫 (栗東)"
@@ -1454,7 +1454,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:37.6",
         "margin": "クビ",
         "pop": 8,
         "stable": "石坂正 (栗東)"
@@ -1466,7 +1466,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:37.7",
         "margin": "1/2",
         "pop": 5,
         "stable": "目野哲也 (栗東)"
@@ -1478,7 +1478,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "古川吉洋",
-        "time": "",
+        "time": "1:37.9",
         "margin": "3/4",
         "pop": 2,
         "stable": "木原一良 (栗東)"
@@ -1490,7 +1490,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:38.3",
         "margin": "2.1/2",
         "pop": 16,
         "stable": "天間昭一 (美浦)"
@@ -1502,7 +1502,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:38.5",
         "margin": "1.1/2",
         "pop": 9,
         "stable": "牧田和弥 (栗東)"
@@ -1514,7 +1514,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "真島大輔",
-        "time": "",
+        "time": "1:38.8",
         "margin": "1.3/4",
         "pop": 14,
         "stable": "荒山勝徳 (地方)"
@@ -1526,7 +1526,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:39.0",
         "margin": "1.1/4",
         "pop": 13,
         "stable": "庄野靖志 (栗東)"
@@ -1540,7 +1540,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:35.1",
         "margin": "-",
         "pop": 2,
         "stable": "平田修 (栗東)"
@@ -1552,7 +1552,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:35.1",
         "margin": "クビ",
         "pop": 5,
         "stable": "石坂正 (栗東)"
@@ -1564,7 +1564,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "津村明秀",
-        "time": "",
+        "time": "1:35.2",
         "margin": "3/4",
         "pop": 1,
         "stable": "湯窪幸雄 (栗東)"
@@ -1576,7 +1576,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:35.4",
         "margin": "1.1/4",
         "pop": 8,
         "stable": "中尾秀正 (栗東)"
@@ -1588,7 +1588,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:35.6",
         "margin": "1.1/4",
         "pop": 14,
         "stable": "庄野靖志 (栗東)"
@@ -1600,7 +1600,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:35.6",
         "margin": "ハナ",
         "pop": 11,
         "stable": "目野哲也 (栗東)"
@@ -1612,7 +1612,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ5",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:35.7",
         "margin": "クビ",
         "pop": 4,
         "stable": "加藤征弘 (美浦)"
@@ -1624,7 +1624,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 57.0,
         "jockey": "柴田善臣",
-        "time": "",
+        "time": "1:35.7",
         "margin": "ハナ",
         "pop": 7,
         "stable": "高木登 (美浦)"
@@ -1636,7 +1636,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "1:35.9",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "高木登 (美浦)"
@@ -1648,7 +1648,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:36.0",
         "margin": "1/2",
         "pop": 16,
         "stable": "鮫島一歩 (栗東)"
@@ -1660,7 +1660,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:36.0",
         "margin": "クビ",
         "pop": 13,
         "stable": "寺島良 (栗東)"
@@ -1672,7 +1672,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "ムーア",
-        "time": "",
+        "time": "1:36.1",
         "margin": "クビ",
         "pop": 3,
         "stable": "石坂正 (栗東)"
@@ -1684,7 +1684,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "1:36.5",
         "margin": "2.1/2",
         "pop": 15,
         "stable": "羽月友彦 (栗東)"
@@ -1696,7 +1696,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:36.5",
         "margin": "クビ",
         "pop": 6,
         "stable": "村山明 (栗東)"
@@ -1708,7 +1708,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:36.6",
         "margin": "1/2",
         "pop": 9,
         "stable": "川村禎彦 (栗東)"
@@ -1720,7 +1720,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝7",
         "load": 55.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:36.7",
         "margin": "1/2",
         "pop": 12,
         "stable": "角居勝彦 (栗東)"
@@ -1734,7 +1734,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:34.0",
         "margin": "-",
         "pop": 2,
         "stable": "石坂正 (栗東)"
@@ -1746,7 +1746,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:34.2",
         "margin": "1.1/4",
         "pop": 1,
         "stable": "加藤征弘 (美浦)"
@@ -1758,7 +1758,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "太宰啓介",
-        "time": "",
+        "time": "1:34.2",
         "margin": "アタマ",
         "pop": 7,
         "stable": "川村禎彦 (栗東)"
@@ -1770,7 +1770,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:34.2",
         "margin": "アタマ",
         "pop": 3,
         "stable": "石坂正 (栗東)"
@@ -1782,7 +1782,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:34.3",
         "margin": "クビ",
         "pop": 6,
         "stable": "戸田博文 (美浦)"
@@ -1794,7 +1794,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 57.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "1:34.5",
         "margin": "1.1/2",
         "pop": 9,
         "stable": "鮫島一歩 (栗東)"
@@ -1806,7 +1806,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:34.6",
         "margin": "クビ",
         "pop": 4,
         "stable": "村山明 (栗東)"
@@ -1818,7 +1818,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:34.7",
         "margin": "3/4",
         "pop": 10,
         "stable": "清水英克 (美浦)"
@@ -1830,7 +1830,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:34.8",
         "margin": "1/2",
         "pop": 13,
         "stable": "藤原英昭 (栗東)"
@@ -1842,7 +1842,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "1:34.9",
         "margin": "1/2",
         "pop": 5,
         "stable": "高木登 (美浦)"
@@ -1854,7 +1854,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "ヴェロン",
-        "time": "",
+        "time": "1:34.9",
         "margin": "アタマ",
         "pop": 11,
         "stable": "安田隆行 (栗東)"
@@ -1866,7 +1866,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:34.9",
         "margin": "アタマ",
         "pop": 8,
         "stable": "岩元市三 (栗東)"
@@ -1878,7 +1878,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "勝浦正樹",
-        "time": "",
+        "time": "1:35.6",
         "margin": "4",
         "pop": 15,
         "stable": "尾形和幸 (美浦)"
@@ -1890,7 +1890,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡10",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:36.2",
         "margin": "3.1/2",
         "pop": 16,
         "stable": "浜田多実 (栗東)"
@@ -1902,7 +1902,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:36.8",
         "margin": "3.1/2",
         "pop": 12,
         "stable": "小野次郎 (美浦)"
@@ -1914,7 +1914,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:40.9",
         "margin": "大",
         "pop": 14,
         "stable": "友道康夫 (栗東)"
@@ -1930,7 +1930,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "モレイラ",
-        "time": "**",
+        "time": "1:07.9",
         "margin": "-",
         "pop": 2,
         "stable": "堀宣行 (美浦)"
@@ -1942,7 +1942,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:08.0",
         "margin": "3/4",
         "pop": 1,
         "stable": "長谷川浩 (栗東)"
@@ -1954,7 +1954,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:08.2",
         "margin": "1.1/4",
         "pop": 6,
         "stable": "池江泰寿 (栗東)"
@@ -1966,7 +1966,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:08.3",
         "margin": "クビ",
         "pop": 5,
         "stable": "高柳瑞樹 (美浦)"
@@ -1978,7 +1978,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "川又賢治",
-        "time": "**",
+        "time": "1:08.5",
         "margin": "1.1/2",
         "pop": 8,
         "stable": "吉村圭司 (栗東)"
@@ -1990,7 +1990,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "1:08.7",
         "margin": "1.1/4",
         "pop": 4,
         "stable": "池添学 (栗東)"
@@ -2002,7 +2002,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "西村淳也",
-        "time": "**",
+        "time": "1:08.8",
         "margin": "3/4",
         "pop": 3,
         "stable": "杉山晴紀 (栗東)"
@@ -2014,7 +2014,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "幸英明",
-        "time": "**",
+        "time": "1:08.8",
         "margin": "アタマ",
         "pop": 17,
         "stable": "福永祐一 (栗東)"
@@ -2026,7 +2026,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "1:08.9",
         "margin": "クビ",
         "pop": 7,
         "stable": "西園正都 (栗東)"
@@ -2038,7 +2038,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:09.0",
         "margin": "1/2",
         "pop": 9,
         "stable": "庄野靖志 (栗東)"
@@ -2050,7 +2050,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡10",
         "load": 58.0,
         "jockey": "丸山元気",
-        "time": "**",
+        "time": "1:09.1",
         "margin": "1/2",
         "pop": 16,
         "stable": "高橋康之 (栗東)"
@@ -2062,7 +2062,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "亀田温心",
-        "time": "**",
+        "time": "1:09.2",
         "margin": "1/2",
         "pop": 18,
         "stable": "高野友和 (栗東)"
@@ -2074,7 +2074,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "松若風馬",
-        "time": "**",
+        "time": "1:09.2",
         "margin": "ハナ",
         "pop": 14,
         "stable": "前川恭子 (栗東)"
@@ -2086,7 +2086,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "菱田裕二",
-        "time": "**",
+        "time": "1:09.2",
         "margin": "クビ",
         "pop": 11,
         "stable": "吉村圭司 (栗東)"
@@ -2098,7 +2098,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "国分恭介",
-        "time": "**",
+        "time": "1:09.4",
         "margin": "1",
         "pop": 13,
         "stable": "坂口智康 (栗東)"
@@ -2110,7 +2110,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "松岡正海",
-        "time": "**",
+        "time": "1:09.5",
         "margin": "1/2",
         "pop": 12,
         "stable": "畠山吉宏 (美浦)"
@@ -2122,7 +2122,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "佐々木大",
-        "time": "**",
+        "time": "1:10.1",
         "margin": "3.1/2",
         "pop": 15,
         "stable": "牧田和弥 (栗東)"
@@ -2134,7 +2134,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "**",
+        "time": "1:10.3",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "梅田智之 (栗東)"
@@ -2148,7 +2148,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "1:08.9",
         "margin": "-",
         "pop": 6,
         "stable": "池添学 (栗東)"
@@ -2160,7 +2160,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "1:08.9",
         "margin": "アタマ",
         "pop": 2,
         "stable": "長谷川浩 (栗東)"
@@ -2172,7 +2172,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 58.0,
         "jockey": "リョン",
-        "time": "**",
+        "time": "1:09.4",
         "margin": "3",
         "pop": 5,
         "stable": "シャム (海外)"
@@ -2184,7 +2184,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "三浦皇成",
-        "time": "**",
+        "time": "1:09.6",
         "margin": "1.1/2",
         "pop": 11,
         "stable": "鹿戸雄一 (美浦)"
@@ -2196,7 +2196,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝7",
         "load": 56.0,
         "jockey": "岩田康誠",
-        "time": "**",
+        "time": "1:09.6",
         "margin": "ハナ",
         "pop": 12,
         "stable": "辻野泰之 (栗東)"
@@ -2208,7 +2208,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:09.7",
         "margin": "1/2",
         "pop": 4,
         "stable": "高柳瑞樹 (美浦)"
@@ -2220,7 +2220,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "吉田隼人",
-        "time": "**",
+        "time": "1:09.8",
         "margin": "1/2",
         "pop": 9,
         "stable": "西園正都 (栗東)"
@@ -2232,7 +2232,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:09.9",
         "margin": "3/4",
         "pop": 3,
         "stable": "池江泰寿 (栗東)"
@@ -2244,7 +2244,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "1:10.0",
         "margin": "1/2",
         "pop": 10,
         "stable": "武英智 (栗東)"
@@ -2256,7 +2256,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "西村淳也",
-        "time": "**",
+        "time": "1:10.1",
         "margin": "3/4",
         "pop": 1,
         "stable": "杉山晴紀 (栗東)"
@@ -2268,7 +2268,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "1:10.2",
         "margin": "3/4",
         "pop": 13,
         "stable": "友道康夫 (栗東)"
@@ -2280,7 +2280,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:10.5",
         "margin": "1.1/2",
         "pop": 8,
         "stable": "深山雅史 (美浦)"
@@ -2292,7 +2292,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 58.0,
         "jockey": "大野拓弥",
-        "time": "**",
+        "time": "1:10.6",
         "margin": "3/4",
         "pop": 18,
         "stable": "大竹正博 (美浦)"
@@ -2304,7 +2304,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:10.6",
         "margin": "クビ",
         "pop": 7,
         "stable": "音無秀孝 (栗東)"
@@ -2316,7 +2316,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "藤岡佑介",
-        "time": "**",
+        "time": "1:10.8",
         "margin": "1.1/4",
         "pop": 16,
         "stable": "音無秀孝 (栗東)"
@@ -2328,7 +2328,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "1:10.9",
         "margin": "3/4",
         "pop": 17,
         "stable": "昆貢 (栗東)"
@@ -2340,7 +2340,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "吉田豊",
-        "time": "**",
+        "time": "1:11.3",
         "margin": "2.1/2",
         "pop": 14,
         "stable": "田中剛 (美浦)"
@@ -2352,7 +2352,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "富田暁",
-        "time": "**",
+        "time": "1:11.6",
         "margin": "1.1/2",
         "pop": 15,
         "stable": "木原一良 (栗東)"
@@ -2366,7 +2366,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "団野大成",
-        "time": "**",
+        "time": "1:11.5",
         "margin": "-",
         "pop": 12,
         "stable": "西村真幸 (栗東)"
@@ -2378,7 +2378,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "1:11.6",
         "margin": "1",
         "pop": 2,
         "stable": "長谷川浩 (栗東)"
@@ -2390,7 +2390,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "丹内祐次",
-        "time": "**",
+        "time": "1:11.7",
         "margin": "1/2",
         "pop": 13,
         "stable": "高橋康之 (栗東)"
@@ -2402,7 +2402,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "丸田恭介",
-        "time": "**",
+        "time": "1:11.8",
         "margin": "1/2",
         "pop": 9,
         "stable": "宗像義忠 (美浦)"
@@ -2414,7 +2414,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "1:12.0",
         "margin": "3/4",
         "pop": 10,
         "stable": "中内田充 (栗東)"
@@ -2426,7 +2426,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "岩田康誠",
-        "time": "**",
+        "time": "1:12.0",
         "margin": "クビ",
         "pop": 4,
         "stable": "辻野泰之 (栗東)"
@@ -2438,7 +2438,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:12.1",
         "margin": "クビ",
         "pop": 3,
         "stable": "安田隆行 (栗東)"
@@ -2450,7 +2450,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "西村淳也",
-        "time": "**",
+        "time": "1:12.1",
         "margin": "クビ",
         "pop": 7,
         "stable": "牧浦充徳 (栗東)"
@@ -2462,7 +2462,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ8",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "**",
+        "time": "1:12.4",
         "margin": "1.3/4",
         "pop": 15,
         "stable": "田村康仁 (美浦)"
@@ -2474,7 +2474,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:12.5",
         "margin": "1/2",
         "pop": 6,
         "stable": "深山雅史 (美浦)"
@@ -2486,7 +2486,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "秋山真一",
-        "time": "**",
+        "time": "1:12.6",
         "margin": "クビ",
         "pop": 11,
         "stable": "千田輝彦 (栗東)"
@@ -2498,7 +2498,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "1:12.6",
         "margin": "ハナ",
         "pop": 1,
         "stable": "武英智 (栗東)"
@@ -2510,7 +2510,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:12.9",
         "margin": "2",
         "pop": 8,
         "stable": "音無秀孝 (栗東)"
@@ -2522,7 +2522,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "松本大輝",
-        "time": "**",
+        "time": "1:13.0",
         "margin": "3/4",
         "pop": 16,
         "stable": "森秀行 (栗東)"
@@ -2534,7 +2534,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "鮫島克駿",
-        "time": "**",
+        "time": "1:13.0",
         "margin": "ハナ",
         "pop": 5,
         "stable": "高柳瑞樹 (美浦)"
@@ -2546,7 +2546,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "吉田隼人",
-        "time": "**",
+        "time": "1:13.2",
         "margin": "1",
         "pop": 14,
         "stable": "武幸四郎 (栗東)"
@@ -2558,7 +2558,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "武藤雅",
-        "time": "**",
+        "time": "1:13.3",
         "margin": "クビ",
         "pop": 18,
         "stable": "武藤善則 (美浦)"
@@ -2570,7 +2570,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "川須栄彦",
-        "time": "**",
+        "time": "1:13.6",
         "margin": "2",
         "pop": 17,
         "stable": "梅田智之 (栗東)"
@@ -2584,7 +2584,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "丸田恭介",
-        "time": "",
+        "time": "1:08.3",
         "margin": "-",
         "pop": 8,
         "stable": "宗像義忠 (美浦)"
@@ -2596,7 +2596,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "1:08.3",
         "margin": "クビ",
         "pop": 5,
         "stable": "辻野泰之 (栗東)"
@@ -2608,7 +2608,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 57.0,
         "jockey": "菊沢一樹",
-        "time": "",
+        "time": "1:08.3",
         "margin": "ハナ",
         "pop": 17,
         "stable": "田村康仁 (美浦)"
@@ -2620,7 +2620,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "鮫島克駿",
-        "time": "",
+        "time": "1:08.4",
         "margin": "クビ",
         "pop": 7,
         "stable": "高橋康之 (栗東)"
@@ -2632,7 +2632,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:08.4",
         "margin": "クビ",
         "pop": 2,
         "stable": "武英智 (栗東)"
@@ -2644,7 +2644,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "1:08.6",
         "margin": "1",
         "pop": 1,
         "stable": "松下武士 (栗東)"
@@ -2656,7 +2656,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:08.6",
         "margin": "ハナ",
         "pop": 9,
         "stable": "栗田徹 (美浦)"
@@ -2668,7 +2668,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "秋山真一",
-        "time": "",
+        "time": "1:08.6",
         "margin": "ハナ",
         "pop": 15,
         "stable": "飯田祐史 (栗東)"
@@ -2680,7 +2680,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:08.6",
         "margin": "クビ",
         "pop": 11,
         "stable": "河内洋 (栗東)"
@@ -2692,7 +2692,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "柴山雄一",
-        "time": "",
+        "time": "1:08.6",
         "margin": "同着",
         "pop": 16,
         "stable": "西村真幸 (栗東)"
@@ -2704,7 +2704,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "荻野極",
-        "time": "",
+        "time": "1:08.7",
         "margin": "クビ",
         "pop": 13,
         "stable": "池江泰寿 (栗東)"
@@ -2716,7 +2716,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:08.8",
         "margin": "1/2",
         "pop": 3,
         "stable": "中内田充 (栗東)"
@@ -2728,7 +2728,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:08.9",
         "margin": "1/2",
         "pop": 14,
         "stable": "昆貢 (栗東)"
@@ -2740,7 +2740,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:08.9",
         "margin": "クビ",
         "pop": 6,
         "stable": "安田隆行 (栗東)"
@@ -2752,7 +2752,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:08.9",
         "margin": "ハナ",
         "pop": 4,
         "stable": "堀宣行 (美浦)"
@@ -2764,7 +2764,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "1:09.2",
         "margin": "1.3/4",
         "pop": 12,
         "stable": "藤沢則雄 (栗東)"
@@ -2776,7 +2776,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "亀田温心",
-        "time": "",
+        "time": "1:09.3",
         "margin": "1/2",
         "pop": 10,
         "stable": "田島俊明 (美浦)"
@@ -2788,7 +2788,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "小沢大仁",
-        "time": "",
+        "time": "1:09.4",
         "margin": "クビ",
         "pop": 18,
         "stable": "森田直行 (栗東)"
@@ -2802,7 +2802,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:09.2",
         "margin": "-",
         "pop": 2,
         "stable": "安田隆行 (栗東)"
@@ -2814,7 +2814,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "1:09.2",
         "margin": "クビ",
         "pop": 1,
         "stable": "松下武士 (栗東)"
@@ -2826,7 +2826,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:09.3",
         "margin": "クビ",
         "pop": 3,
         "stable": "音無秀孝 (栗東)"
@@ -2838,7 +2838,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "鮫島克駿",
-        "time": "",
+        "time": "1:09.4",
         "margin": "3/4",
         "pop": 16,
         "stable": "高橋康之 (栗東)"
@@ -2850,7 +2850,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "1:09.5",
         "margin": "1/2",
         "pop": 6,
         "stable": "音無秀孝 (栗東)"
@@ -2862,7 +2862,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:09.6",
         "margin": "3/4",
         "pop": 7,
         "stable": "安達昭夫 (栗東)"
@@ -2874,7 +2874,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "1:09.6",
         "margin": "クビ",
         "pop": 12,
         "stable": "飯田祐史 (栗東)"
@@ -2886,7 +2886,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:09.6",
         "margin": "アタマ",
         "pop": 9,
         "stable": "手塚貴久 (美浦)"
@@ -2898,7 +2898,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:09.7",
         "margin": "クビ",
         "pop": 13,
         "stable": "上原博之 (美浦)"
@@ -2910,7 +2910,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:09.8",
         "margin": "3/4",
         "pop": 11,
         "stable": "矢作芳人 (栗東)"
@@ -2922,7 +2922,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "菱田裕二",
-        "time": "",
+        "time": "1:09.8",
         "margin": "ハナ",
         "pop": 18,
         "stable": "森田直行 (栗東)"
@@ -2934,7 +2934,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:10.0",
         "margin": "1",
         "pop": 8,
         "stable": "中内田充 (栗東)"
@@ -2946,7 +2946,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ8",
         "load": 57.0,
         "jockey": "杉原誠人",
-        "time": "",
+        "time": "1:10.1",
         "margin": "1/2",
         "pop": 17,
         "stable": "小島茂之 (美浦)"
@@ -2958,7 +2958,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:10.1",
         "margin": "アタマ",
         "pop": 5,
         "stable": "斉藤崇史 (栗東)"
@@ -2970,7 +2970,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "中井裕二",
-        "time": "",
+        "time": "1:10.2",
         "margin": "3/4",
         "pop": 14,
         "stable": "池添兼雄 (栗東)"
@@ -2982,7 +2982,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "1:10.4",
         "margin": "1.1/4",
         "pop": 15,
         "stable": "高野友和 (栗東)"
@@ -2994,7 +2994,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:10.9",
         "margin": "3",
         "pop": 4,
         "stable": "昆貢 (栗東)"
@@ -3006,7 +3006,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:11.3",
         "margin": "2.1/2",
         "pop": 10,
         "stable": "庄野靖志 (栗東)"
@@ -3020,7 +3020,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "1:08.7",
         "margin": "ハナ",
         "pop": 9,
         "stable": "音無秀孝 (栗東)"
@@ -3032,7 +3032,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:08.7",
         "margin": "ハナ",
         "pop": 2,
         "stable": "藤沢和雄 (美浦)"
@@ -3044,7 +3044,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:08.7",
         "margin": "アタマ",
         "pop": 4,
         "stable": "安田隆行 (栗東)"
@@ -3056,7 +3056,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:08.7",
         "margin": "-",
         "pop": 15,
         "stable": "藤沢則雄 (栗東)"
@@ -3068,7 +3068,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:09.0",
         "margin": "2",
         "pop": 12,
         "stable": "野中賢二 (栗東)"
@@ -3080,7 +3080,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:09.0",
         "margin": "ハナ",
         "pop": 13,
         "stable": "松永幹夫 (栗東)"
@@ -3092,7 +3092,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:09.1",
         "margin": "クビ",
         "pop": 6,
         "stable": "上原博之 (美浦)"
@@ -3104,7 +3104,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡10",
         "load": 57.0,
         "jockey": "国分優作",
-        "time": "",
+        "time": "1:09.1",
         "margin": "ハナ",
         "pop": 17,
         "stable": "西浦勝一 (栗東)"
@@ -3116,7 +3116,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "丸山元気",
-        "time": "",
+        "time": "1:09.3",
         "margin": "1",
         "pop": 7,
         "stable": "木村哲也 (美浦)"
@@ -3128,7 +3128,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:09.7",
         "margin": "2.1/2",
         "pop": 3,
         "stable": "安田隆行 (栗東)"
@@ -3140,7 +3140,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:09.7",
         "margin": "アタマ",
         "pop": 11,
         "stable": "高野友和 (栗東)"
@@ -3152,7 +3152,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:09.8",
         "margin": "3/4",
         "pop": 1,
         "stable": "藤沢和雄 (美浦)"
@@ -3164,7 +3164,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:09.9",
         "margin": "クビ",
         "pop": 5,
         "stable": "矢作芳人 (栗東)"
@@ -3176,7 +3176,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝7",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:10.3",
         "margin": "2.1/2",
         "pop": 14,
         "stable": "杉浦宏昭 (美浦)"
@@ -3188,7 +3188,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:10.6",
         "margin": "1.3/4",
         "pop": 8,
         "stable": "萩原清 (美浦)"
@@ -3200,7 +3200,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "1:10.6",
         "margin": "クビ",
         "pop": 18,
         "stable": "森田直行 (栗東)"
@@ -3212,7 +3212,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝7",
         "load": 55.0,
         "jockey": "秋山真一",
-        "time": "",
+        "time": "1:10.9",
         "margin": "2",
         "pop": 16,
         "stable": "森田直行 (栗東)"
@@ -3224,7 +3224,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:21.9",
         "margin": "大",
         "pop": 10,
         "stable": "河内洋 (栗東)"
@@ -3238,7 +3238,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:07.3",
         "margin": "-",
         "pop": 3,
         "stable": "藤原英昭 (栗東)"
@@ -3250,7 +3250,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:07.4",
         "margin": "1/2",
         "pop": 12,
         "stable": "上原博之 (美浦)"
@@ -3262,7 +3262,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "1:07.4",
         "margin": "アタマ",
         "pop": 17,
         "stable": "田中剛 (美浦)"
@@ -3274,7 +3274,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:07.5",
         "margin": "1/2",
         "pop": 1,
         "stable": "安田隆行 (栗東)"
@@ -3286,7 +3286,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡9",
         "load": 57.0,
         "jockey": "国分優作",
-        "time": "",
+        "time": "1:07.6",
         "margin": "1/2",
         "pop": 11,
         "stable": "西浦勝一 (栗東)"
@@ -3298,7 +3298,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝7",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:07.6",
         "margin": "ハナ",
         "pop": 5,
         "stable": "梅田智之 (栗東)"
@@ -3310,7 +3310,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:07.8",
         "margin": "1.1/4",
         "pop": 8,
         "stable": "大竹正博 (美浦)"
@@ -3322,7 +3322,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:07.8",
         "margin": "クビ",
         "pop": 4,
         "stable": "須貝尚介 (栗東)"
@@ -3334,7 +3334,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:08.0",
         "margin": "1.1/2",
         "pop": 7,
         "stable": "角田晃一 (栗東)"
@@ -3346,7 +3346,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "森一馬",
-        "time": "",
+        "time": "1:08.1",
         "margin": "1/2",
         "pop": 16,
         "stable": "松永昌博 (栗東)"
@@ -3358,7 +3358,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "丸山元気",
-        "time": "",
+        "time": "1:08.1",
         "margin": "ハナ",
         "pop": 14,
         "stable": "森田直行 (栗東)"
@@ -3370,7 +3370,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "松田大作",
-        "time": "",
+        "time": "1:08.1",
         "margin": "ハナ",
         "pop": 15,
         "stable": "高木登 (美浦)"
@@ -3382,7 +3382,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:08.8",
         "margin": "4",
         "pop": 18,
         "stable": "昆貢 (栗東)"
@@ -3394,7 +3394,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "1:08.9",
         "margin": "3/4",
         "pop": 6,
         "stable": "杉浦宏昭 (美浦)"
@@ -3406,7 +3406,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:09.0",
         "margin": "クビ",
         "pop": 2,
         "stable": "音無秀孝 (栗東)"
@@ -3418,7 +3418,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:09.1",
         "margin": "1/2",
         "pop": 9,
         "stable": "森田直行 (栗東)"
@@ -3430,7 +3430,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡11",
         "load": 57.0,
         "jockey": "藤田菜七",
-        "time": "",
+        "time": "1:09.2",
         "margin": "1/2",
         "pop": 10,
         "stable": "高木登 (美浦)"
@@ -3442,7 +3442,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "1:09.3",
         "margin": "3/4",
         "pop": 13,
         "stable": "森田直行 (栗東)"
@@ -3456,7 +3456,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:08.5",
         "margin": "-",
         "pop": 2,
         "stable": "高橋義忠 (栗東)"
@@ -3468,7 +3468,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:08.5",
         "margin": "ハナ",
         "pop": 3,
         "stable": "梅田智之 (栗東)"
@@ -3480,7 +3480,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:08.6",
         "margin": "1/2",
         "pop": 10,
         "stable": "杉浦宏昭 (美浦)"
@@ -3492,7 +3492,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:08.7",
         "margin": "1/2",
         "pop": 4,
         "stable": "笹田和秀 (栗東)"
@@ -3504,7 +3504,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 57.0,
         "jockey": "ティータ",
-        "time": "",
+        "time": "1:08.7",
         "margin": "クビ",
         "pop": 6,
         "stable": "イウ (海外)"
@@ -3516,7 +3516,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "松田大作",
-        "time": "",
+        "time": "1:08.8",
         "margin": "クビ",
         "pop": 5,
         "stable": "上原博之 (美浦)"
@@ -3528,7 +3528,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:08.8",
         "margin": "クビ",
         "pop": 7,
         "stable": "本田優 (栗東)"
@@ -3540,7 +3540,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:08.9",
         "margin": "1/2",
         "pop": 1,
         "stable": "尾関知人 (美浦)"
@@ -3552,7 +3552,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡10",
         "load": 57.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "1:09.0",
         "margin": "3/4",
         "pop": 15,
         "stable": "高木登 (美浦)"
@@ -3564,7 +3564,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "北村宏司",
-        "time": "",
+        "time": "1:09.1",
         "margin": "クビ",
         "pop": 12,
         "stable": "星野忍 (美浦)"
@@ -3576,7 +3576,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "ミナリク",
-        "time": "",
+        "time": "1:09.3",
         "margin": "1.1/2",
         "pop": 9,
         "stable": "森秀行 (栗東)"
@@ -3588,7 +3588,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:09.4",
         "margin": "クビ",
         "pop": 8,
         "stable": "高野友和 (栗東)"
@@ -3600,7 +3600,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "武藤雅",
-        "time": "",
+        "time": "1:09.5",
         "margin": "1/2",
         "pop": 17,
         "stable": "天間昭一 (美浦)"
@@ -3612,7 +3612,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "1:09.5",
         "margin": "ハナ",
         "pop": 13,
         "stable": "武井亮 (美浦)"
@@ -3624,7 +3624,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "森一馬",
-        "time": "",
+        "time": "1:09.5",
         "margin": "ハナ",
         "pop": 16,
         "stable": "松永昌博 (栗東)"
@@ -3636,7 +3636,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "西田雄一",
-        "time": "",
+        "time": "1:09.7",
         "margin": "1.1/2",
         "pop": 18,
         "stable": "水野貴広 (美浦)"
@@ -3648,7 +3648,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:09.9",
         "margin": "1.1/4",
         "pop": 14,
         "stable": "安田隆行 (栗東)"
@@ -3660,7 +3660,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:09.9",
         "margin": "ハナ",
         "pop": 11,
         "stable": "大根田裕 (栗東)"
@@ -3674,7 +3674,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:08.7",
         "margin": "-",
         "pop": 5,
         "stable": "上原博之 (美浦)"
@@ -3686,7 +3686,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:08.9",
         "margin": "1.1/4",
         "pop": 2,
         "stable": "梅田智之 (栗東)"
@@ -3698,7 +3698,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:09.0",
         "margin": "クビ",
         "pop": 1,
         "stable": "尾関知人 (美浦)"
@@ -3710,7 +3710,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "国分優作",
-        "time": "",
+        "time": "1:09.3",
         "margin": "1.3/4",
         "pop": 16,
         "stable": "西浦勝一 (栗東)"
@@ -3722,7 +3722,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:09.3",
         "margin": "ハナ",
         "pop": 7,
         "stable": "藤原英昭 (栗東)"
@@ -3734,7 +3734,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "1:09.4",
         "margin": "1/2",
         "pop": 10,
         "stable": "斎藤誠 (美浦)"
@@ -3746,7 +3746,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡9",
         "load": 57.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "1:09.4",
         "margin": "クビ",
         "pop": 11,
         "stable": "高木登 (美浦)"
@@ -3758,7 +3758,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "石川裕紀",
-        "time": "",
+        "time": "1:09.5",
         "margin": "クビ",
         "pop": 12,
         "stable": "杉浦宏昭 (美浦)"
@@ -3770,7 +3770,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:09.5",
         "margin": "クビ",
         "pop": 6,
         "stable": "鮫島一歩 (栗東)"
@@ -3782,7 +3782,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:09.6",
         "margin": "クビ",
         "pop": 3,
         "stable": "池添学 (栗東)"
@@ -3794,7 +3794,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "1:09.7",
         "margin": "3/4",
         "pop": 9,
         "stable": "昆貢 (栗東)"
@@ -3806,7 +3806,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "シュタル",
-        "time": "",
+        "time": "1:09.7",
         "margin": "クビ",
         "pop": 17,
         "stable": "堀宣行 (美浦)"
@@ -3818,7 +3818,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "森一馬",
-        "time": "",
+        "time": "1:09.8",
         "margin": "1/2",
         "pop": 14,
         "stable": "松永昌博 (栗東)"
@@ -3830,7 +3830,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:10.0",
         "margin": "1.1/2",
         "pop": 13,
         "stable": "伊藤大士 (美浦)"
@@ -3842,7 +3842,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:10.1",
         "margin": "クビ",
         "pop": 4,
         "stable": "須貝尚介 (栗東)"
@@ -3854,7 +3854,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:10.2",
         "margin": "1/2",
         "pop": 8,
         "stable": "斎藤誠 (美浦)"
@@ -3866,7 +3866,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "菱田裕二",
-        "time": "",
+        "time": "1:10.3",
         "margin": "1/2",
         "pop": 18,
         "stable": "橋口慎介 (栗東)"
@@ -3878,7 +3878,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "吉田豊",
-        "time": "",
+        "time": "1:11.0",
         "margin": "4",
         "pop": 15,
         "stable": "角田晃一 (栗東)"
@@ -3892,7 +3892,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:06.7",
         "margin": "-",
         "pop": 1,
         "stable": "藤岡健一 (栗東)"
@@ -3904,7 +3904,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:06.8",
         "margin": "3/4",
         "pop": 2,
         "stable": "音無秀孝 (栗東)"
@@ -3916,7 +3916,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:07.1",
         "margin": "1.3/4",
         "pop": 3,
         "stable": "木村哲也 (美浦)"
@@ -3928,7 +3928,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "1:07.1",
         "margin": "アタマ",
         "pop": 16,
         "stable": "北出成人 (栗東)"
@@ -3940,7 +3940,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:07.2",
         "margin": "3/4",
         "pop": 5,
         "stable": "野中賢二 (栗東)"
@@ -3952,7 +3952,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:07.3",
         "margin": "クビ",
         "pop": 14,
         "stable": "西浦勝一 (栗東)"
@@ -3964,7 +3964,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "1:07.3",
         "margin": "アタマ",
         "pop": 6,
         "stable": "高木登 (美浦)"
@@ -3976,7 +3976,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:07.4",
         "margin": "1/2",
         "pop": 10,
         "stable": "梅田智之 (栗東)"
@@ -3988,7 +3988,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:07.4",
         "margin": "ハナ",
         "pop": 4,
         "stable": "藤原英昭 (栗東)"
@@ -4000,7 +4000,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "バルジュ",
-        "time": "",
+        "time": "1:07.4",
         "margin": "ハナ",
         "pop": 17,
         "stable": "中竹和也 (栗東)"
@@ -4012,7 +4012,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "1:07.5",
         "margin": "1/2",
         "pop": 7,
         "stable": "西園正都 (栗東)"
@@ -4024,7 +4024,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "太宰啓介",
-        "time": "",
+        "time": "1:07.6",
         "margin": "クビ",
         "pop": 15,
         "stable": "昆貢 (栗東)"
@@ -4036,7 +4036,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "1:07.7",
         "margin": "1/2",
         "pop": 12,
         "stable": "菊沢隆徳 (美浦)"
@@ -4048,7 +4048,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:07.7",
         "margin": "クビ",
         "pop": 11,
         "stable": "須貝尚介 (栗東)"
@@ -4060,7 +4060,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "鮫島克駿",
-        "time": "",
+        "time": "1:07.8",
         "margin": "クビ",
         "pop": 18,
         "stable": "浅見秀一 (栗東)"
@@ -4072,7 +4072,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "中井裕二",
-        "time": "",
+        "time": "1:07.9",
         "margin": "1/2",
         "pop": 9,
         "stable": "飯田雄三 (栗東)"
@@ -4084,7 +4084,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "勝浦正樹",
-        "time": "",
+        "time": "1:08.1",
         "margin": "1.1/2",
         "pop": 13,
         "stable": "尾関知人 (美浦)"
@@ -4096,7 +4096,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:08.2",
         "margin": "クビ",
         "pop": 8,
         "stable": "村山明 (栗東)"
@@ -4112,7 +4112,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:56.2",
         "margin": "-",
         "pop": 2,
         "stable": "上村洋行 (栗東)"
@@ -4124,7 +4124,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "西村淳也",
-        "time": "**",
+        "time": "1:56.4",
         "margin": "1",
         "pop": 4,
         "stable": "中内田充 (栗東)"
@@ -4136,7 +4136,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "1:56.5",
         "margin": "1",
         "pop": 8,
         "stable": "友道康夫 (栗東)"
@@ -4148,7 +4148,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "1:56.5",
         "margin": "ハナ",
         "pop": 10,
         "stable": "牧浦充徳 (栗東)"
@@ -4160,7 +4160,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "**",
+        "time": "1:56.6",
         "margin": "クビ",
         "pop": 5,
         "stable": "奥村武 (美浦)"
@@ -4172,7 +4172,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "鮫島克駿",
-        "time": "**",
+        "time": "1:56.6",
         "margin": "クビ",
         "pop": 6,
         "stable": "杉山晴紀 (栗東)"
@@ -4184,7 +4184,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:56.6",
         "margin": "ハナ",
         "pop": 1,
         "stable": "国枝栄 (美浦)"
@@ -4196,7 +4196,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "吉田隼人",
-        "time": "**",
+        "time": "1:56.8",
         "margin": "1.1/4",
         "pop": 12,
         "stable": "宮本博 (栗東)"
@@ -4208,7 +4208,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "丹内祐次",
-        "time": "**",
+        "time": "1:56.8",
         "margin": "同着",
         "pop": 9,
         "stable": "加藤士津 (美浦)"
@@ -4220,7 +4220,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:56.9",
         "margin": "1/2",
         "pop": 11,
         "stable": "手塚貴久 (美浦)"
@@ -4232,7 +4232,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "1:56.9",
         "margin": "ハナ",
         "pop": 13,
         "stable": "矢作芳人 (栗東)"
@@ -4244,7 +4244,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡9",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "**",
+        "time": "1:57.1",
         "margin": "3/4",
         "pop": 15,
         "stable": "東田明士 (栗東)"
@@ -4256,7 +4256,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "モレイラ",
-        "time": "**",
+        "time": "1:57.3",
         "margin": "1.1/2",
         "pop": 3,
         "stable": "国枝栄 (美浦)"
@@ -4268,7 +4268,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "1:57.7",
         "margin": "2.1/2",
         "pop": 7,
         "stable": "安田翔伍 (栗東)"
@@ -4280,7 +4280,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "1:58.3",
         "margin": "4",
         "pop": 14,
         "stable": "橋口慎介 (栗東)"
@@ -4294,7 +4294,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:58.2",
         "margin": "-",
         "pop": 2,
         "stable": "上村洋行 (栗東)"
@@ -4306,7 +4306,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:58.2",
         "margin": "クビ",
         "pop": 3,
         "stable": "田中博康 (美浦)"
@@ -4318,7 +4318,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "菅原明良",
-        "time": "**",
+        "time": "1:58.2",
         "margin": "ハナ",
         "pop": 11,
         "stable": "黒岩陽一 (美浦)"
@@ -4330,7 +4330,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "酒井学",
-        "time": "**",
+        "time": "1:58.3",
         "margin": "1/2",
         "pop": 7,
         "stable": "須貝尚介 (栗東)"
@@ -4342,7 +4342,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "北村宏司",
-        "time": "**",
+        "time": "1:58.5",
         "margin": "1",
         "pop": 8,
         "stable": "木村哲也 (美浦)"
@@ -4354,7 +4354,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "1:58.6",
         "margin": "1",
         "pop": 4,
         "stable": "池添学 (栗東)"
@@ -4366,7 +4366,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:58.7",
         "margin": "クビ",
         "pop": 5,
         "stable": "手塚貴久 (美浦)"
@@ -4378,7 +4378,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "西村淳也",
-        "time": "**",
+        "time": "1:58.7",
         "margin": "アタマ",
         "pop": 6,
         "stable": "高野友和 (栗東)"
@@ -4390,7 +4390,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "藤岡康太",
-        "time": "**",
+        "time": "1:58.9",
         "margin": "1.1/4",
         "pop": 16,
         "stable": "池添学 (栗東)"
@@ -4402,7 +4402,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "杉原誠人",
-        "time": "**",
+        "time": "1:58.9",
         "margin": "クビ",
         "pop": 13,
         "stable": "宮田敬介 (美浦)"
@@ -4414,7 +4414,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:58.9",
         "margin": "ハナ",
         "pop": 1,
         "stable": "堀宣行 (美浦)"
@@ -4426,7 +4426,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "**",
+        "time": "1:59.0",
         "margin": "クビ",
         "pop": 15,
         "stable": "国枝栄 (美浦)"
@@ -4438,7 +4438,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "1:59.5",
         "margin": "3",
         "pop": 9,
         "stable": "友道康夫 (栗東)"
@@ -4450,7 +4450,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "1:59.5",
         "margin": "アタマ",
         "pop": 10,
         "stable": "安田翔伍 (栗東)"
@@ -4462,7 +4462,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "2:00.2",
         "margin": "4",
         "pop": 14,
         "stable": "斉藤崇史 (栗東)"
@@ -4474,7 +4474,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "津村明秀",
-        "time": "**",
+        "time": "2:00.5",
         "margin": "2",
         "pop": 12,
         "stable": "田中克典 (栗東)"
@@ -4488,7 +4488,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:57.4",
         "margin": "-",
         "pop": 2,
         "stable": "藤岡健一 (栗東)"
@@ -4500,7 +4500,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:57.4",
         "margin": "ハナ",
         "pop": 1,
         "stable": "高柳瑞樹 (美浦)"
@@ -4512,7 +4512,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:57.4",
         "margin": "クビ",
         "pop": 10,
         "stable": "安田隆行 (栗東)"
@@ -4524,7 +4524,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "1:57.8",
         "margin": "2",
         "pop": 8,
         "stable": "昆貢 (栗東)"
@@ -4536,7 +4536,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "1:57.9",
         "margin": "3/4",
         "pop": 6,
         "stable": "吉田直弘 (栗東)"
@@ -4548,7 +4548,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "1:58.0",
         "margin": "1/2",
         "pop": 5,
         "stable": "斉藤崇史 (栗東)"
@@ -4560,7 +4560,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:58.0",
         "margin": "1/2",
         "pop": 4,
         "stable": "堀宣行 (美浦)"
@@ -4572,7 +4572,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "**",
+        "time": "1:58.1",
         "margin": "クビ",
         "pop": 7,
         "stable": "奥村武 (美浦)"
@@ -4584,7 +4584,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:58.1",
         "margin": "クビ",
         "pop": 3,
         "stable": "池江泰寿 (栗東)"
@@ -4596,7 +4596,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "1:58.1",
         "margin": "ハナ",
         "pop": 12,
         "stable": "友道康夫 (栗東)"
@@ -4608,7 +4608,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:58.2",
         "margin": "1/2",
         "pop": 9,
         "stable": "宗像義忠 (美浦)"
@@ -4620,7 +4620,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "西村淳也",
-        "time": "**",
+        "time": "1:58.2",
         "margin": "ハナ",
         "pop": 16,
         "stable": "森田直行 (栗東)"
@@ -4632,7 +4632,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "団野大成",
-        "time": "**",
+        "time": "1:58.3",
         "margin": "クビ",
         "pop": 11,
         "stable": "斉藤崇史 (栗東)"
@@ -4644,7 +4644,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "**",
+        "time": "1:58.9",
         "margin": "4",
         "pop": 15,
         "stable": "高橋義忠 (栗東)"
@@ -4656,7 +4656,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "1:59.3",
         "margin": "2.1/2",
         "pop": 14,
         "stable": "大久保龍 (栗東)"
@@ -4668,7 +4668,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "1:59.5",
         "margin": "1.1/4",
         "pop": 13,
         "stable": "斉藤崇史 (栗東)"
@@ -4682,7 +4682,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "1:58.4",
         "margin": "-",
         "pop": 8,
         "stable": "友道康夫 (栗東)"
@@ -4694,7 +4694,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:58.5",
         "margin": "クビ",
         "pop": 3,
         "stable": "高野友和 (栗東)"
@@ -4706,7 +4706,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:58.5",
         "margin": "ハナ",
         "pop": 7,
         "stable": "杉山晴紀 (栗東)"
@@ -4718,7 +4718,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:58.7",
         "margin": "1",
         "pop": 5,
         "stable": "堀宣行 (美浦)"
@@ -4730,7 +4730,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:58.9",
         "margin": "1.1/4",
         "pop": 2,
         "stable": "藤岡健一 (栗東)"
@@ -4742,7 +4742,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:58.9",
         "margin": "クビ",
         "pop": 15,
         "stable": "橋田満 (栗東)"
@@ -4754,7 +4754,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 57.0,
         "jockey": "国分恭介",
-        "time": "",
+        "time": "1:59.0",
         "margin": "1/2",
         "pop": 11,
         "stable": "西園正都 (栗東)"
@@ -4766,7 +4766,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:59.0",
         "margin": "クビ",
         "pop": 10,
         "stable": "斉藤崇史 (栗東)"
@@ -4778,7 +4778,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "1:59.1",
         "margin": "1/2",
         "pop": 1,
         "stable": "鹿戸雄一 (美浦)"
@@ -4790,7 +4790,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:59.2",
         "margin": "3/4",
         "pop": 4,
         "stable": "中竹和也 (栗東)"
@@ -4802,7 +4802,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:59.3",
         "margin": "クビ",
         "pop": 6,
         "stable": "安田翔伍 (栗東)"
@@ -4814,7 +4814,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "坂井瑠星",
-        "time": "",
+        "time": "1:59.3",
         "margin": "ハナ",
         "pop": 16,
         "stable": "松下武士 (栗東)"
@@ -4826,7 +4826,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "1:59.4",
         "margin": "1",
         "pop": 12,
         "stable": "友道康夫 (栗東)"
@@ -4838,7 +4838,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡9",
         "load": 57.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "2:00.0",
         "margin": "3.1/2",
         "pop": 13,
         "stable": "友道康夫 (栗東)"
@@ -4850,7 +4850,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:00.3",
         "margin": "1.1/2",
         "pop": 14,
         "stable": "小手川準 (美浦)"
@@ -4862,7 +4862,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "2:00.7",
         "margin": "2.1/2",
         "pop": 9,
         "stable": "手塚貴久 (美浦)"
@@ -4876,7 +4876,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:01.6",
         "margin": "-",
         "pop": 4,
         "stable": "高野友和 (栗東)"
@@ -4888,7 +4888,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:02.3",
         "margin": "4",
         "pop": 6,
         "stable": "森田直行 (栗東)"
@@ -4900,7 +4900,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:02.5",
         "margin": "3/4",
         "pop": 1,
         "stable": "矢作芳人 (栗東)"
@@ -4912,7 +4912,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:02.5",
         "margin": "クビ",
         "pop": 2,
         "stable": "藤沢和雄 (美浦)"
@@ -4924,7 +4924,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:02.7",
         "margin": "1.1/4",
         "pop": 3,
         "stable": "堀宣行 (美浦)"
@@ -4936,7 +4936,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "鮫島克駿",
-        "time": "",
+        "time": "2:03.0",
         "margin": "1.3/4",
         "pop": 11,
         "stable": "中竹和也 (栗東)"
@@ -4948,7 +4948,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:03.3",
         "margin": "2",
         "pop": 12,
         "stable": "川村禎彦 (栗東)"
@@ -4960,7 +4960,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "2:04.0",
         "margin": "4",
         "pop": 10,
         "stable": "友道康夫 (栗東)"
@@ -4972,7 +4972,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "2:04.1",
         "margin": "1/2",
         "pop": 7,
         "stable": "友道康夫 (栗東)"
@@ -4984,7 +4984,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "2:04.2",
         "margin": "1/2",
         "pop": 9,
         "stable": "池江泰寿 (栗東)"
@@ -4996,7 +4996,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "2:04.7",
         "margin": "3",
         "pop": 8,
         "stable": "林徹 (美浦)"
@@ -5008,7 +5008,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "2:05.2",
         "margin": "3",
         "pop": 5,
         "stable": "友道康夫 (栗東)"
@@ -5020,7 +5020,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "団野大成",
-        "time": "",
+        "time": "2:11.9",
         "margin": "大",
         "pop": 13,
         "stable": "森秀行 (栗東)"
@@ -5034,7 +5034,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:58.4",
         "margin": "-",
         "pop": 2,
         "stable": "松永幹夫 (栗東)"
@@ -5046,7 +5046,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:58.4",
         "margin": "クビ",
         "pop": 4,
         "stable": "斉藤崇史 (栗東)"
@@ -5058,7 +5058,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:58.5",
         "margin": "クビ",
         "pop": 1,
         "stable": "萩原清 (美浦)"
@@ -5070,7 +5070,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "鮫島克駿",
-        "time": "",
+        "time": "1:58.6",
         "margin": "3/4",
         "pop": 11,
         "stable": "中竹和也 (栗東)"
@@ -5082,7 +5082,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:58.8",
         "margin": "1.1/4",
         "pop": 5,
         "stable": "友道康夫 (栗東)"
@@ -5094,7 +5094,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:58.9",
         "margin": "3/4",
         "pop": 9,
         "stable": "堀宣行 (美浦)"
@@ -5106,7 +5106,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:59.0",
         "margin": "1/2",
         "pop": 3,
         "stable": "大竹正博 (美浦)"
@@ -5118,7 +5118,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "1:59.1",
         "margin": "3/4",
         "pop": 12,
         "stable": "高橋義忠 (栗東)"
@@ -5130,7 +5130,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:59.4",
         "margin": "1.1/2",
         "pop": 8,
         "stable": "矢作芳人 (栗東)"
@@ -5142,7 +5142,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "1:59.4",
         "margin": "ハナ",
         "pop": 10,
         "stable": "堀宣行 (美浦)"
@@ -5154,7 +5154,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "ヒューイ",
-        "time": "",
+        "time": "1:59.5",
         "margin": "3/4",
         "pop": 7,
         "stable": "友道康夫 (栗東)"
@@ -5166,7 +5166,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:00.3",
         "margin": "5",
         "pop": 6,
         "stable": "杉山晴紀 (栗東)"
@@ -5180,7 +5180,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "2:01.0",
         "margin": "-",
         "pop": 9,
         "stable": "池江泰寿 (栗東)"
@@ -5192,7 +5192,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:01.0",
         "margin": "クビ",
         "pop": 2,
         "stable": "角居勝彦 (栗東)"
@@ -5204,7 +5204,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:01.1",
         "margin": "クビ",
         "pop": 4,
         "stable": "友道康夫 (栗東)"
@@ -5216,7 +5216,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:01.2",
         "margin": "3/4",
         "pop": 10,
         "stable": "友道康夫 (栗東)"
@@ -5228,7 +5228,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "2:01.2",
         "margin": "クビ",
         "pop": 5,
         "stable": "角居勝彦 (栗東)"
@@ -5240,7 +5240,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:01.3",
         "margin": "1/2",
         "pop": 1,
         "stable": "大竹正博 (美浦)"
@@ -5252,7 +5252,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:01.5",
         "margin": "1.1/4",
         "pop": 13,
         "stable": "音無秀孝 (栗東)"
@@ -5264,7 +5264,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:01.6",
         "margin": "クビ",
         "pop": 14,
         "stable": "角田晃一 (栗東)"
@@ -5276,7 +5276,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "2:01.6",
         "margin": "クビ",
         "pop": 11,
         "stable": "音無秀孝 (栗東)"
@@ -5288,7 +5288,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:02.0",
         "margin": "2",
         "pop": 8,
         "stable": "藤原英昭 (栗東)"
@@ -5300,7 +5300,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:02.0",
         "margin": "クビ",
         "pop": 3,
         "stable": "池江泰寿 (栗東)"
@@ -5312,7 +5312,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "ミナリク",
-        "time": "",
+        "time": "2:02.1",
         "margin": "クビ",
         "pop": 7,
         "stable": "浅見秀一 (栗東)"
@@ -5324,7 +5324,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "2:02.4",
         "margin": "1.3/4",
         "pop": 12,
         "stable": "矢作芳人 (栗東)"
@@ -5336,7 +5336,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "丸山元気",
-        "time": "",
+        "time": "2:02.5",
         "margin": "3/4",
         "pop": 6,
         "stable": "木村哲也 (美浦)"
@@ -5350,7 +5350,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:58.2",
         "margin": "-",
         "pop": 1,
         "stable": "庄野靖志 (栗東)"
@@ -5362,7 +5362,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:58.3",
         "margin": "3/4",
         "pop": 6,
         "stable": "池江泰寿 (栗東)"
@@ -5374,7 +5374,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:58.4",
         "margin": "1/2",
         "pop": 2,
         "stable": "池江泰寿 (栗東)"
@@ -5386,7 +5386,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:58.6",
         "margin": "1.1/2",
         "pop": 10,
         "stable": "池添兼雄 (栗東)"
@@ -5398,7 +5398,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:58.7",
         "margin": "クビ",
         "pop": 5,
         "stable": "菊沢隆徳 (美浦)"
@@ -5410,7 +5410,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "1:58.8",
         "margin": "3/4",
         "pop": 8,
         "stable": "音無秀孝 (栗東)"
@@ -5422,7 +5422,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:59.2",
         "margin": "2.1/2",
         "pop": 3,
         "stable": "池江泰寿 (栗東)"
@@ -5434,7 +5434,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ4",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:59.2",
         "margin": "クビ",
         "pop": 7,
         "stable": "須貝尚介 (栗東)"
@@ -5446,7 +5446,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝8",
         "load": 55.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "1:59.3",
         "margin": "クビ",
         "pop": 11,
         "stable": "大久保龍 (栗東)"
@@ -5458,7 +5458,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:59.3",
         "margin": "ハナ",
         "pop": 14,
         "stable": "戸田博文 (美浦)"
@@ -5470,7 +5470,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "1:59.5",
         "margin": "1.1/4",
         "pop": 15,
         "stable": "池添兼雄 (栗東)"
@@ -5482,7 +5482,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "1:59.7",
         "margin": "1.1/4",
         "pop": 9,
         "stable": "畠山吉宏 (美浦)"
@@ -5494,7 +5494,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:59.7",
         "margin": "ハナ",
         "pop": 4,
         "stable": "友道康夫 (栗東)"
@@ -5506,7 +5506,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "2:00.0",
         "margin": "2",
         "pop": 16,
         "stable": "今野貞一 (栗東)"
@@ -5518,7 +5518,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "2:00.1",
         "margin": "1/2",
         "pop": 13,
         "stable": "池江泰寿 (栗東)"
@@ -5530,7 +5530,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 57.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "2:01.9",
         "margin": "大",
         "pop": 12,
         "stable": "中川公成 (美浦)"
@@ -5544,7 +5544,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:58.9",
         "margin": "-",
         "pop": 1,
         "stable": "清水久詞 (栗東)"
@@ -5556,7 +5556,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:59.0",
         "margin": "3/4",
         "pop": 7,
         "stable": "藤原英昭 (栗東)"
@@ -5568,7 +5568,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:59.1",
         "margin": "1/2",
         "pop": 4,
         "stable": "池添兼雄 (栗東)"
@@ -5580,7 +5580,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:59.3",
         "margin": "1.1/2",
         "pop": 2,
         "stable": "友道康夫 (栗東)"
@@ -5592,7 +5592,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:59.3",
         "margin": "アタマ",
         "pop": 5,
         "stable": "音無秀孝 (栗東)"
@@ -5604,7 +5604,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:59.3",
         "margin": "ハナ",
         "pop": 3,
         "stable": "堀宣行 (美浦)"
@@ -5616,7 +5616,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:59.4",
         "margin": "1/2",
         "pop": 6,
         "stable": "音無秀孝 (栗東)"
@@ -5628,7 +5628,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:59.8",
         "margin": "2.1/2",
         "pop": 11,
         "stable": "手塚貴久 (美浦)"
@@ -5640,7 +5640,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:00.0",
         "margin": "1.1/4",
         "pop": 14,
         "stable": "安田隆行 (栗東)"
@@ -5652,7 +5652,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 57.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "2:00.1",
         "margin": "1/2",
         "pop": 13,
         "stable": "小島太 (美浦)"
@@ -5664,7 +5664,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "2:00.3",
         "margin": "1.1/2",
         "pop": 12,
         "stable": "橋田満 (栗東)"
@@ -5676,7 +5676,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "武士沢友",
-        "time": "",
+        "time": "2:00.4",
         "margin": "1/2",
         "pop": 8,
         "stable": "堀井雅広 (美浦)"
@@ -5688,7 +5688,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:00.9",
         "margin": "3",
         "pop": 9,
         "stable": "金成貴史 (美浦)"
@@ -5700,7 +5700,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 57.0,
         "jockey": "太宰啓介",
-        "time": "",
+        "time": "2:01.4",
         "margin": "3",
         "pop": 10,
         "stable": "昆貢 (栗東)"
@@ -5714,7 +5714,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 56.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:59.3",
         "margin": "-",
         "pop": 2,
         "stable": "音無秀孝 (栗東)"
@@ -5726,7 +5726,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:59.3",
         "margin": "クビ",
         "pop": 5,
         "stable": "清水久詞 (栗東)"
@@ -5738,7 +5738,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:59.5",
         "margin": "1.1/4",
         "pop": 4,
         "stable": "高野友和 (栗東)"
@@ -5750,7 +5750,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:59.7",
         "margin": "1.1/2",
         "pop": 1,
         "stable": "池江泰寿 (栗東)"
@@ -5762,7 +5762,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 57.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "1:59.9",
         "margin": "1",
         "pop": 7,
         "stable": "栗田博憲 (美浦)"
@@ -5774,7 +5774,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 54.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:00.0",
         "margin": "1/2",
         "pop": 3,
         "stable": "斎藤誠 (美浦)"
@@ -5786,7 +5786,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 56.0,
         "jockey": "柴田善臣",
-        "time": "",
+        "time": "2:00.0",
         "margin": "クビ",
         "pop": 8,
         "stable": "藤沢和雄 (美浦)"
@@ -5798,7 +5798,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 56.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "2:00.4",
         "margin": "2.1/2",
         "pop": 10,
         "stable": "音無秀孝 (栗東)"
@@ -5810,7 +5810,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 54.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:00.5",
         "margin": "クビ",
         "pop": 6,
         "stable": "石坂正 (栗東)"
@@ -5822,7 +5822,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 56.0,
         "jockey": "丹内祐次",
-        "time": "",
+        "time": "2:00.6",
         "margin": "1/2",
         "pop": 9,
         "stable": "上原博之 (美浦)"
@@ -5834,7 +5834,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 56.0,
         "jockey": "国分恭介",
-        "time": "",
+        "time": "2:00.9",
         "margin": "2",
         "pop": 11,
         "stable": "竹内正洋 (美浦)"
@@ -5850,7 +5850,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "モレイラ",
-        "time": "**",
+        "time": "1:33.1",
         "margin": "-",
         "pop": 3,
         "stable": "森一誠 (美浦)"
@@ -5862,7 +5862,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "1:33.1",
         "margin": "クビ",
         "pop": 2,
         "stable": "上村洋行 (栗東)"
@@ -5874,7 +5874,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "1:33.5",
         "margin": "2.1/2",
         "pop": 4,
         "stable": "西村真幸 (栗東)"
@@ -5886,7 +5886,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "**",
+        "time": "1:34.0",
         "margin": "2.1/2",
         "pop": 9,
         "stable": "和田勇介 (美浦)"
@@ -5898,7 +5898,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:34.2",
         "margin": "1.1/2",
         "pop": 1,
         "stable": "杉山晴紀 (栗東)"
@@ -5910,7 +5910,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "1:34.2",
         "margin": "ハナ",
         "pop": 12,
         "stable": "高野友和 (栗東)"
@@ -5922,7 +5922,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "津村明秀",
-        "time": "**",
+        "time": "1:34.2",
         "margin": "ハナ",
         "pop": 18,
         "stable": "蛯名正義 (美浦)"
@@ -5934,7 +5934,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "1:34.5",
         "margin": "1.3/4",
         "pop": 10,
         "stable": "武幸四郎 (栗東)"
@@ -5946,7 +5946,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:34.5",
         "margin": "ハナ",
         "pop": 8,
         "stable": "手塚貴久 (美浦)"
@@ -5958,7 +5958,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "1:34.9",
         "margin": "2.1/2",
         "pop": 6,
         "stable": "松下武士 (栗東)"
@@ -5970,7 +5970,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "幸英明",
-        "time": "**",
+        "time": "1:35.0",
         "margin": "1/2",
         "pop": 5,
         "stable": "松下武士 (栗東)"
@@ -5982,7 +5982,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:35.1",
         "margin": "1/2",
         "pop": 13,
         "stable": "宮田敬介 (美浦)"
@@ -5994,7 +5994,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡佑介",
-        "time": "**",
+        "time": "1:35.7",
         "margin": "3.1/2",
         "pop": 16,
         "stable": "長谷川浩 (栗東)"
@@ -6006,7 +6006,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:35.7",
         "margin": "クビ",
         "pop": 11,
         "stable": "石橋守 (栗東)"
@@ -6018,7 +6018,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "酒井学",
-        "time": "**",
+        "time": "1:36.0",
         "margin": "1.3/4",
         "pop": 7,
         "stable": "須貝尚介 (栗東)"
@@ -6030,7 +6030,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "団野大成",
-        "time": "**",
+        "time": "1:36.9",
         "margin": "5",
         "pop": 17,
         "stable": "本田優 (栗東)"
@@ -6042,7 +6042,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "1:37.9",
         "margin": "6",
         "pop": 14,
         "stable": "矢作芳人 (栗東)"
@@ -6054,7 +6054,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:38.3",
         "margin": "2.1/2",
         "pop": 15,
         "stable": "杉山晴紀 (栗東)"
@@ -6068,7 +6068,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "モレイラ",
-        "time": "**",
+        "time": "1:32.2",
         "margin": "-",
         "pop": 2,
         "stable": "国枝栄 (美浦)"
@@ -6080,7 +6080,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村宏司",
-        "time": "**",
+        "time": "1:32.3",
         "margin": "3/4",
         "pop": 1,
         "stable": "黒岩陽一 (美浦)"
@@ -6092,7 +6092,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "1:32.3",
         "margin": "クビ",
         "pop": 7,
         "stable": "茶木太樹 (栗東)"
@@ -6104,7 +6104,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:32.4",
         "margin": "1/2",
         "pop": 6,
         "stable": "庄野靖志 (栗東)"
@@ -6116,7 +6116,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "鮫島克駿",
-        "time": "**",
+        "time": "1:32.5",
         "margin": "クビ",
         "pop": 9,
         "stable": "藤岡健一 (栗東)"
@@ -6128,7 +6128,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "1:32.5",
         "margin": "クビ",
         "pop": 16,
         "stable": "藤原英昭 (栗東)"
@@ -6140,7 +6140,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡佑介",
-        "time": "**",
+        "time": "1:32.8",
         "margin": "1.1/2",
         "pop": 10,
         "stable": "四位洋文 (栗東)"
@@ -6152,7 +6152,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:32.8",
         "margin": "クビ",
         "pop": 3,
         "stable": "中内田充 (栗東)"
@@ -6164,7 +6164,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "1:32.8",
         "margin": "ハナ",
         "pop": 15,
         "stable": "金成貴史 (美浦)"
@@ -6176,7 +6176,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "クビ",
         "pop": 12,
         "stable": "松永幹夫 (栗東)"
@@ -6188,7 +6188,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "西村淳也",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "アタマ",
         "pop": 8,
         "stable": "杉山佳明 (栗東)"
@@ -6200,7 +6200,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "1:33.2",
         "margin": "1.1/2",
         "pop": 17,
         "stable": "庄野靖志 (栗東)"
@@ -6212,7 +6212,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ムルザバ",
-        "time": "**",
+        "time": "1:33.4",
         "margin": "1.1/2",
         "pop": 4,
         "stable": "木村哲也 (美浦)"
@@ -6224,7 +6224,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "津村明秀",
-        "time": "**",
+        "time": "1:33.5",
         "margin": "クビ",
         "pop": 13,
         "stable": "牧光二 (美浦)"
@@ -6236,7 +6236,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "1:33.5",
         "margin": "クビ",
         "pop": 14,
         "stable": "中村直也 (栗東)"
@@ -6248,7 +6248,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:33.6",
         "margin": "3/4",
         "pop": 5,
         "stable": "加藤士津 (美浦)"
@@ -6260,7 +6260,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "**",
+        "time": "1:34.0",
         "margin": "2.1/2",
         "pop": 18,
         "stable": "高野友和 (栗東)"
@@ -6272,7 +6272,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:34.1",
         "margin": "1/2",
         "pop": 11,
         "stable": "上原博之 (美浦)"
@@ -6286,7 +6286,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:32.1",
         "margin": "-",
         "pop": 1,
         "stable": "中内田充 (栗東)"
@@ -6298,7 +6298,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "鮫島克駿",
-        "time": "**",
+        "time": "1:32.3",
         "margin": "3/4",
         "pop": 6,
         "stable": "清水久詞 (栗東)"
@@ -6310,7 +6310,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:32.3",
         "margin": "クビ",
         "pop": 5,
         "stable": "鹿戸雄一 (美浦)"
@@ -6322,7 +6322,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:32.6",
         "margin": "1.3/4",
         "pop": 3,
         "stable": "友道康夫 (栗東)"
@@ -6334,7 +6334,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "**",
+        "time": "1:32.7",
         "margin": "1/2",
         "pop": 4,
         "stable": "庄野靖志 (栗東)"
@@ -6346,7 +6346,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田豊",
-        "time": "**",
+        "time": "1:32.7",
         "margin": "クビ",
         "pop": 9,
         "stable": "竹内正洋 (美浦)"
@@ -6358,7 +6358,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "3/4",
         "pop": 11,
         "stable": "高野友和 (栗東)"
@@ -6370,7 +6370,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "ハナ",
         "pop": 2,
         "stable": "武幸四郎 (栗東)"
@@ -6382,7 +6382,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "ハナ",
         "pop": 16,
         "stable": "池添学 (栗東)"
@@ -6394,7 +6394,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "アタマ",
         "pop": 15,
         "stable": "和田正一 (美浦)"
@@ -6406,7 +6406,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "1:33.0",
         "margin": "1/2",
         "pop": 10,
         "stable": "矢作芳人 (栗東)"
@@ -6418,7 +6418,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "杉原誠人",
-        "time": "**",
+        "time": "1:33.0",
         "margin": "クビ",
         "pop": 12,
         "stable": "小島茂之 (美浦)"
@@ -6430,7 +6430,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "**",
+        "time": "1:33.2",
         "margin": "1",
         "pop": 7,
         "stable": "音無秀孝 (栗東)"
@@ -6442,7 +6442,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:33.2",
         "margin": "アタマ",
         "pop": 8,
         "stable": "高橋康之 (栗東)"
@@ -6454,7 +6454,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "丸山元気",
-        "time": "**",
+        "time": "1:33.3",
         "margin": "クビ",
         "pop": 14,
         "stable": "清水久詞 (栗東)"
@@ -6466,7 +6466,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "富田暁",
-        "time": "**",
+        "time": "1:33.4",
         "margin": "3/4",
         "pop": 18,
         "stable": "長谷川浩 (栗東)"
@@ -6478,7 +6478,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "1:33.9",
         "margin": "3",
         "pop": 17,
         "stable": "上村洋行 (栗東)"
@@ -6490,7 +6490,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:34.4",
         "margin": "3.1/2",
         "pop": 13,
         "stable": "小笠倫弘 (美浦)"
@@ -6504,7 +6504,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:32.9",
         "margin": "-",
         "pop": 7,
         "stable": "高柳瑞樹 (美浦)"
@@ -6516,7 +6516,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:32.9",
         "margin": "ハナ",
         "pop": 3,
         "stable": "武幸四郎 (栗東)"
@@ -6528,7 +6528,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "1:33.0",
         "margin": "1/2",
         "pop": 6,
         "stable": "長谷川浩 (栗東)"
@@ -6540,7 +6540,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:33.0",
         "margin": "クビ",
         "pop": 2,
         "stable": "国枝栄 (美浦)"
@@ -6552,7 +6552,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "高倉稜",
-        "time": "",
+        "time": "1:33.0",
         "margin": "クビ",
         "pop": 13,
         "stable": "田中克典 (栗東)"
@@ -6564,7 +6564,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田豊",
-        "time": "",
+        "time": "1:33.1",
         "margin": "アタマ",
         "pop": 17,
         "stable": "矢作芳人 (栗東)"
@@ -6576,7 +6576,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "1:33.1",
         "margin": "ハナ",
         "pop": 9,
         "stable": "須貝尚介 (栗東)"
@@ -6588,7 +6588,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:33.1",
         "margin": "クビ",
         "pop": 5,
         "stable": "藤岡健一 (栗東)"
@@ -6600,7 +6600,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "1:33.1",
         "margin": "クビ",
         "pop": 11,
         "stable": "藤原英昭 (栗東)"
@@ -6612,7 +6612,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "1:33.2",
         "margin": "クビ",
         "pop": 1,
         "stable": "高野友和 (栗東)"
@@ -6624,7 +6624,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:33.4",
         "margin": "1.1/2",
         "pop": 4,
         "stable": "木村哲也 (美浦)"
@@ -6636,7 +6636,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "古川吉洋",
-        "time": "",
+        "time": "1:33.7",
         "margin": "1.3/4",
         "pop": 18,
         "stable": "武英智 (栗東)"
@@ -6648,7 +6648,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武藤雅",
-        "time": "",
+        "time": "1:33.8",
         "margin": "1/2",
         "pop": 15,
         "stable": "水野貴広 (美浦)"
@@ -6660,7 +6660,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:33.8",
         "margin": "アタマ",
         "pop": 12,
         "stable": "宮田敬介 (美浦)"
@@ -6672,7 +6672,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:33.8",
         "margin": "クビ",
         "pop": 16,
         "stable": "佐々木晶 (栗東)"
@@ -6684,7 +6684,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:34.0",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "相沢郁 (美浦)"
@@ -6696,7 +6696,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:34.1",
         "margin": "クビ",
         "pop": 14,
         "stable": "林徹 (美浦)"
@@ -6708,7 +6708,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "坂井瑠星",
-        "time": "",
+        "time": "1:34.3",
         "margin": "1.1/4",
         "pop": 8,
         "stable": "黒岩陽一 (美浦)"
@@ -6722,7 +6722,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "1:31.1",
         "margin": "-",
         "pop": 2,
         "stable": "須貝尚介 (栗東)"
@@ -6734,7 +6734,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:31.1",
         "margin": "クビ",
         "pop": 1,
         "stable": "国枝栄 (美浦)"
@@ -6746,7 +6746,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:31.2",
         "margin": "1/2",
         "pop": 8,
         "stable": "木村哲也 (美浦)"
@@ -6758,7 +6758,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "1:31.3",
         "margin": "クビ",
         "pop": 4,
         "stable": "国枝栄 (美浦)"
@@ -6770,7 +6770,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:31.8",
         "margin": "3",
         "pop": 5,
         "stable": "今野貞一 (栗東)"
@@ -6782,7 +6782,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:31.8",
         "margin": "クビ",
         "pop": 9,
         "stable": "栗田徹 (美浦)"
@@ -6794,7 +6794,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:31.9",
         "margin": "クビ",
         "pop": 14,
         "stable": "奥村豊 (栗東)"
@@ -6806,7 +6806,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "1:32.0",
         "margin": "1/2",
         "pop": 15,
         "stable": "安田翔伍 (栗東)"
@@ -6818,7 +6818,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "丸田恭介",
-        "time": "",
+        "time": "1:32.5",
         "margin": "3",
         "pop": 16,
         "stable": "高柳瑞樹 (美浦)"
@@ -6830,7 +6830,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "1:32.5",
         "margin": "ハナ",
         "pop": 17,
         "stable": "武幸四郎 (栗東)"
@@ -6842,7 +6842,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村宏司",
-        "time": "",
+        "time": "1:32.6",
         "margin": "1/2",
         "pop": 12,
         "stable": "鹿戸雄一 (美浦)"
@@ -6854,7 +6854,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:32.6",
         "margin": "ハナ",
         "pop": 13,
         "stable": "尾形和幸 (美浦)"
@@ -6866,7 +6866,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:32.6",
         "margin": "ハナ",
         "pop": 6,
         "stable": "高野友和 (栗東)"
@@ -6878,7 +6878,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "1:32.9",
         "margin": "2",
         "pop": 18,
         "stable": "高橋祥泰 (美浦)"
@@ -6890,7 +6890,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:33.1",
         "margin": "1",
         "pop": 7,
         "stable": "林徹 (美浦)"
@@ -6902,7 +6902,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:33.5",
         "margin": "2.1/2",
         "pop": 10,
         "stable": "渡辺薫彦 (栗東)"
@@ -6914,7 +6914,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:34.0",
         "margin": "3",
         "pop": 11,
         "stable": "谷潔 (栗東)"
@@ -6926,7 +6926,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:34.0",
         "margin": "アタマ",
         "pop": 3,
         "stable": "武英智 (栗東)"
@@ -6940,7 +6940,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:36.1",
         "margin": "-",
         "pop": 2,
         "stable": "杉山晴紀 (栗東)"
@@ -6952,7 +6952,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:36.3",
         "margin": "1.1/2",
         "pop": 1,
         "stable": "松下武士 (栗東)"
@@ -6964,7 +6964,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "1:36.6",
         "margin": "1.3/4",
         "pop": 9,
         "stable": "高橋祥泰 (美浦)"
@@ -6976,7 +6976,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:36.8",
         "margin": "1",
         "pop": 6,
         "stable": "中内田充 (栗東)"
@@ -6988,7 +6988,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:36.9",
         "margin": "3/4",
         "pop": 7,
         "stable": "藤原英昭 (栗東)"
@@ -7000,7 +7000,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:36.9",
         "margin": "ハナ",
         "pop": 3,
         "stable": "藤沢和雄 (美浦)"
@@ -7012,7 +7012,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤井勘一",
-        "time": "",
+        "time": "1:37.1",
         "margin": "1.1/4",
         "pop": 14,
         "stable": "清水久詞 (栗東)"
@@ -7024,7 +7024,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:37.2",
         "margin": "クビ",
         "pop": 5,
         "stable": "手塚貴久 (美浦)"
@@ -7036,7 +7036,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:37.3",
         "margin": "3/4",
         "pop": 11,
         "stable": "北出成人 (栗東)"
@@ -7048,7 +7048,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:37.3",
         "margin": "クビ",
         "pop": 4,
         "stable": "中内田充 (栗東)"
@@ -7060,7 +7060,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:37.5",
         "margin": "3/4",
         "pop": 16,
         "stable": "小笠倫弘 (美浦)"
@@ -7072,7 +7072,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "1:37.6",
         "margin": "3/4",
         "pop": 8,
         "stable": "国枝栄 (美浦)"
@@ -7084,7 +7084,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "1:37.7",
         "margin": "1/2",
         "pop": 18,
         "stable": "高柳瑞樹 (美浦)"
@@ -7096,7 +7096,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "石川裕紀",
-        "time": "",
+        "time": "1:37.7",
         "margin": "アタマ",
         "pop": 13,
         "stable": "手塚貴久 (美浦)"
@@ -7108,7 +7108,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:37.8",
         "margin": "クビ",
         "pop": 15,
         "stable": "北出成人 (栗東)"
@@ -7120,7 +7120,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "1:38.2",
         "margin": "2.1/2",
         "pop": 10,
         "stable": "西浦勝一 (栗東)"
@@ -7132,7 +7132,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松田大作",
-        "time": "",
+        "time": "1:39.7",
         "margin": "9",
         "pop": 17,
         "stable": "西園正都 (栗東)"
@@ -7144,7 +7144,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:39.9",
         "margin": "1",
         "pop": 12,
         "stable": "池添兼雄 (栗東)"
@@ -7158,7 +7158,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:32.7",
         "margin": "-",
         "pop": 2,
         "stable": "藤沢和雄 (美浦)"
@@ -7170,7 +7170,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:33.1",
         "margin": "2.1/2",
         "pop": 7,
         "stable": "渡辺薫彦 (栗東)"
@@ -7182,7 +7182,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:33.1",
         "margin": "クビ",
         "pop": 3,
         "stable": "斉藤崇史 (栗東)"
@@ -7194,7 +7194,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:33.1",
         "margin": "ハナ",
         "pop": 1,
         "stable": "中内田充 (栗東)"
@@ -7206,7 +7206,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:33.2",
         "margin": "クビ",
         "pop": 4,
         "stable": "友道康夫 (栗東)"
@@ -7218,7 +7218,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "秋山真一",
-        "time": "",
+        "time": "1:33.3",
         "margin": "3/4",
         "pop": 14,
         "stable": "庄野靖志 (栗東)"
@@ -7230,7 +7230,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:33.5",
         "margin": "1.1/4",
         "pop": 8,
         "stable": "橋口慎介 (栗東)"
@@ -7242,7 +7242,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "1:33.6",
         "margin": "3/4",
         "pop": 16,
         "stable": "寺島良 (栗東)"
@@ -7254,7 +7254,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:33.7",
         "margin": "クビ",
         "pop": 6,
         "stable": "藤沢和雄 (美浦)"
@@ -7266,7 +7266,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:34.0",
         "margin": "2",
         "pop": 11,
         "stable": "高野友和 (栗東)"
@@ -7278,7 +7278,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "坂井瑠星",
-        "time": "",
+        "time": "1:34.2",
         "margin": "1.1/4",
         "pop": 12,
         "stable": "笹田和秀 (栗東)"
@@ -7290,7 +7290,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "古川吉洋",
-        "time": "",
+        "time": "1:34.4",
         "margin": "1.1/4",
         "pop": 18,
         "stable": "南井克巳 (栗東)"
@@ -7302,7 +7302,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:34.6",
         "margin": "1.1/4",
         "pop": 5,
         "stable": "吉村圭司 (栗東)"
@@ -7314,7 +7314,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:34.7",
         "margin": "1/2",
         "pop": 15,
         "stable": "国枝栄 (美浦)"
@@ -7326,7 +7326,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "丸山元気",
-        "time": "",
+        "time": "1:35.0",
         "margin": "1.3/4",
         "pop": 13,
         "stable": "菊沢隆徳 (美浦)"
@@ -7338,7 +7338,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "1:35.0",
         "margin": "クビ",
         "pop": 17,
         "stable": "栗田徹 (美浦)"
@@ -7350,7 +7350,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:35.1",
         "margin": "3/4",
         "pop": 10,
         "stable": "藤原英昭 (栗東)"
@@ -7362,7 +7362,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:35.5",
         "margin": "2.1/2",
         "pop": 9,
         "stable": "田村康仁 (美浦)"
@@ -7376,7 +7376,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:33.1",
         "margin": "-",
         "pop": 2,
         "stable": "国枝栄 (美浦)"
@@ -7388,7 +7388,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:33.4",
         "margin": "1.3/4",
         "pop": 1,
         "stable": "松永幹夫 (栗東)"
@@ -7400,7 +7400,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:33.5",
         "margin": "1/2",
         "pop": 3,
         "stable": "藤岡健一 (栗東)"
@@ -7412,7 +7412,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "柴田善臣",
-        "time": "",
+        "time": "1:33.8",
         "margin": "1.3/4",
         "pop": 8,
         "stable": "加藤征弘 (美浦)"
@@ -7424,7 +7424,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:33.8",
         "margin": "ハナ",
         "pop": 4,
         "stable": "手塚貴久 (美浦)"
@@ -7436,7 +7436,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:33.8",
         "margin": "ハナ",
         "pop": 10,
         "stable": "高野友和 (栗東)"
@@ -7448,7 +7448,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:33.8",
         "margin": "ハナ",
         "pop": 12,
         "stable": "藤原英昭 (栗東)"
@@ -7460,7 +7460,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:33.8",
         "margin": "クビ",
         "pop": 15,
         "stable": "高橋亮 (栗東)"
@@ -7472,7 +7472,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "秋山真一",
-        "time": "",
+        "time": "1:33.8",
         "margin": "ハナ",
         "pop": 16,
         "stable": "藤岡健一 (栗東)"
@@ -7484,7 +7484,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:34.0",
         "margin": "1.1/4",
         "pop": 6,
         "stable": "木村哲也 (美浦)"
@@ -7496,7 +7496,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "1:34.3",
         "margin": "2",
         "pop": 9,
         "stable": "友道康夫 (栗東)"
@@ -7508,7 +7508,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:34.5",
         "margin": "1.1/2",
         "pop": 5,
         "stable": "藤原英昭 (栗東)"
@@ -7520,7 +7520,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:34.6",
         "margin": "クビ",
         "pop": 13,
         "stable": "池江泰寿 (栗東)"
@@ -7532,7 +7532,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "1:34.6",
         "margin": "クビ",
         "pop": 11,
         "stable": "田中清隆 (美浦)"
@@ -7544,7 +7544,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:34.7",
         "margin": "1/2",
         "pop": 7,
         "stable": "大竹正博 (美浦)"
@@ -7556,7 +7556,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:35.1",
         "margin": "2.1/2",
         "pop": 17,
         "stable": "佐々木晶 (栗東)"
@@ -7568,7 +7568,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:35.2",
         "margin": "3/4",
         "pop": 14,
         "stable": "藤岡健一 (栗東)"
@@ -7594,7 +7594,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:34.5",
         "margin": "-",
         "pop": 8,
         "stable": "本田優 (栗東)"
@@ -7606,7 +7606,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:34.6",
         "margin": "1/2",
         "pop": 3,
         "stable": "矢作芳人 (栗東)"
@@ -7618,7 +7618,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:34.6",
         "margin": "クビ",
         "pop": 1,
         "stable": "藤沢和雄 (美浦)"
@@ -7630,7 +7630,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:34.7",
         "margin": "クビ",
         "pop": 7,
         "stable": "松下武士 (栗東)"
@@ -7642,7 +7642,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:34.7",
         "margin": "クビ",
         "pop": 6,
         "stable": "菊沢隆徳 (美浦)"
@@ -7654,7 +7654,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:34.9",
         "margin": "1.1/4",
         "pop": 14,
         "stable": "橋田満 (栗東)"
@@ -7666,7 +7666,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:35.1",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "浜田多実 (栗東)"
@@ -7678,7 +7678,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "丸田恭介",
-        "time": "",
+        "time": "1:35.2",
         "margin": "1/2",
         "pop": 9,
         "stable": "奥村武 (美浦)"
@@ -7690,7 +7690,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:35.3",
         "margin": "3/4",
         "pop": 12,
         "stable": "安田隆行 (栗東)"
@@ -7702,7 +7702,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:35.3",
         "margin": "ハナ",
         "pop": 13,
         "stable": "中内田充 (栗東)"
@@ -7714,7 +7714,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:35.4",
         "margin": "1/2",
         "pop": 5,
         "stable": "池江泰寿 (栗東)"
@@ -7726,7 +7726,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:35.5",
         "margin": "1/2",
         "pop": 2,
         "stable": "友道康夫 (栗東)"
@@ -7738,7 +7738,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "丸山元気",
-        "time": "",
+        "time": "1:35.7",
         "margin": "1.1/4",
         "pop": 11,
         "stable": "荒川義之 (栗東)"
@@ -7750,7 +7750,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:35.8",
         "margin": "クビ",
         "pop": 16,
         "stable": "西浦勝一 (栗東)"
@@ -7762,7 +7762,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "1:35.8",
         "margin": "クビ",
         "pop": 15,
         "stable": "斉藤崇史 (栗東)"
@@ -7774,7 +7774,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "1:36.8",
         "margin": "6",
         "pop": 4,
         "stable": "昆貢 (栗東)"
@@ -7786,7 +7786,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:37.2",
         "margin": "2.1/2",
         "pop": 17,
         "stable": "西浦勝一 (栗東)"
@@ -7812,7 +7812,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:33.4",
         "margin": "-",
         "pop": 3,
         "stable": "藤岡健一 (栗東)"
@@ -7824,7 +7824,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:33.4",
         "margin": "ハナ",
         "pop": 2,
         "stable": "石坂正 (栗東)"
@@ -7836,7 +7836,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:33.7",
         "margin": "1.3/4",
         "pop": 6,
         "stable": "浅見秀一 (栗東)"
@@ -7848,7 +7848,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:33.8",
         "margin": "1/2",
         "pop": 1,
         "stable": "田村康仁 (美浦)"
@@ -7860,7 +7860,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "1:33.9",
         "margin": "1/2",
         "pop": 13,
         "stable": "須貝尚介 (栗東)"
@@ -7872,7 +7872,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:34.1",
         "margin": "1.1/4",
         "pop": 5,
         "stable": "藤原英昭 (栗東)"
@@ -7884,7 +7884,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:34.3",
         "margin": "1.1/4",
         "pop": 4,
         "stable": "音無秀孝 (栗東)"
@@ -7896,7 +7896,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:34.3",
         "margin": "クビ",
         "pop": 10,
         "stable": "中竹和也 (栗東)"
@@ -7908,7 +7908,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:34.4",
         "margin": "3/4",
         "pop": 12,
         "stable": "中舘英二 (美浦)"
@@ -7920,7 +7920,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:34.4",
         "margin": "クビ",
         "pop": 7,
         "stable": "荒川義之 (栗東)"
@@ -7932,7 +7932,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:34.6",
         "margin": "1.1/4",
         "pop": 14,
         "stable": "本田優 (栗東)"
@@ -7944,7 +7944,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "1:34.7",
         "margin": "1/2",
         "pop": 9,
         "stable": "畠山吉宏 (美浦)"
@@ -7956,7 +7956,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "菱田裕二",
-        "time": "",
+        "time": "1:34.7",
         "margin": "クビ",
         "pop": 11,
         "stable": "矢作芳人 (栗東)"
@@ -7968,7 +7968,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "秋山真一",
-        "time": "",
+        "time": "1:35.1",
         "margin": "2.1/2",
         "pop": 17,
         "stable": "浅野洋一 (美浦)"
@@ -7980,7 +7980,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松田大作",
-        "time": "",
+        "time": "1:35.2",
         "margin": "クビ",
         "pop": 16,
         "stable": "南井克巳 (栗東)"
@@ -7992,7 +7992,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "古川吉洋",
-        "time": "",
+        "time": "1:35.2",
         "margin": "ハナ",
         "pop": 18,
         "stable": "本田優 (栗東)"
@@ -8004,7 +8004,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "1:35.4",
         "margin": "1.1/4",
         "pop": 8,
         "stable": "鮫島一歩 (栗東)"
@@ -8016,7 +8016,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:35.5",
         "margin": "クビ",
         "pop": 15,
         "stable": "手塚貴久 (美浦)"
@@ -8032,7 +8032,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "モレイラ",
-        "time": "**",
+        "time": "1:57.0",
         "margin": "-",
         "pop": 3,
         "stable": "高柳大輔 (栗東)"
@@ -8044,7 +8044,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "1:57.3",
         "margin": "1.1/2",
         "pop": 1,
         "stable": "斉藤崇史 (栗東)"
@@ -8056,7 +8056,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:57.3",
         "margin": "クビ",
         "pop": 4,
         "stable": "手塚貴久 (美浦)"
@@ -8068,7 +8068,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:57.4",
         "margin": "1/2",
         "pop": 7,
         "stable": "杉山晴紀 (栗東)"
@@ -8080,7 +8080,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "西村淳也",
-        "time": "**",
+        "time": "1:57.4",
         "margin": "アタマ",
         "pop": 2,
         "stable": "杉山晴紀 (栗東)"
@@ -8092,7 +8092,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "佐々木大",
-        "time": "**",
+        "time": "1:57.6",
         "margin": "1",
         "pop": 16,
         "stable": "須貝尚介 (栗東)"
@@ -8104,7 +8104,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "**",
+        "time": "1:57.7",
         "margin": "1",
         "pop": 9,
         "stable": "矢作芳人 (栗東)"
@@ -8116,7 +8116,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:57.9",
         "margin": "1",
         "pop": 11,
         "stable": "田中博康 (美浦)"
@@ -8128,7 +8128,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:57.9",
         "margin": "クビ",
         "pop": 6,
         "stable": "森一誠 (美浦)"
@@ -8140,7 +8140,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:58.0",
         "margin": "クビ",
         "pop": 12,
         "stable": "奥村武 (美浦)"
@@ -8152,7 +8152,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:58.0",
         "margin": "ハナ",
         "pop": 5,
         "stable": "中内田充 (栗東)"
@@ -8164,7 +8164,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "1:58.0",
         "margin": "クビ",
         "pop": 15,
         "stable": "矢作芳人 (栗東)"
@@ -8176,7 +8176,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "津村明秀",
-        "time": "**",
+        "time": "1:58.1",
         "margin": "1/2",
         "pop": 14,
         "stable": "千葉直人 (美浦)"
@@ -8188,7 +8188,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "1:58.2",
         "margin": "クビ",
         "pop": 10,
         "stable": "上村洋行 (栗東)"
@@ -8200,7 +8200,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "杉原誠人",
-        "time": "**",
+        "time": "1:58.2",
         "margin": "クビ",
         "pop": 8,
         "stable": "西村真幸 (栗東)"
@@ -8212,7 +8212,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松岡正海",
-        "time": "**",
+        "time": "1:58.6",
         "margin": "2",
         "pop": 18,
         "stable": "竹内正洋 (美浦)"
@@ -8224,7 +8224,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "丹内祐次",
-        "time": "**",
+        "time": "1:58.6",
         "margin": "1/2",
         "pop": 17,
         "stable": "藤野健太 (栗東)"
@@ -8236,7 +8236,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "**",
+        "time": "1:58.9",
         "margin": "1.1/2",
         "pop": 13,
         "stable": "上原佑紀 (美浦)"
@@ -8250,7 +8250,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:57.1",
         "margin": "-",
         "pop": 2,
         "stable": "友道康夫 (栗東)"
@@ -8262,7 +8262,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "モレイラ",
-        "time": "**",
+        "time": "1:57.1",
         "margin": "クビ",
         "pop": 7,
         "stable": "加藤士津 (美浦)"
@@ -8274,7 +8274,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:57.2",
         "margin": "1/2",
         "pop": 3,
         "stable": "高野友和 (栗東)"
@@ -8286,7 +8286,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:57.5",
         "margin": "1.1/2",
         "pop": 6,
         "stable": "武井亮 (美浦)"
@@ -8298,7 +8298,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "1:57.5",
         "margin": "クビ",
         "pop": 5,
         "stable": "矢作芳人 (栗東)"
@@ -8310,7 +8310,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村宏司",
-        "time": "**",
+        "time": "1:57.6",
         "margin": "クビ",
         "pop": 1,
         "stable": "木村哲也 (美浦)"
@@ -8322,7 +8322,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:57.8",
         "margin": "1.1/2",
         "pop": 11,
         "stable": "牧浦充徳 (栗東)"
@@ -8334,7 +8334,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:57.9",
         "margin": "3/4",
         "pop": 14,
         "stable": "鹿戸雄一 (美浦)"
@@ -8346,7 +8346,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "菅原明良",
-        "time": "**",
+        "time": "1:58.0",
         "margin": "クビ",
         "pop": 10,
         "stable": "音無秀孝 (栗東)"
@@ -8358,7 +8358,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "**",
+        "time": "1:58.1",
         "margin": "1/2",
         "pop": 9,
         "stable": "矢作芳人 (栗東)"
@@ -8370,7 +8370,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "菱田裕二",
-        "time": "**",
+        "time": "1:58.2",
         "margin": "1",
         "pop": 16,
         "stable": "矢作芳人 (栗東)"
@@ -8382,7 +8382,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "1:58.5",
         "margin": "1.1/2",
         "pop": 12,
         "stable": "石坂公一 (栗東)"
@@ -8394,7 +8394,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ムルザバ",
-        "time": "**",
+        "time": "1:58.5",
         "margin": "クビ",
         "pop": 8,
         "stable": "坂口智康 (栗東)"
@@ -8406,7 +8406,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "三浦皇成",
-        "time": "**",
+        "time": "1:58.6",
         "margin": "1/2",
         "pop": 13,
         "stable": "宗像義忠 (美浦)"
@@ -8418,7 +8418,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:58.7",
         "margin": "1/2",
         "pop": 15,
         "stable": "上原佑紀 (美浦)"
@@ -8430,7 +8430,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "幸英明",
-        "time": "**",
+        "time": "1:59.2",
         "margin": "2.1/2",
         "pop": 17,
         "stable": "河内洋 (栗東)"
@@ -8442,7 +8442,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "1:59.3",
         "margin": "1",
         "pop": 4,
         "stable": "石橋守 (栗東)"
@@ -8468,7 +8468,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "2:00.6",
         "margin": "-",
         "pop": 2,
         "stable": "手塚貴久 (美浦)"
@@ -8480,7 +8480,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "2:00.8",
         "margin": "1.1/4",
         "pop": 5,
         "stable": "堀宣行 (美浦)"
@@ -8492,7 +8492,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "2:01.1",
         "margin": "1.3/4",
         "pop": 1,
         "stable": "西村真幸 (栗東)"
@@ -8504,7 +8504,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "津村明秀",
-        "time": "**",
+        "time": "2:01.1",
         "margin": "アタマ",
         "pop": 13,
         "stable": "斎藤誠 (美浦)"
@@ -8516,7 +8516,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "2:01.3",
         "margin": "3/4",
         "pop": 12,
         "stable": "須貝尚介 (栗東)"
@@ -8528,7 +8528,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "2:01.3",
         "margin": "アタマ",
         "pop": 8,
         "stable": "友道康夫 (栗東)"
@@ -8540,7 +8540,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "2:01.5",
         "margin": "1.1/4",
         "pop": 9,
         "stable": "昆貢 (栗東)"
@@ -8552,7 +8552,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "三浦皇成",
-        "time": "**",
+        "time": "2:01.9",
         "margin": "2.1/2",
         "pop": 15,
         "stable": "鹿戸雄一 (美浦)"
@@ -8564,7 +8564,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "2:02.0",
         "margin": "1/2",
         "pop": 4,
         "stable": "須貝尚介 (栗東)"
@@ -8576,7 +8576,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "**",
+        "time": "2:02.4",
         "margin": "2.1/2",
         "pop": 3,
         "stable": "上村洋行 (栗東)"
@@ -8588,7 +8588,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石川裕紀",
-        "time": "**",
+        "time": "2:02.8",
         "margin": "2",
         "pop": 16,
         "stable": "相沢郁 (美浦)"
@@ -8600,7 +8600,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "嶋田純次",
-        "time": "**",
+        "time": "2:02.9",
         "margin": "1/2",
         "pop": 17,
         "stable": "大和田成 (美浦)"
@@ -8612,7 +8612,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "2:02.9",
         "margin": "クビ",
         "pop": 6,
         "stable": "武幸四郎 (栗東)"
@@ -8624,7 +8624,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "2:02.9",
         "margin": "ハナ",
         "pop": 11,
         "stable": "宮徹 (栗東)"
@@ -8636,7 +8636,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "**",
+        "time": "2:03.4",
         "margin": "3",
         "pop": 14,
         "stable": "藤岡健一 (栗東)"
@@ -8648,7 +8648,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "**",
+        "time": "2:03.4",
         "margin": "クビ",
         "pop": 18,
         "stable": "松永幹夫 (栗東)"
@@ -8660,7 +8660,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "2:03.7",
         "margin": "1.3/4",
         "pop": 7,
         "stable": "奥村武 (美浦)"
@@ -8672,7 +8672,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "2:06.1",
         "margin": "大",
         "pop": 10,
         "stable": "安田隆行 (栗東)"
@@ -8686,7 +8686,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:59.7",
         "margin": "-",
         "pop": 5,
         "stable": "木村哲也 (美浦)"
@@ -8698,7 +8698,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:59.8",
         "margin": "1",
         "pop": 3,
         "stable": "木村哲也 (美浦)"
@@ -8710,7 +8710,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:00.0",
         "margin": "1.1/4",
         "pop": 1,
         "stable": "友道康夫 (栗東)"
@@ -8722,7 +8722,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:00.0",
         "margin": "クビ",
         "pop": 2,
         "stable": "堀宣行 (美浦)"
@@ -8734,7 +8734,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:00.1",
         "margin": "クビ",
         "pop": 6,
         "stable": "田村康仁 (美浦)"
@@ -8746,7 +8746,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "菅原明良",
-        "time": "",
+        "time": "2:00.1",
         "margin": "クビ",
         "pop": 8,
         "stable": "小島茂之 (美浦)"
@@ -8758,7 +8758,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:00.3",
         "margin": "3/4",
         "pop": 10,
         "stable": "吉岡辰弥 (栗東)"
@@ -8770,7 +8770,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "丸田恭介",
-        "time": "",
+        "time": "2:00.3",
         "margin": "クビ",
         "pop": 16,
         "stable": "宗像義忠 (美浦)"
@@ -8782,7 +8782,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:00.5",
         "margin": "1.1/4",
         "pop": 9,
         "stable": "杉山晴紀 (栗東)"
@@ -8794,7 +8794,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "2:00.5",
         "margin": "ハナ",
         "pop": 15,
         "stable": "友道康夫 (栗東)"
@@ -8806,7 +8806,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:00.5",
         "margin": "クビ",
         "pop": 13,
         "stable": "飯田雄三 (栗東)"
@@ -8818,7 +8818,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:00.5",
         "margin": "クビ",
         "pop": 14,
         "stable": "昆貢 (栗東)"
@@ -8830,7 +8830,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "2:00.6",
         "margin": "1/2",
         "pop": 4,
         "stable": "斉藤崇史 (栗東)"
@@ -8842,7 +8842,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "2:00.7",
         "margin": "クビ",
         "pop": 12,
         "stable": "牧光二 (美浦)"
@@ -8854,7 +8854,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "2:00.9",
         "margin": "1.1/4",
         "pop": 17,
         "stable": "高木登 (美浦)"
@@ -8866,7 +8866,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:01.3",
         "margin": "2.1/2",
         "pop": 7,
         "stable": "安田隆行 (栗東)"
@@ -8878,7 +8878,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "2:01.7",
         "margin": "2.1/2",
         "pop": 11,
         "stable": "友道康夫 (栗東)"
@@ -8890,7 +8890,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "木幡巧也",
-        "time": "",
+        "time": "2:02.7",
         "margin": "6",
         "pop": 18,
         "stable": "小桧山悟 (美浦)"
@@ -8904,7 +8904,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "2:00.6",
         "margin": "-",
         "pop": 2,
         "stable": "鹿戸雄一 (美浦)"
@@ -8916,7 +8916,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:01.1",
         "margin": "3",
         "pop": 8,
         "stable": "栗田徹 (美浦)"
@@ -8928,7 +8928,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "2:01.1",
         "margin": "クビ",
         "pop": 6,
         "stable": "須貝尚介 (栗東)"
@@ -8940,7 +8940,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:01.2",
         "margin": "クビ",
         "pop": 3,
         "stable": "大久保龍 (栗東)"
@@ -8952,7 +8952,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "2:01.2",
         "margin": "クビ",
         "pop": 11,
         "stable": "友道康夫 (栗東)"
@@ -8964,7 +8964,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:01.3",
         "margin": "1/2",
         "pop": 7,
         "stable": "加藤征弘 (美浦)"
@@ -8976,7 +8976,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:01.4",
         "margin": "クビ",
         "pop": 10,
         "stable": "池江泰寿 (栗東)"
@@ -8988,7 +8988,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:01.8",
         "margin": "2.1/2",
         "pop": 9,
         "stable": "藤原英昭 (栗東)"
@@ -9000,7 +9000,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:02.1",
         "margin": "1.3/4",
         "pop": 4,
         "stable": "池添学 (栗東)"
@@ -9012,7 +9012,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "2:02.2",
         "margin": "3/4",
         "pop": 15,
         "stable": "久保田貴 (美浦)"
@@ -9024,7 +9024,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "2:02.4",
         "margin": "1.1/4",
         "pop": 13,
         "stable": "清水久詞 (栗東)"
@@ -9036,7 +9036,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "菱田裕二",
-        "time": "",
+        "time": "2:02.4",
         "margin": "ハナ",
         "pop": 14,
         "stable": "牧田和弥 (栗東)"
@@ -9048,7 +9048,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "2:02.6",
         "margin": "3/4",
         "pop": 5,
         "stable": "斉藤崇史 (栗東)"
@@ -9060,7 +9060,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "木幡巧也",
-        "time": "",
+        "time": "2:02.9",
         "margin": "1.3/4",
         "pop": 16,
         "stable": "加藤士津 (美浦)"
@@ -9072,7 +9072,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:03.1",
         "margin": "1",
         "pop": 1,
         "stable": "安田隆行 (栗東)"
@@ -9084,7 +9084,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "嶋田純次",
-        "time": "",
+        "time": "2:03.6",
         "margin": "3.1/2",
         "pop": 12,
         "stable": "手塚貴久 (美浦)"
@@ -9098,7 +9098,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:00.7",
         "margin": "-",
         "pop": 1,
         "stable": "矢作芳人 (栗東)"
@@ -9110,7 +9110,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "2:00.8",
         "margin": "1/2",
         "pop": 3,
         "stable": "堀宣行 (美浦)"
@@ -9122,7 +9122,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ヒューイ",
-        "time": "",
+        "time": "2:01.4",
         "margin": "3.1/2",
         "pop": 8,
         "stable": "上原博之 (美浦)"
@@ -9134,7 +9134,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:01.6",
         "margin": "1.1/4",
         "pop": 17,
         "stable": "鹿戸雄一 (美浦)"
@@ -9146,7 +9146,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:01.8",
         "margin": "1.1/4",
         "pop": 2,
         "stable": "国枝栄 (美浦)"
@@ -9158,7 +9158,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:01.8",
         "margin": "クビ",
         "pop": 6,
         "stable": "木村哲也 (美浦)"
@@ -9170,7 +9170,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:01.9",
         "margin": "1/2",
         "pop": 13,
         "stable": "鈴木孝志 (栗東)"
@@ -9182,7 +9182,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:01.9",
         "margin": "ハナ",
         "pop": 4,
         "stable": "池江泰寿 (栗東)"
@@ -9194,7 +9194,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石川裕紀",
-        "time": "",
+        "time": "2:02.1",
         "margin": "1.1/4",
         "pop": 12,
         "stable": "相沢郁 (美浦)"
@@ -9206,7 +9206,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:02.1",
         "margin": "アタマ",
         "pop": 18,
         "stable": "大久保龍 (栗東)"
@@ -9218,7 +9218,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "2:02.1",
         "margin": "アタマ",
         "pop": 9,
         "stable": "池添学 (栗東)"
@@ -9230,7 +9230,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "丸山元気",
-        "time": "",
+        "time": "2:02.2",
         "margin": "クビ",
         "pop": 16,
         "stable": "藤岡健一 (栗東)"
@@ -9242,7 +9242,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:02.2",
         "margin": "アタマ",
         "pop": 7,
         "stable": "友道康夫 (栗東)"
@@ -9254,7 +9254,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "津村明秀",
-        "time": "",
+        "time": "2:02.4",
         "margin": "1.1/4",
         "pop": 11,
         "stable": "相沢郁 (美浦)"
@@ -9266,7 +9266,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:02.4",
         "margin": "クビ",
         "pop": 14,
         "stable": "友道康夫 (栗東)"
@@ -9278,7 +9278,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "吉田豊",
-        "time": "",
+        "time": "2:02.5",
         "margin": "3/4",
         "pop": 5,
         "stable": "高橋文雅 (美浦)"
@@ -9290,7 +9290,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "2:02.6",
         "margin": "クビ",
         "pop": 10,
         "stable": "中竹和也 (栗東)"
@@ -9302,7 +9302,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "中井裕二",
-        "time": "",
+        "time": "2:03.3",
         "margin": "4",
         "pop": 15,
         "stable": "安田隆行 (栗東)"
@@ -9316,7 +9316,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:58.1",
         "margin": "-",
         "pop": 1,
         "stable": "角居勝彦 (栗東)"
@@ -9328,7 +9328,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:58.1",
         "margin": "アタマ",
         "pop": 4,
         "stable": "中内田充 (栗東)"
@@ -9340,7 +9340,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:58.1",
         "margin": "ハナ",
         "pop": 3,
         "stable": "萩原清 (美浦)"
@@ -9352,7 +9352,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:58.5",
         "margin": "2",
         "pop": 2,
         "stable": "友道康夫 (栗東)"
@@ -9364,7 +9364,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:58.7",
         "margin": "1.1/2",
         "pop": 14,
         "stable": "池江泰寿 (栗東)"
@@ -9376,7 +9376,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:58.9",
         "margin": "1.1/4",
         "pop": 15,
         "stable": "鮫島一歩 (栗東)"
@@ -9388,7 +9388,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "シュタル",
-        "time": "",
+        "time": "1:59.0",
         "margin": "1/2",
         "pop": 10,
         "stable": "戸田博文 (美浦)"
@@ -9400,7 +9400,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:59.0",
         "margin": "アタマ",
         "pop": 11,
         "stable": "須貝尚介 (栗東)"
@@ -9412,7 +9412,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "宮崎北斗",
-        "time": "",
+        "time": "1:59.2",
         "margin": "1.1/2",
         "pop": 17,
         "stable": "青木孝文 (美浦)"
@@ -9424,7 +9424,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "1:59.3",
         "margin": "1/2",
         "pop": 18,
         "stable": "武藤善則 (美浦)"
@@ -9436,7 +9436,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:59.3",
         "margin": "アタマ",
         "pop": 13,
         "stable": "中竹和也 (栗東)"
@@ -9448,7 +9448,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:59.7",
         "margin": "2",
         "pop": 7,
         "stable": "堀宣行 (美浦)"
@@ -9460,7 +9460,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:59.7",
         "margin": "アタマ",
         "pop": 5,
         "stable": "梅田智之 (栗東)"
@@ -9472,7 +9472,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:59.7",
         "margin": "ハナ",
         "pop": 8,
         "stable": "池江泰寿 (栗東)"
@@ -9484,7 +9484,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:59.7",
         "margin": "ハナ",
         "pop": 9,
         "stable": "池添兼雄 (栗東)"
@@ -9496,7 +9496,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "2:00.0",
         "margin": "2",
         "pop": 16,
         "stable": "藤沢則雄 (栗東)"
@@ -9508,7 +9508,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "勝浦正樹",
-        "time": "",
+        "time": "2:00.1",
         "margin": "3/4",
         "pop": 6,
         "stable": "高木登 (美浦)"
@@ -9520,7 +9520,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:00.8",
         "margin": "4",
         "pop": 12,
         "stable": "本田優 (栗東)"
@@ -9534,7 +9534,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:00.8",
         "margin": "-",
         "pop": 7,
         "stable": "藤原英昭 (栗東)"
@@ -9546,7 +9546,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "2:01.1",
         "margin": "2",
         "pop": 9,
         "stable": "藤岡健一 (栗東)"
@@ -9558,7 +9558,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:01.4",
         "margin": "1.3/4",
         "pop": 8,
         "stable": "矢野英一 (美浦)"
@@ -9570,7 +9570,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:01.4",
         "margin": "クビ",
         "pop": 2,
         "stable": "木村哲也 (美浦)"
@@ -9582,7 +9582,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:01.4",
         "margin": "ハナ",
         "pop": 3,
         "stable": "池江泰寿 (栗東)"
@@ -9594,7 +9594,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:01.4",
         "margin": "ハナ",
         "pop": 10,
         "stable": "野中賢二 (栗東)"
@@ -9606,7 +9606,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:01.6",
         "margin": "1.1/2",
         "pop": 1,
         "stable": "友道康夫 (栗東)"
@@ -9618,7 +9618,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "国分恭介",
-        "time": "",
+        "time": "2:01.8",
         "margin": "1",
         "pop": 12,
         "stable": "五十嵐忠 (栗東)"
@@ -9630,7 +9630,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:01.8",
         "margin": "アタマ",
         "pop": 4,
         "stable": "池江泰寿 (栗東)"
@@ -9642,7 +9642,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "2:01.9",
         "margin": "3/4",
         "pop": 6,
         "stable": "松田国英 (栗東)"
@@ -9654,7 +9654,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "2:02.0",
         "margin": "クビ",
         "pop": 11,
         "stable": "安田翔伍 (栗東)"
@@ -9666,7 +9666,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村宏司",
-        "time": "",
+        "time": "2:02.2",
         "margin": "1.1/4",
         "pop": 5,
         "stable": "国枝栄 (美浦)"
@@ -9678,7 +9678,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "2:02.3",
         "margin": "3/4",
         "pop": 13,
         "stable": "手塚貴久 (美浦)"
@@ -9690,7 +9690,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:02.5",
         "margin": "1",
         "pop": 14,
         "stable": "渡辺薫彦 (栗東)"
@@ -9702,7 +9702,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "2:03.1",
         "margin": "4",
         "pop": 15,
         "stable": "友道康夫 (栗東)"
@@ -9714,7 +9714,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "柴田善臣",
-        "time": "",
+        "time": "2:04.4",
         "margin": "8",
         "pop": 16,
         "stable": "村山明 (栗東)"
@@ -9728,7 +9728,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:57.8",
         "margin": "-",
         "pop": 9,
         "stable": "池江泰寿 (栗東)"
@@ -9740,7 +9740,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:57.8",
         "margin": "クビ",
         "pop": 4,
         "stable": "池江泰寿 (栗東)"
@@ -9752,7 +9752,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:57.9",
         "margin": "3/4",
         "pop": 12,
         "stable": "音無秀孝 (栗東)"
@@ -9764,7 +9764,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:58.1",
         "margin": "1.1/4",
         "pop": 13,
         "stable": "宮本博 (栗東)"
@@ -9776,7 +9776,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:58.2",
         "margin": "クビ",
         "pop": 5,
         "stable": "藤沢和雄 (美浦)"
@@ -9788,7 +9788,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "1:58.2",
         "margin": "クビ",
         "pop": 2,
         "stable": "庄野靖志 (栗東)"
@@ -9800,7 +9800,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:58.3",
         "margin": "クビ",
         "pop": 1,
         "stable": "高野友和 (栗東)"
@@ -9812,7 +9812,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "1:58.3",
         "margin": "アタマ",
         "pop": 6,
         "stable": "畠山吉宏 (美浦)"
@@ -9824,7 +9824,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:58.3",
         "margin": "クビ",
         "pop": 3,
         "stable": "中竹和也 (栗東)"
@@ -9836,7 +9836,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:58.3",
         "margin": "アタマ",
         "pop": 10,
         "stable": "鮫島一歩 (栗東)"
@@ -9848,7 +9848,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:58.4",
         "margin": "1/2",
         "pop": 8,
         "stable": "藤沢和雄 (美浦)"
@@ -9860,7 +9860,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:58.4",
         "margin": "アタマ",
         "pop": 7,
         "stable": "小島茂之 (美浦)"
@@ -9872,7 +9872,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "1:58.6",
         "margin": "1",
         "pop": 17,
         "stable": "中村均 (栗東)"
@@ -9884,7 +9884,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "江田照男",
-        "time": "",
+        "time": "1:58.6",
         "margin": "クビ",
         "pop": 16,
         "stable": "菊川正達 (美浦)"
@@ -9896,7 +9896,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "柴田善臣",
-        "time": "",
+        "time": "1:58.7",
         "margin": "1/2",
         "pop": 18,
         "stable": "久保田貴 (美浦)"
@@ -9908,7 +9908,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:59.6",
         "margin": "5",
         "pop": 14,
         "stable": "昆貢 (栗東)"
@@ -9920,7 +9920,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:00.3",
         "margin": "4",
         "pop": 11,
         "stable": "角田晃一 (栗東)"
@@ -9932,7 +9932,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "2:00.5",
         "margin": "1.1/2",
         "pop": 15,
         "stable": "音無秀孝 (栗東)"
@@ -9946,7 +9946,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "1:57.9",
         "margin": "-",
         "pop": 8,
         "stable": "二ノ宮敬 (美浦)"
@@ -9958,7 +9958,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:58.1",
         "margin": "1.1/4",
         "pop": 3,
         "stable": "友道康夫 (栗東)"
@@ -9970,7 +9970,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:58.3",
         "margin": "1.1/4",
         "pop": 1,
         "stable": "池江泰寿 (栗東)"
@@ -9982,7 +9982,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:58.4",
         "margin": "1/2+ハナ",
         "pop": 4,
         "stable": "笹田和秀 (栗東)"
@@ -9994,7 +9994,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:58.4",
         "margin": "-",
         "pop": 2,
         "stable": "角居勝彦 (栗東)"
@@ -10006,7 +10006,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ベリー",
-        "time": "",
+        "time": "1:58.6",
         "margin": "1.1/4",
         "pop": 6,
         "stable": "堀宣行 (美浦)"
@@ -10018,7 +10018,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:58.7",
         "margin": "1/2",
         "pop": 9,
         "stable": "高野友和 (栗東)"
@@ -10030,7 +10030,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:59.1",
         "margin": "2.1/2",
         "pop": 5,
         "stable": "小島茂之 (美浦)"
@@ -10042,7 +10042,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:59.5",
         "margin": "2.1/2",
         "pop": 7,
         "stable": "友道康夫 (栗東)"
@@ -10054,7 +10054,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "柴山雄一",
-        "time": "",
+        "time": "1:59.6",
         "margin": "3/4",
         "pop": 16,
         "stable": "堀宣行 (美浦)"
@@ -10066,7 +10066,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:59.8",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "池江泰寿 (栗東)"
@@ -10078,7 +10078,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "1:59.9",
         "margin": "1/2",
         "pop": 11,
         "stable": "伊藤大士 (美浦)"
@@ -10090,7 +10090,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:00.0",
         "margin": "1/2",
         "pop": 14,
         "stable": "音無秀孝 (栗東)"
@@ -10102,7 +10102,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "2:00.3",
         "margin": "2",
         "pop": 18,
         "stable": "村山明 (栗東)"
@@ -10114,7 +10114,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "2:00.5",
         "margin": "1.1/4",
         "pop": 13,
         "stable": "矢作芳人 (栗東)"
@@ -10126,7 +10126,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "2:01.0",
         "margin": "3",
         "pop": 12,
         "stable": "鮫島一歩 (栗東)"
@@ -10138,7 +10138,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石川裕紀",
-        "time": "",
+        "time": "2:02.6",
         "margin": "10",
         "pop": 15,
         "stable": "小笠倫弘 (美浦)"
@@ -10150,7 +10150,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "2:03.2",
         "margin": "4",
         "pop": 17,
         "stable": "上原博之 (美浦)"
@@ -10166,7 +10166,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "3:14.0",
         "margin": "-",
         "pop": 1,
         "stable": "木村哲也 (美浦)"
@@ -10178,7 +10178,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "シュタル",
-        "time": "**",
+        "time": "3:14.0",
         "margin": "アタマ",
         "pop": 6,
         "stable": "坂口智康 (栗東)"
@@ -10190,7 +10190,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "3:14.5",
         "margin": "3",
         "pop": 4,
         "stable": "高野友和 (栗東)"
@@ -10202,7 +10202,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "3:14.8",
         "margin": "2",
         "pop": 2,
         "stable": "石坂公一 (栗東)"
@@ -10214,7 +10214,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "丹内祐次",
-        "time": "**",
+        "time": "3:15.0",
         "margin": "1.1/4",
         "pop": 8,
         "stable": "清水久詞 (栗東)"
@@ -10226,7 +10226,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "鮫島克駿",
-        "time": "**",
+        "time": "3:15.1",
         "margin": "クビ",
         "pop": 3,
         "stable": "杉山晴紀 (栗東)"
@@ -10238,7 +10238,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "3:15.7",
         "margin": "3.1/2",
         "pop": 9,
         "stable": "清水久詞 (栗東)"
@@ -10250,7 +10250,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "菅原明良",
-        "time": "**",
+        "time": "3:15.9",
         "margin": "1",
         "pop": 5,
         "stable": "吉岡辰弥 (栗東)"
@@ -10262,7 +10262,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "3:17.0",
         "margin": "7",
         "pop": 11,
         "stable": "高木登 (美浦)"
@@ -10274,7 +10274,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "3:17.1",
         "margin": "1",
         "pop": 10,
         "stable": "池添学 (栗東)"
@@ -10286,7 +10286,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "3:17.5",
         "margin": "2.1/2",
         "pop": 7,
         "stable": "中村直也 (栗東)"
@@ -10298,7 +10298,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "**",
+        "time": "3:20.0",
         "margin": "大",
         "pop": 15,
         "stable": "根本康広 (美浦)"
@@ -10310,7 +10310,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "**",
+        "time": "3:20.3",
         "margin": "1.1/2",
         "pop": 14,
         "stable": "杉山晴紀 (栗東)"
@@ -10322,7 +10322,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "野中悠太",
-        "time": "**",
+        "time": "3:20.4",
         "margin": "1/2",
         "pop": 12,
         "stable": "西田雄一 (美浦)"
@@ -10334,7 +10334,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "大野拓弥",
-        "time": "**",
+        "time": "3:20.4",
         "margin": "アタマ",
         "pop": 13,
         "stable": "和田勇介 (美浦)"
@@ -10348,7 +10348,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "菱田裕二",
-        "time": "**",
+        "time": "3:14.2",
         "margin": "-",
         "pop": 1,
         "stable": "岡田稲男 (栗東)"
@@ -10360,7 +10360,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "菅原明良",
-        "time": "**",
+        "time": "3:14.5",
         "margin": "2",
         "pop": 5,
         "stable": "吉岡辰弥 (栗東)"
@@ -10372,7 +10372,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "**",
+        "time": "3:14.6",
         "margin": "1/2",
         "pop": 6,
         "stable": "大久保龍 (栗東)"
@@ -10384,7 +10384,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "3:14.7",
         "margin": "1/2",
         "pop": 14,
         "stable": "石橋守 (栗東)"
@@ -10396,7 +10396,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "三浦皇成",
-        "time": "**",
+        "time": "3:14.9",
         "margin": "1.1/4",
         "pop": 8,
         "stable": "高木登 (美浦)"
@@ -10408,7 +10408,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "3:14.9",
         "margin": "クビ",
         "pop": 10,
         "stable": "中竹和也 (栗東)"
@@ -10420,7 +10420,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "モレイラ",
-        "time": "**",
+        "time": "3:15.0",
         "margin": "クビ",
         "pop": 4,
         "stable": "堀宣行 (美浦)"
@@ -10432,7 +10432,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "酒井学",
-        "time": "**",
+        "time": "3:15.3",
         "margin": "2",
         "pop": 16,
         "stable": "本田優 (栗東)"
@@ -10444,7 +10444,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "田口貫太",
-        "time": "**",
+        "time": "3:15.4",
         "margin": "3/4",
         "pop": 13,
         "stable": "寺島良 (栗東)"
@@ -10456,7 +10456,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "和田竜二",
-        "time": "**",
+        "time": "3:15.8",
         "margin": "2",
         "pop": 12,
         "stable": "奥村豊 (栗東)"
@@ -10468,7 +10468,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "松若風馬",
-        "time": "**",
+        "time": "3:16.4",
         "margin": "3.1/2",
         "pop": 17,
         "stable": "中竹和也 (栗東)"
@@ -10480,7 +10480,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "3:17.7",
         "margin": "8",
         "pop": 3,
         "stable": "国枝栄 (美浦)"
@@ -10492,7 +10492,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "3:17.8",
         "margin": "1/2",
         "pop": 11,
         "stable": "昆貢 (栗東)"
@@ -10504,7 +10504,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 58.0,
         "jockey": "鮫島克駿",
-        "time": "**",
+        "time": "3:19.0",
         "margin": "7",
         "pop": 9,
         "stable": "堀宣行 (美浦)"
@@ -10516,7 +10516,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "3:19.8",
         "margin": "5",
         "pop": 2,
         "stable": "尾関知人 (美浦)"
@@ -10528,7 +10528,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "3:20.0",
         "margin": "3/4",
         "pop": 7,
         "stable": "池江泰寿 (栗東)"
@@ -10566,7 +10566,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "3:16.1",
         "margin": "-",
         "pop": 2,
         "stable": "杉山晴紀 (栗東)"
@@ -10578,7 +10578,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "**",
+        "time": "3:16.5",
         "margin": "2.1/2",
         "pop": 5,
         "stable": "大久保龍 (栗東)"
@@ -10590,7 +10590,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "3:16.7",
         "margin": "1",
         "pop": 6,
         "stable": "池江泰寿 (栗東)"
@@ -10602,7 +10602,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "3:16.9",
         "margin": "1.1/4",
         "pop": 7,
         "stable": "吉岡辰弥 (栗東)"
@@ -10614,7 +10614,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "3:17.0",
         "margin": "クビ",
         "pop": 8,
         "stable": "昆貢 (栗東)"
@@ -10626,7 +10626,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "3:17.3",
         "margin": "2",
         "pop": 3,
         "stable": "宮本博 (栗東)"
@@ -10638,7 +10638,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "永野猛蔵",
-        "time": "**",
+        "time": "3:17.4",
         "margin": "3/4",
         "pop": 12,
         "stable": "青木孝文 (美浦)"
@@ -10650,7 +10650,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "3:17.5",
         "margin": "1/2",
         "pop": 15,
         "stable": "高橋義忠 (栗東)"
@@ -10662,7 +10662,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "3:17.5",
         "margin": "ハナ",
         "pop": 11,
         "stable": "高野友和 (栗東)"
@@ -10674,7 +10674,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "3:17.6",
         "margin": "3/4",
         "pop": 10,
         "stable": "小手川準 (美浦)"
@@ -10686,7 +10686,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "3:18.0",
         "margin": "2.1/2",
         "pop": 4,
         "stable": "田村康仁 (美浦)"
@@ -10698,7 +10698,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝7",
         "load": 56.0,
         "jockey": "幸英明",
-        "time": "**",
+        "time": "3:18.0",
         "margin": "クビ",
         "pop": 14,
         "stable": "森田直行 (栗東)"
@@ -10710,7 +10710,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "3:18.3",
         "margin": "1.1/2",
         "pop": 16,
         "stable": "上村洋行 (栗東)"
@@ -10722,7 +10722,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "3:18.9",
         "margin": "3.1/2",
         "pop": 9,
         "stable": "池江泰寿 (栗東)"
@@ -10734,7 +10734,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "3:26.7",
         "margin": "大",
         "pop": 17,
         "stable": "加藤征弘 (美浦)"
@@ -10772,7 +10772,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "",
+        "time": "3:16.2",
         "margin": "-",
         "pop": 2,
         "stable": "栗田徹 (美浦)"
@@ -10784,7 +10784,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "3:17.3",
         "margin": "7",
         "pop": 1,
         "stable": "大久保龍 (栗東)"
@@ -10796,7 +10796,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "菱田裕二",
-        "time": "",
+        "time": "3:17.4",
         "margin": "1",
         "pop": 4,
         "stable": "岡田稲男 (栗東)"
@@ -10808,7 +10808,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "3:18.0",
         "margin": "3.1/2",
         "pop": 5,
         "stable": "友道康夫 (栗東)"
@@ -10820,7 +10820,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "3:18.3",
         "margin": "2",
         "pop": 3,
         "stable": "上村洋行 (栗東)"
@@ -10832,7 +10832,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "3:18.7",
         "margin": "2.1/2",
         "pop": 14,
         "stable": "手塚貴久 (美浦)"
@@ -10844,7 +10844,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "伊藤工真",
-        "time": "",
+        "time": "3:18.8",
         "margin": "3/4",
         "pop": 10,
         "stable": "林徹 (美浦)"
@@ -10856,7 +10856,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "3:18.9",
         "margin": "1/2",
         "pop": 17,
         "stable": "友道康夫 (栗東)"
@@ -10868,7 +10868,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "3:19.0",
         "margin": "クビ",
         "pop": 16,
         "stable": "森田直行 (栗東)"
@@ -10880,7 +10880,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "3:19.4",
         "margin": "2.1/2",
         "pop": 18,
         "stable": "加藤征弘 (美浦)"
@@ -10892,7 +10892,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "3:20.2",
         "margin": "5",
         "pop": 6,
         "stable": "今野貞一 (栗東)"
@@ -10904,7 +10904,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "3:20.2",
         "margin": "ハナ",
         "pop": 12,
         "stable": "寺島良 (栗東)"
@@ -10916,7 +10916,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "3:20.7",
         "margin": "2.1/2",
         "pop": 13,
         "stable": "友道康夫 (栗東)"
@@ -10928,7 +10928,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "3:21.1",
         "margin": "2.1/2",
         "pop": 15,
         "stable": "林徹 (美浦)"
@@ -10940,7 +10940,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "3:21.1",
         "margin": "クビ",
         "pop": 11,
         "stable": "国枝栄 (美浦)"
@@ -10952,7 +10952,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "3:22.2",
         "margin": "7",
         "pop": 7,
         "stable": "国枝栄 (美浦)"
@@ -10964,7 +10964,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "3:24.1",
         "margin": "大",
         "pop": 9,
         "stable": "鮫島一歩 (栗東)"
@@ -10990,7 +10990,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "3:14.7",
         "margin": "-",
         "pop": 3,
         "stable": "友道康夫 (栗東)"
@@ -11002,7 +11002,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "3:14.8",
         "margin": "3/4",
         "pop": 1,
         "stable": "大久保龍 (栗東)"
@@ -11014,7 +11014,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "3:15.2",
         "margin": "2",
         "pop": 4,
         "stable": "国枝栄 (美浦)"
@@ -11026,7 +11026,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "3:15.2",
         "margin": "アタマ",
         "pop": 2,
         "stable": "音無秀孝 (栗東)"
@@ -11038,7 +11038,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "3:15.6",
         "margin": "2.1/2",
         "pop": 8,
         "stable": "手塚貴久 (美浦)"
@@ -11050,7 +11050,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "",
+        "time": "3:15.6",
         "margin": "クビ",
         "pop": 7,
         "stable": "高野友和 (栗東)"
@@ -11062,7 +11062,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "3:16.2",
         "margin": "3.1/2",
         "pop": 5,
         "stable": "友道康夫 (栗東)"
@@ -11074,7 +11074,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "3:16.5",
         "margin": "2",
         "pop": 12,
         "stable": "友道康夫 (栗東)"
@@ -11086,7 +11086,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "3:16.6",
         "margin": "1/2",
         "pop": 11,
         "stable": "杉山晴紀 (栗東)"
@@ -11098,7 +11098,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "3:16.7",
         "margin": "クビ",
         "pop": 6,
         "stable": "木村哲也 (美浦)"
@@ -11110,7 +11110,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "3:17.4",
         "margin": "4",
         "pop": 16,
         "stable": "森田直行 (栗東)"
@@ -11122,7 +11122,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ5",
         "load": 58.0,
         "jockey": "鮫島克駿",
-        "time": "",
+        "time": "3:17.5",
         "margin": "1/2",
         "pop": 14,
         "stable": "橋口慎介 (栗東)"
@@ -11134,7 +11134,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "3:17.5",
         "margin": "クビ",
         "pop": 9,
         "stable": "菊川正達 (美浦)"
@@ -11146,7 +11146,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "3:18.1",
         "margin": "3.1/2",
         "pop": 13,
         "stable": "池添兼雄 (栗東)"
@@ -11158,7 +11158,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "3:18.1",
         "margin": "ハナ",
         "pop": 10,
         "stable": "寺島良 (栗東)"
@@ -11170,7 +11170,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "3:18.4",
         "margin": "1.3/4",
         "pop": 17,
         "stable": "池江泰寿 (栗東)"
@@ -11182,7 +11182,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "",
+        "time": "3:19.6",
         "margin": "7",
         "pop": 15,
         "stable": "松永幹夫 (栗東)"
@@ -11196,7 +11196,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "3:16.5",
         "margin": "-",
         "pop": 1,
         "stable": "手塚貴久 (美浦)"
@@ -11208,7 +11208,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "3:16.5",
         "margin": "ハナ",
         "pop": 11,
         "stable": "音無秀孝 (栗東)"
@@ -11220,7 +11220,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "3:16.9",
         "margin": "2.1/2",
         "pop": 4,
         "stable": "菊沢隆徳 (美浦)"
@@ -11232,7 +11232,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "3:16.9",
         "margin": "クビ",
         "pop": 2,
         "stable": "友道康夫 (栗東)"
@@ -11244,7 +11244,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "3:17.2",
         "margin": "1.3/4",
         "pop": 7,
         "stable": "角居勝彦 (栗東)"
@@ -11256,7 +11256,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "3:17.3",
         "margin": "1/2",
         "pop": 3,
         "stable": "角居勝彦 (栗東)"
@@ -11268,7 +11268,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "3:17.4",
         "margin": "クビ",
         "pop": 5,
         "stable": "森田直行 (栗東)"
@@ -11280,7 +11280,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "3:17.5",
         "margin": "1/2",
         "pop": 10,
         "stable": "池添兼雄 (栗東)"
@@ -11292,7 +11292,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 58.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "3:17.6",
         "margin": "3/4",
         "pop": 8,
         "stable": "音無秀孝 (栗東)"
@@ -11304,7 +11304,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "3:17.9",
         "margin": "2",
         "pop": 6,
         "stable": "友道康夫 (栗東)"
@@ -11316,7 +11316,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "3:18.2",
         "margin": "1.3/4",
         "pop": 13,
         "stable": "森田直行 (栗東)"
@@ -11328,7 +11328,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "木幡巧也",
-        "time": "",
+        "time": "3:18.7",
         "margin": "3",
         "pop": 12,
         "stable": "伊藤大士 (美浦)"
@@ -11340,7 +11340,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "3:24.7",
         "margin": "大",
         "pop": 14,
         "stable": "森秀行 (栗東)"
@@ -11352,7 +11352,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "3:24.9",
         "margin": "1.1/4",
         "pop": 9,
         "stable": "池江泰寿 (栗東)"
@@ -11366,7 +11366,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "3:15.0",
         "margin": "-",
         "pop": 1,
         "stable": "手塚貴久 (美浦)"
@@ -11378,7 +11378,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "3:15.0",
         "margin": "クビ",
         "pop": 6,
         "stable": "尾関知人 (美浦)"
@@ -11390,7 +11390,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "3:16.0",
         "margin": "6",
         "pop": 8,
         "stable": "藤原英昭 (栗東)"
@@ -11402,7 +11402,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "3:16.0",
         "margin": "クビ",
         "pop": 2,
         "stable": "友道康夫 (栗東)"
@@ -11414,7 +11414,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "3:16.5",
         "margin": "3",
         "pop": 3,
         "stable": "友道康夫 (栗東)"
@@ -11426,7 +11426,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "",
+        "time": "3:16.8",
         "margin": "1.1/2",
         "pop": 10,
         "stable": "矢作芳人 (栗東)"
@@ -11438,7 +11438,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "中谷雄太",
-        "time": "",
+        "time": "3:17.3",
         "margin": "3",
         "pop": 9,
         "stable": "矢作芳人 (栗東)"
@@ -11450,7 +11450,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "3:17.4",
         "margin": "3/4",
         "pop": 11,
         "stable": "庄野靖志 (栗東)"
@@ -11462,7 +11462,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "3:17.6",
         "margin": "1.1/4",
         "pop": 13,
         "stable": "西橋豊治 (栗東)"
@@ -11474,7 +11474,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "3:17.7",
         "margin": "3/4",
         "pop": 4,
         "stable": "宮本博 (栗東)"
@@ -11486,7 +11486,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "3:18.9",
         "margin": "7",
         "pop": 5,
         "stable": "高橋義忠 (栗東)"
@@ -11498,7 +11498,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "3:20.7",
         "margin": "大",
         "pop": 7,
         "stable": "昆貢 (栗東)"
@@ -11524,7 +11524,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "3:16.2",
         "margin": "-",
         "pop": 2,
         "stable": "浅見秀一 (栗東)"
@@ -11536,7 +11536,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "ボウマン",
-        "time": "",
+        "time": "3:16.2",
         "margin": "クビ",
         "pop": 1,
         "stable": "友道康夫 (栗東)"
@@ -11548,7 +11548,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "3:16.3",
         "margin": "1/2",
         "pop": 4,
         "stable": "宮本博 (栗東)"
@@ -11560,7 +11560,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "3:16.4",
         "margin": "クビ",
         "pop": 9,
         "stable": "音無秀孝 (栗東)"
@@ -11572,7 +11572,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "3:16.5",
         "margin": "3/4",
         "pop": 7,
         "stable": "矢作芳人 (栗東)"
@@ -11584,7 +11584,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "3:16.7",
         "margin": "1.1/2",
         "pop": 8,
         "stable": "藤原英昭 (栗東)"
@@ -11596,7 +11596,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝8",
         "load": 56.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "3:16.8",
         "margin": "1/2",
         "pop": 12,
         "stable": "大久保龍 (栗東)"
@@ -11608,7 +11608,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "3:16.8",
         "margin": "ハナ",
         "pop": 6,
         "stable": "堀宣行 (美浦)"
@@ -11620,7 +11620,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "3:17.2",
         "margin": "2.1/2",
         "pop": 14,
         "stable": "笹田和秀 (栗東)"
@@ -11632,7 +11632,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "3:17.3",
         "margin": "1/2",
         "pop": 11,
         "stable": "池添兼雄 (栗東)"
@@ -11644,7 +11644,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "国分恭介",
-        "time": "",
+        "time": "3:17.4",
         "margin": "クビ",
         "pop": 17,
         "stable": "村山明 (栗東)"
@@ -11656,7 +11656,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "3:17.5",
         "margin": "3/4",
         "pop": 5,
         "stable": "池江泰寿 (栗東)"
@@ -11668,7 +11668,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "3:18.0",
         "margin": "3",
         "pop": 13,
         "stable": "戸田博文 (美浦)"
@@ -11680,7 +11680,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "3:18.1",
         "margin": "1/2",
         "pop": 3,
         "stable": "松元茂樹 (栗東)"
@@ -11692,7 +11692,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "宮崎北斗",
-        "time": "",
+        "time": "3:18.2",
         "margin": "1/2",
         "pop": 16,
         "stable": "粕谷昌央 (美浦)"
@@ -11704,7 +11704,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ10",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "3:18.4",
         "margin": "1.1/2",
         "pop": 10,
         "stable": "平田修 (栗東)"
@@ -11716,7 +11716,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "秋山真一",
-        "time": "",
+        "time": "3:24.9",
         "margin": "大",
         "pop": 15,
         "stable": "竹内正洋 (美浦)"
@@ -11730,7 +11730,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "3:12.5",
         "margin": "-",
         "pop": 1,
         "stable": "清水久詞 (栗東)"
@@ -11742,7 +11742,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "3:12.7",
         "margin": "1.1/4",
         "pop": 4,
         "stable": "友道康夫 (栗東)"
@@ -11754,7 +11754,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "3:12.7",
         "margin": "クビ",
         "pop": 2,
         "stable": "池江泰寿 (栗東)"
@@ -11766,7 +11766,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "3:12.8",
         "margin": "クビ",
         "pop": 10,
         "stable": "梅田智之 (栗東)"
@@ -11778,7 +11778,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "3:13.3",
         "margin": "3",
         "pop": 6,
         "stable": "堀宣行 (美浦)"
@@ -11790,7 +11790,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "3:13.5",
         "margin": "1.1/2",
         "pop": 8,
         "stable": "二ノ宮敬 (美浦)"
@@ -11802,7 +11802,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "3:13.6",
         "margin": "3/4",
         "pop": 5,
         "stable": "中川公成 (美浦)"
@@ -11814,7 +11814,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "3:13.7",
         "margin": "クビ",
         "pop": 9,
         "stable": "藤原英昭 (栗東)"
@@ -11826,7 +11826,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "3:13.7",
         "margin": "クビ",
         "pop": 3,
         "stable": "角居勝彦 (栗東)"
@@ -11838,7 +11838,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ9",
         "load": 58.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "3:13.8",
         "margin": "1/2",
         "pop": 15,
         "stable": "荒川義之 (栗東)"
@@ -11850,7 +11850,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "3:14.1",
         "margin": "2",
         "pop": 11,
         "stable": "橋口慎介 (栗東)"
@@ -11862,7 +11862,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "3:14.3",
         "margin": "1.1/4",
         "pop": 7,
         "stable": "浅見秀一 (栗東)"
@@ -11874,7 +11874,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "3:15.1",
         "margin": "5",
         "pop": 14,
         "stable": "南井克巳 (栗東)"
@@ -11886,7 +11886,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "3:15.2",
         "margin": "1/2",
         "pop": 16,
         "stable": "本田優 (栗東)"
@@ -11898,7 +11898,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "3:15.7",
         "margin": "3",
         "pop": 12,
         "stable": "池添兼雄 (栗東)"
@@ -11910,7 +11910,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "杉原誠人",
-        "time": "",
+        "time": "3:15.9",
         "margin": "1.1/4",
         "pop": 17,
         "stable": "小島茂之 (美浦)"
@@ -11922,7 +11922,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ8",
         "load": 58.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "3:16.2",
         "margin": "1.1/2",
         "pop": 13,
         "stable": "斉藤崇史 (栗東)"
@@ -11936,7 +11936,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "3:15.3",
         "margin": "-",
         "pop": 2,
         "stable": "清水久詞 (栗東)"
@@ -11948,7 +11948,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ8",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "3:15.3",
         "margin": "ハナ",
         "pop": 13,
         "stable": "平田修 (栗東)"
@@ -11960,7 +11960,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "3:15.5",
         "margin": "1.1/4",
         "pop": 3,
         "stable": "友道康夫 (栗東)"
@@ -11972,7 +11972,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "3:15.6",
         "margin": "1/2",
         "pop": 10,
         "stable": "国枝栄 (美浦)"
@@ -11984,7 +11984,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "3:15.6",
         "margin": "クビ",
         "pop": 7,
         "stable": "谷潔 (栗東)"
@@ -11996,7 +11996,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "3:15.8",
         "margin": "1.1/4",
         "pop": 6,
         "stable": "堀宣行 (美浦)"
@@ -12008,7 +12008,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ8",
         "load": 58.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "3:15.8",
         "margin": "ハナ",
         "pop": 16,
         "stable": "荒川義之 (栗東)"
@@ -12020,7 +12020,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "ボウマン",
-        "time": "",
+        "time": "3:15.8",
         "margin": "クビ",
         "pop": 4,
         "stable": "宗像義忠 (美浦)"
@@ -12032,7 +12032,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "3:15.9",
         "margin": "クビ",
         "pop": 11,
         "stable": "橋田満 (栗東)"
@@ -12044,7 +12044,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "3:16.0",
         "margin": "1/2",
         "pop": 8,
         "stable": "高野友和 (栗東)"
@@ -12056,7 +12056,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "3:16.0",
         "margin": "クビ",
         "pop": 12,
         "stable": "池江泰寿 (栗東)"
@@ -12068,7 +12068,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "3:16.1",
         "margin": "1/2",
         "pop": 1,
         "stable": "中川公成 (美浦)"
@@ -12080,7 +12080,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "勝浦正樹",
-        "time": "",
+        "time": "3:17.1",
         "margin": "6",
         "pop": 9,
         "stable": "牧田和弥 (栗東)"
@@ -12092,7 +12092,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "3:17.7",
         "margin": "3.1/2",
         "pop": 15,
         "stable": "藤原英昭 (栗東)"
@@ -12104,7 +12104,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "3:18.5",
         "margin": "5",
         "pop": 5,
         "stable": "藤岡健一 (栗東)"
@@ -12116,7 +12116,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "3:18.5",
         "margin": "クビ",
         "pop": 18,
         "stable": "田中清隆 (美浦)"
@@ -12128,7 +12128,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ5",
         "load": 58.0,
         "jockey": "丸山元気",
-        "time": "",
+        "time": "3:18.8",
         "margin": "1.3/4",
         "pop": 17,
         "stable": "松永幹夫 (栗東)"
@@ -12140,7 +12140,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "武幸四郎",
-        "time": "",
+        "time": "3:19.4",
         "margin": "3.1/2",
         "pop": 14,
         "stable": "池江泰寿 (栗東)"
@@ -12156,7 +12156,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:31.7",
         "margin": "-",
         "pop": 9,
         "stable": "橋口慎介 (栗東)"
@@ -12168,7 +12168,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:31.7",
         "margin": "アタマ",
         "pop": 3,
         "stable": "須貝尚介 (栗東)"
@@ -12180,7 +12180,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ディー",
-        "time": "**",
+        "time": "1:31.7",
         "margin": "ハナ",
         "pop": 12,
         "stable": "高野友和 (栗東)"
@@ -12192,7 +12192,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:31.8",
         "margin": "1/2",
         "pop": 6,
         "stable": "千葉直人 (美浦)"
@@ -12204,7 +12204,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "吉村誠之",
-        "time": "**",
+        "time": "1:32.0",
         "margin": "1.1/4",
         "pop": 4,
         "stable": "奥村豊 (栗東)"
@@ -12216,7 +12216,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "1:32.2",
         "margin": "3/4",
         "pop": 7,
         "stable": "堀宣行 (美浦)"
@@ -12228,7 +12228,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "**",
+        "time": "1:32.2",
         "margin": "アタマ",
         "pop": 5,
         "stable": "和田勇介 (美浦)"
@@ -12240,7 +12240,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:32.2",
         "margin": "ハナ",
         "pop": 13,
         "stable": "宮徹 (栗東)"
@@ -12252,7 +12252,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "1:32.3",
         "margin": "3/4",
         "pop": 10,
         "stable": "上村洋行 (栗東)"
@@ -12264,7 +12264,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "菅原明良",
-        "time": "**",
+        "time": "1:32.4",
         "margin": "3/4",
         "pop": 11,
         "stable": "伊藤大士 (美浦)"
@@ -12276,7 +12276,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:32.4",
         "margin": "ハナ",
         "pop": 2,
         "stable": "辻哲英 (美浦)"
@@ -12288,7 +12288,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "鮫島克駿",
-        "time": "**",
+        "time": "1:32.4",
         "margin": "アタマ",
         "pop": 14,
         "stable": "杉山佳明 (栗東)"
@@ -12300,7 +12300,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "佐々木大",
-        "time": "**",
+        "time": "1:32.5",
         "margin": "1/2",
         "pop": 8,
         "stable": "須貝尚介 (栗東)"
@@ -12312,7 +12312,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:32.7",
         "margin": "3/4",
         "pop": 1,
         "stable": "友道康夫 (栗東)"
@@ -12324,7 +12324,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "1:33.0",
         "margin": "2",
         "pop": 17,
         "stable": "武幸四郎 (栗東)"
@@ -12336,7 +12336,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "1:33.5",
         "margin": "3",
         "pop": 15,
         "stable": "松下武士 (栗東)"
@@ -12348,7 +12348,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "木幡巧也",
-        "time": "**",
+        "time": "1:33.7",
         "margin": "1.1/2",
         "pop": 18,
         "stable": "牧光二 (美浦)"
@@ -12360,7 +12360,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "1:34.5",
         "margin": "5",
         "pop": 16,
         "stable": "池添学 (栗東)"
@@ -12374,7 +12374,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:32.4",
         "margin": "-",
         "pop": 2,
         "stable": "高野友和 (栗東)"
@@ -12386,7 +12386,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:32.8",
         "margin": "2.1/2",
         "pop": 1,
         "stable": "黒岩陽一 (美浦)"
@@ -12398,7 +12398,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "クビ",
         "pop": 10,
         "stable": "古賀慎明 (美浦)"
@@ -12410,7 +12410,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "モレイラ",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "クビ",
         "pop": 4,
         "stable": "堀宣行 (美浦)"
@@ -12422,7 +12422,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "西村淳也",
-        "time": "**",
+        "time": "1:33.2",
         "margin": "1.3/4",
         "pop": 13,
         "stable": "杉山佳明 (栗東)"
@@ -12434,7 +12434,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "1:33.3",
         "margin": "クビ",
         "pop": 12,
         "stable": "福永祐一 (栗東)"
@@ -12446,7 +12446,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "鮫島克駿",
-        "time": "**",
+        "time": "1:33.3",
         "margin": "ハナ",
         "pop": 6,
         "stable": "吉岡辰弥 (栗東)"
@@ -12458,7 +12458,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "菅原明良",
-        "time": "**",
+        "time": "1:33.4",
         "margin": "1/2",
         "pop": 14,
         "stable": "河内洋 (栗東)"
@@ -12470,7 +12470,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:33.4",
         "margin": "ハナ",
         "pop": 5,
         "stable": "木村哲也 (美浦)"
@@ -12482,7 +12482,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "菱田裕二",
-        "time": "**",
+        "time": "1:33.4",
         "margin": "クビ",
         "pop": 18,
         "stable": "森田直行 (栗東)"
@@ -12494,7 +12494,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "**",
+        "time": "1:33.5",
         "margin": "クビ",
         "pop": 17,
         "stable": "小野次郎 (美浦)"
@@ -12506,7 +12506,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:33.5",
         "margin": "クビ",
         "pop": 7,
         "stable": "吉岡辰弥 (栗東)"
@@ -12518,7 +12518,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "1:33.6",
         "margin": "クビ",
         "pop": 8,
         "stable": "藤原英昭 (栗東)"
@@ -12530,7 +12530,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:33.6",
         "margin": "クビ",
         "pop": 15,
         "stable": "昆貢 (栗東)"
@@ -12542,7 +12542,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "**",
+        "time": "1:34.0",
         "margin": "2.1/2",
         "pop": 16,
         "stable": "牧光二 (美浦)"
@@ -12554,7 +12554,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村宏司",
-        "time": "**",
+        "time": "1:34.0",
         "margin": "ハナ",
         "pop": 9,
         "stable": "武井亮 (美浦)"
@@ -12566,7 +12566,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:34.9",
         "margin": "5",
         "pop": 3,
         "stable": "手塚貴久 (美浦)"
@@ -12578,7 +12578,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "1:35.7",
         "margin": "5",
         "pop": 11,
         "stable": "松永幹夫 (栗東)"
@@ -12592,7 +12592,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "**",
+        "time": "1:33.8",
         "margin": "-",
         "pop": 9,
         "stable": "田中剛 (美浦)"
@@ -12604,7 +12604,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:33.8",
         "margin": "アタマ",
         "pop": 8,
         "stable": "木村哲也 (美浦)"
@@ -12616,7 +12616,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:34.0",
         "margin": "1.1/4",
         "pop": 3,
         "stable": "吉村圭司 (栗東)"
@@ -12628,7 +12628,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:34.2",
         "margin": "1.1/4",
         "pop": 6,
         "stable": "安田隆行 (栗東)"
@@ -12640,7 +12640,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "1:34.2",
         "margin": "ハナ",
         "pop": 1,
         "stable": "須貝尚介 (栗東)"
@@ -12652,7 +12652,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "1:34.3",
         "margin": "1/2",
         "pop": 5,
         "stable": "武藤善則 (美浦)"
@@ -12664,7 +12664,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "柴田大知",
-        "time": "**",
+        "time": "1:34.4",
         "margin": "1/2",
         "pop": 16,
         "stable": "畠山吉宏 (美浦)"
@@ -12676,7 +12676,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "**",
+        "time": "1:34.4",
         "margin": "クビ",
         "pop": 14,
         "stable": "矢作芳人 (栗東)"
@@ -12688,7 +12688,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:34.5",
         "margin": "1/2",
         "pop": 2,
         "stable": "伊藤大士 (美浦)"
@@ -12700,7 +12700,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "幸英明",
-        "time": "**",
+        "time": "1:34.6",
         "margin": "3/4",
         "pop": 12,
         "stable": "角田晃一 (栗東)"
@@ -12712,7 +12712,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "**",
+        "time": "1:34.7",
         "margin": "3/4",
         "pop": 11,
         "stable": "高野友和 (栗東)"
@@ -12724,7 +12724,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "三浦皇成",
-        "time": "**",
+        "time": "1:34.9",
         "margin": "1",
         "pop": 4,
         "stable": "須貝尚介 (栗東)"
@@ -12736,7 +12736,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "団野大成",
-        "time": "**",
+        "time": "1:35.0",
         "margin": "1/2",
         "pop": 7,
         "stable": "斉藤崇史 (栗東)"
@@ -12748,7 +12748,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:35.0",
         "margin": "ハナ",
         "pop": 15,
         "stable": "中村直也 (栗東)"
@@ -12760,7 +12760,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "鮫島克駿",
-        "time": "**",
+        "time": "1:35.7",
         "margin": "4",
         "pop": 10,
         "stable": "橋口慎介 (栗東)"
@@ -12772,7 +12772,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "大野拓弥",
-        "time": "**",
+        "time": "1:36.7",
         "margin": "6",
         "pop": 13,
         "stable": "和田雄二 (美浦)"
@@ -12784,7 +12784,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:38.0",
         "margin": "8",
         "pop": 17,
         "stable": "森秀行 (栗東)"
@@ -12810,7 +12810,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:32.3",
         "margin": "-",
         "pop": 4,
         "stable": "安田隆行 (栗東)"
@@ -12822,7 +12822,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:32.3",
         "margin": "クビ",
         "pop": 3,
         "stable": "昆貢 (栗東)"
@@ -12834,7 +12834,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "菅原明良",
-        "time": "",
+        "time": "1:32.4",
         "margin": "クビ",
         "pop": 18,
         "stable": "杉山佳明 (栗東)"
@@ -12846,7 +12846,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:32.6",
         "margin": "1.1/4",
         "pop": 1,
         "stable": "中内田充 (栗東)"
@@ -12858,7 +12858,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "1:32.7",
         "margin": "クビ",
         "pop": 2,
         "stable": "宮田敬介 (美浦)"
@@ -12870,7 +12870,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "坂井瑠星",
-        "time": "",
+        "time": "1:32.8",
         "margin": "3/4",
         "pop": 9,
         "stable": "矢作芳人 (栗東)"
@@ -12882,7 +12882,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:32.9",
         "margin": "1/2",
         "pop": 6,
         "stable": "森秀行 (栗東)"
@@ -12894,7 +12894,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:33.1",
         "margin": "1.1/4",
         "pop": 11,
         "stable": "高柳瑞樹 (美浦)"
@@ -12906,7 +12906,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:33.3",
         "margin": "1.1/2",
         "pop": 5,
         "stable": "藤岡健一 (栗東)"
@@ -12918,7 +12918,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "1:33.4",
         "margin": "1/2",
         "pop": 10,
         "stable": "高野友和 (栗東)"
@@ -12930,7 +12930,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "鮫島克駿",
-        "time": "",
+        "time": "1:33.5",
         "margin": "クビ",
         "pop": 13,
         "stable": "西村真幸 (栗東)"
@@ -12942,7 +12942,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "1:33.5",
         "margin": "ハナ",
         "pop": 12,
         "stable": "友道康夫 (栗東)"
@@ -12954,7 +12954,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:33.6",
         "margin": "1",
         "pop": 14,
         "stable": "木村哲也 (美浦)"
@@ -12966,7 +12966,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "菊沢一樹",
-        "time": "",
+        "time": "1:33.7",
         "margin": "クビ",
         "pop": 17,
         "stable": "大根田裕 (栗東)"
@@ -12978,7 +12978,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:33.9",
         "margin": "1.1/2",
         "pop": 8,
         "stable": "須貝尚介 (栗東)"
@@ -12990,7 +12990,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山和生",
-        "time": "",
+        "time": "1:34.0",
         "margin": "1/2",
         "pop": 15,
         "stable": "中竹和也 (栗東)"
@@ -13002,7 +13002,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "1:34.6",
         "margin": "4",
         "pop": 7,
         "stable": "手塚貴久 (美浦)"
@@ -13014,7 +13014,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "1:35.7",
         "margin": "7",
         "pop": 16,
         "stable": "宮田敬介 (美浦)"
@@ -13028,7 +13028,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:31.6",
         "margin": "-",
         "pop": 2,
         "stable": "手塚貴久 (美浦)"
@@ -13040,7 +13040,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:31.6",
         "margin": "ハナ",
         "pop": 7,
         "stable": "林徹 (美浦)"
@@ -13052,7 +13052,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:32.1",
         "margin": "2.1/2",
         "pop": 1,
         "stable": "中内田充 (栗東)"
@@ -13064,7 +13064,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "1:32.2",
         "margin": "1/2",
         "pop": 11,
         "stable": "西村真幸 (栗東)"
@@ -13076,7 +13076,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "1:32.3",
         "margin": "3/4",
         "pop": 15,
         "stable": "藤原英昭 (栗東)"
@@ -13088,7 +13088,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:32.3",
         "margin": "ハナ",
         "pop": 8,
         "stable": "戸田博文 (美浦)"
@@ -13100,7 +13100,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "津村明秀",
-        "time": "",
+        "time": "1:32.4",
         "margin": "3/4",
         "pop": 10,
         "stable": "林徹 (美浦)"
@@ -13112,7 +13112,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:32.4",
         "margin": "クビ",
         "pop": 9,
         "stable": "鹿戸雄一 (美浦)"
@@ -13124,7 +13124,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:32.6",
         "margin": "1",
         "pop": 4,
         "stable": "矢作芳人 (栗東)"
@@ -13136,7 +13136,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:32.8",
         "margin": "1.1/4",
         "pop": 5,
         "stable": "浜田多実 (栗東)"
@@ -13148,7 +13148,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:32.9",
         "margin": "3/4",
         "pop": 13,
         "stable": "大竹正博 (美浦)"
@@ -13160,7 +13160,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:32.9",
         "margin": "アタマ",
         "pop": 6,
         "stable": "音無秀孝 (栗東)"
@@ -13172,7 +13172,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:33.0",
         "margin": "1/2",
         "pop": 14,
         "stable": "大久保龍 (栗東)"
@@ -13184,7 +13184,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:33.1",
         "margin": "3/4",
         "pop": 17,
         "stable": "池添兼雄 (栗東)"
@@ -13196,7 +13196,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "1:33.4",
         "margin": "1.1/2",
         "pop": 12,
         "stable": "上村洋行 (栗東)"
@@ -13208,7 +13208,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田中勝春",
-        "time": "",
+        "time": "1:33.4",
         "margin": "クビ",
         "pop": 18,
         "stable": "武幸四郎 (栗東)"
@@ -13220,7 +13220,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武藤雅",
-        "time": "",
+        "time": "1:34.1",
         "margin": "4",
         "pop": 16,
         "stable": "池江泰寿 (栗東)"
@@ -13246,7 +13246,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:32.5",
         "margin": "-",
         "pop": 9,
         "stable": "斉藤崇史 (栗東)"
@@ -13258,7 +13258,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:32.7",
         "margin": "1.1/2",
         "pop": 1,
         "stable": "松下武士 (栗東)"
@@ -13270,7 +13270,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:32.8",
         "margin": "3/4",
         "pop": 6,
         "stable": "松永幹夫 (栗東)"
@@ -13282,7 +13282,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:32.8",
         "margin": "ハナ",
         "pop": 2,
         "stable": "西村真幸 (栗東)"
@@ -13294,7 +13294,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "1:33.0",
         "margin": "1.1/4",
         "pop": 4,
         "stable": "堀宣行 (美浦)"
@@ -13306,7 +13306,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:33.1",
         "margin": "アタマ",
         "pop": 7,
         "stable": "栗田徹 (美浦)"
@@ -13318,7 +13318,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "1:33.1",
         "margin": "ハナ",
         "pop": 8,
         "stable": "青木孝文 (美浦)"
@@ -13330,7 +13330,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武士沢友",
-        "time": "",
+        "time": "1:33.1",
         "margin": "ハナ",
         "pop": 11,
         "stable": "友道康夫 (栗東)"
@@ -13342,7 +13342,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田中勝春",
-        "time": "",
+        "time": "1:33.4",
         "margin": "1.3/4",
         "pop": 12,
         "stable": "高橋亮 (栗東)"
@@ -13354,7 +13354,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤井勘一",
-        "time": "",
+        "time": "1:33.5",
         "margin": "1/2",
         "pop": 15,
         "stable": "西村真幸 (栗東)"
@@ -13366,7 +13366,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "吉田豊",
-        "time": "",
+        "time": "1:33.5",
         "margin": "アタマ",
         "pop": 18,
         "stable": "本田優 (栗東)"
@@ -13378,7 +13378,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松田大作",
-        "time": "",
+        "time": "1:33.5",
         "margin": "アタマ",
         "pop": 13,
         "stable": "藤原英昭 (栗東)"
@@ -13390,7 +13390,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:33.7",
         "margin": "1.1/4",
         "pop": 3,
         "stable": "矢作芳人 (栗東)"
@@ -13402,7 +13402,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:33.8",
         "margin": "1/2",
         "pop": 5,
         "stable": "国枝栄 (美浦)"
@@ -13414,7 +13414,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "原田和真",
-        "time": "",
+        "time": "1:33.9",
         "margin": "1/2",
         "pop": 10,
         "stable": "加用正 (栗東)"
@@ -13426,7 +13426,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "木幡育也",
-        "time": "",
+        "time": "1:34.1",
         "margin": "1.1/4",
         "pop": 16,
         "stable": "小桧山悟 (美浦)"
@@ -13438,7 +13438,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "1:34.3",
         "margin": "1.1/4",
         "pop": 14,
         "stable": "牧光二 (美浦)"
@@ -13450,7 +13450,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "江田照男",
-        "time": "",
+        "time": "1:34.7",
         "margin": "2.1/2",
         "pop": 17,
         "stable": "杉浦宏昭 (美浦)"
@@ -13464,7 +13464,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:32.4",
         "margin": "-",
         "pop": 2,
         "stable": "友道康夫 (栗東)"
@@ -13476,7 +13476,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:32.5",
         "margin": "1/2",
         "pop": 14,
         "stable": "安田隆行 (栗東)"
@@ -13488,7 +13488,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "アヴドゥ",
-        "time": "",
+        "time": "1:32.5",
         "margin": "ハナ",
         "pop": 7,
         "stable": "池添学 (栗東)"
@@ -13500,7 +13500,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:32.7",
         "margin": "1.1/4+クビ",
         "pop": 3,
         "stable": "池江泰寿 (栗東)"
@@ -13512,7 +13512,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:32.7",
         "margin": "-",
         "pop": 1,
         "stable": "藤沢和雄 (美浦)"
@@ -13524,7 +13524,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:32.8",
         "margin": "1/2",
         "pop": 8,
         "stable": "渡辺薫彦 (栗東)"
@@ -13536,7 +13536,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "1:32.8",
         "margin": "ハナ",
         "pop": 10,
         "stable": "武幸四郎 (栗東)"
@@ -13548,7 +13548,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:32.8",
         "margin": "ハナ",
         "pop": 16,
         "stable": "松下武士 (栗東)"
@@ -13560,7 +13560,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:32.8",
         "margin": "クビ",
         "pop": 9,
         "stable": "角居勝彦 (栗東)"
@@ -13572,7 +13572,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "1:32.9",
         "margin": "クビ",
         "pop": 4,
         "stable": "松永幹夫 (栗東)"
@@ -13584,7 +13584,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "1:32.9",
         "margin": "クビ",
         "pop": 15,
         "stable": "梅田智之 (栗東)"
@@ -13596,7 +13596,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "秋山真一",
-        "time": "",
+        "time": "1:33.0",
         "margin": "クビ",
         "pop": 12,
         "stable": "庄野靖志 (栗東)"
@@ -13608,7 +13608,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:33.3",
         "margin": "1.3/4",
         "pop": 6,
         "stable": "梅田智之 (栗東)"
@@ -13620,7 +13620,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:33.5",
         "margin": "1.1/4",
         "pop": 13,
         "stable": "藤沢則雄 (栗東)"
@@ -13632,7 +13632,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:33.7",
         "margin": "1.1/4",
         "pop": 5,
         "stable": "池上昌和 (美浦)"
@@ -13644,7 +13644,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "1:33.8",
         "margin": "3/4",
         "pop": 11,
         "stable": "角田晃一 (栗東)"
@@ -13656,7 +13656,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:33.8",
         "margin": "ハナ",
         "pop": 17,
         "stable": "音無秀孝 (栗東)"
@@ -13668,7 +13668,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "1:34.2",
         "margin": "2.1/2",
         "pop": 18,
         "stable": "西浦勝一 (栗東)"
@@ -13682,7 +13682,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:32.8",
         "margin": "-",
         "pop": 6,
         "stable": "平田修 (栗東)"
@@ -13694,7 +13694,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:32.8",
         "margin": "クビ",
         "pop": 2,
         "stable": "藤原英昭 (栗東)"
@@ -13706,7 +13706,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:32.8",
         "margin": "アタマ",
         "pop": 9,
         "stable": "石坂正 (栗東)"
@@ -13718,7 +13718,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:33.0",
         "margin": "3/4",
         "pop": 7,
         "stable": "藤原英昭 (栗東)"
@@ -13730,7 +13730,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:33.0",
         "margin": "クビ",
         "pop": 5,
         "stable": "木村哲也 (美浦)"
@@ -13742,7 +13742,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:33.2",
         "margin": "1.1/4",
         "pop": 4,
         "stable": "中内田充 (栗東)"
@@ -13754,7 +13754,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:33.2",
         "margin": "クビ",
         "pop": 13,
         "stable": "安田隆行 (栗東)"
@@ -13766,7 +13766,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:33.5",
         "margin": "1.3/4",
         "pop": 8,
         "stable": "池添兼雄 (栗東)"
@@ -13778,7 +13778,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:33.5",
         "margin": "ハナ",
         "pop": 16,
         "stable": "堀宣行 (美浦)"
@@ -13790,7 +13790,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "1:33.5",
         "margin": "クビ",
         "pop": 17,
         "stable": "清水久詞 (栗東)"
@@ -13802,7 +13802,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "1:33.7",
         "margin": "1.1/4",
         "pop": 15,
         "stable": "武井亮 (美浦)"
@@ -13814,7 +13814,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:33.8",
         "margin": "クビ",
         "pop": 1,
         "stable": "藤沢和雄 (美浦)"
@@ -13826,7 +13826,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:33.8",
         "margin": "クビ",
         "pop": 12,
         "stable": "中内田充 (栗東)"
@@ -13838,7 +13838,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:33.9",
         "margin": "クビ",
         "pop": 3,
         "stable": "小西一男 (美浦)"
@@ -13850,7 +13850,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "1:34.0",
         "margin": "3/4",
         "pop": 14,
         "stable": "藤沢和雄 (美浦)"
@@ -13862,7 +13862,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ボウマン",
-        "time": "",
+        "time": "1:34.5",
         "margin": "3",
         "pop": 10,
         "stable": "堀宣行 (美浦)"
@@ -13874,7 +13874,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "1:34.6",
         "margin": "1/2",
         "pop": 18,
         "stable": "友道康夫 (栗東)"
@@ -13886,7 +13886,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:36.3",
         "margin": "大",
         "pop": 11,
         "stable": "藤沢和雄 (美浦)"
@@ -13900,7 +13900,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:32.3",
         "margin": "-",
         "pop": 2,
         "stable": "菊沢隆徳 (美浦)"
@@ -13912,7 +13912,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "1:32.5",
         "margin": "1.1/2",
         "pop": 13,
         "stable": "武井亮 (美浦)"
@@ -13924,7 +13924,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:32.9",
         "margin": "2.1/2",
         "pop": 6,
         "stable": "池添学 (栗東)"
@@ -13936,7 +13936,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:32.9",
         "margin": "クビ",
         "pop": 7,
         "stable": "庄野靖志 (栗東)"
@@ -13948,7 +13948,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:33.0",
         "margin": "3/4",
         "pop": 16,
         "stable": "矢作芳人 (栗東)"
@@ -13960,7 +13960,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:33.0",
         "margin": "ハナ",
         "pop": 10,
         "stable": "菊川正達 (美浦)"
@@ -13972,7 +13972,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:33.1",
         "margin": "1/2",
         "pop": 5,
         "stable": "池江泰寿 (栗東)"
@@ -13984,7 +13984,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "1:33.3",
         "margin": "1",
         "pop": 17,
         "stable": "中村均 (栗東)"
@@ -13996,7 +13996,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:33.3",
         "margin": "クビ",
         "pop": 3,
         "stable": "安田隆行 (栗東)"
@@ -14008,7 +14008,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "柴田善臣",
-        "time": "",
+        "time": "1:33.4",
         "margin": "1/2",
         "pop": 11,
         "stable": "栗田博憲 (美浦)"
@@ -14020,7 +14020,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石川裕紀",
-        "time": "",
+        "time": "1:33.4",
         "margin": "クビ",
         "pop": 8,
         "stable": "鮫島一歩 (栗東)"
@@ -14032,7 +14032,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:33.6",
         "margin": "3/4",
         "pop": 9,
         "stable": "清水久詞 (栗東)"
@@ -14044,7 +14044,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:33.6",
         "margin": "ハナ",
         "pop": 4,
         "stable": "小島茂之 (美浦)"
@@ -14056,7 +14056,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "高倉稜",
-        "time": "",
+        "time": "1:33.7",
         "margin": "1/2",
         "pop": 14,
         "stable": "宮本博 (栗東)"
@@ -14068,7 +14068,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村宏司",
-        "time": "",
+        "time": "1:34.0",
         "margin": "1.3/4",
         "pop": 15,
         "stable": "矢作芳人 (栗東)"
@@ -14080,7 +14080,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:34.0",
         "margin": "アタマ",
         "pop": 18,
         "stable": "矢作芳人 (栗東)"
@@ -14092,7 +14092,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:34.2",
         "margin": "1.1/4",
         "pop": 1,
         "stable": "松下武士 (栗東)"
@@ -14104,7 +14104,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:34.3",
         "margin": "3/4",
         "pop": 12,
         "stable": "安田隆行 (栗東)"
@@ -14118,7 +14118,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:32.8",
         "margin": "-",
         "pop": 1,
         "stable": "田村康仁 (美浦)"
@@ -14130,7 +14130,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:32.9",
         "margin": "3/4",
         "pop": 2,
         "stable": "小島茂之 (美浦)"
@@ -14142,7 +14142,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:32.9",
         "margin": "クビ",
         "pop": 12,
         "stable": "浅見秀一 (栗東)"
@@ -14154,7 +14154,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "丸山元気",
-        "time": "",
+        "time": "1:33.1",
         "margin": "1.1/4",
         "pop": 7,
         "stable": "山内研二 (栗東)"
@@ -14166,7 +14166,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:33.1",
         "margin": "アタマ",
         "pop": 5,
         "stable": "萱野浩二 (美浦)"
@@ -14178,7 +14178,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:33.1",
         "margin": "アタマ",
         "pop": 11,
         "stable": "西園正都 (栗東)"
@@ -14190,7 +14190,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:33.1",
         "margin": "同着",
         "pop": 15,
         "stable": "中竹和也 (栗東)"
@@ -14202,7 +14202,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:33.1",
         "margin": "ハナ",
         "pop": 9,
         "stable": "小笠倫弘 (美浦)"
@@ -14214,7 +14214,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "江田照男",
-        "time": "",
+        "time": "1:33.3",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "斎藤誠 (美浦)"
@@ -14226,7 +14226,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ベリー",
-        "time": "",
+        "time": "1:33.3",
         "margin": "ハナ",
         "pop": 13,
         "stable": "須貝尚介 (栗東)"
@@ -14238,7 +14238,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:33.4",
         "margin": "クビ",
         "pop": 3,
         "stable": "須貝尚介 (栗東)"
@@ -14250,7 +14250,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:33.4",
         "margin": "アタマ",
         "pop": 8,
         "stable": "須貝尚介 (栗東)"
@@ -14262,7 +14262,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "1:33.4",
         "margin": "クビ",
         "pop": 16,
         "stable": "高橋裕 (美浦)"
@@ -14274,7 +14274,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "1:33.5",
         "margin": "クビ",
         "pop": 17,
         "stable": "佐藤吉勝 (美浦)"
@@ -14286,7 +14286,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "1:33.6",
         "margin": "3/4",
         "pop": 18,
         "stable": "相沢郁 (美浦)"
@@ -14298,7 +14298,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ボウマン",
-        "time": "",
+        "time": "1:33.7",
         "margin": "1/2",
         "pop": 6,
         "stable": "斎藤誠 (美浦)"
@@ -14310,7 +14310,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:33.8",
         "margin": "クビ",
         "pop": 4,
         "stable": "藤沢和雄 (美浦)"
@@ -14322,7 +14322,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "1:35.4",
         "margin": "10",
         "pop": 14,
         "stable": "谷潔 (栗東)"
@@ -14338,7 +14338,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:32.1",
         "margin": "-",
         "pop": 1,
         "stable": "黒岩陽一 (美浦)"
@@ -14350,7 +14350,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:32.1",
         "margin": "クビ",
         "pop": 4,
         "stable": "中内田充 (栗東)"
@@ -14362,7 +14362,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "1:32.1",
         "margin": "ハナ",
         "pop": 7,
         "stable": "牧浦充徳 (栗東)"
@@ -14374,7 +14374,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "1:32.1",
         "margin": "アタマ",
         "pop": 5,
         "stable": "中内田充 (栗東)"
@@ -14386,7 +14386,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "1:32.2",
         "margin": "3/4",
         "pop": 15,
         "stable": "中竹和也 (栗東)"
@@ -14398,7 +14398,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "木幡初也",
-        "time": "**",
+        "time": "1:32.3",
         "margin": "1/2",
         "pop": 14,
         "stable": "竹内正洋 (美浦)"
@@ -14410,7 +14410,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "田辺裕信",
-        "time": "**",
+        "time": "1:32.4",
         "margin": "1/2",
         "pop": 6,
         "stable": "宮田敬介 (美浦)"
@@ -14422,7 +14422,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:32.4",
         "margin": "アタマ",
         "pop": 3,
         "stable": "国枝栄 (美浦)"
@@ -14434,7 +14434,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "石川裕紀",
-        "time": "**",
+        "time": "1:32.5",
         "margin": "1/2",
         "pop": 8,
         "stable": "加藤士津 (美浦)"
@@ -14446,7 +14446,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "斎藤新",
-        "time": "**",
+        "time": "1:32.5",
         "margin": "アタマ",
         "pop": 16,
         "stable": "高野友和 (栗東)"
@@ -14458,7 +14458,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "1:32.6",
         "margin": "クビ",
         "pop": 13,
         "stable": "藤原英昭 (栗東)"
@@ -14470,7 +14470,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "津村明秀",
-        "time": "**",
+        "time": "1:32.7",
         "margin": "1/2",
         "pop": 10,
         "stable": "矢作芳人 (栗東)"
@@ -14482,7 +14482,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:32.8",
         "margin": "1/2",
         "pop": 9,
         "stable": "池添学 (栗東)"
@@ -14494,7 +14494,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "1/2",
         "pop": 17,
         "stable": "藤野健太 (栗東)"
@@ -14506,7 +14506,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "菱田裕二",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "アタマ",
         "pop": 11,
         "stable": "橋口慎介 (栗東)"
@@ -14518,7 +14518,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:33.0",
         "margin": "1/2",
         "pop": 2,
         "stable": "手塚貴久 (美浦)"
@@ -14530,7 +14530,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "1:33.3",
         "margin": "2",
         "pop": 12,
         "stable": "新谷功一 (栗東)"
@@ -14556,7 +14556,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "津村明秀",
-        "time": "**",
+        "time": "1:31.8",
         "margin": "-",
         "pop": 14,
         "stable": "高柳大輔 (栗東)"
@@ -14568,7 +14568,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:32.0",
         "margin": "1.1/4",
         "pop": 4,
         "stable": "国枝栄 (美浦)"
@@ -14580,7 +14580,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "モレイラ",
-        "time": "**",
+        "time": "1:32.0",
         "margin": "クビ",
         "pop": 1,
         "stable": "辻野泰之 (栗東)"
@@ -14592,7 +14592,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "鮫島克駿",
-        "time": "**",
+        "time": "1:32.1",
         "margin": "クビ",
         "pop": 11,
         "stable": "庄野靖志 (栗東)"
@@ -14604,7 +14604,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:32.2",
         "margin": "1/2",
         "pop": 13,
         "stable": "宗像義忠 (美浦)"
@@ -14616,7 +14616,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:32.2",
         "margin": "アタマ",
         "pop": 3,
         "stable": "木村哲也 (美浦)"
@@ -14628,7 +14628,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "1:32.3",
         "margin": "1/2",
         "pop": 6,
         "stable": "武藤善則 (美浦)"
@@ -14640,7 +14640,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:32.3",
         "margin": "クビ",
         "pop": 2,
         "stable": "高野友和 (栗東)"
@@ -14652,7 +14652,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "西村淳也",
-        "time": "**",
+        "time": "1:32.6",
         "margin": "1.1/2",
         "pop": 5,
         "stable": "高野友和 (栗東)"
@@ -14664,7 +14664,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:32.7",
         "margin": "3/4",
         "pop": 12,
         "stable": "高柳大輔 (栗東)"
@@ -14676,7 +14676,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "杉原誠人",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "1.1/4",
         "pop": 15,
         "stable": "小島茂之 (美浦)"
@@ -14688,7 +14688,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "横山琉人",
-        "time": "**",
+        "time": "1:33.0",
         "margin": "1/2",
         "pop": 10,
         "stable": "小島茂之 (美浦)"
@@ -14700,7 +14700,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "1:33.5",
         "margin": "3",
         "pop": 7,
         "stable": "清水久詞 (栗東)"
@@ -14712,7 +14712,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:33.7",
         "margin": "1.1/2",
         "pop": 9,
         "stable": "相沢郁 (美浦)"
@@ -14724,7 +14724,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "1:33.9",
         "margin": "1.1/2",
         "pop": 8,
         "stable": "友道康夫 (栗東)"
@@ -14738,7 +14738,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:32.2",
         "margin": "-",
         "pop": 4,
         "stable": "林徹 (美浦)"
@@ -14750,7 +14750,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "1:32.2",
         "margin": "アタマ",
         "pop": 3,
         "stable": "須貝尚介 (栗東)"
@@ -14762,7 +14762,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:32.3",
         "margin": "3/4",
         "pop": 1,
         "stable": "高柳瑞樹 (美浦)"
@@ -14774,7 +14774,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "1:32.4",
         "margin": "1",
         "pop": 15,
         "stable": "友道康夫 (栗東)"
@@ -14786,7 +14786,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:32.7",
         "margin": "1.3/4",
         "pop": 8,
         "stable": "高柳大輔 (栗東)"
@@ -14798,7 +14798,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "1:32.8",
         "margin": "3/4",
         "pop": 12,
         "stable": "辻野泰之 (栗東)"
@@ -14810,7 +14810,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:32.8",
         "margin": "アタマ",
         "pop": 2,
         "stable": "高野友和 (栗東)"
@@ -14822,7 +14822,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "クビ",
         "pop": 5,
         "stable": "長谷川浩 (栗東)"
@@ -14834,7 +14834,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "団野大成",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "クビ",
         "pop": 14,
         "stable": "斉藤崇史 (栗東)"
@@ -14846,7 +14846,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "アタマ",
         "pop": 9,
         "stable": "藤原英昭 (栗東)"
@@ -14858,7 +14858,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "吉田隼人",
-        "time": "**",
+        "time": "1:33.0",
         "margin": "クビ",
         "pop": 13,
         "stable": "池添学 (栗東)"
@@ -14870,7 +14870,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "1:33.0",
         "margin": "ハナ",
         "pop": 7,
         "stable": "高野友和 (栗東)"
@@ -14882,7 +14882,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "三浦皇成",
-        "time": "**",
+        "time": "1:33.0",
         "margin": "アタマ",
         "pop": 11,
         "stable": "藤原英昭 (栗東)"
@@ -14894,7 +14894,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "菅原明良",
-        "time": "**",
+        "time": "1:33.0",
         "margin": "アタマ",
         "pop": 6,
         "stable": "斉藤崇史 (栗東)"
@@ -14906,7 +14906,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "岩田康誠",
-        "time": "**",
+        "time": "1:33.5",
         "margin": "3",
         "pop": 10,
         "stable": "石坂公一 (栗東)"
@@ -14918,7 +14918,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "松岡正海",
-        "time": "**",
+        "time": "1:33.5",
         "margin": "アタマ",
         "pop": 16,
         "stable": "伊藤伸一 (美浦)"
@@ -14932,7 +14932,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "1:32.2",
         "margin": "-",
         "pop": 4,
         "stable": "須貝尚介 (栗東)"
@@ -14944,7 +14944,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:32.5",
         "margin": "2",
         "pop": 3,
         "stable": "木村哲也 (美浦)"
@@ -14956,7 +14956,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "1:32.5",
         "margin": "クビ",
         "pop": 6,
         "stable": "松下武士 (栗東)"
@@ -14968,7 +14968,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "田中勝春",
-        "time": "",
+        "time": "1:32.5",
         "margin": "ハナ",
         "pop": 18,
         "stable": "西園正都 (栗東)"
@@ -14980,7 +14980,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:32.5",
         "margin": "ハナ",
         "pop": 2,
         "stable": "林徹 (美浦)"
@@ -14992,7 +14992,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:32.7",
         "margin": "1.1/4",
         "pop": 5,
         "stable": "杉山晴紀 (栗東)"
@@ -15004,7 +15004,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "菅原明良",
-        "time": "",
+        "time": "1:32.8",
         "margin": "クビ",
         "pop": 17,
         "stable": "池江泰寿 (栗東)"
@@ -15016,7 +15016,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:32.8",
         "margin": "アタマ",
         "pop": 12,
         "stable": "中竹和也 (栗東)"
@@ -15028,7 +15028,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "坂井瑠星",
-        "time": "",
+        "time": "1:32.8",
         "margin": "クビ",
         "pop": 16,
         "stable": "斎藤誠 (美浦)"
@@ -15040,7 +15040,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:32.9",
         "margin": "アタマ",
         "pop": 14,
         "stable": "杉山晴紀 (栗東)"
@@ -15052,7 +15052,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:32.9",
         "margin": "アタマ",
         "pop": 13,
         "stable": "友道康夫 (栗東)"
@@ -15064,7 +15064,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:32.9",
         "margin": "ハナ",
         "pop": 1,
         "stable": "高野友和 (栗東)"
@@ -15076,7 +15076,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "1:33.0",
         "margin": "1/2",
         "pop": 8,
         "stable": "和田正一 (美浦)"
@@ -15088,7 +15088,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:33.1",
         "margin": "1/2",
         "pop": 7,
         "stable": "池添学 (栗東)"
@@ -15100,7 +15100,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "1:33.2",
         "margin": "1/2",
         "pop": 9,
         "stable": "友道康夫 (栗東)"
@@ -15112,7 +15112,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "1:33.2",
         "margin": "クビ",
         "pop": 15,
         "stable": "伊藤伸一 (美浦)"
@@ -15124,7 +15124,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:33.5",
         "margin": "2",
         "pop": 11,
         "stable": "国枝栄 (美浦)"
@@ -15136,7 +15136,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "鮫島克駿",
-        "time": "",
+        "time": "1:33.7",
         "margin": "1",
         "pop": 10,
         "stable": "池添兼雄 (栗東)"
@@ -15150,7 +15150,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:31.0",
         "margin": "-",
         "pop": 1,
         "stable": "藤沢和雄 (美浦)"
@@ -15162,7 +15162,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "1:31.7",
         "margin": "4",
         "pop": 10,
         "stable": "友道康夫 (栗東)"
@@ -15174,7 +15174,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:31.7",
         "margin": "クビ",
         "pop": 5,
         "stable": "国枝栄 (美浦)"
@@ -15186,7 +15186,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "団野大成",
-        "time": "",
+        "time": "1:31.8",
         "margin": "クビ",
         "pop": 14,
         "stable": "奥村豊 (栗東)"
@@ -15198,7 +15198,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:31.8",
         "margin": "クビ",
         "pop": 13,
         "stable": "渡辺薫彦 (栗東)"
@@ -15210,7 +15210,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:31.9",
         "margin": "クビ",
         "pop": 2,
         "stable": "松下武士 (栗東)"
@@ -15222,7 +15222,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:31.9",
         "margin": "クビ",
         "pop": 9,
         "stable": "中内田充 (栗東)"
@@ -15234,7 +15234,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:31.9",
         "margin": "アタマ",
         "pop": 4,
         "stable": "友道康夫 (栗東)"
@@ -15246,7 +15246,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:32.2",
         "margin": "1.3/4",
         "pop": 7,
         "stable": "手塚貴久 (美浦)"
@@ -15258,7 +15258,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "斎藤新",
-        "time": "",
+        "time": "1:32.3",
         "margin": "1/2",
         "pop": 15,
         "stable": "杉山晴紀 (栗東)"
@@ -15270,7 +15270,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:32.3",
         "margin": "クビ",
         "pop": 6,
         "stable": "安達昭夫 (栗東)"
@@ -15282,7 +15282,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:32.4",
         "margin": "クビ",
         "pop": 17,
         "stable": "鹿戸雄一 (美浦)"
@@ -15294,7 +15294,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:32.4",
         "margin": "アタマ",
         "pop": 8,
         "stable": "中内田充 (栗東)"
@@ -15306,7 +15306,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:32.4",
         "margin": "クビ",
         "pop": 3,
         "stable": "和田正一 (美浦)"
@@ -15318,7 +15318,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "1:32.6",
         "margin": "3/4",
         "pop": 12,
         "stable": "高橋祥泰 (美浦)"
@@ -15330,7 +15330,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "1:32.6",
         "margin": "アタマ",
         "pop": 18,
         "stable": "尾関知人 (美浦)"
@@ -15342,7 +15342,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:32.8",
         "margin": "1.1/4",
         "pop": 11,
         "stable": "庄野靖志 (栗東)"
@@ -15354,7 +15354,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "1:36.5",
         "margin": "大",
         "pop": 16,
         "stable": "角田晃一 (栗東)"
@@ -15368,7 +15368,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:30.6",
         "margin": "-",
         "pop": 1,
         "stable": "国枝栄 (美浦)"
@@ -15380,7 +15380,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:31.3",
         "margin": "4",
         "pop": 4,
         "stable": "安達昭夫 (栗東)"
@@ -15392,7 +15392,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:31.3",
         "margin": "クビ",
         "pop": 5,
         "stable": "萩原清 (美浦)"
@@ -15404,7 +15404,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:31.4",
         "margin": "1/2",
         "pop": 12,
         "stable": "安田隆行 (栗東)"
@@ -15416,7 +15416,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:31.5",
         "margin": "1/2",
         "pop": 6,
         "stable": "中内田充 (栗東)"
@@ -15428,7 +15428,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:31.6",
         "margin": "3/4",
         "pop": 11,
         "stable": "渡辺薫彦 (栗東)"
@@ -15440,7 +15440,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:31.8",
         "margin": "1",
         "pop": 3,
         "stable": "矢作芳人 (栗東)"
@@ -15452,7 +15452,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "1:32.0",
         "margin": "1.1/4",
         "pop": 2,
         "stable": "木村哲也 (美浦)"
@@ -15464,7 +15464,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:32.0",
         "margin": "クビ",
         "pop": 9,
         "stable": "友道康夫 (栗東)"
@@ -15476,7 +15476,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:32.2",
         "margin": "1.1/2",
         "pop": 10,
         "stable": "斎藤誠 (美浦)"
@@ -15488,7 +15488,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "北村宏司",
-        "time": "",
+        "time": "1:32.3",
         "margin": "1/2",
         "pop": 15,
         "stable": "藤沢和雄 (美浦)"
@@ -15500,7 +15500,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "柴田善臣",
-        "time": "",
+        "time": "1:32.3",
         "margin": "ハナ",
         "pop": 13,
         "stable": "加藤征弘 (美浦)"
@@ -15512,7 +15512,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "吉田豊",
-        "time": "",
+        "time": "1:32.4",
         "margin": "クビ",
         "pop": 16,
         "stable": "矢作芳人 (栗東)"
@@ -15524,7 +15524,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:32.4",
         "margin": "アタマ",
         "pop": 8,
         "stable": "藤沢和雄 (美浦)"
@@ -15536,7 +15536,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:32.8",
         "margin": "2.1/2",
         "pop": 7,
         "stable": "高橋亮 (栗東)"
@@ -15548,7 +15548,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "岡田祥嗣",
-        "time": "",
+        "time": "1:33.3",
         "margin": "3",
         "pop": 14,
         "stable": "藤原英昭 (栗東)"
@@ -15586,7 +15586,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "1:30.5",
         "margin": "-",
         "pop": 5,
         "stable": "萩原清 (美浦)"
@@ -15598,7 +15598,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:30.5",
         "margin": "クビ",
         "pop": 4,
         "stable": "木村哲也 (美浦)"
@@ -15610,7 +15610,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:30.6",
         "margin": "1/2",
         "pop": 11,
         "stable": "西浦勝一 (栗東)"
@@ -15622,7 +15622,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:30.6",
         "margin": "ハナ",
         "pop": 1,
         "stable": "松永幹夫 (栗東)"
@@ -15634,7 +15634,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:30.9",
         "margin": "1.1/2",
         "pop": 2,
         "stable": "菊沢隆徳 (美浦)"
@@ -15646,7 +15646,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "川島信二",
-        "time": "",
+        "time": "1:31.1",
         "margin": "1.1/4",
         "pop": 17,
         "stable": "高橋亮 (栗東)"
@@ -15658,7 +15658,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:31.2",
         "margin": "3/4",
         "pop": 15,
         "stable": "安達昭夫 (栗東)"
@@ -15670,7 +15670,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:31.2",
         "margin": "クビ",
         "pop": 6,
         "stable": "中内田充 (栗東)"
@@ -15682,7 +15682,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:31.2",
         "margin": "ハナ",
         "pop": 8,
         "stable": "藤沢和雄 (美浦)"
@@ -15694,7 +15694,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝7",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:31.2",
         "margin": "ハナ",
         "pop": 13,
         "stable": "梅田智之 (栗東)"
@@ -15706,7 +15706,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:31.4",
         "margin": "1.1/4",
         "pop": 3,
         "stable": "藤原英昭 (栗東)"
@@ -15718,7 +15718,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "柴田善臣",
-        "time": "",
+        "time": "1:31.4",
         "margin": "クビ",
         "pop": 10,
         "stable": "荒川義之 (栗東)"
@@ -15730,7 +15730,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:31.7",
         "margin": "1.3/4",
         "pop": 14,
         "stable": "角居勝彦 (栗東)"
@@ -15742,7 +15742,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "坂井瑠星",
-        "time": "",
+        "time": "1:32.0",
         "margin": "1.3/4",
         "pop": 12,
         "stable": "牧田和弥 (栗東)"
@@ -15754,7 +15754,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:32.2",
         "margin": "1",
         "pop": 9,
         "stable": "国枝栄 (美浦)"
@@ -15766,7 +15766,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "中谷雄太",
-        "time": "",
+        "time": "1:32.2",
         "margin": "クビ",
         "pop": 16,
         "stable": "藤岡健一 (栗東)"
@@ -15778,7 +15778,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "秋山真一",
-        "time": "",
+        "time": "1:32.4",
         "margin": "1",
         "pop": 18,
         "stable": "岡田稲男 (栗東)"
@@ -15790,7 +15790,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:32.5",
         "margin": "1/2",
         "pop": 7,
         "stable": "角居勝彦 (栗東)"
@@ -15804,7 +15804,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:32.3",
         "margin": "-",
         "pop": 8,
         "stable": "西園正都 (栗東)"
@@ -15816,7 +15816,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:32.3",
         "margin": "ハナ",
         "pop": 1,
         "stable": "矢作芳人 (栗東)"
@@ -15828,7 +15828,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:32.3",
         "margin": "クビ",
         "pop": 7,
         "stable": "音無秀孝 (栗東)"
@@ -15840,7 +15840,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:32.4",
         "margin": "1/2",
         "pop": 3,
         "stable": "菊沢隆徳 (美浦)"
@@ -15852,7 +15852,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:32.6",
         "margin": "1.1/4",
         "pop": 4,
         "stable": "昆貢 (栗東)"
@@ -15864,7 +15864,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:32.7",
         "margin": "1/2",
         "pop": 6,
         "stable": "梅田智之 (栗東)"
@@ -15876,7 +15876,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:32.7",
         "margin": "アタマ",
         "pop": 5,
         "stable": "藤沢和雄 (美浦)"
@@ -15888,7 +15888,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:33.0",
         "margin": "1.3/4",
         "pop": 2,
         "stable": "須貝尚介 (栗東)"
@@ -15900,7 +15900,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:33.0",
         "margin": "クビ",
         "pop": 14,
         "stable": "藤岡健一 (栗東)"
@@ -15912,7 +15912,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:33.1",
         "margin": "クビ",
         "pop": 9,
         "stable": "本田優 (栗東)"
@@ -15924,7 +15924,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:33.3",
         "margin": "1.1/4",
         "pop": 15,
         "stable": "藤原英昭 (栗東)"
@@ -15936,7 +15936,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "1:33.3",
         "margin": "クビ",
         "pop": 11,
         "stable": "荒川義之 (栗東)"
@@ -15948,7 +15948,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:33.3",
         "margin": "ハナ",
         "pop": 12,
         "stable": "角居勝彦 (栗東)"
@@ -15960,7 +15960,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "1:33.5",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "浜田多実 (栗東)"
@@ -15972,7 +15972,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "1:33.6",
         "margin": "1/2",
         "pop": 17,
         "stable": "武井亮 (美浦)"
@@ -15984,7 +15984,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:33.6",
         "margin": "クビ",
         "pop": 13,
         "stable": "大竹正博 (美浦)"
@@ -15996,7 +15996,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "1:33.7",
         "margin": "1/2",
         "pop": 16,
         "stable": "本田優 (栗東)"
@@ -16008,7 +16008,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "1:33.9",
         "margin": "1.1/2",
         "pop": 18,
         "stable": "野中賢二 (栗東)"
@@ -16022,7 +16022,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:33.9",
         "margin": "-",
         "pop": 6,
         "stable": "須貝尚介 (栗東)"
@@ -16034,7 +16034,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "1:34.1",
         "margin": "1.1/4",
         "pop": 11,
         "stable": "荒川義之 (栗東)"
@@ -16046,7 +16046,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:34.1",
         "margin": "クビ",
         "pop": 7,
         "stable": "西園正都 (栗東)"
@@ -16058,7 +16058,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝7",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:34.1",
         "margin": "アタマ",
         "pop": 4,
         "stable": "大久保龍 (栗東)"
@@ -16070,7 +16070,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:34.2",
         "margin": "クビ",
         "pop": 9,
         "stable": "鮫島一歩 (栗東)"
@@ -16082,7 +16082,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:34.3",
         "margin": "3/4",
         "pop": 5,
         "stable": "吉村圭司 (栗東)"
@@ -16094,7 +16094,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "1:34.4",
         "margin": "1/2",
         "pop": 1,
         "stable": "池江泰寿 (栗東)"
@@ -16106,7 +16106,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "北村宏司",
-        "time": "",
+        "time": "1:34.5",
         "margin": "1/2",
         "pop": 12,
         "stable": "国枝栄 (美浦)"
@@ -16118,7 +16118,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝7",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "1:34.5",
         "margin": "クビ",
         "pop": 8,
         "stable": "菊沢隆徳 (美浦)"
@@ -16130,7 +16130,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:34.6",
         "margin": "1/2",
         "pop": 2,
         "stable": "大竹正博 (美浦)"
@@ -16142,7 +16142,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:34.6",
         "margin": "クビ",
         "pop": 3,
         "stable": "梅田智之 (栗東)"
@@ -16154,7 +16154,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:34.6",
         "margin": "ハナ",
         "pop": 13,
         "stable": "浅見秀一 (栗東)"
@@ -16166,7 +16166,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:34.7",
         "margin": "クビ",
         "pop": 10,
         "stable": "中尾秀正 (栗東)"
@@ -16178,7 +16178,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "1:34.9",
         "margin": "1.1/2",
         "pop": 17,
         "stable": "昆貢 (栗東)"
@@ -16190,7 +16190,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:35.2",
         "margin": "2",
         "pop": 16,
         "stable": "谷潔 (栗東)"
@@ -16202,7 +16202,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:36.2",
         "margin": "6",
         "pop": 15,
         "stable": "武市康男 (美浦)"
@@ -16214,7 +16214,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "黛弘人",
-        "time": "",
+        "time": "1:41.7",
         "margin": "大",
         "pop": 14,
         "stable": "中野栄治 (美浦)"
@@ -16228,7 +16228,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝7",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:31.5",
         "margin": "-",
         "pop": 7,
         "stable": "藤原英昭 (栗東)"
@@ -16240,7 +16240,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "1:31.9",
         "margin": "2.1/2",
         "pop": 1,
         "stable": "池江泰寿 (栗東)"
@@ -16252,7 +16252,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:31.9",
         "margin": "ハナ",
         "pop": 2,
         "stable": "高野友和 (栗東)"
@@ -16264,7 +16264,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:32.1",
         "margin": "1.1/4",
         "pop": 3,
         "stable": "大久保龍 (栗東)"
@@ -16276,7 +16276,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:32.1",
         "margin": "ハナ",
         "pop": 4,
         "stable": "大竹正博 (美浦)"
@@ -16288,7 +16288,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "ボウマン",
-        "time": "",
+        "time": "1:32.1",
         "margin": "ハナ",
         "pop": 6,
         "stable": "中川公成 (美浦)"
@@ -16300,7 +16300,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "1:32.3",
         "margin": "1.1/4",
         "pop": 15,
         "stable": "菊沢隆徳 (美浦)"
@@ -16312,7 +16312,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:32.5",
         "margin": "1.1/2",
         "pop": 5,
         "stable": "吉村圭司 (栗東)"
@@ -16324,7 +16324,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "吉田豊",
-        "time": "",
+        "time": "1:32.7",
         "margin": "1.1/4",
         "pop": 12,
         "stable": "矢野英一 (美浦)"
@@ -16336,7 +16336,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:32.9",
         "margin": "1",
         "pop": 8,
         "stable": "梅田智之 (栗東)"
@@ -16348,7 +16348,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:32.9",
         "margin": "クビ",
         "pop": 10,
         "stable": "大久保龍 (栗東)"
@@ -16360,7 +16360,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "武幸四郎",
-        "time": "",
+        "time": "1:33.2",
         "margin": "2",
         "pop": 17,
         "stable": "飯田祐史 (栗東)"
@@ -16372,7 +16372,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:33.3",
         "margin": "クビ",
         "pop": 13,
         "stable": "藤原英昭 (栗東)"
@@ -16384,7 +16384,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 55.0,
         "jockey": "石川裕紀",
-        "time": "",
+        "time": "1:33.5",
         "margin": "1.1/4",
         "pop": 18,
         "stable": "須貝尚介 (栗東)"
@@ -16396,7 +16396,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:34.2",
         "margin": "4",
         "pop": 14,
         "stable": "堀宣行 (美浦)"
@@ -16408,7 +16408,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "1:34.3",
         "margin": "1/2",
         "pop": 11,
         "stable": "二ノ宮敬 (美浦)"
@@ -16420,7 +16420,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:34.3",
         "margin": "クビ",
         "pop": 16,
         "stable": "角居勝彦 (栗東)"
@@ -16432,7 +16432,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 55.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:34.8",
         "margin": "3",
         "pop": 9,
         "stable": "松永幹夫 (栗東)"
@@ -16448,7 +16448,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "シュタル",
-        "time": "**",
+        "time": "2:25.7",
         "margin": "-",
         "pop": 4,
         "stable": "友道康夫 (栗東)"
@@ -16460,7 +16460,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "2:25.7",
         "margin": "アタマ",
         "pop": 2,
         "stable": "上村洋行 (栗東)"
@@ -16472,7 +16472,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡佑介",
-        "time": "**",
+        "time": "2:25.9",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "千田輝彦 (栗東)"
@@ -16484,7 +16484,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "丹内祐次",
-        "time": "**",
+        "time": "2:26.0",
         "margin": "クビ",
         "pop": 7,
         "stable": "千田輝彦 (栗東)"
@@ -16496,7 +16496,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "2:26.2",
         "margin": "1.1/4",
         "pop": 3,
         "stable": "西村真幸 (栗東)"
@@ -16508,7 +16508,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "団野大成",
-        "time": "**",
+        "time": "2:26.4",
         "margin": "1.1/4",
         "pop": 18,
         "stable": "須貝尚介 (栗東)"
@@ -16520,7 +16520,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "2:26.6",
         "margin": "1.1/2",
         "pop": 6,
         "stable": "手塚貴久 (美浦)"
@@ -16532,7 +16532,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ディー",
-        "time": "**",
+        "time": "2:26.7",
         "margin": "クビ",
         "pop": 14,
         "stable": "藤原英昭 (栗東)"
@@ -16544,7 +16544,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "2:26.7",
         "margin": "クビ",
         "pop": 1,
         "stable": "森一誠 (美浦)"
@@ -16556,7 +16556,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "2:26.8",
         "margin": "3/4",
         "pop": 5,
         "stable": "杉山晴紀 (栗東)"
@@ -16568,7 +16568,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "石橋脩",
-        "time": "**",
+        "time": "2:26.9",
         "margin": "クビ",
         "pop": 9,
         "stable": "池上昌和 (美浦)"
@@ -16580,7 +16580,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村宏司",
-        "time": "**",
+        "time": "2:27.0",
         "margin": "1",
         "pop": 15,
         "stable": "佐々木晶 (栗東)"
@@ -16592,7 +16592,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "幸英明",
-        "time": "**",
+        "time": "2:27.0",
         "margin": "ハナ",
         "pop": 12,
         "stable": "松下武士 (栗東)"
@@ -16604,7 +16604,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "大野拓弥",
-        "time": "**",
+        "time": "2:27.1",
         "margin": "1/2",
         "pop": 17,
         "stable": "加藤士津 (美浦)"
@@ -16616,7 +16616,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "**",
+        "time": "2:27.3",
         "margin": "1",
         "pop": 16,
         "stable": "石坂公一 (栗東)"
@@ -16628,7 +16628,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "2:27.3",
         "margin": "クビ",
         "pop": 8,
         "stable": "辻野泰之 (栗東)"
@@ -16640,7 +16640,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "2:28.1",
         "margin": "5",
         "pop": 11,
         "stable": "田中克典 (栗東)"
@@ -16652,7 +16652,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "津村明秀",
-        "time": "**",
+        "time": "2:31.1",
         "margin": "大",
         "pop": 13,
         "stable": "手塚貴久 (美浦)"
@@ -16666,7 +16666,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "2:24.0",
         "margin": "-",
         "pop": 2,
         "stable": "木村哲也 (美浦)"
@@ -16678,7 +16678,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "2:24.1",
         "margin": "1/2",
         "pop": 1,
         "stable": "国枝栄 (美浦)"
@@ -16690,7 +16690,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "2:24.4",
         "margin": "1.3/4",
         "pop": 3,
         "stable": "茶木太樹 (栗東)"
@@ -16702,7 +16702,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "2:24.4",
         "margin": "クビ",
         "pop": 5,
         "stable": "中内田充 (栗東)"
@@ -16714,7 +16714,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "2:24.4",
         "margin": "ハナ",
         "pop": 14,
         "stable": "奥村豊 (栗東)"
@@ -16726,7 +16726,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "2:24.6",
         "margin": "1.1/2",
         "pop": 4,
         "stable": "庄野靖志 (栗東)"
@@ -16738,7 +16738,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "三浦皇成",
-        "time": "**",
+        "time": "2:24.8",
         "margin": "3/4",
         "pop": 15,
         "stable": "新谷功一 (栗東)"
@@ -16750,7 +16750,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武藤雅",
-        "time": "**",
+        "time": "2:24.9",
         "margin": "1.1/4",
         "pop": 11,
         "stable": "武藤善則 (美浦)"
@@ -16762,7 +16762,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "2:25.0",
         "margin": "クビ",
         "pop": 8,
         "stable": "加藤征弘 (美浦)"
@@ -16774,7 +16774,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "原優介",
-        "time": "**",
+        "time": "2:25.0",
         "margin": "クビ",
         "pop": 13,
         "stable": "田島俊明 (美浦)"
@@ -16786,7 +16786,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "2:25.1",
         "margin": "クビ",
         "pop": 12,
         "stable": "中村直也 (栗東)"
@@ -16798,7 +16798,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "石川裕紀",
-        "time": "**",
+        "time": "2:25.2",
         "margin": "3/4",
         "pop": 7,
         "stable": "菊沢隆徳 (美浦)"
@@ -16810,7 +16810,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "2:25.3",
         "margin": "3/4",
         "pop": 10,
         "stable": "池添学 (栗東)"
@@ -16822,7 +16822,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "津村明秀",
-        "time": "**",
+        "time": "2:25.3",
         "margin": "ハナ",
         "pop": 9,
         "stable": "林徹 (美浦)"
@@ -16834,7 +16834,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "**",
+        "time": "2:25.3",
         "margin": "アタマ",
         "pop": 17,
         "stable": "新谷功一 (栗東)"
@@ -16846,7 +16846,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "2:25.8",
         "margin": "3",
         "pop": 6,
         "stable": "斉藤崇史 (栗東)"
@@ -16858,7 +16858,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "**",
+        "time": "2:30.7",
         "margin": "大",
         "pop": 18,
         "stable": "高野友和 (栗東)"
@@ -16870,7 +16870,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村宏司",
-        "time": "**",
+        "time": "2:33.8",
         "margin": "大",
         "pop": 16,
         "stable": "古賀慎明 (美浦)"
@@ -16884,7 +16884,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "2:23.1",
         "margin": "-",
         "pop": 1,
         "stable": "中内田充 (栗東)"
@@ -16896,7 +16896,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "2:24.1",
         "margin": "6",
         "pop": 2,
         "stable": "友道康夫 (栗東)"
@@ -16908,7 +16908,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "斎藤新",
-        "time": "**",
+        "time": "2:24.1",
         "margin": "クビ",
         "pop": 15,
         "stable": "高橋康之 (栗東)"
@@ -16920,7 +16920,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "2:24.2",
         "margin": "3/4",
         "pop": 10,
         "stable": "矢作芳人 (栗東)"
@@ -16932,7 +16932,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田豊",
-        "time": "**",
+        "time": "2:24.4",
         "margin": "3/4",
         "pop": 7,
         "stable": "竹内正洋 (美浦)"
@@ -16944,7 +16944,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "津村明秀",
-        "time": "**",
+        "time": "2:24.4",
         "margin": "ハナ",
         "pop": 14,
         "stable": "木村哲也 (美浦)"
@@ -16956,7 +16956,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "2:25.0",
         "margin": "3.1/2",
         "pop": 3,
         "stable": "清水久詞 (栗東)"
@@ -16968,7 +16968,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "2:25.0",
         "margin": "クビ",
         "pop": 5,
         "stable": "音無秀孝 (栗東)"
@@ -16980,7 +16980,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "**",
+        "time": "2:25.2",
         "margin": "1.1/4",
         "pop": 6,
         "stable": "庄野靖志 (栗東)"
@@ -16992,7 +16992,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "荻野極",
-        "time": "**",
+        "time": "2:25.3",
         "margin": "1/2",
         "pop": 18,
         "stable": "松永幹夫 (栗東)"
@@ -17004,7 +17004,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "菅原明良",
-        "time": "**",
+        "time": "2:25.8",
         "margin": "3.1/2",
         "pop": 4,
         "stable": "武市康男 (美浦)"
@@ -17016,7 +17016,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "2:25.9",
         "margin": "クビ",
         "pop": 8,
         "stable": "鹿戸雄一 (美浦)"
@@ -17028,7 +17028,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "2:26.1",
         "margin": "1.1/4",
         "pop": 13,
         "stable": "和田正一 (美浦)"
@@ -17040,7 +17040,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "2:26.1",
         "margin": "アタマ",
         "pop": 9,
         "stable": "安田隆行 (栗東)"
@@ -17052,7 +17052,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "杉原誠人",
-        "time": "**",
+        "time": "2:26.2",
         "margin": "1/2",
         "pop": 16,
         "stable": "小島茂之 (美浦)"
@@ -17064,7 +17064,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "2:26.2",
         "margin": "クビ",
         "pop": 11,
         "stable": "安田翔伍 (栗東)"
@@ -17076,7 +17076,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "**",
+        "time": "2:27.1",
         "margin": "5",
         "pop": 12,
         "stable": "武幸四郎 (栗東)"
@@ -17088,7 +17088,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "三浦皇成",
-        "time": "**",
+        "time": "2:29.5",
         "margin": "大",
         "pop": 17,
         "stable": "千田輝彦 (栗東)"
@@ -17102,7 +17102,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:23.9",
         "margin": "-",
         "pop": 3,
         "stable": "高柳瑞樹 (美浦)"
@@ -17114,7 +17114,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "2:24.1",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "高野友和 (栗東)"
@@ -17126,7 +17126,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "2:24.3",
         "margin": "1.1/4",
         "pop": 4,
         "stable": "高野友和 (栗東)"
@@ -17138,7 +17138,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "高倉稜",
-        "time": "",
+        "time": "2:24.4",
         "margin": "1",
         "pop": 13,
         "stable": "田中克典 (栗東)"
@@ -17150,7 +17150,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:24.5",
         "margin": "クビ",
         "pop": 8,
         "stable": "木村哲也 (美浦)"
@@ -17162,7 +17162,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:24.6",
         "margin": "3/4",
         "pop": 5,
         "stable": "黒岩陽一 (美浦)"
@@ -17174,7 +17174,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:24.9",
         "margin": "1.3/4",
         "pop": 2,
         "stable": "中内田充 (栗東)"
@@ -17186,7 +17186,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "2:25.0",
         "margin": "3/4",
         "pop": 14,
         "stable": "小手川準 (美浦)"
@@ -17198,7 +17198,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:25.0",
         "margin": "クビ",
         "pop": 6,
         "stable": "国枝栄 (美浦)"
@@ -17210,7 +17210,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "2:25.2",
         "margin": "1",
         "pop": 9,
         "stable": "須貝尚介 (栗東)"
@@ -17222,7 +17222,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山和生",
-        "time": "",
+        "time": "2:25.4",
         "margin": "1.1/4",
         "pop": 12,
         "stable": "相沢郁 (美浦)"
@@ -17234,7 +17234,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:25.8",
         "margin": "2.1/2",
         "pop": 1,
         "stable": "国枝栄 (美浦)"
@@ -17246,7 +17246,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:26.1",
         "margin": "2",
         "pop": 7,
         "stable": "武幸四郎 (栗東)"
@@ -17258,7 +17258,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "2:26.1",
         "margin": "クビ",
         "pop": 16,
         "stable": "武藤善則 (美浦)"
@@ -17270,7 +17270,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "野中悠太",
-        "time": "",
+        "time": "2:26.1",
         "margin": "ハナ",
         "pop": 17,
         "stable": "大和田成 (美浦)"
@@ -17282,7 +17282,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田豊",
-        "time": "",
+        "time": "2:26.4",
         "margin": "1.3/4",
         "pop": 11,
         "stable": "矢作芳人 (栗東)"
@@ -17294,7 +17294,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:27.0",
         "margin": "3.1/2",
         "pop": 15,
         "stable": "安田翔伍 (栗東)"
@@ -17320,7 +17320,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:24.5",
         "margin": "-",
         "pop": 3,
         "stable": "手塚貴久 (美浦)"
@@ -17332,7 +17332,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:24.6",
         "margin": "1",
         "pop": 2,
         "stable": "国枝栄 (美浦)"
@@ -17344,7 +17344,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤懸貴志",
-        "time": "",
+        "time": "2:24.6",
         "margin": "ハナ",
         "pop": 16,
         "stable": "高野友和 (栗東)"
@@ -17356,7 +17356,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:24.8",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "鮫島一歩 (栗東)"
@@ -17368,7 +17368,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:24.8",
         "margin": "アタマ",
         "pop": 7,
         "stable": "今野貞一 (栗東)"
@@ -17380,7 +17380,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田豊",
-        "time": "",
+        "time": "2:25.0",
         "margin": "3/4",
         "pop": 17,
         "stable": "高橋文雅 (美浦)"
@@ -17392,7 +17392,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "2:25.0",
         "margin": "クビ",
         "pop": 8,
         "stable": "栗田徹 (美浦)"
@@ -17404,7 +17404,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "2:25.1",
         "margin": "3/4",
         "pop": 1,
         "stable": "須貝尚介 (栗東)"
@@ -17416,7 +17416,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:25.2",
         "margin": "1/2",
         "pop": 9,
         "stable": "尾関知人 (美浦)"
@@ -17428,7 +17428,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:25.3",
         "margin": "1/2",
         "pop": 12,
         "stable": "奥村武 (美浦)"
@@ -17440,7 +17440,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:25.5",
         "margin": "1",
         "pop": 4,
         "stable": "木村哲也 (美浦)"
@@ -17452,7 +17452,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "石川裕紀",
-        "time": "",
+        "time": "2:25.5",
         "margin": "クビ",
         "pop": 15,
         "stable": "相沢郁 (美浦)"
@@ -17464,7 +17464,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:25.9",
         "margin": "2.1/2",
         "pop": 5,
         "stable": "斉藤崇史 (栗東)"
@@ -17476,7 +17476,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:26.2",
         "margin": "1.1/2",
         "pop": 6,
         "stable": "奥村武 (美浦)"
@@ -17488,7 +17488,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:26.4",
         "margin": "1.1/2",
         "pop": 13,
         "stable": "和田雄二 (美浦)"
@@ -17500,7 +17500,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "2:27.9",
         "margin": "9",
         "pop": 11,
         "stable": "友道康夫 (栗東)"
@@ -17512,7 +17512,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "柴田善臣",
-        "time": "",
+        "time": "2:28.5",
         "margin": "3.1/2",
         "pop": 18,
         "stable": "尾形和幸 (美浦)"
@@ -17524,7 +17524,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "2:29.1",
         "margin": "4",
         "pop": 14,
         "stable": "安田翔伍 (栗東)"
@@ -17538,7 +17538,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:24.4",
         "margin": "-",
         "pop": 1,
         "stable": "杉山晴紀 (栗東)"
@@ -17550,7 +17550,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:24.5",
         "margin": "1/2",
         "pop": 7,
         "stable": "手塚貴久 (美浦)"
@@ -17562,7 +17562,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:24.6",
         "margin": "クビ",
         "pop": 13,
         "stable": "五十嵐忠 (栗東)"
@@ -17574,7 +17574,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:24.7",
         "margin": "3/4",
         "pop": 8,
         "stable": "中内田充 (栗東)"
@@ -17586,7 +17586,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "2:24.8",
         "margin": "3/4",
         "pop": 14,
         "stable": "国枝栄 (美浦)"
@@ -17598,7 +17598,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "2:24.9",
         "margin": "クビ",
         "pop": 17,
         "stable": "小笠倫弘 (美浦)"
@@ -17610,7 +17610,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:24.9",
         "margin": "クビ",
         "pop": 4,
         "stable": "藤原英昭 (栗東)"
@@ -17622,7 +17622,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "2:25.0",
         "margin": "クビ",
         "pop": 10,
         "stable": "大竹正博 (美浦)"
@@ -17634,7 +17634,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:25.1",
         "margin": "1/2",
         "pop": 6,
         "stable": "藤原英昭 (栗東)"
@@ -17646,7 +17646,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:25.1",
         "margin": "アタマ",
         "pop": 12,
         "stable": "手塚貴久 (美浦)"
@@ -17658,7 +17658,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "2:25.1",
         "margin": "ハナ",
         "pop": 2,
         "stable": "友道康夫 (栗東)"
@@ -17670,7 +17670,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "2:25.2",
         "margin": "1/2",
         "pop": 15,
         "stable": "西浦勝一 (栗東)"
@@ -17682,7 +17682,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:25.4",
         "margin": "1.1/4",
         "pop": 5,
         "stable": "藤沢和雄 (美浦)"
@@ -17694,7 +17694,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田中勝春",
-        "time": "",
+        "time": "2:25.6",
         "margin": "1.1/2",
         "pop": 16,
         "stable": "清水久詞 (栗東)"
@@ -17706,7 +17706,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:25.7",
         "margin": "3/4",
         "pop": 3,
         "stable": "中内田充 (栗東)"
@@ -17718,7 +17718,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "2:25.8",
         "margin": "クビ",
         "pop": 9,
         "stable": "高橋祥泰 (美浦)"
@@ -17730,7 +17730,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤井勘一",
-        "time": "",
+        "time": "2:26.1",
         "margin": "2",
         "pop": 11,
         "stable": "池江泰寿 (栗東)"
@@ -17742,7 +17742,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "石川裕紀",
-        "time": "",
+        "time": "2:26.3",
         "margin": "3/4",
         "pop": 18,
         "stable": "手塚貴久 (美浦)"
@@ -17756,7 +17756,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:22.8",
         "margin": "-",
         "pop": 1,
         "stable": "矢作芳人 (栗東)"
@@ -17768,7 +17768,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "津村明秀",
-        "time": "",
+        "time": "2:22.8",
         "margin": "クビ",
         "pop": 12,
         "stable": "国枝栄 (美浦)"
@@ -17780,7 +17780,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "2:23.2",
         "margin": "2.1/2",
         "pop": 2,
         "stable": "斉藤崇史 (栗東)"
@@ -17792,7 +17792,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:23.3",
         "margin": "クビ",
         "pop": 6,
         "stable": "小島茂之 (美浦)"
@@ -17804,7 +17804,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:23.3",
         "margin": "アタマ",
         "pop": 4,
         "stable": "中内田充 (栗東)"
@@ -17816,7 +17816,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:23.3",
         "margin": "クビ",
         "pop": 7,
         "stable": "斎藤誠 (美浦)"
@@ -17828,7 +17828,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:23.5",
         "margin": "3/4",
         "pop": 10,
         "stable": "藤沢和雄 (美浦)"
@@ -17840,7 +17840,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "2:23.9",
         "margin": "2.1/2",
         "pop": 13,
         "stable": "吉村圭司 (栗東)"
@@ -17852,7 +17852,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "2:24.5",
         "margin": "3.1/2",
         "pop": 3,
         "stable": "藤沢和雄 (美浦)"
@@ -17864,7 +17864,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "丸山元気",
-        "time": "",
+        "time": "2:24.7",
         "margin": "1.1/2",
         "pop": 17,
         "stable": "菊沢隆徳 (美浦)"
@@ -17876,7 +17876,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:25.0",
         "margin": "2",
         "pop": 8,
         "stable": "橋口慎介 (栗東)"
@@ -17888,7 +17888,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:25.2",
         "margin": "1.1/4",
         "pop": 5,
         "stable": "渡辺薫彦 (栗東)"
@@ -17900,7 +17900,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "2:25.3",
         "margin": "クビ",
         "pop": 18,
         "stable": "青木孝文 (美浦)"
@@ -17912,7 +17912,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武藤雅",
-        "time": "",
+        "time": "2:25.9",
         "margin": "3.1/2",
         "pop": 14,
         "stable": "戸田博文 (美浦)"
@@ -17924,7 +17924,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:26.0",
         "margin": "クビ",
         "pop": 9,
         "stable": "友道康夫 (栗東)"
@@ -17936,7 +17936,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "2:26.3",
         "margin": "2",
         "pop": 11,
         "stable": "西村真幸 (栗東)"
@@ -17948,7 +17948,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:26.6",
         "margin": "1.3/4",
         "pop": 16,
         "stable": "池添兼雄 (栗東)"
@@ -17960,7 +17960,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "坂井瑠星",
-        "time": "",
+        "time": "2:26.7",
         "margin": "3/4",
         "pop": 15,
         "stable": "笹田和秀 (栗東)"
@@ -17974,7 +17974,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:23.8",
         "margin": "-",
         "pop": 1,
         "stable": "国枝栄 (美浦)"
@@ -17986,7 +17986,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:24.1",
         "margin": "2",
         "pop": 4,
         "stable": "藤岡健一 (栗東)"
@@ -17998,7 +17998,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "2:24.4",
         "margin": "1.3/4",
         "pop": 2,
         "stable": "松永幹夫 (栗東)"
@@ -18010,7 +18010,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:24.7",
         "margin": "1.3/4",
         "pop": 11,
         "stable": "藤原英昭 (栗東)"
@@ -18022,7 +18022,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:24.8",
         "margin": "1/2",
         "pop": 6,
         "stable": "手塚貴久 (美浦)"
@@ -18034,7 +18034,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:25.1",
         "margin": "1.3/4",
         "pop": 3,
         "stable": "角居勝彦 (栗東)"
@@ -18046,7 +18046,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村宏司",
-        "time": "",
+        "time": "2:25.1",
         "margin": "クビ",
         "pop": 9,
         "stable": "牧光二 (美浦)"
@@ -18058,7 +18058,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "2:25.2",
         "margin": "1/2",
         "pop": 12,
         "stable": "鈴木孝志 (栗東)"
@@ -18070,7 +18070,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:25.4",
         "margin": "1",
         "pop": 5,
         "stable": "中内田充 (栗東)"
@@ -18082,7 +18082,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:25.5",
         "margin": "1/2",
         "pop": 8,
         "stable": "尾関知人 (美浦)"
@@ -18094,7 +18094,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "2:25.7",
         "margin": "1.1/2",
         "pop": 10,
         "stable": "角居勝彦 (栗東)"
@@ -18106,7 +18106,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:25.9",
         "margin": "1.1/4",
         "pop": 16,
         "stable": "西村真幸 (栗東)"
@@ -18118,7 +18118,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:25.9",
         "margin": "クビ",
         "pop": 7,
         "stable": "角居勝彦 (栗東)"
@@ -18130,7 +18130,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "2:26.1",
         "margin": "1.1/4",
         "pop": 13,
         "stable": "谷潔 (栗東)"
@@ -18142,7 +18142,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "2:26.3",
         "margin": "1.1/4",
         "pop": 17,
         "stable": "宮徹 (栗東)"
@@ -18154,7 +18154,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "2:26.5",
         "margin": "1.1/2",
         "pop": 14,
         "stable": "田所秀孝 (栗東)"
@@ -18166,7 +18166,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "2:26.7",
         "margin": "1.1/2",
         "pop": 15,
         "stable": "堀宣行 (美浦)"
@@ -18192,7 +18192,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:24.1",
         "margin": "-",
         "pop": 1,
         "stable": "藤沢和雄 (美浦)"
@@ -18204,7 +18204,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:24.4",
         "margin": "1.3/4",
         "pop": 6,
         "stable": "鮫島一歩 (栗東)"
@@ -18216,7 +18216,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:24.8",
         "margin": "2.1/2",
         "pop": 2,
         "stable": "友道康夫 (栗東)"
@@ -18228,7 +18228,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:24.8",
         "margin": "アタマ",
         "pop": 9,
         "stable": "橋田満 (栗東)"
@@ -18240,7 +18240,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:24.9",
         "margin": "3/4",
         "pop": 3,
         "stable": "矢作芳人 (栗東)"
@@ -18252,7 +18252,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:25.0",
         "margin": "クビ",
         "pop": 5,
         "stable": "木村哲也 (美浦)"
@@ -18264,7 +18264,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "2:25.4",
         "margin": "2.1/2",
         "pop": 17,
         "stable": "加藤和宏 (美浦)"
@@ -18276,7 +18276,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "2:25.6",
         "margin": "1.1/4",
         "pop": 16,
         "stable": "鮫島一歩 (栗東)"
@@ -18288,7 +18288,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村宏司",
-        "time": "",
+        "time": "2:25.6",
         "margin": "クビ",
         "pop": 8,
         "stable": "角居勝彦 (栗東)"
@@ -18300,7 +18300,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "2:25.7",
         "margin": "1/2",
         "pop": 11,
         "stable": "昆貢 (栗東)"
@@ -18312,7 +18312,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田中勝春",
-        "time": "",
+        "time": "2:25.8",
         "margin": "1/2",
         "pop": 14,
         "stable": "小島太 (美浦)"
@@ -18324,7 +18324,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "2:26.0",
         "margin": "1.1/2",
         "pop": 13,
         "stable": "池添学 (栗東)"
@@ -18336,7 +18336,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:26.2",
         "margin": "1.1/4",
         "pop": 4,
         "stable": "本田優 (栗東)"
@@ -18348,7 +18348,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "柴山雄一",
-        "time": "",
+        "time": "2:26.4",
         "margin": "1.1/2",
         "pop": 12,
         "stable": "鮫島一歩 (栗東)"
@@ -18360,7 +18360,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田豊",
-        "time": "",
+        "time": "2:26.5",
         "margin": "1/2",
         "pop": 15,
         "stable": "高橋義忠 (栗東)"
@@ -18372,7 +18372,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "2:26.7",
         "margin": "1.1/4",
         "pop": 7,
         "stable": "奥村武 (美浦)"
@@ -18384,7 +18384,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "2:26.8",
         "margin": "1/2",
         "pop": 18,
         "stable": "松下武士 (栗東)"
@@ -18396,7 +18396,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:27.9",
         "margin": "7",
         "pop": 10,
         "stable": "池添兼雄 (栗東)"
@@ -18410,7 +18410,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:25.0",
         "margin": "-",
         "pop": 1,
         "stable": "石坂正 (栗東)"
@@ -18422,7 +18422,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:25.0",
         "margin": "クビ",
         "pop": 2,
         "stable": "藤沢和雄 (美浦)"
@@ -18434,7 +18434,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:25.1",
         "margin": "1/2",
         "pop": 5,
         "stable": "鹿戸雄一 (美浦)"
@@ -18446,7 +18446,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:25.3",
         "margin": "1.1/2",
         "pop": 10,
         "stable": "菊沢隆徳 (美浦)"
@@ -18458,7 +18458,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "2:25.3",
         "margin": "ハナ",
         "pop": 8,
         "stable": "木原一良 (栗東)"
@@ -18470,7 +18470,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "2:25.4",
         "margin": "クビ",
         "pop": 12,
         "stable": "国枝栄 (美浦)"
@@ -18482,7 +18482,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:25.4",
         "margin": "ハナ",
         "pop": 11,
         "stable": "音無秀孝 (栗東)"
@@ -18494,7 +18494,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "2:25.4",
         "margin": "クビ",
         "pop": 17,
         "stable": "鹿戸雄一 (美浦)"
@@ -18506,7 +18506,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:25.4",
         "margin": "ハナ",
         "pop": 6,
         "stable": "荒川義之 (栗東)"
@@ -18518,7 +18518,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:25.6",
         "margin": "1",
         "pop": 3,
         "stable": "藤原英昭 (栗東)"
@@ -18530,7 +18530,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:25.7",
         "margin": "3/4",
         "pop": 4,
         "stable": "浅見秀一 (栗東)"
@@ -18542,7 +18542,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "吉田豊",
-        "time": "",
+        "time": "2:26.0",
         "margin": "1.3/4",
         "pop": 13,
         "stable": "斎藤誠 (美浦)"
@@ -18554,7 +18554,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ベリー",
-        "time": "",
+        "time": "2:26.3",
         "margin": "1.1/2",
         "pop": 7,
         "stable": "池添学 (栗東)"
@@ -18566,7 +18566,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "2:26.5",
         "margin": "1.1/2",
         "pop": 16,
         "stable": "畠山吉宏 (美浦)"
@@ -18578,7 +18578,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:26.5",
         "margin": "アタマ",
         "pop": 9,
         "stable": "須貝尚介 (栗東)"
@@ -18590,7 +18590,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "2:26.7",
         "margin": "1.1/4",
         "pop": 14,
         "stable": "宮本博 (栗東)"
@@ -18602,7 +18602,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "2:27.4",
         "margin": "4",
         "pop": 15,
         "stable": "高橋義博 (美浦)"
@@ -18614,7 +18614,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "古川吉洋",
-        "time": "",
+        "time": "2:28.1",
         "margin": "4",
         "pop": 18,
         "stable": "本田優 (栗東)"
@@ -18630,7 +18630,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "2:23.7",
         "margin": "-",
         "pop": 1,
         "stable": "斉藤崇史 (栗東)"
@@ -18642,7 +18642,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "2:23.8",
         "margin": "3/4",
         "pop": 3,
         "stable": "手塚貴久 (美浦)"
@@ -18654,7 +18654,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "2:24.0",
         "margin": "1.1/2",
         "pop": 6,
         "stable": "友道康夫 (栗東)"
@@ -18666,7 +18666,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "2:24.1",
         "margin": "クビ",
         "pop": 5,
         "stable": "杉山晴紀 (栗東)"
@@ -18678,7 +18678,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "2:24.3",
         "margin": "1.1/4",
         "pop": 8,
         "stable": "中内田充 (栗東)"
@@ -18690,7 +18690,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "2:24.4",
         "margin": "クビ",
         "pop": 2,
         "stable": "高柳大輔 (栗東)"
@@ -18702,7 +18702,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "2:24.4",
         "margin": "クビ",
         "pop": 11,
         "stable": "池江泰寿 (栗東)"
@@ -18714,7 +18714,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "2:24.5",
         "margin": "クビ",
         "pop": 7,
         "stable": "杉山晴紀 (栗東)"
@@ -18726,7 +18726,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "佐々木大",
-        "time": "**",
+        "time": "2:24.6",
         "margin": "3/4",
         "pop": 14,
         "stable": "堀宣行 (美浦)"
@@ -18738,7 +18738,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "2:24.7",
         "margin": "1/2",
         "pop": 10,
         "stable": "武幸四郎 (栗東)"
@@ -18750,7 +18750,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "**",
+        "time": "2:25.1",
         "margin": "2.1/2",
         "pop": 16,
         "stable": "矢作芳人 (栗東)"
@@ -18762,7 +18762,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "2:25.2",
         "margin": "クビ",
         "pop": 15,
         "stable": "奥村武 (美浦)"
@@ -18774,7 +18774,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "2:25.3",
         "margin": "3/4",
         "pop": 12,
         "stable": "笹田和秀 (栗東)"
@@ -18786,7 +18786,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村宏司",
-        "time": "**",
+        "time": "2:25.6",
         "margin": "1.1/2",
         "pop": 4,
         "stable": "辻哲英 (美浦)"
@@ -18798,7 +18798,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "丹内祐次",
-        "time": "**",
+        "time": "2:25.9",
         "margin": "1.3/4",
         "pop": 18,
         "stable": "藤野健太 (栗東)"
@@ -18810,7 +18810,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "津村明秀",
-        "time": "**",
+        "time": "2:26.1",
         "margin": "1.1/4",
         "pop": 17,
         "stable": "千葉直人 (美浦)"
@@ -18822,7 +18822,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "2:28.5",
         "margin": "大",
         "pop": 9,
         "stable": "昆貢 (栗東)"
@@ -18834,7 +18834,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "2:29.0",
         "margin": "3.1/2",
         "pop": 13,
         "stable": "西村真幸 (栗東)"
@@ -18848,7 +18848,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "2:24.3",
         "margin": "-",
         "pop": 9,
         "stable": "安田翔伍 (栗東)"
@@ -18860,7 +18860,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "2:24.7",
         "margin": "2",
         "pop": 1,
         "stable": "友道康夫 (栗東)"
@@ -18872,7 +18872,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "2:24.9",
         "margin": "1.1/4",
         "pop": 7,
         "stable": "矢作芳人 (栗東)"
@@ -18884,7 +18884,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "2:25.0",
         "margin": "1.1/4",
         "pop": 15,
         "stable": "石坂公一 (栗東)"
@@ -18896,7 +18896,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "2:25.0",
         "margin": "ハナ",
         "pop": 2,
         "stable": "木村哲也 (美浦)"
@@ -18908,7 +18908,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "2:25.1",
         "margin": "クビ",
         "pop": 6,
         "stable": "加藤士津 (美浦)"
@@ -18920,7 +18920,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "2:25.2",
         "margin": "3/4",
         "pop": 8,
         "stable": "清水久詞 (栗東)"
@@ -18932,7 +18932,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "**",
+        "time": "2:25.2",
         "margin": "クビ",
         "pop": 17,
         "stable": "牧浦充徳 (栗東)"
@@ -18944,7 +18944,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "2:25.3",
         "margin": "クビ",
         "pop": 3,
         "stable": "国枝栄 (美浦)"
@@ -18956,7 +18956,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "2:25.3",
         "margin": "クビ",
         "pop": 14,
         "stable": "武英智 (栗東)"
@@ -18968,7 +18968,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "2:25.4",
         "margin": "1/2",
         "pop": 4,
         "stable": "武井亮 (美浦)"
@@ -18980,7 +18980,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "菅原明良",
-        "time": "**",
+        "time": "2:25.4",
         "margin": "クビ",
         "pop": 16,
         "stable": "音無秀孝 (栗東)"
@@ -18992,7 +18992,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "2:25.5",
         "margin": "1/2",
         "pop": 11,
         "stable": "堀宣行 (美浦)"
@@ -19004,7 +19004,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "モレイラ",
-        "time": "**",
+        "time": "2:25.6",
         "margin": "クビ",
         "pop": 5,
         "stable": "堀宣行 (美浦)"
@@ -19016,7 +19016,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "鮫島克駿",
-        "time": "**",
+        "time": "2:25.6",
         "margin": "アタマ",
         "pop": 12,
         "stable": "高野友和 (栗東)"
@@ -19028,7 +19028,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "**",
+        "time": "2:25.6",
         "margin": "アタマ",
         "pop": 13,
         "stable": "矢作芳人 (栗東)"
@@ -19040,7 +19040,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "西村淳也",
-        "time": "**",
+        "time": "2:25.8",
         "margin": "1.1/2",
         "pop": 10,
         "stable": "坂口智康 (栗東)"
@@ -19066,7 +19066,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "2:25.2",
         "margin": "-",
         "pop": 4,
         "stable": "堀宣行 (美浦)"
@@ -19078,7 +19078,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "2:25.2",
         "margin": "クビ",
         "pop": 1,
         "stable": "手塚貴久 (美浦)"
@@ -19090,7 +19090,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "2:25.2",
         "margin": "ハナ",
         "pop": 6,
         "stable": "武井亮 (美浦)"
@@ -19102,7 +19102,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "2:25.2",
         "margin": "ハナ",
         "pop": 9,
         "stable": "上村洋行 (栗東)"
@@ -19114,7 +19114,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村宏司",
-        "time": "**",
+        "time": "2:25.4",
         "margin": "1",
         "pop": 15,
         "stable": "木村哲也 (美浦)"
@@ -19126,7 +19126,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "丸田恭介",
-        "time": "**",
+        "time": "2:25.4",
         "margin": "アタマ",
         "pop": 16,
         "stable": "奥村武 (美浦)"
@@ -19138,7 +19138,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "2:25.6",
         "margin": "1.1/4",
         "pop": 14,
         "stable": "久保田貴 (美浦)"
@@ -19150,7 +19150,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "2:25.6",
         "margin": "クビ",
         "pop": 3,
         "stable": "西村真幸 (栗東)"
@@ -19162,7 +19162,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "2:25.6",
         "margin": "クビ",
         "pop": 5,
         "stable": "友道康夫 (栗東)"
@@ -19174,7 +19174,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "吉田隼人",
-        "time": "**",
+        "time": "2:25.7",
         "margin": "1/2",
         "pop": 12,
         "stable": "須貝尚介 (栗東)"
@@ -19186,7 +19186,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "2:25.9",
         "margin": "1.1/4",
         "pop": 7,
         "stable": "友道康夫 (栗東)"
@@ -19198,7 +19198,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "津村明秀",
-        "time": "**",
+        "time": "2:26.0",
         "margin": "クビ",
         "pop": 13,
         "stable": "斎藤誠 (美浦)"
@@ -19210,7 +19210,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "**",
+        "time": "2:26.0",
         "margin": "クビ",
         "pop": 17,
         "stable": "久保田貴 (美浦)"
@@ -19222,7 +19222,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "2:26.2",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "昆貢 (栗東)"
@@ -19234,7 +19234,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石川裕紀",
-        "time": "**",
+        "time": "2:26.3",
         "margin": "3/4",
         "pop": 18,
         "stable": "相沢郁 (美浦)"
@@ -19246,7 +19246,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "2:27.1",
         "margin": "5",
         "pop": 11,
         "stable": "須貝尚介 (栗東)"
@@ -19258,7 +19258,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "2:30.3",
         "margin": "大",
         "pop": 2,
         "stable": "木村哲也 (美浦)"
@@ -19284,7 +19284,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:21.9",
         "margin": "-",
         "pop": 3,
         "stable": "友道康夫 (栗東)"
@@ -19296,7 +19296,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:21.9",
         "margin": "クビ",
         "pop": 2,
         "stable": "木村哲也 (美浦)"
@@ -19308,7 +19308,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:22.2",
         "margin": "2",
         "pop": 7,
         "stable": "田村康仁 (美浦)"
@@ -19320,7 +19320,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:22.3",
         "margin": "クビ",
         "pop": 1,
         "stable": "堀宣行 (美浦)"
@@ -19332,7 +19332,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:22.8",
         "margin": "3",
         "pop": 5,
         "stable": "池添学 (栗東)"
@@ -19344,7 +19344,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "2:22.9",
         "margin": "3/4",
         "pop": 8,
         "stable": "斉藤崇史 (栗東)"
@@ -19356,7 +19356,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:22.9",
         "margin": "ハナ",
         "pop": 4,
         "stable": "木村哲也 (美浦)"
@@ -19368,7 +19368,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "菅原明良",
-        "time": "",
+        "time": "2:23.0",
         "margin": "1/2",
         "pop": 6,
         "stable": "小島茂之 (美浦)"
@@ -19380,7 +19380,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:23.2",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "杉山晴紀 (栗東)"
@@ -19392,7 +19392,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:23.5",
         "margin": "1.3/4",
         "pop": 17,
         "stable": "飯田雄三 (栗東)"
@@ -19404,7 +19404,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "2:23.9",
         "margin": "2.1/2",
         "pop": 16,
         "stable": "橋口慎介 (栗東)"
@@ -19416,7 +19416,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "2:24.0",
         "margin": "3/4",
         "pop": 13,
         "stable": "藤原英昭 (栗東)"
@@ -19428,7 +19428,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山和生",
-        "time": "",
+        "time": "2:24.0",
         "margin": "ハナ",
         "pop": 18,
         "stable": "昆貢 (栗東)"
@@ -19440,7 +19440,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "2:24.0",
         "margin": "ハナ",
         "pop": 11,
         "stable": "中内田充 (栗東)"
@@ -19452,7 +19452,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:24.0",
         "margin": "クビ",
         "pop": 15,
         "stable": "安田隆行 (栗東)"
@@ -19464,7 +19464,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:24.7",
         "margin": "4",
         "pop": 14,
         "stable": "吉岡辰弥 (栗東)"
@@ -19476,7 +19476,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:25.9",
         "margin": "7",
         "pop": 9,
         "stable": "昆貢 (栗東)"
@@ -19488,7 +19488,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "2:29.1",
         "margin": "大",
         "pop": 12,
         "stable": "奥村豊 (栗東)"
@@ -19502,7 +19502,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:22.5",
         "margin": "-",
         "pop": 4,
         "stable": "藤原英昭 (栗東)"
@@ -19514,7 +19514,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "2:22.5",
         "margin": "ハナ",
         "pop": 1,
         "stable": "鹿戸雄一 (美浦)"
@@ -19526,7 +19526,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "2:22.7",
         "margin": "1.1/4",
         "pop": 9,
         "stable": "須貝尚介 (栗東)"
@@ -19538,7 +19538,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:22.7",
         "margin": "ハナ",
         "pop": 3,
         "stable": "宮田敬介 (美浦)"
@@ -19550,7 +19550,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝3",
         "load": 55.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:22.7",
         "margin": "ハナ",
         "pop": 2,
         "stable": "国枝栄 (美浦)"
@@ -19562,7 +19562,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:23.1",
         "margin": "2",
         "pop": 8,
         "stable": "栗田徹 (美浦)"
@@ -19574,7 +19574,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:23.1",
         "margin": "アタマ",
         "pop": 6,
         "stable": "友道康夫 (栗東)"
@@ -19586,7 +19586,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:23.1",
         "margin": "ハナ",
         "pop": 10,
         "stable": "加藤征弘 (美浦)"
@@ -19598,7 +19598,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "大野拓弥",
-        "time": "",
+        "time": "2:23.3",
         "margin": "1.1/4",
         "pop": 15,
         "stable": "田中博康 (美浦)"
@@ -19610,7 +19610,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:23.3",
         "margin": "クビ",
         "pop": 5,
         "stable": "高橋義忠 (栗東)"
@@ -19622,7 +19622,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:23.6",
         "margin": "1.3/4",
         "pop": 13,
         "stable": "友道康夫 (栗東)"
@@ -19634,7 +19634,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "2:23.7",
         "margin": "クビ",
         "pop": 16,
         "stable": "斉藤崇史 (栗東)"
@@ -19646,7 +19646,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "2:23.8",
         "margin": "3/4",
         "pop": 17,
         "stable": "戸田博文 (美浦)"
@@ -19658,7 +19658,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:24.3",
         "margin": "3",
         "pop": 14,
         "stable": "池添学 (栗東)"
@@ -19670,7 +19670,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "2:25.4",
         "margin": "7",
         "pop": 12,
         "stable": "矢作芳人 (栗東)"
@@ -19682,7 +19682,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:25.7",
         "margin": "1.3/4",
         "pop": 7,
         "stable": "池江泰寿 (栗東)"
@@ -19694,7 +19694,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:26.0",
         "margin": "1.3/4",
         "pop": 11,
         "stable": "大久保龍 (栗東)"
@@ -19708,7 +19708,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:24.1",
         "margin": "-",
         "pop": 1,
         "stable": "矢作芳人 (栗東)"
@@ -19720,7 +19720,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "2:24.6",
         "margin": "3",
         "pop": 2,
         "stable": "堀宣行 (美浦)"
@@ -19732,7 +19732,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:24.9",
         "margin": "1.3/4",
         "pop": 10,
         "stable": "池江泰寿 (栗東)"
@@ -19744,7 +19744,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "坂井瑠星",
-        "time": "",
+        "time": "2:24.9",
         "margin": "アタマ",
         "pop": 9,
         "stable": "矢作芳人 (栗東)"
@@ -19756,7 +19756,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:25.0",
         "margin": "1/2",
         "pop": 8,
         "stable": "大久保龍 (栗東)"
@@ -19768,7 +19768,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:25.0",
         "margin": "ハナ",
         "pop": 7,
         "stable": "上原博之 (美浦)"
@@ -19780,7 +19780,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石川裕紀",
-        "time": "",
+        "time": "2:25.0",
         "margin": "ハナ",
         "pop": 17,
         "stable": "相沢郁 (美浦)"
@@ -19792,7 +19792,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:25.1",
         "margin": "3/4",
         "pop": 3,
         "stable": "手塚貴久 (美浦)"
@@ -19804,7 +19804,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:25.2",
         "margin": "クビ",
         "pop": 11,
         "stable": "友道康夫 (栗東)"
@@ -19816,7 +19816,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "津村明秀",
-        "time": "",
+        "time": "2:25.2",
         "margin": "アタマ",
         "pop": 13,
         "stable": "相沢郁 (美浦)"
@@ -19828,7 +19828,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:25.3",
         "margin": "1/2",
         "pop": 4,
         "stable": "国枝栄 (美浦)"
@@ -19840,7 +19840,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:25.4",
         "margin": "3/4",
         "pop": 14,
         "stable": "鈴木孝志 (栗東)"
@@ -19852,7 +19852,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:25.5",
         "margin": "1/2",
         "pop": 5,
         "stable": "木村哲也 (美浦)"
@@ -19864,7 +19864,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "2:25.5",
         "margin": "アタマ",
         "pop": 6,
         "stable": "友道康夫 (栗東)"
@@ -19876,7 +19876,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "2:25.7",
         "margin": "1.1/4",
         "pop": 18,
         "stable": "池添学 (栗東)"
@@ -19888,7 +19888,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "2:26.0",
         "margin": "1.3/4",
         "pop": 16,
         "stable": "斉藤崇史 (栗東)"
@@ -19900,7 +19900,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:26.2",
         "margin": "1.1/4",
         "pop": 15,
         "stable": "鹿戸雄一 (美浦)"
@@ -19912,7 +19912,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "2:26.3",
         "margin": "3/4",
         "pop": 12,
         "stable": "池江泰寿 (栗東)"
@@ -19926,7 +19926,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "2:22.6",
         "margin": "-",
         "pop": 12,
         "stable": "角居勝彦 (栗東)"
@@ -19938,7 +19938,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:22.6",
         "margin": "クビ",
         "pop": 3,
         "stable": "萩原清 (美浦)"
@@ -19950,7 +19950,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:23.0",
         "margin": "2.1/2",
         "pop": 2,
         "stable": "中内田充 (栗東)"
@@ -19962,7 +19962,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "2:23.1",
         "margin": "1/2",
         "pop": 1,
         "stable": "角居勝彦 (栗東)"
@@ -19974,7 +19974,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "勝浦正樹",
-        "time": "",
+        "time": "2:23.1",
         "margin": "アタマ",
         "pop": 13,
         "stable": "高木登 (美浦)"
@@ -19986,7 +19986,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "2:23.2",
         "margin": "クビ",
         "pop": 7,
         "stable": "池江泰寿 (栗東)"
@@ -19998,7 +19998,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:23.2",
         "margin": "クビ",
         "pop": 5,
         "stable": "藤沢和雄 (美浦)"
@@ -20010,7 +20010,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "2:23.4",
         "margin": "1.1/4",
         "pop": 11,
         "stable": "高橋義忠 (栗東)"
@@ -20022,7 +20022,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:23.8",
         "margin": "2.1/2",
         "pop": 15,
         "stable": "鮫島一歩 (栗東)"
@@ -20034,7 +20034,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:24.0",
         "margin": "1",
         "pop": 10,
         "stable": "池添兼雄 (栗東)"
@@ -20046,7 +20046,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "丹内祐次",
-        "time": "",
+        "time": "2:24.2",
         "margin": "1.1/4",
         "pop": 18,
         "stable": "高木登 (美浦)"
@@ -20058,7 +20058,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石川裕紀",
-        "time": "",
+        "time": "2:24.3",
         "margin": "3/4",
         "pop": 14,
         "stable": "相沢郁 (美浦)"
@@ -20070,7 +20070,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "2:24.5",
         "margin": "1.1/4",
         "pop": 17,
         "stable": "武藤善則 (美浦)"
@@ -20082,7 +20082,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "竹之下智",
-        "time": "",
+        "time": "2:24.5",
         "margin": "アタマ",
         "pop": 16,
         "stable": "千田輝彦 (栗東)"
@@ -20094,7 +20094,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "2:25.0",
         "margin": "3",
         "pop": 6,
         "stable": "松永幹夫 (栗東)"
@@ -20106,7 +20106,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "2:25.0",
         "margin": "ハナ",
         "pop": 9,
         "stable": "堀宣行 (美浦)"
@@ -20118,7 +20118,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:25.8",
         "margin": "5",
         "pop": 8,
         "stable": "池江泰寿 (栗東)"
@@ -20130,7 +20130,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:26.9",
         "margin": "7",
         "pop": 4,
         "stable": "須貝尚介 (栗東)"
@@ -20144,7 +20144,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:23.6",
         "margin": "-",
         "pop": 5,
         "stable": "友道康夫 (栗東)"
@@ -20156,7 +20156,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:23.7",
         "margin": "1/2",
         "pop": 4,
         "stable": "藤原英昭 (栗東)"
@@ -20168,7 +20168,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "2:23.8",
         "margin": "クビ",
         "pop": 16,
         "stable": "国枝栄 (美浦)"
@@ -20180,7 +20180,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ボウマン",
-        "time": "",
+        "time": "2:23.8",
         "margin": "ハナ",
         "pop": 13,
         "stable": "友道康夫 (栗東)"
@@ -20192,7 +20192,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:23.8",
         "margin": "ハナ",
         "pop": 2,
         "stable": "大竹正博 (美浦)"
@@ -20204,7 +20204,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:23.8",
         "margin": "アタマ",
         "pop": 1,
         "stable": "中内田充 (栗東)"
@@ -20216,7 +20216,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "2:24.0",
         "margin": "1.1/4",
         "pop": 7,
         "stable": "藤沢和雄 (美浦)"
@@ -20228,7 +20228,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:24.0",
         "margin": "クビ",
         "pop": 6,
         "stable": "木村哲也 (美浦)"
@@ -20240,7 +20240,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "丸山元気",
-        "time": "",
+        "time": "2:24.1",
         "margin": "3/4",
         "pop": 17,
         "stable": "須貝尚介 (栗東)"
@@ -20252,7 +20252,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:24.2",
         "margin": "クビ",
         "pop": 10,
         "stable": "矢作芳人 (栗東)"
@@ -20264,7 +20264,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "2:24.4",
         "margin": "1.1/4",
         "pop": 14,
         "stable": "松田国英 (栗東)"
@@ -20276,7 +20276,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:24.4",
         "margin": "クビ",
         "pop": 3,
         "stable": "池江泰寿 (栗東)"
@@ -20288,7 +20288,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "2:24.5",
         "margin": "1/2",
         "pop": 12,
         "stable": "藤岡健一 (栗東)"
@@ -20300,7 +20300,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:24.6",
         "margin": "3/4",
         "pop": 9,
         "stable": "野中賢二 (栗東)"
@@ -20312,7 +20312,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村宏司",
-        "time": "",
+        "time": "2:25.0",
         "margin": "2.1/2",
         "pop": 15,
         "stable": "国枝栄 (美浦)"
@@ -20324,7 +20324,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:25.3",
         "margin": "1.3/4",
         "pop": 8,
         "stable": "矢野英一 (美浦)"
@@ -20336,7 +20336,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:25.4",
         "margin": "1/2",
         "pop": 11,
         "stable": "池江泰寿 (栗東)"
@@ -20348,7 +20348,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "2:26.2",
         "margin": "5",
         "pop": 18,
         "stable": "宮徹 (栗東)"
@@ -20362,7 +20362,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:26.9",
         "margin": "-",
         "pop": 2,
         "stable": "藤沢和雄 (美浦)"
@@ -20374,7 +20374,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "2:27.0",
         "margin": "3/4",
         "pop": 3,
         "stable": "庄野靖志 (栗東)"
@@ -20386,7 +20386,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:27.2",
         "margin": "1.1/4",
         "pop": 1,
         "stable": "音無秀孝 (栗東)"
@@ -20398,7 +20398,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:27.2",
         "margin": "クビ",
         "pop": 14,
         "stable": "昆貢 (栗東)"
@@ -20410,7 +20410,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:27.2",
         "margin": "ハナ",
         "pop": 4,
         "stable": "池江泰寿 (栗東)"
@@ -20422,7 +20422,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:27.3",
         "margin": "1/2",
         "pop": 7,
         "stable": "音無秀孝 (栗東)"
@@ -20434,7 +20434,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:27.4",
         "margin": "1/2",
         "pop": 6,
         "stable": "池江泰寿 (栗東)"
@@ -20446,7 +20446,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "丹内祐次",
-        "time": "",
+        "time": "2:27.5",
         "margin": "3/4",
         "pop": 16,
         "stable": "中村均 (栗東)"
@@ -20458,7 +20458,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:27.6",
         "margin": "1/2",
         "pop": 11,
         "stable": "藤原英昭 (栗東)"
@@ -20470,7 +20470,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:27.6",
         "margin": "クビ",
         "pop": 5,
         "stable": "池江泰寿 (栗東)"
@@ -20482,7 +20482,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:27.7",
         "margin": "クビ",
         "pop": 8,
         "stable": "中竹和也 (栗東)"
@@ -20494,7 +20494,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "高倉稜",
-        "time": "",
+        "time": "2:27.8",
         "margin": "3/4",
         "pop": 15,
         "stable": "宮本博 (栗東)"
@@ -20506,7 +20506,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "2:28.1",
         "margin": "2",
         "pop": 9,
         "stable": "宮本博 (栗東)"
@@ -20518,7 +20518,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "北村宏司",
-        "time": "",
+        "time": "2:28.1",
         "margin": "ハナ",
         "pop": 10,
         "stable": "菊沢隆徳 (美浦)"
@@ -20530,7 +20530,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "2:28.4",
         "margin": "1.3/4",
         "pop": 12,
         "stable": "畠山吉宏 (美浦)"
@@ -20542,7 +20542,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "2:28.5",
         "margin": "1/2",
         "pop": 17,
         "stable": "手塚貴久 (美浦)"
@@ -20554,7 +20554,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "2:28.5",
         "margin": "クビ",
         "pop": 13,
         "stable": "音無秀孝 (栗東)"
@@ -20566,7 +20566,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "2:28.9",
         "margin": "2.1/2",
         "pop": 18,
         "stable": "清水久詞 (栗東)"
@@ -20580,7 +20580,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:24.0",
         "margin": "-",
         "pop": 3,
         "stable": "友道康夫 (栗東)"
@@ -20592,7 +20592,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:24.0",
         "margin": "ハナ",
         "pop": 2,
         "stable": "池江泰寿 (栗東)"
@@ -20604,7 +20604,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "2:24.1",
         "margin": "1/2",
         "pop": 1,
         "stable": "二ノ宮敬 (美浦)"
@@ -20616,7 +20616,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:24.4",
         "margin": "2",
         "pop": 7,
         "stable": "笹田和秀 (栗東)"
@@ -20628,7 +20628,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:24.5",
         "margin": "1/2",
         "pop": 4,
         "stable": "角居勝彦 (栗東)"
@@ -20640,7 +20640,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:24.5",
         "margin": "ハナ",
         "pop": 5,
         "stable": "松田国英 (栗東)"
@@ -20652,7 +20652,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ベリー",
-        "time": "",
+        "time": "2:24.6",
         "margin": "1/2",
         "pop": 10,
         "stable": "堀宣行 (美浦)"
@@ -20664,7 +20664,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:24.7",
         "margin": "クビ",
         "pop": 12,
         "stable": "浅見秀一 (栗東)"
@@ -20676,7 +20676,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "2:24.8",
         "margin": "3/4",
         "pop": 8,
         "stable": "笹田和秀 (栗東)"
@@ -20688,7 +20688,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:24.9",
         "margin": "クビ",
         "pop": 11,
         "stable": "国枝栄 (美浦)"
@@ -20700,7 +20700,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:25.0",
         "margin": "3/4",
         "pop": 9,
         "stable": "小島茂之 (美浦)"
@@ -20712,7 +20712,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "ボウマン",
-        "time": "",
+        "time": "2:25.1",
         "margin": "1/2",
         "pop": 13,
         "stable": "古賀慎明 (美浦)"
@@ -20724,7 +20724,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "2:25.4",
         "margin": "1.3/4",
         "pop": 6,
         "stable": "角居勝彦 (栗東)"
@@ -20736,7 +20736,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:25.4",
         "margin": "クビ",
         "pop": 16,
         "stable": "長浜博之 (栗東)"
@@ -20748,7 +20748,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "石川裕紀",
-        "time": "",
+        "time": "2:25.8",
         "margin": "2.1/2",
         "pop": 15,
         "stable": "須貝尚介 (栗東)"
@@ -20760,7 +20760,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "柴田大知",
-        "time": "",
+        "time": "2:25.9",
         "margin": "クビ",
         "pop": 14,
         "stable": "栗田博憲 (美浦)"
@@ -20772,7 +20772,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "2:26.1",
         "margin": "1.1/2",
         "pop": 18,
         "stable": "池江泰寿 (栗東)"
@@ -20784,7 +20784,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 57.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:35.1",
         "margin": "大",
         "pop": 17,
         "stable": "小笠倫弘 (美浦)"
@@ -20800,7 +20800,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:32.7",
         "margin": "-",
         "pop": 2,
         "stable": "高野友和 (栗東)"
@@ -20812,7 +20812,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "吉村誠之",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "1.1/2",
         "pop": 9,
         "stable": "杉山晴紀 (栗東)"
@@ -20824,7 +20824,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "1:33.0",
         "margin": "クビ",
         "pop": 1,
         "stable": "池江泰寿 (栗東)"
@@ -20836,7 +20836,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:33.0",
         "margin": "クビ",
         "pop": 4,
         "stable": "宮田敬介 (美浦)"
@@ -20848,7 +20848,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:33.1",
         "margin": "クビ",
         "pop": 11,
         "stable": "深山雅史 (美浦)"
@@ -20860,7 +20860,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "内田博幸",
-        "time": "**",
+        "time": "1:33.2",
         "margin": "1/2",
         "pop": 14,
         "stable": "田中剛 (美浦)"
@@ -20872,7 +20872,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "1:33.2",
         "margin": "クビ",
         "pop": 7,
         "stable": "牧浦充徳 (栗東)"
@@ -20884,7 +20884,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ8",
         "load": 58.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "1:33.2",
         "margin": "ハナ",
         "pop": 13,
         "stable": "堀宣行 (美浦)"
@@ -20896,7 +20896,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "菅原明良",
-        "time": "**",
+        "time": "1:33.3",
         "margin": "クビ",
         "pop": 5,
         "stable": "石橋守 (栗東)"
@@ -20908,7 +20908,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "1:33.3",
         "margin": "ハナ",
         "pop": 10,
         "stable": "池添学 (栗東)"
@@ -20920,7 +20920,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:33.4",
         "margin": "クビ",
         "pop": 6,
         "stable": "友道康夫 (栗東)"
@@ -20932,7 +20932,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:33.4",
         "margin": "クビ",
         "pop": 3,
         "stable": "国枝栄 (美浦)"
@@ -20944,7 +20944,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "**",
+        "time": "1:33.7",
         "margin": "2",
         "pop": 15,
         "stable": "和田勇介 (美浦)"
@@ -20956,7 +20956,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "1:33.8",
         "margin": "1/2",
         "pop": 16,
         "stable": "千田輝彦 (栗東)"
@@ -20968,7 +20968,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "ディー",
-        "time": "**",
+        "time": "1:33.9",
         "margin": "クビ",
         "pop": 12,
         "stable": "蛯名正義 (美浦)"
@@ -20980,7 +20980,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:34.1",
         "margin": "1",
         "pop": 17,
         "stable": "安田翔伍 (栗東)"
@@ -20992,7 +20992,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:34.1",
         "margin": "ハナ",
         "pop": 8,
         "stable": "鹿戸雄一 (美浦)"
@@ -21004,7 +21004,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "丹内祐次",
-        "time": "**",
+        "time": "1:34.1",
         "margin": "クビ",
         "pop": 18,
         "stable": "井上智史 (栗東)"
@@ -21018,7 +21018,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 58.0,
         "jockey": "マクドナ",
-        "time": "**",
+        "time": "1:32.3",
         "margin": "-",
         "pop": 1,
         "stable": "シャム (海外)"
@@ -21030,7 +21030,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:32.4",
         "margin": "1/2",
         "pop": 4,
         "stable": "高野友和 (栗東)"
@@ -21042,7 +21042,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "モレイラ",
-        "time": "**",
+        "time": "1:32.4",
         "margin": "ハナ",
         "pop": 2,
         "stable": "池江泰寿 (栗東)"
@@ -21054,7 +21054,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "長岡禎仁",
-        "time": "**",
+        "time": "1:32.6",
         "margin": "1",
         "pop": 5,
         "stable": "杉山晴紀 (栗東)"
@@ -21066,7 +21066,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:32.7",
         "margin": "1/2",
         "pop": 3,
         "stable": "中内田充 (栗東)"
@@ -21078,7 +21078,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "北村宏司",
-        "time": "**",
+        "time": "1:32.8",
         "margin": "1.1/4",
         "pop": 12,
         "stable": "木村哲也 (美浦)"
@@ -21090,7 +21090,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "1:32.8",
         "margin": "ハナ",
         "pop": 13,
         "stable": "国枝栄 (美浦)"
@@ -21102,7 +21102,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "西村淳也",
-        "time": "**",
+        "time": "1:32.9",
         "margin": "1/2",
         "pop": 14,
         "stable": "杉山晴紀 (栗東)"
@@ -21114,7 +21114,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "1:33.0",
         "margin": "クビ",
         "pop": 7,
         "stable": "須貝尚介 (栗東)"
@@ -21126,7 +21126,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "**",
+        "time": "1:33.2",
         "margin": "1.1/4",
         "pop": 16,
         "stable": "笹田和秀 (栗東)"
@@ -21138,7 +21138,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:33.2",
         "margin": "ハナ",
         "pop": 10,
         "stable": "蛯名正義 (美浦)"
@@ -21150,7 +21150,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "**",
+        "time": "1:33.2",
         "margin": "クビ",
         "pop": 17,
         "stable": "中竹和也 (栗東)"
@@ -21162,7 +21162,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:33.3",
         "margin": "クビ",
         "pop": 6,
         "stable": "国枝栄 (美浦)"
@@ -21174,7 +21174,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "三浦皇成",
-        "time": "**",
+        "time": "1:33.3",
         "margin": "ハナ",
         "pop": 9,
         "stable": "鹿戸雄一 (美浦)"
@@ -21186,7 +21186,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:33.6",
         "margin": "1.3/4",
         "pop": 11,
         "stable": "福永祐一 (栗東)"
@@ -21198,7 +21198,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "斎藤新",
-        "time": "**",
+        "time": "1:33.6",
         "margin": "クビ",
         "pop": 18,
         "stable": "池添学 (栗東)"
@@ -21210,7 +21210,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 58.0,
         "jockey": "パートン",
-        "time": "**",
+        "time": "1:33.6",
         "margin": "アタマ",
         "pop": 8,
         "stable": "イウ (海外)"
@@ -21222,7 +21222,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "菱田裕二",
-        "time": "**",
+        "time": "1:33.8",
         "margin": "1",
         "pop": 15,
         "stable": "武幸四郎 (栗東)"
@@ -21236,7 +21236,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "1:31.4",
         "margin": "-",
         "pop": 4,
         "stable": "林徹 (美浦)"
@@ -21248,7 +21248,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "1:31.6",
         "margin": "1.1/4",
         "pop": 3,
         "stable": "中内田充 (栗東)"
@@ -21260,7 +21260,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "1:31.6",
         "margin": "アタマ",
         "pop": 1,
         "stable": "手塚貴久 (美浦)"
@@ -21272,7 +21272,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "西村淳也",
-        "time": "**",
+        "time": "1:31.6",
         "margin": "クビ",
         "pop": 8,
         "stable": "杉山晴紀 (栗東)"
@@ -21284,7 +21284,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "1:31.7",
         "margin": "クビ",
         "pop": 5,
         "stable": "藤岡健一 (栗東)"
@@ -21296,7 +21296,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "1:32.0",
         "margin": "1.3/4",
         "pop": 10,
         "stable": "蛯名正義 (美浦)"
@@ -21308,7 +21308,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "1:32.0",
         "margin": "クビ",
         "pop": 2,
         "stable": "須貝尚介 (栗東)"
@@ -21320,7 +21320,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "三浦皇成",
-        "time": "**",
+        "time": "1:32.1",
         "margin": "クビ",
         "pop": 13,
         "stable": "鹿戸雄一 (美浦)"
@@ -21332,7 +21332,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "1:32.2",
         "margin": "1/2",
         "pop": 6,
         "stable": "池江泰寿 (栗東)"
@@ -21344,7 +21344,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "1:32.2",
         "margin": "クビ",
         "pop": 7,
         "stable": "久保田貴 (美浦)"
@@ -21356,7 +21356,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "**",
+        "time": "1:32.3",
         "margin": "1/2",
         "pop": 15,
         "stable": "昆貢 (栗東)"
@@ -21368,7 +21368,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "1:32.3",
         "margin": "アタマ",
         "pop": 18,
         "stable": "堀宣行 (美浦)"
@@ -21380,7 +21380,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "1:32.4",
         "margin": "アタマ",
         "pop": 14,
         "stable": "安田隆行 (栗東)"
@@ -21392,7 +21392,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 54.0,
         "jockey": "内田博幸",
-        "time": "**",
+        "time": "1:32.6",
         "margin": "1.1/4",
         "pop": 11,
         "stable": "田中剛 (美浦)"
@@ -21404,7 +21404,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "1:32.7",
         "margin": "1/2",
         "pop": 12,
         "stable": "武英智 (栗東)"
@@ -21416,7 +21416,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "1:33.3",
         "margin": "3.1/2",
         "pop": 9,
         "stable": "高野友和 (栗東)"
@@ -21428,7 +21428,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "丸田恭介",
-        "time": "**",
+        "time": "1:33.3",
         "margin": "ハナ",
         "pop": 16,
         "stable": "宗像義忠 (美浦)"
@@ -21440,7 +21440,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 54.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "1:34.3",
         "margin": "6",
         "pop": 17,
         "stable": "須貝尚介 (栗東)"
@@ -21454,7 +21454,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:32.3",
         "margin": "-",
         "pop": 4,
         "stable": "林徹 (美浦)"
@@ -21466,7 +21466,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:32.3",
         "margin": "クビ",
         "pop": 2,
         "stable": "手塚貴久 (美浦)"
@@ -21478,7 +21478,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "1:32.3",
         "margin": "アタマ",
         "pop": 8,
         "stable": "堀宣行 (美浦)"
@@ -21490,7 +21490,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 54.0,
         "jockey": "藤岡佑介",
-        "time": "",
+        "time": "1:32.4",
         "margin": "1/2",
         "pop": 5,
         "stable": "中内田充 (栗東)"
@@ -21502,7 +21502,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:32.5",
         "margin": "クビ",
         "pop": 3,
         "stable": "木村哲也 (美浦)"
@@ -21514,7 +21514,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:32.5",
         "margin": "ハナ",
         "pop": 7,
         "stable": "安田隆行 (栗東)"
@@ -21526,7 +21526,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:32.5",
         "margin": "1/2",
         "pop": 16,
         "stable": "笹田和秀 (栗東)"
@@ -21538,7 +21538,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:32.5",
         "margin": "ハナ",
         "pop": 1,
         "stable": "久保田貴 (美浦)"
@@ -21550,7 +21550,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "丸田恭介",
-        "time": "",
+        "time": "1:32.7",
         "margin": "3/4",
         "pop": 12,
         "stable": "宗像義忠 (美浦)"
@@ -21562,7 +21562,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:32.7",
         "margin": "クビ",
         "pop": 11,
         "stable": "辻野泰之 (栗東)"
@@ -21574,7 +21574,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "1:32.7",
         "margin": "クビ",
         "pop": 9,
         "stable": "松下武士 (栗東)"
@@ -21586,7 +21586,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "",
+        "time": "1:32.8",
         "margin": "1/2",
         "pop": 15,
         "stable": "矢作芳人 (栗東)"
@@ -21598,7 +21598,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "1:32.9",
         "margin": "クビ",
         "pop": 6,
         "stable": "池江泰寿 (栗東)"
@@ -21610,7 +21610,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:33.0",
         "margin": "1/2",
         "pop": 17,
         "stable": "安田隆行 (栗東)"
@@ -21622,7 +21622,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "1:33.2",
         "margin": "1.1/2",
         "pop": 13,
         "stable": "藤原英昭 (栗東)"
@@ -21634,7 +21634,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "菅原明良",
-        "time": "",
+        "time": "1:33.2",
         "margin": "クビ",
         "pop": 14,
         "stable": "辻野泰之 (栗東)"
@@ -21646,7 +21646,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:33.3",
         "margin": "アタマ",
         "pop": 10,
         "stable": "堀宣行 (美浦)"
@@ -21658,7 +21658,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:34.0",
         "margin": "4",
         "pop": 18,
         "stable": "池添学 (栗東)"
@@ -21672,7 +21672,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:31.7",
         "margin": "-",
         "pop": 8,
         "stable": "萩原清 (美浦)"
@@ -21684,7 +21684,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:31.7",
         "margin": "アタマ",
         "pop": 1,
         "stable": "藤沢和雄 (美浦)"
@@ -21696,7 +21696,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 54.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "1:31.8",
         "margin": "1/2",
         "pop": 4,
         "stable": "手塚貴久 (美浦)"
@@ -21708,7 +21708,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:31.9",
         "margin": "クビ",
         "pop": 2,
         "stable": "音無秀孝 (栗東)"
@@ -21720,7 +21720,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:32.1",
         "margin": "1.1/4",
         "pop": 13,
         "stable": "小桧山悟 (美浦)"
@@ -21732,7 +21732,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:32.2",
         "margin": "1/2",
         "pop": 14,
         "stable": "中竹和也 (栗東)"
@@ -21744,7 +21744,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:32.3",
         "margin": "1",
         "pop": 6,
         "stable": "中内田充 (栗東)"
@@ -21756,7 +21756,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:32.4",
         "margin": "クビ",
         "pop": 3,
         "stable": "堀宣行 (美浦)"
@@ -21768,7 +21768,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "西村淳也",
-        "time": "",
+        "time": "1:32.6",
         "margin": "1.1/4",
         "pop": 11,
         "stable": "藤原英昭 (栗東)"
@@ -21780,7 +21780,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:32.6",
         "margin": "アタマ",
         "pop": 5,
         "stable": "安田隆行 (栗東)"
@@ -21792,7 +21792,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 58.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:32.7",
         "margin": "1",
         "pop": 12,
         "stable": "菊沢隆徳 (美浦)"
@@ -21804,7 +21804,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:32.8",
         "margin": "アタマ",
         "pop": 9,
         "stable": "池添学 (栗東)"
@@ -21816,7 +21816,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "菅原明良",
-        "time": "",
+        "time": "1:33.0",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "高橋祥泰 (美浦)"
@@ -21828,7 +21828,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:34.5",
         "margin": "9",
         "pop": 7,
         "stable": "斉藤崇史 (栗東)"
@@ -21842,7 +21842,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:31.6",
         "margin": "-",
         "pop": 3,
         "stable": "藤沢和雄 (美浦)"
@@ -21854,7 +21854,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:32.0",
         "margin": "2.1/2",
         "pop": 1,
         "stable": "国枝栄 (美浦)"
@@ -21866,7 +21866,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:32.1",
         "margin": "1/2",
         "pop": 2,
         "stable": "音無秀孝 (栗東)"
@@ -21878,7 +21878,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:32.1",
         "margin": "クビ",
         "pop": 7,
         "stable": "萩原清 (美浦)"
@@ -21890,7 +21890,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "津村明秀",
-        "time": "",
+        "time": "1:32.3",
         "margin": "1.1/4",
         "pop": 11,
         "stable": "平田修 (栗東)"
@@ -21902,7 +21902,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:32.3",
         "margin": "クビ",
         "pop": 6,
         "stable": "友道康夫 (栗東)"
@@ -21914,7 +21914,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:32.4",
         "margin": "3/4",
         "pop": 5,
         "stable": "萩原清 (美浦)"
@@ -21926,7 +21926,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "1:32.4",
         "margin": "ハナ",
         "pop": 8,
         "stable": "安田隆行 (栗東)"
@@ -21938,7 +21938,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:32.7",
         "margin": "1.3/4",
         "pop": 10,
         "stable": "池江泰寿 (栗東)"
@@ -21950,7 +21950,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "1:32.7",
         "margin": "クビ",
         "pop": 9,
         "stable": "藤原英昭 (栗東)"
@@ -21962,7 +21962,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:33.2",
         "margin": "3",
         "pop": 12,
         "stable": "藤原英昭 (栗東)"
@@ -21974,7 +21974,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:33.4",
         "margin": "1",
         "pop": 14,
         "stable": "上原博之 (美浦)"
@@ -21986,7 +21986,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "1:33.6",
         "margin": "1.1/4",
         "pop": 4,
         "stable": "中内田充 (栗東)"
@@ -21998,7 +21998,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:33.8",
         "margin": "1.1/4",
         "pop": 13,
         "stable": "高野友和 (栗東)"
@@ -22012,7 +22012,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:30.9",
         "margin": "-",
         "pop": 4,
         "stable": "音無秀孝 (栗東)"
@@ -22024,7 +22024,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:30.9",
         "margin": "クビ",
         "pop": 3,
         "stable": "菊沢隆徳 (美浦)"
@@ -22036,7 +22036,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:30.9",
         "margin": "ハナ",
         "pop": 1,
         "stable": "国枝栄 (美浦)"
@@ -22048,7 +22048,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "1:31.1",
         "margin": "1.1/2",
         "pop": 13,
         "stable": "北出成人 (栗東)"
@@ -22060,7 +22060,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:31.1",
         "margin": "ハナ",
         "pop": 6,
         "stable": "浅見秀一 (栗東)"
@@ -22072,7 +22072,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "",
+        "time": "1:31.2",
         "margin": "クビ",
         "pop": 7,
         "stable": "矢作芳人 (栗東)"
@@ -22084,7 +22084,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "1:31.3",
         "margin": "1/2",
         "pop": 10,
         "stable": "平田修 (栗東)"
@@ -22096,7 +22096,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "1:31.3",
         "margin": "ハナ",
         "pop": 5,
         "stable": "木村哲也 (美浦)"
@@ -22108,7 +22108,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:31.4",
         "margin": "1/2",
         "pop": 11,
         "stable": "須貝尚介 (栗東)"
@@ -22120,7 +22120,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:31.8",
         "margin": "2.1/2",
         "pop": 8,
         "stable": "池江泰寿 (栗東)"
@@ -22132,7 +22132,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:31.9",
         "margin": "1/2",
         "pop": 15,
         "stable": "金成貴史 (美浦)"
@@ -22144,7 +22144,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "石川裕紀",
-        "time": "",
+        "time": "1:31.9",
         "margin": "ハナ",
         "pop": 16,
         "stable": "小島茂之 (美浦)"
@@ -22156,7 +22156,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:32.0",
         "margin": "3/4",
         "pop": 12,
         "stable": "池江泰寿 (栗東)"
@@ -22168,7 +22168,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "1:32.1",
         "margin": "1/2",
         "pop": 9,
         "stable": "高野友和 (栗東)"
@@ -22180,7 +22180,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:32.2",
         "margin": "1/2",
         "pop": 14,
         "stable": "矢作芳人 (栗東)"
@@ -22192,7 +22192,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:32.9",
         "margin": "4",
         "pop": 2,
         "stable": "中内田充 (栗東)"
@@ -22206,7 +22206,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:31.3",
         "margin": "-",
         "pop": 9,
         "stable": "矢作芳人 (栗東)"
@@ -22218,7 +22218,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:31.3",
         "margin": "クビ",
         "pop": 5,
         "stable": "菊沢隆徳 (美浦)"
@@ -22230,7 +22230,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:31.4",
         "margin": "3/4",
         "pop": 1,
         "stable": "庄野靖志 (栗東)"
@@ -22242,7 +22242,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "1:31.5",
         "margin": "1/2",
         "pop": 7,
         "stable": "藤沢和雄 (美浦)"
@@ -22254,7 +22254,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:31.5",
         "margin": "クビ",
         "pop": 3,
         "stable": "浅見秀一 (栗東)"
@@ -22266,7 +22266,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:31.7",
         "margin": "1.1/4",
         "pop": 2,
         "stable": "池江泰寿 (栗東)"
@@ -22278,7 +22278,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "津村明秀",
-        "time": "",
+        "time": "1:32.0",
         "margin": "2",
         "pop": 14,
         "stable": "西園正都 (栗東)"
@@ -22290,7 +22290,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:32.1",
         "margin": "クビ",
         "pop": 6,
         "stable": "矢作芳人 (栗東)"
@@ -22302,7 +22302,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:32.1",
         "margin": "クビ",
         "pop": 8,
         "stable": "尾関知人 (美浦)"
@@ -22314,7 +22314,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 58.0,
         "jockey": "クリッパ",
-        "time": "",
+        "time": "1:32.3",
         "margin": "1.1/4",
         "pop": 11,
         "stable": "サイズ (海外)"
@@ -22326,7 +22326,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:32.4",
         "margin": "1/2",
         "pop": 10,
         "stable": "堀宣行 (美浦)"
@@ -22338,7 +22338,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "1:32.5",
         "margin": "3/4",
         "pop": 15,
         "stable": "本田優 (栗東)"
@@ -22350,7 +22350,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "1:32.7",
         "margin": "1",
         "pop": 12,
         "stable": "藤岡健一 (栗東)"
@@ -22362,7 +22362,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "北村宏司",
-        "time": "",
+        "time": "1:32.7",
         "margin": "アタマ",
         "pop": 16,
         "stable": "吉村圭司 (栗東)"
@@ -22374,7 +22374,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:32.7",
         "margin": "アタマ",
         "pop": 4,
         "stable": "矢作芳人 (栗東)"
@@ -22386,7 +22386,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "秋山真一",
-        "time": "",
+        "time": "1:32.8",
         "margin": "アタマ",
         "pop": 13,
         "stable": "西浦勝一 (栗東)"
@@ -22400,7 +22400,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:31.5",
         "margin": "-",
         "pop": 7,
         "stable": "池江泰寿 (栗東)"
@@ -22412,7 +22412,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:31.5",
         "margin": "クビ",
         "pop": 8,
         "stable": "田中剛 (美浦)"
@@ -22424,7 +22424,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:31.6",
         "margin": "クビ",
         "pop": 3,
         "stable": "尾関知人 (美浦)"
@@ -22436,7 +22436,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:31.6",
         "margin": "クビ",
         "pop": 6,
         "stable": "大竹正博 (美浦)"
@@ -22448,7 +22448,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:31.7",
         "margin": "クビ",
         "pop": 2,
         "stable": "笹田和秀 (栗東)"
@@ -22460,7 +22460,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 58.0,
         "jockey": "パートン",
-        "time": "",
+        "time": "1:31.8",
         "margin": "1/2",
         "pop": 9,
         "stable": "クルーズ (海外)"
@@ -22472,7 +22472,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "1:31.8",
         "margin": "クビ",
         "pop": 4,
         "stable": "藤原英昭 (栗東)"
@@ -22484,7 +22484,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "1:31.9",
         "margin": "1/2",
         "pop": 1,
         "stable": "栗田博憲 (美浦)"
@@ -22496,7 +22496,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:31.9",
         "margin": "クビ",
         "pop": 14,
         "stable": "橋口慎介 (栗東)"
@@ -22508,7 +22508,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 58.0,
         "jockey": "モレイラ",
-        "time": "",
+        "time": "1:32.3",
         "margin": "2.1/2",
         "pop": 12,
         "stable": "サイズ (海外)"
@@ -22520,7 +22520,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "",
+        "time": "1:32.3",
         "margin": "アタマ",
         "pop": 18,
         "stable": "田村康仁 (美浦)"
@@ -22532,7 +22532,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "1:32.7",
         "margin": "2.1/2",
         "pop": 17,
         "stable": "浜田多実 (栗東)"
@@ -22544,7 +22544,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "四位洋文",
-        "time": "",
+        "time": "1:32.7",
         "margin": "クビ",
         "pop": 15,
         "stable": "小島太 (美浦)"
@@ -22556,7 +22556,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:32.8",
         "margin": "クビ",
         "pop": 13,
         "stable": "国枝栄 (美浦)"
@@ -22568,7 +22568,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "1:32.9",
         "margin": "3/4",
         "pop": 5,
         "stable": "音無秀孝 (栗東)"
@@ -22580,7 +22580,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "1:33.1",
         "margin": "1.1/4",
         "pop": 11,
         "stable": "手塚貴久 (美浦)"
@@ -22592,7 +22592,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "1:33.1",
         "margin": "アタマ",
         "pop": 16,
         "stable": "斎藤誠 (美浦)"
@@ -22604,7 +22604,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "1:33.7",
         "margin": "3.1/2",
         "pop": 10,
         "stable": "音無秀孝 (栗東)"
@@ -22618,7 +22618,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "1:33.0",
         "margin": "-",
         "pop": 8,
         "stable": "田中剛 (美浦)"
@@ -22630,7 +22630,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "ベリー",
-        "time": "",
+        "time": "1:33.2",
         "margin": "1.1/4",
         "pop": 1,
         "stable": "堀宣行 (美浦)"
@@ -22642,7 +22642,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "内田博幸",
-        "time": "",
+        "time": "1:33.2",
         "margin": "ハナ",
         "pop": 6,
         "stable": "藤原英昭 (栗東)"
@@ -22654,7 +22654,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "1:33.2",
         "margin": "クビ",
         "pop": 3,
         "stable": "池江泰寿 (栗東)"
@@ -22666,7 +22666,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "1:33.3",
         "margin": "1/2",
         "pop": 4,
         "stable": "栗田博憲 (美浦)"
@@ -22678,7 +22678,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "1:33.3",
         "margin": "ハナ",
         "pop": 7,
         "stable": "小島太 (美浦)"
@@ -22690,7 +22690,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "1:33.4",
         "margin": "1/2",
         "pop": 11,
         "stable": "大久保龍 (栗東)"
@@ -22702,7 +22702,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "小牧太",
-        "time": "",
+        "time": "1:33.5",
         "margin": "1/2",
         "pop": 10,
         "stable": "橋口慎介 (栗東)"
@@ -22714,7 +22714,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "1:33.6",
         "margin": "クビ",
         "pop": 5,
         "stable": "藤沢和雄 (美浦)"
@@ -22726,7 +22726,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "川須栄彦",
-        "time": "",
+        "time": "1:33.8",
         "margin": "1.1/4",
         "pop": 12,
         "stable": "橋口慎介 (栗東)"
@@ -22738,7 +22738,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "1:34.0",
         "margin": "1.1/4",
         "pop": 2,
         "stable": "矢作芳人 (栗東)"
@@ -22750,7 +22750,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 58.0,
         "jockey": "プレブル",
-        "time": "",
+        "time": "1:34.3",
         "margin": "2",
         "pop": 9,
         "stable": "サイズ (海外)"
@@ -22766,7 +22766,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "2:11.1",
         "margin": "-",
         "pop": 7,
         "stable": "石橋守 (栗東)"
@@ -22778,7 +22778,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "2:11.6",
         "margin": "3",
         "pop": 1,
         "stable": "上村洋行 (栗東)"
@@ -22790,7 +22790,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "ディー",
-        "time": "**",
+        "time": "2:11.6",
         "margin": "クビ",
         "pop": 10,
         "stable": "杉山晴紀 (栗東)"
@@ -22802,7 +22802,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "**",
+        "time": "2:11.8",
         "margin": "3/4",
         "pop": 11,
         "stable": "高野友和 (栗東)"
@@ -22814,7 +22814,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 58.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "2:11.8",
         "margin": "アタマ",
         "pop": 14,
         "stable": "堀宣行 (美浦)"
@@ -22826,7 +22826,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "2:12.1",
         "margin": "1.3/4",
         "pop": 8,
         "stable": "手塚貴久 (美浦)"
@@ -22838,7 +22838,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "2:12.1",
         "margin": "アタマ",
         "pop": 13,
         "stable": "矢作芳人 (栗東)"
@@ -22850,7 +22850,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "2:12.3",
         "margin": "1.1/4",
         "pop": 3,
         "stable": "中内田充 (栗東)"
@@ -22862,7 +22862,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "2:12.4",
         "margin": "1/2",
         "pop": 4,
         "stable": "尾関知人 (美浦)"
@@ -22874,7 +22874,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "内田博幸",
-        "time": "**",
+        "time": "2:12.4",
         "margin": "クビ",
         "pop": 12,
         "stable": "宮本博 (栗東)"
@@ -22886,7 +22886,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "2:12.6",
         "margin": "1.1/4",
         "pop": 2,
         "stable": "木村哲也 (美浦)"
@@ -22898,7 +22898,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "2:12.9",
         "margin": "1.1/2",
         "pop": 17,
         "stable": "清水久詞 (栗東)"
@@ -22910,7 +22910,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "高杉吏麒",
-        "time": "**",
+        "time": "2:13.4",
         "margin": "3",
         "pop": 15,
         "stable": "池添学 (栗東)"
@@ -22922,7 +22922,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "2:13.5",
         "margin": "クビ",
         "pop": 6,
         "stable": "武井亮 (美浦)"
@@ -22934,7 +22934,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "菱田裕二",
-        "time": "**",
+        "time": "2:13.8",
         "margin": "1.3/4",
         "pop": 9,
         "stable": "田中博康 (美浦)"
@@ -22946,7 +22946,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "藤岡佑介",
-        "time": "**",
+        "time": "2:14.4",
         "margin": "4",
         "pop": 16,
         "stable": "武英智 (栗東)"
@@ -22958,7 +22958,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "2:14.4",
         "margin": "ハナ",
         "pop": 5,
         "stable": "友道康夫 (栗東)"
@@ -22972,7 +22972,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "菅原明良",
-        "time": "**",
+        "time": "2:12.0",
         "margin": "-",
         "pop": 3,
         "stable": "吉岡辰弥 (栗東)"
@@ -22984,7 +22984,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "2:12.3",
         "margin": "2",
         "pop": 7,
         "stable": "手塚貴久 (美浦)"
@@ -22996,7 +22996,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "**",
+        "time": "2:12.4",
         "margin": "クビ",
         "pop": 5,
         "stable": "上村洋行 (栗東)"
@@ -23008,7 +23008,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "2:12.4",
         "margin": "クビ",
         "pop": 6,
         "stable": "池添学 (栗東)"
@@ -23020,7 +23020,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "**",
+        "time": "2:12.9",
         "margin": "3",
         "pop": 4,
         "stable": "田中博康 (美浦)"
@@ -23032,7 +23032,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "2:12.9",
         "margin": "クビ",
         "pop": 1,
         "stable": "友道康夫 (栗東)"
@@ -23044,7 +23044,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "**",
+        "time": "2:12.9",
         "margin": "クビ",
         "pop": 8,
         "stable": "大久保龍 (栗東)"
@@ -23056,7 +23056,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "2:12.9",
         "margin": "ハナ",
         "pop": 10,
         "stable": "黒岩陽一 (美浦)"
@@ -23068,7 +23068,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "団野大成",
-        "time": "**",
+        "time": "2:13.3",
         "margin": "2",
         "pop": 13,
         "stable": "斉藤崇史 (栗東)"
@@ -23080,7 +23080,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "2:13.6",
         "margin": "1.3/4",
         "pop": 2,
         "stable": "杉山晴紀 (栗東)"
@@ -23092,7 +23092,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ5",
         "load": 58.0,
         "jockey": "レーン",
-        "time": "**",
+        "time": "2:14.5",
         "margin": "5",
         "pop": 9,
         "stable": "堀宣行 (美浦)"
@@ -23104,7 +23104,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "2:15.5",
         "margin": "6",
         "pop": 12,
         "stable": "友道康夫 (栗東)"
@@ -23116,7 +23116,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "2:15.8",
         "margin": "1.1/2",
         "pop": 11,
         "stable": "音無秀孝 (栗東)"
@@ -23130,7 +23130,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "**",
+        "time": "2:11.2",
         "margin": "-",
         "pop": 1,
         "stable": "木村哲也 (美浦)"
@@ -23142,7 +23142,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "池添謙一",
-        "time": "**",
+        "time": "2:11.2",
         "margin": "クビ",
         "pop": 10,
         "stable": "尾関知人 (美浦)"
@@ -23154,7 +23154,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "鮫島克駿",
-        "time": "**",
+        "time": "2:11.4",
         "margin": "1",
         "pop": 2,
         "stable": "杉山晴紀 (栗東)"
@@ -23166,7 +23166,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "武豊",
-        "time": "**",
+        "time": "2:11.4",
         "margin": "アタマ",
         "pop": 3,
         "stable": "斉藤崇史 (栗東)"
@@ -23178,7 +23178,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "**",
+        "time": "2:11.6",
         "margin": "1",
         "pop": 5,
         "stable": "大久保龍 (栗東)"
@@ -23190,7 +23190,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "菱田裕二",
-        "time": "**",
+        "time": "2:11.6",
         "margin": "クビ",
         "pop": 16,
         "stable": "池添学 (栗東)"
@@ -23202,7 +23202,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "浜中俊",
-        "time": "**",
+        "time": "2:11.7",
         "margin": "クビ",
         "pop": 6,
         "stable": "池江泰寿 (栗東)"
@@ -23214,7 +23214,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "**",
+        "time": "2:11.9",
         "margin": "1.1/4",
         "pop": 9,
         "stable": "渡辺薫彦 (栗東)"
@@ -23226,7 +23226,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "岩田望来",
-        "time": "**",
+        "time": "2:11.9",
         "margin": "ハナ",
         "pop": 11,
         "stable": "木村哲也 (美浦)"
@@ -23238,7 +23238,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡3",
         "load": 53.0,
         "jockey": "幸英明",
-        "time": "**",
+        "time": "2:12.3",
         "margin": "2",
         "pop": 7,
         "stable": "池添学 (栗東)"
@@ -23250,7 +23250,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山武史",
-        "time": "**",
+        "time": "2:12.3",
         "margin": "クビ",
         "pop": 4,
         "stable": "田村康仁 (美浦)"
@@ -23262,7 +23262,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "**",
+        "time": "2:12.3",
         "margin": "クビ",
         "pop": 12,
         "stable": "吉岡辰弥 (栗東)"
@@ -23274,7 +23274,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "北村友一",
-        "time": "**",
+        "time": "2:12.6",
         "margin": "1.1/2",
         "pop": 8,
         "stable": "安田隆行 (栗東)"
@@ -23286,7 +23286,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "角田大河",
-        "time": "**",
+        "time": "2:12.6",
         "margin": "アタマ",
         "pop": 17,
         "stable": "森田直行 (栗東)"
@@ -23298,7 +23298,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "**",
+        "time": "2:12.6",
         "margin": "ハナ",
         "pop": 14,
         "stable": "矢作芳人 (栗東)"
@@ -23310,7 +23310,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "菅原明良",
-        "time": "**",
+        "time": "2:12.6",
         "margin": "ハナ",
         "pop": 15,
         "stable": "辻野泰之 (栗東)"
@@ -23322,7 +23322,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "Ｍ．デム",
-        "time": "**",
+        "time": "2:12.7",
         "margin": "1/2",
         "pop": 13,
         "stable": "相沢郁 (美浦)"
@@ -23336,7 +23336,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "",
+        "time": "2:09.7",
         "margin": "-",
         "pop": 2,
         "stable": "栗田徹 (美浦)"
@@ -23348,7 +23348,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "2:10.0",
         "margin": "2",
         "pop": 5,
         "stable": "堀宣行 (美浦)"
@@ -23360,7 +23360,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:10.3",
         "margin": "2",
         "pop": 4,
         "stable": "杉山晴紀 (栗東)"
@@ -23372,7 +23372,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:10.3",
         "margin": "ハナ",
         "pop": 3,
         "stable": "大久保龍 (栗東)"
@@ -23384,7 +23384,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:10.6",
         "margin": "1.3/4",
         "pop": 14,
         "stable": "手塚貴久 (美浦)"
@@ -23396,7 +23396,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山武史",
-        "time": "",
+        "time": "2:10.6",
         "margin": "ハナ",
         "pop": 1,
         "stable": "鹿戸雄一 (美浦)"
@@ -23408,7 +23408,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "松岡正海",
-        "time": "",
+        "time": "2:10.8",
         "margin": "1.1/4",
         "pop": 9,
         "stable": "手塚貴久 (美浦)"
@@ -23420,7 +23420,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "吉田豊",
-        "time": "",
+        "time": "2:10.8",
         "margin": "アタマ",
         "pop": 6,
         "stable": "矢作芳人 (栗東)"
@@ -23432,7 +23432,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "",
+        "time": "2:11.1",
         "margin": "2",
         "pop": 10,
         "stable": "矢作芳人 (栗東)"
@@ -23444,7 +23444,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "西村淳也",
-        "time": "",
+        "time": "2:11.4",
         "margin": "1.3/4",
         "pop": 17,
         "stable": "藤原英昭 (栗東)"
@@ -23456,7 +23456,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "吉田隼人",
-        "time": "",
+        "time": "2:11.5",
         "margin": "3/4",
         "pop": 8,
         "stable": "友道康夫 (栗東)"
@@ -23468,7 +23468,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:11.9",
         "margin": "2",
         "pop": 13,
         "stable": "大久保龍 (栗東)"
@@ -23480,7 +23480,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "団野大成",
-        "time": "",
+        "time": "2:12.0",
         "margin": "3/4",
         "pop": 16,
         "stable": "森田直行 (栗東)"
@@ -23492,7 +23492,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:12.1",
         "margin": "1/2",
         "pop": 7,
         "stable": "杉山晴紀 (栗東)"
@@ -23504,7 +23504,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "2:12.2",
         "margin": "クビ",
         "pop": 15,
         "stable": "上村洋行 (栗東)"
@@ -23516,7 +23516,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 58.0,
         "jockey": "国分恭介",
-        "time": "",
+        "time": "2:12.4",
         "margin": "1.1/4",
         "pop": 12,
         "stable": "西園正都 (栗東)"
@@ -23528,7 +23528,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:15.5",
         "margin": "大",
         "pop": 11,
         "stable": "安田翔伍 (栗東)"
@@ -23554,7 +23554,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:10.9",
         "margin": "-",
         "pop": 1,
         "stable": "斉藤崇史 (栗東)"
@@ -23566,7 +23566,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "坂井瑠星",
-        "time": "",
+        "time": "2:11.3",
         "margin": "2.1/2",
         "pop": 7,
         "stable": "矢作芳人 (栗東)"
@@ -23578,7 +23578,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:11.4",
         "margin": "クビ",
         "pop": 2,
         "stable": "高野友和 (栗東)"
@@ -23590,7 +23590,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:11.7",
         "margin": "2",
         "pop": 3,
         "stable": "国枝栄 (美浦)"
@@ -23602,7 +23602,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:12.1",
         "margin": "2.1/2",
         "pop": 5,
         "stable": "辻野泰之 (栗東)"
@@ -23614,7 +23614,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝6",
         "load": 56.0,
         "jockey": "岩田望来",
-        "time": "",
+        "time": "2:12.2",
         "margin": "クビ",
         "pop": 9,
         "stable": "寺島良 (栗東)"
@@ -23626,7 +23626,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "2:12.2",
         "margin": "クビ",
         "pop": 8,
         "stable": "中竹和也 (栗東)"
@@ -23638,7 +23638,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:12.2",
         "margin": "ハナ",
         "pop": 6,
         "stable": "森田直行 (栗東)"
@@ -23650,7 +23650,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:12.4",
         "margin": "1.1/4",
         "pop": 4,
         "stable": "音無秀孝 (栗東)"
@@ -23662,7 +23662,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:12.8",
         "margin": "2.1/2",
         "pop": 13,
         "stable": "加用正 (栗東)"
@@ -23674,7 +23674,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "2:12.8",
         "margin": "アタマ",
         "pop": 10,
         "stable": "森田直行 (栗東)"
@@ -23686,7 +23686,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 58.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "2:13.4",
         "margin": "3.1/2",
         "pop": 12,
         "stable": "柄崎孝 (美浦)"
@@ -23698,7 +23698,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "2:13.6",
         "margin": "1.1/4",
         "pop": 11,
         "stable": "池江泰寿 (栗東)"
@@ -23712,7 +23712,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "2:13.5",
         "margin": "-",
         "pop": 2,
         "stable": "斉藤崇史 (栗東)"
@@ -23724,7 +23724,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:14.5",
         "margin": "6",
         "pop": 6,
         "stable": "角居勝彦 (栗東)"
@@ -23736,7 +23736,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:15.3",
         "margin": "5",
         "pop": 12,
         "stable": "森田直行 (栗東)"
@@ -23748,7 +23748,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:15.6",
         "margin": "1.3/4",
         "pop": 1,
         "stable": "角居勝彦 (栗東)"
@@ -23760,7 +23760,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:15.6",
         "margin": "クビ",
         "pop": 16,
         "stable": "池添兼雄 (栗東)"
@@ -23772,7 +23772,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:16.0",
         "margin": "2.1/2",
         "pop": 3,
         "stable": "松永幹夫 (栗東)"
@@ -23784,7 +23784,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "横山和生",
-        "time": "",
+        "time": "2:16.3",
         "margin": "2",
         "pop": 14,
         "stable": "小野次郎 (美浦)"
@@ -23796,7 +23796,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "2:16.4",
         "margin": "クビ",
         "pop": 11,
         "stable": "角居勝彦 (栗東)"
@@ -23808,7 +23808,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ6",
         "load": 58.0,
         "jockey": "松若風馬",
-        "time": "",
+        "time": "2:16.6",
         "margin": "1.1/4",
         "pop": 10,
         "stable": "音無秀孝 (栗東)"
@@ -23820,7 +23820,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "2:16.7",
         "margin": "3/4",
         "pop": 15,
         "stable": "高橋義忠 (栗東)"
@@ -23832,7 +23832,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "2:16.7",
         "margin": "ハナ",
         "pop": 8,
         "stable": "音無秀孝 (栗東)"
@@ -23844,7 +23844,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "鮫島克駿",
-        "time": "",
+        "time": "2:16.8",
         "margin": "クビ",
         "pop": 9,
         "stable": "中竹和也 (栗東)"
@@ -23856,7 +23856,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:16.8",
         "margin": "クビ",
         "pop": 7,
         "stable": "友道康夫 (栗東)"
@@ -23868,7 +23868,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ5",
         "load": 58.0,
         "jockey": "西村淳也",
-        "time": "",
+        "time": "2:17.6",
         "margin": "5",
         "pop": 18,
         "stable": "須貝尚介 (栗東)"
@@ -23880,7 +23880,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:18.0",
         "margin": "2",
         "pop": 13,
         "stable": "池江泰寿 (栗東)"
@@ -23892,7 +23892,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:18.0",
         "margin": "アタマ",
         "pop": 4,
         "stable": "大竹正博 (美浦)"
@@ -23904,7 +23904,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "2:18.8",
         "margin": "5",
         "pop": 5,
         "stable": "尾関知人 (美浦)"
@@ -23916,7 +23916,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ5",
         "load": 58.0,
         "jockey": "藤井勘一",
-        "time": "",
+        "time": "2:21.8",
         "margin": "大",
         "pop": 17,
         "stable": "西園正都 (栗東)"
@@ -23930,7 +23930,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "レーン",
-        "time": "",
+        "time": "2:10.8",
         "margin": "-",
         "pop": 3,
         "stable": "矢作芳人 (栗東)"
@@ -23942,7 +23942,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:11.3",
         "margin": "3",
         "pop": 1,
         "stable": "角居勝彦 (栗東)"
@@ -23954,7 +23954,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:11.6",
         "margin": "2",
         "pop": 6,
         "stable": "庄野靖志 (栗東)"
@@ -23966,7 +23966,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "北村友一",
-        "time": "",
+        "time": "2:11.9",
         "margin": "2",
         "pop": 5,
         "stable": "池江泰寿 (栗東)"
@@ -23978,7 +23978,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:12.1",
         "margin": "3/4",
         "pop": 2,
         "stable": "藤沢和雄 (美浦)"
@@ -23990,7 +23990,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "高倉稜",
-        "time": "",
+        "time": "2:12.4",
         "margin": "1.3/4",
         "pop": 10,
         "stable": "宮本博 (栗東)"
@@ -24002,7 +24002,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "丸山元気",
-        "time": "",
+        "time": "2:12.4",
         "margin": "クビ",
         "pop": 8,
         "stable": "音無秀孝 (栗東)"
@@ -24014,7 +24014,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "三浦皇成",
-        "time": "",
+        "time": "2:12.5",
         "margin": "3/4",
         "pop": 9,
         "stable": "宮本博 (栗東)"
@@ -24026,7 +24026,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:12.6",
         "margin": "クビ",
         "pop": 4,
         "stable": "友道康夫 (栗東)"
@@ -24038,7 +24038,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "吉田豊",
-        "time": "",
+        "time": "2:12.6",
         "margin": "アタマ",
         "pop": 11,
         "stable": "上原博之 (美浦)"
@@ -24050,7 +24050,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:12.9",
         "margin": "1.1/2",
         "pop": 7,
         "stable": "友道康夫 (栗東)"
@@ -24062,7 +24062,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "秋山真一",
-        "time": "",
+        "time": "2:13.9",
         "margin": "6",
         "pop": 12,
         "stable": "鮫島一歩 (栗東)"
@@ -24076,7 +24076,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:11.6",
         "margin": "-",
         "pop": 7,
         "stable": "音無秀孝 (栗東)"
@@ -24088,7 +24088,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ7",
         "load": 58.0,
         "jockey": "ボウマン",
-        "time": "",
+        "time": "2:11.6",
         "margin": "クビ",
         "pop": 10,
         "stable": "ムーア (海外)"
@@ -24100,7 +24100,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "高倉稜",
-        "time": "",
+        "time": "2:12.1",
         "margin": "3",
         "pop": 12,
         "stable": "宮本博 (栗東)"
@@ -24112,7 +24112,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:12.1",
         "margin": "クビ",
         "pop": 3,
         "stable": "友道康夫 (栗東)"
@@ -24124,7 +24124,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:12.3",
         "margin": "1.1/4",
         "pop": 5,
         "stable": "音無秀孝 (栗東)"
@@ -24136,7 +24136,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:12.4",
         "margin": "1/2",
         "pop": 1,
         "stable": "池江泰寿 (栗東)"
@@ -24148,7 +24148,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:12.4",
         "margin": "ハナ",
         "pop": 11,
         "stable": "藤原英昭 (栗東)"
@@ -24160,7 +24160,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:12.5",
         "margin": "クビ",
         "pop": 2,
         "stable": "角居勝彦 (栗東)"
@@ -24172,7 +24172,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:12.6",
         "margin": "3/4",
         "pop": 4,
         "stable": "藤原英昭 (栗東)"
@@ -24184,7 +24184,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝8",
         "load": 56.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:12.6",
         "margin": "アタマ",
         "pop": 13,
         "stable": "大久保龍 (栗東)"
@@ -24196,7 +24196,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:12.8",
         "margin": "1",
         "pop": 8,
         "stable": "池江泰寿 (栗東)"
@@ -24208,7 +24208,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "石橋脩",
-        "time": "",
+        "time": "2:12.8",
         "margin": "クビ",
         "pop": 6,
         "stable": "堀宣行 (美浦)"
@@ -24220,7 +24220,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡7",
         "load": 58.0,
         "jockey": "藤岡康太",
-        "time": "",
+        "time": "2:13.4",
         "margin": "3.1/2",
         "pop": 15,
         "stable": "堀宣行 (美浦)"
@@ -24232,7 +24232,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:14.6",
         "margin": "7",
         "pop": 9,
         "stable": "木村哲也 (美浦)"
@@ -24244,7 +24244,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "秋山真一",
-        "time": "",
+        "time": "2:14.6",
         "margin": "クビ",
         "pop": 16,
         "stable": "鮫島一歩 (栗東)"
@@ -24256,7 +24256,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "小牧太",
-        "time": "",
+        "time": "2:15.8",
         "margin": "7",
         "pop": 14,
         "stable": "梅田智之 (栗東)"
@@ -24270,7 +24270,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:11.4",
         "margin": "-",
         "pop": 3,
         "stable": "堀宣行 (美浦)"
@@ -24282,7 +24282,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:11.5",
         "margin": "3/4",
         "pop": 5,
         "stable": "中川公成 (美浦)"
@@ -24294,7 +24294,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "2:11.7",
         "margin": "1.1/2",
         "pop": 4,
         "stable": "池江泰寿 (栗東)"
@@ -24306,7 +24306,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:12.0",
         "margin": "1.3/4",
         "pop": 2,
         "stable": "角居勝彦 (栗東)"
@@ -24318,7 +24318,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:12.3",
         "margin": "1.3/4",
         "pop": 7,
         "stable": "浅見秀一 (栗東)"
@@ -24330,7 +24330,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:12.3",
         "margin": "アタマ",
         "pop": 8,
         "stable": "音無秀孝 (栗東)"
@@ -24342,7 +24342,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "幸英明",
-        "time": "",
+        "time": "2:12.6",
         "margin": "1.3/4",
         "pop": 9,
         "stable": "本田優 (栗東)"
@@ -24354,7 +24354,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:12.6",
         "margin": "ハナ",
         "pop": 6,
         "stable": "友道康夫 (栗東)"
@@ -24366,7 +24366,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:12.7",
         "margin": "1/2",
         "pop": 1,
         "stable": "清水久詞 (栗東)"
@@ -24378,7 +24378,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "松山弘平",
-        "time": "",
+        "time": "2:12.9",
         "margin": "1.1/4",
         "pop": 11,
         "stable": "上原博之 (美浦)"
@@ -24390,7 +24390,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡9",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:13.2",
         "margin": "1.3/4",
         "pop": 10,
         "stable": "加藤敬二 (栗東)"
@@ -24404,7 +24404,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝5",
         "load": 56.0,
         "jockey": "蛯名正義",
-        "time": "",
+        "time": "2:12.8",
         "margin": "-",
         "pop": 8,
         "stable": "久保田貴 (美浦)"
@@ -24416,7 +24416,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "Ｍ．デム",
-        "time": "",
+        "time": "2:12.8",
         "margin": "クビ",
         "pop": 1,
         "stable": "堀宣行 (美浦)"
@@ -24428,7 +24428,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "武豊",
-        "time": "",
+        "time": "2:12.8",
         "margin": "ハナ",
         "pop": 2,
         "stable": "清水久詞 (栗東)"
@@ -24440,7 +24440,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "ルメール",
-        "time": "",
+        "time": "2:13.0",
         "margin": "1.1/4",
         "pop": 4,
         "stable": "池江泰寿 (栗東)"
@@ -24452,7 +24452,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "戸崎圭太",
-        "time": "",
+        "time": "2:13.4",
         "margin": "2.1/2",
         "pop": 7,
         "stable": "藤原英昭 (栗東)"
@@ -24464,7 +24464,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "岩田康誠",
-        "time": "",
+        "time": "2:13.5",
         "margin": "3/4",
         "pop": 9,
         "stable": "堀宣行 (美浦)"
@@ -24476,7 +24476,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "川田将雅",
-        "time": "",
+        "time": "2:13.8",
         "margin": "1.3/4",
         "pop": 11,
         "stable": "角居勝彦 (栗東)"
@@ -24488,7 +24488,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "和田竜二",
-        "time": "",
+        "time": "2:13.9",
         "margin": "1/2",
         "pop": 10,
         "stable": "池江泰寿 (栗東)"
@@ -24500,7 +24500,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "福永祐一",
-        "time": "",
+        "time": "2:14.2",
         "margin": "1.3/4",
         "pop": 5,
         "stable": "友道康夫 (栗東)"
@@ -24512,7 +24512,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡8",
         "load": 58.0,
         "jockey": "小牧太",
-        "time": "",
+        "time": "2:14.3",
         "margin": "クビ",
         "pop": 17,
         "stable": "加藤敬二 (栗東)"
@@ -24524,7 +24524,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "セ8",
         "load": 58.0,
         "jockey": "ベリー",
-        "time": "",
+        "time": "2:14.3",
         "margin": "アタマ",
         "pop": 14,
         "stable": "平田修 (栗東)"
@@ -24536,7 +24536,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牝4",
         "load": 56.0,
         "jockey": "浜中俊",
-        "time": "",
+        "time": "2:14.3",
         "margin": "クビ",
         "pop": 16,
         "stable": "石坂正 (栗東)"
@@ -24548,7 +24548,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "池添謙一",
-        "time": "",
+        "time": "2:14.4",
         "margin": "1/2",
         "pop": 15,
         "stable": "池添兼雄 (栗東)"
@@ -24560,7 +24560,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "田辺裕信",
-        "time": "",
+        "time": "2:14.8",
         "margin": "2.1/2",
         "pop": 13,
         "stable": "橋口慎介 (栗東)"
@@ -24572,7 +24572,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡5",
         "load": 58.0,
         "jockey": "酒井学",
-        "time": "",
+        "time": "2:14.9",
         "margin": "クビ",
         "pop": 6,
         "stable": "谷潔 (栗東)"
@@ -24584,7 +24584,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡4",
         "load": 58.0,
         "jockey": "横山典弘",
-        "time": "",
+        "time": "2:14.9",
         "margin": "クビ",
         "pop": 3,
         "stable": "音無秀孝 (栗東)"
@@ -24596,7 +24596,7 @@ export const HISTORICAL_FULL_RESULTS = {
         "sexAge": "牡6",
         "load": 58.0,
         "jockey": "柴山雄一",
-        "time": "",
+        "time": "2:15.1",
         "margin": "1",
         "pop": 12,
         "stable": "宗像義忠 (美浦)"

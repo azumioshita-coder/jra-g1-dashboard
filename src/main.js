@@ -241,7 +241,7 @@ const RESULTS_DATA = {
       2025,
       "コスタノヴァ",
       "キング",
-      "**",
+      "1:35.5",
       2,
       "木村哲也 (美浦)"
     ],
@@ -249,7 +249,7 @@ const RESULTS_DATA = {
       2024,
       "ペプチドナイル",
       "藤岡佑介",
-      "**",
+      "1:35.7",
       11,
       "武英智 (栗東)"
     ],
@@ -257,7 +257,7 @@ const RESULTS_DATA = {
       2023,
       "レモンポップ",
       "坂井瑠星",
-      "**",
+      "1:35.6",
       1,
       "田中博康 (美浦)"
     ],
@@ -265,7 +265,7 @@ const RESULTS_DATA = {
       2022,
       "カフェファラオ",
       "福永祐一",
-      "",
+      "1:33.8",
       2,
       "堀宣行 (美浦)"
     ],
@@ -273,7 +273,7 @@ const RESULTS_DATA = {
       2021,
       "カフェファラオ",
       "ルメール",
-      "",
+      "1:34.4",
       1,
       "堀宣行 (美浦)"
     ],
@@ -281,7 +281,7 @@ const RESULTS_DATA = {
       2020,
       "モズアスコット",
       "ルメール",
-      "",
+      "1:35.2",
       1,
       "矢作芳人 (栗東)"
     ],
@@ -289,7 +289,7 @@ const RESULTS_DATA = {
       2019,
       "インティ",
       "武豊",
-      "",
+      "1:35.6",
       1,
       "野中賢二 (栗東)"
     ],
@@ -297,7 +297,7 @@ const RESULTS_DATA = {
       2018,
       "ノンコノユメ",
       "内田博幸",
-      "",
+      "1:36.0",
       4,
       "加藤征弘 (美浦)"
     ],
@@ -305,7 +305,7 @@ const RESULTS_DATA = {
       2017,
       "ゴールドドリーム",
       "Ｍ．デム",
-      "",
+      "1:35.1",
       2,
       "平田修 (栗東)"
     ],
@@ -313,7 +313,7 @@ const RESULTS_DATA = {
       2016,
       "モーニン",
       "Ｍ．デム",
-      "",
+      "1:34.0",
       2,
       "石坂正 (栗東)"
     ]
@@ -323,7 +323,7 @@ const RESULTS_DATA = {
       2025,
       "サトノレーヴ",
       "モレイラ",
-      "**",
+      "1:07.9",
       2,
       "堀宣行 (美浦)"
     ],
@@ -331,7 +331,7 @@ const RESULTS_DATA = {
       2024,
       "マッドクール",
       "坂井瑠星",
-      "**",
+      "1:08.9",
       6,
       "池添学 (栗東)"
     ],
@@ -339,7 +339,7 @@ const RESULTS_DATA = {
       2023,
       "ファストフォース",
       "団野大成",
-      "**",
+      "1:11.5",
       12,
       "西村真幸 (栗東)"
     ],
@@ -347,7 +347,7 @@ const RESULTS_DATA = {
       2022,
       "ナランフレグ",
       "丸田恭介",
-      "",
+      "1:08.3",
       8,
       "宗像義忠 (美浦)"
     ],
@@ -355,7 +355,7 @@ const RESULTS_DATA = {
       2021,
       "ダノンスマッシュ",
       "川田将雅",
-      "",
+      "1:09.2",
       2,
       "安田隆行 (栗東)"
     ],
@@ -363,7 +363,7 @@ const RESULTS_DATA = {
       2020,
       "モズスーパーフレア",
       "松若風馬",
-      "",
+      "1:08.7",
       9,
       "音無秀孝 (栗東)"
     ],
@@ -371,7 +371,7 @@ const RESULTS_DATA = {
       2019,
       "ミスターメロディ",
       "福永祐一",
-      "",
+      "1:07.3",
       3,
       "藤原英昭 (栗東)"
     ],
@@ -379,7 +379,7 @@ const RESULTS_DATA = {
       2018,
       "ファインニードル",
       "川田将雅",
-      "",
+      "1:08.5",
       2,
       "高橋義忠 (栗東)"
     ],
@@ -387,7 +387,7 @@ const RESULTS_DATA = {
       2017,
       "セイウンコウセイ",
       "幸英明",
-      "",
+      "1:08.7",
       5,
       "上原博之 (美浦)"
     ],
@@ -395,7 +395,7 @@ const RESULTS_DATA = {
       2016,
       "ビッグアーサー",
       "福永祐一",
-      "",
+      "1:06.7",
       1,
       "藤岡健一 (栗東)"
     ]
@@ -405,7 +405,7 @@ const RESULTS_DATA = {
       2025,
       "ベラジオオペラ",
       "横山和生",
-      "**",
+      "1:56.2",
       2,
       "上村洋行 (栗東)"
     ],
@@ -413,7 +413,7 @@ const RESULTS_DATA = {
       2024,
       "ベラジオオペラ",
       "横山和生",
-      "**",
+      "1:58.2",
       2,
       "上村洋行 (栗東)"
     ],
@@ -421,7 +421,7 @@ const RESULTS_DATA = {
       2023,
       "ジャックドール",
       "武豊",
-      "**",
+      "1:57.4",
       2,
       "藤岡健一 (栗東)"
     ],
@@ -429,7 +429,7 @@ const RESULTS_DATA = {
       2022,
       "ポタジェ",
       "吉田隼人",
-      "",
+      "1:58.4",
       8,
       "友道康夫 (栗東)"
     ],
@@ -437,7 +437,7 @@ const RESULTS_DATA = {
       2021,
       "レイパパレ",
       "川田将雅",
-      "",
+      "2:01.6",
       4,
       "高野友和 (栗東)"
     ],
@@ -445,7 +445,7 @@ const RESULTS_DATA = {
       2020,
       "ラッキーライラック",
       "Ｍ．デム",
-      "",
+      "1:58.4",
       2,
       "松永幹夫 (栗東)"
     ],
@@ -453,7 +453,7 @@ const RESULTS_DATA = {
       2019,
       "アルアイン",
       "北村友一",
-      "",
+      "2:01.0",
       9,
       "池江泰寿 (栗東)"
     ],
@@ -461,7 +461,7 @@ const RESULTS_DATA = {
       2018,
       "スワーヴリチャード",
       "Ｍ．デム",
-      "",
+      "1:58.2",
       1,
       "庄野靖志 (栗東)"
     ],
@@ -469,7 +469,7 @@ const RESULTS_DATA = {
       2017,
       "キタサンブラック",
       "武豊",
-      "",
+      "1:58.9",
       1,
       "清水久詞 (栗東)"
     ],
@@ -477,7 +477,7 @@ const RESULTS_DATA = {
       2016,
       "アンビシャス",
       "横山典弘",
-      "",
+      "1:59.3",
       2,
       "音無秀孝 (栗東)"
     ]
@@ -487,7 +487,7 @@ const RESULTS_DATA = {
       2025,
       "エンブロイダリー",
       "モレイラ",
-      "**",
+      "1:33.1",
       3,
       "森一誠 (美浦)"
     ],
@@ -495,7 +495,7 @@ const RESULTS_DATA = {
       2024,
       "ステレンボッシュ",
       "モレイラ",
-      "**",
+      "1:32.2",
       2,
       "国枝栄 (美浦)"
     ],
@@ -503,7 +503,7 @@ const RESULTS_DATA = {
       2023,
       "リバティアイランド",
       "川田将雅",
-      "**",
+      "1:32.1",
       1,
       "中内田充 (栗東)"
     ],
@@ -511,7 +511,7 @@ const RESULTS_DATA = {
       2022,
       "スターズオンアース",
       "川田将雅",
-      "",
+      "1:32.9",
       7,
       "高柳瑞樹 (美浦)"
     ],
@@ -519,7 +519,7 @@ const RESULTS_DATA = {
       2021,
       "ソダシ",
       "吉田隼人",
-      "",
+      "1:31.1",
       2,
       "須貝尚介 (栗東)"
     ],
@@ -527,7 +527,7 @@ const RESULTS_DATA = {
       2020,
       "デアリングタクト",
       "松山弘平",
-      "",
+      "1:36.1",
       2,
       "杉山晴紀 (栗東)"
     ],
@@ -535,7 +535,7 @@ const RESULTS_DATA = {
       2019,
       "グランアレグリア",
       "ルメール",
-      "",
+      "1:32.7",
       2,
       "藤沢和雄 (美浦)"
     ],
@@ -543,7 +543,7 @@ const RESULTS_DATA = {
       2018,
       "アーモンドアイ",
       "ルメール",
-      "",
+      "1:33.1",
       2,
       "国枝栄 (美浦)"
     ],
@@ -551,7 +551,7 @@ const RESULTS_DATA = {
       2017,
       "レーヌミノル",
       "池添謙一",
-      "",
+      "1:34.5",
       8,
       "本田優 (栗東)"
     ],
@@ -559,7 +559,7 @@ const RESULTS_DATA = {
       2016,
       "ジュエラー",
       "Ｍ．デム",
-      "",
+      "1:33.4",
       3,
       "藤岡健一 (栗東)"
     ]
@@ -569,7 +569,7 @@ const RESULTS_DATA = {
       2025,
       "ミュージアムマイル",
       "モレイラ",
-      "**",
+      "1:57.0",
       3,
       "高柳大輔 (栗東)"
     ],
@@ -577,7 +577,7 @@ const RESULTS_DATA = {
       2024,
       "ジャスティンミラノ",
       "戸崎圭太",
-      "**",
+      "1:57.1",
       2,
       "友道康夫 (栗東)"
     ],
@@ -585,7 +585,7 @@ const RESULTS_DATA = {
       2023,
       "ソールオリエンス",
       "横山武史",
-      "**",
+      "2:00.6",
       2,
       "手塚貴久 (美浦)"
     ],
@@ -593,7 +593,7 @@ const RESULTS_DATA = {
       2022,
       "ジオグリフ",
       "福永祐一",
-      "",
+      "1:59.7",
       5,
       "木村哲也 (美浦)"
     ],
@@ -601,7 +601,7 @@ const RESULTS_DATA = {
       2021,
       "エフフォーリア",
       "横山武史",
-      "",
+      "2:00.6",
       2,
       "鹿戸雄一 (美浦)"
     ],
@@ -609,7 +609,7 @@ const RESULTS_DATA = {
       2020,
       "コントレイル",
       "福永祐一",
-      "",
+      "2:00.7",
       1,
       "矢作芳人 (栗東)"
     ],
@@ -617,7 +617,7 @@ const RESULTS_DATA = {
       2019,
       "サートゥルナーリア",
       "ルメール",
-      "",
+      "1:58.1",
       1,
       "角居勝彦 (栗東)"
     ],
@@ -625,7 +625,7 @@ const RESULTS_DATA = {
       2018,
       "エポカドーロ",
       "戸崎圭太",
-      "",
+      "2:00.8",
       7,
       "藤原英昭 (栗東)"
     ],
@@ -633,7 +633,7 @@ const RESULTS_DATA = {
       2017,
       "アルアイン",
       "松山弘平",
-      "",
+      "1:57.8",
       9,
       "池江泰寿 (栗東)"
     ],
@@ -641,7 +641,7 @@ const RESULTS_DATA = {
       2016,
       "ディーマジェスティ",
       "蛯名正義",
-      "",
+      "1:57.9",
       8,
       "二ノ宮敬 (美浦)"
     ]
@@ -651,7 +651,7 @@ const RESULTS_DATA = {
       2025,
       "ヘデントール",
       "レーン",
-      "**",
+      "3:14.0",
       1,
       "木村哲也 (美浦)"
     ],
@@ -659,7 +659,7 @@ const RESULTS_DATA = {
       2024,
       "テーオーロイヤル",
       "菱田裕二",
-      "**",
+      "3:14.2",
       1,
       "岡田稲男 (栗東)"
     ],
@@ -667,7 +667,7 @@ const RESULTS_DATA = {
       2023,
       "ジャスティンパレス",
       "ルメール",
-      "**",
+      "3:16.1",
       2,
       "杉山晴紀 (栗東)"
     ],
@@ -675,7 +675,7 @@ const RESULTS_DATA = {
       2022,
       "タイトルホルダー",
       "横山和生",
-      "",
+      "3:16.2",
       2,
       "栗田徹 (美浦)"
     ],
@@ -683,7 +683,7 @@ const RESULTS_DATA = {
       2021,
       "ワールドプレミア",
       "福永祐一",
-      "",
+      "3:14.7",
       3,
       "友道康夫 (栗東)"
     ],
@@ -691,7 +691,7 @@ const RESULTS_DATA = {
       2020,
       "フィエールマン",
       "ルメール",
-      "",
+      "3:16.5",
       1,
       "手塚貴久 (美浦)"
     ],
@@ -699,7 +699,7 @@ const RESULTS_DATA = {
       2019,
       "フィエールマン",
       "ルメール",
-      "",
+      "3:15.0",
       1,
       "手塚貴久 (美浦)"
     ],
@@ -707,7 +707,7 @@ const RESULTS_DATA = {
       2018,
       "レインボーライン",
       "岩田康誠",
-      "",
+      "3:16.2",
       2,
       "浅見秀一 (栗東)"
     ],
@@ -715,7 +715,7 @@ const RESULTS_DATA = {
       2017,
       "キタサンブラック",
       "武豊",
-      "",
+      "3:12.5",
       1,
       "清水久詞 (栗東)"
     ],
@@ -723,7 +723,7 @@ const RESULTS_DATA = {
       2016,
       "キタサンブラック",
       "武豊",
-      "",
+      "3:15.3",
       2,
       "清水久詞 (栗東)"
     ]
@@ -733,7 +733,7 @@ const RESULTS_DATA = {
       2025,
       "パンジャタワー",
       "松山弘平",
-      "**",
+      "1:31.7",
       9,
       "橋口慎介 (栗東)"
     ],
@@ -741,7 +741,7 @@ const RESULTS_DATA = {
       2024,
       "ジャンタルマンタル",
       "川田将雅",
-      "**",
+      "1:32.4",
       2,
       "高野友和 (栗東)"
     ],
@@ -749,7 +749,7 @@ const RESULTS_DATA = {
       2023,
       "シャンパンカラー",
       "内田博幸",
-      "**",
+      "1:33.8",
       9,
       "田中剛 (美浦)"
     ],
@@ -757,7 +757,7 @@ const RESULTS_DATA = {
       2022,
       "ダノンスコーピオン",
       "川田将雅",
-      "",
+      "1:32.3",
       4,
       "安田隆行 (栗東)"
     ],
@@ -765,7 +765,7 @@ const RESULTS_DATA = {
       2021,
       "シュネルマイスター",
       "ルメール",
-      "",
+      "1:31.6",
       2,
       "手塚貴久 (美浦)"
     ],
@@ -773,7 +773,7 @@ const RESULTS_DATA = {
       2020,
       "ラウダシオン",
       "Ｍ．デム",
-      "",
+      "1:32.5",
       9,
       "斉藤崇史 (栗東)"
     ],
@@ -781,7 +781,7 @@ const RESULTS_DATA = {
       2019,
       "アドマイヤマーズ",
       "Ｍ．デム",
-      "",
+      "1:32.4",
       2,
       "友道康夫 (栗東)"
     ],
@@ -789,7 +789,7 @@ const RESULTS_DATA = {
       2018,
       "ケイアイノーテック",
       "藤岡佑介",
-      "",
+      "1:32.8",
       6,
       "平田修 (栗東)"
     ],
@@ -797,7 +797,7 @@ const RESULTS_DATA = {
       2017,
       "アエロリット",
       "横山典弘",
-      "",
+      "1:32.3",
       2,
       "菊沢隆徳 (美浦)"
     ],
@@ -805,7 +805,7 @@ const RESULTS_DATA = {
       2016,
       "メジャーエンブレム",
       "ルメール",
-      "",
+      "1:32.8",
       1,
       "田村康仁 (美浦)"
     ]
@@ -815,7 +815,7 @@ const RESULTS_DATA = {
       2025,
       "アスコリピチェーノ",
       "ルメール",
-      "**",
+      "1:32.1",
       1,
       "黒岩陽一 (美浦)"
     ],
@@ -823,7 +823,7 @@ const RESULTS_DATA = {
       2024,
       "テンハッピーローズ",
       "津村明秀",
-      "**",
+      "1:31.8",
       14,
       "高柳大輔 (栗東)"
     ],
@@ -831,7 +831,7 @@ const RESULTS_DATA = {
       2023,
       "ソングライン",
       "戸崎圭太",
-      "**",
+      "1:32.2",
       4,
       "林徹 (美浦)"
     ],
@@ -839,7 +839,7 @@ const RESULTS_DATA = {
       2022,
       "ソダシ",
       "吉田隼人",
-      "",
+      "1:32.2",
       4,
       "須貝尚介 (栗東)"
     ],
@@ -847,7 +847,7 @@ const RESULTS_DATA = {
       2021,
       "グランアレグリア",
       "ルメール",
-      "",
+      "1:31.0",
       1,
       "藤沢和雄 (美浦)"
     ],
@@ -855,7 +855,7 @@ const RESULTS_DATA = {
       2020,
       "アーモンドアイ",
       "ルメール",
-      "",
+      "1:30.6",
       1,
       "国枝栄 (美浦)"
     ],
@@ -863,7 +863,7 @@ const RESULTS_DATA = {
       2019,
       "ノームコア",
       "レーン",
-      "",
+      "1:30.5",
       5,
       "萩原清 (美浦)"
     ],
@@ -871,7 +871,7 @@ const RESULTS_DATA = {
       2018,
       "ジュールポレール",
       "幸英明",
-      "",
+      "1:32.3",
       8,
       "西園正都 (栗東)"
     ],
@@ -879,7 +879,7 @@ const RESULTS_DATA = {
       2017,
       "アドマイヤリード",
       "ルメール",
-      "",
+      "1:33.9",
       6,
       "須貝尚介 (栗東)"
     ],
@@ -887,7 +887,7 @@ const RESULTS_DATA = {
       2016,
       "ストレイトガール",
       "戸崎圭太",
-      "",
+      "1:31.5",
       7,
       "藤原英昭 (栗東)"
     ]
@@ -897,7 +897,7 @@ const RESULTS_DATA = {
       2025,
       "カムニャック",
       "シュタル",
-      "**",
+      "2:25.7",
       4,
       "友道康夫 (栗東)"
     ],
@@ -905,7 +905,7 @@ const RESULTS_DATA = {
       2024,
       "チェルヴィニア",
       "ルメール",
-      "**",
+      "2:24.0",
       2,
       "木村哲也 (美浦)"
     ],
@@ -913,7 +913,7 @@ const RESULTS_DATA = {
       2023,
       "リバティアイランド",
       "川田将雅",
-      "**",
+      "2:23.1",
       1,
       "中内田充 (栗東)"
     ],
@@ -921,7 +921,7 @@ const RESULTS_DATA = {
       2022,
       "スターズオンアース",
       "ルメール",
-      "",
+      "2:23.9",
       3,
       "高柳瑞樹 (美浦)"
     ],
@@ -929,7 +929,7 @@ const RESULTS_DATA = {
       2021,
       "ユーバーレーベン",
       "Ｍ．デム",
-      "",
+      "2:24.5",
       3,
       "手塚貴久 (美浦)"
     ],
@@ -937,7 +937,7 @@ const RESULTS_DATA = {
       2020,
       "デアリングタクト",
       "松山弘平",
-      "",
+      "2:24.4",
       1,
       "杉山晴紀 (栗東)"
     ],
@@ -945,7 +945,7 @@ const RESULTS_DATA = {
       2019,
       "ラヴズオンリーユー",
       "Ｍ．デム",
-      "",
+      "2:22.8",
       1,
       "矢作芳人 (栗東)"
     ],
@@ -953,7 +953,7 @@ const RESULTS_DATA = {
       2018,
       "アーモンドアイ",
       "ルメール",
-      "",
+      "2:23.8",
       1,
       "国枝栄 (美浦)"
     ],
@@ -961,7 +961,7 @@ const RESULTS_DATA = {
       2017,
       "ソウルスターリング",
       "ルメール",
-      "",
+      "2:24.1",
       1,
       "藤沢和雄 (美浦)"
     ],
@@ -969,7 +969,7 @@ const RESULTS_DATA = {
       2016,
       "シンハライト",
       "池添謙一",
-      "",
+      "2:25.0",
       1,
       "石坂正 (栗東)"
     ]
@@ -979,7 +979,7 @@ const RESULTS_DATA = {
       2025,
       "クロワデュノール",
       "北村友一",
-      "**",
+      "2:23.7",
       1,
       "斉藤崇史 (栗東)"
     ],
@@ -987,7 +987,7 @@ const RESULTS_DATA = {
       2024,
       "ダノンデサイル",
       "横山典弘",
-      "**",
+      "2:24.3",
       9,
       "安田翔伍 (栗東)"
     ],
@@ -995,7 +995,7 @@ const RESULTS_DATA = {
       2023,
       "タスティエーラ",
       "レーン",
-      "**",
+      "2:25.2",
       4,
       "堀宣行 (美浦)"
     ],
@@ -1003,7 +1003,7 @@ const RESULTS_DATA = {
       2022,
       "ドウデュース",
       "武豊",
-      "",
+      "2:21.9",
       3,
       "友道康夫 (栗東)"
     ],
@@ -1011,7 +1011,7 @@ const RESULTS_DATA = {
       2021,
       "シャフリヤール",
       "福永祐一",
-      "",
+      "2:22.5",
       4,
       "藤原英昭 (栗東)"
     ],
@@ -1019,7 +1019,7 @@ const RESULTS_DATA = {
       2020,
       "コントレイル",
       "福永祐一",
-      "",
+      "2:24.1",
       1,
       "矢作芳人 (栗東)"
     ],
@@ -1027,7 +1027,7 @@ const RESULTS_DATA = {
       2019,
       "ロジャーバローズ",
       "浜中俊",
-      "",
+      "2:22.6",
       12,
       "角居勝彦 (栗東)"
     ],
@@ -1035,7 +1035,7 @@ const RESULTS_DATA = {
       2018,
       "ワグネリアン",
       "福永祐一",
-      "",
+      "2:23.6",
       5,
       "友道康夫 (栗東)"
     ],
@@ -1043,7 +1043,7 @@ const RESULTS_DATA = {
       2017,
       "レイデオロ",
       "ルメール",
-      "",
+      "2:26.9",
       2,
       "藤沢和雄 (美浦)"
     ],
@@ -1051,7 +1051,7 @@ const RESULTS_DATA = {
       2016,
       "マカヒキ",
       "川田将雅",
-      "",
+      "2:24.0",
       3,
       "友道康夫 (栗東)"
     ]
@@ -1061,7 +1061,7 @@ const RESULTS_DATA = {
       2025,
       "ジャンタルマンタル",
       "川田将雅",
-      "**",
+      "1:32.7",
       2,
       "高野友和 (栗東)"
     ],
@@ -1069,7 +1069,7 @@ const RESULTS_DATA = {
       2024,
       "ロマンチックウォリアー",
       "マクドナ",
-      "**",
+      "1:32.3",
       1,
       "シャム (海外)"
     ],
@@ -1077,7 +1077,7 @@ const RESULTS_DATA = {
       2023,
       "ソングライン",
       "戸崎圭太",
-      "**",
+      "1:31.4",
       4,
       "林徹 (美浦)"
     ],
@@ -1085,7 +1085,7 @@ const RESULTS_DATA = {
       2022,
       "ソングライン",
       "池添謙一",
-      "",
+      "1:32.3",
       4,
       "林徹 (美浦)"
     ],
@@ -1093,7 +1093,7 @@ const RESULTS_DATA = {
       2021,
       "ダノンキングリー",
       "川田将雅",
-      "",
+      "1:31.7",
       8,
       "萩原清 (美浦)"
     ],
@@ -1101,7 +1101,7 @@ const RESULTS_DATA = {
       2020,
       "グランアレグリア",
       "池添謙一",
-      "",
+      "1:31.6",
       3,
       "藤沢和雄 (美浦)"
     ],
@@ -1109,7 +1109,7 @@ const RESULTS_DATA = {
       2019,
       "インディチャンプ",
       "福永祐一",
-      "",
+      "1:30.9",
       4,
       "音無秀孝 (栗東)"
     ],
@@ -1117,7 +1117,7 @@ const RESULTS_DATA = {
       2018,
       "モズアスコット",
       "ルメール",
-      "",
+      "1:31.3",
       9,
       "矢作芳人 (栗東)"
     ],
@@ -1125,7 +1125,7 @@ const RESULTS_DATA = {
       2017,
       "サトノアラジン",
       "川田将雅",
-      "",
+      "1:31.5",
       7,
       "池江泰寿 (栗東)"
     ],
@@ -1133,7 +1133,7 @@ const RESULTS_DATA = {
       2016,
       "ロゴタイプ",
       "田辺裕信",
-      "",
+      "1:33.0",
       8,
       "田中剛 (美浦)"
     ]
@@ -1143,7 +1143,7 @@ const RESULTS_DATA = {
       2025,
       "メイショウタバル",
       "武豊",
-      "**",
+      "2:11.1",
       7,
       "石橋守 (栗東)"
     ],
@@ -1151,7 +1151,7 @@ const RESULTS_DATA = {
       2024,
       "ブローザホーン",
       "菅原明良",
-      "**",
+      "2:12.0",
       3,
       "吉岡辰弥 (栗東)"
     ],
@@ -1159,7 +1159,7 @@ const RESULTS_DATA = {
       2023,
       "イクイノックス",
       "ルメール",
-      "**",
+      "2:11.2",
       1,
       "木村哲也 (美浦)"
     ],
@@ -1167,7 +1167,7 @@ const RESULTS_DATA = {
       2022,
       "タイトルホルダー",
       "横山和生",
-      "",
+      "2:09.7",
       2,
       "栗田徹 (美浦)"
     ],
@@ -1175,7 +1175,7 @@ const RESULTS_DATA = {
       2021,
       "クロノジェネシス",
       "ルメール",
-      "",
+      "2:10.9",
       1,
       "斉藤崇史 (栗東)"
     ],
@@ -1183,7 +1183,7 @@ const RESULTS_DATA = {
       2020,
       "クロノジェネシス",
       "北村友一",
-      "",
+      "2:13.5",
       2,
       "斉藤崇史 (栗東)"
     ],
@@ -1191,7 +1191,7 @@ const RESULTS_DATA = {
       2019,
       "リスグラシュー",
       "レーン",
-      "",
+      "2:10.8",
       3,
       "矢作芳人 (栗東)"
     ],
@@ -1199,7 +1199,7 @@ const RESULTS_DATA = {
       2018,
       "ミッキーロケット",
       "和田竜二",
-      "",
+      "2:11.6",
       7,
       "音無秀孝 (栗東)"
     ],
@@ -1207,7 +1207,7 @@ const RESULTS_DATA = {
       2017,
       "サトノクラウン",
       "Ｍ．デム",
-      "",
+      "2:11.4",
       3,
       "堀宣行 (美浦)"
     ],
@@ -1215,454 +1215,12 @@ const RESULTS_DATA = {
       2016,
       "マリアライト",
       "蛯名正義",
-      "",
+      "2:12.8",
       8,
       "久保田貴 (美浦)"
     ]
   ]
 };
-
-import { 
-  createIcons, 
-  Award, 
-  Calendar, 
-  Search, 
-  Bell,
-  Clock
-} from 'lucide';
-
-const lucideIcons = { 
-  Award, 
-  Calendar, 
-  Search, 
-  Bell,
-  Clock
-};
-
-// 2026年 JRA G1レースデータセット (NetKeiba準拠・1〜3着結果完全一致)
-const G1_RACES = [
-        {
-          id: '1',
-          name: 'フェブラリーステークス',
-          englishName: 'February Stakes',
-          date: '2026-02-22T15:40:00',
-          location: '東京',
-          course: 'ダート 1600m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: 'ダート仕様',
-          type: 'older-dirt',
-          winner: 'コスタノヴァ', winnerJockey: 'C.ルメール', winnerGate: 12, time: '1:35.4',
-          second: 'ウィルソンテソーロ', secondJockey: '川田将雅', secondGate: 14,
-          third: 'ダブルハートボンド', thirdJockey: '坂井瑠星', thirdGate: 9,
-          payouts: { win: 390, trifecta: 7650 }
-        },
-        {
-          id: '2',
-          name: '高松宮記念',
-          englishName: 'Takamatsunomiya Kinen',
-          date: '2026-03-29T15:40:00',
-          location: '中京',
-          course: '芝 1200m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.2',
-          type: 'older-mile',
-          winner: 'サトノレーヴ', winnerJockey: 'C.ルメール', winnerGate: 9, time: '1:06.3',
-          second: 'レッドモンレーヴ', secondJockey: '酒井学', secondGate: 6,
-          third: 'ウインカーネリアン', thirdJockey: '三浦皇成', thirdGate: 8,
-          payouts: { win: 340, trifecta: 6450 }
-        },
-        {
-          id: '3',
-          name: '大阪杯',
-          englishName: 'Osaka Hai',
-          date: '2026-04-05T15:40:00',
-          location: '阪神',
-          course: '芝 2000m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.6',
-          type: 'older-dist',
-          winner: 'クロワデュノール', winnerJockey: '北村友一', winnerGate: 15, time: '1:57.6',
-          second: 'メイショウタバル', secondJockey: '武豊', secondGate: 6,
-          third: 'ダノンデサイル', thirdJockey: '坂井瑠星', thirdGate: 4,
-          payouts: { win: 210, trifecta: 2540 }
-        },
-        {
-          id: '4',
-          name: '桜花賞',
-          englishName: 'Oka Sho',
-          date: '2026-04-12T15:40:00',
-          location: '阪神',
-          course: '芝 1600m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.8',
-          type: '3yo-female',
-          winner: 'スターアニス', winnerJockey: '松山弘平', winnerGate: 15, time: '1:31.5',
-          second: 'ギャラボーグ', secondJockey: '西村淳也', secondGate: 5,
-          third: 'ジッピーチューン', thirdJockey: '北村友一', secondGate: 11,
-          payouts: { win: 290, trifecta: 1890 }
-        },
-        {
-          id: '5',
-          name: '皐月賞',
-          englishName: 'Satsuki Sho',
-          date: '2026-04-19T15:40:00',
-          location: '中山',
-          course: '芝 2000m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.9',
-          type: '3yo-male',
-          winner: 'ロブチェン', winnerJockey: '松山弘平', winnerGate: 4, time: '1:56.5',
-          second: 'リアライズシリウス', secondJockey: '津村明秀', secondGate: 15,
-          third: 'ライヒスアドラー', thirdJockey: '佐々木大輔', thirdGate: 9,
-          payouts: { win: 270, trifecta: 2450 }
-        },
-        {
-          id: '6',
-          name: '天皇賞（春）',
-          englishName: 'Tenno Sho (Spring)',
-          date: '2026-05-03T15:40:00',
-          location: '京都',
-          course: '芝 3200m',
-          status: 'finished',
-          weather: '曇',
-          trackCondition: '良',
-          cushionValue: '9.4',
-          type: 'older-dist',
-          winner: 'クロワデュノール', winnerJockey: '北村友一', winnerGate: 7, time: '3:13.7',
-          second: 'ヴェルテンベルク', secondJockey: '松若風馬', secondGate: 15,
-          third: 'アドマイヤテラ', thirdJockey: '武豊', thirdGate: 3,
-          payouts: { win: 160, trifecta: 4120 }
-        },
-        {
-          id: '7',
-          name: 'NHKマイルカップ',
-          englishName: 'NHK Mile Cup',
-          date: '2026-05-10T15:40:00',
-          location: '東京',
-          course: '芝 1600m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.7',
-          type: '3yo-male',
-          winner: 'ロデオドライブ', winnerJockey: 'D.レーン', winnerGate: 17, time: '1:31.5',
-          second: 'アスクイキゴミ', secondJockey: '戸崎圭太', secondGate: 16,
-          third: 'アドマイヤクワッズ', thirdJockey: '坂井瑠星', thirdGate: 11,
-          payouts: { win: 280, trifecta: 3850 }
-        },
-        {
-          id: '8',
-          name: 'ヴィクトリアマイル',
-          englishName: 'Victoria Mile',
-          date: '2026-05-17T15:40:00',
-          location: '東京',
-          course: '芝 1600m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.6',
-          type: 'older-female',
-          winner: 'エンブロイダリー', winnerJockey: 'C.ルメール', winnerGate: 12, time: '1:30.9',
-          second: 'カムニャック', secondJockey: '川田将雅', secondGate: 8,
-          third: 'クイーンズウォーク', thirdJockey: '西村淳也', thirdGate: 7,
-          payouts: { win: 190, trifecta: 1980 }
-        },
-        {
-          id: '9',
-          name: '優駿牝馬（オークス）',
-          englishName: 'Yushun Himba',
-          date: '2026-05-24T15:40:00',
-          location: '東京',
-          course: '芝 2400m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.5',
-          type: '3yo-female',
-          winner: 'ジュウリョクピエロ', winnerJockey: '今村聖奈', winnerGate: 16, time: '2:25.6',
-          second: 'ドリームコア', secondJockey: 'C.ルメール', secondGate: 12,
-          third: 'ラフターラインズ', thirdJockey: 'D.レーン', thirdGate: 18,
-          payouts: { win: 890, trifecta: 15420 }
-        },
-        {
-          id: '10',
-          name: '東京優駿（日本ダービー）',
-          englishName: 'Tokyo Yushun',
-          date: '2026-05-31T15:40:00',
-          location: '東京',
-          course: '芝 2400m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.5',
-          type: '3yo-male',
-          winner: 'ロブチェン', winnerJockey: '松山弘平', winnerGate: 17, time: '2:22.7',
-          second: 'パントルナイーフ', secondJockey: 'C.ルメール', secondGate: 13,
-          third: 'バステール', thirdJockey: '川田将雅', thirdGate: 5,
-          payouts: { win: 270, trifecta: 14280 }
-        },
-        {
-          id: '11',
-          name: '安田記念',
-          englishName: 'Yasuda Kinen',
-          date: '2026-06-07T15:40:00',
-          location: '東京',
-          course: '芝 1600m',
-          status: 'finished',
-          weather: '曇',
-          trackCondition: '良',
-          cushionValue: '9.4',
-          type: 'older-mile',
-          winner: 'シックスペンス', winnerJockey: '武豊', winnerGate: 4, time: '1:32.1',
-          second: 'ワールズエンド', secondJockey: '津村明秀', secondGate: 11,
-          third: 'ガイアフォース', thirdJockey: '横山武史', thirdGate: 14,
-          payouts: { win: 410, trifecta: 8900 }
-        },
-        {
-          id: '12',
-          name: '宝塚記念',
-          englishName: 'Takarazuka Kinen',
-          date: '2026-06-14T15:40:00',
-          location: '阪神',
-          course: '芝 2200m',
-          status: 'finished',
-          weather: '雨',
-          trackCondition: '重',
-          cushionValue: '7.8',
-          type: 'older-dist',
-          winner: 'メイショウタバル', winnerJockey: '武豊', winnerGate: 16, time: '2:12.1',
-          second: 'クロワデュノール', secondJockey: '北村友一', secondGate: 5,
-          third: 'ダノンデサイル', thirdJockey: '横山典弘', thirdGate: 1,
-          payouts: { win: 390, trifecta: 1440 }
-        },
-        {
-          id: '13',
-          name: 'スプリンターズステークス',
-          englishName: 'Sprinters Stakes',
-          date: '2026-09-27T15:40:00',
-          location: '中山',
-          course: '芝 1200m',
-          status: 'upcoming'
-        },
-        {
-          id: '14',
-          name: '秋華賞',
-          englishName: 'Shuka Sho',
-          date: '2026-10-18T15:40:00',
-          location: '京都',
-          course: '芝 2000m',
-          status: 'upcoming'
-        },
-        {
-          id: '15',
-          name: '菊花賞',
-          englishName: 'Kikka Sho',
-          date: '2026-10-25T15:40:00',
-          location: '京都',
-          course: '芝 3000m',
-          status: 'upcoming'
-        },
-        {
-          id: '16',
-          name: '天皇賞（秋）',
-          englishName: 'Tenno Sho (Autumn)',
-          date: '2026-11-01T15:40:00',
-          location: '東京',
-          course: '芝 2000m',
-          status: 'upcoming'
-        },
-        {
-          id: '17',
-          name: 'エリザベス女王杯',
-          englishName: 'Queen Elizabeth II Cup',
-          date: '2026-11-15T15:40:00',
-          location: '京都',
-          course: '芝 2200m',
-          status: 'upcoming'
-        },
-        {
-          id: '18',
-          name: 'マイルチャンピオンシップ',
-          englishName: 'Mile Championship',
-          date: '2026-11-22T15:40:00',
-          location: '京都',
-          course: '芝 1600m',
-          status: 'upcoming'
-        },
-        {
-          id: '19',
-          name: 'ジャパンカップ',
-          englishName: 'Japan Cup',
-          date: '2026-11-29T15:40:00',
-          location: '東京',
-          course: '芝 2400m',
-          status: 'upcoming'
-        },
-        {
-          id: '20',
-          name: 'チャンピオンズカップ',
-          englishName: 'Champions Cup',
-          date: '2026-12-06T15:40:00',
-          location: '中京',
-          course: 'ダート 1800m',
-          status: 'upcoming'
-        },
-        {
-          id: '21',
-          name: '阪神ジュベナイルフィリーズ',
-          englishName: 'Hanshin Juvenile Fillies',
-          date: '2026-12-13T15:40:00',
-          location: '京都',
-          course: '芝 1600m',
-          status: 'upcoming'
-        },
-        {
-          id: '22',
-          name: '朝日杯フューチュリティステークス',
-          englishName: 'Asahi Hai Futurity Stakes',
-          date: '2026-12-20T15:40:00',
-          location: '京都',
-          course: '芝 1600m',
-          status: 'upcoming'
-        },
-        {
-          id: '23',
-          name: 'ホープフルステークス',
-          englishName: 'Hopeful Stakes',
-          date: '2026-12-26T15:40:00',
-          location: '中山',
-          course: '芝 2000m',
-          status: 'upcoming'
-        },
-        {
-          id: '24',
-          name: '有馬記念',
-          englishName: 'Arima Kinen',
-          date: '2026-12-27T15:40:00',
-          location: '中山',
-          course: '芝 2500m',
-          status: 'upcoming'
-        }
-      ];
-
-// 出走可能馬名プール（カテゴリ別）
-const POOLS = {
-  '3yo-male': [
-    'ロブチェン', 'パントルナイーフ', 'バステール', 'ゴーイントゥスカイ', 'マテンロウゲイル',
-    'アルトラムス', 'リアライズシリウス', 'ライヒスアドラー', 'コンジェスタス', 'アスクエジンバラ',
-    'アウダーシア', 'フォルテアンジェロ', 'メイショウハチコウ', 'エムズビギン', 'ケントン',
-    'グリーンエナジー', 'ショナンガルフ', 'ジャスティンビスタ', 'シュガークン', 'ジューンテイク'
-  ],
-  '3yo-female': [
-    'スターアニス', 'ギャラボーグ', 'ジッピーチューン', 'ジュウリョクピエロ', 'ドリームコア',
-    'ラフターラインズ', 'レガレイラ', 'ステレンボッシュ', 'チェルヴィニア', 'ライトバック',
-    'コガネノソラ', 'アドマイヤベル', 'クイーンズウォーク', 'クリスマスパレード', 'キャットファイト'
-  ],
-  'older': [
-    'クロワデュノール', 'メイショウタバル', 'ダノンデサイル', 'ドウデュース', 'ソールオリエンス',
-    'タスティエーラ', 'ブローザホーン', 'ベラジオオペラ', 'ジャスティンミラノ', 'ジャンタルマンタル',
-    'シックスペンス', 'ワールズエンド', 'ガイアフォース', 'サトノレーヴ', 'レッドモンレーヴ',
-    'コスタノヴァ', 'ウィルソンテソーロ', 'ダブルハートボンド', 'ウインカーネリアン', 'ヴェルテンベルク',
-    'アドマイヤテラ', 'テーオーロイヤル', 'ロデオドライブ', 'アスクイキゴミ', 'アドマイヤクワッズ',
-    'エンブロイダリー', 'カムニャック', 'テンハッピーローズ', 'ソウルラッシュ', 'ロマンチックウォリアー'
-  ]
-};
-
-const STABLES_POOL = [
-  '杉山晴紀 (栗東)', '木村哲也 (美浦)', '中内田充 (栗東)', '国枝栄 (美浦)', '矢作芳人 (栗東)',
-  '友道康夫 (栗東)', '手塚貴久 (美浦)', '堀宣行 (美浦)', '高野友和 (栗東)', '斉藤崇史 (栗東)'
-];
-
-const JOCKEYS_POOL = [
-  '川田将雅', 'C.ルメール', '武豊', '松山弘平', '坂井瑠星', '戸崎圭太', '横山武史', 
-  'M.デムーロ', '西村淳也', '岩田望来', '浜中俊', '菅原明良', '津村明秀', '北村友一'
-];
-
-// ----------------------------------
-// レース結果補完エンジン（ハイドレーション）
-// ----------------------------------
-function getWaku(gate, total) {
-  if (8 >= total) return gate;
-  if (total === 18) {
-    if (2 >= gate) return 1;
-    if (4 >= gate) return 2;
-    if (6 >= gate) return 3;
-    if (8 >= gate) return 4;
-    if (10 >= gate) return 5;
-    if (12 >= gate) return 6;
-    if (15 >= gate) return 7;
-    return 8;
-  }
-  if (total === 17) {
-    if (2 >= gate) return 1;
-    if (4 >= gate) return 2;
-    if (6 >= gate) return 3;
-    if (8 >= gate) return 4;
-    if (10 >= gate) return 5;
-    if (12 >= gate) return 6;
-    if (14 >= gate) return 7;
-    return 8;
-  }
-  if (total === 16) {
-    if (2 >= gate) return 1;
-    if (4 >= gate) return 2;
-    if (6 >= gate) return 3;
-    if (8 >= gate) return 4;
-    if (10 >= gate) return 5;
-    if (12 >= gate) return 6;
-    if (14 >= gate) return 7;
-    return 8;
-  }
-  if (total === 15) {
-    if (2 >= gate) return 1;
-    if (4 >= gate) return 2;
-    if (6 >= gate) return 3;
-    if (8 >= gate) return 4;
-    if (10 >= gate) return 5;
-    if (12 >= gate) return 6;
-    if (13 >= gate) return 7;
-    return 8;
-  }
-  return Math.min(8, Math.ceil(gate / 2));
-}
-
-function hydrateRaceResults(race) {
-  if (race.hydratedResults) return race.hydratedResults;
-  const data = RESULTS_DATA[race.id];
-  if (!data) return [];
-  const results = data.map(mapArrayToResultObj);
-  race.hydratedResults = results;
-  return results;
-}
-
-function mapArrayToResultObj(arr) {
-  return {
-    rank: arr[0],
-    gate: arr[1],
-    horseName: arr[2],
-    sexAge: arr[3],
-    jockeyLoad: arr[4],
-    jockey: arr[5],
-    time: arr[6],
-    margin: arr[7],
-    cornerSequence: arr[8],
-    last3F: arr[9],
-    odds: arr[10],
-    popularity: arr[11],
-    weight: arr[12],
-    weightDiff: arr[13],
-    stable: arr[14]
-  };
 }
 
 function getUniqueGate(usedGates, max) {
