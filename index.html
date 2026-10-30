@@ -937,37 +937,21 @@
       }
     
       /* ----------------------------------
-         予想・攻略ページ 専用スタイル（スマホ最適化・枠色バッジ）
+         予想・攻略ページ 専用スタイル（NetKeiba完全準拠・横スクロールゼロ）
       ---------------------------------- */
+      html, body {
+        max-width: 100vw;
+        overflow-x: hidden;
+      }
+      * {
+        box-sizing: border-box;
+      }
       .app-view {
-        animation: fadeIn 0.25s ease-out;
+        animation: fadeIn 0.2s ease-out;
+        width: 100%;
+        max-width: 100%;
       }
       
-      /* 馬番バッジ（枠色適用・枠列削除対応） */
-      .gate-badge {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 28px;
-        height: 28px;
-        padding: 0 4px;
-        border-radius: 6px;
-        font-weight: 800;
-        font-size: 14px;
-        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, monospace;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-        flex-shrink: 0;
-        line-height: 1;
-      }
-      .gate-badge.waku-1 { background-color: #ffffff; color: #111827; border: 1px solid #cbd5e1; }
-      .gate-badge.waku-2 { background-color: #1e293b; color: #ffffff; border: 1px solid #64748b; }
-      .gate-badge.waku-3 { background-color: #ef4444; color: #ffffff; }
-      .gate-badge.waku-4 { background-color: #3b82f6; color: #ffffff; }
-      .gate-badge.waku-5 { background-color: #eab308; color: #111827; }
-      .gate-badge.waku-6 { background-color: #22c55e; color: #ffffff; }
-      .gate-badge.waku-7 { background-color: #f97316; color: #ffffff; }
-      .gate-badge.waku-8 { background-color: #ec4899; color: #ffffff; }
-
       /* NEXT G1 バナーのクリッカブル装飾 */
       .countdown-section {
         cursor: pointer;
@@ -992,11 +976,12 @@
                     radial-gradient(circle at 10% 80%, rgba(245, 158, 11, 0.08), transparent 50%),
                     var(--bg-surface);
         border: 1px solid var(--border-color);
-        border-radius: 16px;
-        padding: 24px;
-        margin-bottom: 20px;
+        border-radius: 14px;
+        padding: 16px 14px;
+        margin-bottom: 14px;
         position: relative;
         overflow: hidden;
+        width: 100%;
       }
       .pred-breadcrumb {
         display: flex;
@@ -1004,412 +989,411 @@
         gap: 8px;
         font-size: 13px;
         color: var(--text-muted);
-        margin-bottom: 12px;
+        margin-bottom: 8px;
       }
       .pred-breadcrumb a {
         color: var(--primary);
         text-decoration: none;
         cursor: pointer;
-      }
-      .pred-breadcrumb a:hover {
-        text-decoration: underline;
-      }
-      .pred-title-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 16px;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        font-weight: 600;
       }
       .pred-title {
         font-family: var(--font-display);
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 800;
         color: #ffffff;
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 8px;
+        margin: 0 0 8px 0;
       }
       .pred-meta-chips {
         display: flex;
-        gap: 8px;
+        gap: 6px;
         flex-wrap: wrap;
-        margin-top: 12px;
       }
       .pred-chip {
         display: inline-flex;
         align-items: center;
-        gap: 6px;
-        padding: 4px 12px;
-        border-radius: 20px;
+        gap: 4px;
+        padding: 3px 8px;
+        border-radius: 12px;
         background: rgba(255, 255, 255, 0.05);
         border: 1px solid var(--border-color);
-        font-size: 12px;
+        font-size: 11px;
         color: var(--text-secondary);
       }
 
-      /* サブナビゲーションバー（アンカージャンプ） */
-      .pred-subnav {
-        display: flex;
-        gap: 8px;
-        overflow-x: auto;
-        padding: 8px 0;
-        margin-bottom: 20px;
-        border-bottom: 1px solid var(--border-color);
-        scrollbar-width: none;
-        -webkit-overflow-scrolling: touch;
-      }
-      .pred-subnav::-webkit-scrollbar {
-        display: none;
-      }
-      .pred-nav-btn {
-        padding: 8px 14px;
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid var(--border-color);
-        color: var(--text-secondary);
-        font-size: 12px;
-        font-weight: 600;
-        cursor: pointer;
-        white-space: nowrap;
-        transition: all 0.2s;
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
+      /* モバイル専用 4分割クイックジャンプナビ */
+      .pred-quick-nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 6px;
+        margin-bottom: 14px;
+        width: 100%;
       }
-      .pred-nav-btn:hover {
-        background: rgba(16, 185, 129, 0.15);
-        border-color: var(--primary);
-        color: #ffffff;
-      }
-
-      /* セクション共通 */
-      .pred-section {
+      .btn-quick-nav {
         background: var(--bg-surface);
         border: 1px solid var(--border-color);
-        border-radius: 14px;
-        padding: 22px;
-        margin-bottom: 20px;
-      }
-      .pred-section-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-bottom: 16px;
-        padding-bottom: 12px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      }
-      .pred-section-title {
-        font-size: 17px;
-        font-weight: 700;
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-      .pred-section-title i {
-        color: var(--gold);
-      }
-
-      /* ビュー切り替えボタン */
-      .view-toggle-group {
-        display: inline-flex;
-        background: rgba(0, 0, 0, 0.35);
-        border: 1px solid var(--border-color);
+        color: var(--text-secondary);
+        padding: 9px 4px;
         border-radius: 8px;
-        padding: 2px;
-        gap: 2px;
-      }
-      .btn-view-toggle {
-        background: none;
-        border: none;
-        color: var(--text-muted);
-        padding: 5px 12px;
-        border-radius: 6px;
         font-size: 12px;
-        font-weight: 600;
-        cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-        gap: 4px;
-        transition: all 0.2s;
-      }
-      .btn-view-toggle.active {
-        background: rgba(255, 255, 255, 0.12);
-        color: #ffffff;
         font-weight: 700;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.15s;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+      }
+      .btn-quick-nav:hover, .btn-quick-nav:active {
+        background: rgba(16, 185, 129, 0.15);
+        border-color: var(--primary);
+        color: #fff;
       }
 
-      /* 印セレクター */
-      .mark-btn {
-        display: inline-flex;
+      /* -------------------------------------------
+         NetKeiba完全準拠 モバイル出馬表
+      ------------------------------------------- */
+      .netkeiba-horse-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        background: var(--bg-surface);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      .nh-row-container {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        transition: background-color 0.15s;
+        width: 100%;
+      }
+      .nh-row-container:last-child {
+        border-bottom: none;
+      }
+
+      .nh-main-row {
+        display: flex;
+        align-items: stretch;
+        min-height: 58px;
+        width: 100%;
+        cursor: pointer;
+        user-select: none;
+        background: var(--bg-card);
+      }
+      .nh-main-row:active {
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      /* 1. 馬番（枠色セル） */
+      .nh-gate-cell {
+        width: 36px;
+        min-width: 36px;
+        display: flex;
         align-items: center;
         justify-content: center;
-        width: 32px;
-        height: 32px;
-        border-radius: 6px;
+        font-size: 16px;
         font-weight: 800;
-        font-size: 14px;
-        cursor: pointer;
-        border: 1px dashed rgba(255, 255, 255, 0.25);
-        background: rgba(255, 255, 255, 0.03);
-        color: var(--text-muted);
-        transition: all 0.18s;
-        user-select: none;
+        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, monospace;
         flex-shrink: 0;
       }
-      .mark-btn:hover {
-        border-color: var(--gold);
+      .nh-gate-cell.waku-1 { background-color: #ffffff; color: #111827; border-right: 1px solid #cbd5e1; }
+      .nh-gate-cell.waku-2 { background-color: #1e293b; color: #ffffff; border-right: 1px solid #475569; }
+      .nh-gate-cell.waku-3 { background-color: #ef4444; color: #ffffff; }
+      .nh-gate-cell.waku-4 { background-color: #3b82f6; color: #ffffff; }
+      .nh-gate-cell.waku-5 { background-color: #eab308; color: #111827; }
+      .nh-gate-cell.waku-6 { background-color: #22c55e; color: #ffffff; }
+      .nh-gate-cell.waku-7 { background-color: #f97316; color: #ffffff; }
+      .nh-gate-cell.waku-8 { background-color: #ec4899; color: #ffffff; }
+
+      /* 2. 印ボタンセル */
+      .nh-mark-cell {
+        width: 48px;
+        min-width: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.25);
+        border-right: 1px solid rgba(255, 255, 255, 0.06);
+        flex-shrink: 0;
+      }
+      .nh-mark-btn {
+        width: 38px;
+        height: 38px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 800;
+        cursor: pointer;
+        border: 1.5px solid rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--text-muted);
+        transition: transform 0.1s, box-shadow 0.15s;
+      }
+      .nh-mark-btn:active {
+        transform: scale(0.92);
+      }
+      .nh-mark-btn.mark-honmei {
+        background: linear-gradient(135deg, #ef4444, #dc2626);
         color: #fff;
-        transform: scale(1.08);
+        border-color: #f87171;
+        box-shadow: 0 2px 8px rgba(239, 68, 68, 0.45);
       }
-      .mark-btn.mark-honmei {
-        background: linear-gradient(135deg, #ef4444, #b91c1c);
-        color: #ffffff;
-        border: 1px solid #f87171;
-        box-shadow: 0 2px 8px rgba(239, 68, 68, 0.5);
+      .nh-mark-btn.mark-taiko {
+        background: linear-gradient(135deg, #3b82f6, #2563eb);
+        color: #fff;
+        border-color: #60a5fa;
+        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.45);
       }
-      .mark-btn.mark-taiko {
-        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-        color: #ffffff;
-        border: 1px solid #60a5fa;
-        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.5);
+      .nh-mark-btn.mark-tanana {
+        background: linear-gradient(135deg, #10b981, #059669);
+        color: #fff;
+        border-color: #34d399;
+        box-shadow: 0 2px 8px rgba(16, 185, 129, 0.45);
       }
-      .mark-btn.mark-tanana {
-        background: linear-gradient(135deg, #10b981, #047857);
-        color: #ffffff;
-        border: 1px solid #34d399;
-        box-shadow: 0 2px 8px rgba(16, 185, 129, 0.5);
+      .nh-mark-btn.mark-renka {
+        background: linear-gradient(135deg, #f59e0b, #d97706);
+        color: #fff;
+        border-color: #fbbf24;
+        box-shadow: 0 2px 8px rgba(245, 158, 11, 0.45);
       }
-      .mark-btn.mark-renka {
-        background: linear-gradient(135deg, #f59e0b, #b45309);
-        color: #ffffff;
-        border: 1px solid #fbbf24;
-        box-shadow: 0 2px 8px rgba(245, 158, 11, 0.5);
+      .nh-mark-btn.mark-ana {
+        background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+        color: #fff;
+        border-color: #a78bfa;
+        box-shadow: 0 2px 8px rgba(139, 92, 246, 0.45);
       }
-      .mark-btn.mark-ana {
-        background: linear-gradient(135deg, #8b5cf6, #6d28d9);
-        color: #ffffff;
-        border: 1px solid #a78bfa;
-        box-shadow: 0 2px 8px rgba(139, 92, 246, 0.5);
-      }
-      .mark-btn.mark-keshi {
+      .nh-mark-btn.mark-keshi {
         background: rgba(100, 116, 139, 0.3);
         color: #94a3b8;
-        border: 1px solid rgba(148, 163, 184, 0.3);
+        border-color: rgba(148, 163, 184, 0.4);
         text-decoration: line-through;
       }
 
-      /* 印ポップオーバー */
-      .mark-popover {
-        position: fixed;
-        z-index: 10000;
-        display: flex;
-        gap: 6px;
-        background: #111b17;
-        border: 1px solid var(--border-hover);
-        border-radius: 8px;
-        padding: 8px;
-        box-shadow: 0 12px 30px rgba(0,0,0,0.85);
-      }
-      .mark-pop-item {
-        width: 32px;
-        height: 32px;
-        border-radius: 6px;
-        font-weight: 800;
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: transform 0.15s;
-      }
-      .mark-pop-item:hover {
-        transform: scale(1.15);
-      }
-
-      /* スマホ向け出走馬カード */
-      .pred-mobile-cards {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-bottom: 16px;
-      }
-      .mobile-horse-card {
-        background: var(--bg-card);
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-        padding: 12px 14px;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-        transition: border-color 0.2s;
-      }
-      .mobile-horse-card:active {
-        border-color: var(--primary);
-      }
-      .mhc-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 8px;
-      }
-      .mhc-left {
-        display: flex;
-        align-items: center;
-        gap: 8px;
+      /* 3. 馬情報セル（中央） */
+      .nh-info-cell {
         flex: 1;
         min-width: 0;
+        padding: 8px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3px;
       }
-      .mhc-name {
-        font-size: 16px;
+      .nh-name-row {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .nh-horse-name {
+        font-size: 15px;
         font-weight: 800;
-        color: #ffffff;
+        color: #60a5fa;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        letter-spacing: -0.2px;
       }
-      .mhc-sub {
-        font-size: 12px;
-        color: var(--text-muted);
-        white-space: nowrap;
-      }
-      .mhc-right {
+      .nh-sub-row {
         display: flex;
         align-items: center;
-        gap: 6px;
-      }
-      .mhc-body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 6px 12px;
-        background: rgba(0, 0, 0, 0.25);
-        border-radius: 8px;
-        padding: 8px 12px;
-        font-size: 13px;
-      }
-      .mhc-stat {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 6px;
-      }
-      .mhc-label {
-        color: var(--text-muted);
+        flex-wrap: wrap;
+        gap: 4px 8px;
         font-size: 12px;
+        color: var(--text-secondary);
       }
-      .mhc-val {
+      .nh-jockey {
+        color: #38bdf8;
         font-weight: 700;
-        color: var(--text-primary);
       }
-      .mhc-val.highlight {
-        color: var(--gold);
+      .nh-load {
         font-family: monospace;
-        font-size: 14px;
+        color: var(--text-muted);
       }
-      .mhc-footer {
+      .nh-expand-hint {
+        font-size: 10px;
+        color: var(--gold);
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        font-size: 11px;
-        color: var(--text-muted);
-        padding-top: 4px;
-        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        gap: 2px;
+        margin-left: auto;
       }
 
-      /* 調教評価バッジ */
-      .grade-badge {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2px 7px;
-        border-radius: 4px;
-        font-weight: 800;
-        font-size: 11px;
-      }
-      .grade-S { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; box-shadow: 0 0 10px rgba(245, 158, 11, 0.4); }
-      .grade-A { background: linear-gradient(135deg, #10b981, #059669); color: #fff; }
-      .grade-B\+ { background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; }
-      .grade-B { background: rgba(255, 255, 255, 0.1); color: var(--text-secondary); }
-
-      /* 人気バッジ */
-      .pop-badge {
-        display: inline-block;
-        padding: 2px 6px;
-        border-radius: 4px;
-        font-size: 11px;
-        font-weight: 700;
-      }
-      .pop-1 { background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); }
-      .pop-2 { background: rgba(59, 130, 246, 0.2); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.4); }
-      .pop-3 { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
-      .pop-other { background: rgba(255, 255, 255, 0.05); color: var(--text-muted); }
-
-      /* ソートボタン */
-      .btn-sort {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid var(--border-color);
-        color: var(--text-muted);
-        padding: 5px 12px;
-        border-radius: 6px;
-        font-size: 12px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.2s;
-      }
-      .btn-sort.active {
-        background: var(--gold);
-        border-color: var(--gold);
-        color: #111;
-        font-weight: 700;
-      }
-
-      /* 調教カードグリッド */
-      .training-cards-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-        gap: 14px;
-      }
-      .train-card {
-        background: var(--bg-card);
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-        padding: 16px;
+      /* 4. オッズ・人気セル（右端） */
+      .nh-odds-cell {
+        width: 68px;
+        min-width: 68px;
+        padding: 6px 8px 6px 4px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        transition: all 0.2s;
+        align-items: flex-end;
+        justify-content: center;
+        border-left: 1px solid rgba(255, 255, 255, 0.05);
+        flex-shrink: 0;
       }
-      .train-card:hover {
-        border-color: var(--border-hover);
-        background: var(--bg-card-hover);
+      .nh-odds-val {
+        font-size: 15px;
+        font-weight: 800;
+        font-family: monospace;
+        color: #ffffff;
+        line-height: 1.1;
       }
-      .train-card-top {
+      .nh-odds-val.highlight {
+        color: #ef4444;
+      }
+      .nh-pop-val {
+        font-size: 11px;
+        color: var(--text-muted);
+        margin-top: 2px;
+      }
+      .nh-pop-val.top3 {
+        color: var(--gold);
+        font-weight: 700;
+      }
+
+      /* 5. アコーディオン展開詳細エリア（タップで展開） */
+      .nh-detail-drawer {
+        display: none;
+        background: rgba(0, 0, 0, 0.45);
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        padding: 12px 14px;
+        font-size: 13px;
+        animation: fadeIn 0.18s ease-out;
+      }
+      .nh-detail-drawer.open {
+        display: block;
+      }
+      .nh-drawer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px 12px;
+        margin-bottom: 8px;
+      }
+      .nh-drawer-stat {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 8px;
-      }
-      .train-clock {
-        background: rgba(0, 0, 0, 0.35);
-        border: 1px solid rgba(255, 255, 255, 0.06);
+        background: rgba(255, 255, 255, 0.03);
         border-radius: 6px;
-        padding: 8px 12px;
-        font-family: monospace;
+        padding: 6px 10px;
         font-size: 12px;
-        color: var(--gold);
       }
-      .train-comment {
-        font-size: 13px;
+      .nh-drawer-comment {
+        font-size: 12px;
         line-height: 1.6;
         color: var(--text-secondary);
-        border-left: 2px solid var(--primary);
-        padding-left: 10px;
-        margin-top: 4px;
+        background: rgba(16, 185, 129, 0.08);
+        border-left: 3px solid var(--primary);
+        border-radius: 4px;
+        padding: 8px 10px;
+        margin-top: 6px;
+      }
+
+      /* 6. モバイル用 印選択ボトムシート（100%確実にタップ可能） */
+      .mark-sheet-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      .mark-sheet-backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(2px);
+      }
+      .mark-sheet-content {
+        position: relative;
+        z-index: 100000;
+        background: #111a16;
+        border-top: 1px solid var(--border-hover);
+        border-radius: 20px 20px 0 0;
+        padding: 20px 18px 34px 18px;
+        box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.9);
+        animation: slideUp 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+      }
+      @keyframes slideUp {
+        from { transform: translateY(100%); }
+        to { transform: translateY(0); }
+      }
+      .mark-sheet-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .mark-sheet-close {
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        color: #fff;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .mark-sheet-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .mark-sheet-item {
+        min-height: 48px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 14px;
+        gap: 10px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 14px;
+        transition: transform 0.1s;
+      }
+      .mark-sheet-item:active {
+        transform: scale(0.97);
+      }
+      .mark-sheet-item .ms-sym {
+        font-size: 20px;
+        font-weight: 800;
+        width: 26px;
+        text-align: center;
+      }
+      .mark-sheet-clear {
+        width: 100%;
+        min-height: 44px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px dashed rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        color: var(--text-muted);
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 10px;
       }
 
       /* オカルトカード（X発祥スタイル） */
@@ -1417,21 +1401,17 @@
         background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.12), transparent 70%), var(--bg-card);
         border: 1px solid rgba(139, 92, 246, 0.28);
         border-radius: 14px;
-        padding: 18px 20px;
-        margin-bottom: 14px;
-        transition: all 0.2s;
-      }
-      .occult-card:hover {
-        border-color: rgba(139, 92, 246, 0.6);
-        box-shadow: 0 4px 20px rgba(139, 92, 246, 0.15);
+        padding: 16px;
+        margin-bottom: 12px;
+        width: 100%;
       }
       .occult-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 10px;
+        gap: 6px;
+        margin-bottom: 8px;
       }
       .occult-badge {
         background: linear-gradient(135deg, #8b5cf6, #6d28d9);
@@ -1455,24 +1435,24 @@
         font-size: 15px;
         font-weight: 800;
         color: #ffffff;
-        margin: 0 0 10px 0;
+        margin: 0 0 8px 0;
         line-height: 1.4;
       }
       .occult-content {
         font-size: 13px;
-        line-height: 1.7;
+        line-height: 1.6;
         color: var(--text-secondary);
-        margin: 0 0 12px 0;
+        margin: 0 0 10px 0;
       }
       .occult-targets {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 6px;
         background: rgba(0, 0, 0, 0.35);
         border: 1px solid rgba(139, 92, 246, 0.2);
         border-radius: 8px;
-        padding: 8px 12px;
+        padding: 8px 10px;
       }
       .occult-target-label {
         font-size: 12px;
@@ -1485,76 +1465,50 @@
       .occult-target-chip {
         display: inline-flex;
         align-items: center;
-        gap: 6px;
+        gap: 5px;
         background: rgba(255, 255, 255, 0.06);
         border: 1px solid var(--border-color);
         border-radius: 6px;
-        padding: 3px 8px;
-        font-size: 13px;
+        padding: 3px 6px;
+        font-size: 12px;
         color: #fff;
       }
 
-      /* 隊列マップ */
-      .pace-lane {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        padding: 12px 16px;
-        background: rgba(255, 255, 255, 0.02);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        border-radius: 6px;
-        margin-bottom: 6px;
-      }
-      .pace-tag {
-        min-width: 110px;
-        font-weight: 700;
-        font-size: 13px;
-        color: var(--gold);
-      }
-      .pace-horses {
-        font-size: 14px;
-        color: var(--text-primary);
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 8px;
-      }
-
-      /* マイ予想サマリー */
+      /* マイ予想サマリー（2列） */
       .my-summary-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-        gap: 10px;
-        margin-bottom: 18px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        margin-bottom: 16px;
+        width: 100%;
       }
       .my-summary-card {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
         background: rgba(255, 255, 255, 0.03);
         border: 1px solid var(--border-color);
         border-radius: 8px;
-        padding: 10px 14px;
+        padding: 8px 10px;
+        min-width: 0;
       }
       .my-summary-name {
         font-weight: 700;
         font-size: 13px;
         color: #ffffff;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-        align-items: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       /* メモエリア */
       .memo-box {
         width: 100%;
-        min-height: 150px;
+        min-height: 140px;
         background: rgba(0, 0, 0, 0.45);
         border: 1px solid var(--border-color);
         border-radius: 10px;
-        padding: 14px;
+        padding: 12px;
         color: var(--text-primary);
         font-size: 14px;
         line-height: 1.6;
@@ -1568,86 +1522,36 @@
         box-shadow: 0 0 0 2px var(--primary-glow);
       }
 
-      /* レスポンシブ＆スマホ最適化 */
+      /* モバイル調整 */
       @media (max-width: 768px) {
-        .pred-header-card {
-          padding: 16px 14px;
-          border-radius: 12px;
-          margin-bottom: 16px;
+        .main-content {
+          padding: 8px 6px !important;
+          margin-left: 0 !important;
+          width: 100% !important;
+          max-width: 100vw !important;
+          overflow-x: hidden !important;
         }
-        .pred-title {
-          font-size: 20px;
-          gap: 8px;
+        .countdown-section {
+          padding: 16px 14px !important;
+          border-radius: 12px !important;
         }
-        .pred-meta-chips {
-          gap: 6px;
+        .race-title {
+          font-size: 20px !important;
         }
-        .pred-chip {
-          padding: 4px 10px;
-          font-size: 12px;
+        .countdown-timer {
+          gap: 6px !important;
         }
-        .pred-subnav {
-          padding: 8px 0;
-          margin-bottom: 16px;
-          gap: 6px;
+        .time-block {
+          min-width: 58px !important;
+          padding: 6px 4px !important;
         }
-        .pred-nav-btn {
-          padding: 6px 12px;
-          font-size: 12px;
+        .time-num {
+          font-size: 22px !important;
         }
         .pred-section {
-          padding: 16px 12px;
-          border-radius: 12px;
-          margin-bottom: 16px;
-        }
-        .pred-section-header {
-          margin-bottom: 12px;
-          padding-bottom: 8px;
-        }
-        .pred-section-title {
-          font-size: 16px;
-        }
-        .my-summary-grid {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 8px;
-        }
-        .my-summary-card {
-          padding: 8px 10px;
-        }
-        .training-cards-grid {
-          grid-template-columns: 1fr;
-          gap: 12px;
-        }
-        .occult-card {
-          padding: 14px;
-        }
-        .occult-targets {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 6px;
-        }
-        .pace-lane {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 6px;
-          padding: 10px 12px;
-        }
-        .pace-tag {
-          min-width: auto;
-        }
-        .memo-box {
-          min-height: 140px;
-          padding: 12px;
-          font-size: 13px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .main-content {
-          padding: 12px 6px;
-        }
-        .my-summary-grid {
-          grid-template-columns: 1fr;
+          padding: 14px 10px !important;
+          border-radius: 12px !important;
+          margin-bottom: 14px !important;
         }
       }
 </style>
@@ -1703,16 +1607,16 @@
         <section class="countdown-section" id="hero-countdown-banner">
           <div class="countdown-content">
             <div class="next-badge">
-              <span class="pulse-dot"></span> NEXT G1 RACE (タップで予想ページへ)
+              <span class="pulse-dot"></span> NEXT G1 RACE (タップで予想へ)
             </div>
             <h2 class="race-title" id="next-race-name">天皇賞（秋）</h2>
             <p class="race-meta" id="next-race-meta">2026.11.01 (日) 東京 芝 2000m (G1)</p>
-            <div style="margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap;">
-              <button id="btn-hero-prediction" class="btn-hero-action" style="background: var(--gold); color: #111; border: none; padding: 9px 18px; border-radius: 8px; font-weight: 800; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);">
+            <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
+              <button id="btn-hero-prediction" class="btn-hero-action" style="background: var(--gold); color: #111; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 800; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);">
                 🎯 天皇賞（秋）予想・攻略を見る
               </button>
-              <button id="btn-hero-detail" class="btn-hero-action" style="background: rgba(255, 255, 255, 0.1); color: #fff; border: 1px solid var(--border-color); padding: 9px 16px; border-radius: 8px; font-weight: 700; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px;">
-                📋 出馬表・枠順モーダル
+              <button id="btn-hero-detail" class="btn-hero-action" style="background: rgba(255, 255, 255, 0.1); color: #fff; border: 1px solid var(--border-color); padding: 8px 14px; border-radius: 8px; font-weight: 700; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                📋 出馬表モーダル
               </button>
             </div>
           </div>
@@ -1761,206 +1665,139 @@
           <!-- 予想ページヘッダー -->
           <div class="pred-header-card">
             <div class="pred-breadcrumb">
-              <a id="btn-back-to-calendar"><i data-lucide="arrow-left" style="width: 14px; height: 14px; display: inline;"></i> ダッシュボードに戻る</a>
+              <a id="btn-back-to-calendar"><i data-lucide="arrow-left" style="width: 14px; height: 14px;"></i> ダッシュボードに戻る</a>
               <span>/</span>
               <span>2026年 G1第16戦</span>
             </div>
-            <div class="pred-title-row">
-              <div>
-                <h1 class="pred-title">
-                  <span>第174回 天皇賞（秋）</span>
-                  <span style="font-size: 12px; background: rgba(16, 185, 129, 0.2); color: var(--primary); padding: 4px 10px; border-radius: 6px; font-weight: 700; border: 1px solid rgba(16,185,129,0.3);">枠順確定済</span>
-                </h1>
-                <div class="pred-meta-chips">
-                  <span class="pred-chip"><i data-lucide="calendar"></i> 2026年11月1日(日) 15:40発走</span>
-                  <span class="pred-chip"><i data-lucide="map-pin"></i> 東京競馬場 芝2000m (Bコース)</span>
-                  <span class="pred-chip"><i data-lucide="award"></i> 3歳以上オープン・定量 (全17頭)</span>
-                </div>
-              </div>
+            <h1 class="pred-title">
+              <span>第174回 天皇賞（秋）</span>
+              <span style="font-size: 11px; background: rgba(16, 185, 129, 0.2); color: var(--primary); padding: 2px 8px; border-radius: 4px; font-weight: 700; border: 1px solid rgba(16,185,129,0.3);">枠順確定済</span>
+            </h1>
+            <div class="pred-meta-chips">
+              <span class="pred-chip"><i data-lucide="calendar"></i> 11/1(日) 15:40発走</span>
+              <span class="pred-chip"><i data-lucide="map-pin"></i> 東京芝2000m (Bコース)</span>
+              <span class="pred-chip"><i data-lucide="award"></i> 定量 / 全17頭</span>
             </div>
           </div>
 
-          <!-- アンカーサブナビゲーション -->
-          <nav class="pred-subnav">
-            <a href="#sec-starters" class="pred-nav-btn"><i data-lucide="list"></i> 出走表・印・オッズ</a>
-            <a href="#sec-training" class="pred-nav-btn"><i data-lucide="activity"></i> 調教評価</a>
-            <a href="#sec-jockeys" class="pred-nav-btn"><i data-lucide="user-check"></i> 騎手相性</a>
-            <a href="#sec-waku" class="pred-nav-btn"><i data-lucide="grid"></i> コース・枠順</a>
-            <a href="#sec-track" class="pred-nav-btn"><i data-lucide="wind"></i> 馬場状態</a>
-            <a href="#sec-trends" class="pred-nav-btn"><i data-lucide="bar-chart-2"></i> レース傾向</a>
-            <a href="#sec-occult" class="pred-nav-btn" style="border-color: rgba(139, 92, 246, 0.4); color: #c084fc;"><i data-lucide="sparkles"></i> オカルト・サイン</a>
-            <a href="#sec-pace" class="pred-nav-btn"><i data-lucide="compass"></i> 展開マップ</a>
-            <a href="#sec-memo" class="pred-nav-btn" style="border-color: rgba(245, 158, 11, 0.4); color: var(--gold);"><i data-lucide="edit-3"></i> 買い目メモ</a>
-          </nav>
+          <!-- クイックジャンプナビ（親指ワンタップ） -->
+          <div class="pred-quick-nav">
+            <a href="#sec-starters" class="btn-quick-nav">
+              <i data-lucide="list" style="width: 16px; height: 16px;"></i>
+              <span>出馬表</span>
+            </a>
+            <a href="#sec-memo" class="btn-quick-nav">
+              <i data-lucide="check-square" style="width: 16px; height: 16px; color: var(--gold);"></i>
+              <span style="color: var(--gold);">予想印</span>
+            </a>
+            <a href="#sec-occult" class="btn-quick-nav">
+              <i data-lucide="sparkles" style="width: 16px; height: 16px; color: #c084fc;"></i>
+              <span style="color: #c084fc;">Xオカルト</span>
+            </a>
+            <a href="#sec-memo" class="btn-quick-nav">
+              <i data-lucide="edit-3" style="width: 16px; height: 16px;"></i>
+              <span>メモ帳</span>
+            </a>
+          </div>
 
-          <!-- 1. 出走表 ＆ リアルタイムオッズ ＆ 印付け -->
-          <section id="sec-starters" class="pred-section">
-            <div class="pred-section-header">
-              <div class="pred-section-title">
-                <i data-lucide="list"></i> 出走馬一覧 ＆ リアルタイムオッズ・印
+          <!-- 1. NetKeiba風 出走馬一覧＆印付け（横スクロール完全ゼロ） -->
+          <section id="sec-starters" style="margin-bottom: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; padding: 0 4px;">
+              <div style="font-size: 14px; font-weight: 800; color: #fff; display: flex; align-items: center; gap: 6px;">
+                <span>出馬表（全17頭）</span>
+                <span id="odds-update-time" style="font-size: 10px; color: var(--text-muted); font-weight: normal;">● リアルタイム</span>
               </div>
-              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                <div class="view-toggle-group">
-                  <button id="btn-view-card" class="btn-view-toggle active" data-view="card"><i data-lucide="smartphone"></i> カード</button>
-                  <button id="btn-view-table" class="btn-view-toggle" data-view="table"><i data-lucide="table"></i> 表形式</button>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <div style="display: flex; gap: 2px;">
+                  <button id="btn-sort-gate" class="btn-sort active" data-sort="gate" style="padding: 4px 8px; font-size: 11px;">馬番順</button>
+                  <button id="btn-sort-pop" class="btn-sort" data-sort="pop" style="padding: 4px 8px; font-size: 11px;">人気順</button>
                 </div>
-                <div style="display: flex; gap: 4px;">
-                  <button id="btn-sort-gate" class="btn-sort active" data-sort="gate">馬番順</button>
-                  <button id="btn-sort-pop" class="btn-sort" data-sort="pop">人気順</button>
-                </div>
-                <button id="btn-refresh-odds" style="background: rgba(16,185,129,0.15); border: 1px solid var(--primary); color: var(--primary); padding: 5px 12px; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 4px;">
-                  <i data-lucide="refresh-cw" style="width: 13px; height: 13px;"></i> オッズ更新
+                <button id="btn-refresh-odds" style="background: rgba(16,185,129,0.15); border: 1px solid var(--primary); color: var(--primary); padding: 4px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer;">
+                  更新
                 </button>
-                <span id="odds-update-time" style="font-size: 11px; color: var(--text-muted);">● リアルタイム</span>
               </div>
             </div>
 
-            <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.2); border-radius: 8px; padding: 10px 14px; margin-bottom: 14px; font-size: 12px; color: var(--text-secondary); display: flex; align-items: center; gap: 10px;">
-              <i data-lucide="info" style="color: var(--gold); flex-shrink: 0; width: 16px; height: 16px;"></i>
-              <span>各馬の<strong>「印」ボタン</strong>をタップして◎〜消を選択可能。馬番の背景色がJRA公式の枠色に対応しています。</span>
-            </div>
-
-            <!-- スマホ向けカード表示 -->
-            <div id="pred-mobile-cards" class="pred-mobile-cards">
+            <!-- NetKeiba完全再現 リストコンテナ（横スクロール一切なし） -->
+            <div class="netkeiba-horse-list" id="netkeiba-horse-list">
               <!-- JSで動的生成 -->
             </div>
-
-            <!-- デスクトップ / テーブル表示 -->
-            <div class="table-scroll-container pred-table-wrap" id="pred-table-wrap" style="display: none;">
-              <table class="result-table" style="width: 100%;">
-                <thead>
-                  <tr>
-                    <th style="width: 48px; text-align: center;">馬番</th>
-                    <th style="width: 52px; text-align: center;">印</th>
-                    <th>馬名 / 厩舎</th>
-                    <th style="width: 55px;">性齢</th>
-                    <th style="width: 55px;">斤量</th>
-                    <th style="width: 90px;">騎手</th>
-                    <th style="width: 85px; text-align: right;">単勝</th>
-                    <th style="width: 85px; text-align: right;">複勝</th>
-                    <th style="width: 65px; text-align: center;">人気</th>
-                    <th style="width: 60px; text-align: center;">調教</th>
-                  </tr>
-                </thead>
-                <tbody id="pred-starters-tbody">
-                  <!-- JSで動的生成 -->
-                </tbody>
-              </table>
-            </div>
+            
+            <p style="font-size: 11px; color: var(--text-muted); text-align: center; margin-top: -12px; margin-bottom: 18px;">
+              💡 馬名をタップすると調教時計・陣営コメント・騎手相性が下に展開します
+            </p>
           </section>
 
-          <!-- 2. 調教コメントまとめ & 追い切り採点 -->
-          <section id="sec-training" class="pred-section">
-            <div class="pred-section-header">
-              <div class="pred-section-title">
-                <i data-lucide="activity"></i> 追い切り時計 ＆ 陣営調教コメントまとめ
+          <!-- 2. マイ予想印サマリー ＆ 買い目メモ -->
+          <section id="sec-memo" class="pred-section" style="border-color: rgba(245, 158, 11, 0.4);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <h3 style="font-size: 15px; font-weight: 800; color: var(--gold); margin: 0; display: flex; align-items: center; gap: 6px;">
+                <i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> あなたの予想印サマリー
+              </h3>
+              <div style="display: flex; gap: 6px;">
+                <button id="btn-copy-memo" style="background: rgba(245, 158, 11, 0.15); border: 1px solid var(--gold); color: var(--gold); padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer;">
+                  コピー
+                </button>
+                <button id="btn-clear-memo" style="background: rgba(239, 68, 68, 0.15); border: 1px solid #ef4444; color: #ef4444; padding: 4px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer;">
+                  クリア
+                </button>
               </div>
-              <span style="font-size: 12px; color: var(--text-muted);">S: 絶好調 / A: 好調 / B+: 上昇気配</span>
             </div>
-            <div class="training-cards-grid" id="pred-training-grid">
-              <!-- JSで動的生成 -->
+
+            <!-- マイ印サマリー（2列） -->
+            <div class="my-summary-grid">
+              <div class="my-summary-card">
+                <span class="nh-mark-btn mark-honmei" style="width: 28px; height: 28px; font-size: 13px;">◎</span>
+                <div style="flex: 1; min-width: 0;">
+                  <div style="font-size: 10px; color: var(--text-muted);">本命</div>
+                  <div class="my-summary-name" id="summary-honmei">未選択</div>
+                </div>
+              </div>
+              <div class="my-summary-card">
+                <span class="nh-mark-btn mark-taiko" style="width: 28px; height: 28px; font-size: 13px;">○</span>
+                <div style="flex: 1; min-width: 0;">
+                  <div style="font-size: 10px; color: var(--text-muted);">対抗</div>
+                  <div class="my-summary-name" id="summary-taiko">未選択</div>
+                </div>
+              </div>
+              <div class="my-summary-card">
+                <span class="nh-mark-btn mark-tanana" style="width: 28px; height: 28px; font-size: 13px;">▲</span>
+                <div style="flex: 1; min-width: 0;">
+                  <div style="font-size: 10px; color: var(--text-muted);">単穴</div>
+                  <div class="my-summary-name" id="summary-tanana">未選択</div>
+                </div>
+              </div>
+              <div class="my-summary-card">
+                <span class="nh-mark-btn mark-renka" style="width: 28px; height: 28px; font-size: 13px;">△</span>
+                <div style="flex: 1; min-width: 0;">
+                  <div style="font-size: 10px; color: var(--text-muted);">連下</div>
+                  <div class="my-summary-name" id="summary-renka">未選択</div>
+                </div>
+              </div>
+              <div class="my-summary-card" style="grid-column: span 2;">
+                <span class="nh-mark-btn mark-ana" style="width: 28px; height: 28px; font-size: 13px;">☆</span>
+                <div style="flex: 1; min-width: 0;">
+                  <div style="font-size: 10px; color: var(--text-muted);">特注穴馬</div>
+                  <div class="my-summary-name" id="summary-ana">未選択</div>
+                </div>
+              </div>
             </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span style="font-size: 13px; font-weight: 700; color: #fff;">📝 買い目・検討メモ（自動保存）</span>
+              <span id="memo-save-status" style="font-size: 10px; color: var(--primary);">💾 自動保存中</span>
+            </div>
+            <textarea id="pred-memo-input" class="memo-box" placeholder="例:&#10;馬連: 1 - 7 (5,000円)&#10;3連複: 1, 7 - 1, 3, 7 - 1, 2, 3, 7, 8, 9, 10, 17&#10;メモ: クロワデュノール最内枠とC.デムーロで盤石。"></textarea>
           </section>
 
-          <!-- 3. 騎手相性・乗り替わり分析 -->
-          <section id="sec-jockeys" class="pred-section">
-            <div class="pred-section-header">
-              <div class="pred-section-title">
-                <i data-lucide="user-check"></i> 騎手×コース相性 ＆ 乗り替わり評価
-              </div>
-              <span style="font-size: 12px; color: var(--text-muted);">東京芝2000m・秋の府中実績</span>
-            </div>
-            <div class="table-scroll-container">
-              <table class="result-table" style="width: 100%;">
-                <thead>
-                  <tr>
-                    <th>騎手</th>
-                    <th>騎乗馬</th>
-                    <th style="text-align: right;">東京芝 勝率</th>
-                    <th style="text-align: right;">東京芝 複勝率</th>
-                    <th>乗り替わり区分</th>
-                    <th>適性レーティング</th>
-                    <th>分析寸評</th>
-                  </tr>
-                </thead>
-                <tbody id="pred-jockeys-tbody">
-                  <!-- JSで動的生成 -->
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          <!-- 4. 枠順・コース特性 -->
-          <section id="sec-waku" class="pred-section">
-            <div class="pred-section-header">
-              <div class="pred-section-title">
-                <i data-lucide="grid"></i> 東京芝2000m 過去10年の枠順傾向
-              </div>
-              <span style="font-size: 12px; color: var(--primary);">スタート直後の2コーナーポケットが鍵</span>
-            </div>
-            <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 14px;" id="pred-waku-desc"></p>
-            <div class="table-scroll-container">
-              <table class="result-table" style="width: 100%;">
-                <thead>
-                  <tr>
-                    <th style="width: 60px; text-align: center;">枠番</th>
-                    <th style="text-align: right; width: 90px;">勝率</th>
-                    <th style="text-align: right; width: 90px;">複勝率</th>
-                    <th>コース傾向 ＆ 評価</th>
-                  </tr>
-                </thead>
-                <tbody id="pred-waku-tbody">
-                  <!-- JSで動的生成 -->
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          <!-- 5. 馬場状態・トラックバイアス -->
-          <section id="sec-track" class="pred-section">
-            <div class="pred-section-header">
-              <div class="pred-section-title">
-                <i data-lucide="wind"></i> 馬場状態 ＆ 想定トラックバイアス
-              </div>
-              <span style="font-size: 12px; color: var(--gold);">日曜東京: 晴れ / 良馬場想定</span>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 16px;">
-              <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); border-radius: 8px; padding: 12px;">
-                <div style="font-size: 11px; color: var(--text-muted);">コース使用</div>
-                <div style="font-weight: 700; font-size: 15px; color: #fff; margin-top: 4px;" id="track-course-usage">Bコース使用</div>
-              </div>
-              <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); border-radius: 8px; padding: 12px;">
-                <div style="font-size: 11px; color: var(--text-muted);">クッション値</div>
-                <div style="font-weight: 700; font-size: 15px; color: var(--gold); margin-top: 4px;" id="track-cushion-value">9.5 (標準〜硬め)</div>
-              </div>
-              <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); border-radius: 8px; padding: 12px;">
-                <div style="font-size: 11px; color: var(--text-muted);">有利バイアス</div>
-                <div style="font-weight: 700; font-size: 15px; color: var(--primary); margin-top: 4px;" id="track-bias-label">【内前有利〜好位差し】</div>
-              </div>
-            </div>
-            <p id="track-bias-detail" style="font-size: 13px; line-height: 1.6; color: var(--text-secondary); background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px 14px; margin: 0;"></p>
-          </section>
-
-          <!-- 6. レース傾向 -->
-          <section id="sec-trends" class="pred-section">
-            <div class="pred-section-header">
-              <div class="pred-section-title">
-                <i data-lucide="bar-chart-2"></i> 天皇賞（秋）データ傾向・好走パターン
-              </div>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;" id="pred-trends-container">
-              <!-- JSで動的生成 -->
-            </div>
-          </section>
-
-          <!-- 7. オカルト・サイン・ジンクス（X発祥特集） -->
+          <!-- 3. オカルト・サイン・ジンクス（X発祥特集） -->
           <section id="sec-occult" class="pred-section" style="border-color: rgba(139, 92, 246, 0.35);">
-            <div class="pred-section-header">
-              <div class="pred-section-title" style="color: #c084fc;">
-                <i data-lucide="sparkles" style="color: #c084fc;"></i> 🔮 X (Twitter) で大バズリ中！オカルト＆サイン考察特集
-              </div>
-              <span style="font-size: 12px; color: #a78bfa; background: rgba(139, 92, 246, 0.15); padding: 4px 10px; border-radius: 12px; border: 1px solid rgba(139, 92, 246, 0.3);">
-                🔥 Xサイン派コミュニティ厳選
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <h3 style="font-size: 15px; font-weight: 800; color: #c084fc; margin: 0; display: flex; align-items: center; gap: 6px;">
+                <i data-lucide="sparkles" style="width: 16px; height: 16px;"></i> 🔮 Xで大バズリ中！サイン考察特集
+              </h3>
+              <span style="font-size: 10px; color: #a78bfa; background: rgba(139, 92, 246, 0.15); padding: 2px 6px; border-radius: 8px;">
+                Xコミュニティ厳選
               </span>
             </div>
 
@@ -1969,83 +1806,67 @@
             </div>
           </section>
 
-          <!-- 8. 展開シミュレーター -->
-          <section id="sec-pace" class="pred-section">
-            <div class="pred-section-header">
-              <div class="pred-section-title">
-                <i data-lucide="compass"></i> 展開シミュレーター（想定隊列＆ペースマップ）
+          <!-- 4. コース・馬場・展開ダイジェスト -->
+          <section id="sec-analysis" class="pred-section">
+            <h3 style="font-size: 15px; font-weight: 800; color: #fff; margin: 0 0 12px 0; display: flex; align-items: center; gap: 6px;">
+              <i data-lucide="wind" style="width: 16px; height: 16px; color: var(--gold);"></i> 馬場・コース ＆ 展開想定
+            </h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px;">
+              <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); border-radius: 8px; padding: 8px 10px;">
+                <div style="font-size: 10px; color: var(--text-muted);">馬場・クッション値</div>
+                <div style="font-weight: 700; font-size: 13px; color: var(--gold); margin-top: 2px;">良 / 9.5 (標準〜硬)</div>
               </div>
-              <span id="pred-pace-label" style="font-size: 13px; font-weight: 700; color: var(--gold);">想定ペース: 59.2秒 (ミドル)</span>
+              <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); border-radius: 8px; padding: 8px 10px;">
+                <div style="font-size: 10px; color: var(--text-muted);">有利バイアス</div>
+                <div style="font-weight: 700; font-size: 13px; color: var(--primary); margin-top: 2px;">【内前〜好位差し】</div>
+              </div>
             </div>
-
-            <p id="pred-pace-desc" style="font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 14px;"></p>
-
-            <div id="pred-pace-lanes">
-              <!-- JSで動的生成 -->
+            <div style="background: rgba(0,0,0,0.3); border-radius: 8px; padding: 10px 12px; font-size: 12px; line-height: 1.6; color: var(--text-secondary);">
+              <strong>【想定展開】</strong> 逃げ: 9 ホウオウビスケッツ / 先行: 1 クロワデュノール、6 セイウンハーデス / 好位: 7 マスカレードボール、2 エルトンバローズ。前半1000mは59.2秒の淀みないミドルペース想定。内ラチ沿いの好位で立ち回れる内枠先行勢に強力なトラックバイアス。
             </div>
           </section>
+        </div>
 
-          <!-- 9. マイ予想サマリー ＆ メモスペース -->
-          <section id="sec-memo" class="pred-section" style="border-color: rgba(245, 158, 11, 0.4);">
-            <div class="pred-section-header">
-              <div class="pred-section-title" style="color: var(--gold);">
-                <i data-lucide="edit-3" style="color: var(--gold);"></i> ✏️ マイ予想サマリー ＆ 買い目検討メモ
+        <!-- モバイル用 印選択ボトムシート（100%確実にタップ可能） -->
+        <div id="mark-bottom-sheet" class="mark-sheet-overlay" style="display: none;">
+          <div class="mark-sheet-backdrop" id="mark-sheet-backdrop"></div>
+          <div class="mark-sheet-content">
+            <div class="mark-sheet-header">
+              <div id="mark-sheet-horse-title" style="font-weight: 800; font-size: 16px; color: #fff;">
+                印を選択
               </div>
-              <div style="display: flex; gap: 8px;">
-                <button id="btn-copy-memo" style="background: rgba(245, 158, 11, 0.15); border: 1px solid var(--gold); color: var(--gold); padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;">
-                  <i data-lucide="copy" style="width: 14px; height: 14px;"></i> 予想をコピー
-                </button>
-                <button id="btn-clear-memo" style="background: rgba(239, 68, 68, 0.15); border: 1px solid #ef4444; color: #ef4444; padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer;">
-                  クリア
-                </button>
-              </div>
+              <button id="btn-close-mark-sheet" class="mark-sheet-close">&times;</button>
             </div>
-
-            <h4 style="font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 10px;">🏷️ マイ印サマリー</h4>
-            <div class="my-summary-grid">
-              <div class="my-summary-card">
-                <span class="mark-btn mark-honmei">◎</span>
-                <div style="flex: 1; min-width: 0;">
-                  <div style="font-size: 11px; color: var(--text-muted);">本命</div>
-                  <div class="my-summary-name" id="summary-honmei">未選択</div>
-                </div>
-              </div>
-              <div class="my-summary-card">
-                <span class="mark-btn mark-taiko">○</span>
-                <div style="flex: 1; min-width: 0;">
-                  <div style="font-size: 11px; color: var(--text-muted);">対抗</div>
-                  <div class="my-summary-name" id="summary-taiko">未選択</div>
-                </div>
-              </div>
-              <div class="my-summary-card">
-                <span class="mark-btn mark-tanana">▲</span>
-                <div style="flex: 1; min-width: 0;">
-                  <div style="font-size: 11px; color: var(--text-muted);">単穴</div>
-                  <div class="my-summary-name" id="summary-tanana">未選択</div>
-                </div>
-              </div>
-              <div class="my-summary-card">
-                <span class="mark-btn mark-renka">△</span>
-                <div style="flex: 1; min-width: 0;">
-                  <div style="font-size: 11px; color: var(--text-muted);">連下</div>
-                  <div class="my-summary-name" id="summary-renka">未選択</div>
-                </div>
-              </div>
-              <div class="my-summary-card">
-                <span class="mark-btn mark-ana">☆</span>
-                <div style="flex: 1; min-width: 0;">
-                  <div style="font-size: 11px; color: var(--text-muted);">特注穴</div>
-                  <div class="my-summary-name" id="summary-ana">未選択</div>
-                </div>
-              </div>
+            <div class="mark-sheet-grid">
+              <button class="mark-sheet-item mark-honmei" data-mark="◎">
+                <span class="ms-sym">◎</span>
+                <span class="ms-txt">本命 (1着候補)</span>
+              </button>
+              <button class="mark-sheet-item mark-taiko" data-mark="○">
+                <span class="ms-sym">○</span>
+                <span class="ms-txt">対抗 (相手本線)</span>
+              </button>
+              <button class="mark-sheet-item mark-tanana" data-mark="▲">
+                <span class="ms-sym">▲</span>
+                <span class="ms-txt">単穴 (一発逆転)</span>
+              </button>
+              <button class="mark-sheet-item mark-renka" data-mark="△">
+                <span class="ms-sym">△</span>
+                <span class="ms-txt">連下 (押さえ)</span>
+              </button>
+              <button class="mark-sheet-item mark-ana" data-mark="☆">
+                <span class="ms-sym">☆</span>
+                <span class="ms-txt">穴馬 (高配当特注)</span>
+              </button>
+              <button class="mark-sheet-item mark-keshi" data-mark="消">
+                <span class="ms-sym">消</span>
+                <span class="ms-txt">消し (見送り)</span>
+              </button>
             </div>
-
-            <h4 style="font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
-              <span>📝 買い目・検討メモ（自動保存）</span>
-              <span id="memo-save-status" style="font-size: 11px; color: var(--primary); font-weight: normal;">💾 localStorage自動保存中</span>
-            </h4>
-            <textarea id="pred-memo-input" class="memo-box" placeholder="例:&#10;【本線買い目】&#10;馬連: 1 - 7 (5,000円), 3 - 7 (3,000円)&#10;3連複フォーメーション:&#10;1頭目: 1, 7&#10;2頭目: 1, 3, 7&#10;3頭目: 1, 2, 3, 7, 8, 9, 10, 17&#10;&#10;【考察メモ】&#10;クロワデュノールは最内1枠1番とC.デムーロで死角なし。マスカレードボールはルメール継続で堅軸。"></textarea>
-          </section>
+            <button class="mark-sheet-clear" id="btn-mark-sheet-clear">
+              印を外す（未選択に戻す）
+            </button>
+          </div>
         </div>
 
       </main>
@@ -59238,8 +59059,7 @@ function hydratePayouts(race) {
       // ----------------------------------------------------
       let currentAppView = 'calendar';
       let predictionSortType = 'gate';
-      let currentStartersView = 'card';
-      const MARK_CYCLE = ['◎', '○', '▲', '△', '☆', '消', '未'];
+      let activeSheetGate = null;
       const MARK_CLASSES = {
         '◎': 'mark-honmei',
         '○': 'mark-taiko',
@@ -59306,11 +59126,11 @@ function hydratePayouts(race) {
         if (typeof document === 'undefined') return;
         const marks = getUserMarks();
         
-        document.querySelectorAll('.mark-btn[data-gate]').forEach(btn => {
+        document.querySelectorAll('.nh-mark-btn[data-gate]').forEach(btn => {
           const g = btn.getAttribute('data-gate');
-          const m = marks[g] || '未';
+          const m = marks[g] || '';
           btn.innerText = m;
-          btn.className = 'mark-btn';
+          btn.className = 'nh-mark-btn';
           if (MARK_CLASSES[m]) {
             btn.classList.add(MARK_CLASSES[m]);
           }
@@ -59323,12 +59143,7 @@ function hydratePayouts(race) {
           const m = marks[g];
           const s = starters.find(x => String(x.gate) === String(g));
           if (s && summaryMap[m]) {
-            summaryMap[m].push(`
-              <span style="display: inline-flex; align-items: center; gap: 4px; margin-right: 6px;">
-                <span class="gate-badge waku-${s.waku}" style="min-width: 22px; height: 22px; font-size: 11px; padding: 0 3px;">${s.gate}</span>
-                <strong style="color: #fff;">${s.horseName}</strong>
-              </span>
-            `);
+            summaryMap[m].push(`${s.gate} ${s.horseName}`);
           }
         });
 
@@ -59338,80 +59153,49 @@ function hydratePayouts(race) {
         const elR = document.getElementById('summary-renka');
         const elAn = document.getElementById('summary-ana');
 
-        if (elH) elH.innerHTML = summaryMap['◎'].join(' ') || '<span style="color: var(--text-muted);">未選択</span>';
-        if (elT) elT.innerHTML = summaryMap['○'].join(' ') || '<span style="color: var(--text-muted);">未選択</span>';
-        if (elA) elA.innerHTML = summaryMap['▲'].join(' ') || '<span style="color: var(--text-muted);">未選択</span>';
-        if (elR) elR.innerHTML = summaryMap['△'].join(' ') || '<span style="color: var(--text-muted);">未選択</span>';
-        if (elAn) elAn.innerHTML = summaryMap['☆'].join(' ') || '<span style="color: var(--text-muted);">未選択</span>';
+        if (elH) elH.innerText = summaryMap['◎'].join(', ') || '未選択';
+        if (elT) elT.innerText = summaryMap['○'].join(', ') || '未選択';
+        if (elA) elA.innerText = summaryMap['▲'].join(', ') || '未選択';
+        if (elR) elR.innerText = summaryMap['△'].join(', ') || '未選択';
+        if (elAn) elAn.innerText = summaryMap['☆'].join(', ') || '未選択';
       }
 
-      function showMarkPopover(btn, gate) {
-        if (typeof document === 'undefined') return;
-        const existing = document.getElementById('active-mark-popover');
-        if (existing) existing.remove();
+      // ボトムシートによる確実な印選択（スマホ誤操作ゼロ）
+      function openMarkSheet(gate) {
+        activeSheetGate = gate;
+        const s = PREDICTION_DATA.starters.find(x => String(x.gate) === String(gate));
+        const sheet = document.getElementById('mark-bottom-sheet');
+        const titleEl = document.getElementById('mark-sheet-horse-title');
 
-        const popover = document.createElement('div');
-        popover.id = 'active-mark-popover';
-        popover.className = 'mark-popover';
-
-        const rect = btn.getBoundingClientRect();
-        const scrollY = typeof window !== 'undefined' ? window.scrollY : 0;
-        const scrollX = typeof window !== 'undefined' ? window.scrollX : 0;
-        const winW = typeof window !== 'undefined' ? window.innerWidth : 400;
-        const popW = 230;
-
-        popover.style.top = `${rect.bottom + scrollY + 6}px`;
-        let leftPos = rect.left + scrollX - 60;
-        if (leftPos + popW > winW - 10) {
-          leftPos = Math.max(10, winW - popW - 10);
+        if (titleEl && s) {
+          titleEl.innerHTML = `<span class="nh-gate-cell waku-${s.waku}" style="display:inline-flex; width:26px; height:26px; font-size:13px; border-radius:4px; vertical-align:middle; margin-right:6px;">${s.gate}</span> ${s.horseName} の印`;
         }
-        if (leftPos < 10) leftPos = 10;
-        popover.style.left = `${leftPos}px`;
 
-        MARK_CYCLE.forEach(m => {
-          const item = document.createElement('div');
-          item.className = 'mark-pop-item';
-          item.innerText = m;
-          if (MARK_CLASSES[m]) {
-            item.classList.add(MARK_CLASSES[m]);
+        if (sheet) {
+          sheet.style.display = 'flex';
+        }
+      }
+
+      function closeMarkSheet() {
+        const sheet = document.getElementById('mark-bottom-sheet');
+        if (sheet) {
+          sheet.style.display = 'none';
+        }
+        activeSheetGate = null;
+      }
+
+      function toggleHorseAccordion(gate) {
+        const drawer = document.getElementById(`nh-drawer-${gate}`);
+        const hint = document.getElementById(`nh-hint-${gate}`);
+        if (drawer) {
+          const isOpen = drawer.classList.contains('open');
+          if (isOpen) {
+            drawer.classList.remove('open');
+            if (hint) hint.innerHTML = '詳細 ▼';
           } else {
-            item.style.background = 'rgba(255,255,255,0.05)';
-            item.style.color = 'var(--text-muted)';
+            drawer.classList.add('open');
+            if (hint) hint.innerHTML = '閉じる ▲';
           }
-          item.addEventListener('click', (e) => {
-            e.stopPropagation();
-            setUserMark(gate, m);
-            popover.remove();
-          });
-          popover.appendChild(item);
-        });
-
-        document.body.appendChild(popover);
-
-        const closeHandler = (e) => {
-          if (!popover.contains(e.target) && e.target !== btn) {
-            popover.remove();
-            document.removeEventListener('click', closeHandler);
-          }
-        };
-        setTimeout(() => document.addEventListener('click', closeHandler), 10);
-      }
-
-      function setStartersView(viewMode) {
-        currentStartersView = viewMode;
-        const tableWrap = document.getElementById('pred-table-wrap');
-        const cardsWrap = document.getElementById('pred-mobile-cards');
-        const btnCard = document.getElementById('btn-view-card');
-        const btnTable = document.getElementById('btn-view-table');
-
-        if (btnCard) btnCard.classList.toggle('active', viewMode === 'card');
-        if (btnTable) btnTable.classList.toggle('active', viewMode === 'table');
-
-        if (tableWrap) {
-          tableWrap.style.display = viewMode === 'table' ? 'block' : 'none';
-        }
-        if (cardsWrap) {
-          cardsWrap.style.display = viewMode === 'card' ? 'flex' : 'none';
         }
       }
 
@@ -59420,23 +59204,18 @@ function hydratePayouts(race) {
         const container = document.getElementById('view-prediction');
         if (!container) return;
 
-        renderPredictionStarters();
-        renderPredictionTraining();
-        renderPredictionJockeys();
-        renderPredictionWaku();
-        renderPredictionTrack();
-        renderPredictionTrends();
+        renderNetkeibaHorseList();
         renderPredictionOccult();
-        renderPredictionPace();
         renderPredictionMemo();
         updateMarksUI();
         refreshIcons();
       }
 
-      function renderPredictionStarters() {
+      // NetKeiba完全準拠 リストレンダラー（横スクロールゼロ・1行完結）
+      function renderNetkeibaHorseList() {
         if (typeof document === 'undefined') return;
-        const tbody = document.getElementById('pred-starters-tbody');
-        const cardsWrap = document.getElementById('pred-mobile-cards');
+        const listContainer = document.getElementById('netkeiba-horse-list');
+        if (!listContainer) return;
 
         let starters = [...PREDICTION_DATA.starters];
         if (predictionSortType === 'pop') {
@@ -59446,224 +59225,94 @@ function hydratePayouts(race) {
         }
 
         const marks = getUserMarks();
+        let html = '';
 
-        // 1. Table format
-        if (tbody) {
-          let rowsHtml = '';
-          starters.forEach(s => {
-            const m = marks[s.gate] || '未';
-            const mClass = MARK_CLASSES[m] || '';
-            const isPop1 = s.pop === 1;
+        starters.forEach(s => {
+          const m = marks[s.gate] || '';
+          const mClass = MARK_CLASSES[m] || '';
+          const isPop1or2 = s.pop <= 2;
+          const isTop3Pop = s.pop <= 3;
 
-            rowsHtml += `
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.06); transition: background 0.15s;">
-                <td style="text-align: center;">
-                  <span class="gate-badge waku-${s.waku}">${s.gate}</span>
-                </td>
-                <td style="text-align: center;">
-                  <span class="mark-btn ${mClass}" data-gate="${s.gate}">${m}</span>
-                </td>
-                <td>
-                  <span style="font-weight: 700; font-size: 15px; color: #ffffff;">${s.horseName}</span>
-                  <span style="font-size: 11px; color: var(--text-muted); margin-left: 6px;">${s.stable}</span>
-                </td>
-                <td style="color: var(--text-secondary);">${s.sexAge}</td>
-                <td style="color: var(--text-secondary); font-family: monospace;">${s.load}kg</td>
-                <td style="font-weight: 600;">${s.jockey}</td>
-                <td style="text-align: right; font-weight: 800; font-size: 15px; font-family: monospace; color: ${isPop1 ? 'var(--gold)' : '#ffffff'};">${s.odds}倍</td>
-                <td style="text-align: right; font-family: monospace; color: var(--text-secondary); font-size: 13px;">${s.placeOdds}</td>
-                <td style="text-align: center;"><span class="pop-badge pop-${s.pop <= 3 ? s.pop : 'other'}">${s.pop}人気</span></td>
-                <td style="text-align: center;"><span class="grade-badge grade-${s.trainingGrade}">${s.trainingGrade}</span></td>
-              </tr>
-            `;
-          });
-          tbody.innerHTML = rowsHtml;
-        }
+          html += `
+            <div class="nh-row-container">
+              <div class="nh-main-row" data-gate="${s.gate}">
+                <!-- 1. 馬番（枠色セル） -->
+                <div class="nh-gate-cell waku-${s.waku}">
+                  ${s.gate}
+                </div>
 
-        // 2. Mobile card format
-        if (cardsWrap) {
-          let cardsHtml = '';
-          starters.forEach(s => {
-            const m = marks[s.gate] || '未';
-            const mClass = MARK_CLASSES[m] || '';
-            const isPop1 = s.pop === 1;
+                <!-- 2. 印ボタン -->
+                <div class="nh-mark-cell">
+                  <button class="nh-mark-btn ${mClass}" data-gate="${s.gate}" aria-label="印選択">
+                    ${m}
+                  </button>
+                </div>
 
-            cardsHtml += `
-              <div class="mobile-horse-card">
-                <div class="mhc-header">
-                  <div class="mhc-left">
-                    <span class="gate-badge waku-${s.waku}">${s.gate}</span>
-                    <span class="mhc-name">${s.horseName}</span>
-                    <span class="mhc-sub">${s.sexAge} ${s.load}kg</span>
+                <!-- 3. 馬情報（中央） -->
+                <div class="nh-info-cell" data-action="toggle-drawer" data-gate="${s.gate}">
+                  <div class="nh-name-row">
+                    <span class="nh-horse-name">${s.horseName}</span>
+                    <span class="nh-expand-hint" id="nh-hint-${s.gate}">詳細 ▼</span>
                   </div>
-                  <div class="mhc-right">
-                    <span class="mark-btn ${mClass}" data-gate="${s.gate}">${m}</span>
+                  <div class="nh-sub-row">
+                    <span>${s.sexAge}</span>
+                    <span class="nh-jockey">${s.jockey}</span>
+                    <span class="nh-load">${s.load}kg</span>
                   </div>
                 </div>
-                <div class="mhc-body">
-                  <div class="mhc-stat">
-                    <span class="mhc-label">騎手</span>
-                    <span class="mhc-val">${s.jockey}</span>
-                  </div>
-                  <div class="mhc-stat">
-                    <span class="mhc-label">単勝</span>
-                    <span class="mhc-val highlight">${s.odds}倍 <small style="font-size: 11px; color: ${isPop1 ? 'var(--gold)' : 'var(--text-muted)'}; font-weight: normal;">(${s.pop}人気)</small></span>
-                  </div>
-                  <div class="mhc-stat">
-                    <span class="mhc-label">複勝</span>
-                    <span class="mhc-val" style="font-family: monospace; font-size: 12px;">${s.placeOdds}</span>
-                  </div>
-                  <div class="mhc-stat">
-                    <span class="mhc-label">調教</span>
-                    <span class="mhc-val" style="display: flex; align-items: center; gap: 4px;">
-                      <span class="grade-badge grade-${s.trainingGrade}">${s.trainingGrade}</span>
-                      <span style="font-size: 11px; color: var(--text-muted);">${s.trainingCourse}</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="mhc-footer">
-                  <span>厩舎: ${s.stable}</span>
-                  <span style="font-size: 11px; color: var(--text-muted);">ラスト: ${s.trainingTime.split(' - ').slice(-1)[0]}</span>
-                </div>
-              </div>
-            `;
-          });
-          cardsWrap.innerHTML = cardsHtml;
-        }
 
-        // Bind clicks on all mark buttons
-        document.querySelectorAll('#sec-starters .mark-btn').forEach(btn => {
-          btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const g = btn.getAttribute('data-gate');
-            showMarkPopover(btn, g);
-          });
-        });
-      }
-
-      function renderPredictionTraining() {
-        if (typeof document === 'undefined') return;
-        const grid = document.getElementById('pred-training-grid');
-        if (!grid) return;
-
-        let cardsHtml = '';
-        PREDICTION_DATA.starters.forEach(s => {
-          cardsHtml += `
-            <div class="train-card">
-              <div class="train-card-top">
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <span class="gate-badge waku-${s.waku}">${s.gate}</span>
-                  <strong style="font-size: 16px; color: #fff;">${s.horseName}</strong>
-                  <span style="font-size: 12px; color: var(--text-muted);">${s.stable}</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 6px;">
-                  <span class="grade-badge grade-${s.trainingGrade}">${s.trainingGrade}評価</span>
-                  <span class="mark-btn" data-gate="${s.gate}">未</span>
+                <!-- 4. オッズ・人気（右端） -->
+                <div class="nh-odds-cell" data-action="toggle-drawer" data-gate="${s.gate}">
+                  <div class="nh-odds-val ${isPop1or2 ? 'highlight' : ''}">${s.odds}</div>
+                  <div class="nh-pop-val ${isTop3Pop ? 'top3' : ''}">${s.pop}人気</div>
                 </div>
               </div>
 
-              <div class="train-clock">
-                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
-                  <span style="color: var(--text-muted);">コース: <strong>${s.trainingCourse}</strong></span>
-                  <span style="color: var(--primary);">評価: ${s.trainingGrade}</span>
+              <!-- 5. タップ展開アコーディオン（調教・厩舎・騎手相性） -->
+              <div class="nh-detail-drawer" id="nh-drawer-${s.gate}">
+                <div class="nh-drawer-grid">
+                  <div class="nh-drawer-stat">
+                    <span style="color: var(--text-muted);">調教評価</span>
+                    <span style="font-weight: 800; color: ${s.trainingGrade === 'S' ? 'var(--gold)' : 'var(--primary)'};">${s.trainingGrade} (${s.trainingCourse})</span>
+                  </div>
+                  <div class="nh-drawer-stat">
+                    <span style="color: var(--text-muted);">複勝オッズ</span>
+                    <span style="font-family: monospace; font-weight: 700;">${s.placeOdds}</span>
+                  </div>
+                  <div class="nh-drawer-stat" style="grid-column: span 2;">
+                    <span style="color: var(--text-muted);">厩舎 (所属)</span>
+                    <span style="font-weight: 600; color: #fff;">${s.stable}</span>
+                  </div>
                 </div>
-                <div>${s.trainingTime}</div>
-              </div>
-
-              <div class="train-comment">
-                ${s.trainingComment}
+                <div style="font-size: 11px; color: var(--gold); font-family: monospace; margin-bottom: 4px;">
+                  追い切り: ${s.trainingTime}
+                </div>
+                <div class="nh-drawer-comment">
+                  <strong>【厩舎コメント】</strong> ${s.trainingComment}
+                </div>
               </div>
             </div>
           `;
         });
 
-        grid.innerHTML = cardsHtml;
+        listContainer.innerHTML = html;
 
-        grid.querySelectorAll('.mark-btn').forEach(btn => {
+        // イベントバインド：印ボタンクリックでボトムシート展開
+        listContainer.querySelectorAll('.nh-mark-btn').forEach(btn => {
           btn.addEventListener('click', (e) => {
             e.stopPropagation();
             const g = btn.getAttribute('data-gate');
-            showMarkPopover(btn, g);
+            openMarkSheet(g);
           });
         });
-      }
 
-      function renderPredictionJockeys() {
-        if (typeof document === 'undefined') return;
-        const tbody = document.getElementById('pred-jockeys-tbody');
-        if (!tbody) return;
-
-        let html = '';
-        PREDICTION_DATA.jockeysCompatibility.forEach(j => {
-          html += `
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-              <td style="font-weight: 700; color: #fff; font-size: 15px;">${j.jockey}</td>
-              <td style="color: var(--gold); font-weight: 600;">${j.horse}</td>
-              <td style="text-align: right; font-weight: 700; color: #fff; font-family: monospace;">${j.tokyoTurfWinRate}</td>
-              <td style="text-align: right; font-weight: 700; color: var(--primary); font-family: monospace;">${j.tokyoTurfTop3Rate}</td>
-              <td><span style="background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 4px; font-size: 12px; color: var(--text-secondary);">${j.switchType}</span></td>
-              <td style="font-weight: 700; color: var(--gold);">${j.rating}</td>
-              <td style="font-size: 13px; color: var(--text-secondary); max-width: 320px;">${j.comment}</td>
-            </tr>
-          `;
+        // イベントバインド：馬名・オッズセルタップでアコーディオン展開
+        listContainer.querySelectorAll('[data-action="toggle-drawer"]').forEach(cell => {
+          cell.addEventListener('click', () => {
+            const g = cell.getAttribute('data-gate');
+            toggleHorseAccordion(g);
+          });
         });
-
-        tbody.innerHTML = html;
-      }
-
-      function renderPredictionWaku() {
-        if (typeof document === 'undefined') return;
-        const desc = document.getElementById('pred-waku-desc');
-        const tbody = document.getElementById('pred-waku-tbody');
-        if (!desc || !tbody) return;
-
-        desc.innerText = PREDICTION_DATA.wakuAnalysis.description;
-
-        let html = '';
-        PREDICTION_DATA.wakuAnalysis.stats.forEach(w => {
-          html += `
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-              <td style="text-align: center;"><span class="gate-badge waku-${w.waku}">${w.waku}枠</span></td>
-              <td style="text-align: right; font-weight: 700; font-family: monospace; color: #fff;">${w.winRate}</td>
-              <td style="text-align: right; font-weight: 700; font-family: monospace; color: var(--gold);">${w.top3Rate}</td>
-              <td style="font-size: 13px; color: var(--text-secondary);">${w.comment}</td>
-            </tr>
-          `;
-        });
-
-        tbody.innerHTML = html;
-      }
-
-      function renderPredictionTrack() {
-        if (typeof document === 'undefined') return;
-        const t = PREDICTION_DATA.trackCondition;
-        const elCourse = document.getElementById('track-course-usage');
-        const elCushion = document.getElementById('track-cushion-value');
-        const elBias = document.getElementById('track-bias-label');
-        const elDetail = document.getElementById('track-bias-detail');
-
-        if (elCourse) elCourse.innerText = t.courseUsage;
-        if (elCushion) elCushion.innerText = t.cushionValue;
-        if (elBias) elBias.innerText = t.bias;
-        if (elDetail) elDetail.innerHTML = `<strong>【馬場考察】</strong> ${t.biasDetail}`;
-      }
-
-      function renderPredictionTrends() {
-        if (typeof document === 'undefined') return;
-        const container = document.getElementById('pred-trends-container');
-        if (!container) return;
-
-        let html = '';
-        PREDICTION_DATA.raceTrends.forEach(trend => {
-          html += `
-            <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px;">
-              <h4 style="font-size: 14px; font-weight: 700; color: var(--gold); margin-bottom: 6px;">${trend.title}</h4>
-              <p style="font-size: 13px; line-height: 1.6; color: var(--text-secondary); margin: 0;">${trend.content}</p>
-            </div>
-          `;
-        });
-
-        container.innerHTML = html;
       }
 
       function renderPredictionOccult() {
@@ -59677,10 +59326,10 @@ function hydratePayouts(race) {
           if (o.targets && o.targets.length > 0) {
             targetsHtml = `
               <div class="occult-targets">
-                <span class="occult-target-label"><i data-lucide="crosshair"></i> Xでの指名・注目馬:</span>
+                <span class="occult-target-label"><i data-lucide="crosshair"></i> X推奨馬:</span>
                 ${o.targets.map(t => `
                   <span class="occult-target-chip">
-                    <span class="gate-badge waku-${t.waku}">${t.gate}</span>
+                    <span class="nh-gate-cell waku-${t.waku}" style="width:20px; height:20px; font-size:11px; border-radius:3px; display:inline-flex;">${t.gate}</span>
                     <strong style="color: #ffffff;">${t.name}</strong>
                   </span>
                 `).join('')}
@@ -59692,7 +59341,7 @@ function hydratePayouts(race) {
             <div class="occult-card">
               <div class="occult-header">
                 <span class="occult-badge">${o.badge}</span>
-                <span class="occult-source"><i data-lucide="twitter"></i> ${o.source}</span>
+                <span class="occult-source"><svg style="width: 12px; height: 12px; fill: currentColor; display: inline-block; vertical-align: middle;" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> ${o.source}</span>
               </div>
               <h4 class="occult-title">${o.title}</h4>
               <p class="occult-content">${o.content}</p>
@@ -59702,30 +59351,6 @@ function hydratePayouts(race) {
         });
 
         container.innerHTML = html;
-      }
-
-      function renderPredictionPace() {
-        if (typeof document === 'undefined') return;
-        const label = document.getElementById('pred-pace-label');
-        const desc = document.getElementById('pred-pace-desc');
-        const lanes = document.getElementById('pred-pace-lanes');
-        if (!lanes) return;
-
-        const p = PREDICTION_DATA.paceSimulation;
-        if (label) label.innerText = `想定ペース: ${p.estimatedPace}`;
-        if (desc) desc.innerText = p.paceText;
-
-        let html = '';
-        p.positions.forEach(pos => {
-          html += `
-            <div class="pace-lane">
-              <span class="pace-tag">${pos.label}</span>
-              <span class="pace-horses">${pos.horses}</span>
-            </div>
-          `;
-        });
-
-        lanes.innerHTML = html;
       }
 
       function renderPredictionMemo() {
@@ -59739,20 +59364,35 @@ function hydratePayouts(race) {
       function initPredictionEventListeners() {
         if (typeof document === 'undefined') return;
 
-        // View toggle buttons (Card vs Table)
-        const btnViewCard = document.getElementById('btn-view-card');
-        const btnViewTable = document.getElementById('btn-view-table');
-        if (btnViewCard) {
-          btnViewCard.addEventListener('click', () => setStartersView('card'));
-        }
-        if (btnViewTable) {
-          btnViewTable.addEventListener('click', () => setStartersView('table'));
+        // ボトムシートの印アイテム選択
+        document.querySelectorAll('.mark-sheet-item').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const m = btn.getAttribute('data-mark');
+            if (activeSheetGate) {
+              setUserMark(activeSheetGate, m);
+            }
+            closeMarkSheet();
+          });
+        });
+
+        const btnClearSheet = document.getElementById('btn-mark-sheet-clear');
+        if (btnClearSheet) {
+          btnClearSheet.addEventListener('click', () => {
+            if (activeSheetGate) {
+              setUserMark(activeSheetGate, '未');
+            }
+            closeMarkSheet();
+          });
         }
 
-        // Set initial view mode based on screen width
-        if (typeof window !== 'undefined') {
-          const isMobile = window.innerWidth <= 768;
-          setStartersView(isMobile ? 'card' : 'table');
+        const btnCloseSheet = document.getElementById('btn-close-mark-sheet');
+        if (btnCloseSheet) {
+          btnCloseSheet.addEventListener('click', closeMarkSheet);
+        }
+
+        const backdropSheet = document.getElementById('mark-sheet-backdrop');
+        if (backdropSheet) {
+          backdropSheet.addEventListener('click', closeMarkSheet);
         }
 
         const navItems = document.querySelectorAll('.nav-item');
@@ -59800,7 +59440,7 @@ function hydratePayouts(race) {
             btnSortGate.classList.add('active');
             btnSortPop.classList.remove('active');
             predictionSortType = 'gate';
-            renderPredictionStarters();
+            renderNetkeibaHorseList();
             updateMarksUI();
           });
 
@@ -59808,7 +59448,7 @@ function hydratePayouts(race) {
             btnSortPop.classList.add('active');
             btnSortGate.classList.remove('active');
             predictionSortType = 'pop';
-            renderPredictionStarters();
+            renderNetkeibaHorseList();
             updateMarksUI();
           });
         }
@@ -59818,9 +59458,9 @@ function hydratePayouts(race) {
           btnRefreshOdds.addEventListener('click', () => {
             const timeEl = document.getElementById('odds-update-time');
             const now = new Date();
-            const timeStr = `${now.getFullYear()}/${now.getMonth()+1}/${now.getDate()} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')} JST`;
+            const timeStr = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')}`;
             if (timeEl) {
-              timeEl.innerHTML = `<span style="color: var(--primary);">✔ 最新オッズ更新済 (${timeStr})</span>`;
+              timeEl.innerHTML = `<span style="color: var(--primary);">✔ ${timeStr}更新</span>`;
             }
           });
         }
@@ -59834,9 +59474,9 @@ function hydratePayouts(race) {
               localStorage.setItem('keiba_memo_16', memoInput.value);
             }
             if (saveStatus) {
-              saveStatus.innerText = '💾 保存しました';
+              saveStatus.innerText = '💾 保存完了';
               setTimeout(() => {
-                if (saveStatus) saveStatus.innerText = '💾 localStorage自動保存中';
+                if (saveStatus) saveStatus.innerText = '💾 自動保存中';
               }, 1500);
             }
           });
@@ -59869,15 +59509,13 @@ function hydratePayouts(race) {
 
             if (navigator.clipboard) {
               navigator.clipboard.writeText(summaryText).then(() => {
-                btnCopyMemo.innerHTML = '<i data-lucide="check"></i> コピー完了！';
-                refreshIcons();
+                btnCopyMemo.innerText = '✔ コピー済';
                 setTimeout(() => {
-                  btnCopyMemo.innerHTML = '<i data-lucide="copy" style="width: 14px; height: 14px;"></i> 予想をコピー';
-                  refreshIcons();
+                  btnCopyMemo.innerText = 'コピー';
                 }, 2000);
               });
             } else {
-              alert('クリップボードにコピーしました:\n' + summaryText);
+              alert('コピーしました:\n' + summaryText);
             }
           });
         }
@@ -59890,7 +59528,7 @@ function hydratePayouts(race) {
               if (typeof localStorage !== 'undefined') {
                 localStorage.removeItem('keiba_memo_16');
               }
-              if (saveStatus) saveStatus.innerText = '🗑️ メモを消去しました';
+              if (saveStatus) saveStatus.innerText = '🗑️ 消去完了';
             }
           });
         }
@@ -59936,7 +59574,7 @@ function hydratePayouts(race) {
             fullRowsHtml += `
               <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
                 <td style="text-align: center;"><span class="rank-badge ${rankClass}" style="width:20px;height:20px;font-size:11px;">${rankBadge}</span></td>
-                <td style="text-align: center; font-family: monospace; font-weight: 700;"><span class="gate-badge waku-${m.waku || 1}" style="min-width:20px;height:20px;font-size:11px;padding:0 2px;">${m.gate}</span></td>
+                <td style="text-align: center; font-family: monospace; font-weight: 700;"><span class="nh-gate-cell waku-${m.waku || 1}" style="width:20px;height:20px;font-size:11px;border-radius:3px;display:inline-flex;">${m.gate}</span></td>
                 <td style="font-weight: 700; color: #fff;">${m.horseName}</td>
                 <td>${m.sexAge}</td>
                 <td>${m.load}</td>
@@ -60025,7 +59663,7 @@ function hydratePayouts(race) {
             tableRows += `
               <tr ${rowHighlight}>
                 <td><span class="rank-badge ${rankClass}">${r.rank}</span></td>
-                <td><span class="gate-badge waku-${wakuNum}">${r.gate}</span></td>
+                <td><span class="nh-gate-cell waku-${wakuNum}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${r.gate}</span></td>
                 <td style="font-weight: 700; color: #fff;">${r.horseName}</td>
                 <td>${r.sexAge}</td>
                 <td>${r.jockeyLoad}kg</td>
@@ -60173,7 +59811,7 @@ function hydratePayouts(race) {
             entriesTableRows += `
               <tr style="border-bottom: 1px solid rgba(255,255,255,0.06); transition: background 0.15s;">
                 <td style="text-align: center;">
-                  <span class="gate-badge waku-${e.waku}">${e.gate}</span>
+                  <span class="nh-gate-cell waku-${e.waku}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${e.gate}</span>
                 </td>
                 <td style="font-weight: 700; font-size: 14px; color: #ffffff;">${e.horseName}</td>
                 <td style="color: var(--text-secondary);">${e.sexAge}</td>

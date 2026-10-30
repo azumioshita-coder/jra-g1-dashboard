@@ -8069,8 +8069,7 @@ function hydratePayouts(race) {
       // ----------------------------------------------------
       let currentAppView = 'calendar';
       let predictionSortType = 'gate';
-      let currentStartersView = 'card';
-      const MARK_CYCLE = ['◎', '○', '▲', '△', '☆', '消', '未'];
+      let activeSheetGate = null;
       const MARK_CLASSES = {
         '◎': 'mark-honmei',
         '○': 'mark-taiko',
@@ -8137,11 +8136,11 @@ function hydratePayouts(race) {
         if (typeof document === 'undefined') return;
         const marks = getUserMarks();
         
-        document.querySelectorAll('.mark-btn[data-gate]').forEach(btn => {
+        document.querySelectorAll('.nh-mark-btn[data-gate]').forEach(btn => {
           const g = btn.getAttribute('data-gate');
-          const m = marks[g] || '未';
+          const m = marks[g] || '';
           btn.innerText = m;
-          btn.className = 'mark-btn';
+          btn.className = 'nh-mark-btn';
           if (MARK_CLASSES[m]) {
             btn.classList.add(MARK_CLASSES[m]);
           }
@@ -8154,12 +8153,7 @@ function hydratePayouts(race) {
           const m = marks[g];
           const s = starters.find(x => String(x.gate) === String(g));
           if (s && summaryMap[m]) {
-            summaryMap[m].push(`
-              <span style="display: inline-flex; align-items: center; gap: 4px; margin-right: 6px;">
-                <span class="gate-badge waku-${s.waku}" style="min-width: 22px; height: 22px; font-size: 11px; padding: 0 3px;">${s.gate}</span>
-                <strong style="color: #fff;">${s.horseName}</strong>
-              </span>
-            `);
+            summaryMap[m].push(`${s.gate} ${s.horseName}`);
           }
         });
 
@@ -8169,80 +8163,49 @@ function hydratePayouts(race) {
         const elR = document.getElementById('summary-renka');
         const elAn = document.getElementById('summary-ana');
 
-        if (elH) elH.innerHTML = summaryMap['◎'].join(' ') || '<span style="color: var(--text-muted);">未選択</span>';
-        if (elT) elT.innerHTML = summaryMap['○'].join(' ') || '<span style="color: var(--text-muted);">未選択</span>';
-        if (elA) elA.innerHTML = summaryMap['▲'].join(' ') || '<span style="color: var(--text-muted);">未選択</span>';
-        if (elR) elR.innerHTML = summaryMap['△'].join(' ') || '<span style="color: var(--text-muted);">未選択</span>';
-        if (elAn) elAn.innerHTML = summaryMap['☆'].join(' ') || '<span style="color: var(--text-muted);">未選択</span>';
+        if (elH) elH.innerText = summaryMap['◎'].join(', ') || '未選択';
+        if (elT) elT.innerText = summaryMap['○'].join(', ') || '未選択';
+        if (elA) elA.innerText = summaryMap['▲'].join(', ') || '未選択';
+        if (elR) elR.innerText = summaryMap['△'].join(', ') || '未選択';
+        if (elAn) elAn.innerText = summaryMap['☆'].join(', ') || '未選択';
       }
 
-      function showMarkPopover(btn, gate) {
-        if (typeof document === 'undefined') return;
-        const existing = document.getElementById('active-mark-popover');
-        if (existing) existing.remove();
+      // ボトムシートによる確実な印選択（スマホ誤操作ゼロ）
+      function openMarkSheet(gate) {
+        activeSheetGate = gate;
+        const s = PREDICTION_DATA.starters.find(x => String(x.gate) === String(gate));
+        const sheet = document.getElementById('mark-bottom-sheet');
+        const titleEl = document.getElementById('mark-sheet-horse-title');
 
-        const popover = document.createElement('div');
-        popover.id = 'active-mark-popover';
-        popover.className = 'mark-popover';
-
-        const rect = btn.getBoundingClientRect();
-        const scrollY = typeof window !== 'undefined' ? window.scrollY : 0;
-        const scrollX = typeof window !== 'undefined' ? window.scrollX : 0;
-        const winW = typeof window !== 'undefined' ? window.innerWidth : 400;
-        const popW = 230;
-
-        popover.style.top = `${rect.bottom + scrollY + 6}px`;
-        let leftPos = rect.left + scrollX - 60;
-        if (leftPos + popW > winW - 10) {
-          leftPos = Math.max(10, winW - popW - 10);
+        if (titleEl && s) {
+          titleEl.innerHTML = `<span class="nh-gate-cell waku-${s.waku}" style="display:inline-flex; width:26px; height:26px; font-size:13px; border-radius:4px; vertical-align:middle; margin-right:6px;">${s.gate}</span> ${s.horseName} の印`;
         }
-        if (leftPos < 10) leftPos = 10;
-        popover.style.left = `${leftPos}px`;
 
-        MARK_CYCLE.forEach(m => {
-          const item = document.createElement('div');
-          item.className = 'mark-pop-item';
-          item.innerText = m;
-          if (MARK_CLASSES[m]) {
-            item.classList.add(MARK_CLASSES[m]);
+        if (sheet) {
+          sheet.style.display = 'flex';
+        }
+      }
+
+      function closeMarkSheet() {
+        const sheet = document.getElementById('mark-bottom-sheet');
+        if (sheet) {
+          sheet.style.display = 'none';
+        }
+        activeSheetGate = null;
+      }
+
+      function toggleHorseAccordion(gate) {
+        const drawer = document.getElementById(`nh-drawer-${gate}`);
+        const hint = document.getElementById(`nh-hint-${gate}`);
+        if (drawer) {
+          const isOpen = drawer.classList.contains('open');
+          if (isOpen) {
+            drawer.classList.remove('open');
+            if (hint) hint.innerHTML = '詳細 ▼';
           } else {
-            item.style.background = 'rgba(255,255,255,0.05)';
-            item.style.color = 'var(--text-muted)';
+            drawer.classList.add('open');
+            if (hint) hint.innerHTML = '閉じる ▲';
           }
-          item.addEventListener('click', (e) => {
-            e.stopPropagation();
-            setUserMark(gate, m);
-            popover.remove();
-          });
-          popover.appendChild(item);
-        });
-
-        document.body.appendChild(popover);
-
-        const closeHandler = (e) => {
-          if (!popover.contains(e.target) && e.target !== btn) {
-            popover.remove();
-            document.removeEventListener('click', closeHandler);
-          }
-        };
-        setTimeout(() => document.addEventListener('click', closeHandler), 10);
-      }
-
-      function setStartersView(viewMode) {
-        currentStartersView = viewMode;
-        const tableWrap = document.getElementById('pred-table-wrap');
-        const cardsWrap = document.getElementById('pred-mobile-cards');
-        const btnCard = document.getElementById('btn-view-card');
-        const btnTable = document.getElementById('btn-view-table');
-
-        if (btnCard) btnCard.classList.toggle('active', viewMode === 'card');
-        if (btnTable) btnTable.classList.toggle('active', viewMode === 'table');
-
-        if (tableWrap) {
-          tableWrap.style.display = viewMode === 'table' ? 'block' : 'none';
-        }
-        if (cardsWrap) {
-          cardsWrap.style.display = viewMode === 'card' ? 'flex' : 'none';
         }
       }
 
@@ -8251,23 +8214,18 @@ function hydratePayouts(race) {
         const container = document.getElementById('view-prediction');
         if (!container) return;
 
-        renderPredictionStarters();
-        renderPredictionTraining();
-        renderPredictionJockeys();
-        renderPredictionWaku();
-        renderPredictionTrack();
-        renderPredictionTrends();
+        renderNetkeibaHorseList();
         renderPredictionOccult();
-        renderPredictionPace();
         renderPredictionMemo();
         updateMarksUI();
         refreshIcons();
       }
 
-      function renderPredictionStarters() {
+      // NetKeiba完全準拠 リストレンダラー（横スクロールゼロ・1行完結）
+      function renderNetkeibaHorseList() {
         if (typeof document === 'undefined') return;
-        const tbody = document.getElementById('pred-starters-tbody');
-        const cardsWrap = document.getElementById('pred-mobile-cards');
+        const listContainer = document.getElementById('netkeiba-horse-list');
+        if (!listContainer) return;
 
         let starters = [...PREDICTION_DATA.starters];
         if (predictionSortType === 'pop') {
@@ -8277,224 +8235,94 @@ function hydratePayouts(race) {
         }
 
         const marks = getUserMarks();
+        let html = '';
 
-        // 1. Table format
-        if (tbody) {
-          let rowsHtml = '';
-          starters.forEach(s => {
-            const m = marks[s.gate] || '未';
-            const mClass = MARK_CLASSES[m] || '';
-            const isPop1 = s.pop === 1;
+        starters.forEach(s => {
+          const m = marks[s.gate] || '';
+          const mClass = MARK_CLASSES[m] || '';
+          const isPop1or2 = s.pop <= 2;
+          const isTop3Pop = s.pop <= 3;
 
-            rowsHtml += `
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.06); transition: background 0.15s;">
-                <td style="text-align: center;">
-                  <span class="gate-badge waku-${s.waku}">${s.gate}</span>
-                </td>
-                <td style="text-align: center;">
-                  <span class="mark-btn ${mClass}" data-gate="${s.gate}">${m}</span>
-                </td>
-                <td>
-                  <span style="font-weight: 700; font-size: 15px; color: #ffffff;">${s.horseName}</span>
-                  <span style="font-size: 11px; color: var(--text-muted); margin-left: 6px;">${s.stable}</span>
-                </td>
-                <td style="color: var(--text-secondary);">${s.sexAge}</td>
-                <td style="color: var(--text-secondary); font-family: monospace;">${s.load}kg</td>
-                <td style="font-weight: 600;">${s.jockey}</td>
-                <td style="text-align: right; font-weight: 800; font-size: 15px; font-family: monospace; color: ${isPop1 ? 'var(--gold)' : '#ffffff'};">${s.odds}倍</td>
-                <td style="text-align: right; font-family: monospace; color: var(--text-secondary); font-size: 13px;">${s.placeOdds}</td>
-                <td style="text-align: center;"><span class="pop-badge pop-${s.pop <= 3 ? s.pop : 'other'}">${s.pop}人気</span></td>
-                <td style="text-align: center;"><span class="grade-badge grade-${s.trainingGrade}">${s.trainingGrade}</span></td>
-              </tr>
-            `;
-          });
-          tbody.innerHTML = rowsHtml;
-        }
+          html += `
+            <div class="nh-row-container">
+              <div class="nh-main-row" data-gate="${s.gate}">
+                <!-- 1. 馬番（枠色セル） -->
+                <div class="nh-gate-cell waku-${s.waku}">
+                  ${s.gate}
+                </div>
 
-        // 2. Mobile card format
-        if (cardsWrap) {
-          let cardsHtml = '';
-          starters.forEach(s => {
-            const m = marks[s.gate] || '未';
-            const mClass = MARK_CLASSES[m] || '';
-            const isPop1 = s.pop === 1;
+                <!-- 2. 印ボタン -->
+                <div class="nh-mark-cell">
+                  <button class="nh-mark-btn ${mClass}" data-gate="${s.gate}" aria-label="印選択">
+                    ${m}
+                  </button>
+                </div>
 
-            cardsHtml += `
-              <div class="mobile-horse-card">
-                <div class="mhc-header">
-                  <div class="mhc-left">
-                    <span class="gate-badge waku-${s.waku}">${s.gate}</span>
-                    <span class="mhc-name">${s.horseName}</span>
-                    <span class="mhc-sub">${s.sexAge} ${s.load}kg</span>
+                <!-- 3. 馬情報（中央） -->
+                <div class="nh-info-cell" data-action="toggle-drawer" data-gate="${s.gate}">
+                  <div class="nh-name-row">
+                    <span class="nh-horse-name">${s.horseName}</span>
+                    <span class="nh-expand-hint" id="nh-hint-${s.gate}">詳細 ▼</span>
                   </div>
-                  <div class="mhc-right">
-                    <span class="mark-btn ${mClass}" data-gate="${s.gate}">${m}</span>
+                  <div class="nh-sub-row">
+                    <span>${s.sexAge}</span>
+                    <span class="nh-jockey">${s.jockey}</span>
+                    <span class="nh-load">${s.load}kg</span>
                   </div>
                 </div>
-                <div class="mhc-body">
-                  <div class="mhc-stat">
-                    <span class="mhc-label">騎手</span>
-                    <span class="mhc-val">${s.jockey}</span>
-                  </div>
-                  <div class="mhc-stat">
-                    <span class="mhc-label">単勝</span>
-                    <span class="mhc-val highlight">${s.odds}倍 <small style="font-size: 11px; color: ${isPop1 ? 'var(--gold)' : 'var(--text-muted)'}; font-weight: normal;">(${s.pop}人気)</small></span>
-                  </div>
-                  <div class="mhc-stat">
-                    <span class="mhc-label">複勝</span>
-                    <span class="mhc-val" style="font-family: monospace; font-size: 12px;">${s.placeOdds}</span>
-                  </div>
-                  <div class="mhc-stat">
-                    <span class="mhc-label">調教</span>
-                    <span class="mhc-val" style="display: flex; align-items: center; gap: 4px;">
-                      <span class="grade-badge grade-${s.trainingGrade}">${s.trainingGrade}</span>
-                      <span style="font-size: 11px; color: var(--text-muted);">${s.trainingCourse}</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="mhc-footer">
-                  <span>厩舎: ${s.stable}</span>
-                  <span style="font-size: 11px; color: var(--text-muted);">ラスト: ${s.trainingTime.split(' - ').slice(-1)[0]}</span>
-                </div>
-              </div>
-            `;
-          });
-          cardsWrap.innerHTML = cardsHtml;
-        }
 
-        // Bind clicks on all mark buttons
-        document.querySelectorAll('#sec-starters .mark-btn').forEach(btn => {
-          btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const g = btn.getAttribute('data-gate');
-            showMarkPopover(btn, g);
-          });
-        });
-      }
-
-      function renderPredictionTraining() {
-        if (typeof document === 'undefined') return;
-        const grid = document.getElementById('pred-training-grid');
-        if (!grid) return;
-
-        let cardsHtml = '';
-        PREDICTION_DATA.starters.forEach(s => {
-          cardsHtml += `
-            <div class="train-card">
-              <div class="train-card-top">
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <span class="gate-badge waku-${s.waku}">${s.gate}</span>
-                  <strong style="font-size: 16px; color: #fff;">${s.horseName}</strong>
-                  <span style="font-size: 12px; color: var(--text-muted);">${s.stable}</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 6px;">
-                  <span class="grade-badge grade-${s.trainingGrade}">${s.trainingGrade}評価</span>
-                  <span class="mark-btn" data-gate="${s.gate}">未</span>
+                <!-- 4. オッズ・人気（右端） -->
+                <div class="nh-odds-cell" data-action="toggle-drawer" data-gate="${s.gate}">
+                  <div class="nh-odds-val ${isPop1or2 ? 'highlight' : ''}">${s.odds}</div>
+                  <div class="nh-pop-val ${isTop3Pop ? 'top3' : ''}">${s.pop}人気</div>
                 </div>
               </div>
 
-              <div class="train-clock">
-                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
-                  <span style="color: var(--text-muted);">コース: <strong>${s.trainingCourse}</strong></span>
-                  <span style="color: var(--primary);">評価: ${s.trainingGrade}</span>
+              <!-- 5. タップ展開アコーディオン（調教・厩舎・騎手相性） -->
+              <div class="nh-detail-drawer" id="nh-drawer-${s.gate}">
+                <div class="nh-drawer-grid">
+                  <div class="nh-drawer-stat">
+                    <span style="color: var(--text-muted);">調教評価</span>
+                    <span style="font-weight: 800; color: ${s.trainingGrade === 'S' ? 'var(--gold)' : 'var(--primary)'};">${s.trainingGrade} (${s.trainingCourse})</span>
+                  </div>
+                  <div class="nh-drawer-stat">
+                    <span style="color: var(--text-muted);">複勝オッズ</span>
+                    <span style="font-family: monospace; font-weight: 700;">${s.placeOdds}</span>
+                  </div>
+                  <div class="nh-drawer-stat" style="grid-column: span 2;">
+                    <span style="color: var(--text-muted);">厩舎 (所属)</span>
+                    <span style="font-weight: 600; color: #fff;">${s.stable}</span>
+                  </div>
                 </div>
-                <div>${s.trainingTime}</div>
-              </div>
-
-              <div class="train-comment">
-                ${s.trainingComment}
+                <div style="font-size: 11px; color: var(--gold); font-family: monospace; margin-bottom: 4px;">
+                  追い切り: ${s.trainingTime}
+                </div>
+                <div class="nh-drawer-comment">
+                  <strong>【厩舎コメント】</strong> ${s.trainingComment}
+                </div>
               </div>
             </div>
           `;
         });
 
-        grid.innerHTML = cardsHtml;
+        listContainer.innerHTML = html;
 
-        grid.querySelectorAll('.mark-btn').forEach(btn => {
+        // イベントバインド：印ボタンクリックでボトムシート展開
+        listContainer.querySelectorAll('.nh-mark-btn').forEach(btn => {
           btn.addEventListener('click', (e) => {
             e.stopPropagation();
             const g = btn.getAttribute('data-gate');
-            showMarkPopover(btn, g);
+            openMarkSheet(g);
           });
         });
-      }
 
-      function renderPredictionJockeys() {
-        if (typeof document === 'undefined') return;
-        const tbody = document.getElementById('pred-jockeys-tbody');
-        if (!tbody) return;
-
-        let html = '';
-        PREDICTION_DATA.jockeysCompatibility.forEach(j => {
-          html += `
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-              <td style="font-weight: 700; color: #fff; font-size: 15px;">${j.jockey}</td>
-              <td style="color: var(--gold); font-weight: 600;">${j.horse}</td>
-              <td style="text-align: right; font-weight: 700; color: #fff; font-family: monospace;">${j.tokyoTurfWinRate}</td>
-              <td style="text-align: right; font-weight: 700; color: var(--primary); font-family: monospace;">${j.tokyoTurfTop3Rate}</td>
-              <td><span style="background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 4px; font-size: 12px; color: var(--text-secondary);">${j.switchType}</span></td>
-              <td style="font-weight: 700; color: var(--gold);">${j.rating}</td>
-              <td style="font-size: 13px; color: var(--text-secondary); max-width: 320px;">${j.comment}</td>
-            </tr>
-          `;
+        // イベントバインド：馬名・オッズセルタップでアコーディオン展開
+        listContainer.querySelectorAll('[data-action="toggle-drawer"]').forEach(cell => {
+          cell.addEventListener('click', () => {
+            const g = cell.getAttribute('data-gate');
+            toggleHorseAccordion(g);
+          });
         });
-
-        tbody.innerHTML = html;
-      }
-
-      function renderPredictionWaku() {
-        if (typeof document === 'undefined') return;
-        const desc = document.getElementById('pred-waku-desc');
-        const tbody = document.getElementById('pred-waku-tbody');
-        if (!desc || !tbody) return;
-
-        desc.innerText = PREDICTION_DATA.wakuAnalysis.description;
-
-        let html = '';
-        PREDICTION_DATA.wakuAnalysis.stats.forEach(w => {
-          html += `
-            <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-              <td style="text-align: center;"><span class="gate-badge waku-${w.waku}">${w.waku}枠</span></td>
-              <td style="text-align: right; font-weight: 700; font-family: monospace; color: #fff;">${w.winRate}</td>
-              <td style="text-align: right; font-weight: 700; font-family: monospace; color: var(--gold);">${w.top3Rate}</td>
-              <td style="font-size: 13px; color: var(--text-secondary);">${w.comment}</td>
-            </tr>
-          `;
-        });
-
-        tbody.innerHTML = html;
-      }
-
-      function renderPredictionTrack() {
-        if (typeof document === 'undefined') return;
-        const t = PREDICTION_DATA.trackCondition;
-        const elCourse = document.getElementById('track-course-usage');
-        const elCushion = document.getElementById('track-cushion-value');
-        const elBias = document.getElementById('track-bias-label');
-        const elDetail = document.getElementById('track-bias-detail');
-
-        if (elCourse) elCourse.innerText = t.courseUsage;
-        if (elCushion) elCushion.innerText = t.cushionValue;
-        if (elBias) elBias.innerText = t.bias;
-        if (elDetail) elDetail.innerHTML = `<strong>【馬場考察】</strong> ${t.biasDetail}`;
-      }
-
-      function renderPredictionTrends() {
-        if (typeof document === 'undefined') return;
-        const container = document.getElementById('pred-trends-container');
-        if (!container) return;
-
-        let html = '';
-        PREDICTION_DATA.raceTrends.forEach(trend => {
-          html += `
-            <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px;">
-              <h4 style="font-size: 14px; font-weight: 700; color: var(--gold); margin-bottom: 6px;">${trend.title}</h4>
-              <p style="font-size: 13px; line-height: 1.6; color: var(--text-secondary); margin: 0;">${trend.content}</p>
-            </div>
-          `;
-        });
-
-        container.innerHTML = html;
       }
 
       function renderPredictionOccult() {
@@ -8508,10 +8336,10 @@ function hydratePayouts(race) {
           if (o.targets && o.targets.length > 0) {
             targetsHtml = `
               <div class="occult-targets">
-                <span class="occult-target-label"><i data-lucide="crosshair"></i> Xでの指名・注目馬:</span>
+                <span class="occult-target-label"><i data-lucide="crosshair"></i> X推奨馬:</span>
                 ${o.targets.map(t => `
                   <span class="occult-target-chip">
-                    <span class="gate-badge waku-${t.waku}">${t.gate}</span>
+                    <span class="nh-gate-cell waku-${t.waku}" style="width:20px; height:20px; font-size:11px; border-radius:3px; display:inline-flex;">${t.gate}</span>
                     <strong style="color: #ffffff;">${t.name}</strong>
                   </span>
                 `).join('')}
@@ -8523,7 +8351,7 @@ function hydratePayouts(race) {
             <div class="occult-card">
               <div class="occult-header">
                 <span class="occult-badge">${o.badge}</span>
-                <span class="occult-source"><i data-lucide="twitter"></i> ${o.source}</span>
+                <span class="occult-source"><svg style="width: 12px; height: 12px; fill: currentColor; display: inline-block; vertical-align: middle;" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> ${o.source}</span>
               </div>
               <h4 class="occult-title">${o.title}</h4>
               <p class="occult-content">${o.content}</p>
@@ -8533,30 +8361,6 @@ function hydratePayouts(race) {
         });
 
         container.innerHTML = html;
-      }
-
-      function renderPredictionPace() {
-        if (typeof document === 'undefined') return;
-        const label = document.getElementById('pred-pace-label');
-        const desc = document.getElementById('pred-pace-desc');
-        const lanes = document.getElementById('pred-pace-lanes');
-        if (!lanes) return;
-
-        const p = PREDICTION_DATA.paceSimulation;
-        if (label) label.innerText = `想定ペース: ${p.estimatedPace}`;
-        if (desc) desc.innerText = p.paceText;
-
-        let html = '';
-        p.positions.forEach(pos => {
-          html += `
-            <div class="pace-lane">
-              <span class="pace-tag">${pos.label}</span>
-              <span class="pace-horses">${pos.horses}</span>
-            </div>
-          `;
-        });
-
-        lanes.innerHTML = html;
       }
 
       function renderPredictionMemo() {
@@ -8570,20 +8374,35 @@ function hydratePayouts(race) {
       function initPredictionEventListeners() {
         if (typeof document === 'undefined') return;
 
-        // View toggle buttons (Card vs Table)
-        const btnViewCard = document.getElementById('btn-view-card');
-        const btnViewTable = document.getElementById('btn-view-table');
-        if (btnViewCard) {
-          btnViewCard.addEventListener('click', () => setStartersView('card'));
-        }
-        if (btnViewTable) {
-          btnViewTable.addEventListener('click', () => setStartersView('table'));
+        // ボトムシートの印アイテム選択
+        document.querySelectorAll('.mark-sheet-item').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const m = btn.getAttribute('data-mark');
+            if (activeSheetGate) {
+              setUserMark(activeSheetGate, m);
+            }
+            closeMarkSheet();
+          });
+        });
+
+        const btnClearSheet = document.getElementById('btn-mark-sheet-clear');
+        if (btnClearSheet) {
+          btnClearSheet.addEventListener('click', () => {
+            if (activeSheetGate) {
+              setUserMark(activeSheetGate, '未');
+            }
+            closeMarkSheet();
+          });
         }
 
-        // Set initial view mode based on screen width
-        if (typeof window !== 'undefined') {
-          const isMobile = window.innerWidth <= 768;
-          setStartersView(isMobile ? 'card' : 'table');
+        const btnCloseSheet = document.getElementById('btn-close-mark-sheet');
+        if (btnCloseSheet) {
+          btnCloseSheet.addEventListener('click', closeMarkSheet);
+        }
+
+        const backdropSheet = document.getElementById('mark-sheet-backdrop');
+        if (backdropSheet) {
+          backdropSheet.addEventListener('click', closeMarkSheet);
         }
 
         const navItems = document.querySelectorAll('.nav-item');
@@ -8631,7 +8450,7 @@ function hydratePayouts(race) {
             btnSortGate.classList.add('active');
             btnSortPop.classList.remove('active');
             predictionSortType = 'gate';
-            renderPredictionStarters();
+            renderNetkeibaHorseList();
             updateMarksUI();
           });
 
@@ -8639,7 +8458,7 @@ function hydratePayouts(race) {
             btnSortPop.classList.add('active');
             btnSortGate.classList.remove('active');
             predictionSortType = 'pop';
-            renderPredictionStarters();
+            renderNetkeibaHorseList();
             updateMarksUI();
           });
         }
@@ -8649,9 +8468,9 @@ function hydratePayouts(race) {
           btnRefreshOdds.addEventListener('click', () => {
             const timeEl = document.getElementById('odds-update-time');
             const now = new Date();
-            const timeStr = `${now.getFullYear()}/${now.getMonth()+1}/${now.getDate()} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')} JST`;
+            const timeStr = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')}`;
             if (timeEl) {
-              timeEl.innerHTML = `<span style="color: var(--primary);">✔ 最新オッズ更新済 (${timeStr})</span>`;
+              timeEl.innerHTML = `<span style="color: var(--primary);">✔ ${timeStr}更新</span>`;
             }
           });
         }
@@ -8665,9 +8484,9 @@ function hydratePayouts(race) {
               localStorage.setItem('keiba_memo_16', memoInput.value);
             }
             if (saveStatus) {
-              saveStatus.innerText = '💾 保存しました';
+              saveStatus.innerText = '💾 保存完了';
               setTimeout(() => {
-                if (saveStatus) saveStatus.innerText = '💾 localStorage自動保存中';
+                if (saveStatus) saveStatus.innerText = '💾 自動保存中';
               }, 1500);
             }
           });
@@ -8700,15 +8519,13 @@ function hydratePayouts(race) {
 
             if (navigator.clipboard) {
               navigator.clipboard.writeText(summaryText).then(() => {
-                btnCopyMemo.innerHTML = '<i data-lucide="check"></i> コピー完了！';
-                refreshIcons();
+                btnCopyMemo.innerText = '✔ コピー済';
                 setTimeout(() => {
-                  btnCopyMemo.innerHTML = '<i data-lucide="copy" style="width: 14px; height: 14px;"></i> 予想をコピー';
-                  refreshIcons();
+                  btnCopyMemo.innerText = 'コピー';
                 }, 2000);
               });
             } else {
-              alert('クリップボードにコピーしました:\n' + summaryText);
+              alert('コピーしました:\n' + summaryText);
             }
           });
         }
@@ -8721,7 +8538,7 @@ function hydratePayouts(race) {
               if (typeof localStorage !== 'undefined') {
                 localStorage.removeItem('keiba_memo_16');
               }
-              if (saveStatus) saveStatus.innerText = '🗑️ メモを消去しました';
+              if (saveStatus) saveStatus.innerText = '🗑️ 消去完了';
             }
           });
         }
@@ -8767,7 +8584,7 @@ function hydratePayouts(race) {
             fullRowsHtml += `
               <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
                 <td style="text-align: center;"><span class="rank-badge ${rankClass}" style="width:20px;height:20px;font-size:11px;">${rankBadge}</span></td>
-                <td style="text-align: center; font-family: monospace; font-weight: 700;"><span class="gate-badge waku-${m.waku || 1}" style="min-width:20px;height:20px;font-size:11px;padding:0 2px;">${m.gate}</span></td>
+                <td style="text-align: center; font-family: monospace; font-weight: 700;"><span class="nh-gate-cell waku-${m.waku || 1}" style="width:20px;height:20px;font-size:11px;border-radius:3px;display:inline-flex;">${m.gate}</span></td>
                 <td style="font-weight: 700; color: #fff;">${m.horseName}</td>
                 <td>${m.sexAge}</td>
                 <td>${m.load}</td>
@@ -8856,7 +8673,7 @@ function hydratePayouts(race) {
             tableRows += `
               <tr ${rowHighlight}>
                 <td><span class="rank-badge ${rankClass}">${r.rank}</span></td>
-                <td><span class="gate-badge waku-${wakuNum}">${r.gate}</span></td>
+                <td><span class="nh-gate-cell waku-${wakuNum}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${r.gate}</span></td>
                 <td style="font-weight: 700; color: #fff;">${r.horseName}</td>
                 <td>${r.sexAge}</td>
                 <td>${r.jockeyLoad}kg</td>
@@ -9004,7 +8821,7 @@ function hydratePayouts(race) {
             entriesTableRows += `
               <tr style="border-bottom: 1px solid rgba(255,255,255,0.06); transition: background 0.15s;">
                 <td style="text-align: center;">
-                  <span class="gate-badge waku-${e.waku}">${e.gate}</span>
+                  <span class="nh-gate-cell waku-${e.waku}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${e.gate}</span>
                 </td>
                 <td style="font-weight: 700; font-size: 14px; color: #ffffff;">${e.horseName}</td>
                 <td style="color: var(--text-secondary);">${e.sexAge}</td>
