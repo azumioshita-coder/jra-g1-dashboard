@@ -19,7 +19,11 @@
       "trainingGrade": "S",
       "trainingCourse": "栗東CW",
       "trainingTime": "81.4 - 65.8 - 50.9 - 36.2 - 11.2 (馬なり)",
-      "trainingComment": "CWでラスト11.2秒。春のクラシック戦線から筋肉の張りが一段増し、非の打ち所がない仕上がり。最内1枠1番を引き、C.デムーロ騎手への勝負手乗り替わりで死角なし。"
+      "trainingComment": "CWでラスト11.2秒。春のクラシック戦線から筋肉の張りが一段増し、非の打ち所がない仕上がり。最内1枠1番を引き、C.デムーロ騎手への勝負手乗り替わりで死角なし。",
+      "trainingWeight": 504,
+      "lastRaceWeight": 500,
+      "confirmedWeight": 504,
+      "weightDiff": "+4"
     },
     {
       "waku": 1,
@@ -35,7 +39,11 @@
       "trainingGrade": "B+",
       "trainingCourse": "栗東坂路",
       "trainingTime": "53.1 - 38.4 - 24.8 - 12.3 (馬なり)",
-      "trainingComment": "叩き2走目で気配一変。坂路での首の使い方が良くなり、前走以上の活気。内枠を活かして好位インで脚を溜められれば一発も。"
+      "trainingComment": "叩き2走目で気配一変。坂路での首の使い方が良くなり、前走以上の活気。内枠を活かして好位インで脚を溜められれば一発も。",
+      "trainingWeight": 512,
+      "lastRaceWeight": 510,
+      "confirmedWeight": 510,
+      "weightDiff": "0"
     },
     {
       "waku": 2,
@@ -51,7 +59,11 @@
       "trainingGrade": "A",
       "trainingCourse": "美浦W",
       "trainingTime": "83.2 - 67.0 - 51.8 - 36.8 - 11.3 (馬なり)",
-      "trainingComment": "直線軽く仕掛けただけで鋭伸。東京2000mはベストの舞台。牝馬の56kg斤量も有利で、鋭い末脚をフルに発揮できる態勢。"
+      "trainingComment": "直線軽く仕掛けただけで鋭伸。東京2000mはベストの舞台。牝馬の56kg斤量も有利で、鋭い末脚をフルに発揮できる態勢。",
+      "trainingWeight": 474,
+      "lastRaceWeight": 470,
+      "confirmedWeight": 472,
+      "weightDiff": "+2"
     },
     {
       "waku": 2,
@@ -67,7 +79,11 @@
       "trainingGrade": "B",
       "trainingCourse": "栗東CW",
       "trainingTime": "83.8 - 67.2 - 52.1 - 37.0 - 11.7 (強め)",
-      "trainingComment": "力強いフットワークで順調な仕上がり。横山典弘騎手の手腕でどこまで上位に食い込めるか。"
+      "trainingComment": "力強いフットワークで順調な仕上がり。横山典弘騎手の手腕でどこまで上位に食い込めるか。",
+      "trainingWeight": 486,
+      "lastRaceWeight": 482,
+      "confirmedWeight": 484,
+      "weightDiff": "+2"
     },
     {
       "waku": 3,
@@ -83,7 +99,11 @@
       "trainingGrade": "B",
       "trainingCourse": "美浦W",
       "trainingTime": "84.0 - 67.5 - 52.3 - 37.2 - 11.8 (馬なり)",
-      "trainingComment": "東京巧者だが2000mへの距離延長が鍵。調教自体は素軽さがあり体調は万全。"
+      "trainingComment": "東京巧者だが2000mへの距離延長が鍵。調教自体は素軽さがあり体調は万全。",
+      "trainingWeight": 508,
+      "lastRaceWeight": 504,
+      "confirmedWeight": 506,
+      "weightDiff": "+2"
     },
     {
       "waku": 3,
@@ -99,7 +119,11 @@
       "trainingGrade": "B+",
       "trainingCourse": "栗東CW",
       "trainingTime": "82.5 - 66.4 - 51.5 - 36.8 - 11.5 (一杯)",
-      "trainingComment": "一杯に追われてシャープな伸び。ハナ争いまたは2番手追走からのしぶとさ勝負で前残り警戒。"
+      "trainingComment": "一杯に追われてシャープな伸び。ハナ争いまたは2番手追走からのしぶとさ勝負で前残り警戒。",
+      "trainingWeight": 480,
+      "lastRaceWeight": 478,
+      "confirmedWeight": 476,
+      "weightDiff": "-2"
     },
     {
       "waku": 4,
@@ -115,7 +139,11 @@
       "trainingGrade": "S",
       "trainingCourse": "美浦W",
       "trainingTime": "82.0 - 66.1 - 51.2 - 36.5 - 11.0 (強め)",
-      "trainingComment": "美浦Wで抜群の手応え。外の僚馬をアオる圧巻の動きで、ルメール騎手も「完璧」と絶賛。前走からの上積み特大で秋天制覇へ視界良好。"
+      "trainingComment": "美浦Wで抜群の手応え。外の僚馬をアオる圧巻の動きで、ルメール騎手も「完璧」と絶賛。前走からの上積み特大で秋天制覇へ視界良好。",
+      "trainingWeight": 494,
+      "lastRaceWeight": 490,
+      "confirmedWeight": 492,
+      "weightDiff": "+2"
     },
     {
       "waku": 4,
@@ -131,7 +159,11 @@
       "trainingGrade": "B+",
       "trainingCourse": "栗東CW",
       "trainingTime": "83.0 - 66.8 - 51.6 - 36.7 - 11.4 (馬なり)",
-      "trainingComment": "末脚のキレは一級品。東京の長い直線で持ち味が存分に活きる条件。展開ひとつで上位進出。"
+      "trainingComment": "末脚のキレは一級品。東京の長い直線で持ち味が存分に活きる条件。展開ひとつで上位進出。",
+      "trainingWeight": 476,
+      "lastRaceWeight": 472,
+      "confirmedWeight": 474,
+      "weightDiff": "+2"
     },
     {
       "waku": 5,
@@ -147,7 +179,11 @@
       "trainingGrade": "B+",
       "trainingCourse": "美浦W",
       "trainingTime": "83.5 - 66.8 - 51.5 - 37.0 - 11.5 (馬なり)",
-      "trainingComment": "単騎マイペースの逃げが濃厚。前走毎日王冠以上のデキで、開幕後半のBコースでも開幕週のようなしぶとさを発揮できる。"
+      "trainingComment": "単騎マイペースの逃げが濃厚。前走毎日王冠以上のデキで、開幕後半のBコースでも開幕週のようなしぶとさを発揮できる。",
+      "trainingWeight": 502,
+      "lastRaceWeight": 498,
+      "confirmedWeight": 500,
+      "weightDiff": "+2"
     },
     {
       "waku": 5,
@@ -163,7 +199,11 @@
       "trainingGrade": "B+",
       "trainingCourse": "栗東CW",
       "trainingTime": "82.9 - 66.7 - 51.8 - 37.1 - 11.6 (強め)",
-      "trainingComment": "フットワーク軽快で福永厩舎の仕上げも万全。川田騎手との相性も抜群で、好位からの抜け出しを狙う。"
+      "trainingComment": "フットワーク軽快で福永厩舎の仕上げも万全。川田騎手との相性も抜群で、好位からの抜け出しを狙う。",
+      "trainingWeight": 510,
+      "lastRaceWeight": 506,
+      "confirmedWeight": 508,
+      "weightDiff": "+2"
     },
     {
       "waku": 6,
@@ -179,7 +219,11 @@
       "trainingGrade": "B",
       "trainingCourse": "栗東坂路",
       "trainingTime": "54.2 - 39.1 - 25.4 - 12.5 (馬なり)",
-      "trainingComment": "坂路で軽快なフットワーク。調子落ちはなくマイペースで挑む。"
+      "trainingComment": "坂路で軽快なフットワーク。調子落ちはなくマイペースで挑む。",
+      "trainingWeight": 468,
+      "lastRaceWeight": 464,
+      "confirmedWeight": 466,
+      "weightDiff": "+2"
     },
     {
       "waku": 6,
@@ -195,7 +239,11 @@
       "trainingGrade": "B",
       "trainingCourse": "美浦W",
       "trainingTime": "84.1 - 67.5 - 52.3 - 37.4 - 11.8 (一杯)",
-      "trainingComment": "スタミナ豊富でタフなロングスパートが持ち味。ペースが上がって消耗戦になれば浮上。"
+      "trainingComment": "スタミナ豊富でタフなロングスパートが持ち味。ペースが上がって消耗戦になれば浮上。",
+      "trainingWeight": 506,
+      "lastRaceWeight": 504,
+      "confirmedWeight": 504,
+      "weightDiff": "0"
     },
     {
       "waku": 7,
@@ -211,7 +259,11 @@
       "trainingGrade": "B",
       "trainingCourse": "美浦W",
       "trainingTime": "83.9 - 67.2 - 52.0 - 37.1 - 11.7 (強め)",
-      "trainingComment": "3歳馬で斤量56kgの恩恵。手塚厩舎2頭出しで不気味な存在。"
+      "trainingComment": "3歳馬で斤量56kgの恩恵。手塚厩舎2頭出しで不気味な存在。",
+      "trainingWeight": 478,
+      "lastRaceWeight": 476,
+      "confirmedWeight": 474,
+      "weightDiff": "-2"
     },
     {
       "waku": 7,
@@ -227,7 +279,11 @@
       "trainingGrade": "B",
       "trainingCourse": "栗東坂路",
       "trainingTime": "53.9 - 38.8 - 25.1 - 12.4 (馬なり)",
-      "trainingComment": "ミルコ・デムーロ騎手の大胆な捲り戦法がハマれば面白い一頭。"
+      "trainingComment": "ミルコ・デムーロ騎手の大胆な捲り戦法がハマれば面白い一頭。",
+      "trainingWeight": 492,
+      "lastRaceWeight": 490,
+      "confirmedWeight": 488,
+      "weightDiff": "-2"
     },
     {
       "waku": 8,
@@ -243,7 +299,11 @@
       "trainingGrade": "B",
       "trainingCourse": "美浦W",
       "trainingTime": "84.3 - 67.8 - 52.5 - 37.5 - 11.9 (馬なり)",
-      "trainingComment": "名門・堀厩舎所属の若武者コンビ。外枠からロスなく運べるかが鍵。"
+      "trainingComment": "名門・堀厩舎所属の若武者コンビ。外枠からロスなく運べるかが鍵。",
+      "trainingWeight": 516,
+      "lastRaceWeight": 512,
+      "confirmedWeight": 514,
+      "weightDiff": "+2"
     },
     {
       "waku": 8,
@@ -259,7 +319,11 @@
       "trainingGrade": "B",
       "trainingCourse": "栗東CW",
       "trainingTime": "83.7 - 67.1 - 52.0 - 37.3 - 11.8 (一杯)",
-      "trainingComment": "強めに追われて気合乗り十分。大外枠だが思い切った競馬で臨む。"
+      "trainingComment": "強めに追われて気合乗り十分。大外枠だが思い切った競馬で臨む。",
+      "trainingWeight": 482,
+      "lastRaceWeight": 480,
+      "confirmedWeight": 480,
+      "weightDiff": "0"
     },
     {
       "waku": 8,
@@ -275,7 +339,11 @@
       "trainingGrade": "A",
       "trainingCourse": "栗東坂路",
       "trainingTime": "52.8 - 38.1 - 24.6 - 12.1 (一杯)",
-      "trainingComment": "栗東坂路で力強い登坂。古馬相手でも通用するダイナミックなパワーを実感。大外8枠17番に入ったが、戸崎騎手のコース取りに期待。"
+      "trainingComment": "栗東坂路で力強い登坂。古馬相手でも通用するダイナミックなパワーを実感。大外8枠17番に入ったが、戸崎騎手のコース取りに期待。",
+      "trainingWeight": 514,
+      "lastRaceWeight": 510,
+      "confirmedWeight": 512,
+      "weightDiff": "+2"
     }
   ],
   "jockeysCompatibility": [

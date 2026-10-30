@@ -1166,7 +1166,38 @@ html.route-prediction .nav-item[data-target="prediction"] {
 /* ----------------------------------
    NetKeiba完全準拠 モバイル出馬表
    横スクロール完全ゼロ（100%幅・文字重なりゼロ）
+   列順: [馬番] [印] [馬情報] ➔ [オッズ] ➔ [馬体重] ➔ [詳細▼]
 ------------------------------------- */
+.weight-type-toggle {
+  display: inline-flex;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.btn-weight-mode {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-weight-mode.active#btn-weight-training {
+  background: rgba(245, 158, 11, 0.25);
+  color: var(--gold);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+.btn-weight-mode.active#btn-weight-confirmed {
+  background: rgba(16, 185, 129, 0.25);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
 .netkeiba-horse-list {
   display: flex;
   flex-direction: column;
@@ -1190,29 +1221,29 @@ html.route-prediction .nav-item[data-target="prediction"] {
   border-color: rgba(16, 185, 129, 0.35);
 }
 
-/* メイン1行 (4列固定) */
+/* メイン1行: 馬番・印・馬情報・オッズ・馬体重・詳細▼ */
 .nh-main-row {
   display: flex;
   align-items: center;
-  padding: 8px 10px;
-  gap: 8px;
-  min-height: 52px;
+  padding: 6px 8px;
+  gap: 5px;
+  min-height: 50px;
   box-sizing: border-box;
   width: 100%;
 }
 
-/* 1列目: 馬番 (枠色バッジ 32px) */
+/* 1列目: 馬番 (枠色バッジ 26px) */
 .nh-gate-cell {
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 13.5px;
   font-weight: 900;
   font-family: monospace;
-  border-radius: 6px;
+  border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
@@ -1226,22 +1257,22 @@ html.route-prediction .nav-item[data-target="prediction"] {
 .waku-7 { background: #f97316 !important; color: #ffffff !important; }
 .waku-8 { background: #ec4899 !important; color: #ffffff !important; }
 
-/* 2列目: 印ボタン (38px) */
+/* 2列目: 印ボタン (30px) */
 .nh-mark-cell {
-  width: 38px;
+  width: 30px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .nh-mark-btn {
-  width: 36px;
-  height: 36px;
-  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: var(--text-muted);
-  font-size: 15px;
+  font-size: 13.5px;
   font-weight: 900;
   cursor: pointer;
   display: flex;
@@ -1249,6 +1280,7 @@ html.route-prediction .nav-item[data-target="prediction"] {
   justify-content: center;
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-tap-highlight-color: transparent;
+  padding: 0;
 }
 .nh-mark-btn:active {
   transform: scale(0.92);
@@ -1260,16 +1292,15 @@ html.route-prediction .nav-item[data-target="prediction"] {
 .nh-mark-btn.mark-ana { background: rgba(192, 132, 252, 0.25) !important; color: #c084fc !important; border-color: #a855f7 !important; }
 .nh-mark-btn.mark-keshi { background: rgba(100, 116, 139, 0.25) !important; color: #94a3b8 !important; border-color: #64748b !important; text-decoration: line-through; }
 
-/* 3列目: 馬情報（中央・可変幅・重なり防止） */
+/* 3列目: 馬情報（中央・可変幅） */
 .nh-info-cell {
   flex: 1;
-  min-width: 0;
+  min-width: 78px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
   cursor: pointer;
-  padding-right: 4px;
 }
 .nh-name-row {
   display: block;
@@ -1278,19 +1309,20 @@ html.route-prediction .nav-item[data-target="prediction"] {
   white-space: nowrap;
 }
 .nh-horse-name {
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: 800;
   color: #60a5fa;
   letter-spacing: -0.2px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: block;
 }
 .nh-sub-row {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 11px;
+  gap: 5px;
+  font-size: 10.5px;
   color: var(--text-muted);
   margin-top: 2px;
   white-space: nowrap;
@@ -1304,44 +1336,39 @@ html.route-prediction .nav-item[data-target="prediction"] {
 .nh-load {
   color: var(--text-secondary);
 }
-.nh-drawer-hint {
-  font-size: 10px;
-  color: var(--text-muted);
-  margin-left: auto;
-  opacity: 0.75;
-}
 
-/* 4列目: オッズ・人気（右端・幅72px完全固定・右寄せ） */
+/* 4列目: オッズ・人気（幅48px固定・右寄せ） */
 .nh-odds-cell {
-  width: 72px;
-  min-width: 72px;
+  width: 48px;
+  min-width: 48px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
   cursor: pointer;
+  line-height: 1.15;
 }
 .nh-odds-line {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 3px;
+  gap: 2px;
   line-height: 1.1;
   white-space: nowrap;
 }
 .nh-odds-badge-yosou {
-  font-size: 9px;
+  font-size: 8.5px;
   font-weight: 700;
   color: var(--gold);
   background: rgba(245, 158, 11, 0.2);
   border: 1px solid rgba(245, 158, 11, 0.35);
-  padding: 1px 3px;
-  border-radius: 3px;
+  padding: 1px 2px;
+  border-radius: 2px;
   line-height: 1;
 }
 .nh-odds-val {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 800;
   font-family: monospace;
   color: #f3f4f6;
@@ -1351,10 +1378,107 @@ html.route-prediction .nav-item[data-target="prediction"] {
   color: #f87171;
 }
 .nh-pop-badge {
-  font-size: 10px;
+  font-size: 9.5px;
   color: var(--text-muted);
-  margin-top: 2px;
+  margin-top: 1px;
   white-space: nowrap;
+}
+
+/* 5列目: 馬体重（幅52px固定・右寄せ） */
+.nh-weight-cell {
+  width: 52px;
+  min-width: 52px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1.15;
+}
+.nh-weight-val {
+  font-size: 12.5px;
+  font-weight: 800;
+  font-family: monospace;
+  color: #e2e8f0;
+  white-space: nowrap;
+}
+.nh-weight-sub {
+  font-size: 9px;
+  margin-top: 1px;
+  white-space: nowrap;
+}
+.weight-tag-pre {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.15);
+  padding: 0 3px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+.weight-tag-diff {
+  font-family: monospace;
+  font-weight: 700;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+.weight-tag-diff.diff-plus {
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.15);
+}
+.weight-tag-diff.diff-minus {
+  color: #f87171;
+  background: rgba(239, 68, 68, 0.15);
+}
+.weight-tag-diff.diff-zero {
+  color: #94a3b8;
+  background: rgba(148, 163, 184, 0.15);
+}
+
+/* 6列目: 詳細▼ボタン (幅34px固定) */
+.nh-detail-toggle-cell {
+  width: 34px;
+  min-width: 34px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nh-drawer-toggle-btn {
+  width: 32px;
+  height: 30px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: all 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.nh-drawer-toggle-btn:hover, .nh-drawer-toggle-btn.active {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.4);
+  color: var(--primary);
+}
+.toggle-text {
+  font-size: 8.5px;
+  font-weight: 700;
+  line-height: 1;
+}
+.toggle-arrow {
+  font-size: 10px;
+  line-height: 1;
+  margin-top: 1px;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+.nh-drawer-toggle-btn.active .toggle-arrow {
+  transform: rotate(180deg);
 }
 
 /* アコーディオン展開ドロワー */
@@ -1756,6 +1880,21 @@ html.route-prediction .nav-item[data-target="prediction"] {
                   </button>
                 </div>
               </div>
+
+              <div class="odds-status-row" style="margin-top: 8px; padding-top: 8px; border-top: 1px dashed rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span style="font-size: 11px; font-weight: 700; color: var(--text-muted); display: inline-flex; align-items: center; gap: 4px;">
+                    <i data-lucide="scale" style="width: 13px; height: 13px; color: var(--gold);"></i> 馬体重表示:
+                  </span>
+                  <div class="weight-type-toggle">
+                    <button id="btn-weight-training" class="btn-weight-mode active">調教後 (発表済)</button>
+                    <button id="btn-weight-confirmed" class="btn-weight-mode">当日発表 (確定)</button>
+                  </div>
+                </div>
+                <div style="font-size: 11px; color: var(--text-muted);" id="weight-status-info">
+                  ※木曜公式計量データ（調教後馬体重）を表示中
+                </div>
+              </div>
             </div>
 
             <!-- NetKeiba完全再現 リストコンテナ（横スクロール一切なし・文字重なりゼロ） -->
@@ -1764,7 +1903,7 @@ html.route-prediction .nav-item[data-target="prediction"] {
             </div>
             
             <p style="font-size: 11px; color: var(--text-muted); text-align: center; margin-top: -12px; margin-bottom: 18px;">
-              💡 馬名をタップすると調教時計・陣営コメント・騎手適性が下に展開します
+              💡 「詳細▾」タップで調教時計・陣営コメント・馬体重推移が展開します
             </p>
           </section>
 
@@ -57101,7 +57240,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "S",
       "trainingCourse": "栗東CW",
       "trainingTime": "81.4 - 65.8 - 50.9 - 36.2 - 11.2 (馬なり)",
-      "trainingComment": "CWでラスト11.2秒。春のクラシック戦線から筋肉の張りが一段増し、非の打ち所がない仕上がり。最内1枠1番を引き、C.デムーロ騎手への勝負手乗り替わりで死角なし。"
+      "trainingComment": "CWでラスト11.2秒。春のクラシック戦線から筋肉の張りが一段増し、非の打ち所がない仕上がり。最内1枠1番を引き、C.デムーロ騎手への勝負手乗り替わりで死角なし。",
+      "trainingWeight": 504,
+      "lastRaceWeight": 500,
+      "confirmedWeight": 504,
+      "weightDiff": "+4"
     },
     {
       "waku": 1,
@@ -57117,7 +57260,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "B+",
       "trainingCourse": "栗東坂路",
       "trainingTime": "53.1 - 38.4 - 24.8 - 12.3 (馬なり)",
-      "trainingComment": "叩き2走目で気配一変。坂路での首の使い方が良くなり、前走以上の活気。内枠を活かして好位インで脚を溜められれば一発も。"
+      "trainingComment": "叩き2走目で気配一変。坂路での首の使い方が良くなり、前走以上の活気。内枠を活かして好位インで脚を溜められれば一発も。",
+      "trainingWeight": 512,
+      "lastRaceWeight": 510,
+      "confirmedWeight": 510,
+      "weightDiff": "0"
     },
     {
       "waku": 2,
@@ -57133,7 +57280,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "A",
       "trainingCourse": "美浦W",
       "trainingTime": "83.2 - 67.0 - 51.8 - 36.8 - 11.3 (馬なり)",
-      "trainingComment": "直線軽く仕掛けただけで鋭伸。東京2000mはベストの舞台。牝馬の56kg斤量も有利で、鋭い末脚をフルに発揮できる態勢。"
+      "trainingComment": "直線軽く仕掛けただけで鋭伸。東京2000mはベストの舞台。牝馬の56kg斤量も有利で、鋭い末脚をフルに発揮できる態勢。",
+      "trainingWeight": 474,
+      "lastRaceWeight": 470,
+      "confirmedWeight": 472,
+      "weightDiff": "+2"
     },
     {
       "waku": 2,
@@ -57149,7 +57300,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "B",
       "trainingCourse": "栗東CW",
       "trainingTime": "83.8 - 67.2 - 52.1 - 37.0 - 11.7 (強め)",
-      "trainingComment": "力強いフットワークで順調な仕上がり。横山典弘騎手の手腕でどこまで上位に食い込めるか。"
+      "trainingComment": "力強いフットワークで順調な仕上がり。横山典弘騎手の手腕でどこまで上位に食い込めるか。",
+      "trainingWeight": 486,
+      "lastRaceWeight": 482,
+      "confirmedWeight": 484,
+      "weightDiff": "+2"
     },
     {
       "waku": 3,
@@ -57165,7 +57320,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "B",
       "trainingCourse": "美浦W",
       "trainingTime": "84.0 - 67.5 - 52.3 - 37.2 - 11.8 (馬なり)",
-      "trainingComment": "東京巧者だが2000mへの距離延長が鍵。調教自体は素軽さがあり体調は万全。"
+      "trainingComment": "東京巧者だが2000mへの距離延長が鍵。調教自体は素軽さがあり体調は万全。",
+      "trainingWeight": 508,
+      "lastRaceWeight": 504,
+      "confirmedWeight": 506,
+      "weightDiff": "+2"
     },
     {
       "waku": 3,
@@ -57181,7 +57340,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "B+",
       "trainingCourse": "栗東CW",
       "trainingTime": "82.5 - 66.4 - 51.5 - 36.8 - 11.5 (一杯)",
-      "trainingComment": "一杯に追われてシャープな伸び。ハナ争いまたは2番手追走からのしぶとさ勝負で前残り警戒。"
+      "trainingComment": "一杯に追われてシャープな伸び。ハナ争いまたは2番手追走からのしぶとさ勝負で前残り警戒。",
+      "trainingWeight": 480,
+      "lastRaceWeight": 478,
+      "confirmedWeight": 476,
+      "weightDiff": "-2"
     },
     {
       "waku": 4,
@@ -57197,7 +57360,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "S",
       "trainingCourse": "美浦W",
       "trainingTime": "82.0 - 66.1 - 51.2 - 36.5 - 11.0 (強め)",
-      "trainingComment": "美浦Wで抜群の手応え。外の僚馬をアオる圧巻の動きで、ルメール騎手も「完璧」と絶賛。前走からの上積み特大で秋天制覇へ視界良好。"
+      "trainingComment": "美浦Wで抜群の手応え。外の僚馬をアオる圧巻の動きで、ルメール騎手も「完璧」と絶賛。前走からの上積み特大で秋天制覇へ視界良好。",
+      "trainingWeight": 494,
+      "lastRaceWeight": 490,
+      "confirmedWeight": 492,
+      "weightDiff": "+2"
     },
     {
       "waku": 4,
@@ -57213,7 +57380,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "B+",
       "trainingCourse": "栗東CW",
       "trainingTime": "83.0 - 66.8 - 51.6 - 36.7 - 11.4 (馬なり)",
-      "trainingComment": "末脚のキレは一級品。東京の長い直線で持ち味が存分に活きる条件。展開ひとつで上位進出。"
+      "trainingComment": "末脚のキレは一級品。東京の長い直線で持ち味が存分に活きる条件。展開ひとつで上位進出。",
+      "trainingWeight": 476,
+      "lastRaceWeight": 472,
+      "confirmedWeight": 474,
+      "weightDiff": "+2"
     },
     {
       "waku": 5,
@@ -57229,7 +57400,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "B+",
       "trainingCourse": "美浦W",
       "trainingTime": "83.5 - 66.8 - 51.5 - 37.0 - 11.5 (馬なり)",
-      "trainingComment": "単騎マイペースの逃げが濃厚。前走毎日王冠以上のデキで、開幕後半のBコースでも開幕週のようなしぶとさを発揮できる。"
+      "trainingComment": "単騎マイペースの逃げが濃厚。前走毎日王冠以上のデキで、開幕後半のBコースでも開幕週のようなしぶとさを発揮できる。",
+      "trainingWeight": 502,
+      "lastRaceWeight": 498,
+      "confirmedWeight": 500,
+      "weightDiff": "+2"
     },
     {
       "waku": 5,
@@ -57245,7 +57420,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "B+",
       "trainingCourse": "栗東CW",
       "trainingTime": "82.9 - 66.7 - 51.8 - 37.1 - 11.6 (強め)",
-      "trainingComment": "フットワーク軽快で福永厩舎の仕上げも万全。川田騎手との相性も抜群で、好位からの抜け出しを狙う。"
+      "trainingComment": "フットワーク軽快で福永厩舎の仕上げも万全。川田騎手との相性も抜群で、好位からの抜け出しを狙う。",
+      "trainingWeight": 510,
+      "lastRaceWeight": 506,
+      "confirmedWeight": 508,
+      "weightDiff": "+2"
     },
     {
       "waku": 6,
@@ -57261,7 +57440,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "B",
       "trainingCourse": "栗東坂路",
       "trainingTime": "54.2 - 39.1 - 25.4 - 12.5 (馬なり)",
-      "trainingComment": "坂路で軽快なフットワーク。調子落ちはなくマイペースで挑む。"
+      "trainingComment": "坂路で軽快なフットワーク。調子落ちはなくマイペースで挑む。",
+      "trainingWeight": 468,
+      "lastRaceWeight": 464,
+      "confirmedWeight": 466,
+      "weightDiff": "+2"
     },
     {
       "waku": 6,
@@ -57277,7 +57460,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "B",
       "trainingCourse": "美浦W",
       "trainingTime": "84.1 - 67.5 - 52.3 - 37.4 - 11.8 (一杯)",
-      "trainingComment": "スタミナ豊富でタフなロングスパートが持ち味。ペースが上がって消耗戦になれば浮上。"
+      "trainingComment": "スタミナ豊富でタフなロングスパートが持ち味。ペースが上がって消耗戦になれば浮上。",
+      "trainingWeight": 506,
+      "lastRaceWeight": 504,
+      "confirmedWeight": 504,
+      "weightDiff": "0"
     },
     {
       "waku": 7,
@@ -57293,7 +57480,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "B",
       "trainingCourse": "美浦W",
       "trainingTime": "83.9 - 67.2 - 52.0 - 37.1 - 11.7 (強め)",
-      "trainingComment": "3歳馬で斤量56kgの恩恵。手塚厩舎2頭出しで不気味な存在。"
+      "trainingComment": "3歳馬で斤量56kgの恩恵。手塚厩舎2頭出しで不気味な存在。",
+      "trainingWeight": 478,
+      "lastRaceWeight": 476,
+      "confirmedWeight": 474,
+      "weightDiff": "-2"
     },
     {
       "waku": 7,
@@ -57309,7 +57500,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "B",
       "trainingCourse": "栗東坂路",
       "trainingTime": "53.9 - 38.8 - 25.1 - 12.4 (馬なり)",
-      "trainingComment": "ミルコ・デムーロ騎手の大胆な捲り戦法がハマれば面白い一頭。"
+      "trainingComment": "ミルコ・デムーロ騎手の大胆な捲り戦法がハマれば面白い一頭。",
+      "trainingWeight": 492,
+      "lastRaceWeight": 490,
+      "confirmedWeight": 488,
+      "weightDiff": "-2"
     },
     {
       "waku": 8,
@@ -57325,7 +57520,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "B",
       "trainingCourse": "美浦W",
       "trainingTime": "84.3 - 67.8 - 52.5 - 37.5 - 11.9 (馬なり)",
-      "trainingComment": "名門・堀厩舎所属の若武者コンビ。外枠からロスなく運べるかが鍵。"
+      "trainingComment": "名門・堀厩舎所属の若武者コンビ。外枠からロスなく運べるかが鍵。",
+      "trainingWeight": 516,
+      "lastRaceWeight": 512,
+      "confirmedWeight": 514,
+      "weightDiff": "+2"
     },
     {
       "waku": 8,
@@ -57341,7 +57540,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "B",
       "trainingCourse": "栗東CW",
       "trainingTime": "83.7 - 67.1 - 52.0 - 37.3 - 11.8 (一杯)",
-      "trainingComment": "強めに追われて気合乗り十分。大外枠だが思い切った競馬で臨む。"
+      "trainingComment": "強めに追われて気合乗り十分。大外枠だが思い切った競馬で臨む。",
+      "trainingWeight": 482,
+      "lastRaceWeight": 480,
+      "confirmedWeight": 480,
+      "weightDiff": "0"
     },
     {
       "waku": 8,
@@ -57357,7 +57560,11 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "trainingGrade": "A",
       "trainingCourse": "栗東坂路",
       "trainingTime": "52.8 - 38.1 - 24.6 - 12.1 (一杯)",
-      "trainingComment": "栗東坂路で力強い登坂。古馬相手でも通用するダイナミックなパワーを実感。大外8枠17番に入ったが、戸崎騎手のコース取りに期待。"
+      "trainingComment": "栗東坂路で力強い登坂。古馬相手でも通用するダイナミックなパワーを実感。大外8枠17番に入ったが、戸崎騎手のコース取りに期待。",
+      "trainingWeight": 514,
+      "lastRaceWeight": 510,
+      "confirmedWeight": 512,
+      "weightDiff": "+2"
     }
   ],
   "jockeysCompatibility": [
@@ -58481,21 +58688,72 @@ function hydratePayouts(race) {
         }
       }
 
+      // ----------------------------------------------------
+      // 馬体重管理（調教後馬体重 vs 当日確定馬体重）
+      // ----------------------------------------------------
+      let weightMode = 'training'; // 'training' (木曜公式計量) or 'confirmed' (発走前発表)
+
+      function initWeightState() {
+        if (typeof localStorage !== 'undefined') {
+          const saved = localStorage.getItem('keiba_weight_mode_16');
+          if (saved && (saved === 'training' || saved === 'confirmed')) {
+            weightMode = saved;
+          }
+        }
+      }
+
+      function setWeightMode(mode) {
+        weightMode = mode;
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('keiba_weight_mode_16', mode);
+        }
+        updateWeightControlUI();
+        renderNetkeibaHorseList();
+      }
+
+      function updateWeightControlUI() {
+        if (typeof document === 'undefined') return;
+        const btnTrain = document.getElementById('btn-weight-training');
+        const btnConf = document.getElementById('btn-weight-confirmed');
+        const infoEl = document.getElementById('weight-status-info');
+
+        if (btnTrain && btnConf) {
+          if (weightMode === 'training') {
+            btnTrain.classList.add('active');
+            btnConf.classList.remove('active');
+          } else {
+            btnConf.classList.add('active');
+            btnTrain.classList.remove('active');
+          }
+        }
+
+        if (infoEl) {
+          if (weightMode === 'training') {
+            infoEl.innerHTML = '<span>※木曜公式計量データ（調教後馬体重）を表示中</span>';
+          } else {
+            infoEl.innerHTML = '<span style="color: var(--primary); font-weight: 700;">✔ 当日確定馬体重 発表済（パドック計量）</span>';
+          }
+        }
+      }
+
       function renderPredictionView() {
         if (typeof document === 'undefined') return;
         const container = document.getElementById('view-prediction');
         if (!container) return;
 
         initOddsState();
+        initWeightState();
         renderNetkeibaHorseList();
         renderPredictionOccult();
         renderPredictionMemo();
         updateMarksUI();
         updateOddsControlUI();
+        updateWeightControlUI();
         refreshIcons();
       }
 
-      // NetKeiba完全準拠 リストレンダラー（横スクロールゼロ・文字重なりゼロ・オッズundefined解消）
+      // NetKeiba完全準拠 リストレンダラー
+      // ユーザー指定の厳格な順序: [馬番] [印] [馬情報] ➔ [オッズ] ➔ [馬体重] ➔ [詳細▼]
       function renderNetkeibaHorseList() {
         if (typeof document === 'undefined') return;
         const listContainer = document.getElementById('netkeiba-horse-list');
@@ -58545,22 +58803,36 @@ function hydratePayouts(race) {
           const isTop3Pop = s.pop <= 3;
           const displayOdds = s.winOdds || s.odds || '--';
 
+          // 馬体重表示の算出
+          let displayWeight = `${s.trainingWeight || 500}kg`;
+          let displayWeightSub = `<span class="weight-tag-pre">調教後</span>`;
+
+          if (weightMode === 'confirmed') {
+            displayWeight = `${s.confirmedWeight || s.trainingWeight || 500}kg`;
+            const diff = s.weightDiff || '0';
+            let diffClass = 'diff-zero';
+            let diffText = (diff === '0' || diff === '+0' || diff === '-0') ? '±0' : diff;
+            if (diff.startsWith('+') && diff !== '+0') diffClass = 'diff-plus';
+            else if (diff.startsWith('-') && diff !== '-0') diffClass = 'diff-minus';
+            displayWeightSub = `<span class="weight-tag-diff ${diffClass}">${diffText}</span>`;
+          }
+
           html += `
             <div class="nh-row-container">
               <div class="nh-main-row" data-gate="${s.gate}">
-                <!-- 1. 馬番（枠色セル 32px） -->
+                <!-- 1. 馬番（26px 枠色セル） -->
                 <div class="nh-gate-cell waku-${s.waku}">
                   ${s.gate}
                 </div>
 
-                <!-- 2. 印ボタン (38px) -->
+                <!-- 2. 印ボタン (30px) -->
                 <div class="nh-mark-cell">
                   <button class="nh-mark-btn ${mClass}" data-gate="${s.gate}" aria-label="印選択">
                     ${m}
                   </button>
                 </div>
 
-                <!-- 3. 馬情報（中央・幅可変・重なり防止） -->
+                <!-- 3. 馬情報（中央・可変幅・重なりなし） -->
                 <div class="nh-info-cell" data-action="toggle-drawer" data-gate="${s.gate}">
                   <div class="nh-name-row">
                     <span class="nh-horse-name">${s.horseName}</span>
@@ -58569,17 +58841,30 @@ function hydratePayouts(race) {
                     <span>${s.sexAge}</span>
                     <span class="nh-jockey">${s.jockey}</span>
                     <span class="nh-load">${s.load}kg</span>
-                    <span class="nh-drawer-hint" id="nh-hint-${s.gate}">詳細▾</span>
                   </div>
                 </div>
 
-                <!-- 4. オッズ・人気（右端・幅72px完全固定・右寄せ） -->
+                <!-- 4. オッズ・人気（48px固定・右寄せ） -->
                 <div class="nh-odds-cell" data-action="toggle-drawer" data-gate="${s.gate}">
                   <div class="nh-odds-line">
-                    ${oddsMode === 'estimated' ? '<span class="nh-odds-badge-yosou">予想</span>' : ''}
+                    ${oddsMode === 'estimated' ? '<span class="nh-odds-badge-yosou">予</span>' : ''}
                     <span class="nh-odds-val ${isTop3Pop ? 'highlight-fav' : ''}">${displayOdds}</span>
                   </div>
                   <div class="nh-pop-badge">${s.pop}人気</div>
+                </div>
+
+                <!-- 5. 馬体重（52px固定・右寄せ） -->
+                <div class="nh-weight-cell" data-action="toggle-drawer" data-gate="${s.gate}">
+                  <div class="nh-weight-val">${displayWeight}</div>
+                  <div class="nh-weight-sub">${displayWeightSub}</div>
+                </div>
+
+                <!-- 6. 詳細▼ボタン (34px固定) -->
+                <div class="nh-detail-toggle-cell" data-action="toggle-drawer" data-gate="${s.gate}">
+                  <button class="nh-drawer-toggle-btn" id="nh-toggle-btn-${s.gate}" aria-label="詳細展開">
+                    <span class="toggle-text" id="nh-toggle-text-${s.gate}">詳細</span>
+                    <span class="toggle-arrow" id="nh-arrow-${s.gate}">▾</span>
+                  </button>
                 </div>
               </div>
 
@@ -58597,6 +58882,15 @@ function hydratePayouts(race) {
                   <div class="nh-drawer-item">
                     <span class="nh-drawer-label">💬 厩舎・陣営勝負気配コメント</span>
                     <span class="nh-drawer-val">「${s.comment}」</span>
+                  </div>
+
+                  <div class="nh-drawer-item" style="border-top: 1px dashed rgba(255,255,255,0.06); padding-top: 6px; margin-top: 2px;">
+                    <span class="nh-drawer-label">⚖️ 馬体重推移・公式計量データ</span>
+                    <div style="display: flex; gap: 14px; margin-top: 3px; font-size: 11.5px; flex-wrap: wrap;">
+                      <div><span style="color: var(--text-muted);">調教後:</span> <strong style="color: #fff;">${s.trainingWeight}kg</strong> <span style="font-size: 10px; color: var(--gold);">(木曜計測)</span></div>
+                      <div><span style="color: var(--text-muted);">前走時:</span> <strong style="color: #fff;">${s.lastRaceWeight}kg</strong></div>
+                      <div><span style="color: var(--text-muted);">当日確定:</span> <strong style="color: var(--primary);">${s.confirmedWeight}kg (${s.weightDiff})</strong></div>
+                    </div>
                   </div>
 
                   <div class="nh-drawer-item" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; border-top: 1px dashed rgba(255,255,255,0.06); padding-top: 6px; margin-top: 2px;">
@@ -58621,15 +58915,18 @@ function hydratePayouts(race) {
           cell.addEventListener('click', (e) => {
             const gate = cell.getAttribute('data-gate');
             const drawer = document.getElementById(`nh-drawer-${gate}`);
-            const hint = document.getElementById(`nh-hint-${gate}`);
+            const btn = document.getElementById(`nh-toggle-btn-${gate}`);
+            const text = document.getElementById(`nh-toggle-text-${gate}`);
             if (drawer) {
               const isOpen = drawer.classList.contains('open');
               if (isOpen) {
                 drawer.classList.remove('open');
-                if (hint) hint.innerText = '詳細▾';
+                if (btn) btn.classList.remove('active');
+                if (text) text.innerText = '詳細';
               } else {
                 drawer.classList.add('open');
-                if (hint) hint.innerText = '閉じる▴';
+                if (btn) btn.classList.add('active');
+                if (text) text.innerText = '閉じる';
               }
             }
           });
@@ -58743,6 +59040,21 @@ function hydratePayouts(race) {
         if (btnOddsLive) {
           btnOddsLive.addEventListener('click', () => {
             setOddsMode('live');
+          });
+        }
+
+        // 馬体重モード切替ボタン（調教後 vs 当日確定）
+        const btnWeightTrain = document.getElementById('btn-weight-training');
+        if (btnWeightTrain) {
+          btnWeightTrain.addEventListener('click', () => {
+            setWeightMode('training');
+          });
+        }
+
+        const btnWeightConf = document.getElementById('btn-weight-confirmed');
+        if (btnWeightConf) {
+          btnWeightConf.addEventListener('click', () => {
+            setWeightMode('confirmed');
           });
         }
 
@@ -59092,19 +59404,22 @@ function hydratePayouts(race) {
                     </tr>
                   </thead>
                   <tbody>
-                    ${(RESULTS_DATA[id] || []).map(r => {
-                      let rankBadge = r[0];
-                      let rankClass = 'rank-other';
-                      if (r[0] === 1) rankClass = 'rank-1';
-                      else if (r[0] === 2) rankClass = 'rank-2';
-                      else if (r[0] === 3) rankClass = 'rank-3';
+                    ${(() => {
+                      const rawRes = RESULTS_DATA[id];
+                      const rList = Array.isArray(rawRes) ? rawRes : (rawRes && rawRes.horses ? rawRes.horses : []);
+                      const totalHorses = rList.length;
+                      return rList.map(r => {
+                        let rankBadge = r[0];
+                        let rankClass = 'rank-other';
+                        if (r[0] === 1) rankClass = 'rank-1';
+                        else if (r[0] === 2) rankClass = 'rank-2';
+                        else if (r[0] === 3) rankClass = 'rank-3';
 
-                      let wakuColor = 1;
-                      const gateNum = Number(r[1]);
-                      const totalHorses = (RESULTS_DATA[id] || []).length;
-                      if (gateNum > 0 && totalHorses > 0) {
-                        wakuColor = Math.min(8, Math.max(1, Math.ceil(gateNum / (totalHorses / 8))));
-                      }
+                        let wakuColor = 1;
+                        const gateNum = Number(r[1]);
+                        if (gateNum > 0 && totalHorses > 0) {
+                          wakuColor = Math.min(8, Math.max(1, Math.ceil(gateNum / (totalHorses / 8))));
+                        }
 
                       return `
                         <tr>
@@ -59124,7 +59439,8 @@ function hydratePayouts(race) {
                           <td style="font-size: 13px; color: var(--text-muted);">${r[14] || '-'}</td>
                         </tr>
                       `;
-                    }).join('')}
+                      }).join('');
+                    })()}
                   </tbody>
                 </table>
               </div>
@@ -59132,15 +59448,42 @@ function hydratePayouts(race) {
 
             <div id="modal-tab-content-payouts" class="modal-tab-content" style="display: none;">
               <h3 class="detail-section-title">払戻金確定情報</h3>
-              <div class="payout-grid">
-                ${(PAYOUTS_DATA[id] && PAYOUTS_DATA[id].payoutsList ? PAYOUTS_DATA[id].payoutsList : []).map(p => `
-                  <div class="payout-card">
-                    <span class="payout-type">${p.type}</span>
-                    <span class="payout-comb">${p.comb}</span>
-                    <span class="payout-val">${p.val}</span>
-                    <span class="payout-pop">${p.pop}</span>
-                  </div>
-                `).join('')}
+              <div class="payouts-grid">
+                ${(() => {
+                  let pList = [];
+                  if (PAYOUTS_DATA[id]) {
+                    if (Array.isArray(PAYOUTS_DATA[id])) {
+                      pList = PAYOUTS_DATA[id];
+                    } else if (PAYOUTS_DATA[id].payoutsList) {
+                      pList = PAYOUTS_DATA[id].payoutsList;
+                    }
+                  }
+                  if (pList.length === 0 && RESULTS_DATA[id] && RESULTS_DATA[id].payouts) {
+                    pList = RESULTS_DATA[id].payouts;
+                  }
+                  if (pList.length === 0 && race) {
+                    pList = hydratePayouts(race) || [];
+                  }
+                  return pList.map(p => {
+                    let popDisplay = "";
+                    if (p.pop) {
+                      const parts = String(p.pop).split("<br>").map(x => x.includes("人気") ? x : (x ? x + "人気" : ""));
+                      popDisplay = parts.join("<br>");
+                    }
+                    return `
+                      <div class="payout-item">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                          <span class="payout-type">${p.type}</span>
+                          <span class="payout-comb">${p.comb}</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; text-align: right;">
+                          <span class="payout-value">${p.val}</span>
+                          ${popDisplay ? `<span class="payout-pop">${popDisplay}</span>` : ""}
+                        </div>
+                      </div>
+                    `;
+                  }).join("");
+                })()}
               </div>
             </div>
 

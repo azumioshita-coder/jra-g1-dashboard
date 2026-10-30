@@ -7502,21 +7502,72 @@ function hydratePayouts(race) {
         }
       }
 
+      // ----------------------------------------------------
+      // 馬体重管理（調教後馬体重 vs 当日確定馬体重）
+      // ----------------------------------------------------
+      let weightMode = 'training'; // 'training' (木曜公式計量) or 'confirmed' (発走前発表)
+
+      function initWeightState() {
+        if (typeof localStorage !== 'undefined') {
+          const saved = localStorage.getItem('keiba_weight_mode_16');
+          if (saved && (saved === 'training' || saved === 'confirmed')) {
+            weightMode = saved;
+          }
+        }
+      }
+
+      function setWeightMode(mode) {
+        weightMode = mode;
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('keiba_weight_mode_16', mode);
+        }
+        updateWeightControlUI();
+        renderNetkeibaHorseList();
+      }
+
+      function updateWeightControlUI() {
+        if (typeof document === 'undefined') return;
+        const btnTrain = document.getElementById('btn-weight-training');
+        const btnConf = document.getElementById('btn-weight-confirmed');
+        const infoEl = document.getElementById('weight-status-info');
+
+        if (btnTrain && btnConf) {
+          if (weightMode === 'training') {
+            btnTrain.classList.add('active');
+            btnConf.classList.remove('active');
+          } else {
+            btnConf.classList.add('active');
+            btnTrain.classList.remove('active');
+          }
+        }
+
+        if (infoEl) {
+          if (weightMode === 'training') {
+            infoEl.innerHTML = '<span>※木曜公式計量データ（調教後馬体重）を表示中</span>';
+          } else {
+            infoEl.innerHTML = '<span style="color: var(--primary); font-weight: 700;">✔ 当日確定馬体重 発表済（パドック計量）</span>';
+          }
+        }
+      }
+
       function renderPredictionView() {
         if (typeof document === 'undefined') return;
         const container = document.getElementById('view-prediction');
         if (!container) return;
 
         initOddsState();
+        initWeightState();
         renderNetkeibaHorseList();
         renderPredictionOccult();
         renderPredictionMemo();
         updateMarksUI();
         updateOddsControlUI();
+        updateWeightControlUI();
         refreshIcons();
       }
 
-      // NetKeiba完全準拠 リストレンダラー（横スクロールゼロ・文字重なりゼロ・オッズundefined解消）
+      // NetKeiba完全準拠 リストレンダラー
+      // ユーザー指定の厳格な順序: [馬番] [印] [馬情報] ➔ [オッズ] ➔ [馬体重] ➔ [詳細▼]
       function renderNetkeibaHorseList() {
         if (typeof document === 'undefined') return;
         const listContainer = document.getElementById('netkeiba-horse-list');
@@ -7566,22 +7617,36 @@ function hydratePayouts(race) {
           const isTop3Pop = s.pop <= 3;
           const displayOdds = s.winOdds || s.odds || '--';
 
+          // 馬体重表示の算出
+          let displayWeight = `${s.trainingWeight || 500}kg`;
+          let displayWeightSub = `<span class="weight-tag-pre">調教後</span>`;
+
+          if (weightMode === 'confirmed') {
+            displayWeight = `${s.confirmedWeight || s.trainingWeight || 500}kg`;
+            const diff = s.weightDiff || '0';
+            let diffClass = 'diff-zero';
+            let diffText = (diff === '0' || diff === '+0' || diff === '-0') ? '±0' : diff;
+            if (diff.startsWith('+') && diff !== '+0') diffClass = 'diff-plus';
+            else if (diff.startsWith('-') && diff !== '-0') diffClass = 'diff-minus';
+            displayWeightSub = `<span class="weight-tag-diff ${diffClass}">${diffText}</span>`;
+          }
+
           html += `
             <div class="nh-row-container">
               <div class="nh-main-row" data-gate="${s.gate}">
-                <!-- 1. 馬番（枠色セル 32px） -->
+                <!-- 1. 馬番（26px 枠色セル） -->
                 <div class="nh-gate-cell waku-${s.waku}">
                   ${s.gate}
                 </div>
 
-                <!-- 2. 印ボタン (38px) -->
+                <!-- 2. 印ボタン (30px) -->
                 <div class="nh-mark-cell">
                   <button class="nh-mark-btn ${mClass}" data-gate="${s.gate}" aria-label="印選択">
                     ${m}
                   </button>
                 </div>
 
-                <!-- 3. 馬情報（中央・幅可変・重なり防止） -->
+                <!-- 3. 馬情報（中央・可変幅・重なりなし） -->
                 <div class="nh-info-cell" data-action="toggle-drawer" data-gate="${s.gate}">
                   <div class="nh-name-row">
                     <span class="nh-horse-name">${s.horseName}</span>
@@ -7590,17 +7655,30 @@ function hydratePayouts(race) {
                     <span>${s.sexAge}</span>
                     <span class="nh-jockey">${s.jockey}</span>
                     <span class="nh-load">${s.load}kg</span>
-                    <span class="nh-drawer-hint" id="nh-hint-${s.gate}">詳細▾</span>
                   </div>
                 </div>
 
-                <!-- 4. オッズ・人気（右端・幅72px完全固定・右寄せ） -->
+                <!-- 4. オッズ・人気（48px固定・右寄せ） -->
                 <div class="nh-odds-cell" data-action="toggle-drawer" data-gate="${s.gate}">
                   <div class="nh-odds-line">
-                    ${oddsMode === 'estimated' ? '<span class="nh-odds-badge-yosou">予想</span>' : ''}
+                    ${oddsMode === 'estimated' ? '<span class="nh-odds-badge-yosou">予</span>' : ''}
                     <span class="nh-odds-val ${isTop3Pop ? 'highlight-fav' : ''}">${displayOdds}</span>
                   </div>
                   <div class="nh-pop-badge">${s.pop}人気</div>
+                </div>
+
+                <!-- 5. 馬体重（52px固定・右寄せ） -->
+                <div class="nh-weight-cell" data-action="toggle-drawer" data-gate="${s.gate}">
+                  <div class="nh-weight-val">${displayWeight}</div>
+                  <div class="nh-weight-sub">${displayWeightSub}</div>
+                </div>
+
+                <!-- 6. 詳細▼ボタン (34px固定) -->
+                <div class="nh-detail-toggle-cell" data-action="toggle-drawer" data-gate="${s.gate}">
+                  <button class="nh-drawer-toggle-btn" id="nh-toggle-btn-${s.gate}" aria-label="詳細展開">
+                    <span class="toggle-text" id="nh-toggle-text-${s.gate}">詳細</span>
+                    <span class="toggle-arrow" id="nh-arrow-${s.gate}">▾</span>
+                  </button>
                 </div>
               </div>
 
@@ -7618,6 +7696,15 @@ function hydratePayouts(race) {
                   <div class="nh-drawer-item">
                     <span class="nh-drawer-label">💬 厩舎・陣営勝負気配コメント</span>
                     <span class="nh-drawer-val">「${s.comment}」</span>
+                  </div>
+
+                  <div class="nh-drawer-item" style="border-top: 1px dashed rgba(255,255,255,0.06); padding-top: 6px; margin-top: 2px;">
+                    <span class="nh-drawer-label">⚖️ 馬体重推移・公式計量データ</span>
+                    <div style="display: flex; gap: 14px; margin-top: 3px; font-size: 11.5px; flex-wrap: wrap;">
+                      <div><span style="color: var(--text-muted);">調教後:</span> <strong style="color: #fff;">${s.trainingWeight}kg</strong> <span style="font-size: 10px; color: var(--gold);">(木曜計測)</span></div>
+                      <div><span style="color: var(--text-muted);">前走時:</span> <strong style="color: #fff;">${s.lastRaceWeight}kg</strong></div>
+                      <div><span style="color: var(--text-muted);">当日確定:</span> <strong style="color: var(--primary);">${s.confirmedWeight}kg (${s.weightDiff})</strong></div>
+                    </div>
                   </div>
 
                   <div class="nh-drawer-item" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; border-top: 1px dashed rgba(255,255,255,0.06); padding-top: 6px; margin-top: 2px;">
@@ -7642,15 +7729,18 @@ function hydratePayouts(race) {
           cell.addEventListener('click', (e) => {
             const gate = cell.getAttribute('data-gate');
             const drawer = document.getElementById(`nh-drawer-${gate}`);
-            const hint = document.getElementById(`nh-hint-${gate}`);
+            const btn = document.getElementById(`nh-toggle-btn-${gate}`);
+            const text = document.getElementById(`nh-toggle-text-${gate}`);
             if (drawer) {
               const isOpen = drawer.classList.contains('open');
               if (isOpen) {
                 drawer.classList.remove('open');
-                if (hint) hint.innerText = '詳細▾';
+                if (btn) btn.classList.remove('active');
+                if (text) text.innerText = '詳細';
               } else {
                 drawer.classList.add('open');
-                if (hint) hint.innerText = '閉じる▴';
+                if (btn) btn.classList.add('active');
+                if (text) text.innerText = '閉じる';
               }
             }
           });
@@ -7764,6 +7854,21 @@ function hydratePayouts(race) {
         if (btnOddsLive) {
           btnOddsLive.addEventListener('click', () => {
             setOddsMode('live');
+          });
+        }
+
+        // 馬体重モード切替ボタン（調教後 vs 当日確定）
+        const btnWeightTrain = document.getElementById('btn-weight-training');
+        if (btnWeightTrain) {
+          btnWeightTrain.addEventListener('click', () => {
+            setWeightMode('training');
+          });
+        }
+
+        const btnWeightConf = document.getElementById('btn-weight-confirmed');
+        if (btnWeightConf) {
+          btnWeightConf.addEventListener('click', () => {
+            setWeightMode('confirmed');
           });
         }
 
@@ -8113,19 +8218,22 @@ function hydratePayouts(race) {
                     </tr>
                   </thead>
                   <tbody>
-                    ${(RESULTS_DATA[id] || []).map(r => {
-                      let rankBadge = r[0];
-                      let rankClass = 'rank-other';
-                      if (r[0] === 1) rankClass = 'rank-1';
-                      else if (r[0] === 2) rankClass = 'rank-2';
-                      else if (r[0] === 3) rankClass = 'rank-3';
+                    ${(() => {
+                      const rawRes = RESULTS_DATA[id];
+                      const rList = Array.isArray(rawRes) ? rawRes : (rawRes && rawRes.horses ? rawRes.horses : []);
+                      const totalHorses = rList.length;
+                      return rList.map(r => {
+                        let rankBadge = r[0];
+                        let rankClass = 'rank-other';
+                        if (r[0] === 1) rankClass = 'rank-1';
+                        else if (r[0] === 2) rankClass = 'rank-2';
+                        else if (r[0] === 3) rankClass = 'rank-3';
 
-                      let wakuColor = 1;
-                      const gateNum = Number(r[1]);
-                      const totalHorses = (RESULTS_DATA[id] || []).length;
-                      if (gateNum > 0 && totalHorses > 0) {
-                        wakuColor = Math.min(8, Math.max(1, Math.ceil(gateNum / (totalHorses / 8))));
-                      }
+                        let wakuColor = 1;
+                        const gateNum = Number(r[1]);
+                        if (gateNum > 0 && totalHorses > 0) {
+                          wakuColor = Math.min(8, Math.max(1, Math.ceil(gateNum / (totalHorses / 8))));
+                        }
 
                       return `
                         <tr>
@@ -8145,7 +8253,8 @@ function hydratePayouts(race) {
                           <td style="font-size: 13px; color: var(--text-muted);">${r[14] || '-'}</td>
                         </tr>
                       `;
-                    }).join('')}
+                      }).join('');
+                    })()}
                   </tbody>
                 </table>
               </div>
@@ -8153,15 +8262,42 @@ function hydratePayouts(race) {
 
             <div id="modal-tab-content-payouts" class="modal-tab-content" style="display: none;">
               <h3 class="detail-section-title">払戻金確定情報</h3>
-              <div class="payout-grid">
-                ${(PAYOUTS_DATA[id] && PAYOUTS_DATA[id].payoutsList ? PAYOUTS_DATA[id].payoutsList : []).map(p => `
-                  <div class="payout-card">
-                    <span class="payout-type">${p.type}</span>
-                    <span class="payout-comb">${p.comb}</span>
-                    <span class="payout-val">${p.val}</span>
-                    <span class="payout-pop">${p.pop}</span>
-                  </div>
-                `).join('')}
+              <div class="payouts-grid">
+                ${(() => {
+                  let pList = [];
+                  if (PAYOUTS_DATA[id]) {
+                    if (Array.isArray(PAYOUTS_DATA[id])) {
+                      pList = PAYOUTS_DATA[id];
+                    } else if (PAYOUTS_DATA[id].payoutsList) {
+                      pList = PAYOUTS_DATA[id].payoutsList;
+                    }
+                  }
+                  if (pList.length === 0 && RESULTS_DATA[id] && RESULTS_DATA[id].payouts) {
+                    pList = RESULTS_DATA[id].payouts;
+                  }
+                  if (pList.length === 0 && race) {
+                    pList = hydratePayouts(race) || [];
+                  }
+                  return pList.map(p => {
+                    let popDisplay = "";
+                    if (p.pop) {
+                      const parts = String(p.pop).split("<br>").map(x => x.includes("人気") ? x : (x ? x + "人気" : ""));
+                      popDisplay = parts.join("<br>");
+                    }
+                    return `
+                      <div class="payout-item">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                          <span class="payout-type">${p.type}</span>
+                          <span class="payout-comb">${p.comb}</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; text-align: right;">
+                          <span class="payout-value">${p.val}</span>
+                          ${popDisplay ? `<span class="payout-pop">${popDisplay}</span>` : ""}
+                        </div>
+                      </div>
+                    `;
+                  }).join("");
+                })()}
               </div>
             </div>
 
