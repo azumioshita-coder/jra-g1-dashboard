@@ -215,7 +215,15 @@ const G1_RACES = [
           date: '2026-09-27T15:40:00',
           location: '中山',
           course: '芝 1200m',
-          status: 'upcoming'
+          status: 'finished',
+          weather: '曇',
+          trackCondition: '稍重',
+          cushionValue: '9.1',
+          type: 'older-mile',
+          winner: 'ピューロマジック', winnerJockey: '岩田望来', winnerGate: 16, time: '1:09.2',
+          second: 'ワールズエンド', secondJockey: '津村明秀', secondGate: 6,
+          third: 'サウンドモリアーナ', thirdJockey: '吉田隼人', thirdGate: 5,
+          payouts: { win: 2450, trifecta: 462120 }
         },
         {
           id: '14',
@@ -224,16 +232,32 @@ const G1_RACES = [
           date: '2026-10-18T15:40:00',
           location: '京都',
           course: '芝 2000m',
-          status: 'upcoming'
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.6',
+          type: 'three-year-old',
+          winner: 'チェルヴィニア', winnerJockey: 'C.ルメール', winnerGate: 5, time: '1:57.1',
+          second: 'ボンドガール', secondJockey: '武豊', secondGate: 10,
+          third: 'ステレンボッシュ', thirdJockey: '戸崎圭太', thirdGate: 14,
+          payouts: { win: 530, trifecta: 11940 }
         },
         {
           id: '15',
           name: '菊花賞',
-          englishName: 'Kikka Sho',
+          englishName: 'Kikuka Sho',
           date: '2026-10-25T15:40:00',
           location: '京都',
           course: '芝 3000m',
-          status: 'upcoming'
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.8',
+          type: 'three-year-old',
+          winner: 'アーバンシック', winnerJockey: 'C.ルメール', winnerGate: 13, time: '3:04.1',
+          second: 'ヘデントール', secondJockey: '戸崎圭太', secondGate: 16,
+          third: 'アドマイヤテラ', thirdJockey: '武豊', thirdGate: 17,
+          payouts: { win: 370, trifecta: 19260 }
         },
         {
           id: '16',
@@ -4904,7 +4928,7 @@ const HISTORICAL_DATA = {
     [
       2025,
       "コスタノヴァ",
-      "キング",
+      "R.キング",
       "1:35.5",
       2,
       "木村哲也 (美浦)"
@@ -4936,7 +4960,7 @@ const HISTORICAL_DATA = {
     [
       2021,
       "カフェファラオ",
-      "ルメール",
+      "C.ルメール",
       "1:34.4",
       1,
       "堀宣行 (美浦)"
@@ -4944,7 +4968,7 @@ const HISTORICAL_DATA = {
     [
       2020,
       "モズアスコット",
-      "ルメール",
+      "C.ルメール",
       "1:35.2",
       1,
       "矢作芳人 (栗東)"
@@ -4968,7 +4992,7 @@ const HISTORICAL_DATA = {
     [
       2017,
       "ゴールドドリーム",
-      "Ｍ．デム",
+      "M.デムーロ",
       "1:35.1",
       2,
       "平田修 (栗東)"
@@ -4976,7 +5000,7 @@ const HISTORICAL_DATA = {
     [
       2016,
       "モーニン",
-      "Ｍ．デム",
+      "M.デムーロ",
       "1:34.0",
       2,
       "石坂正 (栗東)"
@@ -4986,7 +5010,7 @@ const HISTORICAL_DATA = {
     [
       2025,
       "サトノレーヴ",
-      "モレイラ",
+      "J.モレイラ",
       "1:07.9",
       2,
       "堀宣行 (美浦)"
@@ -5108,7 +5132,7 @@ const HISTORICAL_DATA = {
     [
       2020,
       "ラッキーライラック",
-      "Ｍ．デム",
+      "M.デムーロ",
       "1:58.4",
       2,
       "松永幹夫 (栗東)"
@@ -5124,7 +5148,7 @@ const HISTORICAL_DATA = {
     [
       2018,
       "スワーヴリチャード",
-      "Ｍ．デム",
+      "M.デムーロ",
       "1:58.2",
       1,
       "庄野靖志 (栗東)"
@@ -5150,7 +5174,7 @@ const HISTORICAL_DATA = {
     [
       2025,
       "エンブロイダリー",
-      "モレイラ",
+      "J.モレイラ",
       "1:33.1",
       3,
       "森一誠 (美浦)"
@@ -5158,7 +5182,7 @@ const HISTORICAL_DATA = {
     [
       2024,
       "ステレンボッシュ",
-      "モレイラ",
+      "J.モレイラ",
       "1:32.2",
       2,
       "国枝栄 (美浦)"
@@ -5198,7 +5222,7 @@ const HISTORICAL_DATA = {
     [
       2019,
       "グランアレグリア",
-      "ルメール",
+      "C.ルメール",
       "1:32.7",
       2,
       "藤沢和雄 (美浦)"
@@ -5206,7 +5230,7 @@ const HISTORICAL_DATA = {
     [
       2018,
       "アーモンドアイ",
-      "ルメール",
+      "C.ルメール",
       "1:33.1",
       2,
       "国枝栄 (美浦)"
@@ -5222,7 +5246,7 @@ const HISTORICAL_DATA = {
     [
       2016,
       "ジュエラー",
-      "Ｍ．デム",
+      "M.デムーロ",
       "1:33.4",
       3,
       "藤岡健一 (栗東)"
@@ -5232,7 +5256,7 @@ const HISTORICAL_DATA = {
     [
       2025,
       "ミュージアムマイル",
-      "モレイラ",
+      "J.モレイラ",
       "1:57.0",
       3,
       "高柳大輔 (栗東)"
@@ -5280,7 +5304,7 @@ const HISTORICAL_DATA = {
     [
       2019,
       "サートゥルナーリア",
-      "ルメール",
+      "C.ルメール",
       "1:58.1",
       1,
       "角居勝彦 (栗東)"
@@ -5304,17 +5328,17 @@ const HISTORICAL_DATA = {
     [
       2016,
       "ディーマジェスティ",
-      "蛯名正義",
+      "初美雅",
       "1:57.9",
       8,
-      "二ノ宮敬 (美浦)"
+      "二ノ宮敬宇 (美浦)"
     ]
   ],
   "6": [
     [
       2025,
       "ヘデントール",
-      "レーン",
+      "D.レーン",
       "3:14.0",
       1,
       "木村哲也 (美浦)"
@@ -5330,7 +5354,7 @@ const HISTORICAL_DATA = {
     [
       2023,
       "ジャスティンパレス",
-      "ルメール",
+      "C.ルメール",
       "3:16.1",
       2,
       "杉山晴紀 (栗東)"
@@ -5354,7 +5378,7 @@ const HISTORICAL_DATA = {
     [
       2020,
       "フィエールマン",
-      "ルメール",
+      "C.ルメール",
       "3:16.5",
       1,
       "手塚貴久 (美浦)"
@@ -5362,7 +5386,7 @@ const HISTORICAL_DATA = {
     [
       2019,
       "フィエールマン",
-      "ルメール",
+      "C.ルメール",
       "3:15.0",
       1,
       "手塚貴久 (美浦)"
@@ -5428,7 +5452,7 @@ const HISTORICAL_DATA = {
     [
       2021,
       "シュネルマイスター",
-      "ルメール",
+      "C.ルメール",
       "1:31.6",
       2,
       "手塚貴久 (美浦)"
@@ -5436,7 +5460,7 @@ const HISTORICAL_DATA = {
     [
       2020,
       "ラウダシオン",
-      "Ｍ．デム",
+      "M.デムーロ",
       "1:32.5",
       9,
       "斉藤崇史 (栗東)"
@@ -5444,7 +5468,7 @@ const HISTORICAL_DATA = {
     [
       2019,
       "アドマイヤマーズ",
-      "Ｍ．デム",
+      "M.デムーロ",
       "1:32.4",
       2,
       "友道康夫 (栗東)"
@@ -5468,7 +5492,7 @@ const HISTORICAL_DATA = {
     [
       2016,
       "メジャーエンブレム",
-      "ルメール",
+      "C.ルメール",
       "1:32.8",
       1,
       "田村康仁 (美浦)"
@@ -5478,7 +5502,7 @@ const HISTORICAL_DATA = {
     [
       2025,
       "アスコリピチェーノ",
-      "ルメール",
+      "C.ルメール",
       "1:32.1",
       1,
       "黒岩陽一 (美浦)"
@@ -5510,7 +5534,7 @@ const HISTORICAL_DATA = {
     [
       2021,
       "グランアレグリア",
-      "ルメール",
+      "C.ルメール",
       "1:31.0",
       1,
       "藤沢和雄 (美浦)"
@@ -5518,7 +5542,7 @@ const HISTORICAL_DATA = {
     [
       2020,
       "アーモンドアイ",
-      "ルメール",
+      "C.ルメール",
       "1:30.6",
       1,
       "国枝栄 (美浦)"
@@ -5526,7 +5550,7 @@ const HISTORICAL_DATA = {
     [
       2019,
       "ノームコア",
-      "レーン",
+      "D.レーン",
       "1:30.5",
       5,
       "萩原清 (美浦)"
@@ -5542,7 +5566,7 @@ const HISTORICAL_DATA = {
     [
       2017,
       "アドマイヤリード",
-      "ルメール",
+      "C.ルメール",
       "1:33.9",
       6,
       "須貝尚介 (栗東)"
@@ -5560,7 +5584,7 @@ const HISTORICAL_DATA = {
     [
       2025,
       "カムニャック",
-      "シュタル",
+      "A.シュタルケ",
       "2:25.7",
       4,
       "友道康夫 (栗東)"
@@ -5568,7 +5592,7 @@ const HISTORICAL_DATA = {
     [
       2024,
       "チェルヴィニア",
-      "ルメール",
+      "C.ルメール",
       "2:24.0",
       2,
       "木村哲也 (美浦)"
@@ -5584,7 +5608,7 @@ const HISTORICAL_DATA = {
     [
       2022,
       "スターズオンアース",
-      "ルメール",
+      "C.ルメール",
       "2:23.9",
       3,
       "高柳瑞樹 (美浦)"
@@ -5592,7 +5616,7 @@ const HISTORICAL_DATA = {
     [
       2021,
       "ユーバーレーベン",
-      "Ｍ．デム",
+      "M.デムーロ",
       "2:24.5",
       3,
       "手塚貴久 (美浦)"
@@ -5608,7 +5632,7 @@ const HISTORICAL_DATA = {
     [
       2019,
       "ラヴズオンリーユー",
-      "Ｍ．デム",
+      "M.デムーロ",
       "2:22.8",
       1,
       "矢作芳人 (栗東)"
@@ -5616,7 +5640,7 @@ const HISTORICAL_DATA = {
     [
       2018,
       "アーモンドアイ",
-      "ルメール",
+      "C.ルメール",
       "2:23.8",
       1,
       "国枝栄 (美浦)"
@@ -5624,7 +5648,7 @@ const HISTORICAL_DATA = {
     [
       2017,
       "ソウルスターリング",
-      "ルメール",
+      "C.ルメール",
       "2:24.1",
       1,
       "藤沢和雄 (美浦)"
@@ -5658,7 +5682,7 @@ const HISTORICAL_DATA = {
     [
       2023,
       "タスティエーラ",
-      "レーン",
+      "D.レーン",
       "2:25.2",
       4,
       "堀宣行 (美浦)"
@@ -5706,7 +5730,7 @@ const HISTORICAL_DATA = {
     [
       2017,
       "レイデオロ",
-      "ルメール",
+      "C.ルメール",
       "2:26.9",
       2,
       "藤沢和雄 (美浦)"
@@ -5732,10 +5756,10 @@ const HISTORICAL_DATA = {
     [
       2024,
       "ロマンチックウォリアー",
-      "マクドナ",
+      "J.マクドナルド",
       "1:32.3",
       1,
-      "シャム (海外)"
+      "C.シャム (香港)"
     ],
     [
       2023,
@@ -5780,7 +5804,7 @@ const HISTORICAL_DATA = {
     [
       2018,
       "モズアスコット",
-      "ルメール",
+      "C.ルメール",
       "1:31.3",
       9,
       "矢作芳人 (栗東)"
@@ -5822,7 +5846,7 @@ const HISTORICAL_DATA = {
     [
       2023,
       "イクイノックス",
-      "ルメール",
+      "C.ルメール",
       "2:11.2",
       1,
       "木村哲也 (美浦)"
@@ -5838,7 +5862,7 @@ const HISTORICAL_DATA = {
     [
       2021,
       "クロノジェネシス",
-      "ルメール",
+      "C.ルメール",
       "2:10.9",
       1,
       "斉藤崇史 (栗東)"
@@ -5854,7 +5878,7 @@ const HISTORICAL_DATA = {
     [
       2019,
       "リスグラシュー",
-      "レーン",
+      "D.レーン",
       "2:10.8",
       3,
       "矢作芳人 (栗東)"
@@ -5870,7 +5894,7 @@ const HISTORICAL_DATA = {
     [
       2017,
       "サトノクラウン",
-      "Ｍ．デム",
+      "M.デムーロ",
       "2:11.4",
       3,
       "堀宣行 (美浦)"
@@ -5881,983 +5905,7 @@ const HISTORICAL_DATA = {
       "蛯名正義",
       "2:12.8",
       8,
-      "久保田貴 (美浦)"
-    ]
-  ],
-  "13": [
-    [
-      2025,
-      "ウインカーネリアン",
-      "三浦皇成",
-      "1:06.9",
-      11,
-      "鹿戸雄一 (美浦)"
-    ],
-    [
-      2024,
-      "ルガル",
-      "西村淳也",
-      "1:07.0",
-      9,
-      "杉山晴紀 (栗東)"
-    ],
-    [
-      2023,
-      "ママコチャ",
-      "川田将雅",
-      "1:08.0",
-      3,
-      "池江泰寿 (栗東)"
-    ],
-    [
-      2022,
-      "ジャンダルム",
-      "荻野極",
-      "1:07.8",
-      8,
-      "池江泰寿 (栗東)"
-    ],
-    [
-      2021,
-      "ピクシーナイト",
-      "福永祐一",
-      "1:07.1",
-      3,
-      "音無秀孝 (栗東)"
-    ],
-    [
-      2020,
-      "グランアレグリア",
-      "ルメール",
-      "1:08.3",
-      1,
-      "藤沢和雄 (美浦)"
-    ],
-    [
-      2019,
-      "タワーオブロンドン",
-      "ルメール",
-      "1:07.1",
-      2,
-      "藤沢和雄 (美浦)"
-    ],
-    [
-      2018,
-      "ファインニードル",
-      "川田将雅",
-      "1:08.3",
-      1,
-      "高橋義忠 (栗東)"
-    ],
-    [
-      2017,
-      "レッドファルクス",
-      "Ｍ．デム",
-      "1:07.6",
-      1,
-      "尾関知人 (美浦)"
-    ],
-    [
-      2016,
-      "レッドファルクス",
-      "Ｍ．デム",
-      "1:07.6",
-      3,
-      "尾関知人 (美浦)"
-    ]
-  ],
-  "14": [
-    [
-      2025,
-      "エンブロイダリー",
-      "ルメール",
-      "1:58.3",
-      2,
-      "森一誠 (美浦)"
-    ],
-    [
-      2024,
-      "チェルヴィニア",
-      "ルメール",
-      "1:57.1",
-      1,
-      "木村哲也 (美浦)"
-    ],
-    [
-      2023,
-      "リバティアイランド",
-      "川田将雅",
-      "2:01.1",
-      1,
-      "中内田充 (美浦)"
-    ],
-    [
-      2022,
-      "スタニングローズ",
-      "坂井瑠星",
-      "1:58.6",
-      3,
-      "高野友和 (栗東)"
-    ],
-    [
-      2021,
-      "アカイトリノムスメ",
-      "戸崎圭太",
-      "2:01.2",
-      4,
-      "国枝栄 (美浦)"
-    ],
-    [
-      2020,
-      "デアリングタクト",
-      "松山弘平",
-      "2:00.6",
-      1,
-      "杉山晴紀 (栗東)"
-    ],
-    [
-      2019,
-      "クロノジェネシス",
-      "北村友一",
-      "1:59.9",
-      4,
-      "斉藤崇史 (栗東)"
-    ],
-    [
-      2018,
-      "アーモンドアイ",
-      "ルメール",
-      "1:58.5",
-      1,
-      "国枝栄 (美浦)"
-    ],
-    [
-      2017,
-      "ディアドラ",
-      "ルメール",
-      "2:00.2",
-      3,
-      "橋田満 (栗東)"
-    ],
-    [
-      2016,
-      "ヴィブロス",
-      "福永祐一",
-      "1:58.6",
-      3,
-      "友道康夫 (栗東)"
-    ]
-  ],
-  "15": [
-    [
-      2025,
-      "エネルジコ",
-      "ルメール",
-      "3:04.0",
-      1,
-      "高柳瑞樹 (美浦)"
-    ],
-    [
-      2024,
-      "アーバンシック",
-      "ルメール",
-      "3:04.1",
-      2,
-      "武井亮 (美浦)"
-    ],
-    [
-      2023,
-      "ドゥレッツァ",
-      "ルメール",
-      "3:03.1",
-      4,
-      "尾関知人 (美浦)"
-    ],
-    [
-      2022,
-      "アスクビクターモア",
-      "田辺裕信",
-      "3:02.4",
-      2,
-      "田村康仁 (美浦)"
-    ],
-    [
-      2021,
-      "タイトルホルダー",
-      "横山武史",
-      "3:04.6",
-      4,
-      "栗田徹 (美浦)"
-    ],
-    [
-      2020,
-      "コントレイル",
-      "福永祐一",
-      "3:05.5",
-      1,
-      "矢作芳人 (栗東)"
-    ],
-    [
-      2019,
-      "ワールドプレミア",
-      "武豊",
-      "3:06.0",
-      3,
-      "友道康夫 (栗東)"
-    ],
-    [
-      2018,
-      "フィエールマン",
-      "ルメール",
-      "3:06.1",
-      7,
-      "手塚貴久 (美浦)"
-    ],
-    [
-      2017,
-      "キセキ",
-      "Ｍ．デム",
-      "3:18.9",
-      1,
-      "角居勝彦 (栗東)"
-    ],
-    [
-      2016,
-      "サトノダイヤモンド",
-      "ルメール",
-      "3:03.3",
-      1,
-      "池江泰寿 (栗東)"
-    ]
-  ],
-  "16": [
-    [
-      2025,
-      "マスカレードボール",
-      "ルメール",
-      "1:58.6",
-      1,
-      "手塚貴久 (美浦)"
-    ],
-    [
-      2024,
-      "ドウデュース",
-      "武豊",
-      "1:57.3",
-      2,
-      "友道康夫 (栗東)"
-    ],
-    [
-      2023,
-      "イクイノックス",
-      "ルメール",
-      "1:55.2",
-      1,
-      "木村哲也 (美浦)"
-    ],
-    [
-      2022,
-      "イクイノックス",
-      "ルメール",
-      "1:57.5",
-      1,
-      "木村哲也 (美浦)"
-    ],
-    [
-      2021,
-      "エフフォーリア",
-      "横山武史",
-      "1:57.9",
-      3,
-      "鹿戸雄一 (美浦)"
-    ],
-    [
-      2020,
-      "アーモンドアイ",
-      "ルメール",
-      "1:57.8",
-      1,
-      "国枝栄 (美浦)"
-    ],
-    [
-      2019,
-      "アーモンドアイ",
-      "ルメール",
-      "1:56.2",
-      1,
-      "国枝栄 (美浦)"
-    ],
-    [
-      2018,
-      "レイデオロ",
-      "ルメール",
-      "1:56.8",
-      2,
-      "藤沢和雄 (美浦)"
-    ],
-    [
-      2017,
-      "キタサンブラック",
-      "武豊",
-      "2:08.3",
-      1,
-      "清水久詞 (栗東)"
-    ],
-    [
-      2016,
-      "モーリス",
-      "ムーア",
-      "1:59.3",
-      1,
-      "堀宣行 (美浦)"
-    ]
-  ],
-  "17": [
-    [
-      2025,
-      "レガレイラ",
-      "戸崎圭太",
-      "2:11.0",
-      1,
-      "木村哲也 (美浦)"
-    ],
-    [
-      2024,
-      "スタニングローズ",
-      "Ｃ．デム",
-      "2:11.1",
-      3,
-      "高野友和 (栗東)"
-    ],
-    [
-      2023,
-      "ブレイディヴェーグ",
-      "ルメール",
-      "2:12.6",
-      1,
-      "宮田敬介 (美浦)"
-    ],
-    [
-      2022,
-      "ジェラルディーナ",
-      "Ｃ．デム",
-      "2:13.0",
-      4,
-      "斉藤崇史 (栗東)"
-    ],
-    [
-      2021,
-      "アカイイト",
-      "幸英明",
-      "2:12.1",
-      10,
-      "中竹和也 (栗東)"
-    ],
-    [
-      2020,
-      "ラッキーライラック",
-      "ルメール",
-      "2:10.3",
-      1,
-      "松永幹夫 (栗東)"
-    ],
-    [
-      2019,
-      "ラッキーライラック",
-      "スミヨン",
-      "2:14.1",
-      3,
-      "松永幹夫 (栗東)"
-    ],
-    [
-      2018,
-      "リスグラシュー",
-      "モレイラ",
-      "2:13.1",
-      3,
-      "矢作芳人 (栗東)"
-    ],
-    [
-      2017,
-      "モズカッチャン",
-      "Ｍ．デム",
-      "2:14.3",
-      5,
-      "鮫島一歩 (栗東)"
-    ],
-    [
-      2016,
-      "クイーンズリング",
-      "Ｍ．デム",
-      "2:12.9",
-      3,
-      "吉村圭司 (栗東)"
-    ]
-  ],
-  "18": [
-    [
-      2025,
-      "ジャンタルマンタル",
-      "川田将雅",
-      "1:31.3",
-      1,
-      "高野友和 (栗東)"
-    ],
-    [
-      2024,
-      "ソウルラッシュ",
-      "団野大成",
-      "1:32.0",
-      4,
-      "池江泰寿 (栗東)"
-    ],
-    [
-      2023,
-      "ナミュール",
-      "藤岡康太",
-      "1:32.5",
-      5,
-      "高野友和 (栗東)"
-    ],
-    [
-      2022,
-      "セリフォス",
-      "レーン",
-      "1:32.5",
-      6,
-      "中内田充 (美浦)"
-    ],
-    [
-      2021,
-      "グランアレグリア",
-      "ルメール",
-      "1:32.6",
-      1,
-      "藤沢和雄 (美浦)"
-    ],
-    [
-      2020,
-      "グランアレグリア",
-      "ルメール",
-      "1:32.0",
-      1,
-      "藤沢和雄 (美浦)"
-    ],
-    [
-      2019,
-      "インディチャンプ",
-      "池添謙一",
-      "1:33.0",
-      3,
-      "音無秀孝 (栗東)"
-    ],
-    [
-      2018,
-      "ステルヴィオ",
-      "ビュイッ",
-      "1:33.3",
-      5,
-      "木村哲也 (美浦)"
-    ],
-    [
-      2017,
-      "ペルシアンナイト",
-      "Ｍ．デム",
-      "1:33.8",
-      4,
-      "池江泰寿 (栗東)"
-    ],
-    [
-      2016,
-      "ミッキーアイル",
-      "浜中俊",
-      "1:33.1",
-      3,
-      "音無秀孝 (栗東)"
-    ]
-  ],
-  "19": [
-    [
-      2025,
-      "カランダガン",
-      "バルザロ",
-      "2:20.3",
-      4,
-      "グラファ (栗東)"
-    ],
-    [
-      2024,
-      "ドウデュース",
-      "武豊",
-      "2:25.5",
-      1,
-      "友道康夫 (栗東)"
-    ],
-    [
-      2023,
-      "イクイノックス",
-      "ルメール",
-      "2:21.8",
-      1,
-      "木村哲也 (美浦)"
-    ],
-    [
-      2022,
-      "ヴェラアズール",
-      "ムーア",
-      "2:23.7",
-      3,
-      "渡辺薫彦 (栗東)"
-    ],
-    [
-      2021,
-      "コントレイル",
-      "福永祐一",
-      "2:24.7",
-      1,
-      "矢作芳人 (栗東)"
-    ],
-    [
-      2020,
-      "アーモンドアイ",
-      "ルメール",
-      "2:23.0",
-      1,
-      "国枝栄 (美浦)"
-    ],
-    [
-      2019,
-      "スワーヴリチャード",
-      "マーフィ",
-      "2:25.9",
-      3,
-      "庄野靖志 (栗東)"
-    ],
-    [
-      2018,
-      "アーモンドアイ",
-      "ルメール",
-      "2:20.6",
-      1,
-      "国枝栄 (美浦)"
-    ],
-    [
-      2017,
-      "シュヴァルグラン",
-      "ボウマン",
-      "2:23.7",
-      5,
-      "友道康夫 (栗東)"
-    ],
-    [
-      2016,
-      "キタサンブラック",
-      "武豊",
-      "2:25.8",
-      1,
-      "清水久詞 (栗東)"
-    ]
-  ],
-  "20": [
-    [
-      2025,
-      "ダブルハートボンド",
-      "坂井瑠星",
-      "1:50.2",
-      3,
-      "大久保龍 (栗東)"
-    ],
-    [
-      2024,
-      "レモンポップ",
-      "坂井瑠星",
-      "1:50.1",
-      1,
-      "田中博康 (美浦)"
-    ],
-    [
-      2023,
-      "レモンポップ",
-      "坂井瑠星",
-      "1:50.6",
-      1,
-      "田中博康 (美浦)"
-    ],
-    [
-      2022,
-      "ジュンライトボルト",
-      "石川裕紀",
-      "1:51.9",
-      3,
-      "友道康夫 (栗東)"
-    ],
-    [
-      2021,
-      "テーオーケインズ",
-      "松山弘平",
-      "1:49.7",
-      1,
-      "高柳大輔 (栗東)"
-    ],
-    [
-      2020,
-      "チュウワウィザード",
-      "戸崎圭太",
-      "1:49.3",
-      4,
-      "大久保龍 (栗東)"
-    ],
-    [
-      2019,
-      "クリソベリル",
-      "川田将雅",
-      "1:48.5",
-      2,
-      "音無秀孝 (栗東)"
-    ],
-    [
-      2018,
-      "ルヴァンスレーヴ",
-      "Ｍ．デム",
-      "1:50.1",
-      1,
-      "萩原清 (美浦)"
-    ],
-    [
-      2017,
-      "ゴールドドリーム",
-      "ムーア",
-      "1:50.1",
-      8,
-      "平田修 (栗東)"
-    ],
-    [
-      2016,
-      "サウンドトゥルー",
-      "大野拓弥",
-      "1:50.1",
-      6,
-      "高木登 (美浦)"
-    ]
-  ],
-  "21": [
-    [
-      2025,
-      "スターアニス",
-      "松山弘平",
-      "1:32.6",
-      2,
-      "高野友和 (栗東)"
-    ],
-    [
-      2024,
-      "アルマヴェローチェ",
-      "岩田望来",
-      "1:33.4",
-      5,
-      "上村洋行 (栗東)"
-    ],
-    [
-      2023,
-      "アスコリピチェーノ",
-      "北村宏司",
-      "1:32.6",
-      3,
-      "黒岩陽一 (美浦)"
-    ],
-    [
-      2022,
-      "リバティアイランド",
-      "川田将雅",
-      "1:33.1",
-      1,
-      "中内田充 (美浦)"
-    ],
-    [
-      2021,
-      "サークルオブライフ",
-      "Ｍ．デム",
-      "1:33.8",
-      3,
-      "国枝栄 (美浦)"
-    ],
-    [
-      2020,
-      "ソダシ",
-      "吉田隼人",
-      "1:33.1",
-      1,
-      "須貝尚介 (栗東)"
-    ],
-    [
-      2019,
-      "レシステンシア",
-      "北村友一",
-      "1:32.7",
-      4,
-      "松下武士 (栗東)"
-    ],
-    [
-      2018,
-      "ダノンファンタジー",
-      "Ｃ．デム",
-      "1:34.1",
-      1,
-      "中内田充 (美浦)"
-    ],
-    [
-      2017,
-      "ラッキーライラック",
-      "石橋脩",
-      "1:34.3",
-      2,
-      "松永幹夫 (栗東)"
-    ],
-    [
-      2016,
-      "ソウルスターリング",
-      "ルメール",
-      "1:34.0",
-      1,
-      "藤沢和雄 (美浦)"
-    ]
-  ],
-  "22": [
-    [
-      2025,
-      "カヴァレリッツォ",
-      "Ｃ．デム",
-      "1:33.2",
-      2,
-      "吉岡辰弥 (栗東)"
-    ],
-    [
-      2024,
-      "アドマイヤズーム",
-      "川田将雅",
-      "1:34.1",
-      5,
-      "友道康夫 (栗東)"
-    ],
-    [
-      2023,
-      "ジャンタルマンタル",
-      "川田将雅",
-      "1:33.8",
-      1,
-      "高野友和 (栗東)"
-    ],
-    [
-      2022,
-      "ドルチェモア",
-      "坂井瑠星",
-      "1:33.9",
-      1,
-      "須貝尚介 (栗東)"
-    ],
-    [
-      2021,
-      "ドウデュース",
-      "武豊",
-      "1:33.5",
-      3,
-      "友道康夫 (栗東)"
-    ],
-    [
-      2020,
-      "グレナディアガーズ",
-      "川田将雅",
-      "1:32.3",
-      7,
-      "中内田充 (美浦)"
-    ],
-    [
-      2019,
-      "サリオス",
-      "ムーア",
-      "1:33.0",
-      1,
-      "堀宣行 (美浦)"
-    ],
-    [
-      2018,
-      "アドマイヤマーズ",
-      "Ｍ．デム",
-      "1:33.9",
-      2,
-      "友道康夫 (栗東)"
-    ],
-    [
-      2017,
-      "ダノンプレミアム",
-      "川田将雅",
-      "1:33.3",
-      1,
-      "中内田充 (美浦)"
-    ],
-    [
-      2016,
-      "サトノアレス",
-      "四位洋文",
-      "1:35.4",
-      6,
-      "藤沢和雄 (美浦)"
-    ]
-  ],
-  "23": [
-    [
-      2025,
-      "ロブチェン",
-      "松山弘平",
-      "2:01.0",
-      7,
-      "杉山晴紀 (栗東)"
-    ],
-    [
-      2024,
-      "クロワデュノール",
-      "北村友一",
-      "2:00.5",
-      1,
-      "斉藤崇史 (栗東)"
-    ],
-    [
-      2023,
-      "レガレイラ",
-      "ルメール",
-      "2:00.2",
-      1,
-      "木村哲也 (美浦)"
-    ],
-    [
-      2022,
-      "ドゥラエレーデ",
-      "ムルザバ",
-      "2:01.5",
-      14,
-      "池添学 (栗東)"
-    ],
-    [
-      2021,
-      "キラーアビリティ",
-      "横山武史",
-      "2:00.6",
-      2,
-      "斉藤崇史 (栗東)"
-    ],
-    [
-      2020,
-      "ダノンザキッド",
-      "川田将雅",
-      "2:02.8",
-      1,
-      "安田隆行 (栗東)"
-    ],
-    [
-      2019,
-      "コントレイル",
-      "福永祐一",
-      "2:01.4",
-      1,
-      "矢作芳人 (栗東)"
-    ],
-    [
-      2018,
-      "サートゥルナーリア",
-      "Ｍ．デム",
-      "2:01.6",
-      1,
-      "中竹和也 (栗東)"
-    ],
-    [
-      2017,
-      "タイムフライヤー",
-      "Ｃ．デム",
-      "2:01.4",
-      1,
-      "松田国英 (栗東)"
-    ]
-  ],
-  "24": [
-    [
-      2025,
-      "ミュージアムマイル",
-      "Ｃ．デム",
-      "2:31.5",
-      3,
-      "高柳大輔 (栗東)"
-    ],
-    [
-      2024,
-      "レガレイラ",
-      "戸崎圭太",
-      "2:31.8",
-      5,
-      "木村哲也 (美浦)"
-    ],
-    [
-      2023,
-      "ドウデュース",
-      "武豊",
-      "2:30.9",
-      2,
-      "友道康夫 (栗東)"
-    ],
-    [
-      2022,
-      "イクイノックス",
-      "ルメール",
-      "2:32.4",
-      1,
-      "木村哲也 (美浦)"
-    ],
-    [
-      2021,
-      "エフフォーリア",
-      "横山武史",
-      "2:32.0",
-      1,
-      "鹿戸雄一 (美浦)"
-    ],
-    [
-      2020,
-      "クロノジェネシス",
-      "北村友一",
-      "2:35.0",
-      1,
-      "斉藤崇史 (栗東)"
-    ],
-    [
-      2019,
-      "リスグラシュー",
-      "レーン",
-      "2:30.5",
-      2,
-      "矢作芳人 (栗東)"
-    ],
-    [
-      2018,
-      "ブラストワンピース",
-      "池添謙一",
-      "2:32.2",
-      3,
-      "大竹正博 (美浦)"
-    ],
-    [
-      2017,
-      "キタサンブラック",
-      "武豊",
-      "2:33.6",
-      1,
-      "清水久詞 (栗東)"
-    ],
-    [
-      2016,
-      "サトノダイヤモンド",
-      "ルメール",
-      "2:32.6",
-      1,
-      "池江泰寿 (栗東)"
+      "久保田貴士 (美浦)"
     ]
   ]
 };
@@ -7654,14 +6702,7 @@ const POOLS = {
       // ----------------------------------
       // 初期化処理
       // ----------------------------------
-      document.addEventListener('DOMContentLoaded', () => {
-        if (typeof window !== 'undefined' && window.lucide) {
-          lucide.createIcons();
-        }
-        startNextRaceCountdown();
-        renderRaces();
-        initEventListeners();
-      });
+      
 
       function refreshIcons() {
         if (typeof window !== 'undefined' && window.lucide) {
@@ -8068,6 +7109,7 @@ function hydratePayouts(race) {
       // 予想・攻略分析 View コントローラー ＆ ロジック
       // ----------------------------------------------------
       let currentAppView = 'calendar';
+      let lastMainView = 'calendar';
       let predictionSortType = 'gate';
       let activeSheetGate = null;
       const MARK_CLASSES = {
@@ -8079,13 +7121,101 @@ function hydratePayouts(race) {
         '消': 'mark-keshi'
       };
 
-      function switchView(viewName) {
+      // ----------------------------------------------------
+      // SPA URL Hash ルーティング ＆ 状態復元（リロード対策）
+      // ----------------------------------------------------
+      function navigateTo(routeHash) {
+        if (typeof window === 'undefined') return;
+        if (window.location.hash !== routeHash) {
+          window.location.hash = routeHash;
+        } else {
+          handleRoute(false);
+        }
+      }
+
+      function handleRoute(shouldScroll = false) {
+        if (typeof window === 'undefined') return;
+
+        let hash = window.location.hash || '';
+        if (!hash || hash === '#' || hash === '#/') {
+          if (typeof localStorage !== 'undefined') {
+            const saved = localStorage.getItem('keiba_active_route');
+            if (saved && (saved === '#prediction' || saved.startsWith('#race-') || saved.startsWith('#sec-'))) {
+              hash = saved;
+              if (window.history && window.history.replaceState) {
+                window.history.replaceState(null, '', hash);
+              }
+            } else {
+              hash = '#calendar';
+            }
+          } else {
+            hash = '#calendar';
+          }
+        }
+
+        // 1. レース詳細モーダル ルート (#race-16 など)
+        if (hash.startsWith('#race-')) {
+          const raceId = hash.replace('#race-', '');
+          if (typeof localStorage !== 'undefined') {
+            localStorage.setItem('keiba_active_route', hash);
+          }
+          const baseView = (typeof localStorage !== 'undefined' && localStorage.getItem('keiba_last_main_view') === 'prediction') ? 'prediction' : 'calendar';
+          switchView(baseView, false, false);
+          openRaceDetail(raceId, false);
+          return;
+        }
+
+        // 2. 予想ページ ルート (#prediction または #sec-xxx)
+        if (hash === '#prediction' || hash.startsWith('#sec-')) {
+          closeModalInternal();
+          if (typeof localStorage !== 'undefined') {
+            localStorage.setItem('keiba_active_route', '#prediction');
+            localStorage.setItem('keiba_last_main_view', 'prediction');
+          }
+          switchView('prediction', shouldScroll, false);
+
+          if (hash.startsWith('#sec-')) {
+            const secId = hash.replace('#', '');
+            const targetEl = document.getElementById(secId);
+            if (targetEl) {
+              setTimeout(() => {
+                targetEl.scrollIntoView({ behavior: 'smooth' });
+              }, 80);
+            }
+          }
+          return;
+        }
+
+        // 3. カレンダー一覧 トップページ ルート (#calendar またはデフォルト)
+        closeModalInternal();
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('keiba_active_route', '#calendar');
+          localStorage.setItem('keiba_last_main_view', 'calendar');
+        }
+        switchView('calendar', shouldScroll, false);
+      }
+
+      function switchView(viewName, shouldScroll = true, updateRoute = false) {
+        if (updateRoute) {
+          navigateTo('#' + viewName);
+          return;
+        }
+
         currentAppView = viewName;
+        lastMainView = viewName;
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('keiba_last_main_view', viewName);
+          localStorage.setItem('keiba_active_route', '#' + viewName);
+        }
+
         const calView = document.getElementById('view-calendar');
         const predView = document.getElementById('view-prediction');
         const navItems = document.querySelectorAll('.nav-item');
 
         if (viewName === 'prediction') {
+          if (document.documentElement) {
+            document.documentElement.classList.add('route-prediction');
+          }
           if (calView) calView.style.display = 'none';
           if (predView) predView.style.display = 'block';
           navItems.forEach(n => {
@@ -8093,17 +7223,20 @@ function hydratePayouts(race) {
             else n.classList.remove('active');
           });
           renderPredictionView();
-          if (typeof window !== 'undefined' && window.scrollTo) {
+          if (shouldScroll && typeof window !== 'undefined' && window.scrollTo) {
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }
         } else {
+          if (document.documentElement) {
+            document.documentElement.classList.remove('route-prediction');
+          }
           if (calView) calView.style.display = 'block';
           if (predView) predView.style.display = 'none';
           navItems.forEach(n => {
             if (n.getAttribute('data-target') === 'calendar') n.classList.add('active');
             else n.classList.remove('active');
           });
-          if (typeof window !== 'undefined' && window.scrollTo) {
+          if (shouldScroll && typeof window !== 'undefined' && window.scrollTo) {
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }
         }
@@ -8132,79 +7265,76 @@ function hydratePayouts(race) {
         updateMarksUI();
       }
 
+      function openMarkSheet(gate) {
+        activeSheetGate = gate;
+        const horse = PREDICTION_DATA.starters.find(s => s.gate === Number(gate));
+        if (!horse) return;
+
+        const sheet = document.getElementById('mark-bottom-sheet');
+        const backdrop = document.getElementById('mark-sheet-backdrop');
+        const gateBadge = document.getElementById('sheet-target-gate');
+        const nameEl = document.getElementById('sheet-target-name');
+
+        if (gateBadge) {
+          gateBadge.className = `nh-gate-cell waku-${horse.waku}`;
+          gateBadge.innerText = horse.gate;
+        }
+        if (nameEl) {
+          nameEl.innerText = `${horse.horseName} (${horse.jockey})`;
+        }
+
+        if (backdrop) backdrop.classList.add('active');
+        if (sheet) sheet.classList.add('active');
+      }
+
+      function closeMarkSheet() {
+        activeSheetGate = null;
+        const sheet = document.getElementById('mark-bottom-sheet');
+        const backdrop = document.getElementById('mark-sheet-backdrop');
+        if (backdrop) backdrop.classList.remove('active');
+        if (sheet) sheet.classList.remove('active');
+      }
+
       function updateMarksUI() {
         if (typeof document === 'undefined') return;
         const marks = getUserMarks();
         
-        document.querySelectorAll('.nh-mark-btn[data-gate]').forEach(btn => {
+        // 1. 各馬の印ボタンを更新
+        document.querySelectorAll('.nh-mark-btn').forEach(btn => {
           const g = btn.getAttribute('data-gate');
           const m = marks[g] || '';
           btn.innerText = m;
-          btn.className = 'nh-mark-btn';
-          if (MARK_CLASSES[m]) {
-            btn.classList.add(MARK_CLASSES[m]);
-          }
+          btn.className = `nh-mark-btn ${MARK_CLASSES[m] || ''}`;
         });
 
-        const starters = PREDICTION_DATA.starters;
-        const summaryMap = { '◎': [], '○': [], '▲': [], '△': [], '☆': [] };
+        // 2. マイ予想印サマリーバッジを更新
+        const summaryContainer = document.getElementById('selected-marks-summary');
+        if (summaryContainer) {
+          const starters = PREDICTION_DATA.starters;
+          const markOrder = ['◎', '○', '▲', '△', '☆', '消'];
+          let badgesHtml = '';
 
-        Object.keys(marks).forEach(g => {
-          const m = marks[g];
-          const s = starters.find(x => String(x.gate) === String(g));
-          if (s && summaryMap[m]) {
-            summaryMap[m].push(`${s.gate} ${s.horseName}`);
-          }
-        });
+          markOrder.forEach(targetM => {
+            Object.keys(marks).forEach(g => {
+              if (marks[g] === targetM) {
+                const s = starters.find(x => String(x.gate) === String(g));
+                if (s) {
+                  badgesHtml += `
+                    <span style="font-size: 11px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15); padding: 3px 8px; border-radius: 6px; display: inline-flex; align-items: center; gap: 5px;">
+                      <span class="nh-mark-btn ${MARK_CLASSES[targetM]}" style="width: 20px; height: 20px; font-size: 11px; border-radius: 4px; pointer-events: none;">${targetM}</span>
+                      <strong style="color: #fff;">${s.gate}. ${s.horseName}</strong>
+                      <span style="color: var(--text-muted); font-size: 10px;">(${s.jockey})</span>
+                    </span>
+                  `;
+                }
+              }
+            });
+          });
 
-        const elH = document.getElementById('summary-honmei');
-        const elT = document.getElementById('summary-taiko');
-        const elA = document.getElementById('summary-tanana');
-        const elR = document.getElementById('summary-renka');
-        const elAn = document.getElementById('summary-ana');
-
-        if (elH) elH.innerText = summaryMap['◎'].join(', ') || '未選択';
-        if (elT) elT.innerText = summaryMap['○'].join(', ') || '未選択';
-        if (elA) elA.innerText = summaryMap['▲'].join(', ') || '未選択';
-        if (elR) elR.innerText = summaryMap['△'].join(', ') || '未選択';
-        if (elAn) elAn.innerText = summaryMap['☆'].join(', ') || '未選択';
-      }
-
-      // ボトムシートによる確実な印選択（スマホ誤操作ゼロ）
-      function openMarkSheet(gate) {
-        activeSheetGate = gate;
-        const s = PREDICTION_DATA.starters.find(x => String(x.gate) === String(gate));
-        const sheet = document.getElementById('mark-bottom-sheet');
-        const titleEl = document.getElementById('mark-sheet-horse-title');
-
-        if (titleEl && s) {
-          titleEl.innerHTML = `<span class="nh-gate-cell waku-${s.waku}" style="display:inline-flex; width:26px; height:26px; font-size:13px; border-radius:4px; vertical-align:middle; margin-right:6px;">${s.gate}</span> ${s.horseName} の印`;
-        }
-
-        if (sheet) {
-          sheet.style.display = 'flex';
-        }
-      }
-
-      function closeMarkSheet() {
-        const sheet = document.getElementById('mark-bottom-sheet');
-        if (sheet) {
-          sheet.style.display = 'none';
-        }
-        activeSheetGate = null;
-      }
-
-      function toggleHorseAccordion(gate) {
-        const drawer = document.getElementById(`nh-drawer-${gate}`);
-        const hint = document.getElementById(`nh-hint-${gate}`);
-        if (drawer) {
-          const isOpen = drawer.classList.contains('open');
-          if (isOpen) {
-            drawer.classList.remove('open');
-            if (hint) hint.innerHTML = '詳細 ▼';
+          if (!badgesHtml) {
+            summaryContainer.innerHTML = '<span style="font-size: 12px; color: var(--text-muted);">まだ印が選択されていません。出馬表の印ボタンから本命（◎）や対抗（○）を選択してください。</span>';
           } else {
-            drawer.classList.add('open');
-            if (hint) hint.innerHTML = '閉じる ▲';
+            summaryContainer.innerHTML = badgesHtml;
           }
         }
       }
@@ -8273,32 +7403,37 @@ function hydratePayouts(race) {
 
                 <!-- 4. オッズ・人気（右端） -->
                 <div class="nh-odds-cell" data-action="toggle-drawer" data-gate="${s.gate}">
-                  <div class="nh-odds-val ${isPop1or2 ? 'highlight' : ''}">${s.odds}</div>
-                  <div class="nh-pop-val ${isTop3Pop ? 'top3' : ''}">${s.pop}人気</div>
+                  <div class="nh-odds-val ${isTop3Pop ? 'highlight-fav' : ''}">${s.winOdds}</div>
+                  <div class="nh-pop-badge">${s.pop}人気</div>
                 </div>
               </div>
 
-              <!-- 5. タップ展開アコーディオン（調教・厩舎・騎手相性） -->
+              <!-- タップで展開されるアコーディオン詳細 -->
               <div class="nh-detail-drawer" id="nh-drawer-${s.gate}">
                 <div class="nh-drawer-grid">
-                  <div class="nh-drawer-stat">
-                    <span style="color: var(--text-muted);">調教評価</span>
-                    <span style="font-weight: 800; color: ${s.trainingGrade === 'S' ? 'var(--gold)' : 'var(--primary)'};">${s.trainingGrade} (${s.trainingCourse})</span>
+                  <div class="nh-drawer-item">
+                    <span class="nh-drawer-label">🏃 追い切り・調教評価</span>
+                    <span class="nh-drawer-val">
+                      <span style="display: inline-block; background: rgba(245, 158, 11, 0.2); color: var(--gold); font-weight: 800; padding: 1px 6px; border-radius: 4px; font-size: 11px; margin-right: 4px;">ランク: ${s.trainingGrade}</span>
+                      ${s.trainingTime}
+                    </span>
                   </div>
-                  <div class="nh-drawer-stat">
-                    <span style="color: var(--text-muted);">複勝オッズ</span>
-                    <span style="font-family: monospace; font-weight: 700;">${s.placeOdds}</span>
+
+                  <div class="nh-drawer-item">
+                    <span class="nh-drawer-label">💬 厩舎・陣営勝負気配コメント</span>
+                    <span class="nh-drawer-val">「${s.comment}」</span>
                   </div>
-                  <div class="nh-drawer-stat" style="grid-column: span 2;">
-                    <span style="color: var(--text-muted);">厩舎 (所属)</span>
-                    <span style="font-weight: 600; color: #fff;">${s.stable}</span>
+
+                  <div class="nh-drawer-item" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; border-top: 1px dashed rgba(255,255,255,0.06); padding-top: 6px; margin-top: 2px;">
+                    <div>
+                      <span class="nh-drawer-label">🏇 騎手・コース適性</span>
+                      <span class="nh-drawer-val" style="color: var(--primary); font-weight: 700;">${s.jockeyStat}</span>
+                    </div>
+                    <div style="text-align: right;">
+                      <span class="nh-drawer-label">複勝オッズ</span>
+                      <span class="nh-drawer-val" style="font-family: monospace; font-weight: 700; color: #fff;">${s.placeOdds}</span>
+                    </div>
                   </div>
-                </div>
-                <div style="font-size: 11px; color: var(--gold); font-family: monospace; margin-bottom: 4px;">
-                  追い切り: ${s.trainingTime}
-                </div>
-                <div class="nh-drawer-comment">
-                  <strong>【厩舎コメント】</strong> ${s.trainingComment}
                 </div>
               </div>
             </div>
@@ -8307,91 +7442,85 @@ function hydratePayouts(race) {
 
         listContainer.innerHTML = html;
 
-        // イベントバインド：印ボタンクリックでボトムシート展開
-        listContainer.querySelectorAll('.nh-mark-btn').forEach(btn => {
-          btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const g = btn.getAttribute('data-gate');
-            openMarkSheet(g);
+        // イベントリスナー設定（アコーディオン & 印ボトムシート）
+        listContainer.querySelectorAll('[data-action="toggle-drawer"]').forEach(cell => {
+          cell.addEventListener('click', (e) => {
+            const gate = cell.getAttribute('data-gate');
+            const drawer = document.getElementById(`nh-drawer-${gate}`);
+            const hint = document.getElementById(`nh-hint-${gate}`);
+            if (drawer) {
+              const isOpen = drawer.classList.contains('open');
+              if (isOpen) {
+                drawer.classList.remove('open');
+                if (hint) hint.innerText = '詳細 ▼';
+              } else {
+                drawer.classList.add('open');
+                if (hint) hint.innerText = '閉じる ▲';
+              }
+            }
           });
         });
 
-        // イベントバインド：馬名・オッズセルタップでアコーディオン展開
-        listContainer.querySelectorAll('[data-action="toggle-drawer"]').forEach(cell => {
-          cell.addEventListener('click', () => {
-            const g = cell.getAttribute('data-gate');
-            toggleHorseAccordion(g);
+        listContainer.querySelectorAll('.nh-mark-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const gate = btn.getAttribute('data-gate');
+            openMarkSheet(gate);
           });
         });
       }
 
       function renderPredictionOccult() {
         if (typeof document === 'undefined') return;
-        const container = document.getElementById('pred-occult-container');
+        const container = document.getElementById('pred-occult-list');
         if (!container) return;
 
         let html = '';
-        PREDICTION_DATA.occultSigns.forEach(o => {
-          let targetsHtml = '';
-          if (o.targets && o.targets.length > 0) {
-            targetsHtml = `
-              <div class="occult-targets">
-                <span class="occult-target-label"><i data-lucide="crosshair"></i> X推奨馬:</span>
-                ${o.targets.map(t => `
-                  <span class="occult-target-chip">
-                    <span class="nh-gate-cell waku-${t.waku}" style="width:20px; height:20px; font-size:11px; border-radius:3px; display:inline-flex;">${t.gate}</span>
-                    <strong style="color: #ffffff;">${t.name}</strong>
-                  </span>
-                `).join('')}
-              </div>
-            `;
-          }
-
+        PREDICTION_DATA.occultSigns.forEach(item => {
           html += `
-            <div class="occult-card">
-              <div class="occult-header">
-                <span class="occult-badge">${o.badge}</span>
-                <span class="occult-source"><svg style="width: 12px; height: 12px; fill: currentColor; display: inline-block; vertical-align: middle;" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> ${o.source}</span>
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 10px;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 4px;">
+                <span style="font-size: 13px; font-weight: 800; color: #fff;">${item.sign}</span>
+                <span style="font-size: 10px; background: rgba(59, 130, 246, 0.2); color: #60a5fa; padding: 2px 6px; border-radius: 4px;">🎯 ${item.target}</span>
               </div>
-              <h4 class="occult-title">${o.title}</h4>
-              <p class="occult-content">${o.content}</p>
-              ${targetsHtml}
+              <div style="font-size: 11px; color: var(--text-muted); line-height: 1.4; margin-bottom: 4px;">
+                ${item.detail}
+              </div>
+              <div style="font-size: 10px; color: #a855f7; display: flex; align-items: center; gap: 4px;">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                <span>${item.source}</span>
+              </div>
             </div>
           `;
         });
-
         container.innerHTML = html;
       }
 
       function renderPredictionMemo() {
         if (typeof document === 'undefined') return;
         const memoInput = document.getElementById('pred-memo-input');
-        if (memoInput && typeof localStorage !== 'undefined') {
-          memoInput.value = localStorage.getItem('keiba_memo_16') || '';
+        if (!memoInput) return;
+
+        if (typeof localStorage !== 'undefined') {
+          const saved = localStorage.getItem('keiba_memo_16');
+          if (saved) memoInput.value = saved;
         }
       }
 
       function initPredictionEventListeners() {
         if (typeof document === 'undefined') return;
 
-        // ボトムシートの印アイテム選択
-        document.querySelectorAll('.mark-sheet-item').forEach(btn => {
-          btn.addEventListener('click', () => {
-            const m = btn.getAttribute('data-mark');
-            if (activeSheetGate) {
-              setUserMark(activeSheetGate, m);
-            }
-            closeMarkSheet();
-          });
-        });
-
-        const btnClearSheet = document.getElementById('btn-mark-sheet-clear');
-        if (btnClearSheet) {
-          btnClearSheet.addEventListener('click', () => {
-            if (activeSheetGate) {
-              setUserMark(activeSheetGate, '未');
-            }
-            closeMarkSheet();
+        // ボトムシート選択ボタン群
+        const sheet = document.getElementById('mark-bottom-sheet');
+        if (sheet) {
+          sheet.querySelectorAll('[data-mark]').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+              const mark = btn.getAttribute('data-mark');
+              if (activeSheetGate) {
+                setUserMark(activeSheetGate, mark);
+              }
+              closeMarkSheet();
+            });
           });
         }
 
@@ -8405,12 +7534,23 @@ function hydratePayouts(race) {
           backdropSheet.addEventListener('click', closeMarkSheet);
         }
 
+        // ナビゲーションメニュー (SPAルーティング)
         const navItems = document.querySelectorAll('.nav-item');
         navItems.forEach(item => {
           item.addEventListener('click', (e) => {
             e.preventDefault();
             const target = item.getAttribute('data-target');
-            if (target) switchView(target);
+            if (target) navigateTo('#' + target);
+          });
+        });
+
+        // ブランドロゴクリックでトップページへ
+        const brands = document.querySelectorAll('.brand');
+        brands.forEach(b => {
+          b.style.cursor = 'pointer';
+          b.addEventListener('click', (e) => {
+            e.preventDefault();
+            navigateTo('#calendar');
           });
         });
 
@@ -8418,19 +7558,34 @@ function hydratePayouts(race) {
         if (btnBackCal) {
           btnBackCal.addEventListener('click', (e) => {
             e.preventDefault();
-            switchView('calendar');
+            navigateTo('#calendar');
           });
         }
+
+        // クイックジャンプナビ（スムーズスクロール・ルートハッシュ保持）
+        const quickNavBtns = document.querySelectorAll('.btn-quick-nav');
+        quickNavBtns.forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetHref = btn.getAttribute('href');
+            if (targetHref && targetHref.startsWith('#')) {
+              const targetEl = document.querySelector(targetHref);
+              if (targetEl) {
+                targetEl.scrollIntoView({ behavior: 'smooth' });
+              }
+            }
+          });
+        });
 
         const heroBanner = document.getElementById('hero-countdown-banner');
         if (heroBanner) {
           heroBanner.addEventListener('click', (e) => {
             if (e.target.closest('#btn-hero-detail')) {
               e.stopPropagation();
-              openRaceDetail('16');
+              navigateTo('#race-16');
               return;
             }
-            switchView('prediction');
+            navigateTo('#prediction');
           });
         }
 
@@ -8438,7 +7593,7 @@ function hydratePayouts(race) {
         if (btnHeroPred) {
           btnHeroPred.addEventListener('click', (e) => {
             e.stopPropagation();
-            switchView('prediction');
+            navigateTo('#prediction');
           });
         }
 
@@ -8546,7 +7701,12 @@ function hydratePayouts(race) {
 
 
 
-      function openRaceDetail(id) {
+      function openRaceDetail(id, updateRoute = true) {
+        if (updateRoute) {
+          navigateTo('#race-' + id);
+          return;
+        }
+
         const race = G1_RACES.find(r => r.id === id);
         if (!race) return;
 
@@ -8601,40 +7761,26 @@ function hydratePayouts(race) {
             `;
           });
 
-          historyTableRows += `
-            <tr class="history-year-row" data-year="${year}" data-race-id="${id}" style="cursor: pointer; transition: background 0.15s;">
-              <td style="text-align: center; font-weight: 700; color: var(--gold);">
-                <span style="display: flex; align-items: center; justify-content: center; gap: 4px;">
-                  <i data-lucide="chevron-right" class="toggle-icon" style="width: 14px; height: 14px; transition: transform 0.2s;"></i>
-                  ${year}年
-                </span>
-              </td>
-              <td style="font-weight: 700; color: #fff;">${h[1]}</td>
-              <td>${h[2]}</td>
-              <td style="font-family: monospace;">${h[3]}</td>
-              <td>${h[4] ? h[4] + '人気' : '-'}</td>
-              <td>${h[5] || '-'}</td>
-            </tr>
-            <tr id="history-detail-${id}-${year}" class="history-detail-panel" style="display: none; background: rgba(0, 0, 0, 0.45);">
-              <td colspan="6" style="padding: 12px 16px;">
-                <div style="font-size: 12px; font-weight: 700; color: var(--gold); margin-bottom: 8px; display: flex; justify-content: space-between;">
-                  <span>【${year}年 全頭確定着順一覧（1着〜最下位）】</span>
-                  <span style="color: var(--text-muted); font-weight: normal;">出走 ${fullList.length} 頭</span>
+          const subTableHtml = fullList.length > 0 ? `
+            <tr id="history-detail-${id}-${year}" class="history-detail-row" style="display: none; background: rgba(0,0,0,0.5);">
+              <td colspan="6" style="padding: 12px 8px;">
+                <div style="font-size: 12px; font-weight: 700; color: var(--gold); margin-bottom: 8px;">
+                  📋 ${year}年 全着順・詳細データ (${fullList.length}頭出走)
                 </div>
-                <div class="table-scroll-container">
-                  <table class="result-table" style="width: 100%; font-size: 12px;">
+                <div class="table-scroll-container" style="max-height: 320px; overflow-y: auto;">
+                  <table class="result-table" style="font-size: 11px; width: 100%;">
                     <thead>
-                      <tr>
-                        <th style="width: 36px; text-align: center;">着順</th>
-                        <th style="width: 36px; text-align: center;">馬番</th>
+                      <tr style="position: sticky; top: 0; background: #13231d; z-index: 2;">
+                        <th style="width: 32px; text-align: center;">着</th>
+                        <th style="width: 32px; text-align: center;">番</th>
                         <th>馬名</th>
                         <th>性齢</th>
                         <th>斤量</th>
                         <th>騎手</th>
                         <th>タイム</th>
                         <th>着差</th>
-                        <th>通過順</th>
-                        <th>上り3F</th>
+                        <th>通過</th>
+                        <th>上り</th>
                         <th>単勝</th>
                         <th>人気</th>
                         <th>馬体重</th>
@@ -8648,264 +7794,127 @@ function hydratePayouts(race) {
                 </div>
               </td>
             </tr>
+          ` : '';
+
+          historyTableRows += `
+            <tr class="history-year-row" data-year="${year}" data-race-id="${id}" style="cursor: pointer;" title="クリックで全頭成績を展開">
+              <td style="text-align: center; font-family: monospace; font-weight: 700; color: var(--gold);">
+                ${year} <i data-lucide="chevron-right" class="toggle-icon" style="width: 12px; height: 12px; display: inline-block; transition: transform 0.2s;"></i>
+              </td>
+              <td style="font-weight: 700; color: #fff;">${h[1]}</td>
+              <td>${h[2]}</td>
+              <td style="font-family: monospace;">${h[3]}</td>
+              <td>${h[4]}人気</td>
+              <td style="font-size: 12px; color: var(--text-muted);">${h[5]}</td>
+            </tr>
+            ${subTableHtml}
           `;
         });
 
         let innerHTML = '';
 
         if (race.status === 'finished') {
-          const results = hydrateRaceResults(race);
-          const payouts = hydratePayouts(race);
-          const pace = getRacePaceSequence(race);
-
-          let tableRows = '';
-          results.forEach(r => {
-            let rankClass = 'rank-other';
-            if (r.rank === 1) rankClass = 'rank-1';
-            else if (r.rank === 2) rankClass = 'rank-2';
-            else if (r.rank === 3) rankClass = 'rank-3';
-
-            let rowHighlight = '';
-            if (r.rank <= 3) rowHighlight = 'style="background: rgba(245, 158, 11, 0.05);"';
-
-            const wakuNum = getWaku(r.gate, results.length);
-
-            tableRows += `
-              <tr ${rowHighlight}>
-                <td><span class="rank-badge ${rankClass}">${r.rank}</span></td>
-                <td><span class="nh-gate-cell waku-${wakuNum}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${r.gate}</span></td>
-                <td style="font-weight: 700; color: #fff;">${r.horseName}</td>
-                <td>${r.sexAge}</td>
-                <td>${r.jockeyLoad}kg</td>
-                <td>${r.jockey}</td>
-                <td style="font-family: monospace; font-weight: 700;">${r.time}</td>
-                <td>${r.margin}</td>
-                <td>${r.cornerPass}</td>
-                <td>${r.last3F}</td>
-                <td style="font-family: monospace;">${r.odds}</td>
-                <td>${r.popularity}</td>
-                <td>${r.horseWeight}</td>
-                <td>${r.stable}</td>
-              </tr>
-            `;
-          });
-
-          let payoutRows = '';
-          payouts.forEach(p => {
-            payoutRows += `
-              <tr>
-                <td style="font-weight: 700; color: var(--gold);">${p.type}</td>
-                <td style="font-family: monospace; font-weight: 700;">${p.comb}</td>
-                <td style="font-family: monospace; font-weight: 700; color: #fff;">${p.val}</td>
-                <td>${p.pop ? p.pop + '人気' : '-'}</td>
-              </tr>
-            `;
-          });
-
-          let paceRows = '';
-          pace.forEach(p => {
-            paceRows += `
-              <div class="pace-item">
-                <span class="pace-corner">${p.corner}</span>
-                <span class="pace-seq">${p.seq}</span>
-              </div>
-            `;
-          });
-
           innerHTML = `
-            <div class="modal-tabs" style="display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
-              <button class="modal-tab-btn active" data-tab="results" style="background: none; border: none; color: var(--gold); border-bottom: 2px solid var(--gold); padding: 8px 16px; font-weight: bold; cursor: pointer; transition: all 0.2s;">
-                レース結果 (2026年)
-              </button>
-              <button class="modal-tab-btn" data-tab="history" style="background: none; border: none; color: var(--text-muted); padding: 8px 16px; font-weight: bold; cursor: pointer; transition: all 0.2s;">
-                過去10年の結果
-              </button>
+            <div class="modal-tabs">
+              <button class="modal-tab-btn active" data-tab="result">レース結果・全着順</button>
+              <button class="modal-tab-btn" data-tab="payouts">払戻金一覧</button>
+              <button class="modal-tab-btn" data-tab="history">歴代優勝馬（過去10年）</button>
             </div>
 
-            <div id="modal-tab-content-results" class="modal-tab-content">
-              <div class="detail-meta-list" style="margin-bottom: 16px;">
+            <div id="modal-tab-content-result" class="modal-tab-content">
+              <div class="detail-meta-grid">
                 <div class="detail-meta-item">
-                  <span class="detail-meta-label">開催日</span>
-                  <span class="detail-meta-value">${formattedDate}</span>
-                </div>
-                <div class="detail-meta-item">
-                  <span class="detail-meta-label">天候 / 馬場</span>
-                  <span class="detail-meta-value">${race.weather || '晴'} / ${race.trackCondition || '良'} (クッション値: ${race.cushionValue || '9.4'})</span>
-                </div>
-                <div class="detail-meta-item">
-                  <span class="detail-meta-label">コース</span>
-                  <span class="detail-meta-value">${race.location}競馬場 | ${race.course}</span>
-                </div>
-              </div>
-
-              <div class="detail-grid">
-                <div class="detail-left">
-                  <h3 class="detail-section-title">全着順一覧</h3>
-                  <div class="table-scroll-container">
-                    <table class="result-table">
-                      <thead>
-                        <tr>
-                          <th>着順</th>
-                          <th>馬番</th>
-                          <th>馬名</th>
-                          <th>性齢</th>
-                          <th>斤量</th>
-                          <th>騎手</th>
-                          <th>タイム</th>
-                          <th>着差</th>
-                          <th>通過</th>
-                          <th>上り</th>
-                          <th>単勝</th>
-                          <th>人気</th>
-                          <th>体重</th>
-                          <th>厩舎</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        ${tableRows}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-
-                <div class="detail-right">
-                  <h3 class="detail-section-title">払戻金</h3>
-                  <table class="payout-table">
-                    <thead>
-                      <tr>
-                        <th>勝式</th>
-                        <th>組番</th>
-                        <th>払戻金</th>
-                        <th>人気</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      ${payoutRows}
-                    </tbody>
-                  </table>
-
-                  <h3 class="detail-section-title" style="margin-top: 24px;">コーナー通過順位</h3>
-                  <div class="pace-list">
-                    ${paceRows}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="modal-tab-content-history" class="modal-tab-content" style="display: none;">
-              <h3 class="detail-section-title">過去10年の歴代優勝馬（傾向分析）</h3>
-              <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">各年をクリックすると、該当年の1着から最下位までの全頭着順・タイム・通過順一覧が展開されます。</p>
-              <div class="table-scroll-container">
-                <table class="result-table" style="width: 100%;">
-                  <thead>
-                    <tr>
-                      <th style="width: 80px; text-align: center;">開催年</th>
-                      <th>優勝馬</th>
-                      <th>騎手</th>
-                      <th>タイム</th>
-                      <th>人気</th>
-                      <th>調教師</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    ${historyTableRows}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          `;
-
-        } else if (entries && entries.length > 0) {
-          let entriesTableRows = '';
-          entries.forEach(e => {
-            entriesTableRows += `
-              <tr style="border-bottom: 1px solid rgba(255,255,255,0.06); transition: background 0.15s;">
-                <td style="text-align: center;">
-                  <span class="nh-gate-cell waku-${e.waku}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${e.gate}</span>
-                </td>
-                <td style="font-weight: 700; font-size: 14px; color: #ffffff;">${e.horseName}</td>
-                <td style="color: var(--text-secondary);">${e.sexAge}</td>
-                <td style="color: var(--text-secondary); font-family: monospace;">${e.load}kg</td>
-                <td style="font-weight: 600;">${e.jockey}</td>
-                <td style="font-size: 12px; color: var(--text-muted);">${e.stable}</td>
-              </tr>
-            `;
-          });
-
-          innerHTML = `
-            <div class="modal-tabs" style="display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
-              <button class="modal-tab-btn active" data-tab="entries" style="background: none; border: none; color: var(--gold); border-bottom: 2px solid var(--gold); padding: 8px 16px; font-weight: bold; cursor: pointer; transition: all 0.2s;">
-                出馬表・枠順 (全${entries.length}頭)
-              </button>
-              <button class="modal-tab-btn" data-tab="overview" style="background: none; border: none; color: var(--text-muted); padding: 8px 16px; font-weight: bold; cursor: pointer; transition: all 0.2s;">
-                レース概要
-              </button>
-              <button class="modal-tab-btn" data-tab="history" style="background: none; border: none; color: var(--text-muted); padding: 8px 16px; font-weight: bold; cursor: pointer; transition: all 0.2s;">
-                過去10年の結果
-              </button>
-            </div>
-
-            <div id="modal-tab-content-entries" class="modal-tab-content">
-              <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.15)); border: 1px solid var(--primary); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
-                <div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--text-secondary);">
-                  <i data-lucide="target" style="width: 20px; height: 20px; color: var(--gold); flex-shrink: 0;"></i>
-                  <span><strong>調教・騎手相性・X発祥オカルト・印付け・リアルタイムオッズ</strong>を備えた特設予想シートを公開中！</span>
-                </div>
-                <button id="btn-modal-to-pred" style="background: var(--gold); color: #111; border: none; border-radius: 6px; padding: 8px 16px; font-weight: 800; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);">
-                  🎯 予想・攻略分析ページを開く →
-                </button>
-              </div>
-
-              <div class="detail-meta-list" style="margin-bottom: 16px;">
-                <div class="detail-meta-item">
-                  <span class="detail-meta-label">発走日時</span>
-                  <span class="detail-meta-value" style="color: var(--gold); font-weight: 700;">${formattedDate} 15:40発走</span>
+                  <span class="detail-meta-label">開催日 / 発走時刻</span>
+                  <span class="detail-meta-value">${formattedDate} 15:40</span>
                 </div>
                 <div class="detail-meta-item">
                   <span class="detail-meta-label">開催場 / コース</span>
                   <span class="detail-meta-value">${race.location}競馬場 | ${race.course}</span>
                 </div>
                 <div class="detail-meta-item">
-                  <span class="detail-meta-label">枠順ステータス</span>
-                  <span class="detail-meta-value" style="color: var(--primary); font-weight: 700;">確定 (全${entries.length}頭)</span>
+                  <span class="detail-meta-label">天候 / 馬場状態</span>
+                  <span class="detail-meta-value">${race.weather || '晴'} / ${race.trackCondition || '良'} (クッション値: ${race.cushionValue || '9.4'})</span>
+                </div>
+                <div class="detail-meta-item">
+                  <span class="detail-meta-label">優勝馬 / 騎手</span>
+                  <span class="detail-meta-value" style="color: var(--gold); font-weight: 700;">
+                    ${race.winner} (${race.winnerJockey})
+                  </span>
                 </div>
               </div>
 
-              <h3 class="detail-section-title">出馬表・枠順一覧</h3>
+              <h3 class="detail-section-title">全着順確定結果</h3>
               <div class="table-scroll-container">
-                <table class="result-table" style="width: 100%;">
+                <table class="result-table">
                   <thead>
                     <tr>
-                      <th style="width: 50px; text-align: center;">馬番</th>
+                      <th style="width: 44px; text-align: center;">着順</th>
+                      <th style="width: 44px; text-align: center;">馬番</th>
                       <th>馬名</th>
                       <th>性齢</th>
                       <th>斤量</th>
                       <th>騎手</th>
-                      <th>調教師 (厩舎)</th>
+                      <th>タイム</th>
+                      <th>着差</th>
+                      <th>通過順</th>
+                      <th>上がり3F</th>
+                      <th>単勝オッズ</th>
+                      <th>人気</th>
+                      <th>馬体重</th>
+                      <th>調教師</th>
                     </tr>
                   </thead>
                   <tbody>
-                    ${entriesTableRows}
+                    ${(RESULTS_DATA[id] || []).map(r => {
+                      let rankBadge = r[0];
+                      let rankClass = 'rank-other';
+                      if (r[0] === 1) rankClass = 'rank-1';
+                      else if (r[0] === 2) rankClass = 'rank-2';
+                      else if (r[0] === 3) rankClass = 'rank-3';
+
+                      let wakuColor = 1;
+                      const gateNum = Number(r[1]);
+                      const totalHorses = (RESULTS_DATA[id] || []).length;
+                      if (gateNum > 0 && totalHorses > 0) {
+                        wakuColor = Math.min(8, Math.max(1, Math.ceil(gateNum / (totalHorses / 8))));
+                      }
+
+                      return `
+                        <tr>
+                          <td style="text-align: center;"><span class="rank-badge ${rankClass}">${rankBadge}</span></td>
+                          <td style="text-align: center; font-family: monospace; font-weight: 700;"><span class="nh-gate-cell waku-${wakuColor}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${r[1]}</span></td>
+                          <td style="font-weight: 700; color: #fff;">${r[2]}</td>
+                          <td>${r[3]}</td>
+                          <td>${r[4]}</td>
+                          <td>${r[5]}</td>
+                          <td style="font-family: monospace; font-weight: 600;">${r[6]}</td>
+                          <td>${r[7]}</td>
+                          <td style="font-size: 12px; color: var(--text-muted);">${r[8]}</td>
+                          <td style="font-family: monospace;">${r[9]}</td>
+                          <td style="font-family: monospace;">${r[10]}</td>
+                          <td>${r[11]}</td>
+                          <td>${r[12]}${r[13] ? ` (${r[13]})` : ''}</td>
+                          <td style="font-size: 13px; color: var(--text-muted);">${r[14] || '-'}</td>
+                        </tr>
+                      `;
+                    }).join('')}
                   </tbody>
                 </table>
               </div>
             </div>
 
-            <div id="modal-tab-content-overview" class="modal-tab-content" style="display: none;">
-              <div class="detail-meta-list">
-                <div class="detail-meta-item">
-                  <span class="detail-meta-label">開催日</span>
-                  <span class="detail-meta-value">${formattedDate} (15:40発走)</span>
-                </div>
-                <div class="detail-meta-item">
-                  <span class="detail-meta-label">開催場 / コース</span>
-                  <span class="detail-meta-value">${race.location}競馬場 | ${race.course}</span>
-                </div>
+            <div id="modal-tab-content-payouts" class="modal-tab-content" style="display: none;">
+              <h3 class="detail-section-title">払戻金確定情報</h3>
+              <div class="payout-grid">
+                ${(PAYOUTS_DATA[id] && PAYOUTS_DATA[id].payoutsList ? PAYOUTS_DATA[id].payoutsList : []).map(p => `
+                  <div class="payout-card">
+                    <span class="payout-type">${p.type}</span>
+                    <span class="payout-comb">${p.comb}</span>
+                    <span class="payout-val">${p.val}</span>
+                    <span class="payout-pop">${p.pop}</span>
+                  </div>
+                `).join('')}
               </div>
-              <h3 class="detail-section-title">レース概要 ＆ 見どころ</h3>
-              <p style="font-size: 14px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 20px;">
-                2026年度の最高峰G1競走。今年の出走予定メンバーも非常に強力で、春のクラシック戦線を沸かせた俊英たちと古馬の実績馬が激突する白熱した展開が期待されます。枠順は確定済みです。
-              </p>
             </div>
 
             <div id="modal-tab-content-history" class="modal-tab-content" style="display: none;">
@@ -8930,23 +7939,114 @@ function hydratePayouts(race) {
               </div>
             </div>
           `;
-
-        } else {
+        } else if (entries) {
           innerHTML = `
-            <div class="modal-tabs" style="display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
-              <button class="modal-tab-btn active" data-tab="overview" style="background: none; border: none; color: var(--gold); border-bottom: 2px solid var(--gold); padding: 8px 16px; font-weight: bold; cursor: pointer; transition: all 0.2s;">
-                レース概要
-              </button>
-              <button class="modal-tab-btn" data-tab="history" style="background: none; border: none; color: var(--text-muted); padding: 8px 16px; font-weight: bold; cursor: pointer; transition: all 0.2s;">
-                過去10年の結果
-              </button>
+            <div class="modal-tabs">
+              <button class="modal-tab-btn active" data-tab="entries">出馬表・枠順確定</button>
+              <button class="modal-tab-btn" data-tab="history">歴代優勝馬（過去10年）</button>
             </div>
 
-            <div id="modal-tab-content-overview" class="modal-tab-content">
-              <div class="detail-meta-list">
+            <div id="modal-tab-content-entries" class="modal-tab-content">
+              <div class="detail-meta-grid">
                 <div class="detail-meta-item">
-                  <span class="detail-meta-label">開催日</span>
-                  <span class="detail-meta-value">${formattedDate} (15:40発走予定)</span>
+                  <span class="detail-meta-label">開催日 / 発走時刻</span>
+                  <span class="detail-meta-value">${formattedDate} 15:40</span>
+                </div>
+                <div class="detail-meta-item">
+                  <span class="detail-meta-label">開催場 / コース</span>
+                  <span class="detail-meta-value">${race.location}競馬場 | ${race.course}</span>
+                </div>
+                <div class="detail-meta-item">
+                  <span class="detail-meta-label">条件 / 頭数</span>
+                  <span class="detail-meta-value">3歳以上 オープン (定量) / 17頭</span>
+                </div>
+                <div class="detail-meta-item">
+                  <span class="detail-meta-label">枠順発表状況</span>
+                  <span class="detail-meta-value" style="color: var(--primary); font-weight: 700;">確定済</span>
+                </div>
+              </div>
+
+              ${id === '16' ? `
+                <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(16, 185, 129, 0.15)); border: 1px solid var(--gold); border-radius: 10px; padding: 12px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                  <div>
+                    <div style="font-size: 14px; font-weight: 800; color: #fff;">🎯 天皇賞（秋）専用の「予想・攻略分析ページ」を開設！</div>
+                    <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">追い切り調教時計・陣営勝負コメント・Xオカルトサイン・印付け機能はこちら</div>
+                  </div>
+                  <button id="btn-modal-to-pred" style="background: var(--gold); color: #111; border: none; padding: 8px 16px; border-radius: 6px; font-weight: 800; font-size: 12px; cursor: pointer;">
+                    予想ページを開く →
+                  </button>
+                </div>
+              ` : ''}
+
+              <h3 class="detail-section-title">確定出馬表（全${entries.length}頭）</h3>
+              <div class="table-scroll-container">
+                <table class="result-table">
+                  <thead>
+                    <tr>
+                      <th style="width: 44px; text-align: center;">枠番</th>
+                      <th style="width: 44px; text-align: center;">馬番</th>
+                      <th>馬名</th>
+                      <th>性齢</th>
+                      <th>斤量</th>
+                      <th>騎手</th>
+                      <th>予想オッズ</th>
+                      <th>人気</th>
+                      <th>調教師</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${entries.map(e => `
+                      <tr>
+                        <td style="text-align: center;"><span class="nh-gate-cell waku-${e.waku}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${e.waku}</span></td>
+                        <td style="text-align: center; font-family: monospace; font-weight: 700;"><span class="nh-gate-cell waku-${e.waku}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${e.gate}</span></td>
+                        <td style="font-weight: 700; color: #fff;">${e.horseName}</td>
+                        <td>${e.sexAge}</td>
+                        <td>${e.load}</td>
+                        <td>${e.jockey}</td>
+                        <td style="font-family: monospace; font-weight: 600;">${e.odds}</td>
+                        <td>${e.pop}人気</td>
+                        <td style="font-size: 13px; color: var(--text-muted);">${e.trainer}</td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div id="modal-tab-content-history" class="modal-tab-content" style="display: none;">
+              <h3 class="detail-section-title">過去10年の歴代優勝馬（傾向分析）</h3>
+              <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">各年をクリックすると、該当年の1着から最下位までの全頭着順・タイム・通過順一覧が展開されます。</p>
+              <div class="table-scroll-container">
+                <table class="result-table" style="width: 100%;">
+                  <thead>
+                    <tr>
+                      <th style="width: 80px; text-align: center;">開催年</th>
+                      <th>優勝馬</th>
+                      <th>騎手</th>
+                      <th>タイム</th>
+                      <th>人気</th>
+                      <th>調教師</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${historyTableRows}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          `;
+        } else {
+          innerHTML = `
+            <div class="modal-tabs">
+              <button class="modal-tab-btn active" data-tab="info">レース概要</button>
+              <button class="modal-tab-btn" data-tab="history">歴代優勝馬（過去10年）</button>
+            </div>
+
+            <div id="modal-tab-content-info" class="modal-tab-content">
+              <div class="detail-meta-grid">
+                <div class="detail-meta-item">
+                  <span class="detail-meta-label">開催日 / 発走時刻</span>
+                  <span class="detail-meta-value">${formattedDate} 15:40</span>
                 </div>
                 <div class="detail-meta-item">
                   <span class="detail-meta-label">開催場 / コース</span>
@@ -8990,8 +8090,8 @@ function hydratePayouts(race) {
         const btnModalToPred = document.getElementById('btn-modal-to-pred');
         if (btnModalToPred) {
           btnModalToPred.addEventListener('click', () => {
-            closeModal();
-            switchView('prediction');
+            closeModalInternal();
+            navigateTo('#prediction');
           });
         }
 
@@ -9035,9 +8135,17 @@ function hydratePayouts(race) {
         });
       }
 
-      function closeModal() {
+      function closeModalInternal() {
         const modal = document.getElementById('modal-race-detail');
         if (modal) modal.classList.remove('active');
+      }
+
+      function closeModal() {
+        closeModalInternal();
+        if (typeof window !== 'undefined' && window.location.hash.startsWith('#race-')) {
+          const returnRoute = '#' + (lastMainView || 'calendar');
+          navigateTo(returnRoute);
+        }
       }
 
       function formatSecondsToTime(seconds) {
@@ -9054,6 +8162,9 @@ function hydratePayouts(race) {
             tabBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             currentFilter = btn.getAttribute('data-filter');
+            if (typeof localStorage !== 'undefined') {
+              localStorage.setItem('keiba_calendar_filter', currentFilter);
+            }
             renderRaces();
           });
         });
@@ -9072,7 +8183,7 @@ function hydratePayouts(race) {
             const card = e.target.closest('.race-card');
             if (!card) return;
             const id = card.getAttribute('data-id');
-            openRaceDetail(id);
+            navigateTo('#race-' + id);
           });
         }
 
@@ -9088,9 +8199,36 @@ function hydratePayouts(race) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 1. カレンダーの保存されたフィルター復元
+  if (typeof localStorage !== 'undefined') {
+    const savedFilter = localStorage.getItem('keiba_calendar_filter');
+    if (savedFilter) {
+      currentFilter = savedFilter;
+      const targetBtn = document.querySelector(`.tab-btn[data-filter="${savedFilter}"]`);
+      if (targetBtn) {
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        tabBtns.forEach(b => b.classList.remove('active'));
+        targetBtn.classList.add('active');
+      }
+    }
+  }
+
+  // 2. イベントリスナー登録
   initEventListeners();
   initPredictionEventListeners();
+
+  // 3. 基本レンダリング
   renderRaces();
   updateTabCounts();
   startNextRaceCountdown();
+
+  // 4. URLハッシュ＆状態復元（リロード時の現在ページ維持）
+  handleRoute(false);
+
+  // 5. ハッシュ変更（ブラウザ戻る・進む）監視
+  if (typeof window !== 'undefined') {
+    window.addEventListener('hashchange', () => {
+      handleRoute(false);
+    });
+  }
 });

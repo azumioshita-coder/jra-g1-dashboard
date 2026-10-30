@@ -982,621 +982,467 @@ body {
 .waku-8 { background-color: #ed64a6; color: #ffffff; }
 
 
-      /* ----------------------------------
-         予想・攻略ページ 専用スタイル（NetKeiba完全準拠・横スクロールゼロ）
-      ---------------------------------- */
-      html, body {
-        max-width: 100vw;
-        overflow-x: hidden;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      .app-view {
-        animation: fadeIn 0.2s ease-out;
-        width: 100%;
-        max-width: 100%;
-      }
-      
-      /* NEXT G1 バナーのクリッカブル装飾 */
-      .countdown-section {
-        cursor: pointer;
-        transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
-      }
-      .countdown-section:hover {
-        transform: translateY(-2px);
-        border-color: rgba(245, 158, 11, 0.4);
-        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(245, 158, 11, 0.15);
-      }
-      .btn-hero-action {
-        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .btn-hero-action:hover {
-        transform: translateY(-2px);
-        filter: brightness(1.1);
-      }
+/* ----------------------------------
+   ルーティング・リロード対策 スタイル
+------------------------------------- */
+html.route-prediction #view-calendar {
+  display: none !important;
+}
+html.route-prediction #view-prediction {
+  display: block !important;
+}
+html.route-prediction .nav-item[data-target="calendar"] {
+  background: transparent !important;
+  color: var(--text-muted) !important;
+}
+html.route-prediction .nav-item[data-target="prediction"] {
+  background: rgba(16, 185, 129, 0.15) !important;
+  color: var(--primary) !important;
+}
 
-      /* 予想ページ ヘッダー */
-      .pred-header-card {
-        background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent 60%),
-                    radial-gradient(circle at 10% 80%, rgba(245, 158, 11, 0.08), transparent 50%),
-                    var(--bg-surface);
-        border: 1px solid var(--border-color);
-        border-radius: 14px;
-        padding: 16px 14px;
-        margin-bottom: 14px;
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-      }
-      .pred-breadcrumb {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 13px;
-        color: var(--text-muted);
-        margin-bottom: 8px;
-      }
-      .pred-breadcrumb a {
-        color: var(--primary);
-        text-decoration: none;
-        cursor: pointer;
-        display: inline-flex;
-        align-items: center;
-        gap: 4px;
-        font-weight: 600;
-      }
-      .pred-title {
-        font-family: var(--font-display);
-        font-size: 20px;
-        font-weight: 800;
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin: 0 0 8px 0;
-      }
-      .pred-meta-chips {
-        display: flex;
-        gap: 6px;
-        flex-wrap: wrap;
-      }
-      .pred-chip {
-        display: inline-flex;
-        align-items: center;
-        gap: 4px;
-        padding: 3px 8px;
-        border-radius: 12px;
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid var(--border-color);
-        font-size: 11px;
-        color: var(--text-secondary);
-      }
+/* ----------------------------------
+   予想・攻略ページ NetKeiba風レイアウト
+------------------------------------- */
+.pred-header-card {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(245, 158, 11, 0.08));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+.pred-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.pred-breadcrumb a {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.pred-breadcrumb a:hover {
+  text-decoration: underline;
+}
+.pred-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.pred-meta-chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.pred-chip {
+  font-size: 11px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 3px 8px;
+  border-radius: 6px;
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
 
-      /* モバイル専用 4分割クイックジャンプナビ */
-      .pred-quick-nav {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 6px;
-        margin-bottom: 14px;
-        width: 100%;
-      }
-      .btn-quick-nav {
-        background: var(--bg-surface);
-        border: 1px solid var(--border-color);
-        color: var(--text-secondary);
-        padding: 9px 4px;
-        border-radius: 8px;
-        font-size: 12px;
-        font-weight: 700;
-        text-align: center;
-        cursor: pointer;
-        transition: all 0.15s;
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3px;
-      }
-      .btn-quick-nav:hover, .btn-quick-nav:active {
-        background: rgba(16, 185, 129, 0.15);
-        border-color: var(--primary);
-        color: #fff;
-      }
+/* クイックジャンプナビ */
+.pred-quick-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.btn-quick-nav {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 8px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-quick-nav:hover, .btn-quick-nav:active {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: var(--primary);
+}
 
-      /* -------------------------------------------
-         NetKeiba完全準拠 モバイル出馬表
-      ------------------------------------------- */
-      .netkeiba-horse-list {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        max-width: 100%;
-        background: var(--bg-surface);
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-        overflow: hidden;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-      }
+/* ----------------------------------
+   NetKeiba完全準拠 モバイル出馬表
+   横スクロール完全ゼロ（100%幅）
+------------------------------------- */
+.netkeiba-horse-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
 
-      .nh-row-container {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        transition: background-color 0.15s;
-        width: 100%;
-      }
-      .nh-row-container:last-child {
-        border-bottom: none;
-      }
+.nh-row-container {
+  background: rgba(18, 30, 26, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  width: 100%;
+}
+.nh-row-container:hover {
+  border-color: rgba(16, 185, 129, 0.35);
+}
 
-      .nh-main-row {
-        display: flex;
-        align-items: stretch;
-        min-height: 58px;
-        width: 100%;
-        cursor: pointer;
-        user-select: none;
-        background: var(--bg-card);
-      }
-      .nh-main-row:active {
-        background: rgba(255, 255, 255, 0.05);
-      }
+/* メイン1行 (4列固定) */
+.nh-main-row {
+  display: flex;
+  align-items: center;
+  padding: 8px 8px;
+  gap: 8px;
+  min-height: 52px;
+  box-sizing: border-box;
+  width: 100%;
+}
 
-      /* 1. 馬番（枠色セル） */
-      .nh-gate-cell {
-        width: 36px;
-        min-width: 36px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 16px;
-        font-weight: 800;
-        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, monospace;
-        flex-shrink: 0;
-      }
-      .nh-gate-cell.waku-1 { background-color: #ffffff; color: #111827; border-right: 1px solid #cbd5e1; }
-      .nh-gate-cell.waku-2 { background-color: #1e293b; color: #ffffff; border-right: 1px solid #475569; }
-      .nh-gate-cell.waku-3 { background-color: #ef4444; color: #ffffff; }
-      .nh-gate-cell.waku-4 { background-color: #3b82f6; color: #ffffff; }
-      .nh-gate-cell.waku-5 { background-color: #eab308; color: #111827; }
-      .nh-gate-cell.waku-6 { background-color: #22c55e; color: #ffffff; }
-      .nh-gate-cell.waku-7 { background-color: #f97316; color: #ffffff; }
-      .nh-gate-cell.waku-8 { background-color: #ec4899; color: #ffffff; }
+/* 1列目: 馬番 (枠色バッジ) */
+.nh-gate-cell {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 900;
+  font-family: monospace;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
 
-      /* 2. 印ボタンセル */
-      .nh-mark-cell {
-        width: 48px;
-        min-width: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.25);
-        border-right: 1px solid rgba(255, 255, 255, 0.06);
-        flex-shrink: 0;
-      }
-      .nh-mark-btn {
-        width: 38px;
-        height: 38px;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 16px;
-        font-weight: 800;
-        cursor: pointer;
-        border: 1.5px solid rgba(255, 255, 255, 0.2);
-        background: rgba(255, 255, 255, 0.04);
-        color: var(--text-muted);
-        transition: transform 0.1s, box-shadow 0.15s;
-      }
-      .nh-mark-btn:active {
-        transform: scale(0.92);
-      }
-      .nh-mark-btn.mark-honmei {
-        background: linear-gradient(135deg, #ef4444, #dc2626);
-        color: #fff;
-        border-color: #f87171;
-        box-shadow: 0 2px 8px rgba(239, 68, 68, 0.45);
-      }
-      .nh-mark-btn.mark-taiko {
-        background: linear-gradient(135deg, #3b82f6, #2563eb);
-        color: #fff;
-        border-color: #60a5fa;
-        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.45);
-      }
-      .nh-mark-btn.mark-tanana {
-        background: linear-gradient(135deg, #10b981, #059669);
-        color: #fff;
-        border-color: #34d399;
-        box-shadow: 0 2px 8px rgba(16, 185, 129, 0.45);
-      }
-      .nh-mark-btn.mark-renka {
-        background: linear-gradient(135deg, #f59e0b, #d97706);
-        color: #fff;
-        border-color: #fbbf24;
-        box-shadow: 0 2px 8px rgba(245, 158, 11, 0.45);
-      }
-      .nh-mark-btn.mark-ana {
-        background: linear-gradient(135deg, #8b5cf6, #7c3aed);
-        color: #fff;
-        border-color: #a78bfa;
-        box-shadow: 0 2px 8px rgba(139, 92, 246, 0.45);
-      }
-      .nh-mark-btn.mark-keshi {
-        background: rgba(100, 116, 139, 0.3);
-        color: #94a3b8;
-        border-color: rgba(148, 163, 184, 0.4);
-        text-decoration: line-through;
-      }
+/* JRA公式枠色 */
+.waku-1 { background: #ffffff !important; color: #111111 !important; border: 1px solid #ddd; }
+.waku-2 { background: #1c1917 !important; color: #ffffff !important; border: 1px solid #444; }
+.waku-3 { background: #ef4444 !important; color: #ffffff !important; }
+.waku-4 { background: #3b82f6 !important; color: #ffffff !important; }
+.waku-5 { background: #eab308 !important; color: #111111 !important; }
+.waku-6 { background: #16a34a !important; color: #ffffff !important; }
+.waku-7 { background: #f97316 !important; color: #ffffff !important; }
+.waku-8 { background: #ec4899 !important; color: #ffffff !important; }
 
-      /* 3. 馬情報セル（中央） */
-      .nh-info-cell {
-        flex: 1;
-        min-width: 0;
-        padding: 8px 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 3px;
-      }
-      .nh-name-row {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-      }
-      .nh-horse-name {
-        font-size: 15px;
-        font-weight: 800;
-        color: #60a5fa;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        letter-spacing: -0.2px;
-      }
-      .nh-sub-row {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 4px 8px;
-        font-size: 12px;
-        color: var(--text-secondary);
-      }
-      .nh-jockey {
-        color: #38bdf8;
-        font-weight: 700;
-      }
-      .nh-load {
-        font-family: monospace;
-        color: var(--text-muted);
-      }
-      .nh-expand-hint {
-        font-size: 10px;
-        color: var(--gold);
-        display: flex;
-        align-items: center;
-        gap: 2px;
-        margin-left: auto;
-      }
+/* 2列目: 印ボタン */
+.nh-mark-cell {
+  width: 44px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nh-mark-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-muted);
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-tap-highlight-color: transparent;
+}
+.nh-mark-btn:active {
+  transform: scale(0.92);
+}
+.nh-mark-btn.mark-honmei { background: rgba(239, 68, 68, 0.25) !important; color: #f87171 !important; border-color: #ef4444 !important; }
+.nh-mark-btn.mark-taiko { background: rgba(59, 130, 246, 0.25) !important; color: #60a5fa !important; border-color: #3b82f6 !important; }
+.nh-mark-btn.mark-tanana { background: rgba(245, 158, 11, 0.25) !important; color: #fbbf24 !important; border-color: #f59e0b !important; }
+.nh-mark-btn.mark-renka { background: rgba(16, 185, 129, 0.25) !important; color: #34d399 !important; border-color: #10b981 !important; }
+.nh-mark-btn.mark-ana { background: rgba(192, 132, 252, 0.25) !important; color: #c084fc !important; border-color: #a855f7 !important; }
+.nh-mark-btn.mark-keshi { background: rgba(100, 116, 139, 0.25) !important; color: #94a3b8 !important; border-color: #64748b !important; text-decoration: line-through; }
 
-      /* 4. オッズ・人気セル（右端） */
-      .nh-odds-cell {
-        width: 68px;
-        min-width: 68px;
-        padding: 6px 8px 6px 4px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-        border-left: 1px solid rgba(255, 255, 255, 0.05);
-        flex-shrink: 0;
-      }
-      .nh-odds-val {
-        font-size: 15px;
-        font-weight: 800;
-        font-family: monospace;
-        color: #ffffff;
-        line-height: 1.1;
-      }
-      .nh-odds-val.highlight {
-        color: #ef4444;
-      }
-      .nh-pop-val {
-        font-size: 11px;
-        color: var(--text-muted);
-        margin-top: 2px;
-      }
-      .nh-pop-val.top3 {
-        color: var(--gold);
-        font-weight: 700;
-      }
+/* 3列目: 馬情報（中央・可変幅） */
+.nh-info-cell {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.nh-name-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.nh-horse-name {
+  font-size: 15px;
+  font-weight: 800;
+  color: #60a5fa;
+  letter-spacing: -0.2px;
+}
+.nh-expand-hint {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+.nh-sub-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+.nh-jockey {
+  color: #38bdf8;
+  font-weight: 700;
+}
+.nh-load {
+  color: var(--text-secondary);
+}
 
-      /* 5. アコーディオン展開詳細エリア（タップで展開） */
-      .nh-detail-drawer {
-        display: none;
-        background: rgba(0, 0, 0, 0.45);
-        border-top: 1px solid rgba(255, 255, 255, 0.06);
-        padding: 12px 14px;
-        font-size: 13px;
-        animation: fadeIn 0.18s ease-out;
-      }
-      .nh-detail-drawer.open {
-        display: block;
-      }
-      .nh-drawer-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px 12px;
-        margin-bottom: 8px;
-      }
-      .nh-drawer-stat {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: rgba(255, 255, 255, 0.03);
-        border-radius: 6px;
-        padding: 6px 10px;
-        font-size: 12px;
-      }
-      .nh-drawer-comment {
-        font-size: 12px;
-        line-height: 1.6;
-        color: var(--text-secondary);
-        background: rgba(16, 185, 129, 0.08);
-        border-left: 3px solid var(--primary);
-        border-radius: 4px;
-        padding: 8px 10px;
-        margin-top: 6px;
-      }
+/* 4列目: オッズ・人気（右端） */
+.nh-odds-cell {
+  width: 64px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+}
+.nh-odds-val {
+  font-size: 15px;
+  font-weight: 800;
+  font-family: monospace;
+  color: #f3f4f6;
+  line-height: 1.1;
+}
+.nh-odds-val.highlight-fav {
+  color: #f87171;
+}
+.nh-pop-badge {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
 
-      /* 6. モバイル用 印選択ボトムシート（100%確実にタップ可能） */
-      .mark-sheet-overlay {
-        position: fixed;
-        inset: 0;
-        z-index: 99999;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      }
-      .mark-sheet-backdrop {
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(2px);
-      }
-      .mark-sheet-content {
-        position: relative;
-        z-index: 100000;
-        background: #111a16;
-        border-top: 1px solid var(--border-hover);
-        border-radius: 20px 20px 0 0;
-        padding: 20px 18px 34px 18px;
-        box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.9);
-        animation: slideUp 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-        max-width: 500px;
-        margin: 0 auto;
-        width: 100%;
-      }
-      @keyframes slideUp {
-        from { transform: translateY(100%); }
-        to { transform: translateY(0); }
-      }
-      .mark-sheet-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      }
-      .mark-sheet-close {
-        background: rgba(255, 255, 255, 0.1);
-        border: none;
-        color: #fff;
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        font-size: 20px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .mark-sheet-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-      }
-      .mark-sheet-item {
-        min-height: 48px;
-        border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 0 14px;
-        gap: 10px;
-        cursor: pointer;
-        font-weight: 700;
-        font-size: 14px;
-        transition: transform 0.1s;
-      }
-      .mark-sheet-item:active {
-        transform: scale(0.97);
-      }
-      .mark-sheet-item .ms-sym {
-        font-size: 20px;
-        font-weight: 800;
-        width: 26px;
-        text-align: center;
-      }
-      .mark-sheet-clear {
-        width: 100%;
-        min-height: 44px;
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px dashed rgba(255, 255, 255, 0.2);
-        border-radius: 10px;
-        color: var(--text-muted);
-        font-size: 13px;
-        font-weight: 600;
-        cursor: pointer;
-        margin-top: 10px;
-      }
+/* アコーディオン展開ドロワー */
+.nh-detail-drawer {
+  display: none;
+  background: rgba(10, 18, 15, 0.95);
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+  padding: 10px 12px;
+  font-size: 12px;
+  animation: fadeIn 0.15s ease-out;
+}
+.nh-detail-drawer.open {
+  display: block;
+}
+.nh-drawer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+.nh-drawer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.nh-drawer-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.nh-drawer-val {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
 
-      /* オカルトカード（X発祥スタイル） */
-      .occult-card {
-        background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.12), transparent 70%), var(--bg-card);
-        border: 1px solid rgba(139, 92, 246, 0.28);
-        border-radius: 14px;
-        padding: 16px;
-        margin-bottom: 12px;
-        width: 100%;
-      }
-      .occult-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 6px;
-        margin-bottom: 8px;
-      }
-      .occult-badge {
-        background: linear-gradient(135deg, #8b5cf6, #6d28d9);
-        color: #fff;
-        padding: 3px 10px;
-        border-radius: 20px;
-        font-size: 11px;
-        font-weight: 800;
-        display: inline-flex;
-        align-items: center;
-        gap: 4px;
-      }
-      .occult-source {
-        font-size: 11px;
-        color: #94a3b8;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-      }
-      .occult-title {
-        font-size: 15px;
-        font-weight: 800;
-        color: #ffffff;
-        margin: 0 0 8px 0;
-        line-height: 1.4;
-      }
-      .occult-content {
-        font-size: 13px;
-        line-height: 1.6;
-        color: var(--text-secondary);
-        margin: 0 0 10px 0;
-      }
-      .occult-targets {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 6px;
-        background: rgba(0, 0, 0, 0.35);
-        border: 1px solid rgba(139, 92, 246, 0.2);
-        border-radius: 8px;
-        padding: 8px 10px;
-      }
-      .occult-target-label {
-        font-size: 12px;
-        font-weight: 700;
-        color: var(--gold);
-        display: flex;
-        align-items: center;
-        gap: 4px;
-      }
-      .occult-target-chip {
-        display: inline-flex;
-        align-items: center;
-        gap: 5px;
-        background: rgba(255, 255, 255, 0.06);
-        border: 1px solid var(--border-color);
-        border-radius: 6px;
-        padding: 3px 6px;
-        font-size: 12px;
-        color: #fff;
-      }
+/* ----------------------------------
+   印選択ボトムシート（アクションシート）
+   スマホ親指で100%確実にタップ可能
+------------------------------------- */
+.mark-sheet-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 9998;
+  animation: fadeIn 0.15s ease-out;
+}
+.mark-sheet-backdrop.active {
+  display: block;
+}
 
-      /* マイ予想サマリー（2列） */
-      .my-summary-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-        margin-bottom: 16px;
-        width: 100%;
-      }
-      .my-summary-card {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        background: rgba(255, 255, 255, 0.03);
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        padding: 8px 10px;
-        min-width: 0;
-      }
-      .my-summary-name {
-        font-weight: 700;
-        font-size: 13px;
-        color: #ffffff;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
+.mark-bottom-sheet {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #111a16;
+  border-top: 1px solid rgba(16, 185, 129, 0.4);
+  border-radius: 20px 20px 0 0;
+  padding: 16px 16px 28px;
+  z-index: 9999;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  animation: slideUp 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.mark-bottom-sheet.active {
+  display: block;
+}
 
-      /* メモエリア */
-      .memo-box {
-        width: 100%;
-        min-height: 140px;
-        background: rgba(0, 0, 0, 0.45);
-        border: 1px solid var(--border-color);
-        border-radius: 10px;
-        padding: 12px;
-        color: var(--text-primary);
-        font-size: 14px;
-        line-height: 1.6;
-        font-family: var(--font-sans);
-        resize: vertical;
-        box-sizing: border-box;
-      }
-      .memo-box:focus {
-        outline: none;
-        border-color: var(--primary);
-        box-shadow: 0 0 0 2px var(--primary-glow);
-      }
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
 
-      /* モバイル調整 */
-      @media (max-width: 768px) {
-        .main-content {
-          padding: 8px 6px !important;
-          margin-left: 0 !important;
-          width: 100% !important;
-          max-width: 100vw !important;
-          overflow-x: hidden !important;
-        }
-        .countdown-section {
-          padding: 16px 14px !important;
-          border-radius: 12px !important;
-        }
-        .race-title {
-          font-size: 20px !important;
-        }
-        .countdown-timer {
-          gap: 6px !important;
-        }
-        .time-block {
-          min-width: 58px !important;
-          padding: 6px 4px !important;
-        }
-        .time-num {
-          font-size: 22px !important;
-        }
-        .pred-section {
-          padding: 14px 10px !important;
-          border-radius: 12px !important;
-          margin-bottom: 14px !important;
-        }
-      }
+.mark-sheet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.mark-sheet-target-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.mark-sheet-close-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mark-sheet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.sheet-opt-btn {
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.15s ease;
+}
+.sheet-opt-btn:active {
+  transform: scale(0.95);
+}
+
+.sheet-opt-honmei { border-color: rgba(239, 68, 68, 0.5); background: rgba(239, 68, 68, 0.15); color: #f87171; }
+.sheet-opt-taiko  { border-color: rgba(59, 130, 246, 0.5); background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+.sheet-opt-tanana { border-color: rgba(245, 158, 11, 0.5); background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+.sheet-opt-renka  { border-color: rgba(16, 185, 129, 0.5); background: rgba(16, 185, 129, 0.15); color: #34d399; }
+.sheet-opt-ana    { border-color: rgba(192, 132, 252, 0.5); background: rgba(192, 132, 252, 0.15); color: #c084fc; }
+.sheet-opt-keshi  { border-color: rgba(148, 163, 184, 0.5); background: rgba(148, 163, 184, 0.15); color: #cbd5e1; }
+
+.sheet-opt-clear {
+  width: 100%;
+  height: 42px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  #app {
+    overflow-x: hidden !important;
+  }
+  .main-content {
+    padding: 12px 8px !important;
+    overflow-x: hidden !important;
+  }
+  .countdown-section {
+    padding: 16px 14px !important;
+    border-radius: 12px !important;
+  }
+  .race-title {
+    font-size: 20px !important;
+  }
+  .countdown-timer {
+    gap: 6px !important;
+  }
+  .time-block {
+    min-width: 58px !important;
+    padding: 6px 4px !important;
+  }
+  .time-num {
+    font-size: 22px !important;
+  }
+  .pred-section {
+    padding: 14px 10px !important;
+    border-radius: 12px !important;
+    margin-bottom: 14px !important;
+  }
+}
