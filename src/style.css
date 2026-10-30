@@ -1001,7 +1001,7 @@ html.route-prediction .nav-item[data-target="prediction"] {
 }
 
 /* ----------------------------------
-   予想・攻略ページ NetKeiba風レイアウト
+   予想・攻略ページ 専用スタイル
 ------------------------------------- */
 .pred-header-card {
   background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(245, 158, 11, 0.08));
@@ -1085,8 +1085,133 @@ html.route-prediction .nav-item[data-target="prediction"] {
 }
 
 /* ----------------------------------
+   オッズコントロールカード（発売前/発売中・随時更新）
+------------------------------------- */
+.odds-control-card {
+  background: rgba(18, 30, 26, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+.odds-status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.odds-mode-badge {
+  font-size: 12px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+.odds-mode-badge.pre-sale {
+  background: rgba(245, 158, 11, 0.18);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: var(--gold);
+}
+.odds-mode-badge.on-sale {
+  background: rgba(16, 185, 129, 0.18);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: var(--primary);
+}
+.pulse-dot-gold {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 8px var(--gold);
+}
+.pulse-dot-green {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 8px var(--primary);
+  animation: pulseGreen 1.5s infinite;
+}
+@keyframes pulseGreen {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.odds-sales-countdown {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.odds-action-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.odds-type-toggle {
+  display: inline-flex;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.btn-odds-mode {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 11px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.btn-odds-mode.active#btn-odds-estimated {
+  background: var(--gold);
+  color: #111;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.35);
+}
+.btn-odds-mode.active#btn-odds-live {
+  background: var(--primary);
+  color: #111;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.35);
+}
+
+.btn-refresh-odds-btn {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-refresh-odds-btn:active {
+  transform: scale(0.95);
+}
+.btn-refresh-odds-btn.spinning svg {
+  animation: spin 0.6s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ----------------------------------
    NetKeiba完全準拠 モバイル出馬表
-   横スクロール完全ゼロ（100%幅）
+   横スクロール完全ゼロ（100%幅・文字重なりゼロ）
 ------------------------------------- */
 .netkeiba-horse-list {
   display: flex;
@@ -1115,17 +1240,17 @@ html.route-prediction .nav-item[data-target="prediction"] {
 .nh-main-row {
   display: flex;
   align-items: center;
-  padding: 8px 8px;
+  padding: 8px 10px;
   gap: 8px;
   min-height: 52px;
   box-sizing: border-box;
   width: 100%;
 }
 
-/* 1列目: 馬番 (枠色バッジ) */
+/* 1列目: 馬番 (枠色バッジ 32px) */
 .nh-gate-cell {
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -1147,22 +1272,22 @@ html.route-prediction .nav-item[data-target="prediction"] {
 .waku-7 { background: #f97316 !important; color: #ffffff !important; }
 .waku-8 { background: #ec4899 !important; color: #ffffff !important; }
 
-/* 2列目: 印ボタン */
+/* 2列目: 印ボタン (38px) */
 .nh-mark-cell {
-  width: 44px;
+  width: 38px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .nh-mark-btn {
-  width: 38px;
-  height: 38px;
-  border-radius: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: var(--text-muted);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 900;
   cursor: pointer;
   display: flex;
@@ -1181,19 +1306,19 @@ html.route-prediction .nav-item[data-target="prediction"] {
 .nh-mark-btn.mark-ana { background: rgba(192, 132, 252, 0.25) !important; color: #c084fc !important; border-color: #a855f7 !important; }
 .nh-mark-btn.mark-keshi { background: rgba(100, 116, 139, 0.25) !important; color: #94a3b8 !important; border-color: #64748b !important; text-decoration: line-through; }
 
-/* 3列目: 馬情報（中央・可変幅） */
+/* 3列目: 馬情報（中央・可変幅・重なり防止） */
 .nh-info-cell {
   flex: 1;
   min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
   cursor: pointer;
+  padding-right: 4px;
 }
 .nh-name-row {
-  display: flex;
-  align-items: baseline;
-  gap: 6px;
+  display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1203,11 +1328,9 @@ html.route-prediction .nav-item[data-target="prediction"] {
   font-weight: 800;
   color: #60a5fa;
   letter-spacing: -0.2px;
-}
-.nh-expand-hint {
-  font-size: 10px;
-  color: var(--text-muted);
-  margin-left: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .nh-sub-row {
   display: flex;
@@ -1216,6 +1339,9 @@ html.route-prediction .nav-item[data-target="prediction"] {
   font-size: 11px;
   color: var(--text-muted);
   margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .nh-jockey {
   color: #38bdf8;
@@ -1224,10 +1350,17 @@ html.route-prediction .nav-item[data-target="prediction"] {
 .nh-load {
   color: var(--text-secondary);
 }
+.nh-drawer-hint {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-left: auto;
+  opacity: 0.75;
+}
 
-/* 4列目: オッズ・人気（右端） */
+/* 4列目: オッズ・人気（右端・幅72px完全固定・右寄せ） */
 .nh-odds-cell {
-  width: 64px;
+  width: 72px;
+  min-width: 72px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -1235,12 +1368,30 @@ html.route-prediction .nav-item[data-target="prediction"] {
   justify-content: center;
   cursor: pointer;
 }
+.nh-odds-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+.nh-odds-badge-yosou {
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--gold);
+  background: rgba(245, 158, 11, 0.2);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 1px 3px;
+  border-radius: 3px;
+  line-height: 1;
+}
 .nh-odds-val {
   font-size: 15px;
   font-weight: 800;
   font-family: monospace;
   color: #f3f4f6;
-  line-height: 1.1;
+  white-space: nowrap;
 }
 .nh-odds-val.highlight-fav {
   color: #f87171;
@@ -1249,6 +1400,7 @@ html.route-prediction .nav-item[data-target="prediction"] {
   font-size: 10px;
   color: var(--text-muted);
   margin-top: 2px;
+  white-space: nowrap;
 }
 
 /* アコーディオン展開ドロワー */
@@ -1289,7 +1441,6 @@ html.route-prediction .nav-item[data-target="prediction"] {
 
 /* ----------------------------------
    印選択ボトムシート（アクションシート）
-   スマホ親指で100%確実にタップ可能
 ------------------------------------- */
 .mark-sheet-backdrop {
   display: none;
