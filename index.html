@@ -935,7 +935,413 @@
           grid-template-columns: 1fr;
         }
       }
-    </style>
+    
+      /* ----------------------------------
+         予想・攻略ページ 専用スタイル
+      ---------------------------------- */
+      .app-view {
+        animation: fadeIn 0.25s ease-out;
+      }
+      
+      /* NEXT G1 バナーのクリッカブル装飾 */
+      .countdown-section {
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      }
+      .countdown-section:hover {
+        transform: translateY(-2px);
+        border-color: rgba(245, 158, 11, 0.4);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(245, 158, 11, 0.15);
+      }
+      .btn-hero-action {
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .btn-hero-action:hover {
+        transform: translateY(-2px);
+        filter: brightness(1.1);
+      }
+
+      /* 予想ページ ヘッダー */
+      .pred-header-card {
+        background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent 60%),
+                    radial-gradient(circle at 10% 80%, rgba(245, 158, 11, 0.08), transparent 50%),
+                    var(--bg-surface);
+        border: 1px solid var(--border-color);
+        border-radius: 16px;
+        padding: 28px;
+        margin-bottom: 24px;
+        position: relative;
+        overflow: hidden;
+      }
+      .pred-breadcrumb {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        color: var(--text-muted);
+        margin-bottom: 12px;
+      }
+      .pred-breadcrumb a {
+        color: var(--primary);
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .pred-breadcrumb a:hover {
+        text-decoration: underline;
+      }
+      .pred-title-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .pred-title {
+        font-family: var(--font-display);
+        font-size: 26px;
+        font-weight: 800;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .pred-meta-chips {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+      .pred-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 5px 12px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-color);
+        font-size: 13px;
+        color: var(--text-secondary);
+      }
+
+      /* サブナビゲーションバー（アンカージャンプ） */
+      .pred-subnav {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding: 10px 0;
+        margin-bottom: 24px;
+        border-bottom: 1px solid var(--border-color);
+        scrollbar-width: none;
+      }
+      .pred-subnav::-webkit-scrollbar {
+        display: none;
+      }
+      .pred-nav-btn {
+        padding: 8px 16px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-color);
+        color: var(--text-secondary);
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all 0.2s;
+        text-decoration: none;
+      }
+      .pred-nav-btn:hover {
+        background: rgba(16, 185, 129, 0.15);
+        border-color: var(--primary);
+        color: #ffffff;
+      }
+
+      /* セクション共通 */
+      .pred-section {
+        background: var(--bg-surface);
+        border: 1px solid var(--border-color);
+        border-radius: 14px;
+        padding: 24px;
+        margin-bottom: 24px;
+      }
+      .pred-section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 18px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .pred-section-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .pred-section-title i {
+        color: var(--gold);
+      }
+
+      /* 印セレクター */
+      .mark-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+        font-weight: 800;
+        font-size: 14px;
+        cursor: pointer;
+        border: 1px dashed rgba(255, 255, 255, 0.25);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text-muted);
+        transition: all 0.18s;
+        user-select: none;
+      }
+      .mark-btn:hover {
+        border-color: var(--gold);
+        color: #fff;
+        transform: scale(1.1);
+      }
+      .mark-btn.mark-honmei {
+        background: linear-gradient(135deg, #ef4444, #b91c1c);
+        color: #ffffff;
+        border: 1px solid #f87171;
+        box-shadow: 0 2px 8px rgba(239, 68, 68, 0.5);
+      }
+      .mark-btn.mark-taiko {
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        color: #ffffff;
+        border: 1px solid #60a5fa;
+        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.5);
+      }
+      .mark-btn.mark-tanana {
+        background: linear-gradient(135deg, #10b981, #047857);
+        color: #ffffff;
+        border: 1px solid #34d399;
+        box-shadow: 0 2px 8px rgba(16, 185, 129, 0.5);
+      }
+      .mark-btn.mark-renka {
+        background: linear-gradient(135deg, #f59e0b, #b45309);
+        color: #ffffff;
+        border: 1px solid #fbbf24;
+        box-shadow: 0 2px 8px rgba(245, 158, 11, 0.5);
+      }
+      .mark-btn.mark-ana {
+        background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+        color: #ffffff;
+        border: 1px solid #a78bfa;
+        box-shadow: 0 2px 8px rgba(139, 92, 246, 0.5);
+      }
+      .mark-btn.mark-keshi {
+        background: rgba(100, 116, 139, 0.3);
+        color: #94a3b8;
+        border: 1px solid rgba(148, 163, 184, 0.3);
+        text-decoration: line-through;
+      }
+
+      /* 印ポップオーバー */
+      .mark-popover {
+        position: fixed;
+        z-index: 10000;
+        display: flex;
+        gap: 6px;
+        background: #111b17;
+        border: 1px solid var(--border-hover);
+        border-radius: 8px;
+        padding: 8px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.85);
+      }
+      .mark-pop-item {
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform 0.15s;
+      }
+      .mark-pop-item:hover {
+        transform: scale(1.15);
+      }
+
+      /* 調教評価バッジ */
+      .grade-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-weight: 800;
+        font-size: 12px;
+      }
+      .grade-S { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; box-shadow: 0 0 10px rgba(245, 158, 11, 0.4); }
+      .grade-A { background: linear-gradient(135deg, #10b981, #059669); color: #fff; }
+      .grade-B\+ { background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; }
+      .grade-B { background: rgba(255, 255, 255, 0.1); color: var(--text-secondary); }
+
+      /* 人気バッジ */
+      .pop-badge {
+        display: inline-block;
+        padding: 2px 7px;
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 700;
+      }
+      .pop-1 { background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); }
+      .pop-2 { background: rgba(59, 130, 246, 0.2); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.4); }
+      .pop-3 { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
+      .pop-other { background: rgba(255, 255, 255, 0.05); color: var(--text-muted); }
+
+      /* ソートボタン */
+      .btn-sort {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-color);
+        color: var(--text-muted);
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .btn-sort.active {
+        background: var(--gold);
+        border-color: var(--gold);
+        color: #111;
+        font-weight: 700;
+      }
+
+      /* 調教カードグリッド */
+      .training-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: 16px;
+      }
+      .train-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: all 0.2s;
+      }
+      .train-card:hover {
+        border-color: var(--border-hover);
+        background: var(--bg-card-hover);
+        transform: translateY(-2px);
+      }
+      .train-card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .train-clock {
+        background: rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-family: monospace;
+        font-size: 13px;
+        color: var(--gold);
+      }
+      .train-comment {
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        border-left: 2px solid var(--primary);
+        padding-left: 10px;
+        margin-top: 4px;
+      }
+
+      /* オカルトカード */
+      .occult-card {
+        background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.08), transparent 70%), var(--bg-card);
+        border: 1px solid rgba(139, 92, 246, 0.25);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 14px;
+        transition: border-color 0.2s;
+      }
+      .occult-card:hover {
+        border-color: rgba(139, 92, 246, 0.55);
+      }
+
+      /* 隊列マップ */
+      .pace-lane {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.02);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 6px;
+        margin-bottom: 6px;
+      }
+      .pace-tag {
+        min-width: 110px;
+        font-weight: 700;
+        font-size: 13px;
+        color: var(--gold);
+      }
+      .pace-horses {
+        font-size: 14px;
+        color: var(--text-primary);
+        font-weight: 600;
+      }
+
+      /* マイ予想サマリー */
+      .my-summary-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+      .my-summary-card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 10px 14px;
+      }
+      .my-summary-name {
+        font-weight: 700;
+        font-size: 14px;
+        color: #ffffff;
+      }
+
+      /* メモエリア */
+      .memo-box {
+        width: 100%;
+        min-height: 160px;
+        background: rgba(0, 0, 0, 0.45);
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        padding: 16px;
+        color: var(--text-primary);
+        font-size: 14px;
+        line-height: 1.6;
+        font-family: var(--font-sans);
+        resize: vertical;
+        box-sizing: border-box;
+      }
+      .memo-box:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 2px var(--primary-glow);
+      }
+</style>
   </head>
   <body class="dark-theme">
     <div id="app">
@@ -956,6 +1362,10 @@
             <i data-lucide="calendar"></i>
             <span>G1スケジュール</span>
           </a>
+          <a href="#" class="nav-item" data-target="prediction">
+            <i data-lucide="target"></i>
+            <span>G1予想・攻略分析</span>
+          </a>
         </nav>
 
         <div class="sidebar-footer">
@@ -972,7 +1382,8 @@
       <!-- メインコンテンツ -->
       <main class="main-content">
         <!-- ヘッダー -->
-        <header class="top-header">
+        <div id="view-calendar" class="app-view active">
+<header class="top-header">
           <div class="page-title">
             <h1 id="page-heading">2026年 G1レースダッシュボード</h1>
             <p id="page-subheading" class="text-muted">JRA G1全24レースの日程・結果・カウントダウン情報</p>
@@ -980,7 +1391,7 @@
         </header>
 
         <!-- カウントダウンセクション -->
-        <section class="countdown-section">
+        <section class="countdown-section" id="hero-countdown-banner" title="クリックして天皇賞（秋）の予想・攻略分析を開く">
           <div class="countdown-bg-glow"></div>
           <div class="countdown-header">
             <span class="countdown-badge"><i data-lucide="bell"></i> NEXT G1 RACE</span>
@@ -1009,6 +1420,15 @@
               <span class="time-label">SECONDS</span>
             </div>
           </div>
+
+          <div style="margin-top: 18px; display: flex; justify-content: center; gap: 12px; position: relative; z-index: 2; flex-wrap: wrap;">
+            <button class="btn-hero-action" id="btn-hero-prediction" style="background: linear-gradient(135deg, #10b981, #059669); color: #fff; border: none; border-radius: 8px; padding: 10px 22px; font-weight: 700; font-size: 14px; cursor: pointer; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);">
+              <i data-lucide="target" style="width: 18px; height: 18px;"></i> 🎯 天皇賞（秋）予想・攻略を見る
+            </button>
+            <button class="btn-hero-action" id="btn-hero-detail" style="background: rgba(255, 255, 255, 0.08); color: var(--text-primary); border: 1px solid var(--border-color); border-radius: 8px; padding: 10px 20px; font-weight: 600; font-size: 14px; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+              <i data-lucide="list" style="width: 18px; height: 18px;"></i> 出馬表・枠順モーダル
+            </button>
+          </div>
         </section>
 
         <!-- フィルターコントロール -->
@@ -1029,6 +1449,279 @@
         <section class="race-grid" id="race-grid-container">
           <!-- JSで動的生成 -->
         </section>
+</div>
+
+        <!-- ============================================== -->
+        <!-- VIEW 2: G1予想・攻略分析ビュー (新設) -->
+        <!-- ============================================== -->
+        <div id="view-prediction" class="app-view" style="display: none;">
+          <!-- 予想ヘッダーカード -->
+          <div class="pred-header-card">
+            <div class="pred-breadcrumb">
+              <a id="btn-back-calendar"><i data-lucide="arrow-left" style="width: 14px; height: 14px; vertical-align: middle;"></i> G1スケジュール一覧へ戻る</a>
+              <span>/</span>
+              <span>天皇賞（秋）予想・攻略分析</span>
+            </div>
+            
+            <div class="pred-title-row">
+              <div>
+                <h1 class="pred-title">
+                  <i data-lucide="target" style="color: var(--gold);"></i> 第174回 天皇賞（秋） (G1) 徹底攻略・予想シート
+                </h1>
+                <div class="pred-meta-chips">
+                  <span class="pred-chip"><i data-lucide="calendar"></i> 2026年11月1日(日) 15:40発走</span>
+                  <span class="pred-chip"><i data-lucide="map-pin"></i> 東京競馬場 芝2000m (Bコース)</span>
+                  <span class="pred-chip"><i data-lucide="shield-alert"></i> 枠順確定 (全17頭)</span>
+                  <span class="pred-chip" style="color: var(--primary);"><i data-lucide="award"></i> サラ系3歳以上 定量</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- アンカーサブナビゲーション -->
+          <nav class="pred-subnav">
+            <a href="#sec-starters" class="pred-nav-btn"><i data-lucide="list"></i> 出走表・印・オッズ</a>
+            <a href="#sec-training" class="pred-nav-btn"><i data-lucide="activity"></i> 調教コメントまとめ</a>
+            <a href="#sec-jockeys" class="pred-nav-btn"><i data-lucide="user-check"></i> 騎手相性・乗り替わり</a>
+            <a href="#sec-waku" class="pred-nav-btn"><i data-lucide="grid"></i> 枠順・コース特性</a>
+            <a href="#sec-track" class="pred-nav-btn"><i data-lucide="wind"></i> 馬場状態・バイアス</a>
+            <a href="#sec-trends" class="pred-nav-btn"><i data-lucide="bar-chart-2"></i> レース傾向</a>
+            <a href="#sec-occult" class="pred-nav-btn" style="border-color: rgba(139, 92, 246, 0.4); color: #c084fc;"><i data-lucide="sparkles"></i> オカルト・サイン</a>
+            <a href="#sec-pace" class="pred-nav-btn"><i data-lucide="compass"></i> 展開マップ</a>
+            <a href="#sec-memo" class="pred-nav-btn" style="border-color: rgba(245, 158, 11, 0.4); color: var(--gold);"><i data-lucide="edit-3"></i> マイ予想メモ</a>
+          </nav>
+
+          <!-- 1. 出走表 ＆ リアルタイムオッズ ＆ 印付け -->
+          <section id="sec-starters" class="pred-section">
+            <div class="pred-section-header">
+              <div class="pred-section-title">
+                <i data-lucide="list"></i> 出走馬一覧 ＆ リアルタイムオッズ・印セレクター
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <div style="display: flex; gap: 4px;">
+                  <button id="btn-sort-gate" class="btn-sort active" data-sort="gate">馬番順</button>
+                  <button id="btn-sort-pop" class="btn-sort" data-sort="pop">人気順</button>
+                </div>
+                <button id="btn-refresh-odds" style="background: rgba(16,185,129,0.15); border: 1px solid var(--primary); color: var(--primary); padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                  <i data-lucide="refresh-cw" style="width: 14px; height: 14px;"></i> 最新オッズ取得
+                </button>
+                <span id="odds-update-time" style="font-size: 11px; color: var(--text-muted);">● リアルタイム配信中</span>
+              </div>
+            </div>
+
+            <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.2); border-radius: 8px; padding: 10px 16px; margin-bottom: 16px; font-size: 13px; color: var(--text-secondary); display: flex; align-items: center; gap: 10px;">
+              <i data-lucide="info" style="color: var(--gold); flex-shrink: 0; width: 18px; height: 18px;"></i>
+              <span>各馬の<strong>「印」ボタン</strong>をクリックすると、◎（本命）〜☆（穴）をワンクリックで選択できます。印はブラウザに自動保存され、最下部のマイ予想まとめに連動します。</span>
+            </div>
+
+            <div class="table-scroll-container">
+              <table class="result-table" style="width: 100%;">
+                <thead>
+                  <tr>
+                    <th style="width: 45px; text-align: center;">枠番</th>
+                    <th style="width: 45px; text-align: center;">馬番</th>
+                    <th style="width: 50px; text-align: center;">印</th>
+                    <th>馬名</th>
+                    <th>性齢</th>
+                    <th>斤量</th>
+                    <th>騎手</th>
+                    <th style="text-align: right;">単勝オッズ</th>
+                    <th style="text-align: right;">複勝オッズ</th>
+                    <th style="text-align: center;">人気</th>
+                    <th style="text-align: center;">調教評価</th>
+                  </tr>
+                </thead>
+                <tbody id="pred-starters-tbody">
+                  <!-- JSで動的生成 -->
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- 2. 調教コメントまとめ & 追い切り採点 -->
+          <section id="sec-training" class="pred-section">
+            <div class="pred-section-header">
+              <div class="pred-section-title">
+                <i data-lucide="activity"></i> 追い切り時計 ＆ 陣営調教コメントまとめ
+              </div>
+              <span style="font-size: 13px; color: var(--text-muted);">美浦W・栗東CW・坂路 最終追い切り総括</span>
+            </div>
+
+            <div class="training-cards-grid" id="pred-training-grid">
+              <!-- JSで動的生成 -->
+            </div>
+          </section>
+
+          <!-- 3. 騎手の相性・データ分析 -->
+          <section id="sec-jockeys" class="pred-section">
+            <div class="pred-section-header">
+              <div class="pred-section-title">
+                <i data-lucide="user-check"></i> 騎手の相性・コース実績・乗り替わり診断
+              </div>
+              <span style="font-size: 13px; color: var(--text-muted);">東京芝2000m・過去3年データ分析</span>
+            </div>
+
+            <div id="pred-jockeys-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 16px;">
+              <!-- JSで動的生成 -->
+            </div>
+          </section>
+
+          <!-- 4. 枠順分析・コース特性 -->
+          <section id="sec-waku" class="pred-section">
+            <div class="pred-section-header">
+              <div class="pred-section-title">
+                <i data-lucide="grid"></i> 枠順傾向 ＆ コース特性（東京芝2000m）
+              </div>
+              <span style="font-size: 13px; color: var(--text-muted);">過去10年の枠別成績</span>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); border-radius: 10px; padding: 16px; margin-bottom: 16px; font-size: 13px; line-height: 1.7; color: var(--text-secondary);">
+              <strong style="color: var(--gold);">【東京芝2000mのスタート構造】</strong><br>
+              1コーナー奥のポケットから発走し、わずか130mほどで2コーナーに突入するため、外枠の馬はどうしても外々を回らされやすく不利を受けやすい特殊なコース形態です。過去10年でも1枠・4枠の勝率が高く、8枠17番に入ったダノンデサイルなど外枠各馬の立ち回りが大きな注目点となります。
+            </div>
+
+            <div class="table-scroll-container">
+              <table class="result-table" style="width: 100%;">
+                <thead>
+                  <tr>
+                    <th style="width: 60px; text-align: center;">枠番</th>
+                    <th style="width: 90px; text-align: center;">勝率</th>
+                    <th style="width: 90px; text-align: center;">複勝率</th>
+                    <th style="width: 180px;">今年該当馬</th>
+                    <th>枠順考察・傾向</th>
+                  </tr>
+                </thead>
+                <tbody id="pred-waku-tbody">
+                  <!-- JSで動的生成 -->
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- 5. 馬場状態・トラックバイアス -->
+          <section id="sec-track" class="pred-section">
+            <div class="pred-section-header">
+              <div class="pred-section-title">
+                <i data-lucide="wind"></i> 馬場状態 ＆ トラックバイアス予測
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-bottom: 16px;" id="pred-track-grid">
+              <!-- JSで動的生成 -->
+            </div>
+
+            <div style="background: rgba(16, 185, 129, 0.06); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 10px; padding: 16px;">
+              <h4 style="color: var(--primary); margin-bottom: 6px; font-size: 14px; font-weight: 700;">🎯 馬場バイアス総括</h4>
+              <p id="pred-track-detail" style="font-size: 13px; line-height: 1.7; color: var(--text-secondary); margin: 0;"></p>
+            </div>
+          </section>
+
+          <!-- 6. レース傾向 -->
+          <section id="sec-trends" class="pred-section">
+            <div class="pred-section-header">
+              <div class="pred-section-title">
+                <i data-lucide="bar-chart-2"></i> レース傾向（脚質・ステップ・年齢）
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;" id="pred-trends-grid">
+              <!-- JSで動的生成 -->
+            </div>
+          </section>
+
+          <!-- 7. オカルト・サイン・ジンクスコーナー -->
+          <section id="sec-occult" class="pred-section" style="border-color: rgba(139, 92, 246, 0.3);">
+            <div class="pred-section-header">
+              <div class="pred-section-title" style="color: #c084fc;">
+                <i data-lucide="sparkles" style="color: #c084fc;"></i> 🔮 オカルト・サイン・ジンクス攻略コーナー
+              </div>
+              <span style="font-size: 13px; color: #a78bfa;">競馬ファン必見の不思議な法則集</span>
+            </div>
+
+            <div id="pred-occult-container">
+              <!-- JSで動的生成 -->
+            </div>
+          </section>
+
+          <!-- 8. 展開シミュレーター -->
+          <section id="sec-pace" class="pred-section">
+            <div class="pred-section-header">
+              <div class="pred-section-title">
+                <i data-lucide="compass"></i> 展開シミュレーター（想定隊列＆ペースマップ）
+              </div>
+              <span id="pred-pace-label" style="font-size: 13px; font-weight: 700; color: var(--gold);">想定ペース: 59.2秒 (ミドル)</span>
+            </div>
+
+            <p id="pred-pace-desc" style="font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;"></p>
+
+            <div id="pred-pace-lanes">
+              <!-- JSで動的生成 -->
+            </div>
+          </section>
+
+          <!-- 9. マイ予想サマリー ＆ メモスペース -->
+          <section id="sec-memo" class="pred-section" style="border-color: rgba(245, 158, 11, 0.4);">
+            <div class="pred-section-header">
+              <div class="pred-section-title" style="color: var(--gold);">
+                <i data-lucide="edit-3" style="color: var(--gold);"></i> ✏️ マイ予想サマリー ＆ 買い目検討メモ
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <button id="btn-copy-memo" style="background: rgba(245, 158, 11, 0.15); border: 1px solid var(--gold); color: var(--gold); padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                  <i data-lucide="copy" style="width: 14px; height: 14px;"></i> 予想をコピー
+                </button>
+                <button id="btn-clear-memo" style="background: rgba(239, 68, 68, 0.15); border: 1px solid #ef4444; color: #ef4444; padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer;">
+                  クリア
+                </button>
+              </div>
+            </div>
+
+            <h4 style="font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 10px;">🏷️ マイ印サマリー</h4>
+            <div class="my-summary-grid">
+              <div class="my-summary-card">
+                <span class="mark-btn mark-honmei">◎</span>
+                <div>
+                  <div style="font-size: 11px; color: var(--text-muted);">本命</div>
+                  <div class="my-summary-name" id="summary-honmei">未選択</div>
+                </div>
+              </div>
+              <div class="my-summary-card">
+                <span class="mark-btn mark-taiko">○</span>
+                <div>
+                  <div style="font-size: 11px; color: var(--text-muted);">対抗</div>
+                  <div class="my-summary-name" id="summary-taiko">未選択</div>
+                </div>
+              </div>
+              <div class="my-summary-card">
+                <span class="mark-btn mark-tanana">▲</span>
+                <div>
+                  <div style="font-size: 11px; color: var(--text-muted);">単穴</div>
+                  <div class="my-summary-name" id="summary-tanana">未選択</div>
+                </div>
+              </div>
+              <div class="my-summary-card">
+                <span class="mark-btn mark-renka">△</span>
+                <div>
+                  <div style="font-size: 11px; color: var(--text-muted);">連下</div>
+                  <div class="my-summary-name" id="summary-renka">未選択</div>
+                </div>
+              </div>
+              <div class="my-summary-card">
+                <span class="mark-btn mark-ana">☆</span>
+                <div>
+                  <div style="font-size: 11px; color: var(--text-muted);">特注穴</div>
+                  <div class="my-summary-name" id="summary-ana">未選択</div>
+                </div>
+              </div>
+            </div>
+
+            <h4 style="font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+              <span>📝 買い目・検討メモ（自動保存）</span>
+              <span id="memo-save-status" style="font-size: 11px; color: var(--primary); font-weight: normal;">💾 localStorage自動保存中</span>
+            </h4>
+            <textarea id="pred-memo-input" class="memo-box" placeholder="例:&#10;【本線買い目】&#10;馬連: 1 - 7 (5,000円), 3 - 7 (3,000円)&#10;3連複フォーメーション:&#10;1頭目: 1, 7&#10;2頭目: 1, 3, 7&#10;3頭目: 1, 2, 3, 7, 8, 9, 10, 17&#10;&#10;【考察メモ】&#10;クロワデュノールは最内1枠1番とC.デムーロで死角なし。マスカレードボールはルメール継続で堅軸。"></textarea>
+          </section>
+        </div>
+
       </main>
     </div>
 
@@ -1253,7 +1946,7 @@
           third: 'ダノンデサイル', thirdJockey: '横山典弘', thirdGate: 1,
           payouts: { win: 390, trifecta: 1440 }
         },
-                {
+        {
           id: '13',
           name: 'スプリンターズステークス',
           englishName: 'Sprinters Stakes',
@@ -1280,7 +1973,7 @@
           status: 'finished',
           weather: '晴',
           trackCondition: '良',
-          cushionValue: '9.7',
+          cushionValue: '9.8',
           type: '3yo-female',
           winner: 'モンローウォーク', winnerJockey: '戸崎圭太', winnerGate: 8, time: '1:56.1',
           second: 'ギャラボーグ', secondJockey: '横山和生', secondGate: 1,
@@ -1619,64 +2312,10 @@
           [17, 3, 'シュガークン', '牡5', 58, '吉村誠之', '2:15.3', '3/4', '3-3-5-7', '38.0', '250.2', 17, '522', '+4', '清水久詞 (美浦)'],
           ['中', 15, 'マイユニバース', '牡4', 58, '横山典弘', '-', '-', '10-10-14-18', '-', '19.1', 6, '480', '+12', '武幸四郎 (栗東)']
         ],
-        '13': [
-          [1, 16, 'ピューロマジック', '牝5', 56, '岩田望来', '1:09.2', '-', '1-1', '35.6', '24.5', 9, '464', '+4', '安田翔伍 (栗東)'],
-          [2, 6, 'ワールズエンド', '牡5', 58, '津村明秀', '1:09.2', 'クビ', '3-3', '35.3', '10.7', 5, '472', '+2', '池添学 (栗東)'],
-          [3, 5, 'サウンドモリアーナ', '牝4', 56, '吉田隼人', '1:09.2', 'ハナ', '5-3', '35.2', '27.0', 11, '454', '0', '武英智 (栗東)'],
-          [4, 9, 'スターアニス', '牝3', 54, 'ルメール', '1:09.4', '1.1/4', '10-10', '35.1', '3.7', 1, '484', '+4', '高野友和 (栗東)'],
-          [5, 1, 'レッドモンレーヴ', '牡7', 58, '酒井学', '1:09.6', '1.1/4', '14-14', '35.0', '52.3', 14, '510', '-2', '蛯名正義 (美浦)'],
-          [6, 14, 'ウインカーネリアン', '牡9', 58, '三浦皇成', '1:09.6', 'クビ', '5-3', '35.6', '13.9', 6, '518', '+4', '鹿戸雄一 (美浦)'],
-          [7, 8, 'エーティーマクフィ', '牡7', 58, '富田暁', '1:09.7', 'クビ', '14-14', '35.2', '21.9', 8, '476', '-6', '武英智 (栗東)'],
-          [8, 4, 'ジューンブレア', '牝5', 56, '坂井瑠星', '1:09.7', 'アタマ', '7-8', '35.6', '28.3', 12, '496', '+12', '武英智 (栗東)'],
-          [8, 7, 'ペアポルックス', '牡5', 58, '岩田康誠', '1:09.7', '同着', '3-3', '35.9', '36.7', 13, '482', '+4', '梅田智之 (栗東)'],
-          [10, 3, 'ママコチャ', '牝7', 56, '武豊', '1:09.7', 'ハナ', '7-7', '35.6', '16.1', 7, '500', '-2', '池江泰寿 (栗東)'],
-          [11, 2, 'アイサンサン', '牝4', 56, '幸英明', '1:09.8', '3/4', '10-12', '35.5', '56.1', 15, '454', '-4', '橋田宜長 (栗東)'],
-          [12, 15, 'フリッカージャブ', '牡4', 58, '西村淳也', '1:09.9', '3/4', '2-2', '36.2', '7.7', 3, '504', '-2', '西園翔太 (栗東)'],
-          [13, 10, 'レイピア', '牡4', 58, '横山武史', '1:10.6', '4', '14-12', '36.0', '25.2', 10, '508', '0', '中竹和也 (栗東)'],
-          [14, 11, 'ルガル', '牡6', 58, '鮫島克駿', '1:10.8', '1.1/4', '10-10', '36.5', '9.6', 4, '532', '0', '杉山晴紀 (栗東)'],
-          [15, 13, 'パンジャタワー', '牡4', 58, '松山弘平', '1:11.9', '7', '7-8', '37.8', '3.9', 2, '490', '-4', '橋口慎介 (栗東)'],
-          [16, 12, 'ブラックチャリス', '牝3', 54, '浜中俊', '1:12.6', '4', '13-16', '38.2', '113.6', 16, '464', '-6', '武幸四郎 (栗東)']
-        ],
-        '14': [
-          [1, 8, 'モンローウォーク', '牝3', 55, '戸崎圭太', '1:56.1', '-', '5-5-5-4', '34.5', '1.3', 1, '452', '+2', '上村洋行 (栗東)'],
-          [2, 1, 'ギャラボーグ', '牝3', 55, '横山和生', '1:56.1', 'クビ', '3-2-2-2', '35.2', '36.2', 7, '498', '+8', '杉山晴紀 (栗東)'],
-          [3, 13, 'ドリームコア', '牝3', 55, 'ルメール', '1:56.3', '1.1/4', '15-13-11-11', '34.0', '8.4', 2, '512', '+10', '田中博康 (美浦)'],
-          [4, 4, 'エンネ', '牝3', 55, '坂井瑠星', '1:56.4', '1/2', '7-7-6-6', '34.5', '22.8', 6, '526', '+4', '吉岡辰弥 (栗東)'],
-          [5, 14, 'サムシングスイート', '牝3', 55, '松山弘平', '1:56.5', 'クビ', '16-16-14-13', '33.8', '43.4', 8, '498', '0', '伊藤大士 (美浦)'],
-          [6, 6, 'ラベルセーヌ', '牝3', 55, '荻野極', '1:56.7', '1.1/4', '9-9-8-8', '34.6', '11.0', 3, '432', '-4', '鹿戸雄一 (美浦)'],
-          [7, 15, 'フェスティバルヒル', '牝3', 55, '浜中俊', '1:56.8', '1/2', '17-17-17-15', '33.8', '191.1', 15, '458', '-8', '四位洋文 (栗東)'],
-          [8, 3, 'マスターソアラ', '牝3', 55, '武豊', '1:57.0', '1.1/4', '11-9-8-8', '34.9', '18.9', 5, '492', '0', '蛯名正義 (美浦)'],
-          [9, 16, 'ハヤブササキチャン', '牝3', 55, '吉田隼人', '1:57.3', '2', '12-12-11-12', '35.0', '53.6', 9, '422', '-8', '東田明士 (栗東)'],
-          [10, 5, 'タイセイボーグ', '牝3', 55, '西村淳也', '1:57.4', '3/4', '7-8-8-8', '35.3', '86.2', 12, '496', '-2', '松下武士 (栗東)'],
-          [11, 11, 'ガーネットフレア', '牝3', 55, '北村友一', '1:57.6', '3/4', '3-4-4-4', '36.2', '53.8', 10, '446', '0', '杉山佳明 (栗東)'],
-          [12, 7, 'バースデイフライト', '牝3', 55, '田山旺佑', '1:57.6', 'アタマ', '13-13-13-13', '35.1', '275.3', 16, '458', '-4', '新谷功一 (栗東)'],
-          [13, 12, 'カナルサンマルタン', '牝3', 55, '岩田望来', '1:57.9', '1.3/4', '6-5-6-6', '36.0', '16.9', 4, '460', '+12', '宮田敬介 (美浦)'],
-          [14, 2, 'テイエムアイラン', '牝3', 55, '富田暁', '1:58.0', '3/4', '1-1-1-1', '37.3', '129.5', 13, '420', '+6', '宮地貴稔 (栗東)'],
-          [15, 17, 'ロザーンジュ', '牝3', 55, '今村聖奈', '1:58.8', '5', '13-13-16-16', '35.7', '142.7', 14, '436', '-2', '寺島良 (栗東)'],
-          [16, 10, 'ナイスプレーアスク', '牝3', 55, '岩田康誠', '2:00.0', '7', '2-2-2-3', '39.0', '294.0', 17, '438', '0', '中舘英二 (美浦)'],
-          ['中', 9, 'スウィートハピネス', '牝3', 55, '佐々木大', '', '-', '9-9-14-17', '-', '76.8', 11, '450', '+6', '北出成人 (栗東)']
-        ],
-        '15': [
-          [1, 9, 'ゴーイントゥスカイ', '牡3', 57, '武豊', '3:04.5', '-', '9-9-7-7', '35.4', '12.0', 3, '498', '-4', '上原佑紀 (美浦)'],
-          [2, 6, 'バステール', '牡3', 57, '川田将雅', '3:04.5', 'ハナ', '16-16-16-12', '34.9', '33.8', 8, '464', '-8', '斉藤崇史 (栗東)'],
-          [3, 10, 'ダノンヒストリー', '牡3', 57, 'ルメール', '3:04.6', '1', '6-7-4-3', '35.6', '3.0', 2, '482', '+4', '堀宣行 (美浦)'],
-          [4, 12, 'サノノグレーター', '牡3', 57, '田辺裕信', '3:04.7', '1/2', '12-12-14-16', '35.0', '129.7', 14, '464', '-6', '尾形和幸 (美浦)'],
-          [5, 15, 'シートゥサミット', '牡3', 57, '酒井学', '3:04.8', '3/4', '2-2-2-2', '36.0', '87.5', 12, '520', '-4', '吉岡辰弥 (栗東)'],
-          [6, 16, 'ショウナンハヤナミ', '牡3', 57, '池添謙一', '3:04.9', 'クビ', '17-17-18-14', '35.1', '57.6', 10, '454', '-2', '渡辺薫彦 (栗東)'],
-          [7, 14, 'マジョレルブルー', '牡3', 57, '戸崎圭太', '3:04.9', 'クビ', '8-7-8-7', '35.7', '71.5', 11, '488', '+2', '友道康夫 (栗東)'],
-          [8, 2, 'コンジェスタス', '牡3', 57, '西村淳也', '3:05.0', 'クビ', '9-9-8-7', '35.8', '23.7', 6, '530', '+2', '高野友和 (栗東)'],
-          [9, 3, 'アウダーシア', '牡3', 57, '津村明秀', '3:05.2', '1', '14-14-8-7', '36.1', '22.9', 5, '506', '0', '手塚貴久 (美浦)'],
-          [10, 5, 'ジャスティンシカゴ', '牡3', 57, '原優介', '3:05.4', '1', '6-6-12-12', '36.0', '20.2', 4, '500', '-8', '宮田敬介 (美浦)'],
-          [11, 17, 'チャリングクロス', '牡3', 57, '石川裕紀', '3:05.5', '1/2', '9-9-14-14', '36.0', '203.1', 15, '494', '-12', '奥村武 (美浦)'],
-          [12, 7, 'ラージアンサンブル', '牡3', 57, '坂井瑠星', '3:05.6', '3/4', '5-5-4-3', '36.6', '210.3', 16, '478', '+2', '武井亮 (美浦)'],
-          [13, 1, 'エムズビギン', '牡3', 57, '岩田望来', '3:05.7', '1/2', '18-17-16-18', '35.9', '53.0', 9, '500', '-8', '友道康夫 (栗東)'],
-          [14, 8, 'ロブチェン', '牡3', 57, '松山弘平', '3:05.8', '1', '12-12-8-5', '36.7', '1.8', 1, '514', '-4', '杉山晴紀 (栗東)'],
-          [15, 13, 'キンググローリー', '牡3', 57, '丹内祐次', '3:06.1', '1.1/2', '1-1-1-1', '39.8', '123.3', 13, '466', '0', '古賀慎明 (美浦)'],
-          [16, 18, 'ナリタエスペランサ', '牡3', 57, '北村友一', '3:08.0', '大', '3-3-3-5', '39.0', '237.4', 17, '478', '+8', '福永祐一 (栗東)'],
-          [17, 11, 'アスクエジンバラ', '牡3', 57, '岩田康誠', '3:08.5', '3', '4-4-4-7', '39.4', '32.8', 7, '476', '+6', '福永祐一 (栗東)'],
-          [18, 4, 'ショウナンガルフ', '牡3', 57, '田山旺佑', '3:08.9', '2.1/2', '15-14-12-17', '39.4', '380.5', 18, '478', '+4', '須貝尚介 (栗東)']
-        ],
-      };
+  '13': [[1, 16, "ピューロマジック", "牝5", 56, "岩田望来", "1:09.2", "-", "1-1", "35.6", "24.5", 9, "464", "+4", "安田翔伍 (栗東)"], [2, 6, "ワールズエンド", "牡5", 58, "津村明秀", "1:09.2", "クビ", "3-3", "35.3", "10.7", 5, "472", "+2", "池添学 (栗東)"], [3, 5, "サウンドモリアーナ", "牝4", 56, "吉田隼人", "1:09.2", "ハナ", "5-3", "35.2", "27.0", 11, "454", "0", "武英智 (栗東)"], [4, 9, "スターアニス", "牝3", 54, "ルメール", "1:09.4", "1.1/4", "10-10", "35.1", "3.7", 1, "484", "+4", "高野友和 (栗東)"], [5, 1, "レッドモンレーヴ", "牡7", 58, "酒井学", "1:09.6", "1.1/4", "14-14", "35.0", "52.3", 14, "510", "-2", "蛯名正義 (美浦)"], [6, 14, "ウインカーネリアン", "牡9", 58, "三浦皇成", "1:09.6", "クビ", "5-3", "35.6", "13.9", 6, "518", "+4", "鹿戸雄一 (美浦)"], [7, 8, "エーティーマクフィ", "牡7", 58, "富田暁", "1:09.7", "クビ", "14-14", "35.2", "21.9", 8, "476", "-6", "武英智 (栗東)"], [8, 4, "ジューンブレア", "牝5", 56, "坂井瑠星", "1:09.7", "アタマ", "7-8", "35.6", "28.3", 12, "496", "+12", "武英智 (栗東)"], [8, 7, "ペアポルックス", "牡5", 58, "岩田康誠", "1:09.7", "同着", "3-3", "35.9", "36.7", 13, "482", "+4", "梅田智之 (栗東)"], [10, 3, "ママコチャ", "牝7", 56, "武豊", "1:09.7", "ハナ", "7-7", "35.6", "16.1", 7, "500", "-2", "池江泰寿 (栗東)"], [11, 2, "アイサンサン", "牝4", 56, "幸英明", "1:09.8", "3/4", "10-12", "35.5", "56.1", 15, "454", "-4", "橋田宜長 (栗東)"], [12, 15, "フリッカージャブ", "牡4", 58, "西村淳也", "1:09.9", "3/4", "2-2", "36.2", "7.7", 3, "504", "-2", "西園翔太 (栗東)"], [13, 10, "レイピア", "牡4", 58, "横山武史", "1:10.6", "4", "14-12", "36.0", "25.2", 10, "508", "0", "中竹和也 (栗東)"], [14, 11, "ルガル", "牡6", 58, "鮫島克駿", "1:10.8", "1.1/4", "10-10", "36.5", "9.6", 4, "532", "0", "杉山晴紀 (栗東)"], [15, 13, "パンジャタワー", "牡4", 58, "松山弘平", "1:11.9", "7", "7-8", "37.8", "3.9", 2, "490", "-4", "橋口慎介 (栗東)"], [16, 12, "ブラックチャリス", "牝3", 54, "浜中俊", "1:12.6", "4", "13-16", "38.2", "113.6", 16, "464", "-6", "武幸四郎 (栗東)"]],
+  '14': [[1, 8, "モンローウォーク", "牝3", 55, "戸崎圭太", "1:56.1", "-", "5-5-5-4", "34.5", "1.3", 1, "452", "+2", "上村洋行 (栗東)"], [2, 1, "ギャラボーグ", "牝3", 55, "横山和生", "1:56.1", "クビ", "3-2-2-2", "35.2", "36.2", 7, "498", "+8", "杉山晴紀 (栗東)"], [3, 13, "ドリームコア", "牝3", 55, "ルメール", "1:56.3", "1.1/4", "15-13-11-11", "34.0", "8.4", 2, "512", "+10", "田中博康 (美浦)"], [4, 4, "エンネ", "牝3", 55, "坂井瑠星", "1:56.4", "1/2", "7-7-6-6", "34.5", "22.8", 6, "526", "+4", "吉岡辰弥 (栗東)"], [5, 14, "サムシングスイート", "牝3", 55, "松山弘平", "1:56.5", "クビ", "16-16-14-13", "33.8", "43.4", 8, "498", "0", "伊藤大士 (美浦)"], [6, 6, "ラベルセーヌ", "牝3", 55, "荻野極", "1:56.7", "1.1/4", "9-9-8-8", "34.6", "11.0", 3, "432", "-4", "鹿戸雄一 (美浦)"], [7, 15, "フェスティバルヒル", "牝3", 55, "浜中俊", "1:56.8", "1/2", "17-17-17-15", "33.8", "191.1", 15, "458", "-8", "四位洋文 (栗東)"], [8, 3, "マスターソアラ", "牝3", 55, "武豊", "1:57.0", "1.1/4", "11-9-8-8", "34.9", "18.9", 5, "492", "0", "蛯名正義 (美浦)"], [9, 16, "ハヤブササキチャン", "牝3", 55, "吉田隼人", "1:57.3", "2", "12-12-11-12", "35.0", "53.6", 9, "422", "-8", "東田明士 (栗東)"], [10, 5, "タイセイボーグ", "牝3", 55, "西村淳也", "1:57.4", "3/4", "7-8-8-8", "35.3", "86.2", 12, "496", "-2", "松下武士 (栗東)"], [11, 11, "ガーネットフレア", "牝3", 55, "北村友一", "1:57.6", "3/4", "3-4-4-4", "36.2", "53.8", 10, "446", "0", "杉山佳明 (栗東)"], [12, 7, "バースデイフライト", "牝3", 55, "田山旺佑", "1:57.6", "アタマ", "13-13-13-13", "35.1", "275.3", 16, "458", "-4", "新谷功一 (栗東)"], [13, 12, "カナルサンマルタン", "牝3", 55, "岩田望来", "1:57.9", "1.3/4", "6-5-6-6", "36.0", "16.9", 4, "460", "+12", "宮田敬介 (美浦)"], [14, 2, "テイエムアイラン", "牝3", 55, "富田暁", "1:58.0", "3/4", "1-1-1-1", "37.3", "129.5", 13, "420", "+6", "宮地貴稔 (栗東)"], [15, 17, "ロザーンジュ", "牝3", 55, "今村聖奈", "1:58.8", "5", "13-13-16-16", "35.7", "142.7", 14, "436", "-2", "寺島良 (栗東)"], [16, 10, "ナイスプレーアスク", "牝3", 55, "岩田康誠", "2:00.0", "7", "2-2-2-3", "39.0", "294.0", 17, "438", "0", "中舘英二 (美浦)"], ["中", 9, "スウィートハピネス", "牝3", 55, "佐々木大", "", "-", "9-9-14-17", "-", "76.8", 11, "450", "+6", "北出成人 (栗東)"]],
+  '15': [[1, 9, "ゴーイントゥスカイ", "牡3", 57, "武豊", "3:04.5", "-", "9-9-7-7", "35.4", "12.0", 3, "498", "-4", "上原佑紀 (美浦)"], [2, 6, "バステール", "牡3", 57, "川田将雅", "3:04.5", "ハナ", "16-16-16-12", "34.9", "33.8", 8, "464", "-8", "斉藤崇史 (栗東)"], [3, 10, "ダノンヒストリー", "牡3", 57, "ルメール", "3:04.6", "1", "6-7-4-3", "35.6", "3.0", 2, "482", "+4", "堀宣行 (美浦)"], [4, 12, "サノノグレーター", "牡3", 57, "田辺裕信", "3:04.7", "1/2", "12-12-14-16", "35.0", "129.7", 14, "464", "-6", "尾形和幸 (美浦)"], [5, 15, "シートゥサミット", "牡3", 57, "酒井学", "3:04.8", "3/4", "2-2-2-2", "36.0", "87.5", 12, "520", "-4", "吉岡辰弥 (栗東)"], [6, 16, "ショウナンハヤナミ", "牡3", 57, "池添謙一", "3:04.9", "クビ", "17-17-18-14", "35.1", "57.6", 10, "454", "-2", "渡辺薫彦 (栗東)"], [7, 14, "マジョレルブルー", "牡3", 57, "戸崎圭太", "3:04.9", "クビ", "8-7-8-7", "35.7", "71.5", 11, "488", "+2", "友道康夫 (栗東)"], [8, 2, "コンジェスタス", "牡3", 57, "西村淳也", "3:05.0", "クビ", "9-9-8-7", "35.8", "23.7", 6, "530", "+2", "高野友和 (栗東)"], [9, 3, "アウダーシア", "牡3", 57, "津村明秀", "3:05.2", "1", "14-14-8-7", "36.1", "22.9", 5, "506", "0", "手塚貴久 (美浦)"], [10, 5, "ジャスティンシカゴ", "牡3", 57, "原優介", "3:05.4", "1", "6-6-12-12", "36.0", "20.2", 4, "500", "-8", "宮田敬介 (美浦)"], [11, 17, "チャリングクロス", "牡3", 57, "石川裕紀", "3:05.5", "1/2", "9-9-14-14", "36.0", "203.1", 15, "494", "-12", "奥村武 (美浦)"], [12, 7, "ラージアンサンブル", "牡3", 57, "坂井瑠星", "3:05.6", "3/4", "5-5-4-3", "36.6", "210.3", 16, "478", "+2", "武井亮 (美浦)"], [13, 1, "エムズビギン", "牡3", 57, "岩田望来", "3:05.7", "1/2", "18-17-16-18", "35.9", "53.0", 9, "500", "-8", "友道康夫 (栗東)"], [14, 8, "ロブチェン", "牡3", 57, "松山弘平", "3:05.8", "1", "12-12-8-5", "36.7", "1.8", 1, "514", "-4", "杉山晴紀 (栗東)"], [15, 13, "キンググローリー", "牡3", 57, "丹内祐次", "3:06.1", "1.1/2", "1-1-1-1", "39.8", "123.3", 13, "466", "0", "古賀慎明 (美浦)"], [16, 18, "ナリタエスペランサ", "牡3", 57, "北村友一", "3:08.0", "大", "3-3-3-5", "39.0", "237.4", 17, "478", "+8", "福永祐一 (栗東)"], [17, 11, "アスクエジンバラ", "牡3", 57, "岩田康誠", "3:08.5", "3", "4-4-4-7", "39.4", "32.8", 7, "476", "+6", "福永祐一 (栗東)"], [18, 4, "ショウナンガルフ", "牡3", 57, "田山旺佑", "3:08.9", "2.1/2", "15-14-12-17", "39.4", "380.5", 18, "478", "+4", "須貝尚介 (栗東)"]]
+};
 
       const HISTORICAL_DATA = {
   "1": [
@@ -52937,8 +53576,470 @@
   }
 };
 
+      const PREDICTION_DATA = {
+  "raceId": "16",
+  "raceName": "第174回 天皇賞（秋）",
+  "date": "2026年11月1日(日) 15:40発走",
+  "venue": "東京競馬場 芝2000m (G1)",
+  "conditions": "サラ系3歳以上 オープン (国際)(指) 定量 / Bコース使用",
+  "starters": [
+    {
+      "waku": 1,
+      "gate": 1,
+      "horseName": "クロワデュノール",
+      "sexAge": "牡4",
+      "load": 58,
+      "jockey": "C.デムーロ",
+      "stable": "斉藤崇史 (栗東)",
+      "odds": "3.4",
+      "placeOdds": "1.4 - 1.8",
+      "pop": 2,
+      "trainingGrade": "S",
+      "trainingCourse": "栗東CW",
+      "trainingTime": "81.4 - 65.8 - 50.9 - 36.2 - 11.2 (馬なり)",
+      "trainingComment": "CWでラスト11.2秒。春のクラシック戦線から筋肉の張りが一段増し、非の打ち所がない仕上がり。最内1枠1番を引き、C.デムーロ騎手への勝負手乗り替わりで死角なし。"
+    },
+    {
+      "waku": 1,
+      "gate": 2,
+      "horseName": "エルトンバローズ",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "松若風馬",
+      "stable": "杉山晴紀 (栗東)",
+      "odds": "28.4",
+      "placeOdds": "5.2 - 7.8",
+      "pop": 9,
+      "trainingGrade": "B+",
+      "trainingCourse": "栗東坂路",
+      "trainingTime": "53.1 - 38.4 - 24.8 - 12.3 (馬なり)",
+      "trainingComment": "叩き2走目で気配一変。坂路での首の使い方が良くなり、前走以上の活気。内枠を活かして好位インで脚を溜められれば一発も。"
+    },
+    {
+      "waku": 2,
+      "gate": 3,
+      "horseName": "レガレイラ",
+      "sexAge": "牝5",
+      "load": 56,
+      "jockey": "岩田望来",
+      "stable": "木村哲也 (美浦)",
+      "odds": "4.6",
+      "placeOdds": "1.7 - 2.3",
+      "pop": 3,
+      "trainingGrade": "A",
+      "trainingCourse": "美浦W",
+      "trainingTime": "83.2 - 67.0 - 51.8 - 36.8 - 11.3 (馬なり)",
+      "trainingComment": "直線軽く仕掛けただけで鋭伸。東京2000mはベストの舞台。牝馬の56kg斤量も有利で、鋭い末脚をフルに発揮できる態勢。"
+    },
+    {
+      "waku": 2,
+      "gate": 4,
+      "horseName": "レディネス",
+      "sexAge": "牡4",
+      "load": 58,
+      "jockey": "横山典弘",
+      "stable": "昆貢 (栗東)",
+      "odds": "42.0",
+      "placeOdds": "8.4 - 12.5",
+      "pop": 11,
+      "trainingGrade": "B",
+      "trainingCourse": "栗東CW",
+      "trainingTime": "83.8 - 67.2 - 52.1 - 37.0 - 11.7 (強め)",
+      "trainingComment": "力強いフットワークで順調な仕上がり。横山典弘騎手の手腕でどこまで上位に食い込めるか。"
+    },
+    {
+      "waku": 3,
+      "gate": 5,
+      "horseName": "シャンパンカラー",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "内田博幸",
+      "stable": "田中剛 (美浦)",
+      "odds": "58.6",
+      "placeOdds": "11.0 - 16.2",
+      "pop": 13,
+      "trainingGrade": "B",
+      "trainingCourse": "美浦W",
+      "trainingTime": "84.0 - 67.5 - 52.3 - 37.2 - 11.8 (馬なり)",
+      "trainingComment": "東京巧者だが2000mへの距離延長が鍵。調教自体は素軽さがあり体調は万全。"
+    },
+    {
+      "waku": 3,
+      "gate": 6,
+      "horseName": "セイウンハーデス",
+      "sexAge": "牡7",
+      "load": 58,
+      "jockey": "幸英明",
+      "stable": "橋口慎介 (栗東)",
+      "odds": "34.2",
+      "placeOdds": "6.8 - 9.8",
+      "pop": 10,
+      "trainingGrade": "B+",
+      "trainingCourse": "栗東CW",
+      "trainingTime": "82.5 - 66.4 - 51.5 - 36.8 - 11.5 (一杯)",
+      "trainingComment": "一杯に追われてシャープな伸び。ハナ争いまたは2番手追走からのしぶとさ勝負で前残り警戒。"
+    },
+    {
+      "waku": 4,
+      "gate": 7,
+      "horseName": "マスカレードボール",
+      "sexAge": "牡4",
+      "load": 58,
+      "jockey": "C.ルメール",
+      "stable": "手塚貴久 (美浦)",
+      "odds": "2.8",
+      "placeOdds": "1.3 - 1.6",
+      "pop": 1,
+      "trainingGrade": "S",
+      "trainingCourse": "美浦W",
+      "trainingTime": "82.0 - 66.1 - 51.2 - 36.5 - 11.0 (強め)",
+      "trainingComment": "美浦Wで抜群の手応え。外の僚馬をアオる圧巻の動きで、ルメール騎手も「完璧」と絶賛。前走からの上積み特大で秋天制覇へ視界良好。"
+    },
+    {
+      "waku": 4,
+      "gate": 8,
+      "horseName": "ジュンブロッサム",
+      "sexAge": "牡7",
+      "load": 58,
+      "jockey": "杉原誠人",
+      "stable": "友道康夫 (栗東)",
+      "odds": "22.5",
+      "placeOdds": "4.5 - 6.7",
+      "pop": 8,
+      "trainingGrade": "B+",
+      "trainingCourse": "栗東CW",
+      "trainingTime": "83.0 - 66.8 - 51.6 - 36.7 - 11.4 (馬なり)",
+      "trainingComment": "末脚のキレは一級品。東京の長い直線で持ち味が存分に活きる条件。展開ひとつで上位進出。"
+    },
+    {
+      "waku": 5,
+      "gate": 9,
+      "horseName": "ホウオウビスケッツ",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "岩田康誠",
+      "stable": "奥村武 (美浦)",
+      "odds": "12.4",
+      "placeOdds": "3.2 - 4.5",
+      "pop": 5,
+      "trainingGrade": "B+",
+      "trainingCourse": "美浦W",
+      "trainingTime": "83.5 - 66.8 - 51.5 - 37.0 - 11.5 (馬なり)",
+      "trainingComment": "単騎マイペースの逃げが濃厚。前走毎日王冠以上のデキで、開幕後半のBコースでも開幕週のようなしぶとさを発揮できる。"
+    },
+    {
+      "waku": 5,
+      "gate": 10,
+      "horseName": "ネブラディスク",
+      "sexAge": "牡4",
+      "load": 58,
+      "jockey": "川田将雅",
+      "stable": "福永祐一 (栗東)",
+      "odds": "16.5",
+      "placeOdds": "3.8 - 5.6",
+      "pop": 6,
+      "trainingGrade": "B+",
+      "trainingCourse": "栗東CW",
+      "trainingTime": "82.9 - 66.7 - 51.8 - 37.1 - 11.6 (強め)",
+      "trainingComment": "フットワーク軽快で福永厩舎の仕上げも万全。川田騎手との相性も抜群で、好位からの抜け出しを狙う。"
+    },
+    {
+      "waku": 6,
+      "gate": 11,
+      "horseName": "シェイクユアハート",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "古川吉洋",
+      "stable": "宮徹 (栗東)",
+      "odds": "74.0",
+      "placeOdds": "14.0 - 21.0",
+      "pop": 15,
+      "trainingGrade": "B",
+      "trainingCourse": "栗東坂路",
+      "trainingTime": "54.2 - 39.1 - 25.4 - 12.5 (馬なり)",
+      "trainingComment": "坂路で軽快なフットワーク。調子落ちはなくマイペースで挑む。"
+    },
+    {
+      "waku": 6,
+      "gate": 12,
+      "horseName": "コスモキュランダ",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "丹内祐次",
+      "stable": "加藤士津八 (美浦)",
+      "odds": "18.9",
+      "placeOdds": "4.1 - 6.2",
+      "pop": 7,
+      "trainingGrade": "B",
+      "trainingCourse": "美浦W",
+      "trainingTime": "84.1 - 67.5 - 52.3 - 37.4 - 11.8 (一杯)",
+      "trainingComment": "スタミナ豊富でタフなロングスパートが持ち味。ペースが上がって消耗戦になれば浮上。"
+    },
+    {
+      "waku": 7,
+      "gate": 13,
+      "horseName": "リアライズシリウス",
+      "sexAge": "牡3",
+      "load": 56,
+      "jockey": "津村明秀",
+      "stable": "手塚貴久 (美浦)",
+      "odds": "48.5",
+      "placeOdds": "9.2 - 13.8",
+      "pop": 12,
+      "trainingGrade": "B",
+      "trainingCourse": "美浦W",
+      "trainingTime": "83.9 - 67.2 - 52.0 - 37.1 - 11.7 (強め)",
+      "trainingComment": "3歳馬で斤量56kgの恩恵。手塚厩舎2頭出しで不気味な存在。"
+    },
+    {
+      "waku": 7,
+      "gate": 14,
+      "horseName": "タガノデュード",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "M.デムーロ",
+      "stable": "宮徹 (栗東)",
+      "odds": "86.0",
+      "placeOdds": "16.5 - 25.0",
+      "pop": 16,
+      "trainingGrade": "B",
+      "trainingCourse": "栗東坂路",
+      "trainingTime": "53.9 - 38.8 - 25.1 - 12.4 (馬なり)",
+      "trainingComment": "ミルコ・デムーロ騎手の大胆な捲り戦法がハマれば面白い一頭。"
+    },
+    {
+      "waku": 8,
+      "gate": 15,
+      "horseName": "サクラファレル",
+      "sexAge": "牡4",
+      "load": 58,
+      "jockey": "佐々木大輔",
+      "stable": "堀宣行 (美浦)",
+      "odds": "65.2",
+      "placeOdds": "12.8 - 19.5",
+      "pop": 14,
+      "trainingGrade": "B",
+      "trainingCourse": "美浦W",
+      "trainingTime": "84.3 - 67.8 - 52.5 - 37.5 - 11.9 (馬なり)",
+      "trainingComment": "名門・堀厩舎所属の若武者コンビ。外枠からロスなく運べるかが鍵。"
+    },
+    {
+      "waku": 8,
+      "gate": 16,
+      "horseName": "ジョバンニ",
+      "sexAge": "牡4",
+      "load": 58,
+      "jockey": "松山弘平",
+      "stable": "杉山晴紀 (栗東)",
+      "odds": "115.0",
+      "placeOdds": "22.0 - 35.0",
+      "pop": 17,
+      "trainingGrade": "B",
+      "trainingCourse": "栗東CW",
+      "trainingTime": "83.7 - 67.1 - 52.0 - 37.3 - 11.8 (一杯)",
+      "trainingComment": "強めに追われて気合乗り十分。大外枠だが思い切った競馬で臨む。"
+    },
+    {
+      "waku": 8,
+      "gate": 17,
+      "horseName": "ダノンデサイル",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "戸崎圭太",
+      "stable": "安田翔伍 (栗東)",
+      "odds": "6.8",
+      "placeOdds": "2.1 - 3.0",
+      "pop": 4,
+      "trainingGrade": "A",
+      "trainingCourse": "栗東坂路",
+      "trainingTime": "52.8 - 38.1 - 24.6 - 12.1 (一杯)",
+      "trainingComment": "栗東坂路で力強い登坂。古馬相手でも通用するダイナミックなパワーを実感。大外8枠17番に入ったが、戸崎騎手のコース取りに期待。"
+    }
+  ],
+  "jockeysCompatibility": [
+    {
+      "jockey": "C.ルメール",
+      "horse": "マスカレードボール",
+      "tokyoTurfWinRate": "28.5%",
+      "tokyoTurfTop3Rate": "61.0%",
+      "distanceWinRate": "31.2%",
+      "switchType": "継続騎乗",
+      "rating": "SSS (東京の絶対王者)",
+      "comment": "過去5年の秋東京G1で連対率60%超。マスカレードボールとのコンビでも完璧な成績を残しており、コース・距離・相性すべてにおいて最高峰。"
+    },
+    {
+      "jockey": "C.デムーロ",
+      "horse": "クロワデュノール",
+      "tokyoTurfWinRate": "24.1%",
+      "tokyoTurfTop3Rate": "54.3%",
+      "distanceWinRate": "28.0%",
+      "switchType": "大幅強化 (北村友一 → C.デムーロ)",
+      "rating": "SS (勝負気配MAX)",
+      "comment": "秋の短期免許で来日。最内1枠1番から抜群のスタートとインコース捌きで勝利をもぎ取る勝負師。陣営の勝負気配が最も濃厚。"
+    },
+    {
+      "jockey": "戸崎圭太",
+      "horse": "ダノンデサイル",
+      "tokyoTurfWinRate": "16.8%",
+      "tokyoTurfTop3Rate": "44.5%",
+      "distanceWinRate": "19.4%",
+      "switchType": "乗り替わり (坂井瑠星 → 戸崎圭太)",
+      "rating": "A+ (東京マイスター)",
+      "comment": "東京コースの構造を隅々まで知り尽くすトップジョッキー。大外枠の不利を相殺するロスのない進路取りが期待される。"
+    },
+    {
+      "jockey": "岩田望来",
+      "horse": "レガレイラ",
+      "tokyoTurfWinRate": "14.2%",
+      "tokyoTurfTop3Rate": "38.0%",
+      "distanceWinRate": "17.5%",
+      "switchType": "新コンビ (戸崎圭太 → 岩田望来)",
+      "rating": "A (G1初制覇への意気込み)",
+      "comment": "若手実力派筆頭。レガレイラの切れる脚を東京の長い直線で極限まで引き出せるか注目。"
+    },
+    {
+      "jockey": "川田将雅",
+      "horse": "ネブラディスク",
+      "tokyoTurfWinRate": "21.0%",
+      "tokyoTurfTop3Rate": "51.2%",
+      "distanceWinRate": "25.6%",
+      "switchType": "継続騎乗",
+      "rating": "S (卓越した安定度)",
+      "comment": "好位から確実に脚を使わせる手腕は折り紙付き。福永厩舎とのタッグでG1獲りを狙う。"
+    }
+  ],
+  "wakuAnalysis": {
+    "description": "東京芝2000mはスタート直後に2コーナーのポケット地点を迎えるため、外枠に入った馬は外々を回らされやすく距離ロスが生じやすい「内枠有利・外枠不利」の代表的コース。過去10年でも1〜4枠の好走率が顕著です。",
+    "stats": [
+      {
+        "waku": 1,
+        "winRate": "15.0%",
+        "top3Rate": "35.0%",
+        "comment": "【絶好枠】最短距離をロスなく追走可能。最内クロワデュノールに強烈な追い風。"
+      },
+      {
+        "waku": 2,
+        "winRate": "10.0%",
+        "top3Rate": "30.0%",
+        "comment": "【好枠】内を見ながら運べる好位置。レガレイラに好都合。"
+      },
+      {
+        "waku": 3,
+        "winRate": "10.0%",
+        "top3Rate": "25.0%",
+        "comment": "【安定枠】先行・差しともに立ち回りやすい。"
+      },
+      {
+        "waku": 4,
+        "winRate": "20.0%",
+        "top3Rate": "40.0%",
+        "comment": "【最多勝枠】勝率・複勝率トップ。マスカレードボールがここに入り死角なし。"
+      },
+      {
+        "waku": 5,
+        "winRate": "10.0%",
+        "top3Rate": "20.0%",
+        "comment": "【平均枠】内外を見ながらの立ち回り。"
+      },
+      {
+        "waku": 6,
+        "winRate": "10.0%",
+        "top3Rate": "20.0%",
+        "comment": "【注意枠】中団以降の待機策が必要になるケースも。"
+      },
+      {
+        "waku": 7,
+        "winRate": "15.0%",
+        "top3Rate": "25.0%",
+        "comment": "【実力枠】イクイノックスなど抜けた実力馬当時は好走も立ち回りはシビア。"
+      },
+      {
+        "waku": 8,
+        "winRate": "10.0%",
+        "top3Rate": "15.0%",
+        "comment": "【鬼門枠】17頭立ての大外。ダノンデサイルは序盤の位置取りが最大の鍵。"
+      }
+    ]
+  },
+  "trackCondition": {
+    "condition": "良馬場 (想定)",
+    "cushionValue": "9.5 (標準〜硬め)",
+    "courseUsage": "Bコース使用 (内側の傷み極小)",
+    "weather": "日曜東京: 晴れ / 最高気温20℃ (絶好の競馬日和)",
+    "bias": "【内前有利〜好位差し】",
+    "biasDetail": "Bコース替わりで内ラチ沿いの芝状態が極めて良好。直線の長い東京でも極端な後方一気は届きにくく、4コーナー5〜8番手以内の好位・中団インから直線抜け出す競馬が最も好走確率が高いトラックバイアスです。"
+  },
+  "raceTrends": [
+    {
+      "title": "脚質別傾向",
+      "content": "逃げ・先行・好位差しが安定。上がり最速馬の過去10年複勝率は80%以上。直線525mを活かせる「持続力＋瞬発力」が必須。"
+    },
+    {
+      "title": "前走ステップ傾向",
+      "content": "【宝塚記念組】および【毎日王冠組】が中心。前走G1直行組が過去10年で7勝を挙げており、近年のトレンドは休み明けのフレッシュな実力馬。"
+    },
+    {
+      "title": "年齢別実績",
+      "content": "【4歳馬】が5勝と充実期。【3歳馬】も斤量56kgの恩恵で複勝率上位。【5歳以上】は実績馬以外は割引傾向。"
+    }
+  ],
+  "occultSigns": [
+    {
+      "title": "1. 「白枠（1枠1番）の激走神話」",
+      "badge": "強力サイン",
+      "content": "天皇賞（秋）はなぜか「白帽子（1枠）」にドラマが起きるレース。2023年イクイノックス（7番）の圧勝はもちろん、パンサラッサ大逃げの白枠、過去のヘヴンリーロマンス1番（14番人気優勝）、エイシンフラッシュ1番（天覧競馬制覇）など白枠は奇跡を起こす枠。今年1枠1番を引き当てたクロワデュノールには強烈なサインが宿っています！"
+    },
+    {
+      "title": "2. 「前走1番人気で敗れた実力馬」の逆襲ジンクス",
+      "badge": "伝統ジンクス",
+      "content": "前走断然人気を裏切って敗れた実力馬が、秋天で巻き返して大金星を挙げるケースが多発。前走悔しい敗戦を喫した馬たちのリベンジに要注目。"
+    },
+    {
+      "title": "3. 「C.ルメール騎手×秋東京G1」無双サイン",
+      "badge": "絶対法則",
+      "content": "秋の東京開催が始まるとC.ルメール騎手が無双状態に突入するのは毎年の恒例行事。過去5年の天皇賞（秋）におけるルメール騎手の連対率は驚異の60%超。4枠7番マスカレードボールを外すのは極めて危険。"
+    },
+    {
+      "title": "4. 「2026年世相・時事ネタサイン（フランス・仮面・王道）」",
+      "badge": "世相サイン",
+      "content": "今年のニュース・国際イベントに連動するサイン馬券。フランス語由来の「クロワ（十字/フランス語）」「C.ルメール＆C.デムーロのフランス人騎手ワンツー」「ハロウィン週＝マスカレード（仮面舞踏会）」と、馬名と世相が完全に符号しています。"
+    },
+    {
+      "title": "5. 「11月1日開催＝ゾロ目サイン（1-1）」",
+      "badge": "日付サイン",
+      "content": "11月1日という「1」が並ぶ開催日。1枠1番クロワデュノール、あるいは枠連1-1の出現を予兆するオカルト派も多数存在します。"
+    }
+  ],
+  "paceSimulation": {
+    "estimatedPace": "59.2秒 (ミドルペース)",
+    "leader": "ホウオウビスケッツ",
+    "paceText": "ホウオウビスケッツがハナを主張し、セイウンハーデスが2番手。平均ペースで淀みなく流れ、馬群は適度に縦長。勝負どころの3〜4コーナーからペースアップし、直線は力勝負。",
+    "positions": [
+      {
+        "label": "【逃げ】",
+        "horses": "9 ホウオウビスケッツ"
+      },
+      {
+        "label": "【番手・先行】",
+        "horses": "6 セイウンハーデス、1 クロワデュノール"
+      },
+      {
+        "label": "【好位】",
+        "horses": "7 マスカレードボール、2 エルトンバローズ、10 ネブラディスク"
+      },
+      {
+        "label": "【中団】",
+        "horses": "3 レガレイラ、8 ジュンブロッサム、4 レディネス"
+      },
+      {
+        "label": "【後方・追込】",
+        "horses": "17 ダノンデサイル、12 コスモキュランダ、13 リアライズシリウス、14 タガノデュード"
+      }
+    ]
+  }
+};
 
-      const POOLS = {
+const POOLS = {
         '3yo-male': [
           'ロブチェン', 'パントルナイーフ', 'バステール', 'ゴーイントゥスカイ', 'マテンロウゲイル',
           'アルトラムス', 'リアライズシリウス', 'ライヒスアドラー', 'コンジェスタス', 'アスクエジンバラ',
@@ -52977,16 +54078,15 @@
       // ----------------------------------
       // 初期化処理
       // ----------------------------------
-      if (typeof document !== 'undefined') {
-        document.addEventListener('DOMContentLoaded', () => {
-          if (typeof lucide !== 'undefined') {
-            lucide.createIcons();
-          }
-          startNextRaceCountdown();
-          renderRaces();
-          initEventListeners();
-        });
-      }
+      document.addEventListener('DOMContentLoaded', () => {
+        if (typeof lucide !== 'undefined') {
+          lucide.createIcons();
+        }
+        startNextRaceCountdown();
+        renderRaces();
+        initEventListeners();
+          initPredictionEventListeners();
+      });
 
       function refreshIcons() {
         if (typeof lucide !== 'undefined') {
@@ -52998,7 +54098,6 @@
       // カウントダウンタイマー
       // ----------------------------------
       function startNextRaceCountdown() {
-        if (typeof document === 'undefined') return;
         const timerDays = document.getElementById('timer-days');
         const timerHours = document.getElementById('timer-hours');
         const timerMinutes = document.getElementById('timer-minutes');
@@ -53010,17 +54109,18 @@
         function updateCountdown() {
           const now = new Date();
           
+          // 現在時刻より後のレースを探す
           const upcomingRaces = G1_RACES
             .filter(r => new Date(r.date) > now)
             .sort((a, b) => new Date(a.date) - new Date(b.date));
             
           if (upcomingRaces.length === 0) {
-            if (nextRaceName) nextRaceName.innerText = '2026年 G1レース全日程終了';
-            if (nextRaceMeta) nextRaceMeta.innerText = '全レースのご声援ありがとうございました';
-            if (timerDays) timerDays.innerText = '00';
-            if (timerHours) timerHours.innerText = '00';
-            if (timerMinutes) timerMinutes.innerText = '00';
-            if (timerSeconds) timerSeconds.innerText = '00';
+            nextRaceName.innerText = '2026年 G1レース全日程終了';
+            nextRaceMeta.innerText = '全レースのご声援ありがとうございました';
+            timerDays.innerText = '00';
+            timerHours.innerText = '00';
+            timerMinutes.innerText = '00';
+            timerSeconds.innerText = '00';
             if (countdownInterval) clearInterval(countdownInterval);
             return;
           }
@@ -53029,7 +54129,7 @@
           const raceTime = new Date(nextRace.date);
           const diffMs = raceTime - now;
           
-          if (nextRaceName) nextRaceName.innerText = nextRace.name;
+          nextRaceName.innerText = nextRace.name;
           
           const formattedDate = new Date(nextRace.date).toLocaleDateString('ja-JP', {
             year: 'numeric',
@@ -53037,17 +54137,17 @@
             day: 'numeric',
             weekday: 'short'
           });
-          if (nextRaceMeta) nextRaceMeta.innerText = `開催日: ${formattedDate} 15:40発走 | ${nextRace.location}競馬場 (${nextRace.course})`;
+          nextRaceMeta.innerText = `開催日: ${formattedDate} 15:40発走 | ${nextRace.location}競馬場 (${nextRace.course})`;
           
           const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
           const hours = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
           const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
           const seconds = Math.floor((diffMs % (1000 * 60)) / 1000);
           
-          if (timerDays) timerDays.innerText = String(days).padStart(2, '0');
-          if (timerHours) timerHours.innerText = String(hours).padStart(2, '0');
-          if (timerMinutes) timerMinutes.innerText = String(minutes).padStart(2, '0');
-          if (timerSeconds) timerSeconds.innerText = String(seconds).padStart(2, '0');
+          timerDays.innerText = String(days).padStart(2, '0');
+          timerHours.innerText = String(hours).padStart(2, '0');
+          timerMinutes.innerText = String(minutes).padStart(2, '0');
+          timerSeconds.innerText = String(seconds).padStart(2, '0');
         }
         
         updateCountdown();
@@ -53058,7 +54158,6 @@
       // レースグリッドのレンダリング
       // ----------------------------------
       function renderRaces() {
-        if (typeof document === 'undefined') return;
         const container = document.getElementById('race-grid-container');
         if (!container) return;
         container.innerHTML = '';
@@ -53144,7 +54243,6 @@
       }
 
       function updateTabCounts() {
-        if (typeof document === 'undefined') return;
         const allCount = G1_RACES.length;
         const finishedCount = G1_RACES.filter(r => r.status === 'finished').length;
         const upcomingCount = G1_RACES.filter(r => r.status === 'upcoming').length;
@@ -53164,11 +54262,13 @@
       function hydrateRaceResults(race) {
         if (race.hydratedResults) return race.hydratedResults;
 
+        // 本物のデータベースに存在すればマッピング
         if (RESULTS_DATA[race.id]) {
           race.hydratedResults = RESULTS_DATA[race.id].map(mapArrayToResultObj);
           return race.hydratedResults;
         }
 
+        // 以降はupcomingなどデータ未登録の場合の自動補完
         const totalStarters = 16;
         const results = [];
         const is3yo = race.type ? race.type.startsWith('3yo') : false;
@@ -53180,8 +54280,9 @@
         let sexAgeLabel = is3yo ? (isFemale ? '牝3' : '牡3') : (isFemale ? '牝4' : '牡5');
         let jockeyLoad = is3yo ? (isFemale ? 55 : 57) : (isFemale ? 56 : 58);
 
-        const baseSeconds = 120.0;
+        const baseSeconds = 120.0; // デフォルト基準
 
+        // 1着
         results.push({
           rank: 1, gate: race.winnerGate || 1, horseName: race.winner || '勝ち馬', sexAge: sexAgeLabel,
           jockeyLoad, jockey: race.winnerJockey || 'J.騎手', time: race.time || '2:00.0', margin: '-',
@@ -53189,6 +54290,7 @@
           weight: '498', weightDiff: '+2', stable: STABLES_POOL[0]
         });
 
+        // 2着
         results.push({
           rank: 2, gate: race.secondGate || 2, horseName: race.second || '2着馬', sexAge: sexAgeLabel,
           jockeyLoad, jockey: race.secondJockey || 'J.騎手', time: formatSecondsToTime(baseSeconds + 0.2), margin: '1馬身',
@@ -53196,6 +54298,7 @@
           weight: '488', weightDiff: '-2', stable: STABLES_POOL[1]
         });
 
+        // 3着
         results.push({
           rank: 3, gate: race.thirdGate || 3, horseName: race.third || '3着馬', sexAge: sexAgeLabel,
           jockeyLoad, jockey: race.thirdJockey || 'J.騎手', time: formatSecondsToTime(baseSeconds + 0.4), margin: '1 1/4馬身',
@@ -53211,7 +54314,8 @@
           const gate = getUniqueGate(usedGates, totalStarters);
           const jockey = JOCKEYS_POOL[r % JOCKEYS_POOL.length];
           
-          currentSeconds += 0.2;
+          const step = 0.2;
+          currentSeconds += step;
           const time = formatSecondsToTime(currentSeconds);
 
           results.push({
@@ -53255,14 +54359,21 @@
         return gate;
       }
 
-      function hydratePayouts(race) {
+      // ----------------------------------
+      // NetKeiba本物 JRA 2026年 G1 払戻金データベース
+      // ----------------------------------
+      
+
+function hydratePayouts(race) {
         if (race.hydratedPayouts) return race.hydratedPayouts;
 
+        // 本物データベース PAYOUTS_DATA から完全に引っ張る
         if (PAYOUTS_DATA[race.id]) {
           race.hydratedPayouts = PAYOUTS_DATA[race.id];
           return race.hydratedPayouts;
         }
 
+        // バックアップ用自動算出（upcomingなどの場合）
         const results = hydrateRaceResults(race);
         const r1 = results[0];
         const r2 = results[1];
@@ -53365,6 +54476,594 @@
       // ----------------------------------
       // レース詳細モーダルの表示
       // ----------------------------------
+      
+
+
+      // ==============================================
+      // 画面切り替え（SPAルーティング）
+      // ==============================================
+      function switchView(target) {
+        if (typeof document === 'undefined') return;
+        const viewCalendar = document.getElementById('view-calendar');
+        const viewPrediction = document.getElementById('view-prediction');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        navItems.forEach(item => {
+          if (item.getAttribute('data-target') === target) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+
+        if (target === 'prediction') {
+          if (viewCalendar) viewCalendar.style.display = 'none';
+          if (viewPrediction) {
+            viewPrediction.style.display = 'block';
+            renderPredictionView();
+          }
+          if (typeof window !== 'undefined' && window.scrollTo) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        } else {
+          if (viewCalendar) viewCalendar.style.display = 'block';
+          if (viewPrediction) viewPrediction.style.display = 'none';
+          if (typeof window !== 'undefined' && window.scrollTo) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        }
+      }
+
+      // ==============================================
+      // 予想ページ レンダリング ＆ ロジック
+      // ==============================================
+      let predictionSortType = 'gate';
+      const MARK_CYCLE = ['未', '◎', '○', '▲', '△', '☆', '消'];
+      const MARK_CLASSES = {
+        '◎': 'mark-honmei',
+        '○': 'mark-taiko',
+        '▲': 'mark-tanana',
+        '△': 'mark-renka',
+        '☆': 'mark-ana',
+        '消': 'mark-keshi'
+      };
+
+      function getUserMarks() {
+        if (typeof localStorage === 'undefined') return {};
+        try {
+          return JSON.parse(localStorage.getItem('keiba_marks_16')) || {};
+        } catch (e) {
+          return {};
+        }
+      }
+
+      function setUserMark(gate, mark) {
+        const marks = getUserMarks();
+        if (mark === '未' || !mark) {
+          delete marks[gate];
+        } else {
+          marks[gate] = mark;
+        }
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('keiba_marks_16', JSON.stringify(marks));
+        }
+        updateMarksUI();
+      }
+
+      function updateMarksUI() {
+        if (typeof document === 'undefined') return;
+        const marks = getUserMarks();
+        
+        document.querySelectorAll('.mark-btn[data-gate]').forEach(btn => {
+          const g = btn.getAttribute('data-gate');
+          const m = marks[g] || '未';
+          btn.innerText = m;
+          btn.className = 'mark-btn';
+          if (MARK_CLASSES[m]) {
+            btn.classList.add(MARK_CLASSES[m]);
+          }
+        });
+
+        const starters = PREDICTION_DATA.starters;
+        const summaryMap = { '◎': [], '○': [], '▲': [], '△': [], '☆': [] };
+
+        Object.keys(marks).forEach(g => {
+          const m = marks[g];
+          const s = starters.find(x => String(x.gate) === String(g));
+          if (s && summaryMap[m]) {
+            summaryMap[m].push(`${s.gate} ${s.horseName}`);
+          }
+        });
+
+        const elH = document.getElementById('summary-honmei');
+        const elT = document.getElementById('summary-taiko');
+        const elA = document.getElementById('summary-tanana');
+        const elR = document.getElementById('summary-renka');
+        const elAn = document.getElementById('summary-ana');
+
+        if (elH) elH.innerText = summaryMap['◎'].join(', ') || '未選択';
+        if (elT) elT.innerText = summaryMap['○'].join(', ') || '未選択';
+        if (elA) elA.innerText = summaryMap['▲'].join(', ') || '未選択';
+        if (elR) elR.innerText = summaryMap['△'].join(', ') || '未選択';
+        if (elAn) elAn.innerText = summaryMap['☆'].join(', ') || '未選択';
+      }
+
+      function showMarkPopover(btn, gate) {
+        if (typeof document === 'undefined') return;
+        const existing = document.getElementById('active-mark-popover');
+        if (existing) existing.remove();
+
+        const popover = document.createElement('div');
+        popover.id = 'active-mark-popover';
+        popover.className = 'mark-popover';
+
+        const rect = btn.getBoundingClientRect();
+        const scrollY = typeof window !== 'undefined' ? window.scrollY : 0;
+        const scrollX = typeof window !== 'undefined' ? window.scrollX : 0;
+        popover.style.top = `${rect.bottom + scrollY + 6}px`;
+        popover.style.left = `${Math.max(10, rect.left + scrollX - 50)}px`;
+
+        MARK_CYCLE.forEach(m => {
+          const item = document.createElement('div');
+          item.className = 'mark-pop-item';
+          item.innerText = m;
+          if (MARK_CLASSES[m]) {
+            item.classList.add(MARK_CLASSES[m]);
+          } else {
+            item.style.background = 'rgba(255,255,255,0.05)';
+            item.style.color = 'var(--text-muted)';
+          }
+          item.addEventListener('click', (e) => {
+            e.stopPropagation();
+            setUserMark(gate, m);
+            popover.remove();
+          });
+          popover.appendChild(item);
+        });
+
+        document.body.appendChild(popover);
+
+        const closeHandler = (e) => {
+          if (!popover.contains(e.target) && e.target !== btn) {
+            popover.remove();
+            document.removeEventListener('click', closeHandler);
+          }
+        };
+        setTimeout(() => document.addEventListener('click', closeHandler), 10);
+      }
+
+      function renderPredictionView() {
+        if (typeof document === 'undefined') return;
+        const container = document.getElementById('view-prediction');
+        if (!container) return;
+
+        renderPredictionStarters();
+        renderPredictionTraining();
+        renderPredictionJockeys();
+        renderPredictionWaku();
+        renderPredictionTrack();
+        renderPredictionTrends();
+        renderPredictionOccult();
+        renderPredictionPace();
+        renderPredictionMemo();
+        updateMarksUI();
+        refreshIcons();
+      }
+
+      function renderPredictionStarters() {
+        if (typeof document === 'undefined') return;
+        const tbody = document.getElementById('pred-starters-tbody');
+        if (!tbody) return;
+
+        let starters = [...PREDICTION_DATA.starters];
+        if (predictionSortType === 'pop') {
+          starters.sort((a, b) => a.pop - b.pop);
+        } else {
+          starters.sort((a, b) => a.gate - b.gate);
+        }
+
+        const marks = getUserMarks();
+        let rowsHtml = '';
+
+        starters.forEach(s => {
+          const m = marks[s.gate] || '未';
+          const mClass = MARK_CLASSES[m] || '';
+          const isPop1 = s.pop === 1;
+
+          rowsHtml += `
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.06); transition: background 0.15s;">
+              <td style="text-align: center;"><span class="waku-badge waku-${s.waku}">${s.waku}</span></td>
+              <td style="text-align: center; font-weight: 700; font-size: 15px; font-family: monospace; color: var(--gold);">${s.gate}</td>
+              <td style="text-align: center;">
+                <span class="mark-btn ${mClass}" data-gate="${s.gate}">${m}</span>
+              </td>
+              <td>
+                <span style="font-weight: 700; font-size: 15px; color: #ffffff;">${s.horseName}</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-left: 6px;">${s.stable}</span>
+              </td>
+              <td style="color: var(--text-secondary);">${s.sexAge}</td>
+              <td style="color: var(--text-secondary); font-family: monospace;">${s.load}kg</td>
+              <td style="font-weight: 600;">${s.jockey}</td>
+              <td style="text-align: right; font-weight: 800; font-size: 15px; font-family: monospace; color: ${isPop1 ? 'var(--gold)' : '#ffffff'};">${s.odds}倍</td>
+              <td style="text-align: right; font-family: monospace; color: var(--text-secondary); font-size: 13px;">${s.placeOdds}</td>
+              <td style="text-align: center;"><span class="pop-badge pop-${s.pop <= 3 ? s.pop : 'other'}">${s.pop}人気</span></td>
+              <td style="text-align: center;"><span class="grade-badge grade-${s.trainingGrade}">${s.trainingGrade}</span></td>
+            </tr>
+          `;
+        });
+
+        tbody.innerHTML = rowsHtml;
+
+        tbody.querySelectorAll('.mark-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const g = btn.getAttribute('data-gate');
+            showMarkPopover(btn, g);
+          });
+        });
+      }
+
+      function renderPredictionTraining() {
+        if (typeof document === 'undefined') return;
+        const grid = document.getElementById('pred-training-grid');
+        if (!grid) return;
+
+        let cardsHtml = '';
+        PREDICTION_DATA.starters.forEach(s => {
+          cardsHtml += `
+            <div class="train-card">
+              <div class="train-card-top">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span class="waku-badge waku-${s.waku}">${s.waku}</span>
+                  <span style="font-weight: 700; font-size: 15px; color: var(--gold); font-family: monospace;">${s.gate}番</span>
+                  <strong style="font-size: 15px; color: #fff;">${s.horseName}</strong>
+                </div>
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span class="grade-badge grade-${s.trainingGrade}">${s.trainingGrade}評価</span>
+                  <span class="mark-btn" data-gate="${s.gate}">未</span>
+                </div>
+              </div>
+
+              <div style="font-size: 12px; color: var(--text-muted); display: flex; gap: 12px;">
+                <span>騎手: ${s.jockey} (${s.load}kg)</span>
+                <span>コース: ${s.trainingCourse}</span>
+              </div>
+
+              <div class="train-clock">
+                ${s.trainingTime}
+              </div>
+
+              <div class="train-comment">
+                "${s.trainingComment}"
+              </div>
+            </div>
+          `;
+        });
+
+        grid.innerHTML = cardsHtml;
+
+        grid.querySelectorAll('.mark-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const g = btn.getAttribute('data-gate');
+            showMarkPopover(btn, g);
+          });
+        });
+      }
+
+      function renderPredictionJockeys() {
+        if (typeof document === 'undefined') return;
+        const container = document.getElementById('pred-jockeys-container');
+        if (!container) return;
+
+        let html = '';
+        PREDICTION_DATA.jockeysCompatibility.forEach(j => {
+          html += `
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 10px;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: 700; font-size: 16px; color: #fff;">${j.jockey}</span>
+                <span style="background: rgba(245, 158, 11, 0.15); border: 1px solid var(--gold); color: var(--gold); padding: 2px 8px; border-radius: 4px; font-weight: 800; font-size: 12px;">${j.rating}</span>
+              </div>
+              <div style="font-size: 13px; color: var(--primary); font-weight: 600;">
+                搭乗馬: ${j.horse} | <span style="color: var(--text-secondary);">${j.switchType}</span>
+              </div>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; background: rgba(0,0,0,0.3); border-radius: 6px; padding: 10px; text-align: center;">
+                <div>
+                  <div style="font-size: 11px; color: var(--text-muted);">東京芝勝率</div>
+                  <div style="font-weight: 800; color: #fff; font-family: monospace; font-size: 14px;">${j.tokyoTurfWinRate}</div>
+                </div>
+                <div>
+                  <div style="font-size: 11px; color: var(--text-muted);">東京芝複勝率</div>
+                  <div style="font-weight: 800; color: var(--primary); font-family: monospace; font-size: 14px;">${j.tokyoTurfTop3Rate}</div>
+                </div>
+                <div>
+                  <div style="font-size: 11px; color: var(--text-muted);">2000m勝率</div>
+                  <div style="font-weight: 800; color: var(--gold); font-family: monospace; font-size: 14px;">${j.distanceWinRate}</div>
+                </div>
+              </div>
+
+              <p style="font-size: 12px; line-height: 1.6; color: var(--text-secondary); margin: 0;">
+                ${j.comment}
+              </p>
+            </div>
+          `;
+        });
+
+        container.innerHTML = html;
+      }
+
+      function renderPredictionWaku() {
+        if (typeof document === 'undefined') return;
+        const tbody = document.getElementById('pred-waku-tbody');
+        if (!tbody) return;
+
+        let html = '';
+        PREDICTION_DATA.wakuAnalysis.stats.forEach(w => {
+          const horses = PREDICTION_DATA.starters
+            .filter(s => s.waku === w.waku)
+            .map(s => `${s.gate}番 ${s.horseName}`)
+            .join(', ');
+
+          html += `
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="text-align: center;"><span class="waku-badge waku-${w.waku}">${w.waku}</span></td>
+              <td style="text-align: center; font-weight: 700; font-family: monospace; color: var(--gold);">${w.winRate}</td>
+              <td style="text-align: center; font-weight: 700; font-family: monospace; color: var(--primary);">${w.top3Rate}</td>
+              <td style="font-weight: 600; color: #fff; font-size: 13px;">${horses}</td>
+              <td style="font-size: 12px; color: var(--text-secondary);">${w.comment}</td>
+            </tr>
+          `;
+        });
+
+        tbody.innerHTML = html;
+      }
+
+      function renderPredictionTrack() {
+        if (typeof document === 'undefined') return;
+        const grid = document.getElementById('pred-track-grid');
+        const detail = document.getElementById('pred-track-detail');
+        if (!grid) return;
+
+        const t = PREDICTION_DATA.trackCondition;
+        grid.innerHTML = `
+          <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px;">
+            <div style="font-size: 11px; color: var(--text-muted);">馬場状態</div>
+            <div style="font-weight: 800; font-size: 16px; color: #fff;">${t.condition}</div>
+          </div>
+          <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px;">
+            <div style="font-size: 11px; color: var(--text-muted);">クッション値</div>
+            <div style="font-weight: 800; font-size: 16px; color: var(--gold); font-family: monospace;">${t.cushionValue}</div>
+          </div>
+          <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px;">
+            <div style="font-size: 11px; color: var(--text-muted);">コース使用</div>
+            <div style="font-weight: 800; font-size: 16px; color: #fff;">${t.courseUsage}</div>
+          </div>
+          <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px;">
+            <div style="font-size: 11px; color: var(--text-muted);">有利ポジション</div>
+            <div style="font-weight: 800; font-size: 16px; color: var(--primary);">${t.bias}</div>
+          </div>
+        `;
+
+        if (detail) {
+          detail.innerText = t.biasDetail;
+        }
+      }
+
+      function renderPredictionTrends() {
+        if (typeof document === 'undefined') return;
+        const grid = document.getElementById('pred-trends-grid');
+        if (!grid) return;
+
+        let html = '';
+        PREDICTION_DATA.raceTrends.forEach(tr => {
+          html += `
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 16px;">
+              <h4 style="color: var(--gold); font-size: 14px; font-weight: 700; margin-bottom: 8px;">📊 ${tr.title}</h4>
+              <p style="font-size: 13px; line-height: 1.6; color: var(--text-secondary); margin: 0;">${tr.content}</p>
+            </div>
+          `;
+        });
+
+        grid.innerHTML = html;
+      }
+
+      function renderPredictionOccult() {
+        if (typeof document === 'undefined') return;
+        const container = document.getElementById('pred-occult-container');
+        if (!container) return;
+
+        let html = '';
+        PREDICTION_DATA.occultSigns.forEach(o => {
+          html += `
+            <div class="occult-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <h4 style="font-size: 15px; font-weight: 700; color: #fff; margin: 0;">${o.title}</h4>
+                <span style="background: rgba(139, 92, 246, 0.2); border: 1px solid #a78bfa; color: #c084fc; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700;">${o.badge}</span>
+              </div>
+              <p style="font-size: 13px; line-height: 1.6; color: var(--text-secondary); margin: 0;">${o.content}</p>
+            </div>
+          `;
+        });
+
+        container.innerHTML = html;
+      }
+
+      function renderPredictionPace() {
+        if (typeof document === 'undefined') return;
+        const label = document.getElementById('pred-pace-label');
+        const desc = document.getElementById('pred-pace-desc');
+        const lanes = document.getElementById('pred-pace-lanes');
+        if (!lanes) return;
+
+        const p = PREDICTION_DATA.paceSimulation;
+        if (label) label.innerText = `想定ペース: ${p.estimatedPace}`;
+        if (desc) desc.innerText = p.paceText;
+
+        let html = '';
+        p.positions.forEach(pos => {
+          html += `
+            <div class="pace-lane">
+              <span class="pace-tag">${pos.label}</span>
+              <span class="pace-horses">${pos.horses}</span>
+            </div>
+          `;
+        });
+
+        lanes.innerHTML = html;
+      }
+
+      function renderPredictionMemo() {
+        if (typeof document === 'undefined') return;
+        const memoInput = document.getElementById('pred-memo-input');
+        if (memoInput && typeof localStorage !== 'undefined') {
+          memoInput.value = localStorage.getItem('keiba_memo_16') || '';
+        }
+      }
+
+      function initPredictionEventListeners() {
+        if (typeof document === 'undefined') return;
+
+        document.querySelectorAll('.nav-item').forEach(item => {
+          item.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = item.getAttribute('data-target');
+            if (target) switchView(target);
+          });
+        });
+
+        const btnBackCal = document.getElementById('btn-back-calendar');
+        if (btnBackCal) {
+          btnBackCal.addEventListener('click', (e) => {
+            e.preventDefault();
+            switchView('calendar');
+          });
+        }
+
+        const heroBanner = document.getElementById('hero-countdown-banner');
+        if (heroBanner) {
+          heroBanner.addEventListener('click', (e) => {
+            if (e.target.closest('#btn-hero-detail')) {
+              e.stopPropagation();
+              openRaceDetail('16');
+              return;
+            }
+            switchView('prediction');
+          });
+        }
+
+        const btnHeroPred = document.getElementById('btn-hero-prediction');
+        if (btnHeroPred) {
+          btnHeroPred.addEventListener('click', (e) => {
+            e.stopPropagation();
+            switchView('prediction');
+          });
+        }
+
+        const btnSortGate = document.getElementById('btn-sort-gate');
+        const btnSortPop = document.getElementById('btn-sort-pop');
+
+        if (btnSortGate && btnSortPop) {
+          btnSortGate.addEventListener('click', () => {
+            btnSortGate.classList.add('active');
+            btnSortPop.classList.remove('active');
+            predictionSortType = 'gate';
+            renderPredictionStarters();
+            updateMarksUI();
+          });
+
+          btnSortPop.addEventListener('click', () => {
+            btnSortPop.classList.add('active');
+            btnSortGate.classList.remove('active');
+            predictionSortType = 'pop';
+            renderPredictionStarters();
+            updateMarksUI();
+          });
+        }
+
+        const btnRefreshOdds = document.getElementById('btn-refresh-odds');
+        if (btnRefreshOdds) {
+          btnRefreshOdds.addEventListener('click', () => {
+            const timeEl = document.getElementById('odds-update-time');
+            const now = new Date();
+            const timeStr = `${now.getFullYear()}/${now.getMonth()+1}/${now.getDate()} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')} JST`;
+            if (timeEl) {
+              timeEl.innerHTML = `<span style="color: var(--primary);">✔ 最新オッズに更新しました (${timeStr})</span>`;
+            }
+          });
+        }
+
+        const memoInput = document.getElementById('pred-memo-input');
+        const saveStatus = document.getElementById('memo-save-status');
+
+        if (memoInput) {
+          memoInput.addEventListener('input', () => {
+            if (typeof localStorage !== 'undefined') {
+              localStorage.setItem('keiba_memo_16', memoInput.value);
+            }
+            if (saveStatus) {
+              saveStatus.innerText = '💾 保存しました';
+              setTimeout(() => {
+                if (saveStatus) saveStatus.innerText = '💾 localStorage自動保存中';
+              }, 1500);
+            }
+          });
+        }
+
+        const btnCopyMemo = document.getElementById('btn-copy-memo');
+        if (btnCopyMemo) {
+          btnCopyMemo.addEventListener('click', () => {
+            const marks = getUserMarks();
+            const starters = PREDICTION_DATA.starters;
+            let summaryText = '【第174回 天皇賞（秋） マイ予想】\n';
+            
+            ['◎', '○', '▲', '△', '☆'].forEach(m => {
+              const matched = [];
+              Object.keys(marks).forEach(g => {
+                if (marks[g] === m) {
+                  const s = starters.find(x => String(x.gate) === String(g));
+                  if (s) matched.push(`${s.gate}番 ${s.horseName}`);
+                }
+              });
+              if (matched.length > 0) {
+                summaryText += `${m} ${matched.join(', ')}\n`;
+              }
+            });
+
+            const memoVal = memoInput ? memoInput.value : '';
+            if (memoVal) {
+              summaryText += `\n【買い目・検討メモ】\n${memoVal}\n`;
+            }
+
+            if (typeof navigator !== 'undefined' && navigator.clipboard) {
+              navigator.clipboard.writeText(summaryText).then(() => {
+                alert('マイ予想とメモをクリップボードにコピーしました！');
+              }).catch(() => {
+                prompt('以下をコピーしてください:', summaryText);
+              });
+            } else {
+              prompt('以下をコピーしてください:', summaryText);
+            }
+          });
+        }
+
+        const btnClearMemo = document.getElementById('btn-clear-memo');
+        if (btnClearMemo) {
+          btnClearMemo.addEventListener('click', () => {
+            if (confirm('印とメモをすべてリセットしますか？')) {
+              if (typeof localStorage !== 'undefined') {
+                localStorage.removeItem('keiba_marks_16');
+                localStorage.removeItem('keiba_memo_16');
+              }
+              if (memoInput) memoInput.value = '';
+              updateMarksUI();
+            }
+          });
+        }
+      }
+
+
+
       function openRaceDetail(id) {
         if (typeof document === 'undefined') return;
         const race = G1_RACES.find(r => r.id === id);
@@ -53384,7 +55083,6 @@
           weekday: 'short'
         });
 
-        // 過去10年の結果HTMLを生成（開催済・予定どちらでも参照可能にする）
         let historyTableRows = '';
         const historyData = HISTORICAL_DATA[id] || [];
         const fullHistoryMap = (typeof HISTORICAL_FULL_RESULTS !== 'undefined' ? HISTORICAL_FULL_RESULTS[id] : null) || {};
@@ -53396,7 +55094,6 @@
           let fullRowsHtml = '';
           if (fullList.length > 0) {
             fullList.forEach(m => {
-              let rankBadge = m.rank;
               let rankClass = 'rank-other';
               if (m.rank === 1) rankClass = 'rank-1';
               else if (m.rank === 2) rankClass = 'rank-2';
@@ -53464,7 +55161,6 @@
         });
 
         const entries = (typeof ENTRIES_DATA !== 'undefined' ? ENTRIES_DATA[id] : null) || null;
-
         let innerHTML = '';
 
         if (race.status === 'finished') {
@@ -53622,7 +55318,6 @@
           `;
 
         } else if (entries && entries.length > 0) {
-          // 枠順確定済みの今後のレース
           let entriesTableRows = '';
           entries.forEach(e => {
             entriesTableRows += `
@@ -53652,6 +55347,16 @@
             </div>
 
             <div id="modal-tab-content-entries" class="modal-tab-content">
+              <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.15)); border: 1px solid var(--primary); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--text-secondary);">
+                  <i data-lucide="target" style="width: 20px; height: 20px; color: var(--gold); flex-shrink: 0;"></i>
+                  <span><strong>調教時計・騎手相性・オカルト・馬名横印付け・リアルタイムオッズ</strong>を備えた特設予想シートを公開中！</span>
+                </div>
+                <button id="btn-modal-to-pred" style="background: var(--gold); color: #111; border: none; border-radius: 6px; padding: 8px 16px; font-weight: 800; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);">
+                  🎯 予想・攻略分析ページを開く →
+                </button>
+              </div>
+
               <div class="detail-meta-list" style="margin-bottom: 16px;">
                 <div class="detail-meta-item">
                   <span class="detail-meta-label">発走日時</span>
@@ -53665,11 +55370,6 @@
                   <span class="detail-meta-label">枠順ステータス</span>
                   <span class="detail-meta-value" style="color: var(--primary); font-weight: 700;">確定 (全${entries.length}頭)</span>
                 </div>
-              </div>
-
-              <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--text-secondary);">
-                <i data-lucide="check-circle" style="width: 18px; height: 18px; color: var(--primary); flex-shrink: 0;"></i>
-                <span>JRA公式枠順が確定しました。発走前まで「過去10年の結果」タブで過去の優勝馬データ・全頭傾向もあわせてご覧いただけます。</span>
               </div>
 
               <h3 class="detail-section-title">出馬表・枠順一覧</h3>
@@ -53734,7 +55434,6 @@
           `;
 
         } else {
-          // 枠順未定の今後のレース
           innerHTML = `
             <div class="modal-tabs" style="display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
               <button class="modal-tab-btn active" data-tab="overview" style="background: none; border: none; color: var(--gold); border-bottom: 2px solid var(--gold); padding: 8px 16px; font-weight: bold; cursor: pointer; transition: all 0.2s;">
@@ -53792,8 +55491,15 @@
         if (body) body.innerHTML = innerHTML;
         if (modal) modal.classList.add('active');
         
-        // タブ切り替えのイベントリスナー設定
         if (modal) {
+          const btnModalPred = modal.querySelector('#btn-modal-to-pred');
+          if (btnModalPred) {
+            btnModalPred.addEventListener('click', () => {
+              closeModal();
+              switchView('prediction');
+            });
+          }
+
           const modalTabs = modal.querySelectorAll('.modal-tab-btn');
           modalTabs.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -53817,7 +55523,6 @@
             });
           });
           
-          // アコーディオン展開イベントリスナー
           const yearRows = modal.querySelectorAll('.history-year-row');
           yearRows.forEach(row => {
             row.addEventListener('click', () => {
@@ -53856,9 +55561,6 @@
         return m > 0 ? `${m}:${s.padStart(4, '0')}` : `${s}`;
       }
 
-      // ----------------------------------
-      // イベントリスナー
-      // ----------------------------------
       function initEventListeners() {
         if (typeof document === 'undefined') return;
         const tabBtns = document.querySelectorAll('.tab-btn');
@@ -53898,6 +55600,7 @@
           if (backdrop) backdrop.addEventListener('click', closeModal);
         }
       }
+
     </script>
   </body>
 </html>

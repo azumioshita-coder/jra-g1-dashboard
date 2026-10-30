@@ -980,3 +980,1635 @@ body {
 .waku-6 { background-color: #38a169; color: #ffffff; }
 .waku-7 { background-color: #dd6b20; color: #ffffff; }
 .waku-8 { background-color: #ed64a6; color: #ffffff; }
+
+
+
+      /* ----------------------------------
+         予想・攻略ページ 専用スタイル
+      ---------------------------------- */
+      .app-view {
+        animation: fadeIn 0.25s ease-out;
+      }
+      
+      /* NEXT G1 バナーのクリッカブル装飾 */
+      .countdown-section {
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      }
+      .countdown-section:hover {
+        transform: translateY(-2px);
+        border-color: rgba(245, 158, 11, 0.4);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(245, 158, 11, 0.15);
+      }
+      .btn-hero-action {
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .btn-hero-action:hover {
+        transform: translateY(-2px);
+        filter: brightness(1.1);
+      }
+
+      /* 予想ページ ヘッダー */
+      .pred-header-card {
+        background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent 60%),
+                    radial-gradient(circle at 10% 80%, rgba(245, 158, 11, 0.08), transparent 50%),
+                    var(--bg-surface);
+        border: 1px solid var(--border-color);
+        border-radius: 16px;
+        padding: 28px;
+        margin-bottom: 24px;
+        position: relative;
+        overflow: hidden;
+      }
+      .pred-breadcrumb {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        color: var(--text-muted);
+        margin-bottom: 12px;
+      }
+      .pred-breadcrumb a {
+        color: var(--primary);
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .pred-breadcrumb a:hover {
+        text-decoration: underline;
+      }
+      .pred-title-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .pred-title {
+        font-family: var(--font-display);
+        font-size: 26px;
+        font-weight: 800;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .pred-meta-chips {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+      .pred-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 5px 12px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-color);
+        font-size: 13px;
+        color: var(--text-secondary);
+      }
+
+      /* サブナビゲーションバー（アンカージャンプ） */
+      .pred-subnav {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding: 10px 0;
+        margin-bottom: 24px;
+        border-bottom: 1px solid var(--border-color);
+        scrollbar-width: none;
+      }
+      .pred-subnav::-webkit-scrollbar {
+        display: none;
+      }
+      .pred-nav-btn {
+        padding: 8px 16px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-color);
+        color: var(--text-secondary);
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all 0.2s;
+        text-decoration: none;
+      }
+      .pred-nav-btn:hover {
+        background: rgba(16, 185, 129, 0.15);
+        border-color: var(--primary);
+        color: #ffffff;
+      }
+
+      /* セクション共通 */
+      .pred-section {
+        background: var(--bg-surface);
+        border: 1px solid var(--border-color);
+        border-radius: 14px;
+        padding: 24px;
+        margin-bottom: 24px;
+      }
+      .pred-section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 18px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .pred-section-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .pred-section-title i {
+        color: var(--gold);
+      }
+
+      /* 印セレクター */
+      .mark-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+        font-weight: 800;
+        font-size: 14px;
+        cursor: pointer;
+        border: 1px dashed rgba(255, 255, 255, 0.25);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text-muted);
+        transition: all 0.18s;
+        user-select: none;
+      }
+      .mark-btn:hover {
+        border-color: var(--gold);
+        color: #fff;
+        transform: scale(1.1);
+      }
+      .mark-btn.mark-honmei {
+        background: linear-gradient(135deg, #ef4444, #b91c1c);
+        color: #ffffff;
+        border: 1px solid #f87171;
+        box-shadow: 0 2px 8px rgba(239, 68, 68, 0.5);
+      }
+      .mark-btn.mark-taiko {
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        color: #ffffff;
+        border: 1px solid #60a5fa;
+        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.5);
+      }
+      .mark-btn.mark-tanana {
+        background: linear-gradient(135deg, #10b981, #047857);
+        color: #ffffff;
+        border: 1px solid #34d399;
+        box-shadow: 0 2px 8px rgba(16, 185, 129, 0.5);
+      }
+      .mark-btn.mark-renka {
+        background: linear-gradient(135deg, #f59e0b, #b45309);
+        color: #ffffff;
+        border: 1px solid #fbbf24;
+        box-shadow: 0 2px 8px rgba(245, 158, 11, 0.5);
+      }
+      .mark-btn.mark-ana {
+        background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+        color: #ffffff;
+        border: 1px solid #a78bfa;
+        box-shadow: 0 2px 8px rgba(139, 92, 246, 0.5);
+      }
+      .mark-btn.mark-keshi {
+        background: rgba(100, 116, 139, 0.3);
+        color: #94a3b8;
+        border: 1px solid rgba(148, 163, 184, 0.3);
+        text-decoration: line-through;
+      }
+
+      /* 印ポップオーバー */
+      .mark-popover {
+        position: fixed;
+        z-index: 10000;
+        display: flex;
+        gap: 6px;
+        background: #111b17;
+        border: 1px solid var(--border-hover);
+        border-radius: 8px;
+        padding: 8px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.85);
+      }
+      .mark-pop-item {
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform 0.15s;
+      }
+      .mark-pop-item:hover {
+        transform: scale(1.15);
+      }
+
+      /* 調教評価バッジ */
+      .grade-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-weight: 800;
+        font-size: 12px;
+      }
+      .grade-S { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; box-shadow: 0 0 10px rgba(245, 158, 11, 0.4); }
+      .grade-A { background: linear-gradient(135deg, #10b981, #059669); color: #fff; }
+      .grade-B\+ { background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; }
+      .grade-B { background: rgba(255, 255, 255, 0.1); color: var(--text-secondary); }
+
+      /* 人気バッジ */
+      .pop-badge {
+        display: inline-block;
+        padding: 2px 7px;
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 700;
+      }
+      .pop-1 { background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); }
+      .pop-2 { background: rgba(59, 130, 246, 0.2); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.4); }
+      .pop-3 { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
+      .pop-other { background: rgba(255, 255, 255, 0.05); color: var(--text-muted); }
+
+      /* ソートボタン */
+      .btn-sort {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-color);
+        color: var(--text-muted);
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .btn-sort.active {
+        background: var(--gold);
+        border-color: var(--gold);
+        color: #111;
+        font-weight: 700;
+      }
+
+      /* 調教カードグリッド */
+      .training-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: 16px;
+      }
+      .train-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: all 0.2s;
+      }
+      .train-card:hover {
+        border-color: var(--border-hover);
+        background: var(--bg-card-hover);
+        transform: translateY(-2px);
+      }
+      .train-card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .train-clock {
+        background: rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-family: monospace;
+        font-size: 13px;
+        color: var(--gold);
+      }
+      .train-comment {
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        border-left: 2px solid var(--primary);
+        padding-left: 10px;
+        margin-top: 4px;
+      }
+
+      /* オカルトカード */
+      .occult-card {
+        background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.08), transparent 70%), var(--bg-card);
+        border: 1px solid rgba(139, 92, 246, 0.25);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 14px;
+        transition: border-color 0.2s;
+      }
+      .occult-card:hover {
+        border-color: rgba(139, 92, 246, 0.55);
+      }
+
+      /* 隊列マップ */
+      .pace-lane {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.02);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 6px;
+        margin-bottom: 6px;
+      }
+      .pace-tag {
+        min-width: 110px;
+        font-weight: 700;
+        font-size: 13px;
+        color: var(--gold);
+      }
+      .pace-horses {
+        font-size: 14px;
+        color: var(--text-primary);
+        font-weight: 600;
+      }
+
+      /* マイ予想サマリー */
+      .my-summary-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+      .my-summary-card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 10px 14px;
+      }
+      .my-summary-name {
+        font-weight: 700;
+        font-size: 14px;
+        color: #ffffff;
+      }
+
+      /* メモエリア */
+      .memo-box {
+        width: 100%;
+        min-height: 160px;
+        background: rgba(0, 0, 0, 0.45);
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        padding: 16px;
+        color: var(--text-primary);
+        font-size: 14px;
+        line-height: 1.6;
+        font-family: var(--font-sans);
+        resize: vertical;
+        box-sizing: border-box;
+      }
+      .memo-box:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 2px var(--primary-glow);
+      }
+    
+
+
+      /* ----------------------------------
+         予想・攻略ページ 専用スタイル
+      ---------------------------------- */
+      .app-view {
+        animation: fadeIn 0.25s ease-out;
+      }
+      
+      /* NEXT G1 バナーのクリッカブル装飾 */
+      .countdown-section {
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      }
+      .countdown-section:hover {
+        transform: translateY(-2px);
+        border-color: rgba(245, 158, 11, 0.4);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(245, 158, 11, 0.15);
+      }
+      .btn-hero-action {
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .btn-hero-action:hover {
+        transform: translateY(-2px);
+        filter: brightness(1.1);
+      }
+
+      /* 予想ページ ヘッダー */
+      .pred-header-card {
+        background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent 60%),
+                    radial-gradient(circle at 10% 80%, rgba(245, 158, 11, 0.08), transparent 50%),
+                    var(--bg-surface);
+        border: 1px solid var(--border-color);
+        border-radius: 16px;
+        padding: 28px;
+        margin-bottom: 24px;
+        position: relative;
+        overflow: hidden;
+      }
+      .pred-breadcrumb {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        color: var(--text-muted);
+        margin-bottom: 12px;
+      }
+      .pred-breadcrumb a {
+        color: var(--primary);
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .pred-breadcrumb a:hover {
+        text-decoration: underline;
+      }
+      .pred-title-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .pred-title {
+        font-family: var(--font-display);
+        font-size: 26px;
+        font-weight: 800;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .pred-meta-chips {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+      .pred-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 5px 12px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-color);
+        font-size: 13px;
+        color: var(--text-secondary);
+      }
+
+      /* サブナビゲーションバー（アンカージャンプ） */
+      .pred-subnav {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding: 10px 0;
+        margin-bottom: 24px;
+        border-bottom: 1px solid var(--border-color);
+        scrollbar-width: none;
+      }
+      .pred-subnav::-webkit-scrollbar {
+        display: none;
+      }
+      .pred-nav-btn {
+        padding: 8px 16px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-color);
+        color: var(--text-secondary);
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all 0.2s;
+        text-decoration: none;
+      }
+      .pred-nav-btn:hover {
+        background: rgba(16, 185, 129, 0.15);
+        border-color: var(--primary);
+        color: #ffffff;
+      }
+
+      /* セクション共通 */
+      .pred-section {
+        background: var(--bg-surface);
+        border: 1px solid var(--border-color);
+        border-radius: 14px;
+        padding: 24px;
+        margin-bottom: 24px;
+      }
+      .pred-section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 18px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .pred-section-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .pred-section-title i {
+        color: var(--gold);
+      }
+
+      /* 印セレクター */
+      .mark-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+        font-weight: 800;
+        font-size: 14px;
+        cursor: pointer;
+        border: 1px dashed rgba(255, 255, 255, 0.25);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text-muted);
+        transition: all 0.18s;
+        user-select: none;
+      }
+      .mark-btn:hover {
+        border-color: var(--gold);
+        color: #fff;
+        transform: scale(1.1);
+      }
+      .mark-btn.mark-honmei {
+        background: linear-gradient(135deg, #ef4444, #b91c1c);
+        color: #ffffff;
+        border: 1px solid #f87171;
+        box-shadow: 0 2px 8px rgba(239, 68, 68, 0.5);
+      }
+      .mark-btn.mark-taiko {
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        color: #ffffff;
+        border: 1px solid #60a5fa;
+        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.5);
+      }
+      .mark-btn.mark-tanana {
+        background: linear-gradient(135deg, #10b981, #047857);
+        color: #ffffff;
+        border: 1px solid #34d399;
+        box-shadow: 0 2px 8px rgba(16, 185, 129, 0.5);
+      }
+      .mark-btn.mark-renka {
+        background: linear-gradient(135deg, #f59e0b, #b45309);
+        color: #ffffff;
+        border: 1px solid #fbbf24;
+        box-shadow: 0 2px 8px rgba(245, 158, 11, 0.5);
+      }
+      .mark-btn.mark-ana {
+        background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+        color: #ffffff;
+        border: 1px solid #a78bfa;
+        box-shadow: 0 2px 8px rgba(139, 92, 246, 0.5);
+      }
+      .mark-btn.mark-keshi {
+        background: rgba(100, 116, 139, 0.3);
+        color: #94a3b8;
+        border: 1px solid rgba(148, 163, 184, 0.3);
+        text-decoration: line-through;
+      }
+
+      /* 印ポップオーバー */
+      .mark-popover {
+        position: fixed;
+        z-index: 10000;
+        display: flex;
+        gap: 6px;
+        background: #111b17;
+        border: 1px solid var(--border-hover);
+        border-radius: 8px;
+        padding: 8px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.85);
+      }
+      .mark-pop-item {
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform 0.15s;
+      }
+      .mark-pop-item:hover {
+        transform: scale(1.15);
+      }
+
+      /* 調教評価バッジ */
+      .grade-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-weight: 800;
+        font-size: 12px;
+      }
+      .grade-S { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; box-shadow: 0 0 10px rgba(245, 158, 11, 0.4); }
+      .grade-A { background: linear-gradient(135deg, #10b981, #059669); color: #fff; }
+      .grade-B\+ { background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; }
+      .grade-B { background: rgba(255, 255, 255, 0.1); color: var(--text-secondary); }
+
+      /* 人気バッジ */
+      .pop-badge {
+        display: inline-block;
+        padding: 2px 7px;
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 700;
+      }
+      .pop-1 { background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); }
+      .pop-2 { background: rgba(59, 130, 246, 0.2); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.4); }
+      .pop-3 { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
+      .pop-other { background: rgba(255, 255, 255, 0.05); color: var(--text-muted); }
+
+      /* ソートボタン */
+      .btn-sort {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-color);
+        color: var(--text-muted);
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .btn-sort.active {
+        background: var(--gold);
+        border-color: var(--gold);
+        color: #111;
+        font-weight: 700;
+      }
+
+      /* 調教カードグリッド */
+      .training-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: 16px;
+      }
+      .train-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: all 0.2s;
+      }
+      .train-card:hover {
+        border-color: var(--border-hover);
+        background: var(--bg-card-hover);
+        transform: translateY(-2px);
+      }
+      .train-card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .train-clock {
+        background: rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-family: monospace;
+        font-size: 13px;
+        color: var(--gold);
+      }
+      .train-comment {
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        border-left: 2px solid var(--primary);
+        padding-left: 10px;
+        margin-top: 4px;
+      }
+
+      /* オカルトカード */
+      .occult-card {
+        background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.08), transparent 70%), var(--bg-card);
+        border: 1px solid rgba(139, 92, 246, 0.25);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 14px;
+        transition: border-color 0.2s;
+      }
+      .occult-card:hover {
+        border-color: rgba(139, 92, 246, 0.55);
+      }
+
+      /* 隊列マップ */
+      .pace-lane {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.02);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 6px;
+        margin-bottom: 6px;
+      }
+      .pace-tag {
+        min-width: 110px;
+        font-weight: 700;
+        font-size: 13px;
+        color: var(--gold);
+      }
+      .pace-horses {
+        font-size: 14px;
+        color: var(--text-primary);
+        font-weight: 600;
+      }
+
+      /* マイ予想サマリー */
+      .my-summary-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+      .my-summary-card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 10px 14px;
+      }
+      .my-summary-name {
+        font-weight: 700;
+        font-size: 14px;
+        color: #ffffff;
+      }
+
+      /* メモエリア */
+      .memo-box {
+        width: 100%;
+        min-height: 160px;
+        background: rgba(0, 0, 0, 0.45);
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        padding: 16px;
+        color: var(--text-primary);
+        font-size: 14px;
+        line-height: 1.6;
+        font-family: var(--font-sans);
+        resize: vertical;
+        box-sizing: border-box;
+      }
+      .memo-box:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 2px var(--primary-glow);
+      }
+    
+
+
+      /* ----------------------------------
+         予想・攻略ページ 専用スタイル
+      ---------------------------------- */
+      .app-view {
+        animation: fadeIn 0.25s ease-out;
+      }
+      
+      /* NEXT G1 バナーのクリッカブル装飾 */
+      .countdown-section {
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      }
+      .countdown-section:hover {
+        transform: translateY(-2px);
+        border-color: rgba(245, 158, 11, 0.4);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(245, 158, 11, 0.15);
+      }
+      .btn-hero-action {
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .btn-hero-action:hover {
+        transform: translateY(-2px);
+        filter: brightness(1.1);
+      }
+
+      /* 予想ページ ヘッダー */
+      .pred-header-card {
+        background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent 60%),
+                    radial-gradient(circle at 10% 80%, rgba(245, 158, 11, 0.08), transparent 50%),
+                    var(--bg-surface);
+        border: 1px solid var(--border-color);
+        border-radius: 16px;
+        padding: 28px;
+        margin-bottom: 24px;
+        position: relative;
+        overflow: hidden;
+      }
+      .pred-breadcrumb {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        color: var(--text-muted);
+        margin-bottom: 12px;
+      }
+      .pred-breadcrumb a {
+        color: var(--primary);
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .pred-breadcrumb a:hover {
+        text-decoration: underline;
+      }
+      .pred-title-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .pred-title {
+        font-family: var(--font-display);
+        font-size: 26px;
+        font-weight: 800;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .pred-meta-chips {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+      .pred-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 5px 12px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-color);
+        font-size: 13px;
+        color: var(--text-secondary);
+      }
+
+      /* サブナビゲーションバー（アンカージャンプ） */
+      .pred-subnav {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding: 10px 0;
+        margin-bottom: 24px;
+        border-bottom: 1px solid var(--border-color);
+        scrollbar-width: none;
+      }
+      .pred-subnav::-webkit-scrollbar {
+        display: none;
+      }
+      .pred-nav-btn {
+        padding: 8px 16px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-color);
+        color: var(--text-secondary);
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all 0.2s;
+        text-decoration: none;
+      }
+      .pred-nav-btn:hover {
+        background: rgba(16, 185, 129, 0.15);
+        border-color: var(--primary);
+        color: #ffffff;
+      }
+
+      /* セクション共通 */
+      .pred-section {
+        background: var(--bg-surface);
+        border: 1px solid var(--border-color);
+        border-radius: 14px;
+        padding: 24px;
+        margin-bottom: 24px;
+      }
+      .pred-section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 18px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .pred-section-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .pred-section-title i {
+        color: var(--gold);
+      }
+
+      /* 印セレクター */
+      .mark-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+        font-weight: 800;
+        font-size: 14px;
+        cursor: pointer;
+        border: 1px dashed rgba(255, 255, 255, 0.25);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text-muted);
+        transition: all 0.18s;
+        user-select: none;
+      }
+      .mark-btn:hover {
+        border-color: var(--gold);
+        color: #fff;
+        transform: scale(1.1);
+      }
+      .mark-btn.mark-honmei {
+        background: linear-gradient(135deg, #ef4444, #b91c1c);
+        color: #ffffff;
+        border: 1px solid #f87171;
+        box-shadow: 0 2px 8px rgba(239, 68, 68, 0.5);
+      }
+      .mark-btn.mark-taiko {
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        color: #ffffff;
+        border: 1px solid #60a5fa;
+        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.5);
+      }
+      .mark-btn.mark-tanana {
+        background: linear-gradient(135deg, #10b981, #047857);
+        color: #ffffff;
+        border: 1px solid #34d399;
+        box-shadow: 0 2px 8px rgba(16, 185, 129, 0.5);
+      }
+      .mark-btn.mark-renka {
+        background: linear-gradient(135deg, #f59e0b, #b45309);
+        color: #ffffff;
+        border: 1px solid #fbbf24;
+        box-shadow: 0 2px 8px rgba(245, 158, 11, 0.5);
+      }
+      .mark-btn.mark-ana {
+        background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+        color: #ffffff;
+        border: 1px solid #a78bfa;
+        box-shadow: 0 2px 8px rgba(139, 92, 246, 0.5);
+      }
+      .mark-btn.mark-keshi {
+        background: rgba(100, 116, 139, 0.3);
+        color: #94a3b8;
+        border: 1px solid rgba(148, 163, 184, 0.3);
+        text-decoration: line-through;
+      }
+
+      /* 印ポップオーバー */
+      .mark-popover {
+        position: fixed;
+        z-index: 10000;
+        display: flex;
+        gap: 6px;
+        background: #111b17;
+        border: 1px solid var(--border-hover);
+        border-radius: 8px;
+        padding: 8px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.85);
+      }
+      .mark-pop-item {
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform 0.15s;
+      }
+      .mark-pop-item:hover {
+        transform: scale(1.15);
+      }
+
+      /* 調教評価バッジ */
+      .grade-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-weight: 800;
+        font-size: 12px;
+      }
+      .grade-S { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; box-shadow: 0 0 10px rgba(245, 158, 11, 0.4); }
+      .grade-A { background: linear-gradient(135deg, #10b981, #059669); color: #fff; }
+      .grade-B\+ { background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; }
+      .grade-B { background: rgba(255, 255, 255, 0.1); color: var(--text-secondary); }
+
+      /* 人気バッジ */
+      .pop-badge {
+        display: inline-block;
+        padding: 2px 7px;
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 700;
+      }
+      .pop-1 { background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); }
+      .pop-2 { background: rgba(59, 130, 246, 0.2); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.4); }
+      .pop-3 { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
+      .pop-other { background: rgba(255, 255, 255, 0.05); color: var(--text-muted); }
+
+      /* ソートボタン */
+      .btn-sort {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-color);
+        color: var(--text-muted);
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .btn-sort.active {
+        background: var(--gold);
+        border-color: var(--gold);
+        color: #111;
+        font-weight: 700;
+      }
+
+      /* 調教カードグリッド */
+      .training-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: 16px;
+      }
+      .train-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: all 0.2s;
+      }
+      .train-card:hover {
+        border-color: var(--border-hover);
+        background: var(--bg-card-hover);
+        transform: translateY(-2px);
+      }
+      .train-card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .train-clock {
+        background: rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-family: monospace;
+        font-size: 13px;
+        color: var(--gold);
+      }
+      .train-comment {
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        border-left: 2px solid var(--primary);
+        padding-left: 10px;
+        margin-top: 4px;
+      }
+
+      /* オカルトカード */
+      .occult-card {
+        background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.08), transparent 70%), var(--bg-card);
+        border: 1px solid rgba(139, 92, 246, 0.25);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 14px;
+        transition: border-color 0.2s;
+      }
+      .occult-card:hover {
+        border-color: rgba(139, 92, 246, 0.55);
+      }
+
+      /* 隊列マップ */
+      .pace-lane {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.02);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 6px;
+        margin-bottom: 6px;
+      }
+      .pace-tag {
+        min-width: 110px;
+        font-weight: 700;
+        font-size: 13px;
+        color: var(--gold);
+      }
+      .pace-horses {
+        font-size: 14px;
+        color: var(--text-primary);
+        font-weight: 600;
+      }
+
+      /* マイ予想サマリー */
+      .my-summary-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+      .my-summary-card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 10px 14px;
+      }
+      .my-summary-name {
+        font-weight: 700;
+        font-size: 14px;
+        color: #ffffff;
+      }
+
+      /* メモエリア */
+      .memo-box {
+        width: 100%;
+        min-height: 160px;
+        background: rgba(0, 0, 0, 0.45);
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        padding: 16px;
+        color: var(--text-primary);
+        font-size: 14px;
+        line-height: 1.6;
+        font-family: var(--font-sans);
+        resize: vertical;
+        box-sizing: border-box;
+      }
+      .memo-box:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 2px var(--primary-glow);
+      }
+
+
+
+      /* ----------------------------------
+         予想・攻略ページ 専用スタイル
+      ---------------------------------- */
+      .app-view {
+        animation: fadeIn 0.25s ease-out;
+      }
+      
+      /* NEXT G1 バナーのクリッカブル装飾 */
+      .countdown-section {
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      }
+      .countdown-section:hover {
+        transform: translateY(-2px);
+        border-color: rgba(245, 158, 11, 0.4);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(245, 158, 11, 0.15);
+      }
+      .btn-hero-action {
+        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .btn-hero-action:hover {
+        transform: translateY(-2px);
+        filter: brightness(1.1);
+      }
+
+      /* 予想ページ ヘッダー */
+      .pred-header-card {
+        background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent 60%),
+                    radial-gradient(circle at 10% 80%, rgba(245, 158, 11, 0.08), transparent 50%),
+                    var(--bg-surface);
+        border: 1px solid var(--border-color);
+        border-radius: 16px;
+        padding: 28px;
+        margin-bottom: 24px;
+        position: relative;
+        overflow: hidden;
+      }
+      .pred-breadcrumb {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        color: var(--text-muted);
+        margin-bottom: 12px;
+      }
+      .pred-breadcrumb a {
+        color: var(--primary);
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .pred-breadcrumb a:hover {
+        text-decoration: underline;
+      }
+      .pred-title-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .pred-title {
+        font-family: var(--font-display);
+        font-size: 26px;
+        font-weight: 800;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .pred-meta-chips {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+      .pred-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 5px 12px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-color);
+        font-size: 13px;
+        color: var(--text-secondary);
+      }
+
+      /* サブナビゲーションバー（アンカージャンプ） */
+      .pred-subnav {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding: 10px 0;
+        margin-bottom: 24px;
+        border-bottom: 1px solid var(--border-color);
+        scrollbar-width: none;
+      }
+      .pred-subnav::-webkit-scrollbar {
+        display: none;
+      }
+      .pred-nav-btn {
+        padding: 8px 16px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-color);
+        color: var(--text-secondary);
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all 0.2s;
+        text-decoration: none;
+      }
+      .pred-nav-btn:hover {
+        background: rgba(16, 185, 129, 0.15);
+        border-color: var(--primary);
+        color: #ffffff;
+      }
+
+      /* セクション共通 */
+      .pred-section {
+        background: var(--bg-surface);
+        border: 1px solid var(--border-color);
+        border-radius: 14px;
+        padding: 24px;
+        margin-bottom: 24px;
+      }
+      .pred-section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 18px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .pred-section-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .pred-section-title i {
+        color: var(--gold);
+      }
+
+      /* 印セレクター */
+      .mark-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+        font-weight: 800;
+        font-size: 14px;
+        cursor: pointer;
+        border: 1px dashed rgba(255, 255, 255, 0.25);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text-muted);
+        transition: all 0.18s;
+        user-select: none;
+      }
+      .mark-btn:hover {
+        border-color: var(--gold);
+        color: #fff;
+        transform: scale(1.1);
+      }
+      .mark-btn.mark-honmei {
+        background: linear-gradient(135deg, #ef4444, #b91c1c);
+        color: #ffffff;
+        border: 1px solid #f87171;
+        box-shadow: 0 2px 8px rgba(239, 68, 68, 0.5);
+      }
+      .mark-btn.mark-taiko {
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        color: #ffffff;
+        border: 1px solid #60a5fa;
+        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.5);
+      }
+      .mark-btn.mark-tanana {
+        background: linear-gradient(135deg, #10b981, #047857);
+        color: #ffffff;
+        border: 1px solid #34d399;
+        box-shadow: 0 2px 8px rgba(16, 185, 129, 0.5);
+      }
+      .mark-btn.mark-renka {
+        background: linear-gradient(135deg, #f59e0b, #b45309);
+        color: #ffffff;
+        border: 1px solid #fbbf24;
+        box-shadow: 0 2px 8px rgba(245, 158, 11, 0.5);
+      }
+      .mark-btn.mark-ana {
+        background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+        color: #ffffff;
+        border: 1px solid #a78bfa;
+        box-shadow: 0 2px 8px rgba(139, 92, 246, 0.5);
+      }
+      .mark-btn.mark-keshi {
+        background: rgba(100, 116, 139, 0.3);
+        color: #94a3b8;
+        border: 1px solid rgba(148, 163, 184, 0.3);
+        text-decoration: line-through;
+      }
+
+      /* 印ポップオーバー */
+      .mark-popover {
+        position: fixed;
+        z-index: 10000;
+        display: flex;
+        gap: 6px;
+        background: #111b17;
+        border: 1px solid var(--border-hover);
+        border-radius: 8px;
+        padding: 8px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.85);
+      }
+      .mark-pop-item {
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform 0.15s;
+      }
+      .mark-pop-item:hover {
+        transform: scale(1.15);
+      }
+
+      /* 調教評価バッジ */
+      .grade-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-weight: 800;
+        font-size: 12px;
+      }
+      .grade-S { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; box-shadow: 0 0 10px rgba(245, 158, 11, 0.4); }
+      .grade-A { background: linear-gradient(135deg, #10b981, #059669); color: #fff; }
+      .grade-B\+ { background: linear-gradient(135deg, #3b82f6, #2563eb); color: #fff; }
+      .grade-B { background: rgba(255, 255, 255, 0.1); color: var(--text-secondary); }
+
+      /* 人気バッジ */
+      .pop-badge {
+        display: inline-block;
+        padding: 2px 7px;
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 700;
+      }
+      .pop-1 { background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); }
+      .pop-2 { background: rgba(59, 130, 246, 0.2); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.4); }
+      .pop-3 { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
+      .pop-other { background: rgba(255, 255, 255, 0.05); color: var(--text-muted); }
+
+      /* ソートボタン */
+      .btn-sort {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-color);
+        color: var(--text-muted);
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .btn-sort.active {
+        background: var(--gold);
+        border-color: var(--gold);
+        color: #111;
+        font-weight: 700;
+      }
+
+      /* 調教カードグリッド */
+      .training-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: 16px;
+      }
+      .train-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: all 0.2s;
+      }
+      .train-card:hover {
+        border-color: var(--border-hover);
+        background: var(--bg-card-hover);
+        transform: translateY(-2px);
+      }
+      .train-card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .train-clock {
+        background: rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-family: monospace;
+        font-size: 13px;
+        color: var(--gold);
+      }
+      .train-comment {
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        border-left: 2px solid var(--primary);
+        padding-left: 10px;
+        margin-top: 4px;
+      }
+
+      /* オカルトカード */
+      .occult-card {
+        background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.08), transparent 70%), var(--bg-card);
+        border: 1px solid rgba(139, 92, 246, 0.25);
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 14px;
+        transition: border-color 0.2s;
+      }
+      .occult-card:hover {
+        border-color: rgba(139, 92, 246, 0.55);
+      }
+
+      /* 隊列マップ */
+      .pace-lane {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 12px 16px;
+        background: rgba(255, 255, 255, 0.02);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 6px;
+        margin-bottom: 6px;
+      }
+      .pace-tag {
+        min-width: 110px;
+        font-weight: 700;
+        font-size: 13px;
+        color: var(--gold);
+      }
+      .pace-horses {
+        font-size: 14px;
+        color: var(--text-primary);
+        font-weight: 600;
+      }
+
+      /* マイ予想サマリー */
+      .my-summary-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+      .my-summary-card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 10px 14px;
+      }
+      .my-summary-name {
+        font-weight: 700;
+        font-size: 14px;
+        color: #ffffff;
+      }
+
+      /* メモエリア */
+      .memo-box {
+        width: 100%;
+        min-height: 160px;
+        background: rgba(0, 0, 0, 0.45);
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        padding: 16px;
+        color: var(--text-primary);
+        font-size: 14px;
+        line-height: 1.6;
+        font-family: var(--font-sans);
+        resize: vertical;
+        box-sizing: border-box;
+      }
+      .memo-box:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 2px var(--primary-glow);
+      }

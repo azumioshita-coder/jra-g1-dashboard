@@ -1,5 +1,6 @@
 import { HISTORICAL_FULL_RESULTS } from './historical_results.js';
 import { ENTRIES_DATA } from './entries_data.js';
+import { PREDICTION_DATA } from './prediction_data.js';
 import './style.css';
 
 const G1_RACES = [
@@ -207,7 +208,7 @@ const G1_RACES = [
           third: 'ダノンデサイル', thirdJockey: '横山典弘', thirdGate: 1,
           payouts: { win: 390, trifecta: 1440 }
         },
-                {
+        {
           id: '13',
           name: 'スプリンターズステークス',
           englishName: 'Sprinters Stakes',
@@ -234,7 +235,7 @@ const G1_RACES = [
           status: 'finished',
           weather: '晴',
           trackCondition: '良',
-          cushionValue: '9.7',
+          cushionValue: '9.8',
           type: '3yo-female',
           winner: 'モンローウォーク', winnerJockey: '戸崎圭太', winnerGate: 8, time: '1:56.1',
           second: 'ギャラボーグ', secondJockey: '横山和生', secondGate: 1,
@@ -573,64 +574,10 @@ const RESULTS_DATA = {
           [17, 3, 'シュガークン', '牡5', 58, '吉村誠之', '2:15.3', '3/4', '3-3-5-7', '38.0', '250.2', 17, '522', '+4', '清水久詞 (美浦)'],
           ['中', 15, 'マイユニバース', '牡4', 58, '横山典弘', '-', '-', '10-10-14-18', '-', '19.1', 6, '480', '+12', '武幸四郎 (栗東)']
         ],
-        '13': [
-          [1, 16, 'ピューロマジック', '牝5', 56, '岩田望来', '1:09.2', '-', '1-1', '35.6', '24.5', 9, '464', '+4', '安田翔伍 (栗東)'],
-          [2, 6, 'ワールズエンド', '牡5', 58, '津村明秀', '1:09.2', 'クビ', '3-3', '35.3', '10.7', 5, '472', '+2', '池添学 (栗東)'],
-          [3, 5, 'サウンドモリアーナ', '牝4', 56, '吉田隼人', '1:09.2', 'ハナ', '5-3', '35.2', '27.0', 11, '454', '0', '武英智 (栗東)'],
-          [4, 9, 'スターアニス', '牝3', 54, 'ルメール', '1:09.4', '1.1/4', '10-10', '35.1', '3.7', 1, '484', '+4', '高野友和 (栗東)'],
-          [5, 1, 'レッドモンレーヴ', '牡7', 58, '酒井学', '1:09.6', '1.1/4', '14-14', '35.0', '52.3', 14, '510', '-2', '蛯名正義 (美浦)'],
-          [6, 14, 'ウインカーネリアン', '牡9', 58, '三浦皇成', '1:09.6', 'クビ', '5-3', '35.6', '13.9', 6, '518', '+4', '鹿戸雄一 (美浦)'],
-          [7, 8, 'エーティーマクフィ', '牡7', 58, '富田暁', '1:09.7', 'クビ', '14-14', '35.2', '21.9', 8, '476', '-6', '武英智 (栗東)'],
-          [8, 4, 'ジューンブレア', '牝5', 56, '坂井瑠星', '1:09.7', 'アタマ', '7-8', '35.6', '28.3', 12, '496', '+12', '武英智 (栗東)'],
-          [8, 7, 'ペアポルックス', '牡5', 58, '岩田康誠', '1:09.7', '同着', '3-3', '35.9', '36.7', 13, '482', '+4', '梅田智之 (栗東)'],
-          [10, 3, 'ママコチャ', '牝7', 56, '武豊', '1:09.7', 'ハナ', '7-7', '35.6', '16.1', 7, '500', '-2', '池江泰寿 (栗東)'],
-          [11, 2, 'アイサンサン', '牝4', 56, '幸英明', '1:09.8', '3/4', '10-12', '35.5', '56.1', 15, '454', '-4', '橋田宜長 (栗東)'],
-          [12, 15, 'フリッカージャブ', '牡4', 58, '西村淳也', '1:09.9', '3/4', '2-2', '36.2', '7.7', 3, '504', '-2', '西園翔太 (栗東)'],
-          [13, 10, 'レイピア', '牡4', 58, '横山武史', '1:10.6', '4', '14-12', '36.0', '25.2', 10, '508', '0', '中竹和也 (栗東)'],
-          [14, 11, 'ルガル', '牡6', 58, '鮫島克駿', '1:10.8', '1.1/4', '10-10', '36.5', '9.6', 4, '532', '0', '杉山晴紀 (栗東)'],
-          [15, 13, 'パンジャタワー', '牡4', 58, '松山弘平', '1:11.9', '7', '7-8', '37.8', '3.9', 2, '490', '-4', '橋口慎介 (栗東)'],
-          [16, 12, 'ブラックチャリス', '牝3', 54, '浜中俊', '1:12.6', '4', '13-16', '38.2', '113.6', 16, '464', '-6', '武幸四郎 (栗東)']
-        ],
-        '14': [
-          [1, 8, 'モンローウォーク', '牝3', 55, '戸崎圭太', '1:56.1', '-', '5-5-5-4', '34.5', '1.3', 1, '452', '+2', '上村洋行 (栗東)'],
-          [2, 1, 'ギャラボーグ', '牝3', 55, '横山和生', '1:56.1', 'クビ', '3-2-2-2', '35.2', '36.2', 7, '498', '+8', '杉山晴紀 (栗東)'],
-          [3, 13, 'ドリームコア', '牝3', 55, 'ルメール', '1:56.3', '1.1/4', '15-13-11-11', '34.0', '8.4', 2, '512', '+10', '田中博康 (美浦)'],
-          [4, 4, 'エンネ', '牝3', 55, '坂井瑠星', '1:56.4', '1/2', '7-7-6-6', '34.5', '22.8', 6, '526', '+4', '吉岡辰弥 (栗東)'],
-          [5, 14, 'サムシングスイート', '牝3', 55, '松山弘平', '1:56.5', 'クビ', '16-16-14-13', '33.8', '43.4', 8, '498', '0', '伊藤大士 (美浦)'],
-          [6, 6, 'ラベルセーヌ', '牝3', 55, '荻野極', '1:56.7', '1.1/4', '9-9-8-8', '34.6', '11.0', 3, '432', '-4', '鹿戸雄一 (美浦)'],
-          [7, 15, 'フェスティバルヒル', '牝3', 55, '浜中俊', '1:56.8', '1/2', '17-17-17-15', '33.8', '191.1', 15, '458', '-8', '四位洋文 (栗東)'],
-          [8, 3, 'マスターソアラ', '牝3', 55, '武豊', '1:57.0', '1.1/4', '11-9-8-8', '34.9', '18.9', 5, '492', '0', '蛯名正義 (美浦)'],
-          [9, 16, 'ハヤブササキチャン', '牝3', 55, '吉田隼人', '1:57.3', '2', '12-12-11-12', '35.0', '53.6', 9, '422', '-8', '東田明士 (栗東)'],
-          [10, 5, 'タイセイボーグ', '牝3', 55, '西村淳也', '1:57.4', '3/4', '7-8-8-8', '35.3', '86.2', 12, '496', '-2', '松下武士 (栗東)'],
-          [11, 11, 'ガーネットフレア', '牝3', 55, '北村友一', '1:57.6', '3/4', '3-4-4-4', '36.2', '53.8', 10, '446', '0', '杉山佳明 (栗東)'],
-          [12, 7, 'バースデイフライト', '牝3', 55, '田山旺佑', '1:57.6', 'アタマ', '13-13-13-13', '35.1', '275.3', 16, '458', '-4', '新谷功一 (栗東)'],
-          [13, 12, 'カナルサンマルタン', '牝3', 55, '岩田望来', '1:57.9', '1.3/4', '6-5-6-6', '36.0', '16.9', 4, '460', '+12', '宮田敬介 (美浦)'],
-          [14, 2, 'テイエムアイラン', '牝3', 55, '富田暁', '1:58.0', '3/4', '1-1-1-1', '37.3', '129.5', 13, '420', '+6', '宮地貴稔 (栗東)'],
-          [15, 17, 'ロザーンジュ', '牝3', 55, '今村聖奈', '1:58.8', '5', '13-13-16-16', '35.7', '142.7', 14, '436', '-2', '寺島良 (栗東)'],
-          [16, 10, 'ナイスプレーアスク', '牝3', 55, '岩田康誠', '2:00.0', '7', '2-2-2-3', '39.0', '294.0', 17, '438', '0', '中舘英二 (美浦)'],
-          ['中', 9, 'スウィートハピネス', '牝3', 55, '佐々木大', '', '-', '9-9-14-17', '-', '76.8', 11, '450', '+6', '北出成人 (栗東)']
-        ],
-        '15': [
-          [1, 9, 'ゴーイントゥスカイ', '牡3', 57, '武豊', '3:04.5', '-', '9-9-7-7', '35.4', '12.0', 3, '498', '-4', '上原佑紀 (美浦)'],
-          [2, 6, 'バステール', '牡3', 57, '川田将雅', '3:04.5', 'ハナ', '16-16-16-12', '34.9', '33.8', 8, '464', '-8', '斉藤崇史 (栗東)'],
-          [3, 10, 'ダノンヒストリー', '牡3', 57, 'ルメール', '3:04.6', '1', '6-7-4-3', '35.6', '3.0', 2, '482', '+4', '堀宣行 (美浦)'],
-          [4, 12, 'サノノグレーター', '牡3', 57, '田辺裕信', '3:04.7', '1/2', '12-12-14-16', '35.0', '129.7', 14, '464', '-6', '尾形和幸 (美浦)'],
-          [5, 15, 'シートゥサミット', '牡3', 57, '酒井学', '3:04.8', '3/4', '2-2-2-2', '36.0', '87.5', 12, '520', '-4', '吉岡辰弥 (栗東)'],
-          [6, 16, 'ショウナンハヤナミ', '牡3', 57, '池添謙一', '3:04.9', 'クビ', '17-17-18-14', '35.1', '57.6', 10, '454', '-2', '渡辺薫彦 (栗東)'],
-          [7, 14, 'マジョレルブルー', '牡3', 57, '戸崎圭太', '3:04.9', 'クビ', '8-7-8-7', '35.7', '71.5', 11, '488', '+2', '友道康夫 (栗東)'],
-          [8, 2, 'コンジェスタス', '牡3', 57, '西村淳也', '3:05.0', 'クビ', '9-9-8-7', '35.8', '23.7', 6, '530', '+2', '高野友和 (栗東)'],
-          [9, 3, 'アウダーシア', '牡3', 57, '津村明秀', '3:05.2', '1', '14-14-8-7', '36.1', '22.9', 5, '506', '0', '手塚貴久 (美浦)'],
-          [10, 5, 'ジャスティンシカゴ', '牡3', 57, '原優介', '3:05.4', '1', '6-6-12-12', '36.0', '20.2', 4, '500', '-8', '宮田敬介 (美浦)'],
-          [11, 17, 'チャリングクロス', '牡3', 57, '石川裕紀', '3:05.5', '1/2', '9-9-14-14', '36.0', '203.1', 15, '494', '-12', '奥村武 (美浦)'],
-          [12, 7, 'ラージアンサンブル', '牡3', 57, '坂井瑠星', '3:05.6', '3/4', '5-5-4-3', '36.6', '210.3', 16, '478', '+2', '武井亮 (美浦)'],
-          [13, 1, 'エムズビギン', '牡3', 57, '岩田望来', '3:05.7', '1/2', '18-17-16-18', '35.9', '53.0', 9, '500', '-8', '友道康夫 (栗東)'],
-          [14, 8, 'ロブチェン', '牡3', 57, '松山弘平', '3:05.8', '1', '12-12-8-5', '36.7', '1.8', 1, '514', '-4', '杉山晴紀 (栗東)'],
-          [15, 13, 'キンググローリー', '牡3', 57, '丹内祐次', '3:06.1', '1.1/2', '1-1-1-1', '39.8', '123.3', 13, '466', '0', '古賀慎明 (美浦)'],
-          [16, 18, 'ナリタエスペランサ', '牡3', 57, '北村友一', '3:08.0', '大', '3-3-3-5', '39.0', '237.4', 17, '478', '+8', '福永祐一 (栗東)'],
-          [17, 11, 'アスクエジンバラ', '牡3', 57, '岩田康誠', '3:08.5', '3', '4-4-4-7', '39.4', '32.8', 7, '476', '+6', '福永祐一 (栗東)'],
-          [18, 4, 'ショウナンガルフ', '牡3', 57, '田山旺佑', '3:08.9', '2.1/2', '15-14-12-17', '39.4', '380.5', 18, '478', '+4', '須貝尚介 (栗東)']
-        ],
-      };
+  '13': [[1, 16, "ピューロマジック", "牝5", 56, "岩田望来", "1:09.2", "-", "1-1", "35.6", "24.5", 9, "464", "+4", "安田翔伍 (栗東)"], [2, 6, "ワールズエンド", "牡5", 58, "津村明秀", "1:09.2", "クビ", "3-3", "35.3", "10.7", 5, "472", "+2", "池添学 (栗東)"], [3, 5, "サウンドモリアーナ", "牝4", 56, "吉田隼人", "1:09.2", "ハナ", "5-3", "35.2", "27.0", 11, "454", "0", "武英智 (栗東)"], [4, 9, "スターアニス", "牝3", 54, "ルメール", "1:09.4", "1.1/4", "10-10", "35.1", "3.7", 1, "484", "+4", "高野友和 (栗東)"], [5, 1, "レッドモンレーヴ", "牡7", 58, "酒井学", "1:09.6", "1.1/4", "14-14", "35.0", "52.3", 14, "510", "-2", "蛯名正義 (美浦)"], [6, 14, "ウインカーネリアン", "牡9", 58, "三浦皇成", "1:09.6", "クビ", "5-3", "35.6", "13.9", 6, "518", "+4", "鹿戸雄一 (美浦)"], [7, 8, "エーティーマクフィ", "牡7", 58, "富田暁", "1:09.7", "クビ", "14-14", "35.2", "21.9", 8, "476", "-6", "武英智 (栗東)"], [8, 4, "ジューンブレア", "牝5", 56, "坂井瑠星", "1:09.7", "アタマ", "7-8", "35.6", "28.3", 12, "496", "+12", "武英智 (栗東)"], [8, 7, "ペアポルックス", "牡5", 58, "岩田康誠", "1:09.7", "同着", "3-3", "35.9", "36.7", 13, "482", "+4", "梅田智之 (栗東)"], [10, 3, "ママコチャ", "牝7", 56, "武豊", "1:09.7", "ハナ", "7-7", "35.6", "16.1", 7, "500", "-2", "池江泰寿 (栗東)"], [11, 2, "アイサンサン", "牝4", 56, "幸英明", "1:09.8", "3/4", "10-12", "35.5", "56.1", 15, "454", "-4", "橋田宜長 (栗東)"], [12, 15, "フリッカージャブ", "牡4", 58, "西村淳也", "1:09.9", "3/4", "2-2", "36.2", "7.7", 3, "504", "-2", "西園翔太 (栗東)"], [13, 10, "レイピア", "牡4", 58, "横山武史", "1:10.6", "4", "14-12", "36.0", "25.2", 10, "508", "0", "中竹和也 (栗東)"], [14, 11, "ルガル", "牡6", 58, "鮫島克駿", "1:10.8", "1.1/4", "10-10", "36.5", "9.6", 4, "532", "0", "杉山晴紀 (栗東)"], [15, 13, "パンジャタワー", "牡4", 58, "松山弘平", "1:11.9", "7", "7-8", "37.8", "3.9", 2, "490", "-4", "橋口慎介 (栗東)"], [16, 12, "ブラックチャリス", "牝3", 54, "浜中俊", "1:12.6", "4", "13-16", "38.2", "113.6", 16, "464", "-6", "武幸四郎 (栗東)"]],
+  '14': [[1, 8, "モンローウォーク", "牝3", 55, "戸崎圭太", "1:56.1", "-", "5-5-5-4", "34.5", "1.3", 1, "452", "+2", "上村洋行 (栗東)"], [2, 1, "ギャラボーグ", "牝3", 55, "横山和生", "1:56.1", "クビ", "3-2-2-2", "35.2", "36.2", 7, "498", "+8", "杉山晴紀 (栗東)"], [3, 13, "ドリームコア", "牝3", 55, "ルメール", "1:56.3", "1.1/4", "15-13-11-11", "34.0", "8.4", 2, "512", "+10", "田中博康 (美浦)"], [4, 4, "エンネ", "牝3", 55, "坂井瑠星", "1:56.4", "1/2", "7-7-6-6", "34.5", "22.8", 6, "526", "+4", "吉岡辰弥 (栗東)"], [5, 14, "サムシングスイート", "牝3", 55, "松山弘平", "1:56.5", "クビ", "16-16-14-13", "33.8", "43.4", 8, "498", "0", "伊藤大士 (美浦)"], [6, 6, "ラベルセーヌ", "牝3", 55, "荻野極", "1:56.7", "1.1/4", "9-9-8-8", "34.6", "11.0", 3, "432", "-4", "鹿戸雄一 (美浦)"], [7, 15, "フェスティバルヒル", "牝3", 55, "浜中俊", "1:56.8", "1/2", "17-17-17-15", "33.8", "191.1", 15, "458", "-8", "四位洋文 (栗東)"], [8, 3, "マスターソアラ", "牝3", 55, "武豊", "1:57.0", "1.1/4", "11-9-8-8", "34.9", "18.9", 5, "492", "0", "蛯名正義 (美浦)"], [9, 16, "ハヤブササキチャン", "牝3", 55, "吉田隼人", "1:57.3", "2", "12-12-11-12", "35.0", "53.6", 9, "422", "-8", "東田明士 (栗東)"], [10, 5, "タイセイボーグ", "牝3", 55, "西村淳也", "1:57.4", "3/4", "7-8-8-8", "35.3", "86.2", 12, "496", "-2", "松下武士 (栗東)"], [11, 11, "ガーネットフレア", "牝3", 55, "北村友一", "1:57.6", "3/4", "3-4-4-4", "36.2", "53.8", 10, "446", "0", "杉山佳明 (栗東)"], [12, 7, "バースデイフライト", "牝3", 55, "田山旺佑", "1:57.6", "アタマ", "13-13-13-13", "35.1", "275.3", 16, "458", "-4", "新谷功一 (栗東)"], [13, 12, "カナルサンマルタン", "牝3", 55, "岩田望来", "1:57.9", "1.3/4", "6-5-6-6", "36.0", "16.9", 4, "460", "+12", "宮田敬介 (美浦)"], [14, 2, "テイエムアイラン", "牝3", 55, "富田暁", "1:58.0", "3/4", "1-1-1-1", "37.3", "129.5", 13, "420", "+6", "宮地貴稔 (栗東)"], [15, 17, "ロザーンジュ", "牝3", 55, "今村聖奈", "1:58.8", "5", "13-13-16-16", "35.7", "142.7", 14, "436", "-2", "寺島良 (栗東)"], [16, 10, "ナイスプレーアスク", "牝3", 55, "岩田康誠", "2:00.0", "7", "2-2-2-3", "39.0", "294.0", 17, "438", "0", "中舘英二 (美浦)"], ["中", 9, "スウィートハピネス", "牝3", 55, "佐々木大", "", "-", "9-9-14-17", "-", "76.8", 11, "450", "+6", "北出成人 (栗東)"]],
+  '15': [[1, 9, "ゴーイントゥスカイ", "牡3", 57, "武豊", "3:04.5", "-", "9-9-7-7", "35.4", "12.0", 3, "498", "-4", "上原佑紀 (美浦)"], [2, 6, "バステール", "牡3", 57, "川田将雅", "3:04.5", "ハナ", "16-16-16-12", "34.9", "33.8", 8, "464", "-8", "斉藤崇史 (栗東)"], [3, 10, "ダノンヒストリー", "牡3", 57, "ルメール", "3:04.6", "1", "6-7-4-3", "35.6", "3.0", 2, "482", "+4", "堀宣行 (美浦)"], [4, 12, "サノノグレーター", "牡3", 57, "田辺裕信", "3:04.7", "1/2", "12-12-14-16", "35.0", "129.7", 14, "464", "-6", "尾形和幸 (美浦)"], [5, 15, "シートゥサミット", "牡3", 57, "酒井学", "3:04.8", "3/4", "2-2-2-2", "36.0", "87.5", 12, "520", "-4", "吉岡辰弥 (栗東)"], [6, 16, "ショウナンハヤナミ", "牡3", 57, "池添謙一", "3:04.9", "クビ", "17-17-18-14", "35.1", "57.6", 10, "454", "-2", "渡辺薫彦 (栗東)"], [7, 14, "マジョレルブルー", "牡3", 57, "戸崎圭太", "3:04.9", "クビ", "8-7-8-7", "35.7", "71.5", 11, "488", "+2", "友道康夫 (栗東)"], [8, 2, "コンジェスタス", "牡3", 57, "西村淳也", "3:05.0", "クビ", "9-9-8-7", "35.8", "23.7", 6, "530", "+2", "高野友和 (栗東)"], [9, 3, "アウダーシア", "牡3", 57, "津村明秀", "3:05.2", "1", "14-14-8-7", "36.1", "22.9", 5, "506", "0", "手塚貴久 (美浦)"], [10, 5, "ジャスティンシカゴ", "牡3", 57, "原優介", "3:05.4", "1", "6-6-12-12", "36.0", "20.2", 4, "500", "-8", "宮田敬介 (美浦)"], [11, 17, "チャリングクロス", "牡3", 57, "石川裕紀", "3:05.5", "1/2", "9-9-14-14", "36.0", "203.1", 15, "494", "-12", "奥村武 (美浦)"], [12, 7, "ラージアンサンブル", "牡3", 57, "坂井瑠星", "3:05.6", "3/4", "5-5-4-3", "36.6", "210.3", 16, "478", "+2", "武井亮 (美浦)"], [13, 1, "エムズビギン", "牡3", 57, "岩田望来", "3:05.7", "1/2", "18-17-16-18", "35.9", "53.0", 9, "500", "-8", "友道康夫 (栗東)"], [14, 8, "ロブチェン", "牡3", 57, "松山弘平", "3:05.8", "1", "12-12-8-5", "36.7", "1.8", 1, "514", "-4", "杉山晴紀 (栗東)"], [15, 13, "キンググローリー", "牡3", 57, "丹内祐次", "3:06.1", "1.1/2", "1-1-1-1", "39.8", "123.3", 13, "466", "0", "古賀慎明 (美浦)"], [16, 18, "ナリタエスペランサ", "牡3", 57, "北村友一", "3:08.0", "大", "3-3-3-5", "39.0", "237.4", 17, "478", "+8", "福永祐一 (栗東)"], [17, 11, "アスクエジンバラ", "牡3", 57, "岩田康誠", "3:08.5", "3", "4-4-4-7", "39.4", "32.8", 7, "476", "+6", "福永祐一 (栗東)"], [18, 4, "ショウナンガルフ", "牡3", 57, "田山旺佑", "3:08.9", "2.1/2", "15-14-12-17", "39.4", "380.5", 18, "478", "+4", "須貝尚介 (栗東)"]]
+};
 
 const HISTORICAL_DATA = {
   "1": [
@@ -3348,8 +3295,7 @@ const PAYOUTS_DATA = {
   ]
 };
 
-
-      const POOLS = {
+const POOLS = {
         '3yo-male': [
           'ロブチェン', 'パントルナイーフ', 'バステール', 'ゴーイントゥスカイ', 'マテンロウゲイル',
           'アルトラムス', 'リアライズシリウス', 'ライヒスアドラー', 'コンジェスタス', 'アスクエジンバラ',
@@ -3388,16 +3334,15 @@ const PAYOUTS_DATA = {
       // ----------------------------------
       // 初期化処理
       // ----------------------------------
-      if (typeof document !== 'undefined') {
-        document.addEventListener('DOMContentLoaded', () => {
-          if (typeof lucide !== 'undefined') {
-            lucide.createIcons();
-          }
-          startNextRaceCountdown();
-          renderRaces();
-          initEventListeners();
-        });
-      }
+      document.addEventListener('DOMContentLoaded', () => {
+        if (typeof lucide !== 'undefined') {
+          lucide.createIcons();
+        }
+        startNextRaceCountdown();
+        renderRaces();
+        initEventListeners();
+          initPredictionEventListeners();
+      });
 
       function refreshIcons() {
         if (typeof lucide !== 'undefined') {
@@ -3409,7 +3354,6 @@ const PAYOUTS_DATA = {
       // カウントダウンタイマー
       // ----------------------------------
       function startNextRaceCountdown() {
-        if (typeof document === 'undefined') return;
         const timerDays = document.getElementById('timer-days');
         const timerHours = document.getElementById('timer-hours');
         const timerMinutes = document.getElementById('timer-minutes');
@@ -3421,17 +3365,18 @@ const PAYOUTS_DATA = {
         function updateCountdown() {
           const now = new Date();
           
+          // 現在時刻より後のレースを探す
           const upcomingRaces = G1_RACES
             .filter(r => new Date(r.date) > now)
             .sort((a, b) => new Date(a.date) - new Date(b.date));
             
           if (upcomingRaces.length === 0) {
-            if (nextRaceName) nextRaceName.innerText = '2026年 G1レース全日程終了';
-            if (nextRaceMeta) nextRaceMeta.innerText = '全レースのご声援ありがとうございました';
-            if (timerDays) timerDays.innerText = '00';
-            if (timerHours) timerHours.innerText = '00';
-            if (timerMinutes) timerMinutes.innerText = '00';
-            if (timerSeconds) timerSeconds.innerText = '00';
+            nextRaceName.innerText = '2026年 G1レース全日程終了';
+            nextRaceMeta.innerText = '全レースのご声援ありがとうございました';
+            timerDays.innerText = '00';
+            timerHours.innerText = '00';
+            timerMinutes.innerText = '00';
+            timerSeconds.innerText = '00';
             if (countdownInterval) clearInterval(countdownInterval);
             return;
           }
@@ -3440,7 +3385,7 @@ const PAYOUTS_DATA = {
           const raceTime = new Date(nextRace.date);
           const diffMs = raceTime - now;
           
-          if (nextRaceName) nextRaceName.innerText = nextRace.name;
+          nextRaceName.innerText = nextRace.name;
           
           const formattedDate = new Date(nextRace.date).toLocaleDateString('ja-JP', {
             year: 'numeric',
@@ -3448,17 +3393,17 @@ const PAYOUTS_DATA = {
             day: 'numeric',
             weekday: 'short'
           });
-          if (nextRaceMeta) nextRaceMeta.innerText = `開催日: ${formattedDate} 15:40発走 | ${nextRace.location}競馬場 (${nextRace.course})`;
+          nextRaceMeta.innerText = `開催日: ${formattedDate} 15:40発走 | ${nextRace.location}競馬場 (${nextRace.course})`;
           
           const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
           const hours = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
           const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
           const seconds = Math.floor((diffMs % (1000 * 60)) / 1000);
           
-          if (timerDays) timerDays.innerText = String(days).padStart(2, '0');
-          if (timerHours) timerHours.innerText = String(hours).padStart(2, '0');
-          if (timerMinutes) timerMinutes.innerText = String(minutes).padStart(2, '0');
-          if (timerSeconds) timerSeconds.innerText = String(seconds).padStart(2, '0');
+          timerDays.innerText = String(days).padStart(2, '0');
+          timerHours.innerText = String(hours).padStart(2, '0');
+          timerMinutes.innerText = String(minutes).padStart(2, '0');
+          timerSeconds.innerText = String(seconds).padStart(2, '0');
         }
         
         updateCountdown();
@@ -3469,7 +3414,6 @@ const PAYOUTS_DATA = {
       // レースグリッドのレンダリング
       // ----------------------------------
       function renderRaces() {
-        if (typeof document === 'undefined') return;
         const container = document.getElementById('race-grid-container');
         if (!container) return;
         container.innerHTML = '';
@@ -3555,7 +3499,6 @@ const PAYOUTS_DATA = {
       }
 
       function updateTabCounts() {
-        if (typeof document === 'undefined') return;
         const allCount = G1_RACES.length;
         const finishedCount = G1_RACES.filter(r => r.status === 'finished').length;
         const upcomingCount = G1_RACES.filter(r => r.status === 'upcoming').length;
@@ -3575,11 +3518,13 @@ const PAYOUTS_DATA = {
       function hydrateRaceResults(race) {
         if (race.hydratedResults) return race.hydratedResults;
 
+        // 本物のデータベースに存在すればマッピング
         if (RESULTS_DATA[race.id]) {
           race.hydratedResults = RESULTS_DATA[race.id].map(mapArrayToResultObj);
           return race.hydratedResults;
         }
 
+        // 以降はupcomingなどデータ未登録の場合の自動補完
         const totalStarters = 16;
         const results = [];
         const is3yo = race.type ? race.type.startsWith('3yo') : false;
@@ -3591,8 +3536,9 @@ const PAYOUTS_DATA = {
         let sexAgeLabel = is3yo ? (isFemale ? '牝3' : '牡3') : (isFemale ? '牝4' : '牡5');
         let jockeyLoad = is3yo ? (isFemale ? 55 : 57) : (isFemale ? 56 : 58);
 
-        const baseSeconds = 120.0;
+        const baseSeconds = 120.0; // デフォルト基準
 
+        // 1着
         results.push({
           rank: 1, gate: race.winnerGate || 1, horseName: race.winner || '勝ち馬', sexAge: sexAgeLabel,
           jockeyLoad, jockey: race.winnerJockey || 'J.騎手', time: race.time || '2:00.0', margin: '-',
@@ -3600,6 +3546,7 @@ const PAYOUTS_DATA = {
           weight: '498', weightDiff: '+2', stable: STABLES_POOL[0]
         });
 
+        // 2着
         results.push({
           rank: 2, gate: race.secondGate || 2, horseName: race.second || '2着馬', sexAge: sexAgeLabel,
           jockeyLoad, jockey: race.secondJockey || 'J.騎手', time: formatSecondsToTime(baseSeconds + 0.2), margin: '1馬身',
@@ -3607,6 +3554,7 @@ const PAYOUTS_DATA = {
           weight: '488', weightDiff: '-2', stable: STABLES_POOL[1]
         });
 
+        // 3着
         results.push({
           rank: 3, gate: race.thirdGate || 3, horseName: race.third || '3着馬', sexAge: sexAgeLabel,
           jockeyLoad, jockey: race.thirdJockey || 'J.騎手', time: formatSecondsToTime(baseSeconds + 0.4), margin: '1 1/4馬身',
@@ -3622,7 +3570,8 @@ const PAYOUTS_DATA = {
           const gate = getUniqueGate(usedGates, totalStarters);
           const jockey = JOCKEYS_POOL[r % JOCKEYS_POOL.length];
           
-          currentSeconds += 0.2;
+          const step = 0.2;
+          currentSeconds += step;
           const time = formatSecondsToTime(currentSeconds);
 
           results.push({
@@ -3666,14 +3615,21 @@ const PAYOUTS_DATA = {
         return gate;
       }
 
-      function hydratePayouts(race) {
+      // ----------------------------------
+      // NetKeiba本物 JRA 2026年 G1 払戻金データベース
+      // ----------------------------------
+      
+
+function hydratePayouts(race) {
         if (race.hydratedPayouts) return race.hydratedPayouts;
 
+        // 本物データベース PAYOUTS_DATA から完全に引っ張る
         if (PAYOUTS_DATA[race.id]) {
           race.hydratedPayouts = PAYOUTS_DATA[race.id];
           return race.hydratedPayouts;
         }
 
+        // バックアップ用自動算出（upcomingなどの場合）
         const results = hydrateRaceResults(race);
         const r1 = results[0];
         const r2 = results[1];
@@ -3776,6 +3732,594 @@ const PAYOUTS_DATA = {
       // ----------------------------------
       // レース詳細モーダルの表示
       // ----------------------------------
+      
+
+
+      // ==============================================
+      // 画面切り替え（SPAルーティング）
+      // ==============================================
+      function switchView(target) {
+        if (typeof document === 'undefined') return;
+        const viewCalendar = document.getElementById('view-calendar');
+        const viewPrediction = document.getElementById('view-prediction');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        navItems.forEach(item => {
+          if (item.getAttribute('data-target') === target) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+
+        if (target === 'prediction') {
+          if (viewCalendar) viewCalendar.style.display = 'none';
+          if (viewPrediction) {
+            viewPrediction.style.display = 'block';
+            renderPredictionView();
+          }
+          if (typeof window !== 'undefined' && window.scrollTo) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        } else {
+          if (viewCalendar) viewCalendar.style.display = 'block';
+          if (viewPrediction) viewPrediction.style.display = 'none';
+          if (typeof window !== 'undefined' && window.scrollTo) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        }
+      }
+
+      // ==============================================
+      // 予想ページ レンダリング ＆ ロジック
+      // ==============================================
+      let predictionSortType = 'gate';
+      const MARK_CYCLE = ['未', '◎', '○', '▲', '△', '☆', '消'];
+      const MARK_CLASSES = {
+        '◎': 'mark-honmei',
+        '○': 'mark-taiko',
+        '▲': 'mark-tanana',
+        '△': 'mark-renka',
+        '☆': 'mark-ana',
+        '消': 'mark-keshi'
+      };
+
+      function getUserMarks() {
+        if (typeof localStorage === 'undefined') return {};
+        try {
+          return JSON.parse(localStorage.getItem('keiba_marks_16')) || {};
+        } catch (e) {
+          return {};
+        }
+      }
+
+      function setUserMark(gate, mark) {
+        const marks = getUserMarks();
+        if (mark === '未' || !mark) {
+          delete marks[gate];
+        } else {
+          marks[gate] = mark;
+        }
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('keiba_marks_16', JSON.stringify(marks));
+        }
+        updateMarksUI();
+      }
+
+      function updateMarksUI() {
+        if (typeof document === 'undefined') return;
+        const marks = getUserMarks();
+        
+        document.querySelectorAll('.mark-btn[data-gate]').forEach(btn => {
+          const g = btn.getAttribute('data-gate');
+          const m = marks[g] || '未';
+          btn.innerText = m;
+          btn.className = 'mark-btn';
+          if (MARK_CLASSES[m]) {
+            btn.classList.add(MARK_CLASSES[m]);
+          }
+        });
+
+        const starters = PREDICTION_DATA.starters;
+        const summaryMap = { '◎': [], '○': [], '▲': [], '△': [], '☆': [] };
+
+        Object.keys(marks).forEach(g => {
+          const m = marks[g];
+          const s = starters.find(x => String(x.gate) === String(g));
+          if (s && summaryMap[m]) {
+            summaryMap[m].push(`${s.gate} ${s.horseName}`);
+          }
+        });
+
+        const elH = document.getElementById('summary-honmei');
+        const elT = document.getElementById('summary-taiko');
+        const elA = document.getElementById('summary-tanana');
+        const elR = document.getElementById('summary-renka');
+        const elAn = document.getElementById('summary-ana');
+
+        if (elH) elH.innerText = summaryMap['◎'].join(', ') || '未選択';
+        if (elT) elT.innerText = summaryMap['○'].join(', ') || '未選択';
+        if (elA) elA.innerText = summaryMap['▲'].join(', ') || '未選択';
+        if (elR) elR.innerText = summaryMap['△'].join(', ') || '未選択';
+        if (elAn) elAn.innerText = summaryMap['☆'].join(', ') || '未選択';
+      }
+
+      function showMarkPopover(btn, gate) {
+        if (typeof document === 'undefined') return;
+        const existing = document.getElementById('active-mark-popover');
+        if (existing) existing.remove();
+
+        const popover = document.createElement('div');
+        popover.id = 'active-mark-popover';
+        popover.className = 'mark-popover';
+
+        const rect = btn.getBoundingClientRect();
+        const scrollY = typeof window !== 'undefined' ? window.scrollY : 0;
+        const scrollX = typeof window !== 'undefined' ? window.scrollX : 0;
+        popover.style.top = `${rect.bottom + scrollY + 6}px`;
+        popover.style.left = `${Math.max(10, rect.left + scrollX - 50)}px`;
+
+        MARK_CYCLE.forEach(m => {
+          const item = document.createElement('div');
+          item.className = 'mark-pop-item';
+          item.innerText = m;
+          if (MARK_CLASSES[m]) {
+            item.classList.add(MARK_CLASSES[m]);
+          } else {
+            item.style.background = 'rgba(255,255,255,0.05)';
+            item.style.color = 'var(--text-muted)';
+          }
+          item.addEventListener('click', (e) => {
+            e.stopPropagation();
+            setUserMark(gate, m);
+            popover.remove();
+          });
+          popover.appendChild(item);
+        });
+
+        document.body.appendChild(popover);
+
+        const closeHandler = (e) => {
+          if (!popover.contains(e.target) && e.target !== btn) {
+            popover.remove();
+            document.removeEventListener('click', closeHandler);
+          }
+        };
+        setTimeout(() => document.addEventListener('click', closeHandler), 10);
+      }
+
+      function renderPredictionView() {
+        if (typeof document === 'undefined') return;
+        const container = document.getElementById('view-prediction');
+        if (!container) return;
+
+        renderPredictionStarters();
+        renderPredictionTraining();
+        renderPredictionJockeys();
+        renderPredictionWaku();
+        renderPredictionTrack();
+        renderPredictionTrends();
+        renderPredictionOccult();
+        renderPredictionPace();
+        renderPredictionMemo();
+        updateMarksUI();
+        refreshIcons();
+      }
+
+      function renderPredictionStarters() {
+        if (typeof document === 'undefined') return;
+        const tbody = document.getElementById('pred-starters-tbody');
+        if (!tbody) return;
+
+        let starters = [...PREDICTION_DATA.starters];
+        if (predictionSortType === 'pop') {
+          starters.sort((a, b) => a.pop - b.pop);
+        } else {
+          starters.sort((a, b) => a.gate - b.gate);
+        }
+
+        const marks = getUserMarks();
+        let rowsHtml = '';
+
+        starters.forEach(s => {
+          const m = marks[s.gate] || '未';
+          const mClass = MARK_CLASSES[m] || '';
+          const isPop1 = s.pop === 1;
+
+          rowsHtml += `
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.06); transition: background 0.15s;">
+              <td style="text-align: center;"><span class="waku-badge waku-${s.waku}">${s.waku}</span></td>
+              <td style="text-align: center; font-weight: 700; font-size: 15px; font-family: monospace; color: var(--gold);">${s.gate}</td>
+              <td style="text-align: center;">
+                <span class="mark-btn ${mClass}" data-gate="${s.gate}">${m}</span>
+              </td>
+              <td>
+                <span style="font-weight: 700; font-size: 15px; color: #ffffff;">${s.horseName}</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-left: 6px;">${s.stable}</span>
+              </td>
+              <td style="color: var(--text-secondary);">${s.sexAge}</td>
+              <td style="color: var(--text-secondary); font-family: monospace;">${s.load}kg</td>
+              <td style="font-weight: 600;">${s.jockey}</td>
+              <td style="text-align: right; font-weight: 800; font-size: 15px; font-family: monospace; color: ${isPop1 ? 'var(--gold)' : '#ffffff'};">${s.odds}倍</td>
+              <td style="text-align: right; font-family: monospace; color: var(--text-secondary); font-size: 13px;">${s.placeOdds}</td>
+              <td style="text-align: center;"><span class="pop-badge pop-${s.pop <= 3 ? s.pop : 'other'}">${s.pop}人気</span></td>
+              <td style="text-align: center;"><span class="grade-badge grade-${s.trainingGrade}">${s.trainingGrade}</span></td>
+            </tr>
+          `;
+        });
+
+        tbody.innerHTML = rowsHtml;
+
+        tbody.querySelectorAll('.mark-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const g = btn.getAttribute('data-gate');
+            showMarkPopover(btn, g);
+          });
+        });
+      }
+
+      function renderPredictionTraining() {
+        if (typeof document === 'undefined') return;
+        const grid = document.getElementById('pred-training-grid');
+        if (!grid) return;
+
+        let cardsHtml = '';
+        PREDICTION_DATA.starters.forEach(s => {
+          cardsHtml += `
+            <div class="train-card">
+              <div class="train-card-top">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span class="waku-badge waku-${s.waku}">${s.waku}</span>
+                  <span style="font-weight: 700; font-size: 15px; color: var(--gold); font-family: monospace;">${s.gate}番</span>
+                  <strong style="font-size: 15px; color: #fff;">${s.horseName}</strong>
+                </div>
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span class="grade-badge grade-${s.trainingGrade}">${s.trainingGrade}評価</span>
+                  <span class="mark-btn" data-gate="${s.gate}">未</span>
+                </div>
+              </div>
+
+              <div style="font-size: 12px; color: var(--text-muted); display: flex; gap: 12px;">
+                <span>騎手: ${s.jockey} (${s.load}kg)</span>
+                <span>コース: ${s.trainingCourse}</span>
+              </div>
+
+              <div class="train-clock">
+                ${s.trainingTime}
+              </div>
+
+              <div class="train-comment">
+                "${s.trainingComment}"
+              </div>
+            </div>
+          `;
+        });
+
+        grid.innerHTML = cardsHtml;
+
+        grid.querySelectorAll('.mark-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const g = btn.getAttribute('data-gate');
+            showMarkPopover(btn, g);
+          });
+        });
+      }
+
+      function renderPredictionJockeys() {
+        if (typeof document === 'undefined') return;
+        const container = document.getElementById('pred-jockeys-container');
+        if (!container) return;
+
+        let html = '';
+        PREDICTION_DATA.jockeysCompatibility.forEach(j => {
+          html += `
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 10px;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: 700; font-size: 16px; color: #fff;">${j.jockey}</span>
+                <span style="background: rgba(245, 158, 11, 0.15); border: 1px solid var(--gold); color: var(--gold); padding: 2px 8px; border-radius: 4px; font-weight: 800; font-size: 12px;">${j.rating}</span>
+              </div>
+              <div style="font-size: 13px; color: var(--primary); font-weight: 600;">
+                搭乗馬: ${j.horse} | <span style="color: var(--text-secondary);">${j.switchType}</span>
+              </div>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; background: rgba(0,0,0,0.3); border-radius: 6px; padding: 10px; text-align: center;">
+                <div>
+                  <div style="font-size: 11px; color: var(--text-muted);">東京芝勝率</div>
+                  <div style="font-weight: 800; color: #fff; font-family: monospace; font-size: 14px;">${j.tokyoTurfWinRate}</div>
+                </div>
+                <div>
+                  <div style="font-size: 11px; color: var(--text-muted);">東京芝複勝率</div>
+                  <div style="font-weight: 800; color: var(--primary); font-family: monospace; font-size: 14px;">${j.tokyoTurfTop3Rate}</div>
+                </div>
+                <div>
+                  <div style="font-size: 11px; color: var(--text-muted);">2000m勝率</div>
+                  <div style="font-weight: 800; color: var(--gold); font-family: monospace; font-size: 14px;">${j.distanceWinRate}</div>
+                </div>
+              </div>
+
+              <p style="font-size: 12px; line-height: 1.6; color: var(--text-secondary); margin: 0;">
+                ${j.comment}
+              </p>
+            </div>
+          `;
+        });
+
+        container.innerHTML = html;
+      }
+
+      function renderPredictionWaku() {
+        if (typeof document === 'undefined') return;
+        const tbody = document.getElementById('pred-waku-tbody');
+        if (!tbody) return;
+
+        let html = '';
+        PREDICTION_DATA.wakuAnalysis.stats.forEach(w => {
+          const horses = PREDICTION_DATA.starters
+            .filter(s => s.waku === w.waku)
+            .map(s => `${s.gate}番 ${s.horseName}`)
+            .join(', ');
+
+          html += `
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td style="text-align: center;"><span class="waku-badge waku-${w.waku}">${w.waku}</span></td>
+              <td style="text-align: center; font-weight: 700; font-family: monospace; color: var(--gold);">${w.winRate}</td>
+              <td style="text-align: center; font-weight: 700; font-family: monospace; color: var(--primary);">${w.top3Rate}</td>
+              <td style="font-weight: 600; color: #fff; font-size: 13px;">${horses}</td>
+              <td style="font-size: 12px; color: var(--text-secondary);">${w.comment}</td>
+            </tr>
+          `;
+        });
+
+        tbody.innerHTML = html;
+      }
+
+      function renderPredictionTrack() {
+        if (typeof document === 'undefined') return;
+        const grid = document.getElementById('pred-track-grid');
+        const detail = document.getElementById('pred-track-detail');
+        if (!grid) return;
+
+        const t = PREDICTION_DATA.trackCondition;
+        grid.innerHTML = `
+          <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px;">
+            <div style="font-size: 11px; color: var(--text-muted);">馬場状態</div>
+            <div style="font-weight: 800; font-size: 16px; color: #fff;">${t.condition}</div>
+          </div>
+          <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px;">
+            <div style="font-size: 11px; color: var(--text-muted);">クッション値</div>
+            <div style="font-weight: 800; font-size: 16px; color: var(--gold); font-family: monospace;">${t.cushionValue}</div>
+          </div>
+          <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px;">
+            <div style="font-size: 11px; color: var(--text-muted);">コース使用</div>
+            <div style="font-weight: 800; font-size: 16px; color: #fff;">${t.courseUsage}</div>
+          </div>
+          <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px;">
+            <div style="font-size: 11px; color: var(--text-muted);">有利ポジション</div>
+            <div style="font-weight: 800; font-size: 16px; color: var(--primary);">${t.bias}</div>
+          </div>
+        `;
+
+        if (detail) {
+          detail.innerText = t.biasDetail;
+        }
+      }
+
+      function renderPredictionTrends() {
+        if (typeof document === 'undefined') return;
+        const grid = document.getElementById('pred-trends-grid');
+        if (!grid) return;
+
+        let html = '';
+        PREDICTION_DATA.raceTrends.forEach(tr => {
+          html += `
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 16px;">
+              <h4 style="color: var(--gold); font-size: 14px; font-weight: 700; margin-bottom: 8px;">📊 ${tr.title}</h4>
+              <p style="font-size: 13px; line-height: 1.6; color: var(--text-secondary); margin: 0;">${tr.content}</p>
+            </div>
+          `;
+        });
+
+        grid.innerHTML = html;
+      }
+
+      function renderPredictionOccult() {
+        if (typeof document === 'undefined') return;
+        const container = document.getElementById('pred-occult-container');
+        if (!container) return;
+
+        let html = '';
+        PREDICTION_DATA.occultSigns.forEach(o => {
+          html += `
+            <div class="occult-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <h4 style="font-size: 15px; font-weight: 700; color: #fff; margin: 0;">${o.title}</h4>
+                <span style="background: rgba(139, 92, 246, 0.2); border: 1px solid #a78bfa; color: #c084fc; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700;">${o.badge}</span>
+              </div>
+              <p style="font-size: 13px; line-height: 1.6; color: var(--text-secondary); margin: 0;">${o.content}</p>
+            </div>
+          `;
+        });
+
+        container.innerHTML = html;
+      }
+
+      function renderPredictionPace() {
+        if (typeof document === 'undefined') return;
+        const label = document.getElementById('pred-pace-label');
+        const desc = document.getElementById('pred-pace-desc');
+        const lanes = document.getElementById('pred-pace-lanes');
+        if (!lanes) return;
+
+        const p = PREDICTION_DATA.paceSimulation;
+        if (label) label.innerText = `想定ペース: ${p.estimatedPace}`;
+        if (desc) desc.innerText = p.paceText;
+
+        let html = '';
+        p.positions.forEach(pos => {
+          html += `
+            <div class="pace-lane">
+              <span class="pace-tag">${pos.label}</span>
+              <span class="pace-horses">${pos.horses}</span>
+            </div>
+          `;
+        });
+
+        lanes.innerHTML = html;
+      }
+
+      function renderPredictionMemo() {
+        if (typeof document === 'undefined') return;
+        const memoInput = document.getElementById('pred-memo-input');
+        if (memoInput && typeof localStorage !== 'undefined') {
+          memoInput.value = localStorage.getItem('keiba_memo_16') || '';
+        }
+      }
+
+      function initPredictionEventListeners() {
+        if (typeof document === 'undefined') return;
+
+        document.querySelectorAll('.nav-item').forEach(item => {
+          item.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = item.getAttribute('data-target');
+            if (target) switchView(target);
+          });
+        });
+
+        const btnBackCal = document.getElementById('btn-back-calendar');
+        if (btnBackCal) {
+          btnBackCal.addEventListener('click', (e) => {
+            e.preventDefault();
+            switchView('calendar');
+          });
+        }
+
+        const heroBanner = document.getElementById('hero-countdown-banner');
+        if (heroBanner) {
+          heroBanner.addEventListener('click', (e) => {
+            if (e.target.closest('#btn-hero-detail')) {
+              e.stopPropagation();
+              openRaceDetail('16');
+              return;
+            }
+            switchView('prediction');
+          });
+        }
+
+        const btnHeroPred = document.getElementById('btn-hero-prediction');
+        if (btnHeroPred) {
+          btnHeroPred.addEventListener('click', (e) => {
+            e.stopPropagation();
+            switchView('prediction');
+          });
+        }
+
+        const btnSortGate = document.getElementById('btn-sort-gate');
+        const btnSortPop = document.getElementById('btn-sort-pop');
+
+        if (btnSortGate && btnSortPop) {
+          btnSortGate.addEventListener('click', () => {
+            btnSortGate.classList.add('active');
+            btnSortPop.classList.remove('active');
+            predictionSortType = 'gate';
+            renderPredictionStarters();
+            updateMarksUI();
+          });
+
+          btnSortPop.addEventListener('click', () => {
+            btnSortPop.classList.add('active');
+            btnSortGate.classList.remove('active');
+            predictionSortType = 'pop';
+            renderPredictionStarters();
+            updateMarksUI();
+          });
+        }
+
+        const btnRefreshOdds = document.getElementById('btn-refresh-odds');
+        if (btnRefreshOdds) {
+          btnRefreshOdds.addEventListener('click', () => {
+            const timeEl = document.getElementById('odds-update-time');
+            const now = new Date();
+            const timeStr = `${now.getFullYear()}/${now.getMonth()+1}/${now.getDate()} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')} JST`;
+            if (timeEl) {
+              timeEl.innerHTML = `<span style="color: var(--primary);">✔ 最新オッズに更新しました (${timeStr})</span>`;
+            }
+          });
+        }
+
+        const memoInput = document.getElementById('pred-memo-input');
+        const saveStatus = document.getElementById('memo-save-status');
+
+        if (memoInput) {
+          memoInput.addEventListener('input', () => {
+            if (typeof localStorage !== 'undefined') {
+              localStorage.setItem('keiba_memo_16', memoInput.value);
+            }
+            if (saveStatus) {
+              saveStatus.innerText = '💾 保存しました';
+              setTimeout(() => {
+                if (saveStatus) saveStatus.innerText = '💾 localStorage自動保存中';
+              }, 1500);
+            }
+          });
+        }
+
+        const btnCopyMemo = document.getElementById('btn-copy-memo');
+        if (btnCopyMemo) {
+          btnCopyMemo.addEventListener('click', () => {
+            const marks = getUserMarks();
+            const starters = PREDICTION_DATA.starters;
+            let summaryText = '【第174回 天皇賞（秋） マイ予想】\n';
+            
+            ['◎', '○', '▲', '△', '☆'].forEach(m => {
+              const matched = [];
+              Object.keys(marks).forEach(g => {
+                if (marks[g] === m) {
+                  const s = starters.find(x => String(x.gate) === String(g));
+                  if (s) matched.push(`${s.gate}番 ${s.horseName}`);
+                }
+              });
+              if (matched.length > 0) {
+                summaryText += `${m} ${matched.join(', ')}\n`;
+              }
+            });
+
+            const memoVal = memoInput ? memoInput.value : '';
+            if (memoVal) {
+              summaryText += `\n【買い目・検討メモ】\n${memoVal}\n`;
+            }
+
+            if (typeof navigator !== 'undefined' && navigator.clipboard) {
+              navigator.clipboard.writeText(summaryText).then(() => {
+                alert('マイ予想とメモをクリップボードにコピーしました！');
+              }).catch(() => {
+                prompt('以下をコピーしてください:', summaryText);
+              });
+            } else {
+              prompt('以下をコピーしてください:', summaryText);
+            }
+          });
+        }
+
+        const btnClearMemo = document.getElementById('btn-clear-memo');
+        if (btnClearMemo) {
+          btnClearMemo.addEventListener('click', () => {
+            if (confirm('印とメモをすべてリセットしますか？')) {
+              if (typeof localStorage !== 'undefined') {
+                localStorage.removeItem('keiba_marks_16');
+                localStorage.removeItem('keiba_memo_16');
+              }
+              if (memoInput) memoInput.value = '';
+              updateMarksUI();
+            }
+          });
+        }
+      }
+
+
+
       function openRaceDetail(id) {
         if (typeof document === 'undefined') return;
         const race = G1_RACES.find(r => r.id === id);
@@ -3795,7 +4339,6 @@ const PAYOUTS_DATA = {
           weekday: 'short'
         });
 
-        // 過去10年の結果HTMLを生成（開催済・予定どちらでも参照可能にする）
         let historyTableRows = '';
         const historyData = HISTORICAL_DATA[id] || [];
         const fullHistoryMap = (typeof HISTORICAL_FULL_RESULTS !== 'undefined' ? HISTORICAL_FULL_RESULTS[id] : null) || {};
@@ -3807,7 +4350,6 @@ const PAYOUTS_DATA = {
           let fullRowsHtml = '';
           if (fullList.length > 0) {
             fullList.forEach(m => {
-              let rankBadge = m.rank;
               let rankClass = 'rank-other';
               if (m.rank === 1) rankClass = 'rank-1';
               else if (m.rank === 2) rankClass = 'rank-2';
@@ -3875,7 +4417,6 @@ const PAYOUTS_DATA = {
         });
 
         const entries = (typeof ENTRIES_DATA !== 'undefined' ? ENTRIES_DATA[id] : null) || null;
-
         let innerHTML = '';
 
         if (race.status === 'finished') {
@@ -4033,7 +4574,6 @@ const PAYOUTS_DATA = {
           `;
 
         } else if (entries && entries.length > 0) {
-          // 枠順確定済みの今後のレース
           let entriesTableRows = '';
           entries.forEach(e => {
             entriesTableRows += `
@@ -4063,6 +4603,16 @@ const PAYOUTS_DATA = {
             </div>
 
             <div id="modal-tab-content-entries" class="modal-tab-content">
+              <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.15)); border: 1px solid var(--primary); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--text-secondary);">
+                  <i data-lucide="target" style="width: 20px; height: 20px; color: var(--gold); flex-shrink: 0;"></i>
+                  <span><strong>調教時計・騎手相性・オカルト・馬名横印付け・リアルタイムオッズ</strong>を備えた特設予想シートを公開中！</span>
+                </div>
+                <button id="btn-modal-to-pred" style="background: var(--gold); color: #111; border: none; border-radius: 6px; padding: 8px 16px; font-weight: 800; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);">
+                  🎯 予想・攻略分析ページを開く →
+                </button>
+              </div>
+
               <div class="detail-meta-list" style="margin-bottom: 16px;">
                 <div class="detail-meta-item">
                   <span class="detail-meta-label">発走日時</span>
@@ -4076,11 +4626,6 @@ const PAYOUTS_DATA = {
                   <span class="detail-meta-label">枠順ステータス</span>
                   <span class="detail-meta-value" style="color: var(--primary); font-weight: 700;">確定 (全${entries.length}頭)</span>
                 </div>
-              </div>
-
-              <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: 8px; padding: 12px 16px; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--text-secondary);">
-                <i data-lucide="check-circle" style="width: 18px; height: 18px; color: var(--primary); flex-shrink: 0;"></i>
-                <span>JRA公式枠順が確定しました。発走前まで「過去10年の結果」タブで過去の優勝馬データ・全頭傾向もあわせてご覧いただけます。</span>
               </div>
 
               <h3 class="detail-section-title">出馬表・枠順一覧</h3>
@@ -4145,7 +4690,6 @@ const PAYOUTS_DATA = {
           `;
 
         } else {
-          // 枠順未定の今後のレース
           innerHTML = `
             <div class="modal-tabs" style="display: flex; gap: 10px; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
               <button class="modal-tab-btn active" data-tab="overview" style="background: none; border: none; color: var(--gold); border-bottom: 2px solid var(--gold); padding: 8px 16px; font-weight: bold; cursor: pointer; transition: all 0.2s;">
@@ -4203,8 +4747,15 @@ const PAYOUTS_DATA = {
         if (body) body.innerHTML = innerHTML;
         if (modal) modal.classList.add('active');
         
-        // タブ切り替えのイベントリスナー設定
         if (modal) {
+          const btnModalPred = modal.querySelector('#btn-modal-to-pred');
+          if (btnModalPred) {
+            btnModalPred.addEventListener('click', () => {
+              closeModal();
+              switchView('prediction');
+            });
+          }
+
           const modalTabs = modal.querySelectorAll('.modal-tab-btn');
           modalTabs.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -4228,7 +4779,6 @@ const PAYOUTS_DATA = {
             });
           });
           
-          // アコーディオン展開イベントリスナー
           const yearRows = modal.querySelectorAll('.history-year-row');
           yearRows.forEach(row => {
             row.addEventListener('click', () => {
@@ -4267,9 +4817,6 @@ const PAYOUTS_DATA = {
         return m > 0 ? `${m}:${s.padStart(4, '0')}` : `${s}`;
       }
 
-      // ----------------------------------
-      // イベントリスナー
-      // ----------------------------------
       function initEventListeners() {
         if (typeof document === 'undefined') return;
         const tabBtns = document.querySelectorAll('.tab-btn');
@@ -4309,3 +4856,4 @@ const PAYOUTS_DATA = {
           if (backdrop) backdrop.addEventListener('click', closeModal);
         }
       }
+
