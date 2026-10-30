@@ -1439,6 +1439,31 @@ html.route-prediction .nav-item[data-target="prediction"] {
   line-height: 1.4;
 }
 
+/* オカルトサインカード & ターゲット馬バッジ */
+.occult-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px;
+  transition: all 0.2s ease;
+}
+.occult-card:hover {
+  border-color: rgba(168, 85, 247, 0.35);
+  background: rgba(255, 255, 255, 0.045);
+}
+.nh-target-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+}
+
 /* ----------------------------------
    印選択ボトムシート（アクションシート）
 ------------------------------------- */
