@@ -7617,12 +7617,12 @@ function hydratePayouts(race) {
           const isTop3Pop = s.pop <= 3;
           const displayOdds = s.winOdds || s.odds || '--';
 
-          // 馬体重表示の算出
-          let displayWeight = `${s.trainingWeight || 500}kg`;
+          // 馬体重表示の算出（現状はJRA公式発表済の調教後馬体重。当日確定は確定するまで未発表 -）
+          let displayWeight = `${s.trainingWeight}kg`;
           let displayWeightSub = `<span class="weight-tag-pre">調教後</span>`;
 
-          if (weightMode === 'confirmed') {
-            displayWeight = `${s.confirmedWeight || s.trainingWeight || 500}kg`;
+          if (s.confirmedWeight) {
+            displayWeight = `${s.confirmedWeight}kg`;
             const diff = s.weightDiff || '0';
             let diffClass = 'diff-zero';
             let diffText = (diff === '0' || diff === '+0' || diff === '-0') ? '±0' : diff;
@@ -7701,9 +7701,9 @@ function hydratePayouts(race) {
                   <div class="nh-drawer-item" style="border-top: 1px dashed rgba(255,255,255,0.06); padding-top: 6px; margin-top: 2px;">
                     <span class="nh-drawer-label">⚖️ 馬体重推移・公式計量データ</span>
                     <div style="display: flex; gap: 14px; margin-top: 3px; font-size: 11.5px; flex-wrap: wrap;">
-                      <div><span style="color: var(--text-muted);">調教後:</span> <strong style="color: #fff;">${s.trainingWeight}kg</strong> <span style="font-size: 10px; color: var(--gold);">(木曜計測)</span></div>
-                      <div><span style="color: var(--text-muted);">前走時:</span> <strong style="color: #fff;">${s.lastRaceWeight}kg</strong></div>
-                      <div><span style="color: var(--text-muted);">当日確定:</span> <strong style="color: var(--primary);">${s.confirmedWeight}kg (${s.weightDiff})</strong></div>
+                      <div><span style="color: var(--text-muted);">調教後:</span> <strong style="color: #fff;">${s.trainingWeight}kg</strong> <span style="font-size: 10px; color: var(--gold);">(木曜公式計量)</span></div>
+                      <div><span style="color: var(--text-muted);">前走時:</span> <strong style="color: #fff;">${s.lastRaceWeight ? s.lastRaceWeight + 'kg' : '前走海外'}</strong></div>
+                      <div><span style="color: var(--text-muted);">当日確定:</span> <strong style="color: ${s.confirmedWeight ? 'var(--primary)' : 'var(--text-muted)'};">${s.confirmedWeight ? s.confirmedWeight + 'kg (' + s.weightDiff + ')' : '- (発走前発表)'}</strong></div>
                     </div>
                   </div>
 
