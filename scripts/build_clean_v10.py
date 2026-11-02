@@ -132,7 +132,42 @@ res_dict['15'] = autumn_data['15']
 res_dict['16'] = autumn_data['16']
 
 new_results_data_str = "const RESULTS_DATA = " + json.dumps(res_dict, ensure_ascii=False, indent=2) + ";"
-historical_data_str = "const HISTORICAL_DATA = " + json.dumps(json.loads(re.search(r'const HISTORICAL_DATA = (\{[\s\S]*?\n\s*\});', base_html).group(1).replace("'", '"')), ensure_ascii=False, indent=2) + ";"
+
+# Generate complete HISTORICAL_DATA for ALL 24 RACES (2016-2025)
+base_hist = json.loads(re.search(r'const HISTORICAL_DATA = (\{[\s\S]*?\n\s*\});', base_html).group(1).replace("'", '"'))
+full_hist_summary = {}
+
+for r_id in map(str, range(1, 25)):
+    if r_id in base_hist and len(base_hist[r_id]) >= 10:
+        full_hist_summary[r_id] = base_hist[r_id]
+    elif r_id in hist_full_data:
+        race_years = hist_full_data[r_id]
+        sorted_years = sorted(race_years.keys(), key=lambda y: int(y), reverse=True)
+        race_rows = []
+        for y in sorted_years:
+            starters = race_years[y]
+            winner = next((h for h in starters if h.get('rank') == 1), None)
+            if not winner and starters:
+                winner = starters[0]
+            if winner:
+                pop_val = winner.get('pop', 1)
+                try:
+                    pop_val = int(pop_val)
+                except Exception:
+                    pop_val = 1
+                race_rows.append([
+                    int(y),
+                    winner.get('horseName', '-'),
+                    winner.get('jockey', '-'),
+                    winner.get('time', '-'),
+                    pop_val,
+                    winner.get('stable', '-')
+                ])
+        full_hist_summary[r_id] = race_rows
+    else:
+        full_hist_summary[r_id] = base_hist.get(r_id, [])
+
+historical_data_str = "const HISTORICAL_DATA = " + json.dumps(full_hist_summary, ensure_ascii=False, indent=2) + ";"
 entries_data_str = "const ENTRIES_DATA = " + json.dumps(entries_data, ensure_ascii=False, indent=2) + ";"
 payouts_data_str = "const PAYOUTS_DATA = " + json.dumps(payouts_data, ensure_ascii=False, indent=2) + ";"
 hist_full_str = "const HISTORICAL_FULL_RESULTS = " + json.dumps(hist_full_data, ensure_ascii=False, indent=2) + ";"
@@ -1248,12 +1283,16 @@ prediction_js_logic = """
             }
           }
 
+          let rawComment = (s.trainingComment || s.comment || '').trim();
+          let hasRealComment = rawComment && rawComment !== '-' && rawComment !== 'null' && rawComment !== 'undefined';
+          let commentDisplay = hasRealComment ? rawComment : '-';
+
           return {
             ...s,
             winOdds: winVal,
             placeOdds: placeVal,
             pop: popVal,
-            comment: s.trainingComment || s.comment || '調教順調。状態良好で本番を迎える。',
+            comment: commentDisplay,
             jockeyStat: jockeyDisplay
           };
         });
@@ -1273,8 +1312,8 @@ prediction_js_logic = """
           const isTop3Pop = s.pop <= 3;
           const displayOdds = s.winOdds || s.odds || '--';
 
-          let displayWeight = s.trainingWeight ? `${s.trainingWeight}kg` : '-';
-          let displayWeightSub = `<span class="weight-tag-pre">調教後</span>`;
+          let displayWeight = '-';
+          let displayWeightSub = `<span class="weight-tag-prev">前走</span>`;
 
           if (s.confirmedWeight) {
             displayWeight = `${s.confirmedWeight}kg`;
@@ -1284,6 +1323,16 @@ prediction_js_logic = """
             if (diff.startsWith('+') && diff !== '+0') diffClass = 'diff-plus';
             else if (diff.startsWith('-') && diff !== '-0') diffClass = 'diff-minus';
             displayWeightSub = `<span class="weight-tag-diff ${diffClass}">${diffText}</span>`;
+          } else if (s.lastRaceWeight || s.prevWeight) {
+            const pw = s.lastRaceWeight || s.prevWeight;
+            displayWeight = `${pw}kg`;
+            displayWeightSub = `<span class="weight-tag-prev">前走</span>`;
+          } else if (s.trainingWeight) {
+            displayWeight = `${s.trainingWeight}kg`;
+            displayWeightSub = `<span class="weight-tag-pre">調教後</span>`;
+          } else {
+            displayWeight = '-';
+            displayWeightSub = `<span style="font-size:10px;color:var(--text-muted);">-</span>`;
           }
 
           html += `
@@ -1343,19 +1392,31 @@ prediction_js_logic = """
                   <div class="nh-drawer-grid">
                     <div class="nh-drawer-item">
                       <span class="nh-drawer-label">調教評価</span>
-                      <span class="nh-drawer-val-grade grade-${s.trainingGrade || 'A'}">【${s.trainingGrade || 'A'}】 ${s.trainingCourse || '栗東CW'} (${s.trainingTime || '82.0-66.0-11.2'})</span>
+                      ${(() => {
+                        const rawG = (s.trainingGrade || '').trim();
+                        if (rawG && rawG !== '-' && rawG !== 'null' && rawG !== 'undefined') {
+                          const courseStr = s.trainingCourse ? ` ${s.trainingCourse}` : '';
+                          const timeStr = s.trainingTime ? ` (${s.trainingTime})` : '';
+                          return `<span class="nh-drawer-val-grade grade-${rawG}">【${rawG}】${courseStr}${timeStr}</span>`;
+                        }
+                        return `<span class="nh-drawer-val">-</span>`;
+                      })()}
                     </div>
                     <div class="nh-drawer-item">
                       <span class="nh-drawer-label">調教短評</span>
                       <span class="nh-drawer-val">${s.comment}</span>
                     </div>
                     <div class="nh-drawer-item">
-                      <span class="nh-drawer-label">所属厩舎</span>
-                      <span class="nh-drawer-val">${s.stable || '栗東'}</span>
+                      <span class="nh-drawer-label">馬体重推移</span>
+                      <span class="nh-drawer-val" style="font-size: 11px;">
+                        前走: <strong>${s.lastRaceWeight ? s.lastRaceWeight + 'kg' : '-'}</strong> | 
+                        調教後: <strong>${s.trainingWeight ? s.trainingWeight + 'kg' : '-'}</strong> | 
+                        当日確定: <strong style="color: var(--gold);">${s.confirmedWeight ? s.confirmedWeight + 'kg (' + (s.weightDiff || '±0') + ')' : '未発表（当日発表次第自動反映）'}</strong>
+                      </span>
                     </div>
                     <div class="nh-drawer-item">
-                      <span class="nh-drawer-label">コース適性・騎手</span>
-                      <span class="nh-drawer-val">${s.jockeyStat}</span>
+                      <span class="nh-drawer-label">所属厩舎 / 適性</span>
+                      <span class="nh-drawer-val">${s.stable || '栗東'} (${s.jockeyStat})</span>
                     </div>
                   </div>
                 </div>
@@ -1594,8 +1655,24 @@ open_race_detail_func = """
         const entries = typeof ENTRIES_DATA !== 'undefined' ? ENTRIES_DATA[id] : null;
 
         let historyTableRows = '';
-        const historyData = HISTORICAL_DATA[id] || [];
+        let historyData = (typeof HISTORICAL_DATA !== 'undefined' && HISTORICAL_DATA[id]) ? HISTORICAL_DATA[id] : [];
         const fullHistoryMap = (typeof HISTORICAL_FULL_RESULTS !== 'undefined' && HISTORICAL_FULL_RESULTS[id]) ? HISTORICAL_FULL_RESULTS[id] : {};
+
+        if ((!historyData || historyData.length === 0) && fullHistoryMap && Object.keys(fullHistoryMap).length > 0) {
+          const sortedYears = Object.keys(fullHistoryMap).sort((a, b) => parseInt(b) - parseInt(a));
+          historyData = sortedYears.map(y => {
+            const list = fullHistoryMap[y];
+            const winner = list.find(h => h.rank === 1) || list[0];
+            return [
+              parseInt(y),
+              winner ? winner.horseName : '-',
+              winner ? winner.jockey : '-',
+              winner ? winner.time : '-',
+              winner ? (parseInt(winner.pop) || 1) : 1,
+              winner ? winner.stable : '-'
+            ];
+          });
+        }
 
         historyData.forEach((h, hIdx) => {
           const year = h[0];
@@ -1907,6 +1984,7 @@ open_race_detail_func = """
                       <th>想定騎手</th>
                       <th>所属厩舎</th>
                       <th>想定オッズ</th>
+                      <th>馬体重</th>
                       <th>調教/状態</th>
                     </tr>
                   </thead>
@@ -1919,7 +1997,23 @@ open_race_detail_func = """
                         const pHorse = predStarters ? predStarters.find(s => s.gate === e.gate || s.horseName === e.horseName) : null;
                         const oddsVal = pHorse ? (pHorse.odds ? pHorse.odds + '倍' : '--') : '--';
                         const popVal = pHorse ? `(${pHorse.pop}人気)` : '';
-                        const gradeVal = pHorse ? `【${pHorse.trainingGrade || 'A'}】` : '-';
+
+                        let weightVal = '-';
+                        if (pHorse) {
+                          if (pHorse.confirmedWeight) {
+                            weightVal = `${pHorse.confirmedWeight}kg`;
+                          } else if (pHorse.lastRaceWeight || pHorse.prevWeight) {
+                            weightVal = `${pHorse.lastRaceWeight || pHorse.prevWeight}kg <span class="weight-tag-prev" style="font-size:10px;">前走</span>`;
+                          } else if (pHorse.trainingWeight) {
+                            weightVal = `${pHorse.trainingWeight}kg <span class="weight-tag-pre" style="font-size:10px;">調教後</span>`;
+                          }
+                        }
+
+                        let gradeVal = '-';
+                        if (pHorse && pHorse.trainingGrade && pHorse.trainingGrade !== '-' && pHorse.trainingGrade !== 'null') {
+                          gradeVal = `【${pHorse.trainingGrade}】`;
+                        }
+
                         return `
                           <tr>
                             <td style="text-align: center; font-family: monospace; font-weight: 700;">
@@ -1932,6 +2026,7 @@ open_race_detail_func = """
                             <td>${e.jockey}</td>
                             <td style="font-size: 12px; color: var(--text-muted);">${e.stable}</td>
                             <td style="font-family: monospace; font-weight: 700; color: var(--gold);">${oddsVal} <span style="font-size:11px;color:var(--text-muted);">${popVal}</span></td>
+                            <td style="font-family: monospace; font-size: 12px;">${weightVal}</td>
                             <td style="font-size: 12px;">${gradeVal}</td>
                           </tr>
                         `;

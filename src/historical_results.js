@@ -46441,6 +46441,44 @@ export const HISTORICAL_FULL_RESULTS = {
         "pop": 6,
         "stable": "浜田多実 (栗東)"
       }
+    ],
+    "2016": [
+      {
+        "rank": 1,
+        "gate": 2,
+        "horseName": "レイデオロ",
+        "sexAge": "牡2",
+        "load": 55.0,
+        "jockey": "ルメール",
+        "time": "2:01.3",
+        "margin": "-",
+        "pop": 1,
+        "stable": "藤沢和雄 (美浦)"
+      },
+      {
+        "rank": 2,
+        "gate": 11,
+        "horseName": "マイネルスフェーン",
+        "sexAge": "牡2",
+        "load": 55.0,
+        "jockey": "黛弘人",
+        "time": "2:01.5",
+        "margin": "1.1/4",
+        "pop": 8,
+        "stable": "手塚貴久 (美浦)"
+      },
+      {
+        "rank": 3,
+        "gate": 6,
+        "horseName": "グローブシアター",
+        "sexAge": "牡2",
+        "load": 55.0,
+        "jockey": "福永祐一",
+        "time": "2:01.5",
+        "margin": "クビ",
+        "pop": 2,
+        "stable": "角居勝彦 (栗東)"
+      }
     ]
   },
   "24": {

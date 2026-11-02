@@ -6206,6 +6206,990 @@ const HISTORICAL_DATA = {
       8,
       "久保田貴士 (美浦)"
     ]
+  ],
+  "13": [
+    [
+      2025,
+      "ウインカーネリアン",
+      "三浦皇成",
+      "1:06.9",
+      11,
+      "鹿戸雄一 (美浦)"
+    ],
+    [
+      2024,
+      "ルガル",
+      "西村淳也",
+      "1:07.0",
+      9,
+      "杉山晴紀 (栗東)"
+    ],
+    [
+      2023,
+      "ママコチャ",
+      "川田将雅",
+      "1:08.0",
+      3,
+      "池江泰寿 (栗東)"
+    ],
+    [
+      2022,
+      "ジャンダルム",
+      "荻野極",
+      "1:07.8",
+      8,
+      "池江泰寿 (栗東)"
+    ],
+    [
+      2021,
+      "ピクシーナイト",
+      "福永祐一",
+      "1:07.1",
+      3,
+      "音無秀孝 (栗東)"
+    ],
+    [
+      2020,
+      "グランアレグリア",
+      "ルメール",
+      "1:08.3",
+      1,
+      "藤沢和雄 (美浦)"
+    ],
+    [
+      2019,
+      "タワーオブロンドン",
+      "ルメール",
+      "1:07.1",
+      2,
+      "藤沢和雄 (美浦)"
+    ],
+    [
+      2018,
+      "ファインニードル",
+      "川田将雅",
+      "1:08.3",
+      1,
+      "高橋義忠 (栗東)"
+    ],
+    [
+      2017,
+      "レッドファルクス",
+      "Ｍ．デム",
+      "1:07.6",
+      1,
+      "尾関知人 (美浦)"
+    ],
+    [
+      2016,
+      "レッドファルクス",
+      "Ｍ．デム",
+      "1:07.6",
+      3,
+      "尾関知人 (美浦)"
+    ]
+  ],
+  "14": [
+    [
+      2025,
+      "エンブロイダリー",
+      "ルメール",
+      "1:58.3",
+      2,
+      "森一誠 (美浦)"
+    ],
+    [
+      2024,
+      "チェルヴィニア",
+      "ルメール",
+      "1:57.1",
+      1,
+      "木村哲也 (美浦)"
+    ],
+    [
+      2023,
+      "リバティアイランド",
+      "川田将雅",
+      "2:01.1",
+      1,
+      "中内田充 (美浦)"
+    ],
+    [
+      2022,
+      "スタニングローズ",
+      "坂井瑠星",
+      "1:58.6",
+      3,
+      "高野友和 (栗東)"
+    ],
+    [
+      2021,
+      "アカイトリノムスメ",
+      "戸崎圭太",
+      "2:01.2",
+      4,
+      "国枝栄 (美浦)"
+    ],
+    [
+      2020,
+      "デアリングタクト",
+      "松山弘平",
+      "2:00.6",
+      1,
+      "杉山晴紀 (栗東)"
+    ],
+    [
+      2019,
+      "クロノジェネシス",
+      "北村友一",
+      "1:59.9",
+      4,
+      "斉藤崇史 (栗東)"
+    ],
+    [
+      2018,
+      "アーモンドアイ",
+      "ルメール",
+      "1:58.5",
+      1,
+      "国枝栄 (美浦)"
+    ],
+    [
+      2017,
+      "ディアドラ",
+      "ルメール",
+      "2:00.2",
+      3,
+      "橋田満 (栗東)"
+    ],
+    [
+      2016,
+      "ヴィブロス",
+      "福永祐一",
+      "1:58.6",
+      3,
+      "友道康夫 (栗東)"
+    ]
+  ],
+  "15": [
+    [
+      2025,
+      "エネルジコ",
+      "ルメール",
+      "3:04.0",
+      1,
+      "高柳瑞樹 (美浦)"
+    ],
+    [
+      2024,
+      "アーバンシック",
+      "ルメール",
+      "3:04.1",
+      2,
+      "武井亮 (美浦)"
+    ],
+    [
+      2023,
+      "ドゥレッツァ",
+      "ルメール",
+      "3:03.1",
+      4,
+      "尾関知人 (美浦)"
+    ],
+    [
+      2022,
+      "アスクビクターモア",
+      "田辺裕信",
+      "3:02.4",
+      2,
+      "田村康仁 (美浦)"
+    ],
+    [
+      2021,
+      "タイトルホルダー",
+      "横山武史",
+      "3:04.6",
+      4,
+      "栗田徹 (美浦)"
+    ],
+    [
+      2020,
+      "コントレイル",
+      "福永祐一",
+      "3:05.5",
+      1,
+      "矢作芳人 (栗東)"
+    ],
+    [
+      2019,
+      "ワールドプレミア",
+      "武豊",
+      "3:06.0",
+      3,
+      "友道康夫 (栗東)"
+    ],
+    [
+      2018,
+      "フィエールマン",
+      "ルメール",
+      "3:06.1",
+      7,
+      "手塚貴久 (美浦)"
+    ],
+    [
+      2017,
+      "キセキ",
+      "Ｍ．デム",
+      "3:18.9",
+      1,
+      "角居勝彦 (栗東)"
+    ],
+    [
+      2016,
+      "サトノダイヤモンド",
+      "ルメール",
+      "3:03.3",
+      1,
+      "池江泰寿 (栗東)"
+    ]
+  ],
+  "16": [
+    [
+      2025,
+      "マスカレードボール",
+      "ルメール",
+      "1:58.6",
+      1,
+      "手塚貴久 (美浦)"
+    ],
+    [
+      2024,
+      "ドウデュース",
+      "武豊",
+      "1:57.3",
+      2,
+      "友道康夫 (栗東)"
+    ],
+    [
+      2023,
+      "イクイノックス",
+      "ルメール",
+      "1:55.2",
+      1,
+      "木村哲也 (美浦)"
+    ],
+    [
+      2022,
+      "イクイノックス",
+      "ルメール",
+      "1:57.5",
+      1,
+      "木村哲也 (美浦)"
+    ],
+    [
+      2021,
+      "エフフォーリア",
+      "横山武史",
+      "1:57.9",
+      3,
+      "鹿戸雄一 (美浦)"
+    ],
+    [
+      2020,
+      "アーモンドアイ",
+      "ルメール",
+      "1:57.8",
+      1,
+      "国枝栄 (美浦)"
+    ],
+    [
+      2019,
+      "アーモンドアイ",
+      "ルメール",
+      "1:56.2",
+      1,
+      "国枝栄 (美浦)"
+    ],
+    [
+      2018,
+      "レイデオロ",
+      "ルメール",
+      "1:56.8",
+      2,
+      "藤沢和雄 (美浦)"
+    ],
+    [
+      2017,
+      "キタサンブラック",
+      "武豊",
+      "2:08.3",
+      1,
+      "清水久詞 (栗東)"
+    ],
+    [
+      2016,
+      "モーリス",
+      "ムーア",
+      "1:59.3",
+      1,
+      "堀宣行 (美浦)"
+    ]
+  ],
+  "17": [
+    [
+      2025,
+      "レガレイラ",
+      "戸崎圭太",
+      "2:11.0",
+      1,
+      "木村哲也 (美浦)"
+    ],
+    [
+      2024,
+      "スタニングローズ",
+      "Ｃ．デム",
+      "2:11.1",
+      3,
+      "高野友和 (栗東)"
+    ],
+    [
+      2023,
+      "ブレイディヴェーグ",
+      "ルメール",
+      "2:12.6",
+      1,
+      "宮田敬介 (美浦)"
+    ],
+    [
+      2022,
+      "ジェラルディーナ",
+      "Ｃ．デム",
+      "2:13.0",
+      4,
+      "斉藤崇史 (栗東)"
+    ],
+    [
+      2021,
+      "アカイイト",
+      "幸英明",
+      "2:12.1",
+      10,
+      "中竹和也 (栗東)"
+    ],
+    [
+      2020,
+      "ラッキーライラック",
+      "ルメール",
+      "2:10.3",
+      1,
+      "松永幹夫 (栗東)"
+    ],
+    [
+      2019,
+      "ラッキーライラック",
+      "スミヨン",
+      "2:14.1",
+      3,
+      "松永幹夫 (栗東)"
+    ],
+    [
+      2018,
+      "リスグラシュー",
+      "モレイラ",
+      "2:13.1",
+      3,
+      "矢作芳人 (栗東)"
+    ],
+    [
+      2017,
+      "モズカッチャン",
+      "Ｍ．デム",
+      "2:14.3",
+      5,
+      "鮫島一歩 (栗東)"
+    ],
+    [
+      2016,
+      "クイーンズリング",
+      "Ｍ．デム",
+      "2:12.9",
+      3,
+      "吉村圭司 (栗東)"
+    ]
+  ],
+  "18": [
+    [
+      2025,
+      "ジャンタルマンタル",
+      "川田将雅",
+      "1:31.3",
+      1,
+      "高野友和 (栗東)"
+    ],
+    [
+      2024,
+      "ソウルラッシュ",
+      "団野大成",
+      "1:32.0",
+      4,
+      "池江泰寿 (栗東)"
+    ],
+    [
+      2023,
+      "ナミュール",
+      "藤岡康太",
+      "1:32.5",
+      5,
+      "高野友和 (栗東)"
+    ],
+    [
+      2022,
+      "セリフォス",
+      "レーン",
+      "1:32.5",
+      6,
+      "中内田充 (美浦)"
+    ],
+    [
+      2021,
+      "グランアレグリア",
+      "ルメール",
+      "1:32.6",
+      1,
+      "藤沢和雄 (美浦)"
+    ],
+    [
+      2020,
+      "グランアレグリア",
+      "ルメール",
+      "1:32.0",
+      1,
+      "藤沢和雄 (美浦)"
+    ],
+    [
+      2019,
+      "インディチャンプ",
+      "池添謙一",
+      "1:33.0",
+      3,
+      "音無秀孝 (栗東)"
+    ],
+    [
+      2018,
+      "ステルヴィオ",
+      "ビュイッ",
+      "1:33.3",
+      5,
+      "木村哲也 (美浦)"
+    ],
+    [
+      2017,
+      "ペルシアンナイト",
+      "Ｍ．デム",
+      "1:33.8",
+      4,
+      "池江泰寿 (栗東)"
+    ],
+    [
+      2016,
+      "ミッキーアイル",
+      "浜中俊",
+      "1:33.1",
+      3,
+      "音無秀孝 (栗東)"
+    ]
+  ],
+  "19": [
+    [
+      2025,
+      "カランダガン",
+      "バルザロ",
+      "2:20.3",
+      4,
+      "グラファ (栗東)"
+    ],
+    [
+      2024,
+      "ドウデュース",
+      "武豊",
+      "2:25.5",
+      1,
+      "友道康夫 (栗東)"
+    ],
+    [
+      2023,
+      "イクイノックス",
+      "ルメール",
+      "2:21.8",
+      1,
+      "木村哲也 (美浦)"
+    ],
+    [
+      2022,
+      "ヴェラアズール",
+      "ムーア",
+      "2:23.7",
+      3,
+      "渡辺薫彦 (栗東)"
+    ],
+    [
+      2021,
+      "コントレイル",
+      "福永祐一",
+      "2:24.7",
+      1,
+      "矢作芳人 (栗東)"
+    ],
+    [
+      2020,
+      "アーモンドアイ",
+      "ルメール",
+      "2:23.0",
+      1,
+      "国枝栄 (美浦)"
+    ],
+    [
+      2019,
+      "スワーヴリチャード",
+      "マーフィ",
+      "2:25.9",
+      3,
+      "庄野靖志 (栗東)"
+    ],
+    [
+      2018,
+      "アーモンドアイ",
+      "ルメール",
+      "2:20.6",
+      1,
+      "国枝栄 (美浦)"
+    ],
+    [
+      2017,
+      "シュヴァルグラン",
+      "ボウマン",
+      "2:23.7",
+      5,
+      "友道康夫 (栗東)"
+    ],
+    [
+      2016,
+      "キタサンブラック",
+      "武豊",
+      "2:25.8",
+      1,
+      "清水久詞 (栗東)"
+    ]
+  ],
+  "20": [
+    [
+      2025,
+      "ダブルハートボンド",
+      "坂井瑠星",
+      "1:50.2",
+      3,
+      "大久保龍 (栗東)"
+    ],
+    [
+      2024,
+      "レモンポップ",
+      "坂井瑠星",
+      "1:50.1",
+      1,
+      "田中博康 (美浦)"
+    ],
+    [
+      2023,
+      "レモンポップ",
+      "坂井瑠星",
+      "1:50.6",
+      1,
+      "田中博康 (美浦)"
+    ],
+    [
+      2022,
+      "ジュンライトボルト",
+      "石川裕紀",
+      "1:51.9",
+      3,
+      "友道康夫 (栗東)"
+    ],
+    [
+      2021,
+      "テーオーケインズ",
+      "松山弘平",
+      "1:49.7",
+      1,
+      "高柳大輔 (栗東)"
+    ],
+    [
+      2020,
+      "チュウワウィザード",
+      "戸崎圭太",
+      "1:49.3",
+      4,
+      "大久保龍 (栗東)"
+    ],
+    [
+      2019,
+      "クリソベリル",
+      "川田将雅",
+      "1:48.5",
+      2,
+      "音無秀孝 (栗東)"
+    ],
+    [
+      2018,
+      "ルヴァンスレーヴ",
+      "Ｍ．デム",
+      "1:50.1",
+      1,
+      "萩原清 (美浦)"
+    ],
+    [
+      2017,
+      "ゴールドドリーム",
+      "ムーア",
+      "1:50.1",
+      8,
+      "平田修 (栗東)"
+    ],
+    [
+      2016,
+      "サウンドトゥルー",
+      "大野拓弥",
+      "1:50.1",
+      6,
+      "高木登 (美浦)"
+    ]
+  ],
+  "21": [
+    [
+      2025,
+      "スターアニス",
+      "松山弘平",
+      "1:32.6",
+      2,
+      "高野友和 (栗東)"
+    ],
+    [
+      2024,
+      "アルマヴェローチェ",
+      "岩田望来",
+      "1:33.4",
+      5,
+      "上村洋行 (栗東)"
+    ],
+    [
+      2023,
+      "アスコリピチェーノ",
+      "北村宏司",
+      "1:32.6",
+      3,
+      "黒岩陽一 (美浦)"
+    ],
+    [
+      2022,
+      "リバティアイランド",
+      "川田将雅",
+      "1:33.1",
+      1,
+      "中内田充 (美浦)"
+    ],
+    [
+      2021,
+      "サークルオブライフ",
+      "Ｍ．デム",
+      "1:33.8",
+      3,
+      "国枝栄 (美浦)"
+    ],
+    [
+      2020,
+      "ソダシ",
+      "吉田隼人",
+      "1:33.1",
+      1,
+      "須貝尚介 (栗東)"
+    ],
+    [
+      2019,
+      "レシステンシア",
+      "北村友一",
+      "1:32.7",
+      4,
+      "松下武士 (栗東)"
+    ],
+    [
+      2018,
+      "ダノンファンタジー",
+      "Ｃ．デム",
+      "1:34.1",
+      1,
+      "中内田充 (美浦)"
+    ],
+    [
+      2017,
+      "ラッキーライラック",
+      "石橋脩",
+      "1:34.3",
+      2,
+      "松永幹夫 (栗東)"
+    ],
+    [
+      2016,
+      "ソウルスターリング",
+      "ルメール",
+      "1:34.0",
+      1,
+      "藤沢和雄 (美浦)"
+    ]
+  ],
+  "22": [
+    [
+      2025,
+      "カヴァレリッツォ",
+      "Ｃ．デム",
+      "1:33.2",
+      2,
+      "吉岡辰弥 (栗東)"
+    ],
+    [
+      2024,
+      "アドマイヤズーム",
+      "川田将雅",
+      "1:34.1",
+      5,
+      "友道康夫 (栗東)"
+    ],
+    [
+      2023,
+      "ジャンタルマンタル",
+      "川田将雅",
+      "1:33.8",
+      1,
+      "高野友和 (栗東)"
+    ],
+    [
+      2022,
+      "ドルチェモア",
+      "坂井瑠星",
+      "1:33.9",
+      1,
+      "須貝尚介 (栗東)"
+    ],
+    [
+      2021,
+      "ドウデュース",
+      "武豊",
+      "1:33.5",
+      3,
+      "友道康夫 (栗東)"
+    ],
+    [
+      2020,
+      "グレナディアガーズ",
+      "川田将雅",
+      "1:32.3",
+      7,
+      "中内田充 (美浦)"
+    ],
+    [
+      2019,
+      "サリオス",
+      "ムーア",
+      "1:33.0",
+      1,
+      "堀宣行 (美浦)"
+    ],
+    [
+      2018,
+      "アドマイヤマーズ",
+      "Ｍ．デム",
+      "1:33.9",
+      2,
+      "友道康夫 (栗東)"
+    ],
+    [
+      2017,
+      "ダノンプレミアム",
+      "川田将雅",
+      "1:33.3",
+      1,
+      "中内田充 (美浦)"
+    ],
+    [
+      2016,
+      "サトノアレス",
+      "四位洋文",
+      "1:35.4",
+      6,
+      "藤沢和雄 (美浦)"
+    ]
+  ],
+  "23": [
+    [
+      2025,
+      "ロブチェン",
+      "松山弘平",
+      "2:01.0",
+      7,
+      "杉山晴紀 (栗東)"
+    ],
+    [
+      2024,
+      "クロワデュノール",
+      "北村友一",
+      "2:00.5",
+      1,
+      "斉藤崇史 (栗東)"
+    ],
+    [
+      2023,
+      "レガレイラ",
+      "ルメール",
+      "2:00.2",
+      1,
+      "木村哲也 (美浦)"
+    ],
+    [
+      2022,
+      "ドゥラエレーデ",
+      "ムルザバ",
+      "2:01.5",
+      14,
+      "池添学 (栗東)"
+    ],
+    [
+      2021,
+      "キラーアビリティ",
+      "横山武史",
+      "2:00.6",
+      2,
+      "斉藤崇史 (栗東)"
+    ],
+    [
+      2020,
+      "ダノンザキッド",
+      "川田将雅",
+      "2:02.8",
+      1,
+      "安田隆行 (栗東)"
+    ],
+    [
+      2019,
+      "コントレイル",
+      "福永祐一",
+      "2:01.4",
+      1,
+      "矢作芳人 (栗東)"
+    ],
+    [
+      2018,
+      "サートゥルナーリア",
+      "Ｍ．デム",
+      "2:01.6",
+      1,
+      "中竹和也 (栗東)"
+    ],
+    [
+      2017,
+      "タイムフライヤー",
+      "Ｃ．デム",
+      "2:01.4",
+      1,
+      "松田国英 (栗東)"
+    ],
+    [
+      2016,
+      "レイデオロ",
+      "ルメール",
+      "2:01.3",
+      1,
+      "藤沢和雄 (美浦)"
+    ]
+  ],
+  "24": [
+    [
+      2025,
+      "ミュージアムマイル",
+      "Ｃ．デム",
+      "2:31.5",
+      3,
+      "高柳大輔 (栗東)"
+    ],
+    [
+      2024,
+      "レガレイラ",
+      "戸崎圭太",
+      "2:31.8",
+      5,
+      "木村哲也 (美浦)"
+    ],
+    [
+      2023,
+      "ドウデュース",
+      "武豊",
+      "2:30.9",
+      2,
+      "友道康夫 (栗東)"
+    ],
+    [
+      2022,
+      "イクイノックス",
+      "ルメール",
+      "2:32.4",
+      1,
+      "木村哲也 (美浦)"
+    ],
+    [
+      2021,
+      "エフフォーリア",
+      "横山武史",
+      "2:32.0",
+      1,
+      "鹿戸雄一 (美浦)"
+    ],
+    [
+      2020,
+      "クロノジェネシス",
+      "北村友一",
+      "2:35.0",
+      1,
+      "斉藤崇史 (栗東)"
+    ],
+    [
+      2019,
+      "リスグラシュー",
+      "レーン",
+      "2:30.5",
+      2,
+      "矢作芳人 (栗東)"
+    ],
+    [
+      2018,
+      "ブラストワンピース",
+      "池添謙一",
+      "2:32.2",
+      3,
+      "大竹正博 (美浦)"
+    ],
+    [
+      2017,
+      "キタサンブラック",
+      "武豊",
+      "2:33.6",
+      1,
+      "清水久詞 (栗東)"
+    ],
+    [
+      2016,
+      "サトノダイヤモンド",
+      "ルメール",
+      "2:32.6",
+      1,
+      "池江泰寿 (栗東)"
+    ]
   ]
 };
 
@@ -8294,12 +9278,16 @@ function hydratePayouts(race) {
             }
           }
 
+          let rawComment = (s.trainingComment || s.comment || '').trim();
+          let hasRealComment = rawComment && rawComment !== '-' && rawComment !== 'null' && rawComment !== 'undefined';
+          let commentDisplay = hasRealComment ? rawComment : '-';
+
           return {
             ...s,
             winOdds: winVal,
             placeOdds: placeVal,
             pop: popVal,
-            comment: s.trainingComment || s.comment || '調教順調。状態良好で本番を迎える。',
+            comment: commentDisplay,
             jockeyStat: jockeyDisplay
           };
         });
@@ -8319,8 +9307,8 @@ function hydratePayouts(race) {
           const isTop3Pop = s.pop <= 3;
           const displayOdds = s.winOdds || s.odds || '--';
 
-          let displayWeight = s.trainingWeight ? `${s.trainingWeight}kg` : '-';
-          let displayWeightSub = `<span class="weight-tag-pre">調教後</span>`;
+          let displayWeight = '-';
+          let displayWeightSub = `<span class="weight-tag-prev">前走</span>`;
 
           if (s.confirmedWeight) {
             displayWeight = `${s.confirmedWeight}kg`;
@@ -8330,6 +9318,16 @@ function hydratePayouts(race) {
             if (diff.startsWith('+') && diff !== '+0') diffClass = 'diff-plus';
             else if (diff.startsWith('-') && diff !== '-0') diffClass = 'diff-minus';
             displayWeightSub = `<span class="weight-tag-diff ${diffClass}">${diffText}</span>`;
+          } else if (s.lastRaceWeight || s.prevWeight) {
+            const pw = s.lastRaceWeight || s.prevWeight;
+            displayWeight = `${pw}kg`;
+            displayWeightSub = `<span class="weight-tag-prev">前走</span>`;
+          } else if (s.trainingWeight) {
+            displayWeight = `${s.trainingWeight}kg`;
+            displayWeightSub = `<span class="weight-tag-pre">調教後</span>`;
+          } else {
+            displayWeight = '-';
+            displayWeightSub = `<span style="font-size:10px;color:var(--text-muted);">-</span>`;
           }
 
           html += `
@@ -8389,19 +9387,31 @@ function hydratePayouts(race) {
                   <div class="nh-drawer-grid">
                     <div class="nh-drawer-item">
                       <span class="nh-drawer-label">調教評価</span>
-                      <span class="nh-drawer-val-grade grade-${s.trainingGrade || 'A'}">【${s.trainingGrade || 'A'}】 ${s.trainingCourse || '栗東CW'} (${s.trainingTime || '82.0-66.0-11.2'})</span>
+                      ${(() => {
+                        const rawG = (s.trainingGrade || '').trim();
+                        if (rawG && rawG !== '-' && rawG !== 'null' && rawG !== 'undefined') {
+                          const courseStr = s.trainingCourse ? ` ${s.trainingCourse}` : '';
+                          const timeStr = s.trainingTime ? ` (${s.trainingTime})` : '';
+                          return `<span class="nh-drawer-val-grade grade-${rawG}">【${rawG}】${courseStr}${timeStr}</span>`;
+                        }
+                        return `<span class="nh-drawer-val">-</span>`;
+                      })()}
                     </div>
                     <div class="nh-drawer-item">
                       <span class="nh-drawer-label">調教短評</span>
                       <span class="nh-drawer-val">${s.comment}</span>
                     </div>
                     <div class="nh-drawer-item">
-                      <span class="nh-drawer-label">所属厩舎</span>
-                      <span class="nh-drawer-val">${s.stable || '栗東'}</span>
+                      <span class="nh-drawer-label">馬体重推移</span>
+                      <span class="nh-drawer-val" style="font-size: 11px;">
+                        前走: <strong>${s.lastRaceWeight ? s.lastRaceWeight + 'kg' : '-'}</strong> | 
+                        調教後: <strong>${s.trainingWeight ? s.trainingWeight + 'kg' : '-'}</strong> | 
+                        当日確定: <strong style="color: var(--gold);">${s.confirmedWeight ? s.confirmedWeight + 'kg (' + (s.weightDiff || '±0') + ')' : '未発表（当日発表次第自動反映）'}</strong>
+                      </span>
                     </div>
                     <div class="nh-drawer-item">
-                      <span class="nh-drawer-label">コース適性・騎手</span>
-                      <span class="nh-drawer-val">${s.jockeyStat}</span>
+                      <span class="nh-drawer-label">所属厩舎 / 適性</span>
+                      <span class="nh-drawer-val">${s.stable || '栗東'} (${s.jockeyStat})</span>
                     </div>
                   </div>
                 </div>
@@ -8639,8 +9649,24 @@ function hydratePayouts(race) {
         const entries = typeof ENTRIES_DATA !== 'undefined' ? ENTRIES_DATA[id] : null;
 
         let historyTableRows = '';
-        const historyData = HISTORICAL_DATA[id] || [];
+        let historyData = (typeof HISTORICAL_DATA !== 'undefined' && HISTORICAL_DATA[id]) ? HISTORICAL_DATA[id] : [];
         const fullHistoryMap = (typeof HISTORICAL_FULL_RESULTS !== 'undefined' && HISTORICAL_FULL_RESULTS[id]) ? HISTORICAL_FULL_RESULTS[id] : {};
+
+        if ((!historyData || historyData.length === 0) && fullHistoryMap && Object.keys(fullHistoryMap).length > 0) {
+          const sortedYears = Object.keys(fullHistoryMap).sort((a, b) => parseInt(b) - parseInt(a));
+          historyData = sortedYears.map(y => {
+            const list = fullHistoryMap[y];
+            const winner = list.find(h => h.rank === 1) || list[0];
+            return [
+              parseInt(y),
+              winner ? winner.horseName : '-',
+              winner ? winner.jockey : '-',
+              winner ? winner.time : '-',
+              winner ? (parseInt(winner.pop) || 1) : 1,
+              winner ? winner.stable : '-'
+            ];
+          });
+        }
 
         historyData.forEach((h, hIdx) => {
           const year = h[0];
@@ -8952,6 +9978,7 @@ function hydratePayouts(race) {
                       <th>想定騎手</th>
                       <th>所属厩舎</th>
                       <th>想定オッズ</th>
+                      <th>馬体重</th>
                       <th>調教/状態</th>
                     </tr>
                   </thead>
@@ -8964,7 +9991,23 @@ function hydratePayouts(race) {
                         const pHorse = predStarters ? predStarters.find(s => s.gate === e.gate || s.horseName === e.horseName) : null;
                         const oddsVal = pHorse ? (pHorse.odds ? pHorse.odds + '倍' : '--') : '--';
                         const popVal = pHorse ? `(${pHorse.pop}人気)` : '';
-                        const gradeVal = pHorse ? `【${pHorse.trainingGrade || 'A'}】` : '-';
+
+                        let weightVal = '-';
+                        if (pHorse) {
+                          if (pHorse.confirmedWeight) {
+                            weightVal = `${pHorse.confirmedWeight}kg`;
+                          } else if (pHorse.lastRaceWeight || pHorse.prevWeight) {
+                            weightVal = `${pHorse.lastRaceWeight || pHorse.prevWeight}kg <span class="weight-tag-prev" style="font-size:10px;">前走</span>`;
+                          } else if (pHorse.trainingWeight) {
+                            weightVal = `${pHorse.trainingWeight}kg <span class="weight-tag-pre" style="font-size:10px;">調教後</span>`;
+                          }
+                        }
+
+                        let gradeVal = '-';
+                        if (pHorse && pHorse.trainingGrade && pHorse.trainingGrade !== '-' && pHorse.trainingGrade !== 'null') {
+                          gradeVal = `【${pHorse.trainingGrade}】`;
+                        }
+
                         return `
                           <tr>
                             <td style="text-align: center; font-family: monospace; font-weight: 700;">
@@ -8977,6 +10020,7 @@ function hydratePayouts(race) {
                             <td>${e.jockey}</td>
                             <td style="font-size: 12px; color: var(--text-muted);">${e.stable}</td>
                             <td style="font-family: monospace; font-weight: 700; color: var(--gold);">${oddsVal} <span style="font-size:11px;color:var(--text-muted);">${popVal}</span></td>
+                            <td style="font-family: monospace; font-size: 12px;">${weightVal}</td>
                             <td style="font-size: 12px;">${gradeVal}</td>
                           </tr>
                         `;

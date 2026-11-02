@@ -222,7 +222,7 @@ def check_and_update_entries():
 def sync_all():
     """index.html、src/main.jsを同期し、ViteでビルドしてGitへコミット＆プッシュ"""
     log("Running master synchronization across the codebase...")
-    gen_script = os.path.join(APP_DIR, 'scripts', 'build_clean_v9.py')
+    gen_script = os.path.join(APP_DIR, 'scripts', 'build_clean_v10.py')
     if os.path.exists(gen_script):
         subprocess.run([sys.executable, gen_script], cwd=APP_DIR, check=True)
     

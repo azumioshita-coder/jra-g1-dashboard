@@ -1544,6 +1544,14 @@ html.route-prediction .nav-item[data-target="prediction"] {
   border-radius: 3px;
   font-weight: 700;
 }
+.weight-tag-prev {
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.15);
+  padding: 0 3px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-family: monospace;
+}
 .weight-tag-diff {
   font-family: monospace;
   font-weight: 700;
