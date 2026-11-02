@@ -266,7 +266,15 @@ const G1_RACES = [
           date: '2026-11-01T15:40:00',
           location: '東京',
           course: '芝 2000m',
-          status: 'upcoming'
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.5',
+          type: 'older-middle',
+          winner: 'ダノンデサイル', winnerJockey: '戸崎圭太', winnerGate: 17, time: '1:56.7',
+          second: 'ネブラディスク', secondJockey: '川田将雅', secondGate: 10,
+          third: 'レガレイラ', thirdJockey: '岩田望来', thirdGate: 3,
+          payouts: { win: 1080, trifecta: 297820 }
         },
         {
           id: '17',
@@ -4920,7 +4928,298 @@ const RESULTS_DATA = {
         "pop": "293"
       }
     ]
-  }
+  },
+  "16": [
+    [
+      1,
+      17,
+      "ダノンデサイル",
+      "牡5",
+      58.0,
+      "戸崎圭太",
+      "1:56.7",
+      "-",
+      "14-16-16",
+      "32.9",
+      "10.8",
+      4,
+      "516",
+      "-4",
+      "安田翔伍 (栗東)"
+    ],
+    [
+      2,
+      10,
+      "ネブラディスク",
+      "牡4",
+      58.0,
+      "川田将雅",
+      "1:57.1",
+      "2 1/2",
+      "05-05-04",
+      "33.8",
+      "24.5",
+      8,
+      "458",
+      "+2",
+      "福永祐一 (栗東)"
+    ],
+    [
+      3,
+      3,
+      "レガレイラ",
+      "牝5",
+      56.0,
+      "岩田望来",
+      "1:57.2",
+      "3/4",
+      "08-08-08",
+      "33.4",
+      "6.8",
+      3,
+      "494",
+      "+4",
+      "木村哲也 (美浦)"
+    ],
+    [
+      4,
+      14,
+      "タガノデュード",
+      "牡5",
+      58.0,
+      "M.デムーロ",
+      "1:57.4",
+      "1 1/4",
+      "11-10-10",
+      "33.7",
+      "68.2",
+      14,
+      "498",
+      "+6",
+      "宮徹 (栗東)"
+    ],
+    [
+      5,
+      1,
+      "クロワデュノール",
+      "牡4",
+      58.0,
+      "C.デムーロ",
+      "1:57.4",
+      "ハナ",
+      "03-03-03",
+      "34.2",
+      "2.8",
+      1,
+      "506",
+      "+2",
+      "斉藤崇史 (栗東)"
+    ],
+    [
+      6,
+      11,
+      "シェイクユアハート",
+      "牡6",
+      58.0,
+      "古川吉洋",
+      "1:57.5",
+      "アタマ",
+      "07-07-06",
+      "34.0",
+      "16.4",
+      5,
+      "482",
+      "-2",
+      "宮徹 (栗東)"
+    ],
+    [
+      7,
+      8,
+      "ジュンブロッサム",
+      "牡7",
+      58.0,
+      "杉原誠人",
+      "1:57.7",
+      "1 1/4",
+      "15-14-13",
+      "33.5",
+      "112.5",
+      16,
+      "476",
+      "0",
+      "友道康夫 (栗東)"
+    ],
+    [
+      8,
+      15,
+      "サクラファレル",
+      "牡4",
+      58.0,
+      "佐々木大輔",
+      "1:57.7",
+      "クビ",
+      "10-11-12",
+      "33.7",
+      "58.9",
+      13,
+      "502",
+      "+4",
+      "堀宣行 (美浦)"
+    ],
+    [
+      9,
+      12,
+      "コスモキュランダ",
+      "牡5",
+      58.0,
+      "丹内祐次",
+      "1:57.7",
+      "アタマ",
+      "06-06-07",
+      "34.1",
+      "42.3",
+      12,
+      "508",
+      "-2",
+      "加藤士津八 (美浦)"
+    ],
+    [
+      10,
+      6,
+      "セイウンハーデス",
+      "牡7",
+      58.0,
+      "幸英明",
+      "1:57.7",
+      "ハナ",
+      "01-01-01",
+      "35.1",
+      "19.8",
+      6,
+      "514",
+      "+2",
+      "橋口慎介 (栗東)"
+    ],
+    [
+      11,
+      7,
+      "マスカレードボール",
+      "牡4",
+      58.0,
+      "C.ルメール",
+      "1:57.8",
+      "クビ",
+      "04-04-05",
+      "34.6",
+      "4.5",
+      2,
+      "492",
+      "0",
+      "手塚貴久 (美浦)"
+    ],
+    [
+      12,
+      16,
+      "ジョバンニ",
+      "牡4",
+      58.0,
+      "松山弘平",
+      "1:58.5",
+      "4",
+      "09-09-09",
+      "34.9",
+      "31.2",
+      9,
+      "496",
+      "+2",
+      "杉山晴紀 (栗東)"
+    ],
+    [
+      13,
+      5,
+      "シャンパンカラー",
+      "牡6",
+      58.0,
+      "内田博幸",
+      "1:58.7",
+      "1 1/4",
+      "02-02-02",
+      "35.8",
+      "94.0",
+      15,
+      "510",
+      "+4",
+      "田中剛 (美浦)"
+    ],
+    [
+      14,
+      9,
+      "ホウオウビスケッツ",
+      "牡6",
+      58.0,
+      "岩田康誠",
+      "1:58.9",
+      "1 1/4",
+      "12-12-14",
+      "34.5",
+      "35.6",
+      10,
+      "506",
+      "-2",
+      "奥村武 (美浦)"
+    ],
+    [
+      15,
+      13,
+      "リアライズシリウス",
+      "牡3",
+      56.0,
+      "津村明秀",
+      "1:59.2",
+      "1 1/2",
+      "13-13-15",
+      "34.6",
+      "22.0",
+      7,
+      "468",
+      "+2",
+      "手塚貴久 (美浦)"
+    ],
+    [
+      16,
+      2,
+      "エルトンバローズ",
+      "牡6",
+      58.0,
+      "松若風馬",
+      "1:59.2",
+      "アタマ",
+      "16-15-17",
+      "34.3",
+      "145.0",
+      17,
+      "518",
+      "-4",
+      "杉山晴紀 (栗東)"
+    ],
+    [
+      17,
+      4,
+      "レディネス",
+      "牡4",
+      58.0,
+      "横山典弘",
+      "1:59.9",
+      "4",
+      "17-17-11",
+      "35.4",
+      "38.5",
+      11,
+      "472",
+      "+6",
+      "昆貢 (栗東)"
+    ]
+  ]
 };
 
 const HISTORICAL_DATA = {
@@ -6660,6 +6959,56 @@ const PAYOUTS_DATA = {
       "val": "¥113,300",
       "pop": "293"
     }
+  ],
+  "16": [
+    {
+      "type": "単勝",
+      "comb": "17",
+      "val": "¥1,080",
+      "pop": "4"
+    },
+    {
+      "type": "複勝",
+      "comb": "17<br>10<br>3",
+      "val": "¥320<br>¥880<br>¥370",
+      "pop": "4<br>8<br>3"
+    },
+    {
+      "type": "枠連",
+      "comb": "5-8",
+      "val": "¥5,990",
+      "pop": "22"
+    },
+    {
+      "type": "馬連",
+      "comb": "10-17",
+      "val": "¥12,970",
+      "pop": "42"
+    },
+    {
+      "type": "馬単",
+      "comb": "17→10",
+      "val": "¥25,490",
+      "pop": "85"
+    },
+    {
+      "type": "ワイド",
+      "comb": "10-17<br>3-17<br>3-10",
+      "val": "¥3,330<br>¥1,290<br>¥5,060",
+      "pop": "38<br>12<br>52"
+    },
+    {
+      "type": "三連複",
+      "comb": "3-10-17",
+      "val": "¥42,010",
+      "pop": "118"
+    },
+    {
+      "type": "三連単",
+      "comb": "17→10→3",
+      "val": "¥297,820",
+      "pop": "742"
+    }
   ]
 };
 
@@ -7112,6 +7461,7 @@ function hydratePayouts(race) {
       let lastMainView = 'calendar';
       let predictionSortType = 'gate';
       let activeSheetGate = null;
+      let currentPredictionRaceId = '17'; // 動的に次回レースを初期選択
 
       // オッズ状態管理（予想オッズ vs 発売中リアルタイムオッズ）
       let oddsMode = 'estimated'; // 'estimated' (予想オッズ) または 'live' (発売中・最新オッズ)
@@ -7128,28 +7478,90 @@ function hydratePayouts(race) {
         '消': 'mark-keshi'
       };
 
-      // 発売開始チェック (2026-10-30 18:30 JRA金曜夜間発売開始)
-      function isJraTicketSalesStarted() {
+      // 次回G1レースを自動判定（現在時刻から最も近い未終了レース）
+      function getNextUpcomingRace() {
         const now = new Date();
-        const salesStart = new Date('2026-10-30T18:30:00+09:00');
+        const upcoming = G1_RACES.filter(r => new Date(r.date) > now)
+                                 .sort((a, b) => new Date(a.date) - new Date(b.date));
+        return upcoming.length > 0 ? upcoming[0] : G1_RACES[G1_RACES.length - 1];
+      }
+
+      // 全自動ライフサイクル管理エンジン（レース発走時刻を過ぎたら自動的に終了ステータスへ移行）
+      function autoLifecycleEngine() {
+        const now = new Date();
+        let changed = false;
+        G1_RACES.forEach(r => {
+          if (new Date(r.date) <= now && r.status !== 'finished') {
+            r.status = 'finished';
+            changed = true;
+          }
+        });
+        if (changed) {
+          renderRaces();
+          updateTabCounts();
+        }
+        startNextRaceCountdown();
+      }
+
+      // レース毎の金曜夜間18:30発売開始チェック
+      function isJraTicketSalesStarted(raceDateStr) {
+        const now = new Date();
+        if (!raceDateStr) return false;
+        const raceDate = new Date(raceDateStr);
+        const dayOfWeek = raceDate.getDay();
+        const daysToFriday = (dayOfWeek === 0) ? 2 : (dayOfWeek === 6 ? 1 : 2);
+        const salesStart = new Date(raceDate.getTime() - daysToFriday * 24 * 60 * 60 * 1000);
+        salesStart.setHours(18, 30, 0, 0);
         return now >= salesStart;
       }
 
+      function getTicketSalesStartTime(raceDateStr) {
+        if (!raceDateStr) return '11/13(金) 18:30';
+        const raceDate = new Date(raceDateStr);
+        const dayOfWeek = raceDate.getDay();
+        const daysToFriday = (dayOfWeek === 0) ? 2 : (dayOfWeek === 6 ? 1 : 2);
+        const salesStart = new Date(raceDate.getTime() - daysToFriday * 24 * 60 * 60 * 1000);
+        salesStart.setHours(18, 30, 0, 0);
+        const m = salesStart.getMonth() + 1;
+        const d = salesStart.getDate();
+        return `${m}/${d}(金) 18:30`;
+      }
+
+      function getActivePredictionStarters() {
+        if (typeof PREDICTION_DATA !== 'undefined') {
+          if (PREDICTION_DATA.races && PREDICTION_DATA.races[currentPredictionRaceId]) {
+            return PREDICTION_DATA.races[currentPredictionRaceId].starters || [];
+          }
+          if (PREDICTION_DATA.starters) {
+            return PREDICTION_DATA.starters;
+          }
+        }
+        return [];
+      }
+
       function initOddsState() {
-        if (typeof localStorage !== 'undefined') {
-          const savedMode = localStorage.getItem('keiba_odds_mode');
+        const raceObj = G1_RACES.find(r => r.id === currentPredictionRaceId);
+        const isFinished = raceObj && raceObj.status === 'finished';
+
+        if (isFinished) {
+          oddsMode = 'live';
+        } else if (typeof localStorage !== 'undefined') {
+          const savedMode = localStorage.getItem('keiba_odds_mode_' + currentPredictionRaceId);
           if (savedMode === 'live' || savedMode === 'estimated') {
             oddsMode = savedMode;
           } else {
-            oddsMode = isJraTicketSalesStarted() ? 'live' : 'estimated';
+            oddsMode = isJraTicketSalesStarted(raceObj ? raceObj.date : null) ? 'live' : 'estimated';
           }
-          
+        } else {
+          oddsMode = isJraTicketSalesStarted(raceObj ? raceObj.date : null) ? 'live' : 'estimated';
+        }
+
+        liveOddsData = null;
+        if (typeof localStorage !== 'undefined') {
           try {
-            const savedLive = localStorage.getItem('keiba_live_odds_16');
+            const savedLive = localStorage.getItem('keiba_live_odds_' + currentPredictionRaceId);
             if (savedLive) liveOddsData = JSON.parse(savedLive);
           } catch(e) {}
-        } else {
-          oddsMode = 'estimated';
         }
 
         if (!liveOddsData) {
@@ -7159,20 +7571,19 @@ function hydratePayouts(race) {
 
       function generateInitialLiveOdds() {
         liveOddsData = {};
-        if (typeof PREDICTION_DATA !== 'undefined' && PREDICTION_DATA.starters) {
-          PREDICTION_DATA.starters.forEach(s => {
-            const baseWin = parseFloat(s.odds) || 10.0;
-            liveOddsData[s.gate] = {
-              win: baseWin,
-              place: s.placeOdds || `${(baseWin * 0.35).toFixed(1)} - ${(baseWin * 0.55).toFixed(1)}`,
-              pop: s.pop
-            };
-          });
-        }
+        const starters = getActivePredictionStarters();
+        starters.forEach(s => {
+          const baseWin = parseFloat(s.odds) || 10.0;
+          liveOddsData[s.gate] = {
+            win: baseWin,
+            place: s.placeOdds || `${(baseWin * 0.35).toFixed(1)} - ${(baseWin * 0.55).toFixed(1)}`,
+            pop: s.pop || 99
+          };
+        });
       }
 
       function refreshLiveOdds(simulateShift = true) {
-        if (!liveOddsData) generateInitialLiveOdds();
+        if (!liveOddsData || Object.keys(liveOddsData).length === 0) generateInitialLiveOdds();
 
         if (simulateShift) {
           const gates = Object.keys(liveOddsData);
@@ -7204,23 +7615,23 @@ function hydratePayouts(race) {
           });
 
           if (typeof localStorage !== 'undefined') {
-            localStorage.setItem('keiba_live_odds_16', JSON.stringify(liveOddsData));
+            localStorage.setItem('keiba_live_odds_' + currentPredictionRaceId, JSON.stringify(liveOddsData));
           }
         }
 
         const now = new Date();
         lastOddsRefreshTime = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')}`;
-        
         renderNetkeibaHorseList();
         updateOddsControlUI();
+        triggerOddsHighlight();
       }
 
       function setOddsMode(mode) {
         oddsMode = mode;
         if (typeof localStorage !== 'undefined') {
-          localStorage.setItem('keiba_odds_mode', mode);
+          localStorage.setItem('keiba_odds_mode_' + currentPredictionRaceId, mode);
         }
-        if (mode === 'live' && !liveOddsData) {
+        if (mode === 'live' && (!liveOddsData || Object.keys(liveOddsData).length === 0)) {
           generateInitialLiveOdds();
         }
         renderNetkeibaHorseList();
@@ -7229,189 +7640,100 @@ function hydratePayouts(race) {
 
       function updateOddsControlUI() {
         if (typeof document === 'undefined') return;
-        const btnEst = document.getElementById('btn-odds-estimated');
+        const btnEstimated = document.getElementById('btn-odds-estimated');
         const btnLive = document.getElementById('btn-odds-live');
-        const badgeEl = document.getElementById('odds-mode-badge');
-        const textEl = document.getElementById('odds-mode-text');
-        const subEl = document.getElementById('odds-sales-countdown');
+        const badge = document.getElementById('odds-mode-badge');
+        const badgeText = document.getElementById('odds-mode-text');
+        const countdown = document.getElementById('odds-sales-countdown');
         const timeEl = document.getElementById('odds-update-time');
+        const oddsCard = document.querySelector('.odds-control-card');
 
-        if (btnEst && btnLive) {
+        const raceObj = G1_RACES.find(r => r.id === currentPredictionRaceId);
+        const isFinished = raceObj && raceObj.status === 'finished';
+
+        if (isFinished) {
+          if (oddsCard) oddsCard.style.display = 'none';
+          return;
+        } else {
+          if (oddsCard) oddsCard.style.display = 'block';
+        }
+
+        if (btnEstimated && btnLive) {
           if (oddsMode === 'estimated') {
-            btnEst.classList.add('active');
+            btnEstimated.classList.add('active');
             btnLive.classList.remove('active');
           } else {
+            btnEstimated.classList.remove('active');
             btnLive.classList.add('active');
-            btnEst.classList.remove('active');
           }
         }
 
-        if (badgeEl && textEl && subEl) {
+        const salesTimeStr = getTicketSalesStartTime(raceObj ? raceObj.date : null);
+
+        if (badge && badgeText) {
           if (oddsMode === 'estimated') {
-            badgeEl.className = 'odds-mode-badge pre-sale';
-            textEl.innerHTML = '<span class="pulse-dot-gold"></span> 予想オッズ表示中（発売前）';
-            subEl.innerText = '※10/30(金) 18:30夜間発売開始とともに最新確定オッズへ自動切替';
+            badge.className = 'odds-mode-badge pre-sale';
+            badgeText.innerText = '想定予想オッズ (netkeiba参考)';
+            if (countdown) {
+              countdown.innerText = `※${salesTimeStr}夜間発売開始とともに確定オッズへ自動切替`;
+            }
           } else {
-            badgeEl.className = 'odds-mode-badge on-sale';
-            textEl.innerHTML = '<span class="pulse-dot-green"></span> 馬券発売中（リアルタイムオッズ）';
-            subEl.innerText = '※最新のJRA確定・投票オッズを随時反映中（自動更新中）';
+            badge.className = 'odds-mode-badge live-sale';
+            badgeText.innerText = '● 発売中・リアルタイムオッズ (30秒自動更新)';
+            if (countdown) {
+              countdown.innerText = '※JRA公式発売オッズ連動シミュレーション中';
+            }
           }
         }
 
         if (timeEl) {
           if (lastOddsRefreshTime) {
-            timeEl.innerHTML = `<span style="color: var(--primary);">✔ ${lastOddsRefreshTime} 更新済</span>`;
+            timeEl.innerText = `● ${lastOddsRefreshTime} 自動更新済`;
           } else {
-            timeEl.innerText = oddsMode === 'estimated' ? '● 予想オッズ' : '● 発売中オッズ';
+            timeEl.innerText = '● リアルタイム';
           }
         }
       }
 
-      // ----------------------------------------------------
-      // SPA URL Hash ルーティング ＆ 状態復元（リロード対策）
-      // ----------------------------------------------------
-      function navigateTo(routeHash) {
-        if (typeof window === 'undefined') return;
-        if (window.location.hash !== routeHash) {
-          window.location.hash = routeHash;
-        } else {
-          handleRoute(false);
-        }
-      }
-
-      function handleRoute(shouldScroll = false) {
-        if (typeof window === 'undefined') return;
-
-        let hash = window.location.hash || '';
-        if (!hash || hash === '#' || hash === '#/') {
-          if (typeof localStorage !== 'undefined') {
-            const saved = localStorage.getItem('keiba_active_route');
-            if (saved && (saved === '#prediction' || saved.startsWith('#race-') || saved.startsWith('#sec-'))) {
-              hash = saved;
-              if (window.history && window.history.replaceState) {
-                window.history.replaceState(null, '', hash);
-              }
-            } else {
-              hash = '#calendar';
-            }
-          } else {
-            hash = '#calendar';
-          }
-        }
-
-        // 1. レース詳細モーダル ルート (#race-16 など)
-        if (hash.startsWith('#race-')) {
-          const raceId = hash.replace('#race-', '');
-          if (typeof localStorage !== 'undefined') {
-            localStorage.setItem('keiba_active_route', hash);
-          }
-          const baseView = (typeof localStorage !== 'undefined' && localStorage.getItem('keiba_last_main_view') === 'prediction') ? 'prediction' : 'calendar';
-          switchView(baseView, false, false);
-          openRaceDetail(raceId, false);
-          return;
-        }
-
-        // 2. 予想ページ ルート (#prediction または #sec-xxx)
-        if (hash === '#prediction' || hash.startsWith('#sec-')) {
-          closeModalInternal();
-          if (typeof localStorage !== 'undefined') {
-            localStorage.setItem('keiba_active_route', '#prediction');
-            localStorage.setItem('keiba_last_main_view', 'prediction');
-          }
-          switchView('prediction', shouldScroll, false);
-
-          if (hash.startsWith('#sec-')) {
-            const secId = hash.replace('#', '');
-            const targetEl = document.getElementById(secId);
-            if (targetEl) {
-              setTimeout(() => {
-                targetEl.scrollIntoView({ behavior: 'smooth' });
-              }, 80);
-            }
-          }
-          return;
-        }
-
-        // 3. カレンダー一覧 トップページ ルート (#calendar またはデフォルト)
-        closeModalInternal();
-        if (typeof localStorage !== 'undefined') {
-          localStorage.setItem('keiba_active_route', '#calendar');
-          localStorage.setItem('keiba_last_main_view', 'calendar');
-        }
-        switchView('calendar', shouldScroll, false);
-      }
-
-      function switchView(viewName, shouldScroll = true, updateRoute = false) {
-        if (updateRoute) {
-          navigateTo('#' + viewName);
-          return;
-        }
-
-        currentAppView = viewName;
-        lastMainView = viewName;
-        if (typeof localStorage !== 'undefined') {
-          localStorage.setItem('keiba_last_main_view', viewName);
-          localStorage.setItem('keiba_active_route', '#' + viewName);
-        }
-
-        const calView = document.getElementById('view-calendar');
-        const predView = document.getElementById('view-prediction');
-        const navItems = document.querySelectorAll('.nav-item');
-
-        if (viewName === 'prediction') {
-          if (document.documentElement) {
-            document.documentElement.classList.add('route-prediction');
-          }
-          if (calView) calView.style.display = 'none';
-          if (predView) predView.style.display = 'block';
-          navItems.forEach(n => {
-            if (n.getAttribute('data-target') === 'prediction') n.classList.add('active');
-            else n.classList.remove('active');
-          });
-          renderPredictionView();
-          if (shouldScroll && typeof window !== 'undefined' && window.scrollTo) {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }
-
-          // 発売中の場合は自動更新インターバルを開始
-          if (!oddsAutoRefreshTimer && typeof setInterval !== 'undefined') {
-            oddsAutoRefreshTimer = setInterval(() => {
-              if (currentAppView === 'prediction') {
-                if (oddsMode === 'live') {
-                  refreshLiveOdds(true);
-                } else if (isJraTicketSalesStarted()) {
-                  // 18:30をまたいだら自動で発売中に昇格
+      function startOddsAutoRefresh() {
+        if (oddsAutoRefreshTimer) clearInterval(oddsAutoRefreshTimer);
+        oddsAutoRefreshTimer = setInterval(() => {
+          const currentView = document.querySelector('.app-view:not([style*="display: none"])');
+          if (currentView && currentView.id === 'view-prediction') {
+            const raceObj = G1_RACES.find(r => r.id === currentPredictionRaceId);
+            if (raceObj && raceObj.status !== 'finished') {
+              if (oddsMode === 'live') {
+                refreshLiveOdds(true);
+              } else {
+                if (isJraTicketSalesStarted(raceObj.date)) {
                   setOddsMode('live');
-                  refreshLiveOdds(false);
                 }
               }
-            }, 30000); // 30秒間隔
+            }
           }
-        } else {
-          if (document.documentElement) {
-            document.documentElement.classList.remove('route-prediction');
-          }
-          if (calView) calView.style.display = 'block';
-          if (predView) predView.style.display = 'none';
-          navItems.forEach(n => {
-            if (n.getAttribute('data-target') === 'calendar') n.classList.add('active');
-            else n.classList.remove('active');
-          });
-          if (shouldScroll && typeof window !== 'undefined' && window.scrollTo) {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }
-          if (oddsAutoRefreshTimer && typeof clearInterval !== 'undefined') {
-            clearInterval(oddsAutoRefreshTimer);
-            oddsAutoRefreshTimer = null;
-          }
-        }
-        refreshIcons();
+        }, 30000);
       }
+
+      function triggerOddsHighlight() {
+        const oddsCells = document.querySelectorAll('.nh-odds-val');
+        oddsCells.forEach(c => {
+          c.style.transition = 'color 0.3s ease, transform 0.3s ease';
+          c.style.color = 'var(--gold)';
+          c.style.transform = 'scale(1.08)';
+          setTimeout(() => {
+            c.style.color = '';
+            c.style.transform = '';
+          }, 800);
+        });
+      }
+
+      function initWeightState() {}
+      function updateWeightControlUI() {}
 
       function getUserMarks() {
         if (typeof localStorage === 'undefined') return {};
         try {
-          return JSON.parse(localStorage.getItem('keiba_marks_16')) || {};
+          return JSON.parse(localStorage.getItem('keiba_marks_' + currentPredictionRaceId)) || {};
         } catch(e) {
           return {};
         }
@@ -7425,14 +7747,52 @@ function hydratePayouts(race) {
           marks[gate] = mark;
         }
         if (typeof localStorage !== 'undefined') {
-          localStorage.setItem('keiba_marks_16', JSON.stringify(marks));
+          localStorage.setItem('keiba_marks_' + currentPredictionRaceId, JSON.stringify(marks));
         }
         updateMarksUI();
       }
 
+      function updateMarksUI() {
+        const marks = getUserMarks();
+        const starters = getActivePredictionStarters();
+
+        document.querySelectorAll('.nh-mark-btn').forEach(btn => {
+          const g = btn.getAttribute('data-gate');
+          const m = marks[g] || '';
+          btn.innerText = m;
+          btn.className = `nh-mark-btn ${MARK_CLASSES[m] || ''}`;
+        });
+
+        const markTypes = [
+          { mark: '◎', id: 'summary-mark-honmei' },
+          { mark: '○', id: 'summary-mark-taiko' },
+          { mark: '▲', id: 'summary-mark-tanana' },
+          { mark: '△', id: 'summary-mark-renka' },
+          { mark: '☆', id: 'summary-mark-ana' }
+        ];
+
+        markTypes.forEach(mt => {
+          const el = document.getElementById(mt.id);
+          if (!el) return;
+          const assignedGates = Object.keys(marks).filter(g => marks[g] === mt.mark);
+          if (assignedGates.length > 0) {
+            const horseNames = assignedGates.map(g => {
+              const h = starters.find(s => s.gate === Number(g));
+              return h ? `${g}.${h.horseName}` : `${g}番`;
+            });
+            el.innerText = horseNames.join(', ');
+            el.classList.add('has-assigned');
+          } else {
+            el.innerText = '未選択';
+            el.classList.remove('has-assigned');
+          }
+        });
+      }
+
       function openMarkSheet(gate) {
         activeSheetGate = gate;
-        const horse = PREDICTION_DATA.starters.find(s => s.gate === Number(gate));
+        const starters = getActivePredictionStarters();
+        const horse = starters.find(s => s.gate === Number(gate));
         if (!horse) return;
 
         const sheet = document.getElementById('mark-bottom-sheet');
@@ -7448,105 +7808,231 @@ function hydratePayouts(race) {
           nameEl.innerText = `${horse.horseName} (${horse.jockey})`;
         }
 
-        if (backdrop) backdrop.classList.add('active');
-        if (sheet) sheet.classList.add('active');
+        const currentMark = getUserMarks()[gate] || '';
+        document.querySelectorAll('.btn-sheet-mark').forEach(btn => {
+          if (btn.getAttribute('data-mark') === currentMark) {
+            btn.classList.add('selected');
+          } else {
+            btn.classList.remove('selected');
+          }
+        });
+
+        if (sheet && backdrop) {
+          sheet.classList.add('open');
+          backdrop.classList.add('open');
+        }
       }
 
       function closeMarkSheet() {
-        activeSheetGate = null;
         const sheet = document.getElementById('mark-bottom-sheet');
         const backdrop = document.getElementById('mark-sheet-backdrop');
-        if (backdrop) backdrop.classList.remove('active');
-        if (sheet) sheet.classList.remove('active');
+        if (sheet && backdrop) {
+          sheet.classList.remove('open');
+          backdrop.classList.remove('open');
+        }
+        activeSheetGate = null;
       }
 
-      function updateMarksUI() {
-        if (typeof document === 'undefined') return;
-        const marks = getUserMarks();
-        
-        document.querySelectorAll('.nh-mark-btn').forEach(btn => {
-          const g = btn.getAttribute('data-gate');
-          const m = marks[g] || '';
-          btn.innerText = m;
-          btn.className = `nh-mark-btn ${MARK_CLASSES[m] || ''}`;
-        });
+      function switchAppView(viewName, pushState = true) {
+        currentAppView = viewName;
+        if (viewName === 'calendar') lastMainView = 'calendar';
 
-        const summaryContainer = document.getElementById('selected-marks-summary');
-        if (summaryContainer) {
-          const starters = PREDICTION_DATA.starters;
-          const markOrder = ['◎', '○', '▲', '△', '☆', '消'];
-          let badgesHtml = '';
+        const calView = document.getElementById('view-calendar');
+        const predView = document.getElementById('view-prediction');
+        const navItems = document.querySelectorAll('.nav-item');
 
-          markOrder.forEach(targetM => {
-            Object.keys(marks).forEach(g => {
-              if (marks[g] === targetM) {
-                const s = starters.find(x => String(x.gate) === String(g));
-                if (s) {
-                  badgesHtml += `
-                    <span style="font-size: 11px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15); padding: 3px 8px; border-radius: 6px; display: inline-flex; align-items: center; gap: 5px;">
-                      <span class="nh-mark-btn ${MARK_CLASSES[targetM]}" style="width: 20px; height: 20px; font-size: 11px; border-radius: 4px; pointer-events: none;">${targetM}</span>
-                      <strong style="color: #fff;">${s.gate}. ${s.horseName}</strong>
-                      <span style="color: var(--text-muted); font-size: 10px;">(${s.jockey})</span>
-                    </span>
-                  `;
-                }
-              }
-            });
+        if (viewName === 'prediction') {
+          if (document.documentElement) {
+            document.documentElement.classList.remove('route-calendar');
+            document.documentElement.classList.add('route-prediction');
+          }
+          if (calView) calView.style.display = 'none';
+          if (predView) predView.style.display = 'block';
+
+          navItems.forEach(n => {
+            if (n.getAttribute('data-target') === 'prediction') {
+              n.classList.add('active');
+            } else {
+              n.classList.remove('active');
+            }
           });
 
-          if (!badgesHtml) {
-            summaryContainer.innerHTML = '<span style="font-size: 12px; color: var(--text-muted);">まだ印が選択されていません。出馬表の印ボタンから本命（◎）や対抗（○）を選択してください。</span>';
+          renderPredictionView();
+
+          if (pushState && window.history) {
+            window.history.pushState({ view: 'prediction', raceId: currentPredictionRaceId }, '', '#prediction-' + currentPredictionRaceId);
+          }
+          window.scrollTo({ top: 0, behavior: 'instant' });
+        } else {
+          if (document.documentElement) {
+            document.documentElement.classList.remove('route-prediction');
+            document.documentElement.classList.add('route-calendar');
+          }
+          if (predView) predView.style.display = 'none';
+          if (calView) calView.style.display = 'block';
+
+          navItems.forEach(n => {
+            if (n.getAttribute('data-target') === 'calendar') {
+              n.classList.add('active');
+            } else {
+              n.classList.remove('active');
+            }
+          });
+
+          if (pushState && window.history) {
+            window.history.pushState({ view: 'calendar' }, '', '#calendar');
+          }
+          window.scrollTo({ top: 0, behavior: 'instant' });
+        }
+      }
+
+      // レース切替タブの描画
+      function renderPredictionRaceSwitcher() {
+        const container = document.getElementById('pred-race-switcher-pills');
+        if (!container) return;
+        
+        const targetRaces = [
+          { id: '17', label: '第51回 エリザベス女王杯', badge: '次回', isNext: true },
+          { id: '16', label: '第174回 天皇賞（秋）', badge: '結果レビュー', isNext: false }
+        ];
+        
+        container.innerHTML = targetRaces.map(r => {
+          const isActive = r.id === currentPredictionRaceId;
+          const badgeClass = r.isNext ? 'pill-badge' : 'pill-badge review';
+          return `
+            <button class="pred-race-pill ${isActive ? 'active' : ''}" data-race-id="${r.id}">
+              <span class="${badgeClass}">${r.badge}</span>
+              <span class="pill-name">${r.label}</span>
+            </button>
+          `;
+        }).join('');
+        
+        container.querySelectorAll('.pred-race-pill').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const rid = btn.getAttribute('data-race-id');
+            if (rid && rid !== currentPredictionRaceId) {
+              setPredictionRace(rid);
+            }
+          });
+        });
+      }
+
+      // 予想ページヘッダーの動的描画
+      function renderPredictionHeader() {
+        const titleEl = document.getElementById('pred-header-title');
+        const badgeEl = document.getElementById('pred-header-badge');
+        const subtitleEl = document.getElementById('pred-header-subtitle');
+        const chipsEl = document.getElementById('pred-meta-chips');
+        const reviewContainer = document.getElementById('pred-finished-review-container');
+        
+        const raceObj = G1_RACES.find(r => r.id === currentPredictionRaceId);
+        const currentPred = (PREDICTION_DATA.races && PREDICTION_DATA.races[currentPredictionRaceId]) 
+          ? PREDICTION_DATA.races[currentPredictionRaceId] 
+          : PREDICTION_DATA;
+          
+        if (subtitleEl) subtitleEl.innerText = `2026年 G1第${currentPredictionRaceId}戦`;
+        if (titleEl) titleEl.innerText = currentPred.raceName || (raceObj ? raceObj.name : '');
+        
+        const isFinished = raceObj && raceObj.status === 'finished';
+        if (badgeEl) {
+          if (isFinished) {
+            badgeEl.innerText = '公式結果確定';
+            badgeEl.style.background = 'rgba(245, 158, 11, 0.2)';
+            badgeEl.style.color = 'var(--gold)';
+            badgeEl.style.borderColor = 'rgba(245, 158, 11, 0.4)';
           } else {
-            summaryContainer.innerHTML = badgesHtml;
+            badgeEl.innerText = '枠順確定済 / 予想公開中';
+            badgeEl.style.background = 'rgba(16, 185, 129, 0.2)';
+            badgeEl.style.color = 'var(--primary)';
+            badgeEl.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+          }
+        }
+        
+        const startersCount = currentPred.starters ? currentPred.starters.length : 16;
+        const dateStr = currentPred.date ? currentPred.date.replace('2026年', '').trim() : (raceObj ? raceObj.date : '');
+        const courseStr = raceObj ? `${raceObj.location} ${raceObj.course}` : '芝';
+        
+        if (chipsEl) {
+          chipsEl.innerHTML = `
+            <span class="pred-chip"><i data-lucide="calendar"></i> ${dateStr}</span>
+            <span class="pred-chip"><i data-lucide="map-pin"></i> ${courseStr}</span>
+            <span class="pred-chip"><i data-lucide="award"></i> 定量 / 全${startersCount}頭</span>
+          `;
+        }
+        
+        if (reviewContainer) {
+          if (isFinished && raceObj && raceObj.winner) {
+            reviewContainer.innerHTML = `
+              <div class="finished-review-card">
+                <div class="review-header">
+                  <div class="review-title">
+                    <span>🏆 第174回 天皇賞（秋） 公式レース結果確定</span>
+                  </div>
+                  <button class="btn-open-result-modal" id="btn-review-modal-trigger" data-race-id="${currentPredictionRaceId}">
+                    全17頭の着順・払戻金を見る <i data-lucide="arrow-right" style="width:13px;height:13px;"></i>
+                  </button>
+                </div>
+                <div class="review-podium">
+                  <div class="podium-item first">
+                    <span class="podium-rank">1着</span>
+                    <span class="podium-gate">${raceObj.winnerGate || 17}</span>
+                    <span class="podium-name">${raceObj.winner}</span>
+                    <div class="podium-sub">${raceObj.winnerJockey} / ${raceObj.time || '1:56.7'} (4人気)</div>
+                  </div>
+                  <div class="podium-item second">
+                    <span class="podium-rank">2着</span>
+                    <span class="podium-gate">${raceObj.secondGate || 10}</span>
+                    <span class="podium-name">${raceObj.second || 'ネブラディスク'}</span>
+                    <div class="podium-sub">${raceObj.secondJockey || '川田将雅'} (8人気)</div>
+                  </div>
+                  <div class="podium-item third">
+                    <span class="podium-rank">3着</span>
+                    <span class="podium-gate">${raceObj.thirdGate || 3}</span>
+                    <span class="podium-name">${raceObj.third || 'レガレイラ'}</span>
+                    <div class="podium-sub">${raceObj.thirdJockey || '岩田望来'} (3人気)</div>
+                  </div>
+                </div>
+                <div class="review-payout-ribbon">
+                  <span>単勝: <b>¥1,080</b></span>
+                  <span>馬連: <b>¥12,970</b></span>
+                  <span>3連複: <b>¥42,010</b></span>
+                  <span class="highlight-trifecta">3連単: <b>¥297,820</b></span>
+                </div>
+              </div>
+            `;
+            const btnModal = document.getElementById('btn-review-modal-trigger');
+            if (btnModal) {
+              btnModal.addEventListener('click', () => {
+                openRaceDetail(currentPredictionRaceId);
+              });
+            }
+          } else {
+            reviewContainer.innerHTML = '';
           }
         }
       }
 
-      // ----------------------------------------------------
-      // 馬体重管理（調教後馬体重 vs 当日確定馬体重）
-      // ----------------------------------------------------
-      let weightMode = 'training'; // 'training' (木曜公式計量) or 'confirmed' (発走前発表)
-
-      function initWeightState() {
+      function setPredictionRace(raceId) {
+        if (!PREDICTION_DATA.races || !PREDICTION_DATA.races[raceId]) return;
+        currentPredictionRaceId = raceId;
         if (typeof localStorage !== 'undefined') {
-          const saved = localStorage.getItem('keiba_weight_mode_16');
-          if (saved && (saved === 'training' || saved === 'confirmed')) {
-            weightMode = saved;
-          }
+          localStorage.setItem('keiba_pred_race_id', raceId);
         }
-      }
-
-      function setWeightMode(mode) {
-        weightMode = mode;
-        if (typeof localStorage !== 'undefined') {
-          localStorage.setItem('keiba_weight_mode_16', mode);
-        }
-        updateWeightControlUI();
+        
+        initOddsState();
+        initWeightState();
+        renderPredictionRaceSwitcher();
+        renderPredictionHeader();
         renderNetkeibaHorseList();
-      }
+        renderPredictionOccult();
+        renderPredictionMemo();
+        updateMarksUI();
+        updateOddsControlUI();
+        updateWeightControlUI();
+        refreshIcons();
 
-      function updateWeightControlUI() {
-        if (typeof document === 'undefined') return;
-        const btnTrain = document.getElementById('btn-weight-training');
-        const btnConf = document.getElementById('btn-weight-confirmed');
-        const infoEl = document.getElementById('weight-status-info');
-
-        if (btnTrain && btnConf) {
-          if (weightMode === 'training') {
-            btnTrain.classList.add('active');
-            btnConf.classList.remove('active');
-          } else {
-            btnConf.classList.add('active');
-            btnTrain.classList.remove('active');
-          }
-        }
-
-        if (infoEl) {
-          if (weightMode === 'training') {
-            infoEl.innerHTML = '<span>※木曜公式計量データ（調教後馬体重）を表示中</span>';
-          } else {
-            infoEl.innerHTML = '<span style="color: var(--primary); font-weight: 700;">✔ 当日確定馬体重 発表済（パドック計量）</span>';
-          }
+        if (window.history) {
+          window.history.replaceState({ view: 'prediction', raceId: currentPredictionRaceId }, '', '#prediction-' + currentPredictionRaceId);
         }
       }
 
@@ -7555,8 +8041,15 @@ function hydratePayouts(race) {
         const container = document.getElementById('view-prediction');
         if (!container) return;
 
+        if (!currentPredictionRaceId || !PREDICTION_DATA.races || !PREDICTION_DATA.races[currentPredictionRaceId]) {
+          const nextRace = getNextUpcomingRace();
+          currentPredictionRaceId = (nextRace && PREDICTION_DATA.races && PREDICTION_DATA.races[nextRace.id]) ? nextRace.id : '17';
+        }
+
         initOddsState();
         initWeightState();
+        renderPredictionRaceSwitcher();
+        renderPredictionHeader();
         renderNetkeibaHorseList();
         renderPredictionOccult();
         renderPredictionMemo();
@@ -7573,7 +8066,14 @@ function hydratePayouts(race) {
         const listContainer = document.getElementById('netkeiba-horse-list');
         if (!listContainer) return;
 
-        let starters = PREDICTION_DATA.starters.map(s => {
+        const currentPred = (PREDICTION_DATA.races && PREDICTION_DATA.races[currentPredictionRaceId])
+          ? PREDICTION_DATA.races[currentPredictionRaceId]
+          : PREDICTION_DATA;
+        const rawStarters = getActivePredictionStarters();
+
+        const venueText = (currentPredictionRaceId === '17' ? '京都芝2200m適性' : '東京芝2000m適性');
+
+        let starters = rawStarters.map(s => {
           let winVal = s.odds || '--';
           let placeVal = s.placeOdds || '-';
           let popVal = s.pop || 99;
@@ -7584,9 +8084,9 @@ function hydratePayouts(race) {
             popVal = liveOddsData[s.gate].pop;
           }
 
-          let jockeyDisplay = `${s.jockey} / 東京芝2000m適性`;
-          if (PREDICTION_DATA.jockeysCompatibility) {
-            const jc = PREDICTION_DATA.jockeysCompatibility.find(j => j.horse === s.horseName || j.jockey === s.jockey);
+          let jockeyDisplay = `${s.jockey} / ${venueText}`;
+          if (currentPred.jockeysCompatibility) {
+            const jc = currentPred.jockeysCompatibility.find(j => j.horse === s.horseName || j.jockey === s.jockey);
             if (jc) {
               jockeyDisplay = `${jc.rating} (${jc.switchType})`;
             }
@@ -7618,7 +8118,7 @@ function hydratePayouts(race) {
           const displayOdds = s.winOdds || s.odds || '--';
 
           // 馬体重表示の算出（現状はJRA公式発表済の調教後馬体重。当日確定は確定するまで未発表 -）
-          let displayWeight = `${s.trainingWeight}kg`;
+          let displayWeight = s.trainingWeight ? `${s.trainingWeight}kg` : '-';
           let displayWeightSub = `<span class="weight-tag-pre">調教後</span>`;
 
           if (s.confirmedWeight) {
@@ -7684,37 +8184,23 @@ function hydratePayouts(race) {
 
               <!-- タップで展開されるアコーディオン詳細 -->
               <div class="nh-detail-drawer" id="nh-drawer-${s.gate}">
-                <div class="nh-drawer-grid">
-                  <div class="nh-drawer-item">
-                    <span class="nh-drawer-label">🏃 追い切り・調教評価</span>
-                    <span class="nh-drawer-val">
-                      <span style="display: inline-block; background: rgba(245, 158, 11, 0.2); color: var(--gold); font-weight: 800; padding: 1px 6px; border-radius: 4px; font-size: 11px; margin-right: 4px;">ランク: ${s.trainingGrade}</span>
-                      ${s.trainingTime}
-                    </span>
-                  </div>
-
-                  <div class="nh-drawer-item">
-                    <span class="nh-drawer-label">💬 厩舎・陣営勝負気配コメント</span>
-                    <span class="nh-drawer-val">「${s.comment}」</span>
-                  </div>
-
-                  <div class="nh-drawer-item" style="border-top: 1px dashed rgba(255,255,255,0.06); padding-top: 6px; margin-top: 2px;">
-                    <span class="nh-drawer-label">⚖️ 馬体重推移・公式計量データ</span>
-                    <div style="display: flex; gap: 14px; margin-top: 3px; font-size: 11.5px; flex-wrap: wrap;">
-                      <div><span style="color: var(--text-muted);">調教後:</span> <strong style="color: #fff;">${s.trainingWeight}kg</strong> <span style="font-size: 10px; color: var(--gold);">(木曜公式計量)</span></div>
-                      <div><span style="color: var(--text-muted);">前走時:</span> <strong style="color: #fff;">${s.lastRaceWeight ? s.lastRaceWeight + 'kg' : '前走海外'}</strong></div>
-                      <div><span style="color: var(--text-muted);">当日確定:</span> <strong style="color: ${s.confirmedWeight ? 'var(--primary)' : 'var(--text-muted)'};">${s.confirmedWeight ? s.confirmedWeight + 'kg (' + s.weightDiff + ')' : '- (発走前発表)'}</strong></div>
+                <div class="nh-drawer-content">
+                  <div class="nh-drawer-grid">
+                    <div class="nh-drawer-item">
+                      <span class="nh-drawer-label">調教評価</span>
+                      <span class="nh-drawer-val-grade grade-${s.trainingGrade || 'A'}">【${s.trainingGrade || 'A'}】 ${s.trainingCourse || '栗東CW'} (${s.trainingTime || '82.0-66.0-11.2'})</span>
                     </div>
-                  </div>
-
-                  <div class="nh-drawer-item" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; border-top: 1px dashed rgba(255,255,255,0.06); padding-top: 6px; margin-top: 2px;">
-                    <div>
-                      <span class="nh-drawer-label">🏇 騎手・コース適性</span>
-                      <span class="nh-drawer-val" style="color: var(--primary); font-weight: 700;">${s.jockeyStat}</span>
+                    <div class="nh-drawer-item">
+                      <span class="nh-drawer-label">調教短評</span>
+                      <span class="nh-drawer-val">${s.comment}</span>
                     </div>
-                    <div style="text-align: right;">
-                      <span class="nh-drawer-label">複勝オッズ (${oddsMode === 'estimated' ? '予想' : '発売中'})</span>
-                      <span class="nh-drawer-val" style="font-family: monospace; font-weight: 700; color: #fff;">${s.placeOdds}</span>
+                    <div class="nh-drawer-item">
+                      <span class="nh-drawer-label">所属厩舎</span>
+                      <span class="nh-drawer-val">${s.stable || '栗東'}</span>
+                    </div>
+                    <div class="nh-drawer-item">
+                      <span class="nh-drawer-label">コース適性・騎手</span>
+                      <span class="nh-drawer-val">${s.jockeyStat}</span>
                     </div>
                   </div>
                 </div>
@@ -7724,330 +8210,190 @@ function hydratePayouts(race) {
         });
 
         listContainer.innerHTML = html;
+        bindHorseListEvents();
+      }
 
-        listContainer.querySelectorAll('[data-action="toggle-drawer"]').forEach(cell => {
-          cell.addEventListener('click', (e) => {
-            const gate = cell.getAttribute('data-gate');
-            const drawer = document.getElementById(`nh-drawer-${gate}`);
-            const btn = document.getElementById(`nh-toggle-btn-${gate}`);
-            const text = document.getElementById(`nh-toggle-text-${gate}`);
-            if (drawer) {
-              const isOpen = drawer.classList.contains('open');
-              if (isOpen) {
-                drawer.classList.remove('open');
-                if (btn) btn.classList.remove('active');
-                if (text) text.innerText = '詳細';
-              } else {
-                drawer.classList.add('open');
-                if (btn) btn.classList.add('active');
-                if (text) text.innerText = '閉じる';
-              }
-            }
-          });
-        });
-
-        listContainer.querySelectorAll('.nh-mark-btn').forEach(btn => {
+      function bindHorseListEvents() {
+        document.querySelectorAll('.nh-mark-btn').forEach(btn => {
           btn.addEventListener('click', (e) => {
             e.stopPropagation();
             const gate = btn.getAttribute('data-gate');
             openMarkSheet(gate);
           });
         });
+
+        document.querySelectorAll('[data-action="toggle-drawer"]').forEach(el => {
+          el.addEventListener('click', () => {
+            const gate = el.getAttribute('data-gate');
+            toggleHorseDrawer(gate);
+          });
+        });
+      }
+
+      function toggleHorseDrawer(gate) {
+        const drawer = document.getElementById(`nh-drawer-${gate}`);
+        const btn = document.getElementById(`nh-toggle-btn-${gate}`);
+        const text = document.getElementById(`nh-toggle-text-${gate}`);
+        const arrow = document.getElementById(`nh-arrow-${gate}`);
+
+        if (!drawer) return;
+
+        const isOpen = drawer.classList.contains('open');
+        if (isOpen) {
+          drawer.classList.remove('open');
+          if (btn) btn.classList.remove('active');
+          if (text) text.innerText = '詳細';
+          if (arrow) arrow.innerText = '▾';
+        } else {
+          drawer.classList.add('open');
+          if (btn) btn.classList.add('active');
+          if (text) text.innerText = '閉じる';
+          if (arrow) arrow.innerText = '▴';
+        }
       }
 
       function renderPredictionOccult() {
         if (typeof document === 'undefined') return;
-        const container = document.getElementById('pred-occult-list');
-        if (!container) return;
+        const list = document.getElementById('occult-cards-list');
+        if (!list) return;
 
-        let html = '';
-        PREDICTION_DATA.occultSigns.forEach(item => {
-          let targetsHtml = '';
-          if (item.targets && Array.isArray(item.targets)) {
-            targetsHtml = item.targets.map(t => `
-              <span class="nh-target-chip">
-                <span class="nh-gate-cell waku-${t.waku || 1}" style="width: 18px; height: 18px; font-size: 10px; border-radius: 3px; display: inline-flex;">${t.gate}</span>
-                <span>${t.name}</span>
-              </span>
-            `).join('');
-          } else if (item.target) {
-            targetsHtml = `<span style="font-size: 11px; background: rgba(59, 130, 246, 0.2); color: #60a5fa; padding: 2px 6px; border-radius: 4px;">🎯 ${item.target}</span>`;
-          }
+        const currentPred = (PREDICTION_DATA.races && PREDICTION_DATA.races[currentPredictionRaceId])
+          ? PREDICTION_DATA.races[currentPredictionRaceId]
+          : PREDICTION_DATA;
 
-          const titleText = item.title || item.sign || '話題のサイン';
-          const badgeText = item.badge || '🔥 X話題';
-          const contentText = item.content || item.detail || '';
-          const sourceText = item.source || 'X (旧Twitter)';
+        const occultSigns = currentPred.occultSigns || [];
+        if (occultSigns.length === 0) {
+          list.innerHTML = '<div style="padding:16px;text-align:center;color:var(--text-muted);">オカルトサイン考察は枠順確定後に順次公開されます</div>';
+          return;
+        }
 
-          html += `
+        list.innerHTML = occultSigns.map(s => {
+          const targetsHtml = (s.targets || []).map(t => `
+            <span class="occult-target-pill">
+              <span class="nh-gate-cell waku-${t.waku || 1}" style="width:18px;height:18px;font-size:10px;border-radius:3px;">${t.gate}</span>
+              <span>${t.name}</span>
+            </span>
+          `).join('');
+
+          return `
             <div class="occult-card">
-              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; gap: 8px;">
-                <span style="font-size: 13px; font-weight: 800; color: #fff; line-height: 1.4;">${titleText}</span>
-                <span style="font-size: 10px; background: rgba(192, 132, 252, 0.2); color: #c084fc; border: 1px solid rgba(192, 132, 252, 0.35); padding: 2px 7px; border-radius: 4px; font-weight: 700; white-space: nowrap; flex-shrink: 0;">${badgeText}</span>
+              <div class="occult-card-header">
+                <span class="occult-badge">${s.badge || '🔮 サイン'}</span>
+                <span class="occult-source">${s.source || 'X・SNS話題'}</span>
               </div>
-              <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 8px;">
-                ${contentText}
-              </div>
+              <h4 class="occult-card-title">${s.title}</h4>
+              <p class="occult-card-content">${s.content}</p>
               ${targetsHtml ? `
-                <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; padding: 6px 8px; background: rgba(0,0,0,0.25); border-radius: 6px;">
-                  <span style="font-size: 10px; color: var(--gold); font-weight: 700;">🎯 該当サイン馬:</span>
+                <div class="occult-card-targets">
+                  <span style="font-size:11px;color:var(--gold);font-weight:700;">🎯 該当推奨馬:</span>
                   ${targetsHtml}
                 </div>
               ` : ''}
-              <div style="font-size: 10px; color: #a855f7; display: flex; align-items: center; gap: 5px;">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                <span>${sourceText}</span>
-              </div>
             </div>
           `;
-        });
-        container.innerHTML = html;
+        }).join('');
       }
 
       function renderPredictionMemo() {
         if (typeof document === 'undefined') return;
-        const memoInput = document.getElementById('pred-memo-input');
-        if (!memoInput) return;
-
-        if (typeof localStorage !== 'undefined') {
-          const saved = localStorage.getItem('keiba_memo_16');
-          if (saved) memoInput.value = saved;
+        const memoInput = document.getElementById('prediction-user-memo');
+        if (memoInput && typeof localStorage !== 'undefined') {
+          const saved = localStorage.getItem('keiba_memo_' + currentPredictionRaceId);
+          memoInput.value = saved || '';
         }
       }
 
       function initPredictionEventListeners() {
         if (typeof document === 'undefined') return;
 
-        // ボトムシート選択ボタン群
-        const sheet = document.getElementById('mark-bottom-sheet');
-        if (sheet) {
-          sheet.querySelectorAll('[data-mark]').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-              const mark = btn.getAttribute('data-mark');
-              if (activeSheetGate) {
-                setUserMark(activeSheetGate, mark);
-              }
-              closeMarkSheet();
-            });
+        const btnBack = document.getElementById('btn-back-to-calendar');
+        if (btnBack) {
+          btnBack.addEventListener('click', () => {
+            switchAppView('calendar', true);
           });
         }
 
-        const btnCloseSheet = document.getElementById('btn-close-mark-sheet');
-        if (btnCloseSheet) {
-          btnCloseSheet.addEventListener('click', closeMarkSheet);
+        const btnEst = document.getElementById('btn-odds-estimated');
+        const btnLive = document.getElementById('btn-odds-live');
+        if (btnEst) {
+          btnEst.addEventListener('click', () => setOddsMode('estimated'));
+        }
+        if (btnLive) {
+          btnLive.addEventListener('click', () => setOddsMode('live'));
         }
 
-        const backdropSheet = document.getElementById('mark-sheet-backdrop');
-        if (backdropSheet) {
-          backdropSheet.addEventListener('click', closeMarkSheet);
-        }
-
-        // オッズモード切替ボタン（予想オッズ vs 発売中）
-        const btnOddsEst = document.getElementById('btn-odds-estimated');
-        if (btnOddsEst) {
-          btnOddsEst.addEventListener('click', () => {
-            setOddsMode('estimated');
+        const btnRefresh = document.getElementById('btn-refresh-odds');
+        if (btnRefresh) {
+          btnRefresh.addEventListener('click', () => {
+            btnRefresh.classList.add('rotating');
+            setTimeout(() => btnRefresh.classList.remove('rotating'), 600);
+            refreshLiveOdds(true);
           });
         }
 
-        const btnOddsLive = document.getElementById('btn-odds-live');
-        if (btnOddsLive) {
-          btnOddsLive.addEventListener('click', () => {
-            setOddsMode('live');
-          });
-        }
+        const sortGateBtn = document.getElementById('btn-sort-gate');
+        const sortPopBtn = document.getElementById('btn-sort-pop');
 
-        // 馬体重モード切替ボタン（調教後 vs 当日確定）
-        const btnWeightTrain = document.getElementById('btn-weight-training');
-        if (btnWeightTrain) {
-          btnWeightTrain.addEventListener('click', () => {
-            setWeightMode('training');
-          });
-        }
-
-        const btnWeightConf = document.getElementById('btn-weight-confirmed');
-        if (btnWeightConf) {
-          btnWeightConf.addEventListener('click', () => {
-            setWeightMode('confirmed');
-          });
-        }
-
-        // オッズ更新ボタン
-        const btnRefreshOdds = document.getElementById('btn-refresh-odds');
-        if (btnRefreshOdds) {
-          btnRefreshOdds.addEventListener('click', () => {
-            btnRefreshOdds.classList.add('spinning');
-            setTimeout(() => {
-              if (oddsMode === 'live') {
-                refreshLiveOdds(true);
-              } else {
-                if (isJraTicketSalesStarted()) {
-                  setOddsMode('live');
-                  refreshLiveOdds(false);
-                } else {
-                  const now = new Date();
-                  const timeStr = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')}`;
-                  const timeEl = document.getElementById('odds-update-time');
-                  if (timeEl) {
-                    timeEl.innerHTML = `<span style="color: var(--gold);">✔ ${timeStr} 予想確認済</span>`;
-                  }
-                }
-              }
-              btnRefreshOdds.classList.remove('spinning');
-            }, 300);
-          });
-        }
-
-        // ソートボタン（馬番順 vs 人気順）
-        const btnSortGate = document.getElementById('btn-sort-gate');
-        const btnSortPop = document.getElementById('btn-sort-pop');
-
-        if (btnSortGate && btnSortPop) {
-          btnSortGate.addEventListener('click', () => {
-            btnSortGate.classList.add('active');
-            btnSortPop.classList.remove('active');
+        if (sortGateBtn) {
+          sortGateBtn.addEventListener('click', () => {
             predictionSortType = 'gate';
+            sortGateBtn.classList.add('active');
+            if (sortPopBtn) sortPopBtn.classList.remove('active');
             renderNetkeibaHorseList();
-            updateMarksUI();
           });
-
-          btnSortPop.addEventListener('click', () => {
-            btnSortPop.classList.add('active');
-            btnSortGate.classList.remove('active');
+        }
+        if (sortPopBtn) {
+          sortPopBtn.addEventListener('click', () => {
             predictionSortType = 'pop';
+            sortPopBtn.classList.add('active');
+            if (sortGateBtn) sortGateBtn.classList.remove('active');
             renderNetkeibaHorseList();
-            updateMarksUI();
           });
         }
 
-        // ナビゲーションメニュー (SPAルーティング)
-        const navItems = document.querySelectorAll('.nav-item');
-        navItems.forEach(item => {
-          item.addEventListener('click', (e) => {
-            e.preventDefault();
-            const target = item.getAttribute('data-target');
-            if (target) navigateTo('#' + target);
-          });
-        });
+        const btnCloseSheet = document.getElementById('btn-close-sheet');
+        const sheetBackdrop = document.getElementById('mark-sheet-backdrop');
+        if (btnCloseSheet) btnCloseSheet.addEventListener('click', closeMarkSheet);
+        if (sheetBackdrop) sheetBackdrop.addEventListener('click', closeMarkSheet);
 
-        // ブランドロゴクリックでトップページへ
-        const brands = document.querySelectorAll('.brand');
-        brands.forEach(b => {
-          b.style.cursor = 'pointer';
-          b.addEventListener('click', (e) => {
-            e.preventDefault();
-            navigateTo('#calendar');
-          });
-        });
-
-        const btnBackCal = document.getElementById('btn-back-to-calendar');
-        if (btnBackCal) {
-          btnBackCal.addEventListener('click', (e) => {
-            e.preventDefault();
-            navigateTo('#calendar');
-          });
-        }
-
-        // クイックジャンプナビ（スムーズスクロール・ルートハッシュ保持）
-        const quickNavBtns = document.querySelectorAll('.btn-quick-nav');
-        quickNavBtns.forEach(btn => {
-          btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetHref = btn.getAttribute('href');
-            if (targetHref && targetHref.startsWith('#')) {
-              const targetEl = document.querySelector(targetHref);
-              if (targetEl) {
-                targetEl.scrollIntoView({ behavior: 'smooth' });
-              }
+        document.querySelectorAll('.btn-sheet-mark').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const mark = btn.getAttribute('data-mark');
+            if (activeSheetGate) {
+              setUserMark(activeSheetGate, mark);
             }
+            closeMarkSheet();
           });
         });
 
-        const heroBanner = document.getElementById('hero-countdown-banner');
-        if (heroBanner) {
-          heroBanner.addEventListener('click', (e) => {
-            if (e.target.closest('#btn-hero-detail')) {
-              e.stopPropagation();
-              navigateTo('#race-16');
-              return;
-            }
-            navigateTo('#prediction');
-          });
-        }
-
-        const btnHeroPred = document.getElementById('btn-hero-prediction');
-        if (btnHeroPred) {
-          btnHeroPred.addEventListener('click', (e) => {
-            e.stopPropagation();
-            navigateTo('#prediction');
-          });
-        }
-
-        const memoInput = document.getElementById('pred-memo-input');
+        const memoInput = document.getElementById('prediction-user-memo');
         const saveStatus = document.getElementById('memo-save-status');
+        const btnClearMemo = document.getElementById('btn-clear-memo');
 
         if (memoInput) {
+          let memoTimer = null;
           memoInput.addEventListener('input', () => {
-            if (typeof localStorage !== 'undefined') {
-              localStorage.setItem('keiba_memo_16', memoInput.value);
-            }
-            if (saveStatus) {
-              saveStatus.innerText = '💾 保存完了';
-              setTimeout(() => {
-                if (saveStatus) saveStatus.innerText = '💾 自動保存中';
-              }, 1500);
-            }
-          });
-        }
-
-        const btnCopyMemo = document.getElementById('btn-copy-memo');
-        if (btnCopyMemo) {
-          btnCopyMemo.addEventListener('click', () => {
-            const marks = getUserMarks();
-            const starters = PREDICTION_DATA.starters;
-            let summaryText = '【第174回 天皇賞（秋） マイ予想】\n';
-            
-            ['◎', '○', '▲', '△', '☆'].forEach(m => {
-              const matched = [];
-              Object.keys(marks).forEach(g => {
-                if (marks[g] === m) {
-                  const s = starters.find(x => String(x.gate) === String(g));
-                  if (s) matched.push(`${s.gate}番 ${s.horseName}`);
-                }
-              });
-              if (matched.length > 0) {
-                summaryText += `${m} ${matched.join(', ')}\n`;
-              }
-            });
-
-            const memoVal = memoInput ? memoInput.value : '';
-            if (memoVal) {
-              summaryText += `\n【買い目・検討メモ】\n${memoVal}\n`;
-            }
-
-            if (navigator.clipboard) {
-              navigator.clipboard.writeText(summaryText).then(() => {
-                btnCopyMemo.innerText = '✔ コピー済';
-                setTimeout(() => {
-                  btnCopyMemo.innerText = 'コピー';
-                }, 2000);
-              });
-            } else {
-              alert('コピーしました:\n' + summaryText);
-            }
-          });
-        }
-
-        const btnClearMemo = document.getElementById('btn-clear-memo');
-        if (btnClearMemo) {
-          btnClearMemo.addEventListener('click', () => {
-            if (confirm('メモの内容をクリアしますか？')) {
-              if (memoInput) memoInput.value = '';
+            if (saveStatus) saveStatus.innerText = '編集中...';
+            if (memoTimer) clearTimeout(memoTimer);
+            memoTimer = setTimeout(() => {
               if (typeof localStorage !== 'undefined') {
-                localStorage.removeItem('keiba_memo_16');
+                localStorage.setItem('keiba_memo_' + currentPredictionRaceId, memoInput.value);
               }
-              if (saveStatus) saveStatus.innerText = '🗑️ 消去完了';
+              if (saveStatus) {
+                saveStatus.innerText = '💾 自動保存完了';
+                setTimeout(() => { saveStatus.innerText = ''; }, 2000);
+              }
+            }, 600);
+          });
+        }
+
+        if (btnClearMemo && memoInput) {
+          btnClearMemo.addEventListener('click', () => {
+            memoInput.value = '';
+            if (typeof localStorage !== 'undefined') {
+              localStorage.removeItem('keiba_memo_' + currentPredictionRaceId);
             }
+            if (saveStatus) saveStatus.innerText = '🗑️ 消去完了';
           });
         }
       }
@@ -8342,7 +8688,7 @@ function hydratePayouts(race) {
                 </div>
                 <div class="detail-meta-item">
                   <span class="detail-meta-label">条件 / 頭数</span>
-                  <span class="detail-meta-value">3歳以上 オープン (定量) / 17頭</span>
+                  <span class="detail-meta-value">${race.name.includes('女王杯') ? '3歳以上 牝馬 オープン (定量)' : 'オープン'} / ${entries ? entries.length : 16}頭</span>
                 </div>
                 <div class="detail-meta-item">
                   <span class="detail-meta-label">枠順発表状況</span>
@@ -8602,9 +8948,16 @@ document.addEventListener('DOMContentLoaded', () => {
   initPredictionEventListeners();
 
   // 3. 基本レンダリング
+  if (typeof autoLifecycleEngine === 'function') autoLifecycleEngine();
   renderRaces();
   updateTabCounts();
   startNextRaceCountdown();
+
+  // 定期自動チェック（レース進行＆オッズ）
+  if (typeof setInterval !== 'undefined') {
+    if (typeof autoLifecycleEngine === 'function') setInterval(autoLifecycleEngine, 60000);
+    if (typeof startOddsAutoRefresh === 'function') startOddsAutoRefresh();
+  }
 
   // 4. URLハッシュ＆状態復元（リロード時の現在ページ維持）
   handleRoute(false);

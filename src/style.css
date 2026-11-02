@@ -1746,3 +1746,151 @@ html.route-prediction .nav-item[data-target="prediction"] {
     margin-bottom: 14px !important;
   }
 }
+
+
+
+/* ----------------------------------
+   対象レース切替スイッチャー
+---------------------------------- */
+.pred-race-switcher-container {
+  margin-bottom: 12px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 2px 0 6px 0;
+}
+.pred-race-switcher-pills {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+.pred-race-pill {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.pred-race-pill:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+}
+.pred-race-pill.active {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(16, 185, 129, 0.15));
+  border-color: var(--gold);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.15);
+}
+.pill-badge {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 800;
+  background: var(--gold);
+  color: #111;
+}
+.pill-badge.review {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.pred-race-pill.active .pill-badge.review {
+  background: rgba(245, 158, 11, 0.3);
+  color: var(--gold);
+}
+
+/* ----------------------------------
+   レース終了レビューカード（天皇賞秋など）
+---------------------------------- */
+.finished-review-card {
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(19, 35, 29, 0.8));
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: 12px;
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.review-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-open-result-modal {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s;
+}
+.btn-open-result-modal:hover {
+  background: var(--gold);
+  color: #111;
+  border-color: var(--gold);
+}
+.review-podium {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.podium-item {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 11px;
+}
+.podium-item.first {
+  border-color: rgba(245, 158, 11, 0.4);
+  background: rgba(245, 158, 11, 0.08);
+}
+.podium-rank {
+  font-weight: 800;
+  padding: 1px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+}
+.podium-item.first .podium-rank { background: var(--gold); color: #111; }
+.podium-item.second .podium-rank { background: #94a3b8; color: #111; }
+.podium-item.third .podium-rank { background: #b45309; color: #fff; }
+.podium-name { font-weight: 800; color: #fff; }
+.podium-sub { color: var(--text-muted); font-size: 10px; margin-top: 2px; }
+.review-payout-ribbon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 11px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+}
+.review-payout-ribbon span b { color: #fff; }
+.review-payout-ribbon .highlight-trifecta {
+  color: var(--gold);
+  font-weight: 800;
+}
