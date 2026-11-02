@@ -656,7 +656,10 @@ prediction_js_logic = """
 
       function closeModal() {
         const modal = document.getElementById('modal-race-detail');
-        if (modal) modal.classList.remove('open');
+        if (modal) {
+          modal.classList.remove('open');
+          modal.classList.remove('active');
+        }
         document.body.style.overflow = '';
         if (typeof window !== 'undefined') {
           const baseRoute = (currentAppView === 'prediction') ? ('#prediction-' + currentPredictionRaceId) : '#calendar';
@@ -1012,8 +1015,8 @@ prediction_js_logic = """
         });
 
         if (sheet && backdrop) {
-          sheet.classList.add('open');
-          backdrop.classList.add('open');
+          sheet.classList.add('open', 'active');
+          backdrop.classList.add('open', 'active');
         }
       }
 
@@ -1021,8 +1024,8 @@ prediction_js_logic = """
         const sheet = document.getElementById('mark-bottom-sheet');
         const backdrop = document.getElementById('mark-sheet-backdrop');
         if (sheet && backdrop) {
-          sheet.classList.remove('open');
-          backdrop.classList.remove('open');
+          sheet.classList.remove('open', 'active');
+          backdrop.classList.remove('open', 'active');
         }
         activeSheetGate = null;
       }
@@ -2032,7 +2035,7 @@ open_race_detail_func = """
         });
 
         // モーダル表示
-        modal.classList.add('open');
+        modal.classList.add('open', 'active');
         document.body.style.overflow = 'hidden';
         refreshIcons();
       }
@@ -2079,6 +2082,20 @@ event_listeners_js = """
           
           if (btnClose) btnClose.addEventListener('click', closeModal);
           if (backdrop) backdrop.addEventListener('click', closeModal);
+          modal.addEventListener('click', (e) => {
+            if (e.target === modal || e.target.classList.contains('modal-backdrop')) {
+              closeModal();
+            }
+          });
+        }
+
+        if (typeof window !== 'undefined') {
+          window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+              closeModal();
+              if (typeof closeMarkSheet === 'function') closeMarkSheet();
+            }
+          });
         }
 
         const navItems = document.querySelectorAll('.nav-item');

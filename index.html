@@ -597,12 +597,15 @@ body {
   justify-content: center;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.modal.active {
-  opacity: 1;
-  pointer-events: auto;
+.modal.active,
+.modal.open {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  visibility: visible !important;
 }
 
 .modal-backdrop {
@@ -621,6 +624,7 @@ body {
   max-width: 1100px; /* 大幅に拡張して全頭成績テーブルを表示 */
   max-height: 90vh;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 32px;
   box-shadow: var(--shadow-lg);
   transform: scale(0.95);
@@ -628,8 +632,9 @@ body {
   z-index: 1010;
 }
 
-.modal.active .modal-content {
-  transform: scale(1);
+.modal.active .modal-content,
+.modal.open .modal-content {
+  transform: scale(1) !important;
 }
 
 .modal-header {
@@ -1259,14 +1264,88 @@ html.route-prediction .nav-item[data-target="prediction"] {
   border: 1px solid rgba(16, 185, 129, 0.4);
 }
 
-.netkeiba-horse-list {
+/* ----------------------------------
+   NetKeiba完全準拠 モバイル＆PC出馬表
+   横スクロール完全ゼロ（100%幅・文字重なりゼロ）
+   列順: [馬番] [印] [馬情報] ➔ [オッズ] ➔ [馬体重] ➔ [詳細▼]
+------------------------------------- */
+#view-prediction {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.netkeiba-horse-table-wrapper {
+  background: rgba(12, 20, 17, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 固定ヘッダー行 */
+.nh-table-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  gap: 6px;
+  background: rgba(14, 24, 20, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 11.5px;
+  font-weight: 800;
+  color: var(--text-muted);
+  box-sizing: border-box;
+  width: 100%;
+}
+.nh-col-gate {
+  width: 28px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.nh-col-mark {
+  width: 32px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.nh-col-info {
+  flex: 1;
+  min-width: 80px;
+  text-align: left;
+  padding-left: 4px;
+}
+.nh-col-odds {
+  width: 58px;
+  min-width: 58px;
+  flex-shrink: 0;
+  text-align: right;
+  padding-right: 4px;
+}
+.nh-col-weight {
+  width: 62px;
+  min-width: 62px;
+  flex-shrink: 0;
+  text-align: right;
+  padding-right: 4px;
+}
+.nh-col-detail {
+  width: 42px;
+  min-width: 42px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+/* 馬リスト本体 */
+.nh-table-body {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  width: 100% !important;
-  max-width: 100% !important;
+  padding: 4px;
+  background: rgba(6, 10, 8, 0.5);
   box-sizing: border-box;
-  margin-bottom: 20px;
+  width: 100%;
 }
 
 .nh-row-container {
@@ -1274,29 +1353,30 @@ html.route-prediction .nav-item[data-target="prediction"] {
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 8px;
   overflow: hidden;
-  transition: border-color 0.2s;
+  transition: all 0.2s ease;
   box-sizing: border-box;
   width: 100%;
 }
 .nh-row-container:hover {
   border-color: rgba(16, 185, 129, 0.35);
+  background: rgba(24, 40, 34, 0.75);
 }
 
 /* メイン1行: 馬番・印・馬情報・オッズ・馬体重・詳細▼ */
 .nh-main-row {
   display: flex;
   align-items: center;
-  padding: 6px 8px;
-  gap: 5px;
-  min-height: 50px;
+  padding: 8px 10px;
+  gap: 6px;
+  min-height: 52px;
   box-sizing: border-box;
   width: 100%;
 }
 
-/* 1列目: 馬番 (枠色バッジ 26px) */
+/* 1列目: 馬番 (枠色バッジ 28px) */
 .nh-gate-cell {
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -1318,22 +1398,22 @@ html.route-prediction .nav-item[data-target="prediction"] {
 .waku-7 { background: #f97316 !important; color: #ffffff !important; }
 .waku-8 { background: #ec4899 !important; color: #ffffff !important; }
 
-/* 2列目: 印ボタン (30px) */
+/* 2列目: 印ボタン (32px) */
 .nh-mark-cell {
-  width: 30px;
+  width: 32px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .nh-mark-btn {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: var(--text-muted);
-  font-size: 13.5px;
+  font-size: 14px;
   font-weight: 900;
   cursor: pointer;
   display: flex;
@@ -1356,12 +1436,13 @@ html.route-prediction .nav-item[data-target="prediction"] {
 /* 3列目: 馬情報（中央・可変幅） */
 .nh-info-cell {
   flex: 1;
-  min-width: 78px;
+  min-width: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
   cursor: pointer;
+  padding-left: 4px;
 }
 .nh-name-row {
   display: block;
@@ -1398,10 +1479,10 @@ html.route-prediction .nav-item[data-target="prediction"] {
   color: var(--text-secondary);
 }
 
-/* 4列目: オッズ・人気（幅48px固定・右寄せ） */
+/* 4列目: オッズ・人気（幅58px固定・右寄せ） */
 .nh-odds-cell {
-  width: 48px;
-  min-width: 48px;
+  width: 58px;
+  min-width: 58px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -1409,6 +1490,7 @@ html.route-prediction .nav-item[data-target="prediction"] {
   justify-content: center;
   cursor: pointer;
   line-height: 1.15;
+  padding-right: 4px;
 }
 .nh-odds-line {
   display: flex;
@@ -1445,10 +1527,10 @@ html.route-prediction .nav-item[data-target="prediction"] {
   white-space: nowrap;
 }
 
-/* 5列目: 馬体重（幅52px固定・右寄せ） */
+/* 5列目: 馬体重（幅62px固定・右寄せ） */
 .nh-weight-cell {
-  width: 52px;
-  min-width: 52px;
+  width: 62px;
+  min-width: 62px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -1456,6 +1538,7 @@ html.route-prediction .nav-item[data-target="prediction"] {
   justify-content: center;
   cursor: pointer;
   line-height: 1.15;
+  padding-right: 4px;
 }
 .nh-weight-val {
   font-size: 12.5px;
@@ -1495,10 +1578,10 @@ html.route-prediction .nav-item[data-target="prediction"] {
   background: rgba(148, 163, 184, 0.15);
 }
 
-/* 6列目: 詳細▼ボタン (幅34px固定) */
+/* 6列目: 詳細▼ボタン (幅42px固定・中央) */
 .nh-detail-toggle-cell {
-  width: 34px;
-  min-width: 34px;
+  width: 42px;
+  min-width: 42px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -1506,8 +1589,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
   cursor: pointer;
 }
 .nh-drawer-toggle-btn {
-  width: 32px;
-  height: 30px;
+  width: 40px;
+  height: 28px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -1547,7 +1630,7 @@ html.route-prediction .nav-item[data-target="prediction"] {
   display: none;
   background: rgba(10, 18, 15, 0.95);
   border-top: 1px dashed rgba(255, 255, 255, 0.1);
-  padding: 10px 12px;
+  padding: 12px 14px;
   font-size: 12px;
   animation: fadeIn 0.15s ease-out;
 }
@@ -1556,8 +1639,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
 }
 .nh-drawer-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px 16px;
 }
 .nh-drawer-item {
   display: flex;
@@ -1577,49 +1660,194 @@ html.route-prediction .nav-item[data-target="prediction"] {
   color: var(--text-secondary);
   line-height: 1.4;
 }
+.nh-drawer-val-grade {
+  font-weight: 700;
+  font-size: 12px;
+}
+.nh-drawer-val-grade.grade-S { color: #f59e0b; }
+.nh-drawer-val-grade.grade-A { color: #10b981; }
+.nh-drawer-val-grade.grade-B { color: #3b82f6; }
+.nh-drawer-val-grade.grade-C { color: #9ca3af; }
 
-/* オカルトサインカード & ターゲット馬バッジ */
-.occult-card {
-  background: rgba(255, 255, 255, 0.03);
+/* ----------------------------------
+   予想カード汎用（メモ・オカルト等）
+---------------------------------- */
+.pred-card {
+  background: rgba(18, 30, 26, 0.65);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 12px;
-  transition: all 0.2s ease;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+  box-sizing: border-box;
 }
-.occult-card:hover {
-  border-color: rgba(168, 85, 247, 0.35);
-  background: rgba(255, 255, 255, 0.045);
+.pred-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
-.nh-target-chip {
+.pred-card-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: -0.2px;
+}
+
+/* 予想印サマリーバー */
+.user-marks-summary-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 8px;
+}
+.mark-summary-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 12px;
+}
+.mark-tag {
+  font-size: 14px;
+  font-weight: 900;
+  width: 22px;
+  height: 22px;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  padding: 2px 6px;
+  justify-content: center;
   border-radius: 4px;
+}
+.mark-tag.mark-honmei { color: #f87171; background: rgba(239, 68, 68, 0.2); }
+.mark-tag.mark-taiko  { color: #60a5fa; background: rgba(59, 130, 246, 0.2); }
+.mark-tag.mark-tanana { color: #fbbf24; background: rgba(245, 158, 11, 0.2); }
+.mark-tag.mark-renka  { color: #34d399; background: rgba(16, 185, 129, 0.2); }
+.mark-tag.mark-ana    { color: #c084fc; background: rgba(192, 132, 252, 0.2); }
+
+.mark-horse-name {
+  font-weight: 700;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+/* メモ帳テキストエリア */
+.memo-textarea {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.5;
+  resize: vertical;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+.memo-textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+/* Xオカルトサインカードグリッド */
+.occult-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 14px;
+}
+.occult-card {
+  background: rgba(14, 24, 20, 0.7);
+  border: 1px solid rgba(192, 132, 252, 0.2);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: all 0.2s;
+}
+.occult-card:hover {
+  border-color: rgba(192, 132, 252, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(192, 132, 252, 0.1);
+}
+.occult-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.occult-badge {
+  font-size: 11px;
+  font-weight: 800;
+  color: #c084fc;
+  background: rgba(192, 132, 252, 0.15);
+  border: 1px solid rgba(192, 132, 252, 0.3);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+.occult-source {
+  font-size: 10.5px;
+  color: var(--text-muted);
+}
+.occult-card-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.4;
+}
+.occult-card-content {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.occult-card-targets {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.occult-target-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 2px 7px;
+  border-radius: 5px;
   font-size: 11px;
   font-weight: 700;
   color: #fff;
 }
 
 /* ----------------------------------
-   印選択ボトムシート（アクションシート）
+   印選択ボトムシート＆モーダル
 ------------------------------------- */
 .mark-sheet-backdrop {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   z-index: 9998;
   animation: fadeIn 0.15s ease-out;
 }
-.mark-sheet-backdrop.active {
+.mark-sheet-backdrop.active,
+.mark-sheet-backdrop.open {
   display: block;
 }
 
@@ -1632,19 +1860,36 @@ html.route-prediction .nav-item[data-target="prediction"] {
   background: #111a16;
   border-top: 1px solid rgba(16, 185, 129, 0.4);
   border-radius: 20px 20px 0 0;
-  padding: 16px 16px 28px;
+  padding: 18px 20px 32px;
   z-index: 9999;
   box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8);
   box-sizing: border-box;
   animation: slideUp 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.mark-bottom-sheet.active {
+.mark-bottom-sheet.active,
+.mark-bottom-sheet.open {
   display: block;
 }
 
 @keyframes slideUp {
   from { transform: translateY(100%); }
   to { transform: translateY(0); }
+}
+
+@media (min-width: 769px) {
+  .mark-bottom-sheet {
+    left: 50% !important;
+    right: auto !important;
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translate(-50%, -50%) !important;
+    max-width: 440px !important;
+    width: 100% !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(16, 185, 129, 0.4) !important;
+    padding: 24px !important;
+    animation: fadeIn 0.2s ease-out !important;
+  }
 }
 
 .mark-sheet-header {
@@ -1655,137 +1900,100 @@ html.route-prediction .nav-item[data-target="prediction"] {
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-.mark-sheet-target-title {
+.sheet-title {
+  display: flex;
+  align-items: center;
   font-size: 15px;
   font-weight: 800;
   color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
-.mark-sheet-close-btn {
+.btn-sheet-close {
   background: rgba(255, 255, 255, 0.1);
   border: none;
   color: #fff;
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  font-size: 16px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.2s;
+}
+.btn-sheet-close:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.mark-sheet-grid {
+.mark-options-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-bottom: 12px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 10px;
 }
-
-.sheet-opt-btn {
-  height: 48px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+.btn-sheet-mark {
   background: rgba(255, 255, 255, 0.05);
-  color: #fff;
-  font-size: 15px;
-  font-weight: 800;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 10px 4px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 6px;
+  gap: 4px;
   cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
   transition: all 0.15s ease;
+  color: var(--text-primary);
 }
-.sheet-opt-btn:active {
-  transform: scale(0.95);
+.btn-sheet-mark:hover, .btn-sheet-mark.selected {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: var(--primary);
+  transform: translateY(-1px);
 }
-
-.sheet-opt-honmei { border-color: rgba(239, 68, 68, 0.5); background: rgba(239, 68, 68, 0.15); color: #f87171; }
-.sheet-opt-taiko  { border-color: rgba(59, 130, 246, 0.5); background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
-.sheet-opt-tanana { border-color: rgba(245, 158, 11, 0.5); background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
-.sheet-opt-renka  { border-color: rgba(16, 185, 129, 0.5); background: rgba(16, 185, 129, 0.15); color: #34d399; }
-.sheet-opt-ana    { border-color: rgba(192, 132, 252, 0.5); background: rgba(192, 132, 252, 0.15); color: #c084fc; }
-.sheet-opt-keshi  { border-color: rgba(148, 163, 184, 0.5); background: rgba(148, 163, 184, 0.15); color: #cbd5e1; }
-
-.sheet-opt-clear {
-  width: 100%;
-  height: 42px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px dashed rgba(255, 255, 255, 0.15);
+.btn-sheet-mark.clear {
+  border-style: dashed;
+}
+.mark-bubble {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+}
+.mark-bubble.mark-honmei { color: #f87171; }
+.mark-bubble.mark-taiko  { color: #60a5fa; }
+.mark-bubble.mark-tanana { color: #fbbf24; }
+.mark-bubble.mark-renka  { color: #34d399; }
+.mark-bubble.mark-ana    { color: #c084fc; }
+.mark-bubble.mark-keshi  { color: #94a3b8; }
+.mark-bubble.mark-clear  { color: var(--text-muted); }
+.mark-label {
+  font-size: 11px;
+  font-weight: 700;
   color: var(--text-muted);
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
 }
-
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden !important;
-  }
-  #app {
-    overflow-x: hidden !important;
-  }
-  .main-content {
-    padding: 12px 8px !important;
-    overflow-x: hidden !important;
-  }
-  .countdown-section {
-    padding: 16px 14px !important;
-    border-radius: 12px !important;
-  }
-  .race-title {
-    font-size: 20px !important;
-  }
-  .countdown-timer {
-    gap: 6px !important;
-  }
-  .time-block {
-    min-width: 58px !important;
-    padding: 6px 4px !important;
-  }
-  .time-num {
-    font-size: 22px !important;
-  }
-  .pred-section {
-    padding: 14px 10px !important;
-    border-radius: 12px !important;
-    margin-bottom: 14px !important;
-  }
-}
-
-
 
 /* ----------------------------------
    対象レース切替スイッチャー
 ---------------------------------- */
 .pred-race-switcher-container {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 2px 0 6px 0;
+  padding: 4px 0 8px 0;
+  scrollbar-width: thin;
 }
 .pred-race-switcher-pills {
   display: flex;
   gap: 8px;
-  width: 100%;
+  width: max-content;
+  min-width: 100%;
+  padding: 2px 2px;
 }
 .pred-race-pill {
-  flex: 1;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
-  padding: 10px 14px;
-  background: var(--card-bg);
+  padding: 8px 14px;
+  background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   color: var(--text-muted);
@@ -1796,14 +2004,15 @@ html.route-prediction .nav-item[data-target="prediction"] {
   white-space: nowrap;
 }
 .pred-race-pill:hover {
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.15);
 }
 .pred-race-pill.active {
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(16, 185, 129, 0.15));
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(16, 185, 129, 0.2));
   border-color: var(--gold);
   color: #fff;
-  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.15);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.2);
 }
 .pill-badge {
   font-size: 10px;
@@ -1908,6 +2117,97 @@ html.route-prediction .nav-item[data-target="prediction"] {
 .review-payout-ribbon .highlight-trifecta {
   color: var(--gold);
   font-weight: 800;
+}
+
+/* ----------------------------------
+   モバイル・レスポンシブ調整
+---------------------------------- */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  #app {
+    overflow-x: hidden !important;
+  }
+  .main-content {
+    padding: 12px 8px !important;
+    overflow-x: hidden !important;
+  }
+  .countdown-section {
+    padding: 16px 14px !important;
+    border-radius: 12px !important;
+  }
+  .race-title {
+    font-size: 20px !important;
+  }
+  .countdown-timer {
+    gap: 6px !important;
+  }
+  .time-block {
+    min-width: 58px !important;
+    padding: 6px 4px !important;
+  }
+  .time-num {
+    font-size: 22px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .nh-table-header {
+    padding: 8px 6px;
+    gap: 4px;
+    font-size: 10.5px;
+  }
+  .nh-main-row {
+    padding: 6px 6px;
+    gap: 4px;
+    min-height: 48px;
+  }
+  .nh-col-gate, .nh-gate-cell {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+  .nh-col-mark, .nh-mark-cell {
+    width: 28px;
+  }
+  .nh-mark-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 13px;
+  }
+  .nh-col-info, .nh-info-cell {
+    min-width: 68px;
+    padding-left: 2px;
+  }
+  .nh-horse-name {
+    font-size: 13.5px;
+  }
+  .nh-col-odds, .nh-odds-cell {
+    width: 52px;
+    min-width: 52px;
+    padding-right: 2px;
+  }
+  .nh-odds-val {
+    font-size: 13px;
+  }
+  .nh-col-weight, .nh-weight-cell {
+    width: 56px;
+    min-width: 56px;
+    padding-right: 2px;
+  }
+  .nh-weight-val {
+    font-size: 11.5px;
+  }
+  .nh-col-detail, .nh-detail-toggle-cell {
+    width: 36px;
+    min-width: 36px;
+  }
+  .nh-drawer-toggle-btn {
+    width: 34px;
+    height: 26px;
+    font-size: 10px;
+  }
 }
 
     </style>
@@ -62672,6 +62972,20 @@ function hydratePayouts(race) {
           
           if (btnClose) btnClose.addEventListener('click', closeModal);
           if (backdrop) backdrop.addEventListener('click', closeModal);
+          modal.addEventListener('click', (e) => {
+            if (e.target === modal || e.target.classList.contains('modal-backdrop')) {
+              closeModal();
+            }
+          });
+        }
+
+        if (typeof window !== 'undefined') {
+          window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+              closeModal();
+              if (typeof closeMarkSheet === 'function') closeMarkSheet();
+            }
+          });
         }
 
         const navItems = document.querySelectorAll('.nav-item');
@@ -62870,7 +63184,10 @@ function hydratePayouts(race) {
 
       function closeModal() {
         const modal = document.getElementById('modal-race-detail');
-        if (modal) modal.classList.remove('open');
+        if (modal) {
+          modal.classList.remove('open');
+          modal.classList.remove('active');
+        }
         document.body.style.overflow = '';
         if (typeof window !== 'undefined') {
           const baseRoute = (currentAppView === 'prediction') ? ('#prediction-' + currentPredictionRaceId) : '#calendar';
@@ -63226,8 +63543,8 @@ function hydratePayouts(race) {
         });
 
         if (sheet && backdrop) {
-          sheet.classList.add('open');
-          backdrop.classList.add('open');
+          sheet.classList.add('open', 'active');
+          backdrop.classList.add('open', 'active');
         }
       }
 
@@ -63235,8 +63552,8 @@ function hydratePayouts(race) {
         const sheet = document.getElementById('mark-bottom-sheet');
         const backdrop = document.getElementById('mark-sheet-backdrop');
         if (sheet && backdrop) {
-          sheet.classList.remove('open');
-          backdrop.classList.remove('open');
+          sheet.classList.remove('open', 'active');
+          backdrop.classList.remove('open', 'active');
         }
         activeSheetGate = null;
       }
@@ -64245,7 +64562,7 @@ function hydratePayouts(race) {
         });
 
         // モーダル表示
-        modal.classList.add('open');
+        modal.classList.add('open', 'active');
         document.body.style.overflow = 'hidden';
         refreshIcons();
       }
