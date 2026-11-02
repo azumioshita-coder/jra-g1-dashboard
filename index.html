@@ -13,931 +13,2238 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <style>
-      :root {
-        /* カラー定義：プレミアムダークグリーン ＆ ゴールド */
-        --bg-base: #040706;
-        --bg-sidebar: #080d0b;
-        --bg-surface: rgba(12, 20, 17, 0.6);
-        --bg-card: rgba(18, 30, 26, 0.45);
-        --bg-card-hover: rgba(26, 44, 38, 0.6);
-        --border-color: rgba(255, 255, 255, 0.06);
-        --border-hover: rgba(16, 185, 129, 0.35);
-        
-        --primary: #10b981; /* 鮮やかな芝のグリーン */
-        --primary-glow: rgba(16, 185, 129, 0.12);
-        --gold: #f59e0b; /* 栄光のゴールド */
-        --gold-glow: rgba(245, 158, 11, 0.15);
-        
-        --text-primary: #f3f4f6;
-        --text-secondary: #e5e7eb;
-        --text-muted: #9ca3af;
-        
-        --success: #10b981;
-        --danger: #ef4444;
-        --info: #3b82f6;
-        
-        --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.5);
-        --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.6);
-        --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.7);
-        
-        --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-        --font-display: 'Outfit', var(--font-sans);
-        
-        font-family: var(--font-sans);
-        color: var(--text-primary);
-        background-color: var(--bg-base);
-        line-height: 1.5;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        background-color: var(--bg-base);
-        color: var(--text-primary);
-        overflow-x: hidden;
-      }
-
-      #app {
-        display: flex;
-        min-height: 100vh;
-        background: radial-gradient(circle at 85% 15%, rgba(16, 185, 129, 0.04) 0%, transparent 50%),
-                    radial-gradient(circle at 15% 85%, rgba(245, 158, 11, 0.02) 0%, transparent 50%);
-      }
-
-      /* 枠番バッジ */
-      .waku-badge {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 24px;
-        height: 24px;
-        border-radius: 4px;
-        font-weight: 800;
-        font-size: 13px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-      }
-      .waku-1 { background-color: #ffffff; color: #111111; border: 1px solid #cccccc; }
-      .waku-2 { background-color: #191919; color: #ffffff; border: 1px solid #444444; }
-      .waku-3 { background-color: #e53e3e; color: #ffffff; }
-      .waku-4 { background-color: #3182ce; color: #ffffff; }
-      .waku-5 { background-color: #ecc94b; color: #111111; }
-      .waku-6 { background-color: #38a169; color: #ffffff; }
-      .waku-7 { background-color: #dd6b20; color: #ffffff; }
-      .waku-8 { background-color: #ed64a6; color: #ffffff; }
-
-      /* サイドバー */
-      .sidebar {
-        width: 280px;
-        background-color: var(--bg-sidebar);
-        border-right: 1px solid var(--border-color);
-        display: flex;
-        flex-direction: column;
-        padding: 24px;
-        position: fixed;
-        height: 100vh;
-        z-index: 100;
-      }
-
-      .brand {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 40px;
-        padding: 8px;
-      }
-
-      .logo-icon {
-        width: 40px;
-        height: 40px;
-        background: linear-gradient(135deg, var(--primary), var(--gold));
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #000;
-        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
-      }
-
-      .logo-icon svg, .logo-icon i {
-        width: 22px;
-        height: 22px;
-        stroke-width: 2.5;
-      }
-
-      .brand-text h2 {
-        font-family: var(--font-display);
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        background: linear-gradient(to right, #fff, var(--text-muted));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      .brand-text span {
-        font-size: 9px;
-        font-weight: 600;
-        letter-spacing: 2px;
-        color: var(--gold);
-        display: block;
-      }
-
-      .nav-menu {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        flex-grow: 1;
-      }
-
-      .nav-item {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        padding: 14px 16px;
-        color: var(--text-muted);
-        text-decoration: none;
-        border-radius: 12px;
-        font-size: 15px;
-        font-weight: 500;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        border: 1px solid transparent;
-      }
-
-      .nav-item i, .nav-item svg {
-        width: 20px;
-        height: 20px;
-      }
-
-      .nav-item:hover {
-        color: var(--text-primary);
-        background-color: var(--bg-card);
-        border-color: rgba(255, 255, 255, 0.02);
-      }
-
-      .nav-item.active {
-        color: #000;
-        background: linear-gradient(to right, var(--primary), #34d399);
-        font-weight: 600;
-        box-shadow: 0 4px 15px var(--primary-glow);
-      }
-
-      .sidebar-footer {
-        border-top: 1px solid var(--border-color);
-        padding-top: 20px;
-      }
-
-      .user-profile {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-
-      .avatar {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(245, 158, 11, 0.15));
-        border: 1px solid var(--gold);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: var(--font-display);
-        font-weight: 700;
-        color: var(--gold);
-        font-size: 14px;
-      }
-
-      .user-info {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .user-name {
-        font-size: 13px;
-        font-weight: 600;
-        color: var(--text-primary);
-      }
-
-      .user-role {
-        font-size: 10px;
-        color: var(--text-muted);
-      }
-
-      /* メインコンテンツ */
-      .main-content {
-        flex-grow: 1;
-        margin-left: 280px;
-        padding: 40px 48px;
-        min-height: 100vh;
-      }
-
-      /* ヘッダー */
-      .top-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 32px;
-      }
-
-      .page-title h1 {
-        font-family: var(--font-display);
-        font-size: 32px;
-        font-weight: 800;
-        letter-spacing: -0.5px;
-        margin-bottom: 6px;
-        background: linear-gradient(to right, #fff, #b3b3b3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      .page-title p {
-        font-size: 14px;
-        color: var(--text-muted);
-      }
-
-      /* カウントダウンセクション */
-      .countdown-section {
-        background: linear-gradient(135deg, rgba(14, 24, 20, 0.8), rgba(6, 10, 8, 0.9));
-        border: 1px solid rgba(16, 185, 129, 0.15);
-        border-radius: 20px;
-        padding: 32px 40px;
-        position: relative;
-        overflow: hidden;
-        box-shadow: var(--shadow-md);
-        margin-bottom: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      .countdown-bg-glow {
-        position: absolute;
-        top: -100px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 400px;
-        height: 250px;
-        background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
-        pointer-events: none;
-      }
-
-      .countdown-header {
-        margin-bottom: 24px;
-        z-index: 1;
-      }
-
-      .countdown-badge {
-        background-color: var(--primary-glow);
-        border: 1px solid rgba(16, 185, 129, 0.3);
-        color: var(--primary);
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 1.5px;
-        padding: 6px 12px;
-        border-radius: 30px;
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        margin-bottom: 12px;
-      }
-
-      .countdown-badge svg, .countdown-badge i {
-        width: 12px;
-        height: 12px;
-      }
-
-      .countdown-header h2 {
-        font-family: var(--font-display);
-        font-size: 28px;
-        font-weight: 800;
-        letter-spacing: -0.5px;
-        color: #fff;
-        margin-bottom: 8px;
-      }
-
-      .countdown-timer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-        z-index: 1;
-      }
-
-      .time-block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.35);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        border-radius: 14px;
-        min-width: 90px;
-        padding: 14px 10px;
-        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
-      }
-
-      .time-num {
-        font-family: var(--font-display);
-        font-size: 40px;
-        font-weight: 800;
-        color: var(--gold);
-        line-height: 1.1;
-        text-shadow: 0 0 10px rgba(245, 158, 11, 0.25);
-      }
-
-      .time-label {
-        font-size: 10px;
-        font-weight: 700;
-        color: var(--text-muted);
-        letter-spacing: 1px;
-        margin-top: 4px;
-      }
-
-      .time-separator {
-        font-size: 32px;
-        font-weight: 700;
-        color: rgba(255, 255, 255, 0.15);
-        margin-bottom: 16px;
-      }
-
-      /* フィルター・検索セクション */
-      .filter-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-        margin-bottom: 32px;
-        flex-wrap: wrap;
-      }
-
-      .tabs-container {
-        display: flex;
-        gap: 8px;
-      }
-
-      .tab-btn {
-        background-color: var(--bg-card);
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-        padding: 12px 20px;
-        color: var(--text-muted);
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.25s ease;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-      }
-
-      .tab-btn:hover {
-        background-color: var(--bg-card-hover);
-        color: var(--text-primary);
-      }
-
-      .tab-btn.active {
-        background-color: var(--primary-glow);
-        border-color: var(--primary);
-        color: var(--primary);
-        box-shadow: 0 2px 10px rgba(16, 185, 129, 0.1);
-      }
-
-      .tab-count {
-        font-size: 11px;
-        background-color: rgba(255, 255, 255, 0.05);
-        color: var(--text-muted);
-        padding: 2px 8px;
-        border-radius: 20px;
-        transition: all 0.25s;
-      }
-
-      .tab-btn.active .tab-count {
-        background-color: var(--primary);
-        color: #000;
-        font-weight: 700;
-      }
-
-      .search-box {
-        position: relative;
-        width: 100%;
-        max-width: 320px;
-      }
-
-      .search-box svg, .search-box i {
-        position: absolute;
-        left: 14px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: var(--text-muted);
-        width: 16px;
-        height: 16px;
-      }
-
-      .search-box input {
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.2);
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-        padding: 12px 16px 12px 42px;
-        color: var(--text-primary);
-        font-size: 14px;
-        outline: none;
-        transition: all 0.2s;
-      }
-
-      .search-box input:focus {
-        border-color: var(--primary);
-        box-shadow: 0 0 0 3px var(--primary-glow);
-      }
-
-      /* レースグリッド ＆ カード */
-      .race-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-        gap: 24px;
-        animation: fadeIn 0.4s ease-out;
-      }
-
-      .race-card {
-        background-color: var(--bg-surface);
-        backdrop-filter: blur(16px);
-        border: 1px solid var(--border-color);
-        border-radius: 18px;
-        padding: 24px;
-        position: relative;
-        overflow: hidden;
-        box-shadow: var(--shadow-sm);
-        display: flex;
-        flex-direction: column;
-        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        cursor: pointer;
-      }
-
-      .race-card:hover {
-        transform: translateY(-6px);
-        border-color: var(--border-hover);
-        box-shadow: var(--shadow-md);
-      }
-
-      .race-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background: var(--border-color);
-      }
-
-      .race-card.loc-tokyo::before { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
-      .race-card.loc-nakayama::before { background: linear-gradient(90deg, #ef4444, #f87171); }
-      .race-card.loc-kyoto::before { background: linear-gradient(90deg, #10b981, #34d399); }
-      .race-card.loc-hanshin::before { background: linear-gradient(90deg, #a855f7, #c084fc); }
-      .race-card.loc-chukyo::before { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
-
-      .card-header-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 16px;
-      }
-
-      .race-date-badge {
-        font-family: var(--font-display);
-        font-size: 12px;
-        font-weight: 700;
-        color: var(--text-muted);
-      }
-
-      .race-status-badge {
-        font-size: 10px;
-        font-weight: 700;
-        padding: 4px 8px;
-        border-radius: 6px;
-      }
-
-      .race-status-badge.finished {
-        background-color: rgba(255, 255, 255, 0.05);
-        color: var(--text-muted);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-      }
-
-      .race-status-badge.upcoming {
-        background-color: var(--gold-glow);
-        color: var(--gold);
-        border: 1px solid rgba(245, 158, 11, 0.2);
-      }
-
-      .race-card h3 {
-        font-family: var(--font-display);
-        font-size: 19px;
-        font-weight: 700;
-        line-height: 1.3;
-        margin-bottom: 6px;
-        color: #fff;
-      }
-
-      .race-meta-info {
-        font-size: 12px;
-        color: var(--text-muted);
-        margin-bottom: 20px;
-        display: flex;
-        gap: 10px;
-      }
-
-      .race-card-footer {
-        margin-top: auto;
-        border-top: 1px solid var(--border-color);
-        padding-top: 16px;
-      }
-
-      .card-result-preview {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-      }
-
-      .winner-row {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 13px;
-      }
-
-      .winner-crown {
-        color: var(--gold);
-        width: 14px;
-        height: 14px;
-      }
-
-      .winner-name {
-        font-weight: 600;
-        color: var(--text-primary);
-      }
-
-      .card-action-text {
-        font-size: 12px;
-        color: var(--primary);
-        font-weight: 600;
-        display: inline-flex;
-        align-items: center;
-        gap: 4px;
-        margin-top: 10px;
-      }
-
-      .race-card:hover .card-action-text {
-        color: #34d399;
-      }
-
-      /* モーダル ＆ レース詳細 */
-      .modal {
-        position: fixed;
-        inset: 0;
-        z-index: 1000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.3s ease;
-      }
-
-      .modal.active {
-        opacity: 1;
-        pointer-events: auto;
-      }
-
-      .modal-backdrop {
-        position: absolute;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.75);
-        backdrop-filter: blur(8px);
-      }
-
-      .modal-content {
-        position: relative;
-        background-color: #060908;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 20px;
-        width: 95%;
-        max-width: 1100px;
-        max-height: 90vh;
-        overflow-y: auto;
-        padding: 32px;
-        box-shadow: var(--shadow-lg);
-        transform: scale(0.95);
-        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-        z-index: 1010;
-      }
-
-      .modal.active .modal-content {
-        transform: scale(1);
-      }
-
-      .modal-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-        border-bottom: 1px solid var(--border-color);
-        padding-bottom: 16px;
-      }
-
-      .modal-header h2 {
-        font-family: var(--font-display);
-        font-size: 26px;
-        font-weight: 800;
-        letter-spacing: -0.5px;
-        color: #fff;
-      }
-
-      .btn-close {
-        background: transparent;
-        border: none;
-        color: var(--text-muted);
-        font-size: 28px;
-        cursor: pointer;
-        line-height: 1;
-        transition: color 0.2s;
-      }
-
-      .btn-close:hover {
-        color: var(--text-primary);
-      }
-
-      /* 2カラムレイアウト */
-      .detail-grid {
-        display: grid;
-        grid-template-columns: 2.2fr 1fr;
-        gap: 28px;
-        align-items: start;
-      }
-
-      .detail-left {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-      }
-
-      .detail-right {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        position: sticky;
-        top: 0;
-      }
-
-      /* スペック表示 */
-      .detail-meta-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-        background-color: rgba(255, 255, 255, 0.02);
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-        padding: 16px;
-        margin-bottom: 10px;
-      }
-
-      .detail-meta-item {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-      }
-
-      .detail-meta-label {
-        font-size: 10px;
-        color: var(--text-muted);
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-      }
-
-      .detail-meta-value {
-        font-size: 13px;
-        font-weight: 600;
-      }
-
-      .detail-section-title {
-        font-family: var(--font-display);
-        font-size: 15px;
-        font-weight: 700;
-        margin-bottom: 12px;
-        color: var(--gold);
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        border-left: 3px solid var(--gold);
-        padding-left: 8px;
-      }
-
-      /* 成績テーブル */
-      .table-scroll-container {
-        overflow-x: auto;
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-        background-color: rgba(255, 255, 255, 0.01);
-      }
-
-      .result-table {
-        width: 100%;
-        border-collapse: collapse;
-        text-align: left;
-        font-size: 12px;
-        white-space: nowrap;
-      }
-
-      .result-table th {
-        background-color: rgba(255, 255, 255, 0.03);
-        padding: 10px 12px;
-        font-weight: 600;
-        color: var(--text-muted);
-        border-bottom: 1px solid var(--border-color);
-        font-size: 11px;
-      }
-
-      .result-table td {
-        padding: 10px 12px;
-        border-bottom: 1px solid var(--border-color);
-        color: var(--text-secondary);
-      }
-
-      .result-table tr:last-child td {
-        border-bottom: none;
-      }
-
-      .result-table tbody tr:hover {
-        background-color: rgba(255, 255, 255, 0.015);
-      }
-
-      /* 着順バッジ */
-      .rank-badge {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: var(--font-display);
-        font-weight: 700;
-        font-size: 11px;
-        color: #000;
-        margin: 0 auto;
-      }
-
-      .rank-1 { background-color: var(--gold); }
-      .rank-2 { background-color: #cbd5e1; }
-      .rank-3 { background-color: #b45309; color: #fff; }
-      .rank-other { background-color: rgba(255, 255, 255, 0.08); color: var(--text-muted); }
-
-      .row-rank-1 { background-color: rgba(245, 158, 11, 0.03); }
-      .row-rank-2 { background-color: rgba(203, 213, 225, 0.02); }
-      .row-rank-3 { background-color: rgba(180, 83, 9, 0.02); }
-
-      /* 展開 */
-      .pace-container {
-        background-color: rgba(255, 255, 255, 0.02);
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-        padding: 16px;
-        margin-bottom: 10px;
-      }
-
-      .pace-flow {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        font-size: 13px;
-        color: var(--text-secondary);
-      }
-
-      .pace-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 10px;
-      }
-
-      .corner-label {
-        font-family: var(--font-display);
-        font-weight: 700;
-        color: var(--primary);
-        min-width: 45px;
-      }
-
-      .corner-sequence {
-        font-family: monospace;
-        color: var(--text-primary);
-        letter-spacing: 0.5px;
-      }
-
-      /* 払戻金 */
-      .payouts-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 8px;
-      }
-
-      .payout-item {
-        display: flex;
-        justify-content: space-between;
-        background-color: rgba(255, 255, 255, 0.02);
-        padding: 10px 14px;
-        border-radius: 8px;
-        border: 1px solid var(--border-color);
-        font-size: 13px;
-        transition: all 0.2s;
-      }
-
-      .payout-item:hover {
-        border-color: rgba(255, 255, 255, 0.12);
-        background-color: rgba(255, 255, 255, 0.04);
-      }
-
-      .payout-type {
-        color: var(--text-muted);
-        font-weight: 500;
-      }
-
-      .payout-comb {
-        font-family: monospace;
-        color: var(--text-primary);
-      }
-
-      .payout-value {
-        font-weight: 600;
-        font-family: var(--font-display);
-        color: var(--gold);
-      }
-
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-
-      /* レスポンシブ */
-      @media (max-width: 992px) {
-        .countdown-section { padding: 24px; }
-        .countdown-timer { gap: 10px; }
-        .time-block { min-width: 75px; padding: 10px 8px; }
-        .time-num { font-size: 30px; }
-        .detail-grid { grid-template-columns: 1fr; }
-        .detail-right { position: relative; top: auto; }
-      }
-
-      @media (max-width: 768px) {
-        #app { flex-direction: column; }
-        .sidebar { width: 100%; height: auto; position: relative; border-right: none; border-bottom: 1px solid var(--border-color); padding: 16px; }
-        .brand { margin-bottom: 16px; }
-        .nav-menu { flex-direction: row; justify-content: space-around; }
-        .nav-item { padding: 10px; font-size: 13px; flex-grow: 1; justify-content: center; }
-        .sidebar-footer { display: none; }
-        .main-content { margin-left: 0; padding: 24px; }
-        .filter-section { flex-direction: column; align-items: stretch; }
-        .tabs-container { justify-content: space-between; }
-        .tab-btn { flex-grow: 1; justify-content: center; padding: 10px; font-size: 13px; }
-        .modal-content { padding: 20px; margin: 10px auto; }
-        .detail-meta-list { grid-template-columns: 1fr 1fr; }
-      }
-
-      /* モーダル内詳細の新縦並び・下部2カラムレイアウト */
-      .detail-main-flow {
-        display: flex;
-        flex-direction: column;
-        gap: 28px;
-        width: 100%;
-      }
-
-      .detail-sub-grid {
-        display: grid;
-        grid-template-columns: 1.2fr 1fr;
-        gap: 28px;
-        align-items: start;
-        width: 100%;
-      }
-
-      .payouts-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-      }
-
-      @media (max-width: 992px) {
-        .detail-sub-grid {
-          grid-template-columns: 1fr;
-          gap: 20px;
-        }
-        .payouts-grid {
-          grid-template-columns: 1fr;
-        }
-      }
+:root {
+  /* カラー定義：プレミアムダークグリーン ＆ ゴールド */
+  --bg-base: #040706;
+  --bg-sidebar: #080d0b;
+  --bg-surface: rgba(12, 20, 17, 0.6);
+  --bg-card: rgba(18, 30, 26, 0.45);
+  --bg-card-hover: rgba(26, 44, 38, 0.6);
+  --border-color: rgba(255, 255, 255, 0.06);
+  --border-hover: rgba(16, 185, 129, 0.35);
+  
+  --primary: #10b981; /* 鮮やかな芝のグリーン */
+  --primary-glow: rgba(16, 185, 129, 0.12);
+  --gold: #f59e0b; /* 栄光のゴールド */
+  --gold-glow: rgba(245, 158, 11, 0.15);
+  
+  --text-primary: #f3f4f6;
+  --text-secondary: #e5e7eb;
+  --text-muted: #9ca3af;
+  
+  --success: #10b981;
+  --danger: #ef4444;
+  --info: #3b82f6;
+  
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.7);
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Outfit', var(--font-sans);
+  
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  background-color: var(--bg-base);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* アプリ全体のレイアウト */
+#app {
+  display: flex;
+  min-height: 100vh;
+  background: radial-gradient(circle at 85% 15%, rgba(16, 185, 129, 0.04) 0%, transparent 50%),
+              radial-gradient(circle at 15% 85%, rgba(245, 158, 11, 0.02) 0%, transparent 50%);
+}
+
+/* ----------------------------------
+ * サイドバー
+ * ---------------------------------*/
+.sidebar {
+  width: 280px;
+  background-color: var(--bg-sidebar);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  position: fixed;
+  height: 100vh;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  padding: 8px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--primary), var(--gold));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+}
+
+.logo-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 2.5;
+}
+
+.brand-text h2 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, #fff, var(--text-muted));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-text span {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--gold);
+  display: block;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 16px;
+  color: var(--text-muted);
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+}
+
+.nav-item i, .nav-item svg {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-item:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-card);
+  border-color: rgba(255, 255, 255, 0.02);
+}
+
+.nav-item.active {
+  color: #000;
+  background: linear-gradient(to right, var(--primary), #34d399);
+  font-weight: 600;
+  box-shadow: 0 4px 15px var(--primary-glow);
+}
+
+.sidebar-footer {
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(245, 158, 11, 0.15));
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--gold);
+  font-size: 14px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.user-role {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+/* ----------------------------------
+ * メインコンテンツ
+ * ---------------------------------*/
+.main-content {
+  flex-grow: 1;
+  margin-left: 280px;
+  padding: 40px 48px;
+  min-height: 100vh;
+}
+
+/* ヘッダー */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.page-title h1 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+  background: linear-gradient(to right, #fff, #b3b3b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page-title p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* ----------------------------------
+ * カウントダウンセクション
+ * ---------------------------------*/
+.countdown-section {
+  background: linear-gradient(135deg, rgba(14, 24, 20, 0.8), rgba(6, 10, 8, 0.9));
+  border: 1px solid rgba(16, 185, 129, 0.15);
+  border-radius: 20px;
+  padding: 32px 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.countdown-bg-glow {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.countdown-header {
+  margin-bottom: 24px;
+  z-index: 1;
+}
+
+.countdown-badge {
+  background-color: var(--primary-glow);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 6px 12px;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.countdown-badge svg {
+  width: 12px;
+  height: 12px;
+}
+
+.countdown-header h2 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.countdown-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 1;
+}
+
+.time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  min-width: 90px;
+  padding: 14px 10px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.time-num {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1.1;
+  text-shadow: 0 0 10px rgba(245, 158, 11, 0.25);
+}
+
+.time-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.time-separator {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.15);
+  margin-bottom: 16px;
+}
+
+/* ----------------------------------
+ * フィルター・検索セクション
+ * ---------------------------------*/
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.tabs-container {
+  display: flex;
+  gap: 8px;
+}
+
+.tab-btn {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 12px 20px;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tab-btn:hover {
+  background-color: var(--bg-card-hover);
+  color: var(--text-primary);
+}
+
+.tab-btn.active {
+  background-color: var(--primary-glow);
+  border-color: var(--primary);
+  color: var(--primary);
+  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.1);
+}
+
+.tab-count {
+  font-size: 11px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  padding: 2px 8px;
+  border-radius: 20px;
+  transition: all 0.25s;
+}
+
+.tab-btn.active .tab-count {
+  background-color: var(--primary);
+  color: #000;
+  font-weight: 700;
+}
+
+.search-box {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+}
+
+.search-box svg, .search-box i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  width: 16px;
+  height: 16px;
+}
+
+.search-box input {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 12px 16px 12px 42px;
+  color: var(--text-primary);
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.search-box input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-glow);
+}
+
+/* ----------------------------------
+ * レースグリッド ＆ カード
+ * ---------------------------------*/
+.race-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.race-card {
+  background-color: var(--bg-surface);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+
+.race-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.race-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--border-color);
+}
+
+.race-card.loc-tokyo::before { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+.race-card.loc-nakayama::before { background: linear-gradient(90deg, #ef4444, #f87171); }
+.race-card.loc-kyoto::before { background: linear-gradient(90deg, #10b981, #34d399); }
+.race-card.loc-hanshin::before { background: linear-gradient(90deg, #a855f7, #c084fc); }
+.race-card.loc-chukyo::before { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+
+.card-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.race-date-badge {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.race-status-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.race-status-badge.finished {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.race-status-badge.upcoming {
+  background-color: var(--gold-glow);
+  color: var(--gold);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.race-card h3 {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.race-meta-info {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.race-card-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--border-color);
+  padding-top: 16px;
+}
+
+.card-result-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.winner-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.winner-crown {
+  color: var(--gold);
+  width: 14px;
+  height: 14px;
+}
+
+.winner-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.card-action-text {
+  font-size: 12px;
+  color: var(--primary);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+}
+
+.race-card:hover .card-action-text {
+  color: #34d399;
+}
+
+/* ----------------------------------
+ * モーダル ＆ レース詳細 (超拡充対応)
+ * ---------------------------------*/
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #060908;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  width: 95%;
+  max-width: 1100px; /* 大幅に拡張して全頭成績テーブルを表示 */
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 32px;
+  box-shadow: var(--shadow-lg);
+  transform: scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 1010;
+}
+
+.modal.active .modal-content {
+  transform: scale(1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 16px;
+}
+
+.modal-header h2 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+
+.btn-close {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.btn-close:hover {
+  color: var(--text-primary);
+}
+
+/* 2カラムレイアウト */
+.detail-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.detail-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detail-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: sticky;
+  top: 0;
+}
+
+/* スペック表示 */
+.detail-meta-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+.detail-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-meta-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-meta-value {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.detail-section-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-left: 3px solid var(--gold);
+  padding-left: 8px;
+}
+
+/* 成績テーブル (横スクロール対応) */
+.table-scroll-container {
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.result-table th {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 10px 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-color);
+  font-size: 11px;
+}
+
+.result-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+}
+
+.result-table tr:last-child td {
+  border-bottom: none;
+}
+
+.result-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.015);
+}
+
+/* 着順バッジ */
+.rank-badge {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  color: #000;
+  margin: 0 auto;
+}
+
+.rank-1 { background-color: var(--gold); }
+.rank-2 { background-color: #cbd5e1; }
+.rank-3 { background-color: #b45309; color: #fff; }
+.rank-other { background-color: rgba(255, 255, 255, 0.08); color: var(--text-muted); }
+
+/* 着順ハイライト行 */
+.row-rank-1 { background-color: rgba(245, 158, 11, 0.03); }
+.row-rank-2 { background-color: rgba(203, 213, 225, 0.02); }
+.row-rank-3 { background-color: rgba(180, 83, 9, 0.02); }
+
+/* 展開（通過順） */
+.pace-container {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+.pace-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.pace-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.corner-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--primary);
+  min-width: 45px;
+}
+
+.corner-sequence {
+  font-family: monospace;
+  color: var(--text-primary);
+  letter-spacing: 0.5px;
+}
+
+/* 払戻金リスト */
+.payouts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.payout-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.02);
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.payout-item:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.payout-type {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.payout-comb {
+  font-family: monospace;
+  color: var(--text-primary);
+}
+
+.payout-value {
+  font-weight: 600;
+  font-family: var(--font-display);
+  color: var(--gold);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----------------------------------
+ * レスポンシブ対応 (超拡充対応)
+ * ---------------------------------*/
+@media (max-width: 992px) {
+  .countdown-section {
+    padding: 24px;
+  }
+  .countdown-timer {
+    gap: 10px;
+  }
+  .time-block {
+    min-width: 75px;
+    padding: 10px 8px;
+  }
+  .time-num {
+    font-size: 30px;
+  }
+  
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .detail-right {
+    position: relative;
+    top: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #app {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 16px;
+  }
+  
+  .brand {
+    margin-bottom: 16px;
+  }
+  
+  .nav-menu {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .nav-item {
+    padding: 10px;
+    font-size: 13px;
+    flex-grow: 1;
+    justify-content: center;
+  }
+  
+  .sidebar-footer {
+    display: none;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    padding: 24px;
+  }
+  
+  .filter-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .tabs-container {
+    justify-content: space-between;
+  }
+  
+  .tab-btn {
+    flex-grow: 1;
+    justify-content: center;
+    padding: 10px;
+    font-size: 13px;
+  }
+  
+  .search-box {
+    max-width: none;
+  }
+  
+  .modal-content {
+    padding: 20px;
+    margin: 10px auto;
+  }
+  
+  .detail-meta-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* 枠番バッジ */
+.waku-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  font-weight: 800;
+  font-size: 13px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+.waku-1 { background-color: #ffffff; color: #111111; border: 1px solid #cccccc; }
+.waku-2 { background-color: #191919; color: #ffffff; border: 1px solid #444444; }
+.waku-3 { background-color: #e53e3e; color: #ffffff; }
+.waku-4 { background-color: #3182ce; color: #ffffff; }
+.waku-5 { background-color: #ecc94b; color: #111111; }
+.waku-6 { background-color: #38a169; color: #ffffff; }
+.waku-7 { background-color: #dd6b20; color: #ffffff; }
+.waku-8 { background-color: #ed64a6; color: #ffffff; }
+
+
+/* ----------------------------------
+   ルーティング・リロード対策 スタイル
+------------------------------------- */
+html.route-prediction #view-calendar {
+  display: none !important;
+}
+html.route-prediction #view-prediction {
+  display: block !important;
+}
+html.route-prediction .nav-item[data-target="calendar"] {
+  background: transparent !important;
+  color: var(--text-muted) !important;
+}
+html.route-prediction .nav-item[data-target="prediction"] {
+  background: rgba(16, 185, 129, 0.15) !important;
+  color: var(--primary) !important;
+}
+
+/* ----------------------------------
+   予想・攻略ページ 専用スタイル
+------------------------------------- */
+.pred-header-card {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(245, 158, 11, 0.08));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+.pred-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.pred-breadcrumb a {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.pred-breadcrumb a:hover {
+  text-decoration: underline;
+}
+.pred-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.pred-meta-chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.pred-chip {
+  font-size: 11px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 3px 8px;
+  border-radius: 6px;
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* クイックジャンプナビ */
+.pred-quick-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.btn-quick-nav {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 8px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-quick-nav:hover, .btn-quick-nav:active {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: var(--primary);
+}
+
+/* ----------------------------------
+   オッズコントロールカード（発売前/発売中・随時更新）
+------------------------------------- */
+.odds-control-card {
+  background: rgba(18, 30, 26, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+.odds-status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.odds-mode-badge {
+  font-size: 12px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+.odds-mode-badge.pre-sale {
+  background: rgba(245, 158, 11, 0.18);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: var(--gold);
+}
+.odds-mode-badge.on-sale {
+  background: rgba(16, 185, 129, 0.18);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: var(--primary);
+}
+.pulse-dot-gold {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 8px var(--gold);
+}
+.pulse-dot-green {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 8px var(--primary);
+  animation: pulseGreen 1.5s infinite;
+}
+@keyframes pulseGreen {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.odds-sales-countdown {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.odds-action-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.odds-type-toggle {
+  display: inline-flex;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.btn-odds-mode {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 11px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.btn-odds-mode.active#btn-odds-estimated {
+  background: var(--gold);
+  color: #111;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.35);
+}
+.btn-odds-mode.active#btn-odds-live {
+  background: var(--primary);
+  color: #111;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.35);
+}
+
+.btn-refresh-odds-btn {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-refresh-odds-btn:active {
+  transform: scale(0.95);
+}
+.btn-refresh-odds-btn.spinning svg {
+  animation: spin 0.6s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ----------------------------------
+   NetKeiba完全準拠 モバイル出馬表
+   横スクロール完全ゼロ（100%幅・文字重なりゼロ）
+   列順: [馬番] [印] [馬情報] ➔ [オッズ] ➔ [馬体重] ➔ [詳細▼]
+------------------------------------- */
+.weight-type-toggle {
+  display: inline-flex;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.btn-weight-mode {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-weight-mode.active#btn-weight-training {
+  background: rgba(245, 158, 11, 0.25);
+  color: var(--gold);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+.btn-weight-mode.active#btn-weight-confirmed {
+  background: rgba(16, 185, 129, 0.25);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.netkeiba-horse-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.nh-row-container {
+  background: rgba(18, 30, 26, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  width: 100%;
+}
+.nh-row-container:hover {
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+/* メイン1行: 馬番・印・馬情報・オッズ・馬体重・詳細▼ */
+.nh-main-row {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  gap: 5px;
+  min-height: 50px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* 1列目: 馬番 (枠色バッジ 26px) */
+.nh-gate-cell {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13.5px;
+  font-weight: 900;
+  font-family: monospace;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+/* JRA公式枠色 */
+.waku-1 { background: #ffffff !important; color: #111111 !important; border: 1px solid #ddd; }
+.waku-2 { background: #1c1917 !important; color: #ffffff !important; border: 1px solid #444; }
+.waku-3 { background: #ef4444 !important; color: #ffffff !important; }
+.waku-4 { background: #3b82f6 !important; color: #ffffff !important; }
+.waku-5 { background: #eab308 !important; color: #111111 !important; }
+.waku-6 { background: #16a34a !important; color: #ffffff !important; }
+.waku-7 { background: #f97316 !important; color: #ffffff !important; }
+.waku-8 { background: #ec4899 !important; color: #ffffff !important; }
+
+/* 2列目: 印ボタン (30px) */
+.nh-mark-cell {
+  width: 30px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nh-mark-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-muted);
+  font-size: 13.5px;
+  font-weight: 900;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-tap-highlight-color: transparent;
+  padding: 0;
+}
+.nh-mark-btn:active {
+  transform: scale(0.92);
+}
+.nh-mark-btn.mark-honmei { background: rgba(239, 68, 68, 0.25) !important; color: #f87171 !important; border-color: #ef4444 !important; }
+.nh-mark-btn.mark-taiko { background: rgba(59, 130, 246, 0.25) !important; color: #60a5fa !important; border-color: #3b82f6 !important; }
+.nh-mark-btn.mark-tanana { background: rgba(245, 158, 11, 0.25) !important; color: #fbbf24 !important; border-color: #f59e0b !important; }
+.nh-mark-btn.mark-renka { background: rgba(16, 185, 129, 0.25) !important; color: #34d399 !important; border-color: #10b981 !important; }
+.nh-mark-btn.mark-ana { background: rgba(192, 132, 252, 0.25) !important; color: #c084fc !important; border-color: #a855f7 !important; }
+.nh-mark-btn.mark-keshi { background: rgba(100, 116, 139, 0.25) !important; color: #94a3b8 !important; border-color: #64748b !important; text-decoration: line-through; }
+
+/* 3列目: 馬情報（中央・可変幅） */
+.nh-info-cell {
+  flex: 1;
+  min-width: 78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.nh-name-row {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.nh-horse-name {
+  font-size: 14.5px;
+  font-weight: 800;
+  color: #60a5fa;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.nh-sub-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10.5px;
+  color: var(--text-muted);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nh-jockey {
+  color: #38bdf8;
+  font-weight: 700;
+}
+.nh-load {
+  color: var(--text-secondary);
+}
+
+/* 4列目: オッズ・人気（幅48px固定・右寄せ） */
+.nh-odds-cell {
+  width: 48px;
+  min-width: 48px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1.15;
+}
+.nh-odds-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+.nh-odds-badge-yosou {
+  font-size: 8.5px;
+  font-weight: 700;
+  color: var(--gold);
+  background: rgba(245, 158, 11, 0.2);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 1px 2px;
+  border-radius: 2px;
+  line-height: 1;
+}
+.nh-odds-val {
+  font-size: 14px;
+  font-weight: 800;
+  font-family: monospace;
+  color: #f3f4f6;
+  white-space: nowrap;
+}
+.nh-odds-val.highlight-fav {
+  color: #f87171;
+}
+.nh-pop-badge {
+  font-size: 9.5px;
+  color: var(--text-muted);
+  margin-top: 1px;
+  white-space: nowrap;
+}
+
+/* 5列目: 馬体重（幅52px固定・右寄せ） */
+.nh-weight-cell {
+  width: 52px;
+  min-width: 52px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1.15;
+}
+.nh-weight-val {
+  font-size: 12.5px;
+  font-weight: 800;
+  font-family: monospace;
+  color: #e2e8f0;
+  white-space: nowrap;
+}
+.nh-weight-sub {
+  font-size: 9px;
+  margin-top: 1px;
+  white-space: nowrap;
+}
+.weight-tag-pre {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.15);
+  padding: 0 3px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+.weight-tag-diff {
+  font-family: monospace;
+  font-weight: 700;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+.weight-tag-diff.diff-plus {
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.15);
+}
+.weight-tag-diff.diff-minus {
+  color: #f87171;
+  background: rgba(239, 68, 68, 0.15);
+}
+.weight-tag-diff.diff-zero {
+  color: #94a3b8;
+  background: rgba(148, 163, 184, 0.15);
+}
+
+/* 6列目: 詳細▼ボタン (幅34px固定) */
+.nh-detail-toggle-cell {
+  width: 34px;
+  min-width: 34px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nh-drawer-toggle-btn {
+  width: 32px;
+  height: 30px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: all 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.nh-drawer-toggle-btn:hover, .nh-drawer-toggle-btn.active {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.4);
+  color: var(--primary);
+}
+.toggle-text {
+  font-size: 8.5px;
+  font-weight: 700;
+  line-height: 1;
+}
+.toggle-arrow {
+  font-size: 10px;
+  line-height: 1;
+  margin-top: 1px;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+.nh-drawer-toggle-btn.active .toggle-arrow {
+  transform: rotate(180deg);
+}
+
+/* アコーディオン展開ドロワー */
+.nh-detail-drawer {
+  display: none;
+  background: rgba(10, 18, 15, 0.95);
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+  padding: 10px 12px;
+  font-size: 12px;
+  animation: fadeIn 0.15s ease-out;
+}
+.nh-detail-drawer.open {
+  display: block;
+}
+.nh-drawer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+.nh-drawer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.nh-drawer-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.nh-drawer-val {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* オカルトサインカード & ターゲット馬バッジ */
+.occult-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px;
+  transition: all 0.2s ease;
+}
+.occult-card:hover {
+  border-color: rgba(168, 85, 247, 0.35);
+  background: rgba(255, 255, 255, 0.045);
+}
+.nh-target-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* ----------------------------------
+   印選択ボトムシート（アクションシート）
+------------------------------------- */
+.mark-sheet-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 9998;
+  animation: fadeIn 0.15s ease-out;
+}
+.mark-sheet-backdrop.active {
+  display: block;
+}
+
+.mark-bottom-sheet {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #111a16;
+  border-top: 1px solid rgba(16, 185, 129, 0.4);
+  border-radius: 20px 20px 0 0;
+  padding: 16px 16px 28px;
+  z-index: 9999;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  animation: slideUp 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.mark-bottom-sheet.active {
+  display: block;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.mark-sheet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.mark-sheet-target-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.mark-sheet-close-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mark-sheet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.sheet-opt-btn {
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.15s ease;
+}
+.sheet-opt-btn:active {
+  transform: scale(0.95);
+}
+
+.sheet-opt-honmei { border-color: rgba(239, 68, 68, 0.5); background: rgba(239, 68, 68, 0.15); color: #f87171; }
+.sheet-opt-taiko  { border-color: rgba(59, 130, 246, 0.5); background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+.sheet-opt-tanana { border-color: rgba(245, 158, 11, 0.5); background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+.sheet-opt-renka  { border-color: rgba(16, 185, 129, 0.5); background: rgba(16, 185, 129, 0.15); color: #34d399; }
+.sheet-opt-ana    { border-color: rgba(192, 132, 252, 0.5); background: rgba(192, 132, 252, 0.15); color: #c084fc; }
+.sheet-opt-keshi  { border-color: rgba(148, 163, 184, 0.5); background: rgba(148, 163, 184, 0.15); color: #cbd5e1; }
+
+.sheet-opt-clear {
+  width: 100%;
+  height: 42px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  #app {
+    overflow-x: hidden !important;
+  }
+  .main-content {
+    padding: 12px 8px !important;
+    overflow-x: hidden !important;
+  }
+  .countdown-section {
+    padding: 16px 14px !important;
+    border-radius: 12px !important;
+  }
+  .race-title {
+    font-size: 20px !important;
+  }
+  .countdown-timer {
+    gap: 6px !important;
+  }
+  .time-block {
+    min-width: 58px !important;
+    padding: 6px 4px !important;
+  }
+  .time-num {
+    font-size: 22px !important;
+  }
+  .pred-section {
+    padding: 14px 10px !important;
+    border-radius: 12px !important;
+    margin-bottom: 14px !important;
+  }
+}
+
+
+
+/* ----------------------------------
+   対象レース切替スイッチャー
+---------------------------------- */
+.pred-race-switcher-container {
+  margin-bottom: 12px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 2px 0 6px 0;
+}
+.pred-race-switcher-pills {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+.pred-race-pill {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.pred-race-pill:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+}
+.pred-race-pill.active {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(16, 185, 129, 0.15));
+  border-color: var(--gold);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.15);
+}
+.pill-badge {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 800;
+  background: var(--gold);
+  color: #111;
+}
+.pill-badge.review {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.pred-race-pill.active .pill-badge.review {
+  background: rgba(245, 158, 11, 0.3);
+  color: var(--gold);
+}
+
+/* ----------------------------------
+   レース終了レビューカード（天皇賞秋など）
+---------------------------------- */
+.finished-review-card {
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(19, 35, 29, 0.8));
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: 12px;
+}
+.review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.review-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-open-result-modal {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s;
+}
+.btn-open-result-modal:hover {
+  background: var(--gold);
+  color: #111;
+  border-color: var(--gold);
+}
+.review-podium {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.podium-item {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 11px;
+}
+.podium-item.first {
+  border-color: rgba(245, 158, 11, 0.4);
+  background: rgba(245, 158, 11, 0.08);
+}
+.podium-rank {
+  font-weight: 800;
+  padding: 1px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+}
+.podium-item.first .podium-rank { background: var(--gold); color: #111; }
+.podium-item.second .podium-rank { background: #94a3b8; color: #111; }
+.podium-item.third .podium-rank { background: #b45309; color: #fff; }
+.podium-name { font-weight: 800; color: #fff; }
+.podium-sub { color: var(--text-muted); font-size: 10px; margin-top: 2px; }
+.review-payout-ribbon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 11px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+}
+.review-payout-ribbon span b { color: #fff; }
+.review-payout-ribbon .highlight-trifecta {
+  color: var(--gold);
+  font-weight: 800;
+}
+
     </style>
   
     <!-- Anti-flicker route restoration -->
+    <script>
+      (function() {
+        try {
+          var h = window.location.hash || '';
+          if (!h || h === '#' || h === '#/') {
+            var saved = localStorage.getItem('keiba_active_route');
+            if (saved && (saved.startsWith('#prediction') || saved.startsWith('#race-') || saved.startsWith('#sec-'))) {
+              h = saved;
+            }
+          }
+          if (h.startsWith('#prediction') || h.startsWith('#sec-')) {
+            document.documentElement.classList.add('route-prediction');
+          } else {
+            document.documentElement.classList.add('route-calendar');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+  </head>
+  <body class="dark-theme">
+    <div id="app">
+      <!-- サイドバー -->
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="logo-icon">
+            <i data-lucide="award"></i>
+          </div>
+          <div class="brand-text">
+            <h2>GRAND STABLE</h2>
+            <span>G1 CAMPAIGN 2026</span>
+          </div>
+        </div>
+
+        <nav class="nav-menu">
+          <a class="nav-item active" data-target="calendar" style="cursor: pointer;">
+            <i data-lucide="calendar"></i>
+            <span>G1カレンダー</span>
+          </a>
+          <a class="nav-item" data-target="prediction" style="cursor: pointer;">
+            <i data-lucide="trending-up"></i>
+            <span>予想・攻略分析</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="user-profile">
+            <div class="avatar">G</div>
+            <div class="user-info">
+              <span class="user-name">GUEST USER</span>
+              <span class="user-role">RACING FAN</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- メインコンテンツ -->
+      <main class="main-content">
+        <!-- ヘッダー -->
+        <div id="view-calendar" class="app-view">
+<header class="top-header">
+          <div class="page-title">
+            <h1 id="page-heading">2026年 G1レースダッシュボード</h1>
+            <p id="page-subheading" class="text-muted">JRA G1全24レースの日程・結果・カウントダウン情報</p>
+          </div>
+        </header>
+
+        <!-- カウントダウンセクション -->
+        <section class="countdown-section" id="hero-countdown-banner" style="cursor: pointer;">
+          <div class="countdown-content">
+            <div class="next-badge">
+              <span class="pulse-dot"></span> NEXT G1 RACE (タップで予想へ)
+            </div>
+            <h2 class="race-title" id="next-race-name">第51回 エリザベス女王杯</h2>
+            <p class="race-meta" id="next-race-meta">2026.11.15 (日) 京都 芝 2200m (G1)</p>
+            <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
+              <button id="btn-hero-prediction" class="btn-hero-action" style="background: var(--gold); color: #111; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 800; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);">
+                🎯 エリザベス女王杯 予想・攻略を見る
+              </button>
+              <button id="btn-hero-detail" class="btn-hero-action" style="background: rgba(255, 255, 255, 0.1); color: #fff; border: 1px solid var(--border-color); padding: 8px 14px; border-radius: 8px; font-weight: 700; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                📋 出馬表モーダル
+              </button>
+            </div>
+          </div>
+          <div class="countdown-timer">
+            <div class="time-block">
+              <div class="time-num" id="timer-days">--</div>
+              <div class="time-label">DAYS</div>
+            </div>
+            <div class="time-block">
+              <div class="time-num" id="timer-hours">--</div>
+              <div class="time-label">HOURS</div>
+            </div>
+            <div class="time-block">
+              <div class="time-num" id="timer-minutes">--</div>
+              <div class="time-label">MINUTES</div>
+            </div>
+            <div class="time-block">
+              <div class="time-num" id="timer-seconds">--</div>
+              <div class="time-label">SECONDS</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- フィルターコントロール -->
+        <section class="filter-section">
+          <div class="tabs-container">
+            <button class="tab-btn active" data-filter="all">すべて <span class="tab-count" id="count-all">0</span></button>
+            <button class="tab-btn" data-filter="finished">開催済 (結果) <span class="tab-count" id="count-finished">0</span></button>
+            <button class="tab-btn" data-filter="upcoming">今後の予定 <span class="tab-count" id="count-upcoming">0</span></button>
+          </div>
+          
+          <div class="search-box">
+            <i data-lucide="search"></i>
+            <input type="text" id="race-search" placeholder="レース名、競馬場名で検索...">
+          </div>
+        </section>
+
+        <!-- レースグリッド -->
+        <section class="race-grid" id="race-grid-container">
+          <!-- JSで動的生成 -->
+        </section>
+        </div>
+
+        <!-- 予想・攻略分析 専用ビュー -->
+        <div id="view-prediction" class="app-view" style="display: none;">
+          <!-- 対象レース切替スイッチャー (エリ女〜有馬記念＆結果レビュー) -->
+          <div class="pred-race-switcher-container">
+            <div class="pred-race-switcher-pills" id="pred-race-switcher-pills">
+              <!-- JSで動的生成 -->
+            </div>
+          </div>
+
+          <!-- 予想ページヘッダー -->
+          <div class="pred-header-card">
+            <div class="pred-breadcrumb">
+              <a id="btn-back-to-calendar"><i data-lucide="arrow-left" style="width: 14px; height: 14px;"></i> ダッシュボードに戻る</a>
+              <span>/</span>
+              <span id="pred-header-subtitle">2026年 G1第17戦</span>
+            </div>
+            <h1 class="pred-title">
+              <span id="pred-header-title">第51回 エリザベス女王杯</span>
+              <span id="pred-header-badge" style="font-size: 11px; background: rgba(16, 185, 129, 0.2); color: var(--primary); padding: 2px 8px; border-radius: 4px; font-weight: 700; border: 1px solid rgba(16,185,129,0.3);">枠順確定済</span>
+            </h1>
+            <div class="pred-meta-chips" id="pred-meta-chips">
+              <span class="pred-chip"><i data-lucide="calendar"></i> 11/15(日) 15:40発走</span>
+              <span class="pred-chip"><i data-lucide="map-pin"></i> 京都芝2200m (外回り)</span>
+              <span class="pred-chip"><i data-lucide="award"></i> 定量 / 全16頭</span>
+            </div>
+            <!-- 終了レースの場合のレビューポディウム表示コンテナ -->
+            <div id="pred-finished-review-container"></div>
+          </div>
+
+          <!-- クイックジャンプナビ（親指ワンタップ） -->
+          <div class="pred-quick-nav">
+            <a href="#sec-starters" class="btn-quick-nav">
+              <i data-lucide="list" style="width: 16px; height: 16px;"></i>
+              <span>出馬表</span>
+            </a>
+            <a href="#sec-memo" class="btn-quick-nav">
+              <i data-lucide="check-square" style="width: 16px; height: 16px; color: var(--gold);"></i>
+              <span style="color: var(--gold);">予想印</span>
+            </a>
+            <a href="#sec-occult" class="btn-quick-nav">
+              <i data-lucide="sparkles" style="width: 16px; height: 16px; color: #c084fc;"></i>
+              <span style="color: #c084fc;">Xオカルト</span>
+            </a>
+            <a href="#sec-memo" class="btn-quick-nav">
+              <i data-lucide="edit-3" style="width: 16px; height: 16px;"></i>
+              <span>メモ帳</span>
+            </a>
+          </div>
+
+          <!-- 1. 出走馬一覧＆オッズ管理（発売前:予想オッズ / 発売後:随時更新） -->
+          <section id="sec-starters" style="margin-bottom: 20px;">
+            <!-- オッズ状態＆切替コントロールバー -->
+            <div class="odds-control-card">
+              <div class="odds-status-row">
+                <div class="odds-mode-badge pre-sale" id="odds-mode-badge">
+                  <span class="pulse-dot-gold"></span>
+                  <span id="odds-mode-text">想定予想オッズ (netkeiba参考)</span>
+                </div>
+                <div class="odds-sales-countdown" id="odds-sales-countdown">
+                  ※金曜 18:30夜間発売開始とともに確定オッズへ自動切替
+                </div>
+              </div>
+
+              <div class="odds-action-row">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <div class="odds-type-toggle">
+                    <button id="btn-odds-estimated" class="btn-odds-mode active">予想オッズ</button>
+                    <button id="btn-odds-live" class="btn-odds-mode">発売中 (最新)</button>
+                  </div>
+                  <div style="display: flex; gap: 2px;">
+                    <button id="btn-sort-gate" class="btn-sort active" data-sort="gate" style="padding: 4px 8px; font-size: 11px;">馬番順</button>
+                    <button id="btn-sort-pop" class="btn-sort" data-sort="pop" style="padding: 4px 8px; font-size: 11px;">人気順</button>
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span id="odds-update-time" style="font-size: 11px; color: var(--text-muted);">● リアルタイム</span>
+                  <button id="btn-refresh-odds" class="btn-refresh-odds-btn">
+                    <i data-lucide="rotate-cw" style="width: 13px; height: 13px;"></i>
+                    <span>オッズ更新</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- スマホ最適化 リスト型出馬表（横スクロール完全不要） -->
+            <div class="netkeiba-horse-table-wrapper">
+              <!-- 固定ヘッダー行 -->
+              <div class="nh-table-header">
+                <div class="nh-col-gate">番</div>
+                <div class="nh-col-mark">印</div>
+                <div class="nh-col-info">馬名 / 騎手 / 斤量</div>
+                <div class="nh-col-odds">オッズ</div>
+                <div class="nh-col-weight">馬体重</div>
+                <div class="nh-col-detail">詳細</div>
+              </div>
+
+              <!-- 馬リスト本体（JS動的描画） -->
+              <div id="netkeiba-horse-list" class="nh-table-body">
+                <!-- 動的レンダリング -->
+              </div>
+            </div>
+          </section>
+
+          <!-- 2. 印の集計サマリー ＆ 買い目メモ -->
+          <section id="sec-memo" class="pred-card" style="margin-bottom: 20px;">
+            <div class="pred-card-header">
+              <h3 class="pred-card-title">
+                <i data-lucide="check-square" style="color: var(--gold);"></i> 予想印サマリー ＆ 買い目メモ
+              </h3>
+            </div>
+            
+            <!-- 打った印のクイックサマリーバッジ -->
+            <div id="user-marks-summary" class="user-marks-summary-bar">
+              <div class="mark-summary-pill"><span class="mark-tag mark-honmei">◎</span> <span id="summary-mark-honmei" class="mark-horse-name">未選択</span></div>
+              <div class="mark-summary-pill"><span class="mark-tag mark-taiko">○</span> <span id="summary-mark-taiko" class="mark-horse-name">未選択</span></div>
+              <div class="mark-summary-pill"><span class="mark-tag mark-tanana">▲</span> <span id="summary-mark-tanana" class="mark-horse-name">未選択</span></div>
+              <div class="mark-summary-pill"><span class="mark-tag mark-renka">△</span> <span id="summary-mark-renka" class="mark-horse-name">未選択</span></div>
+              <div class="mark-summary-pill"><span class="mark-tag mark-ana">☆</span> <span id="summary-mark-ana" class="mark-horse-name">未選択</span></div>
+            </div>
+
+            <div style="margin-top: 14px;">
+              <label style="font-size: 12px; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 6px;">
+                📝 予想メモ・購入予定馬券（自動保存）
+              </label>
+              <textarea id="prediction-user-memo" class="memo-textarea" placeholder="例: 3連複 軸相手手広く流し。Xオカルトサインと調教抜群馬の組み合わせを重視。" rows="3"></textarea>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px;">
+                <span id="memo-save-status" style="font-size: 11px; color: var(--primary);"></span>
+                <button id="btn-clear-memo" style="background: transparent; border: none; color: var(--text-muted); font-size: 11px; cursor: pointer;">
+                  メモをクリア
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- 3. X (Twitter) バズり・オカルトサイン考察 -->
+          <section id="sec-occult" class="pred-card" style="margin-bottom: 20px;">
+            <div class="pred-card-header">
+              <h3 class="pred-card-title">
+                <i data-lucide="sparkles" style="color: #c084fc;"></i> X (Twitter) 話題・オカルトサイン考察
+              </h3>
+              <span style="font-size: 11px; color: var(--text-muted); background: rgba(192, 132, 252, 0.1); border: 1px solid rgba(192, 132, 252, 0.3); padding: 2px 8px; border-radius: 12px;">リアルタイム分析</span>
+            </div>
+            <div id="occult-cards-list" class="occult-grid">
+              <!-- JSで動的描画 -->
+            </div>
+          </section>
+
+          <!-- 印選択ボトムシート（モーダル） -->
+          <div id="mark-bottom-sheet" class="mark-bottom-sheet">
+            <div class="mark-sheet-header">
+              <div class="sheet-title">
+                <span id="sheet-target-gate" class="nh-gate-cell">--</span>
+                <span id="sheet-target-name" style="font-weight: 800; font-size: 15px; margin-left: 8px;">馬名</span>
+              </div>
+              <button id="btn-close-sheet" class="btn-sheet-close"><i data-lucide="x"></i></button>
+            </div>
+            <div class="mark-options-grid">
+              <button class="btn-sheet-mark" data-mark="◎">
+                <span class="mark-bubble mark-honmei">◎</span>
+                <span class="mark-label">本命</span>
+              </button>
+              <button class="btn-sheet-mark" data-mark="○">
+                <span class="mark-bubble mark-taiko">○</span>
+                <span class="mark-label">対抗</span>
+              </button>
+              <button class="btn-sheet-mark" data-mark="▲">
+                <span class="mark-bubble mark-tanana">▲</span>
+                <span class="mark-label">単穴</span>
+              </button>
+              <button class="btn-sheet-mark" data-mark="△">
+                <span class="mark-bubble mark-renka">△</span>
+                <span class="mark-label">連下</span>
+              </button>
+              <button class="btn-sheet-mark" data-mark="☆">
+                <span class="mark-bubble mark-ana">☆</span>
+                <span class="mark-label">穴</span>
+              </button>
+              <button class="btn-sheet-mark" data-mark="消">
+                <span class="mark-bubble mark-keshi">消</span>
+                <span class="mark-label">消し</span>
+              </button>
+              <button class="btn-sheet-mark clear" data-mark="未">
+                <span class="mark-bubble mark-clear">✕</span>
+                <span class="mark-label">取消</span>
+              </button>
+            </div>
+          </div>
+          <div id="mark-sheet-backdrop" class="mark-sheet-backdrop"></div>
+        </div>
+
+      </main>
+    </div>
+
+    <!-- レース詳細モーダル -->
+    <div id="modal-race-detail" class="modal">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="detail-modal-title">レース名</h2>
+          <button id="btn-close-modal" class="btn-close">&times;</button>
+        </div>
+        <div class="modal-body" id="detail-modal-body">
+          <!-- JSで動的生成 -->
+        </div>
+      </div>
+    </div>
+
     <script>
       // 2026年 JRA G1レースデータセット
       const G1_RACES = [
@@ -60887,7 +62194,320 @@
   }
 };
 
+const POOLS = {
+        '3yo-male': [
+          'ロブチェン', 'パントルナイーフ', 'バステール', 'ゴーイントゥスカイ', 'マテンロウゲイル',
+          'アルトラムス', 'リアライズシリウス', 'ライヒスアドラー', 'コンジェスタス', 'アスクエジンバラ',
+          'アウダーシア', 'フォルテアンジェロ', 'メイショウハチコウ', 'エムズビギン', 'ケントン',
+          'グリーンエナジー', 'ショナンガルフ', 'ジャスティンビスタ', 'シュガークン', 'ジューンテイク'
+        ],
+        '3yo-female': [
+          'スターアニス', 'ギャラボーグ', 'ジッピーチューン', 'ジュウリョクピエロ', 'ドリームコア',
+          'ラフターラインズ', 'レガレイラ', 'ステレンボッシュ', 'チェルヴィニア', 'ライトバック',
+          'コガネノソラ', 'アドマイヤベル', 'クイーンズウォーク', 'クリスマスパレード', 'キャットファイト'
+        ],
+        'older': [
+          'クロワデュノール', 'メイショウタバル', 'ダノンデサイル', 'ドウデュース', 'ソールオリエンス',
+          'タスティエーラ', 'ブローザホーン', 'ベラジオオペラ', 'ジャスティンミラノ', 'ジャンタルマンタル',
+          'シックスペンス', 'ワールズエンド', 'ガイアフォース', 'サトノレーヴ', 'レッドモンレーヴ',
+          'コスタノヴァ', 'ウィルソンテソーロ', 'ダブルハートボンド', 'ウインカーネリアン', 'ヴェルテンベルク',
+          'アドマイヤテラ', 'テーオーロイヤル', 'ロデオドライブ', 'アスクイキゴミ', 'アドマイヤクワッズ',
+          'エンブロイダリー', 'カムニャック', 'テンハッピーローズ', 'ソウルラッシュ', 'ロマンチックウォリアー'
+        ]
+      };
 
+      const STABLES_POOL = [
+        '杉山晴紀 (栗東)', '木村哲也 (美浦)', '中内田充 (栗東)', '国枝栄 (美浦)', '矢作芳人 (栗東)',
+        '友道康夫 (栗東)', '手塚貴久 (美浦)', '堀宣行 (美浦)', '高野友和 (栗東)', '斉藤崇史 (栗東)'
+      ];
+
+      const JOCKEYS_POOL = [
+        '川田将雅', 'C.ルメール', '武豊', '松山弘平', '坂井瑠星', '戸崎圭太', '横山武史', 
+        'M.デムーロ', '西村淳也', '岩田望来', '浜中俊', '菅原明良', '津村明秀', '北村友一'
+      ];
+
+      let currentFilter = 'all';
+      let searchQuery = '';
+      let countdownInterval = null;
+
+      // ----------------------------------
+      // 初期化処理
+      // ----------------------------------
+      
+
+      function refreshIcons() {
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      }
+
+      // ----------------------------------
+      // カウントダウンタイマー
+      // ----------------------------------
+      function startNextRaceCountdown() {
+        const timerDays = document.getElementById('timer-days');
+        const timerHours = document.getElementById('timer-hours');
+        const timerMinutes = document.getElementById('timer-minutes');
+        const timerSeconds = document.getElementById('timer-seconds');
+        
+        const nextRaceName = document.getElementById('next-race-name');
+        const nextRaceMeta = document.getElementById('next-race-meta');
+        const btnHeroPred = document.getElementById('btn-hero-prediction');
+        
+        function updateCountdown() {
+          const now = new Date();
+          const upcomingRaces = G1_RACES
+            .filter(r => new Date(r.date) > now)
+            .sort((a, b) => new Date(a.date) - new Date(b.date));
+            
+          if (upcomingRaces.length === 0) {
+            if (nextRaceName) nextRaceName.innerText = '2026年 G1レース全日程終了';
+            if (nextRaceMeta) nextRaceMeta.innerText = '全レースのご声援ありがとうございました';
+            if (timerDays) timerDays.innerText = '00';
+            if (timerHours) timerHours.innerText = '00';
+            if (timerMinutes) timerMinutes.innerText = '00';
+            if (timerSeconds) timerSeconds.innerText = '00';
+            if (countdownInterval) clearInterval(countdownInterval);
+            return;
+          }
+          
+          const nextRace = upcomingRaces[0];
+          const raceTime = new Date(nextRace.date);
+          const diffMs = raceTime - now;
+          
+          if (nextRaceName) nextRaceName.innerText = nextRace.name;
+          if (btnHeroPred) btnHeroPred.innerHTML = `🎯 ${nextRace.name} 予想・攻略を見る`;
+          
+          const formattedDate = new Date(nextRace.date).toLocaleDateString('ja-JP', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            weekday: 'short'
+          });
+          if (nextRaceMeta) {
+            nextRaceMeta.innerText = `開催日: ${formattedDate} 15:40発走 | ${nextRace.location}競馬場 (${nextRace.course})`;
+          }
+          
+          const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((diffMs % (1000 * 60)) / 1000);
+          
+          if (timerDays) timerDays.innerText = String(days).padStart(2, '0');
+          if (timerHours) timerHours.innerText = String(hours).padStart(2, '0');
+          if (timerMinutes) timerMinutes.innerText = String(minutes).padStart(2, '0');
+          if (timerSeconds) timerSeconds.innerText = String(seconds).padStart(2, '0');
+        }
+        
+        updateCountdown();
+        if (countdownInterval) clearInterval(countdownInterval);
+        countdownInterval = setInterval(updateCountdown, 1000);
+      }// ----------------------------------
+      // レースグリッドのレンダリング
+      // ----------------------------------
+      function renderRaces() {
+        const container = document.getElementById('race-grid-container');
+        if (!container) return;
+        container.innerHTML = '';
+        
+        const filtered = G1_RACES.filter(r => {
+          const matchesFilter = currentFilter === 'all' || r.status === currentFilter;
+          const matchesSearch = r.name.includes(searchQuery) || r.location.includes(searchQuery);
+          return matchesFilter && matchesSearch;
+        });
+        
+        updateTabCounts();
+        
+        if (filtered.length === 0) {
+          container.innerHTML = `<div class="text-muted" style="grid-column: 1/-1; text-align: center; padding: 48px 0;">該当するレースが見つかりません。</div>`;
+          return;
+        }
+        
+        filtered.forEach(r => {
+          const raceDate = new Date(r.date);
+          const dateStr = `${raceDate.getMonth() + 1}/${raceDate.getDate()}`;
+          const weekdayStr = ['日', '月', '火', '水', '木', '金', '土'][raceDate.getDay()];
+          
+          let locClass = '';
+          if (r.location === '東京') locClass = 'loc-tokyo';
+          else if (r.location === '中山') locClass = 'loc-nakayama';
+          else if (r.location === '京都') locClass = 'loc-kyoto';
+          else if (r.location === '阪神') locClass = 'loc-hanshin';
+          else if (r.location === '中京') locClass = 'loc-chukyo';
+          
+          const card = document.createElement('div');
+          card.className = `race-card ${locClass}`;
+          card.setAttribute('data-id', r.id);
+          
+          let footerContent = '';
+          const hasEntries = typeof ENTRIES_DATA !== 'undefined' && ENTRIES_DATA[r.id];
+
+          if (r.status === 'finished') {
+            footerContent = `
+              <div class="card-result-preview">
+                <div class="winner-row">
+                  <svg class="winner-crown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M2 4l3 5 7-6 7 6 3-5v14c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4zm2 5.5l1.6-2.7 2.1 3.5 4.3-3.7 4.3 3.7 2.1-3.5L20 9.5V18H4V9.5z"/></svg>
+                  <span class="winner-name">${r.winner}</span>
+                  <span class="text-muted">(${r.winnerJockey})</span>
+                </div>
+                <div class="card-action-text">結果詳細を見る <i data-lucide="arrow-right"></i></div>
+              </div>
+            `;
+          } else {
+            const badgeText = (r.id === '17') ? '枠順確定' : (hasEntries ? '出走馬・オカルト' : '');
+            footerContent = `
+              <div class="card-result-preview">
+                <span class="text-muted" style="font-size: 13px;">${badgeText ? `<span style="background: rgba(16,185,129,0.2); color: var(--primary); padding: 2px 6px; border-radius: 4px; font-weight: 700; font-size: 11px; margin-right: 6px;">${badgeText}</span>` : ''}発走予定: 15:40</span>
+                <div class="card-action-text">出馬表・詳細 <i data-lucide="arrow-right"></i></div>
+              </div>
+            `;
+          }
+
+          card.innerHTML = `
+            <div class="card-header-row">
+              <span class="race-date-badge">${dateStr} (${weekdayStr})</span>
+              <span class="race-status-badge ${r.status}">
+                ${r.status === 'finished' ? '開催済' : '今後の予定'}
+              </span>
+            </div>
+            <h3>${r.name}</h3>
+            <div class="race-meta-info">
+              <span>${r.location}競馬場</span>
+              <span>|</span>
+              <span>${r.course}</span>
+            </div>
+            <div class="race-card-footer">
+              ${footerContent}
+            </div>
+          `;
+
+          container.appendChild(card);
+        });
+        
+        refreshIcons();
+      }
+
+      function updateTabCounts() {
+        const allCount = G1_RACES.length;
+        const finishedCount = G1_RACES.filter(r => r.status === 'finished').length;
+        const upcomingCount = G1_RACES.filter(r => r.status === 'upcoming').length;
+        
+        const countAllEl = document.getElementById('count-all');
+        const countFinishedEl = document.getElementById('count-finished');
+        const countUpcomingEl = document.getElementById('count-upcoming');
+
+        if (countAllEl) countAllEl.innerText = allCount;
+        if (countFinishedEl) countFinishedEl.innerText = finishedCount;
+        if (countUpcomingEl) countUpcomingEl.innerText = upcomingCount;
+      }
+
+      // ----------------------------------
+      // レース結果補完エンジン（本物データ適用）
+      // ----------------------------------
+      function hydrateRaceResults(race) {
+        if (race.hydratedResults) return race.hydratedResults;
+
+        // 本物のデータベースに存在すればマッピング
+        if (RESULTS_DATA[race.id]) {
+          race.hydratedResults = RESULTS_DATA[race.id].map(mapArrayToResultObj);
+          return race.hydratedResults;
+        }
+
+        // 以降はupcomingなどデータ未登録の場合の自動補完
+        const totalStarters = 16;
+        const results = [];
+        const is3yo = race.type ? race.type.startsWith('3yo') : false;
+        const isFemale = race.type ? race.type.endsWith('female') : false;
+        
+        let horsePool = is3yo ? (isFemale ? [...POOLS['3yo-female']] : [...POOLS['3yo-male']]) : [...POOLS['older']];
+        horsePool = [...new Set(horsePool)].filter(h => h !== race.winner && h !== race.second && h !== race.third);
+
+        let sexAgeLabel = is3yo ? (isFemale ? '牝3' : '牡3') : (isFemale ? '牝4' : '牡5');
+        let jockeyLoad = is3yo ? (isFemale ? 55 : 57) : (isFemale ? 56 : 58);
+
+        const baseSeconds = 120.0; // デフォルト基準
+
+        // 1着
+        results.push({
+          rank: 1, gate: race.winnerGate || 1, horseName: race.winner || '勝ち馬', sexAge: sexAgeLabel,
+          jockeyLoad, jockey: race.winnerJockey || 'J.騎手', time: race.time || '2:00.0', margin: '-',
+          cornerSequence: '5-4-3-3', last3F: '34.2', odds: '3.5', popularity: 1,
+          weight: '498', weightDiff: '+2', stable: STABLES_POOL[0]
+        });
+
+        // 2着
+        results.push({
+          rank: 2, gate: race.secondGate || 2, horseName: race.second || '2着馬', sexAge: sexAgeLabel,
+          jockeyLoad, jockey: race.secondJockey || 'J.騎手', time: formatSecondsToTime(baseSeconds + 0.2), margin: '1馬身',
+          cornerSequence: '7-6-5-4', last3F: '34.1', odds: '4.8', popularity: 2,
+          weight: '488', weightDiff: '-2', stable: STABLES_POOL[1]
+        });
+
+        // 3着
+        results.push({
+          rank: 3, gate: race.thirdGate || 3, horseName: race.third || '3着馬', sexAge: sexAgeLabel,
+          jockeyLoad, jockey: race.thirdJockey || 'J.騎手', time: formatSecondsToTime(baseSeconds + 0.4), margin: '1 1/4馬身',
+          cornerSequence: '3-3-2-2', last3F: '34.5', odds: '6.5', popularity: 3,
+          weight: '504', weightDiff: '+4', stable: STABLES_POOL[2]
+        });
+
+        let usedGates = new Set([race.winnerGate || 1, race.secondGate || 2, race.thirdGate || 3]);
+        let currentSeconds = baseSeconds + 0.4;
+
+        for (let r = 4; totalStarters >= r; r++) {
+          const horseName = horsePool[r - 4] || `ダミーホース${r}`;
+          const gate = getUniqueGate(usedGates, totalStarters);
+          const jockey = JOCKEYS_POOL[r % JOCKEYS_POOL.length];
+          
+          const step = 0.2;
+          currentSeconds += step;
+          const time = formatSecondsToTime(currentSeconds);
+
+          results.push({
+            rank: r, gate: gate, horseName: horseName, sexAge: sexAgeLabel,
+            jockeyLoad, jockey: jockey, time: time, margin: '1馬身',
+            cornerSequence: '8-8-9-9', last3F: '35.0', odds: (10.0 + r * 5.0).toFixed(1), popularity: r,
+            weight: '490', weightDiff: '0', stable: STABLES_POOL[r % STABLES_POOL.length]
+          });
+        }
+
+        race.hydratedResults = results;
+        return results;
+      }
+
+      function mapArrayToResultObj(arr) {
+        return {
+          rank: arr[0],
+          gate: arr[1],
+          horseName: arr[2],
+          sexAge: arr[3],
+          jockeyLoad: arr[4],
+          jockey: arr[5],
+          time: arr[6],
+          margin: arr[7],
+          cornerSequence: arr[8],
+          last3F: arr[9],
+          odds: arr[10],
+          popularity: arr[11],
+          weight: arr[12],
+          weightDiff: arr[13],
+          stable: arr[14]
+        };
+      }
+
+      function getUniqueGate(usedGates, max) {
+        let gate = Math.floor(Math.random() * max) + 1;
+        while (usedGates.has(gate)) {
+          gate = Math.floor(Math.random() * max) + 1;
+        }
+        usedGates.add(gate);
+        return gate;
+      }
+
+      // ----------------------------------
+      // NetKeiba本物 JRA 2026年 G1 払戻金データベース
+      // ----------------------------------
+      
 
 function hydratePayouts(race) {
         if (race.hydratedPayouts) return race.hydratedPayouts;
@@ -61002,6 +62622,95 @@ function hydratePayouts(race) {
       // レース詳細モーダルの表示
       // ----------------------------------
       
+
+
+      function formatSecondsToTime(seconds) {
+        if (isNaN(seconds)) return '-';
+        const m = Math.floor(seconds / 60);
+        const s = (seconds % 60).toFixed(1);
+        return m > 0 ? `${m}:${s.padStart(4, '0')}` : `${s}`;
+      }
+
+
+
+      function initEventListeners() {
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        tabBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            tabBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentFilter = btn.getAttribute('data-filter');
+            if (typeof localStorage !== 'undefined') {
+              localStorage.setItem('keiba_calendar_filter', currentFilter);
+            }
+            renderRaces();
+          });
+        });
+
+        const searchInput = document.getElementById('race-search');
+        if (searchInput) {
+          searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value;
+            renderRaces();
+          });
+        }
+
+        const gridContainer = document.getElementById('race-grid-container');
+        if (gridContainer) {
+          gridContainer.addEventListener('click', (e) => {
+            const card = e.target.closest('.race-card');
+            if (!card) return;
+            const id = card.getAttribute('data-id');
+            openRaceDetail(id);
+          });
+        }
+
+        const modal = document.getElementById('modal-race-detail');
+        if (modal) {
+          const btnClose = document.getElementById('btn-close-modal');
+          const backdrop = modal.querySelector('.modal-backdrop');
+          
+          if (btnClose) btnClose.addEventListener('click', closeModal);
+          if (backdrop) backdrop.addEventListener('click', closeModal);
+        }
+
+        const navItems = document.querySelectorAll('.nav-item');
+        navItems.forEach(n => {
+          n.addEventListener('click', () => {
+            const target = n.getAttribute('data-target');
+            if (target === 'prediction') {
+              navigateTo('#prediction-' + currentPredictionRaceId);
+            } else {
+              navigateTo('#calendar');
+            }
+          });
+        });
+
+        const heroBanner = document.getElementById('hero-countdown-banner');
+        if (heroBanner) {
+          heroBanner.addEventListener('click', (e) => {
+            const nextR = (typeof getNextUpcomingRace === 'function') ? getNextUpcomingRace() : { id: '17' };
+            if (e.target.closest('#btn-hero-detail')) {
+              e.stopPropagation();
+              openRaceDetail(nextR.id);
+              return;
+            }
+            if (typeof setPredictionRace === 'function') setPredictionRace(nextR.id);
+            navigateTo('#prediction-' + nextR.id);
+          });
+        }
+
+        const btnHeroPred = document.getElementById('btn-hero-prediction');
+        if (btnHeroPred) {
+          btnHeroPred.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const nextR = (typeof getNextUpcomingRace === 'function') ? getNextUpcomingRace() : { id: '17' };
+            if (typeof setPredictionRace === 'function') setPredictionRace(nextR.id);
+            navigateTo('#prediction-' + nextR.id);
+          });
+        }
+      }
+
 
 
       // ----------------------------------------------------
@@ -62542,8 +64251,8 @@ function hydratePayouts(race) {
       }
 
 
-      document.addEventListener('DOMContentLoaded', () => {
-        // 1. カレンダーの保存されたフィルター復元
+
+      function initApp() {
         if (typeof localStorage !== 'undefined') {
           const savedFilter = localStorage.getItem('keiba_calendar_filter');
           if (savedFilter) {
@@ -62557,32 +64266,35 @@ function hydratePayouts(race) {
           }
         }
 
-        // 2. イベントリスナー登録
         initEventListeners();
         initPredictionEventListeners();
 
-        // 3. 基本レンダリング ＆ 自動昇格
         if (typeof autoLifecycleEngine === 'function') autoLifecycleEngine();
         renderRaces();
         updateTabCounts();
         startNextRaceCountdown();
 
-        // 4. URLハッシュ＆状態復元（リロード時の現在ページ維持）
         handleRoute(false);
 
-        // 5. ハッシュ変更（ブラウザ戻る・進む）監視
         if (typeof window !== 'undefined') {
           window.addEventListener('hashchange', () => {
             handleRoute(false);
           });
         }
 
-        // 6. 定期自動更新（レース進行＆オッズ）
         if (typeof setInterval !== 'undefined') {
           if (typeof autoLifecycleEngine === 'function') setInterval(autoLifecycleEngine, 60000);
           if (typeof startOddsAutoRefresh === 'function') startOddsAutoRefresh();
         }
-      });
+      }
+
+      if (typeof document !== 'undefined') {
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initApp);
+        } else {
+          initApp();
+        }
+      }
     </script>
   </body>
 </html>
