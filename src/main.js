@@ -7012,7 +7012,320 @@ const PAYOUTS_DATA = {
   ]
 };
 
+const POOLS = {
+        '3yo-male': [
+          'ロブチェン', 'パントルナイーフ', 'バステール', 'ゴーイントゥスカイ', 'マテンロウゲイル',
+          'アルトラムス', 'リアライズシリウス', 'ライヒスアドラー', 'コンジェスタス', 'アスクエジンバラ',
+          'アウダーシア', 'フォルテアンジェロ', 'メイショウハチコウ', 'エムズビギン', 'ケントン',
+          'グリーンエナジー', 'ショナンガルフ', 'ジャスティンビスタ', 'シュガークン', 'ジューンテイク'
+        ],
+        '3yo-female': [
+          'スターアニス', 'ギャラボーグ', 'ジッピーチューン', 'ジュウリョクピエロ', 'ドリームコア',
+          'ラフターラインズ', 'レガレイラ', 'ステレンボッシュ', 'チェルヴィニア', 'ライトバック',
+          'コガネノソラ', 'アドマイヤベル', 'クイーンズウォーク', 'クリスマスパレード', 'キャットファイト'
+        ],
+        'older': [
+          'クロワデュノール', 'メイショウタバル', 'ダノンデサイル', 'ドウデュース', 'ソールオリエンス',
+          'タスティエーラ', 'ブローザホーン', 'ベラジオオペラ', 'ジャスティンミラノ', 'ジャンタルマンタル',
+          'シックスペンス', 'ワールズエンド', 'ガイアフォース', 'サトノレーヴ', 'レッドモンレーヴ',
+          'コスタノヴァ', 'ウィルソンテソーロ', 'ダブルハートボンド', 'ウインカーネリアン', 'ヴェルテンベルク',
+          'アドマイヤテラ', 'テーオーロイヤル', 'ロデオドライブ', 'アスクイキゴミ', 'アドマイヤクワッズ',
+          'エンブロイダリー', 'カムニャック', 'テンハッピーローズ', 'ソウルラッシュ', 'ロマンチックウォリアー'
+        ]
+      };
 
+      const STABLES_POOL = [
+        '杉山晴紀 (栗東)', '木村哲也 (美浦)', '中内田充 (栗東)', '国枝栄 (美浦)', '矢作芳人 (栗東)',
+        '友道康夫 (栗東)', '手塚貴久 (美浦)', '堀宣行 (美浦)', '高野友和 (栗東)', '斉藤崇史 (栗東)'
+      ];
+
+      const JOCKEYS_POOL = [
+        '川田将雅', 'C.ルメール', '武豊', '松山弘平', '坂井瑠星', '戸崎圭太', '横山武史', 
+        'M.デムーロ', '西村淳也', '岩田望来', '浜中俊', '菅原明良', '津村明秀', '北村友一'
+      ];
+
+      let currentFilter = 'all';
+      let searchQuery = '';
+      let countdownInterval = null;
+
+      // ----------------------------------
+      // 初期化処理
+      // ----------------------------------
+      
+
+      function refreshIcons() {
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      }
+
+      // ----------------------------------
+      // カウントダウンタイマー
+      // ----------------------------------
+      function startNextRaceCountdown() {
+        const timerDays = document.getElementById('timer-days');
+        const timerHours = document.getElementById('timer-hours');
+        const timerMinutes = document.getElementById('timer-minutes');
+        const timerSeconds = document.getElementById('timer-seconds');
+        
+        const nextRaceName = document.getElementById('next-race-name');
+        const nextRaceMeta = document.getElementById('next-race-meta');
+        const btnHeroPred = document.getElementById('btn-hero-prediction');
+        
+        function updateCountdown() {
+          const now = new Date();
+          const upcomingRaces = G1_RACES
+            .filter(r => new Date(r.date) > now)
+            .sort((a, b) => new Date(a.date) - new Date(b.date));
+            
+          if (upcomingRaces.length === 0) {
+            if (nextRaceName) nextRaceName.innerText = '2026年 G1レース全日程終了';
+            if (nextRaceMeta) nextRaceMeta.innerText = '全レースのご声援ありがとうございました';
+            if (timerDays) timerDays.innerText = '00';
+            if (timerHours) timerHours.innerText = '00';
+            if (timerMinutes) timerMinutes.innerText = '00';
+            if (timerSeconds) timerSeconds.innerText = '00';
+            if (countdownInterval) clearInterval(countdownInterval);
+            return;
+          }
+          
+          const nextRace = upcomingRaces[0];
+          const raceTime = new Date(nextRace.date);
+          const diffMs = raceTime - now;
+          
+          if (nextRaceName) nextRaceName.innerText = nextRace.name;
+          if (btnHeroPred) btnHeroPred.innerHTML = `🎯 ${nextRace.name} 予想・攻略を見る`;
+          
+          const formattedDate = new Date(nextRace.date).toLocaleDateString('ja-JP', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            weekday: 'short'
+          });
+          if (nextRaceMeta) {
+            nextRaceMeta.innerText = `開催日: ${formattedDate} 15:40発走 | ${nextRace.location}競馬場 (${nextRace.course})`;
+          }
+          
+          const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((diffMs % (1000 * 60)) / 1000);
+          
+          if (timerDays) timerDays.innerText = String(days).padStart(2, '0');
+          if (timerHours) timerHours.innerText = String(hours).padStart(2, '0');
+          if (timerMinutes) timerMinutes.innerText = String(minutes).padStart(2, '0');
+          if (timerSeconds) timerSeconds.innerText = String(seconds).padStart(2, '0');
+        }
+        
+        updateCountdown();
+        if (countdownInterval) clearInterval(countdownInterval);
+        countdownInterval = setInterval(updateCountdown, 1000);
+      }// ----------------------------------
+      // レースグリッドのレンダリング
+      // ----------------------------------
+      function renderRaces() {
+        const container = document.getElementById('race-grid-container');
+        if (!container) return;
+        container.innerHTML = '';
+        
+        const filtered = G1_RACES.filter(r => {
+          const matchesFilter = currentFilter === 'all' || r.status === currentFilter;
+          const matchesSearch = r.name.includes(searchQuery) || r.location.includes(searchQuery);
+          return matchesFilter && matchesSearch;
+        });
+        
+        updateTabCounts();
+        
+        if (filtered.length === 0) {
+          container.innerHTML = `<div class="text-muted" style="grid-column: 1/-1; text-align: center; padding: 48px 0;">該当するレースが見つかりません。</div>`;
+          return;
+        }
+        
+        filtered.forEach(r => {
+          const raceDate = new Date(r.date);
+          const dateStr = `${raceDate.getMonth() + 1}/${raceDate.getDate()}`;
+          const weekdayStr = ['日', '月', '火', '水', '木', '金', '土'][raceDate.getDay()];
+          
+          let locClass = '';
+          if (r.location === '東京') locClass = 'loc-tokyo';
+          else if (r.location === '中山') locClass = 'loc-nakayama';
+          else if (r.location === '京都') locClass = 'loc-kyoto';
+          else if (r.location === '阪神') locClass = 'loc-hanshin';
+          else if (r.location === '中京') locClass = 'loc-chukyo';
+          
+          const card = document.createElement('div');
+          card.className = `race-card ${locClass}`;
+          card.setAttribute('data-id', r.id);
+          
+          let footerContent = '';
+          const hasEntries = typeof ENTRIES_DATA !== 'undefined' && ENTRIES_DATA[r.id];
+
+          if (r.status === 'finished') {
+            footerContent = `
+              <div class="card-result-preview">
+                <div class="winner-row">
+                  <svg class="winner-crown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M2 4l3 5 7-6 7 6 3-5v14c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4zm2 5.5l1.6-2.7 2.1 3.5 4.3-3.7 4.3 3.7 2.1-3.5L20 9.5V18H4V9.5z"/></svg>
+                  <span class="winner-name">${r.winner}</span>
+                  <span class="text-muted">(${r.winnerJockey})</span>
+                </div>
+                <div class="card-action-text">結果詳細を見る <i data-lucide="arrow-right"></i></div>
+              </div>
+            `;
+          } else {
+            const badgeText = (r.id === '17') ? '枠順確定' : (hasEntries ? '出走馬・オカルト' : '');
+            footerContent = `
+              <div class="card-result-preview">
+                <span class="text-muted" style="font-size: 13px;">${badgeText ? `<span style="background: rgba(16,185,129,0.2); color: var(--primary); padding: 2px 6px; border-radius: 4px; font-weight: 700; font-size: 11px; margin-right: 6px;">${badgeText}</span>` : ''}発走予定: 15:40</span>
+                <div class="card-action-text">出馬表・詳細 <i data-lucide="arrow-right"></i></div>
+              </div>
+            `;
+          }
+
+          card.innerHTML = `
+            <div class="card-header-row">
+              <span class="race-date-badge">${dateStr} (${weekdayStr})</span>
+              <span class="race-status-badge ${r.status}">
+                ${r.status === 'finished' ? '開催済' : '今後の予定'}
+              </span>
+            </div>
+            <h3>${r.name}</h3>
+            <div class="race-meta-info">
+              <span>${r.location}競馬場</span>
+              <span>|</span>
+              <span>${r.course}</span>
+            </div>
+            <div class="race-card-footer">
+              ${footerContent}
+            </div>
+          `;
+
+          container.appendChild(card);
+        });
+        
+        refreshIcons();
+      }
+
+      function updateTabCounts() {
+        const allCount = G1_RACES.length;
+        const finishedCount = G1_RACES.filter(r => r.status === 'finished').length;
+        const upcomingCount = G1_RACES.filter(r => r.status === 'upcoming').length;
+        
+        const countAllEl = document.getElementById('count-all');
+        const countFinishedEl = document.getElementById('count-finished');
+        const countUpcomingEl = document.getElementById('count-upcoming');
+
+        if (countAllEl) countAllEl.innerText = allCount;
+        if (countFinishedEl) countFinishedEl.innerText = finishedCount;
+        if (countUpcomingEl) countUpcomingEl.innerText = upcomingCount;
+      }
+
+      // ----------------------------------
+      // レース結果補完エンジン（本物データ適用）
+      // ----------------------------------
+      function hydrateRaceResults(race) {
+        if (race.hydratedResults) return race.hydratedResults;
+
+        // 本物のデータベースに存在すればマッピング
+        if (RESULTS_DATA[race.id]) {
+          race.hydratedResults = RESULTS_DATA[race.id].map(mapArrayToResultObj);
+          return race.hydratedResults;
+        }
+
+        // 以降はupcomingなどデータ未登録の場合の自動補完
+        const totalStarters = 16;
+        const results = [];
+        const is3yo = race.type ? race.type.startsWith('3yo') : false;
+        const isFemale = race.type ? race.type.endsWith('female') : false;
+        
+        let horsePool = is3yo ? (isFemale ? [...POOLS['3yo-female']] : [...POOLS['3yo-male']]) : [...POOLS['older']];
+        horsePool = [...new Set(horsePool)].filter(h => h !== race.winner && h !== race.second && h !== race.third);
+
+        let sexAgeLabel = is3yo ? (isFemale ? '牝3' : '牡3') : (isFemale ? '牝4' : '牡5');
+        let jockeyLoad = is3yo ? (isFemale ? 55 : 57) : (isFemale ? 56 : 58);
+
+        const baseSeconds = 120.0; // デフォルト基準
+
+        // 1着
+        results.push({
+          rank: 1, gate: race.winnerGate || 1, horseName: race.winner || '勝ち馬', sexAge: sexAgeLabel,
+          jockeyLoad, jockey: race.winnerJockey || 'J.騎手', time: race.time || '2:00.0', margin: '-',
+          cornerSequence: '5-4-3-3', last3F: '34.2', odds: '3.5', popularity: 1,
+          weight: '498', weightDiff: '+2', stable: STABLES_POOL[0]
+        });
+
+        // 2着
+        results.push({
+          rank: 2, gate: race.secondGate || 2, horseName: race.second || '2着馬', sexAge: sexAgeLabel,
+          jockeyLoad, jockey: race.secondJockey || 'J.騎手', time: formatSecondsToTime(baseSeconds + 0.2), margin: '1馬身',
+          cornerSequence: '7-6-5-4', last3F: '34.1', odds: '4.8', popularity: 2,
+          weight: '488', weightDiff: '-2', stable: STABLES_POOL[1]
+        });
+
+        // 3着
+        results.push({
+          rank: 3, gate: race.thirdGate || 3, horseName: race.third || '3着馬', sexAge: sexAgeLabel,
+          jockeyLoad, jockey: race.thirdJockey || 'J.騎手', time: formatSecondsToTime(baseSeconds + 0.4), margin: '1 1/4馬身',
+          cornerSequence: '3-3-2-2', last3F: '34.5', odds: '6.5', popularity: 3,
+          weight: '504', weightDiff: '+4', stable: STABLES_POOL[2]
+        });
+
+        let usedGates = new Set([race.winnerGate || 1, race.secondGate || 2, race.thirdGate || 3]);
+        let currentSeconds = baseSeconds + 0.4;
+
+        for (let r = 4; totalStarters >= r; r++) {
+          const horseName = horsePool[r - 4] || `ダミーホース${r}`;
+          const gate = getUniqueGate(usedGates, totalStarters);
+          const jockey = JOCKEYS_POOL[r % JOCKEYS_POOL.length];
+          
+          const step = 0.2;
+          currentSeconds += step;
+          const time = formatSecondsToTime(currentSeconds);
+
+          results.push({
+            rank: r, gate: gate, horseName: horseName, sexAge: sexAgeLabel,
+            jockeyLoad, jockey: jockey, time: time, margin: '1馬身',
+            cornerSequence: '8-8-9-9', last3F: '35.0', odds: (10.0 + r * 5.0).toFixed(1), popularity: r,
+            weight: '490', weightDiff: '0', stable: STABLES_POOL[r % STABLES_POOL.length]
+          });
+        }
+
+        race.hydratedResults = results;
+        return results;
+      }
+
+      function mapArrayToResultObj(arr) {
+        return {
+          rank: arr[0],
+          gate: arr[1],
+          horseName: arr[2],
+          sexAge: arr[3],
+          jockeyLoad: arr[4],
+          jockey: arr[5],
+          time: arr[6],
+          margin: arr[7],
+          cornerSequence: arr[8],
+          last3F: arr[9],
+          odds: arr[10],
+          popularity: arr[11],
+          weight: arr[12],
+          weightDiff: arr[13],
+          stable: arr[14]
+        };
+      }
+
+      function getUniqueGate(usedGates, max) {
+        let gate = Math.floor(Math.random() * max) + 1;
+        while (usedGates.has(gate)) {
+          gate = Math.floor(Math.random() * max) + 1;
+        }
+        usedGates.add(gate);
+        return gate;
+      }
+
+      // ----------------------------------
+      // NetKeiba本物 JRA 2026年 G1 払戻金データベース
+      // ----------------------------------
+      
 
 function hydratePayouts(race) {
         if (race.hydratedPayouts) return race.hydratedPayouts;
@@ -7127,6 +7440,95 @@ function hydratePayouts(race) {
       // レース詳細モーダルの表示
       // ----------------------------------
       
+
+
+      function formatSecondsToTime(seconds) {
+        if (isNaN(seconds)) return '-';
+        const m = Math.floor(seconds / 60);
+        const s = (seconds % 60).toFixed(1);
+        return m > 0 ? `${m}:${s.padStart(4, '0')}` : `${s}`;
+      }
+
+
+
+      function initEventListeners() {
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        tabBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            tabBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentFilter = btn.getAttribute('data-filter');
+            if (typeof localStorage !== 'undefined') {
+              localStorage.setItem('keiba_calendar_filter', currentFilter);
+            }
+            renderRaces();
+          });
+        });
+
+        const searchInput = document.getElementById('race-search');
+        if (searchInput) {
+          searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value;
+            renderRaces();
+          });
+        }
+
+        const gridContainer = document.getElementById('race-grid-container');
+        if (gridContainer) {
+          gridContainer.addEventListener('click', (e) => {
+            const card = e.target.closest('.race-card');
+            if (!card) return;
+            const id = card.getAttribute('data-id');
+            openRaceDetail(id);
+          });
+        }
+
+        const modal = document.getElementById('modal-race-detail');
+        if (modal) {
+          const btnClose = document.getElementById('btn-close-modal');
+          const backdrop = modal.querySelector('.modal-backdrop');
+          
+          if (btnClose) btnClose.addEventListener('click', closeModal);
+          if (backdrop) backdrop.addEventListener('click', closeModal);
+        }
+
+        const navItems = document.querySelectorAll('.nav-item');
+        navItems.forEach(n => {
+          n.addEventListener('click', () => {
+            const target = n.getAttribute('data-target');
+            if (target === 'prediction') {
+              navigateTo('#prediction-' + currentPredictionRaceId);
+            } else {
+              navigateTo('#calendar');
+            }
+          });
+        });
+
+        const heroBanner = document.getElementById('hero-countdown-banner');
+        if (heroBanner) {
+          heroBanner.addEventListener('click', (e) => {
+            const nextR = (typeof getNextUpcomingRace === 'function') ? getNextUpcomingRace() : { id: '17' };
+            if (e.target.closest('#btn-hero-detail')) {
+              e.stopPropagation();
+              openRaceDetail(nextR.id);
+              return;
+            }
+            if (typeof setPredictionRace === 'function') setPredictionRace(nextR.id);
+            navigateTo('#prediction-' + nextR.id);
+          });
+        }
+
+        const btnHeroPred = document.getElementById('btn-hero-prediction');
+        if (btnHeroPred) {
+          btnHeroPred.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const nextR = (typeof getNextUpcomingRace === 'function') ? getNextUpcomingRace() : { id: '17' };
+            if (typeof setPredictionRace === 'function') setPredictionRace(nextR.id);
+            navigateTo('#prediction-' + nextR.id);
+          });
+        }
+      }
+
 
 
       // ----------------------------------------------------
@@ -8667,38 +9069,47 @@ function hydratePayouts(race) {
       }
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  if (typeof localStorage !== 'undefined') {
-    const savedFilter = localStorage.getItem('keiba_calendar_filter');
-    if (savedFilter) {
-      currentFilter = savedFilter;
-      const targetBtn = document.querySelector(`.tab-btn[data-filter="${savedFilter}"]`);
-      if (targetBtn) {
-        const tabBtns = document.querySelectorAll('.tab-btn');
-        tabBtns.forEach(b => b.classList.remove('active'));
-        targetBtn.classList.add('active');
+
+      function initApp() {
+        if (typeof localStorage !== 'undefined') {
+          const savedFilter = localStorage.getItem('keiba_calendar_filter');
+          if (savedFilter) {
+            currentFilter = savedFilter;
+            const targetBtn = document.querySelector(`.tab-btn[data-filter="${savedFilter}"]`);
+            if (targetBtn) {
+              const tabBtns = document.querySelectorAll('.tab-btn');
+              tabBtns.forEach(b => b.classList.remove('active'));
+              targetBtn.classList.add('active');
+            }
+          }
+        }
+
+        initEventListeners();
+        initPredictionEventListeners();
+
+        if (typeof autoLifecycleEngine === 'function') autoLifecycleEngine();
+        renderRaces();
+        updateTabCounts();
+        startNextRaceCountdown();
+
+        handleRoute(false);
+
+        if (typeof window !== 'undefined') {
+          window.addEventListener('hashchange', () => {
+            handleRoute(false);
+          });
+        }
+
+        if (typeof setInterval !== 'undefined') {
+          if (typeof autoLifecycleEngine === 'function') setInterval(autoLifecycleEngine, 60000);
+          if (typeof startOddsAutoRefresh === 'function') startOddsAutoRefresh();
+        }
       }
-    }
-  }
 
-  initEventListeners();
-  initPredictionEventListeners();
-
-  if (typeof autoLifecycleEngine === 'function') autoLifecycleEngine();
-  renderRaces();
-  updateTabCounts();
-  startNextRaceCountdown();
-
-  handleRoute(false);
-
-  if (typeof window !== 'undefined') {
-    window.addEventListener('hashchange', () => {
-      handleRoute(false);
-    });
-  }
-
-  if (typeof setInterval !== 'undefined') {
-    if (typeof autoLifecycleEngine === 'function') setInterval(autoLifecycleEngine, 60000);
-    if (typeof startOddsAutoRefresh === 'function') startOddsAutoRefresh();
-  }
-});
+      if (typeof document !== 'undefined') {
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initApp);
+        } else {
+          initApp();
+        }
+      }

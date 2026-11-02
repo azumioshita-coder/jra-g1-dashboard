@@ -161,7 +161,11 @@ anti_flicker_script = """
     </script>
 """
 
-new_base_html = base_html.replace('</head>', anti_flicker_script + '\n  </head>')
+with open(style_css_path, 'r', encoding='utf-8') as f:
+    style_css_content = f.read()
+
+new_base_html = re.sub(r'<style>[\s\S]*?</style>', f'<style>\n{style_css_content}\n    </style>', base_html)
+new_base_html = new_base_html.replace('</head>', anti_flicker_script + '\n  </head>')
 
 # Add navigation items for Prediction View
 new_nav_menu = """<nav class="nav-menu">
@@ -425,12 +429,12 @@ new_main_content = (
     + new_base_html[race_grid_end:]
 )
 
-# Strip out old script
-script_start = new_main_content.find('<script>')
+# Strip out old script (use rfind to get the main script at the bottom of the body, not the scripts in <head>)
+script_start = new_main_content.rfind('<script>')
 new_main_content = new_main_content[:script_start + len('<script>\n')]
 
 # Extract helpers from base_html
-pools_idx = base_html.find('const POOLS_DATA = {')
+pools_idx = base_html.find('const POOLS = {')
 payouts_idx = base_html.find('const PAYOUTS_DATA = {')
 hydrate_payouts_idx = base_html.find('function hydratePayouts(race) {')
 open_detail_idx = base_html.find('function openRaceDetail(id) {')
@@ -469,13 +473,21 @@ existing_helpers = re.sub(
           }
 
           card.innerHTML = `
-            <div class="card-header">
-              <span class="race-id-badge">第${r.id}戦</span>
-              <span class="race-date-text">${formatDate(new Date(r.date))}</span>
+            <div class="card-header-row">
+              <span class="race-date-badge">${dateStr} (${weekdayStr})</span>
+              <span class="race-status-badge ${r.status}">
+                ${r.status === 'finished' ? '開催済' : '今後の予定'}
+              </span>
             </div>
-            <h3 class="card-race-name">${r.name}</h3>
-            <p class="card-race-meta">${r.location}競馬場 • ${r.course}</p>
-            ${footerContent}
+            <h3>${r.name}</h3>
+            <div class="race-meta-info">
+              <span>${r.location}競馬場</span>
+              <span>|</span>
+              <span>${r.course}</span>
+            </div>
+            <div class="race-card-footer">
+              ${footerContent}
+            </div>
           `;
 
           container.appendChild(card);""",
@@ -2107,12 +2119,10 @@ event_listeners_js = """
       }
 """
 
-# Replace initEventListeners in existing_helpers
-helpers_clean = re.sub(r'function initEventListeners\(\)[\s\S]*?^\s*\}', event_listeners_js.strip(), existing_helpers, flags=re.MULTILINE)
-
 # Update countdown in helpers
 helpers_clean = re.sub(
-    r'function startNextRaceCountdown\(\)[\s\S]*?^\s*\}',
+    r'function startNextRaceCountdown\(\)[\s\S]*?(?=// -+\s*// レースグリッド|function renderRaces)',
+
     """function startNextRaceCountdown() {
         const timerDays = document.getElementById('timer-days');
         const timerHours = document.getElementById('timer-hours');
@@ -2172,26 +2182,20 @@ helpers_clean = re.sub(
         if (countdownInterval) clearInterval(countdownInterval);
         countdownInterval = setInterval(updateCountdown, 1000);
       }""",
-    helpers_clean,
-    flags=re.MULTILINE
+    existing_helpers
 )
 
-# Assemble full script block
-full_script_content = (
-    "      // 2026年 JRA G1レースデータセット\n"
-    + "      " + g1_races_str + "\n\n"
-    + "      " + new_results_data_str + "\n\n"
-    + "      " + historical_data_str + "\n\n"
-    + "      " + entries_data_str + "\n\n"
-    + "      " + payouts_data_str + "\n\n"
-    + "      " + hist_full_str + "\n\n"
-    + "      " + pred_data_str + "\n\n"
-    + helpers_clean + "\n\n"
-    + prediction_js_logic + "\n\n"
-    + open_race_detail_func + "\n"
-    + """
-      document.addEventListener('DOMContentLoaded', () => {
-        // 1. カレンダーの保存されたフィルター復元
+format_time_func = """
+      function formatSecondsToTime(seconds) {
+        if (isNaN(seconds)) return '-';
+        const m = Math.floor(seconds / 60);
+        const s = (seconds % 60).toFixed(1);
+        return m > 0 ? `${m}:${s.padStart(4, '0')}` : `${s}`;
+      }
+"""
+
+init_app_block = """
+      function initApp() {
         if (typeof localStorage !== 'undefined') {
           const savedFilter = localStorage.getItem('keiba_calendar_filter');
           if (savedFilter) {
@@ -2205,33 +2209,53 @@ full_script_content = (
           }
         }
 
-        // 2. イベントリスナー登録
         initEventListeners();
         initPredictionEventListeners();
 
-        // 3. 基本レンダリング ＆ 自動昇格
         if (typeof autoLifecycleEngine === 'function') autoLifecycleEngine();
         renderRaces();
         updateTabCounts();
         startNextRaceCountdown();
 
-        // 4. URLハッシュ＆状態復元（リロード時の現在ページ維持）
         handleRoute(false);
 
-        // 5. ハッシュ変更（ブラウザ戻る・進む）監視
         if (typeof window !== 'undefined') {
           window.addEventListener('hashchange', () => {
             handleRoute(false);
           });
         }
 
-        // 6. 定期自動更新（レース進行＆オッズ）
         if (typeof setInterval !== 'undefined') {
           if (typeof autoLifecycleEngine === 'function') setInterval(autoLifecycleEngine, 60000);
           if (typeof startOddsAutoRefresh === 'function') startOddsAutoRefresh();
         }
-      });
+      }
+
+      if (typeof document !== 'undefined') {
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initApp);
+        } else {
+          initApp();
+        }
+      }
 """
+
+# Assemble full script block
+full_script_content = (
+    "      // 2026年 JRA G1レースデータセット\n"
+    + "      " + g1_races_str + "\n\n"
+    + "      " + new_results_data_str + "\n\n"
+    + "      " + historical_data_str + "\n\n"
+    + "      " + entries_data_str + "\n\n"
+    + "      " + payouts_data_str + "\n\n"
+    + "      " + hist_full_str + "\n\n"
+    + "      " + pred_data_str + "\n\n"
+    + helpers_clean + "\n\n"
+    + format_time_func + "\n\n"
+    + event_listeners_js + "\n\n"
+    + prediction_js_logic + "\n\n"
+    + open_race_detail_func + "\n\n"
+    + init_app_block
 )
 
 final_index_html = new_main_content + full_script_content + "    </script>\n  </body>\n</html>\n"
@@ -2251,45 +2275,11 @@ main_js_content = (
     + historical_data_str + "\n\n"
     + payouts_data_str + "\n\n"
     + helpers_clean + "\n\n"
+    + format_time_func + "\n\n"
+    + event_listeners_js + "\n\n"
     + prediction_js_logic + "\n\n"
-    + open_race_detail_func + "\n"
-    + """
-document.addEventListener('DOMContentLoaded', () => {
-  if (typeof localStorage !== 'undefined') {
-    const savedFilter = localStorage.getItem('keiba_calendar_filter');
-    if (savedFilter) {
-      currentFilter = savedFilter;
-      const targetBtn = document.querySelector(`.tab-btn[data-filter="${savedFilter}"]`);
-      if (targetBtn) {
-        const tabBtns = document.querySelectorAll('.tab-btn');
-        tabBtns.forEach(b => b.classList.remove('active'));
-        targetBtn.classList.add('active');
-      }
-    }
-  }
-
-  initEventListeners();
-  initPredictionEventListeners();
-
-  if (typeof autoLifecycleEngine === 'function') autoLifecycleEngine();
-  renderRaces();
-  updateTabCounts();
-  startNextRaceCountdown();
-
-  handleRoute(false);
-
-  if (typeof window !== 'undefined') {
-    window.addEventListener('hashchange', () => {
-      handleRoute(false);
-    });
-  }
-
-  if (typeof setInterval !== 'undefined') {
-    if (typeof autoLifecycleEngine === 'function') setInterval(autoLifecycleEngine, 60000);
-    if (typeof startOddsAutoRefresh === 'function') startOddsAutoRefresh();
-  }
-});
-"""
+    + open_race_detail_func + "\n\n"
+    + init_app_block
 )
 
 with open(main_js_path, 'w', encoding='utf-8') as f:
