@@ -935,1234 +935,9 @@
           grid-template-columns: 1fr;
         }
       }
-    
-/* ----------------------------------
-   ルーティング・リロード対策 スタイル
-------------------------------------- */
-html.route-prediction #view-calendar {
-  display: none !important;
-}
-html.route-prediction #view-prediction {
-  display: block !important;
-}
-html.route-prediction .nav-item[data-target="calendar"] {
-  background: transparent !important;
-  color: var(--text-muted) !important;
-}
-html.route-prediction .nav-item[data-target="prediction"] {
-  background: rgba(16, 185, 129, 0.15) !important;
-  color: var(--primary) !important;
-}
-
-/* ----------------------------------
-   予想・攻略ページ 専用スタイル
-------------------------------------- */
-.pred-header-card {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(245, 158, 11, 0.08));
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 14px;
-}
-.pred-breadcrumb {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 12px;
-  color: var(--text-muted);
-  margin-bottom: 8px;
-}
-.pred-breadcrumb a {
-  color: var(--primary);
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-.pred-breadcrumb a:hover {
-  text-decoration: underline;
-}
-.pred-title {
-  font-size: 20px;
-  font-weight: 800;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
-  flex-wrap: wrap;
-}
-.pred-meta-chips {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-.pred-chip {
-  font-size: 11px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 3px 8px;
-  border-radius: 6px;
-  color: var(--text-secondary);
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
-/* クイックジャンプナビ */
-.pred-quick-nav {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 6px;
-  margin-bottom: 14px;
-}
-.btn-quick-nav {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 8px 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--text-primary);
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.btn-quick-nav:hover, .btn-quick-nav:active {
-  background: rgba(16, 185, 129, 0.15);
-  border-color: var(--primary);
-}
-
-/* ----------------------------------
-   オッズコントロールカード（発売前/発売中・随時更新）
-------------------------------------- */
-.odds-control-card {
-  background: rgba(18, 30, 26, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 12px;
-  padding: 12px;
-  margin-bottom: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-}
-.odds-status-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-.odds-mode-badge {
-  font-size: 12px;
-  font-weight: 800;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 4px 10px;
-  border-radius: 20px;
-}
-.odds-mode-badge.pre-sale {
-  background: rgba(245, 158, 11, 0.18);
-  border: 1px solid rgba(245, 158, 11, 0.35);
-  color: var(--gold);
-}
-.odds-mode-badge.on-sale {
-  background: rgba(16, 185, 129, 0.18);
-  border: 1px solid rgba(16, 185, 129, 0.35);
-  color: var(--primary);
-}
-.pulse-dot-gold {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--gold);
-  box-shadow: 0 0 8px var(--gold);
-}
-.pulse-dot-green {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--primary);
-  box-shadow: 0 0 8px var(--primary);
-  animation: pulseGreen 1.5s infinite;
-}
-@keyframes pulseGreen {
-  0% { transform: scale(0.95); opacity: 0.8; }
-  50% { transform: scale(1.2); opacity: 1; }
-  100% { transform: scale(0.95); opacity: 0.8; }
-}
-
-.odds-sales-countdown {
-  font-size: 11px;
-  color: var(--text-muted);
-}
-.odds-action-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.odds-type-toggle {
-  display: inline-flex;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 2px;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-.btn-odds-mode {
-  background: transparent;
-  border: none;
-  color: var(--text-muted);
-  font-size: 11px;
-  font-weight: 700;
-  padding: 5px 11px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-.btn-odds-mode.active#btn-odds-estimated {
-  background: var(--gold);
-  color: #111;
-  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.35);
-}
-.btn-odds-mode.active#btn-odds-live {
-  background: var(--primary);
-  color: #111;
-  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.35);
-}
-
-.btn-refresh-odds-btn {
-  background: rgba(16, 185, 129, 0.15);
-  border: 1px solid var(--primary);
-  color: var(--primary);
-  padding: 5px 12px;
-  border-radius: 6px;
-  font-size: 11px;
-  font-weight: 800;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  transition: all 0.2s;
-  -webkit-tap-highlight-color: transparent;
-}
-.btn-refresh-odds-btn:active {
-  transform: scale(0.95);
-}
-.btn-refresh-odds-btn.spinning svg {
-  animation: spin 0.6s linear infinite;
-}
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* ----------------------------------
-   NetKeiba完全準拠 モバイル出馬表
-   横スクロール完全ゼロ（100%幅・文字重なりゼロ）
-   列順: [馬番] [印] [馬情報] ➔ [オッズ] ➔ [馬体重] ➔ [詳細▼]
-------------------------------------- */
-.weight-type-toggle {
-  display: inline-flex;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 2px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-.btn-weight-mode {
-  background: transparent;
-  border: none;
-  color: var(--text-muted);
-  font-size: 10.5px;
-  font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  -webkit-tap-highlight-color: transparent;
-}
-.btn-weight-mode.active#btn-weight-training {
-  background: rgba(245, 158, 11, 0.25);
-  color: var(--gold);
-  border: 1px solid rgba(245, 158, 11, 0.4);
-}
-.btn-weight-mode.active#btn-weight-confirmed {
-  background: rgba(16, 185, 129, 0.25);
-  color: #34d399;
-  border: 1px solid rgba(16, 185, 129, 0.4);
-}
-
-.netkeiba-horse-list {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 100% !important;
-  max-width: 100% !important;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-.nh-row-container {
-  background: rgba(18, 30, 26, 0.65);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: border-color 0.2s;
-  box-sizing: border-box;
-  width: 100%;
-}
-.nh-row-container:hover {
-  border-color: rgba(16, 185, 129, 0.35);
-}
-
-/* メイン1行: 馬番・印・馬情報・オッズ・馬体重・詳細▼ */
-.nh-main-row {
-  display: flex;
-  align-items: center;
-  padding: 6px 8px;
-  gap: 5px;
-  min-height: 50px;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-/* 1列目: 馬番 (枠色バッジ 26px) */
-.nh-gate-cell {
-  width: 26px;
-  height: 26px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13.5px;
-  font-weight: 900;
-  font-family: monospace;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-}
-
-/* JRA公式枠色 */
-.waku-1 { background: #ffffff !important; color: #111111 !important; border: 1px solid #ddd; }
-.waku-2 { background: #1c1917 !important; color: #ffffff !important; border: 1px solid #444; }
-.waku-3 { background: #ef4444 !important; color: #ffffff !important; }
-.waku-4 { background: #3b82f6 !important; color: #ffffff !important; }
-.waku-5 { background: #eab308 !important; color: #111111 !important; }
-.waku-6 { background: #16a34a !important; color: #ffffff !important; }
-.waku-7 { background: #f97316 !important; color: #ffffff !important; }
-.waku-8 { background: #ec4899 !important; color: #ffffff !important; }
-
-/* 2列目: 印ボタン (30px) */
-.nh-mark-cell {
-  width: 30px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.nh-mark-btn {
-  width: 28px;
-  height: 28px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: var(--text-muted);
-  font-size: 13.5px;
-  font-weight: 900;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-tap-highlight-color: transparent;
-  padding: 0;
-}
-.nh-mark-btn:active {
-  transform: scale(0.92);
-}
-.nh-mark-btn.mark-honmei { background: rgba(239, 68, 68, 0.25) !important; color: #f87171 !important; border-color: #ef4444 !important; }
-.nh-mark-btn.mark-taiko { background: rgba(59, 130, 246, 0.25) !important; color: #60a5fa !important; border-color: #3b82f6 !important; }
-.nh-mark-btn.mark-tanana { background: rgba(245, 158, 11, 0.25) !important; color: #fbbf24 !important; border-color: #f59e0b !important; }
-.nh-mark-btn.mark-renka { background: rgba(16, 185, 129, 0.25) !important; color: #34d399 !important; border-color: #10b981 !important; }
-.nh-mark-btn.mark-ana { background: rgba(192, 132, 252, 0.25) !important; color: #c084fc !important; border-color: #a855f7 !important; }
-.nh-mark-btn.mark-keshi { background: rgba(100, 116, 139, 0.25) !important; color: #94a3b8 !important; border-color: #64748b !important; text-decoration: line-through; }
-
-/* 3列目: 馬情報（中央・可変幅） */
-.nh-info-cell {
-  flex: 1;
-  min-width: 78px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-  cursor: pointer;
-}
-.nh-name-row {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.nh-horse-name {
-  font-size: 14.5px;
-  font-weight: 800;
-  color: #60a5fa;
-  letter-spacing: -0.2px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-}
-.nh-sub-row {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 10.5px;
-  color: var(--text-muted);
-  margin-top: 2px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.nh-jockey {
-  color: #38bdf8;
-  font-weight: 700;
-}
-.nh-load {
-  color: var(--text-secondary);
-}
-
-/* 4列目: オッズ・人気（幅48px固定・右寄せ） */
-.nh-odds-cell {
-  width: 48px;
-  min-width: 48px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  cursor: pointer;
-  line-height: 1.15;
-}
-.nh-odds-line {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 2px;
-  line-height: 1.1;
-  white-space: nowrap;
-}
-.nh-odds-badge-yosou {
-  font-size: 8.5px;
-  font-weight: 700;
-  color: var(--gold);
-  background: rgba(245, 158, 11, 0.2);
-  border: 1px solid rgba(245, 158, 11, 0.35);
-  padding: 1px 2px;
-  border-radius: 2px;
-  line-height: 1;
-}
-.nh-odds-val {
-  font-size: 14px;
-  font-weight: 800;
-  font-family: monospace;
-  color: #f3f4f6;
-  white-space: nowrap;
-}
-.nh-odds-val.highlight-fav {
-  color: #f87171;
-}
-.nh-pop-badge {
-  font-size: 9.5px;
-  color: var(--text-muted);
-  margin-top: 1px;
-  white-space: nowrap;
-}
-
-/* 5列目: 馬体重（幅52px固定・右寄せ） */
-.nh-weight-cell {
-  width: 52px;
-  min-width: 52px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  cursor: pointer;
-  line-height: 1.15;
-}
-.nh-weight-val {
-  font-size: 12.5px;
-  font-weight: 800;
-  font-family: monospace;
-  color: #e2e8f0;
-  white-space: nowrap;
-}
-.nh-weight-sub {
-  font-size: 9px;
-  margin-top: 1px;
-  white-space: nowrap;
-}
-.weight-tag-pre {
-  color: #fbbf24;
-  background: rgba(245, 158, 11, 0.15);
-  padding: 0 3px;
-  border-radius: 3px;
-  font-weight: 700;
-}
-.weight-tag-diff {
-  font-family: monospace;
-  font-weight: 700;
-  padding: 0 3px;
-  border-radius: 3px;
-}
-.weight-tag-diff.diff-plus {
-  color: #34d399;
-  background: rgba(16, 185, 129, 0.15);
-}
-.weight-tag-diff.diff-minus {
-  color: #f87171;
-  background: rgba(239, 68, 68, 0.15);
-}
-.weight-tag-diff.diff-zero {
-  color: #94a3b8;
-  background: rgba(148, 163, 184, 0.15);
-}
-
-/* 6列目: 詳細▼ボタン (幅34px固定) */
-.nh-detail-toggle-cell {
-  width: 34px;
-  min-width: 34px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.nh-drawer-toggle-btn {
-  width: 32px;
-  height: 30px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: var(--text-muted);
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  transition: all 0.15s ease;
-  -webkit-tap-highlight-color: transparent;
-}
-.nh-drawer-toggle-btn:hover, .nh-drawer-toggle-btn.active {
-  background: rgba(16, 185, 129, 0.15);
-  border-color: rgba(16, 185, 129, 0.4);
-  color: var(--primary);
-}
-.toggle-text {
-  font-size: 8.5px;
-  font-weight: 700;
-  line-height: 1;
-}
-.toggle-arrow {
-  font-size: 10px;
-  line-height: 1;
-  margin-top: 1px;
-  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-block;
-}
-.nh-drawer-toggle-btn.active .toggle-arrow {
-  transform: rotate(180deg);
-}
-
-/* アコーディオン展開ドロワー */
-.nh-detail-drawer {
-  display: none;
-  background: rgba(10, 18, 15, 0.95);
-  border-top: 1px dashed rgba(255, 255, 255, 0.1);
-  padding: 10px 12px;
-  font-size: 12px;
-  animation: fadeIn 0.15s ease-out;
-}
-.nh-detail-drawer.open {
-  display: block;
-}
-.nh-drawer-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
-}
-.nh-drawer-item {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-.nh-drawer-label {
-  font-size: 10px;
-  font-weight: 700;
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.nh-drawer-val {
-  font-size: 12px;
-  color: var(--text-secondary);
-  line-height: 1.4;
-}
-
-/* オカルトサインカード & ターゲット馬バッジ */
-.occult-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 12px;
-  transition: all 0.2s ease;
-}
-.occult-card:hover {
-  border-color: rgba(168, 85, 247, 0.35);
-  background: rgba(255, 255, 255, 0.045);
-}
-.nh-target-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 11px;
-  font-weight: 700;
-  color: #fff;
-}
-
-/* ----------------------------------
-   印選択ボトムシート（アクションシート）
-------------------------------------- */
-.mark-sheet-backdrop {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  z-index: 9998;
-  animation: fadeIn 0.15s ease-out;
-}
-.mark-sheet-backdrop.active {
-  display: block;
-}
-
-.mark-bottom-sheet {
-  display: none;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #111a16;
-  border-top: 1px solid rgba(16, 185, 129, 0.4);
-  border-radius: 20px 20px 0 0;
-  padding: 16px 16px 28px;
-  z-index: 9999;
-  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8);
-  box-sizing: border-box;
-  animation: slideUp 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.mark-bottom-sheet.active {
-  display: block;
-}
-
-@keyframes slideUp {
-  from { transform: translateY(100%); }
-  to { transform: translateY(0); }
-}
-
-.mark-sheet-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 14px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-.mark-sheet-target-title {
-  font-size: 15px;
-  font-weight: 800;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.mark-sheet-close-btn {
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  color: #fff;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  font-size: 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mark-sheet-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-bottom: 12px;
-}
-
-.sheet-opt-btn {
-  height: 48px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.05);
-  color: #fff;
-  font-size: 15px;
-  font-weight: 800;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition: all 0.15s ease;
-}
-.sheet-opt-btn:active {
-  transform: scale(0.95);
-}
-
-.sheet-opt-honmei { border-color: rgba(239, 68, 68, 0.5); background: rgba(239, 68, 68, 0.15); color: #f87171; }
-.sheet-opt-taiko  { border-color: rgba(59, 130, 246, 0.5); background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
-.sheet-opt-tanana { border-color: rgba(245, 158, 11, 0.5); background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
-.sheet-opt-renka  { border-color: rgba(16, 185, 129, 0.5); background: rgba(16, 185, 129, 0.15); color: #34d399; }
-.sheet-opt-ana    { border-color: rgba(192, 132, 252, 0.5); background: rgba(192, 132, 252, 0.15); color: #c084fc; }
-.sheet-opt-keshi  { border-color: rgba(148, 163, 184, 0.5); background: rgba(148, 163, 184, 0.15); color: #cbd5e1; }
-
-.sheet-opt-clear {
-  width: 100%;
-  height: 42px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px dashed rgba(255, 255, 255, 0.15);
-  color: var(--text-muted);
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-}
-
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden !important;
-  }
-  #app {
-    overflow-x: hidden !important;
-  }
-  .main-content {
-    padding: 12px 8px !important;
-    overflow-x: hidden !important;
-  }
-  .countdown-section {
-    padding: 16px 14px !important;
-    border-radius: 12px !important;
-  }
-  .race-title {
-    font-size: 20px !important;
-  }
-  .countdown-timer {
-    gap: 6px !important;
-  }
-  .time-block {
-    min-width: 58px !important;
-    padding: 6px 4px !important;
-  }
-  .time-num {
-    font-size: 22px !important;
-  }
-  .pred-section {
-    padding: 14px 10px !important;
-    border-radius: 12px !important;
-    margin-bottom: 14px !important;
-  }
-}
-
-
-
-/* ----------------------------------
-   対象レース切替スイッチャー
----------------------------------- */
-.pred-race-switcher-container {
-  margin-bottom: 12px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  padding: 2px 0 6px 0;
-}
-.pred-race-switcher-pills {
-  display: flex;
-  gap: 8px;
-  width: 100%;
-}
-.pred-race-pill {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 10px 14px;
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-  color: var(--text-muted);
-  font-size: 13px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  white-space: nowrap;
-}
-.pred-race-pill:hover {
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text-main);
-}
-.pred-race-pill.active {
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(16, 185, 129, 0.15));
-  border-color: var(--gold);
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.15);
-}
-.pill-badge {
-  font-size: 10px;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-weight: 800;
-  background: var(--gold);
-  color: #111;
-}
-.pill-badge.review {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-}
-.pred-race-pill.active .pill-badge.review {
-  background: rgba(245, 158, 11, 0.3);
-  color: var(--gold);
-}
-
-/* ----------------------------------
-   レース終了レビューカード（天皇賞秋など）
----------------------------------- */
-.finished-review-card {
-  margin-top: 14px;
-  padding: 14px 16px;
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(19, 35, 29, 0.8));
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  border-radius: 12px;
-}
-.review-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.review-title {
-  font-size: 13px;
-  font-weight: 800;
-  color: var(--gold);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.btn-open-result-modal {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #fff;
-  padding: 5px 12px;
-  border-radius: 6px;
-  font-size: 11px;
-  font-weight: 700;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  transition: all 0.2s;
-}
-.btn-open-result-modal:hover {
-  background: var(--gold);
-  color: #111;
-  border-color: var(--gold);
-}
-.review-podium {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 8px;
-  margin-bottom: 10px;
-}
-.podium-item {
-  padding: 8px 10px;
-  border-radius: 8px;
-  background: rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  font-size: 11px;
-}
-.podium-item.first {
-  border-color: rgba(245, 158, 11, 0.4);
-  background: rgba(245, 158, 11, 0.08);
-}
-.podium-rank {
-  font-weight: 800;
-  padding: 1px 4px;
-  border-radius: 3px;
-  margin-right: 4px;
-}
-.podium-item.first .podium-rank { background: var(--gold); color: #111; }
-.podium-item.second .podium-rank { background: #94a3b8; color: #111; }
-.podium-item.third .podium-rank { background: #b45309; color: #fff; }
-.podium-name { font-weight: 800; color: #fff; }
-.podium-sub { color: var(--text-muted); font-size: 10px; margin-top: 2px; }
-.review-payout-ribbon {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  font-size: 11px;
-  padding-top: 8px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  color: var(--text-muted);
-}
-.review-payout-ribbon span b { color: #fff; }
-.review-payout-ribbon .highlight-trifecta {
-  color: var(--gold);
-  font-weight: 800;
-}
-</style>
-  </head>
-  <body class="dark-theme">
-    <div id="app">
-      <!-- サイドバー -->
-      <aside class="sidebar">
-        <div class="brand">
-          <div class="logo-icon">
-            <i data-lucide="award"></i>
-          </div>
-          <div class="brand-text">
-            <h2>GRAND STABLE</h2>
-            <span>G1 CAMPAIGN 2026</span>
-          </div>
-        </div>
-
-        <nav class="nav-menu">
-          <a href="#calendar" class="nav-item active" data-target="calendar">
-            <i data-lucide="calendar"></i>
-            <span>G1スケジュール</span>
-          </a>
-          <a href="#prediction" class="nav-item" data-target="prediction">
-            <i data-lucide="target"></i>
-            <span>G1予想・攻略分析</span>
-          </a>
-        </nav>
-
-        <div class="sidebar-footer">
-          <div class="user-profile">
-            <div class="avatar">G</div>
-            <div class="user-info">
-              <span class="user-name">GUEST USER</span>
-              <span class="user-role">RACING FAN</span>
-            </div>
-          </div>
-        </div>
-      </aside>
-
-      <!-- メインコンテンツ -->
-      <main class="main-content">
-        <div id="view-calendar" class="app-view active">
-<header class="top-header">
-          <div class="page-title">
-            <h1 id="page-heading">2026年 G1レースダッシュボード</h1>
-            <p id="page-subheading" class="text-muted">JRA G1全24レースの日程・結果・カウントダウン情報</p>
-          </div>
-        </header>
-
-        <!-- カウントダウンセクション -->
-        <section class="countdown-section" id="hero-countdown-banner" style="cursor: pointer;">
-          <div class="countdown-content">
-            <div class="next-badge">
-              <span class="pulse-dot"></span> NEXT G1 RACE (タップで予想へ)
-            </div>
-            <h2 class="race-title" id="next-race-name">第51回 エリザベス女王杯</h2>
-            <p class="race-meta" id="next-race-meta">2026.11.15 (日) 京都 芝 2200m (G1)</p>
-            <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
-              <button id="btn-hero-prediction" class="btn-hero-action" style="background: var(--gold); color: #111; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 800; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);">
-                🎯 エリザベス女王杯 予想・攻略を見る
-              </button>
-              <button id="btn-hero-detail" class="btn-hero-action" style="background: rgba(255, 255, 255, 0.1); color: #fff; border: 1px solid var(--border-color); padding: 8px 14px; border-radius: 8px; font-weight: 700; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px;">
-                📋 出馬表モーダル
-              </button>
-            </div>
-          </div>
-          <div class="countdown-timer">
-            <div class="time-block">
-              <div class="time-num" id="timer-days">--</div>
-              <div class="time-label">DAYS</div>
-            </div>
-            <div class="time-block">
-              <div class="time-num" id="timer-hours">--</div>
-              <div class="time-label">HOURS</div>
-            </div>
-            <div class="time-block">
-              <div class="time-num" id="timer-minutes">--</div>
-              <div class="time-label">MINUTES</div>
-            </div>
-            <div class="time-block">
-              <div class="time-num" id="timer-seconds">--</div>
-              <div class="time-label">SECONDS</div>
-            </div>
-          </div>
-        </section>
-
-        <!-- フィルターコントロール -->
-        <section class="filter-section">
-          <div class="tabs-container">
-            <button class="tab-btn active" data-filter="all">すべて <span class="tab-count" id="count-all">0</span></button>
-            <button class="tab-btn" data-filter="finished">開催済 (結果) <span class="tab-count" id="count-finished">0</span></button>
-            <button class="tab-btn" data-filter="upcoming">今後の予定 <span class="tab-count" id="count-upcoming">0</span></button>
-          </div>
-          
-          <div class="search-box">
-            <i data-lucide="search"></i>
-            <input type="text" id="race-search" placeholder="レース名、競馬場名で検索...">
-          </div>
-        </section>
-
-        <!-- レースグリッド -->
-        <section class="race-grid" id="race-grid-container">
-          <!-- JSで動的生成 -->
-        </section>
-        </div>
-
-
-        <!-- 予想・攻略分析 専用ビュー -->
-        <div id="view-prediction" class="app-view" style="display: none;">
-          <!-- 対象レース切替タブ (次回エリザベス女王杯 / 天皇賞秋レビュー) -->
-          <div class="pred-race-switcher-container">
-            <div class="pred-race-switcher-pills" id="pred-race-switcher-pills">
-              <!-- JSで動的生成 -->
-            </div>
-          </div>
-
-          <!-- 予想ページヘッダー -->
-          <div class="pred-header-card">
-            <div class="pred-breadcrumb">
-              <a id="btn-back-to-calendar"><i data-lucide="arrow-left" style="width: 14px; height: 14px;"></i> ダッシュボードに戻る</a>
-              <span>/</span>
-              <span id="pred-header-subtitle">2026年 G1第17戦</span>
-            </div>
-            <h1 class="pred-title">
-              <span id="pred-header-title">第51回 エリザベス女王杯</span>
-              <span id="pred-header-badge" style="font-size: 11px; background: rgba(16, 185, 129, 0.2); color: var(--primary); padding: 2px 8px; border-radius: 4px; font-weight: 700; border: 1px solid rgba(16,185,129,0.3);">枠順確定済</span>
-            </h1>
-            <div class="pred-meta-chips" id="pred-meta-chips">
-              <span class="pred-chip"><i data-lucide="calendar"></i> 11/15(日) 15:40発走</span>
-              <span class="pred-chip"><i data-lucide="map-pin"></i> 京都芝2200m (外回り)</span>
-              <span class="pred-chip"><i data-lucide="award"></i> 定量 / 全16頭</span>
-            </div>
-            <!-- 終了レースの場合のレビューポディウム表示コンテナ -->
-            <div id="pred-finished-review-container"></div>
-          </div>
-
-          <!-- クイックジャンプナビ（親指ワンタップ） -->
-          <div class="pred-quick-nav">
-            <a href="#sec-starters" class="btn-quick-nav">
-              <i data-lucide="list" style="width: 16px; height: 16px;"></i>
-              <span>出馬表</span>
-            </a>
-            <a href="#sec-memo" class="btn-quick-nav">
-              <i data-lucide="check-square" style="width: 16px; height: 16px; color: var(--gold);"></i>
-              <span style="color: var(--gold);">予想印</span>
-            </a>
-            <a href="#sec-occult" class="btn-quick-nav">
-              <i data-lucide="sparkles" style="width: 16px; height: 16px; color: #c084fc;"></i>
-              <span style="color: #c084fc;">Xオカルト</span>
-            </a>
-            <a href="#sec-memo" class="btn-quick-nav">
-              <i data-lucide="edit-3" style="width: 16px; height: 16px;"></i>
-              <span>メモ帳</span>
-            </a>
-          </div>
-
-          <!-- 1. 出走馬一覧＆オッズ管理（発売前:予想オッズ / 発売後:随時更新） -->
-          <section id="sec-starters" style="margin-bottom: 20px;">
-            <!-- オッズ状態＆切替コントロールバー -->
-            <div class="odds-control-card">
-              <div class="odds-status-row">
-                <div class="odds-mode-badge pre-sale" id="odds-mode-badge">
-                  <span class="pulse-dot-gold"></span>
-                  <span id="odds-mode-text">想定予想オッズ (netkeiba参考)</span>
-                </div>
-                <div class="odds-sales-countdown" id="odds-sales-countdown">
-                  ※11/13(金) 18:30夜間発売開始とともに確定オッズへ自動切替
-                </div>
-              </div>
-
-              <div class="odds-action-row">
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <div class="odds-type-toggle">
-                    <button id="btn-odds-estimated" class="btn-odds-mode active">予想オッズ</button>
-                    <button id="btn-odds-live" class="btn-odds-mode">発売中 (最新)</button>
-                  </div>
-                  <div style="display: flex; gap: 2px;">
-                    <button id="btn-sort-gate" class="btn-sort active" data-sort="gate" style="padding: 4px 8px; font-size: 11px;">馬番順</button>
-                    <button id="btn-sort-pop" class="btn-sort" data-sort="pop" style="padding: 4px 8px; font-size: 11px;">人気順</button>
-                  </div>
-                </div>
-
-                <div style="display: flex; align-items: center; gap: 6px;">
-                  <span id="odds-update-time" style="font-size: 11px; color: var(--text-muted);">● リアルタイム</span>
-                  <button id="btn-refresh-odds" class="btn-refresh-odds-btn">
-                    <i data-lucide="rotate-cw" style="width: 13px; height: 13px;"></i>
-                    <span>オッズ更新</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- スマホ最適化 リスト型出馬表（横スクロール完全不要） -->
-            <div class="netkeiba-horse-table-wrapper">
-              <!-- 固定ヘッダー行 -->
-              <div class="nh-table-header">
-                <div class="nh-col-gate">番</div>
-                <div class="nh-col-mark">印</div>
-                <div class="nh-col-info">馬名 / 騎手 / 斤量</div>
-                <div class="nh-col-odds">オッズ</div>
-                <div class="nh-col-weight">馬体重</div>
-                <div class="nh-col-detail">詳細</div>
-              </div>
-
-              <!-- 馬リスト本体（JS動的描画） -->
-              <div id="netkeiba-horse-list" class="nh-table-body">
-                <!-- 動的レンダリング -->
-              </div>
-            </div>
-          </section>
-
-          <!-- 2. 印の集計サマリー ＆ 買い目メモ -->
-          <section id="sec-memo" class="pred-card" style="margin-bottom: 20px;">
-            <div class="pred-card-header">
-              <h3 class="pred-card-title">
-                <i data-lucide="check-square" style="color: var(--gold);"></i> 予想印サマリー ＆ 買い目メモ
-              </h3>
-            </div>
-            
-            <!-- 打った印のクイックサマリーバッジ -->
-            <div id="user-marks-summary" class="user-marks-summary-bar">
-              <div class="mark-summary-pill"><span class="mark-tag mark-honmei">◎</span> <span id="summary-mark-honmei" class="mark-horse-name">未選択</span></div>
-              <div class="mark-summary-pill"><span class="mark-tag mark-taiko">○</span> <span id="summary-mark-taiko" class="mark-horse-name">未選択</span></div>
-              <div class="mark-summary-pill"><span class="mark-tag mark-tanana">▲</span> <span id="summary-mark-tanana" class="mark-horse-name">未選択</span></div>
-              <div class="mark-summary-pill"><span class="mark-tag mark-renka">△</span> <span id="summary-mark-renka" class="mark-horse-name">未選択</span></div>
-              <div class="mark-summary-pill"><span class="mark-tag mark-ana">☆</span> <span id="summary-mark-ana" class="mark-horse-name">未選択</span></div>
-            </div>
-
-            <div style="margin-top: 14px;">
-              <label style="font-size: 12px; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 6px;">
-                📝 予想メモ・購入予定馬券（自動保存）
-              </label>
-              <textarea id="prediction-user-memo" class="memo-textarea" placeholder="例: 3連複 CAMNYAC軸相手手広く流し。Xオカルトサインと調教抜群馬の組み合わせを重視。" rows="3"></textarea>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px;">
-                <span id="memo-save-status" style="font-size: 11px; color: var(--primary);"></span>
-                <button id="btn-clear-memo" style="background: transparent; border: none; color: var(--text-muted); font-size: 11px; cursor: pointer;">
-                  メモをクリア
-                </button>
-              </div>
-            </div>
-          </section>
-
-          <!-- 3. X (Twitter) バズり・オカルトサイン考察 -->
-          <section id="sec-occult" class="pred-card" style="margin-bottom: 20px;">
-            <div class="pred-card-header">
-              <h3 class="pred-card-title">
-                <i data-lucide="sparkles" style="color: #c084fc;"></i> X (Twitter) 話題・オカルトサイン考察
-              </h3>
-              <span style="font-size: 11px; color: var(--text-muted); background: rgba(192, 132, 252, 0.1); border: 1px solid rgba(192, 132, 252, 0.3); padding: 2px 8px; border-radius: 12px;">リアルタイム分析</span>
-            </div>
-            <div id="occult-cards-list" class="occult-grid">
-              <!-- JSで動的描画 -->
-            </div>
-          </section>
-
-          <!-- 印選択ボトムシート（モーダル） -->
-          <div id="mark-bottom-sheet" class="mark-bottom-sheet">
-            <div class="mark-sheet-header">
-              <div class="sheet-title">
-                <span id="sheet-target-gate" class="nh-gate-cell">--</span>
-                <span id="sheet-target-name" style="font-weight: 800; font-size: 15px; margin-left: 8px;">馬名</span>
-              </div>
-              <button id="btn-close-sheet" class="btn-sheet-close"><i data-lucide="x"></i></button>
-            </div>
-            <div class="mark-options-grid">
-              <button class="btn-sheet-mark" data-mark="◎">
-                <span class="mark-bubble mark-honmei">◎</span>
-                <span class="mark-label">本命</span>
-              </button>
-              <button class="btn-sheet-mark" data-mark="○">
-                <span class="mark-bubble mark-taiko">○</span>
-                <span class="mark-label">対抗</span>
-              </button>
-              <button class="btn-sheet-mark" data-mark="▲">
-                <span class="mark-bubble mark-tanana">▲</span>
-                <span class="mark-label">単穴</span>
-              </button>
-              <button class="btn-sheet-mark" data-mark="△">
-                <span class="mark-bubble mark-renka">△</span>
-                <span class="mark-label">連下</span>
-              </button>
-              <button class="btn-sheet-mark" data-mark="☆">
-                <span class="mark-bubble mark-ana">☆</span>
-                <span class="mark-label">穴</span>
-              </button>
-              <button class="btn-sheet-mark" data-mark="消">
-                <span class="mark-bubble mark-keshi">消</span>
-                <span class="mark-label">消し</span>
-              </button>
-              <button class="btn-sheet-mark clear" data-mark="未">
-                <span class="mark-bubble mark-clear">✕</span>
-                <span class="mark-label">取消</span>
-              </button>
-            </div>
-          </div>
-          <div id="mark-sheet-backdrop" class="mark-sheet-backdrop"></div>
-        </div>
-
-
-      </main>
-    </div>
-
-    <!-- レース詳細モーダル -->
-    <div id="modal-race-detail" class="modal">
-      <div class="modal-backdrop"></div>
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 id="detail-modal-title">レース名</h2>
-          <button id="btn-close-modal" class="btn-close">&times;</button>
-        </div>
-        <div class="modal-body" id="detail-modal-body">
-          <!-- JSで動的生成 -->
-        </div>
-      </div>
-    </div>
-
+    </style>
+  
+    <!-- Anti-flicker route restoration -->
     <script>
       // 2026年 JRA G1レースデータセット
       const G1_RACES = [
@@ -8671,6 +7446,749 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "load": 56,
       "jockey": "武藤雅",
       "stable": "武藤善則 (美浦)"
+    }
+  ],
+  "18": [
+    {
+      "waku": 1,
+      "gate": 1,
+      "horseName": "ソウルラッシュ",
+      "sexAge": "牡8",
+      "load": 58,
+      "jockey": "団野大成",
+      "stable": "池江泰寿 (栗東)"
+    },
+    {
+      "waku": 1,
+      "gate": 2,
+      "horseName": "ブレイディヴェーグ",
+      "sexAge": "牝5",
+      "load": 56,
+      "jockey": "C.ルメール",
+      "stable": "宮田敬介 (美浦)"
+    },
+    {
+      "waku": 2,
+      "gate": 3,
+      "horseName": "チャリン",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "R.ムーア",
+      "stable": "R.ヴェリアン (海外)"
+    },
+    {
+      "waku": 2,
+      "gate": 4,
+      "horseName": "ナミュール",
+      "sexAge": "牝6",
+      "load": 56,
+      "jockey": "C.デムーロ",
+      "stable": "高野友和 (栗東)"
+    },
+    {
+      "waku": 3,
+      "gate": 5,
+      "horseName": "ジュンブロッサム",
+      "sexAge": "牡7",
+      "load": 58,
+      "jockey": "戸崎圭太",
+      "stable": "友道康夫 (栗東)"
+    },
+    {
+      "waku": 3,
+      "gate": 6,
+      "horseName": "セリフォス",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "川田将雅",
+      "stable": "中内田充正 (栗東)"
+    },
+    {
+      "waku": 4,
+      "gate": 7,
+      "horseName": "エルトンバローズ",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "西村淳也",
+      "stable": "杉山晴紀 (栗東)"
+    },
+    {
+      "waku": 4,
+      "gate": 8,
+      "horseName": "ウインマーベル",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "松山弘平",
+      "stable": "深山雅史 (美浦)"
+    },
+    {
+      "waku": 5,
+      "gate": 9,
+      "horseName": "フィアスプライド",
+      "sexAge": "牝6",
+      "load": 56,
+      "jockey": "坂井瑠星",
+      "stable": "国枝栄 (美浦)"
+    },
+    {
+      "waku": 5,
+      "gate": 10,
+      "horseName": "オフトレイル",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "武豊",
+      "stable": "吉村圭司 (栗東)"
+    },
+    {
+      "waku": 6,
+      "gate": 11,
+      "horseName": "マテンロウスカイ",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "横山典弘",
+      "stable": "松永幹夫 (栗東)"
+    },
+    {
+      "waku": 6,
+      "gate": 12,
+      "horseName": "アルナシーム",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "藤岡佑介",
+      "stable": "橋口慎介 (栗東)"
+    },
+    {
+      "waku": 7,
+      "gate": 13,
+      "horseName": "ニヒロベルム",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "岩田望来",
+      "stable": "木村哲也 (美浦)"
+    },
+    {
+      "waku": 7,
+      "gate": 14,
+      "horseName": "レイベリング",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "津村明秀",
+      "stable": "鹿戸雄一 (美浦)"
+    },
+    {
+      "waku": 8,
+      "gate": 15,
+      "horseName": "バルサムノート",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "北村友一",
+      "stable": "高野友和 (栗東)"
+    },
+    {
+      "waku": 8,
+      "gate": 16,
+      "horseName": "コムストックロード",
+      "sexAge": "牝6",
+      "load": 56,
+      "jockey": "幸英明",
+      "stable": "中野栄治 (美浦)"
+    }
+  ],
+  "19": [
+    {
+      "waku": 1,
+      "gate": 1,
+      "horseName": "ドウデュース",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "武豊",
+      "stable": "友道康夫 (栗東)"
+    },
+    {
+      "waku": 1,
+      "gate": 2,
+      "horseName": "オーギュストロダン",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "R.ムーア",
+      "stable": "A.オブライエン (海外)"
+    },
+    {
+      "waku": 2,
+      "gate": 3,
+      "horseName": "チェルヴィニア",
+      "sexAge": "牝4",
+      "load": 54,
+      "jockey": "C.ルメール",
+      "stable": "木村哲也 (美浦)"
+    },
+    {
+      "waku": 2,
+      "gate": 4,
+      "horseName": "ゴリアット",
+      "sexAge": "セ5",
+      "load": 58,
+      "jockey": "C.スミヨン",
+      "stable": "F.グラファール (海外)"
+    },
+    {
+      "waku": 3,
+      "gate": 5,
+      "horseName": "スターズオンアース",
+      "sexAge": "牝6",
+      "load": 56,
+      "jockey": "川田将雅",
+      "stable": "高柳瑞樹 (美浦)"
+    },
+    {
+      "waku": 3,
+      "gate": 6,
+      "horseName": "ジャスティンパレス",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "坂井瑠星",
+      "stable": "杉山晴紀 (栗東)"
+    },
+    {
+      "waku": 4,
+      "gate": 7,
+      "horseName": "シンエンペラー",
+      "sexAge": "牡4",
+      "load": 56,
+      "jockey": "吉田豊",
+      "stable": "矢作芳人 (栗東)"
+    },
+    {
+      "waku": 4,
+      "gate": 8,
+      "horseName": "ブローザホーン",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "菅原明良",
+      "stable": "吉岡辰弥 (栗東)"
+    },
+    {
+      "waku": 5,
+      "gate": 9,
+      "horseName": "ソールオリエンス",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "横山武史",
+      "stable": "手塚貴久 (美浦)"
+    },
+    {
+      "waku": 5,
+      "gate": 10,
+      "horseName": "ファンタスティックムーン",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "R.ピーヒュレク",
+      "stable": "S.シュタインベルク (海外)"
+    },
+    {
+      "waku": 6,
+      "gate": 11,
+      "horseName": "シュトルーヴェ",
+      "sexAge": "セ6",
+      "load": 58,
+      "jockey": "佐々木大輔",
+      "stable": "堀宣行 (美浦)"
+    },
+    {
+      "waku": 6,
+      "gate": 12,
+      "horseName": "ドゥレッツァ",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "戸崎圭太",
+      "stable": "尾関知人 (美浦)"
+    },
+    {
+      "waku": 7,
+      "gate": 13,
+      "horseName": "ディープボンド",
+      "sexAge": "牡8",
+      "load": 58,
+      "jockey": "幸英明",
+      "stable": "大久保龍志 (栗東)"
+    },
+    {
+      "waku": 8,
+      "gate": 14,
+      "horseName": "カラテ",
+      "sexAge": "牡9",
+      "load": 58,
+      "jockey": "杉原誠人",
+      "stable": "音無秀孝 (栗東)"
+    }
+  ],
+  "20": [
+    {
+      "waku": 1,
+      "gate": 1,
+      "horseName": "レモンポップ",
+      "sexAge": "牡7",
+      "load": 58,
+      "jockey": "坂井瑠星",
+      "stable": "田中博康 (美浦)"
+    },
+    {
+      "waku": 1,
+      "gate": 2,
+      "horseName": "ウィルソンテソーロ",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "川田将雅",
+      "stable": "小手川準 (美浦)"
+    },
+    {
+      "waku": 2,
+      "gate": 3,
+      "horseName": "ペプチドナイル",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "藤岡佑介",
+      "stable": "武英智 (栗東)"
+    },
+    {
+      "waku": 2,
+      "gate": 4,
+      "horseName": "クラウンプライド",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "横山武史",
+      "stable": "新谷功一 (栗東)"
+    },
+    {
+      "waku": 3,
+      "gate": 5,
+      "horseName": "セラフィックコール",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "C.デムーロ",
+      "stable": "寺島良 (栗東)"
+    },
+    {
+      "waku": 3,
+      "gate": 6,
+      "horseName": "サンライズジパング",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "武豊",
+      "stable": "音無秀孝 (栗東)"
+    },
+    {
+      "waku": 4,
+      "gate": 7,
+      "horseName": "ハギノアレグリアス",
+      "sexAge": "牡8",
+      "load": 58,
+      "jockey": "岩田望来",
+      "stable": "四位洋文 (栗東)"
+    },
+    {
+      "waku": 4,
+      "gate": 8,
+      "horseName": "ドゥラエレーデ",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "北村友一",
+      "stable": "池添学 (栗東)"
+    },
+    {
+      "waku": 5,
+      "gate": 9,
+      "horseName": "メイショウハリオ",
+      "sexAge": "牡8",
+      "load": 58,
+      "jockey": "浜中俊",
+      "stable": "岡田稲男 (栗東)"
+    },
+    {
+      "waku": 5,
+      "gate": 10,
+      "horseName": "ミックファイア",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "矢野貴之",
+      "stable": "渡邉和雄 (地方)"
+    },
+    {
+      "waku": 6,
+      "gate": 11,
+      "horseName": "ガイアフォース",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "長岡禎仁",
+      "stable": "杉山晴紀 (栗東)"
+    },
+    {
+      "waku": 6,
+      "gate": 12,
+      "horseName": "ヤマニンウルス",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "団野大成",
+      "stable": "斉藤崇史 (栗東)"
+    },
+    {
+      "waku": 7,
+      "gate": 13,
+      "horseName": "アーテルアストレア",
+      "sexAge": "牝6",
+      "load": 56,
+      "jockey": "菱田裕二",
+      "stable": "橋口慎介 (栗東)"
+    },
+    {
+      "waku": 7,
+      "gate": 14,
+      "horseName": "スレイマン",
+      "sexAge": "牡7",
+      "load": 58,
+      "jockey": "西村淳也",
+      "stable": "池添学 (栗東)"
+    },
+    {
+      "waku": 8,
+      "gate": 15,
+      "horseName": "テーオードレフォン",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "丸山元気",
+      "stable": "梅田智之 (栗東)"
+    },
+    {
+      "waku": 8,
+      "gate": 16,
+      "horseName": "グロリアムンディ",
+      "sexAge": "牡7",
+      "load": 58,
+      "jockey": "戸崎圭太",
+      "stable": "大久保龍志 (栗東)"
+    }
+  ],
+  "21": [
+    {
+      "waku": 1,
+      "gate": 1,
+      "horseName": "ブラウンラチェット",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "C.ルメール",
+      "stable": "手塚貴久 (美浦)"
+    },
+    {
+      "waku": 1,
+      "gate": 2,
+      "horseName": "カムニャック",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "川田将雅",
+      "stable": "友道康夫 (栗東)"
+    },
+    {
+      "waku": 2,
+      "gate": 3,
+      "horseName": "コートアリシアン",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "菅原明良",
+      "stable": "伊藤大士 (美浦)"
+    },
+    {
+      "waku": 2,
+      "gate": 4,
+      "horseName": "ミッキージュエリー",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "坂井瑠星",
+      "stable": "矢作芳人 (栗東)"
+    },
+    {
+      "waku": 3,
+      "gate": 5,
+      "horseName": "マイエレメント",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "横山武史",
+      "stable": "福永祐一 (栗東)"
+    },
+    {
+      "waku": 3,
+      "gate": 6,
+      "horseName": "クウネル",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "武豊",
+      "stable": "中内田充正 (栗東)"
+    },
+    {
+      "waku": 4,
+      "gate": 7,
+      "horseName": "ランフォーヴァウ",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "団野大成",
+      "stable": "福永祐一 (栗東)"
+    },
+    {
+      "waku": 4,
+      "gate": 8,
+      "horseName": "カレンラップスター",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "松山弘平",
+      "stable": "安田翔伍 (栗東)"
+    }
+  ],
+  "22": [
+    {
+      "waku": 1,
+      "gate": 1,
+      "horseName": "クロワデュノール",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "北村友一",
+      "stable": "斉藤崇史 (栗東)"
+    },
+    {
+      "waku": 1,
+      "gate": 2,
+      "horseName": "パンジャタワー",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "松山弘平",
+      "stable": "橋口慎介 (栗東)"
+    },
+    {
+      "waku": 2,
+      "gate": 3,
+      "horseName": "アルテヴェローチェ",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "武豊",
+      "stable": "須貝尚介 (栗東)"
+    },
+    {
+      "waku": 2,
+      "gate": 4,
+      "horseName": "サトノカルナバル",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "佐々木大輔",
+      "stable": "堀宣行 (美浦)"
+    },
+    {
+      "waku": 3,
+      "gate": 5,
+      "horseName": "エイシンワンド",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "幸英明",
+      "stable": "大久保龍志 (栗東)"
+    },
+    {
+      "waku": 3,
+      "gate": 6,
+      "horseName": "タイセイカレント",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "横山武史",
+      "stable": "矢作芳人 (栗東)"
+    }
+  ],
+  "23": [
+    {
+      "waku": 1,
+      "gate": 1,
+      "horseName": "マスカレードボール",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "戸崎圭太",
+      "stable": "手塚貴久 (美浦)"
+    },
+    {
+      "waku": 1,
+      "gate": 2,
+      "horseName": "ファイアンクランツ",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "菅原明良",
+      "stable": "堀宣行 (美浦)"
+    },
+    {
+      "waku": 2,
+      "gate": 3,
+      "horseName": "アスクシュタイン",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "川田将雅",
+      "stable": "藤原英昭 (栗東)"
+    },
+    {
+      "waku": 2,
+      "gate": 4,
+      "horseName": "ピコチャンブラック",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "石川裕紀人",
+      "stable": "上原佑紀 (美浦)"
+    },
+    {
+      "waku": 3,
+      "gate": 5,
+      "horseName": "パープルレディ",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "C.ルメール",
+      "stable": "木村哲也 (美浦)"
+    }
+  ],
+  "24": [
+    {
+      "waku": 1,
+      "gate": 1,
+      "horseName": "ドウデュース",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "武豊",
+      "stable": "友道康夫 (栗東)"
+    },
+    {
+      "waku": 1,
+      "gate": 2,
+      "horseName": "ダノンデサイル",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "戸崎圭太",
+      "stable": "安田翔伍 (栗東)"
+    },
+    {
+      "waku": 2,
+      "gate": 3,
+      "horseName": "レガレイラ",
+      "sexAge": "牝5",
+      "load": 56,
+      "jockey": "C.ルメール",
+      "stable": "木村哲也 (美浦)"
+    },
+    {
+      "waku": 2,
+      "gate": 4,
+      "horseName": "アーバンシック",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "横山武史",
+      "stable": "武井亮 (美浦)"
+    },
+    {
+      "waku": 3,
+      "gate": 5,
+      "horseName": "ブローザホーン",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "菅原明良",
+      "stable": "吉岡辰弥 (栗東)"
+    },
+    {
+      "waku": 3,
+      "gate": 6,
+      "horseName": "ジャスティンパレス",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "坂井瑠星",
+      "stable": "杉山晴紀 (栗東)"
+    },
+    {
+      "waku": 4,
+      "gate": 7,
+      "horseName": "スターズオンアース",
+      "sexAge": "牝6",
+      "load": 56,
+      "jockey": "川田将雅",
+      "stable": "高柳瑞樹 (美浦)"
+    },
+    {
+      "waku": 4,
+      "gate": 8,
+      "horseName": "ソールオリエンス",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "松山弘平",
+      "stable": "手塚貴久 (美浦)"
+    },
+    {
+      "waku": 5,
+      "gate": 9,
+      "horseName": "ベラジオオペラ",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "横山和生",
+      "stable": "上村洋行 (栗東)"
+    },
+    {
+      "waku": 5,
+      "gate": 10,
+      "horseName": "ネブラディスク",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "岩田望来",
+      "stable": "福永祐一 (栗東)"
+    },
+    {
+      "waku": 6,
+      "gate": 11,
+      "horseName": "メイショウタバル",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "浜中俊",
+      "stable": "石橋守 (栗東)"
+    },
+    {
+      "waku": 6,
+      "gate": 12,
+      "horseName": "ヘデントール",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "佐々木大輔",
+      "stable": "木村哲也 (美浦)"
+    },
+    {
+      "waku": 7,
+      "gate": 13,
+      "horseName": "ディープボンド",
+      "sexAge": "牡8",
+      "load": 58,
+      "jockey": "幸英明",
+      "stable": "大久保龍志 (栗東)"
+    },
+    {
+      "waku": 7,
+      "gate": 14,
+      "horseName": "アドマイヤテラ",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "津村明秀",
+      "stable": "友道康夫 (栗東)"
+    },
+    {
+      "waku": 8,
+      "gate": 15,
+      "horseName": "タガノデュード",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "M.デムーロ",
+      "stable": "宮徹 (栗東)"
+    },
+    {
+      "waku": 8,
+      "gate": 16,
+      "horseName": "シンエンペラー",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "坂井瑠星",
+      "stable": "矢作芳人 (栗東)"
     }
   ]
 };
@@ -58656,7 +58174,7 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "trainingGrade": "A",
           "trainingCourse": "栗東CW",
           "trainingTime": "82.6 - 66.5 - 51.8 - 36.9 - 11.5 (馬なり)",
-          "trainingComment": "オークス馬の底力。今村聖奈騎手との強い絆で外回り下り坂からのロングスパートを狙う。",
+          "trainingComment": "オークス上位の底力。今村聖奈騎手との強い絆で外回り下り坂からのロングスパートを狙う。",
           "trainingWeight": 468,
           "lastRaceWeight": 464,
           "confirmedWeight": null,
@@ -58961,6 +58479,1945 @@ html.route-prediction .nav-item[data-target="prediction"] {
           }
         ]
       }
+    },
+    "18": {
+      "raceId": "18",
+      "raceName": "第43回 マイルチャンピオンシップ",
+      "date": "2026年11月22日(日) 15:40発走",
+      "venue": "京都競馬場 芝1600m (外回り)",
+      "starters": [
+        {
+          "waku": 1,
+          "gate": 1,
+          "horseName": "ソウルラッシュ",
+          "sexAge": "牡8",
+          "load": 58,
+          "jockey": "団野大成",
+          "stable": "池江泰寿 (栗東)",
+          "odds": "3.8",
+          "placeOdds": "1.4 - 2.0",
+          "pop": 1,
+          "trainingGrade": "S",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "80.2 - 64.8 - 50.1 - 35.6 - 11.0 (馬なり)",
+          "trainingComment": "8歳でも衰え知らず。連覇へ向けてCWで抜群の推進力とキレを披露。",
+          "trainingWeight": 514,
+          "lastRaceWeight": 512,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 1,
+          "gate": 2,
+          "horseName": "ブレイディヴェーグ",
+          "sexAge": "牝5",
+          "load": 56,
+          "jockey": "C.ルメール",
+          "stable": "宮田敬介 (美浦)",
+          "odds": "4.2",
+          "placeOdds": "1.5 - 2.2",
+          "pop": 2,
+          "trainingGrade": "S",
+          "trainingCourse": "美浦W",
+          "trainingTime": "81.6 - 65.5 - 50.8 - 36.2 - 11.1 (強め)",
+          "trainingComment": "マイルへの距離短縮は吉。美浦Wで僚馬を一瞬で置き去りにする鬼脚。",
+          "trainingWeight": 478,
+          "lastRaceWeight": 472,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 2,
+          "gate": 3,
+          "horseName": "チャリン",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "R.ムーア",
+          "stable": "R.ヴェリアン (海外)",
+          "odds": "4.9",
+          "placeOdds": "1.6 - 2.4",
+          "pop": 3,
+          "trainingGrade": "A",
+          "trainingCourse": "京都芝",
+          "trainingTime": "64.2 - 49.5 - 35.8 - 11.3 (馬なり)",
+          "trainingComment": "欧州マイル王が電撃来日。時計の速い日本の芝にも難なく対応するフットワーク。",
+          "trainingWeight": 506,
+          "lastRaceWeight": 502,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 2,
+          "gate": 4,
+          "horseName": "ナミュール",
+          "sexAge": "牝6",
+          "load": 56,
+          "jockey": "C.デムーロ",
+          "stable": "高野友和 (栗東)",
+          "odds": "6.1",
+          "placeOdds": "2.0 - 2.9",
+          "pop": 4,
+          "trainingGrade": "A",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "52.4 - 37.8 - 24.2 - 11.8 (馬なり)",
+          "trainingComment": "淀外回りはベスト舞台。C.デムーロとの相性も抜群で直線一気に賭ける。",
+          "trainingWeight": 458,
+          "lastRaceWeight": 454,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 3,
+          "gate": 5,
+          "horseName": "ジュンブロッサム",
+          "sexAge": "牡7",
+          "load": 58,
+          "jockey": "戸崎圭太",
+          "stable": "友道康夫 (栗東)",
+          "odds": "8.5",
+          "placeOdds": "2.4 - 3.5",
+          "pop": 5,
+          "trainingGrade": "A",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "82.1 - 66.0 - 51.2 - 36.5 - 11.2 (一杯)",
+          "trainingComment": "富士S勝ち馬の切れ味健在。天皇賞秋からの連闘ローテでも活気十分。",
+          "trainingWeight": 474,
+          "lastRaceWeight": 476,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 3,
+          "gate": 6,
+          "horseName": "セリフォス",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "川田将雅",
+          "stable": "中内田充正 (栗東)",
+          "odds": "10.2",
+          "placeOdds": "2.7 - 3.9",
+          "pop": 6,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "82.8 - 66.5 - 51.5 - 36.8 - 11.4 (強め)",
+          "trainingComment": "マイルCS過去優勝馬の底力。折り合いがつけば終い確実に伸びてくる。",
+          "trainingWeight": 490,
+          "lastRaceWeight": 488,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 4,
+          "gate": 7,
+          "horseName": "エルトンバローズ",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "西村淳也",
+          "stable": "杉山晴紀 (栗東)",
+          "odds": "14.5",
+          "placeOdds": "3.5 - 5.0",
+          "pop": 7,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "53.2 - 38.4 - 24.8 - 12.0 (馬なり)",
+          "trainingComment": "マイル適性高く、好位インで立ち回れれば粘り込みが期待できる。",
+          "trainingWeight": 516,
+          "lastRaceWeight": 518,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 4,
+          "gate": 8,
+          "horseName": "ウインマーベル",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "松山弘平",
+          "stable": "深山雅史 (美浦)",
+          "odds": "18.0",
+          "placeOdds": "4.2 - 6.2",
+          "pop": 8,
+          "trainingGrade": "B+",
+          "trainingCourse": "美浦W",
+          "trainingTime": "83.0 - 66.8 - 51.8 - 37.0 - 11.5 (強め)",
+          "trainingComment": "スプリント重賞常連がマイルへ。先行力を活かして粘り強い競馬を。",
+          "trainingWeight": 482,
+          "lastRaceWeight": 478,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 5,
+          "gate": 9,
+          "horseName": "フィアスプライド",
+          "sexAge": "牝6",
+          "load": 56,
+          "jockey": "坂井瑠星",
+          "stable": "国枝栄 (美浦)",
+          "odds": "22.5",
+          "placeOdds": "5.0 - 7.5",
+          "pop": 9,
+          "trainingGrade": "B",
+          "trainingCourse": "美浦W",
+          "trainingTime": "83.8 - 67.2 - 52.1 - 37.3 - 11.7 (馬なり)",
+          "trainingComment": "ヴィクトリアマイル2着の実力派。坂井瑠星の強気な騎乗で波乱を呼ぶ。",
+          "trainingWeight": 486,
+          "lastRaceWeight": 484,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 5,
+          "gate": 10,
+          "horseName": "オフトレイル",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "武豊",
+          "stable": "吉村圭司 (栗東)",
+          "odds": "26.0",
+          "placeOdds": "5.8 - 8.5",
+          "pop": 10,
+          "trainingGrade": "B",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "83.5 - 67.0 - 52.0 - 37.2 - 11.6 (強め)",
+          "trainingComment": "レジェンド武豊とのコンビ。直線勝負に徹すれば上位争いも。",
+          "trainingWeight": 470,
+          "lastRaceWeight": 466,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 6,
+          "gate": 11,
+          "horseName": "マテンロウスカイ",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "横山典弘",
+          "stable": "松永幹夫 (栗東)",
+          "odds": "34.0",
+          "placeOdds": "7.5 - 11.5",
+          "pop": 11,
+          "trainingGrade": "B",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "84.0 - 67.5 - 52.4 - 37.5 - 11.8 (馬なり)",
+          "trainingComment": "中山記念馬。自分のリズムで運べれば侮れない持続力を持つ。",
+          "trainingWeight": 488,
+          "lastRaceWeight": 484,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 6,
+          "gate": 12,
+          "horseName": "アルナシーム",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "藤岡佑介",
+          "stable": "橋口慎介 (栗東)",
+          "odds": "42.0",
+          "placeOdds": "9.0 - 14.0",
+          "pop": 12,
+          "trainingGrade": "B",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "53.6 - 38.8 - 25.0 - 12.3 (馬なり)",
+          "trainingComment": "中京記念勝ちの実績。好調キープでマイペースなら。",
+          "trainingWeight": 460,
+          "lastRaceWeight": 458,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 7,
+          "gate": 13,
+          "horseName": "ニヒロベルム",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "岩田望来",
+          "stable": "木村哲也 (美浦)",
+          "odds": "55.0",
+          "placeOdds": "11.0 - 17.0",
+          "pop": 13,
+          "trainingGrade": "B-",
+          "trainingCourse": "美浦W",
+          "trainingTime": "84.6 - 68.0 - 52.9 - 37.8 - 12.0 (馬なり)",
+          "trainingComment": "大舞台の経験を積んで成長中。一角崩しを狙う。",
+          "trainingWeight": 492,
+          "lastRaceWeight": 488,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 7,
+          "gate": 14,
+          "horseName": "レイベリング",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "津村明秀",
+          "stable": "鹿戸雄一 (美浦)",
+          "odds": "68.0",
+          "placeOdds": "13.0 - 20.0",
+          "pop": 14,
+          "trainingGrade": "B-",
+          "trainingCourse": "美浦W",
+          "trainingTime": "85.0 - 68.2 - 53.2 - 38.0 - 12.2 (強め)",
+          "trainingComment": "朝日杯FS3着の実績。仕上がり順調でスムーズな先行を。",
+          "trainingWeight": 502,
+          "lastRaceWeight": 498,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 8,
+          "gate": 15,
+          "horseName": "バルサムノート",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "北村友一",
+          "stable": "高野友和 (栗東)",
+          "odds": "85.0",
+          "placeOdds": "16.0 - 25.0",
+          "pop": 15,
+          "trainingGrade": "B-",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "54.0 - 39.2 - 25.4 - 12.5 (馬なり)",
+          "trainingComment": "坂路で入念に乗り込み。展開の恩恵を待ちたい。",
+          "trainingWeight": 498,
+          "lastRaceWeight": 494,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 8,
+          "gate": 16,
+          "horseName": "コムストックロード",
+          "sexAge": "牝6",
+          "load": 56,
+          "jockey": "幸英明",
+          "stable": "中野栄治 (美浦)",
+          "odds": "110.0",
+          "placeOdds": "20.0 - 32.0",
+          "pop": 16,
+          "trainingGrade": "C",
+          "trainingCourse": "美浦W",
+          "trainingTime": "85.8 - 69.0 - 53.8 - 38.5 - 12.5 (馬なり)",
+          "trainingComment": "状態は維持。無欲の追い込みでどこまで迫れるか。",
+          "trainingWeight": 466,
+          "lastRaceWeight": 462,
+          "confirmedWeight": null,
+          "weightDiff": null
+        }
+      ],
+      "occultSigns": [
+        {
+          "id": 1,
+          "title": "🌍 欧州最強マイラー「チャリン」参戦！外車無双と京都高速芝の法則",
+          "badge": "海外超強豪",
+          "source": "X・競馬考察トレンド",
+          "content": "欧州マイルG1を連勝中のチャリンが電撃参戦！英国馬がマイルCSに参戦するのは異例中の異例。京都競馬場の馬場造園課が手掛ける超高速芝は、欧州の重い芝とは対極ながら、チャリンの圧倒的巡航スピードは日本のマイラーを圧倒する可能性があるとXで大激論！",
+          "targets": [
+            {
+              "gate": 3,
+              "waku": 2,
+              "name": "チャリン"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "👑 マイルCS名物「リピーターの法則」ソウルラッシュVSセリフォス",
+          "badge": "リピーター神話",
+          "source": "競馬データ班",
+          "content": "マイルCSは過去ダイタクヘリオス、デュランダル、グランアレグリアと『同じ馬が何度も馬券に絡む』伝統のレース。8歳になっても衰えぬソウルラッシュと中内田厩舎のセリフォス。この2頭のBOXは秋の黄金パターン！",
+          "targets": [
+            {
+              "gate": 1,
+              "waku": 1,
+              "name": "ソウルラッシュ"
+            },
+            {
+              "gate": 6,
+              "waku": 3,
+              "name": "セリフォス"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "✨ ルメール×宮田厩舎「ブレイディヴェーグ」距離短縮の勝算サイン",
+          "badge": "ルメールマジック",
+          "source": "SNSサイン研究会",
+          "content": "マイルへの短縮挑戦となるエリ女覇者ブレイディヴェーグ。ルメール騎手が『マイルのスピードに対応できる』と太鼓判を押す背景には、秋のマイル路線の牝馬戴冠トレンドが存在。白い帽子1枠からのイン強襲が噂されています。",
+          "targets": [
+            {
+              "gate": 2,
+              "waku": 1,
+              "name": "ブレイディヴェーグ"
+            }
+          ]
+        }
+      ]
+    },
+    "19": {
+      "raceId": "19",
+      "raceName": "第46回 ジャパンカップ",
+      "date": "2026年11月29日(日) 15:40発走",
+      "venue": "東京競馬場 芝2400m",
+      "starters": [
+        {
+          "waku": 1,
+          "gate": 1,
+          "horseName": "ドウデュース",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "武豊",
+          "stable": "友道康夫 (栗東)",
+          "odds": "2.8",
+          "placeOdds": "1.3 - 1.7",
+          "pop": 1,
+          "trainingGrade": "S",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "79.8 - 64.2 - 49.8 - 35.2 - 10.9 (馬なり)",
+          "trainingComment": "日本競馬の総大将。ラストイヤー有終の秋古馬三冠へ向けて究極の仕上がり。",
+          "trainingWeight": 508,
+          "lastRaceWeight": 504,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 1,
+          "gate": 2,
+          "horseName": "オーギュストロダン",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "R.ムーア",
+          "stable": "A.オブライエン (海外)",
+          "odds": "3.5",
+          "placeOdds": "1.4 - 1.9",
+          "pop": 2,
+          "trainingGrade": "S",
+          "trainingCourse": "東京芝",
+          "trainingTime": "65.0 - 50.2 - 36.1 - 11.2 (馬なり)",
+          "trainingComment": "ディープインパクト最終世代の世界的最高傑作。引退花道へ東京芝2400mは運命の舞台。",
+          "trainingWeight": 472,
+          "lastRaceWeight": 468,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 2,
+          "gate": 3,
+          "horseName": "チェルヴィニア",
+          "sexAge": "牝4",
+          "load": 54,
+          "jockey": "C.ルメール",
+          "stable": "木村哲也 (美浦)",
+          "odds": "4.5",
+          "placeOdds": "1.6 - 2.2",
+          "pop": 3,
+          "trainingGrade": "S",
+          "trainingCourse": "美浦W",
+          "trainingTime": "81.8 - 65.6 - 51.0 - 36.3 - 11.1 (強め)",
+          "trainingComment": "オークス馬の東京2400m適性。斤量54kgの恩恵は絶大で古馬撃破を狙う。",
+          "trainingWeight": 490,
+          "lastRaceWeight": 488,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 2,
+          "gate": 4,
+          "horseName": "ゴリアット",
+          "sexAge": "セ5",
+          "load": 58,
+          "jockey": "C.スミヨン",
+          "stable": "F.グラファール (海外)",
+          "odds": "6.8",
+          "placeOdds": "2.1 - 3.2",
+          "pop": 4,
+          "trainingGrade": "A",
+          "trainingCourse": "東京芝",
+          "trainingTime": "65.5 - 50.8 - 36.4 - 11.4 (強め)",
+          "trainingComment": "英キングジョージ圧勝の超強豪。欧州トップクラスのロングスパート能力。",
+          "trainingWeight": 486,
+          "lastRaceWeight": 482,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 3,
+          "gate": 5,
+          "horseName": "スターズオンアース",
+          "sexAge": "牝6",
+          "load": 56,
+          "jockey": "川田将雅",
+          "stable": "高柳瑞樹 (美浦)",
+          "odds": "8.2",
+          "placeOdds": "2.4 - 3.6",
+          "pop": 5,
+          "trainingGrade": "A",
+          "trainingCourse": "美浦W",
+          "trainingTime": "82.5 - 66.2 - 51.4 - 36.6 - 11.3 (馬なり)",
+          "trainingComment": "ジャパンC3着の実績。東京コースで崩れたことがない抜群の安定感。",
+          "trainingWeight": 496,
+          "lastRaceWeight": 492,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 3,
+          "gate": 6,
+          "horseName": "ジャスティンパレス",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "坂井瑠星",
+          "stable": "杉山晴紀 (栗東)",
+          "odds": "11.0",
+          "placeOdds": "2.8 - 4.2",
+          "pop": 6,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "82.8 - 66.5 - 51.8 - 36.8 - 11.5 (強め)",
+          "trainingComment": "東京芝2400mで真価発揮。坂井瑠星のアグレッシブな騎乗で上位食い込み。",
+          "trainingWeight": 472,
+          "lastRaceWeight": 470,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 4,
+          "gate": 7,
+          "horseName": "シンエンペラー",
+          "sexAge": "牡4",
+          "load": 56,
+          "jockey": "吉田豊",
+          "stable": "矢作芳人 (栗東)",
+          "odds": "14.5",
+          "placeOdds": "3.5 - 5.1",
+          "pop": 7,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "52.6 - 38.0 - 24.6 - 12.1 (馬なり)",
+          "trainingComment": "愛チャンピオンS3着から凱旋門賞を経て帰国。世界基準の先行力を持つ。",
+          "trainingWeight": 488,
+          "lastRaceWeight": 485,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 4,
+          "gate": 8,
+          "horseName": "ブローザホーン",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "菅原明良",
+          "stable": "吉岡辰弥 (栗東)",
+          "odds": "17.0",
+          "placeOdds": "3.9 - 5.8",
+          "pop": 8,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "53.2 - 38.6 - 24.9 - 12.2 (一杯)",
+          "trainingComment": "宝塚記念覇者。タフな展開になればなるほど驚異的なスタミナを発揮。",
+          "trainingWeight": 432,
+          "lastRaceWeight": 428,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 5,
+          "gate": 9,
+          "horseName": "ソールオリエンス",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "横山武史",
+          "stable": "手塚貴久 (美浦)",
+          "odds": "21.0",
+          "placeOdds": "4.6 - 6.8",
+          "pop": 9,
+          "trainingGrade": "B",
+          "trainingCourse": "美浦W",
+          "trainingTime": "83.4 - 67.0 - 52.0 - 37.0 - 11.6 (馬なり)",
+          "trainingComment": "皐月賞馬の豪脚。直線の長い東京コースで末脚一閃のシーンも。",
+          "trainingWeight": 468,
+          "lastRaceWeight": 464,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 5,
+          "gate": 10,
+          "horseName": "ファンタスティックムーン",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "R.ピーヒュレク",
+          "stable": "S.シュタインベルク (海外)",
+          "odds": "28.0",
+          "placeOdds": "6.0 - 9.0",
+          "pop": 10,
+          "trainingGrade": "B",
+          "trainingCourse": "東京芝",
+          "trainingTime": "66.0 - 51.2 - 37.0 - 11.8 (馬なり)",
+          "trainingComment": "独ダービー馬。良馬場の軽い芝を求めての日本遠征。",
+          "trainingWeight": 462,
+          "lastRaceWeight": 460,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 6,
+          "gate": 11,
+          "horseName": "シュトルーヴェ",
+          "sexAge": "セ6",
+          "load": 58,
+          "jockey": "佐々木大輔",
+          "stable": "堀宣行 (美浦)",
+          "odds": "35.0",
+          "placeOdds": "7.5 - 11.5",
+          "pop": 11,
+          "trainingGrade": "B",
+          "trainingCourse": "美浦W",
+          "trainingTime": "84.0 - 67.5 - 52.4 - 37.4 - 11.8 (強め)",
+          "trainingComment": "東京芝2500m重賞連勝の実績。長い直線での持続力は上位。",
+          "trainingWeight": 476,
+          "lastRaceWeight": 472,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 6,
+          "gate": 12,
+          "horseName": "ドゥレッツァ",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "戸崎圭太",
+          "stable": "尾関知人 (美浦)",
+          "odds": "38.0",
+          "placeOdds": "8.0 - 12.5",
+          "pop": 12,
+          "trainingGrade": "B",
+          "trainingCourse": "美浦W",
+          "trainingTime": "84.5 - 67.8 - 52.6 - 37.6 - 11.9 (馬なり)",
+          "trainingComment": "菊花賞馬。英国インターナショナルS好走からの復調気配。",
+          "trainingWeight": 470,
+          "lastRaceWeight": 468,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 7,
+          "gate": 13,
+          "horseName": "ディープボンド",
+          "sexAge": "牡8",
+          "load": 58,
+          "jockey": "幸英明",
+          "stable": "大久保龍志 (栗東)",
+          "odds": "52.0",
+          "placeOdds": "10.5 - 16.0",
+          "pop": 13,
+          "trainingGrade": "B",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "83.8 - 67.2 - 52.2 - 37.3 - 12.0 (馬なり)",
+          "trainingComment": "8歳でも元気一杯。スタミナ勝負に持ち込めば大ベテランの意地を見せる。",
+          "trainingWeight": 512,
+          "lastRaceWeight": 510,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 8,
+          "gate": 14,
+          "horseName": "カラテ",
+          "sexAge": "牡9",
+          "load": 58,
+          "jockey": "杉原誠人",
+          "stable": "音無秀孝 (栗東)",
+          "odds": "88.0",
+          "placeOdds": "18.0 - 28.0",
+          "pop": 14,
+          "trainingGrade": "C",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "54.5 - 39.8 - 25.8 - 12.7 (馬なり)",
+          "trainingComment": "9歳でも無事に出走。ファンを沸かせる激走を。",
+          "trainingWeight": 530,
+          "lastRaceWeight": 526,
+          "confirmedWeight": null,
+          "weightDiff": null
+        }
+      ],
+      "occultSigns": [
+        {
+          "id": 1,
+          "title": "🕊️ ディープインパクト最後の最高傑作「オーギュストロダン」引退の花道サイン",
+          "badge": "世界遺産級サイン",
+          "source": "X・海外競馬トレンド",
+          "content": "世界的名将オブライエン調教師が『ディープインパクトの子で日本を制する』ために引退レースに選んだジャパンカップ。東京競馬場のディープインパクト像の前で、息子が世界の頂点に立つという競馬の神様が描く奇跡のシナリオにX競馬民が熱狂！",
+          "targets": [
+            {
+              "gate": 2,
+              "waku": 1,
+              "name": "オーギュストロダン"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "⚔️ レジェンド武豊「ドウデュース」ラストイヤー秋古馬三冠王手サイン",
+          "badge": "英雄伝説",
+          "source": "競馬サイン考察班",
+          "content": "天皇賞（秋）で見せた異次元の末脚。秋古馬三冠（天皇賞秋・JC・有馬記念）の偉業へ王手をかけたドウデュース。武豊騎手×ジャパンカップの勝率は過去圧倒的で、白帽子1枠での激走サインが点灯中！",
+          "targets": [
+            {
+              "gate": 1,
+              "waku": 1,
+              "name": "ドウデュース"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "🇫🇷 英キングジョージ覇者「ゴリアット」スミヨン鞍上の破壊力",
+          "badge": "欧州超特急",
+          "source": "JRAサイン攻略室",
+          "content": "キングジョージで欧州最強馬たちを一蹴したゴリアット。日本を知り尽くす名手スミヨン騎手とのコンビは、かつてのエピファネイアを彷彿とさせる圧勝劇の予兆と囁かれています。",
+          "targets": [
+            {
+              "gate": 4,
+              "waku": 2,
+              "name": "ゴリアット"
+            }
+          ]
+        }
+      ]
+    },
+    "20": {
+      "raceId": "20",
+      "raceName": "第27回 チャンピオンズカップ",
+      "date": "2026年12月6日(日) 15:40発走",
+      "venue": "中京競馬場 ダート1800m",
+      "starters": [
+        {
+          "waku": 1,
+          "gate": 1,
+          "horseName": "レモンポップ",
+          "sexAge": "牡7",
+          "load": 58,
+          "jockey": "坂井瑠星",
+          "stable": "田中博康 (美浦)",
+          "odds": "2.2",
+          "placeOdds": "1.2 - 1.5",
+          "pop": 1,
+          "trainingGrade": "S",
+          "trainingCourse": "美浦W",
+          "trainingTime": "80.4 - 64.5 - 49.8 - 35.5 - 11.2 (馬なり)",
+          "trainingComment": "国内ダート無敗の絶対王者。引退レースとなる中京1800m逃げ切り連覇へ万全の仕上げ。",
+          "trainingWeight": 520,
+          "lastRaceWeight": 516,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 1,
+          "gate": 2,
+          "horseName": "ウィルソンテソーロ",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "川田将雅",
+          "stable": "小手川準 (美浦)",
+          "odds": "3.8",
+          "placeOdds": "1.4 - 2.0",
+          "pop": 2,
+          "trainingGrade": "A",
+          "trainingCourse": "美浦W",
+          "trainingTime": "82.0 - 65.8 - 50.8 - 36.4 - 11.4 (強め)",
+          "trainingComment": "JBCクラシック圧勝の勢いそのまま。中京の小回りを川田が完璧にエスコート。",
+          "trainingWeight": 490,
+          "lastRaceWeight": 486,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 2,
+          "gate": 3,
+          "horseName": "ペプチドナイル",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "藤岡佑介",
+          "stable": "武英智 (栗東)",
+          "odds": "6.5",
+          "placeOdds": "1.9 - 2.8",
+          "pop": 3,
+          "trainingGrade": "A",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "51.8 - 37.4 - 24.0 - 11.9 (馬なり)",
+          "trainingComment": "フェブラリーS覇者。坂路で破格の時計を連発し状態ピーク。",
+          "trainingWeight": 532,
+          "lastRaceWeight": 528,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 2,
+          "gate": 4,
+          "horseName": "クラウンプライド",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "横山武史",
+          "stable": "新谷功一 (栗東)",
+          "odds": "8.0",
+          "placeOdds": "2.2 - 3.4",
+          "pop": 4,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "82.5 - 66.2 - 51.5 - 36.8 - 11.5 (強め)",
+          "trainingComment": "コリアカップ連覇の強豪。先行力と粘り腰は世界基準。",
+          "trainingWeight": 504,
+          "lastRaceWeight": 500,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 3,
+          "gate": 5,
+          "horseName": "セラフィックコール",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "C.デムーロ",
+          "stable": "寺島良 (栗東)",
+          "odds": "10.5",
+          "placeOdds": "2.7 - 4.0",
+          "pop": 5,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "82.0 - 65.6 - 51.0 - 36.3 - 11.3 (一杯)",
+          "trainingComment": "鋭い末脚が武器。C.デムーロ騎手の手腕で中京の直線を切り裂く。",
+          "trainingWeight": 524,
+          "lastRaceWeight": 520,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 3,
+          "gate": 6,
+          "horseName": "サンライズジパング",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "武豊",
+          "stable": "音無秀孝 (栗東)",
+          "odds": "13.2",
+          "placeOdds": "3.2 - 4.8",
+          "pop": 6,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "52.8 - 38.0 - 24.6 - 12.1 (馬なり)",
+          "trainingComment": "みやこS勝ち馬。3歳ダート戦線のトップホースが古馬の壁に挑む。",
+          "trainingWeight": 510,
+          "lastRaceWeight": 506,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 4,
+          "gate": 7,
+          "horseName": "ハギノアレグリアス",
+          "sexAge": "牡8",
+          "load": 58,
+          "jockey": "岩田望来",
+          "stable": "四位洋文 (栗東)",
+          "odds": "16.8",
+          "placeOdds": "3.8 - 5.6",
+          "pop": 7,
+          "trainingGrade": "B",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "83.2 - 66.8 - 51.8 - 37.0 - 11.6 (馬なり)",
+          "trainingComment": "シリウスS連覇の実力派。ベテランの味を活かしてイン強襲。",
+          "trainingWeight": 492,
+          "lastRaceWeight": 490,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 4,
+          "gate": 8,
+          "horseName": "ドゥラエレーデ",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "北村友一",
+          "stable": "池添学 (栗東)",
+          "odds": "19.5",
+          "placeOdds": "4.2 - 6.2",
+          "pop": 8,
+          "trainingGrade": "B",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "53.0 - 38.4 - 24.8 - 12.2 (強め)",
+          "trainingComment": "2年連続チャンピオンズC3着のリピーター。この舞台での安定感抜群。",
+          "trainingWeight": 516,
+          "lastRaceWeight": 514,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 5,
+          "gate": 9,
+          "horseName": "メイショウハリオ",
+          "sexAge": "牡8",
+          "load": 58,
+          "jockey": "浜中俊",
+          "stable": "岡田稲男 (栗東)",
+          "odds": "24.0",
+          "placeOdds": "5.0 - 7.5",
+          "pop": 9,
+          "trainingGrade": "B",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "83.6 - 67.0 - 52.0 - 37.2 - 11.8 (馬なり)",
+          "trainingComment": "帝王賞連覇の古豪。展開が向いた時の破壊力は健在。",
+          "trainingWeight": 512,
+          "lastRaceWeight": 508,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 5,
+          "gate": 10,
+          "horseName": "ミックファイア",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "矢野貴之",
+          "stable": "渡邉和雄 (地方)",
+          "odds": "29.0",
+          "placeOdds": "6.0 - 9.0",
+          "pop": 10,
+          "trainingGrade": "B",
+          "trainingCourse": "大井",
+          "trainingTime": "65.8 - 51.0 - 37.2 - 12.0 (強め)",
+          "trainingComment": "南関無敗3冠馬の意地。JRAダートG1奪取へ勝負気配。",
+          "trainingWeight": 498,
+          "lastRaceWeight": 494,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 6,
+          "gate": 11,
+          "horseName": "ガイアフォース",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "長岡禎仁",
+          "stable": "杉山晴紀 (栗東)",
+          "odds": "35.0",
+          "placeOdds": "7.5 - 11.5",
+          "pop": 11,
+          "trainingGrade": "B",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "53.4 - 38.6 - 25.0 - 12.3 (馬なり)",
+          "trainingComment": "フェブラリーS2着の二刀流。スピードを活かして好位追走。",
+          "trainingWeight": 498,
+          "lastRaceWeight": 496,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 6,
+          "gate": 12,
+          "horseName": "ヤマニンウルス",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "団野大成",
+          "stable": "斉藤崇史 (栗東)",
+          "odds": "42.0",
+          "placeOdds": "8.5 - 13.0",
+          "pop": 12,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "82.8 - 66.4 - 51.6 - 36.7 - 11.5 (強め)",
+          "trainingComment": "無敗で重賞制覇した超新星。初のG1挑戦でどこまでやれるか。",
+          "trainingWeight": 580,
+          "lastRaceWeight": 576,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 7,
+          "gate": 13,
+          "horseName": "アーテルアストレア",
+          "sexAge": "牝6",
+          "load": 56,
+          "jockey": "菱田裕二",
+          "stable": "橋口慎介 (栗東)",
+          "odds": "54.0",
+          "placeOdds": "11.0 - 17.0",
+          "pop": 13,
+          "trainingGrade": "B-",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "53.8 - 39.0 - 25.2 - 12.4 (馬なり)",
+          "trainingComment": "紅一点。牡馬相手でも末脚を活かして掲示板を狙う。",
+          "trainingWeight": 462,
+          "lastRaceWeight": 458,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 7,
+          "gate": 14,
+          "horseName": "スレイマン",
+          "sexAge": "牡7",
+          "load": 58,
+          "jockey": "西村淳也",
+          "stable": "池添学 (栗東)",
+          "odds": "68.0",
+          "placeOdds": "13.5 - 21.0",
+          "pop": 14,
+          "trainingGrade": "B-",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "84.5 - 67.8 - 52.6 - 37.8 - 12.1 (強め)",
+          "trainingComment": "好位差しを得意とする堅実派。前が崩れれば浮上。",
+          "trainingWeight": 538,
+          "lastRaceWeight": 534,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 8,
+          "gate": 15,
+          "horseName": "テーオードレフォン",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "丸山元気",
+          "stable": "梅田智之 (栗東)",
+          "odds": "82.0",
+          "placeOdds": "16.0 - 25.0",
+          "pop": 15,
+          "trainingGrade": "C",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "54.2 - 39.5 - 25.6 - 12.6 (馬なり)",
+          "trainingComment": "先行争いが鍵。マイペースに持ち込みたい。",
+          "trainingWeight": 502,
+          "lastRaceWeight": 498,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 8,
+          "gate": 16,
+          "horseName": "グロリアムンディ",
+          "sexAge": "牡7",
+          "load": 58,
+          "jockey": "戸崎圭太",
+          "stable": "大久保龍志 (栗東)",
+          "odds": "95.0",
+          "placeOdds": "18.0 - 28.0",
+          "pop": 16,
+          "trainingGrade": "C",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "85.2 - 68.5 - 53.2 - 38.2 - 12.4 (馬なり)",
+          "trainingComment": "ベテランの経験。大外からロスなく立ち回れるか。",
+          "trainingWeight": 514,
+          "lastRaceWeight": 510,
+          "confirmedWeight": null,
+          "weightDiff": null
+        }
+      ],
+      "occultSigns": [
+        {
+          "id": 1,
+          "title": "🍋 絶対王者「レモンポップ」引退ラストラン有終サイン",
+          "badge": "有終の美サイン",
+          "source": "X・ダート考察トレンド",
+          "content": "国内ダートで一度も連対を外したことがないレモンポップの引退レース。中京ダート1800mの最内1枠1番からハナを奪って逃げ切る黄金シナリオは競馬ファンの共通認識。黄色枠（5枠）とのレモン枠連サインも急浮上！",
+          "targets": [
+            {
+              "gate": 1,
+              "waku": 1,
+              "name": "レモンポップ"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "🌪️ 中京ダート1800m「最内1枠・先行馬」絶対優勢バイアスの法則",
+          "badge": "コースバイアス",
+          "source": "データ競馬研究室",
+          "content": "スタートから1コーナーまでの距離が短く、外枠が極端に不利とされる中京ダート1800m。1枠のレモンポップ＆ウィルソンテソーロの2頭がそのままワンツーフィニッシュする可能性が極めて高いトラックバイアスです。",
+          "targets": [
+            {
+              "gate": 1,
+              "waku": 1,
+              "name": "レモンポップ"
+            },
+            {
+              "gate": 2,
+              "waku": 1,
+              "name": "ウィルソンテソーロ"
+            }
+          ]
+        }
+      ]
+    },
+    "21": {
+      "raceId": "21",
+      "raceName": "第78回 阪神ジュベナイルフィリーズ",
+      "date": "2026年12月13日(日) 15:40発走",
+      "venue": "京都競馬場 芝1600m (外回り)",
+      "starters": [
+        {
+          "waku": 1,
+          "gate": 1,
+          "horseName": "ブラウンラチェット",
+          "sexAge": "牝2",
+          "load": 55,
+          "jockey": "C.ルメール",
+          "stable": "手塚貴久 (美浦)",
+          "odds": "2.6",
+          "placeOdds": "1.3 - 1.7",
+          "pop": 1,
+          "trainingGrade": "S",
+          "trainingCourse": "美浦W",
+          "trainingTime": "82.2 - 66.0 - 51.0 - 36.4 - 11.2 (強め)",
+          "trainingComment": "アルテミスS無傷連勝。兄フォーエバーヤング譲りの抜群の勝負根性。",
+          "trainingWeight": 444,
+          "lastRaceWeight": 440,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 1,
+          "gate": 2,
+          "horseName": "カムニャック",
+          "sexAge": "牝2",
+          "load": 55,
+          "jockey": "川田将雅",
+          "stable": "友道康夫 (栗東)",
+          "odds": "3.4",
+          "placeOdds": "1.4 - 1.9",
+          "pop": 2,
+          "trainingGrade": "S",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "81.0 - 65.2 - 50.4 - 35.8 - 11.0 (一杯)",
+          "trainingComment": "新馬戦で規格外の末脚。大器の呼び声高く2歳女王へ最短距離。",
+          "trainingWeight": 504,
+          "lastRaceWeight": 500,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 2,
+          "gate": 3,
+          "horseName": "コートアリシアン",
+          "sexAge": "牝2",
+          "load": 55,
+          "jockey": "菅原明良",
+          "stable": "伊藤大士 (美浦)",
+          "odds": "5.8",
+          "placeOdds": "1.8 - 2.6",
+          "pop": 3,
+          "trainingGrade": "A",
+          "trainingCourse": "美浦W",
+          "trainingTime": "83.0 - 66.8 - 51.8 - 36.8 - 11.4 (馬なり)",
+          "trainingComment": "新潟2歳S上位。切れ味は世代上位で外回り差し脚にピッタリ。",
+          "trainingWeight": 456,
+          "lastRaceWeight": 452,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 2,
+          "gate": 4,
+          "horseName": "ミッキージュエリー",
+          "sexAge": "牝2",
+          "load": 55,
+          "jockey": "坂井瑠星",
+          "stable": "矢作芳人 (栗東)",
+          "odds": "7.5",
+          "placeOdds": "2.2 - 3.2",
+          "pop": 4,
+          "trainingGrade": "A",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "52.4 - 37.8 - 24.4 - 12.0 (強め)",
+          "trainingComment": "矢作厩舎期待の牝馬。坂井瑠星の手綱で果敢に先行。",
+          "trainingWeight": 468,
+          "lastRaceWeight": 464,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 3,
+          "gate": 5,
+          "horseName": "マイエレメント",
+          "sexAge": "牝2",
+          "load": 55,
+          "jockey": "横山武史",
+          "stable": "福永祐一 (栗東)",
+          "odds": "9.8",
+          "placeOdds": "2.6 - 3.8",
+          "pop": 5,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "82.5 - 66.2 - 51.5 - 36.9 - 11.5 (馬なり)",
+          "trainingComment": "福永厩舎の素質馬。気性も素直で京都芝マイルに対応可能。",
+          "trainingWeight": 472,
+          "lastRaceWeight": 468,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 3,
+          "gate": 6,
+          "horseName": "クウネル",
+          "sexAge": "牝2",
+          "load": 55,
+          "jockey": "武豊",
+          "stable": "中内田充正 (栗東)",
+          "odds": "13.0",
+          "placeOdds": "3.2 - 4.8",
+          "pop": 6,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "83.2 - 66.8 - 52.0 - 37.2 - 11.6 (強め)",
+          "trainingComment": "武豊騎手を背に軽快な走り。外回りの下り坂をスムーズに下れば。",
+          "trainingWeight": 460,
+          "lastRaceWeight": 456,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 4,
+          "gate": 7,
+          "horseName": "ランフォーヴァウ",
+          "sexAge": "牝2",
+          "load": 55,
+          "jockey": "団野大成",
+          "stable": "福永祐一 (栗東)",
+          "odds": "18.5",
+          "placeOdds": "4.2 - 6.5",
+          "pop": 7,
+          "trainingGrade": "B",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "53.2 - 38.6 - 25.0 - 12.2 (馬なり)",
+          "trainingComment": "デイリー杯2歳S勝ち馬。レースセンス高く立ち回り上手。",
+          "trainingWeight": 464,
+          "lastRaceWeight": 460,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 4,
+          "gate": 8,
+          "horseName": "カレンラップスター",
+          "sexAge": "牝2",
+          "load": 55,
+          "jockey": "松山弘平",
+          "stable": "安田翔伍 (栗東)",
+          "odds": "24.0",
+          "placeOdds": "5.2 - 8.0",
+          "pop": 8,
+          "trainingGrade": "B",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "84.0 - 67.5 - 52.4 - 37.5 - 11.8 (馬なり)",
+          "trainingComment": "追ってからの伸び脚確実。ハイペースなら上位進出。",
+          "trainingWeight": 450,
+          "lastRaceWeight": 446,
+          "confirmedWeight": null,
+          "weightDiff": null
+        }
+      ],
+      "occultSigns": [
+        {
+          "id": 1,
+          "title": "💎 フォーエバーヤング半妹「ブラウンラチェット」兄妹G1制覇サイン",
+          "badge": "世界血統サイン",
+          "source": "X・血統考察トレンド",
+          "content": "世界を股にかけて大活躍するフォーエバーヤングの半妹ブラウンラチェット。ルメール騎手を背に無敗でアルテミスSを制した勝負強さは本物。偉大なる兄に続く兄妹同一年G1制覇の強力サインが発動！",
+          "targets": [
+            {
+              "gate": 1,
+              "waku": 1,
+              "name": "ブラウンラチェット"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "🌸 京都外回り代替開催に伴う「外枠差し脚」連動サイン",
+          "badge": "京都マイルの法則",
+          "source": "コース傾向班",
+          "content": "阪神競馬場改修により京都芝1600m外回りで施行される今年の阪神JF。3コーナーの坂を下ってからの直線平坦コースは、中団から末脚を伸ばす差し馬が連対独占するパターン。",
+          "targets": [
+            {
+              "gate": 2,
+              "waku": 1,
+              "name": "カムニャック"
+            },
+            {
+              "gate": 3,
+              "waku": 2,
+              "name": "コートアリシアン"
+            }
+          ]
+        }
+      ]
+    },
+    "22": {
+      "raceId": "22",
+      "raceName": "第78回 朝日杯フューチュリティステークス",
+      "date": "2026年12月20日(日) 15:40発走",
+      "venue": "京都競馬場 芝1600m (外回り)",
+      "starters": [
+        {
+          "waku": 1,
+          "gate": 1,
+          "horseName": "クロワデュノール",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "北村友一",
+          "stable": "斉藤崇史 (栗東)",
+          "odds": "2.4",
+          "placeOdds": "1.2 - 1.6",
+          "pop": 1,
+          "trainingGrade": "S",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "80.6 - 64.8 - 50.2 - 35.6 - 11.0 (強め)",
+          "trainingComment": "東スポ杯2歳S圧勝の怪物。キタサンブラック産駒らしい雄大な馬体と驚異の推進力。",
+          "trainingWeight": 512,
+          "lastRaceWeight": 508,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 1,
+          "gate": 2,
+          "horseName": "パンジャタワー",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "松山弘平",
+          "stable": "橋口慎介 (栗東)",
+          "odds": "3.8",
+          "placeOdds": "1.5 - 2.1",
+          "pop": 2,
+          "trainingGrade": "S",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "51.6 - 37.2 - 24.0 - 11.8 (馬なり)",
+          "trainingComment": "京王杯2歳S覇者。坂路で異次元のスピードを披露しマイル克服に自信。",
+          "trainingWeight": 482,
+          "lastRaceWeight": 478,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 2,
+          "gate": 3,
+          "horseName": "アルテヴェローチェ",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "武豊",
+          "stable": "須貝尚介 (栗東)",
+          "odds": "5.2",
+          "placeOdds": "1.7 - 2.5",
+          "pop": 3,
+          "trainingGrade": "A",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "82.0 - 65.8 - 50.8 - 36.2 - 11.2 (馬なり)",
+          "trainingComment": "サウジアラビアRCを鮮やかに制覇。レジェンド武豊との黄金タッグで戴冠へ。",
+          "trainingWeight": 496,
+          "lastRaceWeight": 492,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 2,
+          "gate": 4,
+          "horseName": "サトノカルナバル",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "佐々木大輔",
+          "stable": "堀宣行 (美浦)",
+          "odds": "7.8",
+          "placeOdds": "2.2 - 3.4",
+          "pop": 4,
+          "trainingGrade": "A",
+          "trainingCourse": "美浦W",
+          "trainingTime": "82.8 - 66.4 - 51.4 - 36.6 - 11.3 (強め)",
+          "trainingComment": "函館2歳S勝ち馬。堀厩舎の綿密な仕上げでマイルにも対応可能。",
+          "trainingWeight": 490,
+          "lastRaceWeight": 486,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 3,
+          "gate": 5,
+          "horseName": "エイシンワンド",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "幸英明",
+          "stable": "大久保龍志 (栗東)",
+          "odds": "11.5",
+          "placeOdds": "2.8 - 4.2",
+          "pop": 5,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "52.8 - 38.2 - 24.6 - 12.0 (馬なり)",
+          "trainingComment": "小倉2歳S勝ち馬。持ち前のスピードでハナを奪い粘り込みを図る。",
+          "trainingWeight": 476,
+          "lastRaceWeight": 472,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 3,
+          "gate": 6,
+          "horseName": "タイセイカレント",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "横山武史",
+          "stable": "矢作芳人 (栗東)",
+          "odds": "15.0",
+          "placeOdds": "3.5 - 5.2",
+          "pop": 6,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "83.0 - 66.8 - 51.8 - 37.0 - 11.5 (強め)",
+          "trainingComment": "矢作厩舎の勝負気配。混戦になれば勝負根性で上位へ食い込む。",
+          "trainingWeight": 486,
+          "lastRaceWeight": 482,
+          "confirmedWeight": null,
+          "weightDiff": null
+        }
+      ],
+      "occultSigns": [
+        {
+          "id": 1,
+          "title": "⚡ キタサンブラック後継「クロワデュノール」無敗戴冠の星",
+          "badge": "新怪物伝説",
+          "source": "X・血統トレンド",
+          "content": "キタサンブラックの代表産駒としてクラシック最有力と謳われるクロワデュノール。東スポ杯で見せた異次元の瞬発力は2歳馬の域を超越。白枠1番からの戴冠劇が濃厚とSNSで大本命サイン！",
+          "targets": [
+            {
+              "gate": 1,
+              "waku": 1,
+              "name": "クロワデュノール"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "👑 須貝厩舎×武豊「アルテヴェローチェ」2歳マイル王の系譜",
+          "badge": "師弟コンビ",
+          "source": "競馬サイン研究会",
+          "content": "かつてのソダシやドルチェモアなど2歳重賞で無類の強さを誇る須貝厩舎。武豊騎手とのコンビで挑むマイル頂上決戦には、暮れの京都を締めくくる勝負気配が漂っています。",
+          "targets": [
+            {
+              "gate": 3,
+              "waku": 2,
+              "name": "アルテヴェローチェ"
+            }
+          ]
+        }
+      ]
+    },
+    "23": {
+      "raceId": "23",
+      "raceName": "第43回 ホープフルステークス",
+      "date": "2026年12月26日(土) 15:40発走",
+      "venue": "中山競馬場 芝2000m",
+      "starters": [
+        {
+          "waku": 1,
+          "gate": 1,
+          "horseName": "マスカレードボール",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "戸崎圭太",
+          "stable": "手塚貴久 (美浦)",
+          "odds": "2.8",
+          "placeOdds": "1.3 - 1.8",
+          "pop": 1,
+          "trainingGrade": "S",
+          "trainingCourse": "美浦W",
+          "trainingTime": "81.8 - 65.6 - 50.8 - 36.2 - 11.1 (馬なり)",
+          "trainingComment": "アイビーSで非凡な瞬発力を証明。中山芝2000mクラシック登竜門で主役。",
+          "trainingWeight": 494,
+          "lastRaceWeight": 490,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 1,
+          "gate": 2,
+          "horseName": "ファイアンクランツ",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "菅原明良",
+          "stable": "堀宣行 (美浦)",
+          "odds": "4.2",
+          "placeOdds": "1.5 - 2.2",
+          "pop": 2,
+          "trainingGrade": "A",
+          "trainingCourse": "美浦W",
+          "trainingTime": "82.6 - 66.2 - 51.4 - 36.6 - 11.3 (強め)",
+          "trainingComment": "札幌2歳S上位。タフな中山の急坂でもしっかりと脚を伸ばせるパワー。",
+          "trainingWeight": 486,
+          "lastRaceWeight": 482,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 2,
+          "gate": 3,
+          "horseName": "アスクシュタイン",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "川田将雅",
+          "stable": "藤原英昭 (栗東)",
+          "odds": "5.6",
+          "placeOdds": "1.8 - 2.6",
+          "pop": 3,
+          "trainingGrade": "A",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "82.2 - 66.0 - 51.2 - 36.5 - 11.2 (馬なり)",
+          "trainingComment": "先行力抜群。川田騎手が好位で立ち回れば粘り込み濃厚。",
+          "trainingWeight": 476,
+          "lastRaceWeight": 472,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 2,
+          "gate": 4,
+          "horseName": "ピコチャンブラック",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "石川裕紀人",
+          "stable": "上原佑紀 (美浦)",
+          "odds": "7.5",
+          "placeOdds": "2.2 - 3.4",
+          "pop": 4,
+          "trainingGrade": "B+",
+          "trainingCourse": "美浦W",
+          "trainingTime": "83.2 - 66.8 - 51.8 - 36.8 - 11.5 (強め)",
+          "trainingComment": "新馬戦圧勝。キタサンブラック産駒のスケール感で上位進出を伺う。",
+          "trainingWeight": 508,
+          "lastRaceWeight": 504,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 3,
+          "gate": 5,
+          "horseName": "パープルレディ",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "C.ルメール",
+          "stable": "木村哲也 (美浦)",
+          "odds": "10.0",
+          "placeOdds": "2.6 - 4.0",
+          "pop": 5,
+          "trainingGrade": "B+",
+          "trainingCourse": "美浦W",
+          "trainingTime": "83.5 - 67.0 - 52.0 - 37.0 - 11.6 (馬なり)",
+          "trainingComment": "ルメール騎手鞍上で勝負気配。中山の内回りを器用に立ち回る。",
+          "trainingWeight": 470,
+          "lastRaceWeight": 466,
+          "confirmedWeight": null,
+          "weightDiff": null
+        }
+      ],
+      "occultSigns": [
+        {
+          "id": 1,
+          "title": "🏛️ 有馬前日の中山芝2000m「手塚厩舎×クラシック」戴冠サイン",
+          "badge": "中山直結サイン",
+          "source": "X・2歳馬ウォッチャー",
+          "content": "かつてソールオリエンスなど中山2000mで大仕事をやってのける手塚厩舎。マスカレードボールが年末のホープフルSを制し、翌年の皐月賞へ王手をかける黄金ローテが早くもXで話題騒然！",
+          "targets": [
+            {
+              "gate": 1,
+              "waku": 1,
+              "name": "マスカレードボール"
+            }
+          ]
+        }
+      ]
+    },
+    "24": {
+      "raceId": "24",
+      "raceName": "第71回 有馬記念",
+      "date": "2026年12月27日(日) 15:40発走",
+      "venue": "中山競馬場 芝2500m",
+      "starters": [
+        {
+          "waku": 1,
+          "gate": 1,
+          "horseName": "ドウデュース",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "武豊",
+          "stable": "友道康夫 (栗東)",
+          "odds": "2.5",
+          "placeOdds": "1.2 - 1.6",
+          "pop": 1,
+          "trainingGrade": "S",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "79.2 - 63.8 - 49.5 - 35.0 - 10.8 (馬なり)",
+          "trainingComment": "日本競馬の英雄、伝説のラストラン。中山2500mで有終の美を飾るため研ぎ澄まされた極上の仕上がり。",
+          "trainingWeight": 506,
+          "lastRaceWeight": 504,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 1,
+          "gate": 2,
+          "horseName": "ダノンデサイル",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "戸崎圭太",
+          "stable": "安田翔伍 (栗東)",
+          "odds": "3.6",
+          "placeOdds": "1.4 - 2.0",
+          "pop": 2,
+          "trainingGrade": "S",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "80.5 - 64.6 - 50.0 - 35.5 - 11.0 (強め)",
+          "trainingComment": "天皇賞秋覇者。ダービー馬の風格漂い、中山2500mでも先行からの鋭い抜け出しで頂点狙う。",
+          "trainingWeight": 518,
+          "lastRaceWeight": 516,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 2,
+          "gate": 3,
+          "horseName": "レガレイラ",
+          "sexAge": "牝5",
+          "load": 56,
+          "jockey": "C.ルメール",
+          "stable": "木村哲也 (美浦)",
+          "odds": "4.8",
+          "placeOdds": "1.6 - 2.4",
+          "pop": 3,
+          "trainingGrade": "S",
+          "trainingCourse": "美浦W",
+          "trainingTime": "81.4 - 65.2 - 50.6 - 36.0 - 11.1 (馬なり)",
+          "trainingComment": "ホープフルSを制した中山芝中距離は最高の適性。ルメール騎手との再コンビで大波乱を演出。",
+          "trainingWeight": 494,
+          "lastRaceWeight": 494,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 2,
+          "gate": 4,
+          "horseName": "アーバンシック",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "横山武史",
+          "stable": "武井亮 (美浦)",
+          "odds": "6.2",
+          "placeOdds": "2.0 - 2.9",
+          "pop": 4,
+          "trainingGrade": "A",
+          "trainingCourse": "美浦W",
+          "trainingTime": "82.0 - 65.8 - 51.0 - 36.3 - 11.2 (強め)",
+          "trainingComment": "菊花賞圧勝の長距離適性。中山外回りから内回りへの勝負所でロングスパートを仕掛ける。",
+          "trainingWeight": 512,
+          "lastRaceWeight": 510,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 3,
+          "gate": 5,
+          "horseName": "ブローザホーン",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "菅原明良",
+          "stable": "吉岡辰弥 (栗東)",
+          "odds": "8.5",
+          "placeOdds": "2.4 - 3.6",
+          "pop": 5,
+          "trainingGrade": "A",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "52.8 - 38.0 - 24.5 - 12.0 (一杯)",
+          "trainingComment": "宝塚記念覇者。タフな冬の中山2500mはスタミナ満点のこの馬に絶好の舞台。",
+          "trainingWeight": 432,
+          "lastRaceWeight": 428,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 3,
+          "gate": 6,
+          "horseName": "ジャスティンパレス",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "坂井瑠星",
+          "stable": "杉山晴紀 (栗東)",
+          "odds": "10.5",
+          "placeOdds": "2.8 - 4.2",
+          "pop": 6,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "82.5 - 66.2 - 51.5 - 36.8 - 11.4 (馬なり)",
+          "trainingComment": "有単記念リピーター。坂井瑠星の積極騎乗で直線しぶとく食い下がる。",
+          "trainingWeight": 474,
+          "lastRaceWeight": 472,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 4,
+          "gate": 7,
+          "horseName": "スターズオンアース",
+          "sexAge": "牝6",
+          "load": 56,
+          "jockey": "川田将雅",
+          "stable": "高柳瑞樹 (美浦)",
+          "odds": "13.0",
+          "placeOdds": "3.2 - 4.8",
+          "pop": 7,
+          "trainingGrade": "B+",
+          "trainingCourse": "美浦W",
+          "trainingTime": "83.0 - 66.5 - 51.8 - 36.9 - 11.5 (強め)",
+          "trainingComment": "前年有馬記念2着。大外枠から激走した実績があり、中山適性に死角なし。",
+          "trainingWeight": 498,
+          "lastRaceWeight": 496,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 4,
+          "gate": 8,
+          "horseName": "ソールオリエンス",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "松山弘平",
+          "stable": "手塚貴久 (美浦)",
+          "odds": "16.5",
+          "placeOdds": "3.8 - 5.6",
+          "pop": 8,
+          "trainingGrade": "B+",
+          "trainingCourse": "美浦W",
+          "trainingTime": "83.2 - 66.8 - 52.0 - 37.0 - 11.6 (馬なり)",
+          "trainingComment": "皐月賞馬の中山適性。冬のタフな馬場は大歓迎で一撃を秘める。",
+          "trainingWeight": 470,
+          "lastRaceWeight": 468,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 5,
+          "gate": 9,
+          "horseName": "ベラジオオペラ",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "横山和生",
+          "stable": "上村洋行 (栗東)",
+          "odds": "20.0",
+          "placeOdds": "4.5 - 6.8",
+          "pop": 9,
+          "trainingGrade": "B",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "83.5 - 67.0 - 52.2 - 37.2 - 11.7 (強め)",
+          "trainingComment": "大阪杯覇者の先行力。インコースに潜り込んでロスなく立ち回れば。",
+          "trainingWeight": 506,
+          "lastRaceWeight": 504,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 5,
+          "gate": 10,
+          "horseName": "ネブラディスク",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "岩田望来",
+          "stable": "福永祐一 (栗東)",
+          "odds": "24.0",
+          "placeOdds": "5.2 - 8.0",
+          "pop": 10,
+          "trainingGrade": "B+",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "82.8 - 66.4 - 51.6 - 36.8 - 11.4 (馬なり)",
+          "trainingComment": "天皇賞秋2着の激走馬。福永厩舎の秘蔵っ子が中山グランプリでも波乱を巻き起こす。",
+          "trainingWeight": 460,
+          "lastRaceWeight": 458,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 6,
+          "gate": 11,
+          "horseName": "メイショウタバル",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "浜中俊",
+          "stable": "石橋守 (栗東)",
+          "odds": "32.0",
+          "placeOdds": "7.0 - 11.0",
+          "pop": 11,
+          "trainingGrade": "B",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "81.5 - 65.0 - 50.8 - 36.5 - 11.8 (一杯)",
+          "trainingComment": "大逃げ宣言。中山2500mをハイペースで引っ張り場内を沸かせる。",
+          "trainingWeight": 504,
+          "lastRaceWeight": 500,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 6,
+          "gate": 12,
+          "horseName": "ヘデントール",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "佐々木大輔",
+          "stable": "木村哲也 (美浦)",
+          "odds": "38.0",
+          "placeOdds": "8.0 - 12.5",
+          "pop": 12,
+          "trainingGrade": "B",
+          "trainingCourse": "美浦W",
+          "trainingTime": "84.0 - 67.5 - 52.5 - 37.4 - 11.9 (強め)",
+          "trainingComment": "菊花賞2着馬。スタミナ勝負は望むところで直線しぶとく迫る。",
+          "trainingWeight": 490,
+          "lastRaceWeight": 486,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 7,
+          "gate": 13,
+          "horseName": "ディープボンド",
+          "sexAge": "牡8",
+          "load": 58,
+          "jockey": "幸英明",
+          "stable": "大久保龍志 (栗東)",
+          "odds": "48.0",
+          "placeOdds": "10.0 - 16.0",
+          "pop": 13,
+          "trainingGrade": "B",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "84.2 - 67.8 - 52.8 - 37.6 - 12.0 (馬なり)",
+          "trainingComment": "有馬記念4年連続出走。不屈の魂で今年も中山を全力疾走。",
+          "trainingWeight": 514,
+          "lastRaceWeight": 512,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 7,
+          "gate": 14,
+          "horseName": "アドマイヤテラ",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "津村明秀",
+          "stable": "友道康夫 (栗東)",
+          "odds": "58.0",
+          "placeOdds": "12.0 - 18.5",
+          "pop": 14,
+          "trainingGrade": "B-",
+          "trainingCourse": "栗東CW",
+          "trainingTime": "84.6 - 68.0 - 53.0 - 37.8 - 12.1 (馬なり)",
+          "trainingComment": "菊花賞3着。友道厩舎の長距離砲として上位進出を伺う。",
+          "trainingWeight": 478,
+          "lastRaceWeight": 474,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 8,
+          "gate": 15,
+          "horseName": "タガノデュード",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "M.デムーロ",
+          "stable": "宮徹 (栗東)",
+          "odds": "68.0",
+          "placeOdds": "14.0 - 22.0",
+          "pop": 15,
+          "trainingGrade": "B-",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "53.8 - 39.0 - 25.4 - 12.4 (強め)",
+          "trainingComment": "天皇賞秋4着の実力派。ミルコ騎手の大胆な捲り一発に警戒。",
+          "trainingWeight": 500,
+          "lastRaceWeight": 498,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": 8,
+          "gate": 16,
+          "horseName": "シンエンペラー",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "坂井瑠星",
+          "stable": "矢作芳人 (栗東)",
+          "odds": "75.0",
+          "placeOdds": "15.0 - 24.0",
+          "pop": 16,
+          "trainingGrade": "B-",
+          "trainingCourse": "栗東坂路",
+          "trainingTime": "54.0 - 39.2 - 25.5 - 12.5 (馬なり)",
+          "trainingComment": "凱旋門賞・ジャパンCからの連戦。世界の強敵と戦った底力。",
+          "trainingWeight": 486,
+          "lastRaceWeight": 485,
+          "confirmedWeight": null,
+          "weightDiff": null
+        }
+      ],
+      "occultSigns": [
+        {
+          "id": 1,
+          "title": "🐴 レジェンド武豊×ドウデュース「ラストラン有馬記念」奇跡の再現サイン",
+          "badge": "有終の伝説",
+          "source": "X・日本全国トレンド1位",
+          "content": "かつてのオグリキャップ、ディープインパクト、キタサンブラックの有終の美。そして今年、希代の名馬ドウデュースが武豊騎手と共にグランプリ有馬記念で現役生活にピリオドを打つ。競馬史に残る白帽子1番からの奇跡のラストランサインが点灯中！",
+          "targets": [
+            {
+              "gate": 1,
+              "waku": 1,
+              "name": "ドウデュース"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "👑 天皇賞（秋）覇者「ダノンデサイル」vs 菊花賞馬「アーバンシック」頂上決戦",
+          "badge": "世代頂上決戦",
+          "source": "競馬データ班",
+          "content": "ダービーと天皇賞秋を完勝したダノンデサイルと、圧倒的スタミナで菊花賞を制したアーバンシック。古馬VS3歳の最強激突は過去オルフェーヴルやエフフォーリアが勝利した黄金パターン。",
+          "targets": [
+            {
+              "gate": 2,
+              "waku": 1,
+              "name": "ダノンデサイル"
+            },
+            {
+              "gate": 4,
+              "waku": 2,
+              "name": "アーバンシック"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "🎄 12/27開催「クリスマス有馬」と「白枠1枠・赤枠3枠」連動の法則",
+          "badge": "世相サイン",
+          "source": "オカルト競馬倶楽部",
+          "content": "年の瀬の有馬記念といえば世相サイン。クリスマスカラーの『白（1枠）』と『赤（3枠）』の組み合わせは過去のクリスマス有馬で何度も超高配当を生み出した鉄板の法則！",
+          "targets": [
+            {
+              "gate": 1,
+              "waku": 1,
+              "name": "ドウデュース"
+            },
+            {
+              "gate": 5,
+              "waku": 3,
+              "name": "ブローザホーン"
+            }
+          ]
+        }
+      ]
     }
   },
   "raceId": "17",
@@ -59430,332 +60887,7 @@ html.route-prediction .nav-item[data-target="prediction"] {
   }
 };
 
-const POOLS = {
-        '3yo-male': [
-          'ロブチェン', 'パントルナイーフ', 'バステール', 'ゴーイントゥスカイ', 'マテンロウゲイル',
-          'アルトラムス', 'リアライズシリウス', 'ライヒスアドラー', 'コンジェスタス', 'アスクエジンバラ',
-          'アウダーシア', 'フォルテアンジェロ', 'メイショウハチコウ', 'エムズビギン', 'ケントン',
-          'グリーンエナジー', 'ショナンガルフ', 'ジャスティンビスタ', 'シュガークン', 'ジューンテイク'
-        ],
-        '3yo-female': [
-          'スターアニス', 'ギャラボーグ', 'ジッピーチューン', 'ジュウリョクピエロ', 'ドリームコア',
-          'ラフターラインズ', 'レガレイラ', 'ステレンボッシュ', 'チェルヴィニア', 'ライトバック',
-          'コガネノソラ', 'アドマイヤベル', 'クイーンズウォーク', 'クリスマスパレード', 'キャットファイト'
-        ],
-        'older': [
-          'クロワデュノール', 'メイショウタバル', 'ダノンデサイル', 'ドウデュース', 'ソールオリエンス',
-          'タスティエーラ', 'ブローザホーン', 'ベラジオオペラ', 'ジャスティンミラノ', 'ジャンタルマンタル',
-          'シックスペンス', 'ワールズエンド', 'ガイアフォース', 'サトノレーヴ', 'レッドモンレーヴ',
-          'コスタノヴァ', 'ウィルソンテソーロ', 'ダブルハートボンド', 'ウインカーネリアン', 'ヴェルテンベルク',
-          'アドマイヤテラ', 'テーオーロイヤル', 'ロデオドライブ', 'アスクイキゴミ', 'アドマイヤクワッズ',
-          'エンブロイダリー', 'カムニャック', 'テンハッピーローズ', 'ソウルラッシュ', 'ロマンチックウォリアー'
-        ]
-      };
 
-      const STABLES_POOL = [
-        '杉山晴紀 (栗東)', '木村哲也 (美浦)', '中内田充 (栗東)', '国枝栄 (美浦)', '矢作芳人 (栗東)',
-        '友道康夫 (栗東)', '手塚貴久 (美浦)', '堀宣行 (美浦)', '高野友和 (栗東)', '斉藤崇史 (栗東)'
-      ];
-
-      const JOCKEYS_POOL = [
-        '川田将雅', 'C.ルメール', '武豊', '松山弘平', '坂井瑠星', '戸崎圭太', '横山武史', 
-        'M.デムーロ', '西村淳也', '岩田望来', '浜中俊', '菅原明良', '津村明秀', '北村友一'
-      ];
-
-      let currentFilter = 'all';
-      let searchQuery = '';
-      let countdownInterval = null;
-
-      // ----------------------------------
-      // 初期化処理
-      // ----------------------------------
-      
-
-      function refreshIcons() {
-        if (typeof window !== 'undefined' && window.lucide) {
-          lucide.createIcons();
-        }
-      }
-
-      // ----------------------------------
-      // カウントダウンタイマー
-      // ----------------------------------
-      function startNextRaceCountdown() {
-        const timerDays = document.getElementById('timer-days');
-        const timerHours = document.getElementById('timer-hours');
-        const timerMinutes = document.getElementById('timer-minutes');
-        const timerSeconds = document.getElementById('timer-seconds');
-        
-        const nextRaceName = document.getElementById('next-race-name');
-        const nextRaceMeta = document.getElementById('next-race-meta');
-        
-        function updateCountdown() {
-          const now = new Date();
-          
-          // 現在時刻より後のレースを探す
-          const upcomingRaces = G1_RACES
-            .filter(r => new Date(r.date) > now)
-            .sort((a, b) => new Date(a.date) - new Date(b.date));
-            
-          if (upcomingRaces.length === 0) {
-            nextRaceName.innerText = '2026年 G1レース全日程終了';
-            nextRaceMeta.innerText = '全レースのご声援ありがとうございました';
-            timerDays.innerText = '00';
-            timerHours.innerText = '00';
-            timerMinutes.innerText = '00';
-            timerSeconds.innerText = '00';
-            if (countdownInterval) clearInterval(countdownInterval);
-            return;
-          }
-          
-          const nextRace = upcomingRaces[0];
-          const raceTime = new Date(nextRace.date);
-          const diffMs = raceTime - now;
-          
-          nextRaceName.innerText = nextRace.name;
-          
-          const formattedDate = new Date(nextRace.date).toLocaleDateString('ja-JP', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            weekday: 'short'
-          });
-          nextRaceMeta.innerText = `開催日: ${formattedDate} 15:40発走 | ${nextRace.location}競馬場 (${nextRace.course})`;
-          
-          const days = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((diffMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
-          const seconds = Math.floor((diffMs % (1000 * 60)) / 1000);
-          
-          timerDays.innerText = String(days).padStart(2, '0');
-          timerHours.innerText = String(hours).padStart(2, '0');
-          timerMinutes.innerText = String(minutes).padStart(2, '0');
-          timerSeconds.innerText = String(seconds).padStart(2, '0');
-        }
-        
-        updateCountdown();
-        countdownInterval = setInterval(updateCountdown, 1000);
-      }
-
-      // ----------------------------------
-      // レースグリッドのレンダリング
-      // ----------------------------------
-      function renderRaces() {
-        const container = document.getElementById('race-grid-container');
-        if (!container) return;
-        container.innerHTML = '';
-        
-        const filtered = G1_RACES.filter(r => {
-          const matchesFilter = currentFilter === 'all' || r.status === currentFilter;
-          const matchesSearch = r.name.includes(searchQuery) || r.location.includes(searchQuery);
-          return matchesFilter && matchesSearch;
-        });
-        
-        updateTabCounts();
-        
-        if (filtered.length === 0) {
-          container.innerHTML = `<div class="text-muted" style="grid-column: 1/-1; text-align: center; padding: 48px 0;">該当するレースが見つかりません。</div>`;
-          return;
-        }
-        
-        filtered.forEach(r => {
-          const raceDate = new Date(r.date);
-          const dateStr = `${raceDate.getMonth() + 1}/${raceDate.getDate()}`;
-          const weekdayStr = ['日', '月', '火', '水', '木', '金', '土'][raceDate.getDay()];
-          
-          let locClass = '';
-          if (r.location === '東京') locClass = 'loc-tokyo';
-          else if (r.location === '中山') locClass = 'loc-nakayama';
-          else if (r.location === '京都') locClass = 'loc-kyoto';
-          else if (r.location === '阪神') locClass = 'loc-hanshin';
-          else if (r.location === '中京') locClass = 'loc-chukyo';
-          
-          const card = document.createElement('div');
-          card.className = `race-card ${locClass}`;
-          card.setAttribute('data-id', r.id);
-          
-          let footerContent = '';
-          const hasEntries = typeof ENTRIES_DATA !== 'undefined' && ENTRIES_DATA[r.id];
-
-          if (r.status === 'finished') {
-            footerContent = `
-              <div class="card-result-preview">
-                <div class="winner-row">
-                  <svg class="winner-crown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M2 4l3 5 7-6 7 6 3-5v14c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4zm2 5.5l1.6-2.7 2.1 3.5 4.3-3.7 4.3 3.7 2.1-3.5L20 9.5V18H4V9.5z"/></svg>
-                  <span class="winner-name">${r.winner}</span>
-                  <span class="text-muted">(${r.winnerJockey})</span>
-                </div>
-                <div class="card-action-text">結果詳細を見る <i data-lucide="arrow-right"></i></div>
-              </div>
-            `;
-          } else {
-            footerContent = `
-              <div class="card-result-preview">
-                <span class="text-muted" style="font-size: 13px;">${hasEntries ? '<span style="background: rgba(16,185,129,0.2); color: var(--primary); padding: 2px 6px; border-radius: 4px; font-weight: 700; font-size: 11px; margin-right: 6px;">枠順確定</span>' : ''}発走予定: 15:40</span>
-                <div class="card-action-text" style="color: var(--gold);">${hasEntries ? '出馬表・枠順を見る' : 'レース概要を見る'} <i data-lucide="arrow-right"></i></div>
-              </div>
-            `;
-          }
-
-          card.innerHTML = `
-            <div class="card-top-accent"></div>
-            <div class="card-inner">
-              <div class="card-header">
-                <div>
-                  <div class="badge-row">
-                    <span class="location-badge ${locClass}">${r.location}</span>
-                    <span class="status-badge ${r.status === 'finished' ? 'status-finished' : 'status-upcoming'}">
-                      ${r.status === 'finished' ? '終了' : '発走予定'}
-                    </span>
-                    ${hasEntries ? '<span style="background: rgba(16,185,129,0.15); color: var(--primary); border: 1px solid rgba(16,185,129,0.3); padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 700;">枠順確定</span>' : ''}
-                  </div>
-                  <h3 class="card-title">${r.name}</h3>
-                  <div class="card-eng-name">${r.englishName || ''}</div>
-                </div>
-              </div>
-
-              <div class="card-meta-list">
-                <div class="meta-item">
-                  <i data-lucide="calendar"></i>
-                  <span>${dateStr} (${weekdayStr})</span>
-                </div>
-                <div class="meta-item">
-                  <i data-lucide="compass"></i>
-                  <span>${r.course}</span>
-                </div>
-              </div>
-
-              ${footerContent}
-            </div>
-          `;
-
-          container.appendChild(card);
-        });
-        
-        refreshIcons();
-      }
-
-      function updateTabCounts() {
-        const allCount = G1_RACES.length;
-        const finishedCount = G1_RACES.filter(r => r.status === 'finished').length;
-        const upcomingCount = G1_RACES.filter(r => r.status === 'upcoming').length;
-        
-        const countAllEl = document.getElementById('count-all');
-        const countFinishedEl = document.getElementById('count-finished');
-        const countUpcomingEl = document.getElementById('count-upcoming');
-
-        if (countAllEl) countAllEl.innerText = allCount;
-        if (countFinishedEl) countFinishedEl.innerText = finishedCount;
-        if (countUpcomingEl) countUpcomingEl.innerText = upcomingCount;
-      }
-
-      // ----------------------------------
-      // レース結果補完エンジン（本物データ適用）
-      // ----------------------------------
-      function hydrateRaceResults(race) {
-        if (race.hydratedResults) return race.hydratedResults;
-
-        // 本物のデータベースに存在すればマッピング
-        if (RESULTS_DATA[race.id]) {
-          race.hydratedResults = RESULTS_DATA[race.id].map(mapArrayToResultObj);
-          return race.hydratedResults;
-        }
-
-        // 以降はupcomingなどデータ未登録の場合の自動補完
-        const totalStarters = 16;
-        const results = [];
-        const is3yo = race.type ? race.type.startsWith('3yo') : false;
-        const isFemale = race.type ? race.type.endsWith('female') : false;
-        
-        let horsePool = is3yo ? (isFemale ? [...POOLS['3yo-female']] : [...POOLS['3yo-male']]) : [...POOLS['older']];
-        horsePool = [...new Set(horsePool)].filter(h => h !== race.winner && h !== race.second && h !== race.third);
-
-        let sexAgeLabel = is3yo ? (isFemale ? '牝3' : '牡3') : (isFemale ? '牝4' : '牡5');
-        let jockeyLoad = is3yo ? (isFemale ? 55 : 57) : (isFemale ? 56 : 58);
-
-        const baseSeconds = 120.0; // デフォルト基準
-
-        // 1着
-        results.push({
-          rank: 1, gate: race.winnerGate || 1, horseName: race.winner || '勝ち馬', sexAge: sexAgeLabel,
-          jockeyLoad, jockey: race.winnerJockey || 'J.騎手', time: race.time || '2:00.0', margin: '-',
-          cornerSequence: '5-4-3-3', last3F: '34.2', odds: '3.5', popularity: 1,
-          weight: '498', weightDiff: '+2', stable: STABLES_POOL[0]
-        });
-
-        // 2着
-        results.push({
-          rank: 2, gate: race.secondGate || 2, horseName: race.second || '2着馬', sexAge: sexAgeLabel,
-          jockeyLoad, jockey: race.secondJockey || 'J.騎手', time: formatSecondsToTime(baseSeconds + 0.2), margin: '1馬身',
-          cornerSequence: '7-6-5-4', last3F: '34.1', odds: '4.8', popularity: 2,
-          weight: '488', weightDiff: '-2', stable: STABLES_POOL[1]
-        });
-
-        // 3着
-        results.push({
-          rank: 3, gate: race.thirdGate || 3, horseName: race.third || '3着馬', sexAge: sexAgeLabel,
-          jockeyLoad, jockey: race.thirdJockey || 'J.騎手', time: formatSecondsToTime(baseSeconds + 0.4), margin: '1 1/4馬身',
-          cornerSequence: '3-3-2-2', last3F: '34.5', odds: '6.5', popularity: 3,
-          weight: '504', weightDiff: '+4', stable: STABLES_POOL[2]
-        });
-
-        let usedGates = new Set([race.winnerGate || 1, race.secondGate || 2, race.thirdGate || 3]);
-        let currentSeconds = baseSeconds + 0.4;
-
-        for (let r = 4; totalStarters >= r; r++) {
-          const horseName = horsePool[r - 4] || `ダミーホース${r}`;
-          const gate = getUniqueGate(usedGates, totalStarters);
-          const jockey = JOCKEYS_POOL[r % JOCKEYS_POOL.length];
-          
-          const step = 0.2;
-          currentSeconds += step;
-          const time = formatSecondsToTime(currentSeconds);
-
-          results.push({
-            rank: r, gate: gate, horseName: horseName, sexAge: sexAgeLabel,
-            jockeyLoad, jockey: jockey, time: time, margin: '1馬身',
-            cornerSequence: '8-8-9-9', last3F: '35.0', odds: (10.0 + r * 5.0).toFixed(1), popularity: r,
-            weight: '490', weightDiff: '0', stable: STABLES_POOL[r % STABLES_POOL.length]
-          });
-        }
-
-        race.hydratedResults = results;
-        return results;
-      }
-
-      function mapArrayToResultObj(arr) {
-        return {
-          rank: arr[0],
-          gate: arr[1],
-          horseName: arr[2],
-          sexAge: arr[3],
-          jockeyLoad: arr[4],
-          jockey: arr[5],
-          time: arr[6],
-          margin: arr[7],
-          cornerSequence: arr[8],
-          last3F: arr[9],
-          odds: arr[10],
-          popularity: arr[11],
-          weight: arr[12],
-          weightDiff: arr[13],
-          stable: arr[14]
-        };
-      }
-
-      function getUniqueGate(usedGates, max) {
-        let gate = Math.floor(Math.random() * max) + 1;
-        while (usedGates.has(gate)) {
-          gate = Math.floor(Math.random() * max) + 1;
-        }
-        usedGates.add(gate);
-        return gate;
-      }
-
-      // ----------------------------------
-      // NetKeiba本物 JRA 2026年 G1 払戻金データベース
-      // ----------------------------------
-      
 
 function hydratePayouts(race) {
         if (race.hydratedPayouts) return race.hydratedPayouts;
@@ -59873,19 +61005,18 @@ function hydratePayouts(race) {
 
 
       // ----------------------------------------------------
-      // 予想・攻略分析 View コントローラー ＆ ロジック
+      // SPA Hash ルーティング ＆ ナビゲーション
       // ----------------------------------------------------
       let currentAppView = 'calendar';
       let lastMainView = 'calendar';
       let predictionSortType = 'gate';
       let activeSheetGate = null;
-      let currentPredictionRaceId = '17'; // 動的に次回レースを初期選択
+      let currentPredictionRaceId = '17'; // デフォルトは次走エリ女
 
-      // オッズ状態管理（予想オッズ vs 発売中リアルタイムオッズ）
-      let oddsMode = 'estimated'; // 'estimated' (予想オッズ) または 'live' (発売中・最新オッズ)
+      let oddsMode = 'estimated'; // 'estimated' または 'live'
       let oddsAutoRefreshTimer = null;
       let lastOddsRefreshTime = null;
-      let liveOddsData = null; // { gate: { win: number, place: string, pop: number } }
+      let liveOddsData = null;
 
       const MARK_CLASSES = {
         '◎': 'mark-honmei',
@@ -59896,6 +61027,157 @@ function hydratePayouts(race) {
         '消': 'mark-keshi'
       };
 
+      function refreshIcons() {
+        if (typeof window !== 'undefined' && window.lucide && typeof window.lucide.createIcons === 'function') {
+          window.lucide.createIcons();
+        }
+      }
+
+      function navigateTo(routeHash) {
+        if (typeof window === 'undefined') return;
+        if (window.location.hash !== routeHash) {
+          window.location.hash = routeHash;
+        } else {
+          handleRoute(false);
+        }
+      }
+
+      function handleRoute(shouldScroll = false) {
+        if (typeof window === 'undefined') return;
+
+        let hash = window.location.hash || '';
+        if (!hash || hash === '#' || hash === '#/') {
+          if (typeof localStorage !== 'undefined') {
+            const saved = localStorage.getItem('keiba_active_route');
+            if (saved && (saved.startsWith('#prediction') || saved.startsWith('#race-') || saved.startsWith('#sec-'))) {
+              hash = saved;
+              if (window.history && window.history.replaceState) {
+                window.history.replaceState(null, '', hash);
+              }
+            } else {
+              hash = '#calendar';
+            }
+          } else {
+            hash = '#calendar';
+          }
+        }
+
+        // 1. レース詳細モーダル ルート (#race-16, #race-17 など)
+        if (hash.startsWith('#race-')) {
+          const raceId = hash.replace('#race-', '');
+          if (typeof localStorage !== 'undefined') {
+            localStorage.setItem('keiba_active_route', hash);
+          }
+          const baseView = (typeof localStorage !== 'undefined' && localStorage.getItem('keiba_last_main_view') === 'prediction') ? 'prediction' : 'calendar';
+          switchView(baseView, false, false);
+          openRaceDetail(raceId, false);
+          return;
+        }
+
+        // 2. 予想ページ ルート (#prediction または #prediction-17 など)
+        if (hash.startsWith('#prediction') || hash.startsWith('#sec-')) {
+          closeModal();
+          if (hash.startsWith('#prediction-')) {
+            const targetId = hash.replace('#prediction-', '');
+            if (typeof PREDICTION_DATA !== 'undefined' && PREDICTION_DATA.races && PREDICTION_DATA.races[targetId]) {
+              currentPredictionRaceId = targetId;
+            }
+          }
+          if (typeof localStorage !== 'undefined') {
+            localStorage.setItem('keiba_active_route', hash.startsWith('#prediction') ? hash : '#prediction');
+            localStorage.setItem('keiba_last_main_view', 'prediction');
+          }
+          switchView('prediction', shouldScroll, false);
+
+          if (hash.startsWith('#sec-')) {
+            const secId = hash.replace('#', '');
+            const targetEl = document.getElementById(secId);
+            if (targetEl) {
+              setTimeout(() => {
+                targetEl.scrollIntoView({ behavior: 'smooth' });
+              }, 80);
+            }
+          }
+          return;
+        }
+
+        // 3. カレンダー一覧 トップページ ルート (#calendar またはデフォルト)
+        closeModal();
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('keiba_active_route', '#calendar');
+          localStorage.setItem('keiba_last_main_view', 'calendar');
+        }
+        switchView('calendar', shouldScroll, false);
+      }
+
+      function switchView(viewName, shouldScroll = true, updateRoute = false) {
+        if (updateRoute) {
+          navigateTo('#' + viewName);
+          return;
+        }
+
+        currentAppView = viewName;
+        lastMainView = viewName;
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('keiba_last_main_view', viewName);
+          localStorage.setItem('keiba_active_route', '#' + viewName);
+        }
+
+        const calView = document.getElementById('view-calendar');
+        const predView = document.getElementById('view-prediction');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        if (viewName === 'prediction') {
+          if (document.documentElement) {
+            document.documentElement.classList.add('route-prediction');
+            document.documentElement.classList.remove('route-calendar');
+          }
+          if (calView) calView.style.display = 'none';
+          if (predView) predView.style.display = 'block';
+          navItems.forEach(n => {
+            if (n.getAttribute('data-target') === 'prediction') n.classList.add('active');
+            else n.classList.remove('active');
+          });
+          renderPredictionView();
+          if (shouldScroll && typeof window !== 'undefined' && window.scrollTo) {
+            window.scrollTo({ top: 0, behavior: 'instant' });
+          }
+        } else {
+          if (document.documentElement) {
+            document.documentElement.classList.remove('route-prediction');
+            document.documentElement.classList.add('route-calendar');
+          }
+          if (predView) predView.style.display = 'none';
+          if (calView) calView.style.display = 'block';
+          navItems.forEach(n => {
+            if (n.getAttribute('data-target') === 'calendar') n.classList.add('active');
+            else n.classList.remove('active');
+          });
+          if (shouldScroll && typeof window !== 'undefined' && window.scrollTo) {
+            window.scrollTo({ top: 0, behavior: 'instant' });
+          }
+        }
+      }
+
+      function closeModal() {
+        const modal = document.getElementById('modal-race-detail');
+        if (modal) modal.classList.remove('open');
+        document.body.style.overflow = '';
+        if (typeof window !== 'undefined') {
+          const baseRoute = (currentAppView === 'prediction') ? ('#prediction-' + currentPredictionRaceId) : '#calendar';
+          if (window.location.hash.startsWith('#race-')) {
+            if (window.history && window.history.replaceState) {
+              window.history.replaceState(null, '', baseRoute);
+            } else {
+              window.location.hash = baseRoute;
+            }
+            if (typeof localStorage !== 'undefined') {
+              localStorage.setItem('keiba_active_route', baseRoute);
+            }
+          }
+        }
+      }
+
       // 次回G1レースを自動判定（現在時刻から最も近い未終了レース）
       function getNextUpcomingRace() {
         const now = new Date();
@@ -59904,7 +61186,7 @@ function hydratePayouts(race) {
         return upcoming.length > 0 ? upcoming[0] : G1_RACES[G1_RACES.length - 1];
       }
 
-      // 全自動ライフサイクル管理エンジン（レース発走時刻を過ぎたら自動的に終了ステータスへ移行）
+      // 全自動ライフサイクル管理エンジン
       function autoLifecycleEngine() {
         const now = new Date();
         let changed = false;
@@ -59921,7 +61203,6 @@ function hydratePayouts(race) {
         startNextRaceCountdown();
       }
 
-      // レース毎の金曜夜間18:30発売開始チェック
       function isJraTicketSalesStarted(raceDateStr) {
         const now = new Date();
         if (!raceDateStr) return false;
@@ -59934,7 +61215,7 @@ function hydratePayouts(race) {
       }
 
       function getTicketSalesStartTime(raceDateStr) {
-        if (!raceDateStr) return '11/13(金) 18:30';
+        if (!raceDateStr) return '金曜 18:30';
         const raceDate = new Date(raceDateStr);
         const dayOfWeek = raceDate.getDay();
         const daysToFriday = (dayOfWeek === 0) ? 2 : (dayOfWeek === 6 ? 1 : 2);
@@ -60251,67 +61532,21 @@ function hydratePayouts(race) {
         activeSheetGate = null;
       }
 
-      function switchAppView(viewName, pushState = true) {
-        currentAppView = viewName;
-        if (viewName === 'calendar') lastMainView = 'calendar';
-
-        const calView = document.getElementById('view-calendar');
-        const predView = document.getElementById('view-prediction');
-        const navItems = document.querySelectorAll('.nav-item');
-
-        if (viewName === 'prediction') {
-          if (document.documentElement) {
-            document.documentElement.classList.remove('route-calendar');
-            document.documentElement.classList.add('route-prediction');
-          }
-          if (calView) calView.style.display = 'none';
-          if (predView) predView.style.display = 'block';
-
-          navItems.forEach(n => {
-            if (n.getAttribute('data-target') === 'prediction') {
-              n.classList.add('active');
-            } else {
-              n.classList.remove('active');
-            }
-          });
-
-          renderPredictionView();
-
-          if (pushState && window.history) {
-            window.history.pushState({ view: 'prediction', raceId: currentPredictionRaceId }, '', '#prediction-' + currentPredictionRaceId);
-          }
-          window.scrollTo({ top: 0, behavior: 'instant' });
-        } else {
-          if (document.documentElement) {
-            document.documentElement.classList.remove('route-prediction');
-            document.documentElement.classList.add('route-calendar');
-          }
-          if (predView) predView.style.display = 'none';
-          if (calView) calView.style.display = 'block';
-
-          navItems.forEach(n => {
-            if (n.getAttribute('data-target') === 'calendar') {
-              n.classList.add('active');
-            } else {
-              n.classList.remove('active');
-            }
-          });
-
-          if (pushState && window.history) {
-            window.history.pushState({ view: 'calendar' }, '', '#calendar');
-          }
-          window.scrollTo({ top: 0, behavior: 'instant' });
-        }
-      }
-
-      // レース切替タブの描画
+      // レース切替タブの描画（エリ女以降の全G1レースに対応）
       function renderPredictionRaceSwitcher() {
         const container = document.getElementById('pred-race-switcher-pills');
         if (!container) return;
         
         const targetRaces = [
-          { id: '17', label: '第51回 エリザベス女王杯', badge: '次回', isNext: true },
-          { id: '16', label: '第174回 天皇賞（秋）', badge: '結果レビュー', isNext: false }
+          { id: '17', label: '👑 エリザベス女王杯 (11/15)', badge: '次回', isNext: true },
+          { id: '18', label: '⚡ マイルCS (11/22)', badge: '次走', isNext: true },
+          { id: '19', label: '🇯🇵 ジャパンC (11/29)', badge: '世界決戦', isNext: true },
+          { id: '20', label: '🏜️ チャンピオンズC (12/6)', badge: 'ダート頂上', isNext: true },
+          { id: '21', label: '🌸 阪神JF (12/13)', badge: '2歳女王', isNext: true },
+          { id: '22', label: '🏇 朝日杯FS (12/20)', badge: '2歳牡馬', isNext: true },
+          { id: '23', label: '⭐ ホープフルS (12/26)', badge: '登竜門', isNext: true },
+          { id: '24', label: '💎 有馬記念 (12/27)', badge: 'グランプリ', isNext: true },
+          { id: '16', label: '📜 天皇賞（秋）', badge: '結果レビュー', isNext: false }
         ];
         
         container.innerHTML = targetRaces.map(r => {
@@ -60335,7 +61570,6 @@ function hydratePayouts(race) {
         });
       }
 
-      // 予想ページヘッダーの動的描画
       function renderPredictionHeader() {
         const titleEl = document.getElementById('pred-header-title');
         const badgeEl = document.getElementById('pred-header-badge');
@@ -60358,11 +61592,16 @@ function hydratePayouts(race) {
             badgeEl.style.background = 'rgba(245, 158, 11, 0.2)';
             badgeEl.style.color = 'var(--gold)';
             badgeEl.style.borderColor = 'rgba(245, 158, 11, 0.4)';
-          } else {
+          } else if (currentPredictionRaceId === '17') {
             badgeEl.innerText = '枠順確定済 / 予想公開中';
             badgeEl.style.background = 'rgba(16, 185, 129, 0.2)';
             badgeEl.style.color = 'var(--primary)';
             badgeEl.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+          } else {
+            badgeEl.innerText = '出走登録馬・特別先行予想';
+            badgeEl.style.background = 'rgba(147, 51, 234, 0.2)';
+            badgeEl.style.color = '#c084fc';
+            badgeEl.style.borderColor = 'rgba(147, 51, 234, 0.4)';
           }
         }
         
@@ -60374,7 +61613,7 @@ function hydratePayouts(race) {
           chipsEl.innerHTML = `
             <span class="pred-chip"><i data-lucide="calendar"></i> ${dateStr}</span>
             <span class="pred-chip"><i data-lucide="map-pin"></i> ${courseStr}</span>
-            <span class="pred-chip"><i data-lucide="award"></i> 定量 / 全${startersCount}頭</span>
+            <span class="pred-chip"><i data-lucide="award"></i> 全${startersCount}頭</span>
           `;
         }
         
@@ -60449,7 +61688,7 @@ function hydratePayouts(race) {
         updateWeightControlUI();
         refreshIcons();
 
-        if (window.history) {
+        if (window.history && window.history.replaceState) {
           window.history.replaceState({ view: 'prediction', raceId: currentPredictionRaceId }, '', '#prediction-' + currentPredictionRaceId);
         }
       }
@@ -60489,7 +61728,8 @@ function hydratePayouts(race) {
           : PREDICTION_DATA;
         const rawStarters = getActivePredictionStarters();
 
-        const venueText = (currentPredictionRaceId === '17' ? '京都芝2200m適性' : '東京芝2000m適性');
+        const raceObj = G1_RACES.find(r => r.id === currentPredictionRaceId);
+        const venueText = raceObj ? `${raceObj.location}芝・ダート適性` : 'コース適性';
 
         let starters = rawStarters.map(s => {
           let winVal = s.odds || '--';
@@ -60535,7 +61775,6 @@ function hydratePayouts(race) {
           const isTop3Pop = s.pop <= 3;
           const displayOdds = s.winOdds || s.odds || '--';
 
-          // 馬体重表示の算出（現状はJRA公式発表済の調教後馬体重。当日確定は確定するまで未発表 -）
           let displayWeight = s.trainingWeight ? `${s.trainingWeight}kg` : '-';
           let displayWeightSub = `<span class="weight-tag-pre">調教後</span>`;
 
@@ -60681,7 +61920,7 @@ function hydratePayouts(race) {
 
         const occultSigns = currentPred.occultSigns || [];
         if (occultSigns.length === 0) {
-          list.innerHTML = '<div style="padding:16px;text-align:center;color:var(--text-muted);">オカルトサイン考察は枠順確定後に順次公開されます</div>';
+          list.innerHTML = '<div style="padding:16px;text-align:center;color:var(--text-muted);">オカルトサイン考察は順次公開されます</div>';
           return;
         }
 
@@ -60816,16 +62055,29 @@ function hydratePayouts(race) {
         }
       }
 
+      function switchAppView(viewName, pushState = true) {
+        switchView(viewName, true, false);
+        if (pushState && window.history) {
+          const targetHash = (viewName === 'prediction') ? ('#prediction-' + currentPredictionRaceId) : '#calendar';
+          window.history.pushState({ view: viewName, raceId: currentPredictionRaceId }, '', targetHash);
+        }
+      }
+
 
 
       function openRaceDetail(id, updateRoute = true) {
-        if (updateRoute) {
-          navigateTo('#race-' + id);
-          return;
-        }
-
-        const race = G1_RACES.find(r => r.id === id);
+        const race = G1_RACES.find(r => r.id === String(id));
         if (!race) return;
+
+        if (updateRoute && typeof window !== 'undefined') {
+          const targetHash = '#race-' + id;
+          if (window.location.hash !== targetHash) {
+            window.location.hash = targetHash;
+          }
+          if (typeof localStorage !== 'undefined') {
+            localStorage.setItem('keiba_active_route', targetHash);
+          }
+        }
 
         const modal = document.getElementById('modal-race-detail');
         const title = document.getElementById('detail-modal-title');
@@ -60939,6 +62191,18 @@ function hydratePayouts(race) {
             </div>
 
             <div id="modal-tab-content-result" class="modal-tab-content">
+              ${(typeof PREDICTION_DATA !== 'undefined' && PREDICTION_DATA.races && PREDICTION_DATA.races[id]) ? `
+                <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(16, 185, 129, 0.15)); border: 1px solid var(--gold); border-radius: 10px; padding: 12px 16px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                  <div>
+                    <div style="font-size: 14px; font-weight: 800; color: #fff;">🎯 ${race.name} 専用の「予想・攻略分析」を見る</div>
+                    <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">netkeibaオッズ・調教評価・Xオカルトサイン・打った印の振り返り</div>
+                  </div>
+                  <button class="btn-jump-prediction" data-race-id="${id}" style="background: var(--gold); color: #111; border: none; padding: 8px 16px; border-radius: 6px; font-weight: 800; font-size: 12px; cursor: pointer;">
+                    予想・攻略を見る ➔
+                  </button>
+                </div>
+              ` : ''}
+
               <div class="detail-meta-grid">
                 <div class="detail-meta-item">
                   <span class="detail-meta-label">開催日 / 発走時刻</span>
@@ -60950,7 +62214,7 @@ function hydratePayouts(race) {
                 </div>
                 <div class="detail-meta-item">
                   <span class="detail-meta-label">天候 / 馬場状態</span>
-                  <span class="detail-meta-value">${race.weather || '晴'} / ${race.trackCondition || '良'} (クッション値: ${race.cushionValue || '9.4'})</span>
+                  <span class="detail-meta-value">${race.weather || '晴'} / ${race.trackCondition || '良'} (クッション値: ${race.cushionValue || '9.5'})</span>
                 </div>
                 <div class="detail-meta-item">
                   <span class="detail-meta-label">優勝馬 / 騎手</span>
@@ -61067,7 +62331,7 @@ function hydratePayouts(race) {
 
             <div id="modal-tab-content-history" class="modal-tab-content" style="display: none;">
               <h3 class="detail-section-title">過去10年の歴代優勝馬（傾向分析）</h3>
-              <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">各年をクリックすると、該当年の1着から最下位までの全頭着順・タイム・通過順一覧が展開されます。</p>
+              <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">各年をクリックすると、該当年の全頭着順一覧が展開されます。</p>
               <div class="table-scroll-container">
                 <table class="result-table" style="width: 100%;">
                   <thead>
@@ -61087,14 +62351,29 @@ function hydratePayouts(race) {
               </div>
             </div>
           `;
-        } else if (entries) {
+        } else if (entries && entries.length > 0) {
           innerHTML = `
             <div class="modal-tabs">
-              <button class="modal-tab-btn active" data-tab="entries">出馬表・枠順確定</button>
+              <button class="modal-tab-btn active" data-tab="entries">出馬表・登録馬一覧</button>
               <button class="modal-tab-btn" data-tab="history">歴代優勝馬（過去10年）</button>
             </div>
 
             <div id="modal-tab-content-entries" class="modal-tab-content">
+              <!-- 予想・オカルト誘導プレミアムバナー -->
+              <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.18), rgba(16, 185, 129, 0.18)); border: 1px solid var(--gold); border-radius: 12px; padding: 14px 16px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.15);">
+                <div>
+                  <div style="font-size: 15px; font-weight: 800; color: #fff; display: flex; align-items: center; gap: 6px;">
+                    🎯 <span>${race.name} 専用の「予想・攻略分析＆Xオカルト」公開中！</span>
+                  </div>
+                  <div style="font-size: 12px; color: var(--text-muted); margin-top: 3px;">
+                    netkeiba想定オッズ・調教評価・X話題オカルトサイン・印管理を完備
+                  </div>
+                </div>
+                <button class="btn-jump-prediction" data-race-id="${id}" style="background: var(--gold); color: #111; border: none; padding: 10px 18px; border-radius: 8px; font-weight: 800; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);">
+                  予想・オカルトを見る ➔
+                </button>
+              </div>
+
               <div class="detail-meta-grid">
                 <div class="detail-meta-item">
                   <span class="detail-meta-label">開催日 / 発走時刻</span>
@@ -61105,57 +62384,60 @@ function hydratePayouts(race) {
                   <span class="detail-meta-value">${race.location}競馬場 | ${race.course}</span>
                 </div>
                 <div class="detail-meta-item">
-                  <span class="detail-meta-label">条件 / 頭数</span>
-                  <span class="detail-meta-value">${race.name.includes('女王杯') ? '3歳以上 牝馬 オープン (定量)' : 'オープン'} / ${entries ? entries.length : 16}頭</span>
+                  <span class="detail-meta-label">条件 / 登録頭数</span>
+                  <span class="detail-meta-value">${race.name.includes('女王杯') || race.name.includes('フィリーズ') ? '牝馬限定' : 'オープン'} / 全${entries.length}頭</span>
                 </div>
                 <div class="detail-meta-item">
-                  <span class="detail-meta-label">枠順発表状況</span>
-                  <span class="detail-meta-value" style="color: var(--primary); font-weight: 700;">確定済</span>
+                  <span class="detail-meta-label">枠順ステータス</span>
+                  <span class="detail-meta-value" style="color: var(--primary); font-weight: 700;">
+                    ${id === '17' ? '枠順確定済 (出走16頭)' : '出走登録馬・想定枠順'}
+                  </span>
                 </div>
               </div>
 
-              ${id === '16' ? `
-                <div style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(16, 185, 129, 0.15)); border: 1px solid var(--gold); border-radius: 10px; padding: 12px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-                  <div>
-                    <div style="font-size: 14px; font-weight: 800; color: #fff;">🎯 天皇賞（秋）専用の「予想・攻略分析ページ」を開設！</div>
-                    <div style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">追い切り調教時計・陣営勝負コメント・Xオカルトサイン・印付け機能はこちら</div>
-                  </div>
-                  <button id="btn-modal-to-pred" style="background: var(--gold); color: #111; border: none; padding: 8px 16px; border-radius: 6px; font-weight: 800; font-size: 12px; cursor: pointer;">
-                    予想ページを開く →
-                  </button>
-                </div>
-              ` : ''}
-
-              <h3 class="detail-section-title">確定出馬表（全${entries.length}頭）</h3>
+              <h3 class="detail-section-title">出走登録馬・想定出馬表一覧</h3>
               <div class="table-scroll-container">
                 <table class="result-table">
                   <thead>
                     <tr>
-                      <th style="width: 44px; text-align: center;">枠番</th>
-                      <th style="width: 44px; text-align: center;">馬番</th>
+                      <th style="width: 44px; text-align: center;">番</th>
+                      <th style="width: 44px; text-align: center;">枠</th>
                       <th>馬名</th>
                       <th>性齢</th>
                       <th>斤量</th>
-                      <th>騎手</th>
-                      <th>予想オッズ</th>
-                      <th>人気</th>
-                      <th>調教師</th>
+                      <th>想定騎手</th>
+                      <th>所属厩舎</th>
+                      <th>想定オッズ</th>
+                      <th>調教/状態</th>
                     </tr>
                   </thead>
                   <tbody>
-                    ${entries.map(e => `
-                      <tr>
-                        <td style="text-align: center;"><span class="nh-gate-cell waku-${e.waku}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${e.waku}</span></td>
-                        <td style="text-align: center; font-family: monospace; font-weight: 700;"><span class="nh-gate-cell waku-${e.waku}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${e.gate}</span></td>
-                        <td style="font-weight: 700; color: #fff;">${e.horseName}</td>
-                        <td>${e.sexAge}</td>
-                        <td>${e.load}</td>
-                        <td>${e.jockey}</td>
-                        <td style="font-family: monospace; font-weight: 600;">${e.odds}</td>
-                        <td>${e.pop}人気</td>
-                        <td style="font-size: 13px; color: var(--text-muted);">${e.trainer}</td>
-                      </tr>
-                    `).join('')}
+                    ${(() => {
+                      const predStarters = (typeof PREDICTION_DATA !== 'undefined' && PREDICTION_DATA.races && PREDICTION_DATA.races[id]) 
+                        ? PREDICTION_DATA.races[id].starters 
+                        : null;
+                      return entries.map(e => {
+                        const pHorse = predStarters ? predStarters.find(s => s.gate === e.gate || s.horseName === e.horseName) : null;
+                        const oddsVal = pHorse ? (pHorse.odds ? pHorse.odds + '倍' : '--') : '--';
+                        const popVal = pHorse ? `(${pHorse.pop}人気)` : '';
+                        const gradeVal = pHorse ? `【${pHorse.trainingGrade || 'A'}】` : '-';
+                        return `
+                          <tr>
+                            <td style="text-align: center; font-family: monospace; font-weight: 700;">
+                              <span class="nh-gate-cell waku-${e.waku || 1}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${e.gate}</span>
+                            </td>
+                            <td style="text-align: center; font-weight: 700; color: var(--text-muted);">${e.waku || 1}枠</td>
+                            <td style="font-weight: 700; color: #fff;">${e.horseName}</td>
+                            <td>${e.sexAge}</td>
+                            <td>${e.load}kg</td>
+                            <td>${e.jockey}</td>
+                            <td style="font-size: 12px; color: var(--text-muted);">${e.stable}</td>
+                            <td style="font-family: monospace; font-weight: 700; color: var(--gold);">${oddsVal} <span style="font-size:11px;color:var(--text-muted);">${popVal}</span></td>
+                            <td style="font-size: 12px;">${gradeVal}</td>
+                          </tr>
+                        `;
+                      }).join('');
+                    })()}
                   </tbody>
                 </table>
               </div>
@@ -61163,7 +62445,7 @@ function hydratePayouts(race) {
 
             <div id="modal-tab-content-history" class="modal-tab-content" style="display: none;">
               <h3 class="detail-section-title">過去10年の歴代優勝馬（傾向分析）</h3>
-              <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">各年をクリックすると、該当年の1着から最下位までの全頭着順・タイム・通過順一覧が展開されます。</p>
+              <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">各年をクリックすると、該当年の全頭着順一覧が展開されます。</p>
               <div class="table-scroll-container">
                 <table class="result-table" style="width: 100%;">
                   <thead>
@@ -61186,30 +62468,9 @@ function hydratePayouts(race) {
         } else {
           innerHTML = `
             <div class="modal-tabs">
-              <button class="modal-tab-btn active" data-tab="info">レース概要</button>
-              <button class="modal-tab-btn" data-tab="history">歴代優勝馬（過去10年）</button>
+              <button class="modal-tab-btn active" data-tab="history">歴代優勝馬（過去10年）</button>
             </div>
-
-            <div id="modal-tab-content-info" class="modal-tab-content">
-              <div class="detail-meta-grid">
-                <div class="detail-meta-item">
-                  <span class="detail-meta-label">開催日 / 発走時刻</span>
-                  <span class="detail-meta-value">${formattedDate} 15:40</span>
-                </div>
-                <div class="detail-meta-item">
-                  <span class="detail-meta-label">開催場 / コース</span>
-                  <span class="detail-meta-value">${race.location}競馬場 | ${race.course}</span>
-                </div>
-              </div>
-              <h3 class="detail-section-title">レース概要 ＆ 見どころ</h3>
-              <p style="font-size: 14px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 20px;">
-                2026年JRA最高峰のG1競走。枠順および確定出走馬は発走週の木曜日〜金曜日に発表されます。
-              </p>
-            </div>
-
-            <div id="modal-tab-content-history" class="modal-tab-content" style="display: none;">
-              <h3 class="detail-section-title">過去10年の歴代優勝馬（傾向分析）</h3>
-              <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">各年をクリックすると、該当年の1着から最下位までの全頭着順・タイム・通過順一覧が展開されます。</p>
+            <div id="modal-tab-content-history" class="modal-tab-content">
               <div class="table-scroll-container">
                 <table class="result-table" style="width: 100%;">
                   <thead>
@@ -61232,117 +62493,52 @@ function hydratePayouts(race) {
         }
 
         body.innerHTML = innerHTML;
-        modal.classList.add('active');
-        refreshIcons();
 
-        const btnModalToPred = document.getElementById('btn-modal-to-pred');
-        if (btnModalToPred) {
-          btnModalToPred.addEventListener('click', () => {
-            closeModalInternal();
-            navigateTo('#prediction');
-          });
-        }
-
-        const modalTabs = modal.querySelectorAll('.modal-tab-btn');
-        modalTabs.forEach(btn => {
+        // タブ切替バインド
+        const modalTabBtns = modal.querySelectorAll('.modal-tab-btn');
+        modalTabBtns.forEach(btn => {
           btn.addEventListener('click', () => {
-            modalTabs.forEach(b => {
-              b.classList.remove('active');
-              b.style.color = 'var(--text-muted)';
-              b.style.borderBottom = 'none';
-            });
+            modalTabBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            btn.style.color = 'var(--gold)';
-            btn.style.borderBottom = '2px solid var(--gold)';
-
-            const tab = btn.getAttribute('data-tab');
+            const tabName = btn.getAttribute('data-tab');
             modal.querySelectorAll('.modal-tab-content').forEach(c => c.style.display = 'none');
-            const targetContent = document.getElementById(`modal-tab-content-${tab}`);
+            const targetContent = document.getElementById(`modal-tab-content-${tabName}`);
             if (targetContent) targetContent.style.display = 'block';
-            refreshIcons();
           });
         });
 
-        const yearRows = modal.querySelectorAll('.history-year-row');
-        yearRows.forEach(row => {
+        // 過去年度の全頭展開アコーディオン
+        modal.querySelectorAll('.history-year-row').forEach(row => {
           row.addEventListener('click', () => {
             const y = row.getAttribute('data-year');
             const rId = row.getAttribute('data-race-id');
             const detailRow = document.getElementById(`history-detail-${rId}-${y}`);
-            const toggleIcon = row.querySelector('.toggle-icon');
-            if (detailRow) {
-              const isHidden = detailRow.style.display === 'none';
-              detailRow.style.display = isHidden ? 'table-row' : 'none';
-              row.style.background = isHidden ? 'rgba(245, 158, 11, 0.12)' : '';
-              if (toggleIcon) {
-                toggleIcon.style.transform = isHidden ? 'rotate(90deg)' : 'rotate(0deg)';
-                toggleIcon.style.color = isHidden ? 'var(--gold)' : '';
-              }
+            const icon = row.querySelector('.toggle-icon');
+            if (!detailRow) return;
+            const isHidden = detailRow.style.display === 'none';
+            detailRow.style.display = isHidden ? 'table-row' : 'none';
+            if (icon) {
+              icon.style.transform = isHidden ? 'rotate(90deg)' : 'none';
             }
           });
         });
-      }
 
-      function closeModalInternal() {
-        const modal = document.getElementById('modal-race-detail');
-        if (modal) modal.classList.remove('active');
-      }
-
-      function closeModal() {
-        closeModalInternal();
-        if (typeof window !== 'undefined' && window.location.hash.startsWith('#race-')) {
-          const returnRoute = '#' + (lastMainView || 'calendar');
-          navigateTo(returnRoute);
-        }
-      }
-
-      function formatSecondsToTime(seconds) {
-        if (!seconds || isNaN(seconds)) return '-';
-        const m = Math.floor(seconds / 60);
-        const s = (seconds % 60).toFixed(1);
-        return `${m}:${s.padStart(4, '0')}`;
-      }
-
-      function initEventListeners() {
-        const tabBtns = document.querySelectorAll('.tab-btn');
-        tabBtns.forEach(btn => {
-          btn.addEventListener('click', () => {
-            tabBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            currentFilter = btn.getAttribute('data-filter');
-            if (typeof localStorage !== 'undefined') {
-              localStorage.setItem('keiba_calendar_filter', currentFilter);
+        // 予想ページへのジャンプボタン
+        modal.querySelectorAll('.btn-jump-prediction').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const targetRaceId = btn.getAttribute('data-race-id');
+            closeModal();
+            if (typeof setPredictionRace === 'function') {
+              setPredictionRace(targetRaceId);
             }
-            renderRaces();
+            navigateTo('#prediction-' + targetRaceId);
           });
         });
 
-        const searchInput = document.getElementById('race-search');
-        if (searchInput) {
-          searchInput.addEventListener('input', (e) => {
-            searchQuery = e.target.value;
-            renderRaces();
-          });
-        }
-
-        const gridContainer = document.getElementById('race-grid-container');
-        if (gridContainer) {
-          gridContainer.addEventListener('click', (e) => {
-            const card = e.target.closest('.race-card');
-            if (!card) return;
-            const id = card.getAttribute('data-id');
-            navigateTo('#race-' + id);
-          });
-        }
-
-        const modal = document.getElementById('modal-race-detail');
-        if (modal) {
-          const btnClose = document.getElementById('btn-close-modal');
-          const backdrop = modal.querySelector('.modal-backdrop');
-          
-          if (btnClose) btnClose.addEventListener('click', closeModal);
-          if (backdrop) backdrop.addEventListener('click', closeModal);
-        }
+        // モーダル表示
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        refreshIcons();
       }
 
 
@@ -61365,17 +62561,11 @@ function hydratePayouts(race) {
         initEventListeners();
         initPredictionEventListeners();
 
-        // 3. 基本レンダリング
+        // 3. 基本レンダリング ＆ 自動昇格
         if (typeof autoLifecycleEngine === 'function') autoLifecycleEngine();
         renderRaces();
         updateTabCounts();
         startNextRaceCountdown();
-
-        // 定期自動チェック（レース進行＆オッズ）
-        if (typeof setInterval !== 'undefined') {
-          if (typeof autoLifecycleEngine === 'function') setInterval(autoLifecycleEngine, 60000);
-          if (typeof startOddsAutoRefresh === 'function') startOddsAutoRefresh();
-        }
 
         // 4. URLハッシュ＆状態復元（リロード時の現在ページ維持）
         handleRoute(false);
@@ -61385,6 +62575,12 @@ function hydratePayouts(race) {
           window.addEventListener('hashchange', () => {
             handleRoute(false);
           });
+        }
+
+        // 6. 定期自動更新（レース進行＆オッズ）
+        if (typeof setInterval !== 'undefined') {
+          if (typeof autoLifecycleEngine === 'function') setInterval(autoLifecycleEngine, 60000);
+          if (typeof startOddsAutoRefresh === 'function') startOddsAutoRefresh();
         }
       });
     </script>
