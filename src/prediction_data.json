@@ -659,8 +659,8 @@
           },
           "pedigree": {
             "sire": "シルバーステート",
-            "dam": "ゴッドフロアー",
-            "broodmareSire": "ハーツクライ",
+            "dam": "ゴッドパイレーツ",
+            "broodmareSire": "ベーカバド",
             "lineage": "サンデーサイレンス系",
             "feature": "立ち回りの器用さと持続力"
           },
@@ -671,20 +671,20 @@
             "courseFitness": "京都芝 外回り ◎ (平坦下り坂でスピード持続可能)"
           },
           "prevRace": {
-            "raceName": "府中牝馬S (G2)",
+            "raceName": "アイルランドT (G2)",
             "date": "2026/10/11",
             "venue": "東京・芝1800m (良)",
-            "finish": "2着 / 15頭",
-            "pop": "4人気",
-            "jockey": "岩田望来",
-            "weight": 468,
-            "agari": "33.4秒 (上がり2位)",
-            "margin": "0.1秒差 (クビ差)",
-            "passing": "4-4-3",
-            "factor": "【勝因・敗因】好位の内ラチ沿いで完璧に折り合って直線鋭く脚を伸ばしたが、勝ち馬の瞬発力に僅差及ばず。立ち回りの巧さはピカイチで、京都外回りでも崩れない。"
+            "finish": "3着 / 16頭",
+            "pop": "2人気",
+            "jockey": "横山和生",
+            "weight": 490,
+            "agari": "33.6秒",
+            "margin": "0.5秒差 (勝ち馬: カムニャック)",
+            "passing": "3-3-3",
+            "factor": "【勝因・敗因】好位3番手でスムーズに折り合って手堅く脚を伸ばすも、勝ったカムニャックの強烈な決め手に屈して3着。先行力と立ち回りの巧さは健在で、京都外回りでも崩れにくい。"
           },
-          "trainingWeight": 472,
-          "lastRaceWeight": 468,
+          "trainingWeight": 494,
+          "lastRaceWeight": 490,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -702,40 +702,40 @@
           "trainingGrade": "B+",
           "trainingCourse": "栗東坂路",
           "trainingTime": "53.2-38.4-24.9-12.2 (一杯)",
-          "trainingComment": "坂路で力強いフットワーク。秋華賞の疲労はなく上積みをしっかり感じる動き。",
+          "trainingComment": "坂路で力強いフットワーク。ひと息入って立て直し、上積みをしっかり感じる動き。",
           "trainingReviews": {
-            "youtube": "「坂路で気迫十分の登坂。秋華賞5着の疲れはなく、ひと叩きされて上積み顕著」",
+            "youtube": "「坂路で気迫十分の登坂。前走大敗からしっかり立て直され、活気を取り戻した」",
             "snsX": "「西村淳也騎手が付きっきりで感触を確かめ、折り合い面は確実に進境」",
             "media": "「3歳馬特有の斤量54kgは大きな武器。内枠から先行できれば侮れない」"
           },
           "pedigree": {
-            "sire": "ロードカナロア",
-            "dam": "レイデオロ妹",
-            "broodmareSire": "キングカメハメハ",
-            "lineage": "キングマンボ系",
-            "feature": "スピードと成長力"
+            "sire": "キタサンブラック",
+            "dam": "メジロジェニファー",
+            "broodmareSire": "ホワイトマズル",
+            "lineage": "サンデーサイレンス系",
+            "feature": "豊富なスタミナと成長力"
           },
           "aptitude": {
-            "distance": "1600m〜2200m",
+            "distance": "1800m〜2400m",
             "trackCondition": "良馬場 ◎ / 稍重 ◎ / 重 ○",
-            "runningStyle": "先行・好位粘り込み",
+            "runningStyle": "先行・イン好位追走",
             "courseFitness": "京都芝 外回り ○ (平坦コース向き)"
           },
           "prevRace": {
-            "raceName": "秋華賞 (G1)",
-            "date": "2026/10/18",
-            "venue": "京都・芝2000m (良)",
-            "finish": "5着 / 15頭",
-            "pop": "8人気",
-            "jockey": "西村淳也",
-            "weight": 452,
-            "agari": "34.2秒 (上がり5位)",
-            "margin": "0.4秒差",
-            "passing": "3-3-4",
-            "factor": "【勝因・敗因】勝負どころで外から被されて仕掛けがワンテンポ遅れた。それでも最後は盛り返して5着確保。古馬相手でも斤量54kgを生かせば粘り込み可能。"
+            "raceName": "ローズS (G2)",
+            "date": "2026/09/13",
+            "venue": "中京・芝1800m (良)",
+            "finish": "10着 / 12頭",
+            "pop": "7人気",
+            "jockey": "吉村誠之",
+            "weight": 498,
+            "agari": "36.1秒",
+            "margin": "2.1秒差 (勝ち馬: モンローウォーク)",
+            "passing": "2-2-3",
+            "factor": "【敗因】2番手追走からペースアップについていけず、直線失速して10着大敗。自分のリズムで運べなかったのが響いた。今回は西村淳也騎手に乗り替わり、インで脚を溜めて巻き返しを狙う。"
           },
-          "trainingWeight": 456,
-          "lastRaceWeight": 452,
+          "trainingWeight": 502,
+          "lastRaceWeight": 498,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -755,38 +755,38 @@
           "trainingTime": "80.8-65.1-50.4-36.2-11.2 (馬なり・併せ先着)",
           "trainingComment": "ウッドコースでの伸び脚は圧巻。春以上の充実期に入っており文句なしの最高潮仕上がり。",
           "trainingReviews": {
-            "youtube": "「ウッドコースで唸るような手応え。春のクラシックホースが完全復活の手応え」",
+            "youtube": "「ウッドコースで唸るような手応え。桜花賞馬が完全復活の手応え」",
             "snsX": "「トラックマン満場一致の高評価。フットワークの柔らかさが戻り勝負気配MAX」",
-            "media": "「前走57kgで猛追3着。今回は56kg定量で2枠3番、絶好の枠順を引き当てた」"
+            "media": "「前走稍重で大敗も叩いて状態一変。絶好の2枠3番を引き当てた」"
           },
           "pedigree": {
             "sire": "エピファネイア",
-            "dam": "ブルースカイハイ",
+            "dam": "ブルークランズ",
             "broodmareSire": "ルーラーシップ",
             "lineage": "ロベルト系",
             "feature": "無尽蔵のスタミナとタフな持続力"
           },
           "aptitude": {
             "distance": "1600m〜2400m (ベスト2000〜2200m)",
-            "trackCondition": "良馬場 ◎ / 稍重 ◎ / 重 ○ (タフな馬場も苦にしない)",
+            "trackCondition": "良馬場 ◎ / 稍重 ○ / 重 ▲ (良馬場での決め手勝負がベスト)",
             "runningStyle": "好位・差し (持続力ロングスパート)",
             "courseFitness": "京都芝 外回り ◎ (外回りの下り坂から長く良い脚を使う)"
           },
           "prevRace": {
-            "raceName": "府中牝馬S (G2)",
-            "date": "2026/10/11",
-            "venue": "東京・芝1800m (良)",
-            "finish": "3着 / 15頭",
-            "pop": "2人気",
-            "jockey": "池添謙一",
-            "weight": 464,
-            "agari": "33.2秒 (最速タイ)",
-            "margin": "0.1秒差 (アタマ+クビ差)",
-            "passing": "12-10-8",
-            "factor": "【勝因・敗因】57kgのトップハンデを背負い、直線は大外をブン回しながらメンバー最速タイの末脚で強襲。ひと叩きされた上積みは絶大で本番逆転の期待大。"
+            "raceName": "新潟記念 (G3)",
+            "date": "2026/08/30",
+            "venue": "新潟・芝2000m (稍重)",
+            "finish": "11着 / 11頭",
+            "pop": "5人気",
+            "jockey": "戸崎圭太",
+            "weight": 478,
+            "agari": "34.7秒",
+            "margin": "1.1秒差 (勝ち馬: ゾロアストロ)",
+            "passing": "9-9",
+            "factor": "【敗因】雨の稍重馬場とスローの前残り展開で後方から全く動けず11着最下位。馬場状態と展開が噛み合わなかった。桜花賞馬としての地力は圧倒的で、叩いて牝馬限定戦の良馬場なら完全復活に期待。"
           },
-          "trainingWeight": 468,
-          "lastRaceWeight": 464,
+          "trainingWeight": 482,
+          "lastRaceWeight": 478,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -804,40 +804,40 @@
           "trainingGrade": "B",
           "trainingCourse": "美浦W",
           "trainingTime": "83.2-67.4-52.5-37.8-11.8 (馬なり)",
-          "trainingComment": "軽快なフットワークで順調。格上挑戦だがデキ落ちなく力を出せる状態。",
+          "trainingComment": "軽快なフットワークで順調。前走OP勝ちの勢いがあり力を出せる状態。",
           "trainingReviews": {
-            "youtube": "「ウッドでの動きは素直。仕上がりは整っており自分の競馬ができるか」",
+            "youtube": "「ウッドでの動きは素直。前走上がり32.1秒の切れ味は侮れない」",
             "snsX": "「落ち着きがあり気配良好。2枠4番から内ラチ沿いをじっくり運べれば」",
-            "media": "「格上挑戦だが血統背景は優秀。展開がハマれば掲示板争いも」"
+            "media": "「サートゥルナーリア産駒。OP快勝の末脚がここでも炸裂するか注目」"
           },
           "pedigree": {
-            "sire": "ドゥラメンテ",
-            "dam": "エストレーラ",
-            "broodmareSire": "ディープインパクト",
+            "sire": "サートゥルナーリア",
+            "dam": "エストレチャダ",
+            "broodmareSire": "Offlee Wild",
             "lineage": "キングマンボ系",
-            "feature": "瞬発力と切れ味"
+            "feature": "瞬発力と爆発的切れ味"
           },
           "aptitude": {
-            "distance": "1800m〜2200m",
-            "trackCondition": "良馬場 ◎ / 稍重 ○ / 重 ▲",
-            "runningStyle": "差し・追い込み",
-            "courseFitness": "京都芝 外回り ○"
+            "distance": "1600m〜2200m",
+            "trackCondition": "良馬場 ◎ / 稍重 ○ / 重 ▲ (超高速良馬場で真価発揮)",
+            "runningStyle": "差し・直線強襲",
+            "courseFitness": "京都芝 外回り ○ (直線の長いコース向き)"
           },
           "prevRace": {
-            "raceName": "新潟記念 (G3)",
-            "date": "2026/09/06",
-            "venue": "新潟・芝2000m (良)",
-            "finish": "4着 / 14頭",
-            "pop": "7人気",
+            "raceName": "関越S (OP)",
+            "date": "2026/08/08",
+            "venue": "新潟・芝1800m (良)",
+            "finish": "1着 / 16頭",
+            "pop": "1人気",
             "jockey": "荻野極",
-            "weight": 470,
-            "agari": "33.6秒 (上がり3位)",
-            "margin": "0.3秒差",
-            "passing": "11-10-8",
-            "factor": "【勝因・敗因】前残りのスロー展開で位置取りが後ろになり届かず。直線での末脚は確実で、京都外回りのロングスパート戦なら展開利あり。"
+            "weight": 446,
+            "agari": "32.1秒 (驚異の最速)",
+            "margin": "-0.1秒差 (クビ差勝ち / 2着: ゴンバデカーブース)",
+            "passing": "8-8",
+            "factor": "【勝因】上がり32.1秒という異次元の猛時計をマークして重賞級ゴンバデカーブースを鮮やかに差し切り勝ち。直線の瞬発力勝負になればG1の舞台でも大駆け十分。"
           },
-          "trainingWeight": 474,
-          "lastRaceWeight": 470,
+          "trainingWeight": 450,
+          "lastRaceWeight": 446,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -858,8 +858,8 @@
           "trainingComment": "スタミナ満点の動き。坂路で最後まで力強く登坂し持久力勝負への適性は随一。",
           "trainingReviews": {
             "youtube": "「時計のかかる馬場なら大駆け警戒。坂路での力強さは目を引く」",
-            "snsX": "「スタミナ豊富でタフな展開向き。雨が降って馬場が渋ればさらに評価急上昇」",
-            "media": "「長距離路線を使われてきたスタミナはメンバー上位。バテ合いになれば台頭」"
+            "snsX": "「スタミナ豊富でタフな展開向き。距離延長の2200mはプラス」",
+            "media": "「ドゥラメンテ産駒で距離延びて本領発揮。バテ合いになれば台頭」"
           },
           "pedigree": {
             "sire": "ドゥラメンテ",
@@ -871,24 +871,24 @@
           "aptitude": {
             "distance": "2000m〜2600m (スタミナ型)",
             "trackCondition": "良馬場 ○ / 稍重 ◎ / 重 ◎ (道悪巧者・荒れ馬場歓迎)",
-            "runningStyle": "先行・しぶとい粘り込み",
+            "runningStyle": "中団追走・長く良い脚を使う",
             "courseFitness": "京都芝 外回り ○ (タフな消耗戦向き)"
           },
           "prevRace": {
-            "raceName": "丹頂S (OP)",
-            "date": "2026/09/06",
-            "venue": "札幌・芝2600m (稍重)",
-            "finish": "2着 / 13頭",
-            "pop": "5人気",
+            "raceName": "アイルランドT (G2)",
+            "date": "2026/10/11",
+            "venue": "東京・芝1800m (良)",
+            "finish": "7着 / 16頭",
+            "pop": "7人気",
             "jockey": "津村明秀",
-            "weight": 458,
-            "agari": "35.8秒 (上がり2位)",
-            "margin": "0.1秒差",
-            "passing": "4-4-3-2",
-            "factor": "【勝因・敗因】タフな洋芝2600mでしぶとく脚を使って連対確保。持久力勝負になればG1の激流でもスタミナで浮上する。"
+            "weight": 446,
+            "agari": "34.3秒",
+            "margin": "0.9秒差 (勝ち馬: カムニャック)",
+            "passing": "11-10-10",
+            "factor": "【敗因】東京芝1800mの高速瞬発力勝負ではスピード負けして7着。豊富なスタミナを活かすタフな消耗戦向きで、芝2200mへの距離延長は大きなプラス材料。"
           },
-          "trainingWeight": 462,
-          "lastRaceWeight": 458,
+          "trainingWeight": 450,
+          "lastRaceWeight": 446,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -908,38 +908,38 @@
           "trainingTime": "83.0-67.2-52.1-37.4-11.7 (強め)",
           "trainingComment": "中間の気配は及第点。馬体も引き締まり順調に本番を迎える。",
           "trainingReviews": {
-            "youtube": "「CWでの動きは及第点。先行力を活かしてどこまで粘れるか」",
+            "youtube": "「オールカマー3着の実績はここでも光る。タフな馬場なら怖い存在」",
             "snsX": "「馬場が荒れて時計がかかる展開が理想。吉田隼人騎手の立ち回りに期待」",
-            "media": "「前走大敗も距離短縮と叩き2走目で変わり身を見せたい」"
+            "media": "「前走重賞3着好走。京都外回り2200mの舞台も適性十分」"
           },
           "pedigree": {
             "sire": "サトノクラウン",
-            "dam": "ヴーレヴー",
-            "broodmareSire": "スニッツェル",
+            "dam": "アルギュロス",
+            "broodmareSire": "マンハッタンカフェ",
             "lineage": "ノーザンダンサー系",
-            "feature": "パワーと道悪適性"
+            "feature": "パワーと道悪適性、タフなスタミナ"
           },
           "aptitude": {
-            "distance": "1600m〜2200m",
-            "trackCondition": "良馬場 ○ / 稍重 ◎ / 重 ◎ (パワー型)",
+            "distance": "1800m〜2400m",
+            "trackCondition": "良馬場 ○ / 稍重 ◎ / 重 ◎ (道悪は大歓迎のパワー型)",
             "runningStyle": "先行・イン好位追走",
-            "courseFitness": "京都芝 外回り ○"
+            "courseFitness": "京都芝 外回り ○ (タフな消耗戦向き)"
           },
           "prevRace": {
-            "raceName": "アイルランドT (G2)",
-            "date": "2026/10/11",
-            "venue": "東京・芝1800m (良)",
-            "finish": "6着 / 15頭",
-            "pop": "9人気",
+            "raceName": "オールカマー (G2)",
+            "date": "2026/09/20",
+            "venue": "中山・芝2200m (重)",
+            "finish": "3着 / 13頭",
+            "pop": "3人気",
             "jockey": "吉田隼人",
-            "weight": 462,
-            "agari": "34.5秒",
-            "margin": "0.5秒差",
-            "passing": "5-5-5",
-            "factor": "【勝因・敗因】開幕週の超高速馬場でキレ負け。上がりがかかる京都外回りならパワーを活かして前進可能。"
+            "weight": 496,
+            "agari": "37.1秒",
+            "margin": "0.3秒差 (勝ち馬: メイショウゲキリン)",
+            "passing": "3-3-3-3",
+            "factor": "【勝因・敗因】重馬場の中山2200mで牡馬一線級相手に先行して堂々3着に粘り込み。タフな馬場適性と2200mの距離実績はメンバー随一で、馬場が渋ればさらに有力。"
           },
-          "trainingWeight": 466,
-          "lastRaceWeight": 462,
+          "trainingWeight": 500,
+          "lastRaceWeight": 496,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -961,7 +961,7 @@
           "trainingReviews": {
             "youtube": "「川田騎手を背にCWで鳥肌モノの加速！叩き2走目で完全無欠の仕上がり」",
             "snsX": "「川田騎手の手応え抜群。馬体がキリリと引き締まり文句なしのS級気配」",
-            "media": "「前走休み明け+12kgを叩いて究極の仕上がり。1番人気の期待に堂々応える」"
+            "media": "「前走アイルランドT快勝の勢いそのまま。1番人気の期待に堂々応える」"
           },
           "pedigree": {
             "sire": "ブラックタイド",
@@ -977,20 +977,20 @@
             "courseFitness": "京都芝 外回り ◎ (淀の坂下りからスピードを乗せて突き抜ける)"
           },
           "prevRace": {
-            "raceName": "府中牝馬S (G2)",
+            "raceName": "アイルランドT (G2)",
             "date": "2026/10/11",
             "venue": "東京・芝1800m (良)",
-            "finish": "4着 / 15頭",
+            "finish": "1着 / 16頭",
             "pop": "1人気",
             "jockey": "川田将雅",
-            "weight": 474,
-            "agari": "33.3秒 (上がり3位)",
-            "margin": "0.2秒差",
-            "passing": "6-6-5",
-            "factor": "【勝因・敗因】休み明けで馬体重+12kgと余裕残しの造り。それでも直線一旦先頭に立ちかける見せ場十分の内容。ひと叩きされた今回は全身の張りが一変しており必勝態勢。"
+            "weight": 496,
+            "agari": "33.4秒",
+            "margin": "-0.1秒差 (クビ差勝ち / 2着: ジョスラン)",
+            "passing": "4-4-4",
+            "factor": "【勝因】1番人気に応えて好位抜け出しから力強く押し切り重賞制覇。川田将雅騎手とのコンビネーションは抜群で、叩き2走目で万全の状態で本番に臨む。"
           },
-          "trainingWeight": 470,
-          "lastRaceWeight": 474,
+          "trainingWeight": 500,
+          "lastRaceWeight": 496,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -1008,18 +1008,18 @@
           "trainingGrade": "A",
           "trainingCourse": "栗東CW",
           "trainingTime": "82.1-66.3-51.5-36.8-11.5 (一杯)",
-          "trainingComment": "前走勝ちの勢いそのまま。CWで猛時計をマークし馬体にハリがあり気配充実。",
+          "trainingComment": "CWで猛時計をマークし馬体にハリがあり気配充実。先行力を活かせれば面白い。",
           "trainingReviews": {
-            "youtube": "「前走OP勝ちの勢いそのまま。CWで鋭く伸びて充実期を証明」",
+            "youtube": "「CWで鋭く伸びて好調アピール。4枠8番からスムーズに先行できれば」",
             "snsX": "「辻野厩舎らしくきっちり仕上げてきた。先行力を活かせれば面白い伏兵」",
-            "media": "「充実著しい4歳牝馬。4枠8番の中枠もレースしやすく警戒必要」"
+            "media": "「充実著しい4歳牝馬。牝馬限定戦に戻って巻き返しを期す」"
           },
           "pedigree": {
             "sire": "キズナ",
-            "dam": "レーゼ",
-            "broodmareSire": "キングヘイロー",
+            "dam": "シアードラマ",
+            "broodmareSire": "Burning Roma",
             "lineage": "キズナ系 (サンデーサイレンス系)",
-            "feature": "勝負根性と先行力"
+            "feature": "勝負根性とスピード持続力"
           },
           "aptitude": {
             "distance": "1800m〜2200m",
@@ -1028,20 +1028,20 @@
             "courseFitness": "京都芝 外回り ○"
           },
           "prevRace": {
-            "raceName": "ケフェウスS (OP)",
-            "date": "2026/09/20",
+            "raceName": "チャレンジC (G3)",
+            "date": "2026/09/12",
             "venue": "中京・芝2000m (良)",
-            "finish": "1着 / 12頭",
-            "pop": "3人気",
+            "finish": "7着 / 16頭",
+            "pop": "12人気",
             "jockey": "松若風馬",
-            "weight": 468,
-            "agari": "34.0秒 (上がり2位)",
-            "margin": "0.2秒差 (1馬身1/4)",
-            "passing": "3-3-2",
-            "factor": "【勝因・敗因】中団前目から早めに動いて直線堂々押し切る強い競馬。充実期を迎えており、先行してしぶとさを活かす展開になればG1でも見せ場十分。"
+            "weight": 472,
+            "agari": "35.8秒",
+            "margin": "0.9秒差 (勝ち馬: ジョバンニ)",
+            "passing": "2-2-2",
+            "factor": "【敗因】骨っぽい牡馬相手に2番手から先行したが、直線で決め手争いに屈して7着。牝馬限定戦に戻り、淀の坂下りを利用して早めに先頭へ立てれば粘り込み警戒。"
           },
-          "trainingWeight": 472,
-          "lastRaceWeight": 468,
+          "trainingWeight": 476,
+          "lastRaceWeight": 472,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -1063,7 +1063,7 @@
           "trainingReviews": {
             "youtube": "「文句なしの調教S評価！CW馬なりで11.0秒を計時。C.デムーロ騎手の手綱で弾けた」",
             "snsX": "「C.デムーロ騎手絶賛。『信じられない手応え、パーフェクト』と太鼓判」",
-            "media": "「前走府中牝馬S快勝の勢いそのまま。500kg超の雄大な馬体から繰り出される豪脚は圧巻」"
+            "media": "「前走不完全燃焼の8着から叩いて劇的一変。540kg超の馬格から繰り出す豪脚は圧巻」"
           },
           "pedigree": {
             "sire": "キズナ",
@@ -1079,20 +1079,20 @@
             "courseFitness": "京都芝 外回り ◎ (ローズS圧勝の舞台と同じ淀の外回りコース)"
           },
           "prevRace": {
-            "raceName": "府中牝馬S (G2)",
+            "raceName": "アイルランドT (G2)",
             "date": "2026/10/11",
             "venue": "東京・芝1800m (良)",
-            "finish": "1着 / 15頭",
+            "finish": "8着 / 16頭",
             "pop": "3人気",
-            "jockey": "C.デムーロ",
-            "weight": 518,
-            "agari": "33.0秒 (上がり最速 1位)",
-            "margin": "0.1秒差 (クビ差)",
-            "passing": "8-8-6",
-            "factor": "【勝因・敗因】518kgの雄大な馬体を生かした大外一気。C.デムーロ騎手との呼吸も完璧で、直線坂下から異次元の加速力で突き抜けた。叩いてさらに素軽さが増しており本命筆頭。"
+            "jockey": "西村淳也",
+            "weight": 544,
+            "agari": "34.5秒",
+            "margin": "0.9秒差 (勝ち馬: カムニャック)",
+            "passing": "8-8-8",
+            "factor": "【敗因】544kgの大型馬で休み明け、直線で前が壁になり追い出しが遅れる不完全燃焼の8着。叩いて今回はC.デムーロ騎手に乗り替わり、ローズSを圧勝した舞台と同じ京都外回りで巻き返す。"
           },
-          "trainingWeight": 522,
-          "lastRaceWeight": 518,
+          "trainingWeight": 548,
+          "lastRaceWeight": 544,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -1114,7 +1114,7 @@
           "trainingReviews": {
             "youtube": "「坂路のスピード感は出走メンバー随一。四位調教師も単騎逃げに色気」",
             "snsX": "「同型不在で単騎ハナ濃厚。淀の坂をゆったり下って直線セーフティリードなら残る」",
-            "media": "「前走も逃げて0.3秒差に粘り込み。外回りコースでマイペースを作れれば一発ある」"
+            "media": "「前走大敗も単騎逃げなら一変。外回りコースでマイペースを作れれば一発ある」"
           },
           "pedigree": {
             "sire": "デクラレーションオブウォー",
@@ -1130,20 +1130,20 @@
             "courseFitness": "京都芝 外回り ◎ (単騎逃げがハマりやすいコース形態)"
           },
           "prevRace": {
-            "raceName": "府中牝馬S (G2)",
+            "raceName": "アイルランドT (G2)",
             "date": "2026/10/11",
             "venue": "東京・芝1800m (良)",
-            "finish": "5着 / 15頭",
+            "finish": "15着 / 16頭",
             "pop": "6人気",
             "jockey": "浜中俊",
-            "weight": 450,
-            "agari": "34.2秒",
-            "margin": "0.3秒差",
+            "weight": 474,
+            "agari": "36.7秒",
+            "margin": "1.8秒差 (勝ち馬: カムニャック)",
             "passing": "1-1-1",
-            "factor": "【勝因・敗因】果敢にハナを奪って直線半ばまで先頭で粘り込み。目標にされる厳しい形でも0.3秒差に踏ん張った。京都外回りでマイペースに落とせれば大逃げ一発の警戒が必要。"
+            "factor": "【敗因】同型馬との先行争いで息が入らず、直線力尽きて15着大敗。今回は単騎逃げ濃厚で、浜中騎手がマイペースの逃げに持ち込めば大逃げ一発の警戒が必要。"
           },
-          "trainingWeight": 454,
-          "lastRaceWeight": 450,
+          "trainingWeight": 478,
+          "lastRaceWeight": 474,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -1161,40 +1161,40 @@
           "trainingGrade": "B",
           "trainingCourse": "栗東CW",
           "trainingTime": "83.8-67.9-52.8-37.9-12.0 (馬なり)",
-          "trainingComment": "馬体減りなく状態維持。今村聖奈騎手の積極策と斤量54kgを生かしてどこまでやれるか。",
+          "trainingComment": "オークス制覇からじっくり成長を促してここへ。今村聖奈騎手とクラシック女王の底力に注目。",
           "trainingReviews": {
-            "youtube": "「動きは素直で軽快。3歳馬の斤量差を生かして思い切ったレースを期待」",
-            "snsX": "「今村聖奈騎手とのコンビで注目。馬体の張りは前走並みをしっかりキープ」",
-            "media": "「格上挑戦だが寺島厩舎の期待馬。インで脚を溜めて直線どこまで食い込めるか」"
+            "youtube": "「オークスを制したクラシック女王！休み明けだが底力は侮れない」",
+            "snsX": "「今村聖奈騎手とのコンビで再びG1獲りへ。斤量54kgも大きな魅力」",
+            "media": "「春のオークス馬。秋初戦だが馬体の成長著しく大外一気の末脚警戒」"
           },
           "pedigree": {
-            "sire": "ブリックスアンドモルタル",
-            "dam": "ピエロ",
-            "broodmareSire": "ディープインパクト",
-            "lineage": "ストームバード系",
-            "feature": "軽快な先行力と切れ"
+            "sire": "オルフェーヴル",
+            "dam": "ハッピーヴァリュー",
+            "broodmareSire": "ゼンノロブロイ",
+            "lineage": "ステイゴールド系 (サンデーサイレンス系)",
+            "feature": "爆発的スタミナと大舞台での勝負強さ"
           },
           "aptitude": {
-            "distance": "1800m〜2200m",
-            "trackCondition": "良馬場 ○ / 稍重 ◎ / 重 ○",
-            "runningStyle": "中団追走・内差し",
-            "courseFitness": "京都芝 外回り ○"
+            "distance": "2000m〜2400m (オークス2400m制覇)",
+            "trackCondition": "良馬場 ◎ / 稍重 ◎ / 重 ○ (タフな長距離勝負大歓迎)",
+            "runningStyle": "差し・大外一気",
+            "courseFitness": "京都芝 外回り ◎ (外回りの下り坂からロングスパート)"
           },
           "prevRace": {
-            "raceName": "紫苑S (G2)",
-            "date": "2026/09/12",
-            "venue": "中山・芝2000m (良)",
-            "finish": "6着 / 13頭",
-            "pop": "8人気",
+            "raceName": "優駿牝馬（オークス） (G1)",
+            "date": "2026/05/24",
+            "venue": "東京・芝2400m (良)",
+            "finish": "1着 / 18頭",
+            "pop": "5人気",
             "jockey": "今村聖奈",
-            "weight": 438,
-            "agari": "34.4秒",
-            "margin": "0.5秒差",
-            "passing": "7-7-6",
-            "factor": "【勝因・敗因】序盤で外を回らされるロスが響いて直線伸びきれず。小柄な牝馬だけに斤量54kgは好材料で、ロスのない立ち回りができれば。"
+            "weight": 464,
+            "agari": "33.1秒 (上がり最速)",
+            "margin": "0.0秒差 (ハナ差戴冠 / 2着: ドリームコア)",
+            "passing": "10-10-8",
+            "factor": "【勝因】今村聖奈騎手を背に大外一気！芝2400mで上がり最速33.1秒の豪脚を炸裂させてハナ差オークス制覇。春のクラシック女王としての底力は絶大。"
           },
-          "trainingWeight": 442,
-          "lastRaceWeight": 438,
+          "trainingWeight": 468,
+          "lastRaceWeight": 464,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -1212,40 +1212,40 @@
           "trainingGrade": "B+",
           "trainingCourse": "美浦W",
           "trainingTime": "82.4-66.5-51.6-37.2-11.6 (強め)",
-          "trainingComment": "3勝クラス勝ちからの勢いあり。三浦皇成騎手の手綱で折り合いスムーズ、連勝の勢い。",
+          "trainingComment": "前走新潟牝馬S快勝の勢いあり。三浦皇成騎手の手綱で折り合いスムーズ、連勝の勢い。",
           "trainingReviews": {
-            "youtube": "「美浦ウッドでの力強い伸び。前走勝利の勢いそのままに状態は非常に高いレベル」",
+            "youtube": "「前走新潟牝馬Sを同距離2200mで快勝！距離適性は文句なし」",
             "snsX": "「三浦皇成騎手が付きっきりで感触を掴む。タフな展開になれば浮上」",
-            "media": "「スワーヴリチャード産駒らしい成長力。叩かれつつ馬体がビルドアップ」"
+            "media": "「オルフェーヴル産駒らしい成長力。叩かれつつ馬体がビルドアップ」"
           },
           "pedigree": {
-            "sire": "スワーヴリチャード",
-            "dam": "メテオ",
-            "broodmareSire": "オルフェーヴル",
-            "lineage": "ハーツクライ系 (サンデーサイレンス系)",
-            "feature": "タフな成長力と底力"
+            "sire": "オルフェーヴル",
+            "dam": "パールシャドウ",
+            "broodmareSire": "クロフネ",
+            "lineage": "ステイゴールド系 (サンデーサイレンス系)",
+            "feature": "タフな成長力と底力、2200mへの高い適性"
           },
           "aptitude": {
-            "distance": "2000m〜2400m (長めの中距離向き)",
+            "distance": "2000m〜2400m (新潟牝馬S 2200m勝ち)",
             "trackCondition": "良馬場 ○ / 稍重 ◎ / 重 ◎ (道悪・タフな芝歓迎)",
             "runningStyle": "差し・長く良い脚を使う",
             "courseFitness": "京都芝 外回り ○ (タフな消耗戦になれば上位進出)"
           },
           "prevRace": {
-            "raceName": "魚沼S (3勝クラス)",
-            "date": "2026/10/24",
-            "venue": "新潟・芝2000m (稍重)",
-            "finish": "1着 / 14頭",
-            "pop": "2人気",
+            "raceName": "新潟牝馬S (L)",
+            "date": "2026/10/18",
+            "venue": "新潟・芝2200m (良)",
+            "finish": "1着 / 10頭",
+            "pop": "1人気",
             "jockey": "三浦皇成",
-            "weight": 482,
-            "agari": "34.1秒 (上がり最速 1位)",
-            "margin": "0.2秒差 (1馬身1/4)",
-            "passing": "9-8-6",
-            "factor": "【勝因・敗因】上がりのかかる消耗戦で自慢の持久力を発揮して快勝。スワーヴリチャード×オルフェーヴルの血統通りタフなレースで真価を発揮する。"
+            "weight": 458,
+            "agari": "34.0秒 (上がり最速)",
+            "margin": "-0.1秒差 (クビ差勝ち / 2着: ウインデイジー)",
+            "passing": "4-4-3",
+            "factor": "【勝因】エリザベス女王杯と同距離の芝2200mで1番人気に応えて快勝。三浦皇成騎手の手綱で中団から長く良い脚を使い、距離とコースの適性の高さを証明。"
           },
-          "trainingWeight": 486,
-          "lastRaceWeight": 482,
+          "trainingWeight": 462,
+          "lastRaceWeight": 458,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -1265,38 +1265,38 @@
           "trainingTime": "81.0-65.3-50.7-36.4-11.2 (馬なり・併せ先着)",
           "trainingComment": "ルメール騎手騎乗で美浦Wを抜群のスピードで駆け抜けた。超良血馬が開花し仕上がり万全。",
           "trainingReviews": {
-            "youtube": "「サリオスの半妹という超良血が開花！美浦Wでのラスト11.2秒は圧巻の推進力」",
+            "youtube": "「前走アイルランドTでクビ差2着！ルメール騎手騎乗で勝負気配濃厚」",
             "snsX": "「ルメール騎手が『ベリーストロング』と絶賛。外枠からスムーズに運べば勝ち負け」",
-            "media": "「前走新潟牝馬Sをノーステッキで快勝。鹿戸厩舎の自信度もMAX」"
+            "media": "「エピファネイア産駒の良血。叩いてさらに状態上昇、主役の一角」"
           },
           "pedigree": {
             "sire": "エピファネイア",
-            "dam": "サロミナ",
-            "broodmareSire": "Lomitas",
+            "dam": "ケイティーズハート",
+            "broodmareSire": "ハーツクライ",
             "lineage": "ロベルト系",
-            "feature": "名牝サロミナの血を受け継ぐ超一流のスタミナと持続力"
+            "feature": "エフフォーリアの半妹という超一流の血統背景と持続力"
           },
           "aptitude": {
-            "distance": "1800m〜2400m (ベスト2200m)",
+            "distance": "1800m〜2400m (ベスト2000〜2200m)",
             "trackCondition": "良馬場 ◎ / 稍重 ○ / 重 ▲ (良馬場で真価を発揮)",
             "runningStyle": "好位差し・外からスムーズに進出",
             "courseFitness": "京都芝 外回り ◎ (外枠から被されずに運べる7枠13番は好条件)"
           },
           "prevRace": {
-            "raceName": "新潟牝馬S (L)",
-            "date": "2026/10/18",
-            "venue": "新潟・芝2200m (良)",
-            "finish": "1着 / 13頭",
-            "pop": "1人気",
+            "raceName": "アイルランドT (G2)",
+            "date": "2026/10/11",
+            "venue": "東京・芝1800m (良)",
+            "finish": "2着 / 16頭",
+            "pop": "4人気",
             "jockey": "C.ルメール",
-            "weight": 490,
-            "agari": "33.5秒 (上がり最速 1位)",
-            "margin": "0.3秒差 (2馬身)",
-            "passing": "5-5-4",
-            "factor": "【勝因・敗因】ルメール騎手の完璧なエスコートで直線楽々と抜け出しノーステッキ完勝。血統背景・距離実績ともに今回のエリザベス女王杯に完全にフィット。"
+            "weight": 480,
+            "agari": "33.7秒",
+            "margin": "0.1秒差 (クビ差 / 勝ち馬: カムニャック)",
+            "passing": "5-5-5",
+            "factor": "【勝因・敗因】ルメール騎手の好騎乗で直線鋭く伸び、勝ち馬カムニャックとクビ差の2着に激走。名牝サロミナの良血が開花し、距離延長の2200mで逆転を狙う。"
           },
-          "trainingWeight": 494,
-          "lastRaceWeight": 490,
+          "trainingWeight": 484,
+          "lastRaceWeight": 480,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -1314,10 +1314,10 @@
           "trainingGrade": "S",
           "trainingCourse": "美浦W",
           "trainingTime": "80.2-64.4-49.8-35.9-11.1 (馬なり・併せ楽々先着)",
-          "trainingComment": "文句なしのS評価！天皇賞秋を使った上積みが凄まじく、馬体に張りつめた緊張感と覇気がある。",
+          "trainingComment": "文句なしのS評価！新潟記念を使った上積みが凄まじく、馬体に張りつめた緊張感と覇気がある。",
           "trainingReviews": {
-            "youtube": "「文句なしのS評価！天皇賞秋4着から状態さらに上昇。マーカンド騎手とのコンビも強力」",
-            "snsX": "「オークス・秋華賞の2冠牝馬。牝馬限定戦に戻るここは実績最上位で不動の有力馬」",
+            "youtube": "「文句なしのS評価！叩いた上積みが凄まじく、マーカンド騎手とのコンビも強力」",
+            "snsX": "「オークス・秋華賞の2冠牝馬。秋華賞を勝った京都の舞台で実績最上位」",
             "media": "「美浦Wで自己ベスト級の猛時計。木村哲也厩舎の仕上がりは完璧そのもの」"
           },
           "pedigree": {
@@ -1334,20 +1334,20 @@
             "courseFitness": "京都芝 外回り ◎ (秋華賞圧勝と同じ京都の舞台)"
           },
           "prevRace": {
-            "raceName": "天皇賞（秋）(G1)",
-            "date": "2026/11/01",
-            "venue": "東京・芝2000m (良)",
-            "finish": "4着 / 16頭",
-            "pop": "4人気",
-            "jockey": "C.ルメール",
-            "weight": 488,
-            "agari": "33.4秒 (上がり3位)",
-            "margin": "0.3秒差",
-            "passing": "9-9-7",
-            "factor": "【勝因・敗因】牡馬一線級相手の超ハイレベルな天皇賞秋で鋭く差を詰めて4着健闘。牝馬限定戦に戻るここは地力・実績ともに最上位。中1週でも気配は最高潮。"
+            "raceName": "新潟記念 (G3)",
+            "date": "2026/08/30",
+            "venue": "新潟・芝2000m (稍重)",
+            "finish": "8着 / 11頭",
+            "pop": "6人気",
+            "jockey": "津村明秀",
+            "weight": 504,
+            "agari": "34.2秒",
+            "margin": "0.4秒差 (勝ち馬: ゾロアストロ)",
+            "passing": "7-7",
+            "factor": "【敗因】稍重のタフな馬場とスロー展開で切れ味を殺され8着敗退。叩き良化型で、今回は英国の若き天才T.マーカンド騎手に乗り替わり。秋華賞を圧勝した京都外回りで反撃態勢。"
           },
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 508,
+          "lastRaceWeight": 504,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -1365,40 +1365,40 @@
           "trainingGrade": "B+",
           "trainingCourse": "美浦W",
           "trainingTime": "82.8-66.9-52.0-37.4-11.5 (馬なり)",
-          "trainingComment": "武豊騎手とのコンビ継続は心強い。フットワーク軽快で京都を知り尽くす名手の一撃に警戒。",
+          "trainingComment": "オークス3着の実力馬。武豊騎手との新コンビで京都を知り尽くす名手の一撃に警戒。",
           "trainingReviews": {
-            "youtube": "「武豊騎手騎乗で京都芝外回りは常に要警戒。3歳馬で斤量54kgも有利」",
+            "youtube": "「オークスでタイム差なし3着！武豊騎手騎乗で京都芝外回りは常に要警戒」",
             "snsX": "「小笠厩舎の渾身仕上げ。武豊騎手の手綱でイン突きが決まれば激走あり」",
-            "media": "「ローズS3着の末脚は見どころ十分。展開がもつれれば一角崩しも」"
+            "media": "「春のクラシック最上位級の地力。斤量54kgを生かせば一角崩しも」"
           },
           "pedigree": {
-            "sire": "キズナ",
-            "dam": "ラフター",
-            "broodmareSire": "ロードカナロア",
-            "lineage": "キズナ系 (サンデーサイレンス系)",
-            "feature": "瞬発力と切れ"
+            "sire": "アルアイン",
+            "dam": "キングカメハメハ",
+            "broodmareSire": "ローザブランカ",
+            "lineage": "ディープインパクト系",
+            "feature": "瞬発力と切れ、大舞台でのタフさ"
           },
           "aptitude": {
-            "distance": "1600m〜2200m",
+            "distance": "1800m〜2400m (オークス2400m 3着)",
             "trackCondition": "良馬場 ◎ / 稍重 ○ / 重 ▲",
             "runningStyle": "差し・イン差し",
             "courseFitness": "京都芝 外回り ○ (武豊騎手のコース取りに期待)"
           },
           "prevRace": {
-            "raceName": "ローズS (G2)",
-            "date": "2026/09/15",
-            "venue": "中京・芝2000m (良)",
-            "finish": "3着 / 15頭",
-            "pop": "7人気",
-            "jockey": "武豊",
-            "weight": 444,
-            "agari": "33.6秒 (上がり2位)",
-            "margin": "0.2秒差",
-            "passing": "10-10-8",
-            "factor": "【勝因・敗因】武豊騎手の手綱でインを突いて激走し3着確保。直線での進路取りが巧みで、京都外回りでもロスのない立ち回りができれば浮上。"
+            "raceName": "優駿牝馬（オークス） (G1)",
+            "date": "2026/05/24",
+            "venue": "東京・芝2400m (良)",
+            "finish": "3着 / 18頭",
+            "pop": "2人気",
+            "jockey": "レーン",
+            "weight": 462,
+            "agari": "33.3秒",
+            "margin": "0.0秒差 (タイム差なし3着 / 勝ち馬: ジュウリョクピエロ)",
+            "passing": "6-6-5",
+            "factor": "【勝因・敗因】オークスでハナ・ハナの激戦を演じ、タイム差なしの3着に好走！世代屈指の実力馬。今回は名手・武豊騎手との新コンビで秋の女王を虎視眈々と狙う。"
           },
-          "trainingWeight": 448,
-          "lastRaceWeight": 444,
+          "trainingWeight": 466,
+          "lastRaceWeight": 462,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -1416,40 +1416,40 @@
           "trainingGrade": "B",
           "trainingCourse": "栗東CW",
           "trainingTime": "83.4-67.5-52.3-37.6-11.9 (強め)",
-          "trainingComment": "馬体は引き締まっている。松山弘平騎手の積極的な騎乗で展開の恩恵を受けたい。",
+          "trainingComment": "京都大賞典3着からの参戦。松山弘平騎手の積極的な騎乗で展開の恩恵を受けたい。",
           "trainingReviews": {
-            "youtube": "「動きは標準的。時計がかかる消耗戦がベストの条件」",
+            "youtube": "「京都大賞典で牡馬相手に3着健闘！同コース実績はメンバー屈指」",
             "snsX": "「松山弘平騎手とのコンビ。大外枠からスムーズに運んでスタミナ勝負へ」",
             "media": "「四位厩舎の2頭出し。秋を迎えて馬体の張りは前走以上」"
           },
           "pedigree": {
-            "sire": "モーリス",
-            "dam": "アクア",
+            "sire": "エピファネイア",
+            "dam": "エイプリルミスト",
             "broodmareSire": "ディープインパクト",
             "lineage": "ロベルト系",
-            "feature": "タフなパワーと持続力"
+            "feature": "タフなパワーと持続力、京都外回り巧者"
           },
           "aptitude": {
-            "distance": "1800m〜2200m",
+            "distance": "2000m〜2400m (京都大賞典 2400m 3着)",
             "trackCondition": "良馬場 ○ / 稍重 ◎ / 重 ◎ (パワー型で荒れ馬場歓迎)",
             "runningStyle": "先行・中団差し",
-            "courseFitness": "京都芝 外回り ○"
+            "courseFitness": "京都芝 外回り ◎ (京都外回りで牡馬相手に好走)"
           },
           "prevRace": {
-            "raceName": "小倉記念 (G3)",
-            "date": "2026/08/09",
-            "venue": "小倉・芝2000m (良)",
-            "finish": "5着 / 12頭",
-            "pop": "6人気",
+            "raceName": "京都大賞典 (G2)",
+            "date": "2026/10/04",
+            "venue": "京都・芝2400m (稍重)",
+            "finish": "3着 / 18頭",
+            "pop": "2人気",
             "jockey": "松山弘平",
-            "weight": 478,
-            "agari": "34.8秒",
-            "margin": "0.4秒差",
-            "passing": "4-4-5",
-            "factor": "【勝因・敗因】酷暑の小倉で終始外を回る厳しい競馬。涼しくなって調子を上げており、タフな展開になれば見せ場を作れる。"
+            "weight": 476,
+            "agari": "34.7秒",
+            "margin": "0.2秒差 (勝ち馬: エコロディノス)",
+            "passing": "6-6-5-5",
+            "factor": "【勝因】牡馬一線級が集う京都大賞典で上がり34.7秒を繰り出し0.2秒差の3着に大健闘。京都芝外回りの舞台設定は完全に手の内に入れており、適性は文句なし。"
           },
-          "trainingWeight": 482,
-          "lastRaceWeight": 478,
+          "trainingWeight": 480,
+          "lastRaceWeight": 476,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -1469,38 +1469,38 @@
           "trainingTime": "82.6-66.8-51.8-37.1-11.6 (強め)",
           "trainingComment": "スタミナ比べになれば浮上。藤原英昭厩舎の勝負仕上げで持久力勝負向き。",
           "trainingReviews": {
-            "youtube": "「父キタサンブラック譲りの豊富なスタミナ。スタミナ比べになれば大駆け警戒」",
+            "youtube": "「ドゥラメンテ産駒の豊富なスタミナ。消耗戦になれば大駆け警戒」",
             "snsX": "「藤原英昭厩舎の勝負仕上げ。雨が降って馬場が渋れば大チャンス」",
-            "media": "「長距離OPで連続好走。消耗戦になれば最後までバテない強みがある」"
+            "media": "「前走新潟牝馬S5着から北村友一騎手に手綱が戻る。持久力勝負向き」"
           },
           "pedigree": {
-            "sire": "キタサンブラック",
-            "dam": "ケリフレッド",
-            "broodmareSire": "Galileo",
-            "lineage": "サドラーズウェルズ系 (欧州血統)",
-            "feature": "欧州血統由来の底知れぬスタミナと道悪適性"
+            "sire": "ドゥラメンテ",
+            "dam": "ディープインアスク",
+            "broodmareSire": "ディープインパクト",
+            "lineage": "キングマンボ系",
+            "feature": "底知れぬスタミナと持続力"
           },
           "aptitude": {
-            "distance": "2000m〜2500m (スタミナ長距離型)",
-            "trackCondition": "良馬場 ○ / 稍重 ◎ / 重 ◎ (欧州血統の重馬場適性◎)",
+            "distance": "2000m〜2400m",
+            "trackCondition": "良馬場 ○ / 稍重 ◎ / 重 ◎",
             "runningStyle": "差し・ロングスパート (スタミナ勝負)",
             "courseFitness": "京都芝 外回り ○ (ハイペース消耗戦向き)"
           },
           "prevRace": {
-            "raceName": "丹頂S (OP)",
-            "date": "2026/09/06",
-            "venue": "札幌・芝2600m (稍重)",
-            "finish": "3着 / 13頭",
-            "pop": "4人気",
-            "jockey": "北村友一",
-            "weight": 466,
-            "agari": "35.9秒 (上がり3位)",
-            "margin": "0.2秒差",
-            "passing": "8-8-5-4",
-            "factor": "【勝因・敗因】タフな長距離で最後までバテずに伸びて3着。父キタサンブラック×母父ガリレオの血統通り、スタミナ比べ・持久力勝負になれば浮上する。"
+            "raceName": "新潟牝馬S (L)",
+            "date": "2026/10/18",
+            "venue": "新潟・芝2200m (良)",
+            "finish": "5着 / 10頭",
+            "pop": "2人気",
+            "jockey": "西塚洸二",
+            "weight": 462,
+            "agari": "34.8秒",
+            "margin": "0.5秒差 (勝ち馬: シャドウメテオ)",
+            "passing": "7-7-6",
+            "factor": "【敗因】前残りのスロー展開で仕掛けが遅れて5着。父ドゥラメンテ譲りの持続力があり、北村友一騎手に手綱が戻ってハイペース消耗戦になれば上位進出可能。"
           },
-          "trainingWeight": 470,
-          "lastRaceWeight": 466,
+          "trainingWeight": 466,
+          "lastRaceWeight": 462,
           "confirmedWeight": null,
           "weightDiff": null
         },
@@ -1518,40 +1518,40 @@
           "trainingGrade": "A",
           "trainingCourse": "美浦W",
           "trainingTime": "81.6-65.7-50.9-36.6-11.3 (強め)",
-          "trainingComment": "美浦Wでの力強い脚さばきは前走以上。京都2200mは適性ドンピシャで大駆け警戒。",
+          "trainingComment": "美浦Wでの力強い脚さばきは前走以上。クイーンS2着の実績があり大駆け警戒。",
           "trainingReviews": {
-            "youtube": "「美浦Wでの力強い脚さばきは前走以上。京都2200mは適性ドンピシャ」",
+            "youtube": "「クイーンSでクビ差2着の実績！ゴールドシップ産駒でタフな展開は大好物」",
             "snsX": "「丹内騎手とのコンビで巻き返し必至。外枠18番からスムーズに運べれば怖い」",
             "media": "「ゴールドシップ産駒で上がりがかかるタフな舞台は大好物。充実期にある」"
           },
           "pedigree": {
             "sire": "ゴールドシップ",
             "dam": "マイネヒメル",
-            "broodmareSire": "ロージズインメイ",
+            "broodmareSire": "コスモチェーロ",
             "lineage": "ステイゴールド系 (サンデーサイレンス系)",
             "feature": "タフな洋芝・荒れ馬場の鬼、抜群の勝負根性"
           },
           "aptitude": {
-            "distance": "1800m〜2200m (クイーンS勝ち、秋華賞好走舞台)",
+            "distance": "1800m〜2200m (クイーンS 2着好走)",
             "trackCondition": "良馬場 ◎ / 稍重 ◎ / 重 ◎ (ゴールドシップ産駒で荒れ馬場大好物)",
             "runningStyle": "好位差し・外マクリ (大外18番から被されず進出)",
             "courseFitness": "京都芝 外回り ◎ (上がりがかかるタフな外回り戦で底力爆発)"
           },
           "prevRace": {
-            "raceName": "府中牝馬S (G2)",
-            "date": "2026/10/11",
-            "venue": "東京・芝1800m (良)",
-            "finish": "6着 / 15頭",
-            "pop": "5人気",
+            "raceName": "クイーンS (G3)",
+            "date": "2026/08/02",
+            "venue": "札幌・芝1800m (良)",
+            "finish": "2着 / 14頭",
+            "pop": "3人気",
             "jockey": "丹内祐次",
-            "weight": 456,
-            "agari": "33.5秒 (上がり4位)",
-            "margin": "0.3秒差",
-            "passing": "7-7-6",
-            "factor": "【勝因・敗因】東京芝1800mの超高速瞬発力勝負では分が悪かった。上がりがかかる京都芝2200mならゴールドシップ産駒の底力が炸裂する。"
+            "weight": 468,
+            "agari": "34.4秒",
+            "margin": "0.1秒差 (勝ち馬: ココナッツブラウン)",
+            "passing": "5-5-3-3",
+            "factor": "【勝因】札幌の洋芝で早めに動いて勝ち馬と0.1秒差の2着に激走。ゴールドシップ産駒らしくタフな消耗戦は大得意で、大外18番からスムーズに進出できれば一発警戒。"
           },
-          "trainingWeight": 460,
-          "lastRaceWeight": 456,
+          "trainingWeight": 472,
+          "lastRaceWeight": 468,
           "confirmedWeight": null,
           "weightDiff": null
         }
