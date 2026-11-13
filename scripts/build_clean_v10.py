@@ -1430,13 +1430,18 @@ prediction_js_logic = """
             if (diff.startsWith('+') && diff !== '+0') diffClass = 'diff-plus';
             else if (diff.startsWith('-') && diff !== '-0') diffClass = 'diff-minus';
             displayWeightSub = `<span class="weight-tag-diff ${diffClass}">${diffText}</span>`;
+          } else if (s.trainingWeight) {
+            displayWeight = `${s.trainingWeight}kg`;
+            let diffStr = '';
+            if (s.lastRaceWeight) {
+              const diffVal = s.trainingWeight - s.lastRaceWeight;
+              diffStr = diffVal > 0 ? `+${diffVal}` : (diffVal === 0 ? '±0' : `${diffVal}`);
+            }
+            displayWeightSub = `<span class="weight-tag-pre" title="調教後馬体重 (前走比 ${diffStr})">調教後${diffStr ? ' ' + diffStr : ''}</span>`;
           } else if (s.lastRaceWeight || s.prevWeight) {
             const pw = s.lastRaceWeight || s.prevWeight;
             displayWeight = `${pw}kg`;
             displayWeightSub = `<span class="weight-tag-prev">前走</span>`;
-          } else if (s.trainingWeight) {
-            displayWeight = `${s.trainingWeight}kg`;
-            displayWeightSub = `<span class="weight-tag-pre">調教後</span>`;
           } else {
             displayWeight = '-';
             displayWeightSub = `<span style="font-size:10px;color:var(--text-muted);">-</span>`;
@@ -1515,9 +1520,22 @@ prediction_js_logic = """
                     <div class="nh-drawer-item">
                       <span class="nh-drawer-label">⚖️ 馬体重推移</span>
                       <span class="nh-drawer-val" style="font-size: 11px;">
-                        前走: <strong>${s.lastRaceWeight ? s.lastRaceWeight + 'kg' : '-'}</strong> | 
-                        調教後: <strong>${s.trainingWeight ? s.trainingWeight + 'kg' : '-'}</strong> | 
-                        当日確定: <strong style="color: var(--gold);">${s.confirmedWeight ? s.confirmedWeight + 'kg (' + (s.weightDiff || '±0') + ')' : '未発表（当日発表次第自動反映）'}</strong>
+                        ${(() => {
+                          const prevW = s.lastRaceWeight ? `${s.lastRaceWeight}kg` : '-';
+                          let trainW = '-';
+                          if (s.trainingWeight) {
+                            let diffStr = '';
+                            if (s.lastRaceWeight) {
+                              const d = s.trainingWeight - s.lastRaceWeight;
+                              diffStr = d > 0 ? ` (+${d})` : (d === 0 ? ' (±0)' : ` (${d})`);
+                            }
+                            trainW = `<strong style="color: #a7f3d0;">${s.trainingWeight}kg${diffStr}</strong>`;
+                          }
+                          const confW = s.confirmedWeight 
+                            ? `<strong style="color: var(--gold);">${s.confirmedWeight}kg (${s.weightDiff || '±0'})</strong>` 
+                            : '未発表（当日発表次第自動反映）';
+                          return `前走: <strong>${prevW}</strong> | 調教後: ${trainW} | 当日確定: ${confW}`;
+                        })()}
                       </span>
                     </div>
                     <div class="nh-drawer-item">
@@ -2231,10 +2249,15 @@ open_race_detail_func = """
                         if (pHorse) {
                           if (pHorse.confirmedWeight) {
                             weightVal = `${pHorse.confirmedWeight}kg`;
+                          } else if (pHorse.trainingWeight) {
+                            let diffStr = '';
+                            if (pHorse.lastRaceWeight) {
+                              const d = pHorse.trainingWeight - pHorse.lastRaceWeight;
+                              diffStr = d > 0 ? ` (+${d})` : (d === 0 ? ' (±0)' : ` (${d})`);
+                            }
+                            weightVal = `${pHorse.trainingWeight}kg <span class="weight-tag-pre" style="font-size:10px;">調教後${diffStr}</span>`;
                           } else if (pHorse.lastRaceWeight || pHorse.prevWeight) {
                             weightVal = `${pHorse.lastRaceWeight || pHorse.prevWeight}kg <span class="weight-tag-prev" style="font-size:10px;">前走</span>`;
-                          } else if (pHorse.trainingWeight) {
-                            weightVal = `${pHorse.trainingWeight}kg <span class="weight-tag-pre" style="font-size:10px;">調教後</span>`;
                           }
                         }
 
