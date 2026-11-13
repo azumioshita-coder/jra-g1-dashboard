@@ -1383,6 +1383,70 @@ html.route-prediction .nav-item[data-target="prediction"] {
 .waku-7 { background: #f97316 !important; color: #ffffff !important; }
 .waku-8 { background: #ec4899 !important; color: #ffffff !important; }
 
+/* 枠順未確定時のゲート表示 (ハイフン・未定) */
+.nh-gate-cell.unconfirmed,
+.nh-gate-cell.waku-unconfirmed {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #94a3b8 !important;
+  border: 1px dashed rgba(255, 255, 255, 0.25) !important;
+  box-shadow: none !important;
+}
+
+/* レース出馬表ステータスピルバッジ */
+.nh-stage-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.nh-stage-pill.stage-scheduled {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+.nh-stage-pill.stage-confirmed {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+.nh-stage-pill.stage-gates {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.badge-stage-scheduled {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 11px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+.badge-stage-confirmed {
+  background: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 11px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+.badge-stage-gates {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 11px;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
 /* 2列目: 印ボタン (32px) */
 .nh-mark-cell {
   width: 32px;

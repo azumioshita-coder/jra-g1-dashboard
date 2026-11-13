@@ -1398,6 +1398,70 @@ html.route-prediction .nav-item[data-target="prediction"] {
 .waku-7 { background: #f97316 !important; color: #ffffff !important; }
 .waku-8 { background: #ec4899 !important; color: #ffffff !important; }
 
+/* 枠順未確定時のゲート表示 (ハイフン・未定) */
+.nh-gate-cell.unconfirmed,
+.nh-gate-cell.waku-unconfirmed {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #94a3b8 !important;
+  border: 1px dashed rgba(255, 255, 255, 0.25) !important;
+  box-shadow: none !important;
+}
+
+/* レース出馬表ステータスピルバッジ */
+.nh-stage-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.nh-stage-pill.stage-scheduled {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+.nh-stage-pill.stage-confirmed {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+.nh-stage-pill.stage-gates {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.badge-stage-scheduled {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 11px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+.badge-stage-confirmed {
+  background: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 11px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+.badge-stage-gates {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 11px;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
 /* 2列目: 印ボタン (32px) */
 .nh-mark-cell {
   width: 32px;
@@ -2403,6 +2467,7 @@ html.route-prediction .nav-item[data-target="prediction"] {
                   <span class="pulse-dot-gold"></span>
                   <span id="odds-mode-text">想定予想オッズ (netkeiba参考)</span>
                 </div>
+                <span id="odds-stage-pill" class="nh-stage-pill stage-scheduled"></span>
                 <div class="odds-sales-countdown" id="odds-sales-countdown">
                   ※金曜 18:30夜間発売開始とともに確定オッズへ自動切替
                 </div>
@@ -10049,107 +10114,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
   ],
   "18": [
     {
-      "waku": 1,
-      "gate": 1,
-      "horseName": "ソウルラッシュ",
-      "sexAge": "牡8",
-      "load": 58,
-      "jockey": "団野大成",
-      "stable": "池江泰寿 (栗東)"
-    },
-    {
-      "waku": 1,
-      "gate": 2,
-      "horseName": "ブレイディヴェーグ",
-      "sexAge": "牝5",
-      "load": 56,
-      "jockey": "C.ルメール",
-      "stable": "宮田敬介 (美浦)"
-    },
-    {
-      "waku": 2,
-      "gate": 3,
-      "horseName": "チャリン",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "R.ムーア",
-      "stable": "R.ヴェリアン (海外)"
-    },
-    {
-      "waku": 2,
-      "gate": 4,
-      "horseName": "ナミュール",
-      "sexAge": "牝6",
-      "load": 56,
-      "jockey": "C.デムーロ",
-      "stable": "高野友和 (栗東)"
-    },
-    {
-      "waku": 3,
-      "gate": 5,
-      "horseName": "ジュンブロッサム",
-      "sexAge": "牡7",
-      "load": 58,
-      "jockey": "戸崎圭太",
-      "stable": "友道康夫 (栗東)"
-    },
-    {
-      "waku": 3,
-      "gate": 6,
-      "horseName": "セリフォス",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "川田将雅",
-      "stable": "中内田充正 (栗東)"
-    },
-    {
-      "waku": 4,
-      "gate": 7,
-      "horseName": "エルトンバローズ",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "西村淳也",
-      "stable": "杉山晴紀 (栗東)"
-    },
-    {
-      "waku": 4,
-      "gate": 8,
-      "horseName": "ウインマーベル",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "松山弘平",
-      "stable": "深山雅史 (美浦)"
-    },
-    {
-      "waku": 5,
-      "gate": 9,
-      "horseName": "フィアスプライド",
-      "sexAge": "牝6",
-      "load": 56,
-      "jockey": "坂井瑠星",
-      "stable": "国枝栄 (美浦)"
-    },
-    {
-      "waku": 5,
-      "gate": 10,
-      "horseName": "オフトレイル",
-      "sexAge": "牡4",
-      "load": 57,
-      "jockey": "武豊",
-      "stable": "吉村圭司 (栗東)"
-    },
-    {
-      "waku": 6,
-      "gate": 11,
-      "horseName": "マテンロウスカイ",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "横山典弘",
-      "stable": "松永幹夫 (栗東)"
-    },
-    {
-      "waku": 6,
-      "gate": 12,
+      "waku": null,
+      "gate": null,
       "horseName": "アルナシーム",
       "sexAge": "牡6",
       "load": 58,
@@ -10157,8 +10123,89 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "stable": "橋口慎介 (栗東)"
     },
     {
-      "waku": 7,
-      "gate": 13,
+      "waku": null,
+      "gate": null,
+      "horseName": "ウインマーベル",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "松山弘平",
+      "stable": "深山雅史 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "エルトンバローズ",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "西村淳也",
+      "stable": "杉山晴紀 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "オフトレイル",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "武豊",
+      "stable": "吉村圭司 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "コムストックロード",
+      "sexAge": "牝6",
+      "load": 56,
+      "jockey": "幸英明",
+      "stable": "中野栄治 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ジュンブロッサム",
+      "sexAge": "牡7",
+      "load": 58,
+      "jockey": "戸崎圭太",
+      "stable": "友道康夫 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "セリフォス",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "川田将雅",
+      "stable": "中内田充正 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ソウルラッシュ",
+      "sexAge": "牡8",
+      "load": 58,
+      "jockey": "団野大成",
+      "stable": "池江泰寿 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "チャリン",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "R.ムーア",
+      "stable": "R.ヴェリアン (海外)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ナミュール",
+      "sexAge": "牝6",
+      "load": 56,
+      "jockey": "C.デムーロ",
+      "stable": "高野友和 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
       "horseName": "ニヒロベルム",
       "sexAge": "牡4",
       "load": 57,
@@ -10166,17 +10213,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "stable": "木村哲也 (美浦)"
     },
     {
-      "waku": 7,
-      "gate": 14,
-      "horseName": "レイベリング",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "津村明秀",
-      "stable": "鹿戸雄一 (美浦)"
-    },
-    {
-      "waku": 8,
-      "gate": 15,
+      "waku": null,
+      "gate": null,
       "horseName": "バルサムノート",
       "sexAge": "牡5",
       "load": 58,
@@ -10184,28 +10222,46 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "stable": "高野友和 (栗東)"
     },
     {
-      "waku": 8,
-      "gate": 16,
-      "horseName": "コムストックロード",
+      "waku": null,
+      "gate": null,
+      "horseName": "フィアスプライド",
       "sexAge": "牝6",
       "load": 56,
-      "jockey": "幸英明",
-      "stable": "中野栄治 (美浦)"
+      "jockey": "坂井瑠星",
+      "stable": "国枝栄 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ブレイディヴェーグ",
+      "sexAge": "牝5",
+      "load": 56,
+      "jockey": "C.ルメール",
+      "stable": "宮田敬介 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "マテンロウスカイ",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "横山典弘",
+      "stable": "松永幹夫 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "レイベリング",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "津村明秀",
+      "stable": "鹿戸雄一 (美浦)"
     }
   ],
   "19": [
     {
-      "waku": 1,
-      "gate": 1,
-      "horseName": "ドウデュース",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "武豊",
-      "stable": "友道康夫 (栗東)"
-    },
-    {
-      "waku": 1,
-      "gate": 2,
+      "waku": null,
+      "gate": null,
       "horseName": "オーギュストロダン",
       "sexAge": "牡5",
       "load": 58,
@@ -10213,17 +10269,17 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "stable": "A.オブライエン (海外)"
     },
     {
-      "waku": 2,
-      "gate": 3,
-      "horseName": "チェルヴィニア",
-      "sexAge": "牝4",
-      "load": 54,
-      "jockey": "C.ルメール",
-      "stable": "木村哲也 (美浦)"
+      "waku": null,
+      "gate": null,
+      "horseName": "カラテ",
+      "sexAge": "牡9",
+      "load": 58,
+      "jockey": "杉原誠人",
+      "stable": "音無秀孝 (栗東)"
     },
     {
-      "waku": 2,
-      "gate": 4,
+      "waku": null,
+      "gate": null,
       "horseName": "ゴリアット",
       "sexAge": "セ5",
       "load": 58,
@@ -10231,62 +10287,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "stable": "F.グラファール (海外)"
     },
     {
-      "waku": 3,
-      "gate": 5,
-      "horseName": "スターズオンアース",
-      "sexAge": "牝6",
-      "load": 56,
-      "jockey": "川田将雅",
-      "stable": "高柳瑞樹 (美浦)"
-    },
-    {
-      "waku": 3,
-      "gate": 6,
-      "horseName": "ジャスティンパレス",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "坂井瑠星",
-      "stable": "杉山晴紀 (栗東)"
-    },
-    {
-      "waku": 4,
-      "gate": 7,
-      "horseName": "シンエンペラー",
-      "sexAge": "牡4",
-      "load": 56,
-      "jockey": "吉田豊",
-      "stable": "矢作芳人 (栗東)"
-    },
-    {
-      "waku": 4,
-      "gate": 8,
-      "horseName": "ブローザホーン",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "菅原明良",
-      "stable": "吉岡辰弥 (栗東)"
-    },
-    {
-      "waku": 5,
-      "gate": 9,
-      "horseName": "ソールオリエンス",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "横山武史",
-      "stable": "手塚貴久 (美浦)"
-    },
-    {
-      "waku": 5,
-      "gate": 10,
-      "horseName": "ファンタスティックムーン",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "R.ピーヒュレク",
-      "stable": "S.シュタインベルク (海外)"
-    },
-    {
-      "waku": 6,
-      "gate": 11,
+      "waku": null,
+      "gate": null,
       "horseName": "シュトルーヴェ",
       "sexAge": "セ6",
       "load": 58,
@@ -10294,405 +10296,17 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "stable": "堀宣行 (美浦)"
     },
     {
-      "waku": 6,
-      "gate": 12,
-      "horseName": "ドゥレッツァ",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "戸崎圭太",
-      "stable": "尾関知人 (美浦)"
-    },
-    {
-      "waku": 7,
-      "gate": 13,
-      "horseName": "ディープボンド",
-      "sexAge": "牡8",
-      "load": 58,
-      "jockey": "幸英明",
-      "stable": "大久保龍志 (栗東)"
-    },
-    {
-      "waku": 8,
-      "gate": 14,
-      "horseName": "カラテ",
-      "sexAge": "牡9",
-      "load": 58,
-      "jockey": "杉原誠人",
-      "stable": "音無秀孝 (栗東)"
-    }
-  ],
-  "20": [
-    {
-      "waku": 1,
-      "gate": 1,
-      "horseName": "レモンポップ",
-      "sexAge": "牡7",
-      "load": 58,
-      "jockey": "坂井瑠星",
-      "stable": "田中博康 (美浦)"
-    },
-    {
-      "waku": 1,
-      "gate": 2,
-      "horseName": "ウィルソンテソーロ",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "川田将雅",
-      "stable": "小手川準 (美浦)"
-    },
-    {
-      "waku": 2,
-      "gate": 3,
-      "horseName": "ペプチドナイル",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "藤岡佑介",
-      "stable": "武英智 (栗東)"
-    },
-    {
-      "waku": 2,
-      "gate": 4,
-      "horseName": "クラウンプライド",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "横山武史",
-      "stable": "新谷功一 (栗東)"
-    },
-    {
-      "waku": 3,
-      "gate": 5,
-      "horseName": "セラフィックコール",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "C.デムーロ",
-      "stable": "寺島良 (栗東)"
-    },
-    {
-      "waku": 3,
-      "gate": 6,
-      "horseName": "サンライズジパング",
+      "waku": null,
+      "gate": null,
+      "horseName": "シンエンペラー",
       "sexAge": "牡4",
-      "load": 57,
-      "jockey": "武豊",
-      "stable": "音無秀孝 (栗東)"
-    },
-    {
-      "waku": 4,
-      "gate": 7,
-      "horseName": "ハギノアレグリアス",
-      "sexAge": "牡8",
-      "load": 58,
-      "jockey": "岩田望来",
-      "stable": "四位洋文 (栗東)"
-    },
-    {
-      "waku": 4,
-      "gate": 8,
-      "horseName": "ドゥラエレーデ",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "北村友一",
-      "stable": "池添学 (栗東)"
-    },
-    {
-      "waku": 5,
-      "gate": 9,
-      "horseName": "メイショウハリオ",
-      "sexAge": "牡8",
-      "load": 58,
-      "jockey": "浜中俊",
-      "stable": "岡田稲男 (栗東)"
-    },
-    {
-      "waku": 5,
-      "gate": 10,
-      "horseName": "ミックファイア",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "矢野貴之",
-      "stable": "渡邉和雄 (地方)"
-    },
-    {
-      "waku": 6,
-      "gate": 11,
-      "horseName": "ガイアフォース",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "長岡禎仁",
-      "stable": "杉山晴紀 (栗東)"
-    },
-    {
-      "waku": 6,
-      "gate": 12,
-      "horseName": "ヤマニンウルス",
-      "sexAge": "牡4",
-      "load": 57,
-      "jockey": "団野大成",
-      "stable": "斉藤崇史 (栗東)"
-    },
-    {
-      "waku": 7,
-      "gate": 13,
-      "horseName": "アーテルアストレア",
-      "sexAge": "牝6",
       "load": 56,
-      "jockey": "菱田裕二",
-      "stable": "橋口慎介 (栗東)"
-    },
-    {
-      "waku": 7,
-      "gate": 14,
-      "horseName": "スレイマン",
-      "sexAge": "牡7",
-      "load": 58,
-      "jockey": "西村淳也",
-      "stable": "池添学 (栗東)"
-    },
-    {
-      "waku": 8,
-      "gate": 15,
-      "horseName": "テーオードレフォン",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "丸山元気",
-      "stable": "梅田智之 (栗東)"
-    },
-    {
-      "waku": 8,
-      "gate": 16,
-      "horseName": "グロリアムンディ",
-      "sexAge": "牡7",
-      "load": 58,
-      "jockey": "戸崎圭太",
-      "stable": "大久保龍志 (栗東)"
-    }
-  ],
-  "21": [
-    {
-      "waku": 1,
-      "gate": 1,
-      "horseName": "ブラウンラチェット",
-      "sexAge": "牝2",
-      "load": 55,
-      "jockey": "C.ルメール",
-      "stable": "手塚貴久 (美浦)"
-    },
-    {
-      "waku": 1,
-      "gate": 2,
-      "horseName": "カムニャック",
-      "sexAge": "牝2",
-      "load": 55,
-      "jockey": "川田将雅",
-      "stable": "友道康夫 (栗東)"
-    },
-    {
-      "waku": 2,
-      "gate": 3,
-      "horseName": "コートアリシアン",
-      "sexAge": "牝2",
-      "load": 55,
-      "jockey": "菅原明良",
-      "stable": "伊藤大士 (美浦)"
-    },
-    {
-      "waku": 2,
-      "gate": 4,
-      "horseName": "ミッキージュエリー",
-      "sexAge": "牝2",
-      "load": 55,
-      "jockey": "坂井瑠星",
+      "jockey": "吉田豊",
       "stable": "矢作芳人 (栗東)"
     },
     {
-      "waku": 3,
-      "gate": 5,
-      "horseName": "マイエレメント",
-      "sexAge": "牝2",
-      "load": 55,
-      "jockey": "横山武史",
-      "stable": "福永祐一 (栗東)"
-    },
-    {
-      "waku": 3,
-      "gate": 6,
-      "horseName": "クウネル",
-      "sexAge": "牝2",
-      "load": 55,
-      "jockey": "武豊",
-      "stable": "中内田充正 (栗東)"
-    },
-    {
-      "waku": 4,
-      "gate": 7,
-      "horseName": "ランフォーヴァウ",
-      "sexAge": "牝2",
-      "load": 55,
-      "jockey": "団野大成",
-      "stable": "福永祐一 (栗東)"
-    },
-    {
-      "waku": 4,
-      "gate": 8,
-      "horseName": "カレンラップスター",
-      "sexAge": "牝2",
-      "load": 55,
-      "jockey": "松山弘平",
-      "stable": "安田翔伍 (栗東)"
-    }
-  ],
-  "22": [
-    {
-      "waku": 1,
-      "gate": 1,
-      "horseName": "クロワデュノール",
-      "sexAge": "牡2",
-      "load": 56,
-      "jockey": "北村友一",
-      "stable": "斉藤崇史 (栗東)"
-    },
-    {
-      "waku": 1,
-      "gate": 2,
-      "horseName": "パンジャタワー",
-      "sexAge": "牡2",
-      "load": 56,
-      "jockey": "松山弘平",
-      "stable": "橋口慎介 (栗東)"
-    },
-    {
-      "waku": 2,
-      "gate": 3,
-      "horseName": "アルテヴェローチェ",
-      "sexAge": "牡2",
-      "load": 56,
-      "jockey": "武豊",
-      "stable": "須貝尚介 (栗東)"
-    },
-    {
-      "waku": 2,
-      "gate": 4,
-      "horseName": "サトノカルナバル",
-      "sexAge": "牡2",
-      "load": 56,
-      "jockey": "佐々木大輔",
-      "stable": "堀宣行 (美浦)"
-    },
-    {
-      "waku": 3,
-      "gate": 5,
-      "horseName": "エイシンワンド",
-      "sexAge": "牡2",
-      "load": 56,
-      "jockey": "幸英明",
-      "stable": "大久保龍志 (栗東)"
-    },
-    {
-      "waku": 3,
-      "gate": 6,
-      "horseName": "タイセイカレント",
-      "sexAge": "牡2",
-      "load": 56,
-      "jockey": "横山武史",
-      "stable": "矢作芳人 (栗東)"
-    }
-  ],
-  "23": [
-    {
-      "waku": 1,
-      "gate": 1,
-      "horseName": "マスカレードボール",
-      "sexAge": "牡2",
-      "load": 56,
-      "jockey": "戸崎圭太",
-      "stable": "手塚貴久 (美浦)"
-    },
-    {
-      "waku": 1,
-      "gate": 2,
-      "horseName": "ファイアンクランツ",
-      "sexAge": "牡2",
-      "load": 56,
-      "jockey": "菅原明良",
-      "stable": "堀宣行 (美浦)"
-    },
-    {
-      "waku": 2,
-      "gate": 3,
-      "horseName": "アスクシュタイン",
-      "sexAge": "牡2",
-      "load": 56,
-      "jockey": "川田将雅",
-      "stable": "藤原英昭 (栗東)"
-    },
-    {
-      "waku": 2,
-      "gate": 4,
-      "horseName": "ピコチャンブラック",
-      "sexAge": "牡2",
-      "load": 56,
-      "jockey": "石川裕紀人",
-      "stable": "上原佑紀 (美浦)"
-    },
-    {
-      "waku": 3,
-      "gate": 5,
-      "horseName": "パープルレディ",
-      "sexAge": "牡2",
-      "load": 56,
-      "jockey": "C.ルメール",
-      "stable": "木村哲也 (美浦)"
-    }
-  ],
-  "24": [
-    {
-      "waku": 1,
-      "gate": 1,
-      "horseName": "ドウデュース",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "武豊",
-      "stable": "友道康夫 (栗東)"
-    },
-    {
-      "waku": 1,
-      "gate": 2,
-      "horseName": "ダノンデサイル",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "戸崎圭太",
-      "stable": "安田翔伍 (栗東)"
-    },
-    {
-      "waku": 2,
-      "gate": 3,
-      "horseName": "レガレイラ",
-      "sexAge": "牝5",
-      "load": 56,
-      "jockey": "C.ルメール",
-      "stable": "木村哲也 (美浦)"
-    },
-    {
-      "waku": 2,
-      "gate": 4,
-      "horseName": "アーバンシック",
-      "sexAge": "牡4",
-      "load": 57,
-      "jockey": "横山武史",
-      "stable": "武井亮 (美浦)"
-    },
-    {
-      "waku": 3,
-      "gate": 5,
-      "horseName": "ブローザホーン",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "菅原明良",
-      "stable": "吉岡辰弥 (栗東)"
-    },
-    {
-      "waku": 3,
-      "gate": 6,
+      "waku": null,
+      "gate": null,
       "horseName": "ジャスティンパレス",
       "sexAge": "牡6",
       "load": 58,
@@ -10700,8 +10314,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "stable": "杉山晴紀 (栗東)"
     },
     {
-      "waku": 4,
-      "gate": 7,
+      "waku": null,
+      "gate": null,
       "horseName": "スターズオンアース",
       "sexAge": "牝6",
       "load": 56,
@@ -10709,53 +10323,26 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "stable": "高柳瑞樹 (美浦)"
     },
     {
-      "waku": 4,
-      "gate": 8,
+      "waku": null,
+      "gate": null,
       "horseName": "ソールオリエンス",
       "sexAge": "牡5",
       "load": 58,
-      "jockey": "松山弘平",
+      "jockey": "横山武史",
       "stable": "手塚貴久 (美浦)"
     },
     {
-      "waku": 5,
-      "gate": 9,
-      "horseName": "ベラジオオペラ",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "横山和生",
-      "stable": "上村洋行 (栗東)"
-    },
-    {
-      "waku": 5,
-      "gate": 10,
-      "horseName": "ネブラディスク",
-      "sexAge": "牡4",
-      "load": 57,
-      "jockey": "岩田望来",
-      "stable": "福永祐一 (栗東)"
-    },
-    {
-      "waku": 6,
-      "gate": 11,
-      "horseName": "メイショウタバル",
-      "sexAge": "牡4",
-      "load": 57,
-      "jockey": "浜中俊",
-      "stable": "石橋守 (栗東)"
-    },
-    {
-      "waku": 6,
-      "gate": 12,
-      "horseName": "ヘデントール",
-      "sexAge": "牡4",
-      "load": 57,
-      "jockey": "佐々木大輔",
+      "waku": null,
+      "gate": null,
+      "horseName": "チェルヴィニア",
+      "sexAge": "牝4",
+      "load": 54,
+      "jockey": "C.ルメール",
       "stable": "木村哲也 (美浦)"
     },
     {
-      "waku": 7,
-      "gate": 13,
+      "waku": null,
+      "gate": null,
       "horseName": "ディープボンド",
       "sexAge": "牡8",
       "load": 58,
@@ -10763,8 +10350,369 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "stable": "大久保龍志 (栗東)"
     },
     {
-      "waku": 7,
-      "gate": 14,
+      "waku": null,
+      "gate": null,
+      "horseName": "ドゥレッツァ",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "戸崎圭太",
+      "stable": "尾関知人 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ドウデュース",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "武豊",
+      "stable": "友道康夫 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ファンタスティックムーン",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "R.ピーヒュレク",
+      "stable": "S.シュタインベルク (海外)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ブローザホーン",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "菅原明良",
+      "stable": "吉岡辰弥 (栗東)"
+    }
+  ],
+  "20": [
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "アーテルアストレア",
+      "sexAge": "牝6",
+      "load": 56,
+      "jockey": "菱田裕二",
+      "stable": "橋口慎介 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ウィルソンテソーロ",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "川田将雅",
+      "stable": "小手川準 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ガイアフォース",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "長岡禎仁",
+      "stable": "杉山晴紀 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "クラウンプライド",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "横山武史",
+      "stable": "新谷功一 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "グロリアムンディ",
+      "sexAge": "牡7",
+      "load": 58,
+      "jockey": "戸崎圭太",
+      "stable": "大久保龍志 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "サンライズジパング",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "武豊",
+      "stable": "音無秀孝 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "スレイマン",
+      "sexAge": "牡7",
+      "load": 58,
+      "jockey": "西村淳也",
+      "stable": "池添学 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "セラフィックコール",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "C.デムーロ",
+      "stable": "寺島良 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "テーオードレフォン",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "丸山元気",
+      "stable": "梅田智之 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ドゥラエレーデ",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "北村友一",
+      "stable": "池添学 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ハギノアレグリアス",
+      "sexAge": "牡8",
+      "load": 58,
+      "jockey": "岩田望来",
+      "stable": "四位洋文 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ペプチドナイル",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "藤岡佑介",
+      "stable": "武英智 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ミックファイア",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "矢野貴之",
+      "stable": "渡邉和雄 (地方)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "メイショウハリオ",
+      "sexAge": "牡8",
+      "load": 58,
+      "jockey": "浜中俊",
+      "stable": "岡田稲男 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ヤマニンウルス",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "団野大成",
+      "stable": "斉藤崇史 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "レモンポップ",
+      "sexAge": "牡7",
+      "load": 58,
+      "jockey": "坂井瑠星",
+      "stable": "田中博康 (美浦)"
+    }
+  ],
+  "21": [
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "カムニャック",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "川田将雅",
+      "stable": "友道康夫 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "カレンラップスター",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "松山弘平",
+      "stable": "安田翔伍 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "クウネル",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "武豊",
+      "stable": "中内田充正 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "コートアリシアン",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "菅原明良",
+      "stable": "伊藤大士 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ブラウンラチェット",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "C.ルメール",
+      "stable": "手塚貴久 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "マイエレメント",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "横山武史",
+      "stable": "福永祐一 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ミッキージュエリー",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "坂井瑠星",
+      "stable": "矢作芳人 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ランフォーヴァウ",
+      "sexAge": "牝2",
+      "load": 55,
+      "jockey": "団野大成",
+      "stable": "福永祐一 (栗東)"
+    }
+  ],
+  "22": [
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "アルテヴェローチェ",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "武豊",
+      "stable": "須貝尚介 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "エイシンワンド",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "幸英明",
+      "stable": "大久保龍志 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "クロワデュノール",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "北村友一",
+      "stable": "斉藤崇史 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "サトノカルナバル",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "佐々木大輔",
+      "stable": "堀宣行 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "タイセイカレント",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "横山武史",
+      "stable": "矢作芳人 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "パンジャタワー",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "松山弘平",
+      "stable": "橋口慎介 (栗東)"
+    }
+  ],
+  "23": [
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "アスクシュタイン",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "川田将雅",
+      "stable": "藤原英昭 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "パープルレディ",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "C.ルメール",
+      "stable": "木村哲也 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ピコチャンブラック",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "石川裕紀人",
+      "stable": "上原佑紀 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ファイアンクランツ",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "菅原明良",
+      "stable": "堀宣行 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "マスカレードボール",
+      "sexAge": "牡2",
+      "load": 56,
+      "jockey": "戸崎圭太",
+      "stable": "手塚貴久 (美浦)"
+    }
+  ],
+  "24": [
+    {
+      "waku": null,
+      "gate": null,
       "horseName": "アドマイヤテラ",
       "sexAge": "牡4",
       "load": 57,
@@ -10772,8 +10720,53 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "stable": "友道康夫 (栗東)"
     },
     {
-      "waku": 8,
-      "gate": 15,
+      "waku": null,
+      "gate": null,
+      "horseName": "アーバンシック",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "横山武史",
+      "stable": "武井亮 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "シンエンペラー",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "坂井瑠星",
+      "stable": "矢作芳人 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ジャスティンパレス",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "坂井瑠星",
+      "stable": "杉山晴紀 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "スターズオンアース",
+      "sexAge": "牝6",
+      "load": 56,
+      "jockey": "川田将雅",
+      "stable": "高柳瑞樹 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ソールオリエンス",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "松山弘平",
+      "stable": "手塚貴久 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
       "horseName": "タガノデュード",
       "sexAge": "牡5",
       "load": 58,
@@ -10781,13 +10774,85 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "stable": "宮徹 (栗東)"
     },
     {
-      "waku": 8,
-      "gate": 16,
-      "horseName": "シンエンペラー",
+      "waku": null,
+      "gate": null,
+      "horseName": "ダノンデサイル",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "戸崎圭太",
+      "stable": "安田翔伍 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ディープボンド",
+      "sexAge": "牡8",
+      "load": 58,
+      "jockey": "幸英明",
+      "stable": "大久保龍志 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ドウデュース",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "武豊",
+      "stable": "友道康夫 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ネブラディスク",
       "sexAge": "牡4",
       "load": 57,
-      "jockey": "坂井瑠星",
-      "stable": "矢作芳人 (栗東)"
+      "jockey": "岩田望来",
+      "stable": "福永祐一 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ブローザホーン",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "菅原明良",
+      "stable": "吉岡辰弥 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ヘデントール",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "佐々木大輔",
+      "stable": "木村哲也 (美浦)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ベラジオオペラ",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "横山和生",
+      "stable": "上村洋行 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "メイショウタバル",
+      "sexAge": "牡4",
+      "load": 57,
+      "jockey": "浜中俊",
+      "stable": "石橋守 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "レガレイラ",
+      "sexAge": "牝5",
+      "load": 56,
+      "jockey": "C.ルメール",
+      "stable": "木村哲也 (美浦)"
     }
   ]
 };
@@ -61115,7 +61180,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
             "horses": "9 コガネノソラ、10 サフィラ、13 ジョスラン、14 ケリフレッドアスク"
           }
         ]
-      }
+      },
+      "entryStatus": "gate_confirmed"
     },
     "18": {
       "raceId": "18",
@@ -61124,228 +61190,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "venue": "京都競馬場 芝1600m (外回り)",
       "starters": [
         {
-          "waku": 1,
-          "gate": 1,
-          "horseName": "ソウルラッシュ",
-          "sexAge": "牡8",
-          "load": 58,
-          "jockey": "団野大成",
-          "stable": "池江泰寿 (栗東)",
-          "odds": "3.8",
-          "placeOdds": "1.4 - 2.0",
-          "pop": 1,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 514,
-          "lastRaceWeight": 512,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 1,
-          "gate": 2,
-          "horseName": "ブレイディヴェーグ",
-          "sexAge": "牝5",
-          "load": 56,
-          "jockey": "C.ルメール",
-          "stable": "宮田敬介 (美浦)",
-          "odds": "4.2",
-          "placeOdds": "1.5 - 2.2",
-          "pop": 2,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 478,
-          "lastRaceWeight": 472,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 2,
-          "gate": 3,
-          "horseName": "チャリン",
-          "sexAge": "牡5",
-          "load": 58,
-          "jockey": "R.ムーア",
-          "stable": "R.ヴェリアン (海外)",
-          "odds": "4.9",
-          "placeOdds": "1.6 - 2.4",
-          "pop": 3,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 506,
-          "lastRaceWeight": 502,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 2,
-          "gate": 4,
-          "horseName": "ナミュール",
-          "sexAge": "牝6",
-          "load": 56,
-          "jockey": "C.デムーロ",
-          "stable": "高野友和 (栗東)",
-          "odds": "6.1",
-          "placeOdds": "2.0 - 2.9",
-          "pop": 4,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 458,
-          "lastRaceWeight": 454,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 3,
-          "gate": 5,
-          "horseName": "ジュンブロッサム",
-          "sexAge": "牡7",
-          "load": 58,
-          "jockey": "戸崎圭太",
-          "stable": "友道康夫 (栗東)",
-          "odds": "8.5",
-          "placeOdds": "2.4 - 3.5",
-          "pop": 5,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 474,
-          "lastRaceWeight": 476,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 3,
-          "gate": 6,
-          "horseName": "セリフォス",
-          "sexAge": "牡6",
-          "load": 58,
-          "jockey": "川田将雅",
-          "stable": "中内田充正 (栗東)",
-          "odds": "10.2",
-          "placeOdds": "2.7 - 3.9",
-          "pop": 6,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 4,
-          "gate": 7,
-          "horseName": "エルトンバローズ",
-          "sexAge": "牡6",
-          "load": 58,
-          "jockey": "西村淳也",
-          "stable": "杉山晴紀 (栗東)",
-          "odds": "14.5",
-          "placeOdds": "3.5 - 5.0",
-          "pop": 7,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 516,
-          "lastRaceWeight": 518,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 4,
-          "gate": 8,
-          "horseName": "ウインマーベル",
-          "sexAge": "牡6",
-          "load": 58,
-          "jockey": "松山弘平",
-          "stable": "深山雅史 (美浦)",
-          "odds": "18.0",
-          "placeOdds": "4.2 - 6.2",
-          "pop": 8,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 482,
-          "lastRaceWeight": 478,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 5,
-          "gate": 9,
-          "horseName": "フィアスプライド",
-          "sexAge": "牝6",
-          "load": 56,
-          "jockey": "坂井瑠星",
-          "stable": "国枝栄 (美浦)",
-          "odds": "22.5",
-          "placeOdds": "5.0 - 7.5",
-          "pop": 9,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 486,
-          "lastRaceWeight": 484,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 5,
-          "gate": 10,
-          "horseName": "オフトレイル",
-          "sexAge": "牡4",
-          "load": 57,
-          "jockey": "武豊",
-          "stable": "吉村圭司 (栗東)",
-          "odds": "26.0",
-          "placeOdds": "5.8 - 8.5",
-          "pop": 10,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 470,
-          "lastRaceWeight": 466,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 6,
-          "gate": 11,
-          "horseName": "マテンロウスカイ",
-          "sexAge": "牡6",
-          "load": 58,
-          "jockey": "横山典弘",
-          "stable": "松永幹夫 (栗東)",
-          "odds": "34.0",
-          "placeOdds": "7.5 - 11.5",
-          "pop": 11,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 488,
-          "lastRaceWeight": 484,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 6,
-          "gate": 12,
+          "waku": null,
+          "gate": null,
           "horseName": "アルナシーム",
           "sexAge": "牡6",
           "load": 58,
@@ -61364,8 +61210,188 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 7,
-          "gate": 13,
+          "waku": null,
+          "gate": null,
+          "horseName": "ウインマーベル",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "松山弘平",
+          "stable": "深山雅史 (美浦)",
+          "odds": "18.0",
+          "placeOdds": "4.2 - 6.2",
+          "pop": 8,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 482,
+          "lastRaceWeight": 478,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "エルトンバローズ",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "西村淳也",
+          "stable": "杉山晴紀 (栗東)",
+          "odds": "14.5",
+          "placeOdds": "3.5 - 5.0",
+          "pop": 7,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 516,
+          "lastRaceWeight": 518,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "オフトレイル",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "武豊",
+          "stable": "吉村圭司 (栗東)",
+          "odds": "26.0",
+          "placeOdds": "5.8 - 8.5",
+          "pop": 10,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 470,
+          "lastRaceWeight": 466,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "コムストックロード",
+          "sexAge": "牝6",
+          "load": 56,
+          "jockey": "幸英明",
+          "stable": "中野栄治 (美浦)",
+          "odds": "110.0",
+          "placeOdds": "20.0 - 32.0",
+          "pop": 16,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 466,
+          "lastRaceWeight": 462,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ジュンブロッサム",
+          "sexAge": "牡7",
+          "load": 58,
+          "jockey": "戸崎圭太",
+          "stable": "友道康夫 (栗東)",
+          "odds": "8.5",
+          "placeOdds": "2.4 - 3.5",
+          "pop": 5,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 474,
+          "lastRaceWeight": 476,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "セリフォス",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "川田将雅",
+          "stable": "中内田充正 (栗東)",
+          "odds": "10.2",
+          "placeOdds": "2.7 - 3.9",
+          "pop": 6,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 490,
+          "lastRaceWeight": 488,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ソウルラッシュ",
+          "sexAge": "牡8",
+          "load": 58,
+          "jockey": "団野大成",
+          "stable": "池江泰寿 (栗東)",
+          "odds": "3.8",
+          "placeOdds": "1.4 - 2.0",
+          "pop": 1,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 514,
+          "lastRaceWeight": 512,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "チャリン",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "R.ムーア",
+          "stable": "R.ヴェリアン (海外)",
+          "odds": "4.9",
+          "placeOdds": "1.6 - 2.4",
+          "pop": 3,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 506,
+          "lastRaceWeight": 502,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ナミュール",
+          "sexAge": "牝6",
+          "load": 56,
+          "jockey": "C.デムーロ",
+          "stable": "高野友和 (栗東)",
+          "odds": "6.1",
+          "placeOdds": "2.0 - 2.9",
+          "pop": 4,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 458,
+          "lastRaceWeight": 454,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
           "horseName": "ニヒロベルム",
           "sexAge": "牡4",
           "load": 57,
@@ -61384,28 +61410,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 7,
-          "gate": 14,
-          "horseName": "レイベリング",
-          "sexAge": "牡5",
-          "load": 58,
-          "jockey": "津村明秀",
-          "stable": "鹿戸雄一 (美浦)",
-          "odds": "68.0",
-          "placeOdds": "13.0 - 20.0",
-          "pop": 14,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 502,
-          "lastRaceWeight": 498,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 8,
-          "gate": 15,
+          "waku": null,
+          "gate": null,
           "horseName": "バルサムノート",
           "sexAge": "牡5",
           "load": 58,
@@ -61424,22 +61430,82 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 8,
-          "gate": 16,
-          "horseName": "コムストックロード",
+          "waku": null,
+          "gate": null,
+          "horseName": "フィアスプライド",
           "sexAge": "牝6",
           "load": 56,
-          "jockey": "幸英明",
-          "stable": "中野栄治 (美浦)",
-          "odds": "110.0",
-          "placeOdds": "20.0 - 32.0",
-          "pop": 16,
+          "jockey": "坂井瑠星",
+          "stable": "国枝栄 (美浦)",
+          "odds": "22.5",
+          "placeOdds": "5.0 - 7.5",
+          "pop": 9,
           "trainingGrade": null,
           "trainingCourse": null,
           "trainingTime": null,
           "trainingComment": null,
-          "trainingWeight": 466,
-          "lastRaceWeight": 462,
+          "trainingWeight": 486,
+          "lastRaceWeight": 484,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ブレイディヴェーグ",
+          "sexAge": "牝5",
+          "load": 56,
+          "jockey": "C.ルメール",
+          "stable": "宮田敬介 (美浦)",
+          "odds": "4.2",
+          "placeOdds": "1.5 - 2.2",
+          "pop": 2,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 478,
+          "lastRaceWeight": 472,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "マテンロウスカイ",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "横山典弘",
+          "stable": "松永幹夫 (栗東)",
+          "odds": "34.0",
+          "placeOdds": "7.5 - 11.5",
+          "pop": 11,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 488,
+          "lastRaceWeight": 484,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "レイベリング",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "津村明秀",
+          "stable": "鹿戸雄一 (美浦)",
+          "odds": "68.0",
+          "placeOdds": "13.0 - 20.0",
+          "pop": 14,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 502,
+          "lastRaceWeight": 498,
           "confirmedWeight": null,
           "weightDiff": null
         }
@@ -61492,7 +61558,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
             }
           ]
         }
-      ]
+      ],
+      "entryStatus": "entry_scheduled"
     },
     "19": {
       "raceId": "19",
@@ -61501,28 +61568,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "venue": "東京競馬場 芝2400m",
       "starters": [
         {
-          "waku": 1,
-          "gate": 1,
-          "horseName": "ドウデュース",
-          "sexAge": "牡6",
-          "load": 58,
-          "jockey": "武豊",
-          "stable": "友道康夫 (栗東)",
-          "odds": "2.8",
-          "placeOdds": "1.3 - 1.7",
-          "pop": 1,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 508,
-          "lastRaceWeight": 504,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 1,
-          "gate": 2,
+          "waku": null,
+          "gate": null,
           "horseName": "オーギュストロダン",
           "sexAge": "牡5",
           "load": 58,
@@ -61541,28 +61588,28 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 2,
-          "gate": 3,
-          "horseName": "チェルヴィニア",
-          "sexAge": "牝4",
-          "load": 54,
-          "jockey": "C.ルメール",
-          "stable": "木村哲也 (美浦)",
-          "odds": "4.5",
-          "placeOdds": "1.6 - 2.2",
-          "pop": 3,
+          "waku": null,
+          "gate": null,
+          "horseName": "カラテ",
+          "sexAge": "牡9",
+          "load": 58,
+          "jockey": "杉原誠人",
+          "stable": "音無秀孝 (栗東)",
+          "odds": "88.0",
+          "placeOdds": "18.0 - 28.0",
+          "pop": 14,
           "trainingGrade": null,
           "trainingCourse": null,
           "trainingTime": null,
           "trainingComment": null,
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 530,
+          "lastRaceWeight": 526,
           "confirmedWeight": null,
           "weightDiff": null
         },
         {
-          "waku": 2,
-          "gate": 4,
+          "waku": null,
+          "gate": null,
           "horseName": "ゴリアット",
           "sexAge": "セ5",
           "load": 58,
@@ -61581,128 +61628,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 3,
-          "gate": 5,
-          "horseName": "スターズオンアース",
-          "sexAge": "牝6",
-          "load": 56,
-          "jockey": "川田将雅",
-          "stable": "高柳瑞樹 (美浦)",
-          "odds": "8.2",
-          "placeOdds": "2.4 - 3.6",
-          "pop": 5,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 496,
-          "lastRaceWeight": 492,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 3,
-          "gate": 6,
-          "horseName": "ジャスティンパレス",
-          "sexAge": "牡6",
-          "load": 58,
-          "jockey": "坂井瑠星",
-          "stable": "杉山晴紀 (栗東)",
-          "odds": "11.0",
-          "placeOdds": "2.8 - 4.2",
-          "pop": 6,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 472,
-          "lastRaceWeight": 470,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 4,
-          "gate": 7,
-          "horseName": "シンエンペラー",
-          "sexAge": "牡4",
-          "load": 56,
-          "jockey": "吉田豊",
-          "stable": "矢作芳人 (栗東)",
-          "odds": "14.5",
-          "placeOdds": "3.5 - 5.1",
-          "pop": 7,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 488,
-          "lastRaceWeight": 485,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 4,
-          "gate": 8,
-          "horseName": "ブローザホーン",
-          "sexAge": "牡6",
-          "load": 58,
-          "jockey": "菅原明良",
-          "stable": "吉岡辰弥 (栗東)",
-          "odds": "17.0",
-          "placeOdds": "3.9 - 5.8",
-          "pop": 8,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 432,
-          "lastRaceWeight": 428,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 5,
-          "gate": 9,
-          "horseName": "ソールオリエンス",
-          "sexAge": "牡5",
-          "load": 58,
-          "jockey": "横山武史",
-          "stable": "手塚貴久 (美浦)",
-          "odds": "21.0",
-          "placeOdds": "4.6 - 6.8",
-          "pop": 9,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 468,
-          "lastRaceWeight": 464,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 5,
-          "gate": 10,
-          "horseName": "ファンタスティックムーン",
-          "sexAge": "牡5",
-          "load": 58,
-          "jockey": "R.ピーヒュレク",
-          "stable": "S.シュタインベルク (海外)",
-          "odds": "28.0",
-          "placeOdds": "6.0 - 9.0",
-          "pop": 10,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 462,
-          "lastRaceWeight": 460,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 6,
-          "gate": 11,
+          "waku": null,
+          "gate": null,
           "horseName": "シュトルーヴェ",
           "sexAge": "セ6",
           "load": 58,
@@ -61721,28 +61648,108 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 6,
-          "gate": 12,
-          "horseName": "ドゥレッツァ",
-          "sexAge": "牡5",
-          "load": 58,
-          "jockey": "戸崎圭太",
-          "stable": "尾関知人 (美浦)",
-          "odds": "38.0",
-          "placeOdds": "8.0 - 12.5",
-          "pop": 12,
+          "waku": null,
+          "gate": null,
+          "horseName": "シンエンペラー",
+          "sexAge": "牡4",
+          "load": 56,
+          "jockey": "吉田豊",
+          "stable": "矢作芳人 (栗東)",
+          "odds": "14.5",
+          "placeOdds": "3.5 - 5.1",
+          "pop": 7,
           "trainingGrade": null,
           "trainingCourse": null,
           "trainingTime": null,
           "trainingComment": null,
-          "trainingWeight": 470,
-          "lastRaceWeight": 468,
+          "trainingWeight": 488,
+          "lastRaceWeight": 485,
           "confirmedWeight": null,
           "weightDiff": null
         },
         {
-          "waku": 7,
-          "gate": 13,
+          "waku": null,
+          "gate": null,
+          "horseName": "ジャスティンパレス",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "坂井瑠星",
+          "stable": "杉山晴紀 (栗東)",
+          "odds": "11.0",
+          "placeOdds": "2.8 - 4.2",
+          "pop": 6,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 472,
+          "lastRaceWeight": 470,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "スターズオンアース",
+          "sexAge": "牝6",
+          "load": 56,
+          "jockey": "川田将雅",
+          "stable": "高柳瑞樹 (美浦)",
+          "odds": "8.2",
+          "placeOdds": "2.4 - 3.6",
+          "pop": 5,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 496,
+          "lastRaceWeight": 492,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ソールオリエンス",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "横山武史",
+          "stable": "手塚貴久 (美浦)",
+          "odds": "21.0",
+          "placeOdds": "4.6 - 6.8",
+          "pop": 9,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 468,
+          "lastRaceWeight": 464,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "チェルヴィニア",
+          "sexAge": "牝4",
+          "load": 54,
+          "jockey": "C.ルメール",
+          "stable": "木村哲也 (美浦)",
+          "odds": "4.5",
+          "placeOdds": "1.6 - 2.2",
+          "pop": 3,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 490,
+          "lastRaceWeight": 488,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
           "horseName": "ディープボンド",
           "sexAge": "牡8",
           "load": 58,
@@ -61761,22 +61768,82 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 8,
-          "gate": 14,
-          "horseName": "カラテ",
-          "sexAge": "牡9",
+          "waku": null,
+          "gate": null,
+          "horseName": "ドゥレッツァ",
+          "sexAge": "牡5",
           "load": 58,
-          "jockey": "杉原誠人",
-          "stable": "音無秀孝 (栗東)",
-          "odds": "88.0",
-          "placeOdds": "18.0 - 28.0",
-          "pop": 14,
+          "jockey": "戸崎圭太",
+          "stable": "尾関知人 (美浦)",
+          "odds": "38.0",
+          "placeOdds": "8.0 - 12.5",
+          "pop": 12,
           "trainingGrade": null,
           "trainingCourse": null,
           "trainingTime": null,
           "trainingComment": null,
-          "trainingWeight": 530,
-          "lastRaceWeight": 526,
+          "trainingWeight": 470,
+          "lastRaceWeight": 468,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ドウデュース",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "武豊",
+          "stable": "友道康夫 (栗東)",
+          "odds": "2.8",
+          "placeOdds": "1.3 - 1.7",
+          "pop": 1,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 508,
+          "lastRaceWeight": 504,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ファンタスティックムーン",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "R.ピーヒュレク",
+          "stable": "S.シュタインベルク (海外)",
+          "odds": "28.0",
+          "placeOdds": "6.0 - 9.0",
+          "pop": 10,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 462,
+          "lastRaceWeight": 460,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ブローザホーン",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "菅原明良",
+          "stable": "吉岡辰弥 (栗東)",
+          "odds": "17.0",
+          "placeOdds": "3.9 - 5.8",
+          "pop": 8,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 432,
+          "lastRaceWeight": 428,
           "confirmedWeight": null,
           "weightDiff": null
         }
@@ -61824,7 +61891,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
             }
           ]
         }
-      ]
+      ],
+      "entryStatus": "entry_scheduled"
     },
     "20": {
       "raceId": "20",
@@ -61833,248 +61901,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "venue": "中京競馬場 ダート1800m",
       "starters": [
         {
-          "waku": 1,
-          "gate": 1,
-          "horseName": "レモンポップ",
-          "sexAge": "牡7",
-          "load": 58,
-          "jockey": "坂井瑠星",
-          "stable": "田中博康 (美浦)",
-          "odds": "2.2",
-          "placeOdds": "1.2 - 1.5",
-          "pop": 1,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 520,
-          "lastRaceWeight": 516,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 1,
-          "gate": 2,
-          "horseName": "ウィルソンテソーロ",
-          "sexAge": "牡6",
-          "load": 58,
-          "jockey": "川田将雅",
-          "stable": "小手川準 (美浦)",
-          "odds": "3.8",
-          "placeOdds": "1.4 - 2.0",
-          "pop": 2,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 490,
-          "lastRaceWeight": 486,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 2,
-          "gate": 3,
-          "horseName": "ペプチドナイル",
-          "sexAge": "牡6",
-          "load": 58,
-          "jockey": "藤岡佑介",
-          "stable": "武英智 (栗東)",
-          "odds": "6.5",
-          "placeOdds": "1.9 - 2.8",
-          "pop": 3,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 532,
-          "lastRaceWeight": 528,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 2,
-          "gate": 4,
-          "horseName": "クラウンプライド",
-          "sexAge": "牡6",
-          "load": 58,
-          "jockey": "横山武史",
-          "stable": "新谷功一 (栗東)",
-          "odds": "8.0",
-          "placeOdds": "2.2 - 3.4",
-          "pop": 4,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 504,
-          "lastRaceWeight": 500,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 3,
-          "gate": 5,
-          "horseName": "セラフィックコール",
-          "sexAge": "牡5",
-          "load": 58,
-          "jockey": "C.デムーロ",
-          "stable": "寺島良 (栗東)",
-          "odds": "10.5",
-          "placeOdds": "2.7 - 4.0",
-          "pop": 5,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 524,
-          "lastRaceWeight": 520,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 3,
-          "gate": 6,
-          "horseName": "サンライズジパング",
-          "sexAge": "牡4",
-          "load": 57,
-          "jockey": "武豊",
-          "stable": "音無秀孝 (栗東)",
-          "odds": "13.2",
-          "placeOdds": "3.2 - 4.8",
-          "pop": 6,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 510,
-          "lastRaceWeight": 506,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 4,
-          "gate": 7,
-          "horseName": "ハギノアレグリアス",
-          "sexAge": "牡8",
-          "load": 58,
-          "jockey": "岩田望来",
-          "stable": "四位洋文 (栗東)",
-          "odds": "16.8",
-          "placeOdds": "3.8 - 5.6",
-          "pop": 7,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 492,
-          "lastRaceWeight": 490,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 4,
-          "gate": 8,
-          "horseName": "ドゥラエレーデ",
-          "sexAge": "牡5",
-          "load": 58,
-          "jockey": "北村友一",
-          "stable": "池添学 (栗東)",
-          "odds": "19.5",
-          "placeOdds": "4.2 - 6.2",
-          "pop": 8,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 516,
-          "lastRaceWeight": 514,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 5,
-          "gate": 9,
-          "horseName": "メイショウハリオ",
-          "sexAge": "牡8",
-          "load": 58,
-          "jockey": "浜中俊",
-          "stable": "岡田稲男 (栗東)",
-          "odds": "24.0",
-          "placeOdds": "5.0 - 7.5",
-          "pop": 9,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 512,
-          "lastRaceWeight": 508,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 5,
-          "gate": 10,
-          "horseName": "ミックファイア",
-          "sexAge": "牡5",
-          "load": 58,
-          "jockey": "矢野貴之",
-          "stable": "渡邉和雄 (地方)",
-          "odds": "29.0",
-          "placeOdds": "6.0 - 9.0",
-          "pop": 10,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 498,
-          "lastRaceWeight": 494,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 6,
-          "gate": 11,
-          "horseName": "ガイアフォース",
-          "sexAge": "牡6",
-          "load": 58,
-          "jockey": "長岡禎仁",
-          "stable": "杉山晴紀 (栗東)",
-          "odds": "35.0",
-          "placeOdds": "7.5 - 11.5",
-          "pop": 11,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 498,
-          "lastRaceWeight": 496,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 6,
-          "gate": 12,
-          "horseName": "ヤマニンウルス",
-          "sexAge": "牡4",
-          "load": 57,
-          "jockey": "団野大成",
-          "stable": "斉藤崇史 (栗東)",
-          "odds": "42.0",
-          "placeOdds": "8.5 - 13.0",
-          "pop": 12,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 580,
-          "lastRaceWeight": 576,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 7,
-          "gate": 13,
+          "waku": null,
+          "gate": null,
           "horseName": "アーテルアストレア",
           "sexAge": "牝6",
           "load": 56,
@@ -62093,8 +61921,108 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 7,
-          "gate": 14,
+          "waku": null,
+          "gate": null,
+          "horseName": "ウィルソンテソーロ",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "川田将雅",
+          "stable": "小手川準 (美浦)",
+          "odds": "3.8",
+          "placeOdds": "1.4 - 2.0",
+          "pop": 2,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 490,
+          "lastRaceWeight": 486,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ガイアフォース",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "長岡禎仁",
+          "stable": "杉山晴紀 (栗東)",
+          "odds": "35.0",
+          "placeOdds": "7.5 - 11.5",
+          "pop": 11,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 498,
+          "lastRaceWeight": 496,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "クラウンプライド",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "横山武史",
+          "stable": "新谷功一 (栗東)",
+          "odds": "8.0",
+          "placeOdds": "2.2 - 3.4",
+          "pop": 4,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 504,
+          "lastRaceWeight": 500,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "グロリアムンディ",
+          "sexAge": "牡7",
+          "load": 58,
+          "jockey": "戸崎圭太",
+          "stable": "大久保龍志 (栗東)",
+          "odds": "95.0",
+          "placeOdds": "18.0 - 28.0",
+          "pop": 16,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 514,
+          "lastRaceWeight": 510,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "サンライズジパング",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "武豊",
+          "stable": "音無秀孝 (栗東)",
+          "odds": "13.2",
+          "placeOdds": "3.2 - 4.8",
+          "pop": 6,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 510,
+          "lastRaceWeight": 506,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
           "horseName": "スレイマン",
           "sexAge": "牡7",
           "load": 58,
@@ -62113,8 +62041,28 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 8,
-          "gate": 15,
+          "waku": null,
+          "gate": null,
+          "horseName": "セラフィックコール",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "C.デムーロ",
+          "stable": "寺島良 (栗東)",
+          "odds": "10.5",
+          "placeOdds": "2.7 - 4.0",
+          "pop": 5,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 524,
+          "lastRaceWeight": 520,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
           "horseName": "テーオードレフォン",
           "sexAge": "牡6",
           "load": 58,
@@ -62133,22 +62081,142 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 8,
-          "gate": 16,
-          "horseName": "グロリアムンディ",
-          "sexAge": "牡7",
+          "waku": null,
+          "gate": null,
+          "horseName": "ドゥラエレーデ",
+          "sexAge": "牡5",
           "load": 58,
-          "jockey": "戸崎圭太",
-          "stable": "大久保龍志 (栗東)",
-          "odds": "95.0",
-          "placeOdds": "18.0 - 28.0",
-          "pop": 16,
+          "jockey": "北村友一",
+          "stable": "池添学 (栗東)",
+          "odds": "19.5",
+          "placeOdds": "4.2 - 6.2",
+          "pop": 8,
           "trainingGrade": null,
           "trainingCourse": null,
           "trainingTime": null,
           "trainingComment": null,
-          "trainingWeight": 514,
-          "lastRaceWeight": 510,
+          "trainingWeight": 516,
+          "lastRaceWeight": 514,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ハギノアレグリアス",
+          "sexAge": "牡8",
+          "load": 58,
+          "jockey": "岩田望来",
+          "stable": "四位洋文 (栗東)",
+          "odds": "16.8",
+          "placeOdds": "3.8 - 5.6",
+          "pop": 7,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 492,
+          "lastRaceWeight": 490,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ペプチドナイル",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "藤岡佑介",
+          "stable": "武英智 (栗東)",
+          "odds": "6.5",
+          "placeOdds": "1.9 - 2.8",
+          "pop": 3,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 532,
+          "lastRaceWeight": 528,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ミックファイア",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "矢野貴之",
+          "stable": "渡邉和雄 (地方)",
+          "odds": "29.0",
+          "placeOdds": "6.0 - 9.0",
+          "pop": 10,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 498,
+          "lastRaceWeight": 494,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "メイショウハリオ",
+          "sexAge": "牡8",
+          "load": 58,
+          "jockey": "浜中俊",
+          "stable": "岡田稲男 (栗東)",
+          "odds": "24.0",
+          "placeOdds": "5.0 - 7.5",
+          "pop": 9,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 512,
+          "lastRaceWeight": 508,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ヤマニンウルス",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "団野大成",
+          "stable": "斉藤崇史 (栗東)",
+          "odds": "42.0",
+          "placeOdds": "8.5 - 13.0",
+          "pop": 12,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 580,
+          "lastRaceWeight": 576,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "レモンポップ",
+          "sexAge": "牡7",
+          "load": 58,
+          "jockey": "坂井瑠星",
+          "stable": "田中博康 (美浦)",
+          "odds": "2.2",
+          "placeOdds": "1.2 - 1.5",
+          "pop": 1,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 520,
+          "lastRaceWeight": 516,
           "confirmedWeight": null,
           "weightDiff": null
         }
@@ -62187,7 +62255,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
             }
           ]
         }
-      ]
+      ],
+      "entryStatus": "entry_scheduled"
     },
     "21": {
       "raceId": "21",
@@ -62196,28 +62265,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "venue": "京都競馬場 芝1600m (外回り)",
       "starters": [
         {
-          "waku": 1,
-          "gate": 1,
-          "horseName": "ブラウンラチェット",
-          "sexAge": "牝2",
-          "load": 55,
-          "jockey": "C.ルメール",
-          "stable": "手塚貴久 (美浦)",
-          "odds": "2.6",
-          "placeOdds": "1.3 - 1.7",
-          "pop": 1,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 444,
-          "lastRaceWeight": 440,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 1,
-          "gate": 2,
+          "waku": null,
+          "gate": null,
           "horseName": "カムニャック",
           "sexAge": "牝2",
           "load": 55,
@@ -62236,68 +62285,28 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 2,
-          "gate": 3,
-          "horseName": "コートアリシアン",
+          "waku": null,
+          "gate": null,
+          "horseName": "カレンラップスター",
           "sexAge": "牝2",
           "load": 55,
-          "jockey": "菅原明良",
-          "stable": "伊藤大士 (美浦)",
-          "odds": "5.8",
-          "placeOdds": "1.8 - 2.6",
-          "pop": 3,
+          "jockey": "松山弘平",
+          "stable": "安田翔伍 (栗東)",
+          "odds": "24.0",
+          "placeOdds": "5.2 - 8.0",
+          "pop": 8,
           "trainingGrade": null,
           "trainingCourse": null,
           "trainingTime": null,
           "trainingComment": null,
-          "trainingWeight": 456,
-          "lastRaceWeight": 452,
+          "trainingWeight": 450,
+          "lastRaceWeight": 446,
           "confirmedWeight": null,
           "weightDiff": null
         },
         {
-          "waku": 2,
-          "gate": 4,
-          "horseName": "ミッキージュエリー",
-          "sexAge": "牝2",
-          "load": 55,
-          "jockey": "坂井瑠星",
-          "stable": "矢作芳人 (栗東)",
-          "odds": "7.5",
-          "placeOdds": "2.2 - 3.2",
-          "pop": 4,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 468,
-          "lastRaceWeight": 464,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 3,
-          "gate": 5,
-          "horseName": "マイエレメント",
-          "sexAge": "牝2",
-          "load": 55,
-          "jockey": "横山武史",
-          "stable": "福永祐一 (栗東)",
-          "odds": "9.8",
-          "placeOdds": "2.6 - 3.8",
-          "pop": 5,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 472,
-          "lastRaceWeight": 468,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 3,
-          "gate": 6,
+          "waku": null,
+          "gate": null,
           "horseName": "クウネル",
           "sexAge": "牝2",
           "load": 55,
@@ -62316,8 +62325,88 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 4,
-          "gate": 7,
+          "waku": null,
+          "gate": null,
+          "horseName": "コートアリシアン",
+          "sexAge": "牝2",
+          "load": 55,
+          "jockey": "菅原明良",
+          "stable": "伊藤大士 (美浦)",
+          "odds": "5.8",
+          "placeOdds": "1.8 - 2.6",
+          "pop": 3,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 456,
+          "lastRaceWeight": 452,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ブラウンラチェット",
+          "sexAge": "牝2",
+          "load": 55,
+          "jockey": "C.ルメール",
+          "stable": "手塚貴久 (美浦)",
+          "odds": "2.6",
+          "placeOdds": "1.3 - 1.7",
+          "pop": 1,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 444,
+          "lastRaceWeight": 440,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "マイエレメント",
+          "sexAge": "牝2",
+          "load": 55,
+          "jockey": "横山武史",
+          "stable": "福永祐一 (栗東)",
+          "odds": "9.8",
+          "placeOdds": "2.6 - 3.8",
+          "pop": 5,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 472,
+          "lastRaceWeight": 468,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ミッキージュエリー",
+          "sexAge": "牝2",
+          "load": 55,
+          "jockey": "坂井瑠星",
+          "stable": "矢作芳人 (栗東)",
+          "odds": "7.5",
+          "placeOdds": "2.2 - 3.2",
+          "pop": 4,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 468,
+          "lastRaceWeight": 464,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
           "horseName": "ランフォーヴァウ",
           "sexAge": "牝2",
           "load": 55,
@@ -62332,26 +62421,6 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "trainingComment": null,
           "trainingWeight": 464,
           "lastRaceWeight": 460,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 4,
-          "gate": 8,
-          "horseName": "カレンラップスター",
-          "sexAge": "牝2",
-          "load": 55,
-          "jockey": "松山弘平",
-          "stable": "安田翔伍 (栗東)",
-          "odds": "24.0",
-          "placeOdds": "5.2 - 8.0",
-          "pop": 8,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 450,
-          "lastRaceWeight": 446,
           "confirmedWeight": null,
           "weightDiff": null
         }
@@ -62390,7 +62459,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
             }
           ]
         }
-      ]
+      ],
+      "entryStatus": "entry_scheduled"
     },
     "22": {
       "raceId": "22",
@@ -62399,48 +62469,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "venue": "京都競馬場 芝1600m (外回り)",
       "starters": [
         {
-          "waku": 1,
-          "gate": 1,
-          "horseName": "クロワデュノール",
-          "sexAge": "牡2",
-          "load": 56,
-          "jockey": "北村友一",
-          "stable": "斉藤崇史 (栗東)",
-          "odds": "2.4",
-          "placeOdds": "1.2 - 1.6",
-          "pop": 1,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 512,
-          "lastRaceWeight": 508,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 1,
-          "gate": 2,
-          "horseName": "パンジャタワー",
-          "sexAge": "牡2",
-          "load": 56,
-          "jockey": "松山弘平",
-          "stable": "橋口慎介 (栗東)",
-          "odds": "3.8",
-          "placeOdds": "1.5 - 2.1",
-          "pop": 2,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 482,
-          "lastRaceWeight": 478,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 2,
-          "gate": 3,
+          "waku": null,
+          "gate": null,
           "horseName": "アルテヴェローチェ",
           "sexAge": "牡2",
           "load": 56,
@@ -62459,28 +62489,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 2,
-          "gate": 4,
-          "horseName": "サトノカルナバル",
-          "sexAge": "牡2",
-          "load": 56,
-          "jockey": "佐々木大輔",
-          "stable": "堀宣行 (美浦)",
-          "odds": "7.8",
-          "placeOdds": "2.2 - 3.4",
-          "pop": 4,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 490,
-          "lastRaceWeight": 486,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 3,
-          "gate": 5,
+          "waku": null,
+          "gate": null,
           "horseName": "エイシンワンド",
           "sexAge": "牡2",
           "load": 56,
@@ -62499,8 +62509,48 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 3,
-          "gate": 6,
+          "waku": null,
+          "gate": null,
+          "horseName": "クロワデュノール",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "北村友一",
+          "stable": "斉藤崇史 (栗東)",
+          "odds": "2.4",
+          "placeOdds": "1.2 - 1.6",
+          "pop": 1,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 512,
+          "lastRaceWeight": 508,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "サトノカルナバル",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "佐々木大輔",
+          "stable": "堀宣行 (美浦)",
+          "odds": "7.8",
+          "placeOdds": "2.2 - 3.4",
+          "pop": 4,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 490,
+          "lastRaceWeight": 486,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
           "horseName": "タイセイカレント",
           "sexAge": "牡2",
           "load": 56,
@@ -62515,6 +62565,26 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "trainingComment": null,
           "trainingWeight": 486,
           "lastRaceWeight": 482,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "パンジャタワー",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "松山弘平",
+          "stable": "橋口慎介 (栗東)",
+          "odds": "3.8",
+          "placeOdds": "1.5 - 2.1",
+          "pop": 2,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 482,
+          "lastRaceWeight": 478,
           "confirmedWeight": null,
           "weightDiff": null
         }
@@ -62548,7 +62618,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
             }
           ]
         }
-      ]
+      ],
+      "entryStatus": "entry_scheduled"
     },
     "23": {
       "raceId": "23",
@@ -62557,48 +62628,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "venue": "中山競馬場 芝2000m",
       "starters": [
         {
-          "waku": 1,
-          "gate": 1,
-          "horseName": "マスカレードボール",
-          "sexAge": "牡2",
-          "load": 56,
-          "jockey": "戸崎圭太",
-          "stable": "手塚貴久 (美浦)",
-          "odds": "2.8",
-          "placeOdds": "1.3 - 1.8",
-          "pop": 1,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 494,
-          "lastRaceWeight": 490,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 1,
-          "gate": 2,
-          "horseName": "ファイアンクランツ",
-          "sexAge": "牡2",
-          "load": 56,
-          "jockey": "菅原明良",
-          "stable": "堀宣行 (美浦)",
-          "odds": "4.2",
-          "placeOdds": "1.5 - 2.2",
-          "pop": 2,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 486,
-          "lastRaceWeight": 482,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 2,
-          "gate": 3,
+          "waku": null,
+          "gate": null,
           "horseName": "アスクシュタイン",
           "sexAge": "牡2",
           "load": 56,
@@ -62617,8 +62648,28 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 2,
-          "gate": 4,
+          "waku": null,
+          "gate": null,
+          "horseName": "パープルレディ",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "C.ルメール",
+          "stable": "木村哲也 (美浦)",
+          "odds": "10.0",
+          "placeOdds": "2.6 - 4.0",
+          "pop": 5,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 470,
+          "lastRaceWeight": 466,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
           "horseName": "ピコチャンブラック",
           "sexAge": "牡2",
           "load": 56,
@@ -62637,22 +62688,42 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 3,
-          "gate": 5,
-          "horseName": "パープルレディ",
+          "waku": null,
+          "gate": null,
+          "horseName": "ファイアンクランツ",
           "sexAge": "牡2",
           "load": 56,
-          "jockey": "C.ルメール",
-          "stable": "木村哲也 (美浦)",
-          "odds": "10.0",
-          "placeOdds": "2.6 - 4.0",
-          "pop": 5,
+          "jockey": "菅原明良",
+          "stable": "堀宣行 (美浦)",
+          "odds": "4.2",
+          "placeOdds": "1.5 - 2.2",
+          "pop": 2,
           "trainingGrade": null,
           "trainingCourse": null,
           "trainingTime": null,
           "trainingComment": null,
-          "trainingWeight": 470,
-          "lastRaceWeight": 466,
+          "trainingWeight": 486,
+          "lastRaceWeight": 482,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "マスカレードボール",
+          "sexAge": "牡2",
+          "load": 56,
+          "jockey": "戸崎圭太",
+          "stable": "手塚貴久 (美浦)",
+          "odds": "2.8",
+          "placeOdds": "1.3 - 1.8",
+          "pop": 1,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 494,
+          "lastRaceWeight": 490,
           "confirmedWeight": null,
           "weightDiff": null
         }
@@ -62672,7 +62743,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
             }
           ]
         }
-      ]
+      ],
+      "entryStatus": "entry_scheduled"
     },
     "24": {
       "raceId": "24",
@@ -62681,268 +62753,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
       "venue": "中山競馬場 芝2500m",
       "starters": [
         {
-          "waku": 1,
-          "gate": 1,
-          "horseName": "ドウデュース",
-          "sexAge": "牡6",
-          "load": 58,
-          "jockey": "武豊",
-          "stable": "友道康夫 (栗東)",
-          "odds": "2.5",
-          "placeOdds": "1.2 - 1.6",
-          "pop": 1,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 506,
-          "lastRaceWeight": 504,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 1,
-          "gate": 2,
-          "horseName": "ダノンデサイル",
-          "sexAge": "牡5",
-          "load": 58,
-          "jockey": "戸崎圭太",
-          "stable": "安田翔伍 (栗東)",
-          "odds": "3.6",
-          "placeOdds": "1.4 - 2.0",
-          "pop": 2,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 518,
-          "lastRaceWeight": 516,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 2,
-          "gate": 3,
-          "horseName": "レガレイラ",
-          "sexAge": "牝5",
-          "load": 56,
-          "jockey": "C.ルメール",
-          "stable": "木村哲也 (美浦)",
-          "odds": "4.8",
-          "placeOdds": "1.6 - 2.4",
-          "pop": 3,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 494,
-          "lastRaceWeight": 494,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 2,
-          "gate": 4,
-          "horseName": "アーバンシック",
-          "sexAge": "牡4",
-          "load": 57,
-          "jockey": "横山武史",
-          "stable": "武井亮 (美浦)",
-          "odds": "6.2",
-          "placeOdds": "2.0 - 2.9",
-          "pop": 4,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 512,
-          "lastRaceWeight": 510,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 3,
-          "gate": 5,
-          "horseName": "ブローザホーン",
-          "sexAge": "牡6",
-          "load": 58,
-          "jockey": "菅原明良",
-          "stable": "吉岡辰弥 (栗東)",
-          "odds": "8.5",
-          "placeOdds": "2.4 - 3.6",
-          "pop": 5,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 432,
-          "lastRaceWeight": 428,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 3,
-          "gate": 6,
-          "horseName": "ジャスティンパレス",
-          "sexAge": "牡6",
-          "load": 58,
-          "jockey": "坂井瑠星",
-          "stable": "杉山晴紀 (栗東)",
-          "odds": "10.5",
-          "placeOdds": "2.8 - 4.2",
-          "pop": 6,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 474,
-          "lastRaceWeight": 472,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 4,
-          "gate": 7,
-          "horseName": "スターズオンアース",
-          "sexAge": "牝6",
-          "load": 56,
-          "jockey": "川田将雅",
-          "stable": "高柳瑞樹 (美浦)",
-          "odds": "13.0",
-          "placeOdds": "3.2 - 4.8",
-          "pop": 7,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 498,
-          "lastRaceWeight": 496,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 4,
-          "gate": 8,
-          "horseName": "ソールオリエンス",
-          "sexAge": "牡5",
-          "load": 58,
-          "jockey": "松山弘平",
-          "stable": "手塚貴久 (美浦)",
-          "odds": "16.5",
-          "placeOdds": "3.8 - 5.6",
-          "pop": 8,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 470,
-          "lastRaceWeight": 468,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 5,
-          "gate": 9,
-          "horseName": "ベラジオオペラ",
-          "sexAge": "牡5",
-          "load": 58,
-          "jockey": "横山和生",
-          "stable": "上村洋行 (栗東)",
-          "odds": "20.0",
-          "placeOdds": "4.5 - 6.8",
-          "pop": 9,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 506,
-          "lastRaceWeight": 504,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 5,
-          "gate": 10,
-          "horseName": "ネブラディスク",
-          "sexAge": "牡4",
-          "load": 57,
-          "jockey": "岩田望来",
-          "stable": "福永祐一 (栗東)",
-          "odds": "24.0",
-          "placeOdds": "5.2 - 8.0",
-          "pop": 10,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 460,
-          "lastRaceWeight": 458,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 6,
-          "gate": 11,
-          "horseName": "メイショウタバル",
-          "sexAge": "牡4",
-          "load": 57,
-          "jockey": "浜中俊",
-          "stable": "石橋守 (栗東)",
-          "odds": "32.0",
-          "placeOdds": "7.0 - 11.0",
-          "pop": 11,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 504,
-          "lastRaceWeight": 500,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 6,
-          "gate": 12,
-          "horseName": "ヘデントール",
-          "sexAge": "牡4",
-          "load": 57,
-          "jockey": "佐々木大輔",
-          "stable": "木村哲也 (美浦)",
-          "odds": "38.0",
-          "placeOdds": "8.0 - 12.5",
-          "pop": 12,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 490,
-          "lastRaceWeight": 486,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 7,
-          "gate": 13,
-          "horseName": "ディープボンド",
-          "sexAge": "牡8",
-          "load": 58,
-          "jockey": "幸英明",
-          "stable": "大久保龍志 (栗東)",
-          "odds": "48.0",
-          "placeOdds": "10.0 - 16.0",
-          "pop": 13,
-          "trainingGrade": null,
-          "trainingCourse": null,
-          "trainingTime": null,
-          "trainingComment": null,
-          "trainingWeight": 514,
-          "lastRaceWeight": 512,
-          "confirmedWeight": null,
-          "weightDiff": null
-        },
-        {
-          "waku": 7,
-          "gate": 14,
+          "waku": null,
+          "gate": null,
           "horseName": "アドマイヤテラ",
           "sexAge": "牡4",
           "load": 57,
@@ -62961,8 +62773,108 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 8,
-          "gate": 15,
+          "waku": null,
+          "gate": null,
+          "horseName": "アーバンシック",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "横山武史",
+          "stable": "武井亮 (美浦)",
+          "odds": "6.2",
+          "placeOdds": "2.0 - 2.9",
+          "pop": 4,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 512,
+          "lastRaceWeight": 510,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "シンエンペラー",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "坂井瑠星",
+          "stable": "矢作芳人 (栗東)",
+          "odds": "75.0",
+          "placeOdds": "15.0 - 24.0",
+          "pop": 16,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 486,
+          "lastRaceWeight": 485,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ジャスティンパレス",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "坂井瑠星",
+          "stable": "杉山晴紀 (栗東)",
+          "odds": "10.5",
+          "placeOdds": "2.8 - 4.2",
+          "pop": 6,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 474,
+          "lastRaceWeight": 472,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "スターズオンアース",
+          "sexAge": "牝6",
+          "load": 56,
+          "jockey": "川田将雅",
+          "stable": "高柳瑞樹 (美浦)",
+          "odds": "13.0",
+          "placeOdds": "3.2 - 4.8",
+          "pop": 7,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 498,
+          "lastRaceWeight": 496,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ソールオリエンス",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "松山弘平",
+          "stable": "手塚貴久 (美浦)",
+          "odds": "16.5",
+          "placeOdds": "3.8 - 5.6",
+          "pop": 8,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 470,
+          "lastRaceWeight": 468,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
           "horseName": "タガノデュード",
           "sexAge": "牡5",
           "load": 58,
@@ -62981,22 +62893,182 @@ html.route-prediction .nav-item[data-target="prediction"] {
           "weightDiff": null
         },
         {
-          "waku": 8,
-          "gate": 16,
-          "horseName": "シンエンペラー",
-          "sexAge": "牡4",
-          "load": 57,
-          "jockey": "坂井瑠星",
-          "stable": "矢作芳人 (栗東)",
-          "odds": "75.0",
-          "placeOdds": "15.0 - 24.0",
-          "pop": 16,
+          "waku": null,
+          "gate": null,
+          "horseName": "ダノンデサイル",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "戸崎圭太",
+          "stable": "安田翔伍 (栗東)",
+          "odds": "3.6",
+          "placeOdds": "1.4 - 2.0",
+          "pop": 2,
           "trainingGrade": null,
           "trainingCourse": null,
           "trainingTime": null,
           "trainingComment": null,
-          "trainingWeight": 486,
-          "lastRaceWeight": 485,
+          "trainingWeight": 518,
+          "lastRaceWeight": 516,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ディープボンド",
+          "sexAge": "牡8",
+          "load": 58,
+          "jockey": "幸英明",
+          "stable": "大久保龍志 (栗東)",
+          "odds": "48.0",
+          "placeOdds": "10.0 - 16.0",
+          "pop": 13,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 514,
+          "lastRaceWeight": 512,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ドウデュース",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "武豊",
+          "stable": "友道康夫 (栗東)",
+          "odds": "2.5",
+          "placeOdds": "1.2 - 1.6",
+          "pop": 1,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 506,
+          "lastRaceWeight": 504,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ネブラディスク",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "岩田望来",
+          "stable": "福永祐一 (栗東)",
+          "odds": "24.0",
+          "placeOdds": "5.2 - 8.0",
+          "pop": 10,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 460,
+          "lastRaceWeight": 458,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ブローザホーン",
+          "sexAge": "牡6",
+          "load": 58,
+          "jockey": "菅原明良",
+          "stable": "吉岡辰弥 (栗東)",
+          "odds": "8.5",
+          "placeOdds": "2.4 - 3.6",
+          "pop": 5,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 432,
+          "lastRaceWeight": 428,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ヘデントール",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "佐々木大輔",
+          "stable": "木村哲也 (美浦)",
+          "odds": "38.0",
+          "placeOdds": "8.0 - 12.5",
+          "pop": 12,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 490,
+          "lastRaceWeight": 486,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "ベラジオオペラ",
+          "sexAge": "牡5",
+          "load": 58,
+          "jockey": "横山和生",
+          "stable": "上村洋行 (栗東)",
+          "odds": "20.0",
+          "placeOdds": "4.5 - 6.8",
+          "pop": 9,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 506,
+          "lastRaceWeight": 504,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "メイショウタバル",
+          "sexAge": "牡4",
+          "load": 57,
+          "jockey": "浜中俊",
+          "stable": "石橋守 (栗東)",
+          "odds": "32.0",
+          "placeOdds": "7.0 - 11.0",
+          "pop": 11,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 504,
+          "lastRaceWeight": 500,
+          "confirmedWeight": null,
+          "weightDiff": null
+        },
+        {
+          "waku": null,
+          "gate": null,
+          "horseName": "レガレイラ",
+          "sexAge": "牝5",
+          "load": 56,
+          "jockey": "C.ルメール",
+          "stable": "木村哲也 (美浦)",
+          "odds": "4.8",
+          "placeOdds": "1.6 - 2.4",
+          "pop": 3,
+          "trainingGrade": null,
+          "trainingCourse": null,
+          "trainingTime": null,
+          "trainingComment": null,
+          "trainingWeight": 494,
+          "lastRaceWeight": 494,
           "confirmedWeight": null,
           "weightDiff": null
         }
@@ -63054,7 +63126,8 @@ html.route-prediction .nav-item[data-target="prediction"] {
             }
           ]
         }
-      ]
+      ],
+      "entryStatus": "entry_scheduled"
     }
   },
   "raceId": "17",
@@ -63524,6 +63597,53 @@ html.route-prediction .nav-item[data-target="prediction"] {
   }
 };
 
+
+      // ----------------------------------------------------
+      // レース出馬表ステータス自動判定エンジン
+      // 出馬予定（entry_scheduled） ➔ 出走馬確定（starters_confirmed） ➔ 枠順確定（gate_confirmed）
+      // ----------------------------------------------------
+      function getRaceEntryStage(raceId) {
+        const race = G1_RACES.find(r => r.id === String(raceId));
+        if (!race) return 'entry_scheduled';
+        if (race.status === 'finished') return 'finished';
+
+        // 1. 明示的な指定があれば最優先
+        if (race.entryStatus) return race.entryStatus;
+
+        const predRace = (typeof PREDICTION_DATA !== 'undefined' && PREDICTION_DATA.races) 
+          ? PREDICTION_DATA.races[String(raceId)] 
+          : null;
+        if (predRace && predRace.entryStatus) return predRace.entryStatus;
+
+        const entries = (typeof ENTRIES_DATA !== 'undefined' && ENTRIES_DATA[String(raceId)])
+          ? ENTRIES_DATA[String(raceId)]
+          : null;
+
+        // 全頭の馬番が確定している場合は枠順確定
+        if (entries && entries.length > 0 && entries.every(e => e.gate !== null && e.gate !== undefined && e.gate !== '')) {
+          return 'gate_confirmed';
+        }
+
+        // JRA G1標準進行スケジュールに基づく自動判定 (日曜日15:40発走基準)
+        // 1. 金曜 午前09:00 JST 以降 (発走55時間以内): 枠順確定 (gate_confirmed)
+        // 2. 木曜 午後14:00 JST 以降 (発走75時間以内): 出走投票完了・出走馬確定 (starters_confirmed)
+        // 3. 木曜 14:00以前 (発走75時間超): 登録馬・出走予定 (entry_scheduled)
+        const raceTime = new Date(race.date).getTime();
+        const nowTime = Date.now();
+        const diffHours = (raceTime - nowTime) / (1000 * 3600);
+
+        if (diffHours <= 0) {
+          return 'finished';
+        } else if (diffHours <= 55) {
+          return 'gate_confirmed';
+        } else if (diffHours <= 75) {
+          return 'starters_confirmed';
+        } else {
+          return 'entry_scheduled';
+        }
+      }
+    
+
 const POOLS = {
         '3yo-male': [
           'ロブチェン', 'パントルナイーフ', 'バステール', 'ゴーイントゥスカイ', 'マテンロウゲイル',
@@ -63684,10 +63804,18 @@ const POOLS = {
               </div>
             `;
           } else {
-            const badgeText = (r.id === '17') ? '枠順確定' : (hasEntries ? '出走馬・オカルト' : '');
+            const stage = getRaceEntryStage(r.id);
+            let stageBadge = '';
+            if (stage === 'gate_confirmed') {
+              stageBadge = '<span class="badge-stage-gates">枠順確定</span>';
+            } else if (stage === 'starters_confirmed') {
+              stageBadge = '<span class="badge-stage-confirmed">出走馬確定</span>';
+            } else if (hasEntries) {
+              stageBadge = '<span class="badge-stage-scheduled">出馬予定</span>';
+            }
             footerContent = `
               <div class="card-result-preview">
-                <span class="text-muted" style="font-size: 13px;">${badgeText ? `<span style="background: rgba(16,185,129,0.2); color: var(--primary); padding: 2px 6px; border-radius: 4px; font-weight: 700; font-size: 11px; margin-right: 6px;">${badgeText}</span>` : ''}発走予定: 15:40</span>
+                <span class="text-muted" style="font-size: 13px;">${stageBadge ? `<span style="margin-right: 6px;">${stageBadge}</span>` : ''}発走予定: 15:40</span>
                 <div class="card-action-text">出馬表・詳細 <i data-lucide="arrow-right"></i></div>
               </div>
             `;
@@ -64531,9 +64659,14 @@ function hydratePayouts(race) {
           if (!el) return;
           const assignedGates = Object.keys(marks).filter(g => marks[g] === mt.mark);
           if (assignedGates.length > 0) {
+            const stage = getRaceEntryStage(currentPredictionRaceId);
+            const isGateConfirmed = (stage === 'gate_confirmed');
             const horseNames = assignedGates.map(g => {
-              const h = starters.find(s => s.gate === Number(g));
-              return h ? `${g}.${h.horseName}` : `${g}番`;
+              const h = starters.find(s => String(s.gate) === String(g) || s.horseName === g || s.horseName.replace(/\s+/g, '') === g);
+              if (h) {
+                return (isGateConfirmed && h.gate) ? `${h.gate}.${h.horseName}` : h.horseName;
+              }
+              return `${g}番`;
             });
             el.innerText = horseNames.join(', ');
             el.classList.add('has-assigned');
@@ -64547,13 +64680,26 @@ function hydratePayouts(race) {
       function openMarkSheet(gate) {
         activeSheetGate = gate;
         const starters = getActivePredictionStarters();
-        const horse = starters.find(s => s.gate === Number(gate));
+        const horse = starters.find(s => String(s.gate) === String(gate) || s.horseName === gate || s.horseName.replace(/\s+/g, '') === gate);
         if (!horse) return;
 
         const sheet = document.getElementById('mark-bottom-sheet');
         const backdrop = document.getElementById('mark-sheet-backdrop');
         const gateBadge = document.getElementById('sheet-target-gate');
         const nameEl = document.getElementById('sheet-target-name');
+
+        const stage = getRaceEntryStage(currentPredictionRaceId);
+        const isGateConfirmed = (stage === 'gate_confirmed');
+
+        if (gateBadge) {
+          if (isGateConfirmed && horse.gate) {
+            gateBadge.className = `nh-gate-cell waku-${horse.waku || 1}`;
+            gateBadge.innerText = horse.gate;
+          } else {
+            gateBadge.className = 'nh-gate-cell unconfirmed';
+            gateBadge.innerText = '-';
+          }
+        }
 
         if (gateBadge) {
           gateBadge.className = `nh-gate-cell waku-${horse.waku}`;
@@ -64820,20 +64966,53 @@ function hydratePayouts(race) {
           };
         });
 
+        const stage = getRaceEntryStage(currentPredictionRaceId);
+        const isGateConfirmed = (stage === 'gate_confirmed');
+
+        const sortGateBtn = document.getElementById('btn-sort-gate');
+        if (sortGateBtn) {
+          sortGateBtn.innerText = isGateConfirmed ? '馬番順' : '五十音順';
+        }
+
+        const stagePill = document.getElementById('odds-stage-pill');
+        if (stagePill) {
+          if (stage === 'gate_confirmed') {
+            stagePill.className = 'nh-stage-pill stage-gates';
+            stagePill.innerHTML = `🎯 枠順確定済 (出走${starters.length}頭)`;
+          } else if (stage === 'starters_confirmed') {
+            stagePill.className = 'nh-stage-pill stage-confirmed';
+            stagePill.innerHTML = `🏇 出走馬確定 (枠順未定・五十音順)`;
+          } else {
+            stagePill.className = 'nh-stage-pill stage-scheduled';
+            stagePill.innerHTML = `📋 出馬予定 (枠順未定・五十音順)`;
+          }
+        }
+
         if (predictionSortType === 'pop') {
           starters.sort((a, b) => a.pop - b.pop);
+        } else if (isGateConfirmed) {
+          starters.sort((a, b) => (a.gate || 99) - (b.gate || 99));
         } else {
-          starters.sort((a, b) => a.gate - b.gate);
+          // 枠順確定するまでは五十音順
+          starters.sort((a, b) => a.horseName.localeCompare(b.horseName, 'ja'));
         }
 
         const marks = getUserMarks();
         let html = '';
 
         starters.forEach(s => {
-          const m = marks[s.gate] || '';
+          const horseKey = (s.gate !== null && s.gate !== undefined) ? String(s.gate) : s.horseName.replace(/\s+/g, '');
+          const m = marks[horseKey] || marks[s.gate] || marks[s.horseName] || '';
           const mClass = MARK_CLASSES[m] || '';
           const isTop3Pop = s.pop <= 3;
           const displayOdds = s.winOdds || s.odds || '--';
+
+          let gateCellHtml = '';
+          if (isGateConfirmed && s.gate) {
+            gateCellHtml = `<div class="nh-gate-cell waku-${s.waku}">${s.gate}</div>`;
+          } else {
+            gateCellHtml = `<div class="nh-gate-cell unconfirmed" title="枠順未確定">-</div>`;
+          }
 
           let displayWeight = '-';
           let displayWeightSub = `<span class="weight-tag-prev">前走</span>`;
@@ -64860,21 +65039,19 @@ function hydratePayouts(race) {
 
           html += `
             <div class="nh-row-container">
-              <div class="nh-main-row" data-gate="${s.gate}">
-                <!-- 1. 馬番（26px 枠色セル） -->
-                <div class="nh-gate-cell waku-${s.waku}">
-                  ${s.gate}
-                </div>
+              <div class="nh-main-row" data-gate="${horseKey}">
+                <!-- 1. 馬番（26px 枠色セル または 未確定ハイフン） -->
+                ${gateCellHtml}
 
                 <!-- 2. 印ボタン (30px) -->
                 <div class="nh-mark-cell">
-                  <button class="nh-mark-btn ${mClass}" data-gate="${s.gate}" aria-label="印選択">
+                  <button class="nh-mark-btn ${mClass}" data-gate="${horseKey}" aria-label="印選択">
                     ${m}
                   </button>
                 </div>
 
                 <!-- 3. 馬情報（中央・可変幅・重なりなし） -->
-                <div class="nh-info-cell" data-action="toggle-drawer" data-gate="${s.gate}">
+                <div class="nh-info-cell" data-action="toggle-drawer" data-gate="${horseKey}">
                   <div class="nh-name-row">
                     <span class="nh-horse-name">${s.horseName}</span>
                   </div>
@@ -64886,7 +65063,7 @@ function hydratePayouts(race) {
                 </div>
 
                 <!-- 4. オッズ・人気（48px固定・右寄せ） -->
-                <div class="nh-odds-cell" data-action="toggle-drawer" data-gate="${s.gate}">
+                <div class="nh-odds-cell" data-action="toggle-drawer" data-gate="${horseKey}">
                   <div class="nh-odds-line">
                     ${oddsMode === 'estimated' ? '<span class="nh-odds-badge-yosou">予</span>' : ''}
                     <span class="nh-odds-val ${isTop3Pop ? 'highlight-fav' : ''}">${displayOdds}</span>
@@ -64895,22 +65072,22 @@ function hydratePayouts(race) {
                 </div>
 
                 <!-- 5. 馬体重（52px固定・右寄せ） -->
-                <div class="nh-weight-cell" data-action="toggle-drawer" data-gate="${s.gate}">
+                <div class="nh-weight-cell" data-action="toggle-drawer" data-gate="${horseKey}">
                   <div class="nh-weight-val">${displayWeight}</div>
                   <div class="nh-weight-sub">${displayWeightSub}</div>
                 </div>
 
                 <!-- 6. 詳細▼ボタン (34px固定) -->
-                <div class="nh-detail-toggle-cell" data-action="toggle-drawer" data-gate="${s.gate}">
-                  <button class="nh-drawer-toggle-btn" id="nh-toggle-btn-${s.gate}" aria-label="詳細展開">
-                    <span class="toggle-text" id="nh-toggle-text-${s.gate}">詳細</span>
-                    <span class="toggle-arrow" id="nh-arrow-${s.gate}">▾</span>
+                <div class="nh-detail-toggle-cell" data-action="toggle-drawer" data-gate="${horseKey}">
+                  <button class="nh-drawer-toggle-btn" id="nh-toggle-btn-${horseKey}" aria-label="詳細展開">
+                    <span class="toggle-text" id="nh-toggle-text-${horseKey}">詳細</span>
+                    <span class="toggle-arrow" id="nh-arrow-${horseKey}">▾</span>
                   </button>
                 </div>
               </div>
 
               <!-- タップで展開されるアコーディオン詳細 -->
-              <div class="nh-detail-drawer" id="nh-drawer-${s.gate}">
+              <div class="nh-detail-drawer" id="nh-drawer-${horseKey}">
                 <div class="nh-drawer-content">
                   <div class="nh-drawer-grid">
                     <div class="nh-drawer-item">
@@ -65486,14 +65663,30 @@ function hydratePayouts(race) {
                   <span class="detail-meta-value">${race.name.includes('女王杯') || race.name.includes('フィリーズ') ? '牝馬限定' : 'オープン'} / 全${entries.length}頭</span>
                 </div>
                 <div class="detail-meta-item">
-                  <span class="detail-meta-label">枠順ステータス</span>
-                  <span class="detail-meta-value" style="color: var(--primary); font-weight: 700;">
-                    ${id === '17' ? '枠順確定済 (出走16頭)' : '出走登録馬・想定枠順'}
+                  <span class="detail-meta-label">出馬表ステータス</span>
+                  <span class="detail-meta-value" style="font-weight: 700;">
+                    ${(() => {
+                      const stage = getRaceEntryStage(id);
+                      if (stage === 'gate_confirmed') {
+                        return `<span class="badge-stage-gates">🎯 枠順確定済 (出走${entries.length}頭)</span>`;
+                      } else if (stage === 'starters_confirmed') {
+                        return `<span class="badge-stage-confirmed">🏇 出走馬確定 (枠順未定・五十音順・全${entries.length}頭)</span>`;
+                      } else {
+                        return `<span class="badge-stage-scheduled">📋 出馬予定 (枠順未定・五十音順・全${entries.length}頭)</span>`;
+                      }
+                    })()}
                   </span>
                 </div>
               </div>
 
-              <h3 class="detail-section-title">出走登録馬・想定出馬表一覧</h3>
+              <h3 class="detail-section-title">
+                ${(() => {
+                  const stage = getRaceEntryStage(id);
+                  if (stage === 'gate_confirmed') return '出走馬・確定枠順一覧';
+                  if (stage === 'starters_confirmed') return '出走決定馬一覧（五十音順）';
+                  return '出走登録馬・出馬予定一覧（五十音順）';
+                })()}
+              </h3>
               <div class="table-scroll-container">
                 <table class="result-table">
                   <thead>
@@ -65512,11 +65705,22 @@ function hydratePayouts(race) {
                   </thead>
                   <tbody>
                     ${(() => {
+                      const stage = getRaceEntryStage(id);
+                      const isGateConfirmed = (stage === 'gate_confirmed');
                       const predStarters = (typeof PREDICTION_DATA !== 'undefined' && PREDICTION_DATA.races && PREDICTION_DATA.races[id]) 
                         ? PREDICTION_DATA.races[id].starters 
                         : null;
-                      return entries.map(e => {
-                        const pHorse = predStarters ? predStarters.find(s => s.gate === e.gate || s.horseName === e.horseName) : null;
+
+                      let sortedEntries = [...entries];
+                      if (isGateConfirmed) {
+                        sortedEntries.sort((a, b) => (a.gate || 99) - (b.gate || 99));
+                      } else {
+                        // 枠順確定するまでは五十音順
+                        sortedEntries.sort((a, b) => a.horseName.localeCompare(b.horseName, 'ja'));
+                      }
+
+                      return sortedEntries.map(e => {
+                        const pHorse = predStarters ? predStarters.find(s => s.horseName === e.horseName || (isGateConfirmed && s.gate === e.gate)) : null;
                         const oddsVal = pHorse ? (pHorse.odds ? pHorse.odds + '倍' : '--') : '--';
                         const popVal = pHorse ? `(${pHorse.pop}人気)` : '';
 
@@ -65536,12 +65740,22 @@ function hydratePayouts(race) {
                           gradeVal = `【${pHorse.trainingGrade}】`;
                         }
 
+                        let gateColHtml = '';
+                        let wakuColHtml = '';
+                        if (isGateConfirmed && e.gate) {
+                          gateColHtml = `<span class="nh-gate-cell waku-${e.waku || 1}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${e.gate}</span>`;
+                          wakuColHtml = `<td style="text-align: center; font-weight: 700; color: var(--text-muted);">${e.waku || 1}枠</td>`;
+                        } else {
+                          gateColHtml = `<span class="nh-gate-cell unconfirmed" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;" title="枠順未確定">-</span>`;
+                          wakuColHtml = `<td style="text-align: center; font-size: 11px; color: var(--text-muted);">未定</td>`;
+                        }
+
                         return `
                           <tr>
                             <td style="text-align: center; font-family: monospace; font-weight: 700;">
-                              <span class="nh-gate-cell waku-${e.waku || 1}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${e.gate}</span>
+                              ${gateColHtml}
                             </td>
-                            <td style="text-align: center; font-weight: 700; color: var(--text-muted);">${e.waku || 1}枠</td>
+                            ${wakuColHtml}
                             <td style="font-weight: 700; color: #fff;">${e.horseName}</td>
                             <td>${e.sexAge}</td>
                             <td>${e.load}kg</td>

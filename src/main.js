@@ -7996,6 +7996,53 @@ const PAYOUTS_DATA = {
   ]
 };
 
+
+      // ----------------------------------------------------
+      // レース出馬表ステータス自動判定エンジン
+      // 出馬予定（entry_scheduled） ➔ 出走馬確定（starters_confirmed） ➔ 枠順確定（gate_confirmed）
+      // ----------------------------------------------------
+      function getRaceEntryStage(raceId) {
+        const race = G1_RACES.find(r => r.id === String(raceId));
+        if (!race) return 'entry_scheduled';
+        if (race.status === 'finished') return 'finished';
+
+        // 1. 明示的な指定があれば最優先
+        if (race.entryStatus) return race.entryStatus;
+
+        const predRace = (typeof PREDICTION_DATA !== 'undefined' && PREDICTION_DATA.races) 
+          ? PREDICTION_DATA.races[String(raceId)] 
+          : null;
+        if (predRace && predRace.entryStatus) return predRace.entryStatus;
+
+        const entries = (typeof ENTRIES_DATA !== 'undefined' && ENTRIES_DATA[String(raceId)])
+          ? ENTRIES_DATA[String(raceId)]
+          : null;
+
+        // 全頭の馬番が確定している場合は枠順確定
+        if (entries && entries.length > 0 && entries.every(e => e.gate !== null && e.gate !== undefined && e.gate !== '')) {
+          return 'gate_confirmed';
+        }
+
+        // JRA G1標準進行スケジュールに基づく自動判定 (日曜日15:40発走基準)
+        // 1. 金曜 午前09:00 JST 以降 (発走55時間以内): 枠順確定 (gate_confirmed)
+        // 2. 木曜 午後14:00 JST 以降 (発走75時間以内): 出走投票完了・出走馬確定 (starters_confirmed)
+        // 3. 木曜 14:00以前 (発走75時間超): 登録馬・出走予定 (entry_scheduled)
+        const raceTime = new Date(race.date).getTime();
+        const nowTime = Date.now();
+        const diffHours = (raceTime - nowTime) / (1000 * 3600);
+
+        if (diffHours <= 0) {
+          return 'finished';
+        } else if (diffHours <= 55) {
+          return 'gate_confirmed';
+        } else if (diffHours <= 75) {
+          return 'starters_confirmed';
+        } else {
+          return 'entry_scheduled';
+        }
+      }
+    
+
 const POOLS = {
         '3yo-male': [
           'ロブチェン', 'パントルナイーフ', 'バステール', 'ゴーイントゥスカイ', 'マテンロウゲイル',
@@ -8156,10 +8203,18 @@ const POOLS = {
               </div>
             `;
           } else {
-            const badgeText = (r.id === '17') ? '枠順確定' : (hasEntries ? '出走馬・オカルト' : '');
+            const stage = getRaceEntryStage(r.id);
+            let stageBadge = '';
+            if (stage === 'gate_confirmed') {
+              stageBadge = '<span class="badge-stage-gates">枠順確定</span>';
+            } else if (stage === 'starters_confirmed') {
+              stageBadge = '<span class="badge-stage-confirmed">出走馬確定</span>';
+            } else if (hasEntries) {
+              stageBadge = '<span class="badge-stage-scheduled">出馬予定</span>';
+            }
             footerContent = `
               <div class="card-result-preview">
-                <span class="text-muted" style="font-size: 13px;">${badgeText ? `<span style="background: rgba(16,185,129,0.2); color: var(--primary); padding: 2px 6px; border-radius: 4px; font-weight: 700; font-size: 11px; margin-right: 6px;">${badgeText}</span>` : ''}発走予定: 15:40</span>
+                <span class="text-muted" style="font-size: 13px;">${stageBadge ? `<span style="margin-right: 6px;">${stageBadge}</span>` : ''}発走予定: 15:40</span>
                 <div class="card-action-text">出馬表・詳細 <i data-lucide="arrow-right"></i></div>
               </div>
             `;
@@ -9003,9 +9058,14 @@ function hydratePayouts(race) {
           if (!el) return;
           const assignedGates = Object.keys(marks).filter(g => marks[g] === mt.mark);
           if (assignedGates.length > 0) {
+            const stage = getRaceEntryStage(currentPredictionRaceId);
+            const isGateConfirmed = (stage === 'gate_confirmed');
             const horseNames = assignedGates.map(g => {
-              const h = starters.find(s => s.gate === Number(g));
-              return h ? `${g}.${h.horseName}` : `${g}番`;
+              const h = starters.find(s => String(s.gate) === String(g) || s.horseName === g || s.horseName.replace(/\s+/g, '') === g);
+              if (h) {
+                return (isGateConfirmed && h.gate) ? `${h.gate}.${h.horseName}` : h.horseName;
+              }
+              return `${g}番`;
             });
             el.innerText = horseNames.join(', ');
             el.classList.add('has-assigned');
@@ -9019,13 +9079,26 @@ function hydratePayouts(race) {
       function openMarkSheet(gate) {
         activeSheetGate = gate;
         const starters = getActivePredictionStarters();
-        const horse = starters.find(s => s.gate === Number(gate));
+        const horse = starters.find(s => String(s.gate) === String(gate) || s.horseName === gate || s.horseName.replace(/\s+/g, '') === gate);
         if (!horse) return;
 
         const sheet = document.getElementById('mark-bottom-sheet');
         const backdrop = document.getElementById('mark-sheet-backdrop');
         const gateBadge = document.getElementById('sheet-target-gate');
         const nameEl = document.getElementById('sheet-target-name');
+
+        const stage = getRaceEntryStage(currentPredictionRaceId);
+        const isGateConfirmed = (stage === 'gate_confirmed');
+
+        if (gateBadge) {
+          if (isGateConfirmed && horse.gate) {
+            gateBadge.className = `nh-gate-cell waku-${horse.waku || 1}`;
+            gateBadge.innerText = horse.gate;
+          } else {
+            gateBadge.className = 'nh-gate-cell unconfirmed';
+            gateBadge.innerText = '-';
+          }
+        }
 
         if (gateBadge) {
           gateBadge.className = `nh-gate-cell waku-${horse.waku}`;
@@ -9292,20 +9365,53 @@ function hydratePayouts(race) {
           };
         });
 
+        const stage = getRaceEntryStage(currentPredictionRaceId);
+        const isGateConfirmed = (stage === 'gate_confirmed');
+
+        const sortGateBtn = document.getElementById('btn-sort-gate');
+        if (sortGateBtn) {
+          sortGateBtn.innerText = isGateConfirmed ? '馬番順' : '五十音順';
+        }
+
+        const stagePill = document.getElementById('odds-stage-pill');
+        if (stagePill) {
+          if (stage === 'gate_confirmed') {
+            stagePill.className = 'nh-stage-pill stage-gates';
+            stagePill.innerHTML = `🎯 枠順確定済 (出走${starters.length}頭)`;
+          } else if (stage === 'starters_confirmed') {
+            stagePill.className = 'nh-stage-pill stage-confirmed';
+            stagePill.innerHTML = `🏇 出走馬確定 (枠順未定・五十音順)`;
+          } else {
+            stagePill.className = 'nh-stage-pill stage-scheduled';
+            stagePill.innerHTML = `📋 出馬予定 (枠順未定・五十音順)`;
+          }
+        }
+
         if (predictionSortType === 'pop') {
           starters.sort((a, b) => a.pop - b.pop);
+        } else if (isGateConfirmed) {
+          starters.sort((a, b) => (a.gate || 99) - (b.gate || 99));
         } else {
-          starters.sort((a, b) => a.gate - b.gate);
+          // 枠順確定するまでは五十音順
+          starters.sort((a, b) => a.horseName.localeCompare(b.horseName, 'ja'));
         }
 
         const marks = getUserMarks();
         let html = '';
 
         starters.forEach(s => {
-          const m = marks[s.gate] || '';
+          const horseKey = (s.gate !== null && s.gate !== undefined) ? String(s.gate) : s.horseName.replace(/\s+/g, '');
+          const m = marks[horseKey] || marks[s.gate] || marks[s.horseName] || '';
           const mClass = MARK_CLASSES[m] || '';
           const isTop3Pop = s.pop <= 3;
           const displayOdds = s.winOdds || s.odds || '--';
+
+          let gateCellHtml = '';
+          if (isGateConfirmed && s.gate) {
+            gateCellHtml = `<div class="nh-gate-cell waku-${s.waku}">${s.gate}</div>`;
+          } else {
+            gateCellHtml = `<div class="nh-gate-cell unconfirmed" title="枠順未確定">-</div>`;
+          }
 
           let displayWeight = '-';
           let displayWeightSub = `<span class="weight-tag-prev">前走</span>`;
@@ -9332,21 +9438,19 @@ function hydratePayouts(race) {
 
           html += `
             <div class="nh-row-container">
-              <div class="nh-main-row" data-gate="${s.gate}">
-                <!-- 1. 馬番（26px 枠色セル） -->
-                <div class="nh-gate-cell waku-${s.waku}">
-                  ${s.gate}
-                </div>
+              <div class="nh-main-row" data-gate="${horseKey}">
+                <!-- 1. 馬番（26px 枠色セル または 未確定ハイフン） -->
+                ${gateCellHtml}
 
                 <!-- 2. 印ボタン (30px) -->
                 <div class="nh-mark-cell">
-                  <button class="nh-mark-btn ${mClass}" data-gate="${s.gate}" aria-label="印選択">
+                  <button class="nh-mark-btn ${mClass}" data-gate="${horseKey}" aria-label="印選択">
                     ${m}
                   </button>
                 </div>
 
                 <!-- 3. 馬情報（中央・可変幅・重なりなし） -->
-                <div class="nh-info-cell" data-action="toggle-drawer" data-gate="${s.gate}">
+                <div class="nh-info-cell" data-action="toggle-drawer" data-gate="${horseKey}">
                   <div class="nh-name-row">
                     <span class="nh-horse-name">${s.horseName}</span>
                   </div>
@@ -9358,7 +9462,7 @@ function hydratePayouts(race) {
                 </div>
 
                 <!-- 4. オッズ・人気（48px固定・右寄せ） -->
-                <div class="nh-odds-cell" data-action="toggle-drawer" data-gate="${s.gate}">
+                <div class="nh-odds-cell" data-action="toggle-drawer" data-gate="${horseKey}">
                   <div class="nh-odds-line">
                     ${oddsMode === 'estimated' ? '<span class="nh-odds-badge-yosou">予</span>' : ''}
                     <span class="nh-odds-val ${isTop3Pop ? 'highlight-fav' : ''}">${displayOdds}</span>
@@ -9367,22 +9471,22 @@ function hydratePayouts(race) {
                 </div>
 
                 <!-- 5. 馬体重（52px固定・右寄せ） -->
-                <div class="nh-weight-cell" data-action="toggle-drawer" data-gate="${s.gate}">
+                <div class="nh-weight-cell" data-action="toggle-drawer" data-gate="${horseKey}">
                   <div class="nh-weight-val">${displayWeight}</div>
                   <div class="nh-weight-sub">${displayWeightSub}</div>
                 </div>
 
                 <!-- 6. 詳細▼ボタン (34px固定) -->
-                <div class="nh-detail-toggle-cell" data-action="toggle-drawer" data-gate="${s.gate}">
-                  <button class="nh-drawer-toggle-btn" id="nh-toggle-btn-${s.gate}" aria-label="詳細展開">
-                    <span class="toggle-text" id="nh-toggle-text-${s.gate}">詳細</span>
-                    <span class="toggle-arrow" id="nh-arrow-${s.gate}">▾</span>
+                <div class="nh-detail-toggle-cell" data-action="toggle-drawer" data-gate="${horseKey}">
+                  <button class="nh-drawer-toggle-btn" id="nh-toggle-btn-${horseKey}" aria-label="詳細展開">
+                    <span class="toggle-text" id="nh-toggle-text-${horseKey}">詳細</span>
+                    <span class="toggle-arrow" id="nh-arrow-${horseKey}">▾</span>
                   </button>
                 </div>
               </div>
 
               <!-- タップで展開されるアコーディオン詳細 -->
-              <div class="nh-detail-drawer" id="nh-drawer-${s.gate}">
+              <div class="nh-detail-drawer" id="nh-drawer-${horseKey}">
                 <div class="nh-drawer-content">
                   <div class="nh-drawer-grid">
                     <div class="nh-drawer-item">
@@ -9958,14 +10062,30 @@ function hydratePayouts(race) {
                   <span class="detail-meta-value">${race.name.includes('女王杯') || race.name.includes('フィリーズ') ? '牝馬限定' : 'オープン'} / 全${entries.length}頭</span>
                 </div>
                 <div class="detail-meta-item">
-                  <span class="detail-meta-label">枠順ステータス</span>
-                  <span class="detail-meta-value" style="color: var(--primary); font-weight: 700;">
-                    ${id === '17' ? '枠順確定済 (出走16頭)' : '出走登録馬・想定枠順'}
+                  <span class="detail-meta-label">出馬表ステータス</span>
+                  <span class="detail-meta-value" style="font-weight: 700;">
+                    ${(() => {
+                      const stage = getRaceEntryStage(id);
+                      if (stage === 'gate_confirmed') {
+                        return `<span class="badge-stage-gates">🎯 枠順確定済 (出走${entries.length}頭)</span>`;
+                      } else if (stage === 'starters_confirmed') {
+                        return `<span class="badge-stage-confirmed">🏇 出走馬確定 (枠順未定・五十音順・全${entries.length}頭)</span>`;
+                      } else {
+                        return `<span class="badge-stage-scheduled">📋 出馬予定 (枠順未定・五十音順・全${entries.length}頭)</span>`;
+                      }
+                    })()}
                   </span>
                 </div>
               </div>
 
-              <h3 class="detail-section-title">出走登録馬・想定出馬表一覧</h3>
+              <h3 class="detail-section-title">
+                ${(() => {
+                  const stage = getRaceEntryStage(id);
+                  if (stage === 'gate_confirmed') return '出走馬・確定枠順一覧';
+                  if (stage === 'starters_confirmed') return '出走決定馬一覧（五十音順）';
+                  return '出走登録馬・出馬予定一覧（五十音順）';
+                })()}
+              </h3>
               <div class="table-scroll-container">
                 <table class="result-table">
                   <thead>
@@ -9984,11 +10104,22 @@ function hydratePayouts(race) {
                   </thead>
                   <tbody>
                     ${(() => {
+                      const stage = getRaceEntryStage(id);
+                      const isGateConfirmed = (stage === 'gate_confirmed');
                       const predStarters = (typeof PREDICTION_DATA !== 'undefined' && PREDICTION_DATA.races && PREDICTION_DATA.races[id]) 
                         ? PREDICTION_DATA.races[id].starters 
                         : null;
-                      return entries.map(e => {
-                        const pHorse = predStarters ? predStarters.find(s => s.gate === e.gate || s.horseName === e.horseName) : null;
+
+                      let sortedEntries = [...entries];
+                      if (isGateConfirmed) {
+                        sortedEntries.sort((a, b) => (a.gate || 99) - (b.gate || 99));
+                      } else {
+                        // 枠順確定するまでは五十音順
+                        sortedEntries.sort((a, b) => a.horseName.localeCompare(b.horseName, 'ja'));
+                      }
+
+                      return sortedEntries.map(e => {
+                        const pHorse = predStarters ? predStarters.find(s => s.horseName === e.horseName || (isGateConfirmed && s.gate === e.gate)) : null;
                         const oddsVal = pHorse ? (pHorse.odds ? pHorse.odds + '倍' : '--') : '--';
                         const popVal = pHorse ? `(${pHorse.pop}人気)` : '';
 
@@ -10008,12 +10139,22 @@ function hydratePayouts(race) {
                           gradeVal = `【${pHorse.trainingGrade}】`;
                         }
 
+                        let gateColHtml = '';
+                        let wakuColHtml = '';
+                        if (isGateConfirmed && e.gate) {
+                          gateColHtml = `<span class="nh-gate-cell waku-${e.waku || 1}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${e.gate}</span>`;
+                          wakuColHtml = `<td style="text-align: center; font-weight: 700; color: var(--text-muted);">${e.waku || 1}枠</td>`;
+                        } else {
+                          gateColHtml = `<span class="nh-gate-cell unconfirmed" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;" title="枠順未確定">-</span>`;
+                          wakuColHtml = `<td style="text-align: center; font-size: 11px; color: var(--text-muted);">未定</td>`;
+                        }
+
                         return `
                           <tr>
                             <td style="text-align: center; font-family: monospace; font-weight: 700;">
-                              <span class="nh-gate-cell waku-${e.waku || 1}" style="width:24px;height:24px;font-size:12px;border-radius:4px;display:inline-flex;">${e.gate}</span>
+                              ${gateColHtml}
                             </td>
-                            <td style="text-align: center; font-weight: 700; color: var(--text-muted);">${e.waku || 1}枠</td>
+                            ${wakuColHtml}
                             <td style="font-weight: 700; color: #fff;">${e.horseName}</td>
                             <td>${e.sexAge}</td>
                             <td>${e.load}kg</td>

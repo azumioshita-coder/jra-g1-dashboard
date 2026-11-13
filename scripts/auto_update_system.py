@@ -133,12 +133,13 @@ def fetch_html(url, timeout=15):
         return None
 
 def parse_shutuba(html):
-    """NetKeiba出馬表HTMLから枠番、馬番、馬名、性齢、斤量、騎手、厩舎を抽出"""
+    """NetKeiba出馬表HTMLから枠番、馬番、馬名、性齢、斤量、騎手、厩舎を抽出。枠順未定時は五十音順で返す"""
     starters = []
     rows = re.findall(r'<tr[^>]*class=\"[^\"]*HorseList[^\"]*\"[^>]*>([\s\S]*?)</tr>', html)
     if not rows:
         rows = re.findall(r'<tr[^>]*>([\s\S]*?)</tr>', html)
 
+    has_gates = True
     for row in rows:
         waku_m = re.search(r'class=\"[^\"]*Waku(\d)[^\"]*\"', row)
         gate_m = re.search(r'class=\"[^\"]*Umaban\d*[^\"]*\"[^>]*>(\d+)</td>', row)
@@ -151,10 +152,13 @@ def parse_shutuba(html):
         jockey_m = re.search(r'class=\"[^\"]*Jockey[^\"]*\"[^>]*><a[^>]*>([^<]+)</a>', row)
         stable_m = re.search(r'class=\"[^\"]*Trainer[^\"]*\"[^>]*><a[^>]*>([^<]+)</a>\s*(?:<span[^>]*>\(([^<]+)\)</span>)?', row)
 
-        if gate_m and name_m:
-            waku = int(waku_m.group(1)) if waku_m else 1
-            gate = int(gate_m.group(1))
+        if name_m:
             horse_name = name_m.group(1).strip()
+            waku = int(waku_m.group(1)) if waku_m else None
+            gate = int(gate_m.group(1)) if gate_m else None
+            if gate is None:
+                has_gates = False
+
             sex_age = sex_age_m.group(1).strip() if sex_age_m else '牡4'
             load = float(load_m.group(1).strip()) if load_m else 58.0
             if load.is_integer():
@@ -178,16 +182,30 @@ def parse_shutuba(html):
                 'stable': stable
             })
 
-    starters.sort(key=lambda x: x['gate'])
-    return starters
+    if has_gates and len(starters) > 0 and all(s['gate'] is not None for s in starters):
+        starters.sort(key=lambda x: (x['gate'] or 99))
+        stage = 'gate_confirmed'
+    else:
+        # 枠順確定するまでは五十音順
+        starters.sort(key=lambda x: x['horseName'])
+        stage = 'entry_scheduled'
+
+    return starters, stage
 
 def check_and_update_entries():
-    """今後のレースの枠順確定を自動検知して更新"""
+    """今後のレースの出馬表（出馬予定 ➔ 出走馬確定 ➔ 枠順確定）を自動検知して更新"""
     try:
         with open(ENTRIES_JSON, 'r', encoding='utf-8') as f:
             entries_data = json.load(f)
     except Exception:
         entries_data = {}
+
+    PRED_JSON = os.path.join(APP_DIR, 'src', 'prediction_data.json')
+    try:
+        with open(PRED_JSON, 'r', encoding='utf-8') as f:
+            pred_data = json.load(f)
+    except Exception:
+        pred_data = {}
 
     updated = False
     now = datetime.datetime.now()
@@ -196,28 +214,61 @@ def check_and_update_entries():
         r_id = race['id']
         race_dt = datetime.datetime.fromisoformat(race['date'])
         
-        # 枠順は通常レースの4日前〜当日に公開される
+        # 枠順・出馬表はレースの14日前〜当日に公開される
         days_until = (race_dt - now).total_seconds() / 86400
         
-        # すでに登録済みでも更新チェック、または未登録でレース直前の場合
-        if r_id not in entries_data and -1 <= days_until <= 5:
+        # レースまで10日以内の場合、定期的にNetKeibaから最新出馬表状態を取得
+        if -1 <= days_until <= 10:
             log(f"Checking NetKeiba shutuba for Race {r_id}: {race['name']}...")
             url = f"https://race.netkeiba.com/race/shutuba.html?race_id={race['netkeiba_id']}"
             html = fetch_html(url)
             if html:
-                starters = parse_shutuba(html)
-                if len(starters) >= 8:
-                    log(f"Found {len(starters)} starters for {race['name']}!")
+                starters, stage = parse_shutuba(html)
+                if len(starters) >= 5:
+                    if stage != 'gate_confirmed':
+                        if days_until <= 3.2: # 木曜午後以降なら出走馬確定
+                            stage = 'starters_confirmed'
+                        else:
+                            stage = 'entry_scheduled'
+
+                    log(f"Found {len(starters)} starters for {race['name']} [Stage: {stage}]!")
                     entries_data[r_id] = starters
+                    
+                    if 'races' in pred_data and r_id in pred_data['races']:
+                        pred_data['races'][r_id]['entryStatus'] = stage
+                        pred_starters = pred_data['races'][r_id].get('starters', [])
+                        for s in starters:
+                            ps = next((p for p in pred_starters if p['horseName'] == s['horseName']), None)
+                            if ps:
+                                ps['gate'] = s['gate']
+                                ps['waku'] = s['waku']
+                                ps['jockey'] = s['jockey']
+                                ps['stable'] = s['stable']
+                            else:
+                                pred_starters.append(s)
+
+                        if stage == 'gate_confirmed':
+                            pred_data['races'][r_id]['starters'] = sorted(pred_starters, key=lambda x: (x.get('gate') or 99))
+                        else:
+                            pred_data['races'][r_id]['starters'] = sorted(pred_starters, key=lambda x: x['horseName'])
+
                     updated = True
 
     if updated:
         with open(ENTRIES_JSON, 'w', encoding='utf-8') as f:
             json.dump(entries_data, f, ensure_ascii=False, indent=2)
-        log("Updated src/entries_data.json successfully.")
+        with open(os.path.join(APP_DIR, 'src', 'entries_data.js'), 'w', encoding='utf-8') as f:
+            f.write('export const ENTRIES_DATA = ' + json.dumps(entries_data, ensure_ascii=False, indent=2) + ';\n')
+
+        with open(PRED_JSON, 'w', encoding='utf-8') as f:
+            json.dump(pred_data, f, ensure_ascii=False, indent=2)
+        with open(os.path.join(APP_DIR, 'src', 'prediction_data.js'), 'w', encoding='utf-8') as f:
+            f.write('export const PREDICTION_DATA = ' + json.dumps(pred_data, ensure_ascii=False, indent=2) + ';\n')
+
+        log("Updated entries_data and prediction_data successfully.")
         sync_all()
     else:
-        log("No new entries (枠順) updates required at this time.")
+        log("No new entries updates required at this time.")
 
 def sync_all():
     """index.html、src/main.jsを同期し、ViteでビルドしてGitへコミット＆プッシュ"""
