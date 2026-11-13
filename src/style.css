@@ -1727,6 +1727,162 @@ html.route-prediction .nav-item[data-target="prediction"] {
 .nh-drawer-val-grade.grade-C { color: #9ca3af; }
 
 /* ----------------------------------
+   アコーディオン詳細セクション（調教・血統・前走勝敗分析）
+---------------------------------- */
+.nh-drawer-section {
+  background: rgba(4, 9, 7, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-top: 8px;
+}
+.nh-drawer-section-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.nh-review-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.nh-review-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 6px;
+  padding: 6px 8px;
+  border-left: 2px solid transparent;
+}
+.nh-review-card.yt { border-left-color: #ef4444; }
+.nh-review-card.x { border-left-color: #38bdf8; }
+.nh-review-card.media { border-left-color: #10b981; }
+
+.review-source-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.review-source-tag.yt {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+.review-source-tag.x {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+.review-source-tag.media {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+.review-comment {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+/* 血統＆適性 */
+.nh-pedigree-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 6px 12px;
+  font-size: 11.5px;
+}
+.nh-aptitude-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+.aptitude-pill {
+  font-size: 10.5px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  color: #a7f3d0;
+}
+.aptitude-pill.dist {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.25);
+  color: #fde68a;
+}
+.aptitude-pill.going {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.25);
+  color: #bfdbfe;
+}
+.aptitude-pill.style {
+  background: rgba(168, 85, 247, 0.1);
+  border-color: rgba(168, 85, 247, 0.25);
+  color: #e9d5ff;
+}
+
+/* 前走リザルト＆勝因・敗因分析 */
+.nh-prev-race-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.prev-race-badge {
+  font-weight: 700;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+.prev-rank-badge {
+  font-weight: 800;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+.prev-rank-1 { background: rgba(245, 158, 11, 0.2); color: var(--gold); border: 1px solid rgba(245, 158, 11, 0.4); }
+.prev-rank-2 { background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); }
+.prev-rank-3 { background: rgba(249, 115, 22, 0.2); color: #f97316; border: 1px solid rgba(249, 115, 22, 0.4); }
+.prev-rank-other { background: rgba(255, 255, 255, 0.06); color: var(--text-muted); }
+
+.factor-analysis-box {
+  margin-top: 6px;
+  padding: 8px 10px;
+  background: rgba(245, 158, 11, 0.04);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 6px;
+}
+.factor-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 2px;
+}
+.factor-text {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+/* ----------------------------------
    予想カード汎用（メモ・オカルト等）
 ---------------------------------- */
 .pred-card {

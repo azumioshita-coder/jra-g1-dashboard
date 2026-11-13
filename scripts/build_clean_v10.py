@@ -1494,9 +1494,10 @@ prediction_js_logic = """
               <!-- タップで展開されるアコーディオン詳細 -->
               <div class="nh-detail-drawer" id="nh-drawer-${horseKey}">
                 <div class="nh-drawer-content">
+                  <!-- 1. 基本ステータス・調教サマリー -->
                   <div class="nh-drawer-grid">
                     <div class="nh-drawer-item">
-                      <span class="nh-drawer-label">調教評価</span>
+                      <span class="nh-drawer-label">🏃 総合調教評価</span>
                       ${(() => {
                         const rawG = (s.trainingGrade || '').trim();
                         if (rawG && rawG !== '-' && rawG !== 'null' && rawG !== 'undefined') {
@@ -1508,11 +1509,11 @@ prediction_js_logic = """
                       })()}
                     </div>
                     <div class="nh-drawer-item">
-                      <span class="nh-drawer-label">調教短評</span>
+                      <span class="nh-drawer-label">📝 調教短評</span>
                       <span class="nh-drawer-val">${s.comment}</span>
                     </div>
                     <div class="nh-drawer-item">
-                      <span class="nh-drawer-label">馬体重推移</span>
+                      <span class="nh-drawer-label">⚖️ 馬体重推移</span>
                       <span class="nh-drawer-val" style="font-size: 11px;">
                         前走: <strong>${s.lastRaceWeight ? s.lastRaceWeight + 'kg' : '-'}</strong> | 
                         調教後: <strong>${s.trainingWeight ? s.trainingWeight + 'kg' : '-'}</strong> | 
@@ -1520,10 +1521,106 @@ prediction_js_logic = """
                       </span>
                     </div>
                     <div class="nh-drawer-item">
-                      <span class="nh-drawer-label">所属厩舎 / 適性</span>
+                      <span class="nh-drawer-label">🏇 所属厩舎 / 騎手相性</span>
                       <span class="nh-drawer-val">${s.stable || '栗東'} (${s.jockeyStat})</span>
                     </div>
                   </div>
+
+                  <!-- 2. マルチソース調教評価（YouTube / Xトラックマン / 競馬専門紙） -->
+                  ${(() => {
+                    const rev = s.trainingReviews;
+                    if (!rev || (!rev.youtube && !rev.snsX && !rev.media)) return '';
+                    return `
+                      <div class="nh-drawer-section">
+                        <div class="nh-drawer-section-title">
+                          <span>📡 マルチソース調教総評 (YouTube / X速報 / 専門紙)</span>
+                        </div>
+                        <div class="nh-review-grid">
+                          ${rev.youtube ? `
+                            <div class="nh-review-card yt">
+                              <span class="review-source-tag yt">🎥 YouTube解説</span>
+                              <span class="review-comment">${rev.youtube}</span>
+                            </div>
+                          ` : ''}
+                          ${rev.snsX ? `
+                            <div class="nh-review-card x">
+                              <span class="review-source-tag x">📱 X/トラックマン</span>
+                              <span class="review-comment">${rev.snsX}</span>
+                            </div>
+                          ` : ''}
+                          ${rev.media ? `
+                            <div class="nh-review-card media">
+                              <span class="review-source-tag media">📰 専門紙総評</span>
+                              <span class="review-comment">${rev.media}</span>
+                            </div>
+                          ` : ''}
+                        </div>
+                      </div>
+                    `;
+                  })()}
+
+                  <!-- 3. 血統 ＆ 距離・馬場適性分析 -->
+                  ${(() => {
+                    const ped = s.pedigree;
+                    const apt = s.aptitude;
+                    if (!ped && !apt) return '';
+                    return `
+                      <div class="nh-drawer-section">
+                        <div class="nh-drawer-section-title">
+                          <span>🧬 血統背景 ＆ 距離・馬場適性分析</span>
+                        </div>
+                        ${ped ? `
+                          <div class="nh-pedigree-box">
+                            <div>父: <strong style="color:#fff;">${ped.sire || '-'}</strong> <span style="font-size:10.5px;color:var(--text-muted);">(${ped.lineage || '-'})</span></div>
+                            <div>母: <strong style="color:#fff;">${ped.dam || '-'}</strong> <span style="font-size:10.5px;color:var(--text-muted);">(母父: ${ped.broodmareSire || '-'})</span></div>
+                            ${ped.feature ? `<div style="grid-column: 1 / -1; color: var(--text-muted); font-size: 11px;">💡 特徴: ${ped.feature}</div>` : ''}
+                          </div>
+                        ` : ''}
+                        ${apt ? `
+                          <div class="nh-aptitude-tags">
+                            ${apt.distance ? `<span class="aptitude-pill dist">🏃 距離: ${apt.distance}</span>` : ''}
+                            ${apt.trackCondition ? `<span class="aptitude-pill going">🌱 馬場: ${apt.trackCondition}</span>` : ''}
+                            ${apt.runningStyle ? `<span class="aptitude-pill style">⚡ 脚質: ${apt.runningStyle}</span>` : ''}
+                            ${apt.courseFitness ? `<span class="aptitude-pill">🏟️ コース: ${apt.courseFitness}</span>` : ''}
+                          </div>
+                        ` : ''}
+                      </div>
+                    `;
+                  })()}
+
+                  <!-- 4. 前走リザルト ＆ 勝因・敗因分析 -->
+                  ${(() => {
+                    const prev = s.prevRace;
+                    if (!prev) return '';
+                    let rankClass = 'prev-rank-other';
+                    if (prev.finish && prev.finish.startsWith('1着')) rankClass = 'prev-rank-1';
+                    else if (prev.finish && prev.finish.startsWith('2着')) rankClass = 'prev-rank-2';
+                    else if (prev.finish && prev.finish.startsWith('3着')) rankClass = 'prev-rank-3';
+
+                    return `
+                      <div class="nh-drawer-section">
+                        <div class="nh-drawer-section-title">
+                          <span>📊 前走リザルト ＆ 勝ち負けの要因 (勝因・敗因分析)</span>
+                        </div>
+                        <div class="nh-prev-race-row">
+                          <span class="prev-race-badge">${prev.raceName || '前走'}</span>
+                          <span class="prev-rank-badge ${rankClass}">${prev.finish || '-'}</span>
+                          <span>${prev.date || ''} (${prev.venue || ''})</span>
+                          <span>人気: <strong>${prev.pop || '-'}</strong></span>
+                          <span>騎手: <strong>${prev.jockey || '-'}</strong></span>
+                          <span>上がり3F: <strong style="color:var(--gold);">${prev.agari || '-'}</strong></span>
+                          <span>着差: <strong>${prev.margin || '-'}</strong></span>
+                          ${prev.weight ? `<span>馬体重: <strong>${prev.weight}kg</strong></span>` : ''}
+                        </div>
+                        ${prev.factor ? `
+                          <div class="factor-analysis-box">
+                            <span class="factor-label">🎯 勝因・敗因分析（前走の教訓と今回の狙い）</span>
+                            <div class="factor-text">${prev.factor}</div>
+                          </div>
+                        ` : ''}
+                      </div>
+                    `;
+                  })()}
                 </div>
               </div>
             </div>
@@ -2162,7 +2259,11 @@ open_race_detail_func = """
                               ${gateColHtml}
                             </td>
                             ${wakuColHtml}
-                            <td style="font-weight: 700; color: #fff;">${e.horseName}</td>
+                            <td style="font-weight: 700; color: #fff;">
+                              <div>${e.horseName}</div>
+                              ${pHorse && pHorse.pedigree ? `<div style="font-size:10px;color:var(--text-muted);font-weight:normal;">父:${pHorse.pedigree.sire} (母父:${pHorse.pedigree.broodmareSire})</div>` : ''}
+                              ${pHorse && pHorse.prevRace ? `<div style="font-size:10px;color:#a7f3d0;font-weight:normal;">前走: ${pHorse.prevRace.raceName} ${pHorse.prevRace.finish} (${pHorse.prevRace.agari || ''})</div>` : ''}
+                            </td>
                             <td>${e.sexAge}</td>
                             <td>${e.load}kg</td>
                             <td>${e.jockey}</td>

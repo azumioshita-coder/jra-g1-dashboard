@@ -133,7 +133,7 @@ def fetch_html(url, timeout=15):
         return None
 
 def parse_shutuba(html):
-    """NetKeiba出馬表HTMLから枠番、馬番、馬名、性齢、斤量、騎手、厩舎を抽出。枠順未定時は五十音順で返す"""
+    """NetKeiba出馬表HTMLから枠番、馬番、馬名、性齢、斤量、騎手、厩舎、オッズ、人気、馬体重を抽出。枠順未定時は五十音順で返す"""
     starters = []
     rows = re.findall(r'<tr[^>]*class=\"[^\"]*HorseList[^\"]*\"[^>]*>([\s\S]*?)</tr>', html)
     if not rows:
@@ -143,34 +143,61 @@ def parse_shutuba(html):
     for row in rows:
         waku_m = re.search(r'class=\"[^\"]*Waku(\d)[^\"]*\"', row)
         gate_m = re.search(r'class=\"[^\"]*Umaban\d*[^\"]*\"[^>]*>(\d+)</td>', row)
-        name_m = re.search(r'<span class=\"Horse_Name\"[^>]*><a[^>]*>([^<]+)</a>', row)
+        name_m = re.search(r'<span class=\"Horse_?Name\"[^>]*>[\s\S]*?<a[^>]*title=\"([^\"]+)\"', row)
         if not name_m:
-            name_m = re.search(r'title=\"([^\"]+)\"[^>]*class=\"[^\"]*Horse_Name', row)
+            name_m = re.search(r'<span class=\"Horse_?Name\"[^>]*>[\s\S]*?<a[^>]*>([^<]+)', row)
+        if not name_m:
+            name_m = re.search(r'title=\"([^\"]+)\"[^>]*class=\"[^\"]*Horse_?Name', row)
 
-        sex_age_m = re.search(r'class=\"[^\"]*Barei[^\"]*\"[^>]*>([^<]+)</td>', row)
-        load_m = re.search(r'class=\"[^\"]*Weight[^\"]*\"[^>]*>([\d\.]+)</td>', row)
-        jockey_m = re.search(r'class=\"[^\"]*Jockey[^\"]*\"[^>]*><a[^>]*>([^<]+)</a>', row)
-        stable_m = re.search(r'class=\"[^\"]*Trainer[^\"]*\"[^>]*><a[^>]*>([^<]+)</a>\s*(?:<span[^>]*>\(([^<]+)\)</span>)?', row)
+        jockey_m = re.search(r'<td class=\"Jockey\"[^>]*>[\s\S]*?<a[^>]*title=\"([^\"]+)\"', row)
+        if not jockey_m:
+            jockey_m = re.search(r'<td class=\"Jockey\"[^>]*>[\s\S]*?<a[^>]*>([^<]+)</a>', row)
+
+        trainer_m = re.search(r'<td class=\"Trainer\"[^>]*>[\s\S]*?<a[^>]*title=\"([^\"]+)\"', row)
+        if not trainer_m:
+            trainer_m = re.search(r'<td class=\"Trainer\"[^>]*>[\s\S]*?<a[^>]*>([^<]+)</a>', row)
+
+        loc_m = re.search(r'<td class=\"Trainer\"[^>]*>[\s\S]*?<span class=\"Label2\">([^<]+)</span>', row)
+        barei_m = re.search(r'<td class=\"Barei[^\"]*\"[^>]*>([^<]+)</td>', row)
+        load_m = re.search(r'<td class=\"Txt_C\">([\d\.]+)</td>', row)
+        odds_m = re.search(r'id=\"odds-\d+_\d+\"[^>]*>([\d\.]+)</span>', row)
+        pop_m = re.search(r'id=\"ninki-\d+_\d+\"[^>]*>(\d+)</span>', row)
+        weight_m = re.search(r'<td class=\"Weight\"[^>]*>([\s\S]*?)</td>', row)
 
         if name_m:
             horse_name = name_m.group(1).strip()
-            waku = int(waku_m.group(1)) if waku_m else None
-            gate = int(gate_m.group(1)) if gate_m else None
+            if not horse_name or horse_name == '馬名':
+                continue
+
+            waku = int(waku_m.group(1)) if waku_m and waku_m.group(1).isdigit() else None
+            gate = int(gate_m.group(1)) if gate_m and gate_m.group(1).isdigit() else None
             if gate is None:
                 has_gates = False
 
-            sex_age = sex_age_m.group(1).strip() if sex_age_m else '牡4'
-            load = float(load_m.group(1).strip()) if load_m else 58.0
-            if load.is_integer():
-                load = int(load)
+            sex_age = barei_m.group(1).strip() if barei_m else '牝4'
+            try:
+                load = float(load_m.group(1).strip()) if load_m else 56.0
+                if load.is_integer():
+                    load = int(load)
+            except Exception:
+                load = 56
+
             jockey = jockey_m.group(1).strip() if jockey_m else '未定'
-            
-            if stable_m:
-                trainer = stable_m.group(1).strip()
-                loc = stable_m.group(2).strip() if stable_m.group(2) else ''
-                stable = f"{trainer} ({loc})" if loc else trainer
-            else:
-                stable = '-'
+            trainer = trainer_m.group(1).strip() if trainer_m else '-'
+            loc = loc_m.group(1).strip() if loc_m else ''
+            stable = f"{trainer} ({loc})" if loc else trainer
+
+            odds = odds_m.group(1).strip() if odds_m and odds_m.group(1) != '---.-' else None
+            pop = int(pop_m.group(1).strip()) if pop_m and pop_m.group(1).isdigit() else None
+
+            # Horse weight if available on race day
+            weight_text = weight_m.group(1).strip() if weight_m else ''
+            confirmed_wt = None
+            diff_wt = None
+            wt_match = re.search(r'(\d{3})\(([\+\-]?\d+)\)', weight_text)
+            if wt_match:
+                confirmed_wt = int(wt_match.group(1))
+                diff_wt = wt_match.group(2)
 
             starters.append({
                 'waku': waku,
@@ -179,7 +206,11 @@ def parse_shutuba(html):
                 'sexAge': sex_age,
                 'load': load,
                 'jockey': jockey,
-                'stable': stable
+                'stable': stable,
+                'odds': odds,
+                'pop': pop,
+                'confirmedWeight': confirmed_wt,
+                'weightDiff': diff_wt
             })
 
     if has_gates and len(starters) > 0 and all(s['gate'] is not None for s in starters):
@@ -232,25 +263,51 @@ def check_and_update_entries():
                             stage = 'entry_scheduled'
 
                     log(f"Found {len(starters)} starters for {race['name']} [Stage: {stage}]!")
-                    entries_data[r_id] = starters
+                    entries_data[r_id] = [
+                        {
+                            'waku': s['waku'],
+                            'gate': s['gate'],
+                            'horseName': s['horseName'],
+                            'sexAge': s['sexAge'],
+                            'load': s['load'],
+                            'jockey': s['jockey'],
+                            'stable': s['stable']
+                        }
+                        for s in starters
+                    ]
                     
                     if 'races' in pred_data and r_id in pred_data['races']:
                         pred_data['races'][r_id]['entryStatus'] = stage
                         pred_starters = pred_data['races'][r_id].get('starters', [])
+                        
+                        # Filter to only actual runners
+                        official_names = set(s['horseName'] for s in starters)
+                        existing_map = {p['horseName']: p for p in pred_starters}
+                        
+                        new_pred_starters = []
                         for s in starters:
-                            ps = next((p for p in pred_starters if p['horseName'] == s['horseName']), None)
-                            if ps:
+                            hname = s['horseName']
+                            if hname in existing_map:
+                                ps = existing_map[hname]
                                 ps['gate'] = s['gate']
                                 ps['waku'] = s['waku']
                                 ps['jockey'] = s['jockey']
                                 ps['stable'] = s['stable']
+                                if s.get('odds'):
+                                    ps['odds'] = s['odds']
+                                if s.get('pop'):
+                                    ps['pop'] = s['pop']
+                                if s.get('confirmedWeight'):
+                                    ps['confirmedWeight'] = s['confirmedWeight']
+                                    ps['weightDiff'] = s.get('weightDiff')
+                                new_pred_starters.append(ps)
                             else:
-                                pred_starters.append(s)
+                                new_pred_starters.append(s)
 
                         if stage == 'gate_confirmed':
-                            pred_data['races'][r_id]['starters'] = sorted(pred_starters, key=lambda x: (x.get('gate') or 99))
+                            pred_data['races'][r_id]['starters'] = sorted(new_pred_starters, key=lambda x: (x.get('gate') or 99))
                         else:
-                            pred_data['races'][r_id]['starters'] = sorted(pred_starters, key=lambda x: x['horseName'])
+                            pred_data['races'][r_id]['starters'] = sorted(new_pred_starters, key=lambda x: x['horseName'])
 
                     updated = True
 
@@ -294,6 +351,10 @@ def sync_all():
         log("Git push succeeded! Remote repository is fully updated.")
     else:
         log(f"Git push note/result: {push_res.stderr.strip() or push_res.stdout.strip()}")
+
+    log("Publishing dist to gh-pages branch...")
+    subprocess.run(['npx', '--yes', 'gh-pages', '-d', 'dist'], cwd=APP_DIR)
+    log("GitHub Pages deployment published!")
 
 def main():
     log("GRAND STABLE Auto-Update System initialized.")
