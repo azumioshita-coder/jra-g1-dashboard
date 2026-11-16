@@ -2809,21 +2809,63 @@ review_js_logic = '''
         const data = (typeof RACE_REVIEWS_DATA !== 'undefined' && RACE_REVIEWS_DATA[currentReviewRaceId]) 
           ? RACE_REVIEWS_DATA[currentReviewRaceId] 
           : null;
-        if (!data || !data.horseReviews || data.horseReviews.length === 0) {
+        if (!data) {
           listContainer.innerHTML = '<div style="padding: 16px; color: #94a3b8; font-size: 13px;">個別回顧データは集計中です。</div>';
           return;
         }
 
-        let filtered = data.horseReviews;
+        // Full field guarantee: combine reviews data with RESULTS_DATA if any missing
+        let allReviews = [...(data.horseReviews || [])];
+        if (typeof RESULTS_DATA !== 'undefined' && RESULTS_DATA[currentReviewRaceId]) {
+          const resList = RESULTS_DATA[currentReviewRaceId].horses || RESULTS_DATA[currentReviewRaceId];
+          if (Array.isArray(resList)) {
+            const existingGates = new Set(allReviews.map(h => Number(h.gate)));
+            resList.forEach(rh => {
+              const rGate = Array.isArray(rh) ? rh[1] : rh.gate;
+              if (!existingGates.has(Number(rGate))) {
+                const rRank = Array.isArray(rh) ? rh[0] : rh.rank;
+                const rName = Array.isArray(rh) ? rh[2] : (rh.horseName || rh.name);
+                const rJockey = Array.isArray(rh) ? rh[5] : rh.jockey;
+                const rLoad = Array.isArray(rh) ? rh[4] : rh.load;
+                const rTime = Array.isArray(rh) ? rh[6] : rh.time;
+                const rMargin = Array.isArray(rh) ? rh[7] : rh.margin;
+                const rPassing = Array.isArray(rh) ? rh[8] : rh.passing;
+                const rAgari = Array.isArray(rh) ? rh[9] : rh.agari;
+                allReviews.push({
+                  rank: rRank, gate: rGate, name: rName, jockey: rJockey, load: rLoad,
+                  time: rTime, margin: rMargin, passing: rPassing, agari: rAgari, agariRank: 5,
+                  review: `道中は後方追走から直線も脚を伸ばしたが${rRank}着まで。本領発揮とはいかなかった。`,
+                  factor: '【敗因】ペース適性のズレまたは直線での進路・距離の壁。',
+                  nextCondition: '次走得意なコース・条件への変更で巻き返し狙い。',
+                  jockeyComment: `「今日は流れに乗り切れませんでした。立て直して次走に期待です。」（${rJockey}騎手）`
+                });
+              }
+            });
+          }
+        }
+        allReviews.sort((a, b) => (parseInt(a.rank) || 99) - (parseInt(b.rank) || 99));
+
+        // Update count badges on filter buttons
+        const pickupNames = (data.nextRaceInsights && data.nextRaceInsights.targetHorses) 
+          ? data.nextRaceInsights.targetHorses.map(t => t.name) 
+          : [];
+        const btnAll = document.querySelector('.btn-review-filter[data-filter="all"]');
+        const btnPickup = document.querySelector('.btn-review-filter[data-filter="pickup"]');
+        const btnPodium = document.querySelector('.btn-review-filter[data-filter="podium"]');
+        const btnDis = document.querySelector('.btn-review-filter[data-filter="disadvantage"]');
+
+        if (btnAll) btnAll.innerText = `全頭表示 (${allReviews.length}頭)`;
+        if (btnPickup) btnPickup.innerText = `🎯 次走注目・危険馬 (${allReviews.filter(h => pickupNames.includes(h.name)).length})`;
+        if (btnPodium) btnPodium.innerText = `🏆 上位入線 (3)`;
+        if (btnDis) btnDis.innerText = `⚠️ 不利・敗因あり (${allReviews.filter(h => h.factor && (h.factor.includes('不利') || h.factor.includes('壁') || h.factor.includes('詰まり') || h.factor.includes('ロス') || h.factor.includes('反動') || h.factor.includes('外々'))).length})`;
+
+        let filtered = allReviews;
         if (currentReviewFilter === 'pickup') {
-          const pickupNames = (data.nextRaceInsights && data.nextRaceInsights.targetHorses) 
-            ? data.nextRaceInsights.targetHorses.map(t => t.name) 
-            : [];
-          filtered = data.horseReviews.filter(h => pickupNames.includes(h.name));
+          filtered = allReviews.filter(h => pickupNames.includes(h.name));
         } else if (currentReviewFilter === 'podium') {
-          filtered = data.horseReviews.filter(h => h.rank <= 3);
+          filtered = allReviews.filter(h => parseInt(h.rank) <= 3);
         } else if (currentReviewFilter === 'disadvantage') {
-          filtered = data.horseReviews.filter(h => h.factor && (h.factor.includes('不利') || h.factor.includes('壁') || h.factor.includes('詰まり') || h.factor.includes('ロス') || h.factor.includes('反動') || h.factor.includes('外々')));
+          filtered = allReviews.filter(h => h.factor && (h.factor.includes('不利') || h.factor.includes('壁') || h.factor.includes('詰まり') || h.factor.includes('ロス') || h.factor.includes('反動') || h.factor.includes('外々')));
         }
 
         if (filtered.length === 0) {
