@@ -10668,6 +10668,8 @@ function hydratePayouts(race) {
             const target = n.getAttribute('data-target');
             if (target === 'prediction') {
               navigateTo('#prediction-' + currentPredictionRaceId);
+            } else if (target === 'review') {
+              navigateTo('#review-' + currentReviewRaceId);
             } else {
               navigateTo('#calendar');
             }
@@ -10708,7 +10710,7 @@ function hydratePayouts(race) {
       let lastMainView = 'calendar';
       let predictionSortType = 'gate';
       let activeSheetGate = null;
-      let currentPredictionRaceId = '17'; // デフォルトは次走エリ女
+      let currentPredictionRaceId = '18'; // デフォルトは次走エリ女
 
       let oddsMode = 'estimated'; // 'estimated' または 'live'
       let oddsAutoRefreshTimer = null;
@@ -11382,30 +11384,35 @@ function hydratePayouts(race) {
               <div class="finished-review-card">
                 <div class="review-header">
                   <div class="review-title">
-                    <span>🏆 第174回 天皇賞（秋） 公式レース結果確定</span>
+                    <span>🏆 ${raceObj.name} 公式レース結果確定</span>
                   </div>
-                  <button class="btn-open-result-modal" id="btn-review-modal-trigger" data-race-id="${currentPredictionRaceId}">
-                    全17頭の着順・払戻金を見る <i data-lucide="arrow-right" style="width:13px;height:13px;"></i>
-                  </button>
+                  <div style="display:flex;gap:8px;align-items:center;">
+                    <button onclick="selectReviewRace('${currentPredictionRaceId}');switchView('review',true,true);" style="background:rgba(16,185,129,0.2);border:1px solid #10b981;color:#34d399;font-weight:700;font-size:12px;padding:6px 12px;border-radius:6px;cursor:pointer;">
+                      📝 レース回顧・次走分析を見る
+                    </button>
+                    <button class="btn-open-result-modal" id="btn-review-modal-trigger" data-race-id="${currentPredictionRaceId}">
+                      全着順・払戻金を見る <i data-lucide="arrow-right" style="width:13px;height:13px;"></i>
+                    </button>
+                  </div>
                 </div>
                 <div class="review-podium">
                   <div class="podium-item first">
                     <span class="podium-rank">1着</span>
-                    <span class="podium-gate">${raceObj.winnerGate || 17}</span>
+                    <span class="podium-gate">${raceObj.winnerGate || '-'}</span>
                     <span class="podium-name">${raceObj.winner}</span>
-                    <div class="podium-sub">${raceObj.winnerJockey} / ${raceObj.time || '1:56.7'} (4人気)</div>
+                    <div class="podium-sub">${raceObj.winnerJockey || ''} / ${raceObj.time || ''}</div>
                   </div>
                   <div class="podium-item second">
                     <span class="podium-rank">2着</span>
-                    <span class="podium-gate">${raceObj.secondGate || 10}</span>
-                    <span class="podium-name">${raceObj.second || 'ネブラディスク'}</span>
-                    <div class="podium-sub">${raceObj.secondJockey || '川田将雅'} (8人気)</div>
+                    <span class="podium-gate">${raceObj.secondGate || '-'}</span>
+                    <span class="podium-name">${raceObj.second || '-'}</span>
+                    <div class="podium-sub">${raceObj.secondJockey || ''}</div>
                   </div>
                   <div class="podium-item third">
                     <span class="podium-rank">3着</span>
-                    <span class="podium-gate">${raceObj.thirdGate || 3}</span>
-                    <span class="podium-name">${raceObj.third || 'レガレイラ'}</span>
-                    <div class="podium-sub">${raceObj.thirdJockey || '岩田望来'} (3人気)</div>
+                    <span class="podium-gate">${raceObj.thirdGate || '-'}</span>
+                    <span class="podium-name">${raceObj.third || '-'}</span>
+                    <div class="podium-sub">${raceObj.thirdJockey || ''}</div>
                   </div>
                 </div>
                 <div class="review-payout-ribbon">
@@ -11459,7 +11466,7 @@ function hydratePayouts(race) {
 
         if (!currentPredictionRaceId || !PREDICTION_DATA.races || !PREDICTION_DATA.races[currentPredictionRaceId]) {
           const nextRace = getNextUpcomingRace();
-          currentPredictionRaceId = (nextRace && PREDICTION_DATA.races && PREDICTION_DATA.races[nextRace.id]) ? nextRace.id : '17';
+          currentPredictionRaceId = (nextRace && PREDICTION_DATA.races && PREDICTION_DATA.races[nextRace.id]) ? nextRace.id : '18';
         }
 
         initOddsState();
@@ -12970,6 +12977,23 @@ function hydratePayouts(race) {
           if (typeof autoLifecycleEngine === 'function') setInterval(autoLifecycleEngine, 60000);
           if (typeof startOddsAutoRefresh === 'function') startOddsAutoRefresh();
         }
+      }
+
+      // Expose SPA functions to global window for inline onclick attributes
+      if (typeof window !== 'undefined') {
+        window.selectReviewRace = selectReviewRace;
+        window.switchView = switchView;
+        window.setReviewFilter = setReviewFilter;
+        window.renderReviewPills = renderReviewPills;
+        window.renderReviewContent = renderReviewContent;
+        window.openRaceDetail = openRaceDetail;
+        window.closeModal = closeModal;
+        window.navigateTo = navigateTo;
+        window.switchAppView = switchAppView;
+        window.setPredictionRace = setPredictionRace;
+        window.setUserMark = setUserMark;
+        window.openMarkSheet = openMarkSheet;
+        window.closeMarkSheet = closeMarkSheet;
       }
 
       if (typeof document !== 'undefined') {
