@@ -34,7 +34,7 @@ jobs:
         run: npm ci || npm install
 
       - name: Build clean HTML & JS
-        run: python3 scripts/build_clean_v10.py
+        run: python3 scripts/build_clean_v11.py
 
       - name: Build project
         run: npm run build
