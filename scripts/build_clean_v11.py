@@ -38,367 +38,115 @@ hist_full_data = json.loads(h_match.group(1))
 g1_match = re.search(r'const G1_RACES = (\[[\s\S]*?\n\s*\]);', base_html)
 g1_races_raw = g1_match.group(1)
 
-# In G1_RACES, update 1 to 17 to finished with authentic 2024 results
-g1_1_finished = """        {
-          id: '1',
-          name: 'フェブラリーステークス',
-          englishName: 'February Stakes',
-          date: '2024-02-18T15:40:00',
-          location: '東京',
-          course: 'ダート 1600m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: 'ダート良',
-          type: 'older-dirt',
-          winner: 'ペプチドナイル', winnerJockey: '藤岡佑介', winnerGate: 9, time: '1:35.7',
-          second: 'ガイアフォース', secondJockey: '長岡禎仁', secondGate: 7,
-          third: 'セキフウ', thirdJockey: '武豊', thirdGate: 8,
-          payouts: { win: 3800, trifecta: 1530500 }
-        }"""
-
-g1_2_finished = """        {
-          id: '2',
-          name: '高松宮記念',
-          englishName: 'Takamatsunomiya Kinen',
-          date: '2024-03-24T15:40:00',
-          location: '中京',
-          course: '芝 1200m',
-          status: 'finished',
-          weather: '小雨',
-          trackCondition: '重',
-          cushionValue: '8.8',
-          type: 'older-mile',
-          winner: 'マッドクール', winnerJockey: '坂井瑠星', winnerGate: 2, time: '1:08.9',
-          second: 'ナムラクレア', secondJockey: '浜中俊', secondGate: 3,
-          third: 'ビクターザウィナー', thirdJockey: 'K.リョン', thirdGate: 10,
-          payouts: { win: 960, trifecta: 58740 }
-        }"""
-
-g1_3_finished = """        {
-          id: '3',
-          name: '大阪杯',
-          englishName: 'Osaka Hai',
-          date: '2024-03-31T15:40:00',
-          location: '阪神',
-          course: '芝 2000m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.6',
-          type: 'older-middle',
-          winner: 'ベラジオオペラ', winnerJockey: '横山和生', winnerGate: 11, time: '1:58.2',
-          second: 'ローシャムパーク', secondJockey: '戸崎圭太', secondGate: 2,
-          third: 'ルージュエヴァイユ', thirdJockey: '菅原明良', thirdGate: 13,
-          payouts: { win: 550, trifecta: 22720 }
-        }"""
-
-g1_4_finished = """        {
-          id: '4',
-          name: '桜花賞',
-          englishName: 'Oka Sho',
-          date: '2024-04-07T15:40:00',
-          location: '阪神',
-          course: '芝 1600m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.8',
-          type: 'three-year-old',
-          winner: 'ステレンボッシュ', winnerJockey: 'J.モレイラ', winnerGate: 12, time: '1:32.2',
-          second: 'アスコリピチェーノ', secondJockey: '北村宏司', secondGate: 9,
-          third: 'ライトバック', thirdJockey: '坂井瑠星', thirdGate: 11,
-          payouts: { win: 430, trifecta: 11400 }
-        }"""
-
-g1_5_finished = """        {
-          id: '5',
-          name: '皐月賞',
-          englishName: 'Satsuki Sho',
-          date: '2024-04-14T15:40:00',
-          location: '中山',
-          course: '芝 2000m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.2',
-          type: 'three-year-old',
-          winner: 'ジャスティンミラノ', winnerJockey: '戸崎圭太', winnerGate: 13, time: '1:57.1',
-          second: 'コスモキュランダ', secondJockey: 'J.モレイラ', secondGate: 12,
-          third: 'ジャンタルマンタル', thirdJockey: '川田将雅', thirdGate: 8,
-          payouts: { win: 480, trifecta: 29240 }
-        }"""
-
-g1_6_finished = """        {
-          id: '6',
-          name: '天皇賞（春）',
-          englishName: 'Tenno Sho (Spring)',
-          date: '2024-04-28T15:40:00',
-          location: '京都',
-          course: '芝 3200m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.9',
-          type: 'older-long',
-          winner: 'テーオーロイヤル', winnerJockey: '菱田裕二', winnerGate: 14, time: '3:14.2',
-          second: 'ブローザホーン', secondJockey: '菅原明良', secondGate: 5,
-          third: 'ディープボンド', thirdJockey: '幸英明', thirdGate: 6,
-          payouts: { win: 280, trifecta: 7740 }
-        }"""
-
-g1_7_finished = """        {
-          id: '7',
-          name: 'NHKマイルカップ',
-          englishName: 'NHK Mile Cup',
-          date: '2024-05-05T15:40:00',
-          location: '東京',
-          course: '芝 1600m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.4',
-          type: 'three-year-old',
-          winner: 'ジャンタルマンタル', winnerJockey: '川田将雅', winnerGate: 16, time: '1:32.4',
-          second: 'アスコリピチェーノ', secondJockey: 'C.ルメール', secondGate: 14,
-          third: 'ロジリオン', thirdJockey: '戸崎圭太', thirdGate: 6,
-          payouts: { win: 290, trifecta: 8560 }
-        }"""
-
-g1_8_finished = """        {
-          id: '8',
-          name: 'ヴィクトリアマイル',
-          englishName: 'Victoria Mile',
-          date: '2024-05-12T15:40:00',
-          location: '東京',
-          course: '芝 1600m',
-          status: 'finished',
-          weather: '曇',
-          trackCondition: '良',
-          cushionValue: '9.5',
-          type: 'older-female',
-          winner: 'テンハッピーローズ', winnerJockey: '津村明秀', winnerGate: 9, time: '1:31.8',
-          second: 'フィアスプライド', secondJockey: 'C.ルメール', secondGate: 2,
-          third: 'マスクトディーヴァ', thirdJockey: 'J.モレイラ', thirdGate: 6,
-          payouts: { win: 20860, trifecta: 916640 }
-        }"""
-
-g1_9_finished = """        {
-          id: '9',
-          name: '優駿牝馬（オークス）',
-          englishName: 'Yushun Himba',
-          date: '2024-05-19T15:40:00',
-          location: '東京',
-          course: '芝 2400m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.5',
-          type: 'three-year-old',
-          winner: 'チェルヴィニア', winnerJockey: 'C.ルメール', winnerGate: 12, time: '2:24.0',
-          second: 'ステレンボッシュ', secondJockey: '戸崎圭太', secondGate: 7,
-          third: 'ライトバック', thirdJockey: '坂井瑠星', thirdGate: 14,
-          payouts: { win: 460, trifecta: 8090 }
-        }"""
-
-g1_10_finished = """        {
-          id: '10',
-          name: '東京優駿（日本ダービー）',
-          englishName: 'Tokyo Yushun',
-          date: '2024-05-26T15:40:00',
-          location: '東京',
-          course: '芝 2400m',
-          status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.6',
-          type: 'three-year-old',
-          winner: 'ダノンデサイル', winnerJockey: '横山典弘', winnerGate: 5, time: '2:24.3',
-          second: 'ジャスティンミラノ', secondJockey: '戸崎圭太', secondGate: 15,
-          third: 'シンエンペラー', thirdJockey: '坂井瑠星', thirdGate: 13,
-          payouts: { win: 4660, trifecta: 229910 }
-        }"""
-
-g1_11_finished = """        {
-          id: '11',
-          name: '安田記念',
-          englishName: 'Yasuda Kinen',
-          date: '2024-06-02T15:40:00',
-          location: '東京',
-          course: '芝 1600m',
-          status: 'finished',
-          weather: '稍重',
-          trackCondition: '稍重',
-          cushionValue: '9.1',
-          type: 'older-mile',
-          winner: 'ロマンチックウォリアー', winnerJockey: 'J.マクドナルド', winnerGate: 7, time: '1:32.3',
-          second: 'ナミュール', secondJockey: '武豊', secondGate: 5,
-          third: 'ソウルラッシュ', thirdJockey: 'J.モレイラ', thirdGate: 10,
-          payouts: { win: 360, trifecta: 17740 }
-        }"""
-
-g1_12_finished = """        {
-          id: '12',
-          name: '宝塚記念',
-          englishName: 'Takarazuka Kinen',
-          date: '2024-06-23T15:40:00',
-          location: '京都',
-          course: '芝 2200m',
-          status: 'finished',
-          weather: '曇',
-          trackCondition: '重',
-          cushionValue: '8.6',
-          type: 'older-middle',
-          winner: 'ブローザホーン', winnerJockey: '菅原明良', winnerGate: 12, time: '2:12.0',
-          second: 'ソールオリエンス', secondJockey: '横山武史', secondGate: 9,
-          third: 'ベラジオオペラ', thirdJockey: '横山和生', thirdGate: 3,
-          payouts: { win: 750, trifecta: 91680 }
-        }"""
-
+# In G1_RACES, update 13 to 17 to finished with authentic 2026 results
+# (Races 1 to 12 are already completed 2026 races in orig_index.html)
 g1_13_finished = """        {
           id: '13',
           name: 'スプリンターズステークス',
           englishName: 'Sprinters Stakes',
-          date: '2024-09-29T15:40:00',
+          date: '2026-09-27T15:40:00',
           location: '中山',
           course: '芝 1200m',
           status: 'finished',
-          weather: '晴',
-          trackCondition: '良',
-          cushionValue: '9.4',
+          weather: '曇',
+          trackCondition: '稍重',
+          cushionValue: '9.2',
           type: 'older-mile',
-          winner: 'ルガル', winnerJockey: '西村淳也', winnerGate: 13, time: '1:07.0',
-          second: 'トウシンマカオ', secondJockey: '菅原明良', secondGate: 2,
-          third: 'ナムラクレア', thirdJockey: '横山武史', thirdGate: 5,
-          payouts: { win: 2850, trifecta: 290450 }
+          winner: 'ピューロマジック', winnerJockey: '岩田望来', winnerGate: 16, time: '1:09.2',
+          second: 'ワールズエンド', secondJockey: '津村明秀', secondGate: 6,
+          third: 'サウンドモリアーナ', thirdJockey: '吉田隼人', thirdGate: 5,
+          payouts: { win: 2450, trifecta: 462120 }
         }"""
 
 g1_14_finished = """        {
           id: '14',
           name: '秋華賞',
           englishName: 'Shuka Sho',
-          date: '2024-10-13T15:40:00',
+          date: '2026-10-18T15:40:00',
           location: '京都',
           course: '芝 2000m',
           status: 'finished',
           weather: '晴',
           trackCondition: '良',
-          cushionValue: '9.6',
+          cushionValue: '9.8',
           type: 'three-year-old',
-          winner: 'チェルヴィニア', winnerJockey: 'C.ルメール', winnerGate: 5, time: '1:57.1',
-          second: 'ボンドガール', secondJockey: '武豊', secondGate: 10,
-          third: 'ステレンボッシュ', thirdJockey: '戸崎圭太', thirdGate: 14,
-          payouts: { win: 530, trifecta: 11940 }
+          winner: 'モンローウォーク', winnerJockey: '戸崎圭太', winnerGate: 8, time: '1:56.1',
+          second: 'ギャラボーグ', secondJockey: '横山和生', secondGate: 1,
+          third: 'ドリームコア', thirdJockey: 'C.ルメール', thirdGate: 13,
+          payouts: { win: 130, trifecta: 10810 }
         }"""
 
 g1_15_finished = """        {
           id: '15',
           name: '菊花賞',
           englishName: 'Kikuka Sho',
-          date: '2024-10-20T15:40:00',
+          date: '2026-10-25T15:40:00',
           location: '京都',
           course: '芝 3000m',
           status: 'finished',
           weather: '晴',
           trackCondition: '良',
-          cushionValue: '9.8',
+          cushionValue: '9.5',
           type: 'three-year-old',
-          winner: 'アーバンシック', winnerJockey: 'C.ルメール', winnerGate: 13, time: '3:04.1',
-          second: 'ヘデントール', secondJockey: '戸崎圭太', secondGate: 16,
-          third: 'アドマイヤテラ', thirdJockey: '武豊', thirdGate: 17,
-          payouts: { win: 370, trifecta: 19260 }
+          winner: 'ゴーイントゥスカイ', winnerJockey: '武豊', winnerGate: 9, time: '3:04.5',
+          second: 'バステール', secondJockey: '川田将雅', secondGate: 6,
+          third: 'ダノンヒストリー', thirdJockey: 'C.ルメール', thirdGate: 10,
+          payouts: { win: 1200, trifecta: 113300 }
         }"""
 
 g1_16_finished = """        {
           id: '16',
           name: '天皇賞（秋）',
           englishName: 'Tenno Sho (Autumn)',
-          date: '2024-10-27T15:40:00',
+          date: '2026-11-01T15:40:00',
           location: '東京',
           course: '芝 2000m',
           status: 'finished',
           weather: '晴',
           trackCondition: '良',
-          cushionValue: '9.5',
+          cushionValue: '9.6',
           type: 'older-middle',
-          winner: 'ドウデュース', winnerJockey: '武豊', winnerGate: 7, time: '1:57.3',
-          second: 'タスティエーラ', secondJockey: '松山弘平', secondGate: 4,
-          third: 'ホウオウビスケッツ', thirdJockey: '岩田望来', thirdGate: 9,
-          payouts: { win: 380, trifecta: 39710 }
+          winner: 'ダノンデサイル', winnerJockey: '戸崎圭太', winnerGate: 17, time: '1:56.7',
+          second: 'ネブラディスク', secondJockey: '川田将雅', secondGate: 10,
+          third: 'レガレイラ', thirdJockey: '岩田望来', thirdGate: 3,
+          payouts: { win: 1080, trifecta: 297820 }
         }"""
 
 g1_17_finished = """        {
           id: '17',
           name: 'エリザベス女王杯',
           englishName: 'Queen Elizabeth II Cup',
-          date: '2024-11-10T15:40:00',
+          date: '2026-11-15T15:40:00',
           location: '京都',
           course: '芝 2200m',
           status: 'finished',
-          weather: '曇',
-          trackCondition: '良',
-          cushionValue: '9.6',
+          weather: '小雨',
+          trackCondition: '重',
+          cushionValue: '8.8',
           type: 'older-female',
-          winner: 'スタニングローズ', winnerJockey: 'C.デムーロ', winnerGate: 11, time: '2:11.1',
-          second: 'ラヴェル', secondJockey: '川田将雅', secondGate: 16,
-          third: 'ホールネス', thirdJockey: '坂井瑠星', thirdGate: 1,
-          payouts: { win: 950, trifecta: 128450 }
+          winner: 'ラフターラインズ', winnerJockey: '武豊', winnerGate: 15, time: '2:14.7',
+          second: 'カムニャック', secondJockey: '川田将雅', secondGate: 7,
+          third: 'アクアヴァーナル', thirdJockey: '松山弘平', thirdGate: 16,
+          payouts: { win: 1260, trifecta: 38780 }
         }"""
 
-# Substitute all 1 to 17 in g1_races_raw
-for r_idx in range(1, 18):
-    var_name = f"g1_{r_idx}_finished"
+# Substitute autumn races 13 to 17 in g1_races_raw
+for r_idx in range(13, 18):
+    var_name = f'g1_{r_idx}_finished'
     if var_name in locals():
         pattern = r'\{\s*id:\s*\'' + str(r_idx) + r'\',[\s\S]*?\n\s*\}(?=,|\s*\])'
         g1_races_raw = re.sub(pattern, locals()[var_name].strip(), g1_races_raw)
 
-g1_races_str = f"const G1_RACES = {g1_races_raw};" 
+g1_races_str = f'const G1_RACES = {g1_races_raw};' 
 
-# Populate RESULTS_DATA directly from authentic HISTORICAL_FULL_RESULTS (2024)
-res_dict = {}
-for i in range(1, 18):
-    sid = str(i)
-    if sid in hist_full_data and '2024' in hist_full_data[sid]:
-        starters = hist_full_data[sid]['2024']
-        res_rows = []
-        for h in starters:
-            rank = h.get('rank', 99)
-            gate = h.get('gate', 0)
-            name = h.get('horseName', '-')
-            sex_age = h.get('sexAge', '-')
-            load = h.get('load', 56.0)
-            jockey = h.get('jockey', '-')
-            time_val = h.get('time', '-')
-            margin = h.get('margin', '-')
-            passing = h.get('passing', '-')
-            agari = h.get('agari', '-')
-            odds = h.get('odds', '-')
-            pop = h.get('pop', 1)
-            weight = h.get('weight', '480')
-            diff = h.get('weightDiff', '0')
-            stable = h.get('stable', '-')
-            res_rows.append([rank, gate, name, sex_age, load, jockey, time_val, margin, passing, agari, odds, pop, weight, diff, stable])
-        res_dict[sid] = res_rows
+# Populate RESULTS_DATA directly from authentic 2026 data
+results_2026_file = os.path.join(keiba_app_dir, 'scripts', 'data', 'results_2026_all_17.json')
+with open(results_2026_file, 'r', encoding='utf-8') as f:
+    res_dict = json.load(f)
 
-payouts_data['16'] = {
-    "win": {"gate": 7, "payout": 380},
-    "place": [{"gate": 7, "payout": 150}, {"gate": 4, "payout": 620}, {"gate": 9, "payout": 540}],
-    "quinella": {"combination": "4-7", "payout": 5980},
-    "exacta": {"combination": "7-4", "payout": 9230},
-    "trio": {"combination": "4-7-9", "payout": 18270},
-    "trifecta": {"combination": "7-4-9", "payout": 39710}
-}
-payouts_data['17'] = {
-    "win": {"gate": 11, "payout": 950},
-    "place": [{"gate": 11, "payout": 320}, {"gate": 16, "payout": 1420}, {"gate": 1, "payout": 190}],
-    "quinella": {"combination": "11-16", "payout": 15280},
-    "exacta": {"combination": "11-16", "payout": 26970},
-    "trio": {"combination": "1-11-16", "payout": 19410},
-    "trifecta": {"combination": "11-16-1", "payout": 128450}
-}
-payouts_data_str = "const PAYOUTS_DATA = " + json.dumps(payouts_data, ensure_ascii=False, indent=2) + ";"
+payouts_data_str = 'const PAYOUTS_DATA = ' + json.dumps(payouts_data, ensure_ascii=False, indent=2) + ';'
 
-new_results_data_str = "const RESULTS_DATA = " + json.dumps(res_dict, ensure_ascii=False, indent=2) + ";" 
+new_results_data_str = 'const RESULTS_DATA = ' + json.dumps(res_dict, ensure_ascii=False, indent=2) + ';'  
 
 # Generate complete HISTORICAL_DATA for ALL 24 RACES (2016-2025)
 base_hist = json.loads(re.search(r'const HISTORICAL_DATA = (\{[\s\S]*?\n\s*\});', base_html).group(1).replace("'", '"'))
