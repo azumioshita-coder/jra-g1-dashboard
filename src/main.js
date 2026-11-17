@@ -18185,10 +18185,26 @@ function hydratePayouts(race) {
 
         if (race.status === 'finished') {
           innerHTML = `
-            <div class="modal-tabs">
-              <button class="modal-tab-btn active" data-tab="result">レース結果・全着順</button>
-              <button class="modal-tab-btn" data-tab="payouts">払戻金一覧</button>
-              <button class="modal-tab-btn" data-tab="history">歴代優勝馬（過去10年）</button>
+            <div class="modal-tabs-header">
+              <div class="modal-tabs">
+                <button class="modal-tab-btn active" data-tab="result">
+                  <i data-lucide="trophy"></i>
+                  <span>レース結果・全着順</span>
+                </button>
+                <button class="modal-tab-btn" data-tab="payouts">
+                  <i data-lucide="coins"></i>
+                  <span>払戻金一覧</span>
+                </button>
+                <button class="modal-tab-btn" data-tab="history">
+                  <i data-lucide="history"></i>
+                  <span>歴代優勝馬（過去10年）</span>
+                </button>
+              </div>
+              <button class="btn-modal-to-review" onclick="closeModal(); selectReviewRace('${id}'); switchView('review', true, true);">
+                <i data-lucide="file-text"></i>
+                <span>レース回顧・次走分析を見る</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
             </div>
 
             <div id="modal-tab-content-result" class="modal-tab-content">
@@ -18354,9 +18370,22 @@ function hydratePayouts(race) {
           `;
         } else if (entries && entries.length > 0) {
           innerHTML = `
-            <div class="modal-tabs">
-              <button class="modal-tab-btn active" data-tab="entries">出馬表・登録馬一覧</button>
-              <button class="modal-tab-btn" data-tab="history">歴代優勝馬（過去10年）</button>
+            <div class="modal-tabs-header">
+              <div class="modal-tabs">
+                <button class="modal-tab-btn active" data-tab="entries">
+                  <i data-lucide="list"></i>
+                  <span>出馬表・登録馬一覧</span>
+                </button>
+                <button class="modal-tab-btn" data-tab="history">
+                  <i data-lucide="history"></i>
+                  <span>歴代優勝馬（過去10年）</span>
+                </button>
+              </div>
+              <button class="btn-modal-to-pred btn-jump-prediction" data-race-id="${id}" onclick="closeModal();">
+                <i data-lucide="sparkles"></i>
+                <span>予想・オカルト攻略を見る</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
             </div>
 
             <div id="modal-tab-content-entries" class="modal-tab-content">
@@ -18532,8 +18561,13 @@ function hydratePayouts(race) {
           `;
         } else {
           innerHTML = `
-            <div class="modal-tabs">
-              <button class="modal-tab-btn active" data-tab="history">歴代優勝馬（過去10年）</button>
+            <div class="modal-tabs-header">
+              <div class="modal-tabs">
+                <button class="modal-tab-btn active" data-tab="history">
+                  <i data-lucide="history"></i>
+                  <span>歴代優勝馬（過去10年）</span>
+                </button>
+              </div>
             </div>
             <div id="modal-tab-content-history" class="modal-tab-content">
               <div class="table-scroll-container">
