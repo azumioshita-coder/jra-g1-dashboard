@@ -563,11 +563,69 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  margin-top: 10px;
 }
 
 .race-card:hover .card-action-text {
   color: #34d399;
+}
+
+/* レースカード アクションボタングループ（結果詳細 ＆ 回顧・次走） */
+.card-actions-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.btn-card-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 6px 8px;
+  font-size: 11.5px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  text-decoration: none;
+  border: 1px solid transparent;
+  line-height: 1.3;
+}
+
+.btn-card-action.btn-card-result {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #cbd5e1;
+}
+
+.btn-card-action.btn-card-result:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-card-action.btn-card-review {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #34d399;
+}
+
+.btn-card-action.btn-card-review:hover {
+  background: rgba(16, 185, 129, 0.22);
+  border-color: #34d399;
+  color: #6ee7b7;
+  transform: translateY(-1px);
+}
+
+.btn-card-action i,
+.btn-card-action svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
 }
 
 /* ----------------------------------

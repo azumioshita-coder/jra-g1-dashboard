@@ -596,9 +596,15 @@ existing_helpers = re.sub(
                   <span class="winner-name">${r.winner}</span>
                   <span class="text-muted">(${r.winnerJockey})</span>
                 </div>
-                <div style="display:flex;gap:8px;align-items:center;">
-                  <button class="btn-card-review" onclick="event.stopPropagation();selectReviewRace('${r.id}');switchView('review',true,true);" style="background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);color:#34d399;font-size:11px;font-weight:700;padding:4px 8px;border-radius:4px;cursor:pointer;">📝 回顧・次走</button>
-                  <div class="card-action-text">結果詳細 <i data-lucide="arrow-right"></i></div>
+                <div class="card-actions-group">
+                  <button class="btn-card-action btn-card-result" onclick="event.stopPropagation(); openRaceDetail('${r.id}');">
+                    <i data-lucide="trophy"></i>
+                    <span>結果詳細</span>
+                  </button>
+                  <button class="btn-card-action btn-card-review" onclick="event.stopPropagation(); selectReviewRace('${r.id}'); switchView('review', true, true);">
+                    <i data-lucide="file-text"></i>
+                    <span>回顧・次走</span>
+                  </button>
                 </div>
               </div>
             `;
@@ -614,8 +620,10 @@ existing_helpers = re.sub(
             }
             footerContent = `
               <div class="card-result-preview">
-                <span class="text-muted" style="font-size: 13px;">${stageBadge ? `<span style="margin-right: 6px;">${stageBadge}</span>` : ''}発走予定: 15:40</span>
-                <div class="card-action-text">出馬表・詳細 <i data-lucide="arrow-right"></i></div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-top:6px;">
+                  <span class="text-muted" style="font-size: 13px;">${stageBadge ? `<span style="margin-right: 6px;">${stageBadge}</span>` : ''}発走 15:40</span>
+                  <div class="card-action-text">出馬表・詳細 <i data-lucide="arrow-right"></i></div>
+                </div>
               </div>
             `;
           }
