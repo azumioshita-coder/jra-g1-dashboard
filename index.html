@@ -729,6 +729,135 @@ body {
   color: var(--text-primary);
 }
 
+/* モーダル内 タブヘッダー ＆ セグメントコントロール */
+.modal-tabs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 22px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modal-tabs {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4px;
+  border-radius: 12px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.35);
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal-tab-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  outline: none;
+}
+
+.modal-tab-btn:hover {
+  color: #f1f5f9;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.modal-tab-btn.active {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(217, 119, 6, 0.3));
+  border-color: rgba(245, 158, 11, 0.45);
+  color: #fbbf24;
+  box-shadow: 0 2px 10px rgba(245, 158, 11, 0.2);
+  font-weight: 800;
+}
+
+.modal-tab-btn i,
+.modal-tab-btn svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+/* モーダルからレース回顧へ直行するアクションボタン */
+.btn-modal-to-review {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.18), rgba(5, 150, 105, 0.25));
+  border: 1px solid rgba(16, 185, 129, 0.45);
+  color: #34d399;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 9px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.15);
+}
+
+.btn-modal-to-review:hover {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.35), rgba(5, 150, 105, 0.4));
+  border-color: #34d399;
+  color: #a7f3d0;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.3);
+}
+
+.btn-modal-to-review i,
+.btn-modal-to-review svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+/* モーダルから予想ページへ直行するアクションボタン */
+.btn-modal-to-pred {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.28));
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  color: #fbbf24;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 9px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.18);
+}
+
+.btn-modal-to-pred:hover {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.35), rgba(217, 119, 6, 0.4));
+  border-color: #f59e0b;
+  color: #fef3c7;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.32);
+}
+
+.btn-modal-to-pred i,
+.btn-modal-to-pred svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
 /* 2カラムレイアウト */
 .detail-grid {
   display: grid;
@@ -76202,10 +76331,26 @@ function hydratePayouts(race) {
 
         if (race.status === 'finished') {
           innerHTML = `
-            <div class="modal-tabs">
-              <button class="modal-tab-btn active" data-tab="result">レース結果・全着順</button>
-              <button class="modal-tab-btn" data-tab="payouts">払戻金一覧</button>
-              <button class="modal-tab-btn" data-tab="history">歴代優勝馬（過去10年）</button>
+            <div class="modal-tabs-header">
+              <div class="modal-tabs">
+                <button class="modal-tab-btn active" data-tab="result">
+                  <i data-lucide="trophy"></i>
+                  <span>レース結果・全着順</span>
+                </button>
+                <button class="modal-tab-btn" data-tab="payouts">
+                  <i data-lucide="coins"></i>
+                  <span>払戻金一覧</span>
+                </button>
+                <button class="modal-tab-btn" data-tab="history">
+                  <i data-lucide="history"></i>
+                  <span>歴代優勝馬（過去10年）</span>
+                </button>
+              </div>
+              <button class="btn-modal-to-review" onclick="closeModal(); selectReviewRace('${id}'); switchView('review', true, true);">
+                <i data-lucide="file-text"></i>
+                <span>レース回顧・次走分析を見る</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
             </div>
 
             <div id="modal-tab-content-result" class="modal-tab-content">
@@ -76371,9 +76516,22 @@ function hydratePayouts(race) {
           `;
         } else if (entries && entries.length > 0) {
           innerHTML = `
-            <div class="modal-tabs">
-              <button class="modal-tab-btn active" data-tab="entries">出馬表・登録馬一覧</button>
-              <button class="modal-tab-btn" data-tab="history">歴代優勝馬（過去10年）</button>
+            <div class="modal-tabs-header">
+              <div class="modal-tabs">
+                <button class="modal-tab-btn active" data-tab="entries">
+                  <i data-lucide="list"></i>
+                  <span>出馬表・登録馬一覧</span>
+                </button>
+                <button class="modal-tab-btn" data-tab="history">
+                  <i data-lucide="history"></i>
+                  <span>歴代優勝馬（過去10年）</span>
+                </button>
+              </div>
+              <button class="btn-modal-to-pred btn-jump-prediction" data-race-id="${id}" onclick="closeModal();">
+                <i data-lucide="sparkles"></i>
+                <span>予想・オカルト攻略を見る</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
             </div>
 
             <div id="modal-tab-content-entries" class="modal-tab-content">
@@ -76549,8 +76707,13 @@ function hydratePayouts(race) {
           `;
         } else {
           innerHTML = `
-            <div class="modal-tabs">
-              <button class="modal-tab-btn active" data-tab="history">歴代優勝馬（過去10年）</button>
+            <div class="modal-tabs-header">
+              <div class="modal-tabs">
+                <button class="modal-tab-btn active" data-tab="history">
+                  <i data-lucide="history"></i>
+                  <span>歴代優勝馬（過去10年）</span>
+                </button>
+              </div>
             </div>
             <div id="modal-tab-content-history" class="modal-tab-content">
               <div class="table-scroll-container">
