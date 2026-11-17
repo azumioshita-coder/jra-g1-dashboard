@@ -581,11 +581,69 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  margin-top: 10px;
 }
 
 .race-card:hover .card-action-text {
   color: #34d399;
+}
+
+/* レースカード アクションボタングループ（結果詳細 ＆ 回顧・次走） */
+.card-actions-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.btn-card-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 6px 8px;
+  font-size: 11.5px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  text-decoration: none;
+  border: 1px solid transparent;
+  line-height: 1.3;
+}
+
+.btn-card-action.btn-card-result {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #cbd5e1;
+}
+
+.btn-card-action.btn-card-result:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-card-action.btn-card-review {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #34d399;
+}
+
+.btn-card-action.btn-card-review:hover {
+  background: rgba(16, 185, 129, 0.22);
+  border-color: #34d399;
+  color: #6ee7b7;
+  transform: translateY(-1px);
+}
+
+.btn-card-action i,
+.btn-card-action svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
 }
 
 /* ----------------------------------
@@ -73879,9 +73937,15 @@ const POOLS = {
                   <span class="winner-name">${r.winner}</span>
                   <span class="text-muted">(${r.winnerJockey})</span>
                 </div>
-                <div style="display:flex;gap:8px;align-items:center;">
-                  <button class="btn-card-review" onclick="event.stopPropagation();selectReviewRace('${r.id}');switchView('review',true,true);" style="background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);color:#34d399;font-size:11px;font-weight:700;padding:4px 8px;border-radius:4px;cursor:pointer;">📝 回顧・次走</button>
-                  <div class="card-action-text">結果詳細 <i data-lucide="arrow-right"></i></div>
+                <div class="card-actions-group">
+                  <button class="btn-card-action btn-card-result" onclick="event.stopPropagation(); openRaceDetail('${r.id}');">
+                    <i data-lucide="trophy"></i>
+                    <span>結果詳細</span>
+                  </button>
+                  <button class="btn-card-action btn-card-review" onclick="event.stopPropagation(); selectReviewRace('${r.id}'); switchView('review', true, true);">
+                    <i data-lucide="file-text"></i>
+                    <span>回顧・次走</span>
+                  </button>
                 </div>
               </div>
             `;
@@ -73897,8 +73961,10 @@ const POOLS = {
             }
             footerContent = `
               <div class="card-result-preview">
-                <span class="text-muted" style="font-size: 13px;">${stageBadge ? `<span style="margin-right: 6px;">${stageBadge}</span>` : ''}発走予定: 15:40</span>
-                <div class="card-action-text">出馬表・詳細 <i data-lucide="arrow-right"></i></div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-top:6px;">
+                  <span class="text-muted" style="font-size: 13px;">${stageBadge ? `<span style="margin-right: 6px;">${stageBadge}</span>` : ''}発走 15:40</span>
+                  <div class="card-action-text">出馬表・詳細 <i data-lucide="arrow-right"></i></div>
+                </div>
               </div>
             `;
           }
