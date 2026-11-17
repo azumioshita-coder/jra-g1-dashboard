@@ -2812,7 +2812,7 @@ review_js_logic = '''
                   review: `道中は後方追走から直線も脚を伸ばしたが${rRank}着まで。本領発揮とはいかなかった。`,
                   factor: '【敗因】ペース適性のズレまたは直線での進路・距離の壁。',
                   nextCondition: '次走得意なコース・条件への変更で巻き返し狙い。',
-                  jockeyComment: `「今日は流れに乗り切れませんでした。立て直して次走に期待です。」（${rJockey}騎手）`
+                  jockeyComment: null
                 });
               }
             });
