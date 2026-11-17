@@ -17470,12 +17470,15 @@ function hydratePayouts(race) {
         }
 
         list.innerHTML = occultSigns.map(s => {
-          const targetsHtml = (s.targets || []).map(t => `
-            <span class="occult-target-pill">
-              <span class="nh-gate-cell waku-${t.waku || 1}" style="width:18px;height:18px;font-size:10px;border-radius:3px;">${t.gate}</span>
-              <span>${t.name}</span>
-            </span>
-          `).join('');
+          const targetsHtml = (s.targets || []).map(t => {
+            const hasGate = (t.gate != null);
+            return `
+              <span class="occult-target-pill">
+                ${hasGate ? `<span class="nh-gate-cell waku-${t.waku || 1}" style="width:18px;height:18px;font-size:10px;border-radius:3px;">${t.gate}</span>` : `<span style="font-size:11px;opacity:0.8;">🐴</span>`}
+                <span>${t.name}</span>
+              </span>
+            `;
+          }).join('');
 
           return `
             <div class="occult-card">
