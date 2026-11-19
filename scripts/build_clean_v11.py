@@ -3542,7 +3542,6 @@ init_app_block = """
         window.closeModal = closeModal;
         window.openHorseDetail = openHorseDetail;
         window.closeHorseModal = closeHorseModal;
-        window.switchHorseTab = switchHorseTab;
         window.navigateTo = navigateTo;
         window.switchAppView = switchAppView;
         window.setPredictionRace = setPredictionRace;
