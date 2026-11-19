@@ -3358,22 +3358,30 @@ html.route-prediction .nav-item[data-target="prediction"] {
 
 .hd-photo-wrapper {
   position: relative;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
-  height: 200px;
-  background: #1e293b;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  background: #06090e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 210px;
+  max-height: 260px;
 }
 
 .hd-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
+  max-height: 260px;
+  object-fit: contain;
+  background-color: #06090e;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
 .hd-photo:hover {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 .hd-photo-tag {
