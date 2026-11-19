@@ -323,8 +323,8 @@
       "waku": null,
       "gate": null,
       "horseName": "アドマイヤズーム",
-      "sexAge": "牡3",
-      "load": 57,
+      "sexAge": "牡4",
+      "load": 58,
       "jockey": "武豊",
       "stable": "友道康夫 (栗東)"
     },
@@ -332,34 +332,25 @@
       "waku": null,
       "gate": null,
       "horseName": "アンパドゥ",
-      "sexAge": "牡4",
+      "sexAge": "牡5",
       "load": 58,
       "jockey": "岩田望来",
-      "stable": "高野友和 (栗東)"
+      "stable": "木村哲也 (美浦)"
     },
     {
       "waku": null,
       "gate": null,
       "horseName": "ウォーターリヒト",
-      "sexAge": "牡4",
+      "sexAge": "牡5",
       "load": 58,
       "jockey": "幸英明",
-      "stable": "河内洋 (栗東)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "エコロアルバ",
-      "sexAge": "牡4",
-      "load": 58,
-      "jockey": "未定",
-      "stable": "武英智 (栗東)"
+      "stable": "石橋守 (栗東)"
     },
     {
       "waku": null,
       "gate": null,
       "horseName": "エコロブルーム",
-      "sexAge": "牡4",
+      "sexAge": "牡5",
       "load": 58,
       "jockey": "坂井瑠星",
       "stable": "加藤征弘 (美浦)"
@@ -368,17 +359,17 @@
       "waku": null,
       "gate": null,
       "horseName": "エルデナリ",
-      "sexAge": "せん3",
+      "sexAge": "セ3",
       "load": 57,
       "jockey": "M.バルザローナ",
-      "stable": "A.ファーブル (仏)"
+      "stable": "F.グラファール (仏)"
     },
     {
       "waku": null,
       "gate": null,
       "horseName": "エンブロイダリー",
-      "sexAge": "牝3",
-      "load": 55,
+      "sexAge": "牝4",
+      "load": 56,
       "jockey": "C.ルメール",
       "stable": "森一誠 (美浦)"
     },
@@ -386,7 +377,7 @@
       "waku": null,
       "gate": null,
       "horseName": "オフトレイル",
-      "sexAge": "牡4",
+      "sexAge": "牡5",
       "load": 58,
       "jockey": "菅原明良",
       "stable": "吉村圭司 (栗東)"
@@ -404,7 +395,7 @@
       "waku": null,
       "gate": null,
       "horseName": "ココナッツブラウン",
-      "sexAge": "牝5",
+      "sexAge": "牝6",
       "load": 56,
       "jockey": "北村友一",
       "stable": "上村洋行 (栗東)"
@@ -413,28 +404,28 @@
       "waku": null,
       "gate": null,
       "horseName": "シックスペンス",
-      "sexAge": "牡4",
+      "sexAge": "牡5",
       "load": 58,
       "jockey": "A.プーシャン",
-      "stable": "国枝栄 (美浦)"
+      "stable": "田中博康 (美浦)"
     },
     {
       "waku": null,
       "gate": null,
       "horseName": "ジューンテイク",
-      "sexAge": "牡4",
+      "sexAge": "牡5",
       "load": 58,
-      "jockey": "未定",
+      "jockey": "川田将雅",
       "stable": "武英智 (栗東)"
     },
     {
       "waku": null,
       "gate": null,
       "horseName": "スズハローム",
-      "sexAge": "牡5",
+      "sexAge": "牡6",
       "load": 58,
       "jockey": "藤懸貴志",
-      "stable": "杉山晴紀 (栗東)"
+      "stable": "牧田和弥 (栗東)"
     },
     {
       "waku": null,
@@ -443,14 +434,14 @@
       "sexAge": "牝3",
       "load": 55,
       "jockey": "松山弘平",
-      "stable": "杉山晴紀 (栗東)"
+      "stable": "高野友和 (栗東)"
     },
     {
       "waku": null,
       "gate": null,
       "horseName": "ドラゴンブースト",
-      "sexAge": "牡3",
-      "load": 57,
+      "sexAge": "牡4",
+      "load": 58,
       "jockey": "浜中俊",
       "stable": "藤野健太 (栗東)"
     },
@@ -458,28 +449,19 @@
       "waku": null,
       "gate": null,
       "horseName": "ピコローズ",
-      "sexAge": "牝5",
+      "sexAge": "牝4",
       "load": 56,
       "jockey": "三浦皇成",
-      "stable": "上原博之 (美浦)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "マジックサンズ",
-      "sexAge": "牡3",
-      "load": 57,
-      "jockey": "川田将雅",
-      "stable": "須貝尚介 (栗東)"
+      "stable": "伊藤大士 (美浦)"
     },
     {
       "waku": null,
       "gate": null,
       "horseName": "レザベーション",
-      "sexAge": "牡4",
-      "load": 58,
+      "sexAge": "牡3",
+      "load": 57,
       "jockey": "田口貫太",
-      "stable": "矢作芳人 (栗東)"
+      "stable": "松下武士 (栗東)"
     },
     {
       "waku": null,
@@ -488,14 +470,14 @@
       "sexAge": "牡3",
       "load": 57,
       "jockey": "J.モレイラ",
-      "stable": "友道康夫 (栗東)"
+      "stable": "辻哲英 (美浦)"
     },
     {
       "waku": null,
       "gate": null,
       "horseName": "ワールズエンド",
-      "sexAge": "牡3",
-      "load": 57,
+      "sexAge": "牡5",
+      "load": 58,
       "jockey": "C.デムーロ",
       "stable": "池添学 (栗東)"
     }
@@ -504,128 +486,164 @@
     {
       "waku": null,
       "gate": null,
-      "horseName": "オーギュストロダン",
+      "horseName": "アーバンシック",
       "sexAge": "牡5",
       "load": 58,
-      "jockey": "R.ムーア",
-      "stable": "A.オブライエン (海外)"
+      "jockey": "プーシャ",
+      "stable": "武井"
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "カラテ",
-      "sexAge": "牡9",
+      "horseName": "エキサイトバイオ",
+      "sexAge": "牡4",
       "load": 58,
-      "jockey": "杉原誠人",
-      "stable": "音無秀孝 (栗東)"
+      "jockey": "荻野極",
+      "stable": "今野 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "エシカルダイヤモンド",
+      "sexAge": "セ6",
+      "load": 58,
+      "jockey": "坂井",
+      "stable": "マリンズ"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "オンブズマン",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "ビュイッ",
+      "stable": "ゴスデン"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "カランダガン",
+      "sexAge": "セ5",
+      "load": 58,
+      "jockey": "バルザロー",
+      "stable": "グラファー"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "クロワデュノール",
+      "sexAge": "牡4",
+      "load": 58,
+      "jockey": "Ｃデムー",
+      "stable": "斉藤崇 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "コスモキュランダ",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "丹内",
+      "stable": "加藤士"
     },
     {
       "waku": null,
       "gate": null,
       "horseName": "ゴリアット",
-      "sexAge": "セ5",
-      "load": 58,
-      "jockey": "C.スミヨン",
-      "stable": "F.グラファール (海外)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "シュトルーヴェ",
       "sexAge": "セ6",
       "load": 58,
-      "jockey": "佐々木大輔",
-      "stable": "堀宣行 (美浦)"
+      "jockey": "スミヨン",
+      "stable": "グラファー"
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "シンエンペラー",
+      "horseName": "シェイクユアハート",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "古川吉",
+      "stable": "宮 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "タガノデュード",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "Ｍデムー",
+      "stable": "宮 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ダノンデサイル",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "戸崎圭",
+      "stable": "安田 (栗東)"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "テアオ",
       "sexAge": "牡4",
-      "load": 56,
-      "jockey": "吉田豊",
-      "stable": "矢作芳人 (栗東)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "ジャスティンパレス",
-      "sexAge": "牡6",
       "load": 58,
-      "jockey": "坂井瑠星",
-      "stable": "杉山晴紀 (栗東)"
+      "jockey": "トーレス",
+      "stable": "サドラー"
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "スターズオンアース",
-      "sexAge": "牝6",
-      "load": 56,
-      "jockey": "川田将雅",
-      "stable": "高柳瑞樹 (美浦)"
+      "horseName": "ファイアンクランツ",
+      "sexAge": "牡4",
+      "load": 58,
+      "jockey": "堀",
+      "stable": "堀"
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "ソールオリエンス",
+      "horseName": "ヘデントール",
       "sexAge": "牡5",
       "load": 58,
-      "jockey": "横山武史",
-      "stable": "手塚貴久 (美浦)"
+      "jockey": "木村",
+      "stable": "木村"
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "チェルヴィニア",
+      "horseName": "マスカレードボール",
+      "sexAge": "牡4",
+      "load": 58,
+      "jockey": "ルメール",
+      "stable": "手塚久"
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ミニーホーク",
       "sexAge": "牝4",
-      "load": 54,
-      "jockey": "C.ルメール",
-      "stable": "木村哲也 (美浦)"
+      "load": 56,
+      "jockey": "ムーア",
+      "stable": "Ａオブライ"
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "ディープボンド",
-      "sexAge": "牡8",
-      "load": 58,
-      "jockey": "幸英明",
-      "stable": "大久保龍志 (栗東)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "ドゥレッツァ",
+      "horseName": "メイショウタバル",
       "sexAge": "牡5",
-      "load": 58,
-      "jockey": "戸崎圭太",
-      "stable": "尾関知人 (美浦)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "ドウデュース",
-      "sexAge": "牡6",
       "load": 58,
       "jockey": "武豊",
-      "stable": "友道康夫 (栗東)"
+      "stable": "石橋 (栗東)"
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "ファンタスティックムーン",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "R.ピーヒュレク",
-      "stable": "S.シュタインベルク (海外)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "ブローザホーン",
+      "horseName": "ヴェルテンベルク",
       "sexAge": "牡6",
       "load": 58,
-      "jockey": "菅原明良",
-      "stable": "吉岡辰弥 (栗東)"
+      "jockey": "横山典",
+      "stable": "宮本 (栗東)"
     }
   ],
   "20": [

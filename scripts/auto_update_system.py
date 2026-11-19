@@ -3,11 +3,11 @@
 GRAND STABLE - Automated JRA G1 Data Update Daemon & CLI
 --------------------------------------------------------
 Features:
-1. Automated Gate Draw (枠順/出馬表) scraping from NetKeiba for upcoming races (Thursdays/Fridays).
+1. Automated Gate Draw & Confirmed Starters scraping from NetKeiba for upcoming races (Thursdays/Fridays).
 2. Automated Race Results & Official Payouts scraping from NetKeiba after race finish (Sundays).
-3. Synchronization across index.html, src/main.js, and src/entries_data.js.
+3. Synchronization across entries_data, prediction_data, horse_data, index.html, and src/main.js.
 4. Auto-build with Vite (npm run build).
-5. Automatic Git commit & push.
+5. Automatic Git commit, push, and GitHub Pages deployment.
 """
 
 import sys
@@ -26,6 +26,8 @@ MAIN_JS = os.path.join(APP_DIR, 'src', 'main.js')
 ENTRIES_JSON = os.path.join(APP_DIR, 'src', 'entries_data.json')
 PAYOUTS_JSON = os.path.join(APP_DIR, 'src', 'payouts_data.json')
 HIST_JS = os.path.join(APP_DIR, 'src', 'historical_results.js')
+HORSE_JSON = os.path.join(APP_DIR, 'src', 'horse_data.json')
+PRED_JSON = os.path.join(APP_DIR, 'src', 'prediction_data.json')
 LOG_FILE = os.path.join(APP_DIR, 'scripts', 'update.log')
 
 # JRA 2026 G1 秋季レース NetKeiba レースコード定義
@@ -122,7 +124,7 @@ def fetch_html(url, timeout=15):
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             content = resp.read()
-            for enc in ['euc-jp', 'utf-8', 'cp932']:
+            for enc in ['utf-8', 'euc-jp', 'cp932']:
                 try:
                     return content.decode(enc)
                 except Exception:
@@ -132,8 +134,14 @@ def fetch_html(url, timeout=15):
         log(f"Fetch failed for {url}: {e}")
         return None
 
+def clean_jockey_name(j):
+    if not j:
+        return '未定'
+    j = j.replace('Ｍ．', 'M.').replace('Ｃ．', 'C.').replace('Ａ．', 'A.').replace('Ｊ．', 'J.').replace('・', '.')
+    return j.strip()
+
 def parse_shutuba(html):
-    """NetKeiba出馬表HTMLから枠番、馬番、馬名、性齢、斤量、騎手、厩舎、オッズ、人気、馬体重を抽出。枠順未定時は五十音順で返す"""
+    """NetKeiba出馬表HTMLから枠番、馬番、馬名、性齢、斤量、騎手、厩舎、オッズ、人気、馬体重を抽出"""
     starters = []
     rows = re.findall(r'<tr[^>]*class=\"[^\"]*HorseList[^\"]*\"[^>]*>([\s\S]*?)</tr>', html)
     if not rows:
@@ -174,18 +182,18 @@ def parse_shutuba(html):
             if gate is None:
                 has_gates = False
 
-            sex_age = barei_m.group(1).strip() if barei_m else '牝4'
+            sex_age = barei_m.group(1).strip() if barei_m else '牡4'
             try:
-                load = float(load_m.group(1).strip()) if load_m else 56.0
+                load = float(load_m.group(1).strip()) if load_m else 58.0
                 if load.is_integer():
                     load = int(load)
             except Exception:
-                load = 56
+                load = 58
 
-            jockey = jockey_m.group(1).strip() if jockey_m else '未定'
+            jockey = clean_jockey_name(jockey_m.group(1) if jockey_m else '未定')
             trainer = trainer_m.group(1).strip() if trainer_m else '-'
             loc = loc_m.group(1).strip() if loc_m else ''
-            stable = f"{trainer} ({loc})" if loc else trainer
+            stable = f"{trainer} ({loc})" if loc and f"({loc})" not in trainer else trainer
 
             odds = odds_m.group(1).strip() if odds_m and odds_m.group(1) != '---.-' else None
             pop = int(pop_m.group(1).strip()) if pop_m and pop_m.group(1).isdigit() else None
@@ -219,7 +227,7 @@ def parse_shutuba(html):
     else:
         # 枠順確定するまでは五十音順
         starters.sort(key=lambda x: x['horseName'])
-        stage = 'entry_scheduled'
+        stage = 'starters_confirmed' if len(starters) <= 18 and len(starters) > 0 else 'entry_scheduled'
 
     return starters, stage
 
@@ -231,12 +239,17 @@ def check_and_update_entries():
     except Exception:
         entries_data = {}
 
-    PRED_JSON = os.path.join(APP_DIR, 'src', 'prediction_data.json')
     try:
         with open(PRED_JSON, 'r', encoding='utf-8') as f:
             pred_data = json.load(f)
     except Exception:
         pred_data = {}
+
+    try:
+        with open(HORSE_JSON, 'r', encoding='utf-8') as f:
+            horse_db = json.load(f)
+    except Exception:
+        horse_db = {}
 
     updated = False
     now = datetime.datetime.now()
@@ -248,7 +261,7 @@ def check_and_update_entries():
         # 枠順・出馬表はレースの14日前〜当日に公開される
         days_until = (race_dt - now).total_seconds() / 86400
         
-        # レースまで10日以内の場合、定期的にNetKeibaから最新出馬表状態を取得
+        # レースまで10日以内の場合、NetKeibaから最新出馬表状態を取得
         if -1 <= days_until <= 10:
             log(f"Checking NetKeiba shutuba for Race {r_id}: {race['name']}...")
             url = f"https://race.netkeiba.com/race/shutuba.html?race_id={race['netkeiba_id']}"
@@ -257,12 +270,21 @@ def check_and_update_entries():
                 starters, stage = parse_shutuba(html)
                 if len(starters) >= 5:
                     if stage != 'gate_confirmed':
-                        if days_until <= 3.2: # 木曜午後以降なら出走馬確定
+                        if days_until <= 3.5: # 木曜午後以降なら出走投票完了・出走馬確定
                             stage = 'starters_confirmed'
                         else:
                             stage = 'entry_scheduled'
 
                     log(f"Found {len(starters)} starters for {race['name']} [Stage: {stage}]!")
+                    
+                    # Refine stable names from HORSE_DATABASE if available
+                    for s in starters:
+                        hname = s['horseName']
+                        if hname in horse_db and horse_db[hname].get('stable'):
+                            db_stable = horse_db[hname]['stable']
+                            if '(' in db_stable and '(' not in s['stable']:
+                                s['stable'] = db_stable
+
                     entries_data[r_id] = [
                         {
                             'waku': s['waku'],
@@ -281,18 +303,19 @@ def check_and_update_entries():
                         pred_starters = pred_data['races'][r_id].get('starters', [])
                         
                         # Filter to only actual runners
-                        official_names = set(s['horseName'] for s in starters)
                         existing_map = {p['horseName']: p for p in pred_starters}
                         
                         new_pred_starters = []
                         for s in starters:
                             hname = s['horseName']
                             if hname in existing_map:
-                                ps = existing_map[hname]
+                                ps = dict(existing_map[hname])
                                 ps['gate'] = s['gate']
                                 ps['waku'] = s['waku']
                                 ps['jockey'] = s['jockey']
                                 ps['stable'] = s['stable']
+                                ps['sexAge'] = s['sexAge']
+                                ps['load'] = s['load']
                                 if s.get('odds'):
                                     ps['odds'] = s['odds']
                                 if s.get('pop'):
@@ -304,10 +327,28 @@ def check_and_update_entries():
                             else:
                                 new_pred_starters.append(s)
 
+                        # Re-calculate sequential popularity for estimated odds if not yet open
+                        def safe_odds(val):
+                            try:
+                                return float(val) if val is not None else 999.0
+                            except (ValueError, TypeError):
+                                return 999.0
+
+                        if not any(s.get('odds') for s in starters):
+                            sorted_by_odds = sorted(new_pred_starters, key=lambda x: safe_odds(x.get('odds')))
+                            for idx, item in enumerate(sorted_by_odds):
+                                item['pop'] = idx + 1
+
                         if stage == 'gate_confirmed':
                             pred_data['races'][r_id]['starters'] = sorted(new_pred_starters, key=lambda x: (x.get('gate') or 99))
                         else:
                             pred_data['races'][r_id]['starters'] = sorted(new_pred_starters, key=lambda x: x['horseName'])
+
+                        # If this race is activeRaceId, also sync top-level
+                        active_id = str(pred_data.get('activeRaceId', '18'))
+                        if r_id == active_id:
+                            pred_data['starters'] = pred_data['races'][r_id]['starters']
+                            pred_data['entryStatus'] = stage
 
                     updated = True
 
@@ -323,9 +364,10 @@ def check_and_update_entries():
             f.write('export const PREDICTION_DATA = ' + json.dumps(pred_data, ensure_ascii=False, indent=2) + ';\n')
 
         log("Updated entries_data and prediction_data successfully.")
-        sync_all()
+        return True
     else:
         log("No new entries updates required at this time.")
+        return False
 
 def sync_all():
     """index.html、src/main.jsを同期し、ViteでビルドしてGitへコミット＆プッシュ"""
@@ -345,7 +387,9 @@ def sync_all():
     # Git commit & push
     log("Pushing updates to GitHub...")
     subprocess.run(['git', 'add', '.'], cwd=APP_DIR)
-    subprocess.run(['git', 'commit', '-m', 'chore: automated update data & entries [skip ci]'], cwd=APP_DIR)
+    commit_res = subprocess.run(['git', 'commit', '-m', 'chore(auto-update): sync confirmed starters, odds & race status [skip ci]'], cwd=APP_DIR, capture_output=True, text=True)
+    log(f"Git commit: {commit_res.stdout.strip() or commit_res.stderr.strip()}")
+    
     push_res = subprocess.run(['git', 'push', 'origin', 'main'], cwd=APP_DIR, capture_output=True, text=True)
     if push_res.returncode == 0:
         log("Git push succeeded! Remote repository is fully updated.")
@@ -362,12 +406,14 @@ def main():
         log("Daemon mode started. Checking every 1 hour...")
         while True:
             try:
-                check_and_update_entries()
+                has_updates = check_and_update_entries()
+                if has_updates:
+                    sync_all()
             except Exception as e:
                 log(f"Unexpected error in daemon loop: {e}")
             time.sleep(3600)
     else:
-        # One-shot check
+        # One-shot check & sync
         check_and_update_entries()
         sync_all()
         log("One-shot check completed.")

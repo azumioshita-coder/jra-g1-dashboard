@@ -325,19 +325,28 @@ prediction_view_html = """
 
           <!-- 予想ページヘッダー -->
           <div class="pred-header-card">
-            <div class="pred-breadcrumb">
-              <a id="btn-back-to-calendar"><i data-lucide="arrow-left" style="width: 14px; height: 14px;"></i> ダッシュボードに戻る</a>
-              <span>/</span>
-              <span id="pred-header-subtitle">2026年 G1第17戦</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+              <div class="pred-breadcrumb">
+                <a id="btn-back-to-calendar"><i data-lucide="arrow-left" style="width: 14px; height: 14px;"></i> ダッシュボードに戻る</a>
+                <span>/</span>
+                <span id="pred-header-subtitle">2026年 G1第18戦</span>
+              </div>
+              <div class="live-sync-indicator" id="live-sync-indicator" title="Netkeiba/JRA公式データを常時自動同期中">
+                <span class="live-pulse-dot"></span>
+                <span class="live-sync-label">随時自動同期中</span>
+                <button id="btn-manual-sync" class="btn-sync-trigger" title="最新情報へ即時同期">
+                  <i data-lucide="refresh-cw" style="width: 11px; height: 11px;"></i> 最新データ同期
+                </button>
+              </div>
             </div>
             <h1 class="pred-title">
-              <span id="pred-header-title">第51回 エリザベス女王杯</span>
-              <span id="pred-header-badge" style="font-size: 11px; background: rgba(16, 185, 129, 0.2); color: var(--primary); padding: 2px 8px; border-radius: 4px; font-weight: 700; border: 1px solid rgba(16,185,129,0.3);">枠順確定済</span>
+              <span id="pred-header-title">第43回 マイルチャンピオンシップ</span>
+              <span id="pred-header-badge" style="font-size: 11px; background: rgba(59, 130, 246, 0.2); color: #60a5fa; padding: 2px 8px; border-radius: 4px; font-weight: 700; border: 1px solid rgba(59, 130, 246, 0.4);">🏇 出走馬確定 (枠順未定)</span>
             </h1>
             <div class="pred-meta-chips" id="pred-meta-chips">
-              <span class="pred-chip"><i data-lucide="calendar"></i> 11/15(日) 15:40発走</span>
-              <span class="pred-chip"><i data-lucide="map-pin"></i> 京都芝2200m (外回り)</span>
-              <span class="pred-chip"><i data-lucide="award"></i> 定量 / 全16頭</span>
+              <span class="pred-chip"><i data-lucide="calendar"></i> 11/22(日) 15:40発走</span>
+              <span class="pred-chip"><i data-lucide="map-pin"></i> 京都芝1600m (外回り)</span>
+              <span class="pred-chip"><i data-lucide="award"></i> 定量 / 全18頭</span>
             </div>
             <!-- 終了レースの場合のレビューポディウム表示コンテナ -->
             <div id="pred-finished-review-container"></div>
@@ -1278,15 +1287,15 @@ prediction_js_logic = """
         if (!container) return;
         
         const targetRaces = [
-          { id: '17', label: '👑 エリザベス女王杯 (11/15)', badge: '次回', isNext: true },
-          { id: '18', label: '⚡ マイルCS (11/22)', badge: '次走', isNext: true },
-          { id: '19', label: '🇯🇵 ジャパンC (11/29)', badge: '世界決戦', isNext: true },
+          { id: '18', label: '⚡ マイルCS (11/22)', badge: '今週', isNext: true },
+          { id: '19', label: '🇯🇵 ジャパンC (11/29)', badge: '次週', isNext: true },
           { id: '20', label: '🏜️ チャンピオンズC (12/6)', badge: 'ダート頂上', isNext: true },
           { id: '21', label: '🌸 阪神JF (12/13)', badge: '2歳女王', isNext: true },
           { id: '22', label: '🏇 朝日杯FS (12/20)', badge: '2歳牡馬', isNext: true },
           { id: '23', label: '⭐ ホープフルS (12/26)', badge: '登竜門', isNext: true },
           { id: '24', label: '💎 有馬記念 (12/27)', badge: 'グランプリ', isNext: true },
-          { id: '16', label: '📜 天皇賞（秋）', badge: '結果レビュー', isNext: false }
+          { id: '17', label: '👑 エリザベス女王杯', badge: '結果回顧', isNext: false },
+          { id: '16', label: '📜 天皇賞（秋）', badge: '結果回顧', isNext: false }
         ];
         
         container.innerHTML = targetRaces.map(r => {
@@ -1326,19 +1335,25 @@ prediction_js_logic = """
         if (titleEl) titleEl.innerText = currentPred.raceName || (raceObj ? raceObj.name : '');
         
         const isFinished = raceObj && raceObj.status === 'finished';
+        const currentStage = getRaceEntryStage(currentPredictionRaceId);
         if (badgeEl) {
           if (isFinished) {
             badgeEl.innerText = '公式結果確定';
             badgeEl.style.background = 'rgba(245, 158, 11, 0.2)';
             badgeEl.style.color = 'var(--gold)';
             badgeEl.style.borderColor = 'rgba(245, 158, 11, 0.4)';
-          } else if (currentPredictionRaceId === '17') {
-            badgeEl.innerText = '枠順確定済 / 予想公開中';
+          } else if (currentStage === 'gate_confirmed') {
+            badgeEl.innerText = '🎯 枠順確定済 / 予想公開中';
             badgeEl.style.background = 'rgba(16, 185, 129, 0.2)';
             badgeEl.style.color = 'var(--primary)';
             badgeEl.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+          } else if (currentStage === 'starters_confirmed') {
+            badgeEl.innerText = '🏇 出走馬確定 (枠順未定)';
+            badgeEl.style.background = 'rgba(59, 130, 246, 0.2)';
+            badgeEl.style.color = '#60a5fa';
+            badgeEl.style.borderColor = 'rgba(59, 130, 246, 0.4)';
           } else {
-            badgeEl.innerText = '出走登録馬・特別先行予想';
+            badgeEl.innerText = '📋 出馬予定 (五十音順)';
             badgeEl.style.background = 'rgba(147, 51, 234, 0.2)';
             badgeEl.style.color = '#c084fc';
             badgeEl.style.borderColor = 'rgba(147, 51, 234, 0.4)';
@@ -1890,6 +1905,23 @@ prediction_js_logic = """
         if (btnBack) {
           btnBack.addEventListener('click', () => {
             switchAppView('calendar', true);
+          });
+        }
+
+        const btnManualSync = document.getElementById('btn-manual-sync');
+        if (btnManualSync) {
+          btnManualSync.addEventListener('click', () => {
+            btnManualSync.classList.add('rotating');
+            btnManualSync.innerHTML = '🔄 同期中...';
+            setTimeout(() => {
+              btnManualSync.classList.remove('rotating');
+              btnManualSync.innerHTML = '✓ 最新データ反映済';
+              if (typeof renderPredictionView === 'function') renderPredictionView();
+              setTimeout(() => {
+                btnManualSync.innerHTML = '<i data-lucide="refresh-cw" style="width: 11px; height: 11px;"></i> 最新データ同期';
+                if (typeof lucide !== 'undefined') lucide.createIcons();
+              }, 2000);
+            }, 600);
           });
         }
 
