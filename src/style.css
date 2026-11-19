@@ -3309,3 +3309,256 @@ html.route-prediction .nav-item[data-target="prediction"] {
   border-left: 2px solid #64748b;
   margin: 0;
 }
+
+/* ==========================================================================
+ * 競走馬詳細データベースモーダル (Horse Profile Modal)
+ * ========================================================================== */
+.horse-detail-modal-content {
+  max-width: 950px;
+  background: #090d16;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.85), 0 0 40px rgba(56, 189, 248, 0.12);
+  padding: 24px;
+}
+
+.horse-modal-header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.horse-modal-badge {
+  font-size: 11px;
+  font-weight: 800;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  padding: 3px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  width: fit-content;
+}
+
+/* 馬トッププロフィカード */
+.hd-top-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .hd-top-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hd-photo-wrapper {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 200px;
+  background: #1e293b;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.hd-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.hd-photo:hover {
+  transform: scale(1.04);
+}
+
+.hd-photo-tag {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hd-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.hd-prof-item,
+.hd-profile-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hd-prof-label,
+.hd-profile-label {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.hd-prof-val,
+.hd-profile-val {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f1f5f9;
+}
+
+.hd-titles-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.hd-title-badge {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hd-title-badge.g1 {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(217, 119, 6, 0.35));
+  border: 1px solid rgba(245, 158, 11, 0.6);
+  color: #fbbf24;
+}
+
+.hd-title-badge.g2, .hd-title-badge.g3, .hd-title-badge.other {
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  color: #38bdf8;
+}
+
+/* 戦績テーブル */
+.hd-career-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hd-career-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.hd-career-table th {
+  background: rgba(15, 23, 42, 0.85);
+  color: var(--text-muted);
+  font-weight: 700;
+  padding: 8px 10px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hd-career-table td {
+  padding: 8px 10px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.hd-career-table tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.hd-rank-cell {
+  font-weight: 800;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.hd-rank-1 { background: #fbbf24; color: #111; }
+.hd-rank-2 { background: #38bdf8; color: #111; }
+.hd-rank-3 { background: #f87171; color: #111; }
+.hd-rank-other { background: rgba(255, 255, 255, 0.1); color: #cbd5e1; }
+
+/* 血統ツリー */
+.hd-pedigree-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+@media (max-width: 640px) {
+  .hd-pedigree-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hd-pedigree-box {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.hd-ped-title {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.hd-ped-name {
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.hd-ped-sub {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+/* 馬名ホバー・クリック可能スタイル */
+.nh-horse-name {
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nh-horse-name:hover {
+  color: #38bdf8 !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.nh-name-info-icon {
+  font-size: 10px;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+.nh-horse-name:hover .nh-name-info-icon {
+  opacity: 1;
+  color: #38bdf8;
+}

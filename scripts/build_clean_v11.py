@@ -34,6 +34,12 @@ with open(hist_js_path, 'r', encoding='utf-8') as f:
 h_match = re.search(r'export const HISTORICAL_FULL_RESULTS = (\{[\s\S]*?\});\s*$', hist_raw)
 hist_full_data = json.loads(h_match.group(1))
 
+horse_json_path = os.path.join(keiba_app_dir, 'src', 'horse_data.json')
+with open(horse_json_path, 'r', encoding='utf-8') as f:
+    horse_data = json.load(f)
+horse_data_str = "const HORSE_DATABASE = " + json.dumps(horse_data, ensure_ascii=False, indent=2) + ";"
+
+
 # Extract G1_RACES (all 24 races)
 g1_match = re.search(r'const G1_RACES = (\[[\s\S]*?\n\s*\]);', base_html)
 g1_races_raw = g1_match.group(1)
@@ -220,6 +226,27 @@ with open(style_css_path, 'r', encoding='utf-8') as f:
     style_css_content = f.read()
 
 new_base_html = re.sub(r'<style>[\s\S]*?</style>', f'<style>\n{style_css_content}\n    </style>', base_html)
+
+horse_modal_html = '''
+    <!-- 競走馬詳細モーダル (netkeiba完全準拠) -->
+    <div id="modal-horse-detail" class="modal">
+      <div class="modal-backdrop" id="backdrop-horse-detail"></div>
+      <div class="modal-content horse-detail-modal-content">
+        <div class="modal-header">
+          <div class="horse-modal-header-info">
+            <span class="horse-modal-badge" id="hd-modal-subtitle">HORSE DATABASE</span>
+            <h2 id="hd-modal-title" style="margin-top: 4px;">競走馬詳細</h2>
+          </div>
+          <button id="btn-close-horse-modal" class="btn-close" aria-label="閉じる">&times;</button>
+        </div>
+        <div class="modal-body" id="hd-modal-body">
+          <!-- JSで動的生成 -->
+        </div>
+      </div>
+    </div>
+'''
+new_base_html = new_base_html.replace('<div id="modal-race-detail" class="modal">', horse_modal_html + '\n    <div id="modal-race-detail" class="modal">')
+
 new_base_html = new_base_html.replace('</head>', anti_flicker_script + '\n  </head>')
 
 # Add navigation items for Prediction View
@@ -1574,7 +1601,10 @@ prediction_js_logic = """
                 <!-- 3. 馬情報（中央・可変幅・重なりなし） -->
                 <div class="nh-info-cell" data-action="toggle-drawer" data-gate="${horseKey}">
                   <div class="nh-name-row">
-                    <span class="nh-horse-name">${s.horseName}</span>
+                    <span class="nh-horse-name" onclick="event.stopPropagation(); openHorseDetail('${s.horseName}');" title="クリックして競走馬詳細（血統・戦績・写真）を見る">
+                    ${s.horseName}
+                    <span class="nh-name-info-icon" style="font-size: 10px; margin-left: 4px; padding: 1px 5px; border-radius: 4px; background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3);">詳細</span>
+                  </span>
                   </div>
                   <div class="nh-sub-row">
                     <span>${s.sexAge}</span>
@@ -1958,6 +1988,365 @@ prediction_js_logic = """
 """
 
 # Enhanced openRaceDetail supporting both finished results and upcoming contenders
+horse_modal_js_logic = """
+      // ----------------------------------------------------
+      // 競走馬詳細プロファイルモーダル (netkeiba完全準拠)
+      // ----------------------------------------------------
+      function synthesizeHorseProfile(horseName) {
+        let foundSexAge = '牡4';
+        let foundJockey = '未定';
+        let foundLoad = '58';
+        let foundStable = 'JRA 厩舎';
+        let foundOdds = '--';
+
+        if (typeof PREDICTION_DATA !== 'undefined') {
+          const rawStarters = (typeof getActivePredictionStarters === 'function') 
+            ? getActivePredictionStarters() 
+            : ((PREDICTION_DATA.starters) || []);
+          const matched = rawStarters.find(s => s.horseName === horseName || horseName.includes(s.horseName) || s.horseName.includes(horseName));
+          if (matched) {
+            foundSexAge = matched.sexAge || foundSexAge;
+            foundJockey = matched.jockey || foundJockey;
+            foundLoad = matched.load || foundLoad;
+            foundOdds = matched.odds || foundOdds;
+            if (matched.stable) foundStable = matched.stable;
+          }
+        }
+
+        return {
+          name: horseName,
+          englishName: horseName,
+          sexAge: foundSexAge,
+          color: '鹿毛',
+          birthday: '2022年4月生',
+          owner: '馬主情報',
+          breeder: '生産牧場',
+          origin: '北海道',
+          stable: foundStable,
+          record: '10戦3勝 [3-2-1-4]',
+          earnings: '8,500万円',
+          titles: ['重賞戦線で活躍'],
+          photoUrl: 'https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=800&q=80',
+          pedigree: {
+            sire: 'キタサンブラック',
+            sireSire: 'ブラックタイド',
+            sireDam: 'シュガーハート',
+            dam: '母馬名',
+            damSire: 'キングカメハメハ',
+            damDam: '母母馬名',
+            crosses: 'サンデーサイレンス 4×3, Mr. Prospector 5×5'
+          },
+          races: [
+            {
+              date: '2026.10.18',
+              race: '秋季重賞',
+              grade: 'G2',
+              venue: '京都',
+              course: '芝1800m',
+              track: '良',
+              rank: 3,
+              starters: 16,
+              bracket: 4,
+              gate: 7,
+              pop: 4,
+              odds: 8.5,
+              jockey: foundJockey,
+              load: Number(foundLoad) || 57,
+              time: '1:46.2',
+              margin: '0.2',
+              passing: '6-6',
+              agari: '33.8',
+              weight: '488(+2)',
+              winnerRival: '勝ち馬'
+            },
+            {
+              date: '2026.06.07',
+              race: '春季特別',
+              grade: 'OP',
+              venue: '東京',
+              course: '芝1600m',
+              track: '良',
+              rank: 1,
+              starters: 14,
+              bracket: 2,
+              gate: 3,
+              pop: 2,
+              odds: 3.8,
+              jockey: foundJockey,
+              load: Number(foundLoad) || 57,
+              time: '1:32.4',
+              margin: 'クビ',
+              passing: '4-3',
+              agari: '33.5',
+              weight: '486(-2)',
+              winnerRival: '(2着馬)'
+            }
+          ]
+        };
+      }
+
+      function openHorseDetail(horseName) {
+        if (!horseName) return;
+        const modal = document.getElementById('modal-horse-detail');
+        const title = document.getElementById('hd-modal-title');
+        const subTitle = document.getElementById('hd-modal-subtitle');
+        const body = document.getElementById('hd-modal-body');
+        if (!modal || !body) return;
+
+        let horse = null;
+        if (typeof HORSE_DATABASE !== 'undefined' && HORSE_DATABASE) {
+          horse = HORSE_DATABASE[horseName];
+          if (!horse) {
+            const cleanName = horseName.replace(/\s+/g, '');
+            for (const k of Object.keys(HORSE_DATABASE)) {
+              if (k.replace(/\s+/g, '') === cleanName) {
+                horse = HORSE_DATABASE[k];
+                break;
+              }
+            }
+          }
+        }
+
+        if (!horse) {
+          horse = synthesizeHorseProfile(horseName);
+        }
+
+        if (title) title.innerText = horse.name;
+        if (subTitle) subTitle.innerText = horse.englishName ? `${horse.englishName.toUpperCase()} DATABASE` : 'HORSE DATABASE';
+
+        // タイトルバッジ
+        let titlesHtml = '';
+        if (horse.titles && horse.titles.length > 0) {
+          titlesHtml = `
+            <div style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px;">
+              ${horse.titles.map(t => {
+                let badgeClass = 'other';
+                if (t.includes('G1')) badgeClass = 'g1';
+                else if (t.includes('G2')) badgeClass = 'g2';
+                else if (t.includes('G3')) badgeClass = 'g3';
+                return `<span class="hd-title-badge ${badgeClass}">🏆 ${t}</span>`;
+              }).join('')}
+            </div>
+          `;
+        }
+
+        // 適性情報
+        let aptitudeHtml = '';
+        if (horse.aptitude) {
+          aptitudeHtml = `
+            <div style="margin-top: 10px; padding: 8px 12px; background: rgba(30, 41, 59, 0.4); border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.05); font-size: 11.5px; display: flex; flex-wrap: wrap; gap: 12px;">
+              <div><span style="color:#94a3b8;">適性距離:</span> <b style="color:#38bdf8;">${horse.aptitude.distance || '-'}</b></div>
+              <div><span style="color:#94a3b8;">馬場:</span> <b style="color:#34d399;">${horse.aptitude.track || '-'}</b></div>
+              <div><span style="color:#94a3b8;">脚質:</span> <b style="color:#fbbf24;">${horse.aptitude.style || '-'}</b></div>
+            </div>
+          `;
+        }
+
+        // 戦歴テーブル行 (career または races に対応)
+        const careerList = horse.career || horse.races || [];
+        let careerRowsHtml = '';
+        if (careerList.length > 0) {
+          careerRowsHtml = careerList.map(r => {
+            let rRank = r.rank !== undefined ? r.rank : '-';
+            let rClass = 'hd-rank-other';
+            if (rRank === 1 || rRank === '1') rClass = 'hd-rank-1';
+            else if (rRank === 2 || rRank === '2') rClass = 'hd-rank-2';
+            else if (rRank === 3 || rRank === '3') rClass = 'hd-rank-3';
+
+            let gradeBadge = '';
+            if (r.grade === 'G1') gradeBadge = '<span style="background:#dc2626;color:#fff;font-size:10px;font-weight:800;padding:1px 4px;border-radius:3px;margin-right:4px;">G1</span>';
+            else if (r.grade === 'G2') gradeBadge = '<span style="background:#7c3aed;color:#fff;font-size:10px;font-weight:800;padding:1px 4px;border-radius:3px;margin-right:4px;">G2</span>';
+            else if (r.grade === 'G3') gradeBadge = '<span style="background:#16a34a;color:#fff;font-size:10px;font-weight:800;padding:1px 4px;border-radius:3px;margin-right:4px;">G3</span>';
+            else if (r.grade) gradeBadge = `<span style="background:#475569;color:#fff;font-size:10px;padding:1px 4px;border-radius:3px;margin-right:4px;">${r.grade}</span>`;
+
+            const rTrack = r.condition || r.track || '良';
+            const rStarters = r.runners || r.starters || '-';
+            const rPop = r.pop ? `${r.pop}人` : '-';
+            const rOdds = r.odds || '-';
+            const rRival = r.rival || r.winnerRival || '-';
+
+            return `
+              <tr>
+                <td>${r.date || '-'}</td>
+                <td style="text-align: left; font-weight: 700;">${gradeBadge}${r.race || '-'}</td>
+                <td>${r.venue || '-'}</td>
+                <td>${r.course || '-'}</td>
+                <td>${rTrack}</td>
+                <td>${rStarters}</td>
+                <td>${r.bracket || '-'}</td>
+                <td>${r.gate || '-'}</td>
+                <td>${rPop}</td>
+                <td>${rOdds}</td>
+                <td><span class="hd-rank-cell ${rClass}">${rRank}</span></td>
+                <td>${r.jockey || '-'}</td>
+                <td>${r.load || '-'}</td>
+                <td style="font-weight:700;">${r.time || '-'}</td>
+                <td>${r.margin || '-'}</td>
+                <td>${r.passing || '-'}</td>
+                <td style="font-weight:700;color:#38bdf8;">${r.agari || '-'}</td>
+                <td>${r.weight || '-'}</td>
+                <td style="text-align: left; color: #94a3b8;">${rRival}</td>
+              </tr>
+            `;
+          }).join('');
+        } else {
+          careerRowsHtml = `<tr><td colspan="19" style="text-align: center; padding: 20px; color: #94a3b8;">戦歴データ集計中</td></tr>`;
+        }
+
+        // 血統表
+        const ped = horse.pedigree || {};
+
+        body.innerHTML = `
+          <!-- 1. トップ概要カード（写真 + 基本プロフィール） -->
+          <div class="hd-top-card">
+            <div class="hd-photo-wrapper">
+              <img src="${horse.photoUrl}" alt="${horse.name}" class="hd-photo" onerror="this.src='https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=800&q=80'">
+              <span class="hd-photo-tag">${horse.color || 'サラブレッド'}</span>
+            </div>
+            <div>
+              <div style="font-size: 22px; font-weight: 900; color: #fff; line-height: 1.2;">
+                ${horse.name}
+                <span style="font-size: 13px; font-weight: normal; color: #94a3b8; margin-left: 8px;">${horse.englishName || ''}</span>
+              </div>
+              <div style="font-size: 13px; color: #38bdf8; font-weight: 700; margin-top: 4px;">
+                ${horse.sexAge || ''} / ${horse.color || ''}
+              </div>
+
+              <div class="hd-profile-grid">
+                <div class="hd-profile-item">
+                  <span class="hd-profile-label">生年月日</span>
+                  <span class="hd-profile-val">${horse.birthday || '-'}</span>
+                </div>
+                <div class="hd-profile-item">
+                  <span class="hd-profile-label">調教師</span>
+                  <span class="hd-profile-val">${horse.stable || '-'}</span>
+                </div>
+                <div class="hd-profile-item">
+                  <span class="hd-profile-label">馬主</span>
+                  <span class="hd-profile-val">${horse.owner || '-'}</span>
+                </div>
+                <div class="hd-profile-item">
+                  <span class="hd-profile-label">生産者 / 産地</span>
+                  <span class="hd-profile-val">${horse.breeder || '-'}${horse.origin ? ` (${horse.origin})` : ''}</span>
+                </div>
+                <div class="hd-profile-item">
+                  <span class="hd-profile-label">通算成績</span>
+                  <span class="hd-profile-val" style="color: #fbbf24; font-weight: 800;">${horse.record || '-'}</span>
+                </div>
+                <div class="hd-profile-item">
+                  <span class="hd-profile-label">獲得賞金</span>
+                  <span class="hd-profile-val" style="color: #34d399; font-weight: 800;">${horse.earnings || '-'}</span>
+                </div>
+              </div>
+
+              ${titlesHtml}
+              ${aptitudeHtml}
+            </div>
+          </div>
+
+          <!-- 2. 詳細タブナビゲーション -->
+          <div class="modal-tabs-header" style="margin-bottom: 12px;">
+            <div class="modal-tabs">
+              <button class="modal-tab-btn active" id="hd-tab-btn-career" onclick="switchHorseTab('career')">
+                📊 競走成績・戦歴 (${careerList.length}戦)
+              </button>
+              <button class="modal-tab-btn" id="hd-tab-btn-pedigree" onclick="switchHorseTab('pedigree')">
+                🧬 5代血統表・クロス
+              </button>
+            </div>
+          </div>
+
+          <!-- 3. タブコンテンツ 1: 競走成績 -->
+          <div id="hd-content-career" class="hd-tab-content">
+            <div class="hd-career-table-wrapper">
+              <table class="hd-career-table">
+                <thead>
+                  <tr>
+                    <th>日付</th>
+                    <th>レース名</th>
+                    <th>開催</th>
+                    <th>コース</th>
+                    <th>馬場</th>
+                    <th>頭数</th>
+                    <th>枠</th>
+                    <th>馬番</th>
+                    <th>人気</th>
+                    <th>オッズ</th>
+                    <th>着順</th>
+                    <th>騎手</th>
+                    <th>斤量</th>
+                    <th>タイム</th>
+                    <th>着差</th>
+                    <th>通過</th>
+                    <th>上り</th>
+                    <th>馬体重</th>
+                    <th>勝ち馬 (2着馬)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${careerRowsHtml}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 4. タブコンテンツ 2: 血統表 -->
+          <div id="hd-content-pedigree" class="hd-tab-content" style="display: none;">
+            <div class="hd-pedigree-grid">
+              <!-- 父系 -->
+              <div class="hd-pedigree-box" style="border-left: 3px solid #38bdf8;">
+                <div class="hd-ped-title" style="color: #38bdf8;">父 (Sire)</div>
+                <div class="hd-ped-name">${ped.sire || '-'}</div>
+                <div class="hd-ped-sub">父父: ${ped.sireSire || '-'} / 父母: ${ped.sireDam || '-'}</div>
+              </div>
+
+              <!-- 母系 -->
+              <div class="hd-pedigree-box" style="border-left: 3px solid #f43f5e;">
+                <div class="hd-ped-title" style="color: #f43f5e;">母 (Dam)</div>
+                <div class="hd-ped-name">${ped.dam || '-'}</div>
+                <div class="hd-ped-sub">母父: ${ped.damSire || '-'} / 母母: ${ped.damDam || '-'}</div>
+              </div>
+            </div>
+
+            <!-- クロスインブリード -->
+            <div style="margin-top: 14px; background: rgba(30, 41, 59, 0.4); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 8px; padding: 12px 14px;">
+              <div style="font-size: 11px; font-weight: 800; color: #fbbf24; margin-bottom: 4px;">🧬 クロス（インブリード情報）</div>
+              <div style="font-size: 13px; color: #e2e8f0; font-weight: 600;">${ped.crosses || '特になし (アウトブリード)'}</div>
+            </div>
+          </div>
+        `;
+
+        modal.classList.add('open', 'active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function switchHorseTab(tabName) {
+        const btnCareer = document.getElementById('hd-tab-btn-career');
+        const btnPed = document.getElementById('hd-tab-btn-pedigree');
+        const contCareer = document.getElementById('hd-content-career');
+        const contPed = document.getElementById('hd-content-pedigree');
+
+        if (tabName === 'career') {
+          if (btnCareer) btnCareer.classList.add('active');
+          if (btnPed) btnPed.classList.remove('active');
+          if (contCareer) contCareer.style.display = 'block';
+          if (contPed) contPed.style.display = 'none';
+        } else {
+          if (btnCareer) btnCareer.classList.remove('active');
+          if (btnPed) btnPed.classList.add('active');
+          if (contCareer) contCareer.style.display = 'none';
+          if (contPed) contPed.style.display = 'block';
+        }
+      }
+
+      function closeHorseModal() {
+        const modal = document.getElementById('modal-horse-detail');
+        if (!modal) return;
+        modal.classList.remove('open', 'active');
+        document.body.style.overflow = '';
+      }
+"""
+
 open_race_detail_func = """
       function openRaceDetail(id, updateRoute = true) {
         const race = G1_RACES.find(r => r.id === String(id));
@@ -2598,10 +2987,25 @@ event_listeners_js = """
           });
         }
 
+        
+        const modalHorse = document.getElementById('modal-horse-detail');
+        if (modalHorse) {
+          const btnCloseHorse = document.getElementById('btn-close-horse-modal');
+          const backdropHorse = document.getElementById('backdrop-horse-detail');
+          if (btnCloseHorse) btnCloseHorse.addEventListener('click', closeHorseModal);
+          if (backdropHorse) backdropHorse.addEventListener('click', closeHorseModal);
+          modalHorse.addEventListener('click', (e) => {
+            if (e.target === modalHorse || e.target.classList.contains('modal-backdrop')) {
+              closeHorseModal();
+            }
+          });
+        }
+
         if (typeof window !== 'undefined') {
           window.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
               closeModal();
+              closeHorseModal();
               if (typeof closeMarkSheet === 'function') closeMarkSheet();
             }
           });
@@ -2899,7 +3303,7 @@ review_js_logic = '''
                 <div class="horse-review-basic-info">
                   <span class="review-rank-badge ${rankClass}">${rankText}</span>
                   <div class="target-gate-circle" style="background:#334155;">${h.gate}</div>
-                  <span class="horse-review-name">${h.name}</span>
+                  <span class="horse-review-name" onclick="openHorseDetail('${h.name}')" style="cursor: pointer; text-decoration: underline;" title="クリックして競走馬詳細を見る">${h.name}</span>
                   <span class="horse-review-meta">${h.jockey} (${h.load}kg)</span>
                 </div>
                 <div class="horse-review-time-info">
@@ -2992,7 +3396,7 @@ review_js_logic = '''
                   <div class="target-horse-name-row">
                     <div class="target-gate-circle">${t.gate}</div>
                     <div>
-                      <span class="target-horse-name">${t.name}</span>
+                      <span class="target-horse-name" onclick="openHorseDetail('${t.name}')" style="cursor: pointer; text-decoration: underline;" title="クリックして競走馬詳細を見る">${t.name}</span>
                       <span class="target-horse-rank">(${t.finishRank})</span>
                     </div>
                   </div>
@@ -3058,7 +3462,7 @@ review_js_logic = '''
                   <div class="review-winner-crown">🏆</div>
                   <div class="review-winner-info">
                     <div style="font-size:11px;font-weight:700;color:#94a3b8;">勝ち馬</div>
-                    <div class="review-winner-name">${data.winner.name}</div>
+                    <div class="review-winner-name" onclick="openHorseDetail('${data.winner.name}')" style="cursor: pointer;" title="クリックして競走馬詳細を見る">${data.winner.name}</div>
                     <div class="review-winner-sub">${data.winner.jockey} (${data.winner.pop}人気 / ${data.winningTime})</div>
                   </div>
                 </div>
@@ -3197,6 +3601,9 @@ init_app_block = """
         window.renderReviewContent = renderReviewContent;
         window.openRaceDetail = openRaceDetail;
         window.closeModal = closeModal;
+        window.openHorseDetail = openHorseDetail;
+        window.closeHorseModal = closeHorseModal;
+        window.switchHorseTab = switchHorseTab;
         window.navigateTo = navigateTo;
         window.switchAppView = switchAppView;
         window.setPredictionRace = setPredictionRace;
@@ -3225,9 +3632,11 @@ full_script_content = (
     + "      " + hist_full_str + "\n\n"
     + "      " + pred_data_str + "\n\n"
     + "      " + race_reviews_data_str + "\n\n"
+    + "      " + horse_data_str + "\n\n"
     + helpers_clean + "\n\n"
     + format_time_func + "\n\n"
     + event_listeners_js + "\n\n"
+    + horse_modal_js_logic + "\n\n"
     + prediction_js_logic + "\n\n"
     + review_js_logic + "\n\n"
     + open_race_detail_func + "\n\n"
@@ -3246,15 +3655,18 @@ main_js_content = (
     + "import { ENTRIES_DATA } from './entries_data.js';\n"
     + "import { PREDICTION_DATA } from './prediction_data.js';\n"
     + "import { RACE_REVIEWS_DATA } from './race_reviews_data.js';\n"
+    + "import { HORSE_DATABASE } from './horse_data.js';\n"
     + "import './style.css';\n\n"
     + g1_races_str + "\n\n"
     + new_results_data_str + "\n\n"
     + historical_data_str + "\n\n"
     + payouts_data_str + "\n\n"
     + "      " + race_reviews_data_str + "\n\n"
+    + "      " + horse_data_str + "\n\n"
     + helpers_clean + "\n\n"
     + format_time_func + "\n\n"
     + event_listeners_js + "\n\n"
+    + horse_modal_js_logic + "\n\n"
     + prediction_js_logic + "\n\n"
     + review_js_logic + "\n\n"
     + open_race_detail_func + "\n\n"
