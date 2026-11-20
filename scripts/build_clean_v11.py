@@ -206,14 +206,22 @@ anti_flicker_script = """
       (function() {
         try {
           var h = window.location.hash || '';
+          if (h.startsWith('#sec-')) {
+            h = '#prediction';
+            if (window.history && window.history.replaceState) {
+              window.history.replaceState(null, '', h);
+            }
+          }
           if (!h || h === '#' || h === '#/') {
             var saved = localStorage.getItem('keiba_active_route');
-            if (saved && (saved.startsWith('#prediction') || saved.startsWith('#race-') || saved.startsWith('#sec-'))) {
+            if (saved && !saved.startsWith('#sec-') && (saved.startsWith('#prediction') || saved.startsWith('#race-') || saved.startsWith('#review'))) {
               h = saved;
             }
           }
-          if (h.startsWith('#prediction') || h.startsWith('#sec-')) {
+          if (h.startsWith('#prediction')) {
             document.documentElement.classList.add('route-prediction');
+          } else if (h.startsWith('#review')) {
+            document.documentElement.classList.add('route-review');
           } else {
             document.documentElement.classList.add('route-calendar');
           }
@@ -352,28 +360,28 @@ prediction_view_html = """
             <div id="pred-finished-review-container"></div>
           </div>
 
-          <!-- クイックジャンプナビ（親指ワンタップ） -->
+          <!-- クイックジャンプナビ（URLハッシュ変更なし・スムーズスクロール） -->
           <div class="pred-quick-nav">
-            <a href="#sec-ranking" class="btn-quick-nav">
+            <button type="button" class="btn-quick-nav" onclick="scrollToSection('sec-ranking');">
               <i data-lucide="award" style="width: 16px; height: 16px; color: var(--gold);"></i>
               <span style="color: var(--gold); font-weight: 700;">好走ランク</span>
-            </a>
-            <a href="#sec-starters" class="btn-quick-nav">
+            </button>
+            <button type="button" class="btn-quick-nav" onclick="scrollToSection('sec-starters');">
               <i data-lucide="list" style="width: 16px; height: 16px;"></i>
               <span>出馬表</span>
-            </a>
-            <a href="#sec-memo" class="btn-quick-nav">
+            </button>
+            <button type="button" class="btn-quick-nav" onclick="scrollToSection('sec-memo');">
               <i data-lucide="check-square" style="width: 16px; height: 16px;"></i>
               <span>予想印</span>
-            </a>
-            <a href="#sec-occult" class="btn-quick-nav">
+            </button>
+            <button type="button" class="btn-quick-nav" onclick="scrollToSection('sec-occult');">
               <i data-lucide="sparkles" style="width: 16px; height: 16px; color: #c084fc;"></i>
               <span style="color: #c084fc;">Xオカルト</span>
-            </a>
-            <a href="#sec-memo" class="btn-quick-nav">
+            </button>
+            <button type="button" class="btn-quick-nav" onclick="scrollToSection('sec-memo');">
               <i data-lucide="edit-3" style="width: 16px; height: 16px;"></i>
               <span>買い目メモ</span>
-            </a>
+            </button>
           </div>
 
           <!-- 好走期待度ランキングセクション -->
@@ -729,6 +737,14 @@ prediction_js_logic = """
         }
       }
 
+      function scrollToSection(secId) {
+        if (typeof document === 'undefined') return;
+        const targetEl = document.getElementById(secId);
+        if (targetEl) {
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+
       function navigateTo(routeHash) {
         if (typeof window === 'undefined') return;
         if (window.location.hash !== routeHash) {
@@ -742,10 +758,19 @@ prediction_js_logic = """
         if (typeof window === 'undefined') return;
 
         let hash = window.location.hash || '';
+
+        // If URL has lingering #sec- anchor, normalize so reload never jumps down to memo/sections
+        if (hash.startsWith('#sec-')) {
+          hash = '#prediction-' + (currentPredictionRaceId || '18');
+          if (window.history && window.history.replaceState) {
+            window.history.replaceState(null, '', hash);
+          }
+        }
+
         if (!hash || hash === '#' || hash === '#/') {
           if (typeof localStorage !== 'undefined') {
             const saved = localStorage.getItem('keiba_active_route');
-            if (saved && (saved.startsWith('#prediction') || saved.startsWith('#race-') || saved.startsWith('#review') || saved.startsWith('#sec-'))) {
+            if (saved && !saved.startsWith('#sec-') && (saved.startsWith('#prediction') || saved.startsWith('#race-') || saved.startsWith('#review'))) {
               hash = saved;
               if (window.history && window.history.replaceState) {
                 window.history.replaceState(null, '', hash);
@@ -755,6 +780,14 @@ prediction_js_logic = """
             }
           } else {
             hash = '#calendar';
+          }
+        }
+
+        // Clean any saved #sec- in localStorage
+        if (typeof localStorage !== 'undefined') {
+          const saved = localStorage.getItem('keiba_active_route');
+          if (saved && saved.startsWith('#sec-')) {
+            localStorage.setItem('keiba_active_route', '#prediction-' + (currentPredictionRaceId || '18'));
           }
         }
 
@@ -772,7 +805,7 @@ prediction_js_logic = """
         }
 
         // 2. 予想ページ ルート (#prediction または #prediction-17 など)
-        if (hash.startsWith('#prediction') || hash.startsWith('#sec-')) {
+        if (hash.startsWith('#prediction')) {
           closeModal();
           if (hash.startsWith('#prediction-')) {
             const targetId = hash.replace('#prediction-', '');
@@ -780,20 +813,15 @@ prediction_js_logic = """
               currentPredictionRaceId = targetId;
             }
           }
+          const cleanRoute = '#prediction-' + (currentPredictionRaceId || '18');
           if (typeof localStorage !== 'undefined') {
-            localStorage.setItem('keiba_active_route', hash.startsWith('#prediction') ? hash : '#prediction');
+            localStorage.setItem('keiba_active_route', cleanRoute);
             localStorage.setItem('keiba_last_main_view', 'prediction');
           }
           switchView('prediction', shouldScroll, false);
-
-          if (hash.startsWith('#sec-')) {
-            const secId = hash.replace('#', '');
-            const targetEl = document.getElementById(secId);
-            if (targetEl) {
-              setTimeout(() => {
-                targetEl.scrollIntoView({ behavior: 'smooth' });
-              }, 80);
-            }
+          // リロード時や画面遷移時は常に最上部から表示（メモへ意図せずジャンプするのを完全に防止）
+          if (typeof window !== 'undefined' && window.scrollTo) {
+            window.scrollTo({ top: 0, behavior: 'instant' });
           }
           return;
         }
@@ -3987,6 +4015,7 @@ init_app_block = """
         window.applyRankingToMarks = applyRankingToMarks;
         window.toggleRankingRowDetail = toggleRankingRowDetail;
         window.toggleAllRankingDrawers = toggleAllRankingDrawers;
+        window.scrollToSection = scrollToSection;
       }
 
       if (typeof document !== 'undefined') {
