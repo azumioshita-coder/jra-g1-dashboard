@@ -354,13 +354,17 @@ prediction_view_html = """
 
           <!-- クイックジャンプナビ（親指ワンタップ） -->
           <div class="pred-quick-nav">
+            <a href="#sec-ranking" class="btn-quick-nav">
+              <i data-lucide="award" style="width: 16px; height: 16px; color: var(--gold);"></i>
+              <span style="color: var(--gold); font-weight: 700;">好走ランク</span>
+            </a>
             <a href="#sec-starters" class="btn-quick-nav">
               <i data-lucide="list" style="width: 16px; height: 16px;"></i>
               <span>出馬表</span>
             </a>
             <a href="#sec-memo" class="btn-quick-nav">
-              <i data-lucide="check-square" style="width: 16px; height: 16px; color: var(--gold);"></i>
-              <span style="color: var(--gold);">予想印</span>
+              <i data-lucide="check-square" style="width: 16px; height: 16px;"></i>
+              <span>予想印</span>
             </a>
             <a href="#sec-occult" class="btn-quick-nav">
               <i data-lucide="sparkles" style="width: 16px; height: 16px; color: #c084fc;"></i>
@@ -368,9 +372,14 @@ prediction_view_html = """
             </a>
             <a href="#sec-memo" class="btn-quick-nav">
               <i data-lucide="edit-3" style="width: 16px; height: 16px;"></i>
-              <span>メモ帳</span>
+              <span>買い目メモ</span>
             </a>
           </div>
+
+          <!-- 好走期待度ランキングセクション -->
+          <section id="sec-ranking" style="margin-bottom: 24px;">
+            <div id="pred-ranking-container"></div>
+          </section>
 
           <!-- 1. 出走馬一覧＆オッズ管理（発売前:予想オッズ / 発売後:随時更新） -->
           <section id="sec-starters" style="margin-bottom: 20px;">
@@ -1429,6 +1438,212 @@ prediction_js_logic = """
         }
       }
 
+      let currentRankingSort = 'composite';
+
+      function renderContenderRanking() {
+        if (typeof document === 'undefined') return;
+        const container = document.getElementById('pred-ranking-container');
+        if (!container) return;
+
+        const currentPred = (PREDICTION_DATA.races && PREDICTION_DATA.races[currentPredictionRaceId]) 
+          ? PREDICTION_DATA.races[currentPredictionRaceId] 
+          : PREDICTION_DATA;
+
+        const rawList = currentPred.contenderRanking;
+        if (!rawList || rawList.length === 0) {
+          container.innerHTML = '';
+          return;
+        }
+
+        let list = [...rawList];
+
+        if (currentRankingSort === 'training') {
+          list.sort((a, b) => b.scores.training - a.scores.training);
+        } else if (currentRankingSort === 'aptitude') {
+          list.sort((a, b) => (b.scores.course + b.scores.distance) - (a.scores.course + a.scores.distance));
+        } else if (currentRankingSort === 'value') {
+          list.sort((a, b) => {
+            const valA = a.compositeScore / (parseFloat(a.odds) || 10);
+            const valB = b.compositeScore / (parseFloat(b.odds) || 10);
+            return valB - valA;
+          });
+        } else {
+          list.sort((a, b) => b.compositeScore - a.compositeScore);
+        }
+
+        const top3 = list.slice(0, 3);
+        const rest = list.slice(3);
+
+        const podiumCardsHtml = top3.map((h, idx) => {
+          const rankNum = idx + 1;
+          const rankTag = rankNum === 1 ? '👑 1位 本命' : (rankNum === 2 ? '🥈 2位 対抗' : '🥉 3位 単穴');
+          const rankClass = `rank-${rankNum}`;
+          
+          return `
+            <div class="podium-card ${rankClass}">
+              <div class="podium-badge-row">
+                <span class="podium-rank-tag">${rankTag}</span>
+                <div class="podium-score-tag">期待度: <span>${h.compositeScore}</span>点</div>
+              </div>
+              <div class="podium-horse-header">
+                <span class="podium-gate-box waku-${h.waku}">${h.gate}</span>
+                <span class="podium-horse-name" onclick="openHorseDetail('${h.horseName}');" title="競走馬詳細を見る">
+                  ${h.horseName}
+                </span>
+                <span class="podium-grade-pill">${h.grade} ${h.gradeTag}</span>
+              </div>
+              <div class="podium-subinfo">
+                <span>${h.sexAge} ${h.load}kg</span> / 
+                <span style="color: #38bdf8; font-weight: 600;">${h.jockey}</span> / 
+                <span>${h.stable}</span>
+              </div>
+
+              <!-- 6大ファクター スコアメーター -->
+              <div class="factor-meters">
+                <div class="meter-item">
+                  <div class="meter-header"><span>🏃 調教</span><strong>${h.scores.training}</strong></div>
+                  <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.training}%;"></div></div>
+                </div>
+                <div class="meter-item">
+                  <div class="meter-header"><span>🏇 鞍上</span><strong>${h.scores.jockey}</strong></div>
+                  <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.jockey}%;"></div></div>
+                </div>
+                <div class="meter-item">
+                  <div class="meter-header"><span>🏟️ コース適性</span><strong>${h.scores.course}</strong></div>
+                  <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.course}%;"></div></div>
+                </div>
+                <div class="meter-item">
+                  <div class="meter-header"><span>⚡ 距離適性</span><strong>${h.scores.distance}</strong></div>
+                  <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.distance}%;"></div></div>
+                </div>
+                <div class="meter-item">
+                  <div class="meter-header"><span>📊 前走評価</span><strong>${h.scores.prevRace}</strong></div>
+                  <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.prevRace}%;"></div></div>
+                </div>
+                <div class="meter-item">
+                  <div class="meter-header"><span>🧬 血統適性</span><strong>${h.scores.pedigree}</strong></div>
+                  <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.pedigree}%;"></div></div>
+                </div>
+              </div>
+
+              <div class="podium-analysis-box">
+                ${h.strengths}
+              </div>
+
+              <div class="podium-concerns-box">
+                ⚠️ 唯一の懸念: ${h.concerns}
+              </div>
+
+              <div class="podium-actions">
+                <button class="btn-detail-link" onclick="openHorseDetail('${h.horseName}');">
+                  競走馬詳細 (血統・戦歴)
+                </button>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        const restRowsHtml = rest.map((h, idx) => {
+          const rankNum = idx + 4;
+          return `
+            <div class="ranking-row-item">
+              <span class="ranking-pos-badge">${rankNum}</span>
+              <span class="podium-gate-box waku-${h.waku}" style="width: 22px; height: 22px; font-size: 11px;">${h.gate}</span>
+              <div class="ranking-row-main">
+                <div class="ranking-row-title">
+                  <span class="ranking-row-name" onclick="openHorseDetail('${h.horseName}');">${h.horseName}</span>
+                  <span class="ranking-row-jockey">${h.jockey} (${h.load}kg)</span>
+                  <span class="podium-grade-pill" style="font-size: 9.5px; padding: 1px 5px;">${h.grade} ${h.gradeTag}</span>
+                </div>
+                <div class="ranking-row-comment" title="${h.strengths}">
+                  ${h.strengths}
+                </div>
+              </div>
+              <div class="ranking-row-score">
+                <div class="ranking-score-val">${h.compositeScore}</div>
+                <div class="ranking-grade-tag">調教${h.scores.training}/鞍上${h.scores.jockey}</div>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        container.innerHTML = `
+          <div class="pred-ranking-card">
+            <div class="ranking-top-bar">
+              <div class="ranking-title-group">
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <span style="font-size: 11px; font-weight: 700; color: var(--gold); background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.3); padding: 2px 8px; border-radius: 4px;">AI×データ多変量解析</span>
+                  <span style="font-size: 11px; color: var(--text-muted);">全18頭 徹底スコアリング</span>
+                </div>
+                <h2>🏆 マイルCS 好走期待度ランキング</h2>
+                <div class="ranking-subtitle">
+                  調教状態 (20%) ・ 鞍上力 (20%) ・ 京都コース適性 (15%) ・ マイル適性 (15%) ・ 前走評価 (15%) ・ 血統背景 (15%)
+                </div>
+              </div>
+
+              <div class="ranking-actions">
+                <div class="ranking-sort-group">
+                  <button class="btn-ranking-sort ${currentRankingSort === 'composite' ? 'active' : ''}" onclick="setRankingSort('composite')">総合期待度</button>
+                  <button class="btn-ranking-sort ${currentRankingSort === 'training' ? 'active' : ''}" onclick="setRankingSort('training')">調教重視</button>
+                  <button class="btn-ranking-sort ${currentRankingSort === 'aptitude' ? 'active' : ''}" onclick="setRankingSort('aptitude')">適性重視</button>
+                  <button class="btn-ranking-sort ${currentRankingSort === 'value' ? 'active' : ''}" onclick="setRankingSort('value')">妙味・穴馬</button>
+                </div>
+                <button class="btn-apply-marks" onclick="applyRankingToMarks();" title="上位6頭を予想印(◎○▲△☆)に自動設定">
+                  <i data-lucide="zap" style="width: 13px; height: 13px;"></i> 上位印に自動反映
+                </button>
+              </div>
+            </div>
+
+            <!-- 表彰台 TOP3 ポディウムカード -->
+            <div class="podium-grid">
+              ${podiumCardsHtml}
+            </div>
+
+            <!-- 4位〜18位 テーブルリスト -->
+            <div class="ranking-table-container">
+              <div class="ranking-table-header">
+                <span>4位〜18位 好走期待度一覧（クリックで詳細閲覧）</span>
+                <span style="font-size: 11px; color: var(--text-muted);">総合スコア / 100点満点</span>
+              </div>
+              <div class="ranking-table-body">
+                ${restRowsHtml}
+              </div>
+            </div>
+          </div>
+        `;
+
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+      }
+
+      function setRankingSort(sortKey) {
+        currentRankingSort = sortKey;
+        renderContenderRanking();
+      }
+
+      function applyRankingToMarks() {
+        const currentPred = (PREDICTION_DATA.races && PREDICTION_DATA.races[currentPredictionRaceId]) 
+          ? PREDICTION_DATA.races[currentPredictionRaceId] 
+          : PREDICTION_DATA;
+        if (!currentPred || !currentPred.contenderRanking) return;
+
+        const list = [...currentPred.contenderRanking].sort((a, b) => b.compositeScore - a.compositeScore);
+        const marks = {};
+        if (list[0]) marks[list[0].gate] = '◎';
+        if (list[1]) marks[list[1].gate] = '○';
+        if (list[2]) marks[list[2].gate] = '▲';
+        if (list[3]) marks[list[3].gate] = '△';
+        if (list[4]) marks[list[4].gate] = '△';
+        if (list[5]) marks[list[5].gate] = '☆';
+
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem('keiba_marks_' + currentPredictionRaceId, JSON.stringify(marks));
+        }
+        updateMarksUI();
+        if (typeof renderPredictionMemo === 'function') renderPredictionMemo();
+
+        alert(`好走ランキング上位6頭を予想印に反映しました！\n\n◎ ${list[0].gate}番 ${list[0].horseName}\n○ ${list[1].gate}番 ${list[1].horseName}\n▲ ${list[2].gate}番 ${list[2].horseName}\n△ ${list[3].gate}番 ${list[3].horseName}\n△ ${list[4].gate}番 ${list[4].horseName}\n☆ ${list[5].gate}番 ${list[5].horseName}`);
+      }
+
       function setPredictionRace(raceId) {
         if (!PREDICTION_DATA.races || !PREDICTION_DATA.races[raceId]) return;
         currentPredictionRaceId = raceId;
@@ -1440,6 +1655,7 @@ prediction_js_logic = """
         initWeightState();
         renderPredictionRaceSwitcher();
         renderPredictionHeader();
+        renderContenderRanking();
         renderNetkeibaHorseList();
         renderPredictionOccult();
         renderPredictionMemo();
@@ -1467,6 +1683,7 @@ prediction_js_logic = """
         initWeightState();
         renderPredictionRaceSwitcher();
         renderPredictionHeader();
+        renderContenderRanking();
         renderNetkeibaHorseList();
         renderPredictionOccult();
         renderPredictionMemo();
@@ -3580,6 +3797,9 @@ init_app_block = """
         window.setUserMark = setUserMark;
         window.openMarkSheet = openMarkSheet;
         window.closeMarkSheet = closeMarkSheet;
+        window.renderContenderRanking = renderContenderRanking;
+        window.setRankingSort = setRankingSort;
+        window.applyRankingToMarks = applyRankingToMarks;
       }
 
       if (typeof document !== 'undefined') {
