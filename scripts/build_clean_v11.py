@@ -341,7 +341,7 @@ prediction_view_html = """
             </div>
             <h1 class="pred-title">
               <span id="pred-header-title">第43回 マイルチャンピオンシップ</span>
-              <span id="pred-header-badge" style="font-size: 11px; background: rgba(59, 130, 246, 0.2); color: #60a5fa; padding: 2px 8px; border-radius: 4px; font-weight: 700; border: 1px solid rgba(59, 130, 246, 0.4);">🏇 出走馬確定 (枠順未定)</span>
+              <span id="pred-header-badge" style="font-size: 11px; background: rgba(16, 185, 129, 0.2); color: var(--primary); padding: 2px 8px; border-radius: 4px; font-weight: 700; border: 1px solid rgba(16, 185, 129, 0.4);">🎯 枠順確定済 / 予想公開中</span>
             </h1>
             <div class="pred-meta-chips" id="pred-meta-chips">
               <span class="pred-chip"><i data-lucide="calendar"></i> 11/22(日) 15:40発走</span>
@@ -1287,7 +1287,7 @@ prediction_js_logic = """
         if (!container) return;
         
         const targetRaces = [
-          { id: '18', label: '⚡ マイルCS (11/22)', badge: '今週', isNext: true },
+          { id: '18', label: '⚡ マイルCS (11/22)', badge: '枠順確定', isNext: true },
           { id: '19', label: '🇯🇵 ジャパンC (11/29)', badge: '次週', isNext: true },
           { id: '20', label: '🏜️ チャンピオンズC (12/6)', badge: 'ダート頂上', isNext: true },
           { id: '21', label: '🌸 阪神JF (12/13)', badge: '2歳女王', isNext: true },

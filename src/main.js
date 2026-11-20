@@ -25159,7 +25159,7 @@ function hydratePayouts(race) {
         if (!container) return;
         
         const targetRaces = [
-          { id: '18', label: '⚡ マイルCS (11/22)', badge: '今週', isNext: true },
+          { id: '18', label: '⚡ マイルCS (11/22)', badge: '枠順確定', isNext: true },
           { id: '19', label: '🇯🇵 ジャパンC (11/29)', badge: '次週', isNext: true },
           { id: '20', label: '🏜️ チャンピオンズC (12/6)', badge: 'ダート頂上', isNext: true },
           { id: '21', label: '🌸 阪神JF (12/13)', badge: '2歳女王', isNext: true },

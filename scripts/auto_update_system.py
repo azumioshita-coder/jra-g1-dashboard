@@ -134,11 +134,56 @@ def fetch_html(url, timeout=15):
         log(f"Fetch failed for {url}: {e}")
         return None
 
+JOCKEY_MAP = {
+    'バルザロー': 'M.バルザローナ',
+    'バルザローナ': 'M.バルザローナ',
+    'Ｍ．バルザローナ': 'M.バルザローナ',
+    'ルメール': 'C.ルメール',
+    'Ｃ．ルメール': 'C.ルメール',
+    'プーシャン': 'A.プーシャン',
+    'Ａ．プーシャン': 'A.プーシャン',
+    'モレイラ': 'J.モレイラ',
+    'Ｊ．モレイラ': 'J.モレイラ',
+    'Ｃデムーロ': 'C.デムーロ',
+    'Ｃ．デムーロ': 'C.デムーロ',
+    'デムーロ': 'C.デムーロ',
+    '武豊': '武豊',
+    '川田': '川田将雅',
+    '川田将雅': '川田将雅',
+    '坂井': '坂井瑠星',
+    '坂井瑠星': '坂井瑠星',
+    '松山': '松山弘平',
+    '松山弘平': '松山弘平',
+    '西村淳': '西村淳也',
+    '西村淳也': '西村淳也',
+    '菅原明': '菅原明良',
+    '菅原明良': '菅原明良',
+    '岩田望': '岩田望来',
+    '岩田望来': '岩田望来',
+    '幸': '幸英明',
+    '幸英明': '幸英明',
+    '北村友': '北村友一',
+    '北村友一': '北村友一',
+    '浜中': '浜中俊',
+    '浜中俊': '浜中俊',
+    '三浦': '三浦皇成',
+    '三浦皇成': '三浦皇成',
+    '藤懸': '藤懸貴志',
+    '藤懸貴志': '藤懸貴志',
+    '田口': '田口貫太',
+    '田口貫太': '田口貫太',
+    '横山武': '横山武史',
+    '横山典': '横山典弘',
+    '横山和': '横山和生',
+    '戸崎': '戸崎圭太',
+    '鮫島駿': '鮫島克駿',
+}
+
 def clean_jockey_name(j):
     if not j:
         return '未定'
-    j = j.replace('Ｍ．', 'M.').replace('Ｃ．', 'C.').replace('Ａ．', 'A.').replace('Ｊ．', 'J.').replace('・', '.')
-    return j.strip()
+    j = j.replace('Ｍ．', 'M.').replace('Ｃ．', 'C.').replace('Ａ．', 'A.').replace('Ｊ．', 'J.').replace('・', '.').strip()
+    return JOCKEY_MAP.get(j, j)
 
 def parse_shutuba(html):
     """NetKeiba出馬表HTMLから枠番、馬番、馬名、性齢、斤量、騎手、厩舎、オッズ、人気、馬体重を抽出"""
@@ -277,13 +322,12 @@ def check_and_update_entries():
 
                     log(f"Found {len(starters)} starters for {race['name']} [Stage: {stage}]!")
                     
-                    # Refine stable names from HORSE_DATABASE if available
+                    # Refine jockey and stable names from HORSE_DATABASE if available
                     for s in starters:
+                        s['jockey'] = clean_jockey_name(s.get('jockey'))
                         hname = s['horseName']
                         if hname in horse_db and horse_db[hname].get('stable'):
-                            db_stable = horse_db[hname]['stable']
-                            if '(' in db_stable and '(' not in s['stable']:
-                                s['stable'] = db_stable
+                            s['stable'] = horse_db[hname]['stable']
 
                     entries_data[r_id] = [
                         {
