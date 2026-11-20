@@ -325,7 +325,7 @@ export const ENTRIES_DATA = {
       "horseName": "エルデナリ",
       "sexAge": "セ3",
       "load": 57,
-      "jockey": "バルザロー",
+      "jockey": "M.バルザローナ",
       "stable": "F.グラファール (仏)"
     },
     {
@@ -334,7 +334,7 @@ export const ENTRIES_DATA = {
       "horseName": "エンブロイダリー",
       "sexAge": "牝4",
       "load": 56,
-      "jockey": "ルメール",
+      "jockey": "C.ルメール",
       "stable": "森一誠 (美浦)"
     },
     {
@@ -343,8 +343,8 @@ export const ENTRIES_DATA = {
       "horseName": "ドラゴンブースト",
       "sexAge": "牡4",
       "load": 58,
-      "jockey": "浜中",
-      "stable": "藤野 (栗東)"
+      "jockey": "浜中俊",
+      "stable": "藤野健太 (栗東)"
     },
     {
       "waku": 2,
@@ -370,7 +370,7 @@ export const ENTRIES_DATA = {
       "horseName": "ピコローズ",
       "sexAge": "牝4",
       "load": 56,
-      "jockey": "三浦",
+      "jockey": "三浦皇成",
       "stable": "伊藤大士 (美浦)"
     },
     {
@@ -388,7 +388,7 @@ export const ENTRIES_DATA = {
       "horseName": "ロデオドライブ",
       "sexAge": "牡3",
       "load": 57,
-      "jockey": "モレイラ",
+      "jockey": "J.モレイラ",
       "stable": "辻哲英 (美浦)"
     },
     {
