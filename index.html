@@ -3980,21 +3980,25 @@ html.route-prediction .nav-item[data-target="prediction"] {
 
 .podium-actions {
   display: flex;
-  gap: 6px;
+  flex-direction: column;
+  gap: 8px;
   margin-top: auto;
 }
 
 .btn-detail-link {
-  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: #f3f4f6;
   font-size: 11px;
   font-weight: 600;
-  padding: 5px 8px;
+  padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
   text-align: center;
+  white-space: nowrap;
   transition: all 0.2s ease;
 }
 
@@ -4024,21 +4028,32 @@ html.route-prediction .nav-item[data-target="prediction"] {
   color: #e5e7eb;
 }
 
+.ranking-row-wrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.ranking-row-wrapper:last-child {
+  border-bottom: none;
+}
+
+.ranking-row-wrapper.is-open {
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom-color: rgba(245, 158, 11, 0.25);
+}
+
 .ranking-row-item {
   display: flex;
   align-items: center;
   padding: 10px 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   gap: 12px;
+  cursor: pointer;
+  user-select: none;
   transition: background 0.15s ease;
 }
 
-.ranking-row-item:last-child {
-  border-bottom: none;
-}
-
 .ranking-row-item:hover {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .ranking-pos-badge {
@@ -4065,6 +4080,7 @@ html.route-prediction .nav-item[data-target="prediction"] {
   align-items: center;
   gap: 8px;
   margin-bottom: 2px;
+  flex-wrap: wrap;
 }
 
 .ranking-row-name {
@@ -4072,6 +4088,7 @@ html.route-prediction .nav-item[data-target="prediction"] {
   font-weight: 700;
   color: #f3f4f6;
   cursor: pointer;
+  transition: color 0.15s ease;
 }
 
 .ranking-row-name:hover {
@@ -4107,6 +4124,249 @@ html.route-prediction .nav-item[data-target="prediction"] {
   font-size: 10px;
   font-weight: 700;
   color: var(--text-muted);
+}
+
+/* 詳細トグルボタン */
+.btn-ranking-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.btn-ranking-toggle:hover,
+.btn-ranking-toggle.active {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: rgba(245, 158, 11, 0.4);
+  color: var(--gold);
+}
+
+.ranking-toggle-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  font-size: 10px;
+}
+
+.ranking-toggle-arrow.rotated {
+  transform: rotate(180deg);
+}
+
+/* 全て展開ボタン */
+.btn-ranking-toggle-all {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 2px 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 4px;
+  color: #cbd5e1;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-ranking-toggle-all:hover {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: rgba(245, 158, 11, 0.35);
+  color: var(--gold);
+}
+
+/* アコーディオン展開ドロワー */
+.ranking-row-drawer {
+  padding: 14px 16px 16px;
+  background: rgba(15, 23, 42, 0.65);
+  border-top: 1px dashed rgba(255, 255, 255, 0.08);
+  animation: rankingFadeIn 0.2s ease;
+}
+
+@keyframes rankingFadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.ranking-drawer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.drawer-factor-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.drawer-analysis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.drawer-analysis-box {
+  background: rgba(34, 197, 94, 0.06);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.drawer-concerns-box {
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.drawer-box-label {
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.drawer-analysis-box .drawer-box-label {
+  color: #4ade80;
+}
+
+.drawer-concerns-box .drawer-box-label {
+  color: #f87171;
+}
+
+.drawer-box-text {
+  font-size: 12px;
+  line-height: 1.55;
+  color: #cbd5e1;
+}
+
+.drawer-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.drawer-marks-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.drawer-marks-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-right: 2px;
+}
+
+.btn-drawer-mark {
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-drawer-mark:hover {
+  transform: translateY(-1px);
+}
+
+.btn-drawer-mark.mark-honmei.active,
+.btn-drawer-mark.mark-honmei:hover {
+  background: #dc2626;
+  color: #fff;
+  border-color: #dc2626;
+}
+
+.btn-drawer-mark.mark-taiko.active,
+.btn-drawer-mark.mark-taiko:hover {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+
+.btn-drawer-mark.mark-tanana.active,
+.btn-drawer-mark.mark-tanana:hover {
+  background: #16a34a;
+  color: #fff;
+  border-color: #16a34a;
+}
+
+.btn-drawer-mark.mark-renka.active,
+.btn-drawer-mark.mark-renka:hover {
+  background: #0284c7;
+  color: #fff;
+  border-color: #0284c7;
+}
+
+.btn-drawer-mark.mark-ana.active,
+.btn-drawer-mark.mark-ana:hover {
+  background: #9333ea;
+  color: #fff;
+  border-color: #9333ea;
+}
+
+.btn-drawer-mark.mark-clear:hover {
+  background: #475569;
+  color: #fff;
+  border-color: #475569;
+}
+
+.ranking-assigned-mark-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 800;
+  margin-left: 4px;
+}
+
+@media (max-width: 768px) {
+  .drawer-analysis-grid {
+    grid-template-columns: 1fr;
+  }
+  .drawer-action-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .drawer-action-bar .btn-detail-link {
+    width: 100%;
+    text-align: center;
+  }
+  .ranking-row-item {
+    padding: 8px 10px;
+    gap: 8px;
+  }
+  .ranking-row-name {
+    font-size: 13px;
+  }
+  .ranking-score-val {
+    font-size: 14px;
+  }
+  .ranking-row-comment {
+    max-width: 160px;
+  }
 }
 
     </style>
@@ -84803,6 +85063,27 @@ function hydratePayouts(race) {
           btn.className = `nh-mark-btn ${MARK_CLASSES[m] || ''}`;
         });
 
+        // Contender Ranking 内の印ボタンのアクティブ状態をリアルタイム同期
+        document.querySelectorAll('.btn-drawer-mark').forEach(btn => {
+          const g = btn.getAttribute('data-gate');
+          const m = btn.getAttribute('data-mark');
+          const activeMark = marks[g] || '';
+          if (m && m === activeMark) {
+            btn.classList.add('active');
+          } else {
+            btn.classList.remove('active');
+          }
+        });
+
+        // Contender Ranking 行内の割当印バッジを同期
+        document.querySelectorAll('.ranking-assigned-mark-badge').forEach(badge => {
+          const g = badge.getAttribute('data-gate');
+          const activeMark = marks[g] || '';
+          badge.innerText = activeMark;
+          badge.style.display = activeMark ? 'inline-flex' : 'none';
+          badge.className = `ranking-assigned-mark-badge ${MARK_CLASSES[activeMark] || ''}`;
+        });
+
         const markTypes = [
           { mark: '◎', id: 'summary-mark-honmei' },
           { mark: '○', id: 'summary-mark-taiko' },
@@ -85074,11 +85355,13 @@ function hydratePayouts(race) {
 
         const top3 = list.slice(0, 3);
         const rest = list.slice(3);
+        const userMarks = getUserMarks();
 
         const podiumCardsHtml = top3.map((h, idx) => {
           const rankNum = idx + 1;
           const rankTag = rankNum === 1 ? '👑 1位 本命' : (rankNum === 2 ? '🥈 2位 対抗' : '🥉 3位 単穴');
           const rankClass = `rank-${rankNum}`;
+          const currentMark = userMarks[String(h.gate)] || '';
           
           return `
             <div class="podium-card ${rankClass}">
@@ -85092,6 +85375,7 @@ function hydratePayouts(race) {
                   ${h.horseName}
                 </span>
                 <span class="podium-grade-pill">${h.grade} ${h.gradeTag}</span>
+                ${currentMark ? `<span class="ranking-assigned-mark-badge ${MARK_CLASSES[currentMark] || ''}" data-gate="${h.gate}">${currentMark}</span>` : `<span class="ranking-assigned-mark-badge" data-gate="${h.gate}" style="display:none;"></span>`}
               </div>
               <div class="podium-subinfo">
                 <span>${h.sexAge} ${h.load}kg</span> / 
@@ -85102,27 +85386,27 @@ function hydratePayouts(race) {
               <!-- 6大ファクター スコアメーター -->
               <div class="factor-meters">
                 <div class="meter-item">
-                  <div class="meter-header"><span>🏃 調教</span><strong>${h.scores.training}</strong></div>
+                  <div class="meter-header"><span>🏃 調教状態</span><strong>${h.scores.training}点</strong></div>
                   <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.training}%;"></div></div>
                 </div>
                 <div class="meter-item">
-                  <div class="meter-header"><span>🏇 鞍上</span><strong>${h.scores.jockey}</strong></div>
+                  <div class="meter-header"><span>🏇 鞍上力</span><strong>${h.scores.jockey}点</strong></div>
                   <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.jockey}%;"></div></div>
                 </div>
                 <div class="meter-item">
-                  <div class="meter-header"><span>🏟️ コース適性</span><strong>${h.scores.course}</strong></div>
+                  <div class="meter-header"><span>🏟️ コース適性</span><strong>${h.scores.course}点</strong></div>
                   <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.course}%;"></div></div>
                 </div>
                 <div class="meter-item">
-                  <div class="meter-header"><span>⚡ 距離適性</span><strong>${h.scores.distance}</strong></div>
+                  <div class="meter-header"><span>⚡ 距離適性</span><strong>${h.scores.distance}点</strong></div>
                   <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.distance}%;"></div></div>
                 </div>
                 <div class="meter-item">
-                  <div class="meter-header"><span>📊 前走評価</span><strong>${h.scores.prevRace}</strong></div>
+                  <div class="meter-header"><span>📊 前走評価</span><strong>${h.scores.prevRace}点</strong></div>
                   <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.prevRace}%;"></div></div>
                 </div>
                 <div class="meter-item">
-                  <div class="meter-header"><span>🧬 血統適性</span><strong>${h.scores.pedigree}</strong></div>
+                  <div class="meter-header"><span>🧬 血統適性</span><strong>${h.scores.pedigree}点</strong></div>
                   <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.pedigree}%;"></div></div>
                 </div>
               </div>
@@ -85136,8 +85420,17 @@ function hydratePayouts(race) {
               </div>
 
               <div class="podium-actions">
+                <div class="drawer-marks-group" style="margin-bottom: 8px;">
+                  <span class="drawer-marks-label">予想印:</span>
+                  <button class="btn-drawer-mark mark-honmei ${currentMark === '◎' ? 'active' : ''}" data-gate="${h.gate}" data-mark="◎" onclick="event.stopPropagation(); setUserMark('${h.gate}', '◎');">◎ 本命</button>
+                  <button class="btn-drawer-mark mark-taiko ${currentMark === '○' ? 'active' : ''}" data-gate="${h.gate}" data-mark="○" onclick="event.stopPropagation(); setUserMark('${h.gate}', '○');">○ 対抗</button>
+                  <button class="btn-drawer-mark mark-tanana ${currentMark === '▲' ? 'active' : ''}" data-gate="${h.gate}" data-mark="▲" onclick="event.stopPropagation(); setUserMark('${h.gate}', '▲');">▲ 単穴</button>
+                  <button class="btn-drawer-mark mark-renka ${currentMark === '△' ? 'active' : ''}" data-gate="${h.gate}" data-mark="△" onclick="event.stopPropagation(); setUserMark('${h.gate}', '△');">△ 連下</button>
+                  <button class="btn-drawer-mark mark-ana ${currentMark === '☆' ? 'active' : ''}" data-gate="${h.gate}" data-mark="☆" onclick="event.stopPropagation(); setUserMark('${h.gate}', '☆');">☆ 穴</button>
+                  <button class="btn-drawer-mark mark-clear" data-gate="${h.gate}" data-mark="" onclick="event.stopPropagation(); setUserMark('${h.gate}', '');">消</button>
+                </div>
                 <button class="btn-detail-link" onclick="openHorseDetail('${h.horseName}');">
-                  競走馬詳細 (血統・戦歴)
+                  📖 競走馬詳細 (血統・戦歴・写真)
                 </button>
               </div>
             </div>
@@ -85146,23 +85439,102 @@ function hydratePayouts(race) {
 
         const restRowsHtml = rest.map((h, idx) => {
           const rankNum = idx + 4;
+          const currentMark = userMarks[String(h.gate)] || '';
           return `
-            <div class="ranking-row-item">
-              <span class="ranking-pos-badge">${rankNum}</span>
-              <span class="podium-gate-box waku-${h.waku}" style="width: 22px; height: 22px; font-size: 11px;">${h.gate}</span>
-              <div class="ranking-row-main">
-                <div class="ranking-row-title">
-                  <span class="ranking-row-name" onclick="openHorseDetail('${h.horseName}');">${h.horseName}</span>
-                  <span class="ranking-row-jockey">${h.jockey} (${h.load}kg)</span>
-                  <span class="podium-grade-pill" style="font-size: 9.5px; padding: 1px 5px;">${h.grade} ${h.gradeTag}</span>
+            <div class="ranking-row-wrapper" id="ranking-wrapper-${h.gate}">
+              <div class="ranking-row-item" onclick="toggleRankingRowDetail('${h.gate}');" title="クリックして詳細評価を展開/閉じる">
+                <span class="ranking-pos-badge">${rankNum}</span>
+                <span class="podium-gate-box waku-${h.waku}" style="width: 24px; height: 24px; font-size: 11px; border-radius: 4px; flex-shrink: 0;">${h.gate}</span>
+                <div class="ranking-row-main">
+                  <div class="ranking-row-title">
+                    <span class="ranking-row-name" onclick="event.stopPropagation(); openHorseDetail('${h.horseName}');" title="クリックして競走馬詳細（血統・戦歴・写真）を見る">
+                      ${h.horseName}
+                    </span>
+                    <span class="ranking-row-jockey">${h.jockey} (${h.load}kg)</span>
+                    <span class="podium-grade-pill" style="font-size: 9.5px; padding: 1px 6px;">${h.grade} ${h.gradeTag}</span>
+                    ${currentMark ? `<span class="ranking-assigned-mark-badge ${MARK_CLASSES[currentMark] || ''}" data-gate="${h.gate}">${currentMark}</span>` : `<span class="ranking-assigned-mark-badge" data-gate="${h.gate}" style="display:none;"></span>`}
+                  </div>
+                  <div class="ranking-row-comment" title="${h.strengths}">
+                    ${h.strengths}
+                  </div>
                 </div>
-                <div class="ranking-row-comment" title="${h.strengths}">
-                  ${h.strengths}
+                <div class="ranking-row-score">
+                  <div class="ranking-score-val">${h.compositeScore}<span style="font-size: 10px; font-weight: normal; color: var(--text-muted); margin-left: 2px;">点</span></div>
+                  <div class="ranking-grade-tag">調教${h.scores.training}/鞍上${h.scores.jockey}</div>
                 </div>
+                <button class="btn-ranking-toggle" id="ranking-toggle-btn-${h.gate}" onclick="event.stopPropagation(); toggleRankingRowDetail('${h.gate}');" aria-label="詳細展開/閉じる">
+                  <span id="ranking-toggle-text-${h.gate}">詳細</span>
+                  <span id="ranking-arrow-${h.gate}" class="ranking-toggle-arrow">▾</span>
+                </button>
               </div>
-              <div class="ranking-row-score">
-                <div class="ranking-score-val">${h.compositeScore}</div>
-                <div class="ranking-grade-tag">調教${h.scores.training}/鞍上${h.scores.jockey}</div>
+
+              <!-- クリックで開閉する詳細アコーディオン -->
+              <div class="ranking-row-drawer" id="ranking-drawer-${h.gate}" style="display: none;">
+                <div class="ranking-drawer-inner">
+                  <div class="drawer-factor-title">
+                    <span>⚡ 6大ファクター個別評価スコア</span>
+                    <span style="font-size: 11.5px; color: var(--text-muted);">
+                      ${h.sexAge} / ${h.stable} / 想定${h.odds}倍 (${h.pop}番人気) / AI推奨印: <strong style="color: var(--gold);">${h.recommendedMark}</strong>
+                    </span>
+                  </div>
+
+                  <!-- 6大ファクター メーター -->
+                  <div class="factor-meters">
+                    <div class="meter-item">
+                      <div class="meter-header"><span>🏃 調教状態</span><strong>${h.scores.training}点</strong></div>
+                      <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.training}%;"></div></div>
+                    </div>
+                    <div class="meter-item">
+                      <div class="meter-header"><span>🏇 鞍上力</span><strong>${h.scores.jockey}点</strong></div>
+                      <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.jockey}%;"></div></div>
+                    </div>
+                    <div class="meter-item">
+                      <div class="meter-header"><span>🏟️ コース適性</span><strong>${h.scores.course}点</strong></div>
+                      <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.course}%;"></div></div>
+                    </div>
+                    <div class="meter-item">
+                      <div class="meter-header"><span>⚡ 距離適性</span><strong>${h.scores.distance}点</strong></div>
+                      <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.distance}%;"></div></div>
+                    </div>
+                    <div class="meter-item">
+                      <div class="meter-header"><span>📊 前走評価</span><strong>${h.scores.prevRace}点</strong></div>
+                      <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.prevRace}%;"></div></div>
+                    </div>
+                    <div class="meter-item">
+                      <div class="meter-header"><span>🧬 血統適性</span><strong>${h.scores.pedigree}点</strong></div>
+                      <div class="meter-track"><div class="meter-fill" style="width: ${h.scores.pedigree}%;"></div></div>
+                    </div>
+                  </div>
+
+                  <!-- 分析ボックス: 好走要因 & 懸念 -->
+                  <div class="drawer-analysis-grid">
+                    <div class="drawer-analysis-box">
+                      <div class="drawer-box-label">🎯 好走要因・推奨根拠</div>
+                      <div class="drawer-box-text">${h.strengths}</div>
+                    </div>
+                    <div class="drawer-concerns-box">
+                      <div class="drawer-box-label">⚠️ 懸念材料・死角</div>
+                      <div class="drawer-box-text">${h.concerns}</div>
+                    </div>
+                  </div>
+
+                  <!-- 下部アクションバー: 印割当 & 競走馬詳細リンク -->
+                  <div class="drawer-action-bar">
+                    <div class="drawer-marks-group">
+                      <span class="drawer-marks-label">予想印割当:</span>
+                      <button class="btn-drawer-mark mark-honmei ${currentMark === '◎' ? 'active' : ''}" data-gate="${h.gate}" data-mark="◎" onclick="event.stopPropagation(); setUserMark('${h.gate}', '◎');">◎ 本命</button>
+                      <button class="btn-drawer-mark mark-taiko ${currentMark === '○' ? 'active' : ''}" data-gate="${h.gate}" data-mark="○" onclick="event.stopPropagation(); setUserMark('${h.gate}', '○');">○ 対抗</button>
+                      <button class="btn-drawer-mark mark-tanana ${currentMark === '▲' ? 'active' : ''}" data-gate="${h.gate}" data-mark="▲" onclick="event.stopPropagation(); setUserMark('${h.gate}', '▲');">▲ 単穴</button>
+                      <button class="btn-drawer-mark mark-renka ${currentMark === '△' ? 'active' : ''}" data-gate="${h.gate}" data-mark="△" onclick="event.stopPropagation(); setUserMark('${h.gate}', '△');">△ 連下</button>
+                      <button class="btn-drawer-mark mark-ana ${currentMark === '☆' ? 'active' : ''}" data-gate="${h.gate}" data-mark="☆" onclick="event.stopPropagation(); setUserMark('${h.gate}', '☆');">☆ 穴</button>
+                      <button class="btn-drawer-mark mark-clear" data-gate="${h.gate}" data-mark="" onclick="event.stopPropagation(); setUserMark('${h.gate}', '');">クリア</button>
+                    </div>
+
+                    <button class="btn-detail-link" onclick="event.stopPropagation(); openHorseDetail('${h.horseName}');" title="netkeiba準拠 競走馬詳細（血統・全戦歴・写真）を見る">
+                      📖 競走馬詳細（血統・戦歴）
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           `;
@@ -85203,7 +85575,10 @@ function hydratePayouts(race) {
             <!-- 4位〜18位 テーブルリスト -->
             <div class="ranking-table-container">
               <div class="ranking-table-header">
-                <span>4位〜18位 好走期待度一覧（クリックで詳細閲覧）</span>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span>4位〜18位 好走期待度一覧（クリックで詳細閲覧）</span>
+                  <button class="btn-ranking-toggle-all" onclick="toggleAllRankingDrawers();" id="btn-toggle-all-ranking">全て展開 ▾</button>
+                </div>
                 <span style="font-size: 11px; color: var(--text-muted);">総合スコア / 100点満点</span>
               </div>
               <div class="ranking-table-body">
@@ -85214,6 +85589,76 @@ function hydratePayouts(race) {
         `;
 
         if (typeof lucide !== 'undefined') lucide.createIcons();
+      }
+
+      function toggleRankingRowDetail(gate) {
+        const drawer = document.getElementById(`ranking-drawer-${gate}`);
+        const wrapper = document.getElementById(`ranking-wrapper-${gate}`);
+        const btn = document.getElementById(`ranking-toggle-btn-${gate}`);
+        const text = document.getElementById(`ranking-toggle-text-${gate}`);
+        const arrow = document.getElementById(`ranking-arrow-${gate}`);
+        if (!drawer) return;
+
+        const isCurrentlyOpen = drawer.style.display !== 'none';
+        if (isCurrentlyOpen) {
+          drawer.style.display = 'none';
+          if (wrapper) wrapper.classList.remove('is-open');
+          if (btn) btn.classList.remove('active');
+          if (text) text.innerText = '詳細';
+          if (arrow) {
+            arrow.innerText = '▾';
+            arrow.classList.remove('rotated');
+          }
+        } else {
+          drawer.style.display = 'block';
+          if (wrapper) wrapper.classList.add('is-open');
+          if (btn) btn.classList.add('active');
+          if (text) text.innerText = '閉じる';
+          if (arrow) {
+            arrow.innerText = '▴';
+            arrow.classList.add('rotated');
+          }
+        }
+      }
+
+      function toggleAllRankingDrawers() {
+        const drawers = document.querySelectorAll('.ranking-row-drawer');
+        const btnToggleAll = document.getElementById('btn-toggle-all-ranking');
+        if (!drawers || drawers.length === 0) return;
+
+        let anyClosed = false;
+        drawers.forEach(d => {
+          if (d.style.display === 'none') anyClosed = true;
+        });
+
+        const targetOpen = anyClosed;
+        drawers.forEach(d => {
+          d.style.display = targetOpen ? 'block' : 'none';
+          const gate = d.id.replace('ranking-drawer-', '');
+          const wrapper = document.getElementById(`ranking-wrapper-${gate}`);
+          const btn = document.getElementById(`ranking-toggle-btn-${gate}`);
+          const text = document.getElementById(`ranking-toggle-text-${gate}`);
+          const arrow = document.getElementById(`ranking-arrow-${gate}`);
+
+          if (wrapper) {
+            if (targetOpen) wrapper.classList.add('is-open');
+            else wrapper.classList.remove('is-open');
+          }
+          if (btn) {
+            if (targetOpen) btn.classList.add('active');
+            else btn.classList.remove('active');
+          }
+          if (text) text.innerText = targetOpen ? '閉じる' : '詳細';
+          if (arrow) {
+            arrow.innerText = targetOpen ? '▴' : '▾';
+            if (targetOpen) arrow.classList.add('rotated');
+            else arrow.classList.remove('rotated');
+          }
+        });
+
+        if (btnToggleAll) {
+          btnToggleAll.innerText = targetOpen ? '全て閉じる ▴' : '全て展開 ▾';
+        }
       }
 
       function setRankingSort(sortKey) {
@@ -86922,6 +87367,8 @@ function hydratePayouts(race) {
         window.renderContenderRanking = renderContenderRanking;
         window.setRankingSort = setRankingSort;
         window.applyRankingToMarks = applyRankingToMarks;
+        window.toggleRankingRowDetail = toggleRankingRowDetail;
+        window.toggleAllRankingDrawers = toggleAllRankingDrawers;
       }
 
       if (typeof document !== 'undefined') {
