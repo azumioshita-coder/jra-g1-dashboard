@@ -516,7 +516,7 @@ export const ENTRIES_DATA = {
       "horseName": "オンブズマン",
       "sexAge": "牡5",
       "load": 58,
-      "jockey": "ビュイッ",
+      "jockey": "ビュイック",
       "stable": "ゴスデン"
     },
     {
@@ -588,7 +588,7 @@ export const ENTRIES_DATA = {
       "horseName": "テアオ",
       "sexAge": "牡4",
       "load": 58,
-      "jockey": "トーレス",
+      "jockey": "サドラー",
       "stable": "サドラー"
     },
     {
