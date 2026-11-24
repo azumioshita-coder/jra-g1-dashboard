@@ -136,8 +136,26 @@ g1_17_finished = """        {
           payouts: { win: 1260, trifecta: 38780 }
         }"""
 
-# Substitute autumn races 13 to 17 in g1_races_raw
-for r_idx in range(13, 18):
+g1_18_finished = """        {
+          id: '18',
+          name: 'マイルチャンピオンシップ',
+          englishName: 'Mile Championship',
+          date: '2026-11-22T15:40:00',
+          location: '京都',
+          course: '芝 1600m',
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.4',
+          type: 'mile',
+          winner: 'エンブロイダリー', winnerJockey: 'C.ルメール', winnerGate: 2, time: '1:31.4',
+          second: 'ロデオドライブ', secondJockey: 'J.モレイラ', secondGate: 8,
+          third: 'エルデナリ', thirdJockey: 'M.バルザローナ', thirdGate: 1,
+          payouts: { win: 280, trifecta: 9280 }
+        }"""
+
+# Substitute autumn races 13 to 18 in g1_races_raw
+for r_idx in range(13, 19):
     var_name = f'g1_{r_idx}_finished'
     if var_name in locals():
         pattern = r'\{\s*id:\s*\'' + str(r_idx) + r'\',[\s\S]*?\n\s*\}(?=,|\s*\])'
@@ -201,13 +219,22 @@ race_reviews_data_str = "const RACE_REVIEWS_DATA = " + json.dumps(reviews_data, 
 
 # Add anti-flicker early route detector script in <head>
 anti_flicker_script = """
-    <!-- Anti-flicker route restoration -->
+    <!-- Anti-flicker route restoration & reload scroll fix -->
     <script>
       (function() {
         try {
+          if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+          }
           var h = window.location.hash || '';
           if (h.startsWith('#sec-')) {
-            h = '#prediction';
+            var targetId = '19';
+            try {
+              var savedRoute = localStorage.getItem('keiba_active_route') || '';
+              var m = savedRoute.match(/#prediction-(\\d+)/);
+              if (m) targetId = m[1];
+            } catch(e) {}
+            h = '#prediction-' + targetId;
             if (window.history && window.history.replaceState) {
               window.history.replaceState(null, '', h);
             }
@@ -225,6 +252,13 @@ anti_flicker_script = """
           } else {
             document.documentElement.classList.add('route-calendar');
           }
+          try {
+            var s = localStorage.getItem('keiba_active_route');
+            if (s && s.startsWith('#sec-')) {
+              localStorage.setItem('keiba_active_route', '#prediction-19');
+            }
+          } catch(e) {}
+          window.scrollTo(0, 0);
         } catch (e) {}
       })();
     </script>
@@ -281,11 +315,11 @@ new_hero_section = """<section class="countdown-section" id="hero-countdown-bann
             <div class="next-badge">
               <span class="pulse-dot"></span> NEXT G1 RACE (タップで予想へ)
             </div>
-            <h2 class="race-title" id="next-race-name">第43回 マイルチャンピオンシップ</h2>
-            <p class="race-meta" id="next-race-meta">2026.11.22 (日) 京都 芝 1600m (G1)</p>
+            <h2 class="race-title" id="next-race-name">第46回 ジャパンカップ</h2>
+            <p class="race-meta" id="next-race-meta">2026.11.29 (日) 東京 芝 2400m (G1)</p>
             <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
               <button id="btn-hero-prediction" class="btn-hero-action" style="background: var(--gold); color: #111; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 800; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);">
-                🎯 マイルCS 予想・攻略を見る
+                🎯 ジャパンカップ 予想・攻略を見る
               </button>
               <button id="btn-hero-detail" class="btn-hero-action" style="background: rgba(255, 255, 255, 0.1); color: #fff; border: 1px solid var(--border-color); padding: 8px 14px; border-radius: 8px; font-weight: 700; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px;">
                 📋 出馬表モーダル
@@ -348,12 +382,12 @@ prediction_view_html = """
               </div>
             </div>
             <h1 class="pred-title">
-              <span id="pred-header-title">第43回 マイルチャンピオンシップ</span>
+              <span id="pred-header-title">第46回 ジャパンカップ</span>
               <span id="pred-header-badge" style="font-size: 11px; background: rgba(16, 185, 129, 0.2); color: var(--primary); padding: 2px 8px; border-radius: 4px; font-weight: 700; border: 1px solid rgba(16, 185, 129, 0.4);">🎯 枠順確定済 / 予想公開中</span>
             </h1>
             <div class="pred-meta-chips" id="pred-meta-chips">
-              <span class="pred-chip"><i data-lucide="calendar"></i> 11/22(日) 15:40発走</span>
-              <span class="pred-chip"><i data-lucide="map-pin"></i> 京都芝1600m (外回り)</span>
+              <span class="pred-chip"><i data-lucide="calendar"></i> 11/29(日) 15:40発走</span>
+              <span class="pred-chip"><i data-lucide="map-pin"></i> 東京芝2400m</span>
               <span class="pred-chip"><i data-lucide="award"></i> 定量 / 全18頭</span>
             </div>
             <!-- 終了レースの場合のレビューポディウム表示コンテナ -->
@@ -370,7 +404,7 @@ prediction_view_html = """
               <i data-lucide="list" style="width: 16px; height: 16px;"></i>
               <span>出馬表</span>
             </button>
-            <button type="button" class="btn-quick-nav" onclick="scrollToSection('sec-memo');">
+            <button type="button" class="btn-quick-nav" onclick="scrollToSection('pred-section-user-memo');">
               <i data-lucide="check-square" style="width: 16px; height: 16px;"></i>
               <span>予想印</span>
             </button>
@@ -378,7 +412,7 @@ prediction_view_html = """
               <i data-lucide="sparkles" style="width: 16px; height: 16px; color: #c084fc;"></i>
               <span style="color: #c084fc;">Xオカルト</span>
             </button>
-            <button type="button" class="btn-quick-nav" onclick="scrollToSection('sec-memo');">
+            <button type="button" class="btn-quick-nav" onclick="scrollToSection('pred-section-user-memo');">
               <i data-lucide="edit-3" style="width: 16px; height: 16px;"></i>
               <span>買い目メモ</span>
             </button>
@@ -446,7 +480,7 @@ prediction_view_html = """
           </section>
 
           <!-- 2. 印の集計サマリー ＆ 買い目メモ -->
-          <section id="sec-memo" class="pred-card" style="margin-bottom: 20px;">
+          <section id="pred-section-user-memo" class="pred-card" style="margin-bottom: 20px;">
             <div class="pred-card-header">
               <h3 class="pred-card-title">
                 <i data-lucide="check-square" style="color: var(--gold);"></i> 予想印サマリー ＆ 買い目メモ
@@ -715,7 +749,7 @@ prediction_js_logic = """
       let lastMainView = 'calendar';
       let predictionSortType = 'gate';
       let activeSheetGate = null;
-      let currentPredictionRaceId = '18'; // デフォルトは次走エリ女
+      let currentPredictionRaceId = '19'; // デフォルトは次走ジャパンカップ
 
       let oddsMode = 'estimated'; // 'estimated' または 'live'
       let oddsAutoRefreshTimer = null;
@@ -739,6 +773,7 @@ prediction_js_logic = """
 
       function scrollToSection(secId) {
         if (typeof document === 'undefined') return;
+        if (secId === 'sec-memo') secId = 'pred-section-user-memo';
         const targetEl = document.getElementById(secId);
         if (targetEl) {
           targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -761,7 +796,7 @@ prediction_js_logic = """
 
         // If URL has lingering #sec- anchor, normalize so reload never jumps down to memo/sections
         if (hash.startsWith('#sec-')) {
-          hash = '#prediction-' + (currentPredictionRaceId || '18');
+          hash = '#prediction-' + (currentPredictionRaceId || '19');
           if (window.history && window.history.replaceState) {
             window.history.replaceState(null, '', hash);
           }
@@ -787,7 +822,7 @@ prediction_js_logic = """
         if (typeof localStorage !== 'undefined') {
           const saved = localStorage.getItem('keiba_active_route');
           if (saved && saved.startsWith('#sec-')) {
-            localStorage.setItem('keiba_active_route', '#prediction-' + (currentPredictionRaceId || '18'));
+            localStorage.setItem('keiba_active_route', '#prediction-' + (currentPredictionRaceId || '19'));
           }
         }
 
@@ -813,7 +848,7 @@ prediction_js_logic = """
               currentPredictionRaceId = targetId;
             }
           }
-          const cleanRoute = '#prediction-' + (currentPredictionRaceId || '18');
+          const cleanRoute = '#prediction-' + (currentPredictionRaceId || '19');
           if (typeof localStorage !== 'undefined') {
             localStorage.setItem('keiba_active_route', cleanRoute);
             localStorage.setItem('keiba_last_main_view', 'prediction');
@@ -1345,13 +1380,13 @@ prediction_js_logic = """
         if (!container) return;
         
         const targetRaces = [
-          { id: '18', label: '⚡ マイルCS (11/22)', badge: '枠順確定', isNext: true },
-          { id: '19', label: '🇯🇵 ジャパンC (11/29)', badge: '次週', isNext: true },
+          { id: '19', label: '🇯🇵 ジャパンC (11/29)', badge: '今週', isNext: true },
           { id: '20', label: '🏜️ チャンピオンズC (12/6)', badge: 'ダート頂上', isNext: true },
           { id: '21', label: '🌸 阪神JF (12/13)', badge: '2歳女王', isNext: true },
           { id: '22', label: '🏇 朝日杯FS (12/20)', badge: '2歳牡馬', isNext: true },
           { id: '23', label: '⭐ ホープフルS (12/26)', badge: '登竜門', isNext: true },
           { id: '24', label: '💎 有馬記念 (12/27)', badge: 'グランプリ', isNext: true },
+          { id: '18', label: '⚡ マイルCS (11/22)', badge: '結果回顧', isNext: false },
           { id: '17', label: '👑 エリザベス女王杯', badge: '結果回顧', isNext: false },
           { id: '16', label: '📜 天皇賞（秋）', badge: '結果回顧', isNext: false }
         ];
@@ -1494,6 +1529,11 @@ prediction_js_logic = """
         const container = document.getElementById('pred-ranking-container');
         if (!container) return;
 
+        const raceObj = (typeof G1_RACES !== 'undefined') ? G1_RACES.find(r => r.id === currentPredictionRaceId) : null;
+        const raceNameDisp = raceObj ? raceObj.name : 'G1';
+        const raceLocDisp = raceObj ? `${raceObj.location}コース` : 'コース';
+        const raceCourseDisp = raceObj ? raceObj.course : '距離';
+
         const currentPred = (PREDICTION_DATA.races && PREDICTION_DATA.races[currentPredictionRaceId]) 
           ? PREDICTION_DATA.races[currentPredictionRaceId] 
           : PREDICTION_DATA;
@@ -1504,7 +1544,38 @@ prediction_js_logic = """
           return;
         }
 
-        let list = [...rawList];
+        // Normalize item fields safely with fallbacks
+        let list = rawList.map((item, idx) => {
+          const sc = item.scores || item.factors || {};
+          const trainingScore = sc.training || sc.workout || 80;
+          const jockeyScore = sc.jockey || 80;
+          const courseScore = sc.course || 80;
+          const distanceScore = sc.distance || 80;
+          const prevRaceScore = sc.prevRace || sc.lastRace || 80;
+          const pedigreeScore = sc.pedigree || 80;
+          const compScore = item.compositeScore || item.totalScore || 80;
+          const rankVal = item.rank || (idx + 1);
+          const defaultMark = rankVal === 1 ? '◎' : (rankVal === 2 ? '○' : (rankVal === 3 ? '▲' : (rankVal <= 5 ? '△' : (rankVal === 6 ? '☆' : ''))));
+
+          return {
+            ...item,
+            rank: rankVal,
+            compositeScore: compScore,
+            scores: {
+              training: trainingScore,
+              jockey: jockeyScore,
+              course: courseScore,
+              distance: distanceScore,
+              prevRace: prevRaceScore,
+              pedigree: pedigreeScore
+            },
+            strengths: item.strengths || item.comment || '-',
+            concerns: item.concerns || '-',
+            grade: item.grade || (compScore >= 95 ? 'SS' : (compScore >= 90 ? 'S' : (compScore >= 80 ? 'A' : (compScore >= 70 ? 'B' : 'C')))),
+            gradeTag: item.gradeTag || (rankVal === 1 ? '本命最有力' : (rankVal === 2 ? '対抗筆頭' : (rankVal === 3 ? '単穴警戒' : (rankVal <= 5 ? '連下候補' : '大穴警戒')))),
+            recommendedMark: item.recommendedMark || defaultMark
+          };
+        });
 
         if (currentRankingSort === 'training') {
           list.sort((a, b) => b.scores.training - a.scores.training);
@@ -1715,9 +1786,9 @@ prediction_js_logic = """
                   <span style="font-size: 11px; font-weight: 700; color: var(--gold); background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.3); padding: 2px 8px; border-radius: 4px;">AI×データ多変量解析</span>
                   <span style="font-size: 11px; color: var(--text-muted);">全18頭 徹底スコアリング</span>
                 </div>
-                <h2>🏆 マイルCS 好走期待度ランキング</h2>
+                <h2>🏆 ${raceNameDisp} 好走期待度ランキング</h2>
                 <div class="ranking-subtitle">
-                  調教状態 (20%) ・ 鞍上力 (20%) ・ 京都コース適性 (15%) ・ マイル適性 (15%) ・ 前走評価 (15%) ・ 血統背景 (15%)
+                  調教状態 (20%) ・ 鞍上力 (20%) ・ ${raceLocDisp}適性 (15%) ・ ${raceCourseDisp}適性 (15%) ・ 前走評価 (15%) ・ 血統背景 (15%)
                 </div>
               </div>
 
@@ -1864,18 +1935,18 @@ prediction_js_logic = """
           localStorage.setItem('keiba_pred_race_id', raceId);
         }
         
-        initOddsState();
-        initWeightState();
-        renderPredictionRaceSwitcher();
-        renderPredictionHeader();
-        renderContenderRanking();
-        renderNetkeibaHorseList();
-        renderPredictionOccult();
-        renderPredictionMemo();
-        updateMarksUI();
-        updateOddsControlUI();
-        updateWeightControlUI();
-        refreshIcons();
+        try { initOddsState(); } catch(e) { console.error('initOddsState error:', e); }
+        try { initWeightState(); } catch(e) { console.error('initWeightState error:', e); }
+        try { renderPredictionRaceSwitcher(); } catch(e) { console.error('renderPredictionRaceSwitcher error:', e); }
+        try { renderPredictionHeader(); } catch(e) { console.error('renderPredictionHeader error:', e); }
+        try { renderContenderRanking(); } catch(e) { console.error('renderContenderRanking error:', e); }
+        try { renderNetkeibaHorseList(); } catch(e) { console.error('renderNetkeibaHorseList error:', e); }
+        try { renderPredictionOccult(); } catch(e) { console.error('renderPredictionOccult error:', e); }
+        try { renderPredictionMemo(); } catch(e) { console.error('renderPredictionMemo error:', e); }
+        try { updateMarksUI(); } catch(e) { console.error('updateMarksUI error:', e); }
+        try { updateOddsControlUI(); } catch(e) { console.error('updateOddsControlUI error:', e); }
+        try { updateWeightControlUI(); } catch(e) { console.error('updateWeightControlUI error:', e); }
+        try { refreshIcons(); } catch(e) {}
 
         if (window.history && window.history.replaceState) {
           window.history.replaceState({ view: 'prediction', raceId: currentPredictionRaceId }, '', '#prediction-' + currentPredictionRaceId);
@@ -1889,21 +1960,21 @@ prediction_js_logic = """
 
         if (!currentPredictionRaceId || !PREDICTION_DATA.races || !PREDICTION_DATA.races[currentPredictionRaceId]) {
           const nextRace = getNextUpcomingRace();
-          currentPredictionRaceId = (nextRace && PREDICTION_DATA.races && PREDICTION_DATA.races[nextRace.id]) ? nextRace.id : '18';
+          currentPredictionRaceId = (nextRace && PREDICTION_DATA.races && PREDICTION_DATA.races[nextRace.id]) ? nextRace.id : '19';
         }
 
-        initOddsState();
-        initWeightState();
-        renderPredictionRaceSwitcher();
-        renderPredictionHeader();
-        renderContenderRanking();
-        renderNetkeibaHorseList();
-        renderPredictionOccult();
-        renderPredictionMemo();
-        updateMarksUI();
-        updateOddsControlUI();
-        updateWeightControlUI();
-        refreshIcons();
+        try { initOddsState(); } catch(e) { console.error('initOddsState error:', e); }
+        try { initWeightState(); } catch(e) { console.error('initWeightState error:', e); }
+        try { renderPredictionRaceSwitcher(); } catch(e) { console.error('renderPredictionRaceSwitcher error:', e); }
+        try { renderPredictionHeader(); } catch(e) { console.error('renderPredictionHeader error:', e); }
+        try { renderContenderRanking(); } catch(e) { console.error('renderContenderRanking error:', e); }
+        try { renderNetkeibaHorseList(); } catch(e) { console.error('renderNetkeibaHorseList error:', e); }
+        try { renderPredictionOccult(); } catch(e) { console.error('renderPredictionOccult error:', e); }
+        try { renderPredictionMemo(); } catch(e) { console.error('renderPredictionMemo error:', e); }
+        try { updateMarksUI(); } catch(e) { console.error('updateMarksUI error:', e); }
+        try { updateOddsControlUI(); } catch(e) { console.error('updateOddsControlUI error:', e); }
+        try { updateWeightControlUI(); } catch(e) { console.error('updateWeightControlUI error:', e); }
+        try { refreshIcons(); } catch(e) {}
       }
 
       // NetKeiba完全準拠 リストレンダラー
@@ -3531,7 +3602,7 @@ review_js_logic = '''
       // ========================================================
       // レース回顧＆次回への参考データ ロジック
       // ========================================================
-      let currentReviewRaceId = '17';
+      let currentReviewRaceId = '18';
       let currentReviewFilter = 'all';
 
       function renderReviewPills() {
@@ -3540,6 +3611,7 @@ review_js_logic = '''
         if (!autumnContainer || !springContainer) return;
 
         const autumnRaces = [
+          { id: '18', name: 'マイルCS', num: '第43回' },
           { id: '17', name: 'エリザベス女王杯', num: '第51回' },
           { id: '16', name: '天皇賞（秋）', num: '第172回' },
           { id: '15', name: '菊花賞', num: '第87回' },
@@ -3855,7 +3927,11 @@ review_js_logic = '''
                     <span class="review-meta-tag"><i data-lucide="map-pin" style="width:12px;height:12px;display:inline;margin-right:4px;"></i>${data.venue} ${data.course}</span>
                     <span class="review-meta-tag">馬場: <b>${data.trackCondition}</b> (${data.weather})</span>
                     <span class="review-meta-tag">クッション値: <b>${data.cushionValue}</b></span>
-                    <span class="review-meta-tag">レース評価: <b style="color:#fbbf24;">${'★'*Math.floor(data.raceLevel.rating)} ${data.raceLevel.label}</b></span>
+                    ${(() => {
+                      const lvl = (typeof data.raceLevel === 'object' && data.raceLevel) ? data.raceLevel : { rating: 5, label: String(data.raceLevel || 'S級') };
+                      const count = Math.min(5, Math.max(1, Math.floor(lvl.rating || 5)));
+                      return `<span class="review-meta-tag">レース評価: <b style="color:#fbbf24;">${'★'.repeat(count)} ${lvl.label}</b></span>`;
+                    })()}
                   </div>
                 </div>
 

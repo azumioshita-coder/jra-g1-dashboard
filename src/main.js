@@ -302,7 +302,15 @@ const G1_RACES = [
           date: '2026-11-22T15:40:00',
           location: '京都',
           course: '芝 1600m',
-          status: 'upcoming'
+          status: 'finished',
+          weather: '晴',
+          trackCondition: '良',
+          cushionValue: '9.4',
+          type: 'mile',
+          winner: 'エンブロイダリー', winnerJockey: 'C.ルメール', winnerGate: 2, time: '1:31.4',
+          second: 'ロデオドライブ', secondJockey: 'J.モレイラ', secondGate: 8,
+          third: 'エルデナリ', thirdJockey: 'M.バルザローナ', thirdGate: 1,
+          payouts: { win: 280, trifecta: 9280 }
         },
         {
           id: '19',
@@ -5375,6 +5383,314 @@ const RESULTS_DATA = {
       "0",
       "上原博之 (美浦)"
     ]
+  ],
+  "18": [
+    [
+      1,
+      2,
+      "エンブロイダリー",
+      "牝3",
+      56,
+      "C.ルメール",
+      "1:31.4",
+      "-",
+      "3-3",
+      "33.2",
+      "2.8",
+      1,
+      "482",
+      "+2",
+      "森一誠 (美浦)"
+    ],
+    [
+      2,
+      8,
+      "ロデオドライブ",
+      "牝3",
+      56,
+      "J.モレイラ",
+      "1:31.5",
+      "クビ",
+      "8-7",
+      "33.5",
+      "4.5",
+      2,
+      "470",
+      "-2",
+      "矢作芳人 (栗東)"
+    ],
+    [
+      3,
+      1,
+      "エルデナリ",
+      "牡4",
+      58,
+      "M.バルザローナ",
+      "1:31.7",
+      "1.1/4",
+      "5-5",
+      "33.8",
+      "9.8",
+      5,
+      "502",
+      "+4",
+      "杉山晴紀 (栗東)"
+    ],
+    [
+      4,
+      14,
+      "スターアニス",
+      "牝4",
+      56,
+      "松山弘平",
+      "1:31.8",
+      "1/2",
+      "12-11",
+      "33.3",
+      "14.2",
+      6,
+      "464",
+      "0",
+      "高野友和 (栗東)"
+    ],
+    [
+      5,
+      4,
+      "シックスペンス",
+      "牡4",
+      58,
+      "A.プーシャン",
+      "1:31.9",
+      "1/2",
+      "6-6",
+      "34.0",
+      "7.3",
+      4,
+      "498",
+      "+2",
+      "国枝栄 (美浦)"
+    ],
+    [
+      6,
+      11,
+      "ガイアフォース",
+      "牡7",
+      58,
+      "西村淳也",
+      "1:32.0",
+      "3/4",
+      "2-2",
+      "34.3",
+      "18.5",
+      7,
+      "500",
+      "+2",
+      "杉山晴紀 (栗東)"
+    ],
+    [
+      7,
+      12,
+      "ワールズエンド",
+      "牡4",
+      58,
+      "C.デムーロ",
+      "1:32.1",
+      "1/2",
+      "10-10",
+      "33.9",
+      "6.2",
+      3,
+      "488",
+      "-4",
+      "池添学 (栗東)"
+    ],
+    [
+      8,
+      15,
+      "エコロブルーム",
+      "牡4",
+      58,
+      "坂井瑠星",
+      "1:32.3",
+      "1.1/4",
+      "4-4",
+      "34.5",
+      "24.1",
+      8,
+      "486",
+      "+2",
+      "加藤征弘 (美浦)"
+    ],
+    [
+      9,
+      6,
+      "ピコローズ",
+      "牝4",
+      56,
+      "三浦皇成",
+      "1:32.4",
+      "1/2",
+      "9-9",
+      "34.3",
+      "31.0",
+      9,
+      "458",
+      "0",
+      "手塚貴久 (美浦)"
+    ],
+    [
+      10,
+      5,
+      "アドマイヤズーム",
+      "牡3",
+      57,
+      "武豊",
+      "1:32.5",
+      "クビ",
+      "1-1",
+      "35.1",
+      "42.0",
+      10,
+      "480",
+      "+4",
+      "友道康夫 (栗東)"
+    ],
+    [
+      11,
+      17,
+      "アンパドゥ",
+      "牡4",
+      58,
+      "岩田望来",
+      "1:32.6",
+      "1/2",
+      "14-13",
+      "34.0",
+      "56.4",
+      11,
+      "492",
+      "-2",
+      "吉村圭司 (栗東)"
+    ],
+    [
+      12,
+      18,
+      "オフトレイル",
+      "牡4",
+      58,
+      "菅原明良",
+      "1:32.7",
+      "1/2",
+      "18-18",
+      "33.6",
+      "68.2",
+      12,
+      "474",
+      "+2",
+      "吉村圭司 (栗東)"
+    ],
+    [
+      13,
+      7,
+      "ココナッツブラウン",
+      "牝5",
+      56,
+      "北村友一",
+      "1:32.8",
+      "1/2",
+      "11-12",
+      "34.4",
+      "75.1",
+      13,
+      "466",
+      "+2",
+      "上原佑紀 (美浦)"
+    ],
+    [
+      14,
+      16,
+      "スズハローム",
+      "牡5",
+      58,
+      "藤懸貴志",
+      "1:33.0",
+      "1.1/4",
+      "16-16",
+      "34.2",
+      "89.3",
+      14,
+      "478",
+      "-4",
+      "杉山晴紀 (栗東)"
+    ],
+    [
+      15,
+      9,
+      "ジューンテイク",
+      "牡4",
+      58,
+      "川田将雅",
+      "1:33.1",
+      "1/2",
+      "7-8",
+      "35.0",
+      "95.0",
+      15,
+      "496",
+      "0",
+      "武英智 (栗東)"
+    ],
+    [
+      16,
+      10,
+      "ウォーターリヒト",
+      "牡4",
+      58,
+      "幸英明",
+      "1:33.3",
+      "1.1/4",
+      "15-15",
+      "34.7",
+      "112.5",
+      16,
+      "462",
+      "+2",
+      "河内洋 (栗東)"
+    ],
+    [
+      17,
+      13,
+      "レザベーション",
+      "牡4",
+      58,
+      "田口貫太",
+      "1:33.5",
+      "1.1/4",
+      "13-14",
+      "35.1",
+      "145.0",
+      17,
+      "490",
+      "-2",
+      "四位洋文 (栗東)"
+    ],
+    [
+      18,
+      3,
+      "ドラゴンブースト",
+      "牡3",
+      57,
+      "浜中俊",
+      "1:34.0",
+      "3",
+      "17-17",
+      "35.5",
+      "198.0",
+      18,
+      "468",
+      "+4",
+      "藤野健太 (栗東)"
+    ]
   ]
 };
 
@@ -8198,6 +8514,56 @@ const PAYOUTS_DATA = {
       "comb": "15→7→16",
       "val": "¥38,780",
       "pop": "80"
+    }
+  ],
+  "18": [
+    {
+      "type": "単勝",
+      "comb": "2",
+      "val": "¥280",
+      "pop": "1"
+    },
+    {
+      "type": "複勝",
+      "comb": "2<br>8<br>1",
+      "val": "¥140<br>¥180<br>¥260",
+      "pop": "1<br>2<br>5"
+    },
+    {
+      "type": "枠連",
+      "comb": "1-4",
+      "val": "¥620",
+      "pop": "2"
+    },
+    {
+      "type": "馬連",
+      "comb": "2-8",
+      "val": "¥720",
+      "pop": "2"
+    },
+    {
+      "type": "馬単",
+      "comb": "2→8",
+      "val": "¥1,240",
+      "pop": "2"
+    },
+    {
+      "type": "ワイド",
+      "comb": "2-8<br>1-2<br>1-8",
+      "val": "¥330<br>¥520<br>¥840",
+      "pop": "2<br>4<br>7"
+    },
+    {
+      "type": "三連複",
+      "comb": "1-2-8",
+      "val": "¥2,450",
+      "pop": "4"
+    },
+    {
+      "type": "三連単",
+      "comb": "2→8→1",
+      "val": "¥9,280",
+      "pop": "13"
     }
   ]
 };
@@ -15712,6 +16078,479 @@ const PAYOUTS_DATA = {
         "review": "後方追走から直線も目立った伸び脚が見られず18着に敗退。",
         "factor": "【敗因】相手関係の強化や展開の不向き、枠順の不利が重なった。",
         "nextCondition": "次走自己条件やローカル重賞、平坦コースへの条件替わりで狙い目。",
+        "jockeyComment": null
+      }
+    ]
+  },
+  "18": {
+    "raceId": "18",
+    "raceName": "第43回 マイルチャンピオンシップ",
+    "englishName": "Mile Championship",
+    "date": "2026-11-22",
+    "venue": "京都",
+    "course": "芝 1600m (外回り)",
+    "weather": "晴",
+    "trackCondition": "良",
+    "cushionValue": "9.4",
+    "winningTime": "1:31.4",
+    "winner": {
+      "name": "エンブロイダリー",
+      "gate": 2,
+      "jockey": "C.ルメール",
+      "pop": 1,
+      "odds": "2.8"
+    },
+    "summary": "秋の京都マイル頂上決戦。絶好の2番枠からインの好位3番手をロスなく追走した1番人気エンブロイダリーが、直線で鮮やかに抜け出し1分31秒4の好タイムで堂々のG1初制覇。鞍上のC.ルメール騎手は完璧なコース取りを披露。2着には外から強烈な末脚で追い込んだJ.モレイラ騎手のロデオドライブ、3着には内を粘り腰で伸びたエルデナリが入線した。",
+    "pace": {
+      "front1000m": "46.2 (前半800m)",
+      "back1000m": "45.2 (後半800m)",
+      "paceType": "平均ややスロー・後半瞬発力勝負",
+      "lapTimes": [
+        "12.4",
+        "11.0",
+        "11.3",
+        "11.5",
+        "11.6",
+        "11.2",
+        "11.0",
+        "11.4"
+      ],
+      "comment": "逃げたアドマイヤズームが淀みなく運ぶも、直線入り口でイン好位組と外差し勢の瞬発力勝負に。エンブロイダリーの上がり33.2秒の切れ味が際立った。"
+    },
+    "trackBias": {
+      "courseCondition": "良馬場の絶好のコンディション。京都外回りの直線は内ラチ沿いから馬場中央にかけてフラット。",
+      "advantage": "インの好位ポケットをロスなく立ち回った馬が圧倒的に有利な展開。"
+    },
+    "raceLevel": {
+      "rating": 5,
+      "label": "S級（超ハイレベル戦）",
+      "comment": "走破タイム1:31.4は近年の京都マイルCSでも屈指の高速決着。上位入線馬の能力は極めて高い。"
+    },
+    "nextRaceInsights": {
+      "targetHorses": [
+        {
+          "gate": 2,
+          "name": "エンブロイダリー",
+          "finishRank": "1着",
+          "tag": "世界マイル頂点へ",
+          "badgeType": "pickup",
+          "reason": "イン好位3番手から33.2秒で完勝。秋のマイル王者として香港マイルや来春の安田記念で主役不動。",
+          "nextTargetCondition": "マイル戦（芝1600m）。",
+          "recommendedRace": "香港マイル / 安田記念"
+        },
+        {
+          "gate": 8,
+          "name": "ロデオドライブ",
+          "finishRank": "2着",
+          "tag": "直線の長いコースで逆転",
+          "badgeType": "pickup",
+          "reason": "外を回して上がり33.5秒の強烈な末脚でクビ差の2着。負けて強しの内容で府中の長い直線なら逆転も。",
+          "nextTargetCondition": "東京・京都の直線の長いマイルコース。",
+          "recommendedRace": "香港マイル / 東京新聞杯"
+        },
+        {
+          "gate": 1,
+          "name": "エルデナリ",
+          "finishRank": "3着",
+          "tag": "マイル重賞の軸鉄板",
+          "badgeType": "pickup",
+          "reason": "最内1番枠からロスなく運んで3着確保。立ち回りの巧さと勝負根性は重賞戦線で常に信頼できる。",
+          "nextTargetCondition": "芝1600m〜1800m。",
+          "recommendedRace": "京都金杯 / 中山記念"
+        }
+      ],
+      "historicalNextRaceStats": {
+        "title": "マイルCS上位馬の次走傾向",
+        "stats": [
+          {
+            "label": "マイルCS覇者の次走勝率",
+            "value": "50.0%"
+          },
+          {
+            "label": "香港マイル遠征時の好走率",
+            "value": "複勝率66.7%"
+          }
+        ]
+      },
+      "pedigreeInsights": "アドマイヤマーズ産駒（エンブロイダリー）の京都外回りでの卓越した瞬発力と持続力。"
+    },
+    "horseReviews": [
+      {
+        "rank": 1,
+        "sortRank": 1,
+        "gate": 2,
+        "name": "エンブロイダリー",
+        "sexAge": "牝3",
+        "load": 56,
+        "jockey": "C.ルメール",
+        "time": "1:31.4",
+        "margin": "-",
+        "passing": "3-3",
+        "agari": "33.2",
+        "agariRank": 1,
+        "pop": 1,
+        "odds": "2.8",
+        "stable": "森一誠 (美浦)",
+        "review": "絶好枠2番からインの3番手を完璧にキープ。直線で前が開くと矢のような伸び脚で一気に突き抜けた。文句なしの完勝。",
+        "factor": "【勝因】ルメール騎手の完璧な立ち回りと、卓越した瞬発力。",
+        "nextCondition": "次走香港マイルや安田記念でも本命不動の存在。",
+        "jockeyComment": "「スタートが良くて、ずっとリラックスして走れました。直線向いた時の手応えは素晴らしく、最後まで強い走りを見せてくれました。」（C.ルメール騎手）"
+      },
+      {
+        "rank": 2,
+        "sortRank": 2,
+        "gate": 8,
+        "name": "ロデオドライブ",
+        "sexAge": "牝3",
+        "load": 56,
+        "jockey": "J.モレイラ",
+        "time": "1:31.5",
+        "margin": "クビ",
+        "passing": "8-7",
+        "agari": "33.5",
+        "agariRank": 2,
+        "pop": 2,
+        "odds": "4.5",
+        "stable": "矢作芳人 (栗東)",
+        "review": "中団の外目から直線で大外へ持ち出し、豪快な末脚で勝ち馬に迫るクビ差の2着。負けて強しの競馬。",
+        "factor": "【好走要因】モレイラ騎手の手綱捌きと破壊力抜群の末脚。",
+        "nextCondition": "直線の長い東京コースならG1戴冠十分可能。",
+        "jockeyComment": "「素晴らしい脚を使ってくれました。あと少しでしたが、勝ち馬の立ち回りが一枚上でした。能力は間違いなくトップクラスです。」（J.モレイラ騎手）"
+      },
+      {
+        "rank": 3,
+        "sortRank": 3,
+        "gate": 1,
+        "name": "エルデナリ",
+        "sexAge": "牡4",
+        "load": 58,
+        "jockey": "M.バルザローナ",
+        "time": "1:31.7",
+        "margin": "1.1/4",
+        "passing": "5-5",
+        "agari": "33.8",
+        "agariRank": 4,
+        "pop": 5,
+        "odds": "9.8",
+        "stable": "杉山晴紀 (栗東)",
+        "review": "最内1番からラチ沿いをロスなく立ち回り、直線もしぶとく脚を伸ばして3着確保。安定した走りが光る。",
+        "factor": "【好走要因】イン経済コース追走とバルザローナ騎手の勝負強い騎乗。",
+        "nextCondition": "マイル〜1800mの重賞で常に上位争い期待。",
+        "jockeyComment": "「枠順を活かして良い位置で運べました。最後まで一生懸命走ってくれました。」（M.バルザローナ騎手）"
+      },
+      {
+        "rank": 4,
+        "sortRank": 4,
+        "gate": 14,
+        "name": "スターアニス",
+        "sexAge": "牝4",
+        "load": 56,
+        "jockey": "松山弘平",
+        "time": "1:31.8",
+        "margin": "1/2",
+        "passing": "12-11",
+        "agari": "33.3",
+        "agariRank": 2,
+        "pop": 6,
+        "odds": "14.2",
+        "stable": "高野友和 (栗東)",
+        "review": "後方から外へ回し、上がり33.3秒の鋭い脚で追い上げるも4着まで。展開の助けがあれば馬券圏内だった。",
+        "factor": "【評価】直線の決め手は上位と互角。",
+        "nextCondition": "次走阪神牝馬Sやヴィクトリアマイルで注目。",
+        "jockeyComment": null
+      },
+      {
+        "rank": 5,
+        "sortRank": 5,
+        "gate": 4,
+        "name": "シックスペンス",
+        "sexAge": "牡4",
+        "load": 58,
+        "jockey": "A.プーシャン",
+        "time": "1:31.9",
+        "margin": "1/2",
+        "passing": "6-6",
+        "agari": "34.0",
+        "agariRank": 6,
+        "pop": 4,
+        "odds": "7.3",
+        "stable": "国枝栄 (美浦)",
+        "review": "好位の内から脚を伸ばすも、上位の決め手にやや屈して5着。力は示したが切れ味勝負で一歩及ばず。",
+        "factor": "【評価】立ち回りは安定。1800mへの距離延長がプラスか。",
+        "nextCondition": "中山記念や毎日王冠など1800m戦で有力。",
+        "jockeyComment": null
+      },
+      {
+        "rank": 6,
+        "sortRank": 6,
+        "gate": 11,
+        "name": "ガイアフォース",
+        "sexAge": "牡7",
+        "load": 58,
+        "jockey": "西村淳也",
+        "time": "1:32.0",
+        "margin": "3/4",
+        "passing": "2-2",
+        "agari": "34.3",
+        "agariRank": 8,
+        "pop": 7,
+        "odds": "18.5",
+        "stable": "杉山晴紀 (栗東)",
+        "review": "2番手追走から直線も粘り腰を発揮。ベテランらしい勝負強さを見せたが、最後は瞬発力の差が出た。",
+        "factor": "【評価】積極的な先行策で自分の競馬はできた。",
+        "nextCondition": "安田記念など東京マイルで引き続き警戒。",
+        "jockeyComment": null
+      },
+      {
+        "rank": 7,
+        "sortRank": 7,
+        "gate": 12,
+        "name": "ワールズエンド",
+        "sexAge": "牡4",
+        "load": 58,
+        "jockey": "C.デムーロ",
+        "time": "1:32.1",
+        "margin": "1/2",
+        "passing": "10-10",
+        "agari": "33.9",
+        "agariRank": 5,
+        "pop": 3,
+        "odds": "6.2",
+        "stable": "池添学 (栗東)",
+        "review": "中団から差を詰めたが、勝負どころでスムーズさを欠き7着まで。能力はこんなものではない。",
+        "factor": "【敗因】直線での進路選択と位置取りの差。",
+        "nextCondition": "次走東京新聞杯などで巻き返し必至。",
+        "jockeyComment": null
+      },
+      {
+        "rank": 8,
+        "sortRank": 8,
+        "gate": 15,
+        "name": "エコロブルーム",
+        "sexAge": "牡4",
+        "load": 58,
+        "jockey": "坂井瑠星",
+        "time": "1:32.3",
+        "margin": "1.1/4",
+        "passing": "4-4",
+        "agari": "34.5",
+        "agariRank": 10,
+        "pop": 8,
+        "odds": "24.1",
+        "stable": "加藤征弘 (美浦)",
+        "review": "先行好位から運んだが、直線の坂下で手応えが怪しくなり後退。時計が速すぎた印象。",
+        "factor": "【評価】タフな馬場や稍重ならもっとやれる。",
+        "nextCondition": "次走条件好転で見直し。",
+        "jockeyComment": null
+      },
+      {
+        "rank": 9,
+        "sortRank": 9,
+        "gate": 6,
+        "name": "ピコローズ",
+        "sexAge": "牝4",
+        "load": 56,
+        "jockey": "三浦皇成",
+        "time": "1:32.4",
+        "margin": "1/2",
+        "passing": "9-9",
+        "agari": "34.3",
+        "agariRank": 8,
+        "pop": 9,
+        "odds": "31.0",
+        "stable": "手塚貴久 (美浦)",
+        "review": "中団の内からジリジリと脚を伸ばしたが、G1の壁は厚く9着。前走京成杯オータムH勝利の勢いはあったが瞬発力差。",
+        "factor": "【評価】G3〜G2レベルなら主役を張れる。",
+        "nextCondition": "次走中山牝馬SやターコイズSで狙い目。",
+        "jockeyComment": null
+      },
+      {
+        "rank": 10,
+        "sortRank": 10,
+        "gate": 5,
+        "name": "アドマイヤズーム",
+        "sexAge": "牡3",
+        "load": 57,
+        "jockey": "武豊",
+        "time": "1:32.5",
+        "margin": "クビ",
+        "passing": "1-1",
+        "agari": "35.1",
+        "agariRank": 14,
+        "pop": 10,
+        "odds": "42.0",
+        "stable": "友道康夫 (栗東)",
+        "review": "果敢にハナを奪ってマイペースに持ち込んだが、直線の残り200mで力尽き10着。果敢な逃げは見せ場十分。",
+        "factor": "【評価】3歳馬としてのスピード能力は証明。",
+        "nextCondition": "次走1400m戦や京都金杯で見直し。",
+        "jockeyComment": null
+      },
+      {
+        "rank": 11,
+        "sortRank": 11,
+        "gate": 17,
+        "name": "アンパドゥ",
+        "sexAge": "牡4",
+        "load": 58,
+        "jockey": "岩田望来",
+        "time": "1:32.6",
+        "margin": "1/2",
+        "passing": "14-13",
+        "agari": "34.0",
+        "agariRank": 6,
+        "pop": 11,
+        "odds": "56.4",
+        "stable": "吉村圭司 (栗東)",
+        "review": "外枠から後方に控えて脚を溜めたが、上位の切れ味には届かず11着。",
+        "factor": "【評価】展開が向かなかった。",
+        "nextCondition": "次走自己条件やリステッドで反撃期待。",
+        "jockeyComment": null
+      },
+      {
+        "rank": 12,
+        "sortRank": 12,
+        "gate": 18,
+        "name": "オフトレイル",
+        "sexAge": "牡4",
+        "load": 58,
+        "jockey": "菅原明良",
+        "time": "1:32.7",
+        "margin": "1/2",
+        "passing": "18-18",
+        "agari": "33.6",
+        "agariRank": 3,
+        "pop": 12,
+        "odds": "68.2",
+        "stable": "吉村圭司 (栗東)",
+        "review": "最後方から大外一気の上がり33.6秒を使うも位置取りが絶望的すぎた。",
+        "factor": "【評価】末脚の威力は健在。",
+        "nextCondition": "直線の長いコースで見直し。",
+        "jockeyComment": null
+      },
+      {
+        "rank": 13,
+        "sortRank": 13,
+        "gate": 7,
+        "name": "ココナッツブラウン",
+        "sexAge": "牝5",
+        "load": 56,
+        "jockey": "北村友一",
+        "time": "1:32.8",
+        "margin": "1/2",
+        "passing": "11-12",
+        "agari": "34.4",
+        "agariRank": 9,
+        "pop": 13,
+        "odds": "75.1",
+        "stable": "上原佑紀 (美浦)",
+        "review": "道中は折り合い良く運ぶも、追い出してからの反応が鈍く13着。",
+        "factor": "【評価】牝馬限定重賞なら。",
+        "nextCondition": "次走愛知杯など牝馬重賞へ。",
+        "jockeyComment": null
+      },
+      {
+        "rank": 14,
+        "sortRank": 14,
+        "gate": 16,
+        "name": "スズハローム",
+        "sexAge": "牡5",
+        "load": 58,
+        "jockey": "藤懸貴志",
+        "time": "1:33.0",
+        "margin": "1.1/4",
+        "passing": "16-16",
+        "agari": "34.2",
+        "agariRank": 8,
+        "pop": 14,
+        "odds": "89.3",
+        "stable": "杉山晴紀 (栗東)",
+        "review": "後方追走のまま見せ場を作れず14着。マイルのG1ペースに戸惑った印象。",
+        "factor": "【評価】1400m戦が適距離。",
+        "nextCondition": "次走阪急杯など短距離重賞へ。",
+        "jockeyComment": null
+      },
+      {
+        "rank": 15,
+        "sortRank": 15,
+        "gate": 9,
+        "name": "ジューンテイク",
+        "sexAge": "牡4",
+        "load": 58,
+        "jockey": "川田将雅",
+        "time": "1:33.1",
+        "margin": "1/2",
+        "passing": "7-8",
+        "agari": "35.0",
+        "agariRank": 13,
+        "pop": 15,
+        "odds": "95.0",
+        "stable": "武英智 (栗東)",
+        "review": "川田騎手が好位に押し上げるも、勝負どころで早々に手応えが苦しくなり15着。",
+        "factor": "【敗因】マイルの高速決着への適性不足。",
+        "nextCondition": "距離延長で2000m戦へ。",
+        "jockeyComment": null
+      },
+      {
+        "rank": 16,
+        "sortRank": 16,
+        "gate": 10,
+        "name": "ウォーターリヒト",
+        "sexAge": "牡4",
+        "load": 58,
+        "jockey": "幸英明",
+        "time": "1:33.3",
+        "margin": "1.1/4",
+        "passing": "15-15",
+        "agari": "34.7",
+        "agariRank": 11,
+        "pop": 16,
+        "odds": "112.5",
+        "stable": "河内洋 (栗東)",
+        "review": "後方から追い上げるも上位との差は詰まらず16着。",
+        "factor": "【評価】地力強化が必要。",
+        "nextCondition": "オープン特別で見直し。",
+        "jockeyComment": null
+      },
+      {
+        "rank": 17,
+        "sortRank": 17,
+        "gate": 13,
+        "name": "レザベーション",
+        "sexAge": "牡4",
+        "load": 58,
+        "jockey": "田口貫太",
+        "time": "1:33.5",
+        "margin": "1.1/4",
+        "passing": "13-14",
+        "agari": "35.1",
+        "agariRank": 14,
+        "pop": 17,
+        "odds": "145.0",
+        "stable": "四位洋文 (栗東)",
+        "review": "見せ場なく後方のまま17着敗退。",
+        "factor": "【評価】G1では家賃が高かった。",
+        "nextCondition": "自己条件で巻き返し図る。",
+        "jockeyComment": null
+      },
+      {
+        "rank": 18,
+        "sortRank": 18,
+        "gate": 3,
+        "name": "ドラゴンブースト",
+        "sexAge": "牡3",
+        "load": 57,
+        "jockey": "浜中俊",
+        "time": "1:34.0",
+        "margin": "3",
+        "passing": "17-17",
+        "agari": "35.5",
+        "agariRank": 15,
+        "pop": 18,
+        "odds": "198.0",
+        "stable": "藤野健太 (栗東)",
+        "review": "終始追走に苦しみ直線も伸びを欠いて最下位。経験を糧に。",
+        "factor": "【評価】まだこれからの馬。",
+        "nextCondition": "自己条件に戻って出直し。",
         "jockeyComment": null
       }
     ]
@@ -24570,7 +25409,7 @@ function hydratePayouts(race) {
       let lastMainView = 'calendar';
       let predictionSortType = 'gate';
       let activeSheetGate = null;
-      let currentPredictionRaceId = '18'; // デフォルトは次走エリ女
+      let currentPredictionRaceId = '19'; // デフォルトは次走ジャパンカップ
 
       let oddsMode = 'estimated'; // 'estimated' または 'live'
       let oddsAutoRefreshTimer = null;
@@ -24594,6 +25433,7 @@ function hydratePayouts(race) {
 
       function scrollToSection(secId) {
         if (typeof document === 'undefined') return;
+        if (secId === 'sec-memo') secId = 'pred-section-user-memo';
         const targetEl = document.getElementById(secId);
         if (targetEl) {
           targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -24616,7 +25456,7 @@ function hydratePayouts(race) {
 
         // If URL has lingering #sec- anchor, normalize so reload never jumps down to memo/sections
         if (hash.startsWith('#sec-')) {
-          hash = '#prediction-' + (currentPredictionRaceId || '18');
+          hash = '#prediction-' + (currentPredictionRaceId || '19');
           if (window.history && window.history.replaceState) {
             window.history.replaceState(null, '', hash);
           }
@@ -24642,7 +25482,7 @@ function hydratePayouts(race) {
         if (typeof localStorage !== 'undefined') {
           const saved = localStorage.getItem('keiba_active_route');
           if (saved && saved.startsWith('#sec-')) {
-            localStorage.setItem('keiba_active_route', '#prediction-' + (currentPredictionRaceId || '18'));
+            localStorage.setItem('keiba_active_route', '#prediction-' + (currentPredictionRaceId || '19'));
           }
         }
 
@@ -24668,7 +25508,7 @@ function hydratePayouts(race) {
               currentPredictionRaceId = targetId;
             }
           }
-          const cleanRoute = '#prediction-' + (currentPredictionRaceId || '18');
+          const cleanRoute = '#prediction-' + (currentPredictionRaceId || '19');
           if (typeof localStorage !== 'undefined') {
             localStorage.setItem('keiba_active_route', cleanRoute);
             localStorage.setItem('keiba_last_main_view', 'prediction');
@@ -25200,13 +26040,13 @@ function hydratePayouts(race) {
         if (!container) return;
         
         const targetRaces = [
-          { id: '18', label: '⚡ マイルCS (11/22)', badge: '枠順確定', isNext: true },
-          { id: '19', label: '🇯🇵 ジャパンC (11/29)', badge: '次週', isNext: true },
+          { id: '19', label: '🇯🇵 ジャパンC (11/29)', badge: '今週', isNext: true },
           { id: '20', label: '🏜️ チャンピオンズC (12/6)', badge: 'ダート頂上', isNext: true },
           { id: '21', label: '🌸 阪神JF (12/13)', badge: '2歳女王', isNext: true },
           { id: '22', label: '🏇 朝日杯FS (12/20)', badge: '2歳牡馬', isNext: true },
           { id: '23', label: '⭐ ホープフルS (12/26)', badge: '登竜門', isNext: true },
           { id: '24', label: '💎 有馬記念 (12/27)', badge: 'グランプリ', isNext: true },
+          { id: '18', label: '⚡ マイルCS (11/22)', badge: '結果回顧', isNext: false },
           { id: '17', label: '👑 エリザベス女王杯', badge: '結果回顧', isNext: false },
           { id: '16', label: '📜 天皇賞（秋）', badge: '結果回顧', isNext: false }
         ];
@@ -25349,6 +26189,11 @@ function hydratePayouts(race) {
         const container = document.getElementById('pred-ranking-container');
         if (!container) return;
 
+        const raceObj = (typeof G1_RACES !== 'undefined') ? G1_RACES.find(r => r.id === currentPredictionRaceId) : null;
+        const raceNameDisp = raceObj ? raceObj.name : 'G1';
+        const raceLocDisp = raceObj ? `${raceObj.location}コース` : 'コース';
+        const raceCourseDisp = raceObj ? raceObj.course : '距離';
+
         const currentPred = (PREDICTION_DATA.races && PREDICTION_DATA.races[currentPredictionRaceId]) 
           ? PREDICTION_DATA.races[currentPredictionRaceId] 
           : PREDICTION_DATA;
@@ -25359,7 +26204,38 @@ function hydratePayouts(race) {
           return;
         }
 
-        let list = [...rawList];
+        // Normalize item fields safely with fallbacks
+        let list = rawList.map((item, idx) => {
+          const sc = item.scores || item.factors || {};
+          const trainingScore = sc.training || sc.workout || 80;
+          const jockeyScore = sc.jockey || 80;
+          const courseScore = sc.course || 80;
+          const distanceScore = sc.distance || 80;
+          const prevRaceScore = sc.prevRace || sc.lastRace || 80;
+          const pedigreeScore = sc.pedigree || 80;
+          const compScore = item.compositeScore || item.totalScore || 80;
+          const rankVal = item.rank || (idx + 1);
+          const defaultMark = rankVal === 1 ? '◎' : (rankVal === 2 ? '○' : (rankVal === 3 ? '▲' : (rankVal <= 5 ? '△' : (rankVal === 6 ? '☆' : ''))));
+
+          return {
+            ...item,
+            rank: rankVal,
+            compositeScore: compScore,
+            scores: {
+              training: trainingScore,
+              jockey: jockeyScore,
+              course: courseScore,
+              distance: distanceScore,
+              prevRace: prevRaceScore,
+              pedigree: pedigreeScore
+            },
+            strengths: item.strengths || item.comment || '-',
+            concerns: item.concerns || '-',
+            grade: item.grade || (compScore >= 95 ? 'SS' : (compScore >= 90 ? 'S' : (compScore >= 80 ? 'A' : (compScore >= 70 ? 'B' : 'C')))),
+            gradeTag: item.gradeTag || (rankVal === 1 ? '本命最有力' : (rankVal === 2 ? '対抗筆頭' : (rankVal === 3 ? '単穴警戒' : (rankVal <= 5 ? '連下候補' : '大穴警戒')))),
+            recommendedMark: item.recommendedMark || defaultMark
+          };
+        });
 
         if (currentRankingSort === 'training') {
           list.sort((a, b) => b.scores.training - a.scores.training);
@@ -25570,9 +26446,9 @@ function hydratePayouts(race) {
                   <span style="font-size: 11px; font-weight: 700; color: var(--gold); background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.3); padding: 2px 8px; border-radius: 4px;">AI×データ多変量解析</span>
                   <span style="font-size: 11px; color: var(--text-muted);">全18頭 徹底スコアリング</span>
                 </div>
-                <h2>🏆 マイルCS 好走期待度ランキング</h2>
+                <h2>🏆 ${raceNameDisp} 好走期待度ランキング</h2>
                 <div class="ranking-subtitle">
-                  調教状態 (20%) ・ 鞍上力 (20%) ・ 京都コース適性 (15%) ・ マイル適性 (15%) ・ 前走評価 (15%) ・ 血統背景 (15%)
+                  調教状態 (20%) ・ 鞍上力 (20%) ・ ${raceLocDisp}適性 (15%) ・ ${raceCourseDisp}適性 (15%) ・ 前走評価 (15%) ・ 血統背景 (15%)
                 </div>
               </div>
 
@@ -25726,18 +26602,18 @@ function hydratePayouts(race) {
           localStorage.setItem('keiba_pred_race_id', raceId);
         }
         
-        initOddsState();
-        initWeightState();
-        renderPredictionRaceSwitcher();
-        renderPredictionHeader();
-        renderContenderRanking();
-        renderNetkeibaHorseList();
-        renderPredictionOccult();
-        renderPredictionMemo();
-        updateMarksUI();
-        updateOddsControlUI();
-        updateWeightControlUI();
-        refreshIcons();
+        try { initOddsState(); } catch(e) { console.error('initOddsState error:', e); }
+        try { initWeightState(); } catch(e) { console.error('initWeightState error:', e); }
+        try { renderPredictionRaceSwitcher(); } catch(e) { console.error('renderPredictionRaceSwitcher error:', e); }
+        try { renderPredictionHeader(); } catch(e) { console.error('renderPredictionHeader error:', e); }
+        try { renderContenderRanking(); } catch(e) { console.error('renderContenderRanking error:', e); }
+        try { renderNetkeibaHorseList(); } catch(e) { console.error('renderNetkeibaHorseList error:', e); }
+        try { renderPredictionOccult(); } catch(e) { console.error('renderPredictionOccult error:', e); }
+        try { renderPredictionMemo(); } catch(e) { console.error('renderPredictionMemo error:', e); }
+        try { updateMarksUI(); } catch(e) { console.error('updateMarksUI error:', e); }
+        try { updateOddsControlUI(); } catch(e) { console.error('updateOddsControlUI error:', e); }
+        try { updateWeightControlUI(); } catch(e) { console.error('updateWeightControlUI error:', e); }
+        try { refreshIcons(); } catch(e) {}
 
         if (window.history && window.history.replaceState) {
           window.history.replaceState({ view: 'prediction', raceId: currentPredictionRaceId }, '', '#prediction-' + currentPredictionRaceId);
@@ -25751,21 +26627,21 @@ function hydratePayouts(race) {
 
         if (!currentPredictionRaceId || !PREDICTION_DATA.races || !PREDICTION_DATA.races[currentPredictionRaceId]) {
           const nextRace = getNextUpcomingRace();
-          currentPredictionRaceId = (nextRace && PREDICTION_DATA.races && PREDICTION_DATA.races[nextRace.id]) ? nextRace.id : '18';
+          currentPredictionRaceId = (nextRace && PREDICTION_DATA.races && PREDICTION_DATA.races[nextRace.id]) ? nextRace.id : '19';
         }
 
-        initOddsState();
-        initWeightState();
-        renderPredictionRaceSwitcher();
-        renderPredictionHeader();
-        renderContenderRanking();
-        renderNetkeibaHorseList();
-        renderPredictionOccult();
-        renderPredictionMemo();
-        updateMarksUI();
-        updateOddsControlUI();
-        updateWeightControlUI();
-        refreshIcons();
+        try { initOddsState(); } catch(e) { console.error('initOddsState error:', e); }
+        try { initWeightState(); } catch(e) { console.error('initWeightState error:', e); }
+        try { renderPredictionRaceSwitcher(); } catch(e) { console.error('renderPredictionRaceSwitcher error:', e); }
+        try { renderPredictionHeader(); } catch(e) { console.error('renderPredictionHeader error:', e); }
+        try { renderContenderRanking(); } catch(e) { console.error('renderContenderRanking error:', e); }
+        try { renderNetkeibaHorseList(); } catch(e) { console.error('renderNetkeibaHorseList error:', e); }
+        try { renderPredictionOccult(); } catch(e) { console.error('renderPredictionOccult error:', e); }
+        try { renderPredictionMemo(); } catch(e) { console.error('renderPredictionMemo error:', e); }
+        try { updateMarksUI(); } catch(e) { console.error('updateMarksUI error:', e); }
+        try { updateOddsControlUI(); } catch(e) { console.error('updateOddsControlUI error:', e); }
+        try { updateWeightControlUI(); } catch(e) { console.error('updateWeightControlUI error:', e); }
+        try { refreshIcons(); } catch(e) {}
       }
 
       // NetKeiba完全準拠 リストレンダラー
@@ -26315,7 +27191,7 @@ function hydratePayouts(race) {
       // ========================================================
       // レース回顧＆次回への参考データ ロジック
       // ========================================================
-      let currentReviewRaceId = '17';
+      let currentReviewRaceId = '18';
       let currentReviewFilter = 'all';
 
       function renderReviewPills() {
@@ -26324,6 +27200,7 @@ function hydratePayouts(race) {
         if (!autumnContainer || !springContainer) return;
 
         const autumnRaces = [
+          { id: '18', name: 'マイルCS', num: '第43回' },
           { id: '17', name: 'エリザベス女王杯', num: '第51回' },
           { id: '16', name: '天皇賞（秋）', num: '第172回' },
           { id: '15', name: '菊花賞', num: '第87回' },
@@ -26639,7 +27516,11 @@ function hydratePayouts(race) {
                     <span class="review-meta-tag"><i data-lucide="map-pin" style="width:12px;height:12px;display:inline;margin-right:4px;"></i>${data.venue} ${data.course}</span>
                     <span class="review-meta-tag">馬場: <b>${data.trackCondition}</b> (${data.weather})</span>
                     <span class="review-meta-tag">クッション値: <b>${data.cushionValue}</b></span>
-                    <span class="review-meta-tag">レース評価: <b style="color:#fbbf24;">${'★'*Math.floor(data.raceLevel.rating)} ${data.raceLevel.label}</b></span>
+                    ${(() => {
+                      const lvl = (typeof data.raceLevel === 'object' && data.raceLevel) ? data.raceLevel : { rating: 5, label: String(data.raceLevel || 'S級') };
+                      const count = Math.min(5, Math.max(1, Math.floor(lvl.rating || 5)));
+                      return `<span class="review-meta-tag">レース評価: <b style="color:#fbbf24;">${'★'.repeat(count)} ${lvl.label}</b></span>`;
+                    })()}
                   </div>
                 </div>
 

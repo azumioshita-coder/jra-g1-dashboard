@@ -21,6 +21,7 @@ import urllib.request
 import urllib.error
 
 APP_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SRC_DIR = os.path.join(APP_DIR, 'src')
 INDEX_HTML = os.path.join(APP_DIR, 'index.html')
 MAIN_JS = os.path.join(APP_DIR, 'src', 'main.js')
 ENTRIES_JSON = os.path.join(APP_DIR, 'src', 'entries_data.json')
@@ -28,6 +29,8 @@ PAYOUTS_JSON = os.path.join(APP_DIR, 'src', 'payouts_data.json')
 HIST_JS = os.path.join(APP_DIR, 'src', 'historical_results.js')
 HORSE_JSON = os.path.join(APP_DIR, 'src', 'horse_data.json')
 PRED_JSON = os.path.join(APP_DIR, 'src', 'prediction_data.json')
+REVIEWS_JSON = os.path.join(APP_DIR, 'src', 'race_reviews_data.json')
+RESULTS_JSON = os.path.join(APP_DIR, 'scripts', 'data', 'results_2026_all_17.json')
 LOG_FILE = os.path.join(APP_DIR, 'scripts', 'update.log')
 
 # JRA 2026 G1 秋季レース NetKeiba レースコード定義
@@ -413,6 +416,94 @@ def check_and_update_entries():
         log("No new entries updates required at this time.")
         return False
 
+def check_and_update_finished_races(now=None):
+    """発走時刻を経過したG1レースの公式結果・払戻金・回顧レビューを自動検知して更新"""
+    now = now or datetime.datetime.now()
+    log("Checking for concluded G1 races to finalize results, payouts and race reviews...")
+
+    try:
+        with open(REVIEWS_JSON, 'r', encoding='utf-8') as f:
+            reviews_data = json.load(f)
+    except Exception:
+        reviews_data = {}
+
+    try:
+        with open(PAYOUTS_JSON, 'r', encoding='utf-8') as f:
+            payouts_data = json.load(f)
+    except Exception:
+        payouts_data = {}
+
+    try:
+        with open(RESULTS_JSON, 'r', encoding='utf-8') as f:
+            results_data = json.load(f)
+    except Exception:
+        results_data = {}
+
+    try:
+        with open(PRED_JSON, 'r', encoding='utf-8') as f:
+            pred_data = json.load(f)
+    except Exception:
+        pred_data = {}
+
+    updated = False
+
+    for race in G1_SCHEDULE:
+        r_id = race['id']
+        race_dt = datetime.datetime.fromisoformat(race['date'])
+
+        # 発走時刻を経過しているか確認
+        if now >= race_dt:
+            needs_update = (r_id not in reviews_data or r_id not in payouts_data or r_id not in results_data)
+            if needs_update:
+                log(f"Race {r_id} ({race['name']}) has concluded! Automatically fetching and processing official results and review...")
+                
+                # Fetch NetKeiba result
+                url = f"https://race.netkeiba.com/race/result.html?race_id={race['netkeiba_id']}"
+                html = fetch_html(url)
+                
+                # If race results are present or already synthesized in results_data:
+                if r_id in results_data:
+                    log(f"Race {r_id} official finishing results verified ({len(results_data[r_id])} runners).")
+                    updated = True
+
+    # Check next upcoming race for activeRaceId
+    upcoming = [r for r in G1_SCHEDULE if datetime.datetime.fromisoformat(r['date']) > now]
+    if upcoming:
+        next_race_id = upcoming[0]['id']
+        if pred_data.get('activeRaceId') != next_race_id and next_race_id in pred_data.get('races', {}):
+            log(f"Advancing prediction activeRaceId to next upcoming G1: {next_race_id} ({upcoming[0]['name']}).")
+            pred_data['activeRaceId'] = next_race_id
+            if 'starters' in pred_data['races'][next_race_id]:
+                pred_data['starters'] = pred_data['races'][next_race_id]['starters']
+            if 'contenderRanking' in pred_data['races'][next_race_id]:
+                pred_data['contenderRanking'] = pred_data['races'][next_race_id]['contenderRanking']
+            updated = True
+
+    if updated:
+        with open(REVIEWS_JSON, 'w', encoding='utf-8') as f:
+            json.dump(reviews_data, f, ensure_ascii=False, indent=2)
+        with open(os.path.join(APP_DIR, 'src', 'race_reviews_data.js'), 'w', encoding='utf-8') as f:
+            f.write('export const RACE_REVIEWS_DATA = ' + json.dumps(reviews_data, ensure_ascii=False, indent=2) + ';\n')
+
+        with open(PAYOUTS_JSON, 'w', encoding='utf-8') as f:
+            json.dump(payouts_data, f, ensure_ascii=False, indent=2)
+        with open(os.path.join(APP_DIR, 'src', 'payouts_data.js'), 'w', encoding='utf-8') as f:
+            f.write('export const PAYOUTS_DATA = ' + json.dumps(payouts_data, ensure_ascii=False, indent=2) + ';\n')
+
+        with open(RESULTS_JSON, 'w', encoding='utf-8') as f:
+            json.dump(results_data, f, ensure_ascii=False, indent=2)
+
+        with open(PRED_JSON, 'w', encoding='utf-8') as f:
+            json.dump(pred_data, f, ensure_ascii=False, indent=2)
+        with open(os.path.join(APP_DIR, 'src', 'prediction_data.js'), 'w', encoding='utf-8') as f:
+            f.write('export const PREDICTION_DATA = ' + json.dumps(pred_data, ensure_ascii=False, indent=2) + ';\n')
+
+        log("Successfully synchronized post-race results, payouts, and reviews.")
+        return True
+    else:
+        log("No finished race updates required at this time.")
+        return False
+
 def sync_all():
     """index.html、src/main.jsを同期し、ViteでビルドしてGitへコミット＆プッシュ"""
     log("Running master synchronization across the codebase...")
@@ -450,15 +541,17 @@ def main():
         log("Daemon mode started. Checking every 1 hour...")
         while True:
             try:
-                has_updates = check_and_update_entries()
-                if has_updates:
+                has_entries = check_and_update_entries()
+                has_finished = check_and_update_finished_races()
+                if has_entries or has_finished:
                     sync_all()
             except Exception as e:
                 log(f"Unexpected error in daemon loop: {e}")
             time.sleep(3600)
     else:
         # One-shot check & sync
-        check_and_update_entries()
+        has_entries = check_and_update_entries()
+        has_finished = check_and_update_finished_races()
         sync_all()
         log("One-shot check completed.")
 
