@@ -148,10 +148,10 @@ g1_18_finished = """        {
           trackCondition: '良',
           cushionValue: '9.4',
           type: 'mile',
-          winner: 'エンブロイダリー', winnerJockey: 'C.ルメール', winnerGate: 2, time: '1:31.4',
-          second: 'ロデオドライブ', secondJockey: 'J.モレイラ', secondGate: 8,
-          third: 'エルデナリ', thirdJockey: 'M.バルザローナ', thirdGate: 1,
-          payouts: { win: 280, trifecta: 9280 }
+          winner: 'エルデナリ', winnerJockey: 'M.バルザローナ', winnerGate: 1, time: '1:31.8',
+          second: 'エンブロイダリー', secondJockey: 'C.ルメール', secondGate: 2,
+          third: 'スターアニス', thirdJockey: '松山弘平', thirdGate: 14,
+          payouts: { win: 740, trifecta: 24610 }
         }"""
 
 # Substitute autumn races 13 to 18 in g1_races_raw
