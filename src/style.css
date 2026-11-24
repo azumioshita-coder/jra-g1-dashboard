@@ -4352,3 +4352,313 @@ html.route-prediction .nav-item[data-target="prediction"] {
     max-width: 160px;
   }
 }
+
+/* ========================================================
+   Contender Ranking vs Finish Deviation Analysis in Reviews
+   ======================================================== */
+.contender-deviation-card {
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.05) 0%, rgba(30, 41, 59, 0.85) 100%) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.deviation-header-pill {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.deviation-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.dev-kpi-card {
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dev-kpi-card.highlight-match {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(15, 23, 42, 0.6));
+  border-color: rgba(245, 158, 11, 0.35);
+}
+
+.dev-kpi-card.highlight-surge {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(15, 23, 42, 0.6));
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.dev-kpi-card.highlight-drop {
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.12), rgba(15, 23, 42, 0.6));
+  border-color: rgba(244, 63, 94, 0.35);
+}
+
+.dev-kpi-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.highlight-match .dev-kpi-label { color: #fbbf24; }
+.highlight-surge .dev-kpi-label { color: #34d399; }
+.highlight-drop .dev-kpi-label { color: #fb7185; }
+
+.dev-kpi-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.dev-kpi-sub {
+  font-size: 12px;
+  color: #cbd5e1;
+  line-height: 1.45;
+}
+
+.deviation-control-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+  background: rgba(15, 23, 42, 0.4);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dev-control-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.dev-sort-btn-group {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.btn-dev-sort {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #94a3b8;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-dev-sort:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-dev-sort.active {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: #38bdf8;
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+.deviation-table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.deviation-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  color: #cbd5e1;
+  min-width: 720px;
+}
+
+.deviation-table thead {
+  background: rgba(15, 23, 42, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.deviation-table th {
+  padding: 10px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.deviation-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.15s;
+}
+
+.deviation-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.deviation-table td {
+  padding: 10px 12px;
+  vertical-align: middle;
+}
+
+.dev-rank-cell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.dev-rank-num {
+  font-weight: 800;
+  font-size: 13px;
+  color: #cbd5e1;
+  white-space: nowrap;
+  min-width: 28px;
+}
+
+.dev-rank-num.dev-num-1 { color: #fbbf24; font-size: 14px; font-weight: 900; }
+.dev-rank-num.dev-num-2 { color: #e2e8f0; font-size: 14px; font-weight: 900; }
+.dev-rank-num.dev-num-3 { color: #fb923c; font-size: 14px; font-weight: 900; }
+
+.dev-mark-pill {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #fbbf24;
+}
+
+.dev-score-pill {
+  font-size: 11px;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.dev-horse-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dev-horse-name {
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.dev-jockey-text {
+  font-size: 11.5px;
+  color: #94a3b8;
+  display: block;
+}
+
+.dev-pop-text {
+  font-size: 11.5px;
+  color: #cbd5e1;
+  font-weight: 700;
+  display: block;
+}
+
+.dev-odds-text {
+  font-size: 10.5px;
+  color: #94a3b8;
+  display: block;
+}
+
+/* Deviation Badges */
+.dev-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11.5px;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.dev-badge.super-surge {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(5, 150, 105, 0.45));
+  border: 1px solid #10b981;
+  color: #34d399;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.3);
+}
+
+.dev-badge.surge {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #6ee7b7;
+}
+
+.dev-badge.match {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fde68a;
+}
+
+.dev-badge.slight-drop {
+  background: rgba(251, 146, 60, 0.15);
+  border: 1px solid rgba(251, 146, 60, 0.4);
+  color: #fdba74;
+}
+
+.dev-badge.drop {
+  background: rgba(244, 63, 94, 0.15);
+  border: 1px solid rgba(244, 63, 94, 0.4);
+  color: #fda4af;
+}
+
+.dev-factor-text {
+  font-size: 12px;
+  color: #cbd5e1;
+  line-height: 1.45;
+}
+
+/* In-review horse card contender tag */
+.horse-review-contender-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.dev-inline-label {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.dev-inline-rank {
+  color: #f1f5f9;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.dev-inline-arrow {
+  color: #64748b;
+  font-size: 10px;
+}
+
+.review-rank-badge.mini {
+  padding: 2px 6px;
+  font-size: 11px;
+  min-width: 26px;
+}

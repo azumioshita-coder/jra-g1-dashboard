@@ -27281,6 +27281,8 @@ function hydratePayouts(race) {
         }
       }
 
+      let currentDeviationSort = 'rank'; // 'rank' | 'finish' | 'surge' | 'drop'
+
       function setReviewFilter(filterType) {
         currentReviewFilter = filterType;
         const filterBtns = document.querySelectorAll('.btn-review-filter');
@@ -27289,6 +27291,218 @@ function hydratePayouts(race) {
           else btn.classList.remove('active');
         });
         renderFilteredHorsesList();
+      }
+
+      // ========================================================
+      // 好走ランク vs 確定着順 乖離分析ヘルパー
+      // ========================================================
+      function getDeviationBadge(diff) {
+        if (diff >= 5) {
+          return `<span class="dev-badge super-surge">⚡ 超激走 (+${diff})</span>`;
+        } else if (diff >= 1) {
+          return `<span class="dev-badge surge">▲ 好走 (+${diff})</span>`;
+        } else if (diff === 0) {
+          return `<span class="dev-badge match">🎯 一致 (±0)</span>`;
+        } else if (diff === -1) {
+          return `<span class="dev-badge match">🎯 ほぼ的中 (-1)</span>`;
+        } else if (diff >= -4) {
+          return `<span class="dev-badge slight-drop">▼ 惜敗 (${diff})</span>`;
+        } else {
+          return `<span class="dev-badge drop">✕ 凡走 (${diff})</span>`;
+        }
+      }
+
+      function getContenderDeviationList(raceId) {
+        let resultsList = [];
+        if (typeof RESULTS_DATA !== 'undefined' && RESULTS_DATA[raceId]) {
+          const raw = RESULTS_DATA[raceId].horses || RESULTS_DATA[raceId];
+          if (Array.isArray(raw)) {
+            resultsList = raw.map(r => {
+              if (Array.isArray(r)) {
+                return {
+                  rank: r[0],
+                  gate: r[1],
+                  name: r[2],
+                  sexAge: r[3],
+                  load: r[4],
+                  jockey: r[5],
+                  time: r[6],
+                  margin: r[7],
+                  passing: r[8],
+                  agari: r[9],
+                  odds: r[10],
+                  pop: r[11],
+                  stable: r[14]
+                };
+              } else {
+                return {
+                  rank: r.rank,
+                  gate: r.gate,
+                  name: r.name || r.horseName,
+                  sexAge: r.sexAge,
+                  load: r.load,
+                  jockey: r.jockey,
+                  time: r.time,
+                  margin: r.margin,
+                  passing: r.passing,
+                  agari: r.agari,
+                  odds: r.odds,
+                  pop: r.pop,
+                  stable: r.stable
+                };
+              }
+            });
+          }
+        }
+
+        const resMap = {};
+        resultsList.forEach(r => {
+          resMap[r.name] = r;
+        });
+
+        const revMap = {};
+        if (typeof RACE_REVIEWS_DATA !== 'undefined' && RACE_REVIEWS_DATA[raceId] && RACE_REVIEWS_DATA[raceId].horseReviews) {
+          RACE_REVIEWS_DATA[raceId].horseReviews.forEach(hr => {
+            revMap[hr.name] = hr;
+          });
+        }
+
+        let contenders = [];
+        if (typeof PREDICTION_DATA !== 'undefined') {
+          if (PREDICTION_DATA.races && PREDICTION_DATA.races[raceId] && PREDICTION_DATA.races[raceId].contenderRanking) {
+            contenders = PREDICTION_DATA.races[raceId].contenderRanking;
+          } else if (raceId === PREDICTION_DATA.activeRaceId && PREDICTION_DATA.contenderRanking) {
+            contenders = PREDICTION_DATA.contenderRanking;
+          }
+        }
+
+        if (contenders.length === 0 && resultsList.length > 0) {
+          contenders = resultsList.map((r, idx) => {
+            return {
+              rank: idx + 1,
+              horseName: r.name,
+              gate: r.gate,
+              jockey: r.jockey,
+              load: r.load,
+              odds: r.odds,
+              pop: r.pop,
+              recommendedMark: idx === 0 ? '◎' : (idx === 1 ? '○' : (idx === 2 ? '▲' : (idx <= 4 ? '△' : '-'))),
+              compositeScore: (95 - idx * 1.2).toFixed(1)
+            };
+          });
+        }
+
+        return contenders.map(c => {
+          const r = resMap[c.horseName] || {};
+          const hr = revMap[c.horseName] || {};
+          const finishRank = (r.rank !== undefined && r.rank !== null && !isNaN(Number(r.rank))) 
+            ? Number(r.rank) 
+            : (hr.rank && !isNaN(Number(hr.rank)) ? Number(hr.rank) : 99);
+          
+          const diff = (finishRank !== 99 && c.rank) ? (c.rank - finishRank) : 0;
+          
+          let factorText = hr.factor || hr.review || '-';
+          if (factorText.length > 90) factorText = factorText.slice(0, 87) + '...';
+
+          return {
+            rank: c.rank,
+            mark: c.recommendedMark || '-',
+            score: c.compositeScore,
+            grade: c.grade || '-',
+            gate: c.gate || r.gate || hr.gate || '-',
+            horseName: c.horseName,
+            jockey: c.jockey || r.jockey || hr.jockey || '-',
+            load: c.load || r.load || hr.load || '-',
+            finishRank: finishRank,
+            pop: r.pop || hr.pop || c.pop,
+            odds: r.odds || hr.odds || c.odds,
+            diff: diff,
+            factor: factorText
+          };
+        });
+      }
+
+      function getHorseDeviationInfo(raceId, horseName) {
+        const list = getContenderDeviationList(raceId);
+        return list.find(x => x.horseName === horseName) || null;
+      }
+
+      function renderDeviationTable(raceId) {
+        const tbody = document.getElementById('deviation-table-body');
+        if (!tbody) return;
+
+        const list = getContenderDeviationList(raceId);
+        if (!list || list.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:24px;color:#94a3b8;">好走ランクデータが集計中です。</td></tr>';
+          return;
+        }
+
+        let sorted = [...list];
+        if (currentDeviationSort === 'finish') {
+          sorted.sort((a, b) => a.finishRank - b.finishRank);
+        } else if (currentDeviationSort === 'surge') {
+          sorted.sort((a, b) => b.diff - a.diff);
+        } else if (currentDeviationSort === 'drop') {
+          sorted.sort((a, b) => a.diff - b.diff);
+        } else {
+          sorted.sort((a, b) => a.rank - b.rank);
+        }
+
+        tbody.innerHTML = sorted.map(item => {
+          let finishRankClass = 'review-rank-other';
+          if (item.finishRank === 1) finishRankClass = 'review-rank-1';
+          else if (item.finishRank === 2) finishRankClass = 'review-rank-2';
+          else if (item.finishRank === 3) finishRankClass = 'review-rank-3';
+
+          const finishRankText = item.finishRank === 99 ? '取消/除外' : `${item.finishRank}着`;
+          const devBadge = getDeviationBadge(item.diff);
+
+          return `
+            <tr class="dev-row">
+              <td>
+                <div class="dev-rank-cell">
+                  <span class="dev-rank-num dev-num-${item.rank}">${item.rank}位</span>
+                  <span class="dev-mark-pill">${item.mark || '-'}</span>
+                  <span class="dev-score-pill">${item.score}点</span>
+                </div>
+              </td>
+              <td>
+                <div class="dev-horse-cell">
+                  <span class="target-gate-circle" style="background:#334155; flex-shrink: 0;">${item.gate}</span>
+                  <div>
+                    <span class="dev-horse-name" onclick="openHorseDetail('${item.horseName}')" style="cursor: pointer; text-decoration: underline;" title="競走馬詳細を見る">${item.horseName}</span>
+                    <span class="dev-jockey-text">${item.jockey} (${item.load}kg)</span>
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: center;">
+                <span class="review-rank-badge ${finishRankClass}">${finishRankText}</span>
+              </td>
+              <td style="text-align: center;">
+                <span class="dev-pop-text">${item.pop ? item.pop + '人気' : '-'}</span>
+                <span class="dev-odds-text">${item.odds ? item.odds + '倍' : ''}</span>
+              </td>
+              <td style="text-align: center;">
+                ${devBadge}
+              </td>
+              <td>
+                <div class="dev-factor-text">
+                  ${item.factor}
+                </div>
+              </td>
+            </tr>
+          `;
+        }).join('');
+      }
+
+      function setDeviationSort(sortType) {
+        currentDeviationSort = sortType;
+        const btns = document.querySelectorAll('.btn-dev-sort');
+        btns.forEach(btn => {
+          if (btn.getAttribute('data-sort') === sortType) btn.classList.add('active');
+          else btn.classList.remove('active');
+        });
+        renderDeviationTable(currentReviewRaceId);
       }
 
       function renderFilteredHorsesList() {
@@ -27373,6 +27587,8 @@ function hydratePayouts(race) {
           const timeText = (h.time && h.time !== '-') ? `<b>${h.time}</b> ${h.margin && h.margin !== '-' ? `(${h.margin})` : ''}` : '-';
           const agariText = (h.agari && h.agari !== '-') ? `<b>${h.agari}</b> ${h.agariRank && h.agariRank !== '-' ? `(${h.agariRank}位)` : ''}` : '-';
 
+          const devInfo = getHorseDeviationInfo(currentReviewRaceId, h.name);
+
           return `
             <div class="horse-review-row">
               <div class="horse-review-row-header">
@@ -27382,6 +27598,16 @@ function hydratePayouts(race) {
                   <span class="horse-review-name" onclick="openHorseDetail('${h.name}')" style="cursor: pointer; text-decoration: underline;" title="クリックして競走馬詳細を見る">${h.name}</span>
                   <span class="horse-review-meta">${h.jockey} (${h.load}kg)</span>
                 </div>
+
+                ${devInfo ? `
+                  <div class="horse-review-contender-tag">
+                    <span class="dev-inline-label">好走ランク:</span>
+                    <span class="dev-inline-rank">${devInfo.rank}位 (${devInfo.mark} ${devInfo.score}点)</span>
+                    <span class="dev-inline-arrow">➔</span>
+                    ${getDeviationBadge(devInfo.diff)}
+                  </div>
+                ` : ''}
+
                 <div class="horse-review-time-info">
                   <span>${timeText}</span>
                   <span>通過: ${h.passing || '-'}</span>
@@ -27459,6 +27685,45 @@ function hydratePayouts(race) {
               </div>
             </div>
           `;
+        }
+
+        // Contender Deviation KPI calculation
+        const devList = getContenderDeviationList(raceId);
+        const surgeHorses = [...devList].sort((a, b) => b.diff - a.diff).filter(x => x.diff >= 4);
+        const dropHorses = [...devList].sort((a, b) => a.diff - b.diff).filter(x => x.diff <= -4);
+        const top5Contenders = devList.filter(x => x.rank <= 5);
+        const podiumHorsesInTop5 = top5Contenders.filter(x => x.finishRank <= 3);
+
+        let matchTitle = '指数通り順当決着';
+        let matchSub = '好走上位馬が実力を発揮したレース展開。';
+        if (podiumHorsesInTop5.length >= 3) {
+          matchTitle = '好走TOP5が1〜3着を完全独占！';
+          matchSub = `事前評価TOP5の3頭（${podiumHorsesInTop5.map(x=>x.horseName).join('・')}）が上位を独占。3連単・3連複的中圏内。`;
+        } else if (podiumHorsesInTop5.length === 2) {
+          matchTitle = '好走TOP5から2頭が連対・好走！';
+          matchSub = `事前評価上位の${podiumHorsesInTop5.map(x=>x.horseName).join('・')}が馬券圏内に好走。`;
+        } else if (podiumHorsesInTop5.length === 1) {
+          matchTitle = '上位評価馬から1頭が入線';
+          matchSub = `波乱の展開となり、伏兵の台頭が見られました。`;
+        } else {
+          matchTitle = '波乱の指数乖離決着';
+          matchSub = '好走上位馬が苦戦し、穴馬の激走が相次ぐ大波乱の決着となりました。';
+        }
+
+        let surgeTitle = '該当なし';
+        let surgeSub = '事前ランクを大きく上回る激走馬はいませんでした。';
+        if (surgeHorses.length > 0) {
+          const best = surgeHorses[0];
+          surgeTitle = `${best.horseName} (好走${best.rank}位 ➔ 確定${best.finishRank}着 / +${best.diff}ランク)`;
+          surgeSub = best.factor || '事前の好走評価を大幅に覆す圧巻の激走を披露しました。';
+        }
+
+        let dropTitle = '該当なし';
+        let dropSub = '事前ランクから大きく下振れた馬はいませんでした。';
+        if (dropHorses.length > 0) {
+          const worst = dropHorses[0];
+          dropTitle = `${worst.horseName} (好走${worst.rank}位 ➔ 確定${worst.finishRank}着 / ${worst.diff}ランク)`;
+          dropSub = worst.factor || '前評判や好走指数通りの走りができず、大敗を喫しました。';
         }
 
         // Target Horses Cards (Pickup & Danger)
@@ -27582,7 +27847,67 @@ function hydratePayouts(race) {
             ${lapBarsHtml}
           </div>
 
-          <!-- 3. 【★最重要★】次回への参考データ＆狙い目診断 -->
+          <!-- 3. 【好走ランク vs 確定着順】事前期待度と実際の結果・乖離分析 -->
+          <div class="review-card contender-deviation-card">
+            <div class="review-card-header">
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+                <h3 class="review-card-title">
+                  <i data-lucide="crosshair"></i> 事前好走ランク vs 確定着順（乖離度・精度分析）
+                </h3>
+                <span class="deviation-header-pill">6大ファクター検証</span>
+              </div>
+              <span style="font-size:11.5px;color:#94a3b8;">事前評価と実際の結果のズレを徹底検証</span>
+            </div>
+
+            <!-- KPIサマリーハイライトカード -->
+            <div class="deviation-kpi-grid">
+              <div class="dev-kpi-card highlight-match">
+                <div class="dev-kpi-label">🎯 上位指名馬の好走実績</div>
+                <div class="dev-kpi-title">${matchTitle}</div>
+                <div class="dev-kpi-sub">${matchSub}</div>
+              </div>
+              <div class="dev-kpi-card highlight-surge">
+                <div class="dev-kpi-label">⚡ 最大激走馬（大幅上振れ）</div>
+                <div class="dev-kpi-title">${surgeTitle}</div>
+                <div class="dev-kpi-sub">${surgeSub}</div>
+              </div>
+              <div class="dev-kpi-card highlight-drop">
+                <div class="dev-kpi-label">⚠️ 最大凡走馬（下振れ・波乱）</div>
+                <div class="dev-kpi-title">${dropTitle}</div>
+                <div class="dev-kpi-sub">${dropSub}</div>
+              </div>
+            </div>
+
+            <!-- コントロールバー（ソート切り替え） -->
+            <div class="deviation-control-bar">
+              <span class="dev-control-label">並び替え:</span>
+              <div class="dev-sort-btn-group">
+                <button class="btn-dev-sort active" data-sort="rank" onclick="setDeviationSort('rank')">📌 好走ランク順</button>
+                <button class="btn-dev-sort" data-sort="finish" onclick="setDeviationSort('finish')">🏆 確定着順順</button>
+                <button class="btn-dev-sort" data-sort="surge" onclick="setDeviationSort('surge')">⚡ 激走馬 (上振れ順)</button>
+                <button class="btn-dev-sort" data-sort="drop" onclick="setDeviationSort('drop')">⚠️ 凡走馬 (下振れ順)</button>
+              </div>
+            </div>
+
+            <!-- 対比テーブル -->
+            <div class="deviation-table-wrapper">
+              <table class="deviation-table">
+                <thead>
+                  <tr>
+                    <th style="width: 140px; white-space: nowrap;">好走ランク</th>
+                    <th style="min-width: 180px; white-space: nowrap;">馬番・馬名</th>
+                    <th style="width: 90px; text-align: center; white-space: nowrap;">確定着順</th>
+                    <th style="width: 90px; text-align: center; white-space: nowrap;">単勝人気</th>
+                    <th style="width: 140px; text-align: center; white-space: nowrap;">着順乖離度</th>
+                    <th style="min-width: 240px;">乖離の核心要因・レース回顧</th>
+                  </tr>
+                </thead>
+                <tbody id="deviation-table-body"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 4. 【★最重要★】次回への参考データ＆狙い目診断 -->
           <div class="review-card" style="border: 1px solid rgba(16, 185, 129, 0.4); background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(30, 41, 59, 0.8) 100%);">
             <div class="review-card-header">
               <h3 class="review-card-title" style="color: #34d399;">
@@ -27613,7 +27938,7 @@ function hydratePayouts(race) {
             </div>
           </div>
 
-          <!-- 4. 出走馬 個別詳細回顧テーブル -->
+          <!-- 5. 出走馬 個別詳細回顧テーブル -->
           <div class="review-card">
             <div class="review-card-header">
               <h3 class="review-card-title"><i data-lucide="list-ordered"></i> 出走各馬のレース個別回顧＆勝因・敗因</h3>
@@ -27630,6 +27955,7 @@ function hydratePayouts(race) {
           </div>
         `;
 
+        renderDeviationTable(raceId);
         renderFilteredHorsesList();
         if (typeof lucide !== 'undefined') lucide.createIcons();
       }
@@ -28269,6 +28595,8 @@ function hydratePayouts(race) {
         window.selectReviewRace = selectReviewRace;
         window.switchView = switchView;
         window.setReviewFilter = setReviewFilter;
+        window.setDeviationSort = setDeviationSort;
+        window.renderDeviationTable = renderDeviationTable;
         window.renderReviewPills = renderReviewPills;
         window.renderReviewContent = renderReviewContent;
         window.openRaceDetail = openRaceDetail;

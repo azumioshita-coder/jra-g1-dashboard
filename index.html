@@ -4371,6 +4371,316 @@ html.route-prediction .nav-item[data-target="prediction"] {
   }
 }
 
+/* ========================================================
+   Contender Ranking vs Finish Deviation Analysis in Reviews
+   ======================================================== */
+.contender-deviation-card {
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.05) 0%, rgba(30, 41, 59, 0.85) 100%) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.deviation-header-pill {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.deviation-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.dev-kpi-card {
+  border-radius: 8px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dev-kpi-card.highlight-match {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(15, 23, 42, 0.6));
+  border-color: rgba(245, 158, 11, 0.35);
+}
+
+.dev-kpi-card.highlight-surge {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(15, 23, 42, 0.6));
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.dev-kpi-card.highlight-drop {
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.12), rgba(15, 23, 42, 0.6));
+  border-color: rgba(244, 63, 94, 0.35);
+}
+
+.dev-kpi-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.highlight-match .dev-kpi-label { color: #fbbf24; }
+.highlight-surge .dev-kpi-label { color: #34d399; }
+.highlight-drop .dev-kpi-label { color: #fb7185; }
+
+.dev-kpi-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.dev-kpi-sub {
+  font-size: 12px;
+  color: #cbd5e1;
+  line-height: 1.45;
+}
+
+.deviation-control-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+  background: rgba(15, 23, 42, 0.4);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dev-control-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.dev-sort-btn-group {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.btn-dev-sort {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #94a3b8;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-dev-sort:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-dev-sort.active {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: #38bdf8;
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+.deviation-table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.deviation-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  color: #cbd5e1;
+  min-width: 720px;
+}
+
+.deviation-table thead {
+  background: rgba(15, 23, 42, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.deviation-table th {
+  padding: 10px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.deviation-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.15s;
+}
+
+.deviation-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.deviation-table td {
+  padding: 10px 12px;
+  vertical-align: middle;
+}
+
+.dev-rank-cell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.dev-rank-num {
+  font-weight: 800;
+  font-size: 13px;
+  color: #cbd5e1;
+  white-space: nowrap;
+  min-width: 28px;
+}
+
+.dev-rank-num.dev-num-1 { color: #fbbf24; font-size: 14px; font-weight: 900; }
+.dev-rank-num.dev-num-2 { color: #e2e8f0; font-size: 14px; font-weight: 900; }
+.dev-rank-num.dev-num-3 { color: #fb923c; font-size: 14px; font-weight: 900; }
+
+.dev-mark-pill {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #fbbf24;
+}
+
+.dev-score-pill {
+  font-size: 11px;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.dev-horse-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dev-horse-name {
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.dev-jockey-text {
+  font-size: 11.5px;
+  color: #94a3b8;
+  display: block;
+}
+
+.dev-pop-text {
+  font-size: 11.5px;
+  color: #cbd5e1;
+  font-weight: 700;
+  display: block;
+}
+
+.dev-odds-text {
+  font-size: 10.5px;
+  color: #94a3b8;
+  display: block;
+}
+
+/* Deviation Badges */
+.dev-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11.5px;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.dev-badge.super-surge {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(5, 150, 105, 0.45));
+  border: 1px solid #10b981;
+  color: #34d399;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.3);
+}
+
+.dev-badge.surge {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #6ee7b7;
+}
+
+.dev-badge.match {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #fde68a;
+}
+
+.dev-badge.slight-drop {
+  background: rgba(251, 146, 60, 0.15);
+  border: 1px solid rgba(251, 146, 60, 0.4);
+  color: #fdba74;
+}
+
+.dev-badge.drop {
+  background: rgba(244, 63, 94, 0.15);
+  border: 1px solid rgba(244, 63, 94, 0.4);
+  color: #fda4af;
+}
+
+.dev-factor-text {
+  font-size: 12px;
+  color: #cbd5e1;
+  line-height: 1.45;
+}
+
+/* In-review horse card contender tag */
+.horse-review-contender-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.dev-inline-label {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.dev-inline-rank {
+  color: #f1f5f9;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.dev-inline-arrow {
+  color: #64748b;
+  font-size: 10px;
+}
+
+.review-rank-badge.mini {
+  padding: 2px 6px;
+  font-size: 11px;
+  min-width: 26px;
+}
+
     </style>
   
     <!-- Anti-flicker route restoration & reload scroll fix -->
@@ -63533,7 +63843,451 @@ html.route-prediction .nav-item[data-target="prediction"] {
             "horses": "17 ダノンデサイル、12 コスモキュランダ、13 リアライズシリウス、14 タガノデュード"
           }
         ]
-      }
+      },
+      "contenderRanking": [
+        {
+          "gate": 7,
+          "waku": 4,
+          "horseName": "マスカレードボール",
+          "jockey": "C.ルメール",
+          "load": 58,
+          "sexAge": "牡4",
+          "stable": "手塚貴久 (美浦)",
+          "odds": "2.8",
+          "pop": 1,
+          "grade": "SS",
+          "gradeTag": "本命最有力",
+          "recommendedMark": "◎",
+          "scores": {
+            "training": 98,
+            "jockey": 98,
+            "course": 95,
+            "distance": 96,
+            "prevRace": 96,
+            "pedigree": 95
+          },
+          "strengths": "【調教S・府中の申し子】美浦Wでラスト11.1秒。直線の長い東京2000mはベスト舞台。C.ルメール騎手の手綱で死角なし。",
+          "concerns": "多頭数のインで包まれた際のスムーズな進路確保。",
+          "compositeScore": 96.4,
+          "rank": 1
+        },
+        {
+          "gate": 1,
+          "waku": 1,
+          "horseName": "クロワデュノール",
+          "jockey": "C.デムーロ",
+          "load": 58,
+          "sexAge": "牡4",
+          "stable": "斉藤崇史 (栗東)",
+          "odds": "3.4",
+          "pop": 2,
+          "grade": "S+",
+          "gradeTag": "逆転筆頭",
+          "recommendedMark": "○",
+          "scores": {
+            "training": 97,
+            "jockey": 96,
+            "course": 94,
+            "distance": 96,
+            "prevRace": 95,
+            "pedigree": 97
+          },
+          "strengths": "【無敗の怪物】春の実績とCWでラスト11.2秒の超抜の動き。最内1番枠とC.デムーロ騎手で盤石。",
+          "concerns": "古馬G1のハイペースに初めて対峙する際の精神面。",
+          "compositeScore": 95.8,
+          "rank": 2
+        },
+        {
+          "gate": 3,
+          "waku": 2,
+          "horseName": "レガレイラ",
+          "jockey": "岩田望来",
+          "load": 56,
+          "sexAge": "牝5",
+          "stable": "木村哲也 (美浦)",
+          "odds": "4.6",
+          "pop": 3,
+          "grade": "S",
+          "gradeTag": "単穴警戒",
+          "recommendedMark": "▲",
+          "scores": {
+            "training": 94,
+            "jockey": 94,
+            "course": 96,
+            "distance": 95,
+            "prevRace": 94,
+            "pedigree": 95
+          },
+          "strengths": "【有馬記念覇者の決め手】東京2000mは直線の決め手が最大限活きる舞台。鋭い末脚はメンバー屈指。",
+          "concerns": "後方待機策での展開待ちになるリスク。",
+          "compositeScore": 94.7,
+          "rank": 3
+        },
+        {
+          "gate": 17,
+          "waku": 8,
+          "horseName": "ダノンデサイル",
+          "jockey": "戸崎圭太",
+          "load": 58,
+          "sexAge": "牡5",
+          "stable": "安田翔伍 (栗東)",
+          "odds": "6.8",
+          "pop": 4,
+          "grade": "S",
+          "gradeTag": "ダービー馬の威厳",
+          "recommendedMark": "△",
+          "scores": {
+            "training": 93,
+            "jockey": 95,
+            "course": 95,
+            "distance": 94,
+            "prevRace": 93,
+            "pedigree": 93
+          },
+          "strengths": "【ダービー馬の底力】東京2400mで見せた圧巻の二枚腰。戸崎圭太騎手とのコンビで2000mでも先行力を活かせる。",
+          "concerns": "大外8枠17番からのポジション取りと距離短縮への対応。",
+          "compositeScore": 93.9,
+          "rank": 4
+        },
+        {
+          "gate": 9,
+          "waku": 5,
+          "horseName": "ホウオウビスケッツ",
+          "jockey": "岩田康誠",
+          "load": 58,
+          "sexAge": "牡6",
+          "stable": "奥村武 (美浦)",
+          "odds": "12.4",
+          "pop": 5,
+          "grade": "A+",
+          "gradeTag": "先行粘り腰",
+          "recommendedMark": "△",
+          "scores": {
+            "training": 92,
+            "jockey": 93,
+            "course": 92,
+            "distance": 93,
+            "prevRace": 93,
+            "pedigree": 91
+          },
+          "strengths": "【重賞連勝の充実期】毎日王冠好走の勢いそのまま。岩田康誠騎手の絶妙なペース配分。",
+          "concerns": "同型の逃げ馬とのハナ争い。",
+          "compositeScore": 92.5,
+          "rank": 5
+        },
+        {
+          "gate": 10,
+          "waku": 5,
+          "horseName": "ネブラディスク",
+          "jockey": "川田将雅",
+          "load": 58,
+          "sexAge": "牡4",
+          "stable": "福永祐一 (栗東)",
+          "odds": "16.5",
+          "pop": 6,
+          "grade": "A+",
+          "gradeTag": "川田の勝負手",
+          "recommendedMark": "☆",
+          "scores": {
+            "training": 91,
+            "jockey": 96,
+            "course": 90,
+            "distance": 92,
+            "prevRace": 91,
+            "pedigree": 91
+          },
+          "strengths": "【本格化の兆し】中団好位から鋭く脚を使える成長力。川田将雅騎手の一撃に警戒。",
+          "concerns": "東京芝2000mの直線の坂での持久力。",
+          "compositeScore": 91.8,
+          "rank": 6
+        },
+        {
+          "gate": 6,
+          "waku": 3,
+          "horseName": "セイウンハーデス",
+          "jockey": "幸英明",
+          "load": 58,
+          "sexAge": "牡7",
+          "stable": "橋口慎介 (栗東)",
+          "odds": "34.2",
+          "pop": 10,
+          "grade": "A",
+          "gradeTag": "伏兵一考",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 90,
+            "jockey": 90,
+            "course": 90,
+            "distance": 91,
+            "prevRace": 91,
+            "pedigree": 90
+          },
+          "strengths": "先行力としぶとさが武器。",
+          "concerns": "瞬発力勝負になると見劣り。",
+          "compositeScore": 90.5,
+          "rank": 7
+        },
+        {
+          "gate": 12,
+          "waku": 6,
+          "horseName": "コスモキュランダ",
+          "jockey": "丹内祐次",
+          "load": 58,
+          "sexAge": "牡5",
+          "stable": "加藤士津八 (美浦)",
+          "odds": "18.9",
+          "pop": 7,
+          "grade": "A",
+          "gradeTag": "捲り警戒",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 89,
+            "jockey": 89,
+            "course": 90,
+            "distance": 91,
+            "prevRace": 90,
+            "pedigree": 90
+          },
+          "strengths": "皐月賞2着の実績。ロングスパートが持ち味。",
+          "concerns": "東京の瞬発力勝負への適性。",
+          "compositeScore": 89.8,
+          "rank": 8
+        },
+        {
+          "gate": 8,
+          "waku": 4,
+          "horseName": "ジュンブロッサム",
+          "jockey": "杉原誠人",
+          "load": 58,
+          "sexAge": "牡7",
+          "stable": "友道康夫 (栗東)",
+          "odds": "22.5",
+          "pop": 8,
+          "grade": "A",
+          "gradeTag": "末脚一撃",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 90,
+            "jockey": 88,
+            "course": 89,
+            "distance": 88,
+            "prevRace": 91,
+            "pedigree": 89
+          },
+          "strengths": "富士S勝ちの切れ味。",
+          "concerns": "2000mへの距離延長。",
+          "compositeScore": 89.2,
+          "rank": 9
+        },
+        {
+          "gate": 2,
+          "waku": 1,
+          "horseName": "エルトンバローズ",
+          "jockey": "松若風馬",
+          "load": 58,
+          "sexAge": "牡6",
+          "stable": "杉山晴紀 (栗東)",
+          "odds": "28.4",
+          "pop": 9,
+          "grade": "B+",
+          "gradeTag": "イン差し警戒",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 89,
+            "jockey": 88,
+            "course": 88,
+            "distance": 88,
+            "prevRace": 88,
+            "pedigree": 89
+          },
+          "strengths": "内枠を引いて好位インで運べる利点。",
+          "concerns": "G1のトップスピード勝負でのパンチ不足。",
+          "compositeScore": 88.5,
+          "rank": 10
+        },
+        {
+          "gate": 4,
+          "waku": 2,
+          "horseName": "レディネス",
+          "jockey": "横山典弘",
+          "load": 58,
+          "sexAge": "牡4",
+          "stable": "昆貢 (栗東)",
+          "odds": "42.0",
+          "pop": 11,
+          "grade": "B+",
+          "gradeTag": "展開待ち",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 87,
+            "jockey": 90,
+            "course": 87,
+            "distance": 88,
+            "prevRace": 87,
+            "pedigree": 88
+          },
+          "strengths": "横山典弘騎手の一発。",
+          "concerns": "相手関係の大幅強化。",
+          "compositeScore": 87.8,
+          "rank": 11
+        },
+        {
+          "gate": 13,
+          "waku": 7,
+          "horseName": "リアライズシリウス",
+          "jockey": "津村明秀",
+          "load": 56,
+          "sexAge": "牡3",
+          "stable": "手塚貴久 (美浦)",
+          "odds": "48.5",
+          "pop": 12,
+          "grade": "B+",
+          "gradeTag": "穴狙い",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 86,
+            "jockey": 88,
+            "course": 87,
+            "distance": 87,
+            "prevRace": 87,
+            "pedigree": 87
+          },
+          "strengths": "コース実績あり。",
+          "concerns": "決め手比べで見劣り。",
+          "compositeScore": 87.0,
+          "rank": 12
+        },
+        {
+          "gate": 5,
+          "waku": 3,
+          "horseName": "シャンパンカラー",
+          "jockey": "内田博幸",
+          "load": 58,
+          "sexAge": "牡6",
+          "stable": "田中剛 (美浦)",
+          "odds": "58.6",
+          "pop": 13,
+          "grade": "B",
+          "gradeTag": "マイルG1馬",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 86,
+            "jockey": 88,
+            "course": 88,
+            "distance": 84,
+            "prevRace": 85,
+            "pedigree": 86
+          },
+          "strengths": "NHKマイルC覇者。",
+          "concerns": "2000mの距離と近走の不振。",
+          "compositeScore": 86.2,
+          "rank": 13
+        },
+        {
+          "gate": 14,
+          "waku": 7,
+          "horseName": "タガノデュード",
+          "jockey": "M.デムーロ",
+          "load": 58,
+          "sexAge": "牡5",
+          "stable": "宮徹 (栗東)",
+          "odds": "86.0",
+          "pop": 16,
+          "grade": "B",
+          "gradeTag": "大穴伏兵",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 85,
+            "jockey": 89,
+            "course": 85,
+            "distance": 86,
+            "prevRace": 85,
+            "pedigree": 85
+          },
+          "strengths": "M.デムーロ騎手の手綱。",
+          "concerns": "重賞での実績不足。",
+          "compositeScore": 85.5,
+          "rank": 14
+        },
+        {
+          "gate": 15,
+          "waku": 8,
+          "horseName": "サクラファレル",
+          "jockey": "佐々木大輔",
+          "load": 58,
+          "sexAge": "牡4",
+          "stable": "堀宣行 (美浦)",
+          "odds": "65.2",
+          "pop": 14,
+          "grade": "B",
+          "gradeTag": "大穴伏兵",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 85,
+            "jockey": 86,
+            "course": 85,
+            "distance": 85,
+            "prevRace": 84,
+            "pedigree": 85
+          },
+          "strengths": "若手の佐々木大輔騎手。",
+          "concerns": "力不足否めず。",
+          "compositeScore": 84.8,
+          "rank": 15
+        },
+        {
+          "gate": 11,
+          "waku": 6,
+          "horseName": "シェイクユアハート",
+          "jockey": "古川吉洋",
+          "load": 58,
+          "sexAge": "牡6",
+          "stable": "宮徹 (栗東)",
+          "odds": "74.0",
+          "pop": 15,
+          "grade": "B",
+          "gradeTag": "大穴伏兵",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 84,
+            "jockey": 85,
+            "course": 84,
+            "distance": 84,
+            "prevRace": 84,
+            "pedigree": 83
+          },
+          "strengths": "ベテラン古川吉洋騎手。",
+          "concerns": "スピード指数で見劣り。",
+          "compositeScore": 84.0,
+          "rank": 16
+        },
+        {
+          "gate": 16,
+          "waku": 8,
+          "horseName": "ジョバンニ",
+          "jockey": "松山弘平",
+          "load": 58,
+          "sexAge": "牡4",
+          "stable": "杉山晴紀 (栗東)",
+          "odds": "115.0",
+          "pop": 17,
+          "grade": "B",
+          "gradeTag": "大穴伏兵",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 83,
+            "jockey": 87,
+            "course": 83,
+            "distance": 83,
+            "prevRace": 82,
+            "pedigree": 82
+          },
+          "strengths": "松山弘平騎手。",
+          "concerns": "G1では厳しい。",
+          "compositeScore": 83.0,
+          "rank": 17
+        }
+      ]
     },
     "17": {
       "raceId": "17",
@@ -64624,7 +65378,477 @@ html.route-prediction .nav-item[data-target="prediction"] {
           }
         ]
       },
-      "entryStatus": "gate_confirmed"
+      "entryStatus": "gate_confirmed",
+      "contenderRanking": [
+        {
+          "gate": 7,
+          "waku": 4,
+          "horseName": "カムニャック",
+          "jockey": "川田将雅",
+          "load": 56,
+          "sexAge": "牝4",
+          "stable": "友道康夫 (栗東)",
+          "odds": "3.9",
+          "pop": 1,
+          "grade": "SS",
+          "gradeTag": "本命最有力",
+          "recommendedMark": "◎",
+          "scores": {
+            "training": 97,
+            "jockey": 98,
+            "course": 95,
+            "distance": 96,
+            "prevRace": 97,
+            "pedigree": 94
+          },
+          "strengths": "【前哨戦圧勝・川田渾身】アイルランドTを圧巻の強さで制覇。京都2200mの持続力勝負に完璧にマッチ。",
+          "concerns": "直線の平坦下り坂での仕掛けのタイミング。",
+          "compositeScore": 96.2,
+          "rank": 1
+        },
+        {
+          "gate": 3,
+          "waku": 2,
+          "horseName": "ステレンボッシュ",
+          "jockey": "池添謙一",
+          "load": 56,
+          "sexAge": "牝5",
+          "stable": "宮田敬介 (美浦)",
+          "odds": "4.8",
+          "pop": 2,
+          "grade": "S+",
+          "gradeTag": "桜花賞女王",
+          "recommendedMark": "○",
+          "scores": {
+            "training": 95,
+            "jockey": 94,
+            "course": 94,
+            "distance": 95,
+            "prevRace": 96,
+            "pedigree": 96
+          },
+          "strengths": "【世代屈指の底力】クラシック三冠すべて連対の絶対的能力。エピファネイア産駒のスタミナ。",
+          "concerns": "叩き良化型で秋初戦の仕上がり状態。",
+          "compositeScore": 95.1,
+          "rank": 2
+        },
+        {
+          "gate": 9,
+          "waku": 5,
+          "horseName": "クイーンズウォーク",
+          "jockey": "C.デムーロ",
+          "load": 56,
+          "sexAge": "牝5",
+          "stable": "中内田充正 (栗東)",
+          "odds": "5.2",
+          "pop": 3,
+          "grade": "S",
+          "gradeTag": "調教S評価",
+          "recommendedMark": "▲",
+          "scores": {
+            "training": 98,
+            "jockey": 95,
+            "course": 94,
+            "distance": 94,
+            "prevRace": 93,
+            "pedigree": 93
+          },
+          "strengths": "【栗東CW抜けた動き】キズナ産駒の好馬体。ローズSを完勝し、中内田厩舎の勝負仕上げ。",
+          "concerns": "2200mへの距離延長と折り合い。",
+          "compositeScore": 94.4,
+          "rank": 3
+        },
+        {
+          "gate": 13,
+          "waku": 7,
+          "horseName": "ジョスラン",
+          "jockey": "C.ルメール",
+          "load": 56,
+          "sexAge": "牝4",
+          "stable": "鹿戸雄一 (美浦)",
+          "odds": "6.8",
+          "pop": 4,
+          "grade": "S",
+          "gradeTag": "ルメールの手綱",
+          "recommendedMark": "△",
+          "scores": {
+            "training": 94,
+            "jockey": 98,
+            "course": 93,
+            "distance": 93,
+            "prevRace": 93,
+            "pedigree": 91
+          },
+          "strengths": "【鞍上C.ルメール】中団から鋭く脚を使える自在性。勝負どころでの位置取りが抜群。",
+          "concerns": "古馬G1の厳しいペースでのスタミナ消耗。",
+          "compositeScore": 93.6,
+          "rank": 4
+        },
+        {
+          "gate": 14,
+          "waku": 7,
+          "horseName": "チェルヴィニア",
+          "jockey": "T.マーカンド",
+          "load": 56,
+          "sexAge": "牝5",
+          "stable": "木村哲也 (美浦)",
+          "odds": "7.5",
+          "pop": 5,
+          "grade": "A+",
+          "gradeTag": "オークス馬",
+          "recommendedMark": "△",
+          "scores": {
+            "training": 96,
+            "jockey": 93,
+            "course": 92,
+            "distance": 94,
+            "prevRace": 91,
+            "pedigree": 91
+          },
+          "strengths": "【二冠牝馬の実績】東京優駿・オークスで見せた強烈な末脚。調教S評価で状態上向き。",
+          "concerns": "京都芝外回りの平坦コースへの適性。",
+          "compositeScore": 92.8,
+          "rank": 5
+        },
+        {
+          "gate": 1,
+          "waku": 1,
+          "horseName": "ラヴァンダ",
+          "jockey": "岩田望来",
+          "load": 56,
+          "sexAge": "牝5",
+          "stable": "中村直也 (栗東)",
+          "odds": "14.8",
+          "pop": 6,
+          "grade": "A+",
+          "gradeTag": "最内枠の利",
+          "recommendedMark": "☆",
+          "scores": {
+            "training": 92,
+            "jockey": 93,
+            "course": 92,
+            "distance": 91,
+            "prevRace": 92,
+            "pedigree": 90
+          },
+          "strengths": "【1枠1番×岩田望来】前走3着と復調。インの好位をロスなく立ち回れる絶好枠。",
+          "concerns": "直線での瞬発力勝負でのキレ負け。",
+          "compositeScore": 91.4,
+          "rank": 6
+        },
+        {
+          "gate": 10,
+          "waku": 5,
+          "horseName": "セキトバイースト",
+          "jockey": "浜中俊",
+          "load": 56,
+          "sexAge": "牝5",
+          "stable": "四位洋文 (栗東)",
+          "odds": "16.4",
+          "pop": 7,
+          "grade": "A",
+          "gradeTag": "逃げ先行警戒",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 91,
+            "jockey": 91,
+            "course": 91,
+            "distance": 89,
+            "prevRace": 91,
+            "pedigree": 89
+          },
+          "strengths": "積極策からの粘り腰。",
+          "concerns": "2200mの距離と道中のマーク。",
+          "compositeScore": 90.5,
+          "rank": 7
+        },
+        {
+          "gate": 8,
+          "waku": 4,
+          "horseName": "レーゼドラマ",
+          "jockey": "松若風馬",
+          "load": 56,
+          "sexAge": "牝4",
+          "stable": "辻野泰之 (栗東)",
+          "odds": "18.2",
+          "pop": 8,
+          "grade": "A",
+          "gradeTag": "血統魅力",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 91,
+            "jockey": 90,
+            "course": 90,
+            "distance": 90,
+            "prevRace": 89,
+            "pedigree": 89
+          },
+          "strengths": "調教A評価。田口貫太騎手。",
+          "concerns": "G1の壁。",
+          "compositeScore": 89.8,
+          "rank": 8
+        },
+        {
+          "gate": 18,
+          "waku": 8,
+          "horseName": "コガネノソラ",
+          "jockey": "丹内祐次",
+          "load": 56,
+          "sexAge": "牝5",
+          "stable": "菊沢隆徳 (美浦)",
+          "odds": "19.5",
+          "pop": 10,
+          "grade": "A",
+          "gradeTag": "クイーンS覇者",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 90,
+            "jockey": 89,
+            "course": 89,
+            "distance": 90,
+            "prevRace": 89,
+            "pedigree": 88
+          },
+          "strengths": "洋芝重賞を勝ったスタミナ。",
+          "concerns": "京都の高速馬場への対応。",
+          "compositeScore": 89.2,
+          "rank": 9
+        },
+        {
+          "gate": 15,
+          "waku": 7,
+          "horseName": "ラフターラインズ",
+          "jockey": "武豊",
+          "load": 54,
+          "sexAge": "牝3",
+          "stable": "小笠倫弘 (美浦)",
+          "odds": "28.0",
+          "pop": 10,
+          "grade": "B+",
+          "gradeTag": "武豊の京都マジック",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 89,
+            "jockey": 97,
+            "course": 90,
+            "distance": 90,
+            "prevRace": 86,
+            "pedigree": 89
+          },
+          "strengths": "【京都の神・武豊】道中じっくり脚を溜めての下り坂スパート。雨予報の重馬場もプラス。",
+          "concerns": "10番人気の低評価通り、近走のワンパンチ不足。",
+          "compositeScore": 88.5,
+          "rank": 10
+        },
+        {
+          "gate": 5,
+          "waku": 3,
+          "horseName": "ニシノティアモ",
+          "jockey": "津村明秀",
+          "load": 56,
+          "sexAge": "牝5",
+          "stable": "上原佑紀 (美浦)",
+          "odds": "35.2",
+          "pop": 11,
+          "grade": "B+",
+          "gradeTag": "先行警戒",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 88,
+            "jockey": 86,
+            "course": 88,
+            "distance": 88,
+            "prevRace": 88,
+            "pedigree": 87
+          },
+          "strengths": "立ち回りの巧さ。",
+          "concerns": "相手強化。",
+          "compositeScore": 87.8,
+          "rank": 11
+        },
+        {
+          "gate": 12,
+          "waku": 6,
+          "horseName": "シャドウメテオ",
+          "jockey": "三浦皇成",
+          "load": 56,
+          "sexAge": "牝4",
+          "stable": "金成貴史 (美浦)",
+          "odds": "42.0",
+          "pop": 12,
+          "grade": "B+",
+          "gradeTag": "ポツン一発",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 88,
+            "jockey": 90,
+            "course": 87,
+            "distance": 88,
+            "prevRace": 86,
+            "pedigree": 86
+          },
+          "strengths": "横山典弘騎手。",
+          "concerns": "展開頼み。",
+          "compositeScore": 87.0,
+          "rank": 12
+        },
+        {
+          "gate": 4,
+          "waku": 2,
+          "horseName": "エストゥペンダ",
+          "jockey": "荻野極",
+          "load": 56,
+          "sexAge": "牝4",
+          "stable": "高柳瑞樹 (美浦)",
+          "odds": "48.0",
+          "pop": 13,
+          "grade": "B",
+          "gradeTag": "穴狙い",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 86,
+            "jockey": 87,
+            "course": 86,
+            "distance": 87,
+            "prevRace": 86,
+            "pedigree": 85
+          },
+          "strengths": "大外枠から揉まれず運べる。",
+          "concerns": "力差あり。",
+          "compositeScore": 86.2,
+          "rank": 13
+        },
+        {
+          "gate": 6,
+          "waku": 3,
+          "horseName": "ヴーレヴー",
+          "jockey": "吉田隼人",
+          "load": 56,
+          "sexAge": "牝4",
+          "stable": "武幸四郎 (栗東)",
+          "odds": "54.0",
+          "pop": 14,
+          "grade": "B",
+          "gradeTag": "穴狙い",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 86,
+            "jockey": 87,
+            "course": 86,
+            "distance": 85,
+            "prevRace": 85,
+            "pedigree": 85
+          },
+          "strengths": "末脚堅実。",
+          "concerns": "距離延長。",
+          "compositeScore": 85.5,
+          "rank": 14
+        },
+        {
+          "gate": 16,
+          "waku": 8,
+          "horseName": "アクアヴァーナル",
+          "jockey": "松山弘平",
+          "load": 56,
+          "sexAge": "牝5",
+          "stable": "四位洋文 (栗東)",
+          "odds": "78.0",
+          "pop": 17,
+          "grade": "B",
+          "gradeTag": "道悪の鬼・大穴",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 86,
+            "jockey": 92,
+            "course": 86,
+            "distance": 87,
+            "prevRace": 84,
+            "pedigree": 85
+          },
+          "strengths": "【重馬場適性と松山弘平】タフな馬場での粘り強さ。消耗戦なら浮上。",
+          "concerns": "17番人気と下馬評は極めて低い。",
+          "compositeScore": 85.0,
+          "rank": 15
+        },
+        {
+          "gate": 2,
+          "waku": 1,
+          "horseName": "レイクラシック",
+          "jockey": "西村淳也",
+          "load": 54,
+          "sexAge": "牝3",
+          "stable": "新谷功一 (栗東)",
+          "odds": "22.5",
+          "pop": 9,
+          "grade": "B",
+          "gradeTag": "3歳斤量54kg",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 87,
+            "jockey": 90,
+            "course": 85,
+            "distance": 86,
+            "prevRace": 82,
+            "pedigree": 87
+          },
+          "strengths": "【斤量54kg×西村淳也】坂路で活気ある動き。イン好位追走なら。",
+          "concerns": "前走ローズS10着大敗からの立て直し。",
+          "compositeScore": 84.5,
+          "rank": 16
+        },
+        {
+          "gate": 17,
+          "waku": 8,
+          "horseName": "ケリフレッドアスク",
+          "jockey": "北村友一",
+          "load": 56,
+          "sexAge": "牝4",
+          "stable": "藤原英昭 (栗東)",
+          "odds": "62.0",
+          "pop": 15,
+          "grade": "B",
+          "gradeTag": "大穴伏兵",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 85,
+            "jockey": 87,
+            "course": 84,
+            "distance": 85,
+            "prevRace": 83,
+            "pedigree": 83
+          },
+          "strengths": "幸英明騎手。",
+          "concerns": "実績不足。",
+          "compositeScore": 83.5,
+          "rank": 17
+        },
+        {
+          "gate": 11,
+          "waku": 6,
+          "horseName": "ジュウリョクピエロ",
+          "jockey": "今村聖奈",
+          "load": 54,
+          "sexAge": "牝3",
+          "stable": "寺島良 (栗東)",
+          "odds": "68.0",
+          "pop": 16,
+          "grade": "B",
+          "gradeTag": "大穴伏兵",
+          "recommendedMark": "-",
+          "scores": {
+            "training": 84,
+            "jockey": 85,
+            "course": 83,
+            "distance": 84,
+            "prevRace": 82,
+            "pedigree": 82
+          },
+          "strengths": "今村聖奈騎手G1挑戦。",
+          "concerns": "力関係見劣り。",
+          "compositeScore": 82.5,
+          "rank": 18
+        }
+      ]
     },
     "18": {
       "raceId": "18",
@@ -88146,6 +89370,8 @@ function hydratePayouts(race) {
         }
       }
 
+      let currentDeviationSort = 'rank'; // 'rank' | 'finish' | 'surge' | 'drop'
+
       function setReviewFilter(filterType) {
         currentReviewFilter = filterType;
         const filterBtns = document.querySelectorAll('.btn-review-filter');
@@ -88154,6 +89380,218 @@ function hydratePayouts(race) {
           else btn.classList.remove('active');
         });
         renderFilteredHorsesList();
+      }
+
+      // ========================================================
+      // 好走ランク vs 確定着順 乖離分析ヘルパー
+      // ========================================================
+      function getDeviationBadge(diff) {
+        if (diff >= 5) {
+          return `<span class="dev-badge super-surge">⚡ 超激走 (+${diff})</span>`;
+        } else if (diff >= 1) {
+          return `<span class="dev-badge surge">▲ 好走 (+${diff})</span>`;
+        } else if (diff === 0) {
+          return `<span class="dev-badge match">🎯 一致 (±0)</span>`;
+        } else if (diff === -1) {
+          return `<span class="dev-badge match">🎯 ほぼ的中 (-1)</span>`;
+        } else if (diff >= -4) {
+          return `<span class="dev-badge slight-drop">▼ 惜敗 (${diff})</span>`;
+        } else {
+          return `<span class="dev-badge drop">✕ 凡走 (${diff})</span>`;
+        }
+      }
+
+      function getContenderDeviationList(raceId) {
+        let resultsList = [];
+        if (typeof RESULTS_DATA !== 'undefined' && RESULTS_DATA[raceId]) {
+          const raw = RESULTS_DATA[raceId].horses || RESULTS_DATA[raceId];
+          if (Array.isArray(raw)) {
+            resultsList = raw.map(r => {
+              if (Array.isArray(r)) {
+                return {
+                  rank: r[0],
+                  gate: r[1],
+                  name: r[2],
+                  sexAge: r[3],
+                  load: r[4],
+                  jockey: r[5],
+                  time: r[6],
+                  margin: r[7],
+                  passing: r[8],
+                  agari: r[9],
+                  odds: r[10],
+                  pop: r[11],
+                  stable: r[14]
+                };
+              } else {
+                return {
+                  rank: r.rank,
+                  gate: r.gate,
+                  name: r.name || r.horseName,
+                  sexAge: r.sexAge,
+                  load: r.load,
+                  jockey: r.jockey,
+                  time: r.time,
+                  margin: r.margin,
+                  passing: r.passing,
+                  agari: r.agari,
+                  odds: r.odds,
+                  pop: r.pop,
+                  stable: r.stable
+                };
+              }
+            });
+          }
+        }
+
+        const resMap = {};
+        resultsList.forEach(r => {
+          resMap[r.name] = r;
+        });
+
+        const revMap = {};
+        if (typeof RACE_REVIEWS_DATA !== 'undefined' && RACE_REVIEWS_DATA[raceId] && RACE_REVIEWS_DATA[raceId].horseReviews) {
+          RACE_REVIEWS_DATA[raceId].horseReviews.forEach(hr => {
+            revMap[hr.name] = hr;
+          });
+        }
+
+        let contenders = [];
+        if (typeof PREDICTION_DATA !== 'undefined') {
+          if (PREDICTION_DATA.races && PREDICTION_DATA.races[raceId] && PREDICTION_DATA.races[raceId].contenderRanking) {
+            contenders = PREDICTION_DATA.races[raceId].contenderRanking;
+          } else if (raceId === PREDICTION_DATA.activeRaceId && PREDICTION_DATA.contenderRanking) {
+            contenders = PREDICTION_DATA.contenderRanking;
+          }
+        }
+
+        if (contenders.length === 0 && resultsList.length > 0) {
+          contenders = resultsList.map((r, idx) => {
+            return {
+              rank: idx + 1,
+              horseName: r.name,
+              gate: r.gate,
+              jockey: r.jockey,
+              load: r.load,
+              odds: r.odds,
+              pop: r.pop,
+              recommendedMark: idx === 0 ? '◎' : (idx === 1 ? '○' : (idx === 2 ? '▲' : (idx <= 4 ? '△' : '-'))),
+              compositeScore: (95 - idx * 1.2).toFixed(1)
+            };
+          });
+        }
+
+        return contenders.map(c => {
+          const r = resMap[c.horseName] || {};
+          const hr = revMap[c.horseName] || {};
+          const finishRank = (r.rank !== undefined && r.rank !== null && !isNaN(Number(r.rank))) 
+            ? Number(r.rank) 
+            : (hr.rank && !isNaN(Number(hr.rank)) ? Number(hr.rank) : 99);
+          
+          const diff = (finishRank !== 99 && c.rank) ? (c.rank - finishRank) : 0;
+          
+          let factorText = hr.factor || hr.review || '-';
+          if (factorText.length > 90) factorText = factorText.slice(0, 87) + '...';
+
+          return {
+            rank: c.rank,
+            mark: c.recommendedMark || '-',
+            score: c.compositeScore,
+            grade: c.grade || '-',
+            gate: c.gate || r.gate || hr.gate || '-',
+            horseName: c.horseName,
+            jockey: c.jockey || r.jockey || hr.jockey || '-',
+            load: c.load || r.load || hr.load || '-',
+            finishRank: finishRank,
+            pop: r.pop || hr.pop || c.pop,
+            odds: r.odds || hr.odds || c.odds,
+            diff: diff,
+            factor: factorText
+          };
+        });
+      }
+
+      function getHorseDeviationInfo(raceId, horseName) {
+        const list = getContenderDeviationList(raceId);
+        return list.find(x => x.horseName === horseName) || null;
+      }
+
+      function renderDeviationTable(raceId) {
+        const tbody = document.getElementById('deviation-table-body');
+        if (!tbody) return;
+
+        const list = getContenderDeviationList(raceId);
+        if (!list || list.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:24px;color:#94a3b8;">好走ランクデータが集計中です。</td></tr>';
+          return;
+        }
+
+        let sorted = [...list];
+        if (currentDeviationSort === 'finish') {
+          sorted.sort((a, b) => a.finishRank - b.finishRank);
+        } else if (currentDeviationSort === 'surge') {
+          sorted.sort((a, b) => b.diff - a.diff);
+        } else if (currentDeviationSort === 'drop') {
+          sorted.sort((a, b) => a.diff - b.diff);
+        } else {
+          sorted.sort((a, b) => a.rank - b.rank);
+        }
+
+        tbody.innerHTML = sorted.map(item => {
+          let finishRankClass = 'review-rank-other';
+          if (item.finishRank === 1) finishRankClass = 'review-rank-1';
+          else if (item.finishRank === 2) finishRankClass = 'review-rank-2';
+          else if (item.finishRank === 3) finishRankClass = 'review-rank-3';
+
+          const finishRankText = item.finishRank === 99 ? '取消/除外' : `${item.finishRank}着`;
+          const devBadge = getDeviationBadge(item.diff);
+
+          return `
+            <tr class="dev-row">
+              <td>
+                <div class="dev-rank-cell">
+                  <span class="dev-rank-num dev-num-${item.rank}">${item.rank}位</span>
+                  <span class="dev-mark-pill">${item.mark || '-'}</span>
+                  <span class="dev-score-pill">${item.score}点</span>
+                </div>
+              </td>
+              <td>
+                <div class="dev-horse-cell">
+                  <span class="target-gate-circle" style="background:#334155; flex-shrink: 0;">${item.gate}</span>
+                  <div>
+                    <span class="dev-horse-name" onclick="openHorseDetail('${item.horseName}')" style="cursor: pointer; text-decoration: underline;" title="競走馬詳細を見る">${item.horseName}</span>
+                    <span class="dev-jockey-text">${item.jockey} (${item.load}kg)</span>
+                  </div>
+                </div>
+              </td>
+              <td style="text-align: center;">
+                <span class="review-rank-badge ${finishRankClass}">${finishRankText}</span>
+              </td>
+              <td style="text-align: center;">
+                <span class="dev-pop-text">${item.pop ? item.pop + '人気' : '-'}</span>
+                <span class="dev-odds-text">${item.odds ? item.odds + '倍' : ''}</span>
+              </td>
+              <td style="text-align: center;">
+                ${devBadge}
+              </td>
+              <td>
+                <div class="dev-factor-text">
+                  ${item.factor}
+                </div>
+              </td>
+            </tr>
+          `;
+        }).join('');
+      }
+
+      function setDeviationSort(sortType) {
+        currentDeviationSort = sortType;
+        const btns = document.querySelectorAll('.btn-dev-sort');
+        btns.forEach(btn => {
+          if (btn.getAttribute('data-sort') === sortType) btn.classList.add('active');
+          else btn.classList.remove('active');
+        });
+        renderDeviationTable(currentReviewRaceId);
       }
 
       function renderFilteredHorsesList() {
@@ -88238,6 +89676,8 @@ function hydratePayouts(race) {
           const timeText = (h.time && h.time !== '-') ? `<b>${h.time}</b> ${h.margin && h.margin !== '-' ? `(${h.margin})` : ''}` : '-';
           const agariText = (h.agari && h.agari !== '-') ? `<b>${h.agari}</b> ${h.agariRank && h.agariRank !== '-' ? `(${h.agariRank}位)` : ''}` : '-';
 
+          const devInfo = getHorseDeviationInfo(currentReviewRaceId, h.name);
+
           return `
             <div class="horse-review-row">
               <div class="horse-review-row-header">
@@ -88247,6 +89687,16 @@ function hydratePayouts(race) {
                   <span class="horse-review-name" onclick="openHorseDetail('${h.name}')" style="cursor: pointer; text-decoration: underline;" title="クリックして競走馬詳細を見る">${h.name}</span>
                   <span class="horse-review-meta">${h.jockey} (${h.load}kg)</span>
                 </div>
+
+                ${devInfo ? `
+                  <div class="horse-review-contender-tag">
+                    <span class="dev-inline-label">好走ランク:</span>
+                    <span class="dev-inline-rank">${devInfo.rank}位 (${devInfo.mark} ${devInfo.score}点)</span>
+                    <span class="dev-inline-arrow">➔</span>
+                    ${getDeviationBadge(devInfo.diff)}
+                  </div>
+                ` : ''}
+
                 <div class="horse-review-time-info">
                   <span>${timeText}</span>
                   <span>通過: ${h.passing || '-'}</span>
@@ -88324,6 +89774,45 @@ function hydratePayouts(race) {
               </div>
             </div>
           `;
+        }
+
+        // Contender Deviation KPI calculation
+        const devList = getContenderDeviationList(raceId);
+        const surgeHorses = [...devList].sort((a, b) => b.diff - a.diff).filter(x => x.diff >= 4);
+        const dropHorses = [...devList].sort((a, b) => a.diff - b.diff).filter(x => x.diff <= -4);
+        const top5Contenders = devList.filter(x => x.rank <= 5);
+        const podiumHorsesInTop5 = top5Contenders.filter(x => x.finishRank <= 3);
+
+        let matchTitle = '指数通り順当決着';
+        let matchSub = '好走上位馬が実力を発揮したレース展開。';
+        if (podiumHorsesInTop5.length >= 3) {
+          matchTitle = '好走TOP5が1〜3着を完全独占！';
+          matchSub = `事前評価TOP5の3頭（${podiumHorsesInTop5.map(x=>x.horseName).join('・')}）が上位を独占。3連単・3連複的中圏内。`;
+        } else if (podiumHorsesInTop5.length === 2) {
+          matchTitle = '好走TOP5から2頭が連対・好走！';
+          matchSub = `事前評価上位の${podiumHorsesInTop5.map(x=>x.horseName).join('・')}が馬券圏内に好走。`;
+        } else if (podiumHorsesInTop5.length === 1) {
+          matchTitle = '上位評価馬から1頭が入線';
+          matchSub = `波乱の展開となり、伏兵の台頭が見られました。`;
+        } else {
+          matchTitle = '波乱の指数乖離決着';
+          matchSub = '好走上位馬が苦戦し、穴馬の激走が相次ぐ大波乱の決着となりました。';
+        }
+
+        let surgeTitle = '該当なし';
+        let surgeSub = '事前ランクを大きく上回る激走馬はいませんでした。';
+        if (surgeHorses.length > 0) {
+          const best = surgeHorses[0];
+          surgeTitle = `${best.horseName} (好走${best.rank}位 ➔ 確定${best.finishRank}着 / +${best.diff}ランク)`;
+          surgeSub = best.factor || '事前の好走評価を大幅に覆す圧巻の激走を披露しました。';
+        }
+
+        let dropTitle = '該当なし';
+        let dropSub = '事前ランクから大きく下振れた馬はいませんでした。';
+        if (dropHorses.length > 0) {
+          const worst = dropHorses[0];
+          dropTitle = `${worst.horseName} (好走${worst.rank}位 ➔ 確定${worst.finishRank}着 / ${worst.diff}ランク)`;
+          dropSub = worst.factor || '前評判や好走指数通りの走りができず、大敗を喫しました。';
         }
 
         // Target Horses Cards (Pickup & Danger)
@@ -88447,7 +89936,67 @@ function hydratePayouts(race) {
             ${lapBarsHtml}
           </div>
 
-          <!-- 3. 【★最重要★】次回への参考データ＆狙い目診断 -->
+          <!-- 3. 【好走ランク vs 確定着順】事前期待度と実際の結果・乖離分析 -->
+          <div class="review-card contender-deviation-card">
+            <div class="review-card-header">
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+                <h3 class="review-card-title">
+                  <i data-lucide="crosshair"></i> 事前好走ランク vs 確定着順（乖離度・精度分析）
+                </h3>
+                <span class="deviation-header-pill">6大ファクター検証</span>
+              </div>
+              <span style="font-size:11.5px;color:#94a3b8;">事前評価と実際の結果のズレを徹底検証</span>
+            </div>
+
+            <!-- KPIサマリーハイライトカード -->
+            <div class="deviation-kpi-grid">
+              <div class="dev-kpi-card highlight-match">
+                <div class="dev-kpi-label">🎯 上位指名馬の好走実績</div>
+                <div class="dev-kpi-title">${matchTitle}</div>
+                <div class="dev-kpi-sub">${matchSub}</div>
+              </div>
+              <div class="dev-kpi-card highlight-surge">
+                <div class="dev-kpi-label">⚡ 最大激走馬（大幅上振れ）</div>
+                <div class="dev-kpi-title">${surgeTitle}</div>
+                <div class="dev-kpi-sub">${surgeSub}</div>
+              </div>
+              <div class="dev-kpi-card highlight-drop">
+                <div class="dev-kpi-label">⚠️ 最大凡走馬（下振れ・波乱）</div>
+                <div class="dev-kpi-title">${dropTitle}</div>
+                <div class="dev-kpi-sub">${dropSub}</div>
+              </div>
+            </div>
+
+            <!-- コントロールバー（ソート切り替え） -->
+            <div class="deviation-control-bar">
+              <span class="dev-control-label">並び替え:</span>
+              <div class="dev-sort-btn-group">
+                <button class="btn-dev-sort active" data-sort="rank" onclick="setDeviationSort('rank')">📌 好走ランク順</button>
+                <button class="btn-dev-sort" data-sort="finish" onclick="setDeviationSort('finish')">🏆 確定着順順</button>
+                <button class="btn-dev-sort" data-sort="surge" onclick="setDeviationSort('surge')">⚡ 激走馬 (上振れ順)</button>
+                <button class="btn-dev-sort" data-sort="drop" onclick="setDeviationSort('drop')">⚠️ 凡走馬 (下振れ順)</button>
+              </div>
+            </div>
+
+            <!-- 対比テーブル -->
+            <div class="deviation-table-wrapper">
+              <table class="deviation-table">
+                <thead>
+                  <tr>
+                    <th style="width: 140px; white-space: nowrap;">好走ランク</th>
+                    <th style="min-width: 180px; white-space: nowrap;">馬番・馬名</th>
+                    <th style="width: 90px; text-align: center; white-space: nowrap;">確定着順</th>
+                    <th style="width: 90px; text-align: center; white-space: nowrap;">単勝人気</th>
+                    <th style="width: 140px; text-align: center; white-space: nowrap;">着順乖離度</th>
+                    <th style="min-width: 240px;">乖離の核心要因・レース回顧</th>
+                  </tr>
+                </thead>
+                <tbody id="deviation-table-body"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 4. 【★最重要★】次回への参考データ＆狙い目診断 -->
           <div class="review-card" style="border: 1px solid rgba(16, 185, 129, 0.4); background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(30, 41, 59, 0.8) 100%);">
             <div class="review-card-header">
               <h3 class="review-card-title" style="color: #34d399;">
@@ -88478,7 +90027,7 @@ function hydratePayouts(race) {
             </div>
           </div>
 
-          <!-- 4. 出走馬 個別詳細回顧テーブル -->
+          <!-- 5. 出走馬 個別詳細回顧テーブル -->
           <div class="review-card">
             <div class="review-card-header">
               <h3 class="review-card-title"><i data-lucide="list-ordered"></i> 出走各馬のレース個別回顧＆勝因・敗因</h3>
@@ -88495,6 +90044,7 @@ function hydratePayouts(race) {
           </div>
         `;
 
+        renderDeviationTable(raceId);
         renderFilteredHorsesList();
         if (typeof lucide !== 'undefined') lucide.createIcons();
       }
@@ -89134,6 +90684,8 @@ function hydratePayouts(race) {
         window.selectReviewRace = selectReviewRace;
         window.switchView = switchView;
         window.setReviewFilter = setReviewFilter;
+        window.setDeviationSort = setDeviationSort;
+        window.renderDeviationTable = renderDeviationTable;
         window.renderReviewPills = renderReviewPills;
         window.renderReviewContent = renderReviewContent;
         window.openRaceDetail = openRaceDetail;
