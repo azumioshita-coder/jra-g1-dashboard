@@ -1591,6 +1591,9 @@ prediction_js_logic = """
           list.sort((a, b) => b.compositeScore - a.compositeScore);
         }
 
+        const hasGateConfirmed = list.some(h => h.gate != null && h.waku != null);
+        const hasWeightConfirmed = list.some(h => h.confirmedWeight != null || (h.weightDiff != null && h.weightDiff !== ''));
+
         const top3 = list.slice(0, 3);
         const rest = list.slice(3);
         const userMarks = getUserMarks();
@@ -1599,7 +1602,10 @@ prediction_js_logic = """
           const rankNum = idx + 1;
           const rankTag = rankNum === 1 ? '👑 1位 本命' : (rankNum === 2 ? '🥈 2位 対抗' : '🥉 3位 単穴');
           const rankClass = `rank-${rankNum}`;
-          const currentMark = userMarks[String(h.gate)] || '';
+          const gateDisp = (h.gate != null) ? h.gate : '-';
+          const wakuClass = (h.waku != null) ? `waku-${h.waku}` : 'waku-unconfirmed';
+          const gateKey = (h.gate != null) ? String(h.gate) : h.horseName;
+          const currentMark = userMarks[gateKey] || '';
           
           return `
             <div class="podium-card ${rankClass}">
@@ -1608,12 +1614,12 @@ prediction_js_logic = """
                 <div class="podium-score-tag">期待度: <span>${h.compositeScore}</span>点</div>
               </div>
               <div class="podium-horse-header">
-                <span class="podium-gate-box waku-${h.waku}">${h.gate}</span>
+                <span class="podium-gate-box ${wakuClass}">${gateDisp}</span>
                 <span class="podium-horse-name" onclick="openHorseDetail('${h.horseName}');" title="競走馬詳細を見る">
                   ${h.horseName}
                 </span>
                 <span class="podium-grade-pill">${h.grade} ${h.gradeTag}</span>
-                ${currentMark ? `<span class="ranking-assigned-mark-badge ${MARK_CLASSES[currentMark] || ''}" data-gate="${h.gate}">${currentMark}</span>` : `<span class="ranking-assigned-mark-badge" data-gate="${h.gate}" style="display:none;"></span>`}
+                ${currentMark ? `<span class="ranking-assigned-mark-badge ${MARK_CLASSES[currentMark] || ''}" data-gate="${gateKey}">${currentMark}</span>` : `<span class="ranking-assigned-mark-badge" data-gate="${gateKey}" style="display:none;"></span>`}
               </div>
               <div class="podium-subinfo">
                 <span>${h.sexAge} ${h.load}kg</span> / 
@@ -1660,12 +1666,12 @@ prediction_js_logic = """
               <div class="podium-actions">
                 <div class="drawer-marks-group" style="margin-bottom: 8px;">
                   <span class="drawer-marks-label">予想印:</span>
-                  <button class="btn-drawer-mark mark-honmei ${currentMark === '◎' ? 'active' : ''}" data-gate="${h.gate}" data-mark="◎" onclick="event.stopPropagation(); setUserMark('${h.gate}', '◎');">◎ 本命</button>
-                  <button class="btn-drawer-mark mark-taiko ${currentMark === '○' ? 'active' : ''}" data-gate="${h.gate}" data-mark="○" onclick="event.stopPropagation(); setUserMark('${h.gate}', '○');">○ 対抗</button>
-                  <button class="btn-drawer-mark mark-tanana ${currentMark === '▲' ? 'active' : ''}" data-gate="${h.gate}" data-mark="▲" onclick="event.stopPropagation(); setUserMark('${h.gate}', '▲');">▲ 単穴</button>
-                  <button class="btn-drawer-mark mark-renka ${currentMark === '△' ? 'active' : ''}" data-gate="${h.gate}" data-mark="△" onclick="event.stopPropagation(); setUserMark('${h.gate}', '△');">△ 連下</button>
-                  <button class="btn-drawer-mark mark-ana ${currentMark === '☆' ? 'active' : ''}" data-gate="${h.gate}" data-mark="☆" onclick="event.stopPropagation(); setUserMark('${h.gate}', '☆');">☆ 穴</button>
-                  <button class="btn-drawer-mark mark-clear" data-gate="${h.gate}" data-mark="" onclick="event.stopPropagation(); setUserMark('${h.gate}', '');">消</button>
+                  <button class="btn-drawer-mark mark-honmei ${currentMark === '◎' ? 'active' : ''}" data-gate="${gateKey}" data-mark="◎" onclick="event.stopPropagation(); setUserMark('${gateKey}', '◎');">◎ 本命</button>
+                  <button class="btn-drawer-mark mark-taiko ${currentMark === '○' ? 'active' : ''}" data-gate="${gateKey}" data-mark="○" onclick="event.stopPropagation(); setUserMark('${gateKey}', '○');">○ 対抗</button>
+                  <button class="btn-drawer-mark mark-tanana ${currentMark === '▲' ? 'active' : ''}" data-gate="${gateKey}" data-mark="▲" onclick="event.stopPropagation(); setUserMark('${gateKey}', '▲');">▲ 単穴</button>
+                  <button class="btn-drawer-mark mark-renka ${currentMark === '△' ? 'active' : ''}" data-gate="${gateKey}" data-mark="△" onclick="event.stopPropagation(); setUserMark('${gateKey}', '△');">△ 連下</button>
+                  <button class="btn-drawer-mark mark-ana ${currentMark === '☆' ? 'active' : ''}" data-gate="${gateKey}" data-mark="☆" onclick="event.stopPropagation(); setUserMark('${gateKey}', '☆');">☆ 穴</button>
+                  <button class="btn-drawer-mark mark-clear" data-gate="${gateKey}" data-mark="" onclick="event.stopPropagation(); setUserMark('${gateKey}', '');">消</button>
                 </div>
                 <button class="btn-detail-link" onclick="openHorseDetail('${h.horseName}');">
                   📖 競走馬詳細 (血統・戦歴・写真)
@@ -1677,12 +1683,16 @@ prediction_js_logic = """
 
         const restRowsHtml = rest.map((h, idx) => {
           const rankNum = idx + 4;
-          const currentMark = userMarks[String(h.gate)] || '';
+          const gateDisp = (h.gate != null) ? h.gate : '-';
+          const wakuClass = (h.waku != null) ? `waku-${h.waku}` : 'waku-unconfirmed';
+          const gateKey = (h.gate != null) ? String(h.gate) : h.horseName;
+          const currentMark = userMarks[gateKey] || '';
+          const rowId = (h.gate != null) ? String(h.gate) : `h-${idx}`;
           return `
-            <div class="ranking-row-wrapper" id="ranking-wrapper-${h.gate}">
-              <div class="ranking-row-item" onclick="toggleRankingRowDetail('${h.gate}');" title="クリックして詳細評価を展開/閉じる">
+            <div class="ranking-row-wrapper" id="ranking-wrapper-${rowId}">
+              <div class="ranking-row-item" onclick="toggleRankingRowDetail('${rowId}');" title="クリックして詳細評価を展開/閉じる">
                 <span class="ranking-pos-badge">${rankNum}</span>
-                <span class="podium-gate-box waku-${h.waku}" style="width: 24px; height: 24px; font-size: 11px; border-radius: 4px; flex-shrink: 0;">${h.gate}</span>
+                <span class="podium-gate-box ${wakuClass}" style="width: 24px; height: 24px; font-size: 11px; border-radius: 4px; flex-shrink: 0;">${gateDisp}</span>
                 <div class="ranking-row-main">
                   <div class="ranking-row-title">
                     <span class="ranking-row-name" onclick="event.stopPropagation(); openHorseDetail('${h.horseName}');" title="クリックして競走馬詳細（血統・戦歴・写真）を見る">
@@ -1690,7 +1700,7 @@ prediction_js_logic = """
                     </span>
                     <span class="ranking-row-jockey">${h.jockey} (${h.load}kg)</span>
                     <span class="podium-grade-pill" style="font-size: 9.5px; padding: 1px 6px;">${h.grade} ${h.gradeTag}</span>
-                    ${currentMark ? `<span class="ranking-assigned-mark-badge ${MARK_CLASSES[currentMark] || ''}" data-gate="${h.gate}">${currentMark}</span>` : `<span class="ranking-assigned-mark-badge" data-gate="${h.gate}" style="display:none;"></span>`}
+                    ${currentMark ? `<span class="ranking-assigned-mark-badge ${MARK_CLASSES[currentMark] || ''}" data-gate="${gateKey}">${currentMark}</span>` : `<span class="ranking-assigned-mark-badge" data-gate="${gateKey}" style="display:none;"></span>`}
                   </div>
                   <div class="ranking-row-comment" title="${h.strengths}">
                     ${h.strengths}
@@ -1700,14 +1710,14 @@ prediction_js_logic = """
                   <div class="ranking-score-val">${h.compositeScore}<span style="font-size: 10px; font-weight: normal; color: var(--text-muted); margin-left: 2px;">点</span></div>
                   <div class="ranking-grade-tag">調教${h.scores.training}/鞍上${h.scores.jockey}</div>
                 </div>
-                <button class="btn-ranking-toggle" id="ranking-toggle-btn-${h.gate}" onclick="event.stopPropagation(); toggleRankingRowDetail('${h.gate}');" aria-label="詳細展開/閉じる">
-                  <span id="ranking-toggle-text-${h.gate}">詳細</span>
-                  <span id="ranking-arrow-${h.gate}" class="ranking-toggle-arrow">▾</span>
+                <button class="btn-ranking-toggle" id="ranking-toggle-btn-${rowId}" onclick="event.stopPropagation(); toggleRankingRowDetail('${rowId}');" aria-label="詳細展開/閉じる">
+                  <span id="ranking-toggle-text-${rowId}">詳細</span>
+                  <span id="ranking-arrow-${rowId}" class="ranking-toggle-arrow">▾</span>
                 </button>
               </div>
 
               <!-- クリックで開閉する詳細アコーディオン -->
-              <div class="ranking-row-drawer" id="ranking-drawer-${h.gate}" style="display: none;">
+              <div class="ranking-row-drawer" id="ranking-drawer-${rowId}" style="display: none;">
                 <div class="ranking-drawer-inner">
                   <div class="drawer-factor-title">
                     <span>⚡ 6大ファクター個別評価スコア</span>
@@ -1760,12 +1770,12 @@ prediction_js_logic = """
                   <div class="drawer-action-bar">
                     <div class="drawer-marks-group">
                       <span class="drawer-marks-label">予想印割当:</span>
-                      <button class="btn-drawer-mark mark-honmei ${currentMark === '◎' ? 'active' : ''}" data-gate="${h.gate}" data-mark="◎" onclick="event.stopPropagation(); setUserMark('${h.gate}', '◎');">◎ 本命</button>
-                      <button class="btn-drawer-mark mark-taiko ${currentMark === '○' ? 'active' : ''}" data-gate="${h.gate}" data-mark="○" onclick="event.stopPropagation(); setUserMark('${h.gate}', '○');">○ 対抗</button>
-                      <button class="btn-drawer-mark mark-tanana ${currentMark === '▲' ? 'active' : ''}" data-gate="${h.gate}" data-mark="▲" onclick="event.stopPropagation(); setUserMark('${h.gate}', '▲');">▲ 単穴</button>
-                      <button class="btn-drawer-mark mark-renka ${currentMark === '△' ? 'active' : ''}" data-gate="${h.gate}" data-mark="△" onclick="event.stopPropagation(); setUserMark('${h.gate}', '△');">△ 連下</button>
-                      <button class="btn-drawer-mark mark-ana ${currentMark === '☆' ? 'active' : ''}" data-gate="${h.gate}" data-mark="☆" onclick="event.stopPropagation(); setUserMark('${h.gate}', '☆');">☆ 穴</button>
-                      <button class="btn-drawer-mark mark-clear" data-gate="${h.gate}" data-mark="" onclick="event.stopPropagation(); setUserMark('${h.gate}', '');">クリア</button>
+                      <button class="btn-drawer-mark mark-honmei ${currentMark === '◎' ? 'active' : ''}" data-gate="${gateKey}" data-mark="◎" onclick="event.stopPropagation(); setUserMark('${gateKey}', '◎');">◎ 本命</button>
+                      <button class="btn-drawer-mark mark-taiko ${currentMark === '○' ? 'active' : ''}" data-gate="${gateKey}" data-mark="○" onclick="event.stopPropagation(); setUserMark('${gateKey}', '○');">○ 対抗</button>
+                      <button class="btn-drawer-mark mark-tanana ${currentMark === '▲' ? 'active' : ''}" data-gate="${gateKey}" data-mark="▲" onclick="event.stopPropagation(); setUserMark('${gateKey}', '▲');">▲ 単穴</button>
+                      <button class="btn-drawer-mark mark-renka ${currentMark === '△' ? 'active' : ''}" data-gate="${gateKey}" data-mark="△" onclick="event.stopPropagation(); setUserMark('${gateKey}', '△');">△ 連下</button>
+                      <button class="btn-drawer-mark mark-ana ${currentMark === '☆' ? 'active' : ''}" data-gate="${gateKey}" data-mark="☆" onclick="event.stopPropagation(); setUserMark('${gateKey}', '☆');">☆ 穴</button>
+                      <button class="btn-drawer-mark mark-clear" data-gate="${gateKey}" data-mark="" onclick="event.stopPropagation(); setUserMark('${gateKey}', '');">クリア</button>
                     </div>
 
                     <button class="btn-detail-link" onclick="event.stopPropagation(); openHorseDetail('${h.horseName}');" title="netkeiba準拠 競走馬詳細（血統・全戦歴・写真）を見る">
@@ -1803,6 +1813,20 @@ prediction_js_logic = """
                   <i data-lucide="zap" style="width: 13px; height: 13px;"></i> 上位印に自動反映
                 </button>
               </div>
+            </div>
+
+            <!-- 調教・枠順・確定馬体重 連動自動更新ステータス -->
+            <div class="factor-sync-row">
+              <span class="factor-sync-badge auto-recalc"><span class="pulse-dot"></span> 調教・枠・馬体重 連動自動更新中</span>
+              <span class="factor-sync-badge ${hasGateConfirmed ? 'confirmed' : 'pending'}">
+                ${hasGateConfirmed ? '⚡ 枠順確定（内外枠バイアス適用済）' : '⏳ 枠順発表前（確定時に内外枠バイアス即時反映）'}
+              </span>
+              <span class="factor-sync-badge ${hasWeightConfirmed ? 'confirmed' : 'pending'}">
+                ${hasWeightConfirmed ? '⚖️ 確定馬体重（増減仕上がり補正適用済）' : '⏳ 当日馬体重発表前（発表時に増減補正即時反映）'}
+              </span>
+              <span class="factor-sync-badge confirmed">
+                🏃 最終追切・調教評価反映済
+              </span>
             </div>
 
             <!-- 表彰台 TOP3 ポディウムカード -->

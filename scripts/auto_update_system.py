@@ -188,6 +188,331 @@ def clean_jockey_name(j):
     j = j.replace('Ｍ．', 'M.').replace('Ｃ．', 'C.').replace('Ａ．', 'A.').replace('Ｊ．', 'J.').replace('・', '.').strip()
     return JOCKEY_MAP.get(j, j)
 
+# Contender Ranking Dynamic Scoring Constants
+JOCKEY_BASE_SCORES = {
+    'ルメール': 98, 'C.ルメール': 98, '川田': 97, '川田将雅': 97,
+    '武豊': 96, 'C.デムーロ': 96, 'Ｃデムー': 96, 'モレイラ': 97, 'J.モレイラ': 97,
+    'ムーア': 96, 'レーン': 96, 'スミヨン': 96, 'プーシャ': 93, 'A.プーシャン': 93,
+    '戸崎': 95, '戸崎圭太': 95, '坂井': 94, '坂井瑠星': 94, '松山': 94, '松山弘平': 94,
+    'バルザローナ': 95, 'M.バルザローナ': 95, '横山武': 93, '横山武史': 93,
+    '岩田望': 92, '岩田望来': 92, '西村淳': 91, '西村淳也': 91, '菅原明': 91, '菅原明良': 91,
+    'ビュイック': 95, 'W.ビュイック': 95, 'マーカンド': 94, 'T.マーカンド': 94,
+    '横山典': 91, '横山典弘': 91, '田口': 88, '田口貫太': 88, '三浦': 89, '三浦皇成': 89,
+    '荻野極': 86, '古川吉': 85
+}
+
+TRAIN_BASE_SCORES = {'S': 97, 'A+': 95, 'A': 92, 'B+': 88, 'B': 84, 'C': 78}
+
+def compute_contender_ranking(race_id, starters_list, horse_db_data, race_meta=None):
+    """
+    調教・枠順・確定馬体重・斤量・鞍上・オッズ等の更新に完全連動して、
+    6大ファクターおよび好走期待度スコア（compositeScore）を自動動的に再計算する。
+    """
+    items = []
+    
+    # レースの舞台設定
+    loc = (race_meta.get('location') or '') if race_meta else ''
+    crs = (race_meta.get('course') or '') if race_meta else ''
+    
+    for s in starters_list:
+        hname = s.get('horseName', '')
+        h_info = horse_db_data.get(hname, {})
+        
+        # 1. 調教評価 (Training: 20%)
+        tr_grade = s.get('trainingGrade') or h_info.get('trainingGrade') or 'B'
+        tr_base = TRAIN_BASE_SCORES.get(tr_grade, 85)
+        
+        # 当日確定馬体重・増減補正
+        wt_diff = s.get('weightDiff')
+        has_confirmed_wt = s.get('confirmedWeight') is not None
+        if wt_diff is not None:
+            try:
+                diff_n = int(wt_diff)
+                if 2 <= diff_n <= 4:
+                    tr_base += 2.0  # 理想的な筋力増・好仕上がり
+                elif -2 <= diff_n <= 1:
+                    tr_base += 1.0  # 安定キープ
+                elif diff_n >= 10:
+                    tr_base -= 3.0  # 太め残り
+                elif diff_n <= -8:
+                    tr_base -= 3.0  # 馬体減・疲労
+                elif 6 <= diff_n <= 8:
+                    tr_base -= 1.0
+            except ValueError:
+                pass
+        elif s.get('trainingWeightDiff'):
+            try:
+                diff_n = int(s['trainingWeightDiff'])
+                if 2 <= diff_n <= 4:
+                    tr_base += 1.5
+                elif -2 <= diff_n <= 1:
+                    tr_base += 1.0
+            except ValueError:
+                pass
+        
+        # 追切時計ボーナス
+        ttime = s.get('trainingTime') or ''
+        if ttime and any(f in ttime for f in ['11.0', '11.1', '11.2']):
+            tr_base += 1.5
+        elif ttime and any(f in ttime for f in ['11.3', '11.4']):
+            tr_base += 0.5
+            
+        tr_score = min(99, max(70, round(tr_base)))
+        
+        # 2. 鞍上力 (Jockey: 20%)
+        j_name = s.get('jockey') or ''
+        j_base = 86
+        for k, v in JOCKEY_BASE_SCORES.items():
+            if k in j_name:
+                j_base = v
+                break
+        
+        # 斤量ボーナス
+        try:
+            load_val = float(s.get('load', 58))
+            if load_val <= 54:
+                j_base += 3.2
+            elif load_val <= 55:
+                j_base += 2.4
+            elif load_val <= 56:
+                j_base += 1.6
+            elif load_val <= 57:
+                j_base += 0.8
+        except (ValueError, TypeError):
+            pass
+            
+        j_score = min(99, max(70, round(j_base)))
+        
+        # 3. コース適性 & 枠順バイアス (Course: 15%)
+        c_base = 90
+        waku = s.get('waku')
+        gate = s.get('gate')
+        has_gate = (gate is not None and waku is not None)
+        
+        if has_gate:
+            if '東京' in loc and '2400' in crs:
+                # 東京芝2400m 枠順バイアス
+                if waku == 1:
+                    c_base += 3.5
+                elif waku == 2:
+                    c_base += 2.5
+                elif waku in [3, 4]:
+                    c_base += 1.2
+                elif waku in [5, 6]:
+                    c_base += 0.0
+                elif waku == 7:
+                    c_base -= 1.5
+                elif waku == 8:
+                    c_base -= 3.0
+            elif '中京' in loc and 'ダート' in crs:
+                # 中京ダート1800m
+                if waku in [1, 2]:
+                    c_base += 3.0
+                elif waku in [3, 4]:
+                    c_base += 1.5
+                elif waku in [7, 8]:
+                    c_base -= 3.0
+            elif '中山' in loc and '2500' in crs:
+                # 有馬記念 中山芝2500m
+                if waku in [1, 2]:
+                    c_base += 3.5
+                elif waku in [3, 4]:
+                    c_base += 2.0
+                elif waku in [7, 8]:
+                    c_base -= 3.5
+            elif '京都' in loc and '1600' in crs:
+                # 京都芝1600m
+                if waku in [1, 2]:
+                    c_base += 2.5
+                elif waku in [3, 4]:
+                    c_base += 1.5
+                elif waku in [7, 8]:
+                    c_base -= 2.0
+            else:
+                if waku in [1, 2]:
+                    c_base += 2.0
+                elif waku in [3, 4]:
+                    c_base += 1.0
+                elif waku in [7, 8]:
+                    c_base -= 2.0
+                    
+        c_score = min(99, max(70, round(c_base)))
+        
+        # 4. 距離適性 (Distance: 15%) & 5. 前走評価 (PrevRace: 15%)
+        odds_f = 99.0
+        try:
+            if s.get('odds'):
+                odds_f = float(s['odds'])
+        except (ValueError, TypeError):
+            pass
+            
+        if odds_f <= 3.5:
+            p_base, d_base = 96, 96
+        elif odds_f <= 7.5:
+            p_base, d_base = 94, 94
+        elif odds_f <= 15.0:
+            p_base, d_base = 91, 92
+        elif odds_f <= 35.0:
+            p_base, d_base = 88, 88
+        else:
+            p_base, d_base = 84, 84
+            
+        # 6. 血統適性 (Pedigree: 15%)
+        ped_base = 89
+        father = s.get('father') or (h_info.get('bloodline', {}).get('father') if isinstance(h_info.get('bloodline'), dict) else '') or ''
+        if father in ['スワーヴリチャード', 'キズナ', 'エピファネイア', 'ハーツクライ', 'ドゥラメンテ', 'ディープインパクト', 'Kingman', 'Dubawi']:
+            ped_base = 94
+        elif father in ['キタサンブラック', 'モーリス', 'ロードカナロア', 'ルーラーシップ']:
+            ped_base = 92
+            
+        # 総合期待度スコア (compositeScore)
+        comp = round(
+            tr_score * 0.20 +
+            j_score * 0.20 +
+            c_score * 0.15 +
+            d_base * 0.15 +
+            p_base * 0.15 +
+            ped_base * 0.15,
+            1
+        )
+        
+        # 分析コメント動的生成
+        str_parts = []
+        if has_gate:
+            if waku in [1, 2]:
+                str_parts.append(f"【好枠{waku}枠{gate}番】最内経済コースをロスなく立ち回れる絶好条件。")
+            elif waku in [3, 4]:
+                str_parts.append(f"【好位自在の{waku}枠{gate}番】馬群を見ながらスムーズに好位を取れる好枠。")
+                
+        tr_comment = s.get('trainingComment') or ''
+        if has_confirmed_wt:
+            diff_str = f"({wt_diff}kg)" if wt_diff else ""
+            str_parts.append(f"【当日馬体重{s['confirmedWeight']}kg{diff_str}】仕上がり万全。")
+        elif s.get('trainingGrade') == 'S':
+            str_parts.append(f"【調教S・抜けた動き】{tr_comment}")
+        elif tr_comment:
+            str_parts.append(tr_comment)
+        else:
+            str_parts.append("順調な仕上がり。")
+            
+        con_parts = []
+        if has_gate and waku in [7, 8]:
+            con_parts.append(f"外枠{waku}枠{gate}番から終始外々を回らされる距離ロスが課題。")
+        if wt_diff:
+            try:
+                diff_n = int(wt_diff)
+                if diff_n >= 10:
+                    con_parts.append(f"馬体重+{diff_n}kgとやや太め残りの懸念。")
+                elif diff_n <= -8:
+                    con_parts.append(f"馬体重{diff_n}kgと馬体減り・輸送の影響。")
+            except ValueError:
+                pass
+        if not con_parts:
+            con_parts.append("府中の長い直線での瞬発力勝負の隊列。")
+            
+        strengths_text = " ".join(str_parts)
+        concerns_text = " ".join(con_parts)
+        
+        # stars calculation
+        stars_str = '★★★★★' if comp >= 94 else ('★★★★☆' if comp >= 90 else ('★★★☆☆' if comp >= 86 else '★★☆☆☆'))
+        
+        items.append({
+            'gate': gate,
+            'waku': waku,
+            'horseName': hname,
+            'sexAge': s.get('sexAge', ''),
+            'load': s.get('load', 58),
+            'jockey': s.get('jockey', ''),
+            'stable': s.get('stable', ''),
+            'odds': s.get('odds', ''),
+            'pop': s.get('pop'),
+            'scores': {
+                'training': tr_score,
+                'jockey': j_score,
+                'course': c_score,
+                'distance': d_base,
+                'prevRace': p_base,
+                'pedigree': ped_base
+            },
+            'factors': {
+                'workout': tr_score,
+                'jockey': j_score,
+                'course': c_score,
+                'distance': d_base,
+                'lastRace': p_base,
+                'pedigree': ped_base
+            },
+            'compositeScore': comp,
+            'totalScore': comp,
+            'stars': stars_str,
+            'strengths': strengths_text,
+            'comment': strengths_text,
+            'concerns': concerns_text
+        })
+        
+    # compositeScore降順、同点ならオッズ順
+    items.sort(key=lambda x: (x['compositeScore'], -(float(x['odds']) if x['odds'] else 999.0)), reverse=True)
+    
+    # ランク・推奨印付与
+    for idx, item in enumerate(items):
+        item['rank'] = idx + 1
+        comp = item['compositeScore']
+        if idx == 0:
+            item['recommendedMark'] = '◎'
+            item['grade'] = 'SS' if comp >= 95 else 'S+'
+            item['gradeTag'] = '本命最有力'
+        elif idx == 1:
+            item['recommendedMark'] = '○'
+            item['grade'] = 'S+' if comp >= 94 else 'S'
+            item['gradeTag'] = '対抗筆頭'
+        elif idx == 2:
+            item['recommendedMark'] = '▲'
+            item['grade'] = 'S'
+            item['gradeTag'] = '単穴警戒'
+        elif idx in [3, 4]:
+            item['recommendedMark'] = '△'
+            item['grade'] = 'S-' if comp >= 92 else 'A+'
+            item['gradeTag'] = '連下候補'
+        elif idx == 5:
+            item['recommendedMark'] = '☆'
+            item['grade'] = 'A+'
+            item['gradeTag'] = '大穴警戒'
+        else:
+            item['recommendedMark'] = '-'
+            item['grade'] = 'A' if comp >= 89 else ('B+' if comp >= 86 else 'B')
+            item['gradeTag'] = '伏兵一考' if comp >= 87 else '連下候補'
+            
+    return items
+
+def update_all_contender_rankings(pred_data, horse_db):
+    """
+    全予定G1レースの出走予定馬・枠順・調教・馬体重に基づいて
+    好走ランキングを一括動的再計算・同期（確定済過去レース16-18は保存）
+    """
+    if not pred_data or 'races' not in pred_data:
+        return False
+    
+    updated = False
+    schedule_map = {r['id']: r for r in G1_SCHEDULE}
+    active_id = str(pred_data.get('activeRaceId', '19'))
+    
+    for r_id, r_data in pred_data['races'].items():
+        # 過去確定済レース(16, 17, 18)の好走ランクは回顧比較用に当時のものを保持
+        if str(r_id) in ['16', '17', '18']:
+            continue
+            
+        starters = r_data.get('starters', [])
+        if starters and len(starters) >= 5:
+            race_meta = schedule_map.get(str(r_id))
+            new_ranking = compute_contender_ranking(r_id, starters, horse_db, race_meta)
+            r_data['contenderRanking'] = new_ranking
+            if str(r_id) == active_id:
+                pred_data['contenderRanking'] = new_ranking
+            updated = True
+            log(f"Synced dynamic contender ranking for Race {r_id} ({race_meta['name'] if race_meta else r_id}) [Starters: {len(new_ranking)}]")
+            
+    return updated
+
 def parse_shutuba(html):
     """NetKeiba出馬表HTMLから枠番、馬番、馬名、性齢、斤量、騎手、厩舎、オッズ、人気、馬体重を抽出"""
     starters = []
@@ -391,11 +716,18 @@ def check_and_update_entries():
                         else:
                             pred_data['races'][r_id]['starters'] = sorted(new_pred_starters, key=lambda x: x['horseName'])
 
+                        # Recalculate Contender Ranking whenever starters, gates, weights or workouts are updated
+                        new_ranking = compute_contender_ranking(r_id, pred_data['races'][r_id]['starters'], horse_db, race)
+                        pred_data['races'][r_id]['contenderRanking'] = new_ranking
+
                         # If this race is activeRaceId, also sync top-level
-                        active_id = str(pred_data.get('activeRaceId', '18'))
+                        active_id = str(pred_data.get('activeRaceId', '19'))
                         if r_id == active_id:
                             pred_data['starters'] = pred_data['races'][r_id]['starters']
                             pred_data['entryStatus'] = stage
+                            pred_data['contenderRanking'] = new_ranking
+
+                        log(f"Auto-recalculated contender ranking for Race {r_id} ({race['name']}) [Starters: {len(new_ranking)}]")
 
                     updated = True
 
@@ -537,6 +869,24 @@ def sync_all():
 
 def main():
     log("GRAND STABLE Auto-Update System initialized.")
+    if len(sys.argv) > 1 and sys.argv[1] in ['--recalc-rankings', '--update-rankings']:
+        log("Recalculating contender rankings across all upcoming G1 races...")
+        try:
+            with open(PRED_JSON, 'r', encoding='utf-8') as f:
+                pred_data = json.load(f)
+            with open(HORSE_JSON, 'r', encoding='utf-8') as f:
+                horse_db = json.load(f)
+            if update_all_contender_rankings(pred_data, horse_db):
+                with open(PRED_JSON, 'w', encoding='utf-8') as f:
+                    json.dump(pred_data, f, ensure_ascii=False, indent=2)
+                with open(os.path.join(APP_DIR, 'src', 'prediction_data.js'), 'w', encoding='utf-8') as f:
+                    f.write('export const PREDICTION_DATA = ' + json.dumps(pred_data, ensure_ascii=False, indent=2) + ';\n')
+                log("Successfully recalculated contender rankings.")
+                sync_all()
+        except Exception as e:
+            log(f"Error recalculating rankings: {e}")
+        return
+
     if len(sys.argv) > 1 and sys.argv[1] == '--daemon':
         log("Daemon mode started. Checking every 1 hour...")
         while True:
@@ -552,6 +902,19 @@ def main():
         # One-shot check & sync
         has_entries = check_and_update_entries()
         has_finished = check_and_update_finished_races()
+        # Ensure rankings are freshly calculated from current starters & factors
+        try:
+            with open(PRED_JSON, 'r', encoding='utf-8') as f:
+                pred_data = json.load(f)
+            with open(HORSE_JSON, 'r', encoding='utf-8') as f:
+                horse_db = json.load(f)
+            if update_all_contender_rankings(pred_data, horse_db):
+                with open(PRED_JSON, 'w', encoding='utf-8') as f:
+                    json.dump(pred_data, f, ensure_ascii=False, indent=2)
+                with open(os.path.join(APP_DIR, 'src', 'prediction_data.js'), 'w', encoding='utf-8') as f:
+                    f.write('export const PREDICTION_DATA = ' + json.dumps(pred_data, ensure_ascii=False, indent=2) + ';\n')
+        except Exception as e:
+            log(f"Note during ranking update: {e}")
         sync_all()
         log("One-shot check completed.")
 
