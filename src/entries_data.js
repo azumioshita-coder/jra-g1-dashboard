@@ -490,7 +490,7 @@ export const ENTRIES_DATA = {
       "sexAge": "牡5",
       "load": 58,
       "jockey": "プーシャ",
-      "stable": "武井"
+      "stable": "武井亮 (美浦)"
     },
     {
       "waku": null,
@@ -508,7 +508,7 @@ export const ENTRIES_DATA = {
       "sexAge": "セ6",
       "load": 58,
       "jockey": "坂井瑠星",
-      "stable": "マリンズ"
+      "stable": "W.マリンズ (愛)"
     },
     {
       "waku": null,
@@ -517,7 +517,7 @@ export const ENTRIES_DATA = {
       "sexAge": "牡5",
       "load": 58,
       "jockey": "ビュイック",
-      "stable": "ゴスデン"
+      "stable": "J&T.ゴスデン (英)"
     },
     {
       "waku": null,
@@ -526,7 +526,7 @@ export const ENTRIES_DATA = {
       "sexAge": "セ5",
       "load": 58,
       "jockey": "M.バルザローナ",
-      "stable": "グラファー"
+      "stable": "F.グラファール (仏)"
     },
     {
       "waku": null,
@@ -535,7 +535,7 @@ export const ENTRIES_DATA = {
       "sexAge": "牡4",
       "load": 58,
       "jockey": "Ｃデムー",
-      "stable": "斉藤崇 (栗東)"
+      "stable": "斉藤崇史 (栗東)"
     },
     {
       "waku": null,
@@ -544,7 +544,7 @@ export const ENTRIES_DATA = {
       "sexAge": "牡5",
       "load": 58,
       "jockey": "丹内",
-      "stable": "加藤士"
+      "stable": "根本康広 (美浦)"
     },
     {
       "waku": null,
@@ -553,7 +553,7 @@ export const ENTRIES_DATA = {
       "sexAge": "セ6",
       "load": 58,
       "jockey": "スミヨン",
-      "stable": "グラファー"
+      "stable": "F.グラファール (仏)"
     },
     {
       "waku": null,
@@ -562,7 +562,7 @@ export const ENTRIES_DATA = {
       "sexAge": "牡6",
       "load": 58,
       "jockey": "古川吉",
-      "stable": "宮 (栗東)"
+      "stable": "安達昭夫 (栗東)"
     },
     {
       "waku": null,
@@ -571,7 +571,7 @@ export const ENTRIES_DATA = {
       "sexAge": "牡5",
       "load": 58,
       "jockey": "Ｍデムー",
-      "stable": "宮 (栗東)"
+      "stable": "山田信大 (船橋)"
     },
     {
       "waku": null,
@@ -580,7 +580,7 @@ export const ENTRIES_DATA = {
       "sexAge": "牡5",
       "load": 58,
       "jockey": "戸崎圭",
-      "stable": "安田翔伍 (栗東)"
+      "stable": "安田 (栗東)"
     },
     {
       "waku": null,
@@ -589,7 +589,7 @@ export const ENTRIES_DATA = {
       "sexAge": "牡4",
       "load": 58,
       "jockey": "サドラー",
-      "stable": "サドラー"
+      "stable": "ジョン・サドラー (米)"
     },
     {
       "waku": null,
@@ -598,7 +598,7 @@ export const ENTRIES_DATA = {
       "sexAge": "牡4",
       "load": 58,
       "jockey": "堀",
-      "stable": "堀"
+      "stable": "宮地貴稔 (栗東)"
     },
     {
       "waku": null,
@@ -607,7 +607,7 @@ export const ENTRIES_DATA = {
       "sexAge": "牡5",
       "load": 58,
       "jockey": "木村",
-      "stable": "木村"
+      "stable": "木村哲也 (美浦)"
     },
     {
       "waku": null,
@@ -616,7 +616,7 @@ export const ENTRIES_DATA = {
       "sexAge": "牡4",
       "load": 58,
       "jockey": "C.ルメール",
-      "stable": "手塚久"
+      "stable": "手塚貴久 (美浦)"
     },
     {
       "waku": null,
@@ -625,7 +625,7 @@ export const ENTRIES_DATA = {
       "sexAge": "牝4",
       "load": 56,
       "jockey": "ムーア",
-      "stable": "Ａオブライ"
+      "stable": "A.オブライエン (愛)"
     },
     {
       "waku": null,
@@ -634,7 +634,7 @@ export const ENTRIES_DATA = {
       "sexAge": "牡5",
       "load": 58,
       "jockey": "武豊",
-      "stable": "石橋 (栗東)"
+      "stable": "渡辺和雄 (大井)"
     },
     {
       "waku": null,
@@ -643,7 +643,7 @@ export const ENTRIES_DATA = {
       "sexAge": "牡6",
       "load": 58,
       "jockey": "横山典弘",
-      "stable": "宮本 (栗東)"
+      "stable": "平田修 (栗東)"
     }
   ],
   "20": [
@@ -814,11 +814,11 @@ export const ENTRIES_DATA = {
     {
       "waku": null,
       "gate": null,
-      "horseName": "クウネル",
+      "horseName": "アルマヴェローチェ",
       "sexAge": "牝2",
       "load": 55,
-      "jockey": "武豊",
-      "stable": "中内田充正 (栗東)"
+      "jockey": "岩田望来",
+      "stable": "上村洋行 (栗東)"
     },
     {
       "waku": null,

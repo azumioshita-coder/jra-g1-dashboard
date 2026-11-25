@@ -2574,35 +2574,18 @@ horse_modal_js_logic = """
           name: horseName,
           englishName: horseName,
           sexAge: foundSexAge,
-          color: '鹿毛',
-          birthday: '2022年4月生',
-          owner: '馬主情報',
-          breeder: '生産牧場',
-          origin: '北海道',
+          color: 'サラブレッド',
+          birthday: '-',
+          owner: '-',
+          breeder: '-',
+          origin: '-',
           stable: foundStable,
-          record: '10戦3勝 [3-2-1-4]',
-          earnings: '8,500万円',
-          titles: ['重賞戦線で活躍'],
+          record: '-',
+          earnings: '-',
+          titles: [],
           photoUrl: null,
-          pedigree: {
-            sire: 'キタサンブラック',
-            sireSire: 'ブラックタイド',
-            sireDam: 'シュガーハート',
-            dam: '母馬名',
-            damSire: 'キングカメハメハ',
-            damDam: '母母馬名',
-            crosses: 'サンデーサイレンス 4×3, Mr. Prospector 5×5'
-          },
-          career: [
-            {
-              date: '2026/10/18', venue: '4京都8', weather: '晴', raceNum: '11',
-              race: '秋季重賞', starters: '16', bracket: '4', gate: '7',
-              odds: '8.5', pop: '4', rank: '3', jockey: foundJockey, load: Number(foundLoad) || 57,
-              course: '芝1800', track: '良', time: '1:46.2', margin: '0.2',
-              passing: '6-6', pace: '34.8-34.5', agari: '33.8', weight: '488(+2)',
-              rival: '勝ち馬', prize: '1,500万円'
-            }
-          ]
+          pedigree: {},
+          career: []
         };
       }
 
