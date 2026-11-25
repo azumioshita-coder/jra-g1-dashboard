@@ -430,19 +430,19 @@ prediction_view_html = """
               <div class="odds-status-row">
                 <div class="odds-mode-badge pre-sale" id="odds-mode-badge">
                   <span class="pulse-dot-gold"></span>
-                  <span id="odds-mode-text">想定予想オッズ (netkeiba参考)</span>
+                  <span id="odds-mode-text">想定予想オッズ (netkeiba引用)</span>
                 </div>
                 <span id="odds-stage-pill" class="nh-stage-pill stage-scheduled"></span>
                 <div class="odds-sales-countdown" id="odds-sales-countdown">
-                  ※金曜 18:30夜間発売開始とともに確定オッズへ自動切替
+                  ※netkeiba想定オッズ引用中（発売開始後はnetkeibaリアルタイム発売オッズへ自動切替）
                 </div>
               </div>
 
               <div class="odds-action-row">
                 <div style="display: flex; align-items: center; gap: 8px;">
                   <div class="odds-type-toggle">
-                    <button id="btn-odds-estimated" class="btn-odds-mode active">予想オッズ</button>
-                    <button id="btn-odds-live" class="btn-odds-mode">発売中 (最新)</button>
+                    <button id="btn-odds-estimated" class="btn-odds-mode active">netkeiba予想オッズ</button>
+                    <button id="btn-odds-live" class="btn-odds-mode">netkeiba発売中オッズ</button>
                   </div>
                   <div style="display: flex; gap: 2px;">
                     <button id="btn-sort-gate" class="btn-sort active" data-sort="gate" style="padding: 4px 8px; font-size: 11px;">馬番順</button>
@@ -467,7 +467,7 @@ prediction_view_html = """
                 <div class="nh-col-gate">番</div>
                 <div class="nh-col-mark">印</div>
                 <div class="nh-col-info">馬名 / 騎手 / 斤量</div>
-                <div class="nh-col-odds">オッズ</div>
+                <div class="nh-col-odds" title="オッズ引用元: netkeiba">オッズ (netkeiba)</div>
                 <div class="nh-col-weight">馬体重</div>
                 <div class="nh-col-detail">詳細</div>
               </div>
@@ -476,6 +476,12 @@ prediction_view_html = """
               <div id="netkeiba-horse-list" class="nh-table-body">
                 <!-- 動的レンダリング -->
               </div>
+            </div>
+
+            <!-- オッズ引用元アトリビューション表示 -->
+            <div class="odds-source-attribution" style="margin-top: 8px; margin-bottom: 20px; font-size: 11.5px; color: var(--text-muted); display: flex; align-items: center; justify-content: flex-end; gap: 6px;">
+              <span style="display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #38bdf8;"></span>
+              <span>オッズ全データ引用元：<strong style="color: #38bdf8;">netkeiba</strong>（発売前想定予想・発売中リアルタイム・確定オッズすべて完全準拠）</span>
             </div>
           </section>
 
@@ -574,7 +580,7 @@ review_view_html = """
         <div id="view-review" class="app-view" style="display: none;">
           <!-- 上部ヘッダーカード -->
           <div class="review-header-card">
-            <span class="review-header-badge">JRA公式確定・展開＆トラックバイアス独自解析</span>
+            <span class="review-header-badge">netkeiba公式確定データベース引用・展開解析</span>
             <h1 class="review-main-title">レース回顧＆次走狙い目データ分析</h1>
             <p class="review-main-desc">各レースの勝因・敗因、展開トラックバイアス、および次走で「買える馬」「危険な馬」のデータを網羅</p>
           </div>
@@ -1185,15 +1191,15 @@ prediction_js_logic = """
         if (badge && badgeText) {
           if (oddsMode === 'estimated') {
             badge.className = 'odds-mode-badge pre-sale';
-            badgeText.innerText = '想定予想オッズ (netkeiba参考)';
+            badgeText.innerText = '想定予想オッズ (netkeiba引用)';
             if (countdown) {
-              countdown.innerText = `※${salesTimeStr}夜間発売開始とともに確定オッズへ自動切替`;
+              countdown.innerText = `※netkeiba想定オッズ引用中 (${salesTimeStr}夜間発売開始とともにnetkeibaリアルタイム発売オッズへ自動切替)`;
             }
           } else {
             badge.className = 'odds-mode-badge live-sale';
-            badgeText.innerText = '● 発売中・リアルタイムオッズ (30秒自動更新)';
+            badgeText.innerText = '● 発売中・リアルタイムオッズ (netkeiba引用・自動更新)';
             if (countdown) {
-              countdown.innerText = '※JRA公式発売オッズ連動シミュレーション中';
+              countdown.innerText = '※netkeibaリアルタイム発売オッズ速報連動中';
             }
           }
         }
@@ -3253,7 +3259,7 @@ open_race_detail_func = """
                 </div>
               </div>
 
-              <h3 class="detail-section-title">全着順確定結果</h3>
+              <h3 class="detail-section-title">全着順確定結果 <span style="font-size:12px;color:var(--text-muted);font-weight:normal;">(netkeiba公式確定引用)</span></h3>
               <div class="table-scroll-container">
                 <table class="result-table">
                   <thead>
@@ -3318,7 +3324,7 @@ open_race_detail_func = """
             </div>
 
             <div id="modal-tab-content-payouts" class="modal-tab-content" style="display: none;">
-              <h3 class="detail-section-title">払戻金確定情報</h3>
+              <h3 class="detail-section-title">払戻金確定情報 <span style="font-size:12px;color:var(--text-muted);font-weight:normal;">(netkeiba公式確定引用)</span></h3>
               <div class="payouts-grid">
                 ${(() => {
                   let pList = [];
@@ -4491,7 +4497,7 @@ review_js_logic = '''
             <div class="review-card-header">
               <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
                 <h3 class="review-card-title">
-                  <i data-lucide="crosshair"></i> 事前好走ランク vs 確定着順（乖離度・精度分析）
+                  <i data-lucide="crosshair"></i> 事前好走ランク vs 確定着順（netkeiba公式確定引用・乖離分析）
                 </h3>
                 <span class="deviation-header-pill">6大ファクター検証</span>
               </div>

@@ -113366,15 +113366,15 @@ function hydratePayouts(race) {
         if (badge && badgeText) {
           if (oddsMode === 'estimated') {
             badge.className = 'odds-mode-badge pre-sale';
-            badgeText.innerText = '想定予想オッズ (netkeiba参考)';
+            badgeText.innerText = '想定予想オッズ (netkeiba引用)';
             if (countdown) {
-              countdown.innerText = `※${salesTimeStr}夜間発売開始とともに確定オッズへ自動切替`;
+              countdown.innerText = `※netkeiba想定オッズ引用中 (${salesTimeStr}夜間発売開始とともにnetkeibaリアルタイム発売オッズへ自動切替)`;
             }
           } else {
             badge.className = 'odds-mode-badge live-sale';
-            badgeText.innerText = '● 発売中・リアルタイムオッズ (30秒自動更新)';
+            badgeText.innerText = '● 発売中・リアルタイムオッズ (netkeiba引用・自動更新)';
             if (countdown) {
-              countdown.innerText = '※JRA公式発売オッズ連動シミュレーション中';
+              countdown.innerText = '※netkeibaリアルタイム発売オッズ速報連動中';
             }
           }
         }
@@ -115393,7 +115393,7 @@ function hydratePayouts(race) {
             <div class="review-card-header">
               <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
                 <h3 class="review-card-title">
-                  <i data-lucide="crosshair"></i> 事前好走ランク vs 確定着順（乖離度・精度分析）
+                  <i data-lucide="crosshair"></i> 事前好走ランク vs 確定着順（netkeiba公式確定引用・乖離分析）
                 </h3>
                 <span class="deviation-header-pill">6大ファクター検証</span>
               </div>
@@ -115694,7 +115694,7 @@ function hydratePayouts(race) {
                 </div>
               </div>
 
-              <h3 class="detail-section-title">全着順確定結果</h3>
+              <h3 class="detail-section-title">全着順確定結果 <span style="font-size:12px;color:var(--text-muted);font-weight:normal;">(netkeiba公式確定引用)</span></h3>
               <div class="table-scroll-container">
                 <table class="result-table">
                   <thead>
@@ -115759,7 +115759,7 @@ function hydratePayouts(race) {
             </div>
 
             <div id="modal-tab-content-payouts" class="modal-tab-content" style="display: none;">
-              <h3 class="detail-section-title">払戻金確定情報</h3>
+              <h3 class="detail-section-title">払戻金確定情報 <span style="font-size:12px;color:var(--text-muted);font-weight:normal;">(netkeiba公式確定引用)</span></h3>
               <div class="payouts-grid">
                 ${(() => {
                   let pList = [];
