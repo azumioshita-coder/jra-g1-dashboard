@@ -380,12 +380,28 @@ def compute_contender_ranking(race_id, starters_list, horse_db_data, race_meta=N
         else:
             p_base, d_base = 84, 84
             
+        # 前走実績の精査連動 (career[0])
+        career_list = h_info.get('career') or []
+        if career_list:
+            last_r = career_list[0]
+            l_rank = str(last_r.get('rank', ''))
+            l_race = last_r.get('race', '')
+            if l_rank in ['1']:
+                p_base = max(p_base, 96)
+            elif l_rank in ['2', '3']:
+                if any(g in l_race for g in ['GI', 'G1', 'GII', 'G2']):
+                    p_base = max(p_base, 94)
+                else:
+                    p_base = max(p_base, 91)
+            elif l_rank in ['4', '5'] and any(g in l_race for g in ['GI', 'G1']):
+                p_base = max(p_base, 92)
+
         # 6. 血統適性 (Pedigree: 15%)
         ped_base = 89
-        father = s.get('father') or (h_info.get('bloodline', {}).get('father') if isinstance(h_info.get('bloodline'), dict) else '') or ''
-        if father in ['スワーヴリチャード', 'キズナ', 'エピファネイア', 'ハーツクライ', 'ドゥラメンテ', 'ディープインパクト', 'Kingman', 'Dubawi']:
+        father = s.get('father') or (h_info.get('pedigree', {}).get('sire') if isinstance(h_info.get('pedigree'), dict) else '') or (h_info.get('bloodline', {}).get('father') if isinstance(h_info.get('bloodline'), dict) else '') or ''
+        if any(f in father for f in ['スワーヴリチャード', 'キズナ', 'エピファネイア', 'ハーツクライ', 'ドゥラメンテ', 'ディープインパクト', 'Kingman', 'Dubawi', 'Night of Thunder', 'Ya Primo']):
             ped_base = 94
-        elif father in ['キタサンブラック', 'モーリス', 'ロードカナロア', 'ルーラーシップ']:
+        elif any(f in father for f in ['キタサンブラック', 'モーリス', 'ロードカナロア', 'ルーラーシップ', 'Frankel', 'Adlerflug']):
             ped_base = 92
             
         # 総合期待度スコア (compositeScore)
