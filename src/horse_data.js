@@ -2026,9 +2026,9 @@ export const HORSE_DATABASE = {
     ],
     "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2023190001&no=69980",
     "pedigree": {
-      "sire": "No",
-      "sireSire": "Scat",
-      "sireDam": "Cat's",
+      "sire": "No Nay Never (米)",
+      "sireSire": "Scat Daddy (米)",
+      "sireDam": "Cat's Eye Witness (米)",
       "dam": "Ervedya (仏)",
       "damSire": "Siyouni (仏)",
       "damDam": "Ervana (仏)"
@@ -9632,7 +9632,7 @@ export const HORSE_DATABASE = {
       "sireSire": "ブラックタイド",
       "sireDam": "シュガーハート",
       "dam": "ライジングクロス",
-      "damSire": "Cape",
+      "damSire": "Cape Cross (愛)",
       "damDam": "Woodrising (英)"
     },
     "career": [
@@ -10640,7 +10640,7 @@ export const HORSE_DATABASE = {
     "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020190005&no=97429",
     "pedigree": {
       "sire": "Adlerflug (独)",
-      "sireSire": "In",
+      "sireSire": "In The Wings (英)",
       "sireDam": "Aiyana (独)",
       "dam": "Gouache (独)",
       "damSire": "Shamardal (米)",
@@ -12405,9 +12405,9 @@ export const HORSE_DATABASE = {
     "photoUrl": null,
     "pedigree": {
       "sire": "Awtaad (愛)",
-      "sireSire": "Cape",
+      "sireSire": "Cape Cross (愛)",
       "sireDam": "Asheerah (英)",
-      "dam": "Pearl",
+      "dam": "Pearl Diamond (独)",
       "damSire": "Areion (独)",
       "damDam": "Prunella (独)"
     },
@@ -14289,12 +14289,12 @@ export const HORSE_DATABASE = {
     ],
     "photoUrl": null,
     "pedigree": {
-      "sire": "Night",
+      "sire": "Night of Thunder (愛)",
       "sireSire": "Dubawi (愛)",
-      "sireDam": "Forest",
-      "dam": "Awe",
-      "damSire": "Rail",
-      "damDam": "Treasure"
+      "sireDam": "Forest Storm (英)",
+      "dam": "Awe Struck (英)",
+      "damSire": "Rail Link (英)",
+      "damDam": "Treasure Trove (英)"
     },
     "career": [
       {
@@ -14620,12 +14620,12 @@ export const HORSE_DATABASE = {
     ],
     "photoUrl": null,
     "pedigree": {
-      "sire": "Ya",
+      "sire": "Ya Primo (智)",
       "sireSire": "Mastercraftsman (愛)",
-      "sireDam": "Yo",
-      "dam": "Ti",
+      "sireDam": "Yo Quisiera (智)",
+      "dam": "Ti Ricorderai (智)",
       "damSire": "シーキングザダイヤ (米)",
-      "damDam": "Until"
+      "damDam": "Until Sundown産駒 (米)"
     },
     "career": [
       {
@@ -28250,7 +28250,7 @@ export const HORSE_DATABASE = {
     "titles": [],
     "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020190004&no=97286",
     "pedigree": {
-      "sire": "Sea",
+      "sire": "Sea The Moon (独)",
       "sireSire": "Sea",
       "sireDam": "Sanwa (���)",
       "dam": "Jukebox",
