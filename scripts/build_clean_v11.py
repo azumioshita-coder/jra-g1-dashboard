@@ -308,13 +308,14 @@ new_nav_menu = """<nav class="nav-menu">
         </nav>"""
 nav_match = re.search(r'<nav class="nav-menu">[\s\S]*?</nav>', new_base_html)
 new_base_html = new_base_html[:nav_match.start()] + new_nav_menu + new_base_html[nav_match.end():]
+new_base_html = new_base_html.replace(
+    '<p id="page-subheading" class="text-muted">JRA G1全24レースの日程・結果・カウントダウン情報</p>',
+    ''
+)
 
 # Update countdown hero section
 new_hero_section = """<section class="countdown-section" id="hero-countdown-banner" style="cursor: pointer;">
           <div class="countdown-content">
-            <div class="next-badge">
-              <span class="pulse-dot"></span> NEXT G1 RACE (タップで予想へ)
-            </div>
             <h2 class="race-title" id="next-race-name">第46回 ジャパンカップ</h2>
             <p class="race-meta" id="next-race-meta">2026.11.29 (日) 東京 芝 2400m (G1)</p>
             <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
