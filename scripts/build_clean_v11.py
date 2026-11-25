@@ -2583,7 +2583,7 @@ horse_modal_js_logic = """
           record: '10戦3勝 [3-2-1-4]',
           earnings: '8,500万円',
           titles: ['重賞戦線で活躍'],
-          photoUrl: 'https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=800&q=80',
+          photoUrl: null,
           pedigree: {
             sire: 'キタサンブラック',
             sireSire: 'ブラックタイド',
@@ -2711,8 +2711,21 @@ horse_modal_js_logic = """
         body.innerHTML = `
           <!-- 1. トップ概要カード（写真 + netkeiba公式プロフィール） -->
           <div class="hd-top-card">
-            <div class="hd-photo-wrapper">
-              <img src="${horse.photoUrl}" alt="${horse.name}" class="hd-photo" onerror="this.src='https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=800&q=80'">
+            <div class="hd-photo-wrapper ${!horse.photoUrl ? 'has-no-photo' : ''}">
+              ${horse.photoUrl ? `
+                <img src="${horse.photoUrl}" alt="${horse.name}" class="hd-photo" onerror="this.onerror=null; this.style.display='none'; this.parentElement.classList.add('has-no-photo'); const fb = this.parentElement.querySelector('.hd-no-photo-fallback'); if (fb) fb.style.display='flex';">
+              ` : ''}
+              <div class="hd-no-photo-fallback" style="${horse.photoUrl ? 'display: none;' : 'display: flex;'}">
+                <div class="hd-no-photo-content">
+                  <svg class="no-photo-camera-icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+                    <circle cx="12" cy="13" r="3"/>
+                    <line x1="2" y1="2" x2="22" y2="22"/>
+                  </svg>
+                  <span class="no-photo-label">No Photo</span>
+                  <span class="no-photo-sub">写真未登録</span>
+                </div>
+              </div>
               <span class="hd-photo-tag">${horse.color || 'サラブレッド'}</span>
             </div>
             <div>
@@ -4408,6 +4421,12 @@ init_app_block = """
         handleRoute(false);
 
         if (typeof window !== 'undefined') {
+          const urlParams = window.location ? new URLSearchParams(window.location.search) : null;
+          if (urlParams && urlParams.has('horse')) {
+            setTimeout(() => {
+              openHorseDetail(urlParams.get('horse'));
+            }, 50);
+          }
           window.addEventListener('hashchange', () => {
             handleRoute(false);
           });
