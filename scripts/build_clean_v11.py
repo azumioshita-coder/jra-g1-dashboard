@@ -2241,6 +2241,66 @@ prediction_js_logic = """
                     </div>
                   </div>
 
+                  <!-- 1.5 調教追い切りタイム（一週前 ＆ 最終追い切り） -->
+                  ${(() => {
+                    const wOne = s.workoutOneWeek;
+                    const wFinal = s.workoutFinal;
+                    if (!wOne && !wFinal) return '';
+                    return `
+                      <div class="nh-workout-section">
+                        <div class="nh-workout-header">
+                          <span>🏃 調教追い切りタイム（一週前 ＆ 最終）</span>
+                          <span class="nh-workout-source-badge">栗東・美浦トレセン ＆ 東京競馬場（公式計時）</span>
+                        </div>
+                        <div class="nh-workout-cards-grid">
+                          ${wOne ? `
+                            <div class="nh-workout-card oneweek">
+                              <div class="nh-workout-card-head">
+                                <span class="nh-workout-type-tag oneweek">【一週前追い切り】</span>
+                                <span class="nh-workout-date">📅 ${wOne.date}</span>
+                                <span class="nh-workout-grade-badge grade-${wOne.grade}">【${wOne.grade}】</span>
+                              </div>
+                              <div class="nh-workout-meta-row">
+                                <span>🏟️ ${wOne.course}</span>
+                                <span>🏇 ${wOne.jockey}</span>
+                                <span class="nh-workout-state-pill">${wOne.state}</span>
+                              </div>
+                              <div class="nh-workout-time-row">
+                                <span class="nh-time-label">⏱️ 計時:</span>
+                                <span class="nh-time-val">${wOne.time}</span>
+                              </div>
+                              <div class="nh-workout-comment">
+                                ${wOne.comment}
+                              </div>
+                            </div>
+                          ` : ''}
+
+                          ${wFinal ? `
+                            <div class="nh-workout-card final">
+                              <div class="nh-workout-card-head">
+                                <span class="nh-workout-type-tag final">【最終追い切り】</span>
+                                <span class="nh-workout-date">📅 ${wFinal.date}</span>
+                                <span class="nh-workout-grade-badge grade-${wFinal.grade}">【${wFinal.grade}】</span>
+                              </div>
+                              <div class="nh-workout-meta-row">
+                                <span>🏟️ ${wFinal.course}</span>
+                                <span>🏇 ${wFinal.jockey}</span>
+                                <span class="nh-workout-state-pill">${wFinal.state}</span>
+                              </div>
+                              <div class="nh-workout-time-row">
+                                <span class="nh-time-label">⏱️ 計時:</span>
+                                <span class="nh-time-val">${wFinal.time}</span>
+                              </div>
+                              <div class="nh-workout-comment">
+                                ${wFinal.comment}
+                              </div>
+                            </div>
+                          ` : ''}
+                        </div>
+                      </div>
+                    `;
+                  })()}
+
                   <!-- 2. マルチソース調教評価（YouTube / Xトラックマン / 競馬専門紙） -->
                   ${(() => {
                     const rev = s.trainingReviews;
@@ -2984,6 +3044,80 @@ horse_modal_js_logic = """
 
           <!-- 2. JRA-VAN公式 フォトパドック (馬体写真＆前走比較) -->
           ${paddocksHtml}
+
+          <!-- 2.5 調教追い切りセクション（一週前 ＆ 最終追い切り） -->
+          ${(() => {
+            let wo = horse.workouts;
+            if (!wo && typeof PREDICTION_DATA !== 'undefined') {
+              const starters = (typeof getActivePredictionStarters === 'function') 
+                ? getActivePredictionStarters() 
+                : ((PREDICTION_DATA.starters) || []);
+              const matched = starters.find(s => s.horseName === horse.name || horse.name.includes(s.horseName));
+              if (matched && (matched.workoutOneWeek || matched.workoutFinal)) {
+                wo = {
+                  race: 'ジャパンカップ(G1)',
+                  oneWeekPrior: matched.workoutOneWeek,
+                  final: matched.workoutFinal
+                };
+              }
+            }
+            if (!wo || (!wo.oneWeekPrior && !wo.final)) return '';
+            const wOne = wo.oneWeekPrior;
+            const wFinal = wo.final;
+            return `
+              <div class="hd-section-box" style="margin-top: 24px;">
+                <div class="hd-section-title" style="display: flex; justify-content: space-between; align-items: center;">
+                  <span>🏃 直近G1調教・追い切りタイム（一週前 ＆ 最終追い切り）</span>
+                  <span style="font-size: 11px; color: #38bdf8; font-weight: normal;">対象: ${wo.race || '次走'}</span>
+                </div>
+                <div class="nh-workout-cards-grid" style="margin-top: 12px;">
+                  ${wOne ? `
+                    <div class="nh-workout-card oneweek">
+                      <div class="nh-workout-card-head">
+                        <span class="nh-workout-type-tag oneweek">【一週前追い切り】</span>
+                        <span class="nh-workout-date">📅 ${wOne.date}</span>
+                        <span class="nh-workout-grade-badge grade-${wOne.grade}">【${wOne.grade}】</span>
+                      </div>
+                      <div class="nh-workout-meta-row">
+                        <span>🏟️ ${wOne.course}</span>
+                        <span>🏇 ${wOne.jockey}</span>
+                        <span class="nh-workout-state-pill">${wOne.state}</span>
+                      </div>
+                      <div class="nh-workout-time-row">
+                        <span class="nh-time-label">⏱️ 計時:</span>
+                        <span class="nh-time-val">${wOne.time}</span>
+                      </div>
+                      <div class="nh-workout-comment">
+                        ${wOne.comment}
+                      </div>
+                    </div>
+                  ` : ''}
+
+                  ${wFinal ? `
+                    <div class="nh-workout-card final">
+                      <div class="nh-workout-card-head">
+                        <span class="nh-workout-type-tag final">【最終追い切り】</span>
+                        <span class="nh-workout-date">📅 ${wFinal.date}</span>
+                        <span class="nh-workout-grade-badge grade-${wFinal.grade}">【${wFinal.grade}】</span>
+                      </div>
+                      <div class="nh-workout-meta-row">
+                        <span>🏟️ ${wFinal.course}</span>
+                        <span>🏇 ${wFinal.jockey}</span>
+                        <span class="nh-workout-state-pill">${wFinal.state}</span>
+                      </div>
+                      <div class="nh-workout-time-row">
+                        <span class="nh-time-label">⏱️ 計時:</span>
+                        <span class="nh-time-val">${wFinal.time}</span>
+                      </div>
+                      <div class="nh-workout-comment">
+                        ${wFinal.comment}
+                      </div>
+                    </div>
+                  ` : ''}
+                </div>
+              </div>
+            `;
+          })()}
 
           <!-- 3. 血統情報セクション（タブなし・縦並び表示） -->
           <div class="hd-section-box" style="margin-top: 24px;">

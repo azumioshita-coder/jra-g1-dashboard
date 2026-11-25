@@ -5054,3 +5054,137 @@ html.route-prediction .nav-item[data-target="prediction"] {
   margin-top: 14px;
 }
 
+
+/* ========================================================
+   調教・追い切りタイム（一週前 ＆ 最終追い切り）スタイリング
+   ======================================================== */
+.nh-workout-section {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 10px;
+}
+.nh-workout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #fff;
+}
+.nh-workout-source-badge {
+  font-size: 10.5px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+.nh-workout-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+.nh-workout-card {
+  background: rgba(2, 6, 23, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.nh-workout-card.oneweek {
+  border-left: 3.5px solid #818cf8;
+}
+.nh-workout-card.final {
+  border-left: 3.5px solid #fbbf24;
+}
+.nh-workout-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nh-workout-type-tag {
+  font-size: 12px;
+  font-weight: 800;
+}
+.nh-workout-type-tag.oneweek {
+  color: #a5b4fc;
+}
+.nh-workout-type-tag.final {
+  color: #fbbf24;
+}
+.nh-workout-date {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-left: auto;
+  margin-right: 8px;
+}
+.nh-workout-grade-badge {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.nh-workout-grade-badge.grade-S {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+  border: 1px solid #f59e0b;
+}
+.nh-workout-grade-badge.grade-A, .nh-workout-grade-badge.grade-A\+ {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+  border: 1px solid #10b981;
+}
+.nh-workout-grade-badge.grade-B, .nh-workout-grade-badge.grade-B\+ {
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+  border: 1px solid #3b82f6;
+}
+.nh-workout-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11.5px;
+  color: #cbd5e1;
+}
+.nh-workout-state-pill {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #f1f5f9;
+}
+.nh-workout-time-row {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 5px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11.5px;
+}
+.nh-time-label {
+  color: #94a3b8;
+  font-size: 11px;
+}
+.nh-time-val {
+  color: #38bdf8;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.2px;
+}
+.nh-workout-comment {
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #cbd5e1;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 8px 10px;
+  border-radius: 4px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+}
