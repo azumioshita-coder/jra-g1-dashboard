@@ -15,7 +15,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'府中S()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105236&no=82438",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105236&no=81421",
     "pedigree": {
       "sire": "ブリックスアンドモルタル",
       "dam": "マキシマムドパリ",
@@ -361,7 +361,9 @@ export const HORSE_DATABASE = {
         "weight": "502(0)",
         "rival": "シュガークン"
       }
-    ]
+    ],
+    "photoTitle": "京橋S(３勝クラス)/さどまにさん",
+    "photoPaddocks": []
   },
   "アスクシュタイン": {
     "name": "アスクシュタイン",
@@ -379,7 +381,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'コスモス賞()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022100161&no=6732",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022100161&no=75774",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "ヴィクトリアズワイルドキャット",
@@ -557,7 +559,9 @@ export const HORSE_DATABASE = {
         "weight": "492(0)",
         "rival": "(リアライズオーラム)"
       }
-    ]
+    ],
+    "photoTitle": "下鴨S(３勝クラス)/らるぜとさん",
+    "photoPaddocks": []
   },
   "アドマイヤズーム": {
     "name": "アドマイヤズーム",
@@ -575,7 +579,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'朝日杯フューチュリティS(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022105396&no=66086",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105396&no=60067",
     "pedigree": {
       "sire": "モーリス",
       "dam": "ダイワズーム",
@@ -777,6 +781,16 @@ export const HORSE_DATABASE = {
         "weight": "464(0)",
         "rival": "テレサ"
       }
+    ],
+    "photoTitle": "朝日フューチュリティ(G1)/Eyuuさん",
+    "photoPaddocks": [
+      {
+        "race": "マイルCS",
+        "slug": "mcs",
+        "date": "11月12日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img04.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "アクアヴァーナル": {
@@ -795,7 +809,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'万葉S()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105433&no=102993",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105433&no=109463",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "エイプリルミスト",
@@ -1261,6 +1275,16 @@ export const HORSE_DATABASE = {
         "weight": "438(0)",
         "rival": "ミカエルパシャ"
       }
+    ],
+    "photoTitle": "京都大賞典(G2)/はらさん",
+    "photoPaddocks": [
+      {
+        "race": "エリザベス女王杯",
+        "slug": "elizabeth",
+        "date": "11月4日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img03.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "アドマイヤテラ": {
@@ -1279,7 +1303,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'阪神大賞典(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105369&no=65931",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105369&no=108222",
     "pedigree": {
       "sire": "レイデオロ",
       "dam": "アドマイヤミヤビ",
@@ -1649,7 +1673,9 @@ export const HORSE_DATABASE = {
         "weight": "494(0)",
         "rival": "(ウインリベラーレ)"
       }
-    ]
+    ],
+    "photoTitle": "札幌記念(G2)/Kyo-@さん",
+    "photoPaddocks": []
   },
   "アンパドゥ": {
     "name": "アンパドゥ",
@@ -1667,7 +1693,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'関屋記念(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021110030&no=93262",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021110030&no=98910",
     "pedigree": {
       "sire": "Iffraaj (英)",
       "dam": "Latharna Skies (英)",
@@ -1869,6 +1895,16 @@ export const HORSE_DATABASE = {
         "weight": "480(0)",
         "rival": "(ロジカルワーズ)"
       }
+    ],
+    "photoTitle": "雲雀S(３勝クラス)/ちゅぴさん",
+    "photoPaddocks": [
+      {
+        "race": "マイルCS",
+        "slug": "mcs",
+        "date": "11月12日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img05.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "アレグロブリランテ": {
@@ -1887,7 +1923,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'2歳新馬"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105625&no=46694",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105625&no=83607",
     "pedigree": {
       "sire": "ディープブリランテ",
       "dam": "センティナリー",
@@ -2089,7 +2125,9 @@ export const HORSE_DATABASE = {
         "weight": "446(0)",
         "rival": "(キットハナガサク)"
       }
-    ]
+    ],
+    "photoTitle": "グレイトフルＳ(３勝クラス)/エアさん",
+    "photoPaddocks": []
   },
   "アルマヴェローチェ": {
     "name": "アルマヴェローチェ",
@@ -2107,7 +2145,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'阪神ジュベナイルフィリーズ(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022105110&no=44608",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105110&no=24742",
     "pedigree": {
       "sire": "ハービンジャー",
       "dam": "ラクアミ",
@@ -2213,7 +2251,9 @@ export const HORSE_DATABASE = {
         "weight": "482(0)",
         "rival": "(リアンベーレ)"
       }
-    ]
+    ],
+    "photoTitle": "阪神ジュベナイルＦ(G1)/もれーらありがとうさん",
+    "photoPaddocks": []
   },
   "アーテルアストレア": {
     "name": "アーテルアストレア",
@@ -2231,7 +2271,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "レディスプレリュード"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019104564&no=110429",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019104564&no=76309",
     "pedigree": {
       "sire": "リーチザクラウン",
       "dam": "スターズインヘヴン",
@@ -2817,7 +2857,9 @@ export const HORSE_DATABASE = {
         "weight": "466(0)",
         "rival": "ヴィルチュオーズ"
       }
-    ]
+    ],
+    "photoTitle": "鳴海特別(２勝クラス)/ワラビさん",
+    "photoPaddocks": []
   },
   "アドマイヤベル": {
     "name": "アドマイヤベル",
@@ -2835,7 +2877,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'フローラS(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105764&no=73635",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105764&no=110776",
     "pedigree": {
       "sire": "スワーヴリチャード",
       "dam": "ベルアリュールII",
@@ -2989,7 +3031,9 @@ export const HORSE_DATABASE = {
         "weight": "478(0)",
         "rival": "(ベストミーエヴァー)"
       }
-    ]
+    ],
+    "photoTitle": "フリージア賞(1勝)/ひげまつりさん",
+    "photoPaddocks": []
   },
   "ウィルソンテソーロ": {
     "name": "ウィルソンテソーロ",
@@ -3007,7 +3051,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'JBCクラシック(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019102383&no=114610",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019102383&no=132047",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "チェストケローズ",
@@ -3761,7 +3805,9 @@ export const HORSE_DATABASE = {
         "weight": "460(0)",
         "rival": "イクイノックス"
       }
-    ]
+    ],
+    "photoTitle": "かしわ記念(G1)/宮内宮さん",
+    "photoPaddocks": []
   },
   "アルテヴェローチェ": {
     "name": "アルテヴェローチェ",
@@ -3779,7 +3825,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'サウジアラビアロイヤルC(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022104751&no=16042",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104751&no=49608",
     "pedigree": {
       "sire": "モーリス",
       "dam": "クルミネイト",
@@ -4101,7 +4147,9 @@ export const HORSE_DATABASE = {
         "weight": "448(0)",
         "rival": "(ヒシアマン)"
       }
-    ]
+    ],
+    "photoTitle": "ＮＨＫマイルC(G1)/淳。さん",
+    "photoPaddocks": []
   },
   "アーバンシック": {
     "name": "アーバンシック",
@@ -4119,7 +4167,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'菊花賞(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105436&no=85041",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105436&no=106211",
     "pedigree": {
       "sire": "スワーヴリチャード",
       "dam": "エッジースタイル",
@@ -4441,7 +4489,9 @@ export const HORSE_DATABASE = {
         "weight": "512(0)",
         "rival": "(ヴィクトリアドール)"
       }
-    ]
+    ],
+    "photoTitle": "天皇賞(秋)(G1)/AKNNさん",
+    "photoPaddocks": []
   },
   "ウエストナウ": {
     "name": "ウエストナウ",
@@ -4459,7 +4509,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'アンドロメダS(L)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021106645&no=46361",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021106645&no=102022",
     "pedigree": {
       "sire": "キズナ",
       "dam": "ファヴォーラ",
@@ -4853,7 +4903,9 @@ export const HORSE_DATABASE = {
         "weight": "474(0)",
         "rival": "(スピードリッチ)"
       }
-    ]
+    ],
+    "photoTitle": "大阪ーハンブルクC(OP)/らるぜとさん",
+    "photoPaddocks": []
   },
   "エコロアルバ": {
     "name": "エコロアルバ",
@@ -4871,7 +4923,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'サウジアラビアロイヤルC(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2023103184&no=7897",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023103184&no=68282",
     "pedigree": {
       "sire": "モズアスコット",
       "dam": "スターアクトレス",
@@ -5025,7 +5077,9 @@ export const HORSE_DATABASE = {
         "weight": "464(0)",
         "rival": "(アパレイユ)"
       }
-    ]
+    ],
+    "photoTitle": "富士S(GII)/Mｒ.Ｒさん",
+    "photoPaddocks": []
   },
   "ウォーターリヒト": {
     "name": "ウォーターリヒト",
@@ -5043,7 +5097,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'東京新聞杯(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021100953&no=106023",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021100953&no=110245",
     "pedigree": {
       "sire": "ドレフォン",
       "dam": "ウォーターピオニー",
@@ -5557,7 +5611,9 @@ export const HORSE_DATABASE = {
         "weight": "464(0)",
         "rival": "オールナット"
       }
-    ]
+    ],
+    "photoTitle": "富士S(GII)/うまぐるいさん",
+    "photoPaddocks": []
   },
   "エイシンワンド": {
     "name": "エイシンワンド",
@@ -5575,7 +5631,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'小倉2歳S(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022102849&no=10605",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022102849&no=56237",
     "pedigree": {
       "sire": "ディスクリートキャット",
       "dam": "エイシンフェアリー",
@@ -5969,7 +6025,9 @@ export const HORSE_DATABASE = {
         "weight": "466(0)",
         "rival": "(クラスペディア)"
       }
-    ]
+    ],
+    "photoTitle": "京王杯２歳S(G2)/パンナコッタさん",
+    "photoPaddocks": []
   },
   "エシカルダイヤモンド": {
     "name": "エシカルダイヤモンド",
@@ -5987,7 +6045,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'BCターフ(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020190008&no=125156",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020190008&no=125156",
     "pedigree": {
       "sire": "Awtaad (英)",
       "dam": "Pearl Diamond (独)",
@@ -6309,7 +6367,9 @@ export const HORSE_DATABASE = {
         "weight": "計不",
         "rival": ""
       }
-    ]
+    ],
+    "photoTitle": "　/Matreraさん",
+    "photoPaddocks": []
   },
   "エコロブルーム": {
     "name": "エコロブルーム",
@@ -6327,7 +6387,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'ニュージーランドT(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105565&no=45943",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105565&no=83291",
     "pedigree": {
       "sire": "ダイワメジャー",
       "dam": "シュガーショック",
@@ -6529,7 +6589,9 @@ export const HORSE_DATABASE = {
         "weight": "468(0)",
         "rival": "カルツァクライン"
       }
-    ]
+    ],
+    "photoTitle": "谷川岳S(L)/MITAKEさん",
+    "photoPaddocks": []
   },
   "エルデナリ": {
     "name": "エルデナリ",
@@ -6547,7 +6609,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'マイルCS(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2023190001&no=70012",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023190001&no=69668",
     "pedigree": {
       "sire": "カラヴァッジオ",
       "dam": "Erdana (仏)",
@@ -6677,7 +6739,9 @@ export const HORSE_DATABASE = {
         "weight": "計不",
         "rival": "()"
       }
-    ]
+    ],
+    "photoTitle": "ムーラン・ド・ロンシ(G1)/べーさん1789さん",
+    "photoPaddocks": []
   },
   "エコロヴァルツ": {
     "name": "エコロヴァルツ",
@@ -6695,7 +6759,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'ディセンバーS(L)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021101436&no=35412",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021101436&no=101904",
     "pedigree": {
       "sire": "ブラックタイド",
       "dam": "プティプランセス",
@@ -7113,7 +7177,9 @@ export const HORSE_DATABASE = {
         "weight": "482(0)",
         "rival": "(ルシフェル)"
       }
-    ]
+    ],
+    "photoTitle": "大阪杯(G1)/蔵原さん",
+    "photoPaddocks": []
   },
   "エルトンバローズ": {
     "name": "エルトンバローズ",
@@ -7131,7 +7197,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'毎日王冠(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020100680&no=70708",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020100680&no=120987",
     "pedigree": {
       "sire": "ディープブリランテ",
       "dam": "ショウナンカラット",
@@ -7717,7 +7783,9 @@ export const HORSE_DATABASE = {
         "weight": "502(0)",
         "rival": "ドクタードリトル"
       }
-    ]
+    ],
+    "photoTitle": "しらさぎS(G3)/さめさん",
+    "photoPaddocks": []
   },
   "オンブズマン": {
     "name": "オンブズマン",
@@ -7735,7 +7803,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'プリンスオブウェールズS(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021190002&no=111149",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021190002&no=111148",
     "pedigree": {
       "sire": "Night of Thunder (愛)",
       "dam": "Syndicate (英)",
@@ -8033,7 +8101,9 @@ export const HORSE_DATABASE = {
         "weight": "計不",
         "rival": "()"
       }
-    ]
+    ],
+    "photoTitle": "英チャンピオンS(G1)/赤茶坊主さん",
+    "photoPaddocks": []
   },
   "エキサイトバイオ": {
     "name": "エキサイトバイオ",
@@ -8051,7 +8121,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'ラジオNIKKEI賞(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022104614&no=67474",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104614&no=74201",
     "pedigree": {
       "sire": "レイデオロ",
       "dam": "アニメイトバイオ",
@@ -8253,7 +8323,9 @@ export const HORSE_DATABASE = {
         "weight": "478(0)",
         "rival": "ナグルファル"
       }
-    ]
+    ],
+    "photoTitle": "有馬記念(G1)/つんさん",
+    "photoPaddocks": []
   },
   "エンブロイダリー": {
     "name": "エンブロイダリー",
@@ -8271,7 +8343,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'ヴィクトリアマイル(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022105185&no=81708",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105185&no=84760",
     "pedigree": {
       "sire": "アドマイヤマーズ",
       "dam": "ロッテンマイヤー",
@@ -8545,6 +8617,16 @@ export const HORSE_DATABASE = {
         "weight": "480(0)",
         "rival": "ミリオンローズ"
       }
+    ],
+    "photoTitle": "ヴィクトリアマイル(G1)/旅っ程さん",
+    "photoPaddocks": [
+      {
+        "race": "マイルCS",
+        "slug": "mcs",
+        "date": "11月12日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img02.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "オーギュストロダン": {
@@ -8563,7 +8645,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'フューチュリティT(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020190003&no=97941",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020190003&no=113014",
     "pedigree": {
       "sire": "ディープインパクト",
       "dam": "ロードデンドロン",
@@ -8933,7 +9015,9 @@ export const HORSE_DATABASE = {
         "weight": "計不",
         "rival": ""
       }
-    ]
+    ],
+    "photoTitle": "2024.11.24 東京競馬場 引退式/旅っ程さん",
+    "photoPaddocks": []
   },
   "オフトレイル": {
     "name": "オフトレイル",
@@ -8951,7 +9035,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'MBS賞スワンS(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021110031&no=108011",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021110031&no=106022",
     "pedigree": {
       "sire": "Farhh (英)",
       "dam": "ローズトレイル",
@@ -9441,7 +9525,9 @@ export const HORSE_DATABASE = {
         "weight": "430(0)",
         "rival": "ブルーアイドガール"
       }
-    ]
+    ],
+    "photoTitle": "安田記念(G1)/上がり３F１８０さん",
+    "photoPaddocks": []
   },
   "カナデルペガサス": {
     "name": "カナデルペガサス",
@@ -9459,7 +9545,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳新馬"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2024101108&no=9304",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024101108&no=9166",
     "pedigree": {
       "sire": "ステルヴィオ",
       "dam": "ビクトリアペガサス",
@@ -9517,7 +9603,9 @@ export const HORSE_DATABASE = {
         "weight": "480(0)",
         "rival": "(ディーヴァソラーレ)"
       }
-    ]
+    ],
+    "photoTitle": "2歳新馬/こぐまさん",
+    "photoPaddocks": []
   },
   "カムニャック": {
     "name": "カムニャック",
@@ -9535,7 +9623,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'優駿牝馬(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022105402&no=51547",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105402&no=92741",
     "pedigree": {
       "sire": "ブラックタイド",
       "dam": "ダンスアミーガ",
@@ -9785,6 +9873,16 @@ export const HORSE_DATABASE = {
         "weight": "476(0)",
         "rival": "(ルージュシークエル)"
       }
+    ],
+    "photoTitle": "アイルランドT(GII)/Maverickさん",
+    "photoPaddocks": [
+      {
+        "race": "エリザベス女王杯",
+        "slug": "elizabeth",
+        "date": "11月4日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img01.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "カランダガン": {
@@ -9803,7 +9901,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'ジャパンC(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021190001&no=96697",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021190001&no=98060",
     "pedigree": {
       "sire": "Gleneagles (愛)",
       "dam": "Calayana (仏)",
@@ -10245,7 +10343,9 @@ export const HORSE_DATABASE = {
         "weight": "計不",
         "rival": ""
       }
-    ]
+    ],
+    "photoTitle": "ジャパンC(G1)/むーさん",
+    "photoPaddocks": []
   },
   "カレンラップスター": {
     "name": "カレンラップスター",
@@ -10263,7 +10363,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'英彦山特別()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022104723&no=87655",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104723&no=48438",
     "pedigree": {
       "sire": "ルーラーシップ",
       "dam": "カレンオプシス",
@@ -10657,7 +10757,9 @@ export const HORSE_DATABASE = {
         "weight": "498(0)",
         "rival": "(サンライズグラシア)"
       }
-    ]
+    ],
+    "photoTitle": "プリンシパルＳ(L)/淳。さん",
+    "photoPaddocks": []
   },
   "カズタンジャー": {
     "name": "カズタンジャー",
@@ -10675,7 +10777,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'マーキュリーC(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021101259&no=46312",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021101259&no=83154",
     "pedigree": {
       "sire": "ドレフォン",
       "dam": "ダウンタウンブギ",
@@ -11333,7 +11435,9 @@ export const HORSE_DATABASE = {
         "weight": "480(0)",
         "rival": "インビジブルセルフ"
       }
-    ]
+    ],
+    "photoTitle": "日吉特別(２勝クラス)/淳。さん",
+    "photoPaddocks": []
   },
   "キングズパレス": {
     "name": "キングズパレス",
@@ -11351,7 +11455,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'美浦S()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019104828&no=47179",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019104828&no=47331",
     "pedigree": {
       "sire": "キングカメハメハ",
       "dam": "ドバウィハイツ",
@@ -12009,7 +12113,9 @@ export const HORSE_DATABASE = {
         "weight": "482(0)",
         "rival": "イクイノックス"
       }
-    ]
+    ],
+    "photoTitle": "３歳未勝利/ルカさん",
+    "photoPaddocks": []
   },
   "ガイアフォース": {
     "name": "ガイアフォース",
@@ -12027,7 +12133,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'富士S(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019104476&no=122022",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019104476&no=129976",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "ナターレ",
@@ -12565,6 +12671,16 @@ export const HORSE_DATABASE = {
         "weight": "486(0)",
         "rival": "ドウデュース"
       }
+    ],
+    "photoTitle": "富士S(G2)/むーさん",
+    "photoPaddocks": [
+      {
+        "race": "マイルCS",
+        "slug": "mcs",
+        "date": "11月11日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img06.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "クイーンズウォーク": {
@@ -12583,7 +12699,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'金鯱賞(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105414&no=67243",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105414&no=109835",
     "pedigree": {
       "sire": "キズナ",
       "dam": "ウェイヴェルアベニュー",
@@ -12953,6 +13069,16 @@ export const HORSE_DATABASE = {
         "weight": "518(0)",
         "rival": "オスカーブレーヴ"
       }
+    ],
+    "photoTitle": "アイルランドT(GII)/コーンメガネさん",
+    "photoPaddocks": [
+      {
+        "race": "エリザベス女王杯",
+        "slug": "elizabeth",
+        "date": "11月4日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img04.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "エストゥペンダ": {
@@ -12971,7 +13097,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'関越S()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022101192&no=94497",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022101192&no=83433",
     "pedigree": {
       "sire": "サートゥルナーリア",
       "dam": "エストレチャダ",
@@ -13317,7 +13443,9 @@ export const HORSE_DATABASE = {
         "weight": "426(0)",
         "rival": "ミリオンローズ"
       }
-    ]
+    ],
+    "photoTitle": "弥彦S(3勝クラス)/MITAKEさん",
+    "photoPaddocks": []
   },
   "カラテ": {
     "name": "カラテ",
@@ -13335,7 +13463,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'新潟記念(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2016106606&no=63039",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2016106606&no=67556",
     "pedigree": {
       "sire": "トゥザグローリー",
       "dam": "レディーノパンチ",
@@ -14497,7 +14625,9 @@ export const HORSE_DATABASE = {
         "weight": "476(0)",
         "rival": "ホウオウサーベル"
       }
-    ]
+    ],
+    "photoTitle": "ニューイヤ－S/ルカさん",
+    "photoPaddocks": []
   },
   "クリスマスパレード": {
     "name": "クリスマスパレード",
@@ -14515,7 +14645,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'紫苑S(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105799&no=23812",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105799&no=101410",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "ミスエリカ",
@@ -14837,7 +14967,9 @@ export const HORSE_DATABASE = {
         "weight": "466(0)",
         "rival": "(パシフィックハイツ)"
       }
-    ]
+    ],
+    "photoTitle": "日経賞(G2)/カイチョーさん",
+    "photoPaddocks": []
   },
   "クロワデュノール": {
     "name": "クロワデュノール",
@@ -14855,7 +14987,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'日本ダービー(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022105102&no=27395",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105102&no=90853",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "ライジングクロス",
@@ -15129,6 +15261,23 @@ export const HORSE_DATABASE = {
         "weight": "480(0)",
         "rival": "(アルレッキーノ)"
       }
+    ],
+    "photoTitle": "宝塚記念(GI)/まやさん",
+    "photoPaddocks": [
+      {
+        "race": "ジャパンカップ",
+        "slug": "jc",
+        "date": "11月18日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img05.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "slug": "akiten",
+        "date": "10月22日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img02.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ケリフレッドアスク": {
@@ -15147,7 +15296,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'紫苑S(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022102296&no=62572",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022102296&no=84360",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "ディープインアスク",
@@ -15589,7 +15738,9 @@ export const HORSE_DATABASE = {
         "weight": "432(0)",
         "rival": "ダンツエラン"
       }
-    ]
+    ],
+    "photoTitle": "ヴィクトリアマイル(G1)/通りすがりの人さん",
+    "photoPaddocks": []
   },
   "グロリアムンディ": {
     "name": "グロリアムンディ",
@@ -15607,7 +15758,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'ダイオライト記念(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2018105251&no=64733",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018105251&no=41147",
     "pedigree": {
       "sire": "キングカメハメハ",
       "dam": "ベットーレ",
@@ -16385,7 +16536,9 @@ export const HORSE_DATABASE = {
         "weight": "476(0)",
         "rival": "(ダノンハイファイブ)"
       }
-    ]
+    ],
+    "photoTitle": "香取特別(2勝)/さん",
+    "photoPaddocks": []
   },
   "コガネノソラ": {
     "name": "コガネノソラ",
@@ -16403,7 +16556,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'福島牝馬S(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021106823&no=94243",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021106823&no=106430",
     "pedigree": {
       "sire": "ゴールドシップ",
       "dam": "マイネヒメル",
@@ -16773,7 +16926,9 @@ export const HORSE_DATABASE = {
         "weight": "438(0)",
         "rival": "ファーヴェント"
       }
-    ]
+    ],
+    "photoTitle": "府中牝馬S(G3)/春木さん",
+    "photoPaddocks": []
   },
   "ココナッツブラウン": {
     "name": "ココナッツブラウン",
@@ -16791,7 +16946,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'クイーンS(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020101607&no=60350",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020101607&no=5664",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "ルアーズストリート",
@@ -17185,7 +17340,9 @@ export const HORSE_DATABASE = {
         "weight": "422(0)",
         "rival": "タイキバルドル"
       }
-    ]
+    ],
+    "photoTitle": "下河辺牧場/下河辺牧場さん",
+    "photoPaddocks": []
   },
   "コートアリシアン": {
     "name": "コートアリシアン",
@@ -17203,7 +17360,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'豊栄特別()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022105326&no=90130",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105326&no=10079",
     "pedigree": {
       "sire": "サートゥルナーリア",
       "dam": "コートシャルマン",
@@ -17573,7 +17730,9 @@ export const HORSE_DATABASE = {
         "weight": "438(0)",
         "rival": "(ベルリネッタ)"
       }
-    ]
+    ],
+    "photoTitle": "新潟２歳S(G3)/ひらまさん",
+    "photoPaddocks": []
   },
   "ゴーイントゥスカイ": {
     "name": "ゴーイントゥスカイ",
@@ -17591,7 +17750,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'菊花賞(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2023105378&no=64468",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023105378&no=68027",
     "pedigree": {
       "sire": "コントレイル",
       "dam": "ゴーイントゥザウィンドウ",
@@ -17745,6 +17904,16 @@ export const HORSE_DATABASE = {
         "weight": "488(0)",
         "rival": "(ミスターライト)"
       }
+    ],
+    "photoTitle": "菊花賞(G1)/8公さん",
+    "photoPaddocks": [
+      {
+        "race": "菊花賞",
+        "slug": "kikka",
+        "date": "10月15日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/kikka/img/photopaddock_img06.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ゴリアット": {
@@ -17763,7 +17932,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'キングジョージ6世&amp;クイーンエリザベスS(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020190005&no=97439",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020190005&no=97347",
     "pedigree": {
       "sire": "Adlerflug (独)",
       "dam": "Gouache (独)",
@@ -18301,7 +18470,9 @@ export const HORSE_DATABASE = {
         "weight": "計不",
         "rival": "()"
       }
-    ]
+    ],
+    "photoTitle": "ジャパンC(G1)/柊アズキさん",
+    "photoPaddocks": []
   },
   "サクラファレル": {
     "name": "サクラファレル",
@@ -18319,7 +18490,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'ジャパンC2025年ロンジンワールドベストレース受賞記念()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022104094&no=63732",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104094&no=89287",
     "pedigree": {
       "sire": "サートゥルナーリア",
       "dam": "サクラレーヌ",
@@ -18545,7 +18716,9 @@ export const HORSE_DATABASE = {
         "weight": "502(0)",
         "rival": "ヴァリディシームス"
       }
-    ]
+    ],
+    "photoTitle": "JCベストレース記念(3勝クラス)/@otp24jさん",
+    "photoPaddocks": []
   },
   "コスモキュランダ": {
     "name": "コスモキュランダ",
@@ -18563,7 +18736,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'弥生賞ディープインパクト記念(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021106787&no=101401",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021106787&no=105534",
     "pedigree": {
       "sire": "アルアイン",
       "dam": "サザンスピード",
@@ -19101,7 +19274,9 @@ export const HORSE_DATABASE = {
         "weight": "486(0)",
         "rival": "ゴンバデカーブース"
       }
-    ]
+    ],
+    "photoTitle": "宝塚記念(G1)/旅っ程さん",
+    "photoPaddocks": []
   },
   "クラウンプライド": {
     "name": "クラウンプライド",
@@ -19119,7 +19294,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'UAEダービー(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019104678&no=115386",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019104678&no=15278",
     "pedigree": {
       "sire": "リーチザクラウン",
       "dam": "エミーズプライド",
@@ -19681,7 +19856,9 @@ export const HORSE_DATABASE = {
         "weight": "494(0)",
         "rival": "(ソルトグリーン)"
       }
-    ]
+    ],
+    "photoTitle": "もちの木賞(1勝)/さん",
+    "photoPaddocks": []
   },
   "サトノスプレマシー": {
     "name": "サトノスプレマシー",
@@ -19699,7 +19876,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳未勝利"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2024107260&no=7943",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024107260&no=7943",
     "pedigree": {
       "sire": "シルバーステート",
       "dam": "サマーソワレ",
@@ -19781,7 +19958,9 @@ export const HORSE_DATABASE = {
         "weight": "440(0)",
         "rival": "セプタードアイル"
       }
-    ]
+    ],
+    "photoTitle": "2歳新馬/ショコラ?さん",
+    "photoPaddocks": []
   },
   "サトノカルナバル": {
     "name": "サトノカルナバル",
@@ -19799,7 +19978,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'函館2歳S(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022105128&no=36661",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105128&no=85362",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "リアリサトリス",
@@ -20049,7 +20228,9 @@ export const HORSE_DATABASE = {
         "weight": "494(0)",
         "rival": "(デアマトローナ)"
       }
-    ]
+    ],
+    "photoTitle": "谷川岳S(L)/ミスタールドルフさん",
+    "photoPaddocks": []
   },
   "シェイクユアハート": {
     "name": "シェイクユアハート",
@@ -20067,7 +20248,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'札幌記念(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020103101&no=30635",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103101&no=122850",
     "pedigree": {
       "sire": "ハーツクライ",
       "dam": "ルンバロッカ",
@@ -20821,6 +21002,23 @@ export const HORSE_DATABASE = {
         "weight": "440(0)",
         "rival": "マイネルエンペラー"
       }
+    ],
+    "photoTitle": "札幌記念(G2)/さん",
+    "photoPaddocks": [
+      {
+        "race": "ジャパンカップ",
+        "slug": "jc",
+        "date": "11月18日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img07.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "slug": "akiten",
+        "date": "10月21日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img04.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "サンライズジパング": {
@@ -20839,7 +21037,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'名古屋グランプリ(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021104756&no=47899",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021104756&no=97195",
     "pedigree": {
       "sire": "キズナ",
       "dam": "サイマー",
@@ -21329,7 +21527,9 @@ export const HORSE_DATABASE = {
         "weight": "502(0)",
         "rival": "ダノンエアズロック"
       }
-    ]
+    ],
+    "photoTitle": "有馬記念(G1)/つんさん",
+    "photoPaddocks": []
   },
   "シックスペンス": {
     "name": "シックスペンス",
@@ -21347,7 +21547,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'安田記念(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105724&no=54745",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105724&no=106018",
     "pedigree": {
       "sire": "キズナ",
       "dam": "フィンレイズラッキーチャーム",
@@ -21693,6 +21893,16 @@ export const HORSE_DATABASE = {
         "weight": "484(0)",
         "rival": "(アタラヨ)"
       }
+    ],
+    "photoTitle": "安田記念(G1)/上がり３F１８０さん",
+    "photoPaddocks": [
+      {
+        "race": "マイルCS",
+        "slug": "mcs",
+        "date": "11月12日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img07.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "シティオブドリーム": {
@@ -21711,7 +21921,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳新馬"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2024104953&no=9334",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024104953&no=9609",
     "pedigree": {
       "sire": "コントレイル",
       "dam": "ビューティフルストリート",
@@ -21769,7 +21979,9 @@ export const HORSE_DATABASE = {
         "weight": "506(0)",
         "rival": "(レジームチェンジ)"
       }
-    ]
+    ],
+    "photoTitle": "2歳新馬/旅っ程さん",
+    "photoPaddocks": []
   },
   "サトノレーヴ": {
     "name": "サトノレーヴ",
@@ -21787,7 +21999,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'高松宮記念(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019101700&no=131235",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019101700&no=45822",
     "pedigree": {
       "sire": "ロードカナロア",
       "dam": "チリエージェ",
@@ -22277,7 +22489,9 @@ export const HORSE_DATABASE = {
         "weight": "534(0)",
         "rival": "(イワクニ)"
       }
-    ]
+    ],
+    "photoTitle": "３歳未勝利/さん",
+    "photoPaddocks": []
   },
   "シャンパンカラー": {
     "name": "シャンパンカラー",
@@ -22295,7 +22509,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'NHKマイルC(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020103075&no=120535",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103075&no=124518",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "メモリアルライフ",
@@ -22785,7 +22999,9 @@ export const HORSE_DATABASE = {
         "weight": "502(0)",
         "rival": "(リラックス)"
       }
-    ]
+    ],
+    "photoTitle": "天皇賞(秋)(G1)/モリリンさん",
+    "photoPaddocks": []
   },
   "シュトルーヴェ": {
     "name": "シュトルーヴェ",
@@ -22803,7 +23019,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'日経賞(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019104447&no=74151",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019104447&no=66131",
     "pedigree": {
       "sire": "キングカメハメハ",
       "dam": "アンチュラス",
@@ -23317,7 +23533,9 @@ export const HORSE_DATABASE = {
         "weight": "494(0)",
         "rival": "シェルビーズアイ"
       }
-    ]
+    ],
+    "photoTitle": "３歳未勝利/さん",
+    "photoPaddocks": []
   },
   "シャドウメテオ": {
     "name": "シャドウメテオ",
@@ -23335,7 +23553,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'新潟牝馬S(L)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022105454&no=90967",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105454&no=91183",
     "pedigree": {
       "sire": "オルフェーヴル",
       "dam": "パールシャドウ",
@@ -23633,7 +23851,9 @@ export const HORSE_DATABASE = {
         "weight": "456(0)",
         "rival": "ジョスラン"
       }
-    ]
+    ],
+    "photoTitle": "日本海S(3勝クラス)/旅っ程さん",
+    "photoPaddocks": []
   },
   "シュバルツクーゲル": {
     "name": "シュバルツクーゲル",
@@ -23651,7 +23871,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'2024ワールドオールスタージョッキーズ第2戦()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021104882&no=40092",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021104882&no=185",
     "pedigree": {
       "sire": "キズナ",
       "dam": "ソベラニア",
@@ -23949,7 +24169,9 @@ export const HORSE_DATABASE = {
         "weight": "476(0)",
         "rival": "(カニキュル)"
       }
-    ]
+    ],
+    "photoTitle": "しらおい/ゲストさん",
+    "photoPaddocks": []
   },
   "シルバーレシオ": {
     "name": "シルバーレシオ",
@@ -23967,7 +24189,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "ジャパンダートクラシック"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2023107043&no=66902",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023107043&no=65896",
     "pedigree": {
       "sire": "ルヴァンスレーヴ",
       "dam": "シルバーポジー",
@@ -24169,7 +24391,9 @@ export const HORSE_DATABASE = {
         "weight": "514(0)",
         "rival": "マルガ"
       }
-    ]
+    ],
+    "photoTitle": "ジャパンダートクラシ(JpnI)/さん",
+    "photoPaddocks": []
   },
   "シンエンペラー": {
     "name": "シンエンペラー",
@@ -24187,7 +24411,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'ネオムターフC(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021110048&no=70994",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021110048&no=105423",
     "pedigree": {
       "sire": "Siyouni (仏)",
       "dam": "Starlet's Sister (愛)",
@@ -24581,7 +24805,9 @@ export const HORSE_DATABASE = {
         "weight": "474(0)",
         "rival": "(トゥルーサクセサー)"
       }
-    ]
+    ],
+    "photoTitle": "天皇賞(春)(G1)/HKさん",
+    "photoPaddocks": []
   },
   "コスタノヴァ": {
     "name": "コスタノヴァ",
@@ -24599,7 +24825,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'フェブラリーS(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020103307&no=71562",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103307&no=117006",
     "pedigree": {
       "sire": "ロードカナロア",
       "dam": "カラフルブラッサム",
@@ -24969,7 +25195,9 @@ export const HORSE_DATABASE = {
         "weight": "484(0)",
         "rival": "ペリファーニア"
       }
-    ]
+    ],
+    "photoTitle": "フェブラリーＳ(G1)/TKさん",
+    "photoPaddocks": []
   },
   "シルトホルン": {
     "name": "シルトホルン",
@@ -24987,7 +25215,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'ジューンS()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020105424&no=112198",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020105424&no=120921",
     "pedigree": {
       "sire": "スクリーンヒーロー",
       "dam": "シンメイミヤビ",
@@ -25861,7 +26089,9 @@ export const HORSE_DATABASE = {
         "weight": "446(0)",
         "rival": "キミノナハマリア"
       }
-    ]
+    ],
+    "photoTitle": "ニューイヤーS(L)/しやんさん",
+    "photoPaddocks": []
   },
   "ショウナンラプンタ": {
     "name": "ショウナンラプンタ",
@@ -25879,7 +26109,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'ゆきやなぎ賞()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105195&no=66290",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105195&no=90885",
     "pedigree": {
       "sire": "キズナ",
       "dam": "フリアアステカ",
@@ -26225,7 +26455,9 @@ export const HORSE_DATABASE = {
         "weight": "520(0)",
         "rival": "(サトノシュトラーセ)"
       }
-    ]
+    ],
+    "photoTitle": "宝塚記念(G1)/旅っ程さん",
+    "photoPaddocks": []
   },
   "ジャスティンパレス": {
     "name": "ジャスティンパレス",
@@ -26243,7 +26475,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'天皇賞(春)(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019105346&no=117692",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105346&no=7463",
     "pedigree": {
       "sire": "ディープインパクト",
       "dam": "パレスルーマー",
@@ -26805,7 +27037,9 @@ export const HORSE_DATABASE = {
         "weight": "444(0)",
         "rival": "(アカデミー)"
       }
-    ]
+    ],
+    "photoTitle": "２歳新馬/さん",
+    "photoPaddocks": []
   },
   "ジョスラン": {
     "name": "ジョスラン",
@@ -26823,7 +27057,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'小倉牝馬S(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022104767&no=75070",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104767&no=92805",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "ケイティーズハート",
@@ -27025,6 +27259,16 @@ export const HORSE_DATABASE = {
         "weight": "478(0)",
         "rival": "(ウインスティーガ)"
       }
+    ],
+    "photoTitle": "アイルランドT(G2)/英１さん",
+    "photoPaddocks": [
+      {
+        "race": "エリザベス女王杯",
+        "slug": "elizabeth",
+        "date": "11月4日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img06.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ジョバンニ": {
@@ -27043,7 +27287,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'チャレンジC(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022103995&no=81816",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022103995&no=87230",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "ベアフットレディ",
@@ -27389,6 +27633,16 @@ export const HORSE_DATABASE = {
         "weight": "482(0)",
         "rival": "(バズアップビート)"
       }
+    ],
+    "photoTitle": "東海テレビ杯金鯱賞(G2)/奥平さん",
+    "photoPaddocks": [
+      {
+        "race": "天皇賞（秋）",
+        "slug": "akiten",
+        "date": "10月21日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img05.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ジューンテイク": {
@@ -27407,7 +27661,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'京都記念(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021100913&no=109113",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021100913&no=102707",
     "pedigree": {
       "sire": "キズナ",
       "dam": "アドマイヤサブリナ",
@@ -27921,7 +28175,9 @@ export const HORSE_DATABASE = {
         "weight": "472(0)",
         "rival": "(ラシェンテ)"
       }
-    ]
+    ],
+    "photoTitle": "京都記念(G2)/這いよれ！レイ子さんさん",
+    "photoPaddocks": []
   },
   "ジュンブロッサム": {
     "name": "ジュンブロッサム",
@@ -27939,7 +28195,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'富士S(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019105118&no=35755",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105118&no=134088",
     "pedigree": {
       "sire": "ワールドエース",
       "dam": "エンプレスティアラ",
@@ -28669,7 +28925,9 @@ export const HORSE_DATABASE = {
         "weight": "458(0)",
         "rival": "デリカテス"
       }
-    ]
+    ],
+    "photoTitle": "新潟記念(GIII)/Dヘリオスさん",
+    "photoPaddocks": []
   },
   "スタニングローズ": {
     "name": "スタニングローズ",
@@ -28687,7 +28945,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'エリザベス女王杯(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019105565&no=70323",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105565&no=54393",
     "pedigree": {
       "sire": "キングカメハメハ",
       "dam": "ローザブランカ",
@@ -29105,7 +29363,9 @@ export const HORSE_DATABASE = {
         "weight": "480(0)",
         "rival": "ブレスレスリー"
       }
-    ]
+    ],
+    "photoTitle": "優駿牝馬(G1)/ルカさん",
+    "photoPaddocks": []
   },
   "スズハローム": {
     "name": "スズハローム",
@@ -29123,7 +29383,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'ダービー卿チャレンジT(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020105018&no=58497",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020105018&no=23186",
     "pedigree": {
       "sire": "サトノダイヤモンド",
       "dam": "アイライン",
@@ -29685,7 +29945,9 @@ export const HORSE_DATABASE = {
         "weight": "452(0)",
         "rival": "レイベリング"
       }
-    ]
+    ],
+    "photoTitle": "２歳新馬/ルカさん",
+    "photoPaddocks": []
   },
   "ジーティーキャリー": {
     "name": "ジーティーキャリー",
@@ -29703,7 +29965,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳未勝利"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2024106677&no=4528",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024106677&no=4583",
     "pedigree": {
       "sire": "ブリックスアンドモルタル",
       "dam": "ラトゥールレディー",
@@ -29761,7 +30023,9 @@ export const HORSE_DATABASE = {
         "weight": "466(0)",
         "rival": "シャンデヴァーグ"
       }
-    ]
+    ],
+    "photoTitle": "2歳新馬/こぐまさん",
+    "photoPaddocks": []
   },
   "ジュウリョクピエロ": {
     "name": "ジュウリョクピエロ",
@@ -29779,7 +30043,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'優駿牝馬(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2023102979&no=51570",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023102979&no=52360",
     "pedigree": {
       "sire": "オルフェーヴル",
       "dam": "ハッピーヴァリュー",
@@ -29933,6 +30197,16 @@ export const HORSE_DATABASE = {
         "weight": "484(0)",
         "rival": "(ロードステラート)"
       }
+    ],
+    "photoTitle": "優駿牝馬(G1)/阿武隈高原さん",
+    "photoPaddocks": [
+      {
+        "race": "エリザベス女王杯",
+        "slug": "elizabeth",
+        "date": "11月4日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img05.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "スターズオンアース": {
@@ -29951,7 +30225,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'優駿牝馬(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019104740&no=100991",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019104740&no=10856",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "サザンスターズ",
@@ -30297,7 +30571,9 @@ export const HORSE_DATABASE = {
         "weight": "464(0)",
         "rival": "ルージュスティリア"
       }
-    ]
+    ],
+    "photoTitle": "２歳未勝利/ルカさん",
+    "photoPaddocks": []
   },
   "スターアニス": {
     "name": "スターアニス",
@@ -30315,7 +30591,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'桜花賞(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2023106920&no=50469",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023106920&no=66930",
     "pedigree": {
       "sire": "ドレフォン",
       "dam": "エピセアローム",
@@ -30493,6 +30769,51 @@ export const HORSE_DATABASE = {
         "weight": "486(0)",
         "rival": "コラルリーフ"
       }
+    ],
+    "photoTitle": "滋賀県/ゲストさん",
+    "photoPaddocks": [
+      {
+        "race": "マイルCS",
+        "slug": "mcs",
+        "date": "11月12日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img03.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "スプリンターズS",
+        "slug": "sprinters",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/sprinters/img/photopaddock_img01.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "チャンピオンズC",
+        "slug": "champ",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img01.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "阪神JF",
+        "slug": "juvenile",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img01.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "朝日杯FS",
+        "slug": "futurity",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img01.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "有馬記念",
+        "slug": "arima",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img01.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ステレンボッシュ": {
@@ -30509,7 +30830,7 @@ export const HORSE_DATABASE = {
     "record": "16戦0勝 [0-0-1-15]",
     "earnings": "195万円",
     "titles": [],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105383&no=1836",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105383&no=838",
     "pedigree": {
       "sire": "サトノダイヤモンド",
       "dam": "アルル",
@@ -30879,6 +31200,16 @@ export const HORSE_DATABASE = {
         "weight": "506(0)",
         "rival": "カーメルタザイト"
       }
+    ],
+    "photoTitle": "ノーザンファーム早来/ゲストさん",
+    "photoPaddocks": [
+      {
+        "race": "エリザベス女王杯",
+        "slug": "elizabeth",
+        "date": "11月4日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img07.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ステラヴェローチェ": {
@@ -30897,7 +31228,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "21'神戸新聞杯(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2018104980&no=15403",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018104980&no=5024",
     "pedigree": {
       "sire": "バゴ",
       "dam": "オーマイベイビー",
@@ -31339,7 +31670,9 @@ export const HORSE_DATABASE = {
         "weight": "488(0)",
         "rival": "(グルーヴビート)"
       }
-    ]
+    ],
+    "photoTitle": "サウジアラビアＲＣ(G3)/さん",
+    "photoPaddocks": []
   },
   "セキトバイースト": {
     "name": "セキトバイースト",
@@ -31357,7 +31690,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'府中牝馬S(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021103975&no=80368",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021103975&no=105589",
     "pedigree": {
       "sire": "デクラレーションオブウォー",
       "dam": "ベアフットレディ",
@@ -31847,7 +32180,9 @@ export const HORSE_DATABASE = {
         "weight": "432(0)",
         "rival": "ルージュスタニング"
       }
-    ]
+    ],
+    "photoTitle": "府中牝馬S(G3)/サビヌキコペンさん",
+    "photoPaddocks": []
   },
   "セラフィックコール": {
     "name": "セラフィックコール",
@@ -31865,7 +32200,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'ダイオライト記念(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020103400&no=80998",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103400&no=1071",
     "pedigree": {
       "sire": "ヘニーヒューズ",
       "dam": "シャンドランジュ",
@@ -32331,7 +32666,9 @@ export const HORSE_DATABASE = {
         "weight": "540(0)",
         "rival": "(レッドプロフェシー)"
       }
-    ]
+    ],
+    "photoTitle": "ノーザン空港/レッド×レッドさん",
+    "photoPaddocks": []
   },
   "スレイマン": {
     "name": "スレイマン",
@@ -32349,7 +32686,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'報知オールスターC【地方交流(G)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2018105164&no=3127",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018105164&no=31285",
     "pedigree": {
       "sire": "キングカメハメハ",
       "dam": "ドナブリーニ",
@@ -33031,7 +33368,9 @@ export const HORSE_DATABASE = {
         "weight": "516(0)",
         "rival": "アナレンマ"
       }
-    ]
+    ],
+    "photoTitle": "３歳未勝利/さん",
+    "photoPaddocks": []
   },
   "セイウンハーデス": {
     "name": "セイウンハーデス",
@@ -33049,7 +33388,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'毎日王冠(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019102632&no=134759",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019102632&no=134766",
     "pedigree": {
       "sire": "シルバーステート",
       "dam": "ハイノリッジ",
@@ -33539,6 +33878,16 @@ export const HORSE_DATABASE = {
         "weight": "462(0)",
         "rival": "(ベルシャンテ)"
       }
+    ],
+    "photoTitle": "毎日王冠(G2)/旅っ程さん",
+    "photoPaddocks": [
+      {
+        "race": "天皇賞（秋）",
+        "slug": "akiten",
+        "date": "10月21日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img06.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ソウルラッシュ": {
@@ -33557,7 +33906,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'マイルCS(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2018100382&no=79439",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018100382&no=42027",
     "pedigree": {
       "sire": "ルーラーシップ",
       "dam": "エターナルブーケ",
@@ -34239,7 +34588,9 @@ export const HORSE_DATABASE = {
         "weight": "496(0)",
         "rival": "(レイトンヒル)"
       }
-    ]
+    ],
+    "photoTitle": "クリスマスC(２勝クラス)/ルカさん",
+    "photoPaddocks": []
   },
   "セリフォス": {
     "name": "セリフォス",
@@ -34257,7 +34608,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'マイルCS(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019104462&no=25610",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019104462&no=51113",
     "pedigree": {
       "sire": "ダイワメジャー",
       "dam": "シーフロント",
@@ -34651,7 +35002,9 @@ export const HORSE_DATABASE = {
         "weight": "480(0)",
         "rival": "(ベルクレスタ)"
       }
-    ]
+    ],
+    "photoTitle": "ＮＨＫマイルC(G1)/ルカさん",
+    "photoPaddocks": []
   },
   "タイセイカレント": {
     "name": "タイセイカレント",
@@ -34669,7 +35022,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'3歳以上2勝クラス"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022104588&no=70161",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104588&no=86680",
     "pedigree": {
       "sire": "モーリス",
       "dam": "アイリッシュシー",
@@ -35063,7 +35416,9 @@ export const HORSE_DATABASE = {
         "weight": "486(0)",
         "rival": "(ベイリークロア)"
       }
-    ]
+    ],
+    "photoTitle": "戎橋S(3勝クラス)/ポンタも大好きさん",
+    "photoPaddocks": []
   },
   "タスティエーラ": {
     "name": "タスティエーラ",
@@ -35081,7 +35436,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'障害4歳以上未勝利"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020103507&no=76522",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103507&no=2736",
     "pedigree": {
       "sire": "ダイワメジャー",
       "dam": "トレジャーステイト",
@@ -35715,7 +36070,9 @@ export const HORSE_DATABASE = {
         "weight": "504(0)",
         "rival": "マイネルケレリウス"
       }
-    ]
+    ],
+    "photoTitle": "ノーザンファーム空港/つくねさん",
+    "photoPaddocks": []
   },
   "タガノデュード": {
     "name": "タガノデュード",
@@ -35733,7 +36090,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'小倉大賞典(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021106548&no=37063",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021106548&no=105765",
     "pedigree": {
       "sire": "ヤマカツエース",
       "dam": "タガノミューチャン",
@@ -36487,6 +36844,16 @@ export const HORSE_DATABASE = {
         "weight": "488(0)",
         "rival": "マーゴットソラーレ"
       }
+    ],
+    "photoTitle": "小倉大賞典(G3)/しやんさん",
+    "photoPaddocks": [
+      {
+        "race": "ジャパンカップ",
+        "slug": "jc",
+        "date": "11月18日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img04.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ソールオリエンス": {
@@ -36505,7 +36872,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'3歳未勝利"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020103608&no=58742",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103608&no=1208",
     "pedigree": {
       "sire": "Saxon Warrior (安平町)",
       "dam": "ホームカミングクイーン",
@@ -36755,7 +37122,9 @@ export const HORSE_DATABASE = {
         "weight": "464(0)",
         "rival": "ルミノメテオール"
       }
-    ]
+    ],
+    "photoTitle": "ノーザンファーム空港/てーしーさん",
+    "photoPaddocks": []
   },
   "タガノエルピーダ": {
     "name": "タガノエルピーダ",
@@ -36773,7 +37142,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'忘れな草賞(L)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021106550&no=46429",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021106550&no=91751",
     "pedigree": {
       "sire": "キズナ",
       "dam": "タガノレヴェントン",
@@ -37191,7 +37560,9 @@ export const HORSE_DATABASE = {
         "weight": "440(0)",
         "rival": "(クランフォード)"
       }
-    ]
+    ],
+    "photoTitle": "京成杯オータムH(G3)/タガノソウデスネさん",
+    "photoPaddocks": []
   },
   "タプティ": {
     "name": "タプティ",
@@ -37209,7 +37580,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳未勝利"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2024100935&no=10244",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024100935&no=10244",
     "pedigree": {
       "sire": "ダノンスマッシュ",
       "dam": "パフェムリ",
@@ -37267,7 +37638,9 @@ export const HORSE_DATABASE = {
         "weight": "460(0)",
         "rival": "ツキミ"
       }
-    ]
+    ],
+    "photoTitle": "２歳未勝利/さん",
+    "photoPaddocks": []
   },
   "ダノンベルーガ": {
     "name": "ダノンベルーガ",
@@ -37285,7 +37658,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'共同通信杯(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019105195&no=135082",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105195&no=17988",
     "pedigree": {
       "sire": "ハーツクライ",
       "dam": "コーステッド",
@@ -37655,7 +38028,9 @@ export const HORSE_DATABASE = {
         "weight": "498(0)",
         "rival": "(バトルボーン)"
       }
-    ]
+    ],
+    "photoTitle": "２歳新馬/さん",
+    "photoPaddocks": []
   },
   "ダノンデサイル": {
     "name": "ダノンデサイル",
@@ -37673,7 +38048,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'日本ダービー(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105143&no=73142",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105143&no=106532",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "トップデサイル",
@@ -38043,6 +38418,23 @@ export const HORSE_DATABASE = {
         "weight": "504(0)",
         "rival": "ファビュラススター"
       }
+    ],
+    "photoTitle": "宝塚記念(G1)/zatsumuさん",
+    "photoPaddocks": [
+      {
+        "race": "ジャパンカップ",
+        "slug": "jc",
+        "date": "11月19日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img01.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "slug": "akiten",
+        "date": "10月22日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img01.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ダノンフィーゴ": {
@@ -38061,7 +38453,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'かきつばた記念(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022100623&no=88455",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022100623&no=88455",
     "pedigree": {
       "sire": "Into Mischief (米)",
       "dam": "オリーズキャンディ",
@@ -38407,7 +38799,9 @@ export const HORSE_DATABASE = {
         "weight": "460(0)",
         "rival": "ミリアッドラヴ"
       }
-    ]
+    ],
+    "photoTitle": "東海S(G3)/ともちゃさん",
+    "photoPaddocks": []
   },
   "テアオ": {
     "name": "テアオ",
@@ -38655,7 +39049,8 @@ export const HORSE_DATABASE = {
         "weight": "476",
         "rival": "ルナ"
       }
-    ]
+    ],
+    "photoPaddocks": []
   },
   "ダブルハートボンド": {
     "name": "ダブルハートボンド",
@@ -38673,7 +39068,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'チャンピオンズC(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105700&no=95150",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105700&no=99471",
     "pedigree": {
       "sire": "キズナ",
       "dam": "パーシステントリー",
@@ -38899,7 +39294,9 @@ export const HORSE_DATABASE = {
         "weight": "476(0)",
         "rival": "(ポップスター)"
       }
-    ]
+    ],
+    "photoTitle": "フェブラリーＳ(G1)/パンナコッタさん",
+    "photoPaddocks": []
   },
   "チェルヴィニア": {
     "name": "チェルヴィニア",
@@ -38917,7 +39314,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'優駿牝馬(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105643&no=67069",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105643&no=99779",
     "pedigree": {
       "sire": "ハービンジャー",
       "dam": "チェッキーノ",
@@ -39287,6 +39684,16 @@ export const HORSE_DATABASE = {
         "weight": "470(0)",
         "rival": "ボンドガール"
       }
+    ],
+    "photoTitle": "中山記念(G2)/TKさん",
+    "photoPaddocks": [
+      {
+        "race": "エリザベス女王杯",
+        "slug": "elizabeth",
+        "date": "11月4日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img08.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "テンカジョウ": {
@@ -39305,7 +39712,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'エンプレス杯キヨフジ記念【指(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021102729&no=66554",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021102729&no=98785",
     "pedigree": {
       "sire": "サンダースノー",
       "dam": "フィオレロ",
@@ -39723,7 +40130,9 @@ export const HORSE_DATABASE = {
         "weight": "476(0)",
         "rival": "(エアサンサーラ)"
       }
-    ]
+    ],
+    "photoTitle": "クイーン賞(G3)/旅っ程さん",
+    "photoPaddocks": []
   },
   "チャリン": {
     "name": "チャリン",
@@ -39741,7 +40150,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'クイーンアンS(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020190002&no=96862",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020190002&no=98320",
     "pedigree": {
       "sire": "Dark Angel (愛)",
       "dam": "Futoon (愛)",
@@ -40183,7 +40592,9 @@ export const HORSE_DATABASE = {
         "weight": "計不",
         "rival": "()"
       }
-    ]
+    ],
+    "photoTitle": "マイルチャンピオンＳ(G1)/フレイアザワールドさん",
+    "photoPaddocks": []
   },
   "チルカーノ": {
     "name": "チルカーノ",
@@ -40201,7 +40612,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'長久手特別()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105384&no=25360",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105384&no=108935",
     "pedigree": {
       "sire": "ハービンジャー",
       "dam": "アロマティコ",
@@ -40643,7 +41054,9 @@ export const HORSE_DATABASE = {
         "weight": "452(0)",
         "rival": "(ミスズサンダスノー)"
       }
-    ]
+    ],
+    "photoTitle": "Mキタサンブラック(3勝)/YOSHIさん",
+    "photoPaddocks": []
   },
   "テンハッピーローズ": {
     "name": "テンハッピーローズ",
@@ -40661,7 +41074,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'ヴィクトリアマイル(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2018104750&no=58038",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018104750&no=31826",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "フェータルローズ",
@@ -41295,7 +41708,9 @@ export const HORSE_DATABASE = {
         "weight": "420(0)",
         "rival": "(アンジュソレイユ)"
       }
-    ]
+    ],
+    "photoTitle": "３歳上１勝クラス/ななみさん",
+    "photoPaddocks": []
   },
   "ドゥラエレーデ": {
     "name": "ドゥラエレーデ",
@@ -41313,7 +41728,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'ホープフルS(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020103626&no=28663",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103626&no=4964",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "マルケッサ",
@@ -41947,7 +42362,9 @@ export const HORSE_DATABASE = {
         "weight": "510(0)",
         "rival": "カルロヴェローチェ"
       }
-    ]
+    ],
+    "photoTitle": "２歳新馬/puu_horseさん",
+    "photoPaddocks": []
   },
   "テーオードレフォン": {
     "name": "テーオードレフォン",
@@ -41965,7 +42382,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'福島民友C(L)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019101324&no=107748",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019101324&no=16130",
     "pedigree": {
       "sire": "ドレフォン",
       "dam": "エミネントシチー",
@@ -42743,7 +43160,9 @@ export const HORSE_DATABASE = {
         "weight": "484(0)",
         "rival": "(ワンダーキサラ)"
       }
-    ]
+    ],
+    "photoTitle": "２歳新馬/ななみさん",
+    "photoPaddocks": []
   },
   "ドゥレッツァ": {
     "name": "ドゥレッツァ",
@@ -42761,7 +43180,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'菊花賞(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020103650&no=68458",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103650&no=5203",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "モアザンセイクリッド",
@@ -43107,7 +43526,9 @@ export const HORSE_DATABASE = {
         "weight": "460(0)",
         "rival": "ネビュルーズ"
       }
-    ]
+    ],
+    "photoTitle": "ノーザンファーム空港/ゲストさん",
+    "photoPaddocks": []
   },
   "ディープボンド": {
     "name": "ディープボンド",
@@ -43125,7 +43546,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "21'阪神大賞典(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2017102170&no=86627",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2017102170&no=63631",
     "pedigree": {
       "sire": "キズナ",
       "dam": "ゼフィランサス",
@@ -43855,7 +44276,9 @@ export const HORSE_DATABASE = {
         "weight": "486(0)",
         "rival": "キムケンドリーム"
       }
-    ]
+    ],
+    "photoTitle": "天皇賞（春）(G1)/ブレンダムさん",
+    "photoPaddocks": []
   },
   "ドウデュース": {
     "name": "ドウデュース",
@@ -43873,7 +44296,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'有馬記念(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019105283&no=112535",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105283&no=39934",
     "pedigree": {
       "sire": "ハーツクライ",
       "dam": "ダストアンドダイヤモンズ",
@@ -44291,7 +44714,9 @@ export const HORSE_DATABASE = {
         "weight": "494(0)",
         "rival": "(ガイアフォース)"
       }
-    ]
+    ],
+    "photoTitle": "報知弥生ディープ記念(G2)/k.beeさん",
+    "photoPaddocks": []
   },
   "ドラゴンブースト": {
     "name": "ドラゴンブースト",
@@ -44309,7 +44734,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'ディセンバーS(L)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022105891&no=16371",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105891&no=85263",
     "pedigree": {
       "sire": "スクリーンヒーロー",
       "dam": "トーコーディオーネ",
@@ -44631,7 +45056,9 @@ export const HORSE_DATABASE = {
         "weight": "458(0)",
         "rival": "ザラタン"
       }
-    ]
+    ],
+    "photoTitle": "安田記念(G1)/ともちゃさん",
+    "photoPaddocks": []
   },
   "ドンインザムード": {
     "name": "ドンインザムード",
@@ -44649,7 +45076,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'レパードS(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022106942&no=88454",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022106942&no=83823",
     "pedigree": {
       "sire": "アジアエクスプレス",
       "dam": "ハギノウィッシュ",
@@ -44971,7 +45398,9 @@ export const HORSE_DATABASE = {
         "weight": "504(0)",
         "rival": "(デルマサクラサク)"
       }
-    ]
+    ],
+    "photoTitle": "欅S(OP)/さん",
+    "photoPaddocks": []
   },
   "ナミュール": {
     "name": "ナミュール",
@@ -44989,7 +45418,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'マイルCS(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019105213&no=100665",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105213&no=54391",
     "pedigree": {
       "sire": "ハービンジャー",
       "dam": "サンブルエミューズ",
@@ -45407,7 +45836,9 @@ export const HORSE_DATABASE = {
         "weight": "438(0)",
         "rival": "(スコールユニバンス)"
       }
-    ]
+    ],
+    "photoTitle": "優駿牝馬(G1)/ルカさん",
+    "photoPaddocks": []
   },
   "ノースブリッジ": {
     "name": "ノースブリッジ",
@@ -45425,7 +45856,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'札幌記念(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2018102348&no=76070",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018102348&no=36818",
     "pedigree": {
       "sire": "モーリス",
       "dam": "アメージングムーン",
@@ -45915,7 +46346,9 @@ export const HORSE_DATABASE = {
         "weight": "468(0)",
         "rival": "(ハートオブアシティ)"
       }
-    ]
+    ],
+    "photoTitle": "ｔｖｋ賞(2勝)/さん",
+    "photoPaddocks": []
   },
   "ネブラディスク": {
     "name": "ネブラディスク",
@@ -45933,7 +46366,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'博多S()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022105140&no=93776",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105140&no=89751",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "リリサイド",
@@ -46159,7 +46592,9 @@ export const HORSE_DATABASE = {
         "weight": "448(0)",
         "rival": "(クラリヴィデンシア)"
       }
-    ]
+    ],
+    "photoTitle": "センテニアルパークS(3勝クラス)/えびまよさん",
+    "photoPaddocks": []
   },
   "ニシノティアモ": {
     "name": "ニシノティアモ",
@@ -46177,7 +46612,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'福島記念(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021100244&no=95859",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021100244&no=103641",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "ニシノアモーレ",
@@ -46571,7 +47006,9 @@ export const HORSE_DATABASE = {
         "weight": "438(0)",
         "rival": "ワイドラトゥール"
       }
-    ]
+    ],
+    "photoTitle": "ヴィクトリアマイル(G1)/自認シーザリオさん",
+    "photoPaddocks": []
   },
   "ニシノレヴナント": {
     "name": "ニシノレヴナント",
@@ -46589,7 +47026,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'オクトーバーS(L)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020100254&no=49181",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020100254&no=10134",
     "pedigree": {
       "sire": "ネロ",
       "dam": "ニシノアモーレ",
@@ -47175,7 +47612,9 @@ export const HORSE_DATABASE = {
         "weight": "500(0)",
         "rival": "ロードプレイヤー"
       }
-    ]
+    ],
+    "photoTitle": "２歳未勝利/mailaさん",
+    "photoPaddocks": []
   },
   "ハピ": {
     "name": "ハピ",
@@ -47193,7 +47632,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'鳳雛S(L)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019100630&no=110119",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019100630&no=54411",
     "pedigree": {
       "sire": "キズナ",
       "dam": "クイーンパイレーツ",
@@ -47971,7 +48410,9 @@ export const HORSE_DATABASE = {
         "weight": "466(0)",
         "rival": "(モディカ)"
       }
-    ]
+    ],
+    "photoTitle": "鳳雛S(L)/さん",
+    "photoPaddocks": []
   },
   "ノーブルスカイ": {
     "name": "ノーブルスカイ",
@@ -47989,7 +48430,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'4歳以上2勝クラス"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021102256&no=110135",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021102256&no=82027",
     "pedigree": {
       "sire": "ネオユニヴァース",
       "dam": "ホウショウワールド",
@@ -48503,7 +48944,9 @@ export const HORSE_DATABASE = {
         "weight": "462(0)",
         "rival": "カズゴルティス"
       }
-    ]
+    ],
+    "photoTitle": "京橋S(３勝クラス)/TBOさん",
+    "photoPaddocks": []
   },
   "ハギノアレグリアス": {
     "name": "ハギノアレグリアス",
@@ -48521,7 +48964,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'シリウスS(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2017103290&no=88971",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2017103290&no=48581",
     "pedigree": {
       "sire": "キズナ",
       "dam": "タニノカリス",
@@ -49083,7 +49526,9 @@ export const HORSE_DATABASE = {
         "weight": "462(0)",
         "rival": "コントレイル"
       }
-    ]
+    ],
+    "photoTitle": "競走馬リハビリテーションセンター/ちゃちゃさん",
+    "photoPaddocks": []
   },
   "ハヤテノフクノスケ": {
     "name": "ハヤテノフクノスケ",
@@ -49101,7 +49546,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'阪神競馬場リニューアルオープン記念()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021109070&no=84211",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021109070&no=81460",
     "pedigree": {
       "sire": "ウインバリアシオン",
       "dam": "サクラインスパイア",
@@ -49447,7 +49892,9 @@ export const HORSE_DATABASE = {
         "weight": "504(0)",
         "rival": "ミスタージーティー"
       }
-    ]
+    ],
+    "photoTitle": "阪神リニューアル記念(３勝クラス)/やし○さん",
+    "photoPaddocks": []
   },
   "ハーパー": {
     "name": "ハーパー",
@@ -49465,7 +49912,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'クイーンC(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020103458&no=87175",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103458&no=27239",
     "pedigree": {
       "sire": "ハーツクライ",
       "dam": "セレスタ",
@@ -49739,7 +50186,9 @@ export const HORSE_DATABASE = {
         "weight": "478(0)",
         "rival": "イングランドアイズ"
       }
-    ]
+    ],
+    "photoTitle": "２歳未勝利/さん",
+    "photoPaddocks": []
   },
   "パイロマンサー": {
     "name": "パイロマンサー",
@@ -49757,7 +50206,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'全日本2歳優駿【国際交流】(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2023101134&no=25843",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023101134&no=57763",
     "pedigree": {
       "sire": "パイロ",
       "dam": "セントリフュージ",
@@ -49887,7 +50336,9 @@ export const HORSE_DATABASE = {
         "weight": "504(0)",
         "rival": "(ジャスティンダラス)"
       }
-    ]
+    ],
+    "photoTitle": "全日本2歳優駿【国際(G1)/りーさん",
+    "photoPaddocks": []
   },
   "バトルクライ": {
     "name": "バトルクライ",
@@ -49905,7 +50356,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'すばるS(L)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019103879&no=58171",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019103879&no=72346",
     "pedigree": {
       "sire": "イスラボニータ",
       "dam": "ディアコメット",
@@ -50659,7 +51110,9 @@ export const HORSE_DATABASE = {
         "weight": "478(0)",
         "rival": "オタルエバー"
       }
-    ]
+    ],
+    "photoTitle": "錦秋S(３勝クラス)/ポカリさん",
+    "photoPaddocks": []
   },
   "ピコベリー": {
     "name": "ピコベリー",
@@ -50677,7 +51130,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳新馬"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2024100713&no=9097",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024100713&no=9306",
     "pedigree": {
       "sire": "モーリス",
       "dam": "アヴァール",
@@ -50735,7 +51188,9 @@ export const HORSE_DATABASE = {
         "weight": "468(0)",
         "rival": "(コウサイリクリ)"
       }
-    ]
+    ],
+    "photoTitle": "2歳新馬/MITAKEさん",
+    "photoPaddocks": []
   },
   "ビザンチンドリーム": {
     "name": "ビザンチンドリーム",
@@ -50753,7 +51208,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'フォワ賞(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105587&no=47906",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105587&no=91113",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "ジャポニカーラ",
@@ -51075,7 +51530,9 @@ export const HORSE_DATABASE = {
         "weight": "458(0)",
         "rival": "(エイシンボナパルト)"
       }
-    ]
+    ],
+    "photoTitle": "凱旋門賞(G1)/すずなりさん",
+    "photoPaddocks": []
   },
   "パープルレディ": {
     "name": "パープルレディ",
@@ -51093,7 +51550,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'野島崎特別()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2018103558&no=75125",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018103558&no=10515",
     "pedigree": {
       "sire": "ディープインパクト",
       "dam": "メリッサ",
@@ -51535,7 +51992,9 @@ export const HORSE_DATABASE = {
         "weight": "416(0)",
         "rival": "ブラックラテ"
       }
-    ]
+    ],
+    "photoTitle": "２歳未勝利/さん",
+    "photoPaddocks": []
   },
   "パンジャタワー": {
     "name": "パンジャタワー",
@@ -51553,7 +52012,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'NHKマイルC(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022101732&no=49858",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022101732&no=90254",
     "pedigree": {
       "sire": "タワーオブロンドン",
       "dam": "クラークスデール",
@@ -51827,6 +52286,44 @@ export const HORSE_DATABASE = {
         "weight": "468(0)",
         "rival": "(タガノアンファン)"
       }
+    ],
+    "photoTitle": "キーンランドC(G3)/ハァさんさん",
+    "photoPaddocks": [
+      {
+        "race": "スプリンターズS",
+        "slug": "sprinters",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/sprinters/img/photopaddock_img02.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "チャンピオンズC",
+        "slug": "champ",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img02.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "阪神JF",
+        "slug": "juvenile",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img02.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "朝日杯FS",
+        "slug": "futurity",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img02.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "有馬記念",
+        "slug": "arima",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img02.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ピコチャンブラック": {
@@ -51845,7 +52342,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'スプリングS(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022101745&no=27510",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022101745&no=49102",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "トランプクイーン",
@@ -51951,7 +52448,9 @@ export const HORSE_DATABASE = {
         "weight": "472(0)",
         "rival": "(ヴィジョンメーカー)"
       }
-    ]
+    ],
+    "photoTitle": "皐月賞(G1)/ショコラⅡさん",
+    "photoPaddocks": []
   },
   "ピースワンデュック": {
     "name": "ピースワンデュック",
@@ -51969,7 +52468,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'秋風S()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021101134&no=64165",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021101134&no=106504",
     "pedigree": {
       "sire": "グレーターロンドン",
       "dam": "ピースワンオーレ",
@@ -52291,7 +52790,9 @@ export const HORSE_DATABASE = {
         "weight": "456(0)",
         "rival": "スノーディーヴァ"
       }
-    ]
+    ],
+    "photoTitle": "函館朝調教（2026.6.23）/キンジュさん",
+    "photoPaddocks": []
   },
   "ファイアンクランツ": {
     "name": "ファイアンクランツ",
@@ -52307,7 +52808,7 @@ export const HORSE_DATABASE = {
     "record": "19戦0勝 [0-1-3-15]",
     "earnings": "360万円",
     "titles": [],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022105541&no=60403",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105541&no=78215",
     "pedigree": {
       "sire": "アメリカンファラオ",
       "dam": "ライラヌール",
@@ -52749,7 +53250,9 @@ export const HORSE_DATABASE = {
         "weight": "528(0)",
         "rival": "ワンカードフェロー"
       }
-    ]
+    ],
+    "photoTitle": "助け愛、支え愛賞/ちゃぼさん",
+    "photoPaddocks": []
   },
   "ピコローズ": {
     "name": "ピコローズ",
@@ -52767,7 +53270,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'京成杯オータムハンデキャップ(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022101765&no=90837",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022101765&no=90131",
     "pedigree": {
       "sire": "サトノダイヤモンド",
       "dam": "ルージュノアール",
@@ -53161,7 +53664,9 @@ export const HORSE_DATABASE = {
         "weight": "424(0)",
         "rival": "(ルージュアマリア)"
       }
-    ]
+    ],
+    "photoTitle": "フリーウェイS(3勝クラス)/sapphireさん",
+    "photoPaddocks": []
   },
   "ピューロマジック": {
     "name": "ピューロマジック",
@@ -53179,7 +53684,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'スプリンターズS(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021107058&no=66939",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021107058&no=108188",
     "pedigree": {
       "sire": "アジアエクスプレス",
       "dam": "メジェルダ",
@@ -53693,6 +54198,44 @@ export const HORSE_DATABASE = {
         "weight": "460(0)",
         "rival": "アマンテビアンコ"
       }
+    ],
+    "photoTitle": "アイビスサマーD(G3)/タイトルさん",
+    "photoPaddocks": [
+      {
+        "race": "スプリンターズS",
+        "slug": "sprinters",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/sprinters/img/photopaddock_img05.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "チャンピオンズC",
+        "slug": "champ",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img05.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "阪神JF",
+        "slug": "juvenile",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img05.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "朝日杯FS",
+        "slug": "futurity",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img05.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "有馬記念",
+        "slug": "arima",
+        "date": "9月17日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img05.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ファミーリエ": {
@@ -53711,7 +54254,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳新馬"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2024103478&no=9718",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024103478&no=9795",
     "pedigree": {
       "sire": "キズナ",
       "dam": "ベルオロール",
@@ -53745,7 +54288,9 @@ export const HORSE_DATABASE = {
         "weight": "450(0)",
         "rival": "(コトテーラー)"
       }
-    ]
+    ],
+    "photoTitle": "2歳新馬/枢木さん",
+    "photoPaddocks": []
   },
   "ファンタスティックムーン": {
     "name": "ファンタスティックムーン",
@@ -53763,7 +54308,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'独ダービー(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020190004&no=97285",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020190004&no=103734",
     "pedigree": {
       "sire": "Sea The Moon (独)",
       "dam": "Frangipani (独)",
@@ -54109,7 +54654,9 @@ export const HORSE_DATABASE = {
         "weight": "計不",
         "rival": "()"
       }
-    ]
+    ],
+    "photoTitle": "ジャパンC(G1)/KTomokiさん",
+    "photoPaddocks": []
   },
   "ブレイディヴェーグ": {
     "name": "ブレイディヴェーグ",
@@ -54127,7 +54674,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'エリザベス女王杯(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020103242&no=97020",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103242&no=8352",
     "pedigree": {
       "sire": "ロードカナロア",
       "dam": "インナーアージ",
@@ -54425,7 +54972,9 @@ export const HORSE_DATABASE = {
         "weight": "464(0)",
         "rival": "ロードプレイヤー"
       }
-    ]
+    ],
+    "photoTitle": "２歳新馬/ふらんさん",
+    "photoPaddocks": []
   },
   "プルヴィナル": {
     "name": "プルヴィナル",
@@ -54443,7 +54992,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'アルテミスS(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2024106287&no=18317",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024106287&no=18096",
     "pedigree": {
       "sire": "モーリス",
       "dam": "クルミナル",
@@ -54477,7 +55026,9 @@ export const HORSE_DATABASE = {
         "weight": "464(0)",
         "rival": "(レインボーフライト)"
       }
-    ]
+    ],
+    "photoTitle": "アルテミスS(GIII)/淳。さん",
+    "photoPaddocks": []
   },
   "ブラウンラチェット": {
     "name": "ブラウンラチェット",
@@ -54495,7 +55046,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'アルテミスS(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022104994&no=24889",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104994&no=50528",
     "pedigree": {
       "sire": "キズナ",
       "dam": "フォエヴァーダーリング",
@@ -54745,7 +55296,9 @@ export const HORSE_DATABASE = {
         "weight": "438(0)",
         "rival": "(ミライヘノハナ)"
       }
-    ]
+    ],
+    "photoTitle": "アルテミスS(G3)/エアさん",
+    "photoPaddocks": []
   },
   "ヘデントール": {
     "name": "ヘデントール",
@@ -54763,7 +55316,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'天皇賞(春)(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105521&no=77594",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105521&no=108087",
     "pedigree": {
       "sire": "ルーラーシップ",
       "dam": "コルコバード",
@@ -55037,6 +55590,16 @@ export const HORSE_DATABASE = {
         "weight": "478(0)",
         "rival": "ジャスティンミラノ"
       }
+    ],
+    "photoTitle": "NF天栄/なおっぺさん",
+    "photoPaddocks": [
+      {
+        "race": "ジャパンカップ",
+        "slug": "jc",
+        "date": "11月18日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img03.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ブローザホーン": {
@@ -55055,7 +55618,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'宝塚記念(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019105748&no=122077",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105748&no=19819",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "オートクレール",
@@ -55665,7 +56228,9 @@ export const HORSE_DATABASE = {
         "weight": "434(0)",
         "rival": "コウキ"
       }
-    ]
+    ],
+    "photoTitle": "２歳新馬/zatsumuさん",
+    "photoPaddocks": []
   },
   "ヘニーガイスト": {
     "name": "ヘニーガイスト",
@@ -55683,7 +56248,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'ポプラS()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022104865&no=88880",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104865&no=90183",
     "pedigree": {
       "sire": "ヘニーヒューズ",
       "dam": "スミレ",
@@ -55837,7 +56402,9 @@ export const HORSE_DATABASE = {
         "weight": "514(0)",
         "rival": "(パラサイコロジー)"
       }
-    ]
+    ],
+    "photoTitle": "三峰山特別(2勝クラス)/sapphireさん",
+    "photoPaddocks": []
   },
   "ペプチドナイル": {
     "name": "ペプチドナイル",
@@ -55855,7 +56422,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'フェブラリーS(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2018106084&no=102577",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018106084&no=62390",
     "pedigree": {
       "sire": "キングカメハメハ",
       "dam": "クイーンオリーブ",
@@ -56537,7 +57104,9 @@ export const HORSE_DATABASE = {
         "weight": "508(0)",
         "rival": "エアサージュ"
       }
-    ]
+    ],
+    "photoTitle": "赤富士S(3勝)/さん",
+    "photoPaddocks": []
   },
   "ベストプラージュ": {
     "name": "ベストプラージュ",
@@ -56555,7 +57124,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "フューチャーステップ"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2024101469&no=18577",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024101469&no=3371",
     "pedigree": {
       "sire": "ビーチパトロール",
       "dam": "フィアレス",
@@ -56781,7 +57350,9 @@ export const HORSE_DATABASE = {
         "weight": "449(0)",
         "rival": "セイテイサウザー"
       }
-    ]
+    ],
+    "photoTitle": "ファーストステップ2(新馬)/名無しさん",
+    "photoPaddocks": []
   },
   "ホウオウビスケッツ": {
     "name": "ホウオウビスケッツ",
@@ -56799,7 +57370,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'函館記念(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020103941&no=103780",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103941&no=123036",
     "pedigree": {
       "sire": "マインドユアビスケッツ",
       "dam": "ホウオウサブリナ",
@@ -57361,7 +57932,9 @@ export const HORSE_DATABASE = {
         "weight": "488(0)",
         "rival": "(マルディランダ)"
       }
-    ]
+    ],
+    "photoTitle": "札幌記念(G2)/つんさん",
+    "photoPaddocks": []
   },
   "ペリエール": {
     "name": "ペリエール",
@@ -57379,7 +57952,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'エルムS(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020101874&no=113343",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020101874&no=8800",
     "pedigree": {
       "sire": "ヘニーヒューズ",
       "dam": "ソフトライム",
@@ -57893,7 +58466,9 @@ export const HORSE_DATABASE = {
         "weight": "474(0)",
         "rival": "(ユティタム)"
       }
-    ]
+    ],
+    "photoTitle": "２歳新馬/さん",
+    "photoPaddocks": []
   },
   "ベラジオオペラ": {
     "name": "ベラジオオペラ",
@@ -57911,7 +58486,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'大阪杯(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020102781&no=103873",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020102781&no=34498",
     "pedigree": {
       "sire": "ロードカナロア",
       "dam": "エアルーティーン",
@@ -58233,7 +58808,9 @@ export const HORSE_DATABASE = {
         "weight": "506(0)",
         "rival": "(エアメテオラ)"
       }
-    ]
+    ],
+    "photoTitle": "セントポーリア賞(1勝)/さん",
+    "photoPaddocks": []
   },
   "ホウオウプレマ": {
     "name": "ホウオウプレマ",
@@ -58251,7 +58828,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳新馬"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2024106597&no=17007",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024106597&no=8243",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "ホウオウピースフル",
@@ -58285,7 +58862,9 @@ export const HORSE_DATABASE = {
         "weight": "474(0)",
         "rival": "(ロゼプレミア)"
       }
-    ]
+    ],
+    "photoTitle": "2歳新馬/あっぷるぱいさん",
+    "photoPaddocks": []
   },
   "ホーエリート": {
     "name": "ホーエリート",
@@ -58303,7 +58882,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'ステイヤーズS(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021104855&no=74820",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021104855&no=102838",
     "pedigree": {
       "sire": "ルーラーシップ",
       "dam": "ゴールデンハープ",
@@ -58721,7 +59300,9 @@ export const HORSE_DATABASE = {
         "weight": "460(0)",
         "rival": "トレミニョン"
       }
-    ]
+    ],
+    "photoTitle": "天皇賞(春)(G1)/zatsumuさん",
+    "photoPaddocks": []
   },
   "マイエレメント": {
     "name": "マイエレメント",
@@ -58739,7 +59320,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'フォーチュンC()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022101197&no=39528",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022101197&no=1058",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "ソートアフター",
@@ -59037,7 +59618,9 @@ export const HORSE_DATABASE = {
         "weight": "468(0)",
         "rival": "(ウインベアトリス)"
       }
-    ]
+    ],
+    "photoTitle": "キャロット募集馬ツアー20230902/オウケンさん",
+    "photoPaddocks": []
   },
   "マジックサンズ": {
     "name": "マジックサンズ",
@@ -59055,7 +59638,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'札幌2歳S(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022104772&no=76421",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104772&no=93466",
     "pedigree": {
       "sire": "キズナ",
       "dam": "コナブリュワーズ",
@@ -59353,7 +59936,9 @@ export const HORSE_DATABASE = {
         "weight": "502(0)",
         "rival": "(ビーオンザカバー)"
       }
-    ]
+    ],
+    "photoTitle": "富士S(GII)/Mｒ.Ｒさん",
+    "photoPaddocks": []
   },
   "マテンロウスカイ": {
     "name": "マテンロウスカイ",
@@ -59371,7 +59956,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'中山記念(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019105546&no=106454",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105546&no=122291",
     "pedigree": {
       "sire": "モーリス",
       "dam": "レッドラヴィータ",
@@ -60053,7 +60638,9 @@ export const HORSE_DATABASE = {
         "weight": "484(0)",
         "rival": "(シホノスペランツァ)"
       }
-    ]
+    ],
+    "photoTitle": "マーチS(G3)/こむぎさん",
+    "photoPaddocks": []
   },
   "ボンドガール": {
     "name": "ボンドガール",
@@ -60071,7 +60658,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'2歳新馬"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021107179&no=91535",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021107179&no=102057",
     "pedigree": {
       "sire": "ダイワメジャー",
       "dam": "コーステッド",
@@ -60489,7 +61076,9 @@ export const HORSE_DATABASE = {
         "weight": "446(0)",
         "rival": "(チェルヴィニア)"
       }
-    ]
+    ],
+    "photoTitle": "エリザベス女王杯(G1)/ねぐせさん",
+    "photoPaddocks": []
   },
   "マスカレードボール": {
     "name": "マスカレードボール",
@@ -60507,7 +61096,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'天皇賞(秋)(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022105519&no=53359",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105519&no=73362",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "マスクオフ",
@@ -60757,6 +61346,23 @@ export const HORSE_DATABASE = {
         "weight": "460(0)",
         "rival": "(マイネルチケット)"
       }
+    ],
+    "photoTitle": "天皇賞（秋）(G1)/BLACKさん",
+    "photoPaddocks": [
+      {
+        "race": "ジャパンカップ",
+        "slug": "jc",
+        "date": "11月18日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img02.jpg",
+        "source": "JRA-VAN"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "slug": "akiten",
+        "date": "10月22日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img03.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "マリアンデール": {
@@ -60775,7 +61381,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳未勝利"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2024103955&no=13317",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024103955&no=12514",
     "pedigree": {
       "sire": "シルバーステート",
       "dam": "スティーミーウィンドウズ",
@@ -60833,7 +61439,9 @@ export const HORSE_DATABASE = {
         "weight": "438(0)",
         "rival": "セプタードアイル"
       }
-    ]
+    ],
+    "photoTitle": "２歳未勝利/さん",
+    "photoPaddocks": []
   },
   "ミスタージーティー": {
     "name": "ミスタージーティー",
@@ -60851,7 +61459,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'若葉S(L)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105856&no=29422",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105856&no=111214",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "リッスン",
@@ -61317,7 +61925,9 @@ export const HORSE_DATABASE = {
         "weight": "472(0)",
         "rival": "(ハヤテノフクノスケ)"
       }
-    ]
+    ],
+    "photoTitle": "Mキタサンブラック(3勝クラス)/はしやんさん",
+    "photoPaddocks": []
   },
   "ミアネーロ": {
     "name": "ミアネーロ",
@@ -61335,7 +61945,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'フラワーC(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105801&no=56503",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105801&no=561",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "ミスエーニョ",
@@ -61681,7 +62291,9 @@ export const HORSE_DATABASE = {
         "weight": "478(0)",
         "rival": "(マーシャルポイント)"
       }
-    ]
+    ],
+    "photoTitle": "募集馬ツアー/バンビ0527さん",
+    "photoPaddocks": []
   },
   "ミッキージュエリー": {
     "name": "ミッキージュエリー",
@@ -61699,7 +62311,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'北海ハンデキャップ()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022103245&no=69273",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022103245&no=2987",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "ミッキーチャーム",
@@ -61949,7 +62561,9 @@ export const HORSE_DATABASE = {
         "weight": "494(0)",
         "rival": "エリカエクスプレス"
       }
-    ]
+    ],
+    "photoTitle": "牧場にて/さん",
+    "photoPaddocks": []
   },
   "ミニーホーク": {
     "name": "ミニーホーク",
@@ -61967,7 +62581,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'英オークス(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022190002&no=94311",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022190002&no=94310",
     "pedigree": {
       "sire": "Frankel (英)",
       "dam": "Multilingual (英)",
@@ -62313,7 +62927,9 @@ export const HORSE_DATABASE = {
         "weight": "計不",
         "rival": ""
       }
-    ]
+    ],
+    "photoTitle": "凱旋門賞(G1)/こんぱすさん",
+    "photoPaddocks": []
   },
   "メイショウタバル": {
     "name": "メイショウタバル",
@@ -62331,7 +62947,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'宝塚記念(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021103272&no=101937",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021103272&no=105571",
     "pedigree": {
       "sire": "ゴールドシップ",
       "dam": "メイショウツバクロ",
@@ -62749,6 +63365,16 @@ export const HORSE_DATABASE = {
         "weight": "502(0)",
         "rival": "オールナット"
       }
+    ],
+    "photoTitle": "宝塚記念(G1)/トニーP76さん",
+    "photoPaddocks": [
+      {
+        "race": "ジャパンカップ",
+        "slug": "jc",
+        "date": "11月19日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img08.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ミッキーファイト": {
@@ -62767,7 +63393,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'JBCクラシック(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105615&no=61833",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105615&no=98674",
     "pedigree": {
       "sire": "ドレフォン",
       "dam": "スペシャルグルーヴ",
@@ -63089,7 +63715,9 @@ export const HORSE_DATABASE = {
         "weight": "534(0)",
         "rival": "(セントラルヴァレー)"
       }
-    ]
+    ],
+    "photoTitle": "東京大賞典競走(G1)/深い池さん",
+    "photoPaddocks": []
   },
   "ムルソー": {
     "name": "ムルソー",
@@ -63107,7 +63735,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'アンタレスS(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021103020&no=65569",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021103020&no=99956",
     "pedigree": {
       "sire": "レイデオロ",
       "dam": "ラユロット",
@@ -63405,7 +64033,9 @@ export const HORSE_DATABASE = {
         "weight": "522(0)",
         "rival": "ダノンピレネー"
       }
-    ]
+    ],
+    "photoTitle": "仁川S(L)/生ハムさん",
+    "photoPaddocks": []
   },
   "ミックファイア": {
     "name": "ミックファイア",
@@ -63423,7 +64053,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "ジャパンダートダービー"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020104376&no=50654",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020104376&no=120691",
     "pedigree": {
       "sire": "シニスターミニスター",
       "dam": "マリアージュ",
@@ -63913,7 +64543,9 @@ export const HORSE_DATABASE = {
         "weight": "496(0)",
         "rival": "(サワーキャンディー)"
       }
-    ]
+    ],
+    "photoTitle": "六甲盃(重賞)/すみれさん",
+    "photoPaddocks": []
   },
   "メリオーレム": {
     "name": "メリオーレム",
@@ -63931,7 +64563,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'むらさき賞()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021104791&no=10446",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021104791&no=84518",
     "pedigree": {
       "sire": "シュヴァルグラン",
       "dam": "メリオーラ",
@@ -64397,7 +65029,9 @@ export const HORSE_DATABASE = {
         "weight": "480(0)",
         "rival": "メイショウゴーフル"
       }
-    ]
+    ],
+    "photoTitle": "むらさき賞(３勝クラス)/宮内宮さん",
+    "photoPaddocks": []
   },
   "ヤマニンウルス": {
     "name": "ヤマニンウルス",
@@ -64415,7 +65049,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'プロキオンS(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020105599&no=90332",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020105599&no=8330",
     "pedigree": {
       "sire": "ジャスタウェイ",
       "dam": "ヤマニンパピオネ",
@@ -64665,7 +65299,9 @@ export const HORSE_DATABASE = {
         "weight": "536(0)",
         "rival": "(ゴライコウ)"
       }
-    ]
+    ],
+    "photoTitle": "２歳新馬/さん",
+    "photoPaddocks": []
   },
   "ラフターラインズ": {
     "name": "ラフターラインズ",
@@ -64683,7 +65319,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'エリザベス女王杯(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2023107154&no=10793",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023107154&no=57649",
     "pedigree": {
       "sire": "アルアイン",
       "dam": "バンゴール",
@@ -64837,6 +65473,16 @@ export const HORSE_DATABASE = {
         "weight": "460(0)",
         "rival": "スウィフトミモザ"
       }
+    ],
+    "photoTitle": "サンスポ賞フローラS(G2)/りーさん",
+    "photoPaddocks": [
+      {
+        "race": "エリザベス女王杯",
+        "slug": "elizabeth",
+        "date": "11月4日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img02.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ラビットアイ": {
@@ -64855,7 +65501,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'4歳以上1勝クラス"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021102597&no=9219",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021102597&no=107910",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "ティーエスベリー",
@@ -65225,7 +65871,9 @@ export const HORSE_DATABASE = {
         "weight": "492(0)",
         "rival": "ジュンゴールド"
       }
-    ]
+    ],
+    "photoTitle": "蓬莱峡特別(2勝クラス)/ポンタも大好きさん",
+    "photoPaddocks": []
   },
   "ランスオブクイーン": {
     "name": "ランスオブクイーン",
@@ -65243,7 +65891,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'シドニーT()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021104427&no=75517",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021104427&no=89375",
     "pedigree": {
       "sire": "タリスマニック",
       "dam": "マイプラーナ",
@@ -65565,7 +66213,9 @@ export const HORSE_DATABASE = {
         "weight": "432(0)",
         "rival": "ミエスペランサ"
       }
-    ]
+    ],
+    "photoTitle": "丹頂S(OP)/かるめん77さん",
+    "photoPaddocks": []
   },
   "ラヴァンダ": {
     "name": "ラヴァンダ",
@@ -65583,7 +66233,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'アイルランドT(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021107098&no=74618",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021107098&no=108126",
     "pedigree": {
       "sire": "シルバーステート",
       "dam": "ゴッドパイレーツ",
@@ -66121,7 +66771,9 @@ export const HORSE_DATABASE = {
         "weight": "464(0)",
         "rival": "バンドシェル"
       }
-    ]
+    ],
+    "photoTitle": "中京記念(G3)/たまおさん",
+    "photoPaddocks": []
   },
   "ランフォーヴァウ": {
     "name": "ランフォーヴァウ",
@@ -66139,7 +66791,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'デイリー杯2歳S(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022105291&no=85361",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105291&no=66519",
     "pedigree": {
       "sire": "ロードカナロア",
       "dam": "キネオダンサー",
@@ -66461,7 +67113,9 @@ export const HORSE_DATABASE = {
         "weight": "456(0)",
         "rival": "レイユール"
       }
-    ]
+    ],
+    "photoTitle": "秋華賞(G1)/あすりさん",
+    "photoPaddocks": []
   },
   "リアライズシリウス": {
     "name": "リアライズシリウス",
@@ -66479,7 +67133,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'共同通信杯(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2023103604&no=69028",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023103604&no=55714",
     "pedigree": {
       "sire": "ポエティックフレア",
       "dam": "レッドミラベル",
@@ -66657,6 +67311,16 @@ export const HORSE_DATABASE = {
         "weight": "512(0)",
         "rival": "(カムアップローゼス)"
       }
+    ],
+    "photoTitle": "東京優駿(G1)/ひもみんさん",
+    "photoPaddocks": [
+      {
+        "race": "天皇賞（秋）",
+        "slug": "akiten",
+        "date": "10月22日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img07.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ラヴェル": {
@@ -66675,7 +67339,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'チャレンジC(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020103390&no=98254",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103390&no=5791",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "サンブルエミューズ",
@@ -67069,7 +67733,9 @@ export const HORSE_DATABASE = {
         "weight": "444(0)",
         "rival": "(サンライズサラー)"
       }
-    ]
+    ],
+    "photoTitle": "新馬戦/rorさん",
+    "photoPaddocks": []
   },
   "メイショウハリオ": {
     "name": "メイショウハリオ",
@@ -67087,7 +67753,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'川崎記念【指定交流】(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2017106404&no=91705",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2017106404&no=34354",
     "pedigree": {
       "sire": "パイロ",
       "dam": "メイショウオウヒ",
@@ -67889,7 +68555,9 @@ export const HORSE_DATABASE = {
         "weight": "502(0)",
         "rival": "ワイドカント"
       }
-    ]
+    ],
+    "photoTitle": "三嶋牧場/ちぇれぶーさん",
+    "photoPaddocks": []
   },
   "リバティアイランド": {
     "name": "リバティアイランド",
@@ -67907,7 +68575,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'優駿牝馬(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020103656&no=2013",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103656&no=9961",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "ヤンキーローズ",
@@ -68181,7 +68849,9 @@ export const HORSE_DATABASE = {
         "weight": "464(0)",
         "rival": "(クルゼイロドスル)"
       }
-    ]
+    ],
+    "photoTitle": "２歳新馬/オオアブラさん",
+    "photoPaddocks": []
   },
   "リスグロワール": {
     "name": "リスグロワール",
@@ -68199,7 +68869,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳新馬"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2024106690&no=10922",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024106690&no=10679",
     "pedigree": {
       "sire": "サートゥルナーリア",
       "dam": "リスグラシュー",
@@ -68233,7 +68903,9 @@ export const HORSE_DATABASE = {
         "weight": "430(0)",
         "rival": "(ハートノート)"
       }
-    ]
+    ],
+    "photoTitle": "新馬戦/ゲストさん",
+    "photoPaddocks": []
   },
   "レガレイラ": {
     "name": "レガレイラ",
@@ -68251,7 +68923,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'有馬記念(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105898&no=53960",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105898&no=94870",
     "pedigree": {
       "sire": "スワーヴリチャード",
       "dam": "ロカ",
@@ -68597,6 +69269,16 @@ export const HORSE_DATABASE = {
         "weight": "452(0)",
         "rival": "(セットアップ)"
       }
+    ],
+    "photoTitle": "エリザベス女王杯(G1)/Apophasisさん",
+    "photoPaddocks": [
+      {
+        "race": "天皇賞（秋）",
+        "slug": "akiten",
+        "date": "10月21日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img08.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "レイクラシック": {
@@ -68615,7 +69297,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'3歳以上1勝クラス"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2023103906&no=41075",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023103906&no=68521",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "メジロジェニファー",
@@ -68793,7 +69475,9 @@ export const HORSE_DATABASE = {
         "weight": "488(0)",
         "rival": "イベントホライゾン"
       }
-    ]
+    ],
+    "photoTitle": "3歳以上1勝クラス/枢木さん",
+    "photoPaddocks": []
   },
   "レディネス": {
     "name": "レディネス",
@@ -68811,7 +69495,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'プリンシパルS(L)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022104416&no=48294",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104416&no=89712",
     "pedigree": {
       "sire": "スワーヴリチャード",
       "dam": "リトルシャンブルズ",
@@ -69061,7 +69745,9 @@ export const HORSE_DATABASE = {
         "weight": "498(0)",
         "rival": "(アローグレイシャー)"
       }
-    ]
+    ],
+    "photoTitle": "札幌記念(G2)/かつおさん",
+    "photoPaddocks": []
   },
   "リビアングラス": {
     "name": "リビアングラス",
@@ -69079,7 +69765,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'八坂S()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020105633&no=123504",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020105633&no=50054",
     "pedigree": {
       "sire": "キズナ",
       "dam": "ディルガ",
@@ -69713,7 +70399,9 @@ export const HORSE_DATABASE = {
         "weight": "506(0)",
         "rival": "ランヴァル"
       }
-    ]
+    ],
+    "photoTitle": "京都新聞杯(G2)/おかおみさん",
+    "photoPaddocks": []
   },
   "ルヴァレドクール": {
     "name": "ルヴァレドクール",
@@ -69731,7 +70419,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'武蔵野S(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022100994&no=94270",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022100994&no=77893",
     "pedigree": {
       "sire": "ルヴァンスレーヴ",
       "dam": "アルマユディト",
@@ -69957,7 +70645,9 @@ export const HORSE_DATABASE = {
         "weight": "496(0)",
         "rival": "ジャナドリア"
       }
-    ]
+    ],
+    "photoTitle": "4歳以上1勝クラス/その馬の名は…モチ！さん",
+    "photoPaddocks": []
   },
   "レーベンスティール": {
     "name": "レーベンスティール",
@@ -69975,7 +70665,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'オールカマー(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020102078&no=111334",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020102078&no=2570",
     "pedigree": {
       "sire": "リアルスティール",
       "dam": "トウカイライフ",
@@ -70417,7 +71107,9 @@ export const HORSE_DATABASE = {
         "weight": "480(0)",
         "rival": "ソールオリエンス"
       }
-    ]
+    ],
+    "photoTitle": "ノーザンファーム空港/ぽぶさん",
+    "photoPaddocks": []
   },
   "レーゼドラマ": {
     "name": "レーゼドラマ",
@@ -70435,7 +71127,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'フラワーC(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022105346&no=42188",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105346&no=51709",
     "pedigree": {
       "sire": "キズナ",
       "dam": "シアードラマ",
@@ -70733,7 +71425,9 @@ export const HORSE_DATABASE = {
         "weight": "468(0)",
         "rival": "ネブラディスク"
       }
-    ]
+    ],
+    "photoTitle": "優駿牝馬(G1)/wataameさん",
+    "photoPaddocks": []
   },
   "ラムジェット": {
     "name": "ラムジェット",
@@ -70751,7 +71445,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "東京ダービー"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021106640&no=49336",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021106640&no=99510",
     "pedigree": {
       "sire": "マジェスティックウォリアー",
       "dam": "ネフェルティティ",
@@ -71193,7 +71887,9 @@ export const HORSE_DATABASE = {
         "weight": "488(0)",
         "rival": "(ノイヤーヘルト)"
       }
-    ]
+    ],
+    "photoTitle": "フェブラリーＳ(G1)/みー。さん",
+    "photoPaddocks": []
   },
   "ロデオドライブ": {
     "name": "ロデオドライブ",
@@ -71211,7 +71907,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'NHKマイルC(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2023107166&no=48819",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023107166&no=61530",
     "pedigree": {
       "sire": "サートゥルナーリア",
       "dam": "ビバリーヒルズ",
@@ -71341,6 +72037,16 @@ export const HORSE_DATABASE = {
         "weight": "464(0)",
         "rival": "(カナルサンマルタン)"
       }
+    ],
+    "photoTitle": "NHKマイルC(G1)/しやんさん",
+    "photoPaddocks": [
+      {
+        "race": "マイルCS",
+        "slug": "mcs",
+        "date": "11月12日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img08.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ローズサルーテ": {
@@ -71359,7 +72065,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳新馬"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2024104587&no=18256",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024104587&no=12435",
     "pedigree": {
       "sire": "ロジャーバローズ",
       "dam": "シーヴァージア",
@@ -71393,7 +72099,9 @@ export const HORSE_DATABASE = {
         "weight": "452(0)",
         "rival": "(リネンエトワール)"
       }
-    ]
+    ],
+    "photoTitle": "2歳新馬/こぐまさん",
+    "photoPaddocks": []
   },
   "ワールズエンド": {
     "name": "ワールズエンド",
@@ -71411,7 +72119,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'京王杯スプリングC(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021105864&no=91990",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105864&no=108896",
     "pedigree": {
       "sire": "ロードカナロア",
       "dam": "リラヴァティ",
@@ -71709,6 +72417,16 @@ export const HORSE_DATABASE = {
         "weight": "464(0)",
         "rival": "(シュガークン)"
       }
+    ],
+    "photoTitle": "安田記念(G1)/旅っ程さん",
+    "photoPaddocks": [
+      {
+        "race": "マイルCS",
+        "slug": "mcs",
+        "date": "11月12日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img01.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "レザベーション": {
@@ -71727,7 +72445,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'ニュージーランドT(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2023103268&no=48477",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023103268&no=44247",
     "pedigree": {
       "sire": "ダノンプレミアム",
       "dam": "プレノタート",
@@ -71977,7 +72695,9 @@ export const HORSE_DATABASE = {
         "weight": "460(0)",
         "rival": "ジャスティンビスタ"
       }
-    ]
+    ],
+    "photoTitle": "ニュージーランドT(G2)/Potehanaさん",
+    "photoPaddocks": []
   },
   "ロブチェン": {
     "name": "ロブチェン",
@@ -71995,7 +72715,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'日本ダービー(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2023107089&no=64814",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023107089&no=66041",
     "pedigree": {
       "sire": "ワールドプレミア",
       "dam": "ソングライティング",
@@ -72149,6 +72869,16 @@ export const HORSE_DATABASE = {
         "weight": "516(0)",
         "rival": "(アルペングロー)"
       }
+    ],
+    "photoTitle": "皐月賞(G1)/ポニータさん",
+    "photoPaddocks": [
+      {
+        "race": "菊花賞",
+        "slug": "kikka",
+        "date": "10月15日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/kikka/img/photopaddock_img01.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "レモンポップ": {
@@ -72167,7 +72897,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'フェブラリーS(G1)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2018110015&no=69669",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018110015&no=68143",
     "pedigree": {
       "sire": "Lemon Drop Kid (米)",
       "dam": "Unreachable (米)",
@@ -72585,7 +73315,9 @@ export const HORSE_DATABASE = {
         "weight": "508(0)",
         "rival": "(サトノムスタング)"
       }
-    ]
+    ],
+    "photoTitle": "根岸S(G3)/ピーモさん",
+    "photoPaddocks": []
   },
   "ヴェルテンベルク": {
     "name": "ヴェルテンベルク",
@@ -72603,7 +73335,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'ストークS()"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2020103060&no=29895",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103060&no=119638",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "マルカアイチャン",
@@ -73285,6 +74017,16 @@ export const HORSE_DATABASE = {
         "weight": "482(0)",
         "rival": "バルサムノート"
       }
+    ],
+    "photoTitle": "天皇賞(春)(G1)/さくら独走さん",
+    "photoPaddocks": [
+      {
+        "race": "ジャパンカップ",
+        "slug": "jc",
+        "date": "11月18日撮影",
+        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img06.jpg",
+        "source": "JRA-VAN"
+      }
     ]
   },
   "ヴーレヴー": {
@@ -73303,7 +74045,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'エルフィンS(L)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2022104617&no=66608",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104617&no=87658",
     "pedigree": {
       "sire": "サトノクラウン",
       "dam": "アルギュロス",
@@ -73697,7 +74439,9 @@ export const HORSE_DATABASE = {
         "weight": "466(0)",
         "rival": "(チギリ)"
       }
-    ]
+    ],
+    "photoTitle": "巴賞(OP)/さん",
+    "photoPaddocks": []
   },
   "ヴァルツァーシャル": {
     "name": "ヴァルツァーシャル",
@@ -73715,7 +74459,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'マーチS(G3)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2019102437&no=108076",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019102437&no=75567",
     "pedigree": {
       "sire": "マクフィ",
       "dam": "バイカターキン",
@@ -74397,7 +75141,9 @@ export const HORSE_DATABASE = {
         "weight": "468(0)",
         "rival": "(シラキヌ)"
       }
-    ]
+    ],
+    "photoTitle": "北総S(3勝)/さん",
+    "photoPaddocks": []
   },
   "ロードクロンヌ": {
     "name": "ロードクロンヌ",
@@ -74415,7 +75161,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'プロキオンS(G2)"
     ],
-    "photoUrl": "https://db.netkeiba.com/show_photo.php?horse_id=2021100169&no=103770",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021100169&no=103744",
     "pedigree": {
       "sire": "リオンディーズ",
       "dam": "リラコサージュ",
@@ -74881,6 +75627,8 @@ export const HORSE_DATABASE = {
         "weight": "460(0)",
         "rival": "セレスト"
       }
-    ]
+    ],
+    "photoTitle": "平安S(G3)/メンテさん",
+    "photoPaddocks": []
   }
 };

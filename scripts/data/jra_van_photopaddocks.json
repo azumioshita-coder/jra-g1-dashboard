@@ -1,0 +1,720 @@
+{
+  "ダノンデサイル": [
+    {
+      "race": "ジャパンカップ",
+      "slug": "jc",
+      "date": "11月19日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img01.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "天皇賞（秋）",
+      "slug": "akiten",
+      "date": "10月22日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img01.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "マスカレードボール": [
+    {
+      "race": "ジャパンカップ",
+      "slug": "jc",
+      "date": "11月18日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img02.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "天皇賞（秋）",
+      "slug": "akiten",
+      "date": "10月22日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img03.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ヘデントール": [
+    {
+      "race": "ジャパンカップ",
+      "slug": "jc",
+      "date": "11月18日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img03.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "タガノデュード": [
+    {
+      "race": "ジャパンカップ",
+      "slug": "jc",
+      "date": "11月18日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img04.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "クロワデュノール": [
+    {
+      "race": "ジャパンカップ",
+      "slug": "jc",
+      "date": "11月18日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img05.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "天皇賞（秋）",
+      "slug": "akiten",
+      "date": "10月22日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img02.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ヴェルテンベルク": [
+    {
+      "race": "ジャパンカップ",
+      "slug": "jc",
+      "date": "11月18日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img06.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "シェイクユアハート": [
+    {
+      "race": "ジャパンカップ",
+      "slug": "jc",
+      "date": "11月18日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img07.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "天皇賞（秋）",
+      "slug": "akiten",
+      "date": "10月21日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img04.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "メイショウタバル": [
+    {
+      "race": "ジャパンカップ",
+      "slug": "jc",
+      "date": "11月19日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img08.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ジョバンニ": [
+    {
+      "race": "天皇賞（秋）",
+      "slug": "akiten",
+      "date": "10月21日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img05.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "セイウンハーデス": [
+    {
+      "race": "天皇賞（秋）",
+      "slug": "akiten",
+      "date": "10月21日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img06.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "リアライズシリウス": [
+    {
+      "race": "天皇賞（秋）",
+      "slug": "akiten",
+      "date": "10月22日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img07.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "レガレイラ": [
+    {
+      "race": "天皇賞（秋）",
+      "slug": "akiten",
+      "date": "10月21日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img08.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ワールズエンド": [
+    {
+      "race": "マイルCS",
+      "slug": "mcs",
+      "date": "11月12日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img01.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "エンブロイダリー": [
+    {
+      "race": "マイルCS",
+      "slug": "mcs",
+      "date": "11月12日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img02.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "スターアニス": [
+    {
+      "race": "マイルCS",
+      "slug": "mcs",
+      "date": "11月12日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img03.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "スプリンターズS",
+      "slug": "sprinters",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/sprinters/img/photopaddock_img01.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "チャンピオンズC",
+      "slug": "champ",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img01.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "阪神JF",
+      "slug": "juvenile",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img01.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "朝日杯FS",
+      "slug": "futurity",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img01.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "有馬記念",
+      "slug": "arima",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img01.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "アドマイヤズーム": [
+    {
+      "race": "マイルCS",
+      "slug": "mcs",
+      "date": "11月12日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img04.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "アンパドゥ": [
+    {
+      "race": "マイルCS",
+      "slug": "mcs",
+      "date": "11月12日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img05.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ガイアフォース": [
+    {
+      "race": "マイルCS",
+      "slug": "mcs",
+      "date": "11月11日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img06.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "シックスペンス": [
+    {
+      "race": "マイルCS",
+      "slug": "mcs",
+      "date": "11月12日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img07.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ロデオドライブ": [
+    {
+      "race": "マイルCS",
+      "slug": "mcs",
+      "date": "11月12日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img08.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "カムニャック": [
+    {
+      "race": "エリザベス女王杯",
+      "slug": "elizabeth",
+      "date": "11月4日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img01.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ラフターラインズ": [
+    {
+      "race": "エリザベス女王杯",
+      "slug": "elizabeth",
+      "date": "11月4日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img02.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "アクアヴァーナル": [
+    {
+      "race": "エリザベス女王杯",
+      "slug": "elizabeth",
+      "date": "11月4日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img03.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "クイーンズウォーク": [
+    {
+      "race": "エリザベス女王杯",
+      "slug": "elizabeth",
+      "date": "11月4日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img04.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ジュウリョクピエロ": [
+    {
+      "race": "エリザベス女王杯",
+      "slug": "elizabeth",
+      "date": "11月4日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img05.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ジョスラン": [
+    {
+      "race": "エリザベス女王杯",
+      "slug": "elizabeth",
+      "date": "11月4日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img06.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ステレンボッシュ": [
+    {
+      "race": "エリザベス女王杯",
+      "slug": "elizabeth",
+      "date": "11月4日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img07.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "チェルヴィニア": [
+    {
+      "race": "エリザベス女王杯",
+      "slug": "elizabeth",
+      "date": "11月4日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img08.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ロブチェン": [
+    {
+      "race": "菊花賞",
+      "slug": "kikka",
+      "date": "10月15日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/kikka/img/photopaddock_img01.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ダノンヒストリー": [
+    {
+      "race": "菊花賞",
+      "slug": "kikka",
+      "date": "10月14日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/kikka/img/photopaddock_img02.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "バステール": [
+    {
+      "race": "菊花賞",
+      "slug": "kikka",
+      "date": "10月15日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/kikka/img/photopaddock_img03.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "アウダーシア": [
+    {
+      "race": "菊花賞",
+      "slug": "kikka",
+      "date": "10月15日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/kikka/img/photopaddock_img04.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "コンジェスタス": [
+    {
+      "race": "菊花賞",
+      "slug": "kikka",
+      "date": "10月14日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/kikka/img/photopaddock_img05.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ゴーイントゥスカイ": [
+    {
+      "race": "菊花賞",
+      "slug": "kikka",
+      "date": "10月15日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/kikka/img/photopaddock_img06.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ジャスティンシカゴ": [
+    {
+      "race": "菊花賞",
+      "slug": "kikka",
+      "date": "10月15日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/kikka/img/photopaddock_img07.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "シートゥサミット": [
+    {
+      "race": "菊花賞",
+      "slug": "kikka",
+      "date": "10月14日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/kikka/img/photopaddock_img08.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "モンローウォーク": [
+    {
+      "race": "秋華賞",
+      "slug": "shuka",
+      "date": "10月7日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/shuka/img/photopaddock_img01.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ギャラボーグ": [
+    {
+      "race": "秋華賞",
+      "slug": "shuka",
+      "date": "10月8日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/shuka/img/photopaddock_img02.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ドリームコア": [
+    {
+      "race": "秋華賞",
+      "slug": "shuka",
+      "date": "10月8日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/shuka/img/photopaddock_img03.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "エンネ": [
+    {
+      "race": "秋華賞",
+      "slug": "shuka",
+      "date": "10月7日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/shuka/img/photopaddock_img04.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "サムシングスイート": [
+    {
+      "race": "秋華賞",
+      "slug": "shuka",
+      "date": "10月8日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/shuka/img/photopaddock_img05.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "スウィートハピネス": [
+    {
+      "race": "秋華賞",
+      "slug": "shuka",
+      "date": "10月7日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/shuka/img/photopaddock_img06.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "タイセイボーグ": [
+    {
+      "race": "秋華賞",
+      "slug": "shuka",
+      "date": "10月7日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/shuka/img/photopaddock_img07.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "マスターソアラ": [
+    {
+      "race": "秋華賞",
+      "slug": "shuka",
+      "date": "10月7日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/shuka/img/photopaddock_img08.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "パンジャタワー": [
+    {
+      "race": "スプリンターズS",
+      "slug": "sprinters",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/sprinters/img/photopaddock_img02.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "チャンピオンズC",
+      "slug": "champ",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img02.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "阪神JF",
+      "slug": "juvenile",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img02.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "朝日杯FS",
+      "slug": "futurity",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img02.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "有馬記念",
+      "slug": "arima",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img02.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ウインカーネリアン": [
+    {
+      "race": "スプリンターズS",
+      "slug": "sprinters",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/sprinters/img/photopaddock_img03.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "チャンピオンズC",
+      "slug": "champ",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img03.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "阪神JF",
+      "slug": "juvenile",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img03.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "朝日杯FS",
+      "slug": "futurity",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img03.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "有馬記念",
+      "slug": "arima",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img03.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "サウンドモリアーナ": [
+    {
+      "race": "スプリンターズS",
+      "slug": "sprinters",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/sprinters/img/photopaddock_img04.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "チャンピオンズC",
+      "slug": "champ",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img04.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "阪神JF",
+      "slug": "juvenile",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img04.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "朝日杯FS",
+      "slug": "futurity",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img04.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "有馬記念",
+      "slug": "arima",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img04.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ピューロマジック": [
+    {
+      "race": "スプリンターズS",
+      "slug": "sprinters",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/sprinters/img/photopaddock_img05.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "チャンピオンズC",
+      "slug": "champ",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img05.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "阪神JF",
+      "slug": "juvenile",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img05.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "朝日杯FS",
+      "slug": "futurity",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img05.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "有馬記念",
+      "slug": "arima",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img05.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "フリッカージャブ": [
+    {
+      "race": "スプリンターズS",
+      "slug": "sprinters",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/sprinters/img/photopaddock_img06.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "チャンピオンズC",
+      "slug": "champ",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img06.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "阪神JF",
+      "slug": "juvenile",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img06.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "朝日杯FS",
+      "slug": "futurity",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img06.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "有馬記念",
+      "slug": "arima",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img06.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ママコチャ": [
+    {
+      "race": "スプリンターズS",
+      "slug": "sprinters",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/sprinters/img/photopaddock_img07.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "チャンピオンズC",
+      "slug": "champ",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img07.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "阪神JF",
+      "slug": "juvenile",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img07.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "朝日杯FS",
+      "slug": "futurity",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img07.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "有馬記念",
+      "slug": "arima",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img07.jpg",
+      "source": "JRA-VAN"
+    }
+  ],
+  "ルガル": [
+    {
+      "race": "スプリンターズS",
+      "slug": "sprinters",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/sprinters/img/photopaddock_img08.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "チャンピオンズC",
+      "slug": "champ",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img08.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "阪神JF",
+      "slug": "juvenile",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img08.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "朝日杯FS",
+      "slug": "futurity",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img08.jpg",
+      "source": "JRA-VAN"
+    },
+    {
+      "race": "有馬記念",
+      "slug": "arima",
+      "date": "9月17日撮影",
+      "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img08.jpg",
+      "source": "JRA-VAN"
+    }
+  ]
+}

@@ -2584,6 +2584,7 @@ horse_modal_js_logic = """
           earnings: '-',
           titles: [],
           photoUrl: null,
+          photoPaddocks: [],
           pedigree: {},
           career: []
         };
@@ -2636,6 +2637,80 @@ horse_modal_js_logic = """
 
         // 血統データ
         const ped = horse.pedigree || {};
+
+        // JRA-VAN フォトパドック (馬体写真・前走比較)
+        const paddocks = horse.photoPaddocks || [];
+        let paddocksHtml = '';
+        if (paddocks.length > 0) {
+          const isComparison = paddocks.length >= 2;
+          const paddockCardsHtml = paddocks.map((p, pIdx) => {
+            let tagClass = 'official';
+            let tagLabel = '公式写真';
+            if (isComparison) {
+              if (pIdx === 0) {
+                tagClass = 'latest';
+                tagLabel = '最新 / 当走';
+              } else {
+                tagClass = 'past';
+                tagLabel = `前走比較 (${pIdx === 1 ? '前走' : `${pIdx + 1}走前`})`;
+              }
+            }
+
+            return `
+              <div class="hd-paddock-card">
+                <div class="hd-paddock-header">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <span class="hd-paddock-tag ${tagClass}">${tagLabel}</span>
+                    <span style="font-size: 13.5px; font-weight: 800; color: #fff;">${p.race}</span>
+                  </div>
+                  <span class="hd-paddock-date">📅 ${p.date || '公式撮影'}</span>
+                </div>
+                <div class="hd-paddock-img-wrap">
+                  <img src="${p.photoUrl}" alt="${horse.name} フォトパドック ${p.race}" class="hd-paddock-img" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div style=\\'color:#94a3b8;font-size:12px;padding:20px;\\'>写真読み込み中</div>';">
+                </div>
+                <div class="hd-paddock-footer">
+                  <span>📸 立ち姿・馬体写真</span>
+                  <span style="color: #38bdf8; font-weight: 700;">JRA-VAN公式 特集</span>
+                </div>
+              </div>
+            `;
+          }).join('');
+
+          paddocksHtml = `
+            <div class="hd-section-box hd-paddock-section">
+              <div class="hd-section-title" style="display: flex; justify-content: space-between; align-items: center;">
+                <span>📸 JRA-VAN公式 フォトパドック ${isComparison ? '（馬体写真・前走比較）' : '（馬体写真）'}</span>
+                <span class="hd-paddock-badge-source">ソース: JRA-VAN</span>
+              </div>
+              ${isComparison ? `
+                <div class="hd-paddock-compare-banner">
+                  <span>🔍</span>
+                  <span><strong>前走時と当走の馬体比較:</strong> トモの容積・腹回りの引き締まり・筋肉の張りと皮膚の薄さの変化をチェック</span>
+                </div>
+              ` : ''}
+              <div class="hd-paddock-compare-grid">
+                ${paddockCardsHtml}
+              </div>
+            </div>
+          `;
+        } else {
+          paddocksHtml = `
+            <div class="hd-section-box hd-paddock-section">
+              <div class="hd-section-title" style="display: flex; justify-content: space-between; align-items: center;">
+                <span>📸 フォトパドック (馬体写真)</span>
+                <span class="hd-paddock-badge-source">提供: JRA-VAN</span>
+              </div>
+              <div class="hd-no-paddock-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.6;">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <span>JRA-VAN G1特集フォトパドック掲載対象外（外国調教馬または未撮影）</span>
+              </div>
+            </div>
+          `;
+        }
 
         // 全戦歴テーブル行 (career または races に対応)
         const careerList = horse.career || horse.races || [];
@@ -2757,8 +2832,11 @@ horse_modal_js_logic = """
             </div>
           </div>
 
-          <!-- 2. 血統情報セクション（タブなし・縦並び表示） -->
-          <div class="hd-section-box">
+          <!-- 2. JRA-VAN公式 フォトパドック (馬体写真＆前走比較) -->
+          ${paddocksHtml}
+
+          <!-- 3. 血統情報セクション（タブなし・縦並び表示） -->
+          <div class="hd-section-box" style="margin-top: 24px;">
             <div class="hd-section-title">
               <span>🧬 血統情報 (Pedigree)</span>
             </div>
@@ -4405,13 +4483,22 @@ init_app_block = """
 
         if (typeof window !== 'undefined') {
           const urlParams = window.location ? new URLSearchParams(window.location.search) : null;
-          if (urlParams && urlParams.has('horse')) {
+          let targetHorse = (urlParams && urlParams.get('horse')) || null;
+          if (!targetHorse && window.location.hash && window.location.hash.startsWith('#horse=')) {
+            targetHorse = decodeURIComponent(window.location.hash.replace('#horse=', ''));
+          }
+          if (targetHorse) {
             setTimeout(() => {
-              openHorseDetail(urlParams.get('horse'));
-            }, 50);
+              openHorseDetail(targetHorse);
+            }, 60);
           }
           window.addEventListener('hashchange', () => {
-            handleRoute(false);
+            if (window.location.hash && window.location.hash.startsWith('#horse=')) {
+              const h = decodeURIComponent(window.location.hash.replace('#horse=', ''));
+              openHorseDetail(h);
+            } else {
+              handleRoute(false);
+            }
           });
         }
 
