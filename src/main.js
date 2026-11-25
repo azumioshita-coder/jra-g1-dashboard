@@ -23848,12 +23848,12 @@ const PAYOUTS_DATA = {
     "sexAge": "黒鹿毛",
     "color": "鹿毛",
     "birthday": "2020年3月27日",
-    "owner": "",
-    "breeder": "",
+    "owner": "-",
+    "breeder": "-",
     "origin": "",
     "price": "-",
     "stable": "マリンズ (海外)",
-    "record": "15戦5勝 [5-2-0-8]",
+    "record": "14戦5勝 [5-2-0-7]",
     "earnings": "0万円",
     "titles": [
       "25'BCターフ(G1)"
@@ -23869,28 +23869,28 @@ const PAYOUTS_DATA = {
     },
     "career": [
       {
-        "date": "2026-11-07",
-        "venue": "デルマー",
-        "weather": "晴",
-        "raceNum": "9",
+        "date": "2026-11-01",
+        "venue": "キーンランド",
+        "weather": "",
+        "raceNum": "11",
         "race": "BCターフ(GI)",
-        "starters": "12",
+        "starters": "",
         "bracket": "",
-        "gate": "8",
-        "odds": "16.5",
-        "pop": "6",
-        "rank": "4",
-        "jockey": "R.ムーア",
-        "load": "57.5",
+        "gate": "1",
+        "odds": "18.3",
+        "pop": "8",
+        "rank": "9",
+        "jockey": "マクモナ",
+        "load": "57",
         "course": "芝2400",
         "track": "良",
-        "time": "2:24.8",
-        "margin": "0.4",
-        "passing": "9-8-5-4",
+        "time": "2:28.4",
+        "margin": "",
+        "passing": "",
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "レベルスロマンス"
+        "rival": ""
       },
       {
         "date": "2026-09-05",
@@ -23938,7 +23938,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "(GREEN IMPACT)"
+        "rival": "GREEN IMPACT"
       },
       {
         "date": "2026-06-20",
@@ -24010,7 +24010,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2025-08-23",
@@ -24034,7 +24034,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2025-06-20",
@@ -24058,7 +24058,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2025-04-12",
@@ -24130,7 +24130,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2024-12-27",
@@ -24212,7 +24212,8 @@ const PAYOUTS_DATA = {
       "prev": null,
       "goodRuns": [],
       "totalCount": 0
-    }
+    },
+    "netkeiba_id": "2020190008"
   },
   "エコロブルーム": {
     "name": "エコロブルーム",
@@ -24475,7 +24476,7 @@ const PAYOUTS_DATA = {
     "origin": "仏",
     "price": "-",
     "stable": "グラファ (海外)",
-    "record": "7戦6勝 [6-0-1-0]",
+    "record": "6戦5勝 [5-0-1-0]",
     "earnings": "1億8,382万円",
     "titles": [
       "26'マイルCS(G1)"
@@ -24492,26 +24493,26 @@ const PAYOUTS_DATA = {
     "career": [
       {
         "date": "2026-11-22",
-        "venue": "6京都6",
+        "venue": "5京都6",
         "weather": "晴",
         "raceNum": "11",
-        "race": "マイルCS(GI)",
+        "race": "マイルチャンピオンS(GI)",
         "starters": "18",
         "bracket": "1",
         "gate": "1",
-        "odds": "8.5",
+        "odds": "7.4",
         "pop": "4",
         "rank": "1",
-        "jockey": "M.バルザローナ",
+        "jockey": "バルザロ",
         "load": "57",
         "course": "芝1600",
         "track": "良",
-        "time": "1:31.9",
+        "time": "1:31.8",
         "margin": "-0.1",
-        "passing": "5-4",
-        "pace": "34.1-33.8",
-        "agari": "33.6",
-        "weight": "488(-)",
+        "passing": "7-7",
+        "pace": "34.0-33.7",
+        "agari": "33.2",
+        "weight": "438(0)",
         "rival": "エンブロイダリー"
       },
       {
@@ -24536,7 +24537,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2026-07-19",
@@ -24584,7 +24585,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2026-05-07",
@@ -24608,7 +24609,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2026-03-29",
@@ -24632,7 +24633,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       }
     ],
     "photoTitle": null,
@@ -24642,7 +24643,8 @@ const PAYOUTS_DATA = {
       "prev": null,
       "goodRuns": [],
       "totalCount": 0
-    }
+    },
+    "netkeiba_id": "2023190001"
   },
   "エコロヴァルツ": {
     "name": "エコロヴァルツ",
@@ -26201,15 +26203,14 @@ const PAYOUTS_DATA = {
     "sexAge": "鹿毛",
     "color": "鹿毛",
     "birthday": "2021年4月12日",
-    "owner": "",
-    "breeder": "",
+    "owner": "-",
+    "breeder": "-",
     "origin": "",
     "price": "-",
     "stable": "ゴスデン (海外)",
-    "record": "14戦10勝 [10-3-0-1]",
+    "record": "13戦9勝 [9-3-0-1]",
     "earnings": "0万円",
     "titles": [
-      "26'英チャンピオンS(G1)",
       "25'プリンスオブウェールズS(G1)"
     ],
     "photoUrl": null,
@@ -26225,26 +26226,26 @@ const PAYOUTS_DATA = {
       {
         "date": "2026-10-17",
         "venue": "アスコット",
-        "weather": "稍",
-        "raceNum": "4",
+        "weather": "",
+        "raceNum": "",
         "race": "英チャンピオンS(GI)",
-        "starters": "10",
+        "starters": "6",
         "bracket": "",
-        "gate": "3",
-        "odds": "3.5",
-        "pop": "2",
+        "gate": "5",
+        "odds": "",
+        "pop": "1",
         "rank": "1",
-        "jockey": "W.ビュイック",
-        "load": "58.5",
-        "course": "芝1990",
+        "jockey": "ビュイッ",
+        "load": "60.5",
+        "course": "芝2000",
         "track": "稍",
-        "time": "2:02.8",
-        "margin": "-0.3",
-        "passing": "4-4-1",
+        "time": "2:04.22",
+        "margin": "",
+        "passing": "",
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "カランダガン"
+        "rival": ""
       },
       {
         "date": "2026-08-19",
@@ -26292,7 +26293,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2026-03-29",
@@ -26316,7 +26317,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2025-10-18",
@@ -26364,7 +26365,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2025-07-05",
@@ -26412,7 +26413,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "35.5",
         "weight": "計不",
-        "rival": "(アンマート)"
+        "rival": "アンマート"
       },
       {
         "date": "2025-05-29",
@@ -26460,7 +26461,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "33.5",
         "weight": "計不",
-        "rival": "(スタートオブデー)"
+        "rival": "スタートオブデー"
       },
       {
         "date": "2024-08-11",
@@ -26484,7 +26485,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "34.0",
         "weight": "計不",
-        "rival": "(サンズアンドラバーズ)"
+        "rival": "サンズアンドラバーズ"
       },
       {
         "date": "2024-07-18",
@@ -26508,7 +26509,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2024-06-22",
@@ -26532,7 +26533,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       }
     ],
     "photoTitle": null,
@@ -26542,7 +26543,8 @@ const PAYOUTS_DATA = {
       "prev": null,
       "goodRuns": [],
       "totalCount": 0
-    }
+    },
+    "netkeiba_id": "2021190002"
   },
   "エキサイトバイオ": {
     "name": "エキサイトバイオ",
@@ -27215,8 +27217,8 @@ const PAYOUTS_DATA = {
     "origin": "愛",
     "price": "-",
     "stable": "オブライ (海外)",
-    "record": "17戦8勝 [8-3-0-6]",
-    "earnings": "14億2,450万円 (換算)",
+    "record": "16戦8勝 [8-3-0-5]",
+    "earnings": "0万円",
     "titles": [
       "22'フューチュリティT(G1)"
     ],
@@ -27237,21 +27239,21 @@ const PAYOUTS_DATA = {
         "raceNum": "12",
         "race": "ジャパンC(GI)",
         "starters": "14",
-        "bracket": "6",
+        "bracket": "5",
         "gate": "8",
-        "odds": "4.5",
-        "pop": "2",
+        "odds": "9.8",
+        "pop": "4",
         "rank": "8",
-        "jockey": "R.ムーア",
+        "jockey": "ムーア",
         "load": "58",
         "course": "芝2400",
         "track": "良",
-        "time": "2:26.1",
-        "margin": "0.6",
-        "passing": "6-6-6-6",
-        "pace": "37.6-34.1",
-        "agari": "34.1",
-        "weight": "478(-)",
+        "time": "2:26.2",
+        "margin": "0.7",
+        "passing": "7-7-7-7",
+        "pace": "37.1-33.4",
+        "agari": "33.5",
+        "weight": "454(0)",
         "rival": "ドウデュース"
       },
       {
@@ -27324,7 +27326,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2024-05-26",
@@ -27396,7 +27398,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2023-09-09",
@@ -27420,7 +27422,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2023-07-29",
@@ -27468,7 +27470,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2023-06-03",
@@ -27492,7 +27494,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2023-05-06",
@@ -27540,7 +27542,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2022-09-10",
@@ -27564,7 +27566,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2022-07-02",
@@ -27588,7 +27590,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2022-06-01",
@@ -27622,7 +27624,8 @@ const PAYOUTS_DATA = {
       "prev": null,
       "goodRuns": [],
       "totalCount": 0
-    }
+    },
+    "netkeiba_id": "2020190003"
   },
   "オフトレイル": {
     "name": "オフトレイル",
@@ -28764,7 +28767,7 @@ const PAYOUTS_DATA = {
     "origin": "愛",
     "price": "-",
     "stable": "グラファ (海外)",
-    "record": "20戦10勝 [10-8-1-1]",
+    "record": "19戦10勝 [10-7-1-1]",
     "earnings": "5億378万円",
     "titles": [
       "25'ジャパンC(G1)"
@@ -28782,26 +28785,26 @@ const PAYOUTS_DATA = {
       {
         "date": "2026-10-17",
         "venue": "アスコット",
-        "weather": "稍",
-        "raceNum": "4",
+        "weather": "",
+        "raceNum": "",
         "race": "英チャンピオンS(GI)",
-        "starters": "10",
+        "starters": "6",
         "bracket": "",
-        "gate": "6",
-        "odds": "2.6",
-        "pop": "1",
+        "gate": "3",
+        "odds": "",
+        "pop": "2",
         "rank": "2",
-        "jockey": "M.バルザローナ",
-        "load": "58.5",
-        "course": "芝1990",
+        "jockey": "スミヨン",
+        "load": "60.5",
+        "course": "芝2000",
         "track": "稍",
-        "time": "2:03.1",
-        "margin": "0.3",
-        "passing": "7-5-2",
+        "time": "2:04.8",
+        "margin": "",
+        "passing": "",
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "オンブズマン"
+        "rival": ""
       },
       {
         "date": "2026-07-25",
@@ -28849,7 +28852,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "(クアリフィカー)"
+        "rival": "クアリフィカー"
       },
       {
         "date": "2026-06-06",
@@ -28897,7 +28900,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "(ウエストウインドブローズ)"
+        "rival": "ウエストウインドブローズ"
       },
       {
         "date": "2025-11-30",
@@ -28921,7 +28924,7 @@ const PAYOUTS_DATA = {
         "pace": "34.5-34.6",
         "agari": "33.2",
         "weight": "456(0)",
-        "rival": "(マスカレードボール)"
+        "rival": "マスカレードボール"
       },
       {
         "date": "2025-10-18",
@@ -28945,7 +28948,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "(オンブズマン)"
+        "rival": "オンブズマン"
       },
       {
         "date": "2025-07-26",
@@ -28969,7 +28972,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2025-06-29",
@@ -28993,7 +28996,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2025-06-06",
@@ -29113,7 +29116,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "36.0",
         "weight": "計不",
-        "rival": "(スペースレジェンド)"
+        "rival": "スペースレジェンド"
       },
       {
         "date": "2024-05-23",
@@ -29137,7 +29140,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "(トラファルガースクエア)"
+        "rival": "トラファルガースクエア"
       },
       {
         "date": "2024-04-14",
@@ -29161,7 +29164,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "34.9",
         "weight": "計不",
-        "rival": "(ブライトピクチャー)"
+        "rival": "ブライトピクチャー"
       },
       {
         "date": "2024-03-16",
@@ -29209,7 +29212,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2023-08-12",
@@ -29243,7 +29246,8 @@ const PAYOUTS_DATA = {
       "prev": null,
       "goodRuns": [],
       "totalCount": 0
-    }
+    },
+    "netkeiba_id": "2021190001"
   },
   "カレンラップスター": {
     "name": "カレンラップスター",
@@ -38402,10 +38406,9 @@ const PAYOUTS_DATA = {
     "origin": "独",
     "price": "-",
     "stable": "グラファ (海外)",
-    "record": "24戦11勝 [11-4-2-7]",
+    "record": "23戦10勝 [10-4-2-7]",
     "earnings": "0万円",
     "titles": [
-      "26'オイロパ賞(G1)",
       "24'キングジョージ6世&amp;クイーンエリザベスS(G1)"
     ],
     "photoUrl": null,
@@ -38421,26 +38424,26 @@ const PAYOUTS_DATA = {
       {
         "date": "2026-09-27",
         "venue": "ケルン",
-        "weather": "晴",
-        "raceNum": "6",
+        "weather": "",
+        "raceNum": "",
         "race": "オイロパ賞(GI)",
-        "starters": "8",
+        "starters": "7",
         "bracket": "",
-        "gate": "4",
-        "odds": "1.9",
+        "gate": "2",
+        "odds": "",
         "pop": "1",
         "rank": "1",
-        "jockey": "C.スミヨン",
-        "load": "59",
+        "jockey": "スミヨン",
+        "load": "60",
         "course": "芝2400",
-        "track": "良",
-        "time": "2:28.40",
-        "margin": "-0.2",
-        "passing": "2-2-1",
+        "track": "稍",
+        "time": "2:27.78",
+        "margin": "",
+        "passing": "",
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "ドバイオナー"
+        "rival": ""
       },
       {
         "date": "2026-07-25",
@@ -38512,7 +38515,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "(オラクル)"
+        "rival": "オラクル"
       },
       {
         "date": "2026-02-14",
@@ -38608,7 +38611,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "(ドバイオナー)"
+        "rival": "ドバイオナー"
       },
       {
         "date": "2025-08-16",
@@ -38680,7 +38683,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "33.3",
         "weight": "計不",
-        "rival": "(グランドスターズ)"
+        "rival": "グランドスターズ"
       },
       {
         "date": "2025-04-27",
@@ -38752,7 +38755,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "36.1",
         "weight": "計不",
-        "rival": "(ヘイミッシュ)"
+        "rival": "ヘイミッシュ"
       },
       {
         "date": "2024-07-27",
@@ -38776,7 +38779,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2024-06-22",
@@ -38848,7 +38851,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2024-04-14",
@@ -38920,7 +38923,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2023-06-30",
@@ -38944,7 +38947,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2023-05-23",
@@ -38968,7 +38971,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       }
     ],
     "photoTitle": null,
@@ -38978,7 +38981,8 @@ const PAYOUTS_DATA = {
       "prev": null,
       "goodRuns": [],
       "totalCount": 0
-    }
+    },
+    "netkeiba_id": "2020190005"
   },
   "サクラファレル": {
     "name": "サクラファレル",
@@ -63863,20 +63867,15 @@ const PAYOUTS_DATA = {
     "sexAge": "牡4",
     "color": "鹿毛",
     "birthday": "2022年10月1日",
-    "owner": "Haras Don Alberto",
-    "breeder": "Haras Don Alberto",
-    "origin": "チリ",
+    "owner": "-",
+    "breeder": "-",
+    "origin": "",
     "price": "-",
-    "stable": "J.サドラー (米)",
-    "record": "10戦7勝 [7-2-1-0]",
+    "stable": "サドラー (海外)",
+    "record": "9戦6勝 [6-2-1-0]",
     "earnings": "0万円",
     "titles": [
-      "26'ラテンアメリカ大賞(G1)",
-      "25'グランクリテリウム(G1)",
-      "25'エルデルビー(G1)",
-      "25'セントレジャー(G1)",
-      "25'ナシオナル・リカルド・ライオン(G1)",
-      "24'タンテオ・デ・ポトリロス(G1)"
+      "25'グランクリテリウム(G1)"
     ],
     "photoUrl": null,
     "pedigree": {
@@ -63889,244 +63888,220 @@ const PAYOUTS_DATA = {
     },
     "career": [
       {
-        "date": "2026-04-14",
-        "venue": "モンテリコ",
-        "weather": "晴",
-        "raceNum": "10",
-        "race": "ラテンアメリカ大賞(G1)",
-        "starters": "14",
-        "bracket": "3",
-        "gate": "4",
-        "odds": "2.2",
-        "pop": "1",
-        "rank": "1",
-        "jockey": "L.トーレス",
-        "load": "57",
-        "course": "芝2000",
-        "track": "良",
-        "time": "1:59.4",
-        "margin": "-0.6",
-        "passing": "3-3-1",
-        "pace": "35.4-35.0",
-        "agari": "34.6",
-        "weight": "490(+2)",
-        "rival": "ドンフィエロ"
-      },
-      {
-        "date": "2025-10-18",
-        "venue": "クラブイピコ",
-        "weather": "晴",
-        "raceNum": "11",
-        "race": "セントレジャー(G1)",
-        "starters": "14",
-        "bracket": "4",
-        "gate": "5",
-        "odds": "1.8",
-        "pop": "1",
-        "rank": "1",
-        "jockey": "L.トーレス",
-        "load": "57",
-        "course": "芝2400",
-        "track": "良",
-        "time": "2:26.4",
-        "margin": "-0.4",
-        "passing": "3-3-2",
-        "pace": "36.2-34.9",
-        "agari": "34.5",
-        "weight": "488(+2)",
-        "rival": "ファラオン"
-      },
-      {
-        "date": "2025-07-26",
-        "venue": "バルパライソ",
-        "weather": "晴",
-        "raceNum": "12",
-        "race": "エルデルビー(G1)",
-        "starters": "16",
-        "bracket": "2",
-        "gate": "3",
-        "odds": "2.1",
-        "pop": "1",
-        "rank": "1",
-        "jockey": "L.トーレス",
-        "load": "57",
-        "course": "芝2400",
-        "track": "良",
-        "time": "2:25.8",
-        "margin": "-0.5",
-        "passing": "4-4-3",
-        "pace": "36.5-35.1",
-        "agari": "34.8",
-        "weight": "486(-2)",
-        "rival": "グランマエストロ"
-      },
-      {
-        "date": "2025-05-10",
-        "venue": "クラブイピコ",
-        "weather": "晴",
-        "raceNum": "10",
-        "race": "ナシオナル・リカルド・ライオン(G1)",
-        "starters": "12",
-        "bracket": "5",
-        "gate": "6",
-        "odds": "1.6",
-        "pop": "1",
-        "rank": "1",
-        "jockey": "L.トーレス",
-        "load": "56.5",
-        "course": "芝2000",
-        "track": "良",
-        "time": "1:58.2",
-        "margin": "-0.7",
-        "passing": "2-2-1",
-        "pace": "35.8-35.2",
-        "agari": "34.7",
-        "weight": "488(0)",
-        "rival": "コンドル"
-      },
-      {
-        "date": "2025-03-29",
-        "venue": "クラブイピコ",
-        "weather": "晴",
-        "raceNum": "9",
-        "race": "ポージャ・デ・ポトリロス(G1)",
+        "date": "2026-04-26",
+        "venue": "ペルー",
+        "weather": "",
+        "raceNum": "",
+        "race": "ラテンアメリカ大賞(GI)",
         "starters": "15",
-        "bracket": "1",
-        "gate": "2",
-        "odds": "2.4",
-        "pop": "1",
+        "bracket": "",
+        "gate": "8",
+        "odds": "",
+        "pop": "",
         "rank": "1",
-        "jockey": "L.トーレス",
-        "load": "56",
-        "course": "芝1700",
-        "track": "良",
-        "time": "1:39.1",
-        "margin": "-0.3",
-        "passing": "5-4-3",
-        "pace": "35.2-34.8",
-        "agari": "34.4",
-        "weight": "488(+4)",
-        "rival": "インカ"
+        "jockey": "トーレス",
+        "load": "58.5",
+        "course": "芝2000",
+        "track": "稍",
+        "time": "2:00.1",
+        "margin": "",
+        "passing": "",
+        "pace": "",
+        "agari": "",
+        "weight": "計不",
+        "rival": ""
       },
       {
-        "date": "2024-11-08",
-        "venue": "クラブイピコ",
-        "weather": "晴",
-        "raceNum": "11",
-        "race": "グランクリテリウム(G1)",
-        "starters": "14",
-        "bracket": "3",
-        "gate": "4",
-        "odds": "3.1",
+        "date": "2026-02-01",
+        "venue": "チリ",
+        "weather": "",
+        "raceNum": "",
+        "race": "エルダービー(GI)",
+        "starters": "16",
+        "bracket": "",
+        "gate": "16",
+        "odds": "",
         "pop": "2",
         "rank": "1",
-        "jockey": "L.トーレス",
-        "load": "56",
-        "course": "芝1600",
+        "jockey": "トーレス",
+        "load": "57.5",
+        "course": "芝2400",
+        "track": "良",
+        "time": "2:25.42",
+        "margin": "",
+        "passing": "",
+        "pace": "",
+        "agari": "",
+        "weight": "計不",
+        "rival": ""
+      },
+      {
+        "date": "2025-12-06",
+        "venue": "チリ",
+        "weather": "",
+        "raceNum": "",
+        "race": "チリセントレジャー(GI)",
+        "starters": "15",
+        "bracket": "",
+        "gate": "8",
+        "odds": "",
+        "pop": "1",
+        "rank": "3",
+        "jockey": "ペリオス",
+        "load": "57",
+        "course": "ダ2200",
+        "track": "良",
+        "time": "2:15.1",
+        "margin": "",
+        "passing": "",
+        "pace": "",
+        "agari": "",
+        "weight": "501",
+        "rival": ""
+      },
+      {
+        "date": "2025-10-04",
+        "venue": "チリ",
+        "weather": "",
+        "raceNum": "",
+        "race": "グランクリテリウム(GI)",
+        "starters": "11",
+        "bracket": "",
+        "gate": "11",
+        "odds": "",
+        "pop": "1",
+        "rank": "1",
+        "jockey": "グアハル",
+        "load": "57",
+        "course": "ダ1900",
+        "track": "良",
+        "time": "1:53.8",
+        "margin": "",
+        "passing": "",
+        "pace": "",
+        "agari": "",
+        "weight": "491",
+        "rival": ""
+      },
+      {
+        "date": "2025-09-06",
+        "venue": "チリ",
+        "weather": "",
+        "raceNum": "",
+        "race": "チリ2000ギニー(GI)",
+        "starters": "14",
+        "bracket": "",
+        "gate": "8",
+        "odds": "",
+        "pop": "1",
+        "rank": "1",
+        "jockey": "グアハル",
+        "load": "57",
+        "course": "ダ1600",
         "track": "良",
         "time": "1:33.4",
-        "margin": "-0.2",
-        "passing": "3-3-2",
-        "pace": "34.8-35.0",
-        "agari": "34.6",
-        "weight": "484(+2)",
-        "rival": "アタカマ"
+        "margin": "",
+        "passing": "",
+        "pace": "",
+        "agari": "",
+        "weight": "495",
+        "rival": ""
       },
       {
-        "date": "2024-09-20",
-        "venue": "クラブイピコ",
-        "weather": "晴",
-        "raceNum": "8",
-        "race": "タンテオ・デ・ポトリロス(G1)",
-        "starters": "13",
-        "bracket": "6",
-        "gate": "8",
-        "odds": "2.8",
+        "date": "2025-06-28",
+        "venue": "チリ",
+        "weather": "",
+        "raceNum": "",
+        "race": "タンテオ・デ・ポトリ(GI)",
+        "starters": "15",
+        "bracket": "",
+        "gate": "14",
+        "odds": "",
         "pop": "1",
-        "rank": "1",
-        "jockey": "L.トーレス",
-        "load": "56",
-        "course": "芝1500",
+        "rank": "2",
+        "jockey": "グアハル",
+        "load": "57",
+        "course": "ダ1500",
         "track": "良",
-        "time": "1:27.6",
-        "margin": "-0.5",
-        "passing": "2-2-1",
-        "pace": "35.0-34.6",
-        "agari": "34.2",
-        "weight": "482(0)",
-        "rival": "ソル"
+        "time": "1:28.7",
+        "margin": "",
+        "passing": "",
+        "pace": "",
+        "agari": "",
+        "weight": "計不",
+        "rival": ""
       },
       {
-        "date": "2024-07-12",
-        "venue": "クラブイピコ",
-        "weather": "曇",
-        "raceNum": "7",
-        "race": "アルベルト・ビアール・インファンテ(G2)",
+        "date": "2025-06-07",
+        "venue": "チリ",
+        "weather": "",
+        "raceNum": "",
+        "race": "エウヘニオセゲルスレ(GII)",
         "starters": "10",
-        "bracket": "4",
-        "gate": "4",
-        "odds": "2.0",
-        "pop": "1",
-        "rank": "2",
-        "jockey": "L.トーレス",
-        "load": "56",
-        "course": "芝1600",
-        "track": "稍",
-        "time": "1:35.0",
-        "margin": "0.1",
-        "passing": "4-4-3",
-        "pace": "35.6-35.4",
-        "agari": "35.1",
-        "weight": "482(+4)",
-        "rival": "パタゴニア"
-      },
-      {
-        "date": "2024-05-24",
-        "venue": "クラブイピコ",
-        "weather": "晴",
-        "raceNum": "6",
-        "race": "ビクトル・マトリ・ボサ(G3)",
-        "starters": "11",
-        "bracket": "5",
-        "gate": "5",
-        "odds": "1.9",
-        "pop": "1",
-        "rank": "2",
-        "jockey": "L.トーレス",
-        "load": "56",
-        "course": "芝1300",
-        "track": "良",
-        "time": "1:15.8",
-        "margin": "0.2",
-        "passing": "3-3-2",
-        "pace": "34.5-34.9",
-        "agari": "34.6",
-        "weight": "478(+2)",
-        "rival": "エストレーリャ"
-      },
-      {
-        "date": "2024-04-12",
-        "venue": "クラブイピコ",
-        "weather": "晴",
-        "raceNum": "4",
-        "race": "2歳未勝利",
-        "starters": "14",
-        "bracket": "7",
-        "gate": "10",
-        "odds": "1.5",
-        "pop": "1",
+        "bracket": "",
+        "gate": "9",
+        "odds": "",
+        "pop": "2",
         "rank": "1",
-        "jockey": "L.トーレス",
-        "load": "56",
-        "course": "芝1200",
+        "jockey": "グアハル",
+        "load": "57",
+        "course": "ダ1600",
         "track": "良",
-        "time": "1:09.4",
-        "margin": "-0.8",
-        "passing": "1-1-1",
-        "pace": "34.2-35.2",
-        "agari": "35.0",
-        "weight": "476",
-        "rival": "ルナ"
+        "time": "1:34.93",
+        "margin": "",
+        "passing": "",
+        "pace": "",
+        "agari": "",
+        "weight": "計不",
+        "rival": ""
+      },
+      {
+        "date": "2025-05-24",
+        "venue": "チリ",
+        "weather": "",
+        "raceNum": "",
+        "race": "ビクトル・マテティッ(GIII)",
+        "starters": "11",
+        "bracket": "",
+        "gate": "5",
+        "odds": "",
+        "pop": "2",
+        "rank": "2",
+        "jockey": "グアハル",
+        "load": "57",
+        "course": "ダ1500",
+        "track": "良",
+        "time": "1:31.3",
+        "margin": "",
+        "passing": "",
+        "pace": "",
+        "agari": "",
+        "weight": "計不",
+        "rival": ""
+      },
+      {
+        "date": "2025-04-10",
+        "venue": "チリ",
+        "weather": "",
+        "raceNum": "",
+        "race": "未勝利戦",
+        "starters": "9",
+        "bracket": "",
+        "gate": "4",
+        "odds": "",
+        "pop": "2",
+        "rank": "1",
+        "jockey": "ゴンザレ",
+        "load": "57",
+        "course": "ダ1500",
+        "track": "良",
+        "time": "1:33.39",
+        "margin": "",
+        "passing": "",
+        "pace": "",
+        "agari": "",
+        "weight": "計不",
+        "rival": ""
       }
     ],
     "photoPaddocks": [],
@@ -64136,7 +64111,8 @@ const PAYOUTS_DATA = {
       "prev": null,
       "goodRuns": [],
       "totalCount": 0
-    }
+    },
+    "netkeiba_id": "2022190003"
   },
   "ダブルハートボンド": {
     "name": "ダブルハートボンド",
@@ -65527,7 +65503,7 @@ const PAYOUTS_DATA = {
     "origin": "愛",
     "price": "-",
     "stable": "ヴェリア (海外)",
-    "record": "20戦7勝 [7-4-4-5]",
+    "record": "19戦7勝 [7-4-4-4]",
     "earnings": "1,800万円",
     "titles": [
       "24'クイーンアンS(G1)"
@@ -65545,25 +65521,25 @@ const PAYOUTS_DATA = {
       {
         "date": "2024-11-17",
         "venue": "6京都6",
-        "weather": "晴",
+        "weather": "曇",
         "raceNum": "11",
-        "race": "マイルCS(GI)",
+        "race": "マイルチャンピオンS(GI)",
         "starters": "17",
         "bracket": "6",
         "gate": "11",
-        "odds": "6.0",
+        "odds": "5.1",
         "pop": "3",
         "rank": "5",
-        "jockey": "R.ムーア",
+        "jockey": "ムーア",
         "load": "58",
         "course": "芝1600",
         "track": "良",
         "time": "1:32.4",
         "margin": "0.4",
-        "passing": "15-15",
-        "pace": "33.8-34.2",
-        "agari": "33.5",
-        "weight": "494(-)",
+        "passing": "14-15",
+        "pace": "33.8-34.5",
+        "agari": "33.6",
+        "weight": "508(0)",
         "rival": "ソウルラッシュ"
       },
       {
@@ -65588,7 +65564,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2024-09-08",
@@ -65636,7 +65612,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2024-06-18",
@@ -65660,7 +65636,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2024-05-18",
@@ -65708,7 +65684,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2024-03-23",
@@ -65732,7 +65708,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2023-08-26",
@@ -65924,7 +65900,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2022-09-17",
@@ -65996,7 +65972,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       }
     ],
     "photoTitle": null,
@@ -66006,7 +65982,8 @@ const PAYOUTS_DATA = {
       "prev": null,
       "goodRuns": [],
       "totalCount": 0
-    }
+    },
+    "netkeiba_id": "2020190002"
   },
   "チルカーノ": {
     "name": "チルカーノ",
@@ -82166,7 +82143,7 @@ const PAYOUTS_DATA = {
     "origin": "独",
     "price": "-",
     "stable": "シュタイ (海外)",
-    "record": "16戦7勝 [7-3-1-5]",
+    "record": "15戦7勝 [7-3-1-4]",
     "earnings": "0万円",
     "titles": [
       "23'独ダービー(G1)"
@@ -82188,21 +82165,21 @@ const PAYOUTS_DATA = {
         "raceNum": "12",
         "race": "ジャパンC(GI)",
         "starters": "14",
-        "bracket": "7",
-        "gate": "11",
-        "odds": "29.8",
-        "pop": "8",
+        "bracket": "8",
+        "gate": "13",
+        "odds": "89.5",
+        "pop": "12",
         "rank": "11",
-        "jockey": "R.ピーヒュレク",
+        "jockey": "ピーヒュ",
         "load": "58",
         "course": "芝2400",
         "track": "良",
-        "time": "2:26.6",
-        "margin": "1.1",
-        "passing": "13-13-13-13",
-        "pace": "37.6-34.1",
-        "agari": "34.1",
-        "weight": "460(-)",
+        "time": "2:26.5",
+        "margin": "1.0",
+        "passing": "11-12-12-14",
+        "pace": "37.1-33.4",
+        "agari": "33.5",
+        "weight": "440(0)",
         "rival": "ドウデュース"
       },
       {
@@ -82251,7 +82228,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2024-07-28",
@@ -82299,7 +82276,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2024-04-28",
@@ -82395,7 +82372,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2023-07-30",
@@ -82443,7 +82420,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2023-05-20",
@@ -82467,7 +82444,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2023-05-01",
@@ -82515,7 +82492,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       },
       {
         "date": "2022-09-12",
@@ -82539,7 +82516,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "()"
+        "rival": ""
       }
     ],
     "photoTitle": null,
@@ -82549,7 +82526,8 @@ const PAYOUTS_DATA = {
       "prev": null,
       "goodRuns": [],
       "totalCount": 0
-    }
+    },
+    "netkeiba_id": "2020190004"
   },
   "ブレイディヴェーグ": {
     "name": "ブレイディヴェーグ",
@@ -92296,15 +92274,14 @@ const PAYOUTS_DATA = {
     "sexAge": "鹿毛",
     "color": "鹿毛",
     "birthday": "2022年4月13日",
-    "owner": "",
-    "breeder": "",
+    "owner": "-",
+    "breeder": "-",
     "origin": "",
     "price": "-",
     "stable": "オブライ (海外)",
-    "record": "16戦8勝 [8-3-1-4]",
+    "record": "15戦7勝 [7-3-1-4]",
     "earnings": "0万円",
     "titles": [
-      "26'英チャンピオンズF&MS(G1)",
       "25'英オークス(G1)"
     ],
     "photoUrl": null,
@@ -92320,26 +92297,26 @@ const PAYOUTS_DATA = {
       {
         "date": "2026-10-17",
         "venue": "アスコット",
-        "weather": "稍",
-        "raceNum": "3",
-        "race": "英チャンピオンズF&M(GI)",
+        "weather": "",
+        "raceNum": "",
+        "race": "英チャンピオンズフィ(GI)",
         "starters": "12",
         "bracket": "",
-        "gate": "5",
-        "odds": "6.0",
-        "pop": "3",
+        "gate": "4",
+        "odds": "",
+        "pop": "2",
         "rank": "1",
-        "jockey": "R.ムーア",
-        "load": "57.5",
+        "jockey": "ムーア",
+        "load": "60.5",
         "course": "芝2390",
-        "track": "稍",
-        "time": "2:31.2",
-        "margin": "-0.3",
-        "passing": "3-3-1",
+        "track": "良",
+        "time": "2:29.49",
+        "margin": "",
+        "passing": "",
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "ビリーブド"
+        "rival": ""
       },
       {
         "date": "2026-10-04",
@@ -92483,7 +92460,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "(エドワードハミルトン)"
+        "rival": "エドワードハミルトン"
       },
       {
         "date": "2025-11-01",
@@ -92555,7 +92532,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "(エストレンジ)"
+        "rival": "エストレンジ"
       },
       {
         "date": "2025-07-19",
@@ -92579,7 +92556,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "(ウィーマイトテイクドロングウェイ)"
+        "rival": "ウィーマイトテイクドロングウェイ"
       },
       {
         "date": "2025-06-06",
@@ -92603,7 +92580,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "(ワール)"
+        "rival": "ワール"
       },
       {
         "date": "2025-05-07",
@@ -92627,7 +92604,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "(シークレットオブラブ)"
+        "rival": "シークレットオブラブ"
       },
       {
         "date": "2024-10-19",
@@ -92651,7 +92628,7 @@ const PAYOUTS_DATA = {
         "pace": "",
         "agari": "",
         "weight": "計不",
-        "rival": "(サブソニック)"
+        "rival": "サブソニック"
       },
       {
         "date": "2024-10-01",
@@ -92685,7 +92662,8 @@ const PAYOUTS_DATA = {
       "prev": null,
       "goodRuns": [],
       "totalCount": 0
-    }
+    },
+    "netkeiba_id": "2022190002"
   },
   "メイショウタバル": {
     "name": "メイショウタバル",
