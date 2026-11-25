@@ -26,7 +26,8 @@
           "trainingWeight": 520,
           "lastRaceWeight": 514,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 5着"
         },
         {
           "waku": 1,
@@ -46,7 +47,8 @@
           "trainingWeight": 523,
           "lastRaceWeight": 516,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 16着"
         },
         {
           "waku": 2,
@@ -66,7 +68,8 @@
           "trainingWeight": 494,
           "lastRaceWeight": 490,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 3着"
         },
         {
           "waku": 2,
@@ -86,7 +89,8 @@
           "trainingWeight": 506,
           "lastRaceWeight": 494,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 17着"
         },
         {
           "waku": 3,
@@ -106,7 +110,8 @@
           "trainingWeight": 522,
           "lastRaceWeight": 514,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 13着"
         },
         {
           "waku": 3,
@@ -126,7 +131,8 @@
           "trainingWeight": 490,
           "lastRaceWeight": 480,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 10着"
         },
         {
           "waku": 4,
@@ -146,7 +152,8 @@
           "trainingWeight": 486,
           "lastRaceWeight": 478,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 11着"
         },
         {
           "waku": 4,
@@ -166,7 +173,8 @@
           "trainingWeight": 480,
           "lastRaceWeight": 474,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 7着"
         },
         {
           "waku": 5,
@@ -186,7 +194,8 @@
           "trainingWeight": 512,
           "lastRaceWeight": 502,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 14着"
         },
         {
           "waku": 5,
@@ -206,7 +215,8 @@
           "trainingWeight": 464,
           "lastRaceWeight": 456,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 2着"
         },
         {
           "waku": 6,
@@ -226,7 +236,8 @@
           "trainingWeight": 462,
           "lastRaceWeight": 450,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 6着"
         },
         {
           "waku": 6,
@@ -246,7 +257,8 @@
           "trainingWeight": 526,
           "lastRaceWeight": 514,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 9着"
         },
         {
           "waku": 7,
@@ -266,7 +278,8 @@
           "trainingWeight": 534,
           "lastRaceWeight": 538,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 15着"
         },
         {
           "waku": 7,
@@ -286,7 +299,8 @@
           "trainingWeight": 516,
           "lastRaceWeight": 508,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 4着"
         },
         {
           "waku": 8,
@@ -306,7 +320,8 @@
           "trainingWeight": 523,
           "lastRaceWeight": 514,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 8着"
         },
         {
           "waku": 8,
@@ -326,7 +341,8 @@
           "trainingWeight": 482,
           "lastRaceWeight": 478,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 12着"
         },
         {
           "waku": 8,
@@ -346,7 +362,8 @@
           "trainingWeight": 522,
           "lastRaceWeight": 520,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 1着"
         }
       ],
       "jockeysCompatibility": [
@@ -1131,7 +1148,8 @@
           "lastRaceWeight": 490,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+8"
+          "trainingWeightDiff": "+8",
+          "lastRace": "エリザベス女王杯(G1) 12着"
         },
         {
           "waku": 1,
@@ -1183,7 +1201,8 @@
           "lastRaceWeight": 498,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+2"
+          "trainingWeightDiff": "+2",
+          "lastRace": "エリザベス女王杯(G1) 4着"
         },
         {
           "waku": 2,
@@ -1235,7 +1254,8 @@
           "lastRaceWeight": 478,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+6"
+          "trainingWeightDiff": "+6",
+          "lastRace": "エリザベス女王杯(G1) 17着"
         },
         {
           "waku": 2,
@@ -1287,7 +1307,8 @@
           "lastRaceWeight": 446,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+8"
+          "trainingWeightDiff": "+8",
+          "lastRace": "エリザベス女王杯(G1) 16着"
         },
         {
           "waku": 3,
@@ -1339,7 +1360,8 @@
           "lastRaceWeight": 446,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+6"
+          "trainingWeightDiff": "+6",
+          "lastRace": "エリザベス女王杯(G1) 18着"
         },
         {
           "waku": 3,
@@ -1391,7 +1413,8 @@
           "lastRaceWeight": 496,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+10"
+          "trainingWeightDiff": "+10",
+          "lastRace": "エリザベス女王杯(G1) 6着"
         },
         {
           "waku": 4,
@@ -1443,7 +1466,8 @@
           "lastRaceWeight": 496,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+8"
+          "trainingWeightDiff": "+8",
+          "lastRace": "エリザベス女王杯(G1) 2着"
         },
         {
           "waku": 4,
@@ -1495,7 +1519,8 @@
           "lastRaceWeight": 472,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+16"
+          "trainingWeightDiff": "+16",
+          "lastRace": "エリザベス女王杯(G1) 15着"
         },
         {
           "waku": 5,
@@ -1547,7 +1572,8 @@
           "lastRaceWeight": 544,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+6"
+          "trainingWeightDiff": "+6",
+          "lastRace": "エリザベス女王杯(G1) 8着"
         },
         {
           "waku": 5,
@@ -1599,7 +1625,8 @@
           "lastRaceWeight": 474,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "-2"
+          "trainingWeightDiff": "-2",
+          "lastRace": "エリザベス女王杯(G1) 5着"
         },
         {
           "waku": 6,
@@ -1651,7 +1678,8 @@
           "lastRaceWeight": 464,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+26"
+          "trainingWeightDiff": "+26",
+          "lastRace": "エリザベス女王杯(G1) 11着"
         },
         {
           "waku": 6,
@@ -1703,7 +1731,8 @@
           "lastRaceWeight": 458,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+12"
+          "trainingWeightDiff": "+12",
+          "lastRace": "エリザベス女王杯(G1) 9着"
         },
         {
           "waku": 7,
@@ -1755,7 +1784,8 @@
           "lastRaceWeight": 480,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+5"
+          "trainingWeightDiff": "+5",
+          "lastRace": "エリザベス女王杯(G1) 7着"
         },
         {
           "waku": 7,
@@ -1807,7 +1837,8 @@
           "lastRaceWeight": 504,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+16"
+          "trainingWeightDiff": "+16",
+          "lastRace": "エリザベス女王杯(G1) 14着"
         },
         {
           "waku": 7,
@@ -1859,7 +1890,8 @@
           "lastRaceWeight": 462,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+12"
+          "trainingWeightDiff": "+12",
+          "lastRace": "エリザベス女王杯(G1) 1着"
         },
         {
           "waku": 8,
@@ -1911,7 +1943,8 @@
           "lastRaceWeight": 476,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+4"
+          "trainingWeightDiff": "+4",
+          "lastRace": "エリザベス女王杯(G1) 3着"
         },
         {
           "waku": 8,
@@ -1963,7 +1996,8 @@
           "lastRaceWeight": 462,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+4"
+          "trainingWeightDiff": "+4",
+          "lastRace": "エリザベス女王杯(G1) 10着"
         },
         {
           "waku": 8,
@@ -2015,7 +2049,8 @@
           "lastRaceWeight": 468,
           "confirmedWeight": null,
           "weightDiff": null,
-          "trainingWeightDiff": "+12"
+          "trainingWeightDiff": "+12",
+          "lastRace": "エリザベス女王杯(G1) 13着"
         }
       ],
       "jockeysCompatibility": [
@@ -2667,15 +2702,7 @@
             "distanceApt": "1600-1800m",
             "trackApt": "良・稍"
           },
-          "lastRace": {
-            "raceName": "ムーランドロンシャン賞 (G1)",
-            "date": "2026-09-06",
-            "distance": "芝1600m",
-            "rank": 1,
-            "agari": "33.8",
-            "margin": "-0.2秒差",
-            "factor": "好位追走から直線抜け出し欧州マイル最高峰G1を快勝。世界トップクラスのスピードを証明。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 1着"
         },
         {
           "waku": 1,
@@ -2703,15 +2730,7 @@
             "distanceApt": "1400-1600m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "ヴィクトリアマイル (G1)",
-            "date": "2026-05-17",
-            "distance": "芝1600m",
-            "rank": 1,
-            "agari": "33.4",
-            "margin": "-0.2秒差",
-            "factor": "1分30秒9の驚異的日本レコードで快勝。春マイルの頂点に君臨。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 2着"
         },
         {
           "waku": 2,
@@ -2739,15 +2758,7 @@
             "distanceApt": "1600-1800m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "毎日王冠 (G2)",
-            "date": "2026-10-04",
-            "distance": "芝1800m",
-            "rank": 11,
-            "agari": "34.5",
-            "margin": "0.6秒差",
-            "factor": "中団から追走も直線で伸びを欠いて11着。マイルへの短縮で巻き返しを期す。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 11着"
         },
         {
           "waku": 2,
@@ -2775,15 +2786,7 @@
             "distanceApt": "1600-1800m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "ジャックルマロワ賞 (G1)",
-            "date": "2026-08-16",
-            "distance": "芝1600m",
-            "rank": 10,
-            "agari": "35.2",
-            "margin": "1.2秒差",
-            "factor": "欧州遠征で道中行きっぷりを欠き大敗。安田記念制覇の舞台である国内マイルで見直す。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 18着"
         },
         {
           "waku": 3,
@@ -2811,15 +2814,7 @@
             "distanceApt": "1600m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "富士S (G2)",
-            "date": "2026-10-17",
-            "distance": "芝1600m",
-            "rank": 6,
-            "agari": "33.9",
-            "margin": "0.6秒差",
-            "factor": "直線外から伸びるも上位陣の決め手に屈して6着。叩き2走目での上積みに期待。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 16着"
         },
         {
           "waku": 3,
@@ -2847,15 +2842,7 @@
             "distanceApt": "1400-1600m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "京成杯オータムH (G3)",
-            "date": "2026-09-05",
-            "distance": "芝1600m",
-            "rank": 1,
-            "agari": "33.6",
-            "margin": "-0.1秒差",
-            "factor": "好位から鋭く抜け出し1分32秒0の好時計でサマーマイル重賞を制覇。充実一途。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 14着"
         },
         {
           "waku": 4,
@@ -2883,15 +2870,7 @@
             "distanceApt": "1600-1800m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "クイーンS (G3)",
-            "date": "2026-08-02",
-            "distance": "芝1800m",
-            "rank": 1,
-            "agari": "34.1",
-            "margin": "-0.1秒差",
-            "factor": "直線外から力強く抜け出し重賞初制覇。持続力勝負なら牡馬相手でもヒケをとらない。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 13着"
         },
         {
           "waku": 4,
@@ -2919,15 +2898,7 @@
             "distanceApt": "1600-2000m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "新潟記念 (G3)",
-            "date": "2026-08-30",
-            "distance": "芝2000m",
-            "rank": 2,
-            "agari": "33.2",
-            "margin": "0.0秒差",
-            "factor": "古馬相手の2000m戦でハナ差2着。NHKマイルC覇者のスピードは健在。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 7着"
         },
         {
           "waku": 5,
@@ -2955,15 +2926,7 @@
             "distanceApt": "1800-2200m",
             "trackApt": "良・重"
           },
-          "lastRace": {
-            "raceName": "オールカマー (G2)",
-            "date": "2026-09-20",
-            "distance": "芝2200m",
-            "rank": 7,
-            "agari": "35.4",
-            "margin": "1.2秒差",
-            "factor": "重馬場で追走に苦しみ7着。京都芝コースで京都新聞杯を制した実績を武器に反撃。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 9着"
         },
         {
           "waku": 5,
@@ -2991,15 +2954,7 @@
             "distanceApt": "1600-1800m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "富士S (G2)",
-            "date": "2026-10-17",
-            "distance": "芝1600m",
-            "rank": 7,
-            "agari": "33.7",
-            "margin": "0.7秒差",
-            "factor": "後方から鋭く脚を伸ばすも7着まで。京都マイルの舞台で決め手を活かしたい。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 8着"
         },
         {
           "waku": 6,
@@ -3027,15 +2982,7 @@
             "distanceApt": "1600-2000m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "安田記念 (G1)",
-            "date": "2026-06-07",
-            "distance": "芝1600m",
-            "rank": 2,
-            "agari": "33.5",
-            "margin": "0.0秒差",
-            "factor": "好位追走から直線一旦先頭に立ちハナ差2着の激走。マイルG1での安定感は屈指。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 6着"
         },
         {
           "waku": 6,
@@ -3063,15 +3010,7 @@
             "distanceApt": "1200-1600m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "スプリンターズS (G1)",
-            "date": "2026-09-27",
-            "distance": "芝1200m",
-            "rank": 2,
-            "agari": "33.0",
-            "margin": "0.0秒差",
-            "factor": "大外から上がり最速の鬼脚で追い込みハナ差2着。1600mへの延長でも末脚は脅威。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 15着"
         },
         {
           "waku": 7,
@@ -3099,15 +3038,7 @@
             "distanceApt": "1600m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "まほろばS (L)",
-            "date": "2026-11-01",
-            "distance": "芝1600m",
-            "rank": 1,
-            "agari": "34.0",
-            "margin": "-0.2秒差",
-            "factor": "京都芝1600mのリステッドを快勝。コース適性の高さを武器にG1初挑戦。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 10着"
         },
         {
           "waku": 7,
@@ -3135,15 +3066,7 @@
             "distanceApt": "1200-1600m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "スプリンターズS (G1)",
-            "date": "2026-09-27",
-            "distance": "芝1200m",
-            "rank": 4,
-            "agari": "33.3",
-            "margin": "0.2秒差",
-            "factor": "1200m戦でも鋭く伸びて4着。桜花賞を1分31秒5で勝ったマイルへの復帰は好材料。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 3着"
         },
         {
           "waku": 7,
@@ -3171,15 +3094,7 @@
             "distanceApt": "1400-1600m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "京成杯オータムH (G3)",
-            "date": "2026-09-05",
-            "distance": "芝1600m",
-            "rank": 2,
-            "agari": "33.8",
-            "margin": "0.1秒差",
-            "factor": "トップハンデ58kgを背負いながら2着に好走。先行力と粘り腰はマイルCSに合致。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 12着"
         },
         {
           "waku": 8,
@@ -3207,15 +3122,7 @@
             "distanceApt": "1400-1600m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "MBS賞スワンS (G2)",
-            "date": "2026-10-12",
-            "distance": "芝1400m",
-            "rank": 2,
-            "agari": "33.5",
-            "margin": "0.0秒差",
-            "factor": "京都芝1400mでハナ差2着。平坦コースでの切れ味をマイルでも発揮したい。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 5着"
         },
         {
           "waku": 8,
@@ -3243,15 +3150,7 @@
             "distanceApt": "1400-1600m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "富士S (G2)",
-            "date": "2026-10-17",
-            "distance": "芝1600m",
-            "rank": 2,
-            "agari": "33.1",
-            "margin": "0.1秒差",
-            "factor": "上がり33.1秒の強烈な末脚で2着好走。マイル重賞のスピードを遺憾なく発揮。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 17着"
         },
         {
           "waku": 8,
@@ -3279,15 +3178,7 @@
             "distanceApt": "1600-1800m",
             "trackApt": "良"
           },
-          "lastRace": {
-            "raceName": "MBS賞スワンS (G2)",
-            "date": "2026-10-12",
-            "distance": "芝1400m",
-            "rank": 3,
-            "agari": "33.2",
-            "margin": "0.0秒差",
-            "factor": "後方から上がり最速の末脚で追い込み3着。淀の直線で末脚勝負に賭ける。"
-          }
+          "lastRace": "マイルチャンピオンS(G1) 4着"
         }
       ],
       "occultSigns": [
@@ -3886,7 +3777,7 @@
           "father": "スワーヴリチャード",
           "mother": "エッジースタイル",
           "motherFather": "ハービンジャー",
-          "lastRace": "菊花賞(G1) 1着"
+          "lastRace": "新潟記念(G3) 5着"
         },
         {
           "waku": null,
@@ -3910,7 +3801,7 @@
           "father": "レイデオロ",
           "mother": "アニメイトバイオ",
           "motherFather": "ゼンノロブロイ",
-          "lastRace": "アルゼンチン共和国杯(G2) 6着"
+          "lastRace": "有馬記念(G1) 8着"
         },
         {
           "waku": null,
@@ -4006,7 +3897,7 @@
           "father": "キタサンブラック",
           "mother": "ライジングクロス",
           "motherFather": "ディープインパクト",
-          "lastRace": "天皇賞（秋）(G1) 2着"
+          "lastRace": "天皇賞(秋)(G1) 5着"
         },
         {
           "waku": null,
@@ -4030,7 +3921,7 @@
           "father": "アルアイン",
           "mother": "サザンスピード",
           "motherFather": "Southern Image",
-          "lastRace": "セントライト記念(G2) 2着"
+          "lastRace": "天皇賞(秋)(G1) 9着"
         },
         {
           "waku": null,
@@ -4078,7 +3969,7 @@
           "father": "ハーツクライ",
           "mother": "シェイクズペアー",
           "motherFather": "Zamindar",
-          "lastRace": "丹頂S(OP) 4着"
+          "lastRace": "天皇賞(秋)(G1) 6着"
         },
         {
           "waku": null,
@@ -4102,7 +3993,7 @@
           "father": "ヤマカツエース",
           "mother": "タガノヴィッター",
           "motherFather": "ディープスカイ",
-          "lastRace": "京都大賞典(G2) 7着"
+          "lastRace": "天皇賞(秋)(G1) 4着"
         },
         {
           "waku": null,
@@ -4126,7 +4017,7 @@
           "father": "エピファネイア",
           "mother": "トップデサイル",
           "motherFather": "Congrats",
-          "lastRace": "天皇賞（秋）(G1) 1着"
+          "lastRace": "天皇賞(秋)(G1) 1着"
         },
         {
           "waku": null,
@@ -4174,7 +4065,7 @@
           "father": "ドゥラメンテ",
           "mother": "カラフルブラッサム",
           "motherFather": "ハーツクライ",
-          "lastRace": "札幌2歳S(G3) 3着"
+          "lastRace": "アルゼンチン共和国杯(G2) 8着"
         },
         {
           "waku": null,
@@ -4198,7 +4089,7 @@
           "father": "ルーラーシップ",
           "mother": "コルコバード",
           "motherFather": "ステイゴールド",
-          "lastRace": "菊花賞(G1) 2着"
+          "lastRace": "京都大賞典(G2) 5着"
         },
         {
           "waku": null,
@@ -4222,7 +4113,7 @@
           "father": "ドゥラメンテ",
           "mother": "マスクオフ",
           "motherFather": "ディープインパクト",
-          "lastRace": "毎日王冠(G2) 1着"
+          "lastRace": "天皇賞(秋)(G1) 11着"
         },
         {
           "waku": null,
@@ -4270,7 +4161,7 @@
           "father": "ゴールドシップ",
           "mother": "メイショウツバクロ",
           "motherFather": "フレンチデピュティ",
-          "lastRace": "神戸新聞杯(G2) 1着"
+          "lastRace": "凱旋門賞(G1) 14着"
         },
         {
           "waku": null,
@@ -4294,7 +4185,7 @@
           "father": "キタサンブラック",
           "mother": "ヴァイスハイト",
           "motherFather": "ハーツクライ",
-          "lastRace": "京都大賞典(G2) 8着"
+          "lastRace": "京都大賞典(G2) 7着"
         }
       ],
       "occultSigns": [
@@ -5023,7 +4914,8 @@
           "trainingWeight": 462,
           "lastRaceWeight": 458,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "兵庫女王盃(JpnIII) 2着"
         },
         {
           "waku": null,
@@ -5043,7 +4935,8 @@
           "trainingWeight": 490,
           "lastRaceWeight": 486,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "JBCスプリント(JpnI) 2着"
         },
         {
           "waku": null,
@@ -5063,7 +4956,8 @@
           "trainingWeight": 498,
           "lastRaceWeight": 496,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "マイルチャンピオンS(G1) 6着"
         },
         {
           "waku": null,
@@ -5083,7 +4977,8 @@
           "trainingWeight": 504,
           "lastRaceWeight": 500,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "プロキオンS(G2) 15着"
         },
         {
           "waku": null,
@@ -5103,7 +4998,8 @@
           "trainingWeight": 514,
           "lastRaceWeight": 510,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "’26武蔵国OP(OP)(4上) 2着"
         },
         {
           "waku": null,
@@ -5123,7 +5019,8 @@
           "trainingWeight": 510,
           "lastRaceWeight": 506,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "サウジC(G1) 6着"
         },
         {
           "waku": null,
@@ -5143,7 +5040,8 @@
           "trainingWeight": 538,
           "lastRaceWeight": 534,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "埼玉栄冠(重賞) 1着"
         },
         {
           "waku": null,
@@ -5163,7 +5061,8 @@
           "trainingWeight": 524,
           "lastRaceWeight": 520,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "JBCクラシック(JpnI) 3着"
         },
         {
           "waku": null,
@@ -5183,7 +5082,8 @@
           "trainingWeight": 502,
           "lastRaceWeight": 498,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "障害3歳以上未勝利 9着"
         },
         {
           "waku": null,
@@ -5203,7 +5103,8 @@
           "trainingWeight": 516,
           "lastRaceWeight": 514,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "フリオーソレジェンド(重賞) 4着"
         },
         {
           "waku": null,
@@ -5223,7 +5124,8 @@
           "trainingWeight": 492,
           "lastRaceWeight": 490,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "チャンピオンズC(G1) 6着"
         },
         {
           "waku": null,
@@ -5243,7 +5145,8 @@
           "trainingWeight": 532,
           "lastRaceWeight": 528,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "フェブラリーS(G1) 6着"
         },
         {
           "waku": null,
@@ -5263,7 +5166,8 @@
           "trainingWeight": 498,
           "lastRaceWeight": 494,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "サンタアニタトロフィ(重賞) 12着"
         },
         {
           "waku": null,
@@ -5283,7 +5187,8 @@
           "trainingWeight": 512,
           "lastRaceWeight": 508,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "チャンピオンズC(G1) 4着"
         },
         {
           "waku": null,
@@ -5303,7 +5208,8 @@
           "trainingWeight": 580,
           "lastRaceWeight": 576,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "ポラリスS(OP) 12着"
         },
         {
           "waku": null,
@@ -5323,7 +5229,8 @@
           "trainingWeight": 520,
           "lastRaceWeight": 516,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "チャンピオンズC(G1) 1着"
         }
       ],
       "occultSigns": [
@@ -5964,7 +5871,8 @@
           "trainingWeight": 504,
           "lastRaceWeight": 500,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "エリザベス女王杯(G1) 2着"
         },
         {
           "waku": null,
@@ -5984,7 +5892,8 @@
           "trainingWeight": 450,
           "lastRaceWeight": 446,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "LジョッキーC(2勝クラス) 6着"
         },
         {
           "waku": null,
@@ -6004,7 +5913,8 @@
           "trainingWeight": 460,
           "lastRaceWeight": 456,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "優駿牝馬(G1) 2着"
         },
         {
           "waku": null,
@@ -6024,7 +5934,8 @@
           "trainingWeight": 456,
           "lastRaceWeight": 452,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "奥多摩S(3勝クラス) 5着"
         },
         {
           "waku": null,
@@ -6044,7 +5955,8 @@
           "trainingWeight": 444,
           "lastRaceWeight": 440,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "霜月S(OP) 15着"
         },
         {
           "waku": null,
@@ -6064,7 +5976,8 @@
           "trainingWeight": 472,
           "lastRaceWeight": 468,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "ユートピアS(3勝クラス) 7着"
         },
         {
           "waku": null,
@@ -6084,7 +5997,8 @@
           "trainingWeight": 468,
           "lastRaceWeight": 464,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "三年坂S(3勝クラス) 5着"
         },
         {
           "waku": null,
@@ -6104,7 +6018,8 @@
           "trainingWeight": 464,
           "lastRaceWeight": 460,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "MBS賞スワンS(G2) 9着"
         }
       ],
       "occultSigns": [
@@ -6449,7 +6364,8 @@
           "trainingWeight": 496,
           "lastRaceWeight": 492,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "オーロC(L) 4着"
         },
         {
           "waku": null,
@@ -6469,7 +6385,8 @@
           "trainingWeight": 476,
           "lastRaceWeight": 472,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "初冬特別(A) 12着"
         },
         {
           "waku": null,
@@ -6489,7 +6406,8 @@
           "trainingWeight": 512,
           "lastRaceWeight": 508,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 5着"
         },
         {
           "waku": null,
@@ -6509,7 +6427,8 @@
           "trainingWeight": 490,
           "lastRaceWeight": 486,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "霜月S(OP) 16着"
         },
         {
           "waku": null,
@@ -6529,7 +6448,8 @@
           "trainingWeight": 486,
           "lastRaceWeight": 482,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "岸和田S(3勝クラス) 4着"
         },
         {
           "waku": null,
@@ -6549,7 +6469,8 @@
           "trainingWeight": 482,
           "lastRaceWeight": 478,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "スプリンターズS(G1) 15着"
         }
       ],
       "occultSigns": [
@@ -6820,7 +6741,8 @@
           "trainingWeight": 476,
           "lastRaceWeight": 472,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "下鴨S(3勝クラス) 1着"
         },
         {
           "waku": null,
@@ -6840,7 +6762,8 @@
           "trainingWeight": 470,
           "lastRaceWeight": 466,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "常総S(3勝クラス) 15着"
         },
         {
           "waku": null,
@@ -6860,7 +6783,8 @@
           "trainingWeight": 508,
           "lastRaceWeight": 504,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "皐月賞(G1) 18着"
         },
         {
           "waku": null,
@@ -6880,7 +6804,8 @@
           "trainingWeight": 486,
           "lastRaceWeight": 482,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "アルゼンチン共和国杯(G2) 8着"
         },
         {
           "waku": null,
@@ -6900,7 +6825,8 @@
           "trainingWeight": 494,
           "lastRaceWeight": 490,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 11着"
         }
       ],
       "occultSigns": [
@@ -7126,7 +7052,8 @@
           "trainingWeight": 478,
           "lastRaceWeight": 474,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "凱旋門賞(G1) 11着"
         },
         {
           "waku": null,
@@ -7146,7 +7073,8 @@
           "trainingWeight": 512,
           "lastRaceWeight": 510,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "新潟記念(G3) 5着"
         },
         {
           "waku": null,
@@ -7166,7 +7094,8 @@
           "trainingWeight": 486,
           "lastRaceWeight": 485,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "宝塚記念(G1) 11着"
         },
         {
           "waku": null,
@@ -7186,7 +7115,8 @@
           "trainingWeight": 474,
           "lastRaceWeight": 472,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "有馬記念(G1) 7着"
         },
         {
           "waku": null,
@@ -7206,7 +7136,8 @@
           "trainingWeight": 498,
           "lastRaceWeight": 496,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "有馬記念(G1) 14着"
         },
         {
           "waku": null,
@@ -7226,7 +7157,8 @@
           "trainingWeight": 470,
           "lastRaceWeight": 468,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 14着"
         },
         {
           "waku": null,
@@ -7246,7 +7178,8 @@
           "trainingWeight": 500,
           "lastRaceWeight": 498,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 4着"
         },
         {
           "waku": null,
@@ -7266,7 +7199,8 @@
           "trainingWeight": 518,
           "lastRaceWeight": 516,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 1着"
         },
         {
           "waku": null,
@@ -7286,7 +7220,8 @@
           "trainingWeight": 514,
           "lastRaceWeight": 512,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "有馬記念(G1) 13着"
         },
         {
           "waku": null,
@@ -7306,7 +7241,8 @@
           "trainingWeight": 506,
           "lastRaceWeight": 504,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "有馬記念(G1) 取着"
         },
         {
           "waku": null,
@@ -7326,7 +7262,8 @@
           "trainingWeight": 460,
           "lastRaceWeight": 458,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 2着"
         },
         {
           "waku": null,
@@ -7346,7 +7283,8 @@
           "trainingWeight": 432,
           "lastRaceWeight": 428,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(春)(G1) 8着"
         },
         {
           "waku": null,
@@ -7366,7 +7304,8 @@
           "trainingWeight": 490,
           "lastRaceWeight": 486,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "京都大賞典(G2) 5着"
         },
         {
           "waku": null,
@@ -7386,7 +7325,8 @@
           "trainingWeight": 506,
           "lastRaceWeight": 504,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "香港C(G1) 2着"
         },
         {
           "waku": null,
@@ -7406,7 +7346,8 @@
           "trainingWeight": 504,
           "lastRaceWeight": 500,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "凱旋門賞(G1) 14着"
         },
         {
           "waku": null,
@@ -7426,7 +7367,8 @@
           "trainingWeight": 494,
           "lastRaceWeight": 494,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "lastRace": "天皇賞(秋)(G1) 3着"
         }
       ],
       "occultSigns": [
