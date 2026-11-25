@@ -112943,13 +112943,15 @@ function hydratePayouts(race) {
 
             prevCardHtml = `
               <div class="hd-paddock-primary-card" id="hd-paddock-card-compare">
-                <div class="hd-paddock-header" style="flex-wrap: wrap; gap: 6px;">
-                  <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; min-width: 0;">
-                    <span class="hd-paddock-tag past" id="hd-compare-tag">【前走】</span>
-                    <span id="hd-compare-race" style="font-size: 13.5px; font-weight: 800; color: #fff;">${prevRace}</span>
-                    <span id="hd-compare-rank">${prevRank}</span>
+                <div class="hd-paddock-header primary-compare-header">
+                  <div class="hd-paddock-header-top">
+                    <div style="display: flex; align-items: center; gap: 6px; min-width: 0;">
+                      <span class="hd-paddock-tag past" id="hd-compare-tag">【前走】</span>
+                      <span id="hd-compare-race" style="font-size: 13.5px; font-weight: 800; color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${prevRace}</span>
+                      <span id="hd-compare-rank">${prevRank}</span>
+                    </div>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0; margin-left: auto;">
+                  <div class="hd-paddock-header-bottom">
                     <span class="hd-paddock-date" id="hd-compare-date">📅 ${prevShot}</span>
                     <button type="button" id="hd-paddock-reset-btn" class="hd-paddock-reset-btn" style="display: none;" onclick="window.resetPaddockComparison()">↩ 前走に戻す</button>
                   </div>
@@ -112967,13 +112969,15 @@ function hydratePayouts(race) {
           } else {
             prevCardHtml = `
               <div class="hd-paddock-primary-card" id="hd-paddock-card-compare">
-                <div class="hd-paddock-header" style="flex-wrap: wrap; gap: 6px;">
-                  <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; min-width: 0;">
-                    <span class="hd-paddock-tag past" id="hd-compare-tag">【比較対象】</span>
-                    <span id="hd-compare-race" style="font-size: 13.5px; font-weight: 800; color: #fff;">前走未収録 (下の好走時を選択)</span>
-                    <span id="hd-compare-rank"></span>
+                <div class="hd-paddock-header primary-compare-header">
+                  <div class="hd-paddock-header-top">
+                    <div style="display: flex; align-items: center; gap: 6px; min-width: 0;">
+                      <span class="hd-paddock-tag past" id="hd-compare-tag">【比較対象】</span>
+                      <span id="hd-compare-race" style="font-size: 13.5px; font-weight: 800; color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">前走未収録 (下の好走時を選択)</span>
+                      <span id="hd-compare-rank"></span>
+                    </div>
                   </div>
-                  <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0; margin-left: auto;">
+                  <div class="hd-paddock-header-bottom">
                     <span class="hd-paddock-date" id="hd-compare-date"></span>
                     <button type="button" id="hd-paddock-reset-btn" class="hd-paddock-reset-btn" style="display: none;" onclick="window.resetPaddockComparison()">↩ クリア</button>
                   </div>
@@ -113098,12 +113102,17 @@ function hydratePayouts(race) {
               <div class="hd-paddock-primary-grid" id="hd-paddock-primary-grid">
                 <!-- 次走 / 最新カード (大きく表示) -->
                 <div class="hd-paddock-primary-card" id="hd-paddock-card-current">
-                  <div class="hd-paddock-header" style="flex-wrap: wrap; gap: 6px;">
-                    <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; min-width: 0;">
-                      <span class="hd-paddock-tag latest">【最新 / 次走】</span>
-                      <span style="font-size: 13.5px; font-weight: 800; color: #fff;">${currRace}</span>
+                  <div class="hd-paddock-header primary-compare-header">
+                    <div class="hd-paddock-header-top">
+                      <div style="display: flex; align-items: center; gap: 6px; min-width: 0;">
+                        <span class="hd-paddock-tag latest">【最新 / 次走】</span>
+                        <span style="font-size: 13.5px; font-weight: 800; color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${currRace}</span>
+                      </div>
                     </div>
-                    <span class="hd-paddock-date" style="margin-left: auto;">📅 ${currShot}</span>
+                    <div class="hd-paddock-header-bottom">
+                      <span class="hd-paddock-date">📅 ${currShot}</span>
+                      <span style="font-size: 11px; color: #38bdf8; font-weight: 700;">最新公式撮影</span>
+                    </div>
                   </div>
                   <div class="hd-paddock-img-wrap" style="cursor: pointer;" title="クリックで大画面比較" onclick="window.openPaddockZoomModal()">
                     <img id="hd-paddock-img-current" src="${currentPaddock.imgUrl || currentPaddock.photoUrl}" alt="${horse.name} フォトパドック ${currRace}" class="hd-paddock-img" loading="lazy">
@@ -113461,7 +113470,7 @@ function hydratePayouts(race) {
 
         if (tagEl) {
           tagEl.className = 'hd-paddock-tag comparing';
-          tagEl.innerText = type === 'goodRun' ? '【好走時と比較中】' : '【過去レース比較中】';
+          tagEl.innerText = type === 'goodRun' ? '【好走時比較】' : '【過去レース】';
         }
         if (raceEl) raceEl.innerText = raceName;
         if (rankEl) rankEl.innerHTML = rankBadge;
