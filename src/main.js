@@ -21765,7 +21765,7 @@ const PAYOUTS_DATA = {
   "アーバンシック": {
     "name": "アーバンシック",
     "englishName": "Urban Chic",
-    "sexAge": "牡5歳",
+    "sexAge": "牡5",
     "color": "栗毛",
     "birthday": "2021年3月16日",
     "owner": "シルクレーシング",
@@ -21778,7 +21778,7 @@ const PAYOUTS_DATA = {
     "titles": [
       "24'菊花賞(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4825",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2021105436_01.jpg",
     "pedigree": {
       "sire": "スワーヴリチャード",
       "dam": "エッジースタイル",
@@ -24270,20 +24270,20 @@ const PAYOUTS_DATA = {
   "エシカルダイヤモンド": {
     "name": "エシカルダイヤモンド",
     "englishName": "Ethical Diamond",
-    "sexAge": "黒鹿毛",
-    "color": "鹿毛",
+    "sexAge": "セ6",
+    "color": "黒鹿毛",
     "birthday": "2020年3月27日",
     "owner": "-",
     "breeder": "-",
-    "origin": "",
+    "origin": "愛",
     "price": "-",
-    "stable": "マリンズ (海外)",
+    "stable": "W.マリンズ (愛)",
     "record": "14戦5勝 [5-2-0-7]",
     "earnings": "0万円",
     "titles": [
       "25'BCターフ(G1)"
     ],
-    "photoUrl": null,
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2020190008_01.jpg",
     "pedigree": {
       "sire": "Awtaad (英)",
       "dam": "Pearl Diamond (独)",
@@ -26700,14 +26700,14 @@ const PAYOUTS_DATA = {
   "オンブズマン": {
     "name": "オンブズマン",
     "englishName": "Ombudsman",
-    "sexAge": "鹿毛",
+    "sexAge": "牡5",
     "color": "鹿毛",
     "birthday": "2021年4月12日",
     "owner": "-",
     "breeder": "-",
-    "origin": "",
+    "origin": "英",
     "price": "-",
-    "stable": "ゴスデン (海外)",
+    "stable": "J&T.ゴスデン (英)",
     "record": "13戦9勝 [9-3-0-1]",
     "earnings": "0万円",
     "titles": [
@@ -27049,7 +27049,7 @@ const PAYOUTS_DATA = {
   "エキサイトバイオ": {
     "name": "エキサイトバイオ",
     "englishName": "Excite Bio",
-    "sexAge": "牡4歳",
+    "sexAge": "牡4",
     "color": "鹿毛",
     "birthday": "2022年3月10日",
     "owner": "竹田寿",
@@ -27062,7 +27062,7 @@ const PAYOUTS_DATA = {
     "titles": [
       "25'ラジオNIKKEI賞(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4138",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2022104614_01.jpg",
     "pedigree": {
       "sire": "レイデオロ",
       "dam": "アニメイトバイオ",
@@ -29384,20 +29384,20 @@ const PAYOUTS_DATA = {
   "カランダガン": {
     "name": "カランダガン",
     "englishName": "Calandagan",
-    "sexAge": "鹿毛",
+    "sexAge": "セ5",
     "color": "鹿毛",
     "birthday": "2021年1月27日",
     "owner": "アガ・カーン・スタッズ",
     "breeder": "Haras De S.A. Aga Khan Scea",
     "origin": "愛",
     "price": "-",
-    "stable": "グラファ (海外)",
+    "stable": "F.グラファール (仏)",
     "record": "19戦10勝 [10-7-1-1]",
     "earnings": "5億378万円",
     "titles": [
       "25'ジャパンC(G1)"
     ],
-    "photoUrl": null,
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2021190001_01.jpg",
     "pedigree": {
       "sire": "Gleneagles (愛)",
       "dam": "Calayana (仏)",
@@ -35701,7 +35701,7 @@ const PAYOUTS_DATA = {
   "クロワデュノール": {
     "name": "クロワデュノール",
     "englishName": "Croix du Nord",
-    "sexAge": "牡4歳",
+    "sexAge": "牡4",
     "color": "青鹿毛",
     "birthday": "2022年3月21日",
     "owner": "サンデーレーシング",
@@ -35714,7 +35714,7 @@ const PAYOUTS_DATA = {
     "titles": [
       "25'日本ダービー(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4823",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2022105102_01.jpg",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "ライジングクロス",
@@ -39398,20 +39398,20 @@ const PAYOUTS_DATA = {
   "ゴリアット": {
     "name": "ゴリアット",
     "englishName": "Goliath",
-    "sexAge": "鹿毛",
+    "sexAge": "セ6",
     "color": "鹿毛",
     "birthday": "2020年2月27日",
     "owner": "レゾリュート・ブラッドストック＆Ｐ．ウルマン男爵",
     "breeder": "Gestut Schlenderhan",
     "origin": "独",
     "price": "-",
-    "stable": "グラファ (海外)",
+    "stable": "F.グラファール (仏)",
     "record": "23戦10勝 [10-4-2-7]",
     "earnings": "0万円",
     "titles": [
       "24'キングジョージ6世&amp;クイーンエリザベスS(G1)"
     ],
-    "photoUrl": null,
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2020190005_01.jpg",
     "pedigree": {
       "sire": "Adlerflug (独)",
       "dam": "Gouache (独)",
@@ -40286,20 +40286,20 @@ const PAYOUTS_DATA = {
   "コスモキュランダ": {
     "name": "コスモキュランダ",
     "englishName": "Cosmo Kuranda",
-    "sexAge": "牡5歳",
+    "sexAge": "牡5",
     "color": "黒鹿毛",
     "birthday": "2021年2月23日",
     "owner": "ビッグレッドファーム",
     "breeder": "ビッグレッドファーム",
     "origin": "新冠町",
     "price": "-",
-    "stable": "加藤士津 (美浦)",
+    "stable": "加藤士津八 (美浦)",
     "record": "23戦2勝 [2-5-1-15]",
     "earnings": "4億3,839万円",
     "titles": [
       "24'弥生賞ディープインパクト記念(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4826",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2021106787_01.jpg",
     "pedigree": {
       "sire": "アルアイン",
       "dam": "サザンスピード",
@@ -42229,7 +42229,7 @@ const PAYOUTS_DATA = {
   "シェイクユアハート": {
     "name": "シェイクユアハート",
     "englishName": "Shake Your Heart",
-    "sexAge": "牡6歳",
+    "sexAge": "牡6",
     "color": "栗毛",
     "birthday": "2020年3月30日",
     "owner": "吉田千津",
@@ -42242,7 +42242,7 @@ const PAYOUTS_DATA = {
     "titles": [
       "26'札幌記念(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4828",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2020103101_01.jpg",
     "pedigree": {
       "sire": "ハーツクライ",
       "dam": "ルンバロッカ",
@@ -62260,7 +62260,7 @@ const PAYOUTS_DATA = {
   "タガノデュード": {
     "name": "タガノデュード",
     "englishName": "Tagano Dude",
-    "sexAge": "牡5歳",
+    "sexAge": "牡5",
     "color": "鹿毛",
     "birthday": "2021年4月18日",
     "owner": "八木良司",
@@ -62273,7 +62273,7 @@ const PAYOUTS_DATA = {
     "titles": [
       "26'小倉大賞典(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4829",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2021106548_01.jpg",
     "pedigree": {
       "sire": "ヤマカツエース",
       "dam": "タガノミューチャン",
@@ -64870,7 +64870,7 @@ const PAYOUTS_DATA = {
   "ダノンデサイル": {
     "name": "ダノンデサイル",
     "englishName": "Danon Decile",
-    "sexAge": "牡5歳",
+    "sexAge": "牡5",
     "color": "栗毛",
     "birthday": "2021年4月6日",
     "owner": "ダノックス",
@@ -64883,7 +64883,7 @@ const PAYOUTS_DATA = {
     "titles": [
       "24'日本ダービー(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4830",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2021105143_01.jpg",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "トップデサイル",
@@ -65898,13 +65898,13 @@ const PAYOUTS_DATA = {
     "name": "テアオ",
     "englishName": "Teao",
     "sexAge": "牡4",
-    "color": "鹿毛",
+    "color": "芦毛",
     "birthday": "2022年10月1日",
     "owner": "-",
     "breeder": "-",
-    "origin": "",
+    "origin": "チリ",
     "price": "-",
-    "stable": "サドラー (海外)",
+    "stable": "J.サドラー (米)",
     "record": "9戦6勝 [6-2-1-0]",
     "earnings": "0万円",
     "titles": [
@@ -83245,11 +83245,11 @@ const PAYOUTS_DATA = {
   "ファイアンクランツ": {
     "name": "ファイアンクランツ",
     "englishName": "Rouge Maat",
-    "sexAge": "鹿毛",
+    "sexAge": "牡4",
     "color": "鹿毛",
     "birthday": "2022年3月29日",
     "owner": "サンデーレーシング",
-    "breeder": "社台ファーム",
+    "breeder": "ノーザンファーム",
     "origin": "安平町",
     "price": "-",
     "stable": "堀宣行 (美浦)",
@@ -83258,7 +83258,7 @@ const PAYOUTS_DATA = {
     "titles": [
       "26'目黒記念(G2)"
     ],
-    "photoUrl": null,
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2022104720_01.jpg",
     "pedigree": {
       "sire": "アメリカンファラオ",
       "dam": "ライラヌール",
@@ -86168,7 +86168,7 @@ const PAYOUTS_DATA = {
   "ヘデントール": {
     "name": "ヘデントール",
     "englishName": "Redentor",
-    "sexAge": "牡5歳",
+    "sexAge": "牡5",
     "color": "黒鹿毛",
     "birthday": "2021年4月6日",
     "owner": "キャロットファーム",
@@ -86181,7 +86181,7 @@ const PAYOUTS_DATA = {
     "titles": [
       "25'天皇賞(春)(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4824",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2021105521_01.jpg",
     "pedigree": {
       "sire": "ルーラーシップ",
       "dam": "コルコバード",
@@ -93583,7 +93583,7 @@ const PAYOUTS_DATA = {
   "マスカレードボール": {
     "name": "マスカレードボール",
     "englishName": "Masquerade Ball",
-    "sexAge": "牡4歳",
+    "sexAge": "牡4",
     "color": "黒鹿毛",
     "birthday": "2022年3月2日",
     "owner": "社台レースホース",
@@ -93596,7 +93596,7 @@ const PAYOUTS_DATA = {
     "titles": [
       "25'天皇賞(秋)(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4822",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2022105519_01.jpg",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "マスクオフ",
@@ -95514,20 +95514,20 @@ const PAYOUTS_DATA = {
   "ミニーホーク": {
     "name": "ミニーホーク",
     "englishName": "Minnie Hauk",
-    "sexAge": "鹿毛",
+    "sexAge": "牝4",
     "color": "鹿毛",
     "birthday": "2022年4月13日",
     "owner": "-",
     "breeder": "-",
-    "origin": "",
+    "origin": "愛",
     "price": "-",
-    "stable": "オブライ (海外)",
+    "stable": "A.オブライエン (愛)",
     "record": "15戦7勝 [7-3-1-4]",
     "earnings": "0万円",
     "titles": [
       "25'英オークス(G1)"
     ],
-    "photoUrl": null,
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2022190002_01.jpg",
     "pedigree": {
       "sire": "Frankel (英)",
       "dam": "Multilingual (英)",
@@ -95911,7 +95911,7 @@ const PAYOUTS_DATA = {
   "メイショウタバル": {
     "name": "メイショウタバル",
     "englishName": "Meisho Tabaru",
-    "sexAge": "牡5歳",
+    "sexAge": "牡5",
     "color": "鹿毛",
     "birthday": "2021年4月20日",
     "owner": "松本好隆",
@@ -95924,7 +95924,7 @@ const PAYOUTS_DATA = {
     "titles": [
       "25'宝塚記念(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4831",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2021103272_01.jpg",
     "pedigree": {
       "sire": "ゴールドシップ",
       "dam": "メイショウツバクロ",
@@ -109168,7 +109168,7 @@ const PAYOUTS_DATA = {
   "ヴェルテンベルク": {
     "name": "ヴェルテンベルク",
     "englishName": "Wurttemberg",
-    "sexAge": "牡6歳",
+    "sexAge": "牡6",
     "color": "鹿毛",
     "birthday": "2020年5月2日",
     "owner": "吉田照哉",
@@ -109181,7 +109181,7 @@ const PAYOUTS_DATA = {
     "titles": [
       "25'ストークS()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4827",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2020103060_01.jpg",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "マルカアイチャン",

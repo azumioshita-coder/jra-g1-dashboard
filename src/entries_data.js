@@ -486,92 +486,13 @@ export const ENTRIES_DATA = {
     {
       "waku": null,
       "gate": null,
-      "horseName": "アーバンシック",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "A.プーシャン",
-      "stable": "武井亮 (美浦)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "エキサイトバイオ",
-      "sexAge": "牡4",
-      "load": 58,
-      "jockey": "荻野極",
-      "stable": "今野貞一 (栗東)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "エシカルダイヤモンド",
-      "sexAge": "セ6",
-      "load": 58,
-      "jockey": "坂井瑠星",
-      "stable": "マリンズ (海外)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "オンブズマン",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "W.ビュイック",
-      "stable": "ゴスデン (海外)"
-    },
-    {
-      "waku": null,
-      "gate": null,
       "horseName": "カランダガン",
       "sexAge": "セ5",
       "load": 58,
       "jockey": "M.バルザローナ",
-      "stable": "グラファ (海外)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "クロワデュノール",
-      "sexAge": "牡4",
-      "load": 58,
-      "jockey": "C.デムーロ",
-      "stable": "斉藤崇史 (栗東)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "コスモキュランダ",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "丹内祐次",
-      "stable": "加藤士津 (美浦)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "ゴリアット",
-      "sexAge": "セ6",
-      "load": 58,
-      "jockey": "C.スミヨン",
-      "stable": "グラファ (海外)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "シェイクユアハート",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "古川吉洋",
-      "stable": "宮徹 (栗東)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "タガノデュード",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "M.デムーロ",
-      "stable": "宮徹 (栗東)"
+      "stable": "F.グラファール (仏)",
+      "odds": "2.6",
+      "pop": 1
     },
     {
       "waku": null,
@@ -580,34 +501,20 @@ export const ENTRIES_DATA = {
       "sexAge": "牡5",
       "load": 58,
       "jockey": "戸崎圭太",
-      "stable": "安田翔伍 (栗東)"
+      "stable": "安田翔伍 (栗東)",
+      "odds": "3.5",
+      "pop": 2
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "テアオ",
-      "sexAge": "牡4",
-      "load": 58,
-      "jockey": "L.トーレス",
-      "stable": "J.サドラー (米)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "ファイアンクランツ",
-      "sexAge": "牡4",
-      "load": 58,
-      "jockey": "J.モレイラ",
-      "stable": "水野貴史 (浦和)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "ヘデントール",
+      "horseName": "オンブズマン",
       "sexAge": "牡5",
       "load": 58,
-      "jockey": "T.マーカンド",
-      "stable": "木村哲也 (美浦)"
+      "jockey": "W.ビュイック",
+      "stable": "J&T.ゴスデン (英)",
+      "odds": "4.6",
+      "pop": 3
     },
     {
       "waku": null,
@@ -616,16 +523,31 @@ export const ENTRIES_DATA = {
       "sexAge": "牡4",
       "load": 58,
       "jockey": "C.ルメール",
-      "stable": "手塚貴久 (美浦)"
+      "stable": "手塚貴久 (美浦)",
+      "odds": "6.9",
+      "pop": 4
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "ミニーホーク",
-      "sexAge": "牝4",
-      "load": 56,
-      "jockey": "R.ムーア",
-      "stable": "オブライ (海外)"
+      "horseName": "クロワデュノール",
+      "sexAge": "牡4",
+      "load": 58,
+      "jockey": "C.デムーロ",
+      "stable": "斉藤崇史 (栗東)",
+      "odds": "7.6",
+      "pop": 5
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ヘデントール",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "T.マーカンド",
+      "stable": "木村哲也 (美浦)",
+      "odds": "13.0",
+      "pop": 6
     },
     {
       "waku": null,
@@ -634,7 +556,20 @@ export const ENTRIES_DATA = {
       "sexAge": "牡5",
       "load": 58,
       "jockey": "武豊",
-      "stable": "石橋守 (栗東)"
+      "stable": "石橋守 (栗東)",
+      "odds": "13.2",
+      "pop": 7
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ミニーホーク",
+      "sexAge": "牝4",
+      "load": 56,
+      "jockey": "R.ムーア",
+      "stable": "A.オブライエン (愛)",
+      "odds": "24.3",
+      "pop": 8
     },
     {
       "waku": null,
@@ -643,7 +578,108 @@ export const ENTRIES_DATA = {
       "sexAge": "牡6",
       "load": 58,
       "jockey": "横山典弘",
-      "stable": "宮本博 (栗東)"
+      "stable": "宮本博 (栗東)",
+      "odds": "42.3",
+      "pop": 9
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ファイアンクランツ",
+      "sexAge": "牡4",
+      "load": 58,
+      "jockey": "J.モレイラ",
+      "stable": "堀宣行 (美浦)",
+      "odds": "44.2",
+      "pop": 10
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "タガノデュード",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "M.デムーロ",
+      "stable": "宮徹 (栗東)",
+      "odds": "46.2",
+      "pop": 11
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "アーバンシック",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "A.プーシャン",
+      "stable": "武井亮 (美浦)",
+      "odds": "46.8",
+      "pop": 12
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "シェイクユアハート",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "古川吉洋",
+      "stable": "宮徹 (栗東)",
+      "odds": "46.9",
+      "pop": 13
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "コスモキュランダ",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "丹内祐次",
+      "stable": "加藤士津八 (美浦)",
+      "odds": "62.9",
+      "pop": 14
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "エキサイトバイオ",
+      "sexAge": "牡4",
+      "load": 58,
+      "jockey": "荻野極",
+      "stable": "今野貞一 (栗東)",
+      "odds": "72.0",
+      "pop": 15
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "テアオ",
+      "sexAge": "牡4",
+      "load": 58,
+      "jockey": "L.トーレス",
+      "stable": "J.サドラー (米)",
+      "odds": "83.9",
+      "pop": 16
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ゴリアット",
+      "sexAge": "セ6",
+      "load": 58,
+      "jockey": "M.バルザローナ",
+      "stable": "F.グラファール (仏)",
+      "odds": "97.1",
+      "pop": 17
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "エシカルダイヤモンド",
+      "sexAge": "セ6",
+      "load": 58,
+      "jockey": "坂井瑠星",
+      "stable": "W.マリンズ (愛)",
+      "odds": "254.8",
+      "pop": 18
     }
   ],
   "20": [
