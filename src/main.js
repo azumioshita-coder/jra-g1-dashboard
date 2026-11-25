@@ -112748,6 +112748,11 @@ function hydratePayouts(race) {
         if (typeof window !== 'undefined') {
           window.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
+              const pzModal = document.getElementById('modal-paddock-compare-zoom');
+              if (pzModal && pzModal.classList.contains('active')) {
+                if (typeof window.closePaddockZoomModal === 'function') window.closePaddockZoomModal();
+                return;
+              }
               closeModal();
               closeHorseModal();
               if (typeof closeMarkSheet === 'function') closeMarkSheet();
@@ -112908,6 +112913,18 @@ function hydratePayouts(race) {
           });
         }
 
+        // アクティブな比較状態を保持
+        window._activeHorsePaddocks = {
+          horseName: horse.name,
+          current: currentPaddock,
+          prev: prevPaddock,
+          goodRuns: goodRuns,
+          all: allPaddocks,
+          activeCompare: prevPaddock || (goodRuns.length > 0 ? goodRuns[0] : null),
+          selectedType: 'prev',
+          selectedIndex: null
+        };
+
         let paddocksHtml = '';
         if (currentPaddock) {
           // 1. メイン比較セクション (大きく前走と次走)
@@ -112925,31 +112942,54 @@ function hydratePayouts(race) {
             const prevDiag = prevPaddock.commentator || '公式馬体診断';
 
             prevCardHtml = `
-              <div class="hd-paddock-primary-card">
-                <div class="hd-paddock-header">
-                  <div style="display: flex; align-items: center; gap: 8px;">
-                    <span class="hd-paddock-tag past">【前走】</span>
-                    <span style="font-size: 14px; font-weight: 800; color: #fff;">${prevRace}</span>
-                    ${prevRank}
+              <div class="hd-paddock-primary-card" id="hd-paddock-card-compare">
+                <div class="hd-paddock-header" style="flex-wrap: wrap; gap: 6px;">
+                  <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; min-width: 0;">
+                    <span class="hd-paddock-tag past" id="hd-compare-tag">【前走】</span>
+                    <span id="hd-compare-race" style="font-size: 13.5px; font-weight: 800; color: #fff;">${prevRace}</span>
+                    <span id="hd-compare-rank">${prevRank}</span>
                   </div>
-                  <span class="hd-paddock-date">📅 ${prevShot}</span>
+                  <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0; margin-left: auto;">
+                    <span class="hd-paddock-date" id="hd-compare-date">📅 ${prevShot}</span>
+                    <button type="button" id="hd-paddock-reset-btn" class="hd-paddock-reset-btn" style="display: none;" onclick="window.resetPaddockComparison()">↩ 前走に戻す</button>
+                  </div>
                 </div>
-                <div class="hd-paddock-img-wrap">
-                  <img src="${prevPaddock.imgUrl || prevPaddock.photoUrl}" alt="${horse.name} フォトパドック ${prevRace}" class="hd-paddock-img" loading="lazy">
+                <div class="hd-paddock-img-wrap" style="cursor: pointer;" title="クリックで大画面比較" onclick="window.openPaddockZoomModal()">
+                  <img id="hd-paddock-img-compare" src="${prevPaddock.imgUrl || prevPaddock.photoUrl}" alt="${horse.name} フォトパドック ${prevRace}" class="hd-paddock-img" loading="lazy">
+                  <span class="hd-paddock-zoom-hint" id="hd-zoom-hint-compare">🔍 大画面比較</span>
                 </div>
                 <div class="hd-paddock-footer">
-                  <span>${prevDiag}</span>
-                  <span style="color: #38bdf8; font-weight: 700;">${prevPaddock.raceDate ? prevPaddock.raceDate.split(' ')[0] : '前走時'}</span>
+                  <span id="hd-compare-diag">${prevDiag}</span>
+                  <span id="hd-compare-footer-date" style="color: #38bdf8; font-weight: 700;">${prevPaddock.raceDate ? prevPaddock.raceDate.split(' ')[0] : '前走時'}</span>
                 </div>
               </div>
             `;
           } else {
             prevCardHtml = `
-              <div class="hd-paddock-primary-card" style="display: flex; align-items: center; justify-content: center; background: rgba(15, 23, 42, 0.4); border: 1px dashed rgba(148, 163, 184, 0.3); min-height: 240px; padding: 20px; text-align: center;">
-                <div>
-                  <div style="font-size: 28px; margin-bottom: 8px;">📋</div>
-                  <div style="font-weight: 700; color: #94a3b8; font-size: 13px;">前走フォトパドック未収録</div>
-                  <div style="font-size: 11px; color: #64748b; margin-top: 4px;">重賞初挑戦または前走時の公式撮影なし</div>
+              <div class="hd-paddock-primary-card" id="hd-paddock-card-compare">
+                <div class="hd-paddock-header" style="flex-wrap: wrap; gap: 6px;">
+                  <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; min-width: 0;">
+                    <span class="hd-paddock-tag past" id="hd-compare-tag">【比較対象】</span>
+                    <span id="hd-compare-race" style="font-size: 13.5px; font-weight: 800; color: #fff;">前走未収録 (下の好走時を選択)</span>
+                    <span id="hd-compare-rank"></span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0; margin-left: auto;">
+                    <span class="hd-paddock-date" id="hd-compare-date"></span>
+                    <button type="button" id="hd-paddock-reset-btn" class="hd-paddock-reset-btn" style="display: none;" onclick="window.resetPaddockComparison()">↩ クリア</button>
+                  </div>
+                </div>
+                <div class="hd-paddock-img-wrap" style="cursor: pointer;" title="クリックで大画面比較" onclick="window.openPaddockZoomModal()">
+                  <img id="hd-paddock-img-compare" src="" alt="比較写真" class="hd-paddock-img" style="display: none;">
+                  <div id="hd-paddock-no-compare-placeholder" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; text-align: center; color: #94a3b8;">
+                    <div style="font-size: 28px; margin-bottom: 8px;">📋</div>
+                    <div style="font-weight: 700; font-size: 13px;">前走フォトパドック未収録</div>
+                    <div style="font-size: 11px; color: #64748b; margin-top: 4px;">下の好走時カードをクリックすると最新と比較できます</div>
+                  </div>
+                  <span class="hd-paddock-zoom-hint" id="hd-zoom-hint-compare" style="display: none;">🔍 大画面比較</span>
+                </div>
+                <div class="hd-paddock-footer">
+                  <span id="hd-compare-diag">重賞初挑戦または前走未撮影</span>
+                  <span id="hd-compare-footer-date" style="color: #38bdf8; font-weight: 700;">-</span>
                 </div>
               </div>
             `;
@@ -112958,7 +112998,7 @@ function hydratePayouts(race) {
           // 2. 過去の好走時フォトパドック
           let goodRunsHtml = '';
           if (goodRuns && goodRuns.length > 0) {
-            const grCards = goodRuns.map(g => {
+            const grCards = goodRuns.map((g, idx) => {
               const gRace = g.fullRace || g.race || '重賞';
               const grRank = (g.rank || '').trim();
               const gRankClass = grRank === '1着' ? 'rank-1' : grRank === '2着' ? 'rank-2' : grRank === '3着' ? 'rank-3' : 'rank-4';
@@ -112966,7 +113006,7 @@ function hydratePayouts(race) {
               const gDate = g.raceDate ? g.raceDate.split(' ')[0] : (g.shotDate || '');
 
               return `
-                <div class="hd-paddock-goodrun-card">
+                <div class="hd-paddock-goodrun-card clickable" data-gr-idx="${idx}" onclick="window.selectPaddockComparison(${idx}, 'goodRun')">
                   <div class="hd-paddock-header" style="padding: 8px 12px;">
                     <div style="display: flex; align-items: center; gap: 6px;">
                       ${gRankBadge}
@@ -112976,10 +113016,11 @@ function hydratePayouts(race) {
                   </div>
                   <div class="hd-paddock-img-wrap">
                     <img src="${g.imgUrl || g.photoUrl}" alt="${horse.name} 好走時フォトパドック ${gRace}" class="hd-paddock-img" loading="lazy">
+                    <span class="hd-paddock-comparing-indicator" style="display: none;">✨ 比較中</span>
                   </div>
                   <div class="hd-paddock-footer" style="padding: 6px 12px; font-size: 10.5px;">
                     <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${g.commentator || '公式解説'}</span>
-                    <span style="color: #94a3b8;">${gDate}</span>
+                    <span class="hd-paddock-click-hint">👆 最新と比較</span>
                   </div>
                 </div>
               `;
@@ -112989,10 +113030,10 @@ function hydratePayouts(race) {
               <div class="hd-paddock-sub-section">
                 <div class="hd-paddock-sub-title">
                   <span>🏆 過去の好走時フォトパドック（比較）</span>
-                  <span style="font-size: 11px; color: #fbbf24; font-weight: normal; margin-left: auto;">${goodRuns.length}走分収録</span>
+                  <span style="font-size: 11px; color: #fbbf24; font-weight: normal; margin-left: auto;">${goodRuns.length}走分収録 (クリックで最新と比較)</span>
                 </div>
                 <div class="hd-paddock-sub-desc">
-                  好走時（1〜3着・G1掲示板）の馬体シルエットとの比較。筋肉の付き方や腹回りのラインを現時点と比較可能
+                  好走時（1〜3着・G1掲示板）の馬体シルエット。<strong>カードをクリックすると、上の比較枠で最新馬体と直接並べて比較</strong>できます。
                 </div>
                 <div class="hd-paddock-goodruns-grid">
                   ${grCards}
@@ -113009,17 +113050,18 @@ function hydratePayouts(race) {
               const pRankClass = pr === '1着' ? 'rank-1' : pr === '2着' ? 'rank-2' : pr === '3着' ? 'rank-3' : 'rank-4';
               const pRankBadge = pr ? `<span class="hd-paddock-rank-badge ${pRankClass}">${pr}</span>` : '';
               return `
-                <div class="hd-paddock-goodrun-card" style="border-radius: 6px;">
+                <div class="hd-paddock-goodrun-card clickable" data-all-idx="${idx}" onclick="window.selectPaddockComparison(${idx}, 'all')" style="border-radius: 6px;">
                   <div class="hd-paddock-header" style="padding: 6px 10px; font-size: 11px;">
                     <span style="font-weight: 700; color: #fff;">${p.fullRace || p.race}</span>
                     ${pRankBadge}
                   </div>
                   <div class="hd-paddock-img-wrap" style="aspect-ratio: 16/10;">
                     <img src="${p.imgUrl || p.photoUrl}" alt="${p.race}" class="hd-paddock-img" loading="lazy">
+                    <span class="hd-paddock-comparing-indicator" style="display: none;">✨ 比較中</span>
                   </div>
                   <div class="hd-paddock-footer" style="padding: 4px 8px; font-size: 10px;">
                     <span>${p.shotDate || ''}</span>
-                    <span>${p.raceDate ? p.raceDate.split(' ')[0] : ''}</span>
+                    <span class="hd-paddock-click-hint">👆 比較</span>
                   </div>
                 </div>
               `;
@@ -113038,27 +113080,34 @@ function hydratePayouts(race) {
           }
 
           paddocksHtml = `
-            <div class="hd-section-box hd-paddock-section">
+            <div class="hd-section-box hd-paddock-section" id="hd-paddock-section">
               <div class="hd-section-title" style="display: flex; justify-content: space-between; align-items: center;">
                 <span>📸 公式フォトパドック（馬体写真・前走 vs 次走比較）</span>
                 <span class="hd-paddock-badge-source">ソース: netkeiba & JRA-VAN</span>
               </div>
               <div class="hd-paddock-compare-banner">
-                <span>🔍</span>
-                <span><strong>馬体比較の着眼点:</strong> 前走時と次走（当走）のトモの容積・腹回りの引き締まり・筋肉の張りと皮膚の薄さの変化をチェック</span>
+                <div style="display: flex; align-items: center; gap: 8px; flex: 1; flex-wrap: wrap;">
+                  <span style="font-size: 15px;">🔍</span>
+                  <span id="hd-paddock-banner-text"><strong>馬体比較の着眼点:</strong> 下の好走時カードをクリックすると最新（次走）と直接並べてトモ・腹回り・筋肉の張りを比較できます</span>
+                </div>
+                <button type="button" class="hd-paddock-zoom-btn" onclick="window.openPaddockZoomModal()">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  大画面・精密比較
+                </button>
               </div>
-              <div class="hd-paddock-primary-grid">
+              <div class="hd-paddock-primary-grid" id="hd-paddock-primary-grid">
                 <!-- 次走 / 最新カード (大きく表示) -->
-                <div class="hd-paddock-primary-card">
-                  <div class="hd-paddock-header">
-                    <div style="display: flex; align-items: center; gap: 8px;">
+                <div class="hd-paddock-primary-card" id="hd-paddock-card-current">
+                  <div class="hd-paddock-header" style="flex-wrap: wrap; gap: 6px;">
+                    <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap; min-width: 0;">
                       <span class="hd-paddock-tag latest">【最新 / 次走】</span>
-                      <span style="font-size: 14px; font-weight: 800; color: #fff;">${currRace}</span>
+                      <span style="font-size: 13.5px; font-weight: 800; color: #fff;">${currRace}</span>
                     </div>
-                    <span class="hd-paddock-date">📅 ${currShot}</span>
+                    <span class="hd-paddock-date" style="margin-left: auto;">📅 ${currShot}</span>
                   </div>
-                  <div class="hd-paddock-img-wrap">
-                    <img src="${currentPaddock.imgUrl || currentPaddock.photoUrl}" alt="${horse.name} フォトパドック ${currRace}" class="hd-paddock-img" loading="lazy">
+                  <div class="hd-paddock-img-wrap" style="cursor: pointer;" title="クリックで大画面比較" onclick="window.openPaddockZoomModal()">
+                    <img id="hd-paddock-img-current" src="${currentPaddock.imgUrl || currentPaddock.photoUrl}" alt="${horse.name} フォトパドック ${currRace}" class="hd-paddock-img" loading="lazy">
+                    <span class="hd-paddock-zoom-hint">🔍 大画面比較</span>
                   </div>
                   <div class="hd-paddock-footer">
                     <span>${currDiag}</span>
@@ -113066,7 +113115,7 @@ function hydratePayouts(race) {
                   </div>
                 </div>
 
-                <!-- 前走カード (大きく表示) -->
+                <!-- 前走または比較対象カード (大きく表示) -->
                 ${prevCardHtml}
               </div>
 
@@ -113367,10 +113416,360 @@ function hydratePayouts(race) {
       }
 
       function closeHorseModal() {
+        if (typeof window.closePaddockZoomModal === 'function') {
+          window.closePaddockZoomModal();
+        }
         const modal = document.getElementById('modal-horse-detail');
         if (!modal) return;
         modal.classList.remove('open', 'active');
         document.body.style.overflow = '';
+      }
+
+      // ========================================================
+      // フォトパドック インタラクティブ比較 ロジック
+      // ========================================================
+      window.selectPaddockComparison = function(idx, type) {
+        const pData = window._activeHorsePaddocks;
+        if (!pData) return;
+        const list = type === 'goodRun' ? pData.goodRuns : (type === 'all' ? pData.all : [pData.prev]);
+        const paddock = list[idx];
+        if (!paddock) return;
+
+        pData.selectedIndex = idx;
+        pData.selectedType = type;
+        pData.activeCompare = paddock;
+
+        const tagEl = document.getElementById('hd-compare-tag');
+        const raceEl = document.getElementById('hd-compare-race');
+        const rankEl = document.getElementById('hd-compare-rank');
+        const dateEl = document.getElementById('hd-compare-date');
+        const imgEl = document.getElementById('hd-paddock-img-compare');
+        const diagEl = document.getElementById('hd-compare-diag');
+        const fDateEl = document.getElementById('hd-compare-footer-date');
+        const resetBtn = document.getElementById('hd-paddock-reset-btn');
+        const bannerText = document.getElementById('hd-paddock-banner-text');
+        const placeholder = document.getElementById('hd-paddock-no-compare-placeholder');
+        const zoomHint = document.getElementById('hd-zoom-hint-compare');
+
+        const raceName = paddock.fullRace || paddock.race || '過去レース';
+        const r = (paddock.rank || '').trim();
+        const rankClass = r === '1着' ? 'rank-1' : r === '2着' ? 'rank-2' : r === '3着' ? 'rank-3' : 'rank-4';
+        const rankBadge = r ? `<span class="hd-paddock-rank-badge ${rankClass}">${r}</span>` : '';
+        const shotDate = paddock.shotDate || (paddock.date ? paddock.date : '公式撮影');
+        const diag = paddock.commentator || 'netkeiba公式馬体診断';
+        const raceDate = paddock.raceDate ? paddock.raceDate.split(' ')[0] : (type === 'goodRun' ? '好走時' : '過去走');
+
+        if (tagEl) {
+          tagEl.className = 'hd-paddock-tag comparing';
+          tagEl.innerText = type === 'goodRun' ? '【好走時と比較中】' : '【過去レース比較中】';
+        }
+        if (raceEl) raceEl.innerText = raceName;
+        if (rankEl) rankEl.innerHTML = rankBadge;
+        if (dateEl) dateEl.innerText = `📅 ${shotDate}`;
+        if (imgEl) {
+          imgEl.src = paddock.imgUrl || paddock.photoUrl;
+          imgEl.alt = `${pData.horseName} フォトパドック ${raceName}`;
+          imgEl.style.display = 'block';
+          imgEl.classList.remove('paddock-fade-in');
+          void imgEl.offsetWidth;
+          imgEl.classList.add('paddock-fade-in');
+        }
+        if (placeholder) placeholder.style.display = 'none';
+        if (zoomHint) zoomHint.style.display = 'flex';
+        if (diagEl) diagEl.innerText = diag;
+        if (fDateEl) fDateEl.innerText = raceDate;
+        if (resetBtn) resetBtn.style.display = 'inline-flex';
+
+        if (bannerText) {
+          const currRace = pData.current ? (pData.current.fullRace || pData.current.race || '最新') : '最新';
+          bannerText.innerHTML = `<strong>現在比較中:</strong> <span style="color:#fbbf24;">最新（${currRace}）</span> ⚔️ <span style="color:#38bdf8;">${raceName} ${r ? `(${r})` : ''}</span>（トモの容積や腹回りのラインの違いを直接見比べられます）`;
+        }
+
+        document.querySelectorAll('.hd-paddock-goodrun-card').forEach(el => {
+          el.classList.remove('is-comparing');
+          const ind = el.querySelector('.hd-paddock-comparing-indicator');
+          if (ind) ind.style.display = 'none';
+        });
+
+        const activeSelector = type === 'goodRun' ? `[data-gr-idx="${idx}"]` : `[data-all-idx="${idx}"]`;
+        const activeCard = document.querySelector(activeSelector);
+        if (activeCard) {
+          activeCard.classList.add('is-comparing');
+          const ind = activeCard.querySelector('.hd-paddock-comparing-indicator');
+          if (ind) ind.style.display = 'flex';
+        }
+
+        const section = document.getElementById('hd-paddock-section');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      };
+
+      window.resetPaddockComparison = function() {
+        const pData = window._activeHorsePaddocks;
+        if (!pData) return;
+
+        pData.selectedIndex = null;
+        pData.selectedType = 'prev';
+        pData.activeCompare = pData.prev;
+
+        const prev = pData.prev;
+        const tagEl = document.getElementById('hd-compare-tag');
+        const raceEl = document.getElementById('hd-compare-race');
+        const rankEl = document.getElementById('hd-compare-rank');
+        const dateEl = document.getElementById('hd-compare-date');
+        const imgEl = document.getElementById('hd-paddock-img-compare');
+        const diagEl = document.getElementById('hd-compare-diag');
+        const fDateEl = document.getElementById('hd-compare-footer-date');
+        const resetBtn = document.getElementById('hd-paddock-reset-btn');
+        const bannerText = document.getElementById('hd-paddock-banner-text');
+        const placeholder = document.getElementById('hd-paddock-no-compare-placeholder');
+        const zoomHint = document.getElementById('hd-zoom-hint-compare');
+
+        if (prev) {
+          const prevRace = prev.fullRace || prev.race || '前走';
+          const r = (prev.rank || '').trim();
+          const rankClass = r === '1着' ? 'rank-1' : r === '2着' ? 'rank-2' : r === '3着' ? 'rank-3' : 'rank-4';
+          const rankBadge = r ? `<span class="hd-paddock-rank-badge ${rankClass}">${r}</span>` : '';
+          const prevShot = prev.shotDate || (prev.date ? prev.date : '公式撮影');
+          const prevDiag = prev.commentator || 'netkeiba公式馬体診断';
+          const prevDate = prev.raceDate ? prev.raceDate.split(' ')[0] : '前走時';
+
+          if (tagEl) {
+            tagEl.className = 'hd-paddock-tag past';
+            tagEl.innerText = '【前走】';
+          }
+          if (raceEl) raceEl.innerText = prevRace;
+          if (rankEl) rankEl.innerHTML = rankBadge;
+          if (dateEl) dateEl.innerText = `📅 ${prevShot}`;
+          if (imgEl) {
+            imgEl.src = prev.imgUrl || prev.photoUrl;
+            imgEl.alt = `${pData.horseName} フォトパドック ${prevRace}`;
+            imgEl.style.display = 'block';
+            imgEl.classList.remove('paddock-fade-in');
+            void imgEl.offsetWidth;
+            imgEl.classList.add('paddock-fade-in');
+          }
+          if (placeholder) placeholder.style.display = 'none';
+          if (zoomHint) zoomHint.style.display = 'flex';
+          if (diagEl) diagEl.innerText = prevDiag;
+          if (fDateEl) fDateEl.innerText = prevDate;
+        } else {
+          if (tagEl) {
+            tagEl.className = 'hd-paddock-tag past';
+            tagEl.innerText = '【比較対象】';
+          }
+          if (raceEl) raceEl.innerText = '前走未収録 (下の好走時を選択)';
+          if (rankEl) rankEl.innerHTML = '';
+          if (dateEl) dateEl.innerText = '';
+          if (imgEl) imgEl.style.display = 'none';
+          if (placeholder) placeholder.style.display = 'flex';
+          if (zoomHint) zoomHint.style.display = 'none';
+          if (diagEl) diagEl.innerText = '重賞初挑戦または前走未撮影';
+          if (fDateEl) fDateEl.innerText = '-';
+        }
+
+        if (resetBtn) resetBtn.style.display = 'none';
+        if (bannerText) {
+          bannerText.innerHTML = `<strong>馬体比較の着眼点:</strong> 下の好走時カードをクリックすると最新（次走）と直接並べてトモ・腹回り・筋肉の張りを比較できます`;
+        }
+
+        document.querySelectorAll('.hd-paddock-goodrun-card').forEach(el => {
+          el.classList.remove('is-comparing');
+          const ind = el.querySelector('.hd-paddock-comparing-indicator');
+          if (ind) ind.style.display = 'none';
+        });
+      };
+
+      // ========================================================
+      // 拡大・並列比較モーダル ロジック
+      // ========================================================
+      window.openPaddockZoomModal = function() {
+        const pData = window._activeHorsePaddocks;
+        if (!pData || !pData.current) return;
+
+        const zoomModal = document.getElementById('modal-paddock-compare-zoom');
+        if (!zoomModal) return;
+
+        window._pzCurrentMode = window._pzCurrentMode || 'sideBySide';
+        window._pzSliderPos = window._pzSliderPos || 50;
+
+        renderZoomModalContent();
+
+        zoomModal.classList.add('open', 'active');
+        document.body.style.overflow = 'hidden';
+      };
+
+      window.closePaddockZoomModal = function() {
+        const zoomModal = document.getElementById('modal-paddock-compare-zoom');
+        if (!zoomModal) return;
+        zoomModal.classList.remove('open', 'active');
+        const horseModal = document.getElementById('modal-horse-detail');
+        if (horseModal && horseModal.classList.contains('active')) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = '';
+        }
+      };
+
+      window.switchZoomPaddockMode = function(mode) {
+        window._pzCurrentMode = mode;
+        renderZoomModalContent();
+      };
+
+      window.switchZoomComparisonPaddock = function(idx, type) {
+        window.selectPaddockComparison(idx, type);
+        renderZoomModalContent();
+      };
+
+      window.handlePzSliderInput = function(val) {
+        window._pzSliderPos = val;
+        const topLayer = document.querySelector('.pz-slider-layer.top-layer');
+        const handle = document.querySelector('.pz-slider-handle');
+        if (topLayer) topLayer.style.width = val + '%';
+        if (handle) handle.style.left = val + '%';
+      };
+
+      function renderZoomModalContent() {
+        const pData = window._activeHorsePaddocks;
+        if (!pData || !pData.current) return;
+
+        const body = document.getElementById('pz-modal-body');
+        const title = document.getElementById('pz-modal-title');
+        const subTitle = document.getElementById('pz-modal-subtitle');
+        if (!body) return;
+
+        const current = pData.current;
+        const compare = pData.activeCompare || pData.prev || (pData.goodRuns && pData.goodRuns[0]) || current;
+
+        const currRace = current.fullRace || current.race || '最新 / 次走';
+        const currShot = current.shotDate || (current.date ? current.date : '公式撮影');
+        const currDiag = current.commentator || 'netkeiba公式馬体診断';
+        const currImg = current.imgUrl || current.photoUrl;
+
+        const compRace = compare.fullRace || compare.race || '比較対象';
+        const r = (compare.rank || '').trim();
+        const rankClass = r === '1着' ? 'rank-1' : r === '2着' ? 'rank-2' : r === '3着' ? 'rank-3' : 'rank-4';
+        const compRankBadge = r ? `<span class="hd-paddock-rank-badge ${rankClass}">${r}</span>` : '';
+        const compShot = compare.shotDate || (compare.date ? compare.date : '公式撮影');
+        const compDiag = compare.commentator || '公式馬体診断';
+        const compImg = compare.imgUrl || compare.photoUrl;
+
+        if (title) title.innerText = `${pData.horseName} 馬体精密比較`;
+        if (subTitle) subTitle.innerText = `PHOTO PADDOCK COMPARISON: ${currRace} vs ${compRace}`;
+
+        let pillsHtml = '';
+        if (pData.prev) {
+          const isPActive = pData.activeCompare === pData.prev;
+          pillsHtml += `<button type="button" class="pz-race-pill ${isPActive ? 'active' : ''}" onclick="window.switchZoomComparisonPaddock(0, 'prev')">【前走】${pData.prev.fullRace || pData.prev.race}</button>`;
+        }
+        (pData.goodRuns || []).forEach((gr, idx) => {
+          const isGActive = pData.activeCompare === gr;
+          const grRank = (gr.rank || '').trim();
+          const gRankClass = grRank === '1着' ? 'rank-1' : grRank === '2着' ? 'rank-2' : grRank === '3着' ? 'rank-3' : 'rank-4';
+          const gRankBadge = grRank ? `<span class="hd-paddock-rank-badge ${gRankClass}" style="font-size:10px;padding:1px 5px;">${grRank}</span>` : '';
+          pillsHtml += `<button type="button" class="pz-race-pill ${isGActive ? 'active' : ''}" onclick="window.switchZoomComparisonPaddock(${idx}, 'goodRun')">${gRankBadge} ${gr.fullRace || gr.race}</button>`;
+        });
+
+        const mode = window._pzCurrentMode || 'sideBySide';
+        const sliderPos = window._pzSliderPos || 50;
+
+        let viewerHtml = '';
+        if (mode === 'sideBySide') {
+          viewerHtml = `
+            <div class="pz-side-by-side-grid">
+              <!-- 最新パネル -->
+              <div class="pz-zoom-card">
+                <div class="hd-paddock-header" style="background: rgba(30, 41, 59, 0.9);">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <span class="hd-paddock-tag latest">【最新 / 次走】</span>
+                    <span style="font-size: 14px; font-weight: 800; color: #fff;">${currRace}</span>
+                  </div>
+                  <span class="hd-paddock-date">📅 ${currShot}</span>
+                </div>
+                <div class="pz-zoom-img-wrap">
+                  <img src="${currImg}" alt="${currRace}" class="pz-zoom-img" loading="lazy">
+                </div>
+                <div class="hd-paddock-footer">
+                  <span>${currDiag}</span>
+                  <span style="color: #38bdf8; font-weight: 700;">最新撮影</span>
+                </div>
+              </div>
+
+              <!-- 比較対象パネル -->
+              <div class="pz-zoom-card" style="border-color: rgba(251, 191, 36, 0.45);">
+                <div class="hd-paddock-header" style="background: rgba(30, 41, 59, 0.9);">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <span class="hd-paddock-tag comparing">【比較対象】</span>
+                    <span style="font-size: 14px; font-weight: 800; color: #fff;">${compRace}</span>
+                    ${compRankBadge}
+                  </div>
+                  <span class="hd-paddock-date">📅 ${compShot}</span>
+                </div>
+                <div class="pz-zoom-img-wrap">
+                  <img src="${compImg}" alt="${compRace}" class="pz-zoom-img" loading="lazy">
+                </div>
+                <div class="hd-paddock-footer">
+                  <span>${compDiag}</span>
+                  <span style="color: #fbbf24; font-weight: 700;">${compare.raceDate ? compare.raceDate.split(' ')[0] : '比較時'}</span>
+                </div>
+              </div>
+            </div>
+          `;
+        } else {
+          viewerHtml = `
+            <div style="text-align: center; margin-bottom: 8px; font-size: 12px; color: #94a3b8;">
+              ↔ スライダーを左右にドラッグして馬体の重なり・シルエット変化をチェック
+            </div>
+            <div class="pz-slider-container">
+              <span class="pz-slider-label left">最新: ${currRace}</span>
+              <span class="pz-slider-label right">比較: ${compRace} ${r ? `(${r})` : ''}</span>
+              
+              <!-- 下層: 比較対象画像 (過去走) -->
+              <div class="pz-slider-layer">
+                <img src="${compImg}" alt="${compRace}">
+              </div>
+
+              <!-- 上層: 最新画像 (クリップ) -->
+              <div class="pz-slider-layer top-layer" style="width: ${sliderPos}%;">
+                <img src="${currImg}" alt="${currRace}">
+              </div>
+
+              <!-- スライダーハンドル -->
+              <div class="pz-slider-handle" style="left: ${sliderPos}%;">
+                ◂▸
+              </div>
+
+              <!-- 透明な入力スライダー -->
+              <input type="range" min="0" max="100" value="${sliderPos}" class="pz-slider-input" oninput="window.handlePzSliderInput(this.value)">
+            </div>
+          `;
+        }
+
+        body.innerHTML = `
+          <div class="pz-nav-toolbar">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 12px; color: #94a3b8; font-weight: 700;">表示モード:</span>
+              <div class="pz-mode-tabs">
+                <button type="button" class="pz-mode-tab ${mode === 'sideBySide' ? 'active' : ''}" onclick="window.switchZoomPaddockMode('sideBySide')">
+                  <span>⬛⬛ 並列比較 (Side by Side)</span>
+                </button>
+                <button type="button" class="pz-mode-tab ${mode === 'slider' ? 'active' : ''}" onclick="window.switchZoomPaddockMode('slider')">
+                  <span>🔀 重ね合わせスライダー</span>
+                </button>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 8px; flex: 1; justify-content: flex-end; overflow: hidden;">
+              <span style="font-size: 11.5px; color: #fbbf24; font-weight: 700; white-space: nowrap;">比較レース選択:</span>
+              <div class="pz-race-pills">
+                ${pillsHtml}
+              </div>
+            </div>
+          </div>
+
+          ${viewerHtml}
+        `;
       }
 
 
