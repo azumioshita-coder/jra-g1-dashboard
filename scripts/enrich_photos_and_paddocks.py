@@ -1,89 +1,103 @@
 import urllib.request
-import urllib.parse
 import json
 import re
-import time
 import os
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HORSE_JSON = os.path.join(BASE_DIR, 'src', 'horse_data.json')
 HORSE_JS = os.path.join(BASE_DIR, 'src', 'horse_data.js')
-ID_MAP_FILE = os.path.join(BASE_DIR, 'scripts', 'data', 'verified_netkeiba_ids.json')
-PADDOCKS_FILE = os.path.join(BASE_DIR, 'scripts', 'data', 'jra_van_photopaddocks.json')
+NK_PADDOCKS_FILE = os.path.join(BASE_DIR, 'scripts', 'data', 'netkeiba_all_paddocks.json')
+JRA_PADDOCKS_FILE = os.path.join(BASE_DIR, 'scripts', 'data', 'jra_van_photopaddocks.json')
 
 def load_json(path):
+    if not os.path.exists(path):
+        return {}
     with open(path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-def get_netkeiba_best_photo(hid):
-    url = 'https://db.netkeiba.com/photo/api_horse_photo_list.html'
-    for period in ['2', '1']:  # 2: popular, 1: recent
-        data = urllib.parse.urlencode({
-            'input': 'UTF-8',
-            'output': 'json',
-            'horse_id': hid,
-            'limit': '16',
-            'page': '1',
-            'period': period
-        }).encode('ascii')
-        req = urllib.request.Request(url, data=data, headers={'User-Agent': 'Mozilla/5.0'})
-        try:
-            res = urllib.request.urlopen(req, timeout=6).read().decode('utf-8', errors='replace')
-            parsed = json.loads(res)
-            # Find photo link
-            links = re.findall(r'<a href=\"([^\"]*show_photo[^\"]*)\"[^>]*title=\"([^\"]*)\"', parsed)
-            if links:
-                for best_link, title in links:
-                    clean_url = best_link.split('&tn=')[0].split('&tmp=')[0]
-                    if not clean_url.startswith('http'):
-                        clean_url = 'https://cdnv2.netkeiba.com/img.db/' + clean_url.lstrip('/')
-                    return clean_url, title
-        except Exception:
-            pass
-    return None, None
-
 def main():
     print("==================================================")
-    print("  Enriching Horses with NetKeiba Photos & JRA-VAN Photo Paddocks")
+    print("  Applying Verified Official NetKeiba & JRA-VAN Photo Paddocks")
     print("==================================================")
 
     horse_db = load_json(HORSE_JSON)
-    id_map = load_json(ID_MAP_FILE)
-    paddocks = load_json(PADDOCKS_FILE)
+    nk_data = load_json(NK_PADDOCKS_FILE)
+    jra_data = load_json(JRA_PADDOCKS_FILE)
 
     print(f"Total horses: {len(horse_db)}")
-    print(f"JRA-VAN Photo Paddocks available for {len(paddocks)} horses")
 
-    def worker(name):
-        h = horse_db[name]
-        hid = id_map.get(name)
-        
-        # 1. Netkeiba best photo extraction
-        if hid and name != 'テアオ':
-            best_photo, photo_title = get_netkeiba_best_photo(hid)
-            if best_photo:
-                h['photoUrl'] = best_photo
-                h['photoTitle'] = photo_title
-        elif name == 'テアオ':
-            h['photoUrl'] = None
+    enriched_paddocks_count = 0
+    clean_photos_count = 0
 
-        # 2. Attach JRA-VAN Photo Paddocks
-        h_paddocks = paddocks.get(name, [])
-        h['photoPaddocks'] = h_paddocks
+    for name, h in horse_db.items():
+        nk_list = nk_data.get(name, [])
+        jra_list = jra_data.get(name, [])
 
-        return name, bool(h.get('photoUrl')), len(h_paddocks)
+        combined = list(nk_list)
+        existing_races = {p["race"] for p in combined}
+        for jp in jra_list:
+            j_race = jp.get("race", "")
+            if j_race not in existing_races:
+                combined.append({
+                    "race": j_race,
+                    "grade": "GI",
+                    "fullRace": f"{j_race} GI",
+                    "rank": "",
+                    "raceDate": "",
+                    "shotDate": jp.get("date", ""),
+                    "imgUrl": jp.get("photoUrl", ""),
+                    "commentator": "JRA-VAN 公式馬体診断",
+                    "source": "jra_van"
+                })
+                existing_races.add(j_race)
 
-    all_names = sorted(list(horse_db.keys()))
-    with ThreadPoolExecutor(max_workers=5) as executor:
-        futures = {executor.submit(worker, name): name for name in all_names}
-        done = 0
-        for f in as_completed(futures):
-            done += 1
-            name, has_p, paddock_cnt = f.result()
-            p_str = f"Paddocks: {paddock_cnt}" if paddock_cnt > 0 else "No Paddock"
-            print(f"[{done}/{len(all_names)}] {name}: Photo={'YES' if has_p else 'NO'} | {p_str}")
-            time.sleep(0.04)
+        if combined:
+            current = combined[0]
+            prev = combined[1] if len(combined) > 1 else None
+
+            # Filter good runs: 1着, 2着, 3着 or G1 4着, excluding current and prev
+            good_runs = []
+            prev_img = prev.get("imgUrl") if prev else None
+            curr_img = current.get("imgUrl") if current else None
+
+            for p in combined[1:]:
+                img = p.get("imgUrl")
+                if img == prev_img or img == curr_img:
+                    continue
+                rank_str = p.get("rank", "").strip()
+                grade_str = p.get("grade", "").strip()
+                if re.match(r"^[123]着$", rank_str):
+                    good_runs.append(p)
+                elif rank_str == "4着" and "GI" in grade_str:
+                    good_runs.append(p)
+
+            # Assign 100% verified official photo from latest photo paddock
+            h["photoUrl"] = current["imgUrl"]
+            h["photoTitle"] = f"{current['fullRace']} ({current['shotDate']})"
+            clean_photos_count += 1
+            enriched_paddocks_count += 1
+
+            # Store structured paddock info
+            h["photoPaddocks"] = combined
+            h["paddockStructure"] = {
+                "current": current,
+                "prev": prev,
+                "goodRuns": good_runs,
+                "totalCount": len(combined)
+            }
+        else:
+            # Foreign horses or horses without verified official photo paddocks:
+            # Set photoUrl to None so it cleanly shows the 'No Photo' placeholder
+            # NEVER show random fan photos of other horses or stock photos!
+            h["photoUrl"] = None
+            h["photoTitle"] = None
+            h["photoPaddocks"] = []
+            h["paddockStructure"] = {
+                "current": None,
+                "prev": None,
+                "goodRuns": [],
+                "totalCount": 0
+            }
 
     # Save to src/horse_data.json and src/horse_data.js
     with open(HORSE_JSON, 'w', encoding='utf-8') as f:
@@ -92,7 +106,8 @@ def main():
     with open(HORSE_JS, 'w', encoding='utf-8') as f:
         f.write("export const HORSE_DATABASE = " + json.dumps(horse_db, ensure_ascii=False, indent=2) + ";\n")
 
-    print(f"\nSuccessfully enriched all {len(horse_db)} horses with verified photos & JRA-VAN paddocks!")
+    print(f"Finished! {enriched_paddocks_count} horses have official photo paddocks & verified photos.")
+    print(f"{len(horse_db) - enriched_paddocks_count} horses without paddocks have clean No-Photo states.")
 
 if __name__ == '__main__':
     main()

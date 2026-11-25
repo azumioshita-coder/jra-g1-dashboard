@@ -15,7 +15,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'府中S()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105236&no=81421",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3400",
     "pedigree": {
       "sire": "ブリックスアンドモルタル",
       "dam": "マキシマムドパリ",
@@ -362,8 +362,36 @@ export const HORSE_DATABASE = {
         "rival": "シュガークン"
       }
     ],
-    "photoTitle": "京橋S(３勝クラス)/さどまにさん",
-    "photoPaddocks": []
+    "photoTitle": "セントライト記念 GII (9月4日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "セントライト記念",
+        "grade": "GII",
+        "fullRace": "セントライト記念 GII",
+        "rank": "6着",
+        "raceDate": "2024/09/16 中山11R 芝2200m",
+        "shotDate": "9月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3400",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "セントライト記念",
+        "grade": "GII",
+        "fullRace": "セントライト記念 GII",
+        "rank": "6着",
+        "raceDate": "2024/09/16 中山11R 芝2200m",
+        "shotDate": "9月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3400",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "アスクシュタイン": {
     "name": "アスクシュタイン",
@@ -381,7 +409,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'コスモス賞()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022100161&no=75774",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3741",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "ヴィクトリアズワイルドキャット",
@@ -560,8 +588,57 @@ export const HORSE_DATABASE = {
         "rival": "(リアライズオーラム)"
       }
     ],
-    "photoTitle": "下鴨S(３勝クラス)/らるぜとさん",
-    "photoPaddocks": []
+    "photoTitle": "弥生賞ディープ記念 GII (2月27日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "弥生賞ディープ記念",
+        "grade": "GII",
+        "fullRace": "弥生賞ディープ記念 GII",
+        "rank": "6着",
+        "raceDate": "2025/03/09 中山11R 芝2000m",
+        "shotDate": "2月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3741",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ホープフルS",
+        "grade": "GI",
+        "fullRace": "ホープフルS GI",
+        "rank": "6着",
+        "raceDate": "2024/12/28 中山11R 芝2000m",
+        "shotDate": "12月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3613",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "弥生賞ディープ記念",
+        "grade": "GII",
+        "fullRace": "弥生賞ディープ記念 GII",
+        "rank": "6着",
+        "raceDate": "2025/03/09 中山11R 芝2000m",
+        "shotDate": "2月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3741",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ホープフルS",
+        "grade": "GI",
+        "fullRace": "ホープフルS GI",
+        "rank": "6着",
+        "raceDate": "2024/12/28 中山11R 芝2000m",
+        "shotDate": "12月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3613",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 2
+    }
   },
   "アドマイヤズーム": {
     "name": "アドマイヤズーム",
@@ -579,7 +656,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'朝日杯フューチュリティS(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105396&no=60067",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4817",
     "pedigree": {
       "sire": "モーリス",
       "dam": "ダイワズーム",
@@ -782,16 +859,113 @@ export const HORSE_DATABASE = {
         "rival": "テレサ"
       }
     ],
-    "photoTitle": "朝日フューチュリティ(G1)/Eyuuさん",
+    "photoTitle": "マイルＣＳ GI (11月12日撮影)",
     "photoPaddocks": [
       {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "16着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4817",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイラーズＣ",
+        "grade": "GII",
+        "fullRace": "マイラーズＣ GII",
+        "rank": "1着",
+        "raceDate": "2026/04/26 京都11R 芝1600m",
+        "shotDate": "4月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4465",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "スワンＳ",
+        "grade": "GII",
+        "fullRace": "スワンＳ GII",
+        "rank": "6着",
+        "raceDate": "2025/10/13 京都11R 芝1400m",
+        "shotDate": "10月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4108",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "14着",
+        "raceDate": "2025/05/11 東京11R 芝1600m",
+        "shotDate": "5月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3865",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "朝日杯ＦＳ",
+        "grade": "GI",
+        "fullRace": "朝日杯ＦＳ GI",
+        "rank": "1着",
+        "raceDate": "2024/12/15 京都11R 芝1600m",
+        "shotDate": "12月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3585",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
         "race": "マイルCS",
-        "slug": "mcs",
-        "date": "11月12日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img04.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "マイルCS GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img04.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "16着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4817",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "マイラーズＣ",
+        "grade": "GII",
+        "fullRace": "マイラーズＣ GII",
+        "rank": "1着",
+        "raceDate": "2026/04/26 京都11R 芝1600m",
+        "shotDate": "4月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4465",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "朝日杯ＦＳ",
+          "grade": "GI",
+          "fullRace": "朝日杯ＦＳ GI",
+          "rank": "1着",
+          "raceDate": "2024/12/15 京都11R 芝1600m",
+          "shotDate": "12月5日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3585",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 6
+    }
   },
   "アクアヴァーナル": {
     "name": "アクアヴァーナル",
@@ -809,7 +983,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'万葉S()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105433&no=109463",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4803",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "エイプリルミスト",
@@ -1276,16 +1450,102 @@ export const HORSE_DATABASE = {
         "rival": "ミカエルパシャ"
       }
     ],
-    "photoTitle": "京都大賞典(G2)/はらさん",
+    "photoTitle": "エリザベス女王杯 GI (11月4日撮影)",
     "photoPaddocks": [
       {
         "race": "エリザベス女王杯",
-        "slug": "elizabeth",
-        "date": "11月4日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img03.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "3着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4803",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "3着",
+        "raceDate": "2026/10/04 京都11R 芝2400m",
+        "shotDate": "9月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4733",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "4着",
+        "raceDate": "2026/05/03 京都11R 芝3200m",
+        "shotDate": "4月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4489",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神大賞典",
+        "grade": "GII",
+        "fullRace": "阪神大賞典 GII",
+        "rank": "2着",
+        "raceDate": "2026/03/22 阪神11R 芝3000m",
+        "shotDate": "3月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4414",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "3着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4803",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "3着",
+        "raceDate": "2026/10/04 京都11R 芝2400m",
+        "shotDate": "9月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4733",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "天皇賞（春）",
+          "grade": "GI",
+          "fullRace": "天皇賞（春） GI",
+          "rank": "4着",
+          "raceDate": "2026/05/03 京都11R 芝3200m",
+          "shotDate": "4月22日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4489",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "阪神大賞典",
+          "grade": "GII",
+          "fullRace": "阪神大賞典 GII",
+          "rank": "2着",
+          "raceDate": "2026/03/22 阪神11R 芝3000m",
+          "shotDate": "3月11日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4414",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 4
+    }
   },
   "アドマイヤテラ": {
     "name": "アドマイヤテラ",
@@ -1303,7 +1563,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'阪神大賞典(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105369&no=108222",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4490",
     "pedigree": {
       "sire": "レイデオロ",
       "dam": "アドマイヤミヤビ",
@@ -1674,8 +1934,80 @@ export const HORSE_DATABASE = {
         "rival": "(ウインリベラーレ)"
       }
     ],
-    "photoTitle": "札幌記念(G2)/Kyo-@さん",
-    "photoPaddocks": []
+    "photoTitle": "天皇賞（春） GI (4月22日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "3着",
+        "raceDate": "2026/05/03 京都11R 芝3200m",
+        "shotDate": "4月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4490",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神大賞典",
+        "grade": "GII",
+        "fullRace": "阪神大賞典 GII",
+        "rank": "1着",
+        "raceDate": "2026/03/22 阪神11R 芝3000m",
+        "shotDate": "3月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4419",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "4着",
+        "raceDate": "2025/10/05 京都11R 芝2400m",
+        "shotDate": "9月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4104",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "3着",
+        "raceDate": "2026/05/03 京都11R 芝3200m",
+        "shotDate": "4月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4490",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "阪神大賞典",
+        "grade": "GII",
+        "fullRace": "阪神大賞典 GII",
+        "rank": "1着",
+        "raceDate": "2026/03/22 阪神11R 芝3000m",
+        "shotDate": "3月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4419",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "京都大賞典",
+          "grade": "GII",
+          "fullRace": "京都大賞典 GII",
+          "rank": "4着",
+          "raceDate": "2025/10/05 京都11R 芝2400m",
+          "shotDate": "9月24日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4104",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 3
+    }
   },
   "アンパドゥ": {
     "name": "アンパドゥ",
@@ -1693,7 +2025,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'関屋記念(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021110030&no=98910",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4811",
     "pedigree": {
       "sire": "Iffraaj (英)",
       "dam": "Latharna Skies (英)",
@@ -1896,16 +2228,68 @@ export const HORSE_DATABASE = {
         "rival": "(ロジカルワーズ)"
       }
     ],
-    "photoTitle": "雲雀S(３勝クラス)/ちゅぴさん",
+    "photoTitle": "マイルＣＳ GI (11月11日撮影)",
     "photoPaddocks": [
       {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "17着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4811",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "関屋記念",
+        "grade": "GIII",
+        "fullRace": "関屋記念 GIII",
+        "rank": "1着",
+        "raceDate": "2026/07/26 新潟7R 芝1600m",
+        "shotDate": "7月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4619",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
         "race": "マイルCS",
-        "slug": "mcs",
-        "date": "11月12日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img05.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "マイルCS GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img05.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "17着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4811",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "関屋記念",
+        "grade": "GIII",
+        "fullRace": "関屋記念 GIII",
+        "rank": "1着",
+        "raceDate": "2026/07/26 新潟7R 芝1600m",
+        "shotDate": "7月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4619",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 3
+    }
   },
   "アレグロブリランテ": {
     "name": "アレグロブリランテ",
@@ -1923,7 +2307,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'2歳新馬"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105625&no=83607",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3287",
     "pedigree": {
       "sire": "ディープブリランテ",
       "dam": "センティナリー",
@@ -2126,8 +2510,36 @@ export const HORSE_DATABASE = {
         "rival": "(キットハナガサク)"
       }
     ],
-    "photoTitle": "グレイトフルＳ(３勝クラス)/エアさん",
-    "photoPaddocks": []
+    "photoTitle": "ラジオＮＩＫＫＥＩ賞 GIII (6月20日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "ラジオＮＩＫＫＥＩ賞",
+        "grade": "GIII",
+        "fullRace": "ラジオＮＩＫＫＥＩ賞 GIII",
+        "rank": "11着",
+        "raceDate": "2024/06/30 福島11R 芝1800m",
+        "shotDate": "6月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3287",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ラジオＮＩＫＫＥＩ賞",
+        "grade": "GIII",
+        "fullRace": "ラジオＮＩＫＫＥＩ賞 GIII",
+        "rank": "11着",
+        "raceDate": "2024/06/30 福島11R 芝1800m",
+        "shotDate": "6月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3287",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "アルマヴェローチェ": {
     "name": "アルマヴェローチェ",
@@ -2145,7 +2557,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'阪神ジュベナイルフィリーズ(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105110&no=24742",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3884",
     "pedigree": {
       "sire": "ハービンジャー",
       "dam": "ラクアミ",
@@ -2252,8 +2664,80 @@ export const HORSE_DATABASE = {
         "rival": "(リアンベーレ)"
       }
     ],
-    "photoTitle": "阪神ジュベナイルＦ(G1)/もれーらありがとうさん",
-    "photoPaddocks": []
+    "photoTitle": "オークス GI (5月15日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "2着",
+        "raceDate": "2025/05/25 東京11R 芝2400m",
+        "shotDate": "5月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3884",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "桜花賞",
+        "grade": "GI",
+        "fullRace": "桜花賞 GI",
+        "rank": "2着",
+        "raceDate": "2025/04/13 阪神11R 芝1600m",
+        "shotDate": "4月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3806",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神ＪＦ",
+        "grade": "GI",
+        "fullRace": "阪神ＪＦ GI",
+        "rank": "1着",
+        "raceDate": "2024/12/08 京都11R 芝1600m",
+        "shotDate": "11月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3580",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "2着",
+        "raceDate": "2025/05/25 東京11R 芝2400m",
+        "shotDate": "5月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3884",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "桜花賞",
+        "grade": "GI",
+        "fullRace": "桜花賞 GI",
+        "rank": "2着",
+        "raceDate": "2025/04/13 阪神11R 芝1600m",
+        "shotDate": "4月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3806",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "阪神ＪＦ",
+          "grade": "GI",
+          "fullRace": "阪神ＪＦ GI",
+          "rank": "1着",
+          "raceDate": "2024/12/08 京都11R 芝1600m",
+          "shotDate": "11月27日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3580",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 3
+    }
   },
   "アーテルアストレア": {
     "name": "アーテルアストレア",
@@ -2271,7 +2755,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "レディスプレリュード"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019104564&no=76309",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3561",
     "pedigree": {
       "sire": "リーチザクラウン",
       "dam": "スターズインヘヴン",
@@ -2858,8 +3342,36 @@ export const HORSE_DATABASE = {
         "rival": "ヴィルチュオーズ"
       }
     ],
-    "photoTitle": "鳴海特別(２勝クラス)/ワラビさん",
-    "photoPaddocks": []
+    "photoTitle": "チャンピオンズC GI (11月20日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "7着",
+        "raceDate": "2024/12/01 中京11R ダ1800m",
+        "shotDate": "11月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3561",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "7着",
+        "raceDate": "2024/12/01 中京11R ダ1800m",
+        "shotDate": "11月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3561",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "アドマイヤベル": {
     "name": "アドマイヤベル",
@@ -2877,7 +3389,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'フローラS(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105764&no=110776",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3461",
     "pedigree": {
       "sire": "スワーヴリチャード",
       "dam": "ベルアリュールII",
@@ -3032,8 +3544,80 @@ export const HORSE_DATABASE = {
         "rival": "(ベストミーエヴァー)"
       }
     ],
-    "photoTitle": "フリージア賞(1勝)/ひげまつりさん",
-    "photoPaddocks": []
+    "photoTitle": "秋華賞 GI (10月3日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "12着",
+        "raceDate": "2024/10/13 京都11R 芝2000m",
+        "shotDate": "10月3日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3461",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "9着",
+        "raceDate": "2024/05/19 東京11R 芝2400m",
+        "shotDate": "5月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3215",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フローラＳ",
+        "grade": "GII",
+        "fullRace": "フローラＳ GII",
+        "rank": "1着",
+        "raceDate": "2024/04/21 東京11R 芝2000m",
+        "shotDate": "4月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3153",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "12着",
+        "raceDate": "2024/10/13 京都11R 芝2000m",
+        "shotDate": "10月3日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3461",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "9着",
+        "raceDate": "2024/05/19 東京11R 芝2400m",
+        "shotDate": "5月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3215",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "フローラＳ",
+          "grade": "GII",
+          "fullRace": "フローラＳ GII",
+          "rank": "1着",
+          "raceDate": "2024/04/21 東京11R 芝2000m",
+          "shotDate": "4月11日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3153",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 3
+    }
   },
   "ウィルソンテソーロ": {
     "name": "ウィルソンテソーロ",
@@ -3051,7 +3635,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'JBCクラシック(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019102383&no=132047",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4354",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "チェストケローズ",
@@ -3806,8 +4390,113 @@ export const HORSE_DATABASE = {
         "rival": "イクイノックス"
       }
     ],
-    "photoTitle": "かしわ記念(G1)/宮内宮さん",
-    "photoPaddocks": []
+    "photoTitle": "フェブラリーＳ GI (2月12日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "2着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4354",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "2着",
+        "raceDate": "2025/12/07 中京11R ダ1800m",
+        "shotDate": "11月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4207",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "2着",
+        "raceDate": "2024/12/01 中京11R ダ1800m",
+        "shotDate": "11月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3567",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "8着",
+        "raceDate": "2024/02/18 東京11R ダ1600m",
+        "shotDate": "2月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3016",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "2着",
+        "raceDate": "2023/12/03 中京11R ダ1800m",
+        "shotDate": "11月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2870",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "2着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4354",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "2着",
+        "raceDate": "2025/12/07 中京11R ダ1800m",
+        "shotDate": "11月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4207",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "チャンピオンズC",
+          "grade": "GI",
+          "fullRace": "チャンピオンズC GI",
+          "rank": "2着",
+          "raceDate": "2024/12/01 中京11R ダ1800m",
+          "shotDate": "11月21日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3567",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "チャンピオンズＣ",
+          "grade": "GI",
+          "fullRace": "チャンピオンズＣ GI",
+          "rank": "2着",
+          "raceDate": "2023/12/03 中京11R ダ1800m",
+          "shotDate": "11月22日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2870",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 5
+    }
   },
   "アルテヴェローチェ": {
     "name": "アルテヴェローチェ",
@@ -3825,7 +4514,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'サウジアラビアロイヤルC(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104751&no=49608",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4109",
     "pedigree": {
       "sire": "モーリス",
       "dam": "クルミネイト",
@@ -4148,8 +4837,57 @@ export const HORSE_DATABASE = {
         "rival": "(ヒシアマン)"
       }
     ],
-    "photoTitle": "ＮＨＫマイルC(G1)/淳。さん",
-    "photoPaddocks": []
+    "photoTitle": "スワンＳ GII (10月1日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "スワンＳ",
+        "grade": "GII",
+        "fullRace": "スワンＳ GII",
+        "rank": "15着",
+        "raceDate": "2025/10/13 京都11R 芝1400m",
+        "shotDate": "10月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4109",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "13着",
+        "raceDate": "2025/05/11 東京11R 芝1600m",
+        "shotDate": "5月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3864",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "スワンＳ",
+        "grade": "GII",
+        "fullRace": "スワンＳ GII",
+        "rank": "15着",
+        "raceDate": "2025/10/13 京都11R 芝1400m",
+        "shotDate": "10月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4109",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "13着",
+        "raceDate": "2025/05/11 東京11R 芝1600m",
+        "shotDate": "5月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3864",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 2
+    }
   },
   "アーバンシック": {
     "name": "アーバンシック",
@@ -4167,7 +4905,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'菊花賞(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105436&no=106211",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4825",
     "pedigree": {
       "sire": "スワーヴリチャード",
       "dam": "エッジースタイル",
@@ -4490,8 +5228,179 @@ export const HORSE_DATABASE = {
         "rival": "(ヴィクトリアドール)"
       }
     ],
-    "photoTitle": "天皇賞(秋)(G1)/AKNNさん",
-    "photoPaddocks": []
+    "photoTitle": "ジャパンＣ GI (11月19日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4825",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "5着",
+        "raceDate": "2026/08/30 新潟8R 芝2000m",
+        "shotDate": "8月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4664",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "金鯱賞",
+        "grade": "GII",
+        "fullRace": "金鯱賞 GII",
+        "rank": "14着",
+        "raceDate": "2026/03/15 中京11R 芝2000m",
+        "shotDate": "3月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4401",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "5着",
+        "raceDate": "2025/11/02 東京11R 芝2000m",
+        "shotDate": "10月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4140",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "14着",
+        "raceDate": "2025/06/15 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3929",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "6着",
+        "raceDate": "2024/12/22 中山11R 芝2500m",
+        "shotDate": "12月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3600",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "1着",
+        "raceDate": "2024/10/20 京都11R 芝3000m",
+        "shotDate": "10月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3474",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "セントライト記念",
+        "grade": "GII",
+        "fullRace": "セントライト記念 GII",
+        "rank": "1着",
+        "raceDate": "2024/09/16 中山11R 芝2200m",
+        "shotDate": "9月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3403",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "11着",
+        "raceDate": "2024/05/26 東京11R 芝2400m",
+        "shotDate": "5月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3222",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京成杯",
+        "grade": "GIII",
+        "fullRace": "京成杯 GIII",
+        "rank": "2着",
+        "raceDate": "2024/01/14 中山11R 芝2000m",
+        "shotDate": "1月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2932",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4825",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "5着",
+        "raceDate": "2026/08/30 新潟8R 芝2000m",
+        "shotDate": "8月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4664",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "菊花賞",
+          "grade": "GI",
+          "fullRace": "菊花賞 GI",
+          "rank": "1着",
+          "raceDate": "2024/10/20 京都11R 芝3000m",
+          "shotDate": "10月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3474",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "セントライト記念",
+          "grade": "GII",
+          "fullRace": "セントライト記念 GII",
+          "rank": "1着",
+          "raceDate": "2024/09/16 中山11R 芝2200m",
+          "shotDate": "9月5日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3403",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "京成杯",
+          "grade": "GIII",
+          "fullRace": "京成杯 GIII",
+          "rank": "2着",
+          "raceDate": "2024/01/14 中山11R 芝2000m",
+          "shotDate": "1月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2932",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 10
+    }
   },
   "ウエストナウ": {
     "name": "ウエストナウ",
@@ -4509,7 +5418,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'アンドロメダS(L)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021106645&no=102022",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4607",
     "pedigree": {
       "sire": "キズナ",
       "dam": "ファヴォーラ",
@@ -4904,8 +5813,79 @@ export const HORSE_DATABASE = {
         "rival": "(スピードリッチ)"
       }
     ],
-    "photoTitle": "大阪ーハンブルクC(OP)/らるぜとさん",
-    "photoPaddocks": []
+    "photoTitle": "小倉記念 GIII (7月8日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "小倉記念",
+        "grade": "GIII",
+        "fullRace": "小倉記念 GIII",
+        "rank": "8着",
+        "raceDate": "2026/07/19 小倉11R 芝2000m",
+        "shotDate": "7月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4607",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中山金杯",
+        "grade": "GIII",
+        "fullRace": "中山金杯 GIII",
+        "rank": "11着",
+        "raceDate": "2026/01/04 中山11R 芝2000m",
+        "shotDate": "12月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4255",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "11着",
+        "raceDate": "2024/10/20 京都11R 芝3000m",
+        "shotDate": "10月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3470",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "神戸新聞杯",
+        "grade": "GII",
+        "fullRace": "神戸新聞杯 GII",
+        "rank": "11着",
+        "raceDate": "2024/09/22 中京11R 芝2200m",
+        "shotDate": "9月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3418",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "小倉記念",
+        "grade": "GIII",
+        "fullRace": "小倉記念 GIII",
+        "rank": "8着",
+        "raceDate": "2026/07/19 小倉11R 芝2000m",
+        "shotDate": "7月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4607",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "中山金杯",
+        "grade": "GIII",
+        "fullRace": "中山金杯 GIII",
+        "rank": "11着",
+        "raceDate": "2026/01/04 中山11R 芝2000m",
+        "shotDate": "12月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4255",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 4
+    }
   },
   "エコロアルバ": {
     "name": "エコロアルバ",
@@ -4923,7 +5903,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'サウジアラビアロイヤルC(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023103184&no=68282",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4578",
     "pedigree": {
       "sire": "モズアスコット",
       "dam": "スターアクトレス",
@@ -5078,8 +6058,80 @@ export const HORSE_DATABASE = {
         "rival": "(アパレイユ)"
       }
     ],
-    "photoTitle": "富士S(GII)/Mｒ.Ｒさん",
-    "photoPaddocks": []
+    "photoTitle": "しらさぎＳ GIII (6月11日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "しらさぎＳ",
+        "grade": "GIII",
+        "fullRace": "しらさぎＳ GIII",
+        "rank": "3着",
+        "raceDate": "2026/06/21 阪神11R 芝1600m",
+        "shotDate": "6月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4578",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "9着",
+        "raceDate": "2026/05/10 東京11R 芝1600m",
+        "shotDate": "4月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4509",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "朝日杯ＦＳ",
+        "grade": "GI",
+        "fullRace": "朝日杯ＦＳ GI",
+        "rank": "4着",
+        "raceDate": "2025/12/21 阪神11R 芝1600m",
+        "shotDate": "12月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4226",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "しらさぎＳ",
+        "grade": "GIII",
+        "fullRace": "しらさぎＳ GIII",
+        "rank": "3着",
+        "raceDate": "2026/06/21 阪神11R 芝1600m",
+        "shotDate": "6月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4578",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "9着",
+        "raceDate": "2026/05/10 東京11R 芝1600m",
+        "shotDate": "4月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4509",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "朝日杯ＦＳ",
+          "grade": "GI",
+          "fullRace": "朝日杯ＦＳ GI",
+          "rank": "4着",
+          "raceDate": "2025/12/21 阪神11R 芝1600m",
+          "shotDate": "12月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4226",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 3
+    }
   },
   "ウォーターリヒト": {
     "name": "ウォーターリヒト",
@@ -5097,7 +6149,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'東京新聞杯(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021100953&no=110245",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4466",
     "pedigree": {
       "sire": "ドレフォン",
       "dam": "ウォーターピオニー",
@@ -5612,8 +6664,168 @@ export const HORSE_DATABASE = {
         "rival": "オールナット"
       }
     ],
-    "photoTitle": "富士S(GII)/うまぐるいさん",
-    "photoPaddocks": []
+    "photoTitle": "マイラーズＣ GII (4月16日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "マイラーズＣ",
+        "grade": "GII",
+        "fullRace": "マイラーズＣ GII",
+        "rank": "13着",
+        "raceDate": "2026/04/26 京都11R 芝1600m",
+        "shotDate": "4月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4466",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "東京新聞杯",
+        "grade": "GIII",
+        "fullRace": "東京新聞杯 GIII",
+        "rank": "3着",
+        "raceDate": "2026/02/10 東京11R 芝1600m",
+        "shotDate": "1月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4312",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中京記念",
+        "grade": "GIII",
+        "fullRace": "中京記念 GIII",
+        "rank": "7着",
+        "raceDate": "2025/08/17 中京7R 芝1600m",
+        "shotDate": "8月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4020",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "9着",
+        "raceDate": "2025/06/08 東京11R 芝1600m",
+        "shotDate": "5月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3916",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "東京新聞杯",
+        "grade": "GIII",
+        "fullRace": "東京新聞杯 GIII",
+        "rank": "1着",
+        "raceDate": "2025/02/09 東京11R 芝1600m",
+        "shotDate": "1月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3696",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都金杯",
+        "grade": "GIII",
+        "fullRace": "京都金杯 GIII",
+        "rank": "2着",
+        "raceDate": "2025/01/05 中京11R 芝1600m",
+        "shotDate": "12月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3631",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "8着",
+        "raceDate": "2024/05/05 東京11R 芝1600m",
+        "shotDate": "4月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3173",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "スプリングＳ",
+        "grade": "GII",
+        "fullRace": "スプリングＳ GII",
+        "rank": "9着",
+        "raceDate": "2024/03/17 中山11R 芝1800m",
+        "shotDate": "3月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3071",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "きさらぎ賞",
+        "grade": "GIII",
+        "fullRace": "きさらぎ賞 GIII",
+        "rank": "2着",
+        "raceDate": "2024/02/04 京都11R 芝1800m",
+        "shotDate": "1月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2986",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイラーズＣ",
+        "grade": "GII",
+        "fullRace": "マイラーズＣ GII",
+        "rank": "13着",
+        "raceDate": "2026/04/26 京都11R 芝1600m",
+        "shotDate": "4月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4466",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "東京新聞杯",
+        "grade": "GIII",
+        "fullRace": "東京新聞杯 GIII",
+        "rank": "3着",
+        "raceDate": "2026/02/10 東京11R 芝1600m",
+        "shotDate": "1月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4312",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "東京新聞杯",
+          "grade": "GIII",
+          "fullRace": "東京新聞杯 GIII",
+          "rank": "1着",
+          "raceDate": "2025/02/09 東京11R 芝1600m",
+          "shotDate": "1月30日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3696",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "京都金杯",
+          "grade": "GIII",
+          "fullRace": "京都金杯 GIII",
+          "rank": "2着",
+          "raceDate": "2025/01/05 中京11R 芝1600m",
+          "shotDate": "12月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3631",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "きさらぎ賞",
+          "grade": "GIII",
+          "fullRace": "きさらぎ賞 GIII",
+          "rank": "2着",
+          "raceDate": "2024/02/04 京都11R 芝1800m",
+          "shotDate": "1月24日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2986",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 9
+    }
   },
   "エイシンワンド": {
     "name": "エイシンワンド",
@@ -5631,7 +6843,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'小倉2歳S(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022102849&no=56237",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3586",
     "pedigree": {
       "sire": "ディスクリートキャット",
       "dam": "エイシンフェアリー",
@@ -6026,8 +7238,36 @@ export const HORSE_DATABASE = {
         "rival": "(クラスペディア)"
       }
     ],
-    "photoTitle": "京王杯２歳S(G2)/パンナコッタさん",
-    "photoPaddocks": []
+    "photoTitle": "朝日杯ＦＳ GI (12月4日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "朝日杯ＦＳ",
+        "grade": "GI",
+        "fullRace": "朝日杯ＦＳ GI",
+        "rank": "14着",
+        "raceDate": "2024/12/15 京都11R 芝1600m",
+        "shotDate": "12月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3586",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "朝日杯ＦＳ",
+        "grade": "GI",
+        "fullRace": "朝日杯ＦＳ GI",
+        "rank": "14着",
+        "raceDate": "2024/12/15 京都11R 芝1600m",
+        "shotDate": "12月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3586",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "エシカルダイヤモンド": {
     "name": "エシカルダイヤモンド",
@@ -6045,7 +7285,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'BCターフ(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020190008&no=125156",
+    "photoUrl": null,
     "pedigree": {
       "sire": "Awtaad (英)",
       "dam": "Pearl Diamond (独)",
@@ -6368,8 +7608,14 @@ export const HORSE_DATABASE = {
         "rival": ""
       }
     ],
-    "photoTitle": "　/Matreraさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "エコロブルーム": {
     "name": "エコロブルーム",
@@ -6387,7 +7633,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'ニュージーランドT(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105565&no=83291",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4821",
     "pedigree": {
       "sire": "ダイワメジャー",
       "dam": "シュガーショック",
@@ -6590,8 +7836,36 @@ export const HORSE_DATABASE = {
         "rival": "カルツァクライン"
       }
     ],
-    "photoTitle": "谷川岳S(L)/MITAKEさん",
-    "photoPaddocks": []
+    "photoTitle": "マイルＣＳ GI (11月12日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "12着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4821",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "12着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4821",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "エルデナリ": {
     "name": "エルデナリ",
@@ -6609,7 +7883,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'マイルCS(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023190001&no=69668",
+    "photoUrl": null,
     "pedigree": {
       "sire": "カラヴァッジオ",
       "dam": "Erdana (仏)",
@@ -6740,8 +8014,14 @@ export const HORSE_DATABASE = {
         "rival": "()"
       }
     ],
-    "photoTitle": "ムーラン・ド・ロンシ(G1)/べーさん1789さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "エコロヴァルツ": {
     "name": "エコロヴァルツ",
@@ -6759,7 +8039,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'ディセンバーS(L)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021101436&no=101904",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4651",
     "pedigree": {
       "sire": "ブラックタイド",
       "dam": "プティプランセス",
@@ -7178,8 +8458,234 @@ export const HORSE_DATABASE = {
         "rival": "(ルシフェル)"
       }
     ],
-    "photoTitle": "大阪杯(G1)/蔵原さん",
-    "photoPaddocks": []
+    "photoTitle": "札幌記念 GII (8月5日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "札幌記念",
+        "grade": "GII",
+        "fullRace": "札幌記念 GII",
+        "rank": "16着",
+        "raceDate": "2026/08/16 札幌11R 芝2000m",
+        "shotDate": "8月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4651",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "14着",
+        "raceDate": "2026/04/05 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4432",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "3着",
+        "raceDate": "2026/03/01 中山11R 芝1800m",
+        "shotDate": "2月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4364",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中京記念",
+        "grade": "GIII",
+        "fullRace": "中京記念 GIII",
+        "rank": "4着",
+        "raceDate": "2025/08/17 中京7R 芝1600m",
+        "shotDate": "8月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4015",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "7着",
+        "raceDate": "2025/06/08 東京11R 芝1600m",
+        "shotDate": "5月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3915",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "4着",
+        "raceDate": "2025/04/06 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3805",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "2着",
+        "raceDate": "2025/03/02 中山11R 芝1800m",
+        "shotDate": "2月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3727",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "9着",
+        "raceDate": "2024/10/20 京都11R 芝3000m",
+        "shotDate": "10月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3471",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "セントライト記念",
+        "grade": "GII",
+        "fullRace": "セントライト記念 GII",
+        "rank": "3着",
+        "raceDate": "2024/09/16 中山11R 芝2200m",
+        "shotDate": "9月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3399",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "7着",
+        "raceDate": "2024/04/14 中山11R 芝2000m",
+        "shotDate": "4月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3138",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "共同通信杯",
+        "grade": "GIII",
+        "fullRace": "共同通信杯 GIII",
+        "rank": "5着",
+        "raceDate": "2024/02/11 東京11R 芝1800m",
+        "shotDate": "2月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2994",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "朝日杯ＦＳ",
+        "grade": "GI",
+        "fullRace": "朝日杯ＦＳ GI",
+        "rank": "2着",
+        "raceDate": "2023/12/17 阪神11R 芝1600m",
+        "shotDate": "12月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2890",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "札幌記念",
+        "grade": "GII",
+        "fullRace": "札幌記念 GII",
+        "rank": "16着",
+        "raceDate": "2026/08/16 札幌11R 芝2000m",
+        "shotDate": "8月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4651",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "14着",
+        "raceDate": "2026/04/05 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4432",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "中山記念",
+          "grade": "GII",
+          "fullRace": "中山記念 GII",
+          "rank": "3着",
+          "raceDate": "2026/03/01 中山11R 芝1800m",
+          "shotDate": "2月18日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4364",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "中京記念",
+          "grade": "GIII",
+          "fullRace": "中京記念 GIII",
+          "rank": "4着",
+          "raceDate": "2025/08/17 中京7R 芝1600m",
+          "shotDate": "8月6日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4015",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "大阪杯",
+          "grade": "GI",
+          "fullRace": "大阪杯 GI",
+          "rank": "4着",
+          "raceDate": "2025/04/06 阪神11R 芝2000m",
+          "shotDate": "3月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3805",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "中山記念",
+          "grade": "GII",
+          "fullRace": "中山記念 GII",
+          "rank": "2着",
+          "raceDate": "2025/03/02 中山11R 芝1800m",
+          "shotDate": "2月20日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3727",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "セントライト記念",
+          "grade": "GII",
+          "fullRace": "セントライト記念 GII",
+          "rank": "3着",
+          "raceDate": "2024/09/16 中山11R 芝2200m",
+          "shotDate": "9月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3399",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "朝日杯ＦＳ",
+          "grade": "GI",
+          "fullRace": "朝日杯ＦＳ GI",
+          "rank": "2着",
+          "raceDate": "2023/12/17 阪神11R 芝1600m",
+          "shotDate": "12月6日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2890",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 12
+    }
   },
   "エルトンバローズ": {
     "name": "エルトンバローズ",
@@ -7197,7 +8703,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'毎日王冠(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020100680&no=120987",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4779",
     "pedigree": {
       "sire": "ディープブリランテ",
       "dam": "ショウナンカラット",
@@ -7784,8 +9290,289 @@ export const HORSE_DATABASE = {
         "rival": "ドクタードリトル"
       }
     ],
-    "photoTitle": "しらさぎS(G3)/さめさん",
-    "photoPaddocks": []
+    "photoTitle": "天皇賞（秋） GI (10月21日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "16着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4779",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "9着",
+        "raceDate": "2026/10/04 東京11R 芝1800m",
+        "shotDate": "9月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4739",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "関屋記念",
+        "grade": "GIII",
+        "fullRace": "関屋記念 GIII",
+        "rank": "5着",
+        "raceDate": "2026/07/26 新潟7R 芝1600m",
+        "shotDate": "7月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4623",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "しらさぎＳ",
+        "grade": "GIII",
+        "fullRace": "しらさぎＳ GIII",
+        "rank": "1着",
+        "raceDate": "2026/06/21 阪神11R 芝1600m",
+        "shotDate": "6月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4581",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイラーズＣ",
+        "grade": "GII",
+        "fullRace": "マイラーズＣ GII",
+        "rank": "8着",
+        "raceDate": "2026/04/26 京都11R 芝1600m",
+        "shotDate": "4月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4467",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "東京新聞杯",
+        "grade": "GIII",
+        "fullRace": "東京新聞杯 GIII",
+        "rank": "13着",
+        "raceDate": "2026/02/10 東京11R 芝1600m",
+        "shotDate": "1月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4313",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "5着",
+        "raceDate": "2025/11/23 京都11R 芝1600m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4180",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "5着",
+        "raceDate": "2025/10/05 東京11R 芝1800m",
+        "shotDate": "9月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4092",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中京記念",
+        "grade": "GIII",
+        "fullRace": "中京記念 GIII",
+        "rank": "8着",
+        "raceDate": "2025/08/17 中京7R 芝1600m",
+        "shotDate": "8月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4016",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "2着",
+        "raceDate": "2024/11/17 京都11R 芝1600m",
+        "shotDate": "11月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3532",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "3着",
+        "raceDate": "2024/10/06 東京11R 芝1800m",
+        "shotDate": "9月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3453",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中京記念",
+        "grade": "GIII",
+        "fullRace": "中京記念 GIII",
+        "rank": "3着",
+        "raceDate": "2024/07/21 小倉11R 芝1800m",
+        "shotDate": "7月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3313",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "7着",
+        "raceDate": "2024/02/25 中山11R 芝1800m",
+        "shotDate": "2月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3024",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "4着",
+        "raceDate": "2023/11/19 京都11R 芝1600m",
+        "shotDate": "11月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2829",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "1着",
+        "raceDate": "2023/10/08 東京11R 芝1800m",
+        "shotDate": "9月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2765",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ラジオＮＩＫＫＥＩ賞",
+        "grade": "GIII",
+        "fullRace": "ラジオＮＩＫＫＥＩ賞 GIII",
+        "rank": "1着",
+        "raceDate": "2023/07/02 福島11R 芝1800m",
+        "shotDate": "6月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2590",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "16着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4779",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "9着",
+        "raceDate": "2026/10/04 東京11R 芝1800m",
+        "shotDate": "9月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4739",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "しらさぎＳ",
+          "grade": "GIII",
+          "fullRace": "しらさぎＳ GIII",
+          "rank": "1着",
+          "raceDate": "2026/06/21 阪神11R 芝1600m",
+          "shotDate": "6月11日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4581",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "マイルＣＳ",
+          "grade": "GI",
+          "fullRace": "マイルＣＳ GI",
+          "rank": "2着",
+          "raceDate": "2024/11/17 京都11R 芝1600m",
+          "shotDate": "11月7日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3532",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "毎日王冠",
+          "grade": "GII",
+          "fullRace": "毎日王冠 GII",
+          "rank": "3着",
+          "raceDate": "2024/10/06 東京11R 芝1800m",
+          "shotDate": "9月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3453",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "中京記念",
+          "grade": "GIII",
+          "fullRace": "中京記念 GIII",
+          "rank": "3着",
+          "raceDate": "2024/07/21 小倉11R 芝1800m",
+          "shotDate": "7月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3313",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "マイルＣＳ",
+          "grade": "GI",
+          "fullRace": "マイルＣＳ GI",
+          "rank": "4着",
+          "raceDate": "2023/11/19 京都11R 芝1600m",
+          "shotDate": "11月9日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2829",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "毎日王冠",
+          "grade": "GII",
+          "fullRace": "毎日王冠 GII",
+          "rank": "1着",
+          "raceDate": "2023/10/08 東京11R 芝1800m",
+          "shotDate": "9月28日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2765",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ラジオＮＩＫＫＥＩ賞",
+          "grade": "GIII",
+          "fullRace": "ラジオＮＩＫＫＥＩ賞 GIII",
+          "rank": "1着",
+          "raceDate": "2023/07/02 福島11R 芝1800m",
+          "shotDate": "6月21日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2590",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 16
+    }
   },
   "オンブズマン": {
     "name": "オンブズマン",
@@ -7803,7 +9590,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'プリンスオブウェールズS(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021190002&no=111148",
+    "photoUrl": null,
     "pedigree": {
       "sire": "Night of Thunder (愛)",
       "dam": "Syndicate (英)",
@@ -8102,8 +9889,14 @@ export const HORSE_DATABASE = {
         "rival": "()"
       }
     ],
-    "photoTitle": "英チャンピオンS(G1)/赤茶坊主さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "エキサイトバイオ": {
     "name": "エキサイトバイオ",
@@ -8121,7 +9914,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'ラジオNIKKEI賞(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104614&no=74201",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4138",
     "pedigree": {
       "sire": "レイデオロ",
       "dam": "アニメイトバイオ",
@@ -8324,8 +10117,36 @@ export const HORSE_DATABASE = {
         "rival": "ナグルファル"
       }
     ],
-    "photoTitle": "有馬記念(G1)/つんさん",
-    "photoPaddocks": []
+    "photoTitle": "菊花賞 GI (10月15日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "3着",
+        "raceDate": "2025/10/26 京都11R 芝3000m",
+        "shotDate": "10月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4138",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "3着",
+        "raceDate": "2025/10/26 京都11R 芝3000m",
+        "shotDate": "10月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4138",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "エンブロイダリー": {
     "name": "エンブロイダリー",
@@ -8343,7 +10164,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'ヴィクトリアマイル(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105185&no=84760",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4814",
     "pedigree": {
       "sire": "アドマイヤマーズ",
       "dam": "ロッテンマイヤー",
@@ -8618,16 +10439,124 @@ export const HORSE_DATABASE = {
         "rival": "ミリオンローズ"
       }
     ],
-    "photoTitle": "ヴィクトリアマイル(G1)/旅っ程さん",
+    "photoTitle": "マイルＣＳ GI (11月11日撮影)",
     "photoPaddocks": [
       {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "2着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4814",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "1着",
+        "raceDate": "2026/05/17 東京11R 芝1600m",
+        "shotDate": "5月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4517",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "1着",
+        "raceDate": "2025/10/19 京都11R 芝2000m",
+        "shotDate": "10月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4118",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "9着",
+        "raceDate": "2025/05/25 東京11R 芝2400m",
+        "shotDate": "5月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3888",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "桜花賞",
+        "grade": "GI",
+        "fullRace": "桜花賞 GI",
+        "rank": "1着",
+        "raceDate": "2025/04/13 阪神11R 芝1600m",
+        "shotDate": "4月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3809",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
         "race": "マイルCS",
-        "slug": "mcs",
-        "date": "11月12日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img02.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "マイルCS GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img02.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "2着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4814",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "1着",
+        "raceDate": "2026/05/17 東京11R 芝1600m",
+        "shotDate": "5月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4517",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "秋華賞",
+          "grade": "GI",
+          "fullRace": "秋華賞 GI",
+          "rank": "1着",
+          "raceDate": "2025/10/19 京都11R 芝2000m",
+          "shotDate": "10月8日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4118",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "桜花賞",
+          "grade": "GI",
+          "fullRace": "桜花賞 GI",
+          "rank": "1着",
+          "raceDate": "2025/04/13 阪神11R 芝1600m",
+          "shotDate": "4月2日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3809",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 6
+    }
   },
   "オーギュストロダン": {
     "name": "オーギュストロダン",
@@ -8645,7 +10574,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'フューチュリティT(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020190003&no=113014",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ディープインパクト",
       "dam": "ロードデンドロン",
@@ -9016,8 +10945,14 @@ export const HORSE_DATABASE = {
         "rival": ""
       }
     ],
-    "photoTitle": "2024.11.24 東京競馬場 引退式/旅っ程さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "オフトレイル": {
     "name": "オフトレイル",
@@ -9035,7 +10970,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'MBS賞スワンS(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021110031&no=106022",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4816",
     "pedigree": {
       "sire": "Farhh (英)",
       "dam": "ローズトレイル",
@@ -9526,8 +11461,146 @@ export const HORSE_DATABASE = {
         "rival": "ブルーアイドガール"
       }
     ],
-    "photoTitle": "安田記念(G1)/上がり３F１８０さん",
-    "photoPaddocks": []
+    "photoTitle": "マイルＣＳ GI (11月12日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "4着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4816",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "スワンＳ",
+        "grade": "GII",
+        "fullRace": "スワンＳ GII",
+        "rank": "3着",
+        "raceDate": "2026/10/12 京都11R 芝1400m",
+        "shotDate": "10月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4750",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "6着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4548",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイラーズＣ",
+        "grade": "GII",
+        "fullRace": "マイラーズＣ GII",
+        "rank": "5着",
+        "raceDate": "2026/04/26 京都11R 芝1600m",
+        "shotDate": "4月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4468",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "東京新聞杯",
+        "grade": "GIII",
+        "fullRace": "東京新聞杯 GIII",
+        "rank": "10着",
+        "raceDate": "2026/02/10 東京11R 芝1600m",
+        "shotDate": "1月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4314",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "4着",
+        "raceDate": "2025/11/23 京都11R 芝1600m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4179",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "高松宮記念",
+        "grade": "GI",
+        "fullRace": "高松宮記念 GI",
+        "rank": "14着",
+        "raceDate": "2025/03/30 中京11R 芝1200m",
+        "shotDate": "3月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3779",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "東京新聞杯",
+        "grade": "GIII",
+        "fullRace": "東京新聞杯 GIII",
+        "rank": "8着",
+        "raceDate": "2025/02/09 東京11R 芝1600m",
+        "shotDate": "1月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3697",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "12着",
+        "raceDate": "2024/10/06 東京11R 芝1800m",
+        "shotDate": "9月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3452",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "4着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4816",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "スワンＳ",
+        "grade": "GII",
+        "fullRace": "スワンＳ GII",
+        "rank": "3着",
+        "raceDate": "2026/10/12 京都11R 芝1400m",
+        "shotDate": "10月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4750",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "マイルＣＳ",
+          "grade": "GI",
+          "fullRace": "マイルＣＳ GI",
+          "rank": "4着",
+          "raceDate": "2025/11/23 京都11R 芝1600m",
+          "shotDate": "11月13日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4179",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 9
+    }
   },
   "カナデルペガサス": {
     "name": "カナデルペガサス",
@@ -9545,7 +11618,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳新馬"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024101108&no=9166",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ステルヴィオ",
       "dam": "ビクトリアペガサス",
@@ -9604,8 +11677,14 @@ export const HORSE_DATABASE = {
         "rival": "(ディーヴァソラーレ)"
       }
     ],
-    "photoTitle": "2歳新馬/こぐまさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "カムニャック": {
     "name": "カムニャック",
@@ -9623,7 +11702,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'優駿牝馬(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105402&no=92741",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4808",
     "pedigree": {
       "sire": "ブラックタイド",
       "dam": "ダンスアミーガ",
@@ -9874,16 +11953,135 @@ export const HORSE_DATABASE = {
         "rival": "(ルージュシークエル)"
       }
     ],
-    "photoTitle": "アイルランドT(GII)/Maverickさん",
+    "photoTitle": "エリザベス女王杯 GI (11月4日撮影)",
     "photoPaddocks": [
       {
         "race": "エリザベス女王杯",
-        "slug": "elizabeth",
-        "date": "11月4日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img01.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "2着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4808",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "1着",
+        "raceDate": "2026/10/11 東京11R 芝1800m",
+        "shotDate": "10月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4744",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "2着",
+        "raceDate": "2026/05/17 東京11R 芝1600m",
+        "shotDate": "5月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4523",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "16着",
+        "raceDate": "2025/10/19 京都11R 芝2000m",
+        "shotDate": "10月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4124",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ローズＳ",
+        "grade": "GII",
+        "fullRace": "ローズＳ GII",
+        "rank": "1着",
+        "raceDate": "2025/09/14 阪神11R 芝1800m",
+        "shotDate": "9月3日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4054",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "1着",
+        "raceDate": "2025/05/25 東京11R 芝2400m",
+        "shotDate": "5月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3893",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "2着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4808",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "1着",
+        "raceDate": "2026/10/11 東京11R 芝1800m",
+        "shotDate": "10月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4744",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "ヴィクトリアマイル",
+          "grade": "GI",
+          "fullRace": "ヴィクトリアマイル GI",
+          "rank": "2着",
+          "raceDate": "2026/05/17 東京11R 芝1600m",
+          "shotDate": "5月7日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4523",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ローズＳ",
+          "grade": "GII",
+          "fullRace": "ローズＳ GII",
+          "rank": "1着",
+          "raceDate": "2025/09/14 阪神11R 芝1800m",
+          "shotDate": "9月3日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4054",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "オークス",
+          "grade": "GI",
+          "fullRace": "オークス GI",
+          "rank": "1着",
+          "raceDate": "2025/05/25 東京11R 芝2400m",
+          "shotDate": "5月16日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3893",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 6
+    }
   },
   "カランダガン": {
     "name": "カランダガン",
@@ -9901,7 +12099,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'ジャパンC(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021190001&no=98060",
+    "photoUrl": null,
     "pedigree": {
       "sire": "Gleneagles (愛)",
       "dam": "Calayana (仏)",
@@ -10344,8 +12542,14 @@ export const HORSE_DATABASE = {
         "rival": ""
       }
     ],
-    "photoTitle": "ジャパンC(G1)/むーさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "カレンラップスター": {
     "name": "カレンラップスター",
@@ -10363,7 +12567,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'英彦山特別()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104723&no=48438",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ルーラーシップ",
       "dam": "カレンオプシス",
@@ -10758,8 +12962,14 @@ export const HORSE_DATABASE = {
         "rival": "(サンライズグラシア)"
       }
     ],
-    "photoTitle": "プリンシパルＳ(L)/淳。さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "カズタンジャー": {
     "name": "カズタンジャー",
@@ -10777,7 +12987,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'マーキュリーC(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021101259&no=83154",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ドレフォン",
       "dam": "ダウンタウンブギ",
@@ -11436,8 +13646,14 @@ export const HORSE_DATABASE = {
         "rival": "インビジブルセルフ"
       }
     ],
-    "photoTitle": "日吉特別(２勝クラス)/淳。さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "キングズパレス": {
     "name": "キングズパレス",
@@ -11455,7 +13671,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'美浦S()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019104828&no=47331",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3490",
     "pedigree": {
       "sire": "キングカメハメハ",
       "dam": "ドバウィハイツ",
@@ -12114,8 +14330,80 @@ export const HORSE_DATABASE = {
         "rival": "イクイノックス"
       }
     ],
-    "photoTitle": "３歳未勝利/ルカさん",
-    "photoPaddocks": []
+    "photoTitle": "天皇賞（秋） GI (10月17日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "12着",
+        "raceDate": "2024/10/27 東京11R 芝2000m",
+        "shotDate": "10月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3490",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "3着",
+        "raceDate": "2024/09/01 新潟11R 芝2000m",
+        "shotDate": "8月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3382",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "七夕賞",
+        "grade": "GIII",
+        "fullRace": "七夕賞 GIII",
+        "rank": "2着",
+        "raceDate": "2024/07/07 福島11R 芝2000m",
+        "shotDate": "6月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3295",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "12着",
+        "raceDate": "2024/10/27 東京11R 芝2000m",
+        "shotDate": "10月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3490",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "3着",
+        "raceDate": "2024/09/01 新潟11R 芝2000m",
+        "shotDate": "8月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3382",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "七夕賞",
+          "grade": "GIII",
+          "fullRace": "七夕賞 GIII",
+          "rank": "2着",
+          "raceDate": "2024/07/07 福島11R 芝2000m",
+          "shotDate": "6月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3295",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 3
+    }
   },
   "ガイアフォース": {
     "name": "ガイアフォース",
@@ -12133,7 +14421,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'富士S(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019104476&no=129976",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4815",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "ナターレ",
@@ -12672,16 +14960,289 @@ export const HORSE_DATABASE = {
         "rival": "ドウデュース"
       }
     ],
-    "photoTitle": "富士S(G2)/むーさん",
+    "photoTitle": "マイルＣＳ GI (11月11日撮影)",
     "photoPaddocks": [
       {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "6着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4815",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "2着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4549",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "2着",
+        "raceDate": "2025/11/23 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4178",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "2着",
+        "raceDate": "2025/06/08 東京11R 芝1600m",
+        "shotDate": "5月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3914",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "7着",
+        "raceDate": "2025/02/23 東京11R ダ1600m",
+        "shotDate": "2月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3718",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "15着",
+        "raceDate": "2024/12/01 中京11R ダ1800m",
+        "shotDate": "11月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3562",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "4着",
+        "raceDate": "2024/06/02 東京11R 芝1600m",
+        "shotDate": "5月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3239",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "2着",
+        "raceDate": "2024/02/18 東京11R ダ1600m",
+        "shotDate": "2月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3009",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "5着",
+        "raceDate": "2023/10/29 東京11R 芝2000m",
+        "shotDate": "10月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2797",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "5着",
+        "raceDate": "2023/09/24 中山11R 芝2200m",
+        "shotDate": "9月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2726",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "4着",
+        "raceDate": "2023/06/04 東京11R 芝1600m",
+        "shotDate": "5月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2538",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "読売マイラーズC",
+        "grade": "GII",
+        "fullRace": "読売マイラーズC GII",
+        "rank": "2着",
+        "raceDate": "2023/04/23 京都11R 芝1600m",
+        "shotDate": "4月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2453",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "アメリカジョッキーＣ",
+        "grade": "GII",
+        "fullRace": "アメリカジョッキーＣ GII",
+        "rank": "5着",
+        "raceDate": "2023/01/22 中山11R 芝2200m",
+        "shotDate": "1月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2295",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "8着",
+        "raceDate": "2022/10/23 阪神11R 芝3000m",
+        "shotDate": "10月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2144",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "セントライト記念",
+        "grade": "GII",
+        "fullRace": "セントライト記念 GII",
+        "rank": "1着",
+        "raceDate": "2022/09/19 中山11R 芝2200m",
+        "shotDate": "9月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2082",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
         "race": "マイルCS",
-        "slug": "mcs",
-        "date": "11月11日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img06.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "マイルCS GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月11日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img06.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "6着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4815",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "2着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4549",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "マイルＣＳ",
+          "grade": "GI",
+          "fullRace": "マイルＣＳ GI",
+          "rank": "2着",
+          "raceDate": "2025/11/23 京都11R 芝1600m",
+          "shotDate": "11月12日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4178",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "安田記念",
+          "grade": "GI",
+          "fullRace": "安田記念 GI",
+          "rank": "2着",
+          "raceDate": "2025/06/08 東京11R 芝1600m",
+          "shotDate": "5月28日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3914",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "安田記念",
+          "grade": "GI",
+          "fullRace": "安田記念 GI",
+          "rank": "4着",
+          "raceDate": "2024/06/02 東京11R 芝1600m",
+          "shotDate": "5月22日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3239",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "フェブラリーＳ",
+          "grade": "GI",
+          "fullRace": "フェブラリーＳ GI",
+          "rank": "2着",
+          "raceDate": "2024/02/18 東京11R ダ1600m",
+          "shotDate": "2月8日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3009",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "安田記念",
+          "grade": "GI",
+          "fullRace": "安田記念 GI",
+          "rank": "4着",
+          "raceDate": "2023/06/04 東京11R 芝1600m",
+          "shotDate": "5月25日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2538",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "読売マイラーズC",
+          "grade": "GII",
+          "fullRace": "読売マイラーズC GII",
+          "rank": "2着",
+          "raceDate": "2023/04/23 京都11R 芝1600m",
+          "shotDate": "4月12日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2453",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "セントライト記念",
+          "grade": "GII",
+          "fullRace": "セントライト記念 GII",
+          "rank": "1着",
+          "raceDate": "2022/09/19 中山11R 芝2200m",
+          "shotDate": "9月7日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2082",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 16
+    }
   },
   "クイーンズウォーク": {
     "name": "クイーンズウォーク",
@@ -12699,7 +15260,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'金鯱賞(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105414&no=109835",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4809",
     "pedigree": {
       "sire": "キズナ",
       "dam": "ウェイヴェルアベニュー",
@@ -13070,16 +15631,234 @@ export const HORSE_DATABASE = {
         "rival": "オスカーブレーヴ"
       }
     ],
-    "photoTitle": "アイルランドT(GII)/コーンメガネさん",
+    "photoTitle": "エリザベス女王杯 GI (11月4日撮影)",
     "photoPaddocks": [
       {
         "race": "エリザベス女王杯",
-        "slug": "elizabeth",
-        "date": "11月4日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img04.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "8着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4809",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "8着",
+        "raceDate": "2026/10/11 東京11R 芝1800m",
+        "shotDate": "9月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4745",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "3着",
+        "raceDate": "2026/05/17 東京11R 芝1600m",
+        "shotDate": "5月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4522",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "金鯱賞",
+        "grade": "GII",
+        "fullRace": "金鯱賞 GII",
+        "rank": "3着",
+        "raceDate": "2026/03/15 中京11R 芝2000m",
+        "shotDate": "3月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4396",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "9着",
+        "raceDate": "2025/11/02 東京11R 芝2000m",
+        "shotDate": "10月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4150",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "除",
+        "raceDate": "2025/08/31 新潟11R 芝2000m",
+        "shotDate": "8月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4028",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "2着",
+        "raceDate": "2025/05/18 東京11R 芝1600m",
+        "shotDate": "5月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3878",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "金鯱賞",
+        "grade": "GII",
+        "fullRace": "金鯱賞 GII",
+        "rank": "1着",
+        "raceDate": "2025/03/16 中京11R 芝2000m",
+        "shotDate": "3月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3755",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "15着",
+        "raceDate": "2024/10/13 京都11R 芝2000m",
+        "shotDate": "10月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3463",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ローズＳ",
+        "grade": "GII",
+        "fullRace": "ローズＳ GII",
+        "rank": "1着",
+        "raceDate": "2024/09/15 中京11R 芝2000m",
+        "shotDate": "9月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3408",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "4着",
+        "raceDate": "2024/05/19 東京11R 芝2400m",
+        "shotDate": "5月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3221",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "桜花賞",
+        "grade": "GI",
+        "fullRace": "桜花賞 GI",
+        "rank": "8着",
+        "raceDate": "2024/04/07 阪神11R 芝1600m",
+        "shotDate": "3月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3129",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "8着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4809",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "8着",
+        "raceDate": "2026/10/11 東京11R 芝1800m",
+        "shotDate": "9月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4745",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "ヴィクトリアマイル",
+          "grade": "GI",
+          "fullRace": "ヴィクトリアマイル GI",
+          "rank": "3着",
+          "raceDate": "2026/05/17 東京11R 芝1600m",
+          "shotDate": "5月6日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4522",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "金鯱賞",
+          "grade": "GII",
+          "fullRace": "金鯱賞 GII",
+          "rank": "3着",
+          "raceDate": "2026/03/15 中京11R 芝2000m",
+          "shotDate": "3月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4396",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ヴィクトリアマイル",
+          "grade": "GI",
+          "fullRace": "ヴィクトリアマイル GI",
+          "rank": "2着",
+          "raceDate": "2025/05/18 東京11R 芝1600m",
+          "shotDate": "5月7日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3878",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "金鯱賞",
+          "grade": "GII",
+          "fullRace": "金鯱賞 GII",
+          "rank": "1着",
+          "raceDate": "2025/03/16 中京11R 芝2000m",
+          "shotDate": "3月5日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3755",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ローズＳ",
+          "grade": "GII",
+          "fullRace": "ローズＳ GII",
+          "rank": "1着",
+          "raceDate": "2024/09/15 中京11R 芝2000m",
+          "shotDate": "9月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3408",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "オークス",
+          "grade": "GI",
+          "fullRace": "オークス GI",
+          "rank": "4着",
+          "raceDate": "2024/05/19 東京11R 芝2400m",
+          "shotDate": "5月8日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3221",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 12
+    }
   },
   "エストゥペンダ": {
     "name": "エストゥペンダ",
@@ -13097,7 +15876,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'関越S()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022101192&no=83433",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4577",
     "pedigree": {
       "sire": "サートゥルナーリア",
       "dam": "エストレチャダ",
@@ -13444,8 +16223,80 @@ export const HORSE_DATABASE = {
         "rival": "ミリオンローズ"
       }
     ],
-    "photoTitle": "弥彦S(3勝クラス)/MITAKEさん",
-    "photoPaddocks": []
+    "photoTitle": "府中牝馬Ｓ GIII (6月10日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "府中牝馬Ｓ",
+        "grade": "GIII",
+        "fullRace": "府中牝馬Ｓ GIII",
+        "rank": "8着",
+        "raceDate": "2026/06/21 東京11R 芝1800m",
+        "shotDate": "6月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4577",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "紫苑Ｓ",
+        "grade": "GII",
+        "fullRace": "紫苑Ｓ GII",
+        "rank": "5着",
+        "raceDate": "2025/09/07 中山11R 芝2000m",
+        "shotDate": "8月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4042",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フローラＳ",
+        "grade": "GII",
+        "fullRace": "フローラＳ GII",
+        "rank": "4着",
+        "raceDate": "2025/04/27 東京11R 芝2000m",
+        "shotDate": "4月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3833",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "府中牝馬Ｓ",
+        "grade": "GIII",
+        "fullRace": "府中牝馬Ｓ GIII",
+        "rank": "8着",
+        "raceDate": "2026/06/21 東京11R 芝1800m",
+        "shotDate": "6月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4577",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "紫苑Ｓ",
+        "grade": "GII",
+        "fullRace": "紫苑Ｓ GII",
+        "rank": "5着",
+        "raceDate": "2025/09/07 中山11R 芝2000m",
+        "shotDate": "8月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4042",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "フローラＳ",
+          "grade": "GII",
+          "fullRace": "フローラＳ GII",
+          "rank": "4着",
+          "raceDate": "2025/04/27 東京11R 芝2000m",
+          "shotDate": "4月16日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3833",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 3
+    }
   },
   "カラテ": {
     "name": "カラテ",
@@ -13463,7 +16314,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'新潟記念(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2016106606&no=67556",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3798",
     "pedigree": {
       "sire": "トゥザグローリー",
       "dam": "レディーノパンチ",
@@ -14626,8 +17477,256 @@ export const HORSE_DATABASE = {
         "rival": "ホウオウサーベル"
       }
     ],
-    "photoTitle": "ニューイヤ－S/ルカさん",
-    "photoPaddocks": []
+    "photoTitle": "大阪杯 GI (3月26日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "12着",
+        "raceDate": "2025/04/06 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3798",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "13着",
+        "raceDate": "2024/11/24 東京12R 芝2400m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3557",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "15着",
+        "raceDate": "2024/02/18 東京11R ダ1600m",
+        "shotDate": "2月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3014",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＡＪＣＣ",
+        "grade": "GII",
+        "fullRace": "ＡＪＣＣ GII",
+        "rank": "10着",
+        "raceDate": "2024/01/21 中山11R 芝2200m",
+        "shotDate": "1月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2938",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "16着",
+        "raceDate": "2023/06/25 阪神11R 芝2200m",
+        "shotDate": "6月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2583",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "8着",
+        "raceDate": "2022/11/27 東京12R 芝2400m",
+        "shotDate": "11月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2201",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "6着",
+        "raceDate": "2022/10/30 東京11R 芝2000m",
+        "shotDate": "10月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2155",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "1着",
+        "raceDate": "2022/09/04 新潟11R 芝2000m",
+        "shotDate": "8月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2059",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "16着",
+        "raceDate": "2022/06/05 東京11R 芝1600m",
+        "shotDate": "5月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1934",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "読売マイラーズC",
+        "grade": "GII",
+        "fullRace": "読売マイラーズC GII",
+        "rank": "7着",
+        "raceDate": "2022/04/24 阪神11R 芝1600m",
+        "shotDate": "4月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1873",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "2着",
+        "raceDate": "2022/02/27 中山11R 芝1800m",
+        "shotDate": "2月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1740",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "東京新聞杯",
+        "grade": "GIII",
+        "fullRace": "東京新聞杯 GIII",
+        "rank": "3着",
+        "raceDate": "2022/02/06 東京11R 芝1600m",
+        "shotDate": "1月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1692",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京成杯オータムH",
+        "grade": "GIII",
+        "fullRace": "京成杯オータムH GIII",
+        "rank": "5着",
+        "raceDate": "2021/09/12 中山11R 芝1600m",
+        "shotDate": "",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1428",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "関屋記念",
+        "grade": "GIII",
+        "fullRace": "関屋記念 GIII",
+        "rank": "2着",
+        "raceDate": "2021/08/15 新潟11R 芝1600m",
+        "shotDate": "8月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1389",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "東京新聞杯",
+        "grade": "GIII",
+        "fullRace": "東京新聞杯 GIII",
+        "rank": "1着",
+        "raceDate": "2021/02/07 東京11R 芝1600m",
+        "shotDate": "1月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1077",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "12着",
+        "raceDate": "2025/04/06 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3798",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "13着",
+        "raceDate": "2024/11/24 東京12R 芝2400m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3557",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "新潟記念",
+          "grade": "GIII",
+          "fullRace": "新潟記念 GIII",
+          "rank": "1着",
+          "raceDate": "2022/09/04 新潟11R 芝2000m",
+          "shotDate": "8月24日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2059",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "中山記念",
+          "grade": "GII",
+          "fullRace": "中山記念 GII",
+          "rank": "2着",
+          "raceDate": "2022/02/27 中山11R 芝1800m",
+          "shotDate": "2月16日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1740",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "東京新聞杯",
+          "grade": "GIII",
+          "fullRace": "東京新聞杯 GIII",
+          "rank": "3着",
+          "raceDate": "2022/02/06 東京11R 芝1600m",
+          "shotDate": "1月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1692",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "関屋記念",
+          "grade": "GIII",
+          "fullRace": "関屋記念 GIII",
+          "rank": "2着",
+          "raceDate": "2021/08/15 新潟11R 芝1600m",
+          "shotDate": "8月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1389",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "東京新聞杯",
+          "grade": "GIII",
+          "fullRace": "東京新聞杯 GIII",
+          "rank": "1着",
+          "raceDate": "2021/02/07 東京11R 芝1600m",
+          "shotDate": "1月27日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1077",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 15
+    }
   },
   "クリスマスパレード": {
     "name": "クリスマスパレード",
@@ -14645,7 +17744,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'紫苑S(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105799&no=101410",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3877",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "ミスエリカ",
@@ -14968,8 +18067,113 @@ export const HORSE_DATABASE = {
         "rival": "(パシフィックハイツ)"
       }
     ],
-    "photoTitle": "日経賞(G2)/カイチョーさん",
-    "photoPaddocks": []
+    "photoTitle": "ヴィクトリアマイル GI (5月8日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "9着",
+        "raceDate": "2025/05/18 東京11R 芝1600m",
+        "shotDate": "5月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3877",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中山金杯",
+        "grade": "GIII",
+        "fullRace": "中山金杯 GIII",
+        "rank": "4着",
+        "raceDate": "2025/01/05 中山11R 芝2000m",
+        "shotDate": "12月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3623",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "5着",
+        "raceDate": "2024/10/13 京都11R 芝2000m",
+        "shotDate": "10月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3458",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "紫苑S",
+        "grade": "GII",
+        "fullRace": "紫苑S GII",
+        "rank": "1着",
+        "raceDate": "2024/09/07 中山11R 芝2000m",
+        "shotDate": "8月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3384",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フローラＳ",
+        "grade": "GII",
+        "fullRace": "フローラＳ GII",
+        "rank": "4着",
+        "raceDate": "2024/04/21 東京11R 芝2000m",
+        "shotDate": "4月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3154",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "9着",
+        "raceDate": "2025/05/18 東京11R 芝1600m",
+        "shotDate": "5月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3877",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "中山金杯",
+        "grade": "GIII",
+        "fullRace": "中山金杯 GIII",
+        "rank": "4着",
+        "raceDate": "2025/01/05 中山11R 芝2000m",
+        "shotDate": "12月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3623",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "紫苑S",
+          "grade": "GII",
+          "fullRace": "紫苑S GII",
+          "rank": "1着",
+          "raceDate": "2024/09/07 中山11R 芝2000m",
+          "shotDate": "8月28日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3384",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "フローラＳ",
+          "grade": "GII",
+          "fullRace": "フローラＳ GII",
+          "rank": "4着",
+          "raceDate": "2024/04/21 東京11R 芝2000m",
+          "shotDate": "4月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3154",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 5
+    }
   },
   "クロワデュノール": {
     "name": "クロワデュノール",
@@ -14987,7 +18191,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'日本ダービー(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105102&no=90853",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4823",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "ライジングクロス",
@@ -15262,23 +18466,223 @@ export const HORSE_DATABASE = {
         "rival": "(アルレッキーノ)"
       }
     ],
-    "photoTitle": "宝塚記念(GI)/まやさん",
+    "photoTitle": "ジャパンＣ GI (11月18日撮影)",
     "photoPaddocks": [
       {
-        "race": "ジャパンカップ",
-        "slug": "jc",
-        "date": "11月18日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img05.jpg",
-        "source": "JRA-VAN"
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4823",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
       },
       {
         "race": "天皇賞（秋）",
-        "slug": "akiten",
-        "date": "10月22日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img02.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "5着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4776",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "2着",
+        "raceDate": "2026/06/14 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4570",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "1着",
+        "raceDate": "2026/05/03 京都11R 芝3200m",
+        "shotDate": "4月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4492",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "1着",
+        "raceDate": "2026/04/05 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4442",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "4着",
+        "raceDate": "2025/11/30 東京12R 芝2400m",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4187",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "1着",
+        "raceDate": "2025/06/01 東京11R 芝2400m",
+        "shotDate": "5月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3901",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "2着",
+        "raceDate": "2025/04/20 中山11R 芝2000m",
+        "shotDate": "4月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3819",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ホープフルS",
+        "grade": "GI",
+        "fullRace": "ホープフルS GI",
+        "rank": "1着",
+        "raceDate": "2024/12/28 中山11R 芝2000m",
+        "shotDate": "12月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3615",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンカップ",
+        "grade": "GI",
+        "fullRace": "ジャパンカップ GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img05.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4823",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "5着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4776",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "宝塚記念",
+          "grade": "GI",
+          "fullRace": "宝塚記念 GI",
+          "rank": "2着",
+          "raceDate": "2026/06/14 阪神11R 芝2200m",
+          "shotDate": "6月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4570",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "天皇賞（春）",
+          "grade": "GI",
+          "fullRace": "天皇賞（春） GI",
+          "rank": "1着",
+          "raceDate": "2026/05/03 京都11R 芝3200m",
+          "shotDate": "4月22日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4492",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "大阪杯",
+          "grade": "GI",
+          "fullRace": "大阪杯 GI",
+          "rank": "1着",
+          "raceDate": "2026/04/05 阪神11R 芝2000m",
+          "shotDate": "3月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4442",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ジャパンＣ",
+          "grade": "GI",
+          "fullRace": "ジャパンＣ GI",
+          "rank": "4着",
+          "raceDate": "2025/11/30 東京12R 芝2400m",
+          "shotDate": "11月19日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4187",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "日本ダービー",
+          "grade": "GI",
+          "fullRace": "日本ダービー GI",
+          "rank": "1着",
+          "raceDate": "2025/06/01 東京11R 芝2400m",
+          "shotDate": "5月21日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3901",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "皐月賞",
+          "grade": "GI",
+          "fullRace": "皐月賞 GI",
+          "rank": "2着",
+          "raceDate": "2025/04/20 中山11R 芝2000m",
+          "shotDate": "4月9日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3819",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ホープフルS",
+          "grade": "GI",
+          "fullRace": "ホープフルS GI",
+          "rank": "1着",
+          "raceDate": "2024/12/28 中山11R 芝2000m",
+          "shotDate": "12月20日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3615",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 10
+    }
   },
   "ケリフレッドアスク": {
     "name": "ケリフレッドアスク",
@@ -15296,7 +18700,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'紫苑S(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022102296&no=84360",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "ディープインアスク",
@@ -15739,8 +19143,14 @@ export const HORSE_DATABASE = {
         "rival": "ダンツエラン"
       }
     ],
-    "photoTitle": "ヴィクトリアマイル(G1)/通りすがりの人さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "グロリアムンディ": {
     "name": "グロリアムンディ",
@@ -15758,7 +19168,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'ダイオライト記念(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018105251&no=41147",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3301",
     "pedigree": {
       "sire": "キングカメハメハ",
       "dam": "ベットーレ",
@@ -16537,8 +19947,68 @@ export const HORSE_DATABASE = {
         "rival": "(ダノンハイファイブ)"
       }
     ],
-    "photoTitle": "香取特別(2勝)/さん",
-    "photoPaddocks": []
+    "photoTitle": "プロキオンＳ GIII (6月26日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "プロキオンＳ",
+        "grade": "GIII",
+        "fullRace": "プロキオンＳ GIII",
+        "rank": "12着",
+        "raceDate": "2024/07/07 小倉11R ダ1700m",
+        "shotDate": "6月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3301",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "13着",
+        "raceDate": "2023/12/03 中京11R ダ1800m",
+        "shotDate": "11月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2868",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "12着",
+        "raceDate": "2022/12/04 中京11R ダ1800m",
+        "shotDate": "11月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2214",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "プロキオンＳ",
+        "grade": "GIII",
+        "fullRace": "プロキオンＳ GIII",
+        "rank": "12着",
+        "raceDate": "2024/07/07 小倉11R ダ1700m",
+        "shotDate": "6月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3301",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "13着",
+        "raceDate": "2023/12/03 中京11R ダ1800m",
+        "shotDate": "11月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2868",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 3
+    }
   },
   "コガネノソラ": {
     "name": "コガネノソラ",
@@ -16556,7 +20026,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'福島牝馬S(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021106823&no=106430",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4806",
     "pedigree": {
       "sire": "ゴールドシップ",
       "dam": "マイネヒメル",
@@ -16927,8 +20397,90 @@ export const HORSE_DATABASE = {
         "rival": "ファーヴェント"
       }
     ],
-    "photoTitle": "府中牝馬S(G3)/春木さん",
-    "photoPaddocks": []
+    "photoTitle": "エリザベス女王杯 GI (11月4日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "13着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4806",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "クイーンＳ",
+        "grade": "GIII",
+        "fullRace": "クイーンＳ GIII",
+        "rank": "2着",
+        "raceDate": "2026/08/02 札幌11R 芝1800m",
+        "shotDate": "7月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4627",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "府中牝馬Ｓ",
+        "grade": "GIII",
+        "fullRace": "府中牝馬Ｓ GIII",
+        "rank": "5着",
+        "raceDate": "2026/06/21 東京11R 芝1800m",
+        "shotDate": "6月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4571",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "9着",
+        "raceDate": "2024/10/13 京都11R 芝2000m",
+        "shotDate": "10月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3459",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "12着",
+        "raceDate": "2024/05/19 東京11R 芝2400m",
+        "shotDate": "5月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3220",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "13着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4806",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "クイーンＳ",
+        "grade": "GIII",
+        "fullRace": "クイーンＳ GIII",
+        "rank": "2着",
+        "raceDate": "2026/08/02 札幌11R 芝1800m",
+        "shotDate": "7月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4627",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 5
+    }
   },
   "ココナッツブラウン": {
     "name": "ココナッツブラウン",
@@ -16946,7 +20498,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'クイーンS(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020101607&no=5664",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4521",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "ルアーズストリート",
@@ -17341,8 +20893,68 @@ export const HORSE_DATABASE = {
         "rival": "タイキバルドル"
       }
     ],
-    "photoTitle": "下河辺牧場/下河辺牧場さん",
-    "photoPaddocks": []
+    "photoTitle": "ヴィクトリアマイル GI (5月6日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "5着",
+        "raceDate": "2026/05/17 東京11R 芝1600m",
+        "shotDate": "5月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4521",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "5着",
+        "raceDate": "2025/11/16 京都11R 芝2200m",
+        "shotDate": "11月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4171",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ローズＳ",
+        "grade": "GII",
+        "fullRace": "ローズＳ GII",
+        "rank": "5着",
+        "raceDate": "2023/09/17 阪神11R 芝1800m",
+        "shotDate": "9月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2694",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "5着",
+        "raceDate": "2026/05/17 東京11R 芝1600m",
+        "shotDate": "5月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4521",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "5着",
+        "raceDate": "2025/11/16 京都11R 芝2200m",
+        "shotDate": "11月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4171",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 3
+    }
   },
   "コートアリシアン": {
     "name": "コートアリシアン",
@@ -17360,7 +20972,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'豊栄特別()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105326&no=10079",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3861",
     "pedigree": {
       "sire": "サートゥルナーリア",
       "dam": "コートシャルマン",
@@ -17731,8 +21343,80 @@ export const HORSE_DATABASE = {
         "rival": "(ベルリネッタ)"
       }
     ],
-    "photoTitle": "新潟２歳S(G3)/ひらまさん",
-    "photoPaddocks": []
+    "photoTitle": "ＮＨＫマイルＣ GI (5月1日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "10着",
+        "raceDate": "2025/05/11 東京11R 芝1600m",
+        "shotDate": "5月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3861",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神ＪＦ",
+        "grade": "GI",
+        "fullRace": "阪神ＪＦ GI",
+        "rank": "6着",
+        "raceDate": "2024/12/08 京都11R 芝1600m",
+        "shotDate": "11月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3577",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "新潟２歳S",
+        "grade": "GIII",
+        "fullRace": "新潟２歳S GIII",
+        "rank": "2着",
+        "raceDate": "2024/08/25 新潟11R 芝1600m",
+        "shotDate": "8月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3364",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "10着",
+        "raceDate": "2025/05/11 東京11R 芝1600m",
+        "shotDate": "5月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3861",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "阪神ＪＦ",
+        "grade": "GI",
+        "fullRace": "阪神ＪＦ GI",
+        "rank": "6着",
+        "raceDate": "2024/12/08 京都11R 芝1600m",
+        "shotDate": "11月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3577",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "新潟２歳S",
+          "grade": "GIII",
+          "fullRace": "新潟２歳S GIII",
+          "rank": "2着",
+          "raceDate": "2024/08/25 新潟11R 芝1600m",
+          "shotDate": "8月15日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3364",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 3
+    }
   },
   "ゴーイントゥスカイ": {
     "name": "ゴーイントゥスカイ",
@@ -17750,7 +21434,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'菊花賞(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023105378&no=68027",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4773",
     "pedigree": {
       "sire": "コントレイル",
       "dam": "ゴーイントゥザウィンドウ",
@@ -17905,16 +21589,113 @@ export const HORSE_DATABASE = {
         "rival": "(ミスターライト)"
       }
     ],
-    "photoTitle": "菊花賞(G1)/8公さん",
+    "photoTitle": "菊花賞 GI (10月15日撮影)",
     "photoPaddocks": [
       {
         "race": "菊花賞",
-        "slug": "kikka",
-        "date": "10月15日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/kikka/img/photopaddock_img06.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "1着",
+        "raceDate": "2026/10/25 京都11R 芝3000m",
+        "shotDate": "10月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4773",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "セントライト記念",
+        "grade": "GII",
+        "fullRace": "セントライト記念 GII",
+        "rank": "6着",
+        "raceDate": "2026/09/13 中山11R 芝2200m",
+        "shotDate": "9月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4688",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "4着",
+        "raceDate": "2026/05/31 東京11R 芝2400m",
+        "shotDate": "5月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4540",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "青葉賞",
+        "grade": "GII",
+        "fullRace": "青葉賞 GII",
+        "rank": "1着",
+        "raceDate": "2026/04/25 東京11R 芝2400m",
+        "shotDate": "4月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4474",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "きさらぎ賞",
+        "grade": "GIII",
+        "fullRace": "きさらぎ賞 GIII",
+        "rank": "6着",
+        "raceDate": "2026/02/10 京都11R 芝1800m",
+        "shotDate": "1月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4319",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "1着",
+        "raceDate": "2026/10/25 京都11R 芝3000m",
+        "shotDate": "10月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4773",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "セントライト記念",
+        "grade": "GII",
+        "fullRace": "セントライト記念 GII",
+        "rank": "6着",
+        "raceDate": "2026/09/13 中山11R 芝2200m",
+        "shotDate": "9月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4688",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "日本ダービー",
+          "grade": "GI",
+          "fullRace": "日本ダービー GI",
+          "rank": "4着",
+          "raceDate": "2026/05/31 東京11R 芝2400m",
+          "shotDate": "5月20日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4540",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "青葉賞",
+          "grade": "GII",
+          "fullRace": "青葉賞 GII",
+          "rank": "1着",
+          "raceDate": "2026/04/25 東京11R 芝2400m",
+          "shotDate": "4月15日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4474",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 5
+    }
   },
   "ゴリアット": {
     "name": "ゴリアット",
@@ -17932,7 +21713,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'キングジョージ6世&amp;クイーンエリザベスS(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020190005&no=97347",
+    "photoUrl": null,
     "pedigree": {
       "sire": "Adlerflug (独)",
       "dam": "Gouache (独)",
@@ -18471,8 +22252,14 @@ export const HORSE_DATABASE = {
         "rival": "()"
       }
     ],
-    "photoTitle": "ジャパンC(G1)/柊アズキさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "サクラファレル": {
     "name": "サクラファレル",
@@ -18490,7 +22277,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'ジャパンC2025年ロンジンワールドベストレース受賞記念()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104094&no=89287",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4060",
     "pedigree": {
       "sire": "サートゥルナーリア",
       "dam": "サクラレーヌ",
@@ -18717,8 +22504,36 @@ export const HORSE_DATABASE = {
         "rival": "ヴァリディシームス"
       }
     ],
-    "photoTitle": "JCベストレース記念(3勝クラス)/@otp24jさん",
-    "photoPaddocks": []
+    "photoTitle": "セントライト記念 GII (9月3日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "セントライト記念",
+        "grade": "GII",
+        "fullRace": "セントライト記念 GII",
+        "rank": "5着",
+        "raceDate": "2025/09/15 中山11R 芝2200m",
+        "shotDate": "9月3日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4060",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "セントライト記念",
+        "grade": "GII",
+        "fullRace": "セントライト記念 GII",
+        "rank": "5着",
+        "raceDate": "2025/09/15 中山11R 芝2200m",
+        "shotDate": "9月3日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4060",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "コスモキュランダ": {
     "name": "コスモキュランダ",
@@ -18736,7 +22551,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'弥生賞ディープインパクト記念(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021106787&no=105534",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4826",
     "pedigree": {
       "sire": "アルアイン",
       "dam": "サザンスピード",
@@ -19275,8 +23090,201 @@ export const HORSE_DATABASE = {
         "rival": "ゴンバデカーブース"
       }
     ],
-    "photoTitle": "宝塚記念(G1)/旅っ程さん",
-    "photoPaddocks": []
+    "photoTitle": "ジャパンＣ GI (11月19日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4826",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "9着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4778",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "11着",
+        "raceDate": "2026/09/20 中山11R 芝2200m",
+        "shotDate": "9月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4703",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "4着",
+        "raceDate": "2026/06/14 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4569",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "8着",
+        "raceDate": "2025/09/21 中山11R 芝2200m",
+        "shotDate": "9月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4077",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "8着",
+        "raceDate": "2025/04/06 阪神11R 芝2000m",
+        "shotDate": "3月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3793",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＡＪＣＣ",
+        "grade": "GII",
+        "fullRace": "ＡＪＣＣ GII",
+        "rank": "3着",
+        "raceDate": "2025/01/26 中山11R 芝2200m",
+        "shotDate": "1月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3661",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "14着",
+        "raceDate": "2024/10/20 京都11R 芝3000m",
+        "shotDate": "10月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3473",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "セントライト記念",
+        "grade": "GII",
+        "fullRace": "セントライト記念 GII",
+        "rank": "2着",
+        "raceDate": "2024/09/16 中山11R 芝2200m",
+        "shotDate": "9月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3402",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "6着",
+        "raceDate": "2024/05/26 東京11R 芝2400m",
+        "shotDate": "5月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3223",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "2着",
+        "raceDate": "2024/04/14 中山11R 芝2000m",
+        "shotDate": "4月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3139",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4826",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "9着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4778",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "宝塚記念",
+          "grade": "GI",
+          "fullRace": "宝塚記念 GI",
+          "rank": "4着",
+          "raceDate": "2026/06/14 阪神11R 芝2200m",
+          "shotDate": "6月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4569",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ＡＪＣＣ",
+          "grade": "GII",
+          "fullRace": "ＡＪＣＣ GII",
+          "rank": "3着",
+          "raceDate": "2025/01/26 中山11R 芝2200m",
+          "shotDate": "1月15日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3661",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "セントライト記念",
+          "grade": "GII",
+          "fullRace": "セントライト記念 GII",
+          "rank": "2着",
+          "raceDate": "2024/09/16 中山11R 芝2200m",
+          "shotDate": "9月5日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3402",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "皐月賞",
+          "grade": "GI",
+          "fullRace": "皐月賞 GI",
+          "rank": "2着",
+          "raceDate": "2024/04/14 中山11R 芝2000m",
+          "shotDate": "4月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3139",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 11
+    }
   },
   "クラウンプライド": {
     "name": "クラウンプライド",
@@ -19294,7 +23302,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'UAEダービー(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019104678&no=15278",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4289",
     "pedigree": {
       "sire": "リーチザクラウン",
       "dam": "エミーズプライド",
@@ -19857,8 +23865,91 @@ export const HORSE_DATABASE = {
         "rival": "(ソルトグリーン)"
       }
     ],
-    "photoTitle": "もちの木賞(1勝)/さん",
-    "photoPaddocks": []
+    "photoTitle": "プロキオンＳ GII (1月14日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "プロキオンＳ",
+        "grade": "GII",
+        "fullRace": "プロキオンＳ GII",
+        "rank": "15着",
+        "raceDate": "2026/01/25 京都11R ダ1800m",
+        "shotDate": "1月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4289",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "11着",
+        "raceDate": "2024/12/01 中京11R ダ1800m",
+        "shotDate": "11月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3563",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "11着",
+        "raceDate": "2023/12/03 中京11R ダ1800m",
+        "shotDate": "11月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2869",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "2着",
+        "raceDate": "2022/12/04 中京11R ダ1800m",
+        "shotDate": "11月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2213",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "プロキオンＳ",
+        "grade": "GII",
+        "fullRace": "プロキオンＳ GII",
+        "rank": "15着",
+        "raceDate": "2026/01/25 京都11R ダ1800m",
+        "shotDate": "1月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4289",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "11着",
+        "raceDate": "2024/12/01 中京11R ダ1800m",
+        "shotDate": "11月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3563",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "チャンピオンズC",
+          "grade": "GI",
+          "fullRace": "チャンピオンズC GI",
+          "rank": "2着",
+          "raceDate": "2022/12/04 中京11R ダ1800m",
+          "shotDate": "11月24日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2213",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 4
+    }
   },
   "サトノスプレマシー": {
     "name": "サトノスプレマシー",
@@ -19876,7 +23967,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳未勝利"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024107260&no=7943",
+    "photoUrl": null,
     "pedigree": {
       "sire": "シルバーステート",
       "dam": "サマーソワレ",
@@ -19959,8 +24050,14 @@ export const HORSE_DATABASE = {
         "rival": "セプタードアイル"
       }
     ],
-    "photoTitle": "2歳新馬/ショコラ?さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "サトノカルナバル": {
     "name": "サトノカルナバル",
@@ -19978,7 +24075,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'函館2歳S(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105128&no=85362",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3860",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "リアリサトリス",
@@ -20229,8 +24326,57 @@ export const HORSE_DATABASE = {
         "rival": "(デアマトローナ)"
       }
     ],
-    "photoTitle": "谷川岳S(L)/ミスタールドルフさん",
-    "photoPaddocks": []
+    "photoTitle": "ＮＨＫマイルＣ GI (4月30日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "6着",
+        "raceDate": "2025/05/11 東京11R 芝1600m",
+        "shotDate": "4月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3860",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "共同通信杯",
+        "grade": "GIII",
+        "fullRace": "共同通信杯 GIII",
+        "rank": "5着",
+        "raceDate": "2025/02/16 東京11R 芝1800m",
+        "shotDate": "2月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3701",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "6着",
+        "raceDate": "2025/05/11 東京11R 芝1600m",
+        "shotDate": "4月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3860",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "共同通信杯",
+        "grade": "GIII",
+        "fullRace": "共同通信杯 GIII",
+        "rank": "5着",
+        "raceDate": "2025/02/16 東京11R 芝1800m",
+        "shotDate": "2月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3701",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 2
+    }
   },
   "シェイクユアハート": {
     "name": "シェイクユアハート",
@@ -20248,7 +24394,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'札幌記念(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103101&no=122850",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4828",
     "pedigree": {
       "sire": "ハーツクライ",
       "dam": "ルンバロッカ",
@@ -21003,23 +25149,168 @@ export const HORSE_DATABASE = {
         "rival": "マイネルエンペラー"
       }
     ],
-    "photoTitle": "札幌記念(G2)/さん",
+    "photoTitle": "ジャパンＣ GI (11月18日撮影)",
     "photoPaddocks": [
       {
-        "race": "ジャパンカップ",
-        "slug": "jc",
-        "date": "11月18日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img07.jpg",
-        "source": "JRA-VAN"
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4828",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
       },
       {
         "race": "天皇賞（秋）",
-        "slug": "akiten",
-        "date": "10月21日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img04.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "6着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4783",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "14着",
+        "raceDate": "2026/06/14 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4568",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "金鯱賞",
+        "grade": "GII",
+        "fullRace": "金鯱賞 GII",
+        "rank": "1着",
+        "raceDate": "2026/03/15 中京11R 芝2000m",
+        "shotDate": "3月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4397",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都記念",
+        "grade": "GII",
+        "fullRace": "京都記念 GII",
+        "rank": "4着",
+        "raceDate": "2026/02/15 京都11R 芝2200m",
+        "shotDate": "2月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4325",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "11着",
+        "raceDate": "2025/08/31 新潟11R 芝2000m",
+        "shotDate": "8月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4030",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "小倉記念",
+        "grade": "GIII",
+        "fullRace": "小倉記念 GIII",
+        "rank": "2着",
+        "raceDate": "2025/07/20 小倉11R 芝2000m",
+        "shotDate": "7月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3965",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "きさらぎ賞",
+        "grade": "GIII",
+        "fullRace": "きさらぎ賞 GIII",
+        "rank": "6着",
+        "raceDate": "2023/02/05 中京11R 芝2000m",
+        "shotDate": "1月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2318",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンカップ",
+        "grade": "GI",
+        "fullRace": "ジャパンカップ GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img07.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4828",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "6着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4783",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "金鯱賞",
+          "grade": "GII",
+          "fullRace": "金鯱賞 GII",
+          "rank": "1着",
+          "raceDate": "2026/03/15 中京11R 芝2000m",
+          "shotDate": "3月5日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4397",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "京都記念",
+          "grade": "GII",
+          "fullRace": "京都記念 GII",
+          "rank": "4着",
+          "raceDate": "2026/02/15 京都11R 芝2200m",
+          "shotDate": "2月5日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4325",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "小倉記念",
+          "grade": "GIII",
+          "fullRace": "小倉記念 GIII",
+          "rank": "2着",
+          "raceDate": "2025/07/20 小倉11R 芝2000m",
+          "shotDate": "7月9日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3965",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 9
+    }
   },
   "サンライズジパング": {
     "name": "サンライズジパング",
@@ -21037,7 +25328,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'名古屋グランプリ(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021104756&no=97195",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4245",
     "pedigree": {
       "sire": "キズナ",
       "dam": "サイマー",
@@ -21528,8 +25819,157 @@ export const HORSE_DATABASE = {
         "rival": "ダノンエアズロック"
       }
     ],
-    "photoTitle": "有馬記念(G1)/つんさん",
-    "photoPaddocks": []
+    "photoTitle": "有馬記念 GI (11月27日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "5着",
+        "raceDate": "2025/12/28 中山11R 芝2500m",
+        "shotDate": "11月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4245",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "8着",
+        "raceDate": "2025/12/07 中京11R ダ1800m",
+        "shotDate": "11月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4208",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "2着",
+        "raceDate": "2025/02/23 東京11R ダ1600m",
+        "shotDate": "2月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3720",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "プロキオンS",
+        "grade": "GII",
+        "fullRace": "プロキオンS GII",
+        "rank": "2着",
+        "raceDate": "2025/01/26 中京11R ダ1800m",
+        "shotDate": "1月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3670",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "6着",
+        "raceDate": "2024/12/01 中京11R ダ1800m",
+        "shotDate": "11月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3564",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "みやこS",
+        "grade": "GIII",
+        "fullRace": "みやこS GIII",
+        "rank": "1着",
+        "raceDate": "2024/11/03 京都11R ダ1800m",
+        "shotDate": "10月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3507",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "12着",
+        "raceDate": "2024/05/26 東京11R 芝2400m",
+        "shotDate": "5月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3226",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "9着",
+        "raceDate": "2024/04/14 中山11R 芝2000m",
+        "shotDate": "4月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3135",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "5着",
+        "raceDate": "2025/12/28 中山11R 芝2500m",
+        "shotDate": "11月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4245",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "8着",
+        "raceDate": "2025/12/07 中京11R ダ1800m",
+        "shotDate": "11月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4208",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "フェブラリーＳ",
+          "grade": "GI",
+          "fullRace": "フェブラリーＳ GI",
+          "rank": "2着",
+          "raceDate": "2025/02/23 東京11R ダ1600m",
+          "shotDate": "2月13日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3720",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "プロキオンS",
+          "grade": "GII",
+          "fullRace": "プロキオンS GII",
+          "rank": "2着",
+          "raceDate": "2025/01/26 中京11R ダ1800m",
+          "shotDate": "1月15日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3670",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "みやこS",
+          "grade": "GIII",
+          "fullRace": "みやこS GIII",
+          "rank": "1着",
+          "raceDate": "2024/11/03 京都11R ダ1800m",
+          "shotDate": "10月24日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3507",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 8
+    }
   },
   "シックスペンス": {
     "name": "シックスペンス",
@@ -21547,7 +25987,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'安田記念(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105724&no=106018",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4819",
     "pedigree": {
       "sire": "キズナ",
       "dam": "フィンレイズラッキーチャーム",
@@ -21894,16 +26334,190 @@ export const HORSE_DATABASE = {
         "rival": "(アタラヨ)"
       }
     ],
-    "photoTitle": "安田記念(G1)/上がり３F１８０さん",
+    "photoTitle": "マイルＣＳ GI (11月12日撮影)",
     "photoPaddocks": [
       {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "18着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4819",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "1着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4550",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイラーズＣ",
+        "grade": "GII",
+        "fullRace": "マイラーズＣ GII",
+        "rank": "7着",
+        "raceDate": "2026/04/26 京都11R 芝1600m",
+        "shotDate": "4月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4464",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "9着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4356",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "12着",
+        "raceDate": "2025/06/08 東京11R 芝1600m",
+        "shotDate": "5月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3904",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "7着",
+        "raceDate": "2025/04/06 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3789",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "1着",
+        "raceDate": "2025/03/02 中山11R 芝1800m",
+        "shotDate": "2月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3725",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "1着",
+        "raceDate": "2024/10/06 東京11R 芝1800m",
+        "shotDate": "9月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3457",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "9着",
+        "raceDate": "2024/05/26 東京11R 芝2400m",
+        "shotDate": "5月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3227",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "スプリングＳ",
+        "grade": "GII",
+        "fullRace": "スプリングＳ GII",
+        "rank": "1着",
+        "raceDate": "2024/03/17 中山11R 芝1800m",
+        "shotDate": "3月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3074",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
         "race": "マイルCS",
-        "slug": "mcs",
-        "date": "11月12日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img07.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "マイルCS GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img07.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "18着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4819",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "1着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4550",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "中山記念",
+          "grade": "GII",
+          "fullRace": "中山記念 GII",
+          "rank": "1着",
+          "raceDate": "2025/03/02 中山11R 芝1800m",
+          "shotDate": "2月19日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3725",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "毎日王冠",
+          "grade": "GII",
+          "fullRace": "毎日王冠 GII",
+          "rank": "1着",
+          "raceDate": "2024/10/06 東京11R 芝1800m",
+          "shotDate": "9月25日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3457",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "スプリングＳ",
+          "grade": "GII",
+          "fullRace": "スプリングＳ GII",
+          "rank": "1着",
+          "raceDate": "2024/03/17 中山11R 芝1800m",
+          "shotDate": "3月6日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3074",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 11
+    }
   },
   "シティオブドリーム": {
     "name": "シティオブドリーム",
@@ -21921,7 +26535,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳新馬"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024104953&no=9609",
+    "photoUrl": null,
     "pedigree": {
       "sire": "コントレイル",
       "dam": "ビューティフルストリート",
@@ -21980,8 +26594,14 @@ export const HORSE_DATABASE = {
         "rival": "(レジームチェンジ)"
       }
     ],
-    "photoTitle": "2歳新馬/旅っ程さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "サトノレーヴ": {
     "name": "サトノレーヴ",
@@ -21999,7 +26619,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'高松宮記念(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019101700&no=45822",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4431",
     "pedigree": {
       "sire": "ロードカナロア",
       "dam": "チリエージェ",
@@ -22490,8 +27110,91 @@ export const HORSE_DATABASE = {
         "rival": "(イワクニ)"
       }
     ],
-    "photoTitle": "３歳未勝利/さん",
-    "photoPaddocks": []
+    "photoTitle": "高松宮記念 GI (3月18日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "高松宮記念",
+        "grade": "GI",
+        "fullRace": "高松宮記念 GI",
+        "rank": "1着",
+        "raceDate": "2026/03/29 中京11R 芝1200m",
+        "shotDate": "3月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4431",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "スプリンターズＳ",
+        "grade": "GI",
+        "fullRace": "スプリンターズＳ GI",
+        "rank": "4着",
+        "raceDate": "2025/09/28 中山11R 芝1200m",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4080",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "高松宮記念",
+        "grade": "GI",
+        "fullRace": "高松宮記念 GI",
+        "rank": "1着",
+        "raceDate": "2025/03/30 中京11R 芝1200m",
+        "shotDate": "3月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3775",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "スプリンターズS",
+        "grade": "GI",
+        "fullRace": "スプリンターズS GI",
+        "rank": "7着",
+        "raceDate": "2024/09/29 中山11R 芝1200m",
+        "shotDate": "9月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3434",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "高松宮記念",
+        "grade": "GI",
+        "fullRace": "高松宮記念 GI",
+        "rank": "1着",
+        "raceDate": "2026/03/29 中京11R 芝1200m",
+        "shotDate": "3月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4431",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "スプリンターズＳ",
+        "grade": "GI",
+        "fullRace": "スプリンターズＳ GI",
+        "rank": "4着",
+        "raceDate": "2025/09/28 中山11R 芝1200m",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4080",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "高松宮記念",
+          "grade": "GI",
+          "fullRace": "高松宮記念 GI",
+          "rank": "1着",
+          "raceDate": "2025/03/30 中京11R 芝1200m",
+          "shotDate": "3月19日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3775",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 4
+    }
   },
   "シャンパンカラー": {
     "name": "シャンパンカラー",
@@ -22509,7 +27212,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'NHKマイルC(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103075&no=124518",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4369",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "メモリアルライフ",
@@ -23000,8 +27703,113 @@ export const HORSE_DATABASE = {
         "rival": "(リラックス)"
       }
     ],
-    "photoTitle": "天皇賞(秋)(G1)/モリリンさん",
-    "photoPaddocks": []
+    "photoTitle": "中山記念 GII (2月19日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "10着",
+        "raceDate": "2026/03/01 中山11R 芝1800m",
+        "shotDate": "2月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4369",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "高松宮記念",
+        "grade": "GI",
+        "fullRace": "高松宮記念 GI",
+        "rank": "17着",
+        "raceDate": "2024/03/24 中京11R 芝1200m",
+        "shotDate": "3月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3091",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "16着",
+        "raceDate": "2024/02/18 東京11R ダ1600m",
+        "shotDate": "2月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3011",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "14着",
+        "raceDate": "2023/06/04 東京11R 芝1600m",
+        "shotDate": "5月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2536",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＮＨＫマイルC",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルC GI",
+        "rank": "1着",
+        "raceDate": "2023/05/07 東京11R 芝1600m",
+        "shotDate": "4月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2484",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京成杯",
+        "grade": "GIII",
+        "fullRace": "京成杯 GIII",
+        "rank": "6着",
+        "raceDate": "2023/01/15 中山11R 芝2000m",
+        "shotDate": "1月3日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2281",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "10着",
+        "raceDate": "2026/03/01 中山11R 芝1800m",
+        "shotDate": "2月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4369",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "高松宮記念",
+        "grade": "GI",
+        "fullRace": "高松宮記念 GI",
+        "rank": "17着",
+        "raceDate": "2024/03/24 中京11R 芝1200m",
+        "shotDate": "3月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3091",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "ＮＨＫマイルC",
+          "grade": "GI",
+          "fullRace": "ＮＨＫマイルC GI",
+          "rank": "1着",
+          "raceDate": "2023/05/07 東京11R 芝1600m",
+          "shotDate": "4月27日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2484",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 6
+    }
   },
   "シュトルーヴェ": {
     "name": "シュトルーヴェ",
@@ -23019,7 +27827,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'日経賞(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019104447&no=66131",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4156",
     "pedigree": {
       "sire": "キングカメハメハ",
       "dam": "アンチュラス",
@@ -23534,8 +28342,57 @@ export const HORSE_DATABASE = {
         "rival": "シェルビーズアイ"
       }
     ],
-    "photoTitle": "３歳未勝利/さん",
-    "photoPaddocks": []
+    "photoTitle": "アルゼンチン共和国杯 GII (10月29日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "アルゼンチン共和国杯",
+        "grade": "GII",
+        "fullRace": "アルゼンチン共和国杯 GII",
+        "rank": "5着",
+        "raceDate": "2025/11/09 東京11R 芝2500m",
+        "shotDate": "10月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4156",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "11着",
+        "raceDate": "2024/06/23 京都11R 芝2200m",
+        "shotDate": "6月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3266",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "アルゼンチン共和国杯",
+        "grade": "GII",
+        "fullRace": "アルゼンチン共和国杯 GII",
+        "rank": "5着",
+        "raceDate": "2025/11/09 東京11R 芝2500m",
+        "shotDate": "10月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4156",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "11着",
+        "raceDate": "2024/06/23 京都11R 芝2200m",
+        "shotDate": "6月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3266",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 2
+    }
   },
   "シャドウメテオ": {
     "name": "シャドウメテオ",
@@ -23553,7 +28410,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'新潟牝馬S(L)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105454&no=91183",
+    "photoUrl": null,
     "pedigree": {
       "sire": "オルフェーヴル",
       "dam": "パールシャドウ",
@@ -23852,8 +28709,14 @@ export const HORSE_DATABASE = {
         "rival": "ジョスラン"
       }
     ],
-    "photoTitle": "日本海S(3勝クラス)/旅っ程さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "シュバルツクーゲル": {
     "name": "シュバルツクーゲル",
@@ -23871,7 +28734,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'2024ワールドオールスタージョッキーズ第2戦()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021104882&no=185",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3041",
     "pedigree": {
       "sire": "キズナ",
       "dam": "ソベラニア",
@@ -24170,8 +29033,36 @@ export const HORSE_DATABASE = {
         "rival": "(カニキュル)"
       }
     ],
-    "photoTitle": "しらおい/ゲストさん",
-    "photoPaddocks": []
+    "photoTitle": "弥生賞ディープ記念 GII (2月20日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "弥生賞ディープ記念",
+        "grade": "GII",
+        "fullRace": "弥生賞ディープ記念 GII",
+        "rank": "5着",
+        "raceDate": "2024/03/03 中山11R 芝2000m",
+        "shotDate": "2月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3041",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "弥生賞ディープ記念",
+        "grade": "GII",
+        "fullRace": "弥生賞ディープ記念 GII",
+        "rank": "5着",
+        "raceDate": "2024/03/03 中山11R 芝2000m",
+        "shotDate": "2月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3041",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "シルバーレシオ": {
     "name": "シルバーレシオ",
@@ -24189,7 +29080,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "ジャパンダートクラシック"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023107043&no=65896",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ルヴァンスレーヴ",
       "dam": "シルバーポジー",
@@ -24392,8 +29283,14 @@ export const HORSE_DATABASE = {
         "rival": "マルガ"
       }
     ],
-    "photoTitle": "ジャパンダートクラシ(JpnI)/さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "シンエンペラー": {
     "name": "シンエンペラー",
@@ -24411,7 +29308,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'ネオムターフC(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021110048&no=105423",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4493",
     "pedigree": {
       "sire": "Siyouni (仏)",
       "dam": "Starlet's Sister (愛)",
@@ -24806,8 +29703,157 @@ export const HORSE_DATABASE = {
         "rival": "(トゥルーサクセサー)"
       }
     ],
-    "photoTitle": "天皇賞(春)(G1)/HKさん",
-    "photoPaddocks": []
+    "photoTitle": "天皇賞（春） GI (4月22日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "7着",
+        "raceDate": "2026/05/03 京都11R 芝3200m",
+        "shotDate": "4月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4493",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "14着",
+        "raceDate": "2025/12/28 中山11R 芝2500m",
+        "shotDate": "11月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4243",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "2着",
+        "raceDate": "2024/11/24 東京12R 芝2400m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3550",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "3着",
+        "raceDate": "2024/05/26 東京11R 芝2400m",
+        "shotDate": "5月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3228",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "5着",
+        "raceDate": "2024/04/14 中山11R 芝2000m",
+        "shotDate": "4月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3142",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "弥生賞ディープ記念",
+        "grade": "GII",
+        "fullRace": "弥生賞ディープ記念 GII",
+        "rank": "2着",
+        "raceDate": "2024/03/03 中山11R 芝2000m",
+        "shotDate": "2月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3035",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ホープフルS",
+        "grade": "GI",
+        "fullRace": "ホープフルS GI",
+        "rank": "2着",
+        "raceDate": "2023/12/28 中山11R 芝2000m",
+        "shotDate": "12月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2912",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "7着",
+        "raceDate": "2026/05/03 京都11R 芝3200m",
+        "shotDate": "4月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4493",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "14着",
+        "raceDate": "2025/12/28 中山11R 芝2500m",
+        "shotDate": "11月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4243",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "ジャパンC",
+          "grade": "GI",
+          "fullRace": "ジャパンC GI",
+          "rank": "2着",
+          "raceDate": "2024/11/24 東京12R 芝2400m",
+          "shotDate": "11月13日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3550",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "日本ダービー",
+          "grade": "GI",
+          "fullRace": "日本ダービー GI",
+          "rank": "3着",
+          "raceDate": "2024/05/26 東京11R 芝2400m",
+          "shotDate": "5月15日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3228",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "弥生賞ディープ記念",
+          "grade": "GII",
+          "fullRace": "弥生賞ディープ記念 GII",
+          "rank": "2着",
+          "raceDate": "2024/03/03 中山11R 芝2000m",
+          "shotDate": "2月22日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3035",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ホープフルS",
+          "grade": "GI",
+          "fullRace": "ホープフルS GI",
+          "rank": "2着",
+          "raceDate": "2023/12/28 中山11R 芝2000m",
+          "shotDate": "12月20日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2912",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 7
+    }
   },
   "コスタノヴァ": {
     "name": "コスタノヴァ",
@@ -24825,7 +29871,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'フェブラリーS(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103307&no=117006",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4355",
     "pedigree": {
       "sire": "ロードカナロア",
       "dam": "カラフルブラッサム",
@@ -25196,8 +30242,57 @@ export const HORSE_DATABASE = {
         "rival": "ペリファーニア"
       }
     ],
-    "photoTitle": "フェブラリーＳ(G1)/TKさん",
-    "photoPaddocks": []
+    "photoTitle": "フェブラリーＳ GI (2月12日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "1着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4355",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "1着",
+        "raceDate": "2025/02/23 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3713",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "1着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4355",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "1着",
+        "raceDate": "2025/02/23 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3713",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 2
+    }
   },
   "シルトホルン": {
     "name": "シルトホルン",
@@ -25215,7 +30310,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'ジューンS()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020105424&no=120921",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3960",
     "pedigree": {
       "sire": "スクリーンヒーロー",
       "dam": "シンメイミヤビ",
@@ -26090,8 +31185,68 @@ export const HORSE_DATABASE = {
         "rival": "キミノナハマリア"
       }
     ],
-    "photoTitle": "ニューイヤーS(L)/しやんさん",
-    "photoPaddocks": []
+    "photoTitle": "七夕賞 GIII (7月2日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "七夕賞",
+        "grade": "GIII",
+        "fullRace": "七夕賞 GIII",
+        "rank": "4着",
+        "raceDate": "2025/07/13 福島11R 芝2000m",
+        "shotDate": "7月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3960",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "エプソムC",
+        "grade": "GIII",
+        "fullRace": "エプソムC GIII",
+        "rank": "3着",
+        "raceDate": "2024/06/09 東京11R 芝1800m",
+        "shotDate": "5月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3258",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "セントライト記念",
+        "grade": "GII",
+        "fullRace": "セントライト記念 GII",
+        "rank": "7着",
+        "raceDate": "2023/09/18 中山11R 芝2200m",
+        "shotDate": "9月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2704",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "七夕賞",
+        "grade": "GIII",
+        "fullRace": "七夕賞 GIII",
+        "rank": "4着",
+        "raceDate": "2025/07/13 福島11R 芝2000m",
+        "shotDate": "7月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3960",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "エプソムC",
+        "grade": "GIII",
+        "fullRace": "エプソムC GIII",
+        "rank": "3着",
+        "raceDate": "2024/06/09 東京11R 芝1800m",
+        "shotDate": "5月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3258",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 3
+    }
   },
   "ショウナンラプンタ": {
     "name": "ショウナンラプンタ",
@@ -26109,7 +31264,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'ゆきやなぎ賞()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105195&no=90885",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4731",
     "pedigree": {
       "sire": "キズナ",
       "dam": "フリアアステカ",
@@ -26456,8 +31611,146 @@ export const HORSE_DATABASE = {
         "rival": "(サトノシュトラーセ)"
       }
     ],
-    "photoTitle": "宝塚記念(G1)/旅っ程さん",
-    "photoPaddocks": []
+    "photoTitle": "京都大賞典 GII (9月23日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "10着",
+        "raceDate": "2026/10/04 京都11R 芝2400m",
+        "shotDate": "9月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4731",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "5着",
+        "raceDate": "2025/10/05 京都11R 芝2400m",
+        "shotDate": "9月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4101",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "4着",
+        "raceDate": "2025/06/15 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3927",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神大賞典",
+        "grade": "GII",
+        "fullRace": "阪神大賞典 GII",
+        "rank": "4着",
+        "raceDate": "2025/03/23 阪神11R 芝3000m",
+        "shotDate": "3月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3771",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日経新春杯",
+        "grade": "GII",
+        "fullRace": "日経新春杯 GII",
+        "rank": "2着",
+        "raceDate": "2025/01/19 中京11R 芝2200m",
+        "shotDate": "1月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3656",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "4着",
+        "raceDate": "2024/10/20 京都11R 芝3000m",
+        "shotDate": "10月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3479",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "10着",
+        "raceDate": "2026/10/04 京都11R 芝2400m",
+        "shotDate": "9月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4731",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "5着",
+        "raceDate": "2025/10/05 京都11R 芝2400m",
+        "shotDate": "9月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4101",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "宝塚記念",
+          "grade": "GI",
+          "fullRace": "宝塚記念 GI",
+          "rank": "4着",
+          "raceDate": "2025/06/15 阪神11R 芝2200m",
+          "shotDate": "6月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3927",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "阪神大賞典",
+          "grade": "GII",
+          "fullRace": "阪神大賞典 GII",
+          "rank": "4着",
+          "raceDate": "2025/03/23 阪神11R 芝3000m",
+          "shotDate": "3月13日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3771",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "日経新春杯",
+          "grade": "GII",
+          "fullRace": "日経新春杯 GII",
+          "rank": "2着",
+          "raceDate": "2025/01/19 中京11R 芝2200m",
+          "shotDate": "1月9日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3656",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "菊花賞",
+          "grade": "GI",
+          "fullRace": "菊花賞 GI",
+          "rank": "4着",
+          "raceDate": "2024/10/20 京都11R 芝3000m",
+          "shotDate": "10月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3479",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 6
+    }
   },
   "ジャスティンパレス": {
     "name": "ジャスティンパレス",
@@ -26475,7 +31768,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'天皇賞(春)(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105346&no=7463",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4244",
     "pedigree": {
       "sire": "ディープインパクト",
       "dam": "パレスルーマー",
@@ -27038,8 +32331,366 @@ export const HORSE_DATABASE = {
         "rival": "(アカデミー)"
       }
     ],
-    "photoTitle": "２歳新馬/さん",
-    "photoPaddocks": []
+    "photoTitle": "有馬記念 GI (11月26日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "7着",
+        "raceDate": "2025/12/28 中山11R 芝2500m",
+        "shotDate": "11月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4244",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "5着",
+        "raceDate": "2025/11/30 東京12R 芝2400m",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4190",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "3着",
+        "raceDate": "2025/11/02 東京11R 芝2000m",
+        "shotDate": "10月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4145",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "3着",
+        "raceDate": "2025/06/15 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3928",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "6着",
+        "raceDate": "2025/05/04 京都11R 芝3200m",
+        "shotDate": "4月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3847",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "6着",
+        "raceDate": "2025/04/06 阪神11R 芝2000m",
+        "shotDate": "3月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3799",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "5着",
+        "raceDate": "2024/12/22 中山11R 芝2500m",
+        "shotDate": "12月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3601",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "5着",
+        "raceDate": "2024/11/24 東京12R 芝2400m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3553",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "4着",
+        "raceDate": "2024/10/27 東京11R 芝2000m",
+        "shotDate": "10月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3486",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "10着",
+        "raceDate": "2024/06/23 京都11R 芝2200m",
+        "shotDate": "6月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3276",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "4着",
+        "raceDate": "2023/12/24 中山11R 芝2500m",
+        "shotDate": "12月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2906",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "2着",
+        "raceDate": "2023/10/29 東京11R 芝2000m",
+        "shotDate": "10月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2796",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "3着",
+        "raceDate": "2023/06/25 阪神11R 芝2200m",
+        "shotDate": "6月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2580",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "1着",
+        "raceDate": "2023/04/30 京都11R 芝3200m",
+        "shotDate": "4月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2474",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神大賞典",
+        "grade": "GII",
+        "fullRace": "阪神大賞典 GII",
+        "rank": "1着",
+        "raceDate": "2023/03/19 阪神11R 芝3000m",
+        "shotDate": "3月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2394",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "7着",
+        "raceDate": "2022/12/25 中山11R 芝2500m",
+        "shotDate": "12月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2250",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "3着",
+        "raceDate": "2022/10/23 阪神11R 芝3000m",
+        "shotDate": "10月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2145",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "神戸新聞杯",
+        "grade": "GII",
+        "fullRace": "神戸新聞杯 GII",
+        "rank": "1着",
+        "raceDate": "2022/09/25 中京11R 芝2200m",
+        "shotDate": "9月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2104",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ホープフルS",
+        "grade": "GI",
+        "fullRace": "ホープフルS GI",
+        "rank": "2着",
+        "raceDate": "2021/12/28 中山11R 芝2000m",
+        "shotDate": "12月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1619",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "7着",
+        "raceDate": "2025/12/28 中山11R 芝2500m",
+        "shotDate": "11月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4244",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "5着",
+        "raceDate": "2025/11/30 東京12R 芝2400m",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4190",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "天皇賞（秋）",
+          "grade": "GI",
+          "fullRace": "天皇賞（秋） GI",
+          "rank": "3着",
+          "raceDate": "2025/11/02 東京11R 芝2000m",
+          "shotDate": "10月23日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4145",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "宝塚記念",
+          "grade": "GI",
+          "fullRace": "宝塚記念 GI",
+          "rank": "3着",
+          "raceDate": "2025/06/15 阪神11R 芝2200m",
+          "shotDate": "6月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3928",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "天皇賞（秋）",
+          "grade": "GI",
+          "fullRace": "天皇賞（秋） GI",
+          "rank": "4着",
+          "raceDate": "2024/10/27 東京11R 芝2000m",
+          "shotDate": "10月16日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3486",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "有馬記念",
+          "grade": "GI",
+          "fullRace": "有馬記念 GI",
+          "rank": "4着",
+          "raceDate": "2023/12/24 中山11R 芝2500m",
+          "shotDate": "12月13日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2906",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "天皇賞（秋）",
+          "grade": "GI",
+          "fullRace": "天皇賞（秋） GI",
+          "rank": "2着",
+          "raceDate": "2023/10/29 東京11R 芝2000m",
+          "shotDate": "10月18日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2796",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "宝塚記念",
+          "grade": "GI",
+          "fullRace": "宝塚記念 GI",
+          "rank": "3着",
+          "raceDate": "2023/06/25 阪神11R 芝2200m",
+          "shotDate": "6月15日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2580",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "天皇賞（春）",
+          "grade": "GI",
+          "fullRace": "天皇賞（春） GI",
+          "rank": "1着",
+          "raceDate": "2023/04/30 京都11R 芝3200m",
+          "shotDate": "4月20日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2474",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "阪神大賞典",
+          "grade": "GII",
+          "fullRace": "阪神大賞典 GII",
+          "rank": "1着",
+          "raceDate": "2023/03/19 阪神11R 芝3000m",
+          "shotDate": "3月8日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2394",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "菊花賞",
+          "grade": "GI",
+          "fullRace": "菊花賞 GI",
+          "rank": "3着",
+          "raceDate": "2022/10/23 阪神11R 芝3000m",
+          "shotDate": "10月12日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2145",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "神戸新聞杯",
+          "grade": "GII",
+          "fullRace": "神戸新聞杯 GII",
+          "rank": "1着",
+          "raceDate": "2022/09/25 中京11R 芝2200m",
+          "shotDate": "9月14日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2104",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ホープフルS",
+          "grade": "GI",
+          "fullRace": "ホープフルS GI",
+          "rank": "2着",
+          "raceDate": "2021/12/28 中山11R 芝2000m",
+          "shotDate": "12月15日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1619",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 19
+    }
   },
   "ジョスラン": {
     "name": "ジョスラン",
@@ -27057,7 +32708,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'小倉牝馬S(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104767&no=92805",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4804",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "ケイティーズハート",
@@ -27260,16 +32911,91 @@ export const HORSE_DATABASE = {
         "rival": "(ウインスティーガ)"
       }
     ],
-    "photoTitle": "アイルランドT(G2)/英１さん",
+    "photoTitle": "エリザベス女王杯 GI (11月4日撮影)",
     "photoPaddocks": [
       {
         "race": "エリザベス女王杯",
-        "slug": "elizabeth",
-        "date": "11月4日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img06.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "7着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4804",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "2着",
+        "raceDate": "2026/10/11 東京11R 芝1800m",
+        "shotDate": "10月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4742",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "8着",
+        "raceDate": "2026/05/17 東京11R 芝1600m",
+        "shotDate": "5月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4520",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "紫苑Ｓ",
+        "grade": "GII",
+        "fullRace": "紫苑Ｓ GII",
+        "rank": "2着",
+        "raceDate": "2025/09/07 中山11R 芝2000m",
+        "shotDate": "8月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4043",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "7着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4804",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "2着",
+        "raceDate": "2026/10/11 東京11R 芝1800m",
+        "shotDate": "10月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4742",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "紫苑Ｓ",
+          "grade": "GII",
+          "fullRace": "紫苑Ｓ GII",
+          "rank": "2着",
+          "raceDate": "2025/09/07 中山11R 芝2000m",
+          "shotDate": "8月28日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4043",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 4
+    }
   },
   "ジョバンニ": {
     "name": "ジョバンニ",
@@ -27287,7 +33013,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'チャレンジC(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022103995&no=87230",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4612",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "ベアフットレディ",
@@ -27634,16 +33360,157 @@ export const HORSE_DATABASE = {
         "rival": "(バズアップビート)"
       }
     ],
-    "photoTitle": "東海テレビ杯金鯱賞(G2)/奥平さん",
+    "photoTitle": "小倉記念 GIII (7月8日撮影)",
     "photoPaddocks": [
       {
+        "race": "小倉記念",
+        "grade": "GIII",
+        "fullRace": "小倉記念 GIII",
+        "rank": "2着",
+        "raceDate": "2026/07/19 小倉11R 芝2000m",
+        "shotDate": "7月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4612",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＡＪＣＣ",
+        "grade": "GII",
+        "fullRace": "ＡＪＣＣ GII",
+        "rank": "7着",
+        "raceDate": "2026/01/25 中山11R 芝2200m",
+        "shotDate": "1月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4297",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "8着",
+        "raceDate": "2025/10/26 京都11R 芝3000m",
+        "shotDate": "10月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4130",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "神戸新聞杯",
+        "grade": "GII",
+        "fullRace": "神戸新聞杯 GII",
+        "rank": "3着",
+        "raceDate": "2025/09/21 阪神11R 芝2400m",
+        "shotDate": "9月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4070",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "8着",
+        "raceDate": "2025/06/01 東京11R 芝2400m",
+        "shotDate": "5月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3898",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "4着",
+        "raceDate": "2025/04/20 中山11R 芝2000m",
+        "shotDate": "4月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3821",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ホープフルS",
+        "grade": "GI",
+        "fullRace": "ホープフルS GI",
+        "rank": "2着",
+        "raceDate": "2024/12/28 中山11R 芝2000m",
+        "shotDate": "12月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3618",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
         "race": "天皇賞（秋）",
-        "slug": "akiten",
-        "date": "10月21日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img05.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "10月21日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img05.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "小倉記念",
+        "grade": "GIII",
+        "fullRace": "小倉記念 GIII",
+        "rank": "2着",
+        "raceDate": "2026/07/19 小倉11R 芝2000m",
+        "shotDate": "7月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4612",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ＡＪＣＣ",
+        "grade": "GII",
+        "fullRace": "ＡＪＣＣ GII",
+        "rank": "7着",
+        "raceDate": "2026/01/25 中山11R 芝2200m",
+        "shotDate": "1月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4297",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "神戸新聞杯",
+          "grade": "GII",
+          "fullRace": "神戸新聞杯 GII",
+          "rank": "3着",
+          "raceDate": "2025/09/21 阪神11R 芝2400m",
+          "shotDate": "9月11日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4070",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "皐月賞",
+          "grade": "GI",
+          "fullRace": "皐月賞 GI",
+          "rank": "4着",
+          "raceDate": "2025/04/20 中山11R 芝2000m",
+          "shotDate": "4月9日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3821",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ホープフルS",
+          "grade": "GI",
+          "fullRace": "ホープフルS GI",
+          "rank": "2着",
+          "raceDate": "2024/12/28 中山11R 芝2000m",
+          "shotDate": "12月19日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3618",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 8
+    }
   },
   "ジューンテイク": {
     "name": "ジューンテイク",
@@ -27661,7 +33528,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'京都記念(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021100913&no=102707",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4701",
     "pedigree": {
       "sire": "キズナ",
       "dam": "アドマイヤサブリナ",
@@ -28176,8 +34043,113 @@ export const HORSE_DATABASE = {
         "rival": "(ラシェンテ)"
       }
     ],
-    "photoTitle": "京都記念(G2)/這いよれ！レイ子さんさん",
-    "photoPaddocks": []
+    "photoTitle": "オールカマー GII (9月10日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "7着",
+        "raceDate": "2026/09/20 中山11R 芝2200m",
+        "shotDate": "9月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4701",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "金鯱賞",
+        "grade": "GII",
+        "fullRace": "金鯱賞 GII",
+        "rank": "4着",
+        "raceDate": "2026/03/15 中京11R 芝2000m",
+        "shotDate": "3月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4398",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "神戸新聞杯",
+        "grade": "GII",
+        "fullRace": "神戸新聞杯 GII",
+        "rank": "2着",
+        "raceDate": "2024/09/22 中京11R 芝2200m",
+        "shotDate": "9月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3421",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "朝日杯ＦＳ",
+        "grade": "GI",
+        "fullRace": "朝日杯ＦＳ GI",
+        "rank": "4着",
+        "raceDate": "2023/12/17 阪神11R 芝1600m",
+        "shotDate": "12月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2887",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "新潟２歳S",
+        "grade": "GIII",
+        "fullRace": "新潟２歳S GIII",
+        "rank": "10着",
+        "raceDate": "2023/08/27 新潟11R 芝1600m",
+        "shotDate": "8月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2668",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "7着",
+        "raceDate": "2026/09/20 中山11R 芝2200m",
+        "shotDate": "9月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4701",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "金鯱賞",
+        "grade": "GII",
+        "fullRace": "金鯱賞 GII",
+        "rank": "4着",
+        "raceDate": "2026/03/15 中京11R 芝2000m",
+        "shotDate": "3月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4398",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "神戸新聞杯",
+          "grade": "GII",
+          "fullRace": "神戸新聞杯 GII",
+          "rank": "2着",
+          "raceDate": "2024/09/22 中京11R 芝2200m",
+          "shotDate": "9月12日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3421",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "朝日杯ＦＳ",
+          "grade": "GI",
+          "fullRace": "朝日杯ＦＳ GI",
+          "rank": "4着",
+          "raceDate": "2023/12/17 阪神11R 芝1600m",
+          "shotDate": "12月6日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2887",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 5
+    }
   },
   "ジュンブロッサム": {
     "name": "ジュンブロッサム",
@@ -28195,7 +34167,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'富士S(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105118&no=134088",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3911",
     "pedigree": {
       "sire": "ワールドエース",
       "dam": "エンプレスティアラ",
@@ -28926,8 +34898,102 @@ export const HORSE_DATABASE = {
         "rival": "デリカテス"
       }
     ],
-    "photoTitle": "新潟記念(GIII)/Dヘリオスさん",
-    "photoPaddocks": []
+    "photoTitle": "安田記念 GI (5月28日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "11着",
+        "raceDate": "2025/06/08 東京11R 芝1600m",
+        "shotDate": "5月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3911",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイラーズＣ",
+        "grade": "GII",
+        "fullRace": "マイラーズＣ GII",
+        "rank": "2着",
+        "raceDate": "2025/04/27 京都11R 芝1600m",
+        "shotDate": "4月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3834",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "東京新聞杯",
+        "grade": "GIII",
+        "fullRace": "東京新聞杯 GIII",
+        "rank": "10着",
+        "raceDate": "2025/02/09 東京11R 芝1600m",
+        "shotDate": "1月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3699",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "10着",
+        "raceDate": "2024/11/17 京都11R 芝1600m",
+        "shotDate": "11月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3526",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "共同通信杯",
+        "grade": "GIII",
+        "fullRace": "共同通信杯 GIII",
+        "rank": "4着",
+        "raceDate": "2022/02/13 東京11R 芝1800m",
+        "shotDate": "2月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1713",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "11着",
+        "raceDate": "2025/06/08 東京11R 芝1600m",
+        "shotDate": "5月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3911",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "マイラーズＣ",
+        "grade": "GII",
+        "fullRace": "マイラーズＣ GII",
+        "rank": "2着",
+        "raceDate": "2025/04/27 京都11R 芝1600m",
+        "shotDate": "4月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3834",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "共同通信杯",
+          "grade": "GIII",
+          "fullRace": "共同通信杯 GIII",
+          "rank": "4着",
+          "raceDate": "2022/02/13 東京11R 芝1800m",
+          "shotDate": "2月2日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1713",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 5
+    }
   },
   "スタニングローズ": {
     "name": "スタニングローズ",
@@ -28945,7 +35011,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'エリザベス女王杯(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105565&no=54393",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3602",
     "pedigree": {
       "sire": "キングカメハメハ",
       "dam": "ローザブランカ",
@@ -29364,8 +35430,157 @@ export const HORSE_DATABASE = {
         "rival": "ブレスレスリー"
       }
     ],
-    "photoTitle": "優駿牝馬(G1)/ルカさん",
-    "photoPaddocks": []
+    "photoTitle": "有馬記念 GI (12月12日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "8着",
+        "raceDate": "2024/12/22 中山11R 芝2500m",
+        "shotDate": "12月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3602",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "1着",
+        "raceDate": "2024/11/10 京都11R 芝2200m",
+        "shotDate": "10月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3515",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "クイーンＳ",
+        "grade": "GIII",
+        "fullRace": "クイーンＳ GIII",
+        "rank": "6着",
+        "raceDate": "2024/07/28 札幌11R 芝1800m",
+        "shotDate": "7月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3320",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "9着",
+        "raceDate": "2024/05/12 東京11R 芝1600m",
+        "shotDate": "5月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3200",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "8着",
+        "raceDate": "2024/03/31 阪神11R 芝2000m",
+        "shotDate": "3月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3107",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "12着",
+        "raceDate": "2023/05/14 東京11R 芝1600m",
+        "shotDate": "5月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2494",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "5着",
+        "raceDate": "2023/02/26 中山11R 芝1800m",
+        "shotDate": "2月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2363",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "14着",
+        "raceDate": "2022/11/13 阪神11R 芝2200m",
+        "shotDate": "11月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2183",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "1着",
+        "raceDate": "2022/10/16 阪神11R 芝2000m",
+        "shotDate": "10月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2135",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "新潟２歳S",
+        "grade": "GIII",
+        "fullRace": "新潟２歳S GIII",
+        "rank": "5着",
+        "raceDate": "2021/08/29 新潟11R 芝1600m",
+        "shotDate": "",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1417",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "8着",
+        "raceDate": "2024/12/22 中山11R 芝2500m",
+        "shotDate": "12月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3602",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "1着",
+        "raceDate": "2024/11/10 京都11R 芝2200m",
+        "shotDate": "10月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3515",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "秋華賞",
+          "grade": "GI",
+          "fullRace": "秋華賞 GI",
+          "rank": "1着",
+          "raceDate": "2022/10/16 阪神11R 芝2000m",
+          "shotDate": "10月5日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2135",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 10
+    }
   },
   "スズハローム": {
     "name": "スズハローム",
@@ -29383,7 +35598,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'ダービー卿チャレンジT(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020105018&no=23186",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4813",
     "pedigree": {
       "sire": "サトノダイヤモンド",
       "dam": "アイライン",
@@ -29946,8 +36161,80 @@ export const HORSE_DATABASE = {
         "rival": "レイベリング"
       }
     ],
-    "photoTitle": "２歳新馬/ルカさん",
-    "photoPaddocks": []
+    "photoTitle": "マイルＣＳ GI (11月11日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "5着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4813",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "17着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4551",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＣＢＣ賞",
+        "grade": "GIII",
+        "fullRace": "ＣＢＣ賞 GIII",
+        "rank": "2着",
+        "raceDate": "2024/08/18 中京11R 芝1200m",
+        "shotDate": "8月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3353",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "5着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4813",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "17着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4551",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "ＣＢＣ賞",
+          "grade": "GIII",
+          "fullRace": "ＣＢＣ賞 GIII",
+          "rank": "2着",
+          "raceDate": "2024/08/18 中京11R 芝1200m",
+          "shotDate": "8月7日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3353",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 3
+    }
   },
   "ジーティーキャリー": {
     "name": "ジーティーキャリー",
@@ -29965,7 +36252,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳未勝利"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024106677&no=4583",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ブリックスアンドモルタル",
       "dam": "ラトゥールレディー",
@@ -30024,8 +36311,14 @@ export const HORSE_DATABASE = {
         "rival": "シャンデヴァーグ"
       }
     ],
-    "photoTitle": "2歳新馬/こぐまさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ジュウリョクピエロ": {
     "name": "ジュウリョクピエロ",
@@ -30043,7 +36336,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'優駿牝馬(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023102979&no=52360",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4805",
     "pedigree": {
       "sire": "オルフェーヴル",
       "dam": "ハッピーヴァリュー",
@@ -30198,16 +36491,57 @@ export const HORSE_DATABASE = {
         "rival": "(ロードステラート)"
       }
     ],
-    "photoTitle": "優駿牝馬(G1)/阿武隈高原さん",
+    "photoTitle": "エリザベス女王杯 GI (11月4日撮影)",
     "photoPaddocks": [
       {
         "race": "エリザベス女王杯",
-        "slug": "elizabeth",
-        "date": "11月4日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img05.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "11着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4805",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "1着",
+        "raceDate": "2026/05/24 東京11R 芝2400m",
+        "shotDate": "5月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4527",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "11着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4805",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "1着",
+        "raceDate": "2026/05/24 東京11R 芝2400m",
+        "shotDate": "5月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4527",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 2
+    }
   },
   "スターズオンアース": {
     "name": "スターズオンアース",
@@ -30225,7 +36559,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'優駿牝馬(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019104740&no=10856",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3555",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "サザンスターズ",
@@ -30572,8 +36906,168 @@ export const HORSE_DATABASE = {
         "rival": "ルージュスティリア"
       }
     ],
-    "photoTitle": "２歳未勝利/ルカさん",
-    "photoPaddocks": []
+    "photoTitle": "ジャパンC GI (11月14日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "7着",
+        "raceDate": "2024/11/24 東京12R 芝2400m",
+        "shotDate": "11月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3555",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "2着",
+        "raceDate": "2023/12/24 中山11R 芝2500m",
+        "shotDate": "12月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2898",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "3着",
+        "raceDate": "2023/11/26 東京12R 芝2400m",
+        "shotDate": "11月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2846",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "3着",
+        "raceDate": "2023/05/14 東京11R 芝1600m",
+        "shotDate": "5月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2493",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "2着",
+        "raceDate": "2023/04/02 阪神11R 芝2000m",
+        "shotDate": "3月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2423",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "3着",
+        "raceDate": "2022/10/16 阪神11R 芝2000m",
+        "shotDate": "10月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2140",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "1着",
+        "raceDate": "2022/05/22 東京11R 芝2400m",
+        "shotDate": "5月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1916",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "7着",
+        "raceDate": "2024/11/24 東京12R 芝2400m",
+        "shotDate": "11月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3555",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "2着",
+        "raceDate": "2023/12/24 中山11R 芝2500m",
+        "shotDate": "12月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2898",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "ジャパンC",
+          "grade": "GI",
+          "fullRace": "ジャパンC GI",
+          "rank": "3着",
+          "raceDate": "2023/11/26 東京12R 芝2400m",
+          "shotDate": "11月15日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2846",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ヴィクトリアマイル",
+          "grade": "GI",
+          "fullRace": "ヴィクトリアマイル GI",
+          "rank": "3着",
+          "raceDate": "2023/05/14 東京11R 芝1600m",
+          "shotDate": "5月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2493",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "大阪杯",
+          "grade": "GI",
+          "fullRace": "大阪杯 GI",
+          "rank": "2着",
+          "raceDate": "2023/04/02 阪神11R 芝2000m",
+          "shotDate": "3月22日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2423",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "秋華賞",
+          "grade": "GI",
+          "fullRace": "秋華賞 GI",
+          "rank": "3着",
+          "raceDate": "2022/10/16 阪神11R 芝2000m",
+          "shotDate": "10月6日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2140",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "オークス",
+          "grade": "GI",
+          "fullRace": "オークス GI",
+          "rank": "1着",
+          "raceDate": "2022/05/22 東京11R 芝2400m",
+          "shotDate": "5月11日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1916",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 7
+    }
   },
   "スターアニス": {
     "name": "スターアニス",
@@ -30591,7 +37085,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'桜花賞(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023106920&no=66930",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4812",
     "pedigree": {
       "sire": "ドレフォン",
       "dam": "エピセアローム",
@@ -30770,51 +37264,190 @@ export const HORSE_DATABASE = {
         "rival": "コラルリーフ"
       }
     ],
-    "photoTitle": "滋賀県/ゲストさん",
+    "photoTitle": "マイルＣＳ GI (11月12日撮影)",
     "photoPaddocks": [
       {
-        "race": "マイルCS",
-        "slug": "mcs",
-        "date": "11月12日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img03.jpg",
-        "source": "JRA-VAN"
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "3着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4812",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
       },
       {
         "race": "スプリンターズS",
-        "slug": "sprinters",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/sprinters/img/photopaddock_img01.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "スプリンターズS GI",
+        "rank": "4着",
+        "raceDate": "2026/09/27 中山11R 芝1200m",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4719",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "12着",
+        "raceDate": "2026/05/24 東京11R 芝2400m",
+        "shotDate": "5月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4528",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "桜花賞",
+        "grade": "GI",
+        "fullRace": "桜花賞 GI",
+        "rank": "1着",
+        "raceDate": "2026/04/12 阪神11R 芝1600m",
+        "shotDate": "4月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4445",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神ＪＦ",
+        "grade": "GI",
+        "fullRace": "阪神ＪＦ GI",
+        "rank": "1着",
+        "raceDate": "2025/12/14 阪神11R 芝1600m",
+        "shotDate": "12月3日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4217",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中京２歳Ｓ",
+        "grade": "GIII",
+        "fullRace": "中京２歳Ｓ GIII",
+        "rank": "2着",
+        "raceDate": "2025/08/31 中京11R 芝1400m",
+        "shotDate": "8月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4035",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルCS",
+        "grade": "GI",
+        "fullRace": "マイルCS GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img03.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       },
       {
         "race": "チャンピオンズC",
-        "slug": "champ",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img01.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img01.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       },
       {
         "race": "阪神JF",
-        "slug": "juvenile",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img01.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "阪神JF GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img01.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       },
       {
         "race": "朝日杯FS",
-        "slug": "futurity",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img01.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "朝日杯FS GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img01.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       },
       {
         "race": "有馬記念",
-        "slug": "arima",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img01.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img01.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "3着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4812",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "スプリンターズS",
+        "grade": "GI",
+        "fullRace": "スプリンターズS GI",
+        "rank": "4着",
+        "raceDate": "2026/09/27 中山11R 芝1200m",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4719",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "桜花賞",
+          "grade": "GI",
+          "fullRace": "桜花賞 GI",
+          "rank": "1着",
+          "raceDate": "2026/04/12 阪神11R 芝1600m",
+          "shotDate": "4月2日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4445",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "阪神ＪＦ",
+          "grade": "GI",
+          "fullRace": "阪神ＪＦ GI",
+          "rank": "1着",
+          "raceDate": "2025/12/14 阪神11R 芝1600m",
+          "shotDate": "12月3日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4217",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "中京２歳Ｓ",
+          "grade": "GIII",
+          "fullRace": "中京２歳Ｓ GIII",
+          "rank": "2着",
+          "raceDate": "2025/08/31 中京11R 芝1400m",
+          "shotDate": "8月20日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4035",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 11
+    }
   },
   "ステレンボッシュ": {
     "name": "ステレンボッシュ",
@@ -30830,7 +37463,7 @@ export const HORSE_DATABASE = {
     "record": "16戦0勝 [0-0-1-15]",
     "earnings": "195万円",
     "titles": [],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105383&no=838",
+    "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img07.jpg",
     "pedigree": {
       "sire": "サトノダイヤモンド",
       "dam": "アルル",
@@ -31201,16 +37834,36 @@ export const HORSE_DATABASE = {
         "rival": "カーメルタザイト"
       }
     ],
-    "photoTitle": "ノーザンファーム早来/ゲストさん",
+    "photoTitle": "エリザベス女王杯 GI (11月4日撮影)",
     "photoPaddocks": [
       {
         "race": "エリザベス女王杯",
-        "slug": "elizabeth",
-        "date": "11月4日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img07.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img07.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img07.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "ステラヴェローチェ": {
     "name": "ステラヴェローチェ",
@@ -31228,7 +37881,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "21'神戸新聞杯(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018104980&no=5024",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3413",
     "pedigree": {
       "sire": "バゴ",
       "dam": "オーマイベイビー",
@@ -31671,8 +38324,179 @@ export const HORSE_DATABASE = {
         "rival": "(グルーヴビート)"
       }
     ],
-    "photoTitle": "サウジアラビアＲＣ(G3)/さん",
-    "photoPaddocks": []
+    "photoTitle": "オールカマー GII (9月12日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "6着",
+        "raceDate": "2024/09/22 中山11R 芝2200m",
+        "shotDate": "9月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3413",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "9着",
+        "raceDate": "2024/06/02 東京11R 芝1600m",
+        "shotDate": "5月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3237",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "4着",
+        "raceDate": "2024/03/31 阪神11R 芝2000m",
+        "shotDate": "3月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3106",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "4着",
+        "raceDate": "2021/10/24 阪神11R 芝3000m",
+        "shotDate": "10月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1515",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "神戸新聞杯",
+        "grade": "GII",
+        "fullRace": "神戸新聞杯 GII",
+        "rank": "1着",
+        "raceDate": "2021/09/26 中京11R 芝2200m",
+        "shotDate": "9月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1464",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "3着",
+        "raceDate": "2021/04/18 中山11R 芝2000m",
+        "shotDate": "4月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1203",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "共同通信杯",
+        "grade": "GIII",
+        "fullRace": "共同通信杯 GIII",
+        "rank": "5着",
+        "raceDate": "2021/02/14 東京11R 芝1800m",
+        "shotDate": "2月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1092",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "朝日フューチュリティ",
+        "grade": "GI",
+        "fullRace": "朝日フューチュリティ GI",
+        "rank": "2着",
+        "raceDate": "2020/12/20 阪神11R 芝1600m",
+        "shotDate": "12月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=983",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "6着",
+        "raceDate": "2024/09/22 中山11R 芝2200m",
+        "shotDate": "9月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3413",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "9着",
+        "raceDate": "2024/06/02 東京11R 芝1600m",
+        "shotDate": "5月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3237",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "大阪杯",
+          "grade": "GI",
+          "fullRace": "大阪杯 GI",
+          "rank": "4着",
+          "raceDate": "2024/03/31 阪神11R 芝2000m",
+          "shotDate": "3月21日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3106",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "菊花賞",
+          "grade": "GI",
+          "fullRace": "菊花賞 GI",
+          "rank": "4着",
+          "raceDate": "2021/10/24 阪神11R 芝3000m",
+          "shotDate": "10月14日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1515",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "神戸新聞杯",
+          "grade": "GII",
+          "fullRace": "神戸新聞杯 GII",
+          "rank": "1着",
+          "raceDate": "2021/09/26 中京11R 芝2200m",
+          "shotDate": "9月16日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1464",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "皐月賞",
+          "grade": "GI",
+          "fullRace": "皐月賞 GI",
+          "rank": "3着",
+          "raceDate": "2021/04/18 中山11R 芝2000m",
+          "shotDate": "4月7日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1203",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "朝日フューチュリティ",
+          "grade": "GI",
+          "fullRace": "朝日フューチュリティ GI",
+          "rank": "2着",
+          "raceDate": "2020/12/20 阪神11R 芝1600m",
+          "shotDate": "12月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=983",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 8
+    }
   },
   "セキトバイースト": {
     "name": "セキトバイースト",
@@ -31690,7 +38514,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'府中牝馬S(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021103975&no=105589",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4801",
     "pedigree": {
       "sire": "デクラレーションオブウォー",
       "dam": "ベアフットレディ",
@@ -32181,8 +39005,179 @@ export const HORSE_DATABASE = {
         "rival": "ルージュスタニング"
       }
     ],
-    "photoTitle": "府中牝馬S(G3)/サビヌキコペンさん",
-    "photoPaddocks": []
+    "photoTitle": "エリザベス女王杯 GI (11月5日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "5着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4801",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "15着",
+        "raceDate": "2026/10/11 東京11R 芝1800m",
+        "shotDate": "10月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4746",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "府中牝馬Ｓ",
+        "grade": "GIII",
+        "fullRace": "府中牝馬Ｓ GIII",
+        "rank": "1着",
+        "raceDate": "2026/06/21 東京11R 芝1800m",
+        "shotDate": "6月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4574",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "6着",
+        "raceDate": "2025/11/16 京都11R 芝2200m",
+        "shotDate": "11月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4172",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "10着",
+        "raceDate": "2025/10/12 東京11R 芝1800m",
+        "shotDate": "10月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4112",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "府中牝馬Ｓ",
+        "grade": "GIII",
+        "fullRace": "府中牝馬Ｓ GIII",
+        "rank": "1着",
+        "raceDate": "2025/06/22 東京11R 芝1800m",
+        "shotDate": "6月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3940",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "13着",
+        "raceDate": "2024/10/13 京都11R 芝2000m",
+        "shotDate": "10月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3468",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ローズＳ",
+        "grade": "GII",
+        "fullRace": "ローズＳ GII",
+        "rank": "3着",
+        "raceDate": "2024/09/15 中京11R 芝2000m",
+        "shotDate": "9月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3407",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チューリップ賞",
+        "grade": "GII",
+        "fullRace": "チューリップ賞 GII",
+        "rank": "2着",
+        "raceDate": "2024/03/02 阪神11R 芝1600m",
+        "shotDate": "2月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3044",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "5着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4801",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "15着",
+        "raceDate": "2026/10/11 東京11R 芝1800m",
+        "shotDate": "10月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4746",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "府中牝馬Ｓ",
+          "grade": "GIII",
+          "fullRace": "府中牝馬Ｓ GIII",
+          "rank": "1着",
+          "raceDate": "2026/06/21 東京11R 芝1800m",
+          "shotDate": "6月11日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4574",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "府中牝馬Ｓ",
+          "grade": "GIII",
+          "fullRace": "府中牝馬Ｓ GIII",
+          "rank": "1着",
+          "raceDate": "2025/06/22 東京11R 芝1800m",
+          "shotDate": "6月12日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3940",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ローズＳ",
+          "grade": "GII",
+          "fullRace": "ローズＳ GII",
+          "rank": "3着",
+          "raceDate": "2024/09/15 中京11R 芝2000m",
+          "shotDate": "9月5日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3407",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "チューリップ賞",
+          "grade": "GII",
+          "fullRace": "チューリップ賞 GII",
+          "rank": "2着",
+          "raceDate": "2024/03/02 阪神11R 芝1600m",
+          "shotDate": "2月22日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3044",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 9
+    }
   },
   "セラフィックコール": {
     "name": "セラフィックコール",
@@ -32200,7 +39195,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'ダイオライト記念(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103400&no=1071",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3569",
     "pedigree": {
       "sire": "ヘニーヒューズ",
       "dam": "シャンドランジュ",
@@ -32667,8 +39662,80 @@ export const HORSE_DATABASE = {
         "rival": "(レッドプロフェシー)"
       }
     ],
-    "photoTitle": "ノーザン空港/レッド×レッドさん",
-    "photoPaddocks": []
+    "photoTitle": "チャンピオンズC GI (11月20日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "12着",
+        "raceDate": "2024/12/01 中京11R ダ1800m",
+        "shotDate": "11月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3569",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "10着",
+        "raceDate": "2023/12/03 中京11R ダ1800m",
+        "shotDate": "11月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2864",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "みやこS",
+        "grade": "GIII",
+        "fullRace": "みやこS GIII",
+        "rank": "1着",
+        "raceDate": "2023/11/05 京都11R ダ1800m",
+        "shotDate": "10月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2809",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "12着",
+        "raceDate": "2024/12/01 中京11R ダ1800m",
+        "shotDate": "11月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3569",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "10着",
+        "raceDate": "2023/12/03 中京11R ダ1800m",
+        "shotDate": "11月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2864",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "みやこS",
+          "grade": "GIII",
+          "fullRace": "みやこS GIII",
+          "rank": "1着",
+          "raceDate": "2023/11/05 京都11R ダ1800m",
+          "shotDate": "10月25日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2809",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 3
+    }
   },
   "スレイマン": {
     "name": "スレイマン",
@@ -32686,7 +39753,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'報知オールスターC【地方交流(G)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018105164&no=31285",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3300",
     "pedigree": {
       "sire": "キングカメハメハ",
       "dam": "ドナブリーニ",
@@ -33369,8 +40436,36 @@ export const HORSE_DATABASE = {
         "rival": "アナレンマ"
       }
     ],
-    "photoTitle": "３歳未勝利/さん",
-    "photoPaddocks": []
+    "photoTitle": "プロキオンＳ GIII (6月26日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "プロキオンＳ",
+        "grade": "GIII",
+        "fullRace": "プロキオンＳ GIII",
+        "rank": "2着",
+        "raceDate": "2024/07/07 小倉11R ダ1700m",
+        "shotDate": "6月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3300",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "プロキオンＳ",
+        "grade": "GIII",
+        "fullRace": "プロキオンＳ GIII",
+        "rank": "2着",
+        "raceDate": "2024/07/07 小倉11R ダ1700m",
+        "shotDate": "6月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3300",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "セイウンハーデス": {
     "name": "セイウンハーデス",
@@ -33388,7 +40483,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'毎日王冠(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019102632&no=134766",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4737",
     "pedigree": {
       "sire": "シルバーステート",
       "dam": "ハイノリッジ",
@@ -33879,16 +40974,157 @@ export const HORSE_DATABASE = {
         "rival": "(ベルシャンテ)"
       }
     ],
-    "photoTitle": "毎日王冠(G2)/旅っ程さん",
+    "photoTitle": "毎日王冠 GII (9月24日撮影)",
     "photoPaddocks": [
       {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "1着",
+        "raceDate": "2026/10/04 東京11R 芝1800m",
+        "shotDate": "9月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4737",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "4着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4553",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "5着",
+        "raceDate": "2026/04/05 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4440",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "12着",
+        "raceDate": "2026/03/01 中山11R 芝1800m",
+        "shotDate": "2月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4365",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "12着",
+        "raceDate": "2025/11/30 東京12R 芝2400m",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4189",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都記念",
+        "grade": "GII",
+        "fullRace": "京都記念 GII",
+        "rank": "8着",
+        "raceDate": "2025/02/16 京都11R 芝2200m",
+        "shotDate": "2月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3712",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "七夕賞",
+        "grade": "GIII",
+        "fullRace": "七夕賞 GIII",
+        "rank": "1着",
+        "raceDate": "2023/07/09 福島11R 芝2000m",
+        "shotDate": "6月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2601",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "セントライト記念",
+        "grade": "GII",
+        "fullRace": "セントライト記念 GII",
+        "rank": "4着",
+        "raceDate": "2022/09/19 中山11R 芝2200m",
+        "shotDate": "9月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2084",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
         "race": "天皇賞（秋）",
-        "slug": "akiten",
-        "date": "10月21日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img06.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "10月21日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img06.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "1着",
+        "raceDate": "2026/10/04 東京11R 芝1800m",
+        "shotDate": "9月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4737",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "4着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4553",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "七夕賞",
+          "grade": "GIII",
+          "fullRace": "七夕賞 GIII",
+          "rank": "1着",
+          "raceDate": "2023/07/09 福島11R 芝2000m",
+          "shotDate": "6月29日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2601",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "セントライト記念",
+          "grade": "GII",
+          "fullRace": "セントライト記念 GII",
+          "rank": "4着",
+          "raceDate": "2022/09/19 中山11R 芝2200m",
+          "shotDate": "9月7日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2084",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 9
+    }
   },
   "ソウルラッシュ": {
     "name": "ソウルラッシュ",
@@ -33906,7 +41142,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'マイルCS(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018100382&no=42027",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4177",
     "pedigree": {
       "sire": "ルーラーシップ",
       "dam": "エターナルブーケ",
@@ -34589,8 +41825,245 @@ export const HORSE_DATABASE = {
         "rival": "(レイトンヒル)"
       }
     ],
-    "photoTitle": "クリスマスC(２勝クラス)/ルカさん",
-    "photoPaddocks": []
+    "photoTitle": "マイルＣＳ GI (11月13日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "6着",
+        "raceDate": "2025/11/23 京都11R 芝1600m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4177",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "3着",
+        "raceDate": "2025/06/08 東京11R 芝1600m",
+        "shotDate": "5月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3910",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "3着",
+        "raceDate": "2025/03/02 中山11R 芝1800m",
+        "shotDate": "2月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3728",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "1着",
+        "raceDate": "2024/11/17 京都11R 芝1600m",
+        "shotDate": "11月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3528",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "3着",
+        "raceDate": "2024/06/02 東京11R 芝1600m",
+        "shotDate": "5月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3235",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイラーズＣ",
+        "grade": "GII",
+        "fullRace": "マイラーズＣ GII",
+        "rank": "1着",
+        "raceDate": "2024/04/21 京都11R 芝1600m",
+        "shotDate": "4月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3144",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "2着",
+        "raceDate": "2023/11/19 京都11R 芝1600m",
+        "shotDate": "11月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2833",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "読売マイラーズC",
+        "grade": "GII",
+        "fullRace": "読売マイラーズC GII",
+        "rank": "3着",
+        "raceDate": "2023/04/23 京都11R 芝1600m",
+        "shotDate": "4月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2454",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルチャンピオンＳ",
+        "grade": "GI",
+        "fullRace": "マイルチャンピオンＳ GI",
+        "rank": "4着",
+        "raceDate": "2022/11/20 阪神11R 芝1600m",
+        "shotDate": "11月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2194",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "13着",
+        "raceDate": "2022/06/05 東京11R 芝1600m",
+        "shotDate": "5月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1938",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "読売マイラーズC",
+        "grade": "GII",
+        "fullRace": "読売マイラーズC GII",
+        "rank": "1着",
+        "raceDate": "2022/04/24 阪神11R 芝1600m",
+        "shotDate": "4月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1874",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "6着",
+        "raceDate": "2025/11/23 京都11R 芝1600m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4177",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "3着",
+        "raceDate": "2025/06/08 東京11R 芝1600m",
+        "shotDate": "5月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3910",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "中山記念",
+          "grade": "GII",
+          "fullRace": "中山記念 GII",
+          "rank": "3着",
+          "raceDate": "2025/03/02 中山11R 芝1800m",
+          "shotDate": "2月19日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3728",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "マイルＣＳ",
+          "grade": "GI",
+          "fullRace": "マイルＣＳ GI",
+          "rank": "1着",
+          "raceDate": "2024/11/17 京都11R 芝1600m",
+          "shotDate": "11月7日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3528",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "安田記念",
+          "grade": "GI",
+          "fullRace": "安田記念 GI",
+          "rank": "3着",
+          "raceDate": "2024/06/02 東京11R 芝1600m",
+          "shotDate": "5月22日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3235",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "マイラーズＣ",
+          "grade": "GII",
+          "fullRace": "マイラーズＣ GII",
+          "rank": "1着",
+          "raceDate": "2024/04/21 京都11R 芝1600m",
+          "shotDate": "4月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3144",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "マイルＣＳ",
+          "grade": "GI",
+          "fullRace": "マイルＣＳ GI",
+          "rank": "2着",
+          "raceDate": "2023/11/19 京都11R 芝1600m",
+          "shotDate": "11月9日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2833",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "読売マイラーズC",
+          "grade": "GII",
+          "fullRace": "読売マイラーズC GII",
+          "rank": "3着",
+          "raceDate": "2023/04/23 京都11R 芝1600m",
+          "shotDate": "4月13日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2454",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "マイルチャンピオンＳ",
+          "grade": "GI",
+          "fullRace": "マイルチャンピオンＳ GI",
+          "rank": "4着",
+          "raceDate": "2022/11/20 阪神11R 芝1600m",
+          "shotDate": "11月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2194",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "読売マイラーズC",
+          "grade": "GII",
+          "fullRace": "読売マイラーズC GII",
+          "rank": "1着",
+          "raceDate": "2022/04/24 阪神11R 芝1600m",
+          "shotDate": "4月13日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1874",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 11
+    }
   },
   "セリフォス": {
     "name": "セリフォス",
@@ -34608,7 +42081,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'マイルCS(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019104462&no=51113",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3527",
     "pedigree": {
       "sire": "ダイワメジャー",
       "dam": "シーフロント",
@@ -35003,8 +42476,223 @@ export const HORSE_DATABASE = {
         "rival": "(ベルクレスタ)"
       }
     ],
-    "photoTitle": "ＮＨＫマイルC(G1)/ルカさん",
-    "photoPaddocks": []
+    "photoTitle": "マイルＣＳ GI (11月6日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "6着",
+        "raceDate": "2024/11/17 京都11R 芝1600m",
+        "shotDate": "11月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3527",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "5着",
+        "raceDate": "2024/06/02 東京11R 芝1600m",
+        "shotDate": "5月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3236",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイラーズＣ",
+        "grade": "GII",
+        "fullRace": "マイラーズＣ GII",
+        "rank": "2着",
+        "raceDate": "2024/04/21 京都11R 芝1600m",
+        "shotDate": "4月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3155",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "8着",
+        "raceDate": "2023/11/19 京都11R 芝1600m",
+        "shotDate": "11月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2834",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "2着",
+        "raceDate": "2023/06/04 東京11R 芝1600m",
+        "shotDate": "5月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2540",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルチャンピオンＳ",
+        "grade": "GI",
+        "fullRace": "マイルチャンピオンＳ GI",
+        "rank": "1着",
+        "raceDate": "2022/11/20 阪神11R 芝1600m",
+        "shotDate": "11月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2193",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "4着",
+        "raceDate": "2022/06/05 東京11R 芝1600m",
+        "shotDate": "5月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1937",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＮＨＫマイルC",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルC GI",
+        "rank": "4着",
+        "raceDate": "2022/05/08 東京11R 芝1600m",
+        "shotDate": "4月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1891",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "朝日フューチュリティ",
+        "grade": "GI",
+        "fullRace": "朝日フューチュリティ GI",
+        "rank": "2着",
+        "raceDate": "2021/12/19 阪神11R 芝1600m",
+        "shotDate": "12月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1596",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "新潟２歳S",
+        "grade": "GIII",
+        "fullRace": "新潟２歳S GIII",
+        "rank": "1着",
+        "raceDate": "2021/08/29 新潟11R 芝1600m",
+        "shotDate": "",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1418",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "6着",
+        "raceDate": "2024/11/17 京都11R 芝1600m",
+        "shotDate": "11月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3527",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "5着",
+        "raceDate": "2024/06/02 東京11R 芝1600m",
+        "shotDate": "5月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3236",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "マイラーズＣ",
+          "grade": "GII",
+          "fullRace": "マイラーズＣ GII",
+          "rank": "2着",
+          "raceDate": "2024/04/21 京都11R 芝1600m",
+          "shotDate": "4月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3155",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "安田記念",
+          "grade": "GI",
+          "fullRace": "安田記念 GI",
+          "rank": "2着",
+          "raceDate": "2023/06/04 東京11R 芝1600m",
+          "shotDate": "5月24日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2540",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "マイルチャンピオンＳ",
+          "grade": "GI",
+          "fullRace": "マイルチャンピオンＳ GI",
+          "rank": "1着",
+          "raceDate": "2022/11/20 阪神11R 芝1600m",
+          "shotDate": "11月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2193",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "安田記念",
+          "grade": "GI",
+          "fullRace": "安田記念 GI",
+          "rank": "4着",
+          "raceDate": "2022/06/05 東京11R 芝1600m",
+          "shotDate": "5月25日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1937",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ＮＨＫマイルC",
+          "grade": "GI",
+          "fullRace": "ＮＨＫマイルC GI",
+          "rank": "4着",
+          "raceDate": "2022/05/08 東京11R 芝1600m",
+          "shotDate": "4月27日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1891",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "朝日フューチュリティ",
+          "grade": "GI",
+          "fullRace": "朝日フューチュリティ GI",
+          "rank": "2着",
+          "raceDate": "2021/12/19 阪神11R 芝1600m",
+          "shotDate": "12月8日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1596",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "新潟２歳S",
+          "grade": "GIII",
+          "fullRace": "新潟２歳S GIII",
+          "rank": "1着",
+          "raceDate": "2021/08/29 新潟11R 芝1600m",
+          "shotDate": "",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1418",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 10
+    }
   },
   "タイセイカレント": {
     "name": "タイセイカレント",
@@ -35022,7 +42710,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'3歳以上2勝クラス"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104588&no=86680",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3589",
     "pedigree": {
       "sire": "モーリス",
       "dam": "アイリッシュシー",
@@ -35417,8 +43105,36 @@ export const HORSE_DATABASE = {
         "rival": "(ベイリークロア)"
       }
     ],
-    "photoTitle": "戎橋S(3勝クラス)/ポンタも大好きさん",
-    "photoPaddocks": []
+    "photoTitle": "朝日杯ＦＳ GI (12月4日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "朝日杯ＦＳ",
+        "grade": "GI",
+        "fullRace": "朝日杯ＦＳ GI",
+        "rank": "15着",
+        "raceDate": "2024/12/15 京都11R 芝1600m",
+        "shotDate": "12月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3589",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "朝日杯ＦＳ",
+        "grade": "GI",
+        "fullRace": "朝日杯ＦＳ GI",
+        "rank": "15着",
+        "raceDate": "2024/12/15 京都11R 芝1600m",
+        "shotDate": "12月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3589",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "タスティエーラ": {
     "name": "タスティエーラ",
@@ -35436,7 +43152,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'障害4歳以上未勝利"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103507&no=2736",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ダイワメジャー",
       "dam": "トレジャーステイト",
@@ -36071,8 +43787,14 @@ export const HORSE_DATABASE = {
         "rival": "マイネルケレリウス"
       }
     ],
-    "photoTitle": "ノーザンファーム空港/つくねさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "タガノデュード": {
     "name": "タガノデュード",
@@ -36090,7 +43812,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'小倉大賞典(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021106548&no=105765",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4829",
     "pedigree": {
       "sire": "ヤマカツエース",
       "dam": "タガノミューチャン",
@@ -36845,16 +44567,113 @@ export const HORSE_DATABASE = {
         "rival": "マーゴットソラーレ"
       }
     ],
-    "photoTitle": "小倉大賞典(G3)/しやんさん",
+    "photoTitle": "ジャパンＣ GI (11月18日撮影)",
     "photoPaddocks": [
       {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4829",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "4着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4784",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "5着",
+        "raceDate": "2026/06/14 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4566",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "6着",
+        "raceDate": "2026/05/03 京都11R 芝3200m",
+        "shotDate": "4月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4495",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "4着",
+        "raceDate": "2026/04/05 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4439",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
         "race": "ジャパンカップ",
-        "slug": "jc",
-        "date": "11月18日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img04.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "ジャパンカップ GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img04.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4829",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "4着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4784",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "大阪杯",
+          "grade": "GI",
+          "fullRace": "大阪杯 GI",
+          "rank": "4着",
+          "raceDate": "2026/04/05 阪神11R 芝2000m",
+          "shotDate": "3月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4439",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 6
+    }
   },
   "ソールオリエンス": {
     "name": "ソールオリエンス",
@@ -36872,7 +44691,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'3歳未勝利"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103608&no=1208",
+    "photoUrl": null,
     "pedigree": {
       "sire": "Saxon Warrior (安平町)",
       "dam": "ホームカミングクイーン",
@@ -37123,8 +44942,14 @@ export const HORSE_DATABASE = {
         "rival": "ルミノメテオール"
       }
     ],
-    "photoTitle": "ノーザンファーム空港/てーしーさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "タガノエルピーダ": {
     "name": "タガノエルピーダ",
@@ -37142,7 +44967,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'忘れな草賞(L)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021106550&no=91751",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3939",
     "pedigree": {
       "sire": "キズナ",
       "dam": "タガノレヴェントン",
@@ -37561,8 +45386,113 @@ export const HORSE_DATABASE = {
         "rival": "(クランフォード)"
       }
     ],
-    "photoTitle": "京成杯オータムH(G3)/タガノソウデスネさん",
-    "photoPaddocks": []
+    "photoTitle": "府中牝馬Ｓ GIII (6月12日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "府中牝馬Ｓ",
+        "grade": "GIII",
+        "fullRace": "府中牝馬Ｓ GIII",
+        "rank": "5着",
+        "raceDate": "2025/06/22 東京11R 芝1800m",
+        "shotDate": "6月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3939",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "7着",
+        "raceDate": "2024/10/13 京都11R 芝2000m",
+        "shotDate": "10月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3466",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ローズＳ",
+        "grade": "GII",
+        "fullRace": "ローズＳ GII",
+        "rank": "4着",
+        "raceDate": "2024/09/15 中京11R 芝2000m",
+        "shotDate": "9月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3406",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "16着",
+        "raceDate": "2024/05/19 東京11R 芝2400m",
+        "shotDate": "5月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3216",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チューリップ賞",
+        "grade": "GII",
+        "fullRace": "チューリップ賞 GII",
+        "rank": "4着",
+        "raceDate": "2024/03/02 阪神11R 芝1600m",
+        "shotDate": "2月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3051",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "府中牝馬Ｓ",
+        "grade": "GIII",
+        "fullRace": "府中牝馬Ｓ GIII",
+        "rank": "5着",
+        "raceDate": "2025/06/22 東京11R 芝1800m",
+        "shotDate": "6月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3939",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "7着",
+        "raceDate": "2024/10/13 京都11R 芝2000m",
+        "shotDate": "10月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3466",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "ローズＳ",
+          "grade": "GII",
+          "fullRace": "ローズＳ GII",
+          "rank": "4着",
+          "raceDate": "2024/09/15 中京11R 芝2000m",
+          "shotDate": "9月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3406",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "チューリップ賞",
+          "grade": "GII",
+          "fullRace": "チューリップ賞 GII",
+          "rank": "4着",
+          "raceDate": "2024/03/02 阪神11R 芝1600m",
+          "shotDate": "2月22日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3051",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 5
+    }
   },
   "タプティ": {
     "name": "タプティ",
@@ -37580,7 +45510,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳未勝利"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024100935&no=10244",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ダノンスマッシュ",
       "dam": "パフェムリ",
@@ -37639,8 +45569,14 @@ export const HORSE_DATABASE = {
         "rival": "ツキミ"
       }
     ],
-    "photoTitle": "２歳未勝利/さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ダノンベルーガ": {
     "name": "ダノンベルーガ",
@@ -37658,7 +45594,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'共同通信杯(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105195&no=17988",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3597",
     "pedigree": {
       "sire": "ハーツクライ",
       "dam": "コーステッド",
@@ -38029,8 +45965,201 @@ export const HORSE_DATABASE = {
         "rival": "(バトルボーン)"
       }
     ],
-    "photoTitle": "２歳新馬/さん",
-    "photoPaddocks": []
+    "photoTitle": "有馬記念 GI (12月11日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "9着",
+        "raceDate": "2024/12/22 中山11R 芝2500m",
+        "shotDate": "12月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3597",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "9着",
+        "raceDate": "2024/11/24 東京12R 芝2400m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3545",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "14着",
+        "raceDate": "2024/10/27 東京11R 芝2000m",
+        "shotDate": "10月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3482",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "6着",
+        "raceDate": "2023/11/26 東京12R 芝2400m",
+        "shotDate": "11月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2845",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "4着",
+        "raceDate": "2023/10/29 東京11R 芝2000m",
+        "shotDate": "10月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2793",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "5着",
+        "raceDate": "2022/11/27 東京12R 芝2400m",
+        "shotDate": "11月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2204",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "3着",
+        "raceDate": "2022/10/30 東京11R 芝2000m",
+        "shotDate": "10月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2158",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "4着",
+        "raceDate": "2022/05/29 東京11R 芝2400m",
+        "shotDate": "5月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1926",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "4着",
+        "raceDate": "2022/04/17 中山11R 芝2000m",
+        "shotDate": "4月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1850",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "共同通信杯",
+        "grade": "GIII",
+        "fullRace": "共同通信杯 GIII",
+        "rank": "1着",
+        "raceDate": "2022/02/13 東京11R 芝1800m",
+        "shotDate": "2月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1711",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "9着",
+        "raceDate": "2024/12/22 中山11R 芝2500m",
+        "shotDate": "12月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3597",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "9着",
+        "raceDate": "2024/11/24 東京12R 芝2400m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3545",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "天皇賞（秋）",
+          "grade": "GI",
+          "fullRace": "天皇賞（秋） GI",
+          "rank": "4着",
+          "raceDate": "2023/10/29 東京11R 芝2000m",
+          "shotDate": "10月18日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2793",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "天皇賞（秋）",
+          "grade": "GI",
+          "fullRace": "天皇賞（秋） GI",
+          "rank": "3着",
+          "raceDate": "2022/10/30 東京11R 芝2000m",
+          "shotDate": "10月19日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2158",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "日本ダービー",
+          "grade": "GI",
+          "fullRace": "日本ダービー GI",
+          "rank": "4着",
+          "raceDate": "2022/05/29 東京11R 芝2400m",
+          "shotDate": "5月18日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1926",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "皐月賞",
+          "grade": "GI",
+          "fullRace": "皐月賞 GI",
+          "rank": "4着",
+          "raceDate": "2022/04/17 中山11R 芝2000m",
+          "shotDate": "4月6日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1850",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "共同通信杯",
+          "grade": "GIII",
+          "fullRace": "共同通信杯 GIII",
+          "rank": "1着",
+          "raceDate": "2022/02/13 東京11R 芝1800m",
+          "shotDate": "2月2日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1711",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 10
+    }
   },
   "ダノンデサイル": {
     "name": "ダノンデサイル",
@@ -38048,7 +46177,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'日本ダービー(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105143&no=106532",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4830",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "トップデサイル",
@@ -38419,23 +46548,201 @@ export const HORSE_DATABASE = {
         "rival": "ファビュラススター"
       }
     ],
-    "photoTitle": "宝塚記念(G1)/zatsumuさん",
+    "photoTitle": "ジャパンＣ GI (11月19日撮影)",
     "photoPaddocks": [
       {
-        "race": "ジャパンカップ",
-        "slug": "jc",
-        "date": "11月19日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img01.jpg",
-        "source": "JRA-VAN"
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4830",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
       },
       {
         "race": "天皇賞（秋）",
-        "slug": "akiten",
-        "date": "10月22日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img01.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "1着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4782",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "3着",
+        "raceDate": "2026/06/14 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4565",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "3着",
+        "raceDate": "2026/04/05 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4438",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "3着",
+        "raceDate": "2025/12/28 中山11R 芝2500m",
+        "shotDate": "11月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4246",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＡＪＣＣ",
+        "grade": "GII",
+        "fullRace": "ＡＪＣＣ GII",
+        "rank": "1着",
+        "raceDate": "2025/01/26 中山11R 芝2200m",
+        "shotDate": "1月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3663",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "3着",
+        "raceDate": "2024/12/22 中山11R 芝2500m",
+        "shotDate": "12月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3603",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "6着",
+        "raceDate": "2024/10/20 京都11R 芝3000m",
+        "shotDate": "10月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3478",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "除",
+        "raceDate": "2024/04/14 中山11R 芝2000m",
+        "shotDate": "4月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3137",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンカップ",
+        "grade": "GI",
+        "fullRace": "ジャパンカップ GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img01.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4830",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "1着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4782",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "宝塚記念",
+          "grade": "GI",
+          "fullRace": "宝塚記念 GI",
+          "rank": "3着",
+          "raceDate": "2026/06/14 阪神11R 芝2200m",
+          "shotDate": "6月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4565",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "大阪杯",
+          "grade": "GI",
+          "fullRace": "大阪杯 GI",
+          "rank": "3着",
+          "raceDate": "2026/04/05 阪神11R 芝2000m",
+          "shotDate": "3月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4438",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "有馬記念",
+          "grade": "GI",
+          "fullRace": "有馬記念 GI",
+          "rank": "3着",
+          "raceDate": "2025/12/28 中山11R 芝2500m",
+          "shotDate": "11月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4246",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ＡＪＣＣ",
+          "grade": "GII",
+          "fullRace": "ＡＪＣＣ GII",
+          "rank": "1着",
+          "raceDate": "2025/01/26 中山11R 芝2200m",
+          "shotDate": "1月15日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3663",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "有馬記念",
+          "grade": "GI",
+          "fullRace": "有馬記念 GI",
+          "rank": "3着",
+          "raceDate": "2024/12/22 中山11R 芝2500m",
+          "shotDate": "12月12日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3603",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 10
+    }
   },
   "ダノンフィーゴ": {
     "name": "ダノンフィーゴ",
@@ -38453,7 +46760,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'かきつばた記念(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022100623&no=88455",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4614",
     "pedigree": {
       "sire": "Into Mischief (米)",
       "dam": "オリーズキャンディ",
@@ -38800,8 +47107,36 @@ export const HORSE_DATABASE = {
         "rival": "ミリアッドラヴ"
       }
     ],
-    "photoTitle": "東海S(G3)/ともちゃさん",
-    "photoPaddocks": []
+    "photoTitle": "東海Ｓ GIII (7月15日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "東海Ｓ",
+        "grade": "GIII",
+        "fullRace": "東海Ｓ GIII",
+        "rank": "10着",
+        "raceDate": "2026/07/26 中京7R ダ1400m",
+        "shotDate": "7月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4614",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "東海Ｓ",
+        "grade": "GIII",
+        "fullRace": "東海Ｓ GIII",
+        "rank": "10着",
+        "raceDate": "2026/07/26 中京7R ダ1400m",
+        "shotDate": "7月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4614",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "テアオ": {
     "name": "テアオ",
@@ -39050,7 +47385,14 @@ export const HORSE_DATABASE = {
         "rival": "ルナ"
       }
     ],
-    "photoPaddocks": []
+    "photoPaddocks": [],
+    "photoTitle": null,
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ダブルハートボンド": {
     "name": "ダブルハートボンド",
@@ -39068,7 +47410,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'チャンピオンズC(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105700&no=99471",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4353",
     "pedigree": {
       "sire": "キズナ",
       "dam": "パーシステントリー",
@@ -39295,8 +47637,80 @@ export const HORSE_DATABASE = {
         "rival": "(ポップスター)"
       }
     ],
-    "photoTitle": "フェブラリーＳ(G1)/パンナコッタさん",
-    "photoPaddocks": []
+    "photoTitle": "フェブラリーＳ GI (2月11日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "3着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4353",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "1着",
+        "raceDate": "2025/12/07 中京11R ダ1800m",
+        "shotDate": "11月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4202",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "みやこＳ",
+        "grade": "GIII",
+        "fullRace": "みやこＳ GIII",
+        "rank": "1着",
+        "raceDate": "2025/11/09 京都11R ダ1800m",
+        "shotDate": "10月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4160",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "3着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4353",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "1着",
+        "raceDate": "2025/12/07 中京11R ダ1800m",
+        "shotDate": "11月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4202",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "みやこＳ",
+          "grade": "GIII",
+          "fullRace": "みやこＳ GIII",
+          "rank": "1着",
+          "raceDate": "2025/11/09 京都11R ダ1800m",
+          "shotDate": "10月29日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4160",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 3
+    }
   },
   "チェルヴィニア": {
     "name": "チェルヴィニア",
@@ -39314,7 +47728,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'優駿牝馬(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105643&no=99779",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4800",
     "pedigree": {
       "sire": "ハービンジャー",
       "dam": "チェッキーノ",
@@ -39685,16 +48099,212 @@ export const HORSE_DATABASE = {
         "rival": "ボンドガール"
       }
     ],
-    "photoTitle": "中山記念(G2)/TKさん",
+    "photoTitle": "エリザベス女王杯 GI (11月4日撮影)",
     "photoPaddocks": [
       {
         "race": "エリザベス女王杯",
-        "slug": "elizabeth",
-        "date": "11月4日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img08.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "14着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4800",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "8着",
+        "raceDate": "2026/08/30 新潟8R 芝2000m",
+        "shotDate": "8月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4663",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "16着",
+        "raceDate": "2026/05/17 東京11R 芝1600m",
+        "shotDate": "5月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4519",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "5着",
+        "raceDate": "2026/03/01 中山11R 芝1800m",
+        "shotDate": "2月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4367",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "10着",
+        "raceDate": "2025/11/23 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4184",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "7着",
+        "raceDate": "2025/10/05 東京11R 芝1800m",
+        "shotDate": "9月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4098",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "しらさぎＳ",
+        "grade": "GIII",
+        "fullRace": "しらさぎＳ GIII",
+        "rank": "2着",
+        "raceDate": "2025/06/22 阪神11R 芝1600m",
+        "shotDate": "6月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3936",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都記念",
+        "grade": "GII",
+        "fullRace": "京都記念 GII",
+        "rank": "9着",
+        "raceDate": "2025/02/16 京都11R 芝2200m",
+        "shotDate": "2月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3708",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "4着",
+        "raceDate": "2024/11/24 東京12R 芝2400m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3556",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "1着",
+        "raceDate": "2024/10/13 京都11R 芝2000m",
+        "shotDate": "10月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3460",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "1着",
+        "raceDate": "2024/05/19 東京11R 芝2400m",
+        "shotDate": "5月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3214",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "桜花賞",
+        "grade": "GI",
+        "fullRace": "桜花賞 GI",
+        "rank": "13着",
+        "raceDate": "2024/04/07 阪神11R 芝1600m",
+        "shotDate": "3月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3130",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "14着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4800",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "8着",
+        "raceDate": "2026/08/30 新潟8R 芝2000m",
+        "shotDate": "8月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4663",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "しらさぎＳ",
+          "grade": "GIII",
+          "fullRace": "しらさぎＳ GIII",
+          "rank": "2着",
+          "raceDate": "2025/06/22 阪神11R 芝1600m",
+          "shotDate": "6月13日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3936",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ジャパンC",
+          "grade": "GI",
+          "fullRace": "ジャパンC GI",
+          "rank": "4着",
+          "raceDate": "2024/11/24 東京12R 芝2400m",
+          "shotDate": "11月13日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3556",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "秋華賞",
+          "grade": "GI",
+          "fullRace": "秋華賞 GI",
+          "rank": "1着",
+          "raceDate": "2024/10/13 京都11R 芝2000m",
+          "shotDate": "10月2日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3460",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "オークス",
+          "grade": "GI",
+          "fullRace": "オークス GI",
+          "rank": "1着",
+          "raceDate": "2024/05/19 東京11R 芝2400m",
+          "shotDate": "5月9日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3214",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 12
+    }
   },
   "テンカジョウ": {
     "name": "テンカジョウ",
@@ -39712,7 +48322,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'エンプレス杯キヨフジ記念【指(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021102729&no=98785",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4201",
     "pedigree": {
       "sire": "サンダースノー",
       "dam": "フィオレロ",
@@ -40131,8 +48741,36 @@ export const HORSE_DATABASE = {
         "rival": "(エアサンサーラ)"
       }
     ],
-    "photoTitle": "クイーン賞(G3)/旅っ程さん",
-    "photoPaddocks": []
+    "photoTitle": "チャンピオンズＣ GI (11月26日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "7着",
+        "raceDate": "2025/12/07 中京11R ダ1800m",
+        "shotDate": "11月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4201",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "7着",
+        "raceDate": "2025/12/07 中京11R ダ1800m",
+        "shotDate": "11月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4201",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "チャリン": {
     "name": "チャリン",
@@ -40150,7 +48788,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'クイーンアンS(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020190002&no=98320",
+    "photoUrl": null,
     "pedigree": {
       "sire": "Dark Angel (愛)",
       "dam": "Futoon (愛)",
@@ -40593,8 +49231,14 @@ export const HORSE_DATABASE = {
         "rival": "()"
       }
     ],
-    "photoTitle": "マイルチャンピオンＳ(G1)/フレイアザワールドさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "チルカーノ": {
     "name": "チルカーノ",
@@ -40612,7 +49256,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'長久手特別()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105384&no=108935",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ハービンジャー",
       "dam": "アロマティコ",
@@ -41055,8 +49699,14 @@ export const HORSE_DATABASE = {
         "rival": "(ミスズサンダスノー)"
       }
     ],
-    "photoTitle": "Mキタサンブラック(3勝)/YOSHIさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "テンハッピーローズ": {
     "name": "テンハッピーローズ",
@@ -41074,7 +49724,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'ヴィクトリアマイル(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018104750&no=31826",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3393",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "フェータルローズ",
@@ -41709,8 +50359,91 @@ export const HORSE_DATABASE = {
         "rival": "(アンジュソレイユ)"
       }
     ],
-    "photoTitle": "３歳上１勝クラス/ななみさん",
-    "photoPaddocks": []
+    "photoTitle": "セントウルＳ GII (8月28日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "セントウルＳ",
+        "grade": "GII",
+        "fullRace": "セントウルＳ GII",
+        "rank": "7着",
+        "raceDate": "2024/09/08 中京11R 芝1200m",
+        "shotDate": "8月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3393",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "1着",
+        "raceDate": "2024/05/12 東京11R 芝1600m",
+        "shotDate": "5月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3191",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チューリップ賞",
+        "grade": "GII",
+        "fullRace": "チューリップ賞 GII",
+        "rank": "10着",
+        "raceDate": "2021/03/06 阪神11R 芝1600m",
+        "shotDate": "2月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1138",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェアリーS",
+        "grade": "GIII",
+        "fullRace": "フェアリーS GIII",
+        "rank": "4着",
+        "raceDate": "2021/01/11 中山11R 芝1600m",
+        "shotDate": "1月3日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1030",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "セントウルＳ",
+        "grade": "GII",
+        "fullRace": "セントウルＳ GII",
+        "rank": "7着",
+        "raceDate": "2024/09/08 中京11R 芝1200m",
+        "shotDate": "8月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3393",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "1着",
+        "raceDate": "2024/05/12 東京11R 芝1600m",
+        "shotDate": "5月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3191",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "フェアリーS",
+          "grade": "GIII",
+          "fullRace": "フェアリーS GIII",
+          "rank": "4着",
+          "raceDate": "2021/01/11 中山11R 芝1600m",
+          "shotDate": "1月3日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1030",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 4
+    }
   },
   "ドゥラエレーデ": {
     "name": "ドゥラエレーデ",
@@ -41728,7 +50461,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'ホープフルS(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103626&no=4964",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3723",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "マルケッサ",
@@ -42363,8 +51096,90 @@ export const HORSE_DATABASE = {
         "rival": "カルロヴェローチェ"
       }
     ],
-    "photoTitle": "２歳新馬/puu_horseさん",
-    "photoPaddocks": []
+    "photoTitle": "フェブラリーＳ GI (2月12日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "11着",
+        "raceDate": "2025/02/23 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3723",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "プロキオンS",
+        "grade": "GII",
+        "fullRace": "プロキオンS GII",
+        "rank": "3着",
+        "raceDate": "2025/01/26 中京11R ダ1800m",
+        "shotDate": "1月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3671",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "みやこS",
+        "grade": "GIII",
+        "fullRace": "みやこS GIII",
+        "rank": "11着",
+        "raceDate": "2024/11/03 京都11R ダ1800m",
+        "shotDate": "10月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3495",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "12着",
+        "raceDate": "2024/02/18 東京11R ダ1600m",
+        "shotDate": "2月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3015",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "セントライト記念",
+        "grade": "GII",
+        "fullRace": "セントライト記念 GII",
+        "rank": "8着",
+        "raceDate": "2023/09/18 中山11R 芝2200m",
+        "shotDate": "9月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2707",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "11着",
+        "raceDate": "2025/02/23 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3723",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "プロキオンS",
+        "grade": "GII",
+        "fullRace": "プロキオンS GII",
+        "rank": "3着",
+        "raceDate": "2025/01/26 中京11R ダ1800m",
+        "shotDate": "1月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3671",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 5
+    }
   },
   "テーオードレフォン": {
     "name": "テーオードレフォン",
@@ -42382,7 +51197,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'福島民友C(L)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019101324&no=16130",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ドレフォン",
       "dam": "エミネントシチー",
@@ -43161,8 +51976,14 @@ export const HORSE_DATABASE = {
         "rival": "(ワンダーキサラ)"
       }
     ],
-    "photoTitle": "２歳新馬/ななみさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ドゥレッツァ": {
     "name": "ドゥレッツァ",
@@ -43180,7 +52001,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'菊花賞(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103650&no=5203",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4666",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "モアザンセイクリッド",
@@ -43527,8 +52348,124 @@ export const HORSE_DATABASE = {
         "rival": "ネビュルーズ"
       }
     ],
-    "photoTitle": "ノーザンファーム空港/ゲストさん",
-    "photoPaddocks": []
+    "photoTitle": "新潟記念 GIII (8月20日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "6着",
+        "raceDate": "2026/08/30 新潟8R 芝2000m",
+        "shotDate": "8月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4666",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "取",
+        "raceDate": "2025/11/30 東京12R 芝2400m",
+        "shotDate": "11月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4197",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "8着",
+        "raceDate": "2025/10/05 京都11R 芝2400m",
+        "shotDate": "9月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4099",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "2着",
+        "raceDate": "2024/11/24 東京12R 芝2400m",
+        "shotDate": "11月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3547",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "15着",
+        "raceDate": "2024/04/28 京都11R 芝3200m",
+        "shotDate": "4月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3159",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "金鯱賞",
+        "grade": "GII",
+        "fullRace": "金鯱賞 GII",
+        "rank": "2着",
+        "raceDate": "2024/03/10 中京11R 芝2000m",
+        "shotDate": "2月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3063",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "6着",
+        "raceDate": "2026/08/30 新潟8R 芝2000m",
+        "shotDate": "8月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4666",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "取",
+        "raceDate": "2025/11/30 東京12R 芝2400m",
+        "shotDate": "11月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4197",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "ジャパンC",
+          "grade": "GI",
+          "fullRace": "ジャパンC GI",
+          "rank": "2着",
+          "raceDate": "2024/11/24 東京12R 芝2400m",
+          "shotDate": "11月14日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3547",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "金鯱賞",
+          "grade": "GII",
+          "fullRace": "金鯱賞 GII",
+          "rank": "2着",
+          "raceDate": "2024/03/10 中京11R 芝2000m",
+          "shotDate": "2月28日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3063",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 6
+    }
   },
   "ディープボンド": {
     "name": "ディープボンド",
@@ -43546,7 +52483,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "21'阪神大賞典(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2017102170&no=63631",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3448",
     "pedigree": {
       "sire": "キズナ",
       "dam": "ゼフィランサス",
@@ -44277,8 +53214,333 @@ export const HORSE_DATABASE = {
         "rival": "キムケンドリーム"
       }
     ],
-    "photoTitle": "天皇賞（春）(G1)/ブレンダムさん",
-    "photoPaddocks": []
+    "photoTitle": "京都大賞典 GII (9月25日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "2着",
+        "raceDate": "2024/10/06 京都11R 芝2400m",
+        "shotDate": "9月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3448",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "7着",
+        "raceDate": "2024/06/23 京都11R 芝2200m",
+        "shotDate": "6月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3269",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "3着",
+        "raceDate": "2024/04/28 京都11R 芝3200m",
+        "shotDate": "4月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3160",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神大賞典",
+        "grade": "GII",
+        "fullRace": "阪神大賞典 GII",
+        "rank": "7着",
+        "raceDate": "2024/03/17 阪神11R 芝3000m",
+        "shotDate": "3月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3083",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "15着",
+        "raceDate": "2023/12/24 中山11R 芝2500m",
+        "shotDate": "12月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2902",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "10着",
+        "raceDate": "2023/11/26 東京12R 芝2400m",
+        "shotDate": "11月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2843",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "3着",
+        "raceDate": "2023/10/09 京都11R 芝2400m",
+        "shotDate": "9月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2749",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "5着",
+        "raceDate": "2023/06/25 阪神11R 芝2200m",
+        "shotDate": "6月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2578",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "2着",
+        "raceDate": "2023/04/30 京都11R 芝3200m",
+        "shotDate": "4月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2473",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神大賞典",
+        "grade": "GII",
+        "fullRace": "阪神大賞典 GII",
+        "rank": "5着",
+        "raceDate": "2023/03/19 阪神11R 芝3000m",
+        "shotDate": "3月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2393",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "8着",
+        "raceDate": "2022/12/25 中山11R 芝2500m",
+        "shotDate": "12月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2252",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "4着",
+        "raceDate": "2022/06/26 阪神11R 芝2200m",
+        "shotDate": "6月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1968",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "2着",
+        "raceDate": "2022/05/01 阪神11R 芝3200m",
+        "shotDate": "4月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1882",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神大賞典",
+        "grade": "GII",
+        "fullRace": "阪神大賞典 GII",
+        "rank": "1着",
+        "raceDate": "2022/03/20 阪神11R 芝3000m",
+        "shotDate": "3月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1793",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "2着",
+        "raceDate": "2021/05/02 阪神11R 芝3200m",
+        "shotDate": "4月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1223",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神大賞典",
+        "grade": "GII",
+        "fullRace": "阪神大賞典 GII",
+        "rank": "1着",
+        "raceDate": "2021/03/21 阪神11R 芝3000m",
+        "shotDate": "3月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1162",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "神戸新聞杯",
+        "grade": "GII",
+        "fullRace": "神戸新聞杯 GII",
+        "rank": "4着",
+        "raceDate": "2020/09/27 中京11R 芝2200m",
+        "shotDate": "9月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=858",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "5着",
+        "raceDate": "2020/05/31 東京11R 芝2400m",
+        "shotDate": "5月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=661",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "2着",
+        "raceDate": "2024/10/06 京都11R 芝2400m",
+        "shotDate": "9月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3448",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "7着",
+        "raceDate": "2024/06/23 京都11R 芝2200m",
+        "shotDate": "6月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3269",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "天皇賞（春）",
+          "grade": "GI",
+          "fullRace": "天皇賞（春） GI",
+          "rank": "3着",
+          "raceDate": "2024/04/28 京都11R 芝3200m",
+          "shotDate": "4月18日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3160",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "京都大賞典",
+          "grade": "GII",
+          "fullRace": "京都大賞典 GII",
+          "rank": "3着",
+          "raceDate": "2023/10/09 京都11R 芝2400m",
+          "shotDate": "9月27日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2749",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "天皇賞（春）",
+          "grade": "GI",
+          "fullRace": "天皇賞（春） GI",
+          "rank": "2着",
+          "raceDate": "2023/04/30 京都11R 芝3200m",
+          "shotDate": "4月19日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2473",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "宝塚記念",
+          "grade": "GI",
+          "fullRace": "宝塚記念 GI",
+          "rank": "4着",
+          "raceDate": "2022/06/26 阪神11R 芝2200m",
+          "shotDate": "6月16日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1968",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "天皇賞（春）",
+          "grade": "GI",
+          "fullRace": "天皇賞（春） GI",
+          "rank": "2着",
+          "raceDate": "2022/05/01 阪神11R 芝3200m",
+          "shotDate": "4月20日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1882",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "阪神大賞典",
+          "grade": "GII",
+          "fullRace": "阪神大賞典 GII",
+          "rank": "1着",
+          "raceDate": "2022/03/20 阪神11R 芝3000m",
+          "shotDate": "3月9日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1793",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "天皇賞（春）",
+          "grade": "GI",
+          "fullRace": "天皇賞（春） GI",
+          "rank": "2着",
+          "raceDate": "2021/05/02 阪神11R 芝3200m",
+          "shotDate": "4月21日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1223",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "阪神大賞典",
+          "grade": "GII",
+          "fullRace": "阪神大賞典 GII",
+          "rank": "1着",
+          "raceDate": "2021/03/21 阪神11R 芝3000m",
+          "shotDate": "3月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1162",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "神戸新聞杯",
+          "grade": "GII",
+          "fullRace": "神戸新聞杯 GII",
+          "rank": "4着",
+          "raceDate": "2020/09/27 中京11R 芝2200m",
+          "shotDate": "9月16日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=858",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 18
+    }
   },
   "ドウデュース": {
     "name": "ドウデュース",
@@ -44296,7 +53558,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'有馬記念(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105283&no=39934",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3604",
     "pedigree": {
       "sire": "ハーツクライ",
       "dam": "ダストアンドダイヤモンズ",
@@ -44715,8 +53977,256 @@ export const HORSE_DATABASE = {
         "rival": "(ガイアフォース)"
       }
     ],
-    "photoTitle": "報知弥生ディープ記念(G2)/k.beeさん",
-    "photoPaddocks": []
+    "photoTitle": "有馬記念 GI (12月11日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "取",
+        "raceDate": "2024/12/22 中山11R 芝2500m",
+        "shotDate": "12月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3604",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "1着",
+        "raceDate": "2024/11/24 東京12R 芝2400m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3558",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "1着",
+        "raceDate": "2024/10/27 東京11R 芝2000m",
+        "shotDate": "10月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3491",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "6着",
+        "raceDate": "2024/06/23 京都11R 芝2200m",
+        "shotDate": "6月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3277",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "1着",
+        "raceDate": "2023/12/24 中山11R 芝2500m",
+        "shotDate": "12月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2901",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "4着",
+        "raceDate": "2023/11/26 東京12R 芝2400m",
+        "shotDate": "11月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2848",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "7着",
+        "raceDate": "2023/10/29 東京11R 芝2000m",
+        "shotDate": "10月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2789",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都記念",
+        "grade": "GII",
+        "fullRace": "京都記念 GII",
+        "rank": "1着",
+        "raceDate": "2023/02/12 阪神11R 芝2200m",
+        "shotDate": "2月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2325",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "1着",
+        "raceDate": "2022/05/29 東京11R 芝2400m",
+        "shotDate": "5月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1928",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "3着",
+        "raceDate": "2022/04/17 中山11R 芝2000m",
+        "shotDate": "4月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1848",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "報知弥生ディープ記念",
+        "grade": "GII",
+        "fullRace": "報知弥生ディープ記念 GII",
+        "rank": "2着",
+        "raceDate": "2022/03/06 中山11R 芝2000m",
+        "shotDate": "",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1772",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "朝日フューチュリティ",
+        "grade": "GI",
+        "fullRace": "朝日フューチュリティ GI",
+        "rank": "1着",
+        "raceDate": "2021/12/19 阪神11R 芝1600m",
+        "shotDate": "12月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1600",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "取",
+        "raceDate": "2024/12/22 中山11R 芝2500m",
+        "shotDate": "12月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3604",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "1着",
+        "raceDate": "2024/11/24 東京12R 芝2400m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3558",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "天皇賞（秋）",
+          "grade": "GI",
+          "fullRace": "天皇賞（秋） GI",
+          "rank": "1着",
+          "raceDate": "2024/10/27 東京11R 芝2000m",
+          "shotDate": "10月17日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3491",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "有馬記念",
+          "grade": "GI",
+          "fullRace": "有馬記念 GI",
+          "rank": "1着",
+          "raceDate": "2023/12/24 中山11R 芝2500m",
+          "shotDate": "12月13日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2901",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ジャパンC",
+          "grade": "GI",
+          "fullRace": "ジャパンC GI",
+          "rank": "4着",
+          "raceDate": "2023/11/26 東京12R 芝2400m",
+          "shotDate": "11月15日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2848",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "京都記念",
+          "grade": "GII",
+          "fullRace": "京都記念 GII",
+          "rank": "1着",
+          "raceDate": "2023/02/12 阪神11R 芝2200m",
+          "shotDate": "2月1日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2325",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "日本ダービー",
+          "grade": "GI",
+          "fullRace": "日本ダービー GI",
+          "rank": "1着",
+          "raceDate": "2022/05/29 東京11R 芝2400m",
+          "shotDate": "5月18日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1928",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "皐月賞",
+          "grade": "GI",
+          "fullRace": "皐月賞 GI",
+          "rank": "3着",
+          "raceDate": "2022/04/17 中山11R 芝2000m",
+          "shotDate": "4月7日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1848",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "報知弥生ディープ記念",
+          "grade": "GII",
+          "fullRace": "報知弥生ディープ記念 GII",
+          "rank": "2着",
+          "raceDate": "2022/03/06 中山11R 芝2000m",
+          "shotDate": "",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1772",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "朝日フューチュリティ",
+          "grade": "GI",
+          "fullRace": "朝日フューチュリティ GI",
+          "rank": "1着",
+          "raceDate": "2021/12/19 阪神11R 芝1600m",
+          "shotDate": "12月9日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1600",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 12
+    }
   },
   "ドラゴンブースト": {
     "name": "ドラゴンブースト",
@@ -44734,7 +54244,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'ディセンバーS(L)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105891&no=85263",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4555",
     "pedigree": {
       "sire": "スクリーンヒーロー",
       "dam": "トーコーディオーネ",
@@ -45057,8 +54567,68 @@ export const HORSE_DATABASE = {
         "rival": "ザラタン"
       }
     ],
-    "photoTitle": "安田記念(G1)/ともちゃさん",
-    "photoPaddocks": []
+    "photoTitle": "安田記念 GI (5月27日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "8着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4555",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京成杯",
+        "grade": "GIII",
+        "fullRace": "京成杯 GIII",
+        "rank": "2着",
+        "raceDate": "2025/01/19 中山11R 芝2000m",
+        "shotDate": "1月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3651",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "朝日杯ＦＳ",
+        "grade": "GI",
+        "fullRace": "朝日杯ＦＳ GI",
+        "rank": "7着",
+        "raceDate": "2024/12/15 京都11R 芝1600m",
+        "shotDate": "12月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3596",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "8着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4555",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "京成杯",
+        "grade": "GIII",
+        "fullRace": "京成杯 GIII",
+        "rank": "2着",
+        "raceDate": "2025/01/19 中山11R 芝2000m",
+        "shotDate": "1月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3651",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 3
+    }
   },
   "ドンインザムード": {
     "name": "ドンインザムード",
@@ -45076,7 +54646,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'レパードS(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022106942&no=83823",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4616",
     "pedigree": {
       "sire": "アジアエクスプレス",
       "dam": "ハギノウィッシュ",
@@ -45399,8 +54969,36 @@ export const HORSE_DATABASE = {
         "rival": "(デルマサクラサク)"
       }
     ],
-    "photoTitle": "欅S(OP)/さん",
-    "photoPaddocks": []
+    "photoTitle": "東海Ｓ GIII (7月15日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "東海Ｓ",
+        "grade": "GIII",
+        "fullRace": "東海Ｓ GIII",
+        "rank": "3着",
+        "raceDate": "2026/07/26 中京7R ダ1400m",
+        "shotDate": "7月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4616",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "東海Ｓ",
+        "grade": "GIII",
+        "fullRace": "東海Ｓ GIII",
+        "rank": "3着",
+        "raceDate": "2026/07/26 中京7R ダ1400m",
+        "shotDate": "7月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4616",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "ナミュール": {
     "name": "ナミュール",
@@ -45418,7 +55016,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'マイルCS(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105213&no=54391",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3529",
     "pedigree": {
       "sire": "ハービンジャー",
       "dam": "サンブルエミューズ",
@@ -45837,8 +55435,212 @@ export const HORSE_DATABASE = {
         "rival": "(スコールユニバンス)"
       }
     ],
-    "photoTitle": "優駿牝馬(G1)/ルカさん",
-    "photoPaddocks": []
+    "photoTitle": "マイルＣＳ GI (11月6日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "17着",
+        "raceDate": "2024/11/17 京都11R 芝1600m",
+        "shotDate": "11月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3529",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "2着",
+        "raceDate": "2024/06/02 東京11R 芝1600m",
+        "shotDate": "5月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3233",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "8着",
+        "raceDate": "2024/05/12 東京11R 芝1600m",
+        "shotDate": "5月3日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3189",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "1着",
+        "raceDate": "2023/11/19 京都11R 芝1600m",
+        "shotDate": "11月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2830",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "7着",
+        "raceDate": "2023/05/14 東京11R 芝1600m",
+        "shotDate": "5月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2498",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "5着",
+        "raceDate": "2022/11/13 阪神11R 芝2200m",
+        "shotDate": "11月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2186",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "2着",
+        "raceDate": "2022/10/16 阪神11R 芝2000m",
+        "shotDate": "10月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2139",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "3着",
+        "raceDate": "2022/05/22 東京11R 芝2400m",
+        "shotDate": "5月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1917",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "桜花賞",
+        "grade": "GI",
+        "fullRace": "桜花賞 GI",
+        "rank": "10着",
+        "raceDate": "2022/04/10 阪神11R 芝1600m",
+        "shotDate": "",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1841",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チューリップ賞",
+        "grade": "GII",
+        "fullRace": "チューリップ賞 GII",
+        "rank": "1着",
+        "raceDate": "2022/03/05 阪神11R 芝1600m",
+        "shotDate": "2月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1747",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神ジュベナイルＦ",
+        "grade": "GI",
+        "fullRace": "阪神ジュベナイルＦ GI",
+        "rank": "4着",
+        "raceDate": "2021/12/12 阪神11R 芝1600m",
+        "shotDate": "12月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1589",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "17着",
+        "raceDate": "2024/11/17 京都11R 芝1600m",
+        "shotDate": "11月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3529",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "2着",
+        "raceDate": "2024/06/02 東京11R 芝1600m",
+        "shotDate": "5月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3233",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "マイルＣＳ",
+          "grade": "GI",
+          "fullRace": "マイルＣＳ GI",
+          "rank": "1着",
+          "raceDate": "2023/11/19 京都11R 芝1600m",
+          "shotDate": "11月8日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2830",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "秋華賞",
+          "grade": "GI",
+          "fullRace": "秋華賞 GI",
+          "rank": "2着",
+          "raceDate": "2022/10/16 阪神11R 芝2000m",
+          "shotDate": "10月5日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2139",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "オークス",
+          "grade": "GI",
+          "fullRace": "オークス GI",
+          "rank": "3着",
+          "raceDate": "2022/05/22 東京11R 芝2400m",
+          "shotDate": "5月11日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1917",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "チューリップ賞",
+          "grade": "GII",
+          "fullRace": "チューリップ賞 GII",
+          "rank": "1着",
+          "raceDate": "2022/03/05 阪神11R 芝1600m",
+          "shotDate": "2月23日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1747",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "阪神ジュベナイルＦ",
+          "grade": "GI",
+          "fullRace": "阪神ジュベナイルＦ GI",
+          "rank": "4着",
+          "raceDate": "2021/12/12 阪神11R 芝1600m",
+          "shotDate": "12月2日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1589",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 11
+    }
   },
   "ノースブリッジ": {
     "name": "ノースブリッジ",
@@ -45856,7 +55658,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'札幌記念(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018102348&no=36818",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3485",
     "pedigree": {
       "sire": "モーリス",
       "dam": "アメージングムーン",
@@ -46347,8 +56149,135 @@ export const HORSE_DATABASE = {
         "rival": "(ハートオブアシティ)"
       }
     ],
-    "photoTitle": "ｔｖｋ賞(2勝)/さん",
-    "photoPaddocks": []
+    "photoTitle": "天皇賞（秋） GI (10月17日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "11着",
+        "raceDate": "2024/10/27 東京11R 芝2000m",
+        "shotDate": "10月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3485",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "札幌記念",
+        "grade": "GII",
+        "fullRace": "札幌記念 GII",
+        "rank": "1着",
+        "raceDate": "2024/08/18 札幌11R 芝2000m",
+        "shotDate": "8月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3360",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "10着",
+        "raceDate": "2023/10/29 東京11R 芝2000m",
+        "shotDate": "10月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2792",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "7着",
+        "raceDate": "2023/09/24 中山11R 芝2200m",
+        "shotDate": "9月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2724",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "8着",
+        "raceDate": "2023/04/02 阪神11R 芝2000m",
+        "shotDate": "3月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2422",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "アメリカジョッキーＣ",
+        "grade": "GII",
+        "fullRace": "アメリカジョッキーＣ GII",
+        "rank": "1着",
+        "raceDate": "2023/01/22 中山11R 芝2200m",
+        "shotDate": "1月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2296",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "11着",
+        "raceDate": "2022/10/30 東京11R 芝2000m",
+        "shotDate": "10月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2159",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "5着",
+        "raceDate": "2022/10/09 東京11R 芝1800m",
+        "shotDate": "9月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2123",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "11着",
+        "raceDate": "2024/10/27 東京11R 芝2000m",
+        "shotDate": "10月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3485",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "札幌記念",
+        "grade": "GII",
+        "fullRace": "札幌記念 GII",
+        "rank": "1着",
+        "raceDate": "2024/08/18 札幌11R 芝2000m",
+        "shotDate": "8月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3360",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "アメリカジョッキーＣ",
+          "grade": "GII",
+          "fullRace": "アメリカジョッキーＣ GII",
+          "rank": "1着",
+          "raceDate": "2023/01/22 中山11R 芝2200m",
+          "shotDate": "1月11日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2296",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 8
+    }
   },
   "ネブラディスク": {
     "name": "ネブラディスク",
@@ -46366,7 +56295,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'博多S()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105140&no=89751",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3707",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "リリサイド",
@@ -46593,8 +56522,36 @@ export const HORSE_DATABASE = {
         "rival": "(クラリヴィデンシア)"
       }
     ],
-    "photoTitle": "センテニアルパークS(3勝クラス)/えびまよさん",
-    "photoPaddocks": []
+    "photoTitle": "共同通信杯 GIII (2月5日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "共同通信杯",
+        "grade": "GIII",
+        "fullRace": "共同通信杯 GIII",
+        "rank": "4着",
+        "raceDate": "2025/02/16 東京11R 芝1800m",
+        "shotDate": "2月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3707",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "共同通信杯",
+        "grade": "GIII",
+        "fullRace": "共同通信杯 GIII",
+        "rank": "4着",
+        "raceDate": "2025/02/16 東京11R 芝1800m",
+        "shotDate": "2月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3707",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "ニシノティアモ": {
     "name": "ニシノティアモ",
@@ -46612,7 +56569,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'福島記念(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021100244&no=103641",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4743",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "ニシノアモーレ",
@@ -47007,8 +56964,68 @@ export const HORSE_DATABASE = {
         "rival": "ワイドラトゥール"
       }
     ],
-    "photoTitle": "ヴィクトリアマイル(G1)/自認シーザリオさん",
-    "photoPaddocks": []
+    "photoTitle": "アイルランドＴ GII (10月1日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "7着",
+        "raceDate": "2026/10/11 東京11R 芝1800m",
+        "shotDate": "10月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4743",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "府中牝馬Ｓ",
+        "grade": "GIII",
+        "fullRace": "府中牝馬Ｓ GIII",
+        "rank": "10着",
+        "raceDate": "2026/06/21 東京11R 芝1800m",
+        "shotDate": "6月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4573",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "6着",
+        "raceDate": "2026/05/17 東京11R 芝1600m",
+        "shotDate": "5月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4518",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "7着",
+        "raceDate": "2026/10/11 東京11R 芝1800m",
+        "shotDate": "10月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4743",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "府中牝馬Ｓ",
+        "grade": "GIII",
+        "fullRace": "府中牝馬Ｓ GIII",
+        "rank": "10着",
+        "raceDate": "2026/06/21 東京11R 芝1800m",
+        "shotDate": "6月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4573",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 3
+    }
   },
   "ニシノレヴナント": {
     "name": "ニシノレヴナント",
@@ -47026,7 +57043,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'オクトーバーS(L)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020100254&no=10134",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4154",
     "pedigree": {
       "sire": "ネロ",
       "dam": "ニシノアモーレ",
@@ -47613,8 +57630,57 @@ export const HORSE_DATABASE = {
         "rival": "ロードプレイヤー"
       }
     ],
-    "photoTitle": "２歳未勝利/mailaさん",
-    "photoPaddocks": []
+    "photoTitle": "アルゼンチン共和国杯 GII (10月29日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "アルゼンチン共和国杯",
+        "grade": "GII",
+        "fullRace": "アルゼンチン共和国杯 GII",
+        "rank": "9着",
+        "raceDate": "2025/11/09 東京11R 芝2500m",
+        "shotDate": "10月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4154",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "七夕賞",
+        "grade": "GIII",
+        "fullRace": "七夕賞 GIII",
+        "rank": "7着",
+        "raceDate": "2025/07/13 福島11R 芝2000m",
+        "shotDate": "7月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3961",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "アルゼンチン共和国杯",
+        "grade": "GII",
+        "fullRace": "アルゼンチン共和国杯 GII",
+        "rank": "9着",
+        "raceDate": "2025/11/09 東京11R 芝2500m",
+        "shotDate": "10月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4154",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "七夕賞",
+        "grade": "GIII",
+        "fullRace": "七夕賞 GIII",
+        "rank": "7着",
+        "raceDate": "2025/07/13 福島11R 芝2000m",
+        "shotDate": "7月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3961",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 2
+    }
   },
   "ハピ": {
     "name": "ハピ",
@@ -47632,7 +57698,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'鳳雛S(L)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019100630&no=54411",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4290",
     "pedigree": {
       "sire": "キズナ",
       "dam": "クイーンパイレーツ",
@@ -48411,8 +58477,124 @@ export const HORSE_DATABASE = {
         "rival": "(モディカ)"
       }
     ],
-    "photoTitle": "鳳雛S(L)/さん",
-    "photoPaddocks": []
+    "photoTitle": "プロキオンＳ GII (1月15日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "プロキオンＳ",
+        "grade": "GII",
+        "fullRace": "プロキオンＳ GII",
+        "rank": "6着",
+        "raceDate": "2026/01/25 京都11R ダ1800m",
+        "shotDate": "1月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4290",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "プロキオンＳ",
+        "grade": "GIII",
+        "fullRace": "プロキオンＳ GIII",
+        "rank": "4着",
+        "raceDate": "2024/07/07 小倉11R ダ1700m",
+        "shotDate": "6月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3299",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "3着",
+        "raceDate": "2022/12/04 中京11R ダ1800m",
+        "shotDate": "11月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2220",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "みやこS",
+        "grade": "GIII",
+        "fullRace": "みやこS GIII",
+        "rank": "4着",
+        "raceDate": "2022/11/06 阪神11R ダ1800m",
+        "shotDate": "10月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2168",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "レパードS",
+        "grade": "GIII",
+        "fullRace": "レパードS GIII",
+        "rank": "3着",
+        "raceDate": "2022/08/07 新潟11R ダ1800m",
+        "shotDate": "7月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2020",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "プロキオンＳ",
+        "grade": "GII",
+        "fullRace": "プロキオンＳ GII",
+        "rank": "6着",
+        "raceDate": "2026/01/25 京都11R ダ1800m",
+        "shotDate": "1月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4290",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "プロキオンＳ",
+        "grade": "GIII",
+        "fullRace": "プロキオンＳ GIII",
+        "rank": "4着",
+        "raceDate": "2024/07/07 小倉11R ダ1700m",
+        "shotDate": "6月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3299",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "チャンピオンズC",
+          "grade": "GI",
+          "fullRace": "チャンピオンズC GI",
+          "rank": "3着",
+          "raceDate": "2022/12/04 中京11R ダ1800m",
+          "shotDate": "11月24日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2220",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "みやこS",
+          "grade": "GIII",
+          "fullRace": "みやこS GIII",
+          "rank": "4着",
+          "raceDate": "2022/11/06 阪神11R ダ1800m",
+          "shotDate": "10月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2168",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "レパードS",
+          "grade": "GIII",
+          "fullRace": "レパードS GIII",
+          "rank": "3着",
+          "raceDate": "2022/08/07 新潟11R ダ1800m",
+          "shotDate": "7月27日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2020",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 5
+    }
   },
   "ノーブルスカイ": {
     "name": "ノーブルスカイ",
@@ -48430,7 +58612,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'4歳以上2勝クラス"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021102256&no=82027",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ネオユニヴァース",
       "dam": "ホウショウワールド",
@@ -48945,8 +59127,14 @@ export const HORSE_DATABASE = {
         "rival": "カズゴルティス"
       }
     ],
-    "photoTitle": "京橋S(３勝クラス)/TBOさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ハギノアレグリアス": {
     "name": "ハギノアレグリアス",
@@ -48964,7 +59152,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'シリウスS(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2017103290&no=48581",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4200",
     "pedigree": {
       "sire": "キズナ",
       "dam": "タニノカリス",
@@ -49527,8 +59715,113 @@ export const HORSE_DATABASE = {
         "rival": "コントレイル"
       }
     ],
-    "photoTitle": "競走馬リハビリテーションセンター/ちゃちゃさん",
-    "photoPaddocks": []
+    "photoTitle": "チャンピオンズＣ GI (11月27日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "6着",
+        "raceDate": "2025/12/07 中京11R ダ1800m",
+        "shotDate": "11月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4200",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "4着",
+        "raceDate": "2024/12/01 中京11R ダ1800m",
+        "shotDate": "11月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3566",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "6着",
+        "raceDate": "2023/12/03 中京11R ダ1800m",
+        "shotDate": "11月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2866",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "東海テレビ杯東海Ｓ",
+        "grade": "GII",
+        "fullRace": "東海テレビ杯東海Ｓ GII",
+        "rank": "2着",
+        "raceDate": "2023/01/22 中京11R ダ1800m",
+        "shotDate": "1月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2290",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "みやこS",
+        "grade": "GIII",
+        "fullRace": "みやこS GIII",
+        "rank": "2着",
+        "raceDate": "2022/11/06 阪神11R ダ1800m",
+        "shotDate": "10月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2167",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "6着",
+        "raceDate": "2025/12/07 中京11R ダ1800m",
+        "shotDate": "11月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4200",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "4着",
+        "raceDate": "2024/12/01 中京11R ダ1800m",
+        "shotDate": "11月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3566",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "東海テレビ杯東海Ｓ",
+          "grade": "GII",
+          "fullRace": "東海テレビ杯東海Ｓ GII",
+          "rank": "2着",
+          "raceDate": "2023/01/22 中京11R ダ1800m",
+          "shotDate": "1月12日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2290",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "みやこS",
+          "grade": "GIII",
+          "fullRace": "みやこS GIII",
+          "rank": "2着",
+          "raceDate": "2022/11/06 阪神11R ダ1800m",
+          "shotDate": "10月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2167",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 5
+    }
   },
   "ハヤテノフクノスケ": {
     "name": "ハヤテノフクノスケ",
@@ -49546,7 +59839,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'阪神競馬場リニューアルオープン記念()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021109070&no=81460",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3849",
     "pedigree": {
       "sire": "ウインバリアシオン",
       "dam": "サクラインスパイア",
@@ -49893,8 +60186,57 @@ export const HORSE_DATABASE = {
         "rival": "ミスタージーティー"
       }
     ],
-    "photoTitle": "阪神リニューアル記念(３勝クラス)/やし○さん",
-    "photoPaddocks": []
+    "photoTitle": "天皇賞（春） GI (4月23日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "11着",
+        "raceDate": "2025/05/04 京都11R 芝3200m",
+        "shotDate": "4月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3849",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京成杯",
+        "grade": "GIII",
+        "fullRace": "京成杯 GIII",
+        "rank": "4着",
+        "raceDate": "2024/01/14 中山11R 芝2000m",
+        "shotDate": "1月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2935",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "11着",
+        "raceDate": "2025/05/04 京都11R 芝3200m",
+        "shotDate": "4月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3849",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "京成杯",
+        "grade": "GIII",
+        "fullRace": "京成杯 GIII",
+        "rank": "4着",
+        "raceDate": "2024/01/14 中山11R 芝2000m",
+        "shotDate": "1月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2935",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 2
+    }
   },
   "ハーパー": {
     "name": "ハーパー",
@@ -49912,7 +60254,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'クイーンC(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103458&no=27239",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3514",
     "pedigree": {
       "sire": "ハーツクライ",
       "dam": "セレスタ",
@@ -50187,8 +60529,168 @@ export const HORSE_DATABASE = {
         "rival": "イングランドアイズ"
       }
     ],
-    "photoTitle": "２歳未勝利/さん",
-    "photoPaddocks": []
+    "photoTitle": "エリザベス女王杯 GI (10月30日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "17着",
+        "raceDate": "2024/11/10 京都11R 芝2200m",
+        "shotDate": "10月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3514",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "15着",
+        "raceDate": "2024/05/12 東京11R 芝1600m",
+        "shotDate": "5月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3188",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "13着",
+        "raceDate": "2024/03/31 阪神11R 芝2000m",
+        "shotDate": "3月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3113",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "9着",
+        "raceDate": "2023/12/24 中山11R 芝2500m",
+        "shotDate": "12月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2900",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "3着",
+        "raceDate": "2023/11/12 京都11R 芝2200m",
+        "shotDate": "11月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2816",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "3着",
+        "raceDate": "2023/10/15 京都11R 芝2000m",
+        "shotDate": "10月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2775",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "2着",
+        "raceDate": "2023/05/21 東京11R 芝2400m",
+        "shotDate": "5月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2518",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "桜花賞",
+        "grade": "GI",
+        "fullRace": "桜花賞 GI",
+        "rank": "4着",
+        "raceDate": "2023/04/09 阪神11R 芝1600m",
+        "shotDate": "3月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2432",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "17着",
+        "raceDate": "2024/11/10 京都11R 芝2200m",
+        "shotDate": "10月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3514",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "15着",
+        "raceDate": "2024/05/12 東京11R 芝1600m",
+        "shotDate": "5月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3188",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "エリザベス女王杯",
+          "grade": "GI",
+          "fullRace": "エリザベス女王杯 GI",
+          "rank": "3着",
+          "raceDate": "2023/11/12 京都11R 芝2200m",
+          "shotDate": "11月1日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2816",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "秋華賞",
+          "grade": "GI",
+          "fullRace": "秋華賞 GI",
+          "rank": "3着",
+          "raceDate": "2023/10/15 京都11R 芝2000m",
+          "shotDate": "10月5日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2775",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "オークス",
+          "grade": "GI",
+          "fullRace": "オークス GI",
+          "rank": "2着",
+          "raceDate": "2023/05/21 東京11R 芝2400m",
+          "shotDate": "5月11日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2518",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "桜花賞",
+          "grade": "GI",
+          "fullRace": "桜花賞 GI",
+          "rank": "4着",
+          "raceDate": "2023/04/09 阪神11R 芝1600m",
+          "shotDate": "3月29日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2432",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 8
+    }
   },
   "パイロマンサー": {
     "name": "パイロマンサー",
@@ -50206,7 +60708,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'全日本2歳優駿【国際交流】(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023101134&no=57763",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4638",
     "pedigree": {
       "sire": "パイロ",
       "dam": "セントリフュージ",
@@ -50337,8 +60839,36 @@ export const HORSE_DATABASE = {
         "rival": "(ジャスティンダラス)"
       }
     ],
-    "photoTitle": "全日本2歳優駿【国際(G1)/りーさん",
-    "photoPaddocks": []
+    "photoTitle": "レパードＳ GIII (7月30日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "レパードＳ",
+        "grade": "GIII",
+        "fullRace": "レパードＳ GIII",
+        "rank": "2着",
+        "raceDate": "2026/08/09 新潟7R ダ1800m",
+        "shotDate": "7月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4638",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "レパードＳ",
+        "grade": "GIII",
+        "fullRace": "レパードＳ GIII",
+        "rank": "2着",
+        "raceDate": "2026/08/09 新潟7R ダ1800m",
+        "shotDate": "7月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4638",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "バトルクライ": {
     "name": "バトルクライ",
@@ -50356,7 +60886,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'すばるS(L)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019103879&no=72346",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2306",
     "pedigree": {
       "sire": "イスラボニータ",
       "dam": "ディアコメット",
@@ -51111,8 +61641,36 @@ export const HORSE_DATABASE = {
         "rival": "オタルエバー"
       }
     ],
-    "photoTitle": "錦秋S(３勝クラス)/ポカリさん",
-    "photoPaddocks": []
+    "photoTitle": "根岸S GIII (1月18日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "根岸S",
+        "grade": "GIII",
+        "fullRace": "根岸S GIII",
+        "rank": "3着",
+        "raceDate": "2023/01/29 東京11R ダ1400m",
+        "shotDate": "1月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2306",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "根岸S",
+        "grade": "GIII",
+        "fullRace": "根岸S GIII",
+        "rank": "3着",
+        "raceDate": "2023/01/29 東京11R ダ1400m",
+        "shotDate": "1月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2306",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "ピコベリー": {
     "name": "ピコベリー",
@@ -51130,7 +61688,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳新馬"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024100713&no=9306",
+    "photoUrl": null,
     "pedigree": {
       "sire": "モーリス",
       "dam": "アヴァール",
@@ -51189,8 +61747,14 @@ export const HORSE_DATABASE = {
         "rival": "(コウサイリクリ)"
       }
     ],
-    "photoTitle": "2歳新馬/MITAKEさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ビザンチンドリーム": {
     "name": "ビザンチンドリーム",
@@ -51208,7 +61772,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'フォワ賞(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105587&no=91113",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4564",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "ジャポニカーラ",
@@ -51531,8 +62095,113 @@ export const HORSE_DATABASE = {
         "rival": "(エイシンボナパルト)"
       }
     ],
-    "photoTitle": "凱旋門賞(G1)/すずなりさん",
-    "photoPaddocks": []
+    "photoTitle": "宝塚記念 GI (6月4日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "15着",
+        "raceDate": "2026/06/14 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4564",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "2着",
+        "raceDate": "2025/05/04 京都11R 芝3200m",
+        "shotDate": "4月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3850",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＡＪＣＣ",
+        "grade": "GII",
+        "fullRace": "ＡＪＣＣ GII",
+        "rank": "6着",
+        "raceDate": "2025/01/26 中山11R 芝2200m",
+        "shotDate": "1月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3665",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "5着",
+        "raceDate": "2024/10/20 京都11R 芝3000m",
+        "shotDate": "10月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3477",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "神戸新聞杯",
+        "grade": "GII",
+        "fullRace": "神戸新聞杯 GII",
+        "rank": "6着",
+        "raceDate": "2024/09/22 中京11R 芝2200m",
+        "shotDate": "9月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3422",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "きさらぎ賞",
+        "grade": "GIII",
+        "fullRace": "きさらぎ賞 GIII",
+        "rank": "1着",
+        "raceDate": "2024/02/04 京都11R 芝1800m",
+        "shotDate": "1月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2983",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "15着",
+        "raceDate": "2026/06/14 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4564",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "2着",
+        "raceDate": "2025/05/04 京都11R 芝3200m",
+        "shotDate": "4月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3850",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "きさらぎ賞",
+          "grade": "GIII",
+          "fullRace": "きさらぎ賞 GIII",
+          "rank": "1着",
+          "raceDate": "2024/02/04 京都11R 芝1800m",
+          "shotDate": "1月24日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2983",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 6
+    }
   },
   "パープルレディ": {
     "name": "パープルレディ",
@@ -51550,7 +62219,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "22'野島崎特別()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018103558&no=10515",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1210",
     "pedigree": {
       "sire": "ディープインパクト",
       "dam": "メリッサ",
@@ -51993,8 +62662,36 @@ export const HORSE_DATABASE = {
         "rival": "ブラックラテ"
       }
     ],
-    "photoTitle": "２歳未勝利/さん",
-    "photoPaddocks": []
+    "photoTitle": "サンスポ賞フローラＳ GII (4月15日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "サンスポ賞フローラＳ",
+        "grade": "GII",
+        "fullRace": "サンスポ賞フローラＳ GII",
+        "rank": "6着",
+        "raceDate": "2021/04/25 東京11R 芝2000m",
+        "shotDate": "4月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1210",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "サンスポ賞フローラＳ",
+        "grade": "GII",
+        "fullRace": "サンスポ賞フローラＳ GII",
+        "rank": "6着",
+        "raceDate": "2021/04/25 東京11R 芝2000m",
+        "shotDate": "4月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=1210",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "パンジャタワー": {
     "name": "パンジャタワー",
@@ -52012,7 +62709,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'NHKマイルC(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022101732&no=90254",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4718",
     "pedigree": {
       "sire": "タワーオブロンドン",
       "dam": "クラークスデール",
@@ -52287,44 +62984,179 @@ export const HORSE_DATABASE = {
         "rival": "(タガノアンファン)"
       }
     ],
-    "photoTitle": "キーンランドC(G3)/ハァさんさん",
+    "photoTitle": "スプリンターズS GI (9月17日撮影)",
     "photoPaddocks": [
       {
         "race": "スプリンターズS",
-        "slug": "sprinters",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/sprinters/img/photopaddock_img02.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "スプリンターズS GI",
+        "rank": "15着",
+        "raceDate": "2026/09/27 中山11R 芝1200m",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4718",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "5着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4554",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "高松宮記念",
+        "grade": "GI",
+        "fullRace": "高松宮記念 GI",
+        "rank": "4着",
+        "raceDate": "2026/03/29 中京11R 芝1200m",
+        "shotDate": "3月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4428",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "1着",
+        "raceDate": "2025/05/11 東京11R 芝1600m",
+        "shotDate": "4月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3857",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ファルコンＳ",
+        "grade": "GIII",
+        "fullRace": "ファルコンＳ GIII",
+        "rank": "4着",
+        "raceDate": "2025/03/22 中京11R 芝1400m",
+        "shotDate": "3月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3768",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "朝日杯ＦＳ",
+        "grade": "GI",
+        "fullRace": "朝日杯ＦＳ GI",
+        "rank": "12着",
+        "raceDate": "2024/12/15 京都11R 芝1600m",
+        "shotDate": "12月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3592",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
       },
       {
         "race": "チャンピオンズC",
-        "slug": "champ",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img02.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img02.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       },
       {
         "race": "阪神JF",
-        "slug": "juvenile",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img02.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "阪神JF GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img02.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       },
       {
         "race": "朝日杯FS",
-        "slug": "futurity",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img02.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "朝日杯FS GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img02.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       },
       {
         "race": "有馬記念",
-        "slug": "arima",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img02.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img02.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "スプリンターズS",
+        "grade": "GI",
+        "fullRace": "スプリンターズS GI",
+        "rank": "15着",
+        "raceDate": "2026/09/27 中山11R 芝1200m",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4718",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "5着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4554",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "高松宮記念",
+          "grade": "GI",
+          "fullRace": "高松宮記念 GI",
+          "rank": "4着",
+          "raceDate": "2026/03/29 中京11R 芝1200m",
+          "shotDate": "3月19日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4428",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ＮＨＫマイルＣ",
+          "grade": "GI",
+          "fullRace": "ＮＨＫマイルＣ GI",
+          "rank": "1着",
+          "raceDate": "2025/05/11 東京11R 芝1600m",
+          "shotDate": "4月30日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3857",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ファルコンＳ",
+          "grade": "GIII",
+          "fullRace": "ファルコンＳ GIII",
+          "rank": "4着",
+          "raceDate": "2025/03/22 中京11R 芝1400m",
+          "shotDate": "3月13日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3768",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 10
+    }
   },
   "ピコチャンブラック": {
     "name": "ピコチャンブラック",
@@ -52342,7 +63174,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'スプリングS(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022101745&no=49102",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3822",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "トランプクイーン",
@@ -52449,8 +63281,68 @@ export const HORSE_DATABASE = {
         "rival": "(ヴィジョンメーカー)"
       }
     ],
-    "photoTitle": "皐月賞(G1)/ショコラⅡさん",
-    "photoPaddocks": []
+    "photoTitle": "皐月賞 GI (4月10日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "18着",
+        "raceDate": "2025/04/20 中山11R 芝2000m",
+        "shotDate": "4月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3822",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "スプリングＳ",
+        "grade": "GII",
+        "fullRace": "スプリングＳ GII",
+        "rank": "1着",
+        "raceDate": "2025/03/16 中山11R 芝1800m",
+        "shotDate": "3月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3759",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ホープフルS",
+        "grade": "GI",
+        "fullRace": "ホープフルS GI",
+        "rank": "13着",
+        "raceDate": "2024/12/28 中山11R 芝2000m",
+        "shotDate": "12月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3611",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "18着",
+        "raceDate": "2025/04/20 中山11R 芝2000m",
+        "shotDate": "4月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3822",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "スプリングＳ",
+        "grade": "GII",
+        "fullRace": "スプリングＳ GII",
+        "rank": "1着",
+        "raceDate": "2025/03/16 中山11R 芝1800m",
+        "shotDate": "3月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3759",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 3
+    }
   },
   "ピースワンデュック": {
     "name": "ピースワンデュック",
@@ -52468,7 +63360,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'秋風S()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021101134&no=106504",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4591",
     "pedigree": {
       "sire": "グレーターロンドン",
       "dam": "ピースワンオーレ",
@@ -52791,8 +63683,36 @@ export const HORSE_DATABASE = {
         "rival": "スノーディーヴァ"
       }
     ],
-    "photoTitle": "函館朝調教（2026.6.23）/キンジュさん",
-    "photoPaddocks": []
+    "photoTitle": "函館記念 GIII (6月17日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "函館記念",
+        "grade": "GIII",
+        "fullRace": "函館記念 GIII",
+        "rank": "3着",
+        "raceDate": "2026/06/28 函館11R 芝2000m",
+        "shotDate": "6月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4591",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "函館記念",
+        "grade": "GIII",
+        "fullRace": "函館記念 GIII",
+        "rank": "3着",
+        "raceDate": "2026/06/28 函館11R 芝2000m",
+        "shotDate": "6月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4591",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "ファイアンクランツ": {
     "name": "ファイアンクランツ",
@@ -52808,7 +63728,7 @@ export const HORSE_DATABASE = {
     "record": "19戦0勝 [0-1-3-15]",
     "earnings": "360万円",
     "titles": [],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105541&no=78215",
+    "photoUrl": null,
     "pedigree": {
       "sire": "アメリカンファラオ",
       "dam": "ライラヌール",
@@ -53251,8 +64171,14 @@ export const HORSE_DATABASE = {
         "rival": "ワンカードフェロー"
       }
     ],
-    "photoTitle": "助け愛、支え愛賞/ちゃぼさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ピコローズ": {
     "name": "ピコローズ",
@@ -53270,7 +64196,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'京成杯オータムハンデキャップ(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022101765&no=90131",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4820",
     "pedigree": {
       "sire": "サトノダイヤモンド",
       "dam": "ルージュノアール",
@@ -53665,8 +64591,36 @@ export const HORSE_DATABASE = {
         "rival": "(ルージュアマリア)"
       }
     ],
-    "photoTitle": "フリーウェイS(3勝クラス)/sapphireさん",
-    "photoPaddocks": []
+    "photoTitle": "マイルＣＳ GI (11月11日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "14着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4820",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "14着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4820",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "ピューロマジック": {
     "name": "ピューロマジック",
@@ -53684,7 +64638,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'スプリンターズS(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021107058&no=108188",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4716",
     "pedigree": {
       "sire": "アジアエクスプレス",
       "dam": "メジェルダ",
@@ -54199,44 +65153,179 @@ export const HORSE_DATABASE = {
         "rival": "アマンテビアンコ"
       }
     ],
-    "photoTitle": "アイビスサマーD(G3)/タイトルさん",
+    "photoTitle": "スプリンターズS GI (9月17日撮影)",
     "photoPaddocks": [
       {
         "race": "スプリンターズS",
-        "slug": "sprinters",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/sprinters/img/photopaddock_img05.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "スプリンターズS GI",
+        "rank": "1着",
+        "raceDate": "2026/09/27 中山11R 芝1200m",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4716",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "セントウルＳ",
+        "grade": "GII",
+        "fullRace": "セントウルＳ GII",
+        "rank": "2着",
+        "raceDate": "2026/09/06 阪神11R 芝1200m",
+        "shotDate": "8月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4679",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "アイビスＳＤ",
+        "grade": "GIII",
+        "fullRace": "アイビスＳＤ GIII",
+        "rank": "1着",
+        "raceDate": "2026/08/02 新潟7R 芝1000m",
+        "shotDate": "7月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4630",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "スプリンターズＳ",
+        "grade": "GI",
+        "fullRace": "スプリンターズＳ GI",
+        "rank": "8着",
+        "raceDate": "2025/09/28 中山11R 芝1200m",
+        "shotDate": "9月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4087",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "アイビスサマーＤ",
+        "grade": "GIII",
+        "fullRace": "アイビスサマーＤ GIII",
+        "rank": "1着",
+        "raceDate": "2025/08/03 新潟7R 芝1000m",
+        "shotDate": "7月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3990",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "シルクロードＳ",
+        "grade": "GIII",
+        "fullRace": "シルクロードＳ GIII",
+        "rank": "9着",
+        "raceDate": "2025/02/02 京都11R 芝1200m",
+        "shotDate": "1月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3683",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "スプリンターズS",
+        "grade": "GI",
+        "fullRace": "スプリンターズS GI",
+        "rank": "8着",
+        "raceDate": "2024/09/29 中山11R 芝1200m",
+        "shotDate": "9月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3427",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
       },
       {
         "race": "チャンピオンズC",
-        "slug": "champ",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img05.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/champ/img/photopaddock_img05.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       },
       {
         "race": "阪神JF",
-        "slug": "juvenile",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img05.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "阪神JF GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/juvenile/img/photopaddock_img05.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       },
       {
         "race": "朝日杯FS",
-        "slug": "futurity",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img05.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "朝日杯FS GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/futurity/img/photopaddock_img05.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       },
       {
         "race": "有馬記念",
-        "slug": "arima",
-        "date": "9月17日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img05.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/arima/img/photopaddock_img05.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "スプリンターズS",
+        "grade": "GI",
+        "fullRace": "スプリンターズS GI",
+        "rank": "1着",
+        "raceDate": "2026/09/27 中山11R 芝1200m",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4716",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "セントウルＳ",
+        "grade": "GII",
+        "fullRace": "セントウルＳ GII",
+        "rank": "2着",
+        "raceDate": "2026/09/06 阪神11R 芝1200m",
+        "shotDate": "8月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4679",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "アイビスＳＤ",
+          "grade": "GIII",
+          "fullRace": "アイビスＳＤ GIII",
+          "rank": "1着",
+          "raceDate": "2026/08/02 新潟7R 芝1000m",
+          "shotDate": "7月23日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4630",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "アイビスサマーＤ",
+          "grade": "GIII",
+          "fullRace": "アイビスサマーＤ GIII",
+          "rank": "1着",
+          "raceDate": "2025/08/03 新潟7R 芝1000m",
+          "shotDate": "7月23日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3990",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 11
+    }
   },
   "ファミーリエ": {
     "name": "ファミーリエ",
@@ -54254,7 +65343,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳新馬"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024103478&no=9795",
+    "photoUrl": null,
     "pedigree": {
       "sire": "キズナ",
       "dam": "ベルオロール",
@@ -54289,8 +65378,14 @@ export const HORSE_DATABASE = {
         "rival": "(コトテーラー)"
       }
     ],
-    "photoTitle": "2歳新馬/枢木さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ファンタスティックムーン": {
     "name": "ファンタスティックムーン",
@@ -54308,7 +65403,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'独ダービー(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020190004&no=103734",
+    "photoUrl": null,
     "pedigree": {
       "sire": "Sea The Moon (独)",
       "dam": "Frangipani (独)",
@@ -54655,8 +65750,14 @@ export const HORSE_DATABASE = {
         "rival": "()"
       }
     ],
-    "photoTitle": "ジャパンC(G1)/KTomokiさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ブレイディヴェーグ": {
     "name": "ブレイディヴェーグ",
@@ -54674,7 +65775,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'エリザベス女王杯(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103242&no=8352",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4192",
     "pedigree": {
       "sire": "ロードカナロア",
       "dam": "インナーアージ",
@@ -54973,8 +66074,168 @@ export const HORSE_DATABASE = {
         "rival": "ロードプレイヤー"
       }
     ],
-    "photoTitle": "２歳新馬/ふらんさん",
-    "photoPaddocks": []
+    "photoTitle": "ジャパンＣ GI (11月21日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "6着",
+        "raceDate": "2025/11/30 東京12R 芝2400m",
+        "shotDate": "11月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4192",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "6着",
+        "raceDate": "2025/08/31 新潟11R 芝2000m",
+        "shotDate": "8月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4031",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "4着",
+        "raceDate": "2025/06/08 東京11R 芝1600m",
+        "shotDate": "5月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3908",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "東京新聞杯",
+        "grade": "GIII",
+        "fullRace": "東京新聞杯 GIII",
+        "rank": "4着",
+        "raceDate": "2025/02/09 東京11R 芝1600m",
+        "shotDate": "1月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3694",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "4着",
+        "raceDate": "2024/11/17 京都11R 芝1600m",
+        "shotDate": "11月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3522",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "1着",
+        "raceDate": "2023/11/12 京都11R 芝2200m",
+        "shotDate": "11月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2814",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ローズＳ",
+        "grade": "GII",
+        "fullRace": "ローズＳ GII",
+        "rank": "2着",
+        "raceDate": "2023/09/17 阪神11R 芝1800m",
+        "shotDate": "9月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2697",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "6着",
+        "raceDate": "2025/11/30 東京12R 芝2400m",
+        "shotDate": "11月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4192",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "6着",
+        "raceDate": "2025/08/31 新潟11R 芝2000m",
+        "shotDate": "8月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4031",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "安田記念",
+          "grade": "GI",
+          "fullRace": "安田記念 GI",
+          "rank": "4着",
+          "raceDate": "2025/06/08 東京11R 芝1600m",
+          "shotDate": "5月29日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3908",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "東京新聞杯",
+          "grade": "GIII",
+          "fullRace": "東京新聞杯 GIII",
+          "rank": "4着",
+          "raceDate": "2025/02/09 東京11R 芝1600m",
+          "shotDate": "1月29日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3694",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "マイルＣＳ",
+          "grade": "GI",
+          "fullRace": "マイルＣＳ GI",
+          "rank": "4着",
+          "raceDate": "2024/11/17 京都11R 芝1600m",
+          "shotDate": "11月6日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3522",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "エリザベス女王杯",
+          "grade": "GI",
+          "fullRace": "エリザベス女王杯 GI",
+          "rank": "1着",
+          "raceDate": "2023/11/12 京都11R 芝2200m",
+          "shotDate": "11月1日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2814",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ローズＳ",
+          "grade": "GII",
+          "fullRace": "ローズＳ GII",
+          "rank": "2着",
+          "raceDate": "2023/09/17 阪神11R 芝1800m",
+          "shotDate": "9月7日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2697",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 7
+    }
   },
   "プルヴィナル": {
     "name": "プルヴィナル",
@@ -54992,7 +66253,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'アルテミスS(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024106287&no=18096",
+    "photoUrl": null,
     "pedigree": {
       "sire": "モーリス",
       "dam": "クルミナル",
@@ -55027,8 +66288,14 @@ export const HORSE_DATABASE = {
         "rival": "(レインボーフライト)"
       }
     ],
-    "photoTitle": "アルテミスS(GIII)/淳。さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ブラウンラチェット": {
     "name": "ブラウンラチェット",
@@ -55046,7 +66313,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'アルテミスS(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104994&no=50528",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4125",
     "pedigree": {
       "sire": "キズナ",
       "dam": "フォエヴァーダーリング",
@@ -55297,8 +66564,68 @@ export const HORSE_DATABASE = {
         "rival": "(ミライヘノハナ)"
       }
     ],
-    "photoTitle": "アルテミスS(G3)/エアさん",
-    "photoPaddocks": []
+    "photoTitle": "秋華賞 GI (10月9日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "18着",
+        "raceDate": "2025/10/19 京都11R 芝2000m",
+        "shotDate": "10月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4125",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "7着",
+        "raceDate": "2025/05/25 東京11R 芝2400m",
+        "shotDate": "5月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3890",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神ＪＦ",
+        "grade": "GI",
+        "fullRace": "阪神ＪＦ GI",
+        "rank": "16着",
+        "raceDate": "2024/12/08 京都11R 芝1600m",
+        "shotDate": "11月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3579",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "18着",
+        "raceDate": "2025/10/19 京都11R 芝2000m",
+        "shotDate": "10月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4125",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "7着",
+        "raceDate": "2025/05/25 東京11R 芝2400m",
+        "shotDate": "5月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3890",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 3
+    }
   },
   "ヘデントール": {
     "name": "ヘデントール",
@@ -55316,7 +66643,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'天皇賞(春)(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105521&no=108087",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4824",
     "pedigree": {
       "sire": "ルーラーシップ",
       "dam": "コルコバード",
@@ -55591,16 +66918,135 @@ export const HORSE_DATABASE = {
         "rival": "ジャスティンミラノ"
       }
     ],
-    "photoTitle": "NF天栄/なおっぺさん",
+    "photoTitle": "ジャパンＣ GI (11月18日撮影)",
     "photoPaddocks": [
       {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4824",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "5着",
+        "raceDate": "2026/10/04 京都11R 芝2400m",
+        "shotDate": "9月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4734",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "5着",
+        "raceDate": "2026/05/03 京都11R 芝3200m",
+        "shotDate": "4月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4496",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都記念",
+        "grade": "GII",
+        "fullRace": "京都記念 GII",
+        "rank": "8着",
+        "raceDate": "2026/02/15 京都11R 芝2200m",
+        "shotDate": "2月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4329",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "1着",
+        "raceDate": "2025/05/04 京都11R 芝3200m",
+        "shotDate": "4月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3845",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "2着",
+        "raceDate": "2024/10/20 京都11R 芝3000m",
+        "shotDate": "10月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3472",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
         "race": "ジャパンカップ",
-        "slug": "jc",
-        "date": "11月18日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img03.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "ジャパンカップ GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img03.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4824",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "5着",
+        "raceDate": "2026/10/04 京都11R 芝2400m",
+        "shotDate": "9月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4734",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "天皇賞（春）",
+          "grade": "GI",
+          "fullRace": "天皇賞（春） GI",
+          "rank": "1着",
+          "raceDate": "2025/05/04 京都11R 芝3200m",
+          "shotDate": "4月24日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3845",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "菊花賞",
+          "grade": "GI",
+          "fullRace": "菊花賞 GI",
+          "rank": "2着",
+          "raceDate": "2024/10/20 京都11R 芝3000m",
+          "shotDate": "10月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3472",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 7
+    }
   },
   "ブローザホーン": {
     "name": "ブローザホーン",
@@ -55618,7 +67064,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'宝塚記念(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105748&no=19819",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3852",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "オートクレール",
@@ -56229,8 +67675,168 @@ export const HORSE_DATABASE = {
         "rival": "コウキ"
       }
     ],
-    "photoTitle": "２歳新馬/zatsumuさん",
-    "photoPaddocks": []
+    "photoTitle": "天皇賞（春） GI (4月24日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "8着",
+        "raceDate": "2025/05/04 京都11R 芝3200m",
+        "shotDate": "4月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3852",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神大賞典",
+        "grade": "GII",
+        "fullRace": "阪神大賞典 GII",
+        "rank": "3着",
+        "raceDate": "2025/03/23 阪神11R 芝3000m",
+        "shotDate": "3月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3772",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "12着",
+        "raceDate": "2024/12/22 中山11R 芝2500m",
+        "shotDate": "12月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3605",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "12着",
+        "raceDate": "2024/11/24 東京12R 芝2400m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3552",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "11着",
+        "raceDate": "2024/10/06 京都11R 芝2400m",
+        "shotDate": "9月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3445",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "1着",
+        "raceDate": "2024/06/23 京都11R 芝2200m",
+        "shotDate": "6月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3271",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "2着",
+        "raceDate": "2024/04/28 京都11R 芝3200m",
+        "shotDate": "4月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3158",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神大賞典",
+        "grade": "GII",
+        "fullRace": "阪神大賞典 GII",
+        "rank": "3着",
+        "raceDate": "2024/03/17 阪神11R 芝3000m",
+        "shotDate": "3月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3084",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "中",
+        "raceDate": "2023/10/09 京都11R 芝2400m",
+        "shotDate": "9月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2759",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "8着",
+        "raceDate": "2025/05/04 京都11R 芝3200m",
+        "shotDate": "4月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3852",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "阪神大賞典",
+        "grade": "GII",
+        "fullRace": "阪神大賞典 GII",
+        "rank": "3着",
+        "raceDate": "2025/03/23 阪神11R 芝3000m",
+        "shotDate": "3月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3772",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "宝塚記念",
+          "grade": "GI",
+          "fullRace": "宝塚記念 GI",
+          "rank": "1着",
+          "raceDate": "2024/06/23 京都11R 芝2200m",
+          "shotDate": "6月12日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3271",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "天皇賞（春）",
+          "grade": "GI",
+          "fullRace": "天皇賞（春） GI",
+          "rank": "2着",
+          "raceDate": "2024/04/28 京都11R 芝3200m",
+          "shotDate": "4月17日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3158",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "阪神大賞典",
+          "grade": "GII",
+          "fullRace": "阪神大賞典 GII",
+          "rank": "3着",
+          "raceDate": "2024/03/17 阪神11R 芝3000m",
+          "shotDate": "3月6日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3084",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 9
+    }
   },
   "ヘニーガイスト": {
     "name": "ヘニーガイスト",
@@ -56248,7 +67854,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'ポプラS()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104865&no=90183",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ヘニーヒューズ",
       "dam": "スミレ",
@@ -56403,8 +68009,14 @@ export const HORSE_DATABASE = {
         "rival": "(パラサイコロジー)"
       }
     ],
-    "photoTitle": "三峰山特別(2勝クラス)/sapphireさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ペプチドナイル": {
     "name": "ペプチドナイル",
@@ -56422,7 +68034,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'フェブラリーS(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018106084&no=62390",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4361",
     "pedigree": {
       "sire": "キングカメハメハ",
       "dam": "クイーンオリーブ",
@@ -57105,8 +68717,102 @@ export const HORSE_DATABASE = {
         "rival": "エアサージュ"
       }
     ],
-    "photoTitle": "赤富士S(3勝)/さん",
-    "photoPaddocks": []
+    "photoTitle": "フェブラリーＳ GI (2月12日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "6着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4361",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "4着",
+        "raceDate": "2025/02/23 東京11R ダ1600m",
+        "shotDate": "2月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3724",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "5着",
+        "raceDate": "2024/12/01 中京11R ダ1800m",
+        "shotDate": "11月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3568",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "1着",
+        "raceDate": "2024/02/18 東京11R ダ1600m",
+        "shotDate": "2月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3003",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "東海Ｓ",
+        "grade": "GII",
+        "fullRace": "東海Ｓ GII",
+        "rank": "6着",
+        "raceDate": "2024/01/21 京都11R ダ1800m",
+        "shotDate": "1月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2953",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "6着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4361",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "4着",
+        "raceDate": "2025/02/23 東京11R ダ1600m",
+        "shotDate": "2月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3724",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "フェブラリーＳ",
+          "grade": "GI",
+          "fullRace": "フェブラリーＳ GI",
+          "rank": "1着",
+          "raceDate": "2024/02/18 東京11R ダ1600m",
+          "shotDate": "2月8日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3003",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 5
+    }
   },
   "ベストプラージュ": {
     "name": "ベストプラージュ",
@@ -57124,7 +68830,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "フューチャーステップ"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024101469&no=3371",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ビーチパトロール",
       "dam": "フィアレス",
@@ -57351,8 +69057,14 @@ export const HORSE_DATABASE = {
         "rival": "セイテイサウザー"
       }
     ],
-    "photoTitle": "ファーストステップ2(新馬)/名無しさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ホウオウビスケッツ": {
     "name": "ホウオウビスケッツ",
@@ -57370,7 +69082,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'函館記念(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103941&no=123036",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4780",
     "pedigree": {
       "sire": "マインドユアビスケッツ",
       "dam": "ホウオウサブリナ",
@@ -57933,8 +69645,190 @@ export const HORSE_DATABASE = {
         "rival": "(マルディランダ)"
       }
     ],
-    "photoTitle": "札幌記念(G2)/つんさん",
-    "photoPaddocks": []
+    "photoTitle": "天皇賞（秋） GI (10月22日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "14着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4780",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "16着",
+        "raceDate": "2025/11/30 東京12R 芝2400m",
+        "shotDate": "11月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4193",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "13着",
+        "raceDate": "2025/11/02 東京11R 芝2000m",
+        "shotDate": "10月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4148",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "2着",
+        "raceDate": "2025/10/05 東京11R 芝1800m",
+        "shotDate": "9月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4097",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "5着",
+        "raceDate": "2025/04/06 阪神11R 芝2000m",
+        "shotDate": "3月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3794",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "金鯱賞",
+        "grade": "GII",
+        "fullRace": "金鯱賞 GII",
+        "rank": "2着",
+        "raceDate": "2025/03/16 中京11R 芝2000m",
+        "shotDate": "3月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3752",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中山金杯",
+        "grade": "GIII",
+        "fullRace": "中山金杯 GIII",
+        "rank": "9着",
+        "raceDate": "2025/01/05 中山11R 芝2000m",
+        "shotDate": "12月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3624",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "2着",
+        "raceDate": "2024/10/06 東京11R 芝1800m",
+        "shotDate": "9月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3454",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "17着",
+        "raceDate": "2023/04/16 中山11R 芝2000m",
+        "shotDate": "4月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2441",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "スプリングＳ",
+        "grade": "GII",
+        "fullRace": "スプリングＳ GII",
+        "rank": "2着",
+        "raceDate": "2023/03/19 中山11R 芝1800m",
+        "shotDate": "3月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2397",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "14着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4780",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "16着",
+        "raceDate": "2025/11/30 東京12R 芝2400m",
+        "shotDate": "11月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4193",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "毎日王冠",
+          "grade": "GII",
+          "fullRace": "毎日王冠 GII",
+          "rank": "2着",
+          "raceDate": "2025/10/05 東京11R 芝1800m",
+          "shotDate": "9月25日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4097",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "金鯱賞",
+          "grade": "GII",
+          "fullRace": "金鯱賞 GII",
+          "rank": "2着",
+          "raceDate": "2025/03/16 中京11R 芝2000m",
+          "shotDate": "3月6日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3752",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "毎日王冠",
+          "grade": "GII",
+          "fullRace": "毎日王冠 GII",
+          "rank": "2着",
+          "raceDate": "2024/10/06 東京11R 芝1800m",
+          "shotDate": "9月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3454",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "スプリングＳ",
+          "grade": "GII",
+          "fullRace": "スプリングＳ GII",
+          "rank": "2着",
+          "raceDate": "2023/03/19 中山11R 芝1800m",
+          "shotDate": "3月9日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2397",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 10
+    }
   },
   "ペリエール": {
     "name": "ペリエール",
@@ -57952,7 +69846,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'エルムS(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020101874&no=8800",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4646",
     "pedigree": {
       "sire": "ヘニーヒューズ",
       "dam": "ソフトライム",
@@ -58467,8 +70361,91 @@ export const HORSE_DATABASE = {
         "rival": "(ユティタム)"
       }
     ],
-    "photoTitle": "２歳新馬/さん",
-    "photoPaddocks": []
+    "photoTitle": "エルムS GIII (7月29日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "エルムS",
+        "grade": "GIII",
+        "fullRace": "エルムS GIII",
+        "rank": "2着",
+        "raceDate": "2026/08/08 札幌11R ダ1700m",
+        "shotDate": "7月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4646",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "10着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4359",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "10着",
+        "raceDate": "2025/12/07 中京11R ダ1800m",
+        "shotDate": "11月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4206",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ユニコーンS",
+        "grade": "GIII",
+        "fullRace": "ユニコーンS GIII",
+        "rank": "1着",
+        "raceDate": "2023/06/18 東京11R ダ1600m",
+        "shotDate": "6月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2573",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "エルムS",
+        "grade": "GIII",
+        "fullRace": "エルムS GIII",
+        "rank": "2着",
+        "raceDate": "2026/08/08 札幌11R ダ1700m",
+        "shotDate": "7月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4646",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "10着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4359",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "ユニコーンS",
+          "grade": "GIII",
+          "fullRace": "ユニコーンS GIII",
+          "rank": "1着",
+          "raceDate": "2023/06/18 東京11R ダ1600m",
+          "shotDate": "6月7日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2573",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 4
+    }
   },
   "ベラジオオペラ": {
     "name": "ベラジオオペラ",
@@ -58486,7 +70463,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'大阪杯(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020102781&no=34498",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3924",
     "pedigree": {
       "sire": "ロードカナロア",
       "dam": "エアルーティーン",
@@ -58809,8 +70786,190 @@ export const HORSE_DATABASE = {
         "rival": "(エアメテオラ)"
       }
     ],
-    "photoTitle": "セントポーリア賞(1勝)/さん",
-    "photoPaddocks": []
+    "photoTitle": "宝塚記念 GI (6月4日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "2着",
+        "raceDate": "2025/06/15 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3924",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "1着",
+        "raceDate": "2025/04/06 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3800",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "4着",
+        "raceDate": "2024/12/22 中山11R 芝2500m",
+        "shotDate": "12月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3606",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "6着",
+        "raceDate": "2024/10/27 東京11R 芝2000m",
+        "shotDate": "10月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3488",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "3着",
+        "raceDate": "2024/06/23 京都11R 芝2200m",
+        "shotDate": "6月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3273",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "1着",
+        "raceDate": "2024/03/31 阪神11R 芝2000m",
+        "shotDate": "3月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3116",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都記念",
+        "grade": "GII",
+        "fullRace": "京都記念 GII",
+        "rank": "2着",
+        "raceDate": "2024/02/11 京都11R 芝2200m",
+        "shotDate": "1月31日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2999",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "4着",
+        "raceDate": "2023/05/28 東京11R 芝2400m",
+        "shotDate": "5月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2522",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "10着",
+        "raceDate": "2023/04/16 中山11R 芝2000m",
+        "shotDate": "4月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2442",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "2着",
+        "raceDate": "2025/06/15 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3924",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "1着",
+        "raceDate": "2025/04/06 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3800",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "有馬記念",
+          "grade": "GI",
+          "fullRace": "有馬記念 GI",
+          "rank": "4着",
+          "raceDate": "2024/12/22 中山11R 芝2500m",
+          "shotDate": "12月12日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3606",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "宝塚記念",
+          "grade": "GI",
+          "fullRace": "宝塚記念 GI",
+          "rank": "3着",
+          "raceDate": "2024/06/23 京都11R 芝2200m",
+          "shotDate": "6月12日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3273",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "大阪杯",
+          "grade": "GI",
+          "fullRace": "大阪杯 GI",
+          "rank": "1着",
+          "raceDate": "2024/03/31 阪神11R 芝2000m",
+          "shotDate": "3月21日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3116",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "京都記念",
+          "grade": "GII",
+          "fullRace": "京都記念 GII",
+          "rank": "2着",
+          "raceDate": "2024/02/11 京都11R 芝2200m",
+          "shotDate": "1月31日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2999",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "日本ダービー",
+          "grade": "GI",
+          "fullRace": "日本ダービー GI",
+          "rank": "4着",
+          "raceDate": "2023/05/28 東京11R 芝2400m",
+          "shotDate": "5月16日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2522",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 9
+    }
   },
   "ホウオウプレマ": {
     "name": "ホウオウプレマ",
@@ -58828,7 +70987,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳新馬"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024106597&no=8243",
+    "photoUrl": null,
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "ホウオウピースフル",
@@ -58863,8 +71022,14 @@ export const HORSE_DATABASE = {
         "rival": "(ロゼプレミア)"
       }
     ],
-    "photoTitle": "2歳新馬/あっぷるぱいさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ホーエリート": {
     "name": "ホーエリート",
@@ -58882,7 +71047,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'ステイヤーズS(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021104855&no=102838",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4789",
     "pedigree": {
       "sire": "ルーラーシップ",
       "dam": "ゴールデンハープ",
@@ -59301,8 +71466,79 @@ export const HORSE_DATABASE = {
         "rival": "トレミニョン"
       }
     ],
-    "photoTitle": "天皇賞(春)(G1)/zatsumuさん",
-    "photoPaddocks": []
+    "photoTitle": "アルゼンチン共和国杯 GII (10月28日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "アルゼンチン共和国杯",
+        "grade": "GII",
+        "fullRace": "アルゼンチン共和国杯 GII",
+        "rank": "2着",
+        "raceDate": "2026/11/08 東京11R 芝2500m",
+        "shotDate": "10月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4789",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "14着",
+        "raceDate": "2026/05/03 京都11R 芝3200m",
+        "shotDate": "4月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4497",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "アルゼンチン共和国杯",
+        "grade": "GII",
+        "fullRace": "アルゼンチン共和国杯 GII",
+        "rank": "6着",
+        "raceDate": "2025/11/09 東京11R 芝2500m",
+        "shotDate": "10月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4153",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "5着",
+        "raceDate": "2025/09/21 中山11R 芝2200m",
+        "shotDate": "9月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4074",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "アルゼンチン共和国杯",
+        "grade": "GII",
+        "fullRace": "アルゼンチン共和国杯 GII",
+        "rank": "2着",
+        "raceDate": "2026/11/08 東京11R 芝2500m",
+        "shotDate": "10月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4789",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "天皇賞（春）",
+        "grade": "GI",
+        "fullRace": "天皇賞（春） GI",
+        "rank": "14着",
+        "raceDate": "2026/05/03 京都11R 芝3200m",
+        "shotDate": "4月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4497",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 4
+    }
   },
   "マイエレメント": {
     "name": "マイエレメント",
@@ -59320,7 +71556,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'フォーチュンC()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022101197&no=1058",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3737",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "ソートアフター",
@@ -59619,8 +71855,36 @@ export const HORSE_DATABASE = {
         "rival": "(ウインベアトリス)"
       }
     ],
-    "photoTitle": "キャロット募集馬ツアー20230902/オウケンさん",
-    "photoPaddocks": []
+    "photoTitle": "チューリップ賞 GII (2月19日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "チューリップ賞",
+        "grade": "GII",
+        "fullRace": "チューリップ賞 GII",
+        "rank": "11着",
+        "raceDate": "2025/03/02 阪神11R 芝1600m",
+        "shotDate": "2月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3737",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "チューリップ賞",
+        "grade": "GII",
+        "fullRace": "チューリップ賞 GII",
+        "rank": "11着",
+        "raceDate": "2025/03/02 阪神11R 芝1600m",
+        "shotDate": "2月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3737",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "マジックサンズ": {
     "name": "マジックサンズ",
@@ -59638,7 +71902,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'札幌2歳S(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104772&no=93466",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4366",
     "pedigree": {
       "sire": "キズナ",
       "dam": "コナブリュワーズ",
@@ -59937,8 +72201,91 @@ export const HORSE_DATABASE = {
         "rival": "(ビーオンザカバー)"
       }
     ],
-    "photoTitle": "富士S(GII)/Mｒ.Ｒさん",
-    "photoPaddocks": []
+    "photoTitle": "中山記念 GII (2月18日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "6着",
+        "raceDate": "2026/03/01 中山11R 芝1800m",
+        "shotDate": "2月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4366",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "8着",
+        "raceDate": "2025/11/23 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4176",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "2着",
+        "raceDate": "2025/05/11 東京11R 芝1600m",
+        "shotDate": "4月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3856",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ホープフルS",
+        "grade": "GI",
+        "fullRace": "ホープフルS GI",
+        "rank": "16着",
+        "raceDate": "2024/12/28 中山11R 芝2000m",
+        "shotDate": "12月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3620",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "6着",
+        "raceDate": "2026/03/01 中山11R 芝1800m",
+        "shotDate": "2月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4366",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "8着",
+        "raceDate": "2025/11/23 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4176",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "ＮＨＫマイルＣ",
+          "grade": "GI",
+          "fullRace": "ＮＨＫマイルＣ GI",
+          "rank": "2着",
+          "raceDate": "2025/05/11 東京11R 芝1600m",
+          "shotDate": "4月30日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3856",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 4
+    }
   },
   "マテンロウスカイ": {
     "name": "マテンロウスカイ",
@@ -59956,7 +72303,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'中山記念(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019105546&no=122291",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3730",
     "pedigree": {
       "sire": "モーリス",
       "dam": "レッドラヴィータ",
@@ -60639,8 +72986,80 @@ export const HORSE_DATABASE = {
         "rival": "(シホノスペランツァ)"
       }
     ],
-    "photoTitle": "マーチS(G3)/こむぎさん",
-    "photoPaddocks": []
+    "photoTitle": "中山記念 GII (2月19日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "9着",
+        "raceDate": "2025/03/02 中山11R 芝1800m",
+        "shotDate": "2月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3730",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "14着",
+        "raceDate": "2024/11/17 京都11R 芝1600m",
+        "shotDate": "11月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3531",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "エプソムC",
+        "grade": "GIII",
+        "fullRace": "エプソムC GIII",
+        "rank": "3着",
+        "raceDate": "2023/06/11 東京11R 芝1800m",
+        "shotDate": "5月31日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2553",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "9着",
+        "raceDate": "2025/03/02 中山11R 芝1800m",
+        "shotDate": "2月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3730",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "14着",
+        "raceDate": "2024/11/17 京都11R 芝1600m",
+        "shotDate": "11月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3531",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "エプソムC",
+          "grade": "GIII",
+          "fullRace": "エプソムC GIII",
+          "rank": "3着",
+          "raceDate": "2023/06/11 東京11R 芝1800m",
+          "shotDate": "5月31日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2553",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 3
+    }
   },
   "ボンドガール": {
     "name": "ボンドガール",
@@ -60658,7 +73077,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'2歳新馬"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021107179&no=102057",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4628",
     "pedigree": {
       "sire": "ダイワメジャー",
       "dam": "コーステッド",
@@ -61077,8 +73496,201 @@ export const HORSE_DATABASE = {
         "rival": "(チェルヴィニア)"
       }
     ],
-    "photoTitle": "エリザベス女王杯(G1)/ねぐせさん",
-    "photoPaddocks": []
+    "photoTitle": "クイーンＳ GIII (7月22日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "クイーンＳ",
+        "grade": "GIII",
+        "fullRace": "クイーンＳ GIII",
+        "rank": "10着",
+        "raceDate": "2026/08/02 札幌11R 芝1800m",
+        "shotDate": "7月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4628",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "11着",
+        "raceDate": "2026/05/17 東京11R 芝1600m",
+        "shotDate": "5月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4515",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "9着",
+        "raceDate": "2025/10/12 東京11R 芝1800m",
+        "shotDate": "10月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4114",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "関屋記念",
+        "grade": "GIII",
+        "fullRace": "関屋記念 GIII",
+        "rank": "2着",
+        "raceDate": "2025/07/27 新潟7R 芝1600m",
+        "shotDate": "7月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3972",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "16着",
+        "raceDate": "2025/05/18 東京11R 芝1600m",
+        "shotDate": "5月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3870",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "東京新聞杯",
+        "grade": "GIII",
+        "fullRace": "東京新聞杯 GIII",
+        "rank": "2着",
+        "raceDate": "2025/02/09 東京11R 芝1600m",
+        "shotDate": "1月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3695",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "2着",
+        "raceDate": "2024/10/13 京都11R 芝2000m",
+        "shotDate": "10月3日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3462",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "紫苑S",
+        "grade": "GII",
+        "fullRace": "紫苑S GII",
+        "rank": "3着",
+        "raceDate": "2024/09/07 中山11R 芝2000m",
+        "shotDate": "8月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3385",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "クイーンＳ",
+        "grade": "GIII",
+        "fullRace": "クイーンＳ GIII",
+        "rank": "2着",
+        "raceDate": "2024/07/28 札幌11R 芝1800m",
+        "shotDate": "7月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3323",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "17着",
+        "raceDate": "2024/05/05 東京11R 芝1600m",
+        "shotDate": "4月25日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3177",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "クイーンＳ",
+        "grade": "GIII",
+        "fullRace": "クイーンＳ GIII",
+        "rank": "10着",
+        "raceDate": "2026/08/02 札幌11R 芝1800m",
+        "shotDate": "7月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4628",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "11着",
+        "raceDate": "2026/05/17 東京11R 芝1600m",
+        "shotDate": "5月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4515",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "関屋記念",
+          "grade": "GIII",
+          "fullRace": "関屋記念 GIII",
+          "rank": "2着",
+          "raceDate": "2025/07/27 新潟7R 芝1600m",
+          "shotDate": "7月17日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3972",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "東京新聞杯",
+          "grade": "GIII",
+          "fullRace": "東京新聞杯 GIII",
+          "rank": "2着",
+          "raceDate": "2025/02/09 東京11R 芝1600m",
+          "shotDate": "1月30日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3695",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "秋華賞",
+          "grade": "GI",
+          "fullRace": "秋華賞 GI",
+          "rank": "2着",
+          "raceDate": "2024/10/13 京都11R 芝2000m",
+          "shotDate": "10月3日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3462",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "紫苑S",
+          "grade": "GII",
+          "fullRace": "紫苑S GII",
+          "rank": "3着",
+          "raceDate": "2024/09/07 中山11R 芝2000m",
+          "shotDate": "8月28日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3385",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "クイーンＳ",
+          "grade": "GIII",
+          "fullRace": "クイーンＳ GIII",
+          "rank": "2着",
+          "raceDate": "2024/07/28 札幌11R 芝1800m",
+          "shotDate": "7月17日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3323",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 10
+    }
   },
   "マスカレードボール": {
     "name": "マスカレードボール",
@@ -61096,7 +73708,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'天皇賞(秋)(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105519&no=73362",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4822",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "マスクオフ",
@@ -61347,23 +73959,190 @@ export const HORSE_DATABASE = {
         "rival": "(マイネルチケット)"
       }
     ],
-    "photoTitle": "天皇賞（秋）(G1)/BLACKさん",
+    "photoTitle": "ジャパンＣ GI (11月18日撮影)",
     "photoPaddocks": [
       {
-        "race": "ジャパンカップ",
-        "slug": "jc",
-        "date": "11月18日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img02.jpg",
-        "source": "JRA-VAN"
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4822",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
       },
       {
         "race": "天皇賞（秋）",
-        "slug": "akiten",
-        "date": "10月22日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img03.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "11着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4781",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "2着",
+        "raceDate": "2025/11/30 東京12R 芝2400m",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4195",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "1着",
+        "raceDate": "2025/11/02 東京11R 芝2000m",
+        "shotDate": "10月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4147",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "2着",
+        "raceDate": "2025/06/01 東京11R 芝2400m",
+        "shotDate": "5月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3895",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "3着",
+        "raceDate": "2025/04/20 中山11R 芝2000m",
+        "shotDate": "4月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3824",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "共同通信杯",
+        "grade": "GIII",
+        "fullRace": "共同通信杯 GIII",
+        "rank": "1着",
+        "raceDate": "2025/02/16 東京11R 芝1800m",
+        "shotDate": "2月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3705",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ホープフルS",
+        "grade": "GI",
+        "fullRace": "ホープフルS GI",
+        "rank": "11着",
+        "raceDate": "2024/12/28 中山11R 芝2000m",
+        "shotDate": "12月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3609",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンカップ",
+        "grade": "GI",
+        "fullRace": "ジャパンカップ GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img02.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4822",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "11着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4781",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "ジャパンＣ",
+          "grade": "GI",
+          "fullRace": "ジャパンＣ GI",
+          "rank": "2着",
+          "raceDate": "2025/11/30 東京12R 芝2400m",
+          "shotDate": "11月19日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4195",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "天皇賞（秋）",
+          "grade": "GI",
+          "fullRace": "天皇賞（秋） GI",
+          "rank": "1着",
+          "raceDate": "2025/11/02 東京11R 芝2000m",
+          "shotDate": "10月23日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4147",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "日本ダービー",
+          "grade": "GI",
+          "fullRace": "日本ダービー GI",
+          "rank": "2着",
+          "raceDate": "2025/06/01 東京11R 芝2400m",
+          "shotDate": "5月22日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3895",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "皐月賞",
+          "grade": "GI",
+          "fullRace": "皐月賞 GI",
+          "rank": "3着",
+          "raceDate": "2025/04/20 中山11R 芝2000m",
+          "shotDate": "4月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3824",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "共同通信杯",
+          "grade": "GIII",
+          "fullRace": "共同通信杯 GIII",
+          "rank": "1着",
+          "raceDate": "2025/02/16 東京11R 芝1800m",
+          "shotDate": "2月6日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3705",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 9
+    }
   },
   "マリアンデール": {
     "name": "マリアンデール",
@@ -61381,7 +74160,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳未勝利"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024103955&no=12514",
+    "photoUrl": null,
     "pedigree": {
       "sire": "シルバーステート",
       "dam": "スティーミーウィンドウズ",
@@ -61440,8 +74219,14 @@ export const HORSE_DATABASE = {
         "rival": "セプタードアイル"
       }
     ],
-    "photoTitle": "２歳未勝利/さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ミスタージーティー": {
     "name": "ミスタージーティー",
@@ -61459,7 +74244,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'若葉S(L)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105856&no=111214",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3132",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "リッスン",
@@ -61926,8 +74711,68 @@ export const HORSE_DATABASE = {
         "rival": "(ハヤテノフクノスケ)"
       }
     ],
-    "photoTitle": "Mキタサンブラック(3勝クラス)/はしやんさん",
-    "photoPaddocks": []
+    "photoTitle": "皐月賞 GI (4月4日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "10着",
+        "raceDate": "2024/04/14 中山11R 芝2000m",
+        "shotDate": "4月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3132",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "共同通信杯",
+        "grade": "GIII",
+        "fullRace": "共同通信杯 GIII",
+        "rank": "7着",
+        "raceDate": "2024/02/11 東京11R 芝1800m",
+        "shotDate": "2月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3000",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ホープフルS",
+        "grade": "GI",
+        "fullRace": "ホープフルS GI",
+        "rank": "5着",
+        "raceDate": "2023/12/28 中山11R 芝2000m",
+        "shotDate": "12月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2910",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "10着",
+        "raceDate": "2024/04/14 中山11R 芝2000m",
+        "shotDate": "4月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3132",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "共同通信杯",
+        "grade": "GIII",
+        "fullRace": "共同通信杯 GIII",
+        "rank": "7着",
+        "raceDate": "2024/02/11 東京11R 芝1800m",
+        "shotDate": "2月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3000",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 3
+    }
   },
   "ミアネーロ": {
     "name": "ミアネーロ",
@@ -61945,7 +74790,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'フラワーC(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105801&no=561",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3883",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "ミスエーニョ",
@@ -62292,8 +75137,68 @@ export const HORSE_DATABASE = {
         "rival": "(マーシャルポイント)"
       }
     ],
-    "photoTitle": "募集馬ツアー/バンビ0527さん",
-    "photoPaddocks": []
+    "photoTitle": "ヴィクトリアマイル GI (5月8日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "取",
+        "raceDate": "2025/05/18 東京11R 芝1600m",
+        "shotDate": "5月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3883",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "紫苑S",
+        "grade": "GII",
+        "fullRace": "紫苑S GII",
+        "rank": "2着",
+        "raceDate": "2024/09/07 中山11R 芝2000m",
+        "shotDate": "8月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3387",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "14着",
+        "raceDate": "2024/05/19 東京11R 芝2400m",
+        "shotDate": "5月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3213",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "取",
+        "raceDate": "2025/05/18 東京11R 芝1600m",
+        "shotDate": "5月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3883",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "紫苑S",
+        "grade": "GII",
+        "fullRace": "紫苑S GII",
+        "rank": "2着",
+        "raceDate": "2024/09/07 中山11R 芝2000m",
+        "shotDate": "8月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3387",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 3
+    }
   },
   "ミッキージュエリー": {
     "name": "ミッキージュエリー",
@@ -62311,7 +75216,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'北海ハンデキャップ()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022103245&no=2987",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4058",
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "ミッキーチャーム",
@@ -62562,8 +75467,36 @@ export const HORSE_DATABASE = {
         "rival": "エリカエクスプレス"
       }
     ],
-    "photoTitle": "牧場にて/さん",
-    "photoPaddocks": []
+    "photoTitle": "ローズＳ GII (9月3日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "ローズＳ",
+        "grade": "GII",
+        "fullRace": "ローズＳ GII",
+        "rank": "16着",
+        "raceDate": "2025/09/14 阪神11R 芝1800m",
+        "shotDate": "9月3日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4058",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ローズＳ",
+        "grade": "GII",
+        "fullRace": "ローズＳ GII",
+        "rank": "16着",
+        "raceDate": "2025/09/14 阪神11R 芝1800m",
+        "shotDate": "9月3日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4058",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "ミニーホーク": {
     "name": "ミニーホーク",
@@ -62581,7 +75514,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'英オークス(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022190002&no=94310",
+    "photoUrl": null,
     "pedigree": {
       "sire": "Frankel (英)",
       "dam": "Multilingual (英)",
@@ -62928,8 +75861,14 @@ export const HORSE_DATABASE = {
         "rival": ""
       }
     ],
-    "photoTitle": "凱旋門賞(G1)/こんぱすさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "メイショウタバル": {
     "name": "メイショウタバル",
@@ -62947,7 +75886,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'宝塚記念(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021103272&no=105571",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4831",
     "pedigree": {
       "sire": "ゴールドシップ",
       "dam": "メイショウツバクロ",
@@ -63366,16 +76305,168 @@ export const HORSE_DATABASE = {
         "rival": "オールナット"
       }
     ],
-    "photoTitle": "宝塚記念(G1)/トニーP76さん",
+    "photoTitle": "ジャパンＣ GI (11月19日撮影)",
     "photoPaddocks": [
       {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4831",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "1着",
+        "raceDate": "2026/06/14 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4561",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "2着",
+        "raceDate": "2026/04/05 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4435",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "13着",
+        "raceDate": "2025/12/28 中山11R 芝2500m",
+        "shotDate": "11月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4247",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "6着",
+        "raceDate": "2025/11/02 東京11R 芝2000m",
+        "shotDate": "10月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4142",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "1着",
+        "raceDate": "2025/06/15 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3923",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日経新春杯",
+        "grade": "GII",
+        "fullRace": "日経新春杯 GII",
+        "rank": "11着",
+        "raceDate": "2025/01/19 中京11R 芝2200m",
+        "shotDate": "1月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3658",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "16着",
+        "raceDate": "2024/10/20 京都11R 芝3000m",
+        "shotDate": "10月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3476",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "17着",
+        "raceDate": "2024/04/14 中山11R 芝2000m",
+        "shotDate": "4月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3136",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
         "race": "ジャパンカップ",
-        "slug": "jc",
-        "date": "11月19日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img08.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "ジャパンカップ GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img08.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4831",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "1着",
+        "raceDate": "2026/06/14 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4561",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "大阪杯",
+          "grade": "GI",
+          "fullRace": "大阪杯 GI",
+          "rank": "2着",
+          "raceDate": "2026/04/05 阪神11R 芝2000m",
+          "shotDate": "3月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4435",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "宝塚記念",
+          "grade": "GI",
+          "fullRace": "宝塚記念 GI",
+          "rank": "1着",
+          "raceDate": "2025/06/15 阪神11R 芝2200m",
+          "shotDate": "6月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3923",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 10
+    }
   },
   "ミッキーファイト": {
     "name": "ミッキーファイト",
@@ -63393,7 +76484,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'JBCクラシック(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105615&no=98674",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3714",
     "pedigree": {
       "sire": "ドレフォン",
       "dam": "スペシャルグルーヴ",
@@ -63716,8 +76807,57 @@ export const HORSE_DATABASE = {
         "rival": "(セントラルヴァレー)"
       }
     ],
-    "photoTitle": "東京大賞典競走(G1)/深い池さん",
-    "photoPaddocks": []
+    "photoTitle": "フェブラリーＳ GI (2月12日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "3着",
+        "raceDate": "2025/02/23 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3714",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "レパードＳ",
+        "grade": "GIII",
+        "fullRace": "レパードＳ GIII",
+        "rank": "1着",
+        "raceDate": "2024/08/04 新潟7R ダ1800m",
+        "shotDate": "7月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3334",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "3着",
+        "raceDate": "2025/02/23 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3714",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "レパードＳ",
+        "grade": "GIII",
+        "fullRace": "レパードＳ GIII",
+        "rank": "1着",
+        "raceDate": "2024/08/04 新潟7R ダ1800m",
+        "shotDate": "7月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3334",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 2
+    }
   },
   "ムルソー": {
     "name": "ムルソー",
@@ -63735,7 +76875,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'アンタレスS(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021103020&no=99956",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4797",
     "pedigree": {
       "sire": "レイデオロ",
       "dam": "ラユロット",
@@ -64034,8 +77174,36 @@ export const HORSE_DATABASE = {
         "rival": "ダノンピレネー"
       }
     ],
-    "photoTitle": "仁川S(L)/生ハムさん",
-    "photoPaddocks": []
+    "photoTitle": "みやこＳ GIII (10月28日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "みやこＳ",
+        "grade": "GIII",
+        "fullRace": "みやこＳ GIII",
+        "rank": "5着",
+        "raceDate": "2026/11/08 京都11R ダ1800m",
+        "shotDate": "10月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4797",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "みやこＳ",
+        "grade": "GIII",
+        "fullRace": "みやこＳ GIII",
+        "rank": "5着",
+        "raceDate": "2026/11/08 京都11R ダ1800m",
+        "shotDate": "10月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4797",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "ミックファイア": {
     "name": "ミックファイア",
@@ -64053,7 +77221,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "ジャパンダートダービー"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020104376&no=120691",
+    "photoUrl": null,
     "pedigree": {
       "sire": "シニスターミニスター",
       "dam": "マリアージュ",
@@ -64544,8 +77712,14 @@ export const HORSE_DATABASE = {
         "rival": "(サワーキャンディー)"
       }
     ],
-    "photoTitle": "六甲盃(重賞)/すみれさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "メリオーレム": {
     "name": "メリオーレム",
@@ -64563,7 +77737,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'むらさき賞()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021104791&no=84518",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3968",
     "pedigree": {
       "sire": "シュヴァルグラン",
       "dam": "メリオーラ",
@@ -65030,8 +78204,68 @@ export const HORSE_DATABASE = {
         "rival": "メイショウゴーフル"
       }
     ],
-    "photoTitle": "むらさき賞(３勝クラス)/宮内宮さん",
-    "photoPaddocks": []
+    "photoTitle": "小倉記念 GIII (7月9日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "小倉記念",
+        "grade": "GIII",
+        "fullRace": "小倉記念 GIII",
+        "rank": "9着",
+        "raceDate": "2025/07/20 小倉11R 芝2000m",
+        "shotDate": "7月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3968",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "13着",
+        "raceDate": "2024/10/20 京都11R 芝3000m",
+        "shotDate": "10月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3475",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "神戸新聞杯",
+        "grade": "GII",
+        "fullRace": "神戸新聞杯 GII",
+        "rank": "5着",
+        "raceDate": "2024/09/22 中京11R 芝2200m",
+        "shotDate": "9月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3423",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "小倉記念",
+        "grade": "GIII",
+        "fullRace": "小倉記念 GIII",
+        "rank": "9着",
+        "raceDate": "2025/07/20 小倉11R 芝2000m",
+        "shotDate": "7月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3968",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "13着",
+        "raceDate": "2024/10/20 京都11R 芝3000m",
+        "shotDate": "10月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3475",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 3
+    }
   },
   "ヤマニンウルス": {
     "name": "ヤマニンウルス",
@@ -65049,7 +78283,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'プロキオンS(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020105599&no=8330",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3296",
     "pedigree": {
       "sire": "ジャスタウェイ",
       "dam": "ヤマニンパピオネ",
@@ -65300,8 +78534,36 @@ export const HORSE_DATABASE = {
         "rival": "(ゴライコウ)"
       }
     ],
-    "photoTitle": "２歳新馬/さん",
-    "photoPaddocks": []
+    "photoTitle": "プロキオンＳ GIII (6月26日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "プロキオンＳ",
+        "grade": "GIII",
+        "fullRace": "プロキオンＳ GIII",
+        "rank": "1着",
+        "raceDate": "2024/07/07 小倉11R ダ1700m",
+        "shotDate": "6月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3296",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "プロキオンＳ",
+        "grade": "GIII",
+        "fullRace": "プロキオンＳ GIII",
+        "rank": "1着",
+        "raceDate": "2024/07/07 小倉11R ダ1700m",
+        "shotDate": "6月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3296",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "ラフターラインズ": {
     "name": "ラフターラインズ",
@@ -65319,7 +78581,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'エリザベス女王杯(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023107154&no=57649",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4798",
     "pedigree": {
       "sire": "アルアイン",
       "dam": "バンゴール",
@@ -65474,16 +78736,57 @@ export const HORSE_DATABASE = {
         "rival": "スウィフトミモザ"
       }
     ],
-    "photoTitle": "サンスポ賞フローラS(G2)/りーさん",
+    "photoTitle": "エリザベス女王杯 GI (11月4日撮影)",
     "photoPaddocks": [
       {
         "race": "エリザベス女王杯",
-        "slug": "elizabeth",
-        "date": "11月4日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/elizabeth/img/photopaddock_img02.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "1着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4798",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "3着",
+        "raceDate": "2026/05/24 東京11R 芝2400m",
+        "shotDate": "5月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4534",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "1着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4798",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "3着",
+        "raceDate": "2026/05/24 東京11R 芝2400m",
+        "shotDate": "5月14日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4534",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 2
+    }
   },
   "ラビットアイ": {
     "name": "ラビットアイ",
@@ -65501,7 +78804,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'4歳以上1勝クラス"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021102597&no=107910",
+    "photoUrl": null,
     "pedigree": {
       "sire": "エピファネイア",
       "dam": "ティーエスベリー",
@@ -65872,8 +79175,14 @@ export const HORSE_DATABASE = {
         "rival": "ジュンゴールド"
       }
     ],
-    "photoTitle": "蓬莱峡特別(2勝クラス)/ポンタも大好きさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ランスオブクイーン": {
     "name": "ランスオブクイーン",
@@ -65891,7 +79200,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'シドニーT()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021104427&no=89375",
+    "photoUrl": null,
     "pedigree": {
       "sire": "タリスマニック",
       "dam": "マイプラーナ",
@@ -66214,8 +79523,14 @@ export const HORSE_DATABASE = {
         "rival": "ミエスペランサ"
       }
     ],
-    "photoTitle": "丹頂S(OP)/かるめん77さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ラヴァンダ": {
     "name": "ラヴァンダ",
@@ -66233,7 +79548,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'アイルランドT(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021107098&no=108126",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4799",
     "pedigree": {
       "sire": "シルバーステート",
       "dam": "ゴッドパイレーツ",
@@ -66772,8 +80087,190 @@ export const HORSE_DATABASE = {
         "rival": "バンドシェル"
       }
     ],
-    "photoTitle": "中京記念(G3)/たまおさん",
-    "photoPaddocks": []
+    "photoTitle": "エリザベス女王杯 GI (11月4日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "12着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4799",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "3着",
+        "raceDate": "2026/10/11 東京11R 芝1800m",
+        "shotDate": "9月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4747",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中京記念",
+        "grade": "GIII",
+        "fullRace": "中京記念 GIII",
+        "rank": "1着",
+        "raceDate": "2026/08/16 中京7R 芝1600m",
+        "shotDate": "8月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4657",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "7着",
+        "raceDate": "2026/05/17 東京11R 芝1600m",
+        "shotDate": "5月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4513",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "東京新聞杯",
+        "grade": "GIII",
+        "fullRace": "東京新聞杯 GIII",
+        "rank": "2着",
+        "raceDate": "2026/02/10 東京11R 芝1600m",
+        "shotDate": "1月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4316",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "16着",
+        "raceDate": "2025/11/23 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4175",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "1着",
+        "raceDate": "2025/10/12 東京11R 芝1800m",
+        "shotDate": "10月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4111",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "4着",
+        "raceDate": "2024/10/13 京都11R 芝2000m",
+        "shotDate": "10月2日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3469",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フローラＳ",
+        "grade": "GII",
+        "fullRace": "フローラＳ GII",
+        "rank": "2着",
+        "raceDate": "2024/04/21 東京11R 芝2000m",
+        "shotDate": "4月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3150",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "12着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4799",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "アイルランドＴ",
+        "grade": "GII",
+        "fullRace": "アイルランドＴ GII",
+        "rank": "3着",
+        "raceDate": "2026/10/11 東京11R 芝1800m",
+        "shotDate": "9月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4747",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "中京記念",
+          "grade": "GIII",
+          "fullRace": "中京記念 GIII",
+          "rank": "1着",
+          "raceDate": "2026/08/16 中京7R 芝1600m",
+          "shotDate": "8月5日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4657",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "東京新聞杯",
+          "grade": "GIII",
+          "fullRace": "東京新聞杯 GIII",
+          "rank": "2着",
+          "raceDate": "2026/02/10 東京11R 芝1600m",
+          "shotDate": "1月29日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4316",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "アイルランドＴ",
+          "grade": "GII",
+          "fullRace": "アイルランドＴ GII",
+          "rank": "1着",
+          "raceDate": "2025/10/12 東京11R 芝1800m",
+          "shotDate": "10月1日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4111",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "秋華賞",
+          "grade": "GI",
+          "fullRace": "秋華賞 GI",
+          "rank": "4着",
+          "raceDate": "2024/10/13 京都11R 芝2000m",
+          "shotDate": "10月2日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3469",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "フローラＳ",
+          "grade": "GII",
+          "fullRace": "フローラＳ GII",
+          "rank": "2着",
+          "raceDate": "2024/04/21 東京11R 芝2000m",
+          "shotDate": "4月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3150",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 9
+    }
   },
   "ランフォーヴァウ": {
     "name": "ランフォーヴァウ",
@@ -66791,7 +80288,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'デイリー杯2歳S(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105291&no=66519",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4598",
     "pedigree": {
       "sire": "ロードカナロア",
       "dam": "キネオダンサー",
@@ -67114,8 +80611,68 @@ export const HORSE_DATABASE = {
         "rival": "レイユール"
       }
     ],
-    "photoTitle": "秋華賞(G1)/あすりさん",
-    "photoPaddocks": []
+    "photoTitle": "北九州記念 GIII (6月24日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "北九州記念",
+        "grade": "GIII",
+        "fullRace": "北九州記念 GIII",
+        "rank": "8着",
+        "raceDate": "2026/07/05 小倉11R 芝1200m",
+        "shotDate": "6月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4598",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フィリーズレビュー",
+        "grade": "GII",
+        "fullRace": "フィリーズレビュー GII",
+        "rank": "17着",
+        "raceDate": "2025/03/08 阪神11R 芝1400m",
+        "shotDate": "2月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3750",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神ＪＦ",
+        "grade": "GI",
+        "fullRace": "阪神ＪＦ GI",
+        "rank": "11着",
+        "raceDate": "2024/12/08 京都11R 芝1600m",
+        "shotDate": "11月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3574",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "北九州記念",
+        "grade": "GIII",
+        "fullRace": "北九州記念 GIII",
+        "rank": "8着",
+        "raceDate": "2026/07/05 小倉11R 芝1200m",
+        "shotDate": "6月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4598",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "フィリーズレビュー",
+        "grade": "GII",
+        "fullRace": "フィリーズレビュー GII",
+        "rank": "17着",
+        "raceDate": "2025/03/08 阪神11R 芝1400m",
+        "shotDate": "2月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3750",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 3
+    }
   },
   "リアライズシリウス": {
     "name": "リアライズシリウス",
@@ -67133,7 +80690,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'共同通信杯(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023103604&no=55714",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4785",
     "pedigree": {
       "sire": "ポエティックフレア",
       "dam": "レッドミラベル",
@@ -67312,16 +80869,146 @@ export const HORSE_DATABASE = {
         "rival": "(カムアップローゼス)"
       }
     ],
-    "photoTitle": "東京優駿(G1)/ひもみんさん",
+    "photoTitle": "天皇賞（秋） GI (10月22日撮影)",
     "photoPaddocks": [
       {
         "race": "天皇賞（秋）",
-        "slug": "akiten",
-        "date": "10月22日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img07.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "15着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4785",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "7着",
+        "raceDate": "2026/10/04 東京11R 芝1800m",
+        "shotDate": "9月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4736",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "7着",
+        "raceDate": "2026/05/31 東京11R 芝2400m",
+        "shotDate": "5月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4545",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "2着",
+        "raceDate": "2026/04/19 中山11R 芝2000m",
+        "shotDate": "4月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4462",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "共同通信杯",
+        "grade": "GIII",
+        "fullRace": "共同通信杯 GIII",
+        "rank": "1着",
+        "raceDate": "2026/02/15 東京11R 芝1800m",
+        "shotDate": "2月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4332",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "朝日杯ＦＳ",
+        "grade": "GI",
+        "fullRace": "朝日杯ＦＳ GI",
+        "rank": "5着",
+        "raceDate": "2025/12/21 阪神11R 芝1600m",
+        "shotDate": "12月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4220",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "新潟２歳Ｓ",
+        "grade": "GIII",
+        "fullRace": "新潟２歳Ｓ GIII",
+        "rank": "1着",
+        "raceDate": "2025/08/24 新潟11R 芝1600m",
+        "shotDate": "8月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4023",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "15着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4785",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "7着",
+        "raceDate": "2026/10/04 東京11R 芝1800m",
+        "shotDate": "9月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4736",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "皐月賞",
+          "grade": "GI",
+          "fullRace": "皐月賞 GI",
+          "rank": "2着",
+          "raceDate": "2026/04/19 中山11R 芝2000m",
+          "shotDate": "4月8日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4462",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "共同通信杯",
+          "grade": "GIII",
+          "fullRace": "共同通信杯 GIII",
+          "rank": "1着",
+          "raceDate": "2026/02/15 東京11R 芝1800m",
+          "shotDate": "2月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4332",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "新潟２歳Ｓ",
+          "grade": "GIII",
+          "fullRace": "新潟２歳Ｓ GIII",
+          "rank": "1着",
+          "raceDate": "2025/08/24 新潟11R 芝1600m",
+          "shotDate": "8月13日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4023",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 7
+    }
   },
   "ラヴェル": {
     "name": "ラヴェル",
@@ -67339,7 +81026,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'チャレンジC(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103390&no=5791",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3937",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "サンブルエミューズ",
@@ -67734,8 +81421,135 @@ export const HORSE_DATABASE = {
         "rival": "(サンライズサラー)"
       }
     ],
-    "photoTitle": "新馬戦/rorさん",
-    "photoPaddocks": []
+    "photoTitle": "府中牝馬Ｓ GIII (6月12日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "府中牝馬Ｓ",
+        "grade": "GIII",
+        "fullRace": "府中牝馬Ｓ GIII",
+        "rank": "9着",
+        "raceDate": "2025/06/22 東京11R 芝1800m",
+        "shotDate": "6月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3937",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "12着",
+        "raceDate": "2025/05/18 東京11R 芝1600m",
+        "shotDate": "5月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3867",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "11着",
+        "raceDate": "2025/04/06 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3803",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "金鯱賞",
+        "grade": "GII",
+        "fullRace": "金鯱賞 GII",
+        "rank": "9着",
+        "raceDate": "2025/03/16 中京11R 芝2000m",
+        "shotDate": "3月6日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3757",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "11着",
+        "raceDate": "2023/10/15 京都11R 芝2000m",
+        "shotDate": "10月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2772",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ローズＳ",
+        "grade": "GII",
+        "fullRace": "ローズＳ GII",
+        "rank": "14着",
+        "raceDate": "2023/09/17 阪神11R 芝1800m",
+        "shotDate": "9月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2699",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "4着",
+        "raceDate": "2023/05/21 東京11R 芝2400m",
+        "shotDate": "5月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2504",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神ジュベナイルＦ",
+        "grade": "GI",
+        "fullRace": "阪神ジュベナイルＦ GI",
+        "rank": "11着",
+        "raceDate": "2022/12/11 阪神11R 芝1600m",
+        "shotDate": "11月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2231",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "府中牝馬Ｓ",
+        "grade": "GIII",
+        "fullRace": "府中牝馬Ｓ GIII",
+        "rank": "9着",
+        "raceDate": "2025/06/22 東京11R 芝1800m",
+        "shotDate": "6月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3937",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ヴィクトリアマイル",
+        "grade": "GI",
+        "fullRace": "ヴィクトリアマイル GI",
+        "rank": "12着",
+        "raceDate": "2025/05/18 東京11R 芝1600m",
+        "shotDate": "5月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3867",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "オークス",
+          "grade": "GI",
+          "fullRace": "オークス GI",
+          "rank": "4着",
+          "raceDate": "2023/05/21 東京11R 芝2400m",
+          "shotDate": "5月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2504",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 8
+    }
   },
   "メイショウハリオ": {
     "name": "メイショウハリオ",
@@ -67753,7 +81567,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'川崎記念【指定交流】(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2017106404&no=34354",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2862",
     "pedigree": {
       "sire": "パイロ",
       "dam": "メイショウオウヒ",
@@ -68556,8 +82370,57 @@ export const HORSE_DATABASE = {
         "rival": "ワイドカント"
       }
     ],
-    "photoTitle": "三嶋牧場/ちぇれぶーさん",
-    "photoPaddocks": []
+    "photoTitle": "チャンピオンズＣ GI (11月23日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "5着",
+        "raceDate": "2023/12/03 中京11R ダ1800m",
+        "shotDate": "11月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2862",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "3着",
+        "raceDate": "2023/02/19 東京11R ダ1600m",
+        "shotDate": "2月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2344",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "5着",
+        "raceDate": "2023/12/03 中京11R ダ1800m",
+        "shotDate": "11月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2862",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "3着",
+        "raceDate": "2023/02/19 東京11R ダ1600m",
+        "shotDate": "2月9日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2344",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 2
+    }
   },
   "リバティアイランド": {
     "name": "リバティアイランド",
@@ -68575,7 +82438,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'優駿牝馬(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103656&no=9961",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3493",
     "pedigree": {
       "sire": "ドゥラメンテ",
       "dam": "ヤンキーローズ",
@@ -68850,8 +82713,146 @@ export const HORSE_DATABASE = {
         "rival": "(クルゼイロドスル)"
       }
     ],
-    "photoTitle": "２歳新馬/オオアブラさん",
-    "photoPaddocks": []
+    "photoTitle": "天皇賞（秋） GI (10月16日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "13着",
+        "raceDate": "2024/10/27 東京11R 芝2000m",
+        "shotDate": "10月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3493",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "2着",
+        "raceDate": "2023/11/26 東京12R 芝2400m",
+        "shotDate": "11月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2842",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "1着",
+        "raceDate": "2023/10/15 京都11R 芝2000m",
+        "shotDate": "10月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2770",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "1着",
+        "raceDate": "2023/05/21 東京11R 芝2400m",
+        "shotDate": "5月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2513",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "桜花賞",
+        "grade": "GI",
+        "fullRace": "桜花賞 GI",
+        "rank": "1着",
+        "raceDate": "2023/04/09 阪神11R 芝1600m",
+        "shotDate": "3月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2437",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "阪神ジュベナイルＦ",
+        "grade": "GI",
+        "fullRace": "阪神ジュベナイルＦ GI",
+        "rank": "1着",
+        "raceDate": "2022/12/11 阪神11R 芝1600m",
+        "shotDate": "11月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2221",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "13着",
+        "raceDate": "2024/10/27 東京11R 芝2000m",
+        "shotDate": "10月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3493",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ジャパンC",
+        "grade": "GI",
+        "fullRace": "ジャパンC GI",
+        "rank": "2着",
+        "raceDate": "2023/11/26 東京12R 芝2400m",
+        "shotDate": "11月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2842",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "秋華賞",
+          "grade": "GI",
+          "fullRace": "秋華賞 GI",
+          "rank": "1着",
+          "raceDate": "2023/10/15 京都11R 芝2000m",
+          "shotDate": "10月4日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2770",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "オークス",
+          "grade": "GI",
+          "fullRace": "オークス GI",
+          "rank": "1着",
+          "raceDate": "2023/05/21 東京11R 芝2400m",
+          "shotDate": "5月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2513",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "桜花賞",
+          "grade": "GI",
+          "fullRace": "桜花賞 GI",
+          "rank": "1着",
+          "raceDate": "2023/04/09 阪神11R 芝1600m",
+          "shotDate": "3月29日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2437",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "阪神ジュベナイルＦ",
+          "grade": "GI",
+          "fullRace": "阪神ジュベナイルＦ GI",
+          "rank": "1着",
+          "raceDate": "2022/12/11 阪神11R 芝1600m",
+          "shotDate": "11月30日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2221",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 6
+    }
   },
   "リスグロワール": {
     "name": "リスグロワール",
@@ -68869,7 +82870,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳新馬"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024106690&no=10679",
+    "photoUrl": null,
     "pedigree": {
       "sire": "サートゥルナーリア",
       "dam": "リスグラシュー",
@@ -68904,8 +82905,14 @@ export const HORSE_DATABASE = {
         "rival": "(ハートノート)"
       }
     ],
-    "photoTitle": "新馬戦/ゲストさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "レガレイラ": {
     "name": "レガレイラ",
@@ -68923,7 +82930,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'有馬記念(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105898&no=94870",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4777",
     "pedigree": {
       "sire": "スワーヴリチャード",
       "dam": "ロカ",
@@ -69270,16 +83277,234 @@ export const HORSE_DATABASE = {
         "rival": "(セットアップ)"
       }
     ],
-    "photoTitle": "エリザベス女王杯(G1)/Apophasisさん",
+    "photoTitle": "天皇賞（秋） GI (10月21日撮影)",
     "photoPaddocks": [
       {
         "race": "天皇賞（秋）",
-        "slug": "akiten",
-        "date": "10月21日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/akiten/img/photopaddock_img08.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "3着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4777",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "4着",
+        "raceDate": "2026/09/20 中山11R 芝2200m",
+        "shotDate": "9月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4702",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "7着",
+        "raceDate": "2026/06/14 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4560",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "4着",
+        "raceDate": "2025/12/28 中山11R 芝2500m",
+        "shotDate": "11月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4237",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "1着",
+        "raceDate": "2025/11/16 京都11R 芝2200m",
+        "shotDate": "11月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4167",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "1着",
+        "raceDate": "2025/09/21 中山11R 芝2200m",
+        "shotDate": "9月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4079",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "宝塚記念",
+        "grade": "GI",
+        "fullRace": "宝塚記念 GI",
+        "rank": "11着",
+        "raceDate": "2025/06/15 阪神11R 芝2200m",
+        "shotDate": "6月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3921",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "有馬記念",
+        "grade": "GI",
+        "fullRace": "有馬記念 GI",
+        "rank": "1着",
+        "raceDate": "2024/12/22 中山11R 芝2500m",
+        "shotDate": "12月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3607",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "5着",
+        "raceDate": "2024/11/10 京都11R 芝2200m",
+        "shotDate": "10月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3520",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ローズＳ",
+        "grade": "GII",
+        "fullRace": "ローズＳ GII",
+        "rank": "5着",
+        "raceDate": "2024/09/15 中京11R 芝2000m",
+        "shotDate": "9月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3410",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "5着",
+        "raceDate": "2024/05/26 東京11R 芝2400m",
+        "shotDate": "5月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3231",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "6着",
+        "raceDate": "2024/04/14 中山11R 芝2000m",
+        "shotDate": "4月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3140",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ホープフルS",
+        "grade": "GI",
+        "fullRace": "ホープフルS GI",
+        "rank": "1着",
+        "raceDate": "2023/12/28 中山11R 芝2000m",
+        "shotDate": "12月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2909",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "3着",
+        "raceDate": "2026/11/01 東京11R 芝2000m",
+        "shotDate": "10月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4777",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "4着",
+        "raceDate": "2026/09/20 中山11R 芝2200m",
+        "shotDate": "9月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4702",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "有馬記念",
+          "grade": "GI",
+          "fullRace": "有馬記念 GI",
+          "rank": "4着",
+          "raceDate": "2025/12/28 中山11R 芝2500m",
+          "shotDate": "11月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4237",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "エリザベス女王杯",
+          "grade": "GI",
+          "fullRace": "エリザベス女王杯 GI",
+          "rank": "1着",
+          "raceDate": "2025/11/16 京都11R 芝2200m",
+          "shotDate": "11月5日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4167",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "オールカマー",
+          "grade": "GII",
+          "fullRace": "オールカマー GII",
+          "rank": "1着",
+          "raceDate": "2025/09/21 中山11R 芝2200m",
+          "shotDate": "9月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4079",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "有馬記念",
+          "grade": "GI",
+          "fullRace": "有馬記念 GI",
+          "rank": "1着",
+          "raceDate": "2024/12/22 中山11R 芝2500m",
+          "shotDate": "12月11日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3607",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ホープフルS",
+          "grade": "GI",
+          "fullRace": "ホープフルS GI",
+          "rank": "1着",
+          "raceDate": "2023/12/28 中山11R 芝2000m",
+          "shotDate": "12月20日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2909",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 13
+    }
   },
   "レイクラシック": {
     "name": "レイクラシック",
@@ -69297,7 +83522,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'3歳以上1勝クラス"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023103906&no=68521",
+    "photoUrl": null,
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "メジロジェニファー",
@@ -69476,8 +83701,14 @@ export const HORSE_DATABASE = {
         "rival": "イベントホライゾン"
       }
     ],
-    "photoTitle": "3歳以上1勝クラス/枢木さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "レディネス": {
     "name": "レディネス",
@@ -69495,7 +83726,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'プリンシパルS(L)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104416&no=89712",
+    "photoUrl": null,
     "pedigree": {
       "sire": "スワーヴリチャード",
       "dam": "リトルシャンブルズ",
@@ -69746,8 +83977,14 @@ export const HORSE_DATABASE = {
         "rival": "(アローグレイシャー)"
       }
     ],
-    "photoTitle": "札幌記念(G2)/かつおさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "リビアングラス": {
     "name": "リビアングラス",
@@ -69765,7 +84002,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'八坂S()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020105633&no=50054",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4700",
     "pedigree": {
       "sire": "キズナ",
       "dam": "ディルガ",
@@ -70400,8 +84637,57 @@ export const HORSE_DATABASE = {
         "rival": "ランヴァル"
       }
     ],
-    "photoTitle": "京都新聞杯(G2)/おかおみさん",
-    "photoPaddocks": []
+    "photoTitle": "オールカマー GII (9月10日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "10着",
+        "raceDate": "2026/09/20 中山11R 芝2200m",
+        "shotDate": "9月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4700",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都記念",
+        "grade": "GII",
+        "fullRace": "京都記念 GII",
+        "rank": "6着",
+        "raceDate": "2026/02/15 京都11R 芝2200m",
+        "shotDate": "2月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4327",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "10着",
+        "raceDate": "2026/09/20 中山11R 芝2200m",
+        "shotDate": "9月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4700",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "京都記念",
+        "grade": "GII",
+        "fullRace": "京都記念 GII",
+        "rank": "6着",
+        "raceDate": "2026/02/15 京都11R 芝2200m",
+        "shotDate": "2月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4327",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 2
+    }
   },
   "ルヴァレドクール": {
     "name": "ルヴァレドクール",
@@ -70419,7 +84705,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'武蔵野S(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022100994&no=77893",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ルヴァンスレーヴ",
       "dam": "アルマユディト",
@@ -70646,8 +84932,14 @@ export const HORSE_DATABASE = {
         "rival": "ジャナドリア"
       }
     ],
-    "photoTitle": "4歳以上1勝クラス/その馬の名は…モチ！さん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "レーベンスティール": {
     "name": "レーベンスティール",
@@ -70665,7 +84957,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'オールカマー(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020102078&no=2570",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4557",
     "pedigree": {
       "sire": "リアルスティール",
       "dam": "トウカイライフ",
@@ -71108,8 +85400,234 @@ export const HORSE_DATABASE = {
         "rival": "ソールオリエンス"
       }
     ],
-    "photoTitle": "ノーザンファーム空港/ぽぶさん",
-    "photoPaddocks": []
+    "photoTitle": "安田記念 GI (5月28日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "7着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4557",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "6着",
+        "raceDate": "2026/04/05 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4433",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "中山記念",
+        "grade": "GII",
+        "fullRace": "中山記念 GII",
+        "rank": "1着",
+        "raceDate": "2026/03/01 中山11R 芝1800m",
+        "shotDate": "2月19日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4370",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "12着",
+        "raceDate": "2025/11/23 京都11R 芝1600m",
+        "shotDate": "11月13日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4186",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "毎日王冠",
+        "grade": "GII",
+        "fullRace": "毎日王冠 GII",
+        "rank": "1着",
+        "raceDate": "2025/10/05 東京11R 芝1800m",
+        "shotDate": "9月24日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4095",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "しらさぎＳ",
+        "grade": "GIII",
+        "fullRace": "しらさぎＳ GIII",
+        "rank": "7着",
+        "raceDate": "2025/06/22 阪神11R 芝1600m",
+        "shotDate": "6月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3930",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＡＪＣＣ",
+        "grade": "GII",
+        "fullRace": "ＡＪＣＣ GII",
+        "rank": "12着",
+        "raceDate": "2025/01/26 中山11R 芝2200m",
+        "shotDate": "1月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3662",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "天皇賞（秋）",
+        "grade": "GI",
+        "fullRace": "天皇賞（秋） GI",
+        "rank": "8着",
+        "raceDate": "2024/10/27 東京11R 芝2000m",
+        "shotDate": "10月16日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3483",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オールカマー",
+        "grade": "GII",
+        "fullRace": "オールカマー GII",
+        "rank": "1着",
+        "raceDate": "2024/09/22 中山11R 芝2200m",
+        "shotDate": "9月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3415",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "エプソムC",
+        "grade": "GIII",
+        "fullRace": "エプソムC GIII",
+        "rank": "1着",
+        "raceDate": "2024/06/09 東京11R 芝1800m",
+        "shotDate": "5月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3255",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "セントライト記念",
+        "grade": "GII",
+        "fullRace": "セントライト記念 GII",
+        "rank": "1着",
+        "raceDate": "2023/09/18 中山11R 芝2200m",
+        "shotDate": "9月7日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2705",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ラジオＮＩＫＫＥＩ賞",
+        "grade": "GIII",
+        "fullRace": "ラジオＮＩＫＫＥＩ賞 GIII",
+        "rank": "3着",
+        "raceDate": "2023/07/02 福島11R 芝1800m",
+        "shotDate": "6月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2588",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "7着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4557",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "大阪杯",
+        "grade": "GI",
+        "fullRace": "大阪杯 GI",
+        "rank": "6着",
+        "raceDate": "2026/04/05 阪神11R 芝2000m",
+        "shotDate": "3月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4433",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "中山記念",
+          "grade": "GII",
+          "fullRace": "中山記念 GII",
+          "rank": "1着",
+          "raceDate": "2026/03/01 中山11R 芝1800m",
+          "shotDate": "2月19日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4370",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "毎日王冠",
+          "grade": "GII",
+          "fullRace": "毎日王冠 GII",
+          "rank": "1着",
+          "raceDate": "2025/10/05 東京11R 芝1800m",
+          "shotDate": "9月24日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4095",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "オールカマー",
+          "grade": "GII",
+          "fullRace": "オールカマー GII",
+          "rank": "1着",
+          "raceDate": "2024/09/22 中山11R 芝2200m",
+          "shotDate": "9月11日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3415",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "エプソムC",
+          "grade": "GIII",
+          "fullRace": "エプソムC GIII",
+          "rank": "1着",
+          "raceDate": "2024/06/09 東京11R 芝1800m",
+          "shotDate": "5月30日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3255",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "セントライト記念",
+          "grade": "GII",
+          "fullRace": "セントライト記念 GII",
+          "rank": "1着",
+          "raceDate": "2023/09/18 中山11R 芝2200m",
+          "shotDate": "9月7日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2705",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "ラジオＮＩＫＫＥＩ賞",
+          "grade": "GIII",
+          "fullRace": "ラジオＮＩＫＫＥＩ賞 GIII",
+          "rank": "3着",
+          "raceDate": "2023/07/02 福島11R 芝1800m",
+          "shotDate": "6月21日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2588",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 12
+    }
   },
   "レーゼドラマ": {
     "name": "レーゼドラマ",
@@ -71127,7 +85645,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'フラワーC(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022105346&no=51709",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4119",
     "pedigree": {
       "sire": "キズナ",
       "dam": "シアードラマ",
@@ -71426,8 +85944,68 @@ export const HORSE_DATABASE = {
         "rival": "ネブラディスク"
       }
     ],
-    "photoTitle": "優駿牝馬(G1)/wataameさん",
-    "photoPaddocks": []
+    "photoTitle": "秋華賞 GI (10月8日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "17着",
+        "raceDate": "2025/10/19 京都11R 芝2000m",
+        "shotDate": "10月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4119",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "クイーンS",
+        "grade": "GIII",
+        "fullRace": "クイーンS GIII",
+        "rank": "10着",
+        "raceDate": "2025/08/03 札幌11R 芝1800m",
+        "shotDate": "7月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4000",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "オークス",
+        "grade": "GI",
+        "fullRace": "オークス GI",
+        "rank": "16着",
+        "raceDate": "2025/05/25 東京11R 芝2400m",
+        "shotDate": "5月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3886",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "秋華賞",
+        "grade": "GI",
+        "fullRace": "秋華賞 GI",
+        "rank": "17着",
+        "raceDate": "2025/10/19 京都11R 芝2000m",
+        "shotDate": "10月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4119",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "クイーンS",
+        "grade": "GIII",
+        "fullRace": "クイーンS GIII",
+        "rank": "10着",
+        "raceDate": "2025/08/03 札幌11R 芝1800m",
+        "shotDate": "7月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4000",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 3
+    }
   },
   "ラムジェット": {
     "name": "ラムジェット",
@@ -71445,7 +86023,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "東京ダービー"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021106640&no=99510",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4795",
     "pedigree": {
       "sire": "マジェスティックウォリアー",
       "dam": "ネフェルティティ",
@@ -71888,8 +86466,102 @@ export const HORSE_DATABASE = {
         "rival": "(ノイヤーヘルト)"
       }
     ],
-    "photoTitle": "フェブラリーＳ(G1)/みー。さん",
-    "photoPaddocks": []
+    "photoTitle": "みやこＳ GIII (10月28日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "みやこＳ",
+        "grade": "GIII",
+        "fullRace": "みやこＳ GIII",
+        "rank": "12着",
+        "raceDate": "2026/11/08 京都11R ダ1800m",
+        "shotDate": "10月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4795",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "8着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4351",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "3着",
+        "raceDate": "2025/12/07 中京11R ダ1800m",
+        "shotDate": "11月26日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4199",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "みやこＳ",
+        "grade": "GIII",
+        "fullRace": "みやこＳ GIII",
+        "rank": "4着",
+        "raceDate": "2025/11/09 京都11R ダ1800m",
+        "shotDate": "10月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4159",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "みやこＳ",
+        "grade": "GIII",
+        "fullRace": "みやこＳ GIII",
+        "rank": "12着",
+        "raceDate": "2026/11/08 京都11R ダ1800m",
+        "shotDate": "10月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4795",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "8着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月11日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4351",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "チャンピオンズＣ",
+          "grade": "GI",
+          "fullRace": "チャンピオンズＣ GI",
+          "rank": "3着",
+          "raceDate": "2025/12/07 中京11R ダ1800m",
+          "shotDate": "11月26日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4199",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "みやこＳ",
+          "grade": "GIII",
+          "fullRace": "みやこＳ GIII",
+          "rank": "4着",
+          "raceDate": "2025/11/09 京都11R ダ1800m",
+          "shotDate": "10月29日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4159",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 4
+    }
   },
   "ロデオドライブ": {
     "name": "ロデオドライブ",
@@ -71907,7 +86579,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'NHKマイルC(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023107166&no=61530",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4818",
     "pedigree": {
       "sire": "サートゥルナーリア",
       "dam": "ビバリーヒルズ",
@@ -72038,16 +86710,91 @@ export const HORSE_DATABASE = {
         "rival": "(カナルサンマルタン)"
       }
     ],
-    "photoTitle": "NHKマイルC(G1)/しやんさん",
+    "photoTitle": "マイルＣＳ GI (11月12日撮影)",
     "photoPaddocks": [
       {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "7着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4818",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "2着",
+        "raceDate": "2026/08/30 新潟8R 芝2000m",
+        "shotDate": "8月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4667",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "1着",
+        "raceDate": "2026/05/10 東京11R 芝1600m",
+        "shotDate": "4月30日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4500",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
         "race": "マイルCS",
-        "slug": "mcs",
-        "date": "11月12日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img08.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "マイルCS GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img08.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "7着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4818",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "新潟記念",
+        "grade": "GIII",
+        "fullRace": "新潟記念 GIII",
+        "rank": "2着",
+        "raceDate": "2026/08/30 新潟8R 芝2000m",
+        "shotDate": "8月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4667",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "ＮＨＫマイルＣ",
+          "grade": "GI",
+          "fullRace": "ＮＨＫマイルＣ GI",
+          "rank": "1着",
+          "raceDate": "2026/05/10 東京11R 芝1600m",
+          "shotDate": "4月30日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4500",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 4
+    }
   },
   "ローズサルーテ": {
     "name": "ローズサルーテ",
@@ -72065,7 +86812,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'2歳新馬"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2024104587&no=12435",
+    "photoUrl": null,
     "pedigree": {
       "sire": "ロジャーバローズ",
       "dam": "シーヴァージア",
@@ -72100,8 +86847,14 @@ export const HORSE_DATABASE = {
         "rival": "(リネンエトワール)"
       }
     ],
-    "photoTitle": "2歳新馬/こぐまさん",
-    "photoPaddocks": []
+    "photoTitle": null,
+    "photoPaddocks": [],
+    "paddockStructure": {
+      "current": null,
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 0
+    }
   },
   "ワールズエンド": {
     "name": "ワールズエンド",
@@ -72119,7 +86872,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'京王杯スプリングC(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021105864&no=108896",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4810",
     "pedigree": {
       "sire": "ロードカナロア",
       "dam": "リラヴァティ",
@@ -72418,16 +87171,91 @@ export const HORSE_DATABASE = {
         "rival": "(シュガークン)"
       }
     ],
-    "photoTitle": "安田記念(G1)/旅っ程さん",
+    "photoTitle": "マイルＣＳ GI (11月12日撮影)",
     "photoPaddocks": [
       {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "15着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4810",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "スプリンターズS",
+        "grade": "GI",
+        "fullRace": "スプリンターズS GI",
+        "rank": "2着",
+        "raceDate": "2026/09/27 中山11R 芝1200m",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4728",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "安田記念",
+        "grade": "GI",
+        "fullRace": "安田記念 GI",
+        "rank": "2着",
+        "raceDate": "2026/06/07 東京11R 芝1600m",
+        "shotDate": "5月27日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4558",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
         "race": "マイルCS",
-        "slug": "mcs",
-        "date": "11月12日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img01.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "マイルCS GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/mcs/img/photopaddock_img01.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "マイルＣＳ",
+        "grade": "GI",
+        "fullRace": "マイルＣＳ GI",
+        "rank": "15着",
+        "raceDate": "2026/11/22 京都11R 芝1600m",
+        "shotDate": "11月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4810",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "スプリンターズS",
+        "grade": "GI",
+        "fullRace": "スプリンターズS GI",
+        "rank": "2着",
+        "raceDate": "2026/09/27 中山11R 芝1200m",
+        "shotDate": "9月17日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4728",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "安田記念",
+          "grade": "GI",
+          "fullRace": "安田記念 GI",
+          "rank": "2着",
+          "raceDate": "2026/06/07 東京11R 芝1600m",
+          "shotDate": "5月27日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4558",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 4
+    }
   },
   "レザベーション": {
     "name": "レザベーション",
@@ -72445,7 +87273,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'ニュージーランドT(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023103268&no=44247",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4501",
     "pedigree": {
       "sire": "ダノンプレミアム",
       "dam": "プレノタート",
@@ -72696,8 +87524,36 @@ export const HORSE_DATABASE = {
         "rival": "ジャスティンビスタ"
       }
     ],
-    "photoTitle": "ニュージーランドT(G2)/Potehanaさん",
-    "photoPaddocks": []
+    "photoTitle": "ＮＨＫマイルＣ GI (4月29日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "6着",
+        "raceDate": "2026/05/10 東京11R 芝1600m",
+        "shotDate": "4月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4501",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "6着",
+        "raceDate": "2026/05/10 東京11R 芝1600m",
+        "shotDate": "4月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4501",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "ロブチェン": {
     "name": "ロブチェン",
@@ -72715,7 +87571,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'日本ダービー(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2023107089&no=66041",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4764",
     "pedigree": {
       "sire": "ワールドプレミア",
       "dam": "ソングライティング",
@@ -72870,16 +87726,124 @@ export const HORSE_DATABASE = {
         "rival": "(アルペングロー)"
       }
     ],
-    "photoTitle": "皐月賞(G1)/ポニータさん",
+    "photoTitle": "菊花賞 GI (10月15日撮影)",
     "photoPaddocks": [
       {
         "race": "菊花賞",
-        "slug": "kikka",
-        "date": "10月15日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/kikka/img/photopaddock_img01.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "14着",
+        "raceDate": "2026/10/25 京都11R 芝3000m",
+        "shotDate": "10月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4764",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "神戸新聞杯",
+        "grade": "GII",
+        "fullRace": "神戸新聞杯 GII",
+        "rank": "1着",
+        "raceDate": "2026/09/21 阪神11R 芝2400m",
+        "shotDate": "9月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4711",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "日本ダービー",
+        "grade": "GI",
+        "fullRace": "日本ダービー GI",
+        "rank": "1着",
+        "raceDate": "2026/05/31 東京11R 芝2400m",
+        "shotDate": "5月20日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4546",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "皐月賞",
+        "grade": "GI",
+        "fullRace": "皐月賞 GI",
+        "rank": "1着",
+        "raceDate": "2026/04/19 中山11R 芝2000m",
+        "shotDate": "4月8日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4463",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "共同通信杯",
+        "grade": "GIII",
+        "fullRace": "共同通信杯 GIII",
+        "rank": "3着",
+        "raceDate": "2026/02/15 東京11R 芝1800m",
+        "shotDate": "2月5日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4336",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "菊花賞",
+        "grade": "GI",
+        "fullRace": "菊花賞 GI",
+        "rank": "14着",
+        "raceDate": "2026/10/25 京都11R 芝3000m",
+        "shotDate": "10月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4764",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "神戸新聞杯",
+        "grade": "GII",
+        "fullRace": "神戸新聞杯 GII",
+        "rank": "1着",
+        "raceDate": "2026/09/21 阪神11R 芝2400m",
+        "shotDate": "9月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4711",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "日本ダービー",
+          "grade": "GI",
+          "fullRace": "日本ダービー GI",
+          "rank": "1着",
+          "raceDate": "2026/05/31 東京11R 芝2400m",
+          "shotDate": "5月20日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4546",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "皐月賞",
+          "grade": "GI",
+          "fullRace": "皐月賞 GI",
+          "rank": "1着",
+          "raceDate": "2026/04/19 中山11R 芝2000m",
+          "shotDate": "4月8日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4463",
+          "commentator": "細江純子の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "共同通信杯",
+          "grade": "GIII",
+          "fullRace": "共同通信杯 GIII",
+          "rank": "3着",
+          "raceDate": "2026/02/15 東京11R 芝1800m",
+          "shotDate": "2月5日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4336",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 5
+    }
   },
   "レモンポップ": {
     "name": "レモンポップ",
@@ -72897,7 +87861,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "23'フェブラリーS(G1)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2018110015&no=68143",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3560",
     "pedigree": {
       "sire": "Lemon Drop Kid (米)",
       "dam": "Unreachable (米)",
@@ -73316,8 +88280,102 @@ export const HORSE_DATABASE = {
         "rival": "(サトノムスタング)"
       }
     ],
-    "photoTitle": "根岸S(G3)/ピーモさん",
-    "photoPaddocks": []
+    "photoTitle": "チャンピオンズC GI (11月21日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "1着",
+        "raceDate": "2024/12/01 中京11R ダ1800m",
+        "shotDate": "11月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3560",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "1着",
+        "raceDate": "2023/12/03 中京11R ダ1800m",
+        "shotDate": "11月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2863",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "1着",
+        "raceDate": "2023/02/19 東京11R ダ1600m",
+        "shotDate": "2月10日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2342",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "根岸S",
+        "grade": "GIII",
+        "fullRace": "根岸S GIII",
+        "rank": "1着",
+        "raceDate": "2023/01/29 東京11R ダ1400m",
+        "shotDate": "1月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2304",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "チャンピオンズC",
+        "grade": "GI",
+        "fullRace": "チャンピオンズC GI",
+        "rank": "1着",
+        "raceDate": "2024/12/01 中京11R ダ1800m",
+        "shotDate": "11月21日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3560",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "チャンピオンズＣ",
+        "grade": "GI",
+        "fullRace": "チャンピオンズＣ GI",
+        "rank": "1着",
+        "raceDate": "2023/12/03 中京11R ダ1800m",
+        "shotDate": "11月22日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2863",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "フェブラリーＳ",
+          "grade": "GI",
+          "fullRace": "フェブラリーＳ GI",
+          "rank": "1着",
+          "raceDate": "2023/02/19 東京11R ダ1600m",
+          "shotDate": "2月10日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2342",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "根岸S",
+          "grade": "GIII",
+          "fullRace": "根岸S GIII",
+          "rank": "1着",
+          "raceDate": "2023/01/29 東京11R ダ1400m",
+          "shotDate": "1月18日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=2304",
+          "commentator": "加藤剛史の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 4
+    }
   },
   "ヴェルテンベルク": {
     "name": "ヴェルテンベルク",
@@ -73335,7 +88393,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'ストークS()"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2020103060&no=119638",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4827",
     "pedigree": {
       "sire": "キタサンブラック",
       "dam": "マルカアイチャン",
@@ -74018,16 +89076,68 @@ export const HORSE_DATABASE = {
         "rival": "バルサムノート"
       }
     ],
-    "photoTitle": "天皇賞(春)(G1)/さくら独走さん",
+    "photoTitle": "ジャパンＣ GI (11月18日撮影)",
     "photoPaddocks": [
       {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4827",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "7着",
+        "raceDate": "2026/10/04 京都11R 芝2400m",
+        "shotDate": "9月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4732",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
         "race": "ジャパンカップ",
-        "slug": "jc",
-        "date": "11月18日撮影",
-        "photoUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img06.jpg",
-        "source": "JRA-VAN"
+        "grade": "GI",
+        "fullRace": "ジャパンカップ GI",
+        "rank": "",
+        "raceDate": "",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://jra-van.jp/fun/tokusyu/g1/jc/img/photopaddock_img06.jpg",
+        "commentator": "JRA-VAN 公式馬体診断",
+        "source": "jra_van"
       }
-    ]
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "ジャパンＣ",
+        "grade": "GI",
+        "fullRace": "ジャパンＣ GI",
+        "rank": "",
+        "raceDate": "2026/11/29 東京12R 芝2400m",
+        "shotDate": "11月18日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4827",
+        "commentator": "細江純子の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "京都大賞典",
+        "grade": "GII",
+        "fullRace": "京都大賞典 GII",
+        "rank": "7着",
+        "raceDate": "2026/10/04 京都11R 芝2400m",
+        "shotDate": "9月23日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4732",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 3
+    }
   },
   "ヴーレヴー": {
     "name": "ヴーレヴー",
@@ -74045,7 +89155,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "25'エルフィンS(L)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2022104617&no=87658",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4807",
     "pedigree": {
       "sire": "サトノクラウン",
       "dam": "アルギュロス",
@@ -74440,8 +89550,57 @@ export const HORSE_DATABASE = {
         "rival": "(チギリ)"
       }
     ],
-    "photoTitle": "巴賞(OP)/さん",
-    "photoPaddocks": []
+    "photoTitle": "エリザベス女王杯 GI (11月4日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "6着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4807",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "15着",
+        "raceDate": "2025/05/11 東京11R 芝1600m",
+        "shotDate": "5月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3862",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "エリザベス女王杯",
+        "grade": "GI",
+        "fullRace": "エリザベス女王杯 GI",
+        "rank": "6着",
+        "raceDate": "2026/11/15 京都11R 芝2200m",
+        "shotDate": "11月4日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4807",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "ＮＨＫマイルＣ",
+        "grade": "GI",
+        "fullRace": "ＮＨＫマイルＣ GI",
+        "rank": "15着",
+        "raceDate": "2025/05/11 東京11R 芝1600m",
+        "shotDate": "5月1日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=3862",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [],
+      "totalCount": 2
+    }
   },
   "ヴァルツァーシャル": {
     "name": "ヴァルツァーシャル",
@@ -74459,7 +89618,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "24'マーチS(G3)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2019102437&no=75567",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4792",
     "pedigree": {
       "sire": "マクフィ",
       "dam": "バイカターキン",
@@ -75142,8 +90301,36 @@ export const HORSE_DATABASE = {
         "rival": "(シラキヌ)"
       }
     ],
-    "photoTitle": "北総S(3勝)/さん",
-    "photoPaddocks": []
+    "photoTitle": "みやこＳ GIII (10月28日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "みやこＳ",
+        "grade": "GIII",
+        "fullRace": "みやこＳ GIII",
+        "rank": "4着",
+        "raceDate": "2026/11/08 京都11R ダ1800m",
+        "shotDate": "10月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4792",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "みやこＳ",
+        "grade": "GIII",
+        "fullRace": "みやこＳ GIII",
+        "rank": "4着",
+        "raceDate": "2026/11/08 京都11R ダ1800m",
+        "shotDate": "10月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4792",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": null,
+      "goodRuns": [],
+      "totalCount": 1
+    }
   },
   "ロードクロンヌ": {
     "name": "ロードクロンヌ",
@@ -75161,7 +90348,7 @@ export const HORSE_DATABASE = {
     "titles": [
       "26'プロキオンS(G2)"
     ],
-    "photoUrl": "https://cdnv2.netkeiba.com/img.db/show_photo.php?horse_id=2021100169&no=103744",
+    "photoUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4793",
     "pedigree": {
       "sire": "リオンディーズ",
       "dam": "リラコサージュ",
@@ -75628,7 +90815,101 @@ export const HORSE_DATABASE = {
         "rival": "セレスト"
       }
     ],
-    "photoTitle": "平安S(G3)/メンテさん",
-    "photoPaddocks": []
+    "photoTitle": "みやこＳ GIII (10月28日撮影)",
+    "photoPaddocks": [
+      {
+        "race": "みやこＳ",
+        "grade": "GIII",
+        "fullRace": "みやこＳ GIII",
+        "rank": "1着",
+        "raceDate": "2026/11/08 京都11R ダ1800m",
+        "shotDate": "10月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4793",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "11着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4352",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "プロキオンＳ",
+        "grade": "GII",
+        "fullRace": "プロキオンＳ GII",
+        "rank": "1着",
+        "raceDate": "2026/01/25 京都11R ダ1800m",
+        "shotDate": "1月15日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4286",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      {
+        "race": "みやこＳ",
+        "grade": "GIII",
+        "fullRace": "みやこＳ GIII",
+        "rank": "3着",
+        "raceDate": "2025/11/09 京都11R ダ1800m",
+        "shotDate": "10月29日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4157",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      }
+    ],
+    "paddockStructure": {
+      "current": {
+        "race": "みやこＳ",
+        "grade": "GIII",
+        "fullRace": "みやこＳ GIII",
+        "rank": "1着",
+        "raceDate": "2026/11/08 京都11R ダ1800m",
+        "shotDate": "10月28日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4793",
+        "commentator": "吉田順一の馬体診断",
+        "source": "netkeiba"
+      },
+      "prev": {
+        "race": "フェブラリーＳ",
+        "grade": "GI",
+        "fullRace": "フェブラリーＳ GI",
+        "rank": "11着",
+        "raceDate": "2026/02/22 東京11R ダ1600m",
+        "shotDate": "2月12日撮影",
+        "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4352",
+        "commentator": "加藤剛史の馬体診断",
+        "source": "netkeiba"
+      },
+      "goodRuns": [
+        {
+          "race": "プロキオンＳ",
+          "grade": "GII",
+          "fullRace": "プロキオンＳ GII",
+          "rank": "1着",
+          "raceDate": "2026/01/25 京都11R ダ1800m",
+          "shotDate": "1月15日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4286",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        },
+        {
+          "race": "みやこＳ",
+          "grade": "GIII",
+          "fullRace": "みやこＳ GIII",
+          "rank": "3着",
+          "raceDate": "2025/11/09 京都11R ダ1800m",
+          "shotDate": "10月29日撮影",
+          "imgUrl": "https://cdnv2.netkeiba.com/img.racev4.sp/batai_img.php?id=4157",
+          "commentator": "吉田順一の馬体診断",
+          "source": "netkeiba"
+        }
+      ],
+      "totalCount": 4
+    }
   }
 };

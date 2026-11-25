@@ -826,6 +826,16 @@ prediction_js_logic = """
           }
         }
 
+        // 0. 競走馬詳細モーダル ルート (#horse=馬名 または #horse-馬名)
+        if (hash.startsWith('#horse=') || hash.startsWith('#horse-')) {
+          const horseName = decodeURIComponent(hash.replace(/^#horse[-=]/, ''));
+          const savedView = (typeof localStorage !== 'undefined') ? localStorage.getItem('keiba_last_main_view') : null;
+          const baseView = ['prediction', 'review'].includes(savedView) ? savedView : 'calendar';
+          switchView(baseView, false, false);
+          openHorseDetail(horseName);
+          return;
+        }
+
         // 1. レース詳細モーダル ルート (#race-16, #race-17 など)
         if (hash.startsWith('#race-')) {
           const raceId = hash.replace('#race-', '');
@@ -2638,67 +2648,201 @@ horse_modal_js_logic = """
         // 血統データ
         const ped = horse.pedigree || {};
 
-        // JRA-VAN フォトパドック (馬体写真・前走比較)
-        const paddocks = horse.photoPaddocks || [];
-        let paddocksHtml = '';
-        if (paddocks.length > 0) {
-          const isComparison = paddocks.length >= 2;
-          const paddockCardsHtml = paddocks.map((p, pIdx) => {
-            let tagClass = 'official';
-            let tagLabel = '公式写真';
-            if (isComparison) {
-              if (pIdx === 0) {
-                tagClass = 'latest';
-                tagLabel = '最新 / 当走';
-              } else {
-                tagClass = 'past';
-                tagLabel = `前走比較 (${pIdx === 1 ? '前走' : `${pIdx + 1}走前`})`;
-              }
-            }
+        // 公式フォトパドック（馬体写真・前走 vs 次走比較 ＆ 過去の好走時）
+        const struct = horse.paddockStructure || {};
+        let currentPaddock = struct.current;
+        let prevPaddock = struct.prev;
+        let goodRuns = struct.goodRuns || [];
+        const allPaddocks = horse.photoPaddocks || [];
 
-            return `
-              <div class="hd-paddock-card">
+        // フォールバック計算
+        if (!currentPaddock && allPaddocks.length > 0) {
+          currentPaddock = allPaddocks[0];
+          prevPaddock = allPaddocks.length > 1 ? allPaddocks[1] : null;
+          goodRuns = allPaddocks.slice(1).filter(p => {
+            const img = p.imgUrl || p.photoUrl;
+            if (prevPaddock && img === (prevPaddock.imgUrl || prevPaddock.photoUrl)) return false;
+            const r = (p.rank || '').trim();
+            const g = (p.grade || '').trim();
+            return /^[123]着$/.test(r) || (r === '4着' && g.includes('GI'));
+          });
+        }
+
+        let paddocksHtml = '';
+        if (currentPaddock) {
+          // 1. メイン比較セクション (大きく前走と次走)
+          const currRace = currentPaddock.fullRace || currentPaddock.race || '次走 / 最新';
+          const currShot = currentPaddock.shotDate || (currentPaddock.date ? currentPaddock.date : '公式撮影');
+          const currDiag = currentPaddock.commentator || 'netkeiba公式馬体診断';
+
+          let prevCardHtml = '';
+          if (prevPaddock) {
+            const prevRace = prevPaddock.fullRace || prevPaddock.race || '前走';
+            const r = (prevPaddock.rank || '').trim();
+            const prevRankClass = r === '1着' ? 'rank-1' : r === '2着' ? 'rank-2' : r === '3着' ? 'rank-3' : 'rank-4';
+            const prevRank = r ? `<span class="hd-paddock-rank-badge ${prevRankClass}">${r}</span>` : '';
+            const prevShot = prevPaddock.shotDate || (prevPaddock.date ? prevPaddock.date : '公式撮影');
+            const prevDiag = prevPaddock.commentator || '公式馬体診断';
+
+            prevCardHtml = `
+              <div class="hd-paddock-primary-card">
                 <div class="hd-paddock-header">
                   <div style="display: flex; align-items: center; gap: 8px;">
-                    <span class="hd-paddock-tag ${tagClass}">${tagLabel}</span>
-                    <span style="font-size: 13.5px; font-weight: 800; color: #fff;">${p.race}</span>
+                    <span class="hd-paddock-tag past">【前走】</span>
+                    <span style="font-size: 14px; font-weight: 800; color: #fff;">${prevRace}</span>
+                    ${prevRank}
                   </div>
-                  <span class="hd-paddock-date">📅 ${p.date || '公式撮影'}</span>
+                  <span class="hd-paddock-date">📅 ${prevShot}</span>
                 </div>
                 <div class="hd-paddock-img-wrap">
-                  <img src="${p.photoUrl}" alt="${horse.name} フォトパドック ${p.race}" class="hd-paddock-img" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div style=\\'color:#94a3b8;font-size:12px;padding:20px;\\'>写真読み込み中</div>';">
+                  <img src="${prevPaddock.imgUrl || prevPaddock.photoUrl}" alt="${horse.name} フォトパドック ${prevRace}" class="hd-paddock-img" loading="lazy">
                 </div>
                 <div class="hd-paddock-footer">
-                  <span>📸 立ち姿・馬体写真</span>
-                  <span style="color: #38bdf8; font-weight: 700;">JRA-VAN公式 特集</span>
+                  <span>${prevDiag}</span>
+                  <span style="color: #38bdf8; font-weight: 700;">${prevPaddock.raceDate ? prevPaddock.raceDate.split(' ')[0] : '前走時'}</span>
                 </div>
               </div>
             `;
-          }).join('');
+          } else {
+            prevCardHtml = `
+              <div class="hd-paddock-primary-card" style="display: flex; align-items: center; justify-content: center; background: rgba(15, 23, 42, 0.4); border: 1px dashed rgba(148, 163, 184, 0.3); min-height: 240px; padding: 20px; text-align: center;">
+                <div>
+                  <div style="font-size: 28px; margin-bottom: 8px;">📋</div>
+                  <div style="font-weight: 700; color: #94a3b8; font-size: 13px;">前走フォトパドック未収録</div>
+                  <div style="font-size: 11px; color: #64748b; margin-top: 4px;">重賞初挑戦または前走時の公式撮影なし</div>
+                </div>
+              </div>
+            `;
+          }
+
+          // 2. 過去の好走時フォトパドック
+          let goodRunsHtml = '';
+          if (goodRuns && goodRuns.length > 0) {
+            const grCards = goodRuns.map(g => {
+              const gRace = g.fullRace || g.race || '重賞';
+              const grRank = (g.rank || '').trim();
+              const gRankClass = grRank === '1着' ? 'rank-1' : grRank === '2着' ? 'rank-2' : grRank === '3着' ? 'rank-3' : 'rank-4';
+              const gRankBadge = grRank ? `<span class="hd-paddock-rank-badge ${gRankClass}">${grRank}</span>` : '';
+              const gDate = g.raceDate ? g.raceDate.split(' ')[0] : (g.shotDate || '');
+
+              return `
+                <div class="hd-paddock-goodrun-card">
+                  <div class="hd-paddock-header" style="padding: 8px 12px;">
+                    <div style="display: flex; align-items: center; gap: 6px;">
+                      ${gRankBadge}
+                      <span style="font-size: 12.5px; font-weight: 800; color: #fff;">${gRace}</span>
+                    </div>
+                    <span style="font-size: 11px; color: #fbbf24; font-weight: 700;">${g.shotDate || gDate}</span>
+                  </div>
+                  <div class="hd-paddock-img-wrap">
+                    <img src="${g.imgUrl || g.photoUrl}" alt="${horse.name} 好走時フォトパドック ${gRace}" class="hd-paddock-img" loading="lazy">
+                  </div>
+                  <div class="hd-paddock-footer" style="padding: 6px 12px; font-size: 10.5px;">
+                    <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${g.commentator || '公式解説'}</span>
+                    <span style="color: #94a3b8;">${gDate}</span>
+                  </div>
+                </div>
+              `;
+            }).join('');
+
+            goodRunsHtml = `
+              <div class="hd-paddock-sub-section">
+                <div class="hd-paddock-sub-title">
+                  <span>🏆 過去の好走時フォトパドック（比較）</span>
+                  <span style="font-size: 11px; color: #fbbf24; font-weight: normal; margin-left: auto;">${goodRuns.length}走分収録</span>
+                </div>
+                <div class="hd-paddock-sub-desc">
+                  好走時（1〜3着・G1掲示板）の馬体シルエットとの比較。筋肉の付き方や腹回りのラインを現時点と比較可能
+                </div>
+                <div class="hd-paddock-goodruns-grid">
+                  ${grCards}
+                </div>
+              </div>
+            `;
+          }
+
+          // 3. 全フォトパドック履歴一覧 (アコーディオン)
+          let allHistoryHtml = '';
+          if (allPaddocks.length > 2) {
+            const allCards = allPaddocks.map((p, idx) => {
+              const pr = (p.rank || '').trim();
+              const pRankClass = pr === '1着' ? 'rank-1' : pr === '2着' ? 'rank-2' : pr === '3着' ? 'rank-3' : 'rank-4';
+              const pRankBadge = pr ? `<span class="hd-paddock-rank-badge ${pRankClass}">${pr}</span>` : '';
+              return `
+                <div class="hd-paddock-goodrun-card" style="border-radius: 6px;">
+                  <div class="hd-paddock-header" style="padding: 6px 10px; font-size: 11px;">
+                    <span style="font-weight: 700; color: #fff;">${p.fullRace || p.race}</span>
+                    ${pRankBadge}
+                  </div>
+                  <div class="hd-paddock-img-wrap" style="aspect-ratio: 16/10;">
+                    <img src="${p.imgUrl || p.photoUrl}" alt="${p.race}" class="hd-paddock-img" loading="lazy">
+                  </div>
+                  <div class="hd-paddock-footer" style="padding: 4px 8px; font-size: 10px;">
+                    <span>${p.shotDate || ''}</span>
+                    <span>${p.raceDate ? p.raceDate.split(' ')[0] : ''}</span>
+                  </div>
+                </div>
+              `;
+            }).join('');
+
+            allHistoryHtml = `
+              <details class="hd-paddock-all-details">
+                <summary class="hd-paddock-all-summary">
+                  <span>📜 全フォトパドック履歴一覧（全${allPaddocks.length}走分）を展開</span>
+                </summary>
+                <div class="hd-paddock-all-grid">
+                  ${allCards}
+                </div>
+              </details>
+            `;
+          }
 
           paddocksHtml = `
             <div class="hd-section-box hd-paddock-section">
               <div class="hd-section-title" style="display: flex; justify-content: space-between; align-items: center;">
-                <span>📸 JRA-VAN公式 フォトパドック ${isComparison ? '（馬体写真・前走比較）' : '（馬体写真）'}</span>
-                <span class="hd-paddock-badge-source">ソース: JRA-VAN</span>
+                <span>📸 公式フォトパドック（馬体写真・前走 vs 次走比較）</span>
+                <span class="hd-paddock-badge-source">ソース: netkeiba & JRA-VAN</span>
               </div>
-              ${isComparison ? `
-                <div class="hd-paddock-compare-banner">
-                  <span>🔍</span>
-                  <span><strong>前走時と当走の馬体比較:</strong> トモの容積・腹回りの引き締まり・筋肉の張りと皮膚の薄さの変化をチェック</span>
+              <div class="hd-paddock-compare-banner">
+                <span>🔍</span>
+                <span><strong>馬体比較の着眼点:</strong> 前走時と次走（当走）のトモの容積・腹回りの引き締まり・筋肉の張りと皮膚の薄さの変化をチェック</span>
+              </div>
+              <div class="hd-paddock-primary-grid">
+                <!-- 次走 / 最新カード (大きく表示) -->
+                <div class="hd-paddock-primary-card">
+                  <div class="hd-paddock-header">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                      <span class="hd-paddock-tag latest">【最新 / 次走】</span>
+                      <span style="font-size: 14px; font-weight: 800; color: #fff;">${currRace}</span>
+                    </div>
+                    <span class="hd-paddock-date">📅 ${currShot}</span>
+                  </div>
+                  <div class="hd-paddock-img-wrap">
+                    <img src="${currentPaddock.imgUrl || currentPaddock.photoUrl}" alt="${horse.name} フォトパドック ${currRace}" class="hd-paddock-img" loading="lazy">
+                  </div>
+                  <div class="hd-paddock-footer">
+                    <span>${currDiag}</span>
+                    <span style="color: #38bdf8; font-weight: 700;">最新撮影</span>
+                  </div>
                 </div>
-              ` : ''}
-              <div class="hd-paddock-compare-grid">
-                ${paddockCardsHtml}
+
+                <!-- 前走カード (大きく表示) -->
+                ${prevCardHtml}
               </div>
+
+              <!-- 過去の好走時フォトパドック -->
+              ${goodRunsHtml}
+
+              <!-- 全走一覧アコーディオン -->
+              ${allHistoryHtml}
             </div>
           `;
         } else {
           paddocksHtml = `
             <div class="hd-section-box hd-paddock-section">
               <div class="hd-section-title" style="display: flex; justify-content: space-between; align-items: center;">
-                <span>📸 フォトパドック (馬体写真)</span>
-                <span class="hd-paddock-badge-source">提供: JRA-VAN</span>
+                <span>📸 公式フォトパドック (馬体写真)</span>
+                <span class="hd-paddock-badge-source">ソース: netkeiba & JRA-VAN</span>
               </div>
               <div class="hd-no-paddock-box">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.6;">
@@ -2706,7 +2850,7 @@ horse_modal_js_logic = """
                   <line x1="12" y1="16" x2="12" y2="12"></line>
                   <line x1="12" y1="8" x2="12.01" y2="8"></line>
                 </svg>
-                <span>JRA-VAN G1特集フォトパドック掲載対象外（外国調教馬または未撮影）</span>
+                <span>公式フォトパドック（次走・前走）は現在未収録です（海外調教馬または未撮影）</span>
               </div>
             </div>
           `;
