@@ -489,7 +489,7 @@ export const ENTRIES_DATA = {
       "horseName": "アーバンシック",
       "sexAge": "牡5",
       "load": 58,
-      "jockey": "プーシャ",
+      "jockey": "A.プーシャン",
       "stable": "武井亮 (美浦)"
     },
     {
@@ -516,7 +516,7 @@ export const ENTRIES_DATA = {
       "horseName": "オンブズマン",
       "sexAge": "牡5",
       "load": 58,
-      "jockey": "ビュイック",
+      "jockey": "W.ビュイック",
       "stable": "J&T.ゴスデン (英)"
     },
     {
@@ -534,7 +534,7 @@ export const ENTRIES_DATA = {
       "horseName": "クロワデュノール",
       "sexAge": "牡4",
       "load": 58,
-      "jockey": "Ｃデムー",
+      "jockey": "C.デムーロ",
       "stable": "斉藤崇史 (栗東)"
     },
     {
@@ -543,7 +543,7 @@ export const ENTRIES_DATA = {
       "horseName": "コスモキュランダ",
       "sexAge": "牡5",
       "load": 58,
-      "jockey": "丹内",
+      "jockey": "丹内祐次",
       "stable": "根本康広 (美浦)"
     },
     {
@@ -552,7 +552,7 @@ export const ENTRIES_DATA = {
       "horseName": "ゴリアット",
       "sexAge": "セ6",
       "load": 58,
-      "jockey": "スミヨン",
+      "jockey": "C.スミヨン",
       "stable": "F.グラファール (仏)"
     },
     {
@@ -561,7 +561,7 @@ export const ENTRIES_DATA = {
       "horseName": "シェイクユアハート",
       "sexAge": "牡6",
       "load": 58,
-      "jockey": "古川吉",
+      "jockey": "古川吉洋",
       "stable": "安達昭夫 (栗東)"
     },
     {
@@ -570,7 +570,7 @@ export const ENTRIES_DATA = {
       "horseName": "タガノデュード",
       "sexAge": "牡5",
       "load": 58,
-      "jockey": "Ｍデムー",
+      "jockey": "M.デムーロ",
       "stable": "山田信大 (船橋)"
     },
     {
@@ -579,7 +579,7 @@ export const ENTRIES_DATA = {
       "horseName": "ダノンデサイル",
       "sexAge": "牡5",
       "load": 58,
-      "jockey": "戸崎圭",
+      "jockey": "戸崎圭太",
       "stable": "安田 (栗東)"
     },
     {
@@ -588,7 +588,7 @@ export const ENTRIES_DATA = {
       "horseName": "テアオ",
       "sexAge": "牡4",
       "load": 58,
-      "jockey": "サドラー",
+      "jockey": "L.トーレス",
       "stable": "ジョン・サドラー (米)"
     },
     {
@@ -597,7 +597,7 @@ export const ENTRIES_DATA = {
       "horseName": "ファイアンクランツ",
       "sexAge": "牡4",
       "load": 58,
-      "jockey": "堀",
+      "jockey": "J.モレイラ",
       "stable": "宮地貴稔 (栗東)"
     },
     {
@@ -606,7 +606,7 @@ export const ENTRIES_DATA = {
       "horseName": "ヘデントール",
       "sexAge": "牡5",
       "load": 58,
-      "jockey": "木村",
+      "jockey": "T.マーカンド",
       "stable": "木村哲也 (美浦)"
     },
     {
@@ -624,7 +624,7 @@ export const ENTRIES_DATA = {
       "horseName": "ミニーホーク",
       "sexAge": "牝4",
       "load": 56,
-      "jockey": "ムーア",
+      "jockey": "R.ムーア",
       "stable": "A.オブライエン (愛)"
     },
     {

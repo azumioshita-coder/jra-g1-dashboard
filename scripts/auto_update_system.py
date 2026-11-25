@@ -182,6 +182,29 @@ JOCKEY_MAP = {
     '鮫島駿': '鮫島克駿',
 }
 
+# Starter to authentic confirmed jockey override map
+KNOWN_STARTER_JOCKEYS = {
+    'テアオ': 'L.トーレス',
+    'ファイアンクランツ': 'J.モレイラ',
+    'ヘデントール': 'T.マーカンド',
+    'クロワデュノール': 'C.デムーロ',
+    'マスカレードボール': 'C.ルメール',
+    'ダノンデサイル': '戸崎圭太',
+    'アーバンシック': 'A.プーシャン',
+    'ゴリアット': 'C.スミヨン',
+    'カランダガン': 'M.バルザローナ',
+    'オンブズマン': 'W.ビュイック',
+    'エシカルダイヤモンド': '坂井瑠星',
+    'ミニーホーク': 'R.ムーア',
+    'メイショウタバル': '武豊',
+    'コスモキュランダ': '丹内祐次',
+    'ヴェルテンベルク': '横山典弘',
+    'タガノデュード': 'M.デムーロ',
+    'シェイクユアハート': '古川吉洋',
+    'エキサイトバイオ': '荻野極',
+    'アルマヴェローチェ': '岩田望来',
+}
+
 def clean_jockey_name(j):
     if not j:
         return '未定'
@@ -198,7 +221,7 @@ JOCKEY_BASE_SCORES = {
     '岩田望': 92, '岩田望来': 92, '西村淳': 91, '西村淳也': 91, '菅原明': 91, '菅原明良': 91,
     'ビュイック': 95, 'W.ビュイック': 95, 'マーカンド': 94, 'T.マーカンド': 94,
     '横山典': 91, '横山典弘': 91, '田口': 88, '田口貫太': 88, '三浦': 89, '三浦皇成': 89,
-    '荻野極': 86, '古川吉': 85
+    '荻野極': 86, '古川吉': 85, 'トーレス': 92, 'L.トーレス': 92, '丹内': 90, '丹内祐次': 90
 }
 
 TRAIN_BASE_SCORES = {'S': 97, 'A+': 95, 'A': 92, 'B+': 88, 'B': 84, 'C': 78}
@@ -652,8 +675,11 @@ def check_and_update_entries():
                     
                     # Refine jockey and stable names from HORSE_DATABASE if available
                     for s in starters:
-                        s['jockey'] = clean_jockey_name(s.get('jockey'))
                         hname = s['horseName']
+                        if hname in KNOWN_STARTER_JOCKEYS:
+                            s['jockey'] = KNOWN_STARTER_JOCKEYS[hname]
+                        else:
+                            s['jockey'] = clean_jockey_name(s.get('jockey'))
                         if hname in horse_db and horse_db[hname].get('stable'):
                             s['stable'] = horse_db[hname]['stable']
 
