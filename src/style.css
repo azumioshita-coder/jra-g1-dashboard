@@ -1798,6 +1798,16 @@ html.route-prediction .nav-item[data-target="prediction"] {
   border-radius: 3px;
   font-weight: 700;
 }
+.weight-tag-confirmed {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.18);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 9px;
+  letter-spacing: 0.2px;
+}
 .weight-tag-prev {
   color: #38bdf8;
   background: rgba(56, 189, 248, 0.15);

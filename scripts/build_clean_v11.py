@@ -2141,7 +2141,7 @@ prediction_js_logic = """
             let diffText = (diff === '0' || diff === '+0' || diff === '-0') ? '±0' : diff;
             if (diff.startsWith('+') && diff !== '+0') diffClass = 'diff-plus';
             else if (diff.startsWith('-') && diff !== '-0') diffClass = 'diff-minus';
-            displayWeightSub = `<span class="weight-tag-diff ${diffClass}">${diffText}</span>`;
+            displayWeightSub = `<span class="weight-tag-confirmed">確定</span> <span class="weight-tag-diff ${diffClass}">${diffText}</span>`;
           } else if (s.trainingWeight) {
             displayWeight = `${s.trainingWeight}kg`;
             let diffStr = '';
@@ -2247,7 +2247,7 @@ prediction_js_logic = """
                             trainW = `<strong style="color: #a7f3d0;">${s.trainingWeight}kg${diffStr}</strong>`;
                           }
                           const confW = s.confirmedWeight 
-                            ? `<strong style="color: var(--gold);">${s.confirmedWeight}kg (${s.weightDiff || '±0'})</strong>` 
+                            ? `<strong style="color: var(--gold);">${s.confirmedWeight}kg (${s.weightDiff || '±0'})</strong> <span class="weight-tag-confirmed">確定済</span>` 
                             : '未発表（当日発表次第自動反映）';
                           return `前走: <strong>${prevW}</strong> | 調教後: ${trainW} | 当日確定: ${confW}`;
                         })()}
@@ -4055,7 +4055,8 @@ open_race_detail_func = """
                         let weightVal = '-';
                         if (pHorse) {
                           if (pHorse.confirmedWeight) {
-                            weightVal = `${pHorse.confirmedWeight}kg`;
+                            const diffStr = pHorse.weightDiff ? ` (${pHorse.weightDiff})` : '';
+                            weightVal = `<strong style="color: var(--gold);">${pHorse.confirmedWeight}kg</strong> <span class="weight-tag-confirmed">確定${diffStr}</span>`;
                           } else if (pHorse.trainingWeight) {
                             let diffStr = '';
                             if (pHorse.lastRaceWeight) {

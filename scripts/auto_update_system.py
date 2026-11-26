@@ -493,6 +493,14 @@ def compute_contender_ranking(race_id, starters_list, horse_db_data, race_meta=N
             'comment': strengths_text,
             'concerns': concerns_text
         }
+        if s.get('confirmedWeight'):
+            item_entry['confirmedWeight'] = s['confirmedWeight']
+        if s.get('weightDiff'):
+            item_entry['weightDiff'] = s['weightDiff']
+        if s.get('trainingWeight'):
+            item_entry['trainingWeight'] = s['trainingWeight']
+        if s.get('lastRaceWeight'):
+            item_entry['lastRaceWeight'] = s['lastRaceWeight']
         if 'workoutOneWeek' in s:
             item_entry['workoutOneWeek'] = s['workoutOneWeek']
         if 'workoutFinal' in s:
@@ -621,14 +629,16 @@ def parse_shutuba(html):
             odds = odds_m.group(1).strip() if odds_m and odds_m.group(1) != '---.-' else None
             pop = int(pop_m.group(1).strip()) if pop_m and pop_m.group(1).isdigit() else None
 
-            # Horse weight if available on race day
+            # Horse weight if available on race day (handles NetKeiba <small>(+6)</small> etc.)
             weight_text = weight_m.group(1).strip() if weight_m else ''
+            clean_wt = re.sub(r'<[^>]+>', '', weight_text).strip()
             confirmed_wt = None
             diff_wt = None
-            wt_match = re.search(r'(\d{3})\(([\+\-]?\d+)\)', weight_text)
-            if wt_match:
+            wt_match = re.search(r'(\d{3})\s*(?:\(([\+\-]?\d+|[^\)]*)\))?', clean_wt)
+            if wt_match and wt_match.group(1):
                 confirmed_wt = int(wt_match.group(1))
-                diff_wt = wt_match.group(2)
+                diff_val = wt_match.group(2)
+                diff_wt = diff_val.strip() if diff_val else '±0'
 
             starters.append({
                 'waku': waku,
@@ -718,7 +728,9 @@ def check_and_update_entries():
                             'sexAge': s['sexAge'],
                             'load': s['load'],
                             'jockey': s['jockey'],
-                            'stable': s['stable']
+                            'stable': s['stable'],
+                            'confirmedWeight': s.get('confirmedWeight'),
+                            'weightDiff': s.get('weightDiff')
                         }
                         for s in starters
                     ]
@@ -748,6 +760,7 @@ def check_and_update_entries():
                                 if s.get('confirmedWeight'):
                                     ps['confirmedWeight'] = s['confirmedWeight']
                                     ps['weightDiff'] = s.get('weightDiff')
+                                    log(f"⚡ Confirmed weight detected for {hname}: {s['confirmedWeight']}kg ({s.get('weightDiff')})")
                                 new_pred_starters.append(ps)
                             else:
                                 new_pred_starters.append(s)
