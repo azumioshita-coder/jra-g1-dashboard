@@ -686,146 +686,211 @@ export const ENTRIES_DATA = {
     {
       "waku": null,
       "gate": null,
-      "horseName": "アーテルアストレア",
-      "sexAge": "牝6",
-      "load": 56,
-      "jockey": "菱田裕二",
-      "stable": "橋口慎介 (栗東)"
-    },
-    {
-      "waku": null,
-      "gate": null,
       "horseName": "ウィルソンテソーロ",
-      "sexAge": "牡6",
+      "sexAge": "牡7",
       "load": 58,
       "jockey": "川田将雅",
-      "stable": "小手川準 (美浦)"
+      "stable": "高木登 (美浦)",
+      "confirmedWeight": null,
+      "weightDiff": null
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "ガイアフォース",
-      "sexAge": "牡6",
+      "horseName": "カズタンジャー",
+      "sexAge": "牡5",
       "load": 58,
-      "jockey": "長岡禎仁",
-      "stable": "杉山晴紀 (栗東)"
+      "jockey": "新谷",
+      "stable": "新谷功一 (栗東)",
+      "confirmedWeight": null,
+      "weightDiff": null
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "クラウンプライド",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "横山武史",
-      "stable": "新谷功一 (栗東)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "グロリアムンディ",
-      "sexAge": "牡7",
-      "load": 58,
-      "jockey": "戸崎圭太",
-      "stable": "大久保龍志 (栗東)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "サンライズジパング",
-      "sexAge": "牡4",
+      "horseName": "シルバーレシオ",
+      "sexAge": "牡3",
       "load": 57,
-      "jockey": "武豊",
-      "stable": "音無秀孝 (栗東)"
+      "jockey": "Ｃデムー",
+      "stable": "野中賢二 (栗東)",
+      "confirmedWeight": null,
+      "weightDiff": null
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "スレイマン",
-      "sexAge": "牡7",
-      "load": 58,
-      "jockey": "西村淳也",
-      "stable": "池添学 (栗東)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "セラフィックコール",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "C.デムーロ",
-      "stable": "寺島良 (栗東)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "テーオードレフォン",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "丸山元気",
-      "stable": "梅田智之 (栗東)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "ドゥラエレーデ",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "北村友一",
-      "stable": "池添学 (栗東)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "ハギノアレグリアス",
-      "sexAge": "牡8",
+      "horseName": "ダノンフィーゴ",
+      "sexAge": "牡4",
       "load": 58,
       "jockey": "岩田望来",
-      "stable": "四位洋文 (栗東)"
+      "stable": "友道康夫 (栗東)",
+      "confirmedWeight": null,
+      "weightDiff": null
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "ペプチドナイル",
-      "sexAge": "牡6",
-      "load": 58,
-      "jockey": "藤岡佑介",
-      "stable": "武英智 (栗東)"
+      "horseName": "ダブルハートボンド",
+      "sexAge": "牝5",
+      "load": 56,
+      "jockey": "坂井瑠星",
+      "stable": "大久保龍 (栗東)",
+      "confirmedWeight": null,
+      "weightDiff": null
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "ミックファイア",
-      "sexAge": "牡5",
-      "load": 58,
-      "jockey": "矢野貴之",
-      "stable": "渡邉和雄 (地方)"
+      "horseName": "テンカジョウ",
+      "sexAge": "牝5",
+      "load": 56,
+      "jockey": "池添",
+      "stable": "岡田稲男 (栗東)",
+      "confirmedWeight": null,
+      "weightDiff": null
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "メイショウハリオ",
-      "sexAge": "牡8",
-      "load": 58,
-      "jockey": "浜中俊",
-      "stable": "岡田稲男 (栗東)"
-    },
-    {
-      "waku": null,
-      "gate": null,
-      "horseName": "ヤマニンウルス",
+      "horseName": "ドンインザムード",
       "sexAge": "牡4",
-      "load": 57,
-      "jockey": "団野大成",
-      "stable": "斉藤崇史 (栗東)"
+      "load": 58,
+      "jockey": "荻野極",
+      "stable": "今野貞一 (栗東)",
+      "confirmedWeight": null,
+      "weightDiff": null
     },
     {
       "waku": null,
       "gate": null,
-      "horseName": "レモンポップ",
+      "horseName": "ハピ",
       "sexAge": "牡7",
       "load": 58,
-      "jockey": "坂井瑠星",
-      "stable": "田中博康 (美浦)"
+      "jockey": "大久保",
+      "stable": "大久保龍 (栗東)",
+      "confirmedWeight": null,
+      "weightDiff": null
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "バトルクライ",
+      "sexAge": "牡7",
+      "load": 58,
+      "jockey": "原",
+      "stable": "高木登 (美浦)",
+      "confirmedWeight": null,
+      "weightDiff": null
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "パイロマンサー",
+      "sexAge": "牡3",
+      "load": 57,
+      "jockey": "C.ルメール",
+      "stable": "吉村圭司 (栗東)",
+      "confirmedWeight": null,
+      "weightDiff": null
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ヘニーガイスト",
+      "sexAge": "牡4",
+      "load": 58,
+      "jockey": "加藤征",
+      "stable": "加藤征弘 (美浦)",
+      "confirmedWeight": null,
+      "weightDiff": null
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ペリエール",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "武豊",
+      "stable": "黒岩陽一 (美浦)",
+      "confirmedWeight": null,
+      "weightDiff": null
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ミッキーファイト",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "戸崎圭",
+      "stable": "田中博康 (美浦)",
+      "confirmedWeight": null,
+      "weightDiff": null
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ムルソー",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "松山弘平",
+      "stable": "池江泰寿 (栗東)",
+      "confirmedWeight": null,
+      "weightDiff": null
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ラムジェット",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "三浦皇成",
+      "stable": "松永幹夫 (栗東)",
+      "confirmedWeight": null,
+      "weightDiff": null
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "リビアングラス",
+      "sexAge": "牡6",
+      "load": 58,
+      "jockey": "矢作",
+      "stable": "矢作芳人 (栗東)",
+      "confirmedWeight": null,
+      "weightDiff": null
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ルヴァレドクール",
+      "sexAge": "セ4",
+      "load": 58,
+      "jockey": "手塚徳",
+      "stable": "手塚貴徳 (美浦)",
+      "confirmedWeight": null,
+      "weightDiff": null
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ロードクロンヌ",
+      "sexAge": "牡5",
+      "load": 58,
+      "jockey": "横山和生",
+      "stable": "四位洋文 (栗東)",
+      "confirmedWeight": null,
+      "weightDiff": null
+    },
+    {
+      "waku": null,
+      "gate": null,
+      "horseName": "ヴァルツァーシャル",
+      "sexAge": "牡7",
+      "load": 58,
+      "jockey": "斎藤新",
+      "stable": "高木登 (美浦)",
+      "confirmedWeight": null,
+      "weightDiff": null
     }
   ],
   "21": [
