@@ -3770,7 +3770,7 @@ export const PREDICTION_DATA = {
           "trainingCourse": "美浦W",
           "trainingTime": "83.2 - 67.0 - 52.0 - 37.1 - 11.4 (馬なり)",
           "trainingComment": "【調教A・スタミナ満点】美浦坂路で終い重点に追われ力強い伸び。馬体の張りも良化しており、長い府中の直線でのスタミナ勝負なら台頭可能。",
-          "trainingWeight": 490,
+          "trainingWeight": 494,
           "lastRaceWeight": 488,
           "confirmedWeight": null,
           "weightDiff": null,
@@ -3796,7 +3796,8 @@ export const PREDICTION_DATA = {
             "grade": "A",
             "comment": "初コンビのマーカンド騎手が騎乗して感触確認。折り合いスムーズで素直に指示に反応。東京2400mへの適性十分。"
           },
-          "comment": "【調教A・スタミナ満点】美浦坂路で終い重点に追われ力強い伸び。馬体の張りも良化しており、長い府中の直線でのスタミナ勝負なら台頭可能。"
+          "comment": "【調教A・スタミナ満点】美浦坂路で終い重点に追われ力強い伸び。馬体の張りも良化しており、長い府中の直線でのスタミナ勝負なら台頭可能。",
+          "trainingWeightDiff": "+6"
         },
         {
           "waku": 1,
@@ -3813,8 +3814,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "美浦W",
           "trainingTime": "82.4 - 66.1 - 51.0 - 36.4 - 11.2 (強め)",
           "trainingComment": "【調教A・トモの張り上々】美浦Wで力強い動き。トモの張りが戻り状態は確実に上向き。3〜4コーナーからの積極的な捲り脚に期待。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 528,
+          "lastRaceWeight": 524,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "アルアイン",
@@ -3839,7 +3840,8 @@ export const PREDICTION_DATA = {
             "grade": "A+",
             "comment": "単走で気配抜群。首を低く使って推進力があり、弥生賞・皐月賞時を彷彿とさせる捲り脚の再現を期す。"
           },
-          "comment": "【調教A・トモの張り上々】美浦Wで力強い動き。トモの張りが戻り状態は確実に上向き。3〜4コーナーからの積極的な捲り脚に期待。"
+          "comment": "【調教A・トモの張り上々】美浦Wで力強い動き。トモの張りが戻り状態は確実に上向き。3〜4コーナーからの積極的な捲り脚に期待。",
+          "trainingWeightDiff": "+4"
         },
         {
           "waku": 2,
@@ -3856,8 +3858,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "栗東CW",
           "trainingTime": "81.8 - 65.8 - 50.9 - 36.4 - 11.5 (一杯)",
           "trainingComment": "【調教A・活気十分】栗東坂路で軽快な行きっぷりを披露。帰国初戦ながら馬体はすっきりと仕上がっており、自分の形に持ち込めれば怖い存在。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 508,
+          "lastRaceWeight": 502,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "ゴールドシップ",
@@ -3882,7 +3884,8 @@ export const PREDICTION_DATA = {
             "grade": "A",
             "comment": "直線で気合をつけられると力強く反応。逃げ馬としてのスピード持続力に磨きがかかっており、単騎逃げの態勢整う。"
           },
-          "comment": "【調教A・活気十分】栗東坂路で軽快な行きっぷりを披露。帰国初戦ながら馬体はすっきりと仕上がっており、自分の形に持ち込めれば怖い存在。"
+          "comment": "【調教A・活気十分】栗東坂路で軽快な行きっぷりを披露。帰国初戦ながら馬体はすっきりと仕上がっており、自分の形に持ち込めれば怖い存在。",
+          "trainingWeightDiff": "+6"
         },
         {
           "waku": 2,
@@ -3899,8 +3902,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "栗東CW",
           "trainingTime": "81.6 - 65.5 - 50.8 - 36.1 - 11.1 (一杯)",
           "trainingComment": "【調教A+・迫力のフットワーク】栗東CWで力強いストライドを披露。追われてからの脚勢は前走以上で、ひと叩きされた上積みは極めて大きい。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 518,
+          "lastRaceWeight": 512,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "キタサンブラック",
@@ -3925,7 +3928,8 @@ export const PREDICTION_DATA = {
             "grade": "S",
             "comment": "CW単走で軽快なフットワーク。全身を使った伸びやかなストライドでラスト11.1秒。文句なしのS評価仕上がり。"
           },
-          "comment": "【調教A+・迫力のフットワーク】栗東CWで力強いストライドを披露。追われてからの脚勢は前走以上で、ひと叩きされた上積みは極めて大きい。"
+          "comment": "【調教A+・迫力のフットワーク】栗東CWで力強いストライドを披露。追われてからの脚勢は前走以上で、ひと叩きされた上積みは極めて大きい。",
+          "trainingWeightDiff": "+6"
         },
         {
           "waku": 3,
@@ -3942,8 +3946,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "栗東CW",
           "trainingTime": "84.0 - 67.8 - 52.8 - 37.9 - 12.0 (馬なり)",
           "trainingComment": "【調教B+・粘り強さ健在】栗東坂路で一定のラップを刻み力強く登坂。先行して渋太さを発揮できる仕上がり。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 456,
+          "lastRaceWeight": 452,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "ハーツクライ",
@@ -3968,7 +3972,8 @@ export const PREDICTION_DATA = {
             "grade": "B",
             "comment": "古川騎手騎乗で息を整える内容。順調な調整で自分の力は出せる状態。"
           },
-          "comment": "【調教B+・粘り強さ健在】栗東坂路で一定のラップを刻み力強く登坂。先行して渋太さを発揮できる仕上がり。"
+          "comment": "【調教B+・粘り強さ健在】栗東坂路で一定のラップを刻み力強く登坂。先行して渋太さを発揮できる仕上がり。",
+          "trainingWeightDiff": "+4"
         },
         {
           "waku": 3,
@@ -3985,8 +3990,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "美浦W",
           "trainingTime": "82.8 - 66.5 - 51.4 - 36.9 - 11.3 (馬なり)",
           "trainingComment": "【調教A・キレ味健在】美浦Wで僚馬を目標に折り合い重視の調整。直線追われてからの反応はシャープで、前走敗戦のダメージは一切感じさせない。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 480,
+          "lastRaceWeight": 474,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "ドゥラメンテ",
@@ -4011,7 +4016,8 @@ export const PREDICTION_DATA = {
             "grade": "A+",
             "comment": "ルメール騎手が感触を確かめる単走。手綱を抑えたまま抜群の手応えで直線へ。気合乗りも程よく、秋古馬連冠へ視界良好。"
           },
-          "comment": "【調教A・キレ味健在】美浦Wで僚馬を目標に折り合い重視の調整。直線追われてからの反応はシャープで、前走敗戦のダメージは一切感じさせない。"
+          "comment": "【調教A・キレ味健在】美浦Wで僚馬を目標に折り合い重視の調整。直線追われてからの反応はシャープで、前走敗戦のダメージは一切感じさせない。",
+          "trainingWeightDiff": "+6"
         },
         {
           "waku": 4,
@@ -4028,8 +4034,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "美浦W",
           "trainingTime": "82.5 - 66.2 - 51.2 - 36.6 - 11.3 (馬なり)",
           "trainingComment": "【調教B+・素軽い身のこなし】美浦Wで併せ馬。モレイラ騎手の感触も上々で、叩き2戦目の変わり身に警戒したい。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 486,
+          "lastRaceWeight": 480,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "ドゥラメンテ",
@@ -4054,7 +4060,8 @@ export const PREDICTION_DATA = {
             "grade": "A",
             "comment": "モレイラ騎手が跨がってコース確認。終始リラックスしつつラストは軽く促しただけで11.3秒。勝負気配濃厚。"
           },
-          "comment": "【調教B+・素軽い身のこなし】美浦Wで併せ馬。モレイラ騎手の感触も上々で、叩き2戦目の変わり身に警戒したい。"
+          "comment": "【調教B+・素軽い身のこなし】美浦Wで併せ馬。モレイラ騎手の感触も上々で、叩き2戦目の変わり身に警戒したい。",
+          "trainingWeightDiff": "+6"
         },
         {
           "waku": 4,
@@ -4071,8 +4078,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "東京ダ",
           "trainingTime": "68.5 - 53.0 - 38.2 - 11.8 (馬なり)",
           "trainingComment": "【調教A+・素軽さ上々】芝コースでビュイック騎手を背に軽快な加速。坂下から一気にトップスピードに乗りラスト11.5秒。検疫明けの疲れも見せず好調をキープ。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 482,
+          "lastRaceWeight": null,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "Night of Thunder",
@@ -4097,7 +4104,8 @@ export const PREDICTION_DATA = {
             "grade": "A+",
             "comment": "ビュイック騎手を背に芝コースで追い切り。直線の坂を力強く駆け上がりラスト11.5秒。欧州トップクラスのスピード持続力をアピール。"
           },
-          "comment": "【調教A+・素軽さ上々】芝コースでビュイック騎手を背に軽快な加速。坂下から一気にトップスピードに乗りラスト11.5秒。検疫明けの疲れも見せず好調をキープ。"
+          "comment": "【調教A+・素軽さ上々】芝コースでビュイック騎手を背に軽快な加速。坂下から一気にトップスピードに乗りラスト11.5秒。検疫明けの疲れも見せず好調をキープ。",
+          "trainingWeightDiff": null
         },
         {
           "waku": 5,
@@ -4114,8 +4122,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "東京芝",
           "trainingTime": "81.4 - 65.2 - 50.1 - 36.2 - 11.2 (馬なり)",
           "trainingComment": "【調教S・抜群の伸び】本番で騎乗するバルザローナ騎手を背に芝単走。馬なりのままラスト11.2秒を計時。身のこなしは極めて柔軟で、海外遠征馬としては近年屈指の仕上がり。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 468,
+          "lastRaceWeight": null,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "Gleneagles",
@@ -4140,7 +4148,8 @@ export const PREDICTION_DATA = {
             "grade": "S",
             "comment": "本番で手綱を取るバルザローナ騎手を背に芝単走。馬なりのままラスト11.2秒を計時。身のこなしは柔らかく、海外遠征馬の気配としては近年屈指の仕上がり。"
           },
-          "comment": "【調教S・抜群の伸び】本番で騎乗するバルザローナ騎手を背に芝単走。馬なりのままラスト11.2秒を計時。身のこなしは極めて柔軟で、海外遠征馬としては近年屈指の仕上がり。"
+          "comment": "【調教S・抜群の伸び】本番で騎乗するバルザローナ騎手を背に芝単走。馬なりのままラスト11.2秒を計時。身のこなしは極めて柔軟で、海外遠征馬としては近年屈指の仕上がり。",
+          "trainingWeightDiff": null
         },
         {
           "waku": 5,
@@ -4157,8 +4166,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "東京芝",
           "trainingTime": "69.0 - 53.5 - 38.6 - 11.7 (馬なり)",
           "trainingComment": "【調教A+・しなやかな走り】東京競馬場での環境順応も早く、芝コースで弾むような動き。牝馬らしい軽快さがあり、日本の芝への適性は高そう。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 462,
+          "lastRaceWeight": null,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "Galileo",
@@ -4183,7 +4192,8 @@ export const PREDICTION_DATA = {
             "grade": "B+",
             "comment": "ムーア騎手を背に芝でシャープな動き。牝馬らしいキレ味を見せ、56kgの斤量恩恵を活かせるコンディション。"
           },
-          "comment": "【調教A+・しなやかな走り】東京競馬場での環境順応も早く、芝コースで弾むような動き。牝馬らしい軽快さがあり、日本の芝への適性は高そう。"
+          "comment": "【調教A+・しなやかな走り】東京競馬場での環境順応も早く、芝コースで弾むような動き。牝馬らしい軽快さがあり、日本の芝への適性は高そう。",
+          "trainingWeightDiff": null
         },
         {
           "waku": 6,
@@ -4200,8 +4210,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "栗東坂路",
           "trainingTime": "53.8 - 38.9 - 25.1 - 12.3 (馬なり)",
           "trainingComment": "【調教B+・マイペース維持】栗東坂路で軽めの調整。気合乗りも程よく、ベテランの手綱で一発を狙う態勢は整っている。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 488,
+          "lastRaceWeight": 484,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "キタサンブラック",
@@ -4226,7 +4236,8 @@ export const PREDICTION_DATA = {
             "grade": "B+",
             "comment": "名手横山典弘騎手が手綱を握りリズム重視。直線は馬の行く気に任せて終い重点。好状態をキープ。"
           },
-          "comment": "【調教B+・マイペース維持】栗東坂路で軽めの調整。気合乗りも程よく、ベテランの手綱で一発を狙う態勢は整っている。"
+          "comment": "【調教B+・マイペース維持】栗東坂路で軽めの調整。気合乗りも程よく、ベテランの手綱で一発を狙う態勢は整っている。",
+          "trainingWeightDiff": "+4"
         },
         {
           "waku": 6,
@@ -4243,8 +4254,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "東京ダ",
           "trainingTime": "69.2 - 53.8 - 38.9 - 12.0 (馬なり)",
           "trainingComment": "【調教A・力強い掻き込み】東京ダートで入念に調整後、芝コースでの走りに移行。筋肉質な芦毛の馬体が目立ち、気合も十分。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 478,
+          "lastRaceWeight": null,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "Ya Primo",
@@ -4269,7 +4280,8 @@ export const PREDICTION_DATA = {
             "grade": "B+",
             "comment": "名手L.トーレス騎手を背に強めの調整。手前替えもスムーズでラスト11.9秒と上々の伸び。南米G1・5勝の実力を秘める。"
           },
-          "comment": "【調教A・力強い掻き込み】東京ダートで入念に調整後、芝コースでの走りに移行。筋肉質な芦毛の馬体が目立ち、気合も十分。"
+          "comment": "【調教A・力強い掻き込み】東京ダートで入念に調整後、芝コースでの走りに移行。筋肉質な芦毛の馬体が目立ち、気合も十分。",
+          "trainingWeightDiff": null
         },
         {
           "waku": 7,
@@ -4286,8 +4298,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "美浦W",
           "trainingTime": "82.2 - 66.4 - 51.5 - 36.8 - 11.4 (馬なり)",
           "trainingComment": "【調教A・豪快なストライド】美浦Wで迫力ある動きを披露。菊花賞馬らしいスケールの大きな走りで、直線の長い東京コースなら末脚爆発の予感。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 526,
+          "lastRaceWeight": 522,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "スワーヴリチャード",
@@ -4312,7 +4324,8 @@ export const PREDICTION_DATA = {
             "grade": "A",
             "comment": "プーシャン騎手が感触を確かめつつ単走。余力を残したまま力強い脚捌きでフィニッシュ。巻き返しの態勢整う。"
           },
-          "comment": "【調教A・豪快なストライド】美浦Wで迫力ある動きを披露。菊花賞馬らしいスケールの大きな走りで、直線の長い東京コースなら末脚爆発の予感。"
+          "comment": "【調教A・豪快なストライド】美浦Wで迫力ある動きを披露。菊花賞馬らしいスケールの大きな走りで、直線の長い東京コースなら末脚爆発の予感。",
+          "trainingWeightDiff": "+4"
         },
         {
           "waku": 7,
@@ -4329,8 +4342,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "栗東CW",
           "trainingTime": "83.5 - 67.2 - 52.1 - 37.5 - 11.8 (強め)",
           "trainingComment": "【調教A・追撃態勢万全】栗東CWで鋭い伸び脚を披露。前走好走の勢いをそのまま維持しており、展開ひとつで馬券圏内突入の気配。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 506,
+          "lastRaceWeight": 498,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "ヤマカツエース",
@@ -4355,7 +4368,8 @@ export const PREDICTION_DATA = {
             "grade": "B+",
             "comment": "デムーロ騎手が乗って呼吸を合わせる追い切り。気合乗り良好で直線差し脚に賭ける。"
           },
-          "comment": "【調教A・追撃態勢万全】栗東CWで鋭い伸び脚を披露。前走好走の勢いをそのまま維持しており、展開ひとつで馬券圏内突入の気配。"
+          "comment": "【調教A・追撃態勢万全】栗東CWで鋭い伸び脚を披露。前走好走の勢いをそのまま維持しており、展開ひとつで馬券圏内突入の気配。",
+          "trainingWeightDiff": "+8"
         },
         {
           "waku": 7,
@@ -4372,8 +4386,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "栗東坂路",
           "trainingTime": "54.2 - 39.5 - 25.5 - 12.4 (馬なり)",
           "trainingComment": "【調教B・順調な仕上がり】栗東坂路で軽快なフットワーク。大舞台に向けて状態面に不安はなく、持てる力を出し切る態勢。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 486,
+          "lastRaceWeight": 482,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "キタサンブラック",
@@ -4398,7 +4412,8 @@ export const PREDICTION_DATA = {
             "grade": "B",
             "comment": "荻野極騎手とコンタクトを取りながら馬なりで登坂。好調キープ。"
           },
-          "comment": "【調教B・順調な仕上がり】栗東坂路で軽快なフットワーク。大舞台に向けて状態面に不安はなく、持てる力を出し切る態勢。"
+          "comment": "【調教B・順調な仕上がり】栗東坂路で軽快なフットワーク。大舞台に向けて状態面に不安はなく、持てる力を出し切る態勢。",
+          "trainingWeightDiff": "+4"
         },
         {
           "waku": 8,
@@ -4415,8 +4430,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "栗東CW",
           "trainingTime": "82.0 - 66.8 - 51.6 - 36.5 - 11.2 (強め)",
           "trainingComment": "【調教S・文句なしの気配】1週前にCWでラスト11.0秒の猛時計を叩き出し、最終追いも馬なりで鋭い伸び。ダービー制覇時を上回る充実期で、秋古馬2冠へ仕上がり万全。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 522,
+          "lastRaceWeight": 516,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "エピファネイア",
@@ -4441,7 +4456,8 @@ export const PREDICTION_DATA = {
             "grade": "A+",
             "comment": "先週しっかり負荷をかけたため、今週は単走で終い重点。リラックスした走りで無駄な力みがなく、ダービー制覇時と同等以上の絶好調。"
           },
-          "comment": "【調教S・文句なしの気配】1週前にCWでラスト11.0秒の猛時計を叩き出し、最終追いも馬なりで鋭い伸び。ダービー制覇時を上回る充実期で、秋古馬2冠へ仕上がり万全。"
+          "comment": "【調教S・文句なしの気配】1週前にCWでラスト11.0秒の猛時計を叩き出し、最終追いも馬なりで鋭い伸び。ダービー制覇時を上回る充実期で、秋古馬2冠へ仕上がり万全。",
+          "trainingWeightDiff": "+6"
         },
         {
           "waku": 8,
@@ -4458,8 +4474,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "東京芝",
           "trainingTime": "82.0 - 66.0 - 51.0 - 36.5 - 11.5 (馬なり)",
           "trainingComment": "【調教A+・雄大な馬格】東京芝コースで堂々たるキャンター。キングジョージ覇者の風格を漂わせ、雄大なフットワークで東京の芝を踏みしめる。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 504,
+          "lastRaceWeight": null,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "Adlerflug",
@@ -4484,7 +4500,8 @@ export const PREDICTION_DATA = {
             "grade": "A",
             "comment": "直線で合図を送るとグッと重心を落として加速。タフな欧州王者らしい力感あふれるフォームで好仕上がり。"
           },
-          "comment": "【調教A+・雄大な馬格】東京芝コースで堂々たるキャンター。キングジョージ覇者の風格を漂わせ、雄大なフットワークで東京の芝を踏みしめる。"
+          "comment": "【調教A+・雄大な馬格】東京芝コースで堂々たるキャンター。キングジョージ覇者の風格を漂わせ、雄大なフットワークで東京の芝を踏みしめる。",
+          "trainingWeightDiff": null
         },
         {
           "waku": 8,
@@ -4501,8 +4518,8 @@ export const PREDICTION_DATA = {
           "trainingCourse": "東京芝",
           "trainingTime": "70.1 - 54.5 - 39.2 - 12.2 (馬なり)",
           "trainingComment": "【調教B+・長丁場向きの走り】芝コースで長い距離をじっくり乗り込み。折り合いがスムーズで、直線の長いコースでの持久力戦なら見せ場も。",
-          "trainingWeight": 490,
-          "lastRaceWeight": 488,
+          "trainingWeight": 474,
+          "lastRaceWeight": null,
           "confirmedWeight": null,
           "weightDiff": null,
           "father": "Awtaad",
@@ -4527,7 +4544,8 @@ export const PREDICTION_DATA = {
             "grade": "B",
             "comment": "坂井瑠星騎手が騎乗して直線の反応を確かめる。渋太い脚を使って最後まで脚色が衰えず、スタミナ十分。"
           },
-          "comment": "【調教B+・長丁場向きの走り】芝コースで長い距離をじっくり乗り込み。折り合いがスムーズで、直線の長いコースでの持久力戦なら見せ場も。"
+          "comment": "【調教B+・長丁場向きの走り】芝コースで長い距離をじっくり乗り込み。折り合いがスムーズで、直線の長いコースでの持久力戦なら見せ場も。",
+          "trainingWeightDiff": null
         }
       ],
       "occultSigns": [
@@ -8697,7 +8715,7 @@ export const PREDICTION_DATA = {
       "trainingCourse": "美浦W",
       "trainingTime": "83.2 - 67.0 - 52.0 - 37.1 - 11.4 (馬なり)",
       "trainingComment": "【調教A・スタミナ満点】美浦坂路で終い重点に追われ力強い伸び。馬体の張りも良化しており、長い府中の直線でのスタミナ勝負なら台頭可能。",
-      "trainingWeight": 490,
+      "trainingWeight": 494,
       "lastRaceWeight": 488,
       "confirmedWeight": null,
       "weightDiff": null,
@@ -8723,7 +8741,8 @@ export const PREDICTION_DATA = {
         "grade": "A",
         "comment": "初コンビのマーカンド騎手が騎乗して感触確認。折り合いスムーズで素直に指示に反応。東京2400mへの適性十分。"
       },
-      "comment": "【調教A・スタミナ満点】美浦坂路で終い重点に追われ力強い伸び。馬体の張りも良化しており、長い府中の直線でのスタミナ勝負なら台頭可能。"
+      "comment": "【調教A・スタミナ満点】美浦坂路で終い重点に追われ力強い伸び。馬体の張りも良化しており、長い府中の直線でのスタミナ勝負なら台頭可能。",
+      "trainingWeightDiff": "+6"
     },
     {
       "waku": 1,
@@ -8740,8 +8759,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "美浦W",
       "trainingTime": "82.4 - 66.1 - 51.0 - 36.4 - 11.2 (強め)",
       "trainingComment": "【調教A・トモの張り上々】美浦Wで力強い動き。トモの張りが戻り状態は確実に上向き。3〜4コーナーからの積極的な捲り脚に期待。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 528,
+      "lastRaceWeight": 524,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "アルアイン",
@@ -8766,7 +8785,8 @@ export const PREDICTION_DATA = {
         "grade": "A+",
         "comment": "単走で気配抜群。首を低く使って推進力があり、弥生賞・皐月賞時を彷彿とさせる捲り脚の再現を期す。"
       },
-      "comment": "【調教A・トモの張り上々】美浦Wで力強い動き。トモの張りが戻り状態は確実に上向き。3〜4コーナーからの積極的な捲り脚に期待。"
+      "comment": "【調教A・トモの張り上々】美浦Wで力強い動き。トモの張りが戻り状態は確実に上向き。3〜4コーナーからの積極的な捲り脚に期待。",
+      "trainingWeightDiff": "+4"
     },
     {
       "waku": 2,
@@ -8783,8 +8803,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "栗東CW",
       "trainingTime": "81.8 - 65.8 - 50.9 - 36.4 - 11.5 (一杯)",
       "trainingComment": "【調教A・活気十分】栗東坂路で軽快な行きっぷりを披露。帰国初戦ながら馬体はすっきりと仕上がっており、自分の形に持ち込めれば怖い存在。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 508,
+      "lastRaceWeight": 502,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "ゴールドシップ",
@@ -8809,7 +8829,8 @@ export const PREDICTION_DATA = {
         "grade": "A",
         "comment": "直線で気合をつけられると力強く反応。逃げ馬としてのスピード持続力に磨きがかかっており、単騎逃げの態勢整う。"
       },
-      "comment": "【調教A・活気十分】栗東坂路で軽快な行きっぷりを披露。帰国初戦ながら馬体はすっきりと仕上がっており、自分の形に持ち込めれば怖い存在。"
+      "comment": "【調教A・活気十分】栗東坂路で軽快な行きっぷりを披露。帰国初戦ながら馬体はすっきりと仕上がっており、自分の形に持ち込めれば怖い存在。",
+      "trainingWeightDiff": "+6"
     },
     {
       "waku": 2,
@@ -8826,8 +8847,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "栗東CW",
       "trainingTime": "81.6 - 65.5 - 50.8 - 36.1 - 11.1 (一杯)",
       "trainingComment": "【調教A+・迫力のフットワーク】栗東CWで力強いストライドを披露。追われてからの脚勢は前走以上で、ひと叩きされた上積みは極めて大きい。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 518,
+      "lastRaceWeight": 512,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "キタサンブラック",
@@ -8852,7 +8873,8 @@ export const PREDICTION_DATA = {
         "grade": "S",
         "comment": "CW単走で軽快なフットワーク。全身を使った伸びやかなストライドでラスト11.1秒。文句なしのS評価仕上がり。"
       },
-      "comment": "【調教A+・迫力のフットワーク】栗東CWで力強いストライドを披露。追われてからの脚勢は前走以上で、ひと叩きされた上積みは極めて大きい。"
+      "comment": "【調教A+・迫力のフットワーク】栗東CWで力強いストライドを披露。追われてからの脚勢は前走以上で、ひと叩きされた上積みは極めて大きい。",
+      "trainingWeightDiff": "+6"
     },
     {
       "waku": 3,
@@ -8869,8 +8891,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "栗東CW",
       "trainingTime": "84.0 - 67.8 - 52.8 - 37.9 - 12.0 (馬なり)",
       "trainingComment": "【調教B+・粘り強さ健在】栗東坂路で一定のラップを刻み力強く登坂。先行して渋太さを発揮できる仕上がり。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 456,
+      "lastRaceWeight": 452,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "ハーツクライ",
@@ -8895,7 +8917,8 @@ export const PREDICTION_DATA = {
         "grade": "B",
         "comment": "古川騎手騎乗で息を整える内容。順調な調整で自分の力は出せる状態。"
       },
-      "comment": "【調教B+・粘り強さ健在】栗東坂路で一定のラップを刻み力強く登坂。先行して渋太さを発揮できる仕上がり。"
+      "comment": "【調教B+・粘り強さ健在】栗東坂路で一定のラップを刻み力強く登坂。先行して渋太さを発揮できる仕上がり。",
+      "trainingWeightDiff": "+4"
     },
     {
       "waku": 3,
@@ -8912,8 +8935,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "美浦W",
       "trainingTime": "82.8 - 66.5 - 51.4 - 36.9 - 11.3 (馬なり)",
       "trainingComment": "【調教A・キレ味健在】美浦Wで僚馬を目標に折り合い重視の調整。直線追われてからの反応はシャープで、前走敗戦のダメージは一切感じさせない。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 480,
+      "lastRaceWeight": 474,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "ドゥラメンテ",
@@ -8938,7 +8961,8 @@ export const PREDICTION_DATA = {
         "grade": "A+",
         "comment": "ルメール騎手が感触を確かめる単走。手綱を抑えたまま抜群の手応えで直線へ。気合乗りも程よく、秋古馬連冠へ視界良好。"
       },
-      "comment": "【調教A・キレ味健在】美浦Wで僚馬を目標に折り合い重視の調整。直線追われてからの反応はシャープで、前走敗戦のダメージは一切感じさせない。"
+      "comment": "【調教A・キレ味健在】美浦Wで僚馬を目標に折り合い重視の調整。直線追われてからの反応はシャープで、前走敗戦のダメージは一切感じさせない。",
+      "trainingWeightDiff": "+6"
     },
     {
       "waku": 4,
@@ -8955,8 +8979,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "美浦W",
       "trainingTime": "82.5 - 66.2 - 51.2 - 36.6 - 11.3 (馬なり)",
       "trainingComment": "【調教B+・素軽い身のこなし】美浦Wで併せ馬。モレイラ騎手の感触も上々で、叩き2戦目の変わり身に警戒したい。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 486,
+      "lastRaceWeight": 480,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "ドゥラメンテ",
@@ -8981,7 +9005,8 @@ export const PREDICTION_DATA = {
         "grade": "A",
         "comment": "モレイラ騎手が跨がってコース確認。終始リラックスしつつラストは軽く促しただけで11.3秒。勝負気配濃厚。"
       },
-      "comment": "【調教B+・素軽い身のこなし】美浦Wで併せ馬。モレイラ騎手の感触も上々で、叩き2戦目の変わり身に警戒したい。"
+      "comment": "【調教B+・素軽い身のこなし】美浦Wで併せ馬。モレイラ騎手の感触も上々で、叩き2戦目の変わり身に警戒したい。",
+      "trainingWeightDiff": "+6"
     },
     {
       "waku": 4,
@@ -8998,8 +9023,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "東京ダ",
       "trainingTime": "68.5 - 53.0 - 38.2 - 11.8 (馬なり)",
       "trainingComment": "【調教A+・素軽さ上々】芝コースでビュイック騎手を背に軽快な加速。坂下から一気にトップスピードに乗りラスト11.5秒。検疫明けの疲れも見せず好調をキープ。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 482,
+      "lastRaceWeight": null,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "Night of Thunder",
@@ -9024,7 +9049,8 @@ export const PREDICTION_DATA = {
         "grade": "A+",
         "comment": "ビュイック騎手を背に芝コースで追い切り。直線の坂を力強く駆け上がりラスト11.5秒。欧州トップクラスのスピード持続力をアピール。"
       },
-      "comment": "【調教A+・素軽さ上々】芝コースでビュイック騎手を背に軽快な加速。坂下から一気にトップスピードに乗りラスト11.5秒。検疫明けの疲れも見せず好調をキープ。"
+      "comment": "【調教A+・素軽さ上々】芝コースでビュイック騎手を背に軽快な加速。坂下から一気にトップスピードに乗りラスト11.5秒。検疫明けの疲れも見せず好調をキープ。",
+      "trainingWeightDiff": null
     },
     {
       "waku": 5,
@@ -9041,8 +9067,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "東京芝",
       "trainingTime": "81.4 - 65.2 - 50.1 - 36.2 - 11.2 (馬なり)",
       "trainingComment": "【調教S・抜群の伸び】本番で騎乗するバルザローナ騎手を背に芝単走。馬なりのままラスト11.2秒を計時。身のこなしは極めて柔軟で、海外遠征馬としては近年屈指の仕上がり。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 468,
+      "lastRaceWeight": null,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "Gleneagles",
@@ -9067,7 +9093,8 @@ export const PREDICTION_DATA = {
         "grade": "S",
         "comment": "本番で手綱を取るバルザローナ騎手を背に芝単走。馬なりのままラスト11.2秒を計時。身のこなしは柔らかく、海外遠征馬の気配としては近年屈指の仕上がり。"
       },
-      "comment": "【調教S・抜群の伸び】本番で騎乗するバルザローナ騎手を背に芝単走。馬なりのままラスト11.2秒を計時。身のこなしは極めて柔軟で、海外遠征馬としては近年屈指の仕上がり。"
+      "comment": "【調教S・抜群の伸び】本番で騎乗するバルザローナ騎手を背に芝単走。馬なりのままラスト11.2秒を計時。身のこなしは極めて柔軟で、海外遠征馬としては近年屈指の仕上がり。",
+      "trainingWeightDiff": null
     },
     {
       "waku": 5,
@@ -9084,8 +9111,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "東京芝",
       "trainingTime": "69.0 - 53.5 - 38.6 - 11.7 (馬なり)",
       "trainingComment": "【調教A+・しなやかな走り】東京競馬場での環境順応も早く、芝コースで弾むような動き。牝馬らしい軽快さがあり、日本の芝への適性は高そう。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 462,
+      "lastRaceWeight": null,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "Galileo",
@@ -9110,7 +9137,8 @@ export const PREDICTION_DATA = {
         "grade": "B+",
         "comment": "ムーア騎手を背に芝でシャープな動き。牝馬らしいキレ味を見せ、56kgの斤量恩恵を活かせるコンディション。"
       },
-      "comment": "【調教A+・しなやかな走り】東京競馬場での環境順応も早く、芝コースで弾むような動き。牝馬らしい軽快さがあり、日本の芝への適性は高そう。"
+      "comment": "【調教A+・しなやかな走り】東京競馬場での環境順応も早く、芝コースで弾むような動き。牝馬らしい軽快さがあり、日本の芝への適性は高そう。",
+      "trainingWeightDiff": null
     },
     {
       "waku": 6,
@@ -9127,8 +9155,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "栗東坂路",
       "trainingTime": "53.8 - 38.9 - 25.1 - 12.3 (馬なり)",
       "trainingComment": "【調教B+・マイペース維持】栗東坂路で軽めの調整。気合乗りも程よく、ベテランの手綱で一発を狙う態勢は整っている。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 488,
+      "lastRaceWeight": 484,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "キタサンブラック",
@@ -9153,7 +9181,8 @@ export const PREDICTION_DATA = {
         "grade": "B+",
         "comment": "名手横山典弘騎手が手綱を握りリズム重視。直線は馬の行く気に任せて終い重点。好状態をキープ。"
       },
-      "comment": "【調教B+・マイペース維持】栗東坂路で軽めの調整。気合乗りも程よく、ベテランの手綱で一発を狙う態勢は整っている。"
+      "comment": "【調教B+・マイペース維持】栗東坂路で軽めの調整。気合乗りも程よく、ベテランの手綱で一発を狙う態勢は整っている。",
+      "trainingWeightDiff": "+4"
     },
     {
       "waku": 6,
@@ -9170,8 +9199,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "東京ダ",
       "trainingTime": "69.2 - 53.8 - 38.9 - 12.0 (馬なり)",
       "trainingComment": "【調教A・力強い掻き込み】東京ダートで入念に調整後、芝コースでの走りに移行。筋肉質な芦毛の馬体が目立ち、気合も十分。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 478,
+      "lastRaceWeight": null,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "Ya Primo",
@@ -9196,7 +9225,8 @@ export const PREDICTION_DATA = {
         "grade": "B+",
         "comment": "名手L.トーレス騎手を背に強めの調整。手前替えもスムーズでラスト11.9秒と上々の伸び。南米G1・5勝の実力を秘める。"
       },
-      "comment": "【調教A・力強い掻き込み】東京ダートで入念に調整後、芝コースでの走りに移行。筋肉質な芦毛の馬体が目立ち、気合も十分。"
+      "comment": "【調教A・力強い掻き込み】東京ダートで入念に調整後、芝コースでの走りに移行。筋肉質な芦毛の馬体が目立ち、気合も十分。",
+      "trainingWeightDiff": null
     },
     {
       "waku": 7,
@@ -9213,8 +9243,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "美浦W",
       "trainingTime": "82.2 - 66.4 - 51.5 - 36.8 - 11.4 (馬なり)",
       "trainingComment": "【調教A・豪快なストライド】美浦Wで迫力ある動きを披露。菊花賞馬らしいスケールの大きな走りで、直線の長い東京コースなら末脚爆発の予感。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 526,
+      "lastRaceWeight": 522,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "スワーヴリチャード",
@@ -9239,7 +9269,8 @@ export const PREDICTION_DATA = {
         "grade": "A",
         "comment": "プーシャン騎手が感触を確かめつつ単走。余力を残したまま力強い脚捌きでフィニッシュ。巻き返しの態勢整う。"
       },
-      "comment": "【調教A・豪快なストライド】美浦Wで迫力ある動きを披露。菊花賞馬らしいスケールの大きな走りで、直線の長い東京コースなら末脚爆発の予感。"
+      "comment": "【調教A・豪快なストライド】美浦Wで迫力ある動きを披露。菊花賞馬らしいスケールの大きな走りで、直線の長い東京コースなら末脚爆発の予感。",
+      "trainingWeightDiff": "+4"
     },
     {
       "waku": 7,
@@ -9256,8 +9287,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "栗東CW",
       "trainingTime": "83.5 - 67.2 - 52.1 - 37.5 - 11.8 (強め)",
       "trainingComment": "【調教A・追撃態勢万全】栗東CWで鋭い伸び脚を披露。前走好走の勢いをそのまま維持しており、展開ひとつで馬券圏内突入の気配。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 506,
+      "lastRaceWeight": 498,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "ヤマカツエース",
@@ -9282,7 +9313,8 @@ export const PREDICTION_DATA = {
         "grade": "B+",
         "comment": "デムーロ騎手が乗って呼吸を合わせる追い切り。気合乗り良好で直線差し脚に賭ける。"
       },
-      "comment": "【調教A・追撃態勢万全】栗東CWで鋭い伸び脚を披露。前走好走の勢いをそのまま維持しており、展開ひとつで馬券圏内突入の気配。"
+      "comment": "【調教A・追撃態勢万全】栗東CWで鋭い伸び脚を披露。前走好走の勢いをそのまま維持しており、展開ひとつで馬券圏内突入の気配。",
+      "trainingWeightDiff": "+8"
     },
     {
       "waku": 7,
@@ -9299,8 +9331,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "栗東坂路",
       "trainingTime": "54.2 - 39.5 - 25.5 - 12.4 (馬なり)",
       "trainingComment": "【調教B・順調な仕上がり】栗東坂路で軽快なフットワーク。大舞台に向けて状態面に不安はなく、持てる力を出し切る態勢。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 486,
+      "lastRaceWeight": 482,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "キタサンブラック",
@@ -9325,7 +9357,8 @@ export const PREDICTION_DATA = {
         "grade": "B",
         "comment": "荻野極騎手とコンタクトを取りながら馬なりで登坂。好調キープ。"
       },
-      "comment": "【調教B・順調な仕上がり】栗東坂路で軽快なフットワーク。大舞台に向けて状態面に不安はなく、持てる力を出し切る態勢。"
+      "comment": "【調教B・順調な仕上がり】栗東坂路で軽快なフットワーク。大舞台に向けて状態面に不安はなく、持てる力を出し切る態勢。",
+      "trainingWeightDiff": "+4"
     },
     {
       "waku": 8,
@@ -9342,8 +9375,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "栗東CW",
       "trainingTime": "82.0 - 66.8 - 51.6 - 36.5 - 11.2 (強め)",
       "trainingComment": "【調教S・文句なしの気配】1週前にCWでラスト11.0秒の猛時計を叩き出し、最終追いも馬なりで鋭い伸び。ダービー制覇時を上回る充実期で、秋古馬2冠へ仕上がり万全。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 522,
+      "lastRaceWeight": 516,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "エピファネイア",
@@ -9368,7 +9401,8 @@ export const PREDICTION_DATA = {
         "grade": "A+",
         "comment": "先週しっかり負荷をかけたため、今週は単走で終い重点。リラックスした走りで無駄な力みがなく、ダービー制覇時と同等以上の絶好調。"
       },
-      "comment": "【調教S・文句なしの気配】1週前にCWでラスト11.0秒の猛時計を叩き出し、最終追いも馬なりで鋭い伸び。ダービー制覇時を上回る充実期で、秋古馬2冠へ仕上がり万全。"
+      "comment": "【調教S・文句なしの気配】1週前にCWでラスト11.0秒の猛時計を叩き出し、最終追いも馬なりで鋭い伸び。ダービー制覇時を上回る充実期で、秋古馬2冠へ仕上がり万全。",
+      "trainingWeightDiff": "+6"
     },
     {
       "waku": 8,
@@ -9385,8 +9419,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "東京芝",
       "trainingTime": "82.0 - 66.0 - 51.0 - 36.5 - 11.5 (馬なり)",
       "trainingComment": "【調教A+・雄大な馬格】東京芝コースで堂々たるキャンター。キングジョージ覇者の風格を漂わせ、雄大なフットワークで東京の芝を踏みしめる。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 504,
+      "lastRaceWeight": null,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "Adlerflug",
@@ -9411,7 +9445,8 @@ export const PREDICTION_DATA = {
         "grade": "A",
         "comment": "直線で合図を送るとグッと重心を落として加速。タフな欧州王者らしい力感あふれるフォームで好仕上がり。"
       },
-      "comment": "【調教A+・雄大な馬格】東京芝コースで堂々たるキャンター。キングジョージ覇者の風格を漂わせ、雄大なフットワークで東京の芝を踏みしめる。"
+      "comment": "【調教A+・雄大な馬格】東京芝コースで堂々たるキャンター。キングジョージ覇者の風格を漂わせ、雄大なフットワークで東京の芝を踏みしめる。",
+      "trainingWeightDiff": null
     },
     {
       "waku": 8,
@@ -9428,8 +9463,8 @@ export const PREDICTION_DATA = {
       "trainingCourse": "東京芝",
       "trainingTime": "70.1 - 54.5 - 39.2 - 12.2 (馬なり)",
       "trainingComment": "【調教B+・長丁場向きの走り】芝コースで長い距離をじっくり乗り込み。折り合いがスムーズで、直線の長いコースでの持久力戦なら見せ場も。",
-      "trainingWeight": 490,
-      "lastRaceWeight": 488,
+      "trainingWeight": 474,
+      "lastRaceWeight": null,
       "confirmedWeight": null,
       "weightDiff": null,
       "father": "Awtaad",
@@ -9454,7 +9489,8 @@ export const PREDICTION_DATA = {
         "grade": "B",
         "comment": "坂井瑠星騎手が騎乗して直線の反応を確かめる。渋太い脚を使って最後まで脚色が衰えず、スタミナ十分。"
       },
-      "comment": "【調教B+・長丁場向きの走り】芝コースで長い距離をじっくり乗り込み。折り合いがスムーズで、直線の長いコースでの持久力戦なら見せ場も。"
+      "comment": "【調教B+・長丁場向きの走り】芝コースで長い距離をじっくり乗り込み。折り合いがスムーズで、直線の長いコースでの持久力戦なら見せ場も。",
+      "trainingWeightDiff": null
     }
   ],
   "jockeysCompatibility": [
