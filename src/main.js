@@ -26753,6 +26753,7 @@ const PAYOUTS_DATA = {
     "record": "13戦9勝 [9-3-0-1]",
     "earnings": "0万円",
     "titles": [
+      "26'英チャンピオンS(G1)",
       "25'プリンスオブウェールズS(G1)"
     ],
     "photoUrl": null,
@@ -29479,6 +29480,7 @@ const PAYOUTS_DATA = {
     "record": "19戦10勝 [10-7-1-1]",
     "earnings": "5億378万円",
     "titles": [
+      "26'サンクルー大賞(G1)",
       "25'ジャパンC(G1)"
     ],
     "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2021190001_01.jpg",
@@ -65091,6 +65093,7 @@ const PAYOUTS_DATA = {
     "record": "15戦6勝 [6-0-5-4]",
     "earnings": "12億9,138万円",
     "titles": [
+      "26'天皇賞(秋)(G1)",
       "24'日本ダービー(G1)"
     ],
     "photoUrl": "https://cdnv2.netkeiba.com/img.race/common/img/race/horse/horse_2021105143_01.jpg",
