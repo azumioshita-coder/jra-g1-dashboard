@@ -319,7 +319,8 @@ const G1_RACES = [
           date: '2026-11-29T15:40:00',
           location: '東京',
           course: '芝 2400m',
-          status: 'upcoming'
+          status: 'upcoming',
+          entryStatus: 'gate_confirmed'
         },
         {
           id: '20',

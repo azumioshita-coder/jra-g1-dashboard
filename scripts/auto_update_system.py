@@ -415,47 +415,52 @@ def compute_contender_ranking(race_id, starters_list, horse_db_data, race_meta=N
             1
         )
         
-        # 分析コメント動的生成
-        str_parts = []
-        if has_gate:
-            if waku in [1, 2]:
-                str_parts.append(f"【好枠{waku}枠{gate}番】最内経済コースをロスなく立ち回れる絶好条件。")
-            elif waku in [3, 4]:
-                str_parts.append(f"【好位自在の{waku}枠{gate}番】馬群を見ながらスムーズに好位を取れる好枠。")
-                
-        tr_comment = s.get('trainingComment') or ''
-        if has_confirmed_wt:
-            diff_str = f"({wt_diff}kg)" if wt_diff else ""
-            str_parts.append(f"【当日馬体重{s['confirmedWeight']}kg{diff_str}】仕上がり万全。")
-        elif s.get('trainingGrade') == 'S':
-            str_parts.append(f"【調教S・抜けた動き】{tr_comment}")
-        elif tr_comment:
-            str_parts.append(tr_comment)
+        # 分析コメント生成（既存の精査済みコメントがあれば優先）
+        if s.get('strengths'):
+            strengths_text = s['strengths']
         else:
-            str_parts.append("順調な仕上がり。")
-            
-        con_parts = []
-        if has_gate and waku in [7, 8]:
-            con_parts.append(f"外枠{waku}枠{gate}番から終始外々を回らされる距離ロスが課題。")
-        if wt_diff:
-            try:
-                diff_n = int(wt_diff)
-                if diff_n >= 10:
-                    con_parts.append(f"馬体重+{diff_n}kgとやや太め残りの懸念。")
-                elif diff_n <= -8:
-                    con_parts.append(f"馬体重{diff_n}kgと馬体減り・輸送の影響。")
-            except ValueError:
-                pass
-        if not con_parts:
-            con_parts.append("府中の長い直線での瞬発力勝負の隊列。")
-            
-        strengths_text = " ".join(str_parts)
-        concerns_text = " ".join(con_parts)
+            str_parts = []
+            if has_gate:
+                if waku in [1, 2]:
+                    str_parts.append(f"【好枠{waku}枠{gate}番】最内経済コースをロスなく立ち回れる絶好条件。")
+                elif waku in [3, 4]:
+                    str_parts.append(f"【好位自在の{waku}枠{gate}番】馬群を見ながらスムーズに好位を取れる好枠。")
+                    
+            tr_comment = s.get('trainingComment') or ''
+            if has_confirmed_wt:
+                diff_str = f"({wt_diff}kg)" if wt_diff else ""
+                str_parts.append(f"【当日馬体重{s['confirmedWeight']}kg{diff_str}】仕上がり万全。")
+            elif s.get('trainingGrade') == 'S':
+                str_parts.append(f"【調教S・抜けた動き】{tr_comment}")
+            elif tr_comment:
+                str_parts.append(tr_comment)
+            else:
+                str_parts.append("順調な仕上がり。")
+            strengths_text = " ".join(str_parts)
+
+        if s.get('concerns'):
+            concerns_text = s['concerns']
+        else:
+            con_parts = []
+            if has_gate and waku in [7, 8]:
+                con_parts.append(f"外枠{waku}枠{gate}番から終始外々を回らされる距離ロスが課題。")
+            if wt_diff:
+                try:
+                    diff_n = int(wt_diff)
+                    if diff_n >= 10:
+                        con_parts.append(f"馬体重+{diff_n}kgとやや太め残りの懸念。")
+                    elif diff_n <= -8:
+                        con_parts.append(f"馬体重{diff_n}kgと馬体減り・輸送の影響。")
+                except ValueError:
+                    pass
+            if not con_parts:
+                con_parts.append("枠順と展開に左右される可能性。")
+            concerns_text = " ".join(con_parts)
         
         # stars calculation
         stars_str = '★★★★★' if comp >= 94 else ('★★★★☆' if comp >= 90 else ('★★★☆☆' if comp >= 86 else '★★☆☆☆'))
         
-        items.append({
+        item_entry = {
             'gate': gate,
             'waku': waku,
             'horseName': hname,
@@ -487,7 +492,13 @@ def compute_contender_ranking(race_id, starters_list, horse_db_data, race_meta=N
             'strengths': strengths_text,
             'comment': strengths_text,
             'concerns': concerns_text
-        })
+        }
+        if 'workoutOneWeek' in s:
+            item_entry['workoutOneWeek'] = s['workoutOneWeek']
+        if 'workoutFinal' in s:
+            item_entry['workoutFinal'] = s['workoutFinal']
+            
+        items.append(item_entry)
         
     # compositeScore降順、同点ならオッズ順
     items.sort(key=lambda x: (x['compositeScore'], -(float(x['odds']) if x['odds'] else 999.0)), reverse=True)
