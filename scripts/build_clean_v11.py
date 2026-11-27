@@ -1694,7 +1694,7 @@ prediction_js_logic = """
               </div>
 
               <div class="podium-concerns-box">
-                ⚠️ 唯一の懸念: ${h.concerns}
+                ⚠️ 死角・懸念材料: ${h.concerns}
               </div>
 
               <div class="podium-actions">
@@ -2257,6 +2257,12 @@ prediction_js_logic = """
                       <span class="nh-drawer-label">🏇 所属厩舎 / 騎手相性</span>
                       <span class="nh-drawer-val">${s.stable || '栗東'} (${s.jockeyStat})</span>
                     </div>
+                    ${s.concerns ? `
+                    <div class="nh-drawer-item nh-drawer-item-full" style="grid-column: 1 / -1; background: rgba(239, 68, 68, 0.07); border: 1px solid rgba(239, 68, 68, 0.25); border-radius: 6px; padding: 7px 10px; margin-top: 4px;">
+                      <span class="nh-drawer-label" style="color: #f87171; font-weight: 700; display: block; margin-bottom: 2px;">⚠️ 懸念材料・死角</span>
+                      <span class="nh-drawer-val" style="color: #fca5a5; font-size: 11px; line-height: 1.5; font-weight: 500;">${s.concerns}</span>
+                    </div>
+                    ` : ''}
                   </div>
 
                   <!-- 1.5 調教追い切りタイム（一週前 ＆ 最終追い切り） -->
