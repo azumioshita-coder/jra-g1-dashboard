@@ -5671,7 +5671,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 2,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5684,7 +5685,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 3,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5697,7 +5699,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 4,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5710,7 +5713,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 5,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5723,7 +5727,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 6,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5736,7 +5741,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 7,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5749,7 +5755,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 8,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5762,7 +5769,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 9,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5775,7 +5783,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 10,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5788,7 +5797,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 11,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5801,7 +5811,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 12,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5814,7 +5825,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 13,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5827,7 +5839,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 14,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5840,7 +5853,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 15,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5853,7 +5867,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 16,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5866,7 +5881,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 17,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5879,7 +5895,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 18,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         },
         {
           "waku": null,
@@ -5892,7 +5909,8 @@ export const PREDICTION_DATA = {
           "odds": null,
           "pop": 19,
           "confirmedWeight": null,
-          "weightDiff": null
+          "weightDiff": null,
+          "concerns": ""
         }
       ],
       "occultSigns": [
